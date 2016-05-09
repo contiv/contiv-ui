@@ -30,7 +30,7 @@ angular.module("contiv.directives")
                 function showChunk(pageNo, searchText) {
                     tableCtrl.searchText = searchText;
 
-                    if (pageNo === undefined) pageNo = 0;
+                    if (pageNo === undefined || pageNo < 0) pageNo = 0;
                     tableCtrl.pageNo = pageNo;
 
                     if ($scope.items !== undefined) {//TODO: Check why items are undefined during initialization
@@ -78,6 +78,25 @@ angular.module("contiv.directives")
                     return false;
                 };
 
+                function showPrevChunk() {
+                    var prevChunk;
+                    if (tableCtrl.pageNo <= 0) {
+                        prevChunk = 0;
+                    } else {
+                        prevChunk = tableCtrl.pageNo - 1;
+                    }
+                    return showChunk(prevChunk);
+                }
+
+                function showNextChunk() {
+                    var nextChunk;
+                    nextChunk = tableCtrl.pageNo + 1;
+                    if (nextChunk > tableCtrl.chunks.length - 1) {
+                        nextChunk = tableCtrl.chunks.length - 1;
+                    }
+                    return showChunk(nextChunk);
+                }
+
                 /**
                  * Save pagination scope to provide chunk information to pagination menu.
                  * @param menu
@@ -87,6 +106,8 @@ angular.module("contiv.directives")
                 }
 
                 tableCtrl.showChunk = showChunk;
+                tableCtrl.showNextChunk = showNextChunk;
+                tableCtrl.showPrevChunk = showPrevChunk;
                 tableCtrl.addPaginationMenu = addPaginationMenu;
             }],
             link: function (scope, element, attrs, tableCtrl) {
@@ -181,7 +202,9 @@ angular.module("contiv.directives")
                 tableCtrl.showChunk(tableCtrl.pageNo, tableCtrl.searchText);
                 scope.showChunk = function (pageNo) {
                     tableCtrl.showChunk(pageNo, tableCtrl.searchText);
-                }
+                };
+                scope.showPrevChunk = tableCtrl.showPrevChunk;
+                scope.showNextChunk = tableCtrl.showNextChunk;
             },
             templateUrl: 'components/directives/paginationmenu.html'
         }
