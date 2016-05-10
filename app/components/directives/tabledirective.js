@@ -53,10 +53,10 @@ angular.module("contiv.directives")
                         tableCtrl.chunks[tableCtrl.pageNo].selected = true;
 
                         //Update number of chunks for pagination menu
-                        if (tableCtrl.chunks.length > 9) {
+                        if (tableCtrl.chunks.length > 5) {
                             var sliceStart, sliceEnd;
-                            sliceStart = tableCtrl.pageNo - 4;
-                            sliceEnd = tableCtrl.pageNo + 5;
+                            sliceStart = tableCtrl.pageNo - 2;
+                            sliceEnd = tableCtrl.pageNo + 3;
                             if (sliceStart < 0) {
                                 sliceEnd = sliceEnd - sliceStart;
                                 sliceStart = 0;
