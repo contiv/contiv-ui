@@ -13,7 +13,7 @@ angular.module('contiv.models')
             Collection.call(this, $http, $q, ContivGlobals.VOLUMES_ENDPOINT);
         }
 
-        VolumesCollection.prototype = Object.create(BaseCollection.prototype);
+        VolumesCollection.prototype = Object.create(Collection.prototype);
 
         VolumesCollection.prototype.delete = function (model) {
             var volumescollection = this;
