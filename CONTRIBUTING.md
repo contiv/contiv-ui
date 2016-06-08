@@ -2,7 +2,8 @@
 
 ##Developers
 
-##Setup Contiv-ui on Mac and Windows
+###Setup Contiv-ui on Mac and Windows
+
 ###For Windows:
 
 ####Fix long path issue and clone the repo:
