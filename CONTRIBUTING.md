@@ -78,7 +78,6 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew install nginx
 ```
 * From contiv-nginx.conf(in the contiv-ui repo), copy from line 13 to line 50
-<<<<<<< HEAD
 * Paste into nginx.conf (location: /usr/local/etc/nginx) after line 47
 * In the section you just pasted, replace localhost with your backend server
   * This should point to the backend running contiv. It is fine to leave as localhost if you just want to view the UI.
@@ -93,7 +92,6 @@ $ brew install nginx
 
 ####Running nginx
 * In the directory of nginx, to start nginx:
->>>>>>> 2f02afcb1122a576c852f0fd68b23f7fe3af3f62
 ```
 $ nginx
 ```
