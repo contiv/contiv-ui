@@ -41,7 +41,6 @@ angular.module('contiv.organizations')
                 CRUDHelperService.stopLoader(organizationCreateCtrl);
                 CRUDHelperService.hideServerError(organizationCreateCtrl);
                 organizationCreateCtrl.newOrganization = {
-                    //key: '',
                     tenantName: ''
                 };
             }
