@@ -2,8 +2,8 @@
     <div class="field">
         <label for="newStoragePolicyFilesystem">Filesystem</label>
         <select id="newStoragePolicyFilesystem" class="ui dropdown"
-                ng-model="policy.create.filesystem">
-            <option ng-repeat="fs in filesystems" value="{{fs}}">{{fs}}</option>
+                ng-model="policy.create.filesystem"
+                ng-options="fs for fs in filesystems">
         </select>
     </div>
     <div class="field">

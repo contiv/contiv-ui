@@ -6,21 +6,21 @@ var ContivGlobals = (function () {
 
     return {
         //REST endpoints for 
-        'NETWORKS_ENDPOINT': '/api/networks/',
-        'POLICIES_ENDPOINT': '/api/policys/',
-        'RULES_ENDPOINT': '/api/rules/',
-        'APPLICATIONGROUPS_ENDPOINT': '/api/endpointGroups/',
-        'SERVICELBS_ENDPOINT': '/api/serviceLBs/',
+        'NETWORKS_ENDPOINT': '/netmaster/api/networks/',
+        'POLICIES_ENDPOINT': '/netmaster/api/policys/',
+        'RULES_ENDPOINT': '/netmaster/api/rules/',
+        'APPLICATIONGROUPS_ENDPOINT': '/netmaster/api/endpointGroups/',
+        'SERVICELBS_ENDPOINT': '/netmaster/api/serviceLBs/',
 
         //REST endpoints for VOLMASTER
-        'VOLUMES_ENDPOINT': '/volumes/',
-        'VOLUMES_CREATE_ENDPOINT': '/volumes/create/',
-        'VOLUMES_DELETE_ENDPOINT': '/volumes/remove/',
-        'VOLUMES_COPYSNAPSHOTS_ENDPOINT': '/volumes/copy/',
-        'VOLUMES_USES_ENDPOINT': '/uses/mounts/',
-        'VOLUMES_SNAPSHOTS_ENDPOINT': '/snapshots/',
+        'VOLUMES_ENDPOINT': '/volmaster/volumes/',
+        'VOLUMES_CREATE_ENDPOINT': '/volmaster/volumes/create/',
+        'VOLUMES_DELETE_ENDPOINT': '/volmaster/volumes/remove/',
+        'VOLUMES_COPYSNAPSHOTS_ENDPOINT': '/volmaster/volumes/copy/',
+        'VOLUMES_USES_ENDPOINT': '/volmaster/uses/mounts/',
+        'VOLUMES_SNAPSHOTS_ENDPOINT': '/volmaster/snapshots/',
 
-        'STORAGEPOLICIES_ENDPOINT': '/policies/',
+        'STORAGEPOLICIES_ENDPOINT': '/volmaster/policies/',
 
 
         //REST endpoints for CLUSTER
