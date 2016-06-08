@@ -11,7 +11,6 @@ angular.module('contiv.organizations')
     .controller('OrganizationCreateCtrl', ['$state', '$stateParams', 'OrganizationsModel', 'CRUDHelperService',
         function ($state, $stateParams, OrganizationsModel, CRUDHelperService) {
             var organizationCreateCtrl = this;
-            organizationCreateCtrl.cidrPattern = ContivGlobals.CIDR_REGEX;
 
             function returnToOrganizations() {
                 $state.go('contiv.menu.organizations.list');
