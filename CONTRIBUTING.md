@@ -1,4 +1,6 @@
-#Developers
+#Contributing to Contiv-ui
+
+##Developers
 
 ##Setup Contiv-ui on Mac and Windows
 ###For Windows:
