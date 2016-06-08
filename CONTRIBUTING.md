@@ -78,17 +78,27 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew install nginx
 ```
 * From contiv-nginx.conf(in the contiv-ui repo), copy from line 13 to line 50
+<<<<<<< HEAD
+* Paste into nginx.conf (location: /usr/local/etc/nginx) after line 47
+* In the section you just pasted, replace localhost with your backend server
+  * This should point to the backend running contiv. It is fine to leave as localhost if you just want to view the UI.
+* Change the root to point to the absolute path of contiv-ui/app instead of html
+
+####Running nginx
+* To start nginx, from any directory run:
+=======
 * Paste into nginx.conf (in nginx_location/conf) after line 47
 * In the section you just pasted, replace localhost with your server
 * Change the root to point to the absolute path of contiv-ui/app instead of html
 
 ####Running nginx
 * In the directory of nginx, to start nginx:
+>>>>>>> 2f02afcb1122a576c852f0fd68b23f7fe3af3f62
 ```
 $ nginx
 ```
 Server is now running on localhost:8080 
-If you make changes in your app folder, rerun the gulp command and hard refresh page  
+If you make changes in your app folder, rerun the gulp command and hard refresh page to view changes in the browser
 
 * If you modify nginx.conf, restart server with:
 ```
