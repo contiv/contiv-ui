@@ -29,7 +29,7 @@ angular.module('contiv.nodes')
             NodesModel.get(reload).then(function (result) {
                 getActiveLogs();
                 getLastLogs();
-            })
+            });
         }
 
         function getActiveLogs() {
