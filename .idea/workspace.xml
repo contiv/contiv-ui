@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7185af-5a9b-4368-b74d-518b728e7688" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/applicationgroups/applicationgroupcreate.html" afterPath="$PROJECT_DIR$/app/applicationgroups/applicationgroupcreate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/applicationgroups/applicationgroupdetails.html" afterPath="$PROJECT_DIR$/app/applicationgroups/applicationgroupdetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/volumes/volumecreate.html" afterPath="$PROJECT_DIR$/app/volumes/volumecreate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contiv-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -505,12 +503,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1465498948095</updated>
-      <workItem from="1465498950105" duration="10972000" />
+      <workItem from="1465498950105" duration="11483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10972000" />
+    <option name="totallyTimeSpent" value="11483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="833" extended-state="0" />
