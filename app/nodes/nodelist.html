@@ -22,7 +22,7 @@
             <tr>
                 <td class="ctv-header three wide column">Status</td>
                 <!-- Healthy is hardcoded -->
-                <td><i class="up icon"></i>Healthy</i></td>
+                <td><i class="green up icon"></i>Healthy</i></td>
                 <!-- get green arrow icon? -->
             </tr>
             <tr>
@@ -81,8 +81,7 @@
         <ctv-tbody>
             <ctv-tr ng-repeat="node in nodeListCtrl.filteredNodes">
                 <ctv-td>
-                    <i ng-if="node['inventory_state'].status == 'Allocated'" class="green check circle icon"></i>
-                    <i ng-if="node['inventory_state'].status != 'Allocated'" class="grey ban icon"></i>
+                    <ctv-nodestatus node="node"></ctv-nodestatus>
                     <a ui-sref="contiv.menu.nodes.details.info({key:node.key})">{{node.key}}</a>
                 </ctv-td>
                 <ctv-td></ctv-td>
