@@ -1,8 +1,8 @@
 angular.module('contiv.nodes')
     .factory('NodeService', ['$http', '$q', function ($http, $q) {
-        function getActiveLogs(node) {
+        function getActiveLogs() {
             var deferred = $q.defer();
-            var url = ContivGlobals.ACTIVE_JOB_ENDPOINT;
+            var url = ContivGlobals.NODES_ACTIVE_JOB_ENDPOINT;
             $http.get(url).then(function successCallback(result) {
                 deferred.resolve(result.data);
             }, function errorCallback(result) {
@@ -11,9 +11,9 @@ angular.module('contiv.nodes')
             return deferred.promise;
         }
 
-        function getLastLogs(node) {
+        function getLastLogs() {
             var deferred = $q.defer();
-            var url = ContivGlobals.LAST_JOB_ENDPOINT;
+            var url = ContivGlobals.NODES_LAST_JOB_ENDPOINT;
             $http.get(url).then(function successCallback(result) {
                 deferred.resolve(result.data);
             }, function errorCallback(result) {

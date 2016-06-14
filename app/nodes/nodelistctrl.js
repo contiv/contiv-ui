@@ -23,24 +23,19 @@ angular.module('contiv.nodes')
                 }, function errorCallback(result) {
                     CRUDHelperService.stopLoader(nodeListCtrl);
                 });
-        }
-
-        function getLogInfo(reload) {
-            NodesModel.get(reload).then(function (result) {
                 getActiveLogs();
                 getLastLogs();
-            });
         }
 
         function getActiveLogs() {
-            NodeService.getActiveLogs(nodeListCtrl.nodes).then(function successCallback(result) {
+            NodeService.getActiveLogs().then(function successCallback(result) {
                 nodeListCtrl.activeLogs = result;
             }, function errorCallback(result) {
             });
         }
 
         function getLastLogs() {
-            NodeService.getLastLogs(nodeListCtrl.nodes).then(function successCallback(result) {
+            NodeService.getLastLogs().then(function successCallback(result) {
                 nodeListCtrl.lastLogs = result;
             }, function errorCallback(result) {
             });
@@ -51,14 +46,12 @@ angular.module('contiv.nodes')
 
         //Load from cache for quick display initially
         getNodes(false);
-        getLogInfo(false);
 
         var promise;
         //Don't do auto-refresh if one is already in progress
         if (!angular.isDefined(promise)) {
             promise = $interval(function () {
                 getNodes(true);
-                getLogInfo(true);
             }, ContivGlobals.REFRESH_INTERVAL);
         }
         //stop polling when user moves away from the page

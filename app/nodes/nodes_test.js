@@ -147,11 +147,11 @@ describe("contiv.nodes module", function () {
             expect(nodeListCtrl.nodes.length).toEqual(3);
         });
         it('NodeListCtrl should do a GET on /info/job/last REST API', function () {
-            $httpBackend.expectGET(ContivGlobals.LAST_JOB_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NODES_LAST_JOB_ENDPOINT);
             $httpBackend.flush();
         });
         it('NodeListCtrl should do a GET on /info/job/active REST API', function () {
-            $httpBackend.expectGET(ContivGlobals.ACTIVE_JOB_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NODES_ACTIVE_JOB_ENDPOINT);
             $httpBackend.flush();
         });
     });
