@@ -8,9 +8,6 @@ angular.module("contiv.nodes")
             scope: {
                 node: '='
             },
-            link: function (scope) {
-
-            },
             templateUrl: 'nodes/nodestatus.html'
         }
     })
