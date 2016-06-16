@@ -1,0 +1,61 @@
+
+
+<div class="ui sixteen column grid">
+    <div class="thirteen wide column">
+        <div class="content" style="font-size: 24px">Bandwidth</div>
+    </div>
+</div>
+
+
+
+
+<form class="ui form" name="bandwidthPolicyCreateCtrl.form" role="form"
+      ng-submit="bandwidthPolicyCreateCtrl.createPolicy(newPolicy)" novalidate>
+    <div class="ui active inverted dimmer" ng-show="bandwidthPolicyCreateCtrl.showLoader">
+        <div class="ui loader"></div>
+    </div>
+    <div class="field">
+        <div ng-show="bandwidthPolicyCreateCtrl.form.$submitted">
+            <div ng-hide="bandwidthPolicyCreateCtrl.form.$valid" class="ui negative message">
+                <ul class="list">
+                    <li ng-show="bandwidthPolicyCreateCtrl.form.newPolicyName.$error.required">
+                        Please enter policy name
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <label for="newPolicyName">Policy name</label>
+        <input type="text" id="newPolicyName" name="newPolicyName"
+               ng-model="bandwidthPolicyCreateCtrl.newPolicy.policyName" placeholder="Enter name" required>
+    </div>
+
+    <div class="field">
+        <label for="newBandwidth">Bandwidth </label>
+        <input type="text" id="newBandwidth" name="newBandwidth"
+               ng-model="bandwidthPolicyCreateCtrl.newPolicy.bandwidth" placeholder="Enter bandwidth" required>
+    </div>
+
+    <div class="field">
+        <label for="newDSCP">DSCP</label>
+        <input type="text" id="newDSCP" name="newDSCP"
+               ng-model="bandwidthPolicyCreateCtrl.newPolicy.DSCP" placeholder="Enter DSCP" required>
+    </div>
+
+    <div class="ui sixteen column grid">
+        <div class="right floated three wide column">
+            <div style="margin-top: 40px">
+            <button type="button" class="ui basic button" ng-click="bandwidthPolicyCreateCtrl.cancelCreating()">
+                Cancel
+            </button>
+            <button type="submit" class="ui blue button">
+                Create
+            </button>
+            </div>
+        </div>
+    </div>
+
+    <ctv-error ng-show="bandwidthPolicyCreateCtrl.showServerError" header="Error creating policy" error="bandwidthPolicyCreateCtrl.serverErrorMessage">
+    </ctv-error>
+</form>
