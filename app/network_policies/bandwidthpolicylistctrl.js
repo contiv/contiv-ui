@@ -12,22 +12,23 @@ angular.module('contiv.networkpolicies')
             })
         ;
     }])
-    .controller('BandwidthPolicyListCtrl', ['$scope', '$interval', '$filter', 'PoliciesModel', 'CRUDHelperService',
-        function ($scope, $interval, $filter, PoliciesModel, CRUDHelperService) {
-            /*var policiesListCtrl = this;
+    .controller('BandwidthPolicyListCtrl', ['$scope', '$interval', '$filter', 'BandwidthModel', 'CRUDHelperService',
+        function ($scope, $interval, $filter, BandwidthModel, CRUDHelperService) {
+            var policiesListCtrl = this;
 
             function getPolicies(reload) {
-                PoliciesModel.get(reload)
+                BandwidthModel.get(reload)
                     .then(function successCallback(result) {
+                        //console.log(result);
                         CRUDHelperService.stopLoader(policiesListCtrl);
-                        policiesListCtrl.policies = $filter('orderBy')(result, 'policyName');
+                        policiesListCtrl.policies = $filter('orderBy')(result, 'profileName');
                     }, function errorCallback(result) {
                         CRUDHelperService.stopLoader(policiesListCtrl);
                     });
             }
 
             //Load from cache for quick display initially
-            getPolicies(false);
+            getPolicies(true);
 
             var promise;
             //Don't start auto-refresh if one is already in progress
@@ -40,6 +41,6 @@ angular.module('contiv.networkpolicies')
             $scope.$on('$destroy', function () {
                 $interval.cancel(promise);
             });
-*/
+
 
         }]);

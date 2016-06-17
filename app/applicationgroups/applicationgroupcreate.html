@@ -143,12 +143,71 @@
     </div>
 
     <div class="ui section divider"></div>
-    <div class="field">
-        <h4 class="ui header">
-            <i class="grey plus circle outline icon"></i>
-            Bandwidth Policies
-        </h4>
-    </div>
+
+    <ctv-collapsible title="Bandwidth Policies">
+        <div class="field">
+            <table class="ui very basic collapsing unstackable table">
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="ui left icon input">
+                            <input type="text" ng-model="bandwidthProfileSearchText.profileName"
+                                   placeholder="Filter by profile name">
+                            <i class="search icon"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <select class="ui dropdown" ng-model="applicationGroupCreateCtrl.selectedProfile"
+                                ng-options="policy.profileName for policy in applicationGroupCreateCtrl.bandwidthProfiles | filter:bandwidthProfileSearchText">
+                        </select>
+                    </td>
+                    <td>
+                        <button type="button" class="ui icon button"
+                                ng-click="applicationGroupCreateCtrl.addIsolationPolicy()">
+                            <i class="blue add icon"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr ng-repeat="policy in applicationGroupCreateCtrl.applicationGroup.policies">
+                    <td>{{policy}}</td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="ui icon button"
+                                ng-click="applicationGroupCreateCtrl.removeIsolationPolicy(policy)">
+                            <i class="trash icon"></i>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <h5 class="ui header">Bandwidth Details</h5>
+            <table class="ui very basic unstackable table" style="margin-top: 20px">
+                <thead>
+                <tr>
+                    <th>Profile Name</th>
+                    <th>Tenant Name</th>
+                    <th>Bandwidth</th>
+                    <th>DSCP</th>
+                </tr>
+                </thead>
+
+                <!--<tbody>
+                <tr ng-repeat="rule in applicationGroupCreateCtrl.incomingRules">
+                    <td>{{rule.priority}}</td>
+                    <td>{{rule.action}}</td>
+                    <td>{{rule.fromEndpointGroup}}</td>
+                    <td>{{rule.fromNetwork}}</td>
+                    <td>{{rule.fromIPAddress}}</td>
+                    <td>{{rule.protocol}}</td>
+                    <td>{{rule.port}}</td>
+                </tr>
+
+                </tbody>-->
+            </table>
+        </div>
+    </ctv-collapsible>
+
+
 
     <div class="ui section divider"></div>
     <div class="field">

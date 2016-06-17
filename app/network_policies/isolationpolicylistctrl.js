@@ -15,6 +15,7 @@ angular.module('contiv.networkpolicies')
             function getPolicies(reload) {
                 PoliciesModel.get(reload)
                     .then(function successCallback(result) {
+                        
                         CRUDHelperService.stopLoader(policiesListCtrl);
                         policiesListCtrl.policies = $filter('orderBy')(result, 'policyName');
                     }, function errorCallback(result) {

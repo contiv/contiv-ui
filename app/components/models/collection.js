@@ -116,6 +116,9 @@ Collection.prototype.create = function (model, url) {
     var collection = this;
     var deferred = collection.$q.defer();
     if (url === undefined) url = collection.url + model.key + '/';
+    console.log("URL: "+url);
+    console.log("Model: "+ model.key);
+    console.log("Model: "+ model.policyName);
     collection.$http.post(url, model)
         .then(function successCallback(response) {
             var responseData = collection.extract(response);
@@ -127,6 +130,7 @@ Collection.prototype.create = function (model, url) {
             collection.models.push(responseData);
             deferred.resolve(collection.extract(response));
         }, function errorCallback(response) {
+            console.log(collection.extract(response));
             deferred.reject(collection.extract(response));
         });
     return deferred.promise;
