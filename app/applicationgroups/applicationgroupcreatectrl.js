@@ -19,6 +19,7 @@ angular.module('contiv.applicationgroups')
         'ApplicationGroupsModel',
         'NetworksModel',
         'PoliciesModel',
+        'BandwidthModel',
         'RulesModel',
         'ApplicationGroupService',
         'CRUDHelperService',
@@ -26,16 +27,19 @@ angular.module('contiv.applicationgroups')
                   ApplicationGroupsModel,
                   NetworksModel,
                   PoliciesModel,
+                  BandwidthModel,
                   RulesModel,
                   ApplicationGroupService,
                   CRUDHelperService) {
             var applicationGroupCreateCtrl = this;
             applicationGroupCreateCtrl.networks = [];
             applicationGroupCreateCtrl.isolationPolicies = [];
+            applicationGroupCreateCtrl.bandwidthProfiles = [];
             applicationGroupCreateCtrl.applicationGroup = {};
             applicationGroupCreateCtrl.selectedNetwork = {};
             applicationGroupCreateCtrl.selectedPolicy = {};
             applicationGroupCreateCtrl.selectedPolicies = [];
+            applicationGroupCreateCtrl.selectedProfile = {};
 
             //To display incoming and outgoing rules for selected policies
             applicationGroupCreateCtrl.incomingRules = [];
@@ -109,6 +113,24 @@ angular.module('contiv.applicationgroups')
                 }
             }
 
+            /**
+             * Get profiles for the given tenant.
+             */
+            function getBandwidthProfiles() {
+                BandwidthModel.get().then(function (result) {
+                    applicationGroupCreateCtrl.bandwidthProfiles = _.filter(result, {
+                        'tenantName': 'default'//TODO: Remove hardcoded tenant.
+                    });
+                });
+            }
+
+            /**
+             * Add policy to new application group
+             */
+            function addBandwidthProfile() {
+                ApplicationGroupService.addBandwidthProfile(applicationGroupCreateCtrl);
+            }
+            
             function resetForm() {
                 CRUDHelperService.stopLoader(applicationGroupCreateCtrl);
                 CRUDHelperService.hideServerError(applicationGroupCreateCtrl);
@@ -122,11 +144,15 @@ angular.module('contiv.applicationgroups')
 
             getNetworks();
             getIsolationPolicies();
+            getBandwidthProfiles();
+
 
             applicationGroupCreateCtrl.createApplicationGroup = createApplicationGroup;
             applicationGroupCreateCtrl.cancelCreating = cancelCreating;
             applicationGroupCreateCtrl.addIsolationPolicy = addIsolationPolicy;
             applicationGroupCreateCtrl.removeIsolationPolicy = removeIsolationPolicy;
+            applicationGroupCreateCtrl.addBandwidthProfile = addBandwidthProfile;
+
 
             resetForm();
         }]);

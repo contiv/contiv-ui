@@ -13,8 +13,8 @@ angular.module('contiv.networkpolicies')
             })
         ;
     }])
-    .controller('BandwidthPolicyCreateCtrl', ['$state', 'PoliciesModel', 'CRUDHelperService',
-        function ($state, PoliciesModel, CRUDHelperService) {
+    .controller('BandwidthPolicyCreateCtrl', ['$state', 'BandwidthModel', 'CRUDHelperService',
+        function ($state, BandwidthModel, CRUDHelperService) {
             var bandwidthPolicyCreateCtrl = this;
 
             function returnToPolicies() {
@@ -25,13 +25,13 @@ angular.module('contiv.networkpolicies')
                 returnToPolicies();
             }
 
-           /* function createPolicy() {
+            function createPolicy() {
                 if (bandwidthPolicyCreateCtrl.form.$valid) {
                     CRUDHelperService.hideServerError(bandwidthPolicyCreateCtrl);
                     CRUDHelperService.startLoader(bandwidthPolicyCreateCtrl);
                     bandwidthPolicyCreateCtrl.newPolicy.key =
-                        PoliciesModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
-                    PoliciesModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+                        BandwidthModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
+                    BandwidthModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);
                         returnToPolicies();
                     }, function errorCallback(result) {
@@ -45,17 +45,17 @@ angular.module('contiv.networkpolicies')
                 CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);
                 CRUDHelperService.hideServerError(bandwidthPolicyCreateCtrl);
                 bandwidthPolicyCreateCtrl.newPolicy = {
-                    policyName: '',
-                    //tenantName: 'default'//TODO: Remove hardcoded tenant.
+                    profileName: '',
+                    tenantName: 'default', //TODO: Remove hardcoded tenant.
                     bandwidth: '',
                     DSCP: ''
                 };
-            }*/
+            }
 
-            //bandwidthPolicyCreateCtrl.createPolicy = createPolicy;
+            bandwidthPolicyCreateCtrl.createPolicy = createPolicy;
             bandwidthPolicyCreateCtrl.cancelCreating = cancelCreating;
 
-            //resetForm();
+            resetForm();
 
             
         }]);

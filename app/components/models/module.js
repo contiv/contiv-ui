@@ -13,6 +13,8 @@ var ContivGlobals = (function () {
         'SERVICELBS_ENDPOINT': '/netmaster/api/v1/serviceLBs/',
         'ORGANIZATIONS_ENDPOINT':'/netmaster/api/v1/tenants/',
         'NETWORK_SETTINGS_ENDPOINT': '/netmaster/api/v1/globals/',
+        'BANDWIDTH_ENDPOINT': '/netmaster/api/v1/netprofiles/',
+
 
         //REST endpoints for VOLMASTER
         'VOLUMES_ENDPOINT': '/volmaster/volumes/',

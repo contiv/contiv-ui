@@ -26,9 +26,15 @@
         </div>
     </div>
     <div class="field">
-        <label for="newPolicyName">Policy name</label>
-        <input type="text" id="newPolicyName" name="newPolicyName"
-               ng-model="bandwidthPolicyCreateCtrl.newPolicy.policyName" placeholder="Enter name" required>
+        <label for="newProfileName">Profile name</label>
+        <input type="text" id="newProfileName" name="newProfileName"
+               ng-model="bandwidthPolicyCreateCtrl.newPolicy.profileName" placeholder="Enter profile name" required>
+    </div>
+
+    <div class="field">
+        <label for="newTenantName">Tenant name </label>
+        <input type="text" id="newTenantName" name="newTenantName"
+               ng-model="bandwidthPolicyCreateCtrl.newPolicy.tenantName" placeholder="Enter tenant name" required>
     </div>
 
     <div class="field">
@@ -39,7 +45,7 @@
 
     <div class="field">
         <label for="newDSCP">DSCP</label>
-        <input type="text" id="newDSCP" name="newDSCP"
+        <input type="number" id="newDSCP" name="newDSCP"
                ng-model="bandwidthPolicyCreateCtrl.newPolicy.DSCP" placeholder="Enter DSCP" required>
     </div>
 
