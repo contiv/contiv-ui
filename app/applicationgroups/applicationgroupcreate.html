@@ -159,25 +159,12 @@
                     <td>
                         <select class="ui dropdown" ng-model="applicationGroupCreateCtrl.selectedProfile"
                                 ng-options="policy.profileName for policy in applicationGroupCreateCtrl.bandwidthProfiles | filter:bandwidthProfileSearchText">
+                            <option value="">none</option>
                         </select>
                     </td>
-                    <td>
-                        <button type="button" class="ui icon button"
-                                ng-click="applicationGroupCreateCtrl.addIsolationPolicy()">
-                            <i class="blue add icon"></i>
-                        </button>
-                    </td>
+
                 </tr>
-                <tr ng-repeat="policy in applicationGroupCreateCtrl.applicationGroup.policies">
-                    <td>{{policy}}</td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="ui icon button"
-                                ng-click="applicationGroupCreateCtrl.removeIsolationPolicy(policy)">
-                            <i class="trash icon"></i>
-                        </button>
-                    </td>
-                </tr>
+
                 </tbody>
             </table>
             <h5 class="ui header">Bandwidth Details</h5>
@@ -191,18 +178,16 @@
                 </tr>
                 </thead>
 
-                <!--<tbody>
-                <tr ng-repeat="rule in applicationGroupCreateCtrl.incomingRules">
-                    <td>{{rule.priority}}</td>
-                    <td>{{rule.action}}</td>
-                    <td>{{rule.fromEndpointGroup}}</td>
-                    <td>{{rule.fromNetwork}}</td>
-                    <td>{{rule.fromIPAddress}}</td>
-                    <td>{{rule.protocol}}</td>
-                    <td>{{rule.port}}</td>
+                <tbody>
+                <tr>
+                    <td>{{applicationGroupCreateCtrl.selectedProfile.profileName}}</td>
+                    <td>{{applicationGroupCreateCtrl.selectedProfile.tenantName}}</td>
+                    <td>{{applicationGroupCreateCtrl.selectedProfile.bandwidth}}</td>
+                    <td>{{applicationGroupCreateCtrl.selectedProfile.DSCP}}</td>
+
                 </tr>
 
-                </tbody>-->
+                </tbody>
             </table>
         </div>
     </ctv-collapsible>

@@ -167,6 +167,7 @@
             </tr>
             </tbody>
         </table>
+
     </ctv-collapsible>
 
     <div class="ui section divider"></div>
@@ -179,10 +180,67 @@
 
     <div class="ui section divider"></div>
 
-    <h4 class="ui header">
-        <i class="grey plus circle outline icon"></i>
-        Bandwidth Policies
-    </h4>
+    <ctv-collapsible title="Bandwidth Policies">
+
+        <div ng-switch="applicationGroupDetailsCtrl.mode">
+            <div ng-switch-when="edit">
+                <table  class="ui very basic collapsing unstackable table">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="ui left icon input">
+                                <input type="text" ng-model="bandwidthProfileSearchText.profileName"
+                                       placeholder="Filter by profile name">
+                                <i class="search icon"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <select class="ui dropdown" ng-model="applicationGroupDetailsCtrl.selectedProfile"
+                                    ng-options="policy.profileName for policy in applicationGroupDetailsCtrl.bandwidthProfiles | filter:bandwidthProfileSearchText">
+                                <option value="">none</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+                <h5 class="ui header">Bandwidth Details</h5>
+
+                <table class="ui very basic unstackable table" style="margin-top: 20px">
+                    <thead>
+                    <tr>
+                        <th>Profile Name</th>
+                        <th>Tenant Name</th>
+                        <th>Bandwidth</th>
+                        <th>DSCP</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{applicationGroupDetailsCtrl.selectedProfile.profileName}}</td>
+                            <td>{{applicationGroupDetailsCtrl.selectedProfile.tenantName}}</td>
+                            <td>{{applicationGroupDetailsCtrl.selectedProfile.bandwidth}}</td>
+                            <td>{{applicationGroupDetailsCtrl.selectedProfile.DSCP}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <table ng-switch-when="details" class="ui very basic unstackable table">
+
+                <tbody>
+                <tr>
+                    <td class="ctv-header three wide column">Profile Name</td>
+                    <td>{{applicationGroupDetailsCtrl.applicationGroup.netProfile}}</td>
+                </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </ctv-collapsible>
 
 
     <div class="ui section divider"></div>
