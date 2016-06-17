@@ -99,6 +99,14 @@ angular.module('contiv.applicationgroups')
                     CRUDHelperService.startLoader(applicationGroupCreateCtrl);
                     applicationGroupCreateCtrl.applicationGroup.networkName =
                         applicationGroupCreateCtrl.selectedNetwork.networkName;
+
+                    if(applicationGroupCreateCtrl.selectedProfile.profileName == "none")
+                    {
+                        applicationGroupCreateCtrl.selectedProfile.profileName = "";
+                    }
+                    applicationGroupCreateCtrl.applicationGroup.netProfile =
+                        applicationGroupCreateCtrl.selectedProfile.profileName;
+                    
                     applicationGroupCreateCtrl.applicationGroup.key =
                         ApplicationGroupsModel.generateKey(applicationGroupCreateCtrl.applicationGroup);
 
@@ -121,6 +129,7 @@ angular.module('contiv.applicationgroups')
                     applicationGroupCreateCtrl.bandwidthProfiles = _.filter(result, {
                         'tenantName': 'default'//TODO: Remove hardcoded tenant.
                     });
+                    //applicationGroupCreateCtrl.bandwidthProfiles.push("None");
                 });
             }
 
