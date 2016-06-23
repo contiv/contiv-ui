@@ -33,6 +33,9 @@ var ContivGlobals = (function () {
         'NODES_LAST_JOB_ENDPOINT': '/info/job/last',
         'NODES_ACTIVE_JOB_ENDPOINT': '/info/job/active',
 
+        'GLOBAL_SET_ENDPOINT': '/globals',
+        'GLOBAL_GET_ENDPOINT': '/info/globals',
+
         //Refresh interval in milliseconds
         'REFRESH_INTERVAL': 5000,
 
