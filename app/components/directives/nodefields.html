@@ -1,0 +1,22 @@
+<div class="field">
+    <label for="dataInterface">Data interface</label>
+    <input type="text" id="dataInterface" name="dataInterface"
+           ng-model="nodeCommissionCtrl.extra_vars['netplugin_if']"
+           placeholder="Enter data interface" required>
+</div>
+<div class="field">
+    <label for="serviceVIP">Virtual IP address for cluster services</label>
+    <input type="text" id="serviceVIP" name="serviceVIP"
+           ng-model="nodeCommissionCtrl.extra_vars['service_vip']"
+           placeholder="Enter virtual IP address" required>
+</div>
+<div class="field">
+    <label for="hostgroup">Host group</label>
+    <select id="hostgroup" class="ui dropdown"
+            name="hostgroup"
+            ng-model="nodeCommissionCtrl.nodeOpsObj.host_group">
+        <option value="">-- Please select host group --</option>
+        <option value="service-master">Service Master</option>
+        <option value="service-worker">Service Worker</option>
+    </select>
+</div>
