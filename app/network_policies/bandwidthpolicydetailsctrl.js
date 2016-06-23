@@ -30,14 +30,18 @@ angular.module('contiv.networkpolicies')
         'CRUDHelperService',
         function ($state, $stateParams, RulesModel, BandwidthModel,  NetworksModel, ApplicationGroupsModel, CRUDHelperService) {
             var bandwidthPolicyDetailsCtrl = this;
+
             bandwidthPolicyDetailsCtrl.bandwidthProfiles = [];
 
             /* Get particular Profile for based on key*/
             BandwidthModel.getModelByKey($stateParams.key)
                 .then(function (policy) {
                     bandwidthPolicyDetailsCtrl.policy = policy;
+                    bandwidthPolicyDetailsCtrl.bandwidthArray = bandwidthPolicyDetailsCtrl.policy.bandwidth.split(' ');
+                    bandwidthPolicyDetailsCtrl.bandwidthNumber = bandwidthPolicyDetailsCtrl.bandwidthArray[0];
+                    bandwidthPolicyDetailsCtrl.bandwidthUnit = bandwidthPolicyDetailsCtrl.bandwidthArray[1];
                 });
-
+            
             /**
              * To show edit or details screen based on the route
              */
@@ -82,6 +86,9 @@ angular.module('contiv.networkpolicies')
                     CRUDHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
                     CRUDHelperService.startLoader(bandwidthPolicyDetailsCtrl);
                     //createFilesystemCmds();
+
+                    bandwidthPolicyDetailsCtrl.policy.bandwidth = bandwidthPolicyDetailsCtrl.bandwidthNumber + " " + bandwidthPolicyDetailsCtrl.bandwidthUnit;
+
                     BandwidthModel.save(bandwidthPolicyDetailsCtrl.policy).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
                         returnToPolicyDetails();
@@ -95,8 +102,6 @@ angular.module('contiv.networkpolicies')
 
             CRUDHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
             CRUDHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
-
-
 
             setMode();
             //getBandwidthProfiles();

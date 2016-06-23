@@ -130,11 +130,6 @@ angular.module('contiv.applicationgroups')
                 CRUDHelperService.hideServerError(applicationGroupDetailsCtrl);
                 CRUDHelperService.startLoader(applicationGroupDetailsCtrl);
 
-                if(applicationGroupDetailsCtrl.selectedProfile.profileName == "none")
-                {
-                    applicationGroupDetailsCtrl.selectedProfile.profileName = "";
-                }
-
                 applicationGroupDetailsCtrl.applicationGroup.netProfile = applicationGroupDetailsCtrl.selectedProfile.profileName;
 
                 ApplicationGroupsModel.save(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {

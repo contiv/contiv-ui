@@ -1,14 +1,5 @@
 
 
-<div class="ui sixteen column grid">
-    <div class="thirteen wide column">
-        <div class="content" style="font-size: 24px">Bandwidth</div>
-    </div>
-</div>
-
-
-
-
 <form class="ui form" name="bandwidthPolicyCreateCtrl.form" role="form"
       ng-submit="bandwidthPolicyCreateCtrl.createPolicy(newPolicy)" novalidate>
     <div class="ui active inverted dimmer" ng-show="bandwidthPolicyCreateCtrl.showLoader">
@@ -18,9 +9,10 @@
         <div ng-show="bandwidthPolicyCreateCtrl.form.$submitted">
             <div ng-hide="bandwidthPolicyCreateCtrl.form.$valid" class="ui negative message">
                 <ul class="list">
-                    <li ng-show="bandwidthPolicyCreateCtrl.form.newPolicyName.$error.required">
-                        Please enter policy name
-                    </li>
+                    <li ng-show="bandwidthPolicyCreateCtrl.form.newProfileName.$error.required">Please enter profile name</li>
+                    <li ng-show="bandwidthPolicyCreateCtrl.form.newBandwidthNumber.$error.required">Please enter bandwidth</li>
+                    <li ng-show="bandwidthPolicyCreateCtrl.form.newBandwidthUnit.$error.required">Please select bandwidth Unit</li>
+                    <li ng-show="bandwidthPolicyCreateCtrl.form.newDSCP.$error.required">Please enter DSCP</li>
                 </ul>
             </div>
         </div>
@@ -37,10 +29,23 @@
                ng-model="bandwidthPolicyCreateCtrl.newPolicy.tenantName" placeholder="Enter tenant name" required>
     </div>-->
 
-    <div class="field">
-        <label for="newBandwidth">Bandwidth </label>
-        <input type="text" id="newBandwidth" name="newBandwidth"
-               ng-model="bandwidthPolicyCreateCtrl.newPolicy.bandwidth" placeholder="Enter bandwidth eg. 10 mbps, 10 gbps" required>
+
+
+    <div class="fields">
+        <div class = "thirteen wide field">
+            <label for="newBandwidthNumber">Bandwidth </label>
+                <input type="text" id="newBandwidthNumber" name="newBandwidthNumber"
+                   ng-model="bandwidthPolicyCreateCtrl.bandwidthNumber" placeholder="Enter bandwidth" required>
+        </div>
+        <div class = "three wide field">
+            <label for="newBandwidthUnit">Unit</label>
+            <select name="newBandwidthUnit" id="newBandwidthUnit" class="ui dropdown" ng-model="bandwidthPolicyCreateCtrl.bandwidthUnit" required>
+                <option value="">-- Please select unit --</option>
+                <option value="kbps">kbps</option>
+                <option value="mbps">mbps</option>
+                <option value="gbps">gbps</option>
+            </select>
+        </div>
     </div>
 
     <div class="field">

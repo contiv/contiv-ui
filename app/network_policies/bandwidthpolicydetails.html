@@ -45,8 +45,9 @@
     <div class="ui active inverted dimmer" ng-show="bandwidthPolicyDetailsCtrl.showLoader">
         <div class="ui loader"></div>
     </div>
-    <h4 class="ui header">Basic Settings</h4>
+
     <div ng-switch-when="details">
+        <h4 class="ui header">Basic Settings</h4>
         <table class="ui very basic selectable table">
             <tbody>
             <tr>
@@ -78,8 +79,14 @@
                 <div ng-show="bandwidthPolicyDetailsCtrl.form.$submitted">
                     <div ng-hide="bandwidthPolicyDetailsCtrl.form.$valid" class="ui negative message">
                         <ul class="list">
-                            <li ng-show="bandwidthPolicyDetailsCtrl.form.newPolicyName.$error.required">
-                                Please enter policy name
+                            <li ng-show="bandwidthPolicyDetailsCtrl.form.newBandwidthNumber.$error.required">
+                                Please enter bandwidth
+                            </li>
+                            <li ng-show="bandwidthPolicyDetailsCtrl.form.newBandwidthUnit.$error.required">
+                                Please select bandwidth Unit
+                            </li>
+                            <li ng-show="bandwidthPolicyDetailsCtrl.form.newDSCP.$error.required">
+                                Please enter DSCP
                             </li>
                         </ul>
                     </div>
@@ -95,10 +102,29 @@
                 </tbody>
             </table>
 
-            <div class="field">
+            <div class >
+           <!-- <div class="field">
                 <label for="newbandwidth">Bandwidth</label>
                 <input type="text" id="newbandwidth" name="newbandwidth"
                            ng-model="bandwidthPolicyDetailsCtrl.policy.bandwidth" placeholder="Enter bandwidth" required/>
+            </div>-->
+
+
+            <div class="fields">
+                <div class = "thirteen wide field">
+                    <label for="newBandwidthNumber">Bandwidth </label>
+                    <input type="text" id="newBandwidthNumber" name="newBandwidthNumber"
+                           ng-model="bandwidthPolicyDetailsCtrl.bandwidthNumber" placeholder="Enter bandwidth" required>
+                </div>
+                <div class = "three wide field">
+                    <label for="newBandwidthUnit">Unit</label>
+                    <select name="newBandwidthUnit" id="newBandwidthUnit" class="ui dropdown" ng-model="bandwidthPolicyDetailsCtrl.bandwidthUnit" required>
+                        <option value="">-- Please select unit --</option>
+                        <option value="kbps">kbps</option>
+                        <option value="mbps">mbps</option>
+                        <option value="gbps">gbps</option>
+                    </select>
+                </div>
             </div>
 
             <div class="field">
