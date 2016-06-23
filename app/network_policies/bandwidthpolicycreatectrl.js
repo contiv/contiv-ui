@@ -36,7 +36,6 @@ angular.module('contiv.networkpolicies')
                         BandwidthModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
 
                     bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.bandwidthNumber + " "+ bandwidthPolicyCreateCtrl.bandwidthUnit;
-                    //console.log(bandwidthPolicyCreateCtrl.newPolicy.bandwidth);
                     
                     BandwidthModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);

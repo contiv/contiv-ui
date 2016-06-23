@@ -104,7 +104,6 @@ angular.module('contiv.networkpolicies')
             CRUDHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
 
             setMode();
-            //getBandwidthProfiles();
 
             bandwidthPolicyDetailsCtrl.deletePolicy = deletePolicy;
             bandwidthPolicyDetailsCtrl.savePolicy = savePolicy;

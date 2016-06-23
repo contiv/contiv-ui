@@ -125,17 +125,9 @@ angular.module('contiv.applicationgroups')
                     applicationGroupCreateCtrl.bandwidthProfiles = _.filter(result, {
                         'tenantName': 'default'//TODO: Remove hardcoded tenant.
                     });
-                    //applicationGroupCreateCtrl.bandwidthProfiles.push("None");
                 });
             }
-
-            /**
-             * Add policy to new application group
-             */
-            function addBandwidthProfile() {
-                ApplicationGroupService.addBandwidthProfile(applicationGroupCreateCtrl);
-            }
-            
+             
             function resetForm() {
                 CRUDHelperService.stopLoader(applicationGroupCreateCtrl);
                 CRUDHelperService.hideServerError(applicationGroupCreateCtrl);
@@ -156,7 +148,6 @@ angular.module('contiv.applicationgroups')
             applicationGroupCreateCtrl.cancelCreating = cancelCreating;
             applicationGroupCreateCtrl.addIsolationPolicy = addIsolationPolicy;
             applicationGroupCreateCtrl.removeIsolationPolicy = removeIsolationPolicy;
-            applicationGroupCreateCtrl.addBandwidthProfile = addBandwidthProfile;
 
 
             resetForm();

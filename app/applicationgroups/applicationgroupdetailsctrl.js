@@ -1,4 +1,4 @@
-/**
+ /**
  * Created by vjain3 on 3/15/16.
  */
 angular.module('contiv.applicationgroups')
