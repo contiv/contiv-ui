@@ -193,6 +193,77 @@ describe('contiv.networkpolicies module', function () {
             }
         }
     ];
+
+    var netprofileData = [
+        {
+            "DSCP": 10,
+            "bandwidth": "10 gbps",
+            "key": "default:pr1",
+            "link-sets": {
+                "EndpointGroups": {
+                    "default:g1": {
+                        "key": "default:g1",
+                        "type": "endpointGroup"
+                    }
+                }
+            },
+            "links": {
+                "Tenant": {
+                    "key": "default",
+                    "type": "tenant"
+                }
+            },
+            "profileName": "pr1",
+            "tenantName": "default"
+        },
+        {
+            "DSCP": 34,
+            "bandwidth": "34 gbps",
+            "key": "default:pr2",
+            "link-sets": {
+                "EndpointGroups": {
+                    "default:g2": {
+                        "key": "default:g2",
+                        "type": "endpointGroup"
+                    },
+                    "default:g3": {
+                        "key": "default:g3",
+                        "type": "endpointGroup"
+                    }
+                }
+            },
+            "links": {
+                "Tenant": {
+                    "key": "default",
+                    "type": "tenant"
+                }
+            },
+            "profileName": "pr2",
+            "tenantName": "default"
+        },
+        {
+            "DSCP": 3,
+            "bandwidth": "20 mbps",
+            "key": "default:p3",
+            "link-sets": {
+                "EndpointGroups": {
+                    "default:g4": {
+                        "key": "default:g4",
+                        "type": "endpointGroup"
+                    }
+                }
+            },
+            "links": {
+                "Tenant": {
+                    "key": "default",
+                    "type": "tenant"
+                }
+            },
+            "profileName": "p3",
+            "tenantName": "default"
+        }
+    ];
+
     var $httpBackend;
 
 
@@ -202,11 +273,45 @@ describe('contiv.networkpolicies module', function () {
         $httpBackend.when('GET', ContivGlobals.NETWORKS_ENDPOINT).respond(networksData);
         $httpBackend.when('GET', ContivGlobals.APPLICATIONGROUPS_ENDPOINT).respond(groupsData);
         $httpBackend.when('GET', ContivGlobals.RULES_ENDPOINT).respond(rulesData);
+        $httpBackend.when('GET', ContivGlobals.BANDWIDTH_ENDPOINT).respond(netprofileData);
     }));
 
     afterEach(function () {
         $httpBackend.verifyNoOutstandingExpectation();
         $httpBackend.verifyNoOutstandingRequest();
+    });
+
+    describe('bandwidthpolicylistctrl', function () {
+
+        var $controller, $interval, $rootScope;
+        var policyListCtrl;
+        beforeEach(inject(function (_$interval_, _$rootScope_, _$controller_) {
+            $interval = _$interval_;
+            $rootScope = _$rootScope_;
+            $controller = _$controller_;
+            policyListCtrl = $controller('BandwidthPolicyListCtrl', { $interval: $interval, $scope: $rootScope });
+        }));
+        it('should be defined', function () {
+            //spec body
+            expect(policyListCtrl).toBeDefined();
+            $httpBackend.flush();
+        });
+        it('BandwidthPolicyListCtrl should do a GET on /api/v1/netprofiles/ REST API', function () {
+            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.flush();
+        });
+        it('BandwidthPolicyListCtrl should have policy array assigned to policies property', function () {
+            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.flush();
+            expect(Array.isArray(policyListCtrl.policies)).toBeTruthy();
+            expect(policyListCtrl.policies.length).toEqual(3);
+        });
+        it('BandwidthPolicyListCtrl should have showLoader property set to false after fetch', function () {
+            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.flush();
+            expect(policyListCtrl.showLoader).toBeFalsy();
+        });
+
     });
 
     describe('isolationpolicylistctrl', function () {
@@ -242,6 +347,33 @@ describe('contiv.networkpolicies module', function () {
 
     });
 
+    describe('bandwidthpolicydetailsctrl', function () {
+
+        var $controller, $state, $stateParams;
+        var bandwidthPolicyDetailsCtrl;
+        beforeEach(inject(function (_$state_ ,_$stateParams_, _$controller_) {
+            $state = _$state_;
+            $state.go = function (stateName) {};
+            $stateParams = _$stateParams_;
+            $stateParams.key = netprofileData[0].key;
+            $controller = _$controller_;
+            bandwidthPolicyDetailsCtrl = $controller('BandwidthPolicyDetailsCtrl',
+                { $state: $state, $stateParams: $stateParams });
+        }));
+
+        it('should be defined', function () {
+            expect(bandwidthPolicyDetailsCtrl).toBeDefined();
+            $httpBackend.flush();
+        });
+
+        it('BandwidthPolicyDetailsCtrl should have showLoader property set to false after fetch', function () {
+            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.flush();
+            expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();
+        });
+    });
+
+
     describe('isolationpolicydetailsctrl', function () {
 
         var $controller, $state, $stateParams;
@@ -267,6 +399,22 @@ describe('contiv.networkpolicies module', function () {
             expect(isolationPolicyDetailsCtrl.showLoader).toBeFalsy();
         });
     });
+
+
+    describe('bandwidthpolicycreatectrl', function () {
+
+        var $controller,$rootScope;
+        beforeEach(inject(function (_$controller_) {
+            $controller = _$controller_;
+        }));
+
+        it('should be defined', function () {
+            var bandwidthPolicyCreateCtrl = $controller('BandwidthPolicyCreateCtrl');
+            expect(bandwidthPolicyCreateCtrl).toBeDefined();
+        });
+
+    });
+
 
     describe('isolationpolicycreatectrl', function () {
 

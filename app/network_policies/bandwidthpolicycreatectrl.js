@@ -16,6 +16,7 @@ angular.module('contiv.networkpolicies')
     .controller('BandwidthPolicyCreateCtrl', ['$state', 'BandwidthModel', 'CRUDHelperService',
         function ($state, BandwidthModel, CRUDHelperService) {
             var bandwidthPolicyCreateCtrl = this;
+            
 
             function returnToPolicies() {
                 $state.go('contiv.menu.networkpolicies.bandwidth.list');
@@ -29,12 +30,19 @@ angular.module('contiv.networkpolicies')
                 if (bandwidthPolicyCreateCtrl.form.$valid) {
                     CRUDHelperService.hideServerError(bandwidthPolicyCreateCtrl);
                     CRUDHelperService.startLoader(bandwidthPolicyCreateCtrl);
+                    
+                    
                     bandwidthPolicyCreateCtrl.newPolicy.key =
                         BandwidthModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
+
+                    bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.bandwidthNumber + " "+ bandwidthPolicyCreateCtrl.bandwidthUnit;
+                    //console.log(bandwidthPolicyCreateCtrl.newPolicy.bandwidth);
+                    
                     BandwidthModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);
                         returnToPolicies();
                     }, function errorCallback(result) {
+                        console.log("Coming here:"+result);
                         CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);
                         CRUDHelperService.showServerError(bandwidthPolicyCreateCtrl, result);
                     });

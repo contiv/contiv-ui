@@ -99,11 +99,7 @@ angular.module('contiv.applicationgroups')
                     CRUDHelperService.startLoader(applicationGroupCreateCtrl);
                     applicationGroupCreateCtrl.applicationGroup.networkName =
                         applicationGroupCreateCtrl.selectedNetwork.networkName;
-
-                    if(applicationGroupCreateCtrl.selectedProfile.profileName == "none")
-                    {
-                        applicationGroupCreateCtrl.selectedProfile.profileName = "";
-                    }
+                    
                     applicationGroupCreateCtrl.applicationGroup.netProfile =
                         applicationGroupCreateCtrl.selectedProfile.profileName;
                     
