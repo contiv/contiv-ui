@@ -1,14 +1,2 @@
 /node_modules
 /npm-debug.log
-
-/test/assets/package-*/
-/test/assets/temp-*/
-/test/reports
-/test/tmp/
-
-/bower.json
-/component.json
-/app/bower_components
-/test/sample
-!/test/sample/bower.json
-/npm-shrinkwrap.json
