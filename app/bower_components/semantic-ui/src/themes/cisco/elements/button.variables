@@ -1,7 +1,0 @@
-/*******************************
-    User Variable Overrides
-*******************************/
-@borderRadius: 20px;
-
-@negativeColor: #FFFFFF;
-@positiveColor: @blue;
