@@ -1,0 +1,60 @@
+<form class="ui form" name="nodeCommissionCtrl.form" role="form"
+      ng-submit="nodeCommissionCtrl.updateClusterSettings()" novalidate>
+    <div class="ui active inverted dimmer" ng-show="nodeCommissionCtrl.showLoader">
+        <div class="ui loader"></div>
+    </div>
+    <div class="field">
+        <div ng-show="nodeCommissionCtrl.form.$submitted">
+            <div ng-hide="nodeCommissionCtrl.form.$valid" class="ui negative message">
+                <ul class="list">
+                    <li ng-show="nodeCommissionCtrl.form.controlInterface.$error.required">
+                        Please enter control interface
+                    </li>
+
+                    <!--Node commissioning related validation -->
+                    <li ng-show="nodeCommissionCtrl.form.serviceVIP.$error.required">
+                        Please enter virtual IP address for cluster services
+                    </li>
+                    <li ng-show="nodeCommissionCtrl.form.dataInterface.$error.required">
+                        Please enter data interface
+                    </li>
+                    <li ng-show="nodeCommissionCtrl.form.ucpBootstrapNodeName.$error.required">
+                        Please enter node name
+                    </li>
+                    <ctv-acivalid></ctv-acivalid>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ctv-controlinterface></ctv-controlinterface>
+    <p></p>
+    <ctv-datainterface></ctv-datainterface>
+    <p></p>
+    <div class="field">
+        <label for="serviceVIP">Virtual IP address for cluster services</label>
+        <input type="text" id="serviceVIP" name="serviceVIP"
+               ng-model="nodeCommissionCtrl.extra_vars['service_vip']"
+               placeholder="Enter virtual IP address" required>
+    </div>
+    <ctv-scheduler></ctv-scheduler>
+    <div class="ui section divider"></div>
+    <ctv-networkmode></ctv-networkmode>
+    <div class="ui section divider"></div>
+    <ctv-ansibleenvironment></ctv-ansibleenvironment>
+
+    <div class="ui sixteen column grid">
+        <div class="right floated five wide column">
+            <div style="margin-top: 40px">
+                <button type="button" class="ui basic button"
+                        ng-click="nodeCommissionCtrl.returnToMenu()">
+                    Cancel
+                </button>
+                <button type="submit" class="ui blue button">
+                    Update Global Cluster Settings
+                </button>
+            </div>
+        </div>
+    </div>
+    <ctv-error ng-show="nodeCommissionCtrl.showServerError" header="Error updating settings" error="nodeCommissionCtrl.serverErrorMessage">
+    </ctv-error>
+</form>

@@ -1,55 +1,54 @@
-/**
- * Created by vjain3 on 3/25/16.
- */
 angular.module('contiv.nodes')
     .config(['$stateProvider', function ($stateProvider) {
         $stateProvider
-            .state('contiv.menu.nodes.commission', {
-                url: '/commission/:key',
-                controller: 'NodeCommissionCtrl as nodeCommissionCtrl',
-                templateUrl: 'nodes/nodecommission.html'
+            .state('contiv.menu.nodes.discover', {
+                url: '/discover',
+                controller: 'NodeDiscoverCtrl as nodeCommissionCtrl',
+                templateUrl: 'nodes/nodediscover.html'
             })
         ;
     }])
-    .controller('NodeCommissionCtrl', [
+    .controller('NodeDiscoverCtrl', [
         '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 'ExtravarsService',
         function ($state, $stateParams, NodesModel, CRUDHelperService, ExtravarsService) {
             var nodeCommissionCtrl = this;
 
-            function returnToNodeDetails() {
-                $state.go('contiv.menu.nodes.details.info', {'key': $stateParams.key});
+            function returnToNodes() {
+                $state.go('contiv.menu.nodes.list');
             }
 
-            function cancelCommissioningNode() {
-                returnToNodeDetails();
+            function cancelDiscoveringNode() {
+                returnToNodes();
             }
 
-            function commission() {
+            function discover() {
                 if (nodeCommissionCtrl.form.$valid) {
                     CRUDHelperService.hideServerError(nodeCommissionCtrl);
                     CRUDHelperService.startLoader(nodeCommissionCtrl);
-                    nodeCommissionCtrl.nodeOpsObj.nodes = [$stateParams.key];
-                    ExtravarsService.cleanupExtraVars(nodeCommissionCtrl);
+                    createIPAddrArray();
                     ExtravarsService.createExtraVars(nodeCommissionCtrl);
-                    NodesModel.commission(nodeCommissionCtrl.nodeOpsObj).then(function successCallback(result) {
+                    NodesModel.discover(nodeCommissionCtrl.nodeOpsObj).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(nodeCommissionCtrl);
-                        returnToNodeDetails();
+                        returnToNodes();
                     }, function errorCallback(result) {
                         CRUDHelperService.stopLoader(nodeCommissionCtrl);
-                        CRUDHelperService.showServerError(nodeCommissionCtrl, result);
+                        CRUDHelperService.showServerError(nodeDiscoverCtrl, result);
                     });
                 }
+            }
+
+            function createIPAddrArray() {
+                nodeCommissionCtrl.nodeOpsObj.addrs = _.words(nodeCommissionCtrl.nodeIPAddr, /[^, ]+/g);
             }
 
             nodeCommissionCtrl.nodeOpsObj = {};
             nodeCommissionCtrl.extra_vars = {}; //TODO Intialize from global settings
             nodeCommissionCtrl.ansibleVariables = [];
             nodeCommissionCtrl.envVariables = [];
+            nodeCommissionCtrl.nodeIPAddr = ''; //IP address of nodes to discover
 
-            ExtravarsService.setSettings(nodeCommissionCtrl);
-
-            nodeCommissionCtrl.cancelCommissioningNode = cancelCommissioningNode;
-            nodeCommissionCtrl.commission = commission;
+            nodeCommissionCtrl.discover = discover;
+            nodeCommissionCtrl.cancelDiscoveringNode = cancelDiscoveringNode;
 
             CRUDHelperService.stopLoader(nodeCommissionCtrl);
             CRUDHelperService.hideServerError(nodeCommissionCtrl);

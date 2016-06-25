@@ -1,0 +1,54 @@
+<form class="ui form" name="nodeCommissionCtrl.form" role="form"
+          ng-submit="nodeCommissionCtrl.discover()" novalidate>
+    <div class="ui active inverted dimmer" ng-show="nodeCommissionCtrl.showLoader">
+        <div class="ui loader"></div>
+    </div>
+    <div class="field">
+            <div ng-show="nodeCommissionCtrl.form.$submitted">
+                <div ng-hide="nodeCommissionCtrl.form.$valid" class="ui negative message">
+                    <ul class="list">
+                        <li ng-show="nodeCommissionCtrl.form.controlInterface.$error.required">
+                            Please enter control interface
+                        </li>
+
+                        <!--Node discovery related validation -->
+                        <li ng-show="nodeCommissionCtrl.form.ipAddr.$error.required">
+                            Please enter IP address for node
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <ctv-controlinterface> </ctv-controlinterface>
+    <p></p>
+    <div class="field">
+        <label for="clusterName">Cluster name</label>
+        <input type="text" id="clusterName" name="clusterName"
+               ng-model="nodeCommissionCtrl.extra_vars['cluster_name']"
+               placeholder="Enter cluster name">
+    </div>
+    <div class="field">
+        <label for="ipAddr">IP Addresses</label>
+        <input type="text" id="ipAddr" name="ipAddr"
+               ng-model="nodeCommissionCtrl.nodeIPAddr"
+               placeholder="Enter IP addresses of nodes, comma separated" required>
+    </div>
+    <div class="ui section divider"></div>
+    <ctv-ansibleenvironment></ctv-ansibleenvironment>
+
+    <div class="ui sixteen column grid">
+        <div class="right floated four wide column">
+            <div style="margin-top: 40px">
+                <button type="button" class="ui basic button"
+                        ng-click="nodeCommissionCtrl.cancelDiscoveringNode()">
+                    Cancel
+                </button>
+                <button type="submit" class="ui blue button">
+                    Discover
+                </button>
+            </div>
+        </div>
+    </div>
+    <ctv-error ng-show="nodeCommissionCtrl.showServerError" header="Error discovering nodes" error="nodeCommissionCtrl.serverErrorMessage">
+    </ctv-error>
+</form>
