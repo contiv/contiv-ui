@@ -31,7 +31,9 @@ module.exports = function (config) {
             'app/nodes/module.js',
             'app/nodes/**/*.js',
             'app/organizations/module.js',
-            'app/organizations/**/*.js'
+            'app/organizations/**/*.js',
+            'app/global_settings/module.js',
+            'app/global_settings/**/*.js'
         ],
 
         autoWatch: true,

@@ -3,38 +3,44 @@
     <div class="ui active inverted dimmer" ng-show="nodeCommissionCtrl.showLoader">
         <div class="ui loader"></div>
     </div>
+    <div class="field">
+        <div ng-show="nodeCommissionCtrl.form.$submitted">
+            <div ng-hide="nodeCommissionCtrl.form.$valid" class="ui negative message">
+                <ul class="list">
+                    <li ng-show="nodeCommissionCtrl.form.controlInterface.$error.required">
+                        Please enter control interface
+                    </li>
 
-    <ctv-scheduler> </ctv-scheduler>
+                    <!--Node commissioning related validation -->
+                    <li ng-show="nodeCommissionCtrl.form.serviceVIP.$error.required">
+                        Please enter virtual IP address for cluster services
+                    </li>
+                    <li ng-show="nodeCommissionCtrl.form.dataInterface.$error.required">
+                        Please enter data interface
+                    </li>
+                    <li ng-show="nodeCommissionCtrl.form.ucpBootstrapNodeName.$error.required">
+                        Please enter node name
+                    </li>
+                    <ctv-acivalid></ctv-acivalid>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ctv-controlinterface></ctv-controlinterface>
+    <p></p>
+    <ctv-datainterface></ctv-datainterface>
+    <p></p>
+    <div class="field">
+        <label for="serviceVIP">Virtual IP address for cluster services</label>
+        <input type="text" id="serviceVIP" name="serviceVIP"
+               ng-model="nodeCommissionCtrl.extra_vars['service_vip']"
+               placeholder="Enter virtual IP address" required>
+    </div>
+    <ctv-scheduler></ctv-scheduler>
     <div class="ui section divider"></div>
     <ctv-networkmode></ctv-networkmode>
     <div class="ui section divider"></div>
-
-    <div class="field">
-        <div ng-click="nodeCommissionCtrl.ansibleVariablesVisible = !nodeCommissionCtrl.ansibleVariablesVisible">
-            <h4 class="ui header">
-                <i ng-if="nodeCommissionCtrl.ansibleVariablesVisible" class="grey minus circle outline icon"></i>
-                <i ng-if="!nodeCommissionCtrl.ansibleVariablesVisible" class="grey plus circle outline icon"></i>
-                Ansible Variables
-            </h4>
-        </div>
-        <div ng-show="nodeCommissionCtrl.ansibleVariablesVisible">
-            <ctv-namevalue items="nodeCommissionCtrl.ansibleVariables"></ctv-namevalue>
-        </div>
-    </div>
-
-    <div class="ui section divider"></div>
-    <div class="field">
-        <div ng-click="nodeCommissionCtrl.envVariablesVisible = !nodeCommissionCtrl.envVariablesVisible">
-            <h4 class="ui header">
-                <i ng-if="nodeCommissionCtrl.envVariablesVisible" class="grey minus circle outline icon"></i>
-                <i ng-if="!nodeCommissionCtrl.envVariablesVisible" class="grey plus circle outline icon"></i>
-                Environment
-            </h4>
-        </div>
-        <div ng-show="nodeCommissionCtrl.envVariablesVisible">
-            <ctv-namevalue items="nodeCommissionCtrl.envVariables"></ctv-namevalue>
-        </div>
-    </div>
+    <ctv-ansibleenvironment></ctv-ansibleenvironment>
 
     <div class="ui sixteen column grid">
         <div class="right floated five wide column">
