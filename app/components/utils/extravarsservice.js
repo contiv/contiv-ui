@@ -22,10 +22,11 @@ angular.module('contiv.utils')
                     var sched_provider = ctrl.setting.extra_vars['scheduler_provider'];
                     var network_mode = ctrl.setting.extra_vars['contiv_network_mode'];
                     var env_vars = ctrl.setting.extra_vars['env'];
-                    var setting_filter = [ "apic_contracts_unrestricted_mode", "apic_epg_bridge_domain", 
-                        "apic_leaf_nodes", "apic_password", "apic_phys_domain", "apic_url", "apic_username", 
-                        "contiv_network_mode", "control_interface", "env", "fwd_mode", "netplugin_if", 
-                        "scheduler_provider", "service_vip", "standalone", "ucp_bootstrap_node_name"];
+                    var setting_filter = [ "apic_contracts_unrestricted_mode",
+                        "apic_epg_bridge_domain", "apic_leaf_nodes", "apic_password",
+                        "apic_phys_domain", "apic_url", "apic_username", "contiv_network_mode",
+                        "control_interface", "env", "fwd_mode", "netplugin_if", "scheduler_provider",
+                        "service_vip", "standalone", "ucp_bootstrap_node_name"];
 
                     if (ctrl_interface) {
                         ctrl.extra_vars['control_interface'] = ctrl_interface; 
@@ -44,8 +45,7 @@ angular.module('contiv.utils')
                     if (network_mode) {
                         ctrl.extra_vars['contiv_network_mode'] = network_mode;
                         if (network_mode == "standalone") {
-                            ctrl.extra_vars['fwd_mode'] = 
-                                ctrl.setting.extra_vars['fwd_mode'];
+                            ctrl.extra_vars['fwd_mode'] = ctrl.setting.extra_vars['fwd_mode'];
                         }
                         else if (network_mode == "aci") {
                             ctrl.extra_vars['apic_contracts_unrestricted_mode'] = 
