@@ -9,8 +9,8 @@ angular.module('contiv.nodes')
         ;
     }])
     .controller('NodeDiscoverCtrl', [
-        '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 
-        function ($state, $stateParams, NodesModel, CRUDHelperService) {
+        '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 'ExtravarsService',
+        function ($state, $stateParams, NodesModel, CRUDHelperService, ExtravarsService) {
             var nodeCommissionCtrl = this;
 
             function returnToNodes() {
@@ -21,32 +21,18 @@ angular.module('contiv.nodes')
                 returnToNodes();
             }
 
-            function createExtraVars() {
-                //Add ansible variables to extra_vars
-                nodeCommissionCtrl.ansibleVariables.forEach(function (item) {
-                    nodeCommissionCtrl.extra_vars[item.name] = item.value
-                });
-                //Add environment variables to extra_vars
-                var envVars = {};
-                nodeCommissionCtrl.envVariables.forEach(function (item) {
-                    envVars[item.name] = item.value;
-                });
-                nodeCommissionCtrl.extra_vars['env'] = envVars;
-                nodeCommissionCtrl.nodeOpsObj.extra_vars = JSON.stringify(nodeCommissionCtrl.extra_vars);
-            }
-
             function discover() {
                 if (nodeCommissionCtrl.form.$valid) {
                     CRUDHelperService.hideServerError(nodeCommissionCtrl);
                     CRUDHelperService.startLoader(nodeCommissionCtrl);
                     createIPAddrArray();
-                    createExtraVars();
+                    ExtravarsService.createExtraVars(nodeCommissionCtrl);
                     NodesModel.discover(nodeCommissionCtrl.nodeOpsObj).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(nodeCommissionCtrl);
                         returnToNodes();
                     }, function errorCallback(result) {
                         CRUDHelperService.stopLoader(nodeCommissionCtrl);
-                        CRUDHelperService.showServerError(nodeCommissionCtrl, result);
+                        CRUDHelperService.showServerError(nodeDiscoverCtrl, result);
                     });
                 }
             }

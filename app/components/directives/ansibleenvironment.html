@@ -1,0 +1,26 @@
+<div class="field">
+    <div ng-click="nodeCommissionCtrl.ansibleVariablesVisible = !nodeCommissionCtrl.ansibleVariablesVisible">
+        <h4 class="ui header">
+            <i ng-if="nodeCommissionCtrl.ansibleVariablesVisible" class="grey minus circle outline icon"></i>
+            <i ng-if="!nodeCommissionCtrl.ansibleVariablesVisible" class="grey plus circle outline icon"></i>
+            Ansible Variables
+        </h4>
+    </div>
+    <div ng-show="nodeCommissionCtrl.ansibleVariablesVisible">
+        <ctv-namevalue items="nodeCommissionCtrl.ansibleVariables"></ctv-namevalue>
+    </div>
+</div>
+
+<div class="ui section divider"></div>
+<div class="field">
+    <div ng-click="nodeCommissionCtrl.envVariablesVisible = !nodeCommissionCtrl.envVariablesVisible">
+        <h4 class="ui header">
+            <i ng-if="nodeCommissionCtrl.envVariablesVisible" class="grey minus circle outline icon"></i>
+            <i ng-if="!nodeCommissionCtrl.envVariablesVisible" class="grey plus circle outline icon"></i>
+            Environment
+        </h4>
+    </div>
+    <div ng-show="nodeCommissionCtrl.envVariablesVisible">
+        <ctv-namevalue items="nodeCommissionCtrl.envVariables"></ctv-namevalue>
+    </div>
+</div>
