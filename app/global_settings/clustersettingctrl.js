@@ -1,39 +1,32 @@
-/**
- * Created by vjain3 on 3/25/16.
- */
-angular.module('contiv.nodes')
+angular.module('contiv.globalsettings')
     .config(['$stateProvider', function ($stateProvider) {
         $stateProvider
-            .state('contiv.menu.nodes.commission', {
-                url: '/commission/:key',
-                controller: 'NodeCommissionCtrl as nodeCommissionCtrl',
-                templateUrl: 'nodes/nodecommission.html'
+            .state('contiv.menu.globalsettings.settings.cluster', {
+                url: '/cluster',
+                controller: 'ClusterSettingCtrl as nodeCommissionCtrl',
+                templateUrl: 'global_settings/setting_cluster.html'
             })
         ;
     }])
-    .controller('NodeCommissionCtrl', [
-        '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 'ExtravarsService',
-        function ($state, $stateParams, NodesModel, CRUDHelperService, ExtravarsService) {
+    .controller('ClusterSettingCtrl', [
+        '$state', '$stateParams', 'GlobalsettingsModel', 'CRUDHelperService', 'ExtravarsService',
+        function ($state, $stateParams, GlobalsettingsModel, CRUDHelperService, ExtravarsService) {
             var nodeCommissionCtrl = this;
 
-            function returnToNodeDetails() {
-                $state.go('contiv.menu.nodes.details.info', {'key': $stateParams.key});
+            function returnToMenu() {
+                $state.go('contiv.menu.globalsettings.settings');
             }
 
-            function cancelCommissioningNode() {
-                returnToNodeDetails();
-            }
-
-            function commission() {
+            function updateClusterSettings() {
                 if (nodeCommissionCtrl.form.$valid) {
                     CRUDHelperService.hideServerError(nodeCommissionCtrl);
                     CRUDHelperService.startLoader(nodeCommissionCtrl);
                     nodeCommissionCtrl.nodeOpsObj.nodes = [$stateParams.key];
                     ExtravarsService.cleanupExtraVars(nodeCommissionCtrl);
                     ExtravarsService.createExtraVars(nodeCommissionCtrl);
-                    NodesModel.commission(nodeCommissionCtrl.nodeOpsObj).then(function successCallback(result) {
+                    GlobalsettingsModel.update(nodeCommissionCtrl.nodeOpsObj).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(nodeCommissionCtrl);
-                        returnToNodeDetails();
+                        returnToMenu();
                     }, function errorCallback(result) {
                         CRUDHelperService.stopLoader(nodeCommissionCtrl);
                         CRUDHelperService.showServerError(nodeCommissionCtrl, result);
@@ -48,8 +41,8 @@ angular.module('contiv.nodes')
 
             ExtravarsService.setSettings(nodeCommissionCtrl);
 
-            nodeCommissionCtrl.cancelCommissioningNode = cancelCommissioningNode;
-            nodeCommissionCtrl.commission = commission;
+            nodeCommissionCtrl.updateClusterSettings = updateClusterSettings;
+            nodeCommissionCtrl.returnToMenu = returnToMenu;
 
             CRUDHelperService.stopLoader(nodeCommissionCtrl);
             CRUDHelperService.hideServerError(nodeCommissionCtrl);
