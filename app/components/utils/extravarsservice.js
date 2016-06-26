@@ -71,10 +71,8 @@ angular.module('contiv.utils')
                         }
                     }
 
-                    if (Object.keys(env_vars).length > 0) {
-                        for (i in env_vars) {
-                            ctrl.envVariables.push({"name": i, "value": env_vars[i]});
-                        }
+                    for (i in env_vars) {
+                        ctrl.envVariables.push({"name": i, "value": env_vars[i]});
                     }
 
                 }, function errorCallback(result) {
