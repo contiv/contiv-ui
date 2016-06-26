@@ -4,9 +4,9 @@ angular.module("contiv.directives")
             restrict: 'EA',
             templateUrl: 'components/directives/logs.html',
             scope: {
-				log: "=",
-				title: "@",
-				modalid: "@"
+                log: "=",
+                title: "@",
+                modalid: "@"
             }
         };
     });

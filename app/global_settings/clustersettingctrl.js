@@ -3,7 +3,7 @@ angular.module('contiv.globalsettings')
         $stateProvider
             .state('contiv.menu.globalsettings.settings.cluster', {
                 url: '/cluster',
-                controller: 'ClusterSettingCtrl as nodeCommissionCtrl',
+                controller: 'ClusterSettingCtrl as clusterSettingCtrl',
                 templateUrl: 'global_settings/setting_cluster.html'
             })
         ;
@@ -11,39 +11,39 @@ angular.module('contiv.globalsettings')
     .controller('ClusterSettingCtrl', [
         '$state', '$stateParams', 'GlobalsettingsModel', 'CRUDHelperService', 'ExtravarsService',
         function ($state, $stateParams, GlobalsettingsModel, CRUDHelperService, ExtravarsService) {
-            var nodeCommissionCtrl = this;
+            var clusterSettingCtrl = this;
 
             function returnToMenu() {
                 $state.go('contiv.menu.globalsettings.settings');
             }
 
             function updateClusterSettings() {
-                if (nodeCommissionCtrl.form.$valid) {
-                    CRUDHelperService.hideServerError(nodeCommissionCtrl);
-                    CRUDHelperService.startLoader(nodeCommissionCtrl);
-                    nodeCommissionCtrl.nodeOpsObj.nodes = [$stateParams.key];
-                    ExtravarsService.cleanupExtraVars(nodeCommissionCtrl);
-                    ExtravarsService.createExtraVars(nodeCommissionCtrl);
-                    GlobalsettingsModel.update(nodeCommissionCtrl.nodeOpsObj).then(function successCallback(result) {
-                        CRUDHelperService.stopLoader(nodeCommissionCtrl);
+                if (clusterSettingCtrl.form.$valid) {
+                    CRUDHelperService.hideServerError(clusterSettingCtrl);
+                    CRUDHelperService.startLoader(clusterSettingCtrl);
+                    clusterSettingCtrl.nodeOpsObj.nodes = [$stateParams.key];
+                    ExtravarsService.cleanupExtraVars(clusterSettingCtrl);
+                    ExtravarsService.createExtraVars(clusterSettingCtrl);
+                    GlobalsettingsModel.update(clusterSettingCtrl.nodeOpsObj).then(function successCallback(result) {
+                        CRUDHelperService.stopLoader(clusterSettingCtrl);
                         returnToMenu();
                     }, function errorCallback(result) {
-                        CRUDHelperService.stopLoader(nodeCommissionCtrl);
-                        CRUDHelperService.showServerError(nodeCommissionCtrl, result);
+                        CRUDHelperService.stopLoader(clusterSettingCtrl);
+                        CRUDHelperService.showServerError(clusterSettingCtrl, result);
                     });
                 }
             }
 
-            nodeCommissionCtrl.nodeOpsObj = {};
-            nodeCommissionCtrl.extra_vars = {}; //TODO Intialize from global settings
-            nodeCommissionCtrl.ansibleVariables = [];
-            nodeCommissionCtrl.envVariables = [];
+            clusterSettingCtrl.nodeOpsObj = {};
+            clusterSettingCtrl.extra_vars = {}; //TODO Intialize from global settings
+            clusterSettingCtrl.ansibleVariables = [];
+            clusterSettingCtrl.envVariables = [];
 
-            ExtravarsService.setSettings(nodeCommissionCtrl);
+            ExtravarsService.setSettings(clusterSettingCtrl);
 
-            nodeCommissionCtrl.updateClusterSettings = updateClusterSettings;
-            nodeCommissionCtrl.returnToMenu = returnToMenu;
+            clusterSettingCtrl.updateClusterSettings = updateClusterSettings;
+            clusterSettingCtrl.returnToMenu = returnToMenu;
 
-            CRUDHelperService.stopLoader(nodeCommissionCtrl);
-            CRUDHelperService.hideServerError(nodeCommissionCtrl);
+            CRUDHelperService.stopLoader(clusterSettingCtrl);
+            CRUDHelperService.hideServerError(clusterSettingCtrl);
         }]);

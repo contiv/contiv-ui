@@ -3,7 +3,7 @@ angular.module('contiv.nodes')
         $stateProvider
             .state('contiv.menu.nodes.discover', {
                 url: '/discover',
-                controller: 'NodeDiscoverCtrl as nodeCommissionCtrl',
+                controller: 'NodeDiscoverCtrl as nodeDiscoverCtrl',
                 templateUrl: 'nodes/nodediscover.html'
             })
         ;
@@ -11,7 +11,7 @@ angular.module('contiv.nodes')
     .controller('NodeDiscoverCtrl', [
         '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 'ExtravarsService',
         function ($state, $stateParams, NodesModel, CRUDHelperService, ExtravarsService) {
-            var nodeCommissionCtrl = this;
+            var nodeDiscoverCtrl = this;
 
             function returnToNodes() {
                 $state.go('contiv.menu.nodes.list');
@@ -22,34 +22,34 @@ angular.module('contiv.nodes')
             }
 
             function discover() {
-                if (nodeCommissionCtrl.form.$valid) {
-                    CRUDHelperService.hideServerError(nodeCommissionCtrl);
-                    CRUDHelperService.startLoader(nodeCommissionCtrl);
+                if (nodeDiscoverCtrl.form.$valid) {
+                    CRUDHelperService.hideServerError(nodeDiscoverCtrl);
+                    CRUDHelperService.startLoader(nodeDiscoverCtrl);
                     createIPAddrArray();
-                    ExtravarsService.createExtraVars(nodeCommissionCtrl);
-                    NodesModel.discover(nodeCommissionCtrl.nodeOpsObj).then(function successCallback(result) {
-                        CRUDHelperService.stopLoader(nodeCommissionCtrl);
+                    ExtravarsService.createExtraVars(nodeDiscoverCtrl);
+                    NodesModel.discover(nodeDiscoverCtrl.nodeOpsObj).then(function successCallback(result) {
+                        CRUDHelperService.stopLoader(nodeDiscoverCtrl);
                         returnToNodes();
                     }, function errorCallback(result) {
-                        CRUDHelperService.stopLoader(nodeCommissionCtrl);
+                        CRUDHelperService.stopLoader(nodeDiscoverCtrl);
                         CRUDHelperService.showServerError(nodeDiscoverCtrl, result);
                     });
                 }
             }
 
             function createIPAddrArray() {
-                nodeCommissionCtrl.nodeOpsObj.addrs = _.words(nodeCommissionCtrl.nodeIPAddr, /[^, ]+/g);
+                nodeDiscoverCtrl.nodeOpsObj.addrs = _.words(nodeDiscoverCtrl.nodeIPAddr, /[^, ]+/g);
             }
 
-            nodeCommissionCtrl.nodeOpsObj = {};
-            nodeCommissionCtrl.extra_vars = {}; //TODO Intialize from global settings
-            nodeCommissionCtrl.ansibleVariables = [];
-            nodeCommissionCtrl.envVariables = [];
-            nodeCommissionCtrl.nodeIPAddr = ''; //IP address of nodes to discover
+            nodeDiscoverCtrl.nodeOpsObj = {};
+            nodeDiscoverCtrl.extra_vars = {}; //TODO Intialize from global settings
+            nodeDiscoverCtrl.ansibleVariables = [];
+            nodeDiscoverCtrl.envVariables = [];
+            nodeDiscoverCtrl.nodeIPAddr = ''; //IP address of nodes to discover
 
-            nodeCommissionCtrl.discover = discover;
-            nodeCommissionCtrl.cancelDiscoveringNode = cancelDiscoveringNode;
+            nodeDiscoverCtrl.discover = discover;
+            nodeDiscoverCtrl.cancelDiscoveringNode = cancelDiscoveringNode;
 
-            CRUDHelperService.stopLoader(nodeCommissionCtrl);
-            CRUDHelperService.hideServerError(nodeCommissionCtrl);
+            CRUDHelperService.stopLoader(nodeDiscoverCtrl);
+            CRUDHelperService.hideServerError(nodeDiscoverCtrl);
         }]);

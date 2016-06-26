@@ -16,14 +16,14 @@
                     <li ng-show="nodeCommissionCtrl.form.ucpBootstrapNodeName.$error.required">
                         Please enter node name
                     </li>
-                    <ctv-acivalid></ctv-acivalid>
+                    <ctv-acivalid ctrl="nodeCommissionCtrl"></ctv-acivalid>
                 </ul>
             </div>
         </div>
     </div>
-    <ctv-controlinterface></ctv-controlinterface>
+    <ctv-controlinterface ctrl="nodeCommissionCtrl"></ctv-controlinterface>
     <p></p>
-    <ctv-datainterface></ctv-datainterface>
+    <ctv-datainterface ctrl="nodeCommissionCtrl"></ctv-datainterface>
     <p></p>
     <div class="field">
         <label for="hostgroup">Host group</label>
@@ -36,11 +36,11 @@
         </select>
     </div>
     <p></p>
-    <ctv-scheduler></ctv-scheduler>
+    <ctv-scheduler ctrl="nodeCommissionCtrl"></ctv-scheduler>
     <div class="ui section divider"></div>
-    <ctv-networkmode></ctv-networkmode>
+    <ctv-networkmode ctrl="nodeCommissionCtrl"></ctv-networkmode>
     <div class="ui section divider"></div>
-    <ctv-ansibleenvironment></ctv-ansibleenvironment>
+    <ctv-ansibleenvironment ctrl="nodeCommissionCtrl"></ctv-ansibleenvironment>
 
     <div class="ui sixteen column grid">
         <div class="right floated five wide column">
