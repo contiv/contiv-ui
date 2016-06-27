@@ -2,10 +2,8 @@ angular.module("contiv.directives")
     .directive("ctvAcivalid", function () {
         return {
             restrict: 'E',
-            templateUrl: 'components/directives/nodedirectives/acivalid.html',
+            templateUrl: 'components/directives/nodes/acivalid.html',
             scope: {
-                ctrl: "=",
-                errorListId: "=",
                 form: "="
             }
         };

@@ -1,8 +1,8 @@
 angular.module("contiv.directives")
-    .directive("ctvControlinterface", function () {
+    .directive("ctvNetworkmode", function () {
         return {
             restrict: 'E',
-            templateUrl: 'components/directives/nodedirectives/controlinterface.html',
+            templateUrl: 'components/directives/nodes/networkmode.html',
             scope: {
                 extravars: "="
             }

@@ -6,7 +6,7 @@
     <div class="field">
         <div ng-show="nodeCommissionCtrl.form.$submitted">
             <div ng-hide="nodeCommissionCtrl.form.$valid" class="ui negative message">
-                <ul class="list"> <!-- id="ulErrorList -->
+                <ul class="list">
                     <li ng-show="nodeCommissionCtrl.form.controlInterface.$error.required">
                         Please enter control interface
                     </li>
@@ -17,7 +17,7 @@
                         Please enter node name
                     </li>
 
-                    <ctv-acivalid ctrl="nodeCommissionCtrl"></ctv-acivalid>
+                    <ctv-acivalid ctrl="nodeCommissionCtrl.form"></ctv-acivalid>
                 </ul>
             </div>
         </div>
@@ -46,8 +46,7 @@
     <div class="ui section divider"></div>
 
     <ctv-networkmode extravars="nodeCommissionCtrl.extra_vars"></ctv-networkmode>
-    <!-- <ctv-networkmode form="nodeCommissionCtrl.form" errorListId="ulErrorList" extravars="nodeCommissionCtrl.extravars"></ctv-networkmode> -->
-
+    
     <div class="ui section divider"></div>
     <ctv-collapsible title="Ansible Variables">
         <ctv-namevalue items="nodeCommissionCtrl.ansibleVariables"></ctv-namevalue>
