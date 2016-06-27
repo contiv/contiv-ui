@@ -1,8 +1,8 @@
 #Contributing to Contiv-ui
 
-#Developers
 
-Table of contents
+
+##Developers - Table of contents
 =================
 
   * [Setup](#setting-up-contiv-ui-on-mac-and-windows)
