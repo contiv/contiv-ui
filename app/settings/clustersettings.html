@@ -28,7 +28,12 @@
     </div>
     <ctv-controlinterface ctrl="clusterSettingCtrl"></ctv-controlinterface>
     <p></p>
-    <ctv-datainterface ctrl="clusterSettingCtrl"></ctv-datainterface>
+    <div class="field">
+        <label for="dataInterface">Data interface</label>
+        <input type="text" id="dataInterface" name="dataInterface"
+               ng-model="clusterSettingCtrl.extra_vars['netplugin_if']"
+               placeholder="Enter data interface" required>
+    </div>
     <p></p>
     <div class="field">
         <label for="serviceVIP">Virtual IP address for cluster services</label>
@@ -36,19 +41,22 @@
                ng-model="clusterSettingCtrl.extra_vars['service_vip']"
                placeholder="Enter virtual IP address" required>
     </div>
-    <ctv-scheduler ctrl="clusterSettingCtrl"></ctv-scheduler>
+    <ctv-scheduler ctrl="clusterSettingCtrl" extravars="clusterSettingCtrl.extra_vars"></ctv-scheduler>
     <div class="ui section divider"></div>
-    <ctv-networkmode ctrl="clusterSettingCtrl"></ctv-networkmode>
+    <ctv-networkmode extravars="clusterSettingCtrl.extra_vars"></ctv-networkmode>
     <div class="ui section divider"></div>
-    <ctv-ansibleenvironment ctrl="clusterSettingCtrl"></ctv-ansibleenvironment>
+
+    <ctv-collapsible title="Ansible Variables">
+        <ctv-namevalue items="clusterSettingCtrl.ansibleVariables"></ctv-namevalue>
+    </ctv-collapsible>
+    <div class="ui section divider"></div>
+    <ctv-collapsible title="Environment Variables">
+        <ctv-namevalue items="clusterSettingCtrl.envVariables"></ctv-namevalue>
+    </ctv-collapsible>
 
     <div class="ui sixteen column grid">
         <div class="right floated five wide column">
             <div style="margin-top: 40px">
-                <button type="button" class="ui basic button"
-                        ng-click="clusterSettingCtrl.returnToMenu()">
-                    Cancel
-                </button>
                 <button type="submit" class="ui blue button">
                     Update Global Cluster Settings
                 </button>

@@ -1,7 +1,7 @@
 angular.module("contiv.directives")
     .directive("ctvAcivalid", function () {
         return {
-            restrict: 'EA',
+            restrict: 'E',
             templateUrl: 'components/directives/acivalid.html',
             scope: {
                 ctrl: "="

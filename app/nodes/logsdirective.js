@@ -1,8 +1,8 @@
-angular.module("contiv.directives")
+angular.module("contiv.nodes")
     .directive("ctvLogs", function () {
         return {
-            restrict: 'EA',
-            templateUrl: 'components/directives/logs.html',
+            restrict: 'E',
+            templateUrl: 'nodes/logs.html',
             scope: {
                 log: "=",
                 title: "@",

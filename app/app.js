@@ -15,7 +15,7 @@ angular.module('contivApp', [
         'contiv.volumes',
         'contiv.nodes',
         'contiv.organizations',
-        'contiv.globalsettings',
+        'contiv.settings',
     ])
     .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $stateProvider

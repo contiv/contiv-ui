@@ -1,6 +1,6 @@
 'use strict';
 
-describe('contiv.globalsettings module', function () {
+describe('contiv.settings module', function () {
     var clustersettingData = {
             "extra_vars": {
                 "contiv_network_mode":"standalone",
@@ -22,13 +22,13 @@ describe('contiv.globalsettings module', function () {
         };
 
     beforeEach(module('ui.router'));
-    beforeEach(module('contiv.globalsettings'));
+    beforeEach(module('contiv.settings'));
 
     var $httpBackend;
     beforeEach(inject(function (_$httpBackend_) {
         $httpBackend = _$httpBackend_;
-        $httpBackend.when('GET', ContivGlobals.GLOBAL_GET_ENDPOINT).respond(clustersettingData);
-        $httpBackend.when('POST', ContivGlobals.GLOBAL_SET_ENDPOINT).respond();
+        $httpBackend.when('GET', ContivGlobals.NODES_SETTINGS_GET_ENDPOINT).respond(clustersettingData);
+        $httpBackend.when('POST', ContivGlobals.NODES_SETTINGS_SET_ENDPOINT).respond();
     }));
 
     afterEach(function () {
@@ -51,18 +51,18 @@ describe('contiv.globalsettings module', function () {
             $httpBackend.flush();
         });
         it('ClusterSettingCtrl should do a GET on /info/globals/ REST API', function () {
-            $httpBackend.expectGET(ContivGlobals.GLOBAL_GET_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NODES_SETTINGS_GET_ENDPOINT);
             $httpBackend.flush();
         });
         it('ClusterSettingCtrl should do have showLoader property set to false after fetch', function () {
-            $httpBackend.expectGET(ContivGlobals.GLOBAL_GET_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NODES_SETTINGS_GET_ENDPOINT);
             $httpBackend.flush();
             expect(clusterSettingCtrl.showLoader).toBeFalsy();
         });
         it('ClusterSettingCtrl.updateClusterSettings() should do a POST on /globals/', function () {
             clusterSettingCtrl.form = {'$valid' : true};
             clusterSettingCtrl.updateClusterSettings();
-            $httpBackend.expectPOST(ContivGlobals.GLOBAL_SET_ENDPOINT);
+            $httpBackend.expectPOST(ContivGlobals.NODES_SETTINGS_SET_ENDPOINT);
             $httpBackend.flush();
         });
         it('ClusterSettingCtrl.updateClusterSettings() should not do a POST on /globals/ REST API for invalid form', function () {
@@ -73,7 +73,7 @@ describe('contiv.globalsettings module', function () {
             expect(clusterSettingCtrl.showLoader).toBeFalsy();
         });
         it('ClusterSettingCtrl should have clustersettingData object assigned to setting property', function () {
-            $httpBackend.expectGET(ContivGlobals.GLOBAL_GET_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NODES_SETTINGS_GET_ENDPOINT);
             $httpBackend.flush();
             expect(clusterSettingCtrl.setting).toEqual(clustersettingData);
         });

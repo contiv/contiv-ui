@@ -12,8 +12,8 @@ angular.module('contiv.nodes')
         ;
     }])
     .controller('NodeCommissionCtrl', [
-        '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 'ExtravarsService',
-        function ($state, $stateParams, NodesModel, CRUDHelperService, ExtravarsService) {
+        '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 'NodesService',
+        function ($state, $stateParams, NodesModel, CRUDHelperService, NodesService) {
             var nodeCommissionCtrl = this;
 
             function returnToNodeDetails() {
@@ -29,8 +29,8 @@ angular.module('contiv.nodes')
                     CRUDHelperService.hideServerError(nodeCommissionCtrl);
                     CRUDHelperService.startLoader(nodeCommissionCtrl);
                     nodeCommissionCtrl.nodeOpsObj.nodes = [$stateParams.key];
-                    ExtravarsService.cleanupExtraVars(nodeCommissionCtrl);
-                    ExtravarsService.createExtraVars(nodeCommissionCtrl);
+                    NodesService.cleanupExtraVars(nodeCommissionCtrl);
+                    NodesService.createExtraVars(nodeCommissionCtrl);
                     NodesModel.commission(nodeCommissionCtrl.nodeOpsObj).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(nodeCommissionCtrl);
                         returnToNodeDetails();
@@ -46,7 +46,7 @@ angular.module('contiv.nodes')
             nodeCommissionCtrl.ansibleVariables = [];
             nodeCommissionCtrl.envVariables = [];
 
-            ExtravarsService.setSettings(nodeCommissionCtrl);
+            NodesService.setSettings(nodeCommissionCtrl);
 
             nodeCommissionCtrl.cancelCommissioningNode = cancelCommissioningNode;
             nodeCommissionCtrl.commission = commission;

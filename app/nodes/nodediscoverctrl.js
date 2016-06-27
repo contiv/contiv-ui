@@ -9,8 +9,8 @@ angular.module('contiv.nodes')
         ;
     }])
     .controller('NodeDiscoverCtrl', [
-        '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 'ExtravarsService',
-        function ($state, $stateParams, NodesModel, CRUDHelperService, ExtravarsService) {
+        '$state', '$stateParams', 'NodesModel', 'CRUDHelperService', 'NodesService',
+        function ($state, $stateParams, NodesModel, CRUDHelperService, NodesService) {
             var nodeDiscoverCtrl = this;
 
             function returnToNodes() {
@@ -26,7 +26,7 @@ angular.module('contiv.nodes')
                     CRUDHelperService.hideServerError(nodeDiscoverCtrl);
                     CRUDHelperService.startLoader(nodeDiscoverCtrl);
                     createIPAddrArray();
-                    ExtravarsService.createExtraVars(nodeDiscoverCtrl);
+                    NodesService.createExtraVars(nodeDiscoverCtrl);
                     NodesModel.discover(nodeDiscoverCtrl.nodeOpsObj).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(nodeDiscoverCtrl);
                         returnToNodes();

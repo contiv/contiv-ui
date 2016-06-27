@@ -1,10 +1,10 @@
 angular.module("contiv.directives")
     .directive("ctvNetworkmode", function () {
         return {
-            restrict: 'EA',
+            restrict: 'E',
             templateUrl: 'components/directives/networkmode.html',
             scope: {
-                ctrl: "="
+                extravars: "="
             }
         };
     });

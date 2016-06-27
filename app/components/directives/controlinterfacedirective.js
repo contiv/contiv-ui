@@ -1,7 +1,7 @@
 angular.module("contiv.directives")
     .directive("ctvControlinterface", function () {
         return {
-            restrict: 'EA',
+            restrict: 'E',
             templateUrl: 'components/directives/controlinterface.html',
             scope: {
                 ctrl: "="

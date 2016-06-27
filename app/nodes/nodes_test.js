@@ -127,7 +127,7 @@ describe("contiv.nodes module", function () {
         $httpBackend.when('POST', ContivGlobals.NODES_MAINTENANCE_ENDPOINT).respond();
         $httpBackend.when('GET', ContivGlobals.NODES_ACTIVE_JOB_ENDPOINT).respond();
         $httpBackend.when('GET', ContivGlobals.NODES_LAST_JOB_ENDPOINT).respond();
-        $httpBackend.when('GET', ContivGlobals.GLOBAL_GET_ENDPOINT).respond(global);
+        $httpBackend.when('GET', ContivGlobals.NODES_SETTINGS_GET_ENDPOINT).respond(global);
     }));
 
     afterEach(function () {
