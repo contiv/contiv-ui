@@ -4,7 +4,7 @@ angular.module("contiv.directives")
             restrict: 'E',
             templateUrl: 'components/directives/controlinterface.html',
             scope: {
-                ctrl: "="
+                extravars: "="
             }
         };
     });
