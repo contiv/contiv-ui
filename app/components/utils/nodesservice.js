@@ -153,7 +153,10 @@ angular.module('contiv.utils')
             };
 
         return {
+            getSettings: getSettings,
             setSettings: setSettings,
+            createEnvVariables: createEnvVariables,
+            createAnsibleVariables: createAnsibleVariables,
             updateSettings: updateSettings,
             createExtraVars: createExtraVars,
             cleanupExtraVars: cleanupExtraVars
