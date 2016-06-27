@@ -113,6 +113,10 @@ $ nginx -s stop
 
 ###Testing
 ==========
+To run all tests:
+```
+$ npm test
+```
 
 ####Writing Directive Tests
 ---------------------------
