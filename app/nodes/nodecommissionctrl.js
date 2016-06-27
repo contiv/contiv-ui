@@ -46,7 +46,7 @@ angular.module('contiv.nodes')
             nodeCommissionCtrl.ansibleVariables = [];
             nodeCommissionCtrl.envVariables = [];
 
-            NodesService.setSettings(nodeCommissionCtrl);
+            NodesService.getSettings(nodeCommissionCtrl);
 
             nodeCommissionCtrl.cancelCommissioningNode = cancelCommissioningNode;
             nodeCommissionCtrl.commission = commission;

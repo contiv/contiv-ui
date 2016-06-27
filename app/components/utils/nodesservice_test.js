@@ -63,11 +63,6 @@ describe('contiv.utils module', function () {
             $httpBackend.expectGET(ContivGlobals.NODES_SETTINGS_GET_ENDPOINT);
             $httpBackend.flush();
         });
-        it('NodesService.setSettings() should do a GET on /info/globals', function () {
-            NodesService.setSettings(ctrl);
-            $httpBackend.expectGET(ContivGlobals.NODES_SETTINGS_GET_ENDPOINT);
-            $httpBackend.flush();
-        });
         it('NodesService.updateSettings() should do GET on /info/globals and a POST on /globals', function () {
             NodesService.updateSettings(ctrl.nodeOpsObj);
             $httpBackend.expectGET(ContivGlobals.NODES_SETTINGS_GET_ENDPOINT);

@@ -34,7 +34,7 @@ angular.module('contiv.settings')
             clusterSettingCtrl.ansibleVariables = [];
             clusterSettingCtrl.envVariables = [];
 
-            NodesService.setSettings(clusterSettingCtrl);
+            NodesService.getSettings(clusterSettingCtrl);
 
             clusterSettingCtrl.updateClusterSettings = updateClusterSettings;
 

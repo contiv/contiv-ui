@@ -17,20 +17,12 @@ angular.module('contiv.utils')
             const VIP_ADDR = 'service_vip';
             const UCP_BOOTSTRAP_NODE = 'ucp_bootstrap_node_name';
 
-            function getSettings() {
+            function getSettings(ctrl) {
                 var deferred = $q.defer();
                 var url = ContivGlobals.NODES_SETTINGS_GET_ENDPOINT;
                 $http.get(url).then(function successCallback(result) {
                     deferred.resolve(result.data);
-                }, function errorCallback(result) {
-                    deferred.reject(result.data);
-                });
-                return deferred.promise;
-            };
-
-            function setSettings(ctrl) {
-                getSettings().then(function successCallback(result) {
-                    ctrl.setting = result;
+                    ctrl.setting = result.data;
                     var extraVars = ctrl.setting.extra_vars;
                     var sched_provider = extraVars[SCHED_PROVIDER];
                     var network_mode = extraVars[CONTIV_NET_MODE];
@@ -69,9 +61,10 @@ angular.module('contiv.utils')
                     }
                     createEnvVariables(extraVars[ENV], ctrl.envVariables);
                     createAnsibleVariables(extraVars, ctrl.ansibleVariables);
-
                 }, function errorCallback(result) {
+                    deferred.reject(result.data);
                 });
+                return deferred.promise;
             };
 
             function createEnvVariables(envVars, envVariables) {
@@ -154,7 +147,6 @@ angular.module('contiv.utils')
 
         return {
             getSettings: getSettings,
-            setSettings: setSettings,
             createEnvVariables: createEnvVariables,
             createAnsibleVariables: createAnsibleVariables,
             updateSettings: updateSettings,
