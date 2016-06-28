@@ -1,8 +1,6 @@
 'use strict';
 
 describe('contiv.utils module', function () {
-    const CONTIV_NET_MODE = 'contiv_network_mode';
-    const ENV = 'env';
     var clustersettingData = {
             "extra_vars": {
                 'contiv_network_mode':"standalone",
@@ -57,7 +55,7 @@ describe('contiv.utils module', function () {
             $httpBackend.flush();
         });
         it('NodesService.getSettings() should do a GET on /info/globals', function () {
-            NodesService.getSettings().then(function(response) {
+            NodesService.getSettings(ctrl).then(function(response) {
                 expect(response).toEqual(clustersettingData);
             });
             $httpBackend.expectGET(ContivGlobals.NODES_SETTINGS_GET_ENDPOINT);
@@ -70,13 +68,13 @@ describe('contiv.utils module', function () {
             $httpBackend.flush();
         });
         it('NodesService.createExtraVars() should create extra_vars', function () {
-            expect(ctrl.extra_vars[ENV]).toBeUndefined();
+            expect(ctrl.extra_vars['env']).toBeUndefined();
             NodesService.createExtraVars(ctrl);
-            expect(ctrl.extra_vars[ENV]).toBeDefined();
+            expect(ctrl.extra_vars['env']).toBeDefined();
             $httpBackend.flush();
         });
         it('NodesService.cleanupExtraVars() should clean up extra_vars in standalone mode', function () {
-            ctrl.extra_vars[CONTIV_NET_MODE] = 'standalone';
+            ctrl.extra_vars['contiv_network_mode'] = 'standalone';
             ctrl.extra_vars['fwd_mode'] = 'Bridge';
             ctrl.extra_vars['apic_url'] = 'url';
             expect(ctrl.extra_vars['apic_url']).toEqual('url');
@@ -86,7 +84,7 @@ describe('contiv.utils module', function () {
             $httpBackend.flush();
         });
         it('NodesService.cleanupExtraVars() should clean up extra_vars in aci mode', function () {
-            ctrl.extra_vars[CONTIV_NET_MODE] = 'aci';
+            ctrl.extra_vars['contiv_network_mode'] = 'aci';
             ctrl.extra_vars['fwd_mode'] = 'Bridge';
             ctrl.extra_vars['apic_url'] = 'url';
             expect(ctrl.extra_vars['fwd_mode']).toEqual('Bridge');
@@ -96,10 +94,10 @@ describe('contiv.utils module', function () {
             $httpBackend.flush();
         });
         it('NodesService.createEnvVariables() should create environment variables', function () {
-            ctrl.extra_vars[ENV] = [];
-            expect(ctrl.extra_vars[ENV].length).toEqual(0);
-            NodesService.createEnvVariables(clustersettingData.extra_vars[ENV], ctrl.extra_vars[ENV]);
-            expect(ctrl.extra_vars[ENV].length).toEqual(6);
+            ctrl.extra_vars['env'] = [];
+            expect(ctrl.extra_vars['env'].length).toEqual(0);
+            NodesService.createEnvVariables(clustersettingData.extra_vars['env'], ctrl.extra_vars['env']);
+            expect(ctrl.extra_vars['env'].length).toEqual(6);
             $httpBackend.flush();
         });
         it('NodesService.createAnsibleVariables() should create ansible variables', function () {

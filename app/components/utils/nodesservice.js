@@ -1,21 +1,22 @@
 angular.module('contiv.utils')
     .factory('NodesService', ['$http', '$q',
         function ($http, $q) {
-            const APIC_CONTR_UNRESTRICT_MODE = 'apic_contracts_unrestricted_mode';
-            const APIC_EPG_BRIDGE_DOMAIN = 'apic_epg_bridge_domain';
-            const APIC_LEAF_NODES = 'apic_leaf_nodes';
-            const APIC_PASSWORD = 'apic_password';
-            const APIC_PHYS_DOMAIN = 'apic_phys_domain';
-            const APIC_URL = 'apic_url';
-            const APIC_USERNAME = 'apic_username';
-            const CONTIV_NET_MODE = 'contiv_network_mode';
-            const CONTROL_INTERFACE = 'control_interface';
-            const ENV = 'env';
-            const FWD_MODE = 'fwd_mode';
-            const DATA_INTERFACE = 'netplugin_if';
-            const SCHED_PROVIDER = 'scheduler_provider';
-            const VIP_ADDR = 'service_vip';
-            const UCP_BOOTSTRAP_NODE = 'ucp_bootstrap_node_name';
+            var node_constants = {
+                APIC_CONTR_UNRESTRICT_MODE: 'apic_contracts_unrestricted_mode',
+                APIC_EPG_BRIDGE_DOMAIN: 'apic_epg_bridge_domain',
+                APIC_LEAF_NODES: 'apic_leaf_nodes',
+                APIC_PASSWORD: 'apic_password',
+                APIC_PHYS_DOMAIN: 'apic_phys_domain',
+                APIC_URL: 'apic_url',
+                APIC_USERNAME: 'apic_username',
+                CONTIV_NET_MODE: 'contiv_network_mode',
+                CONTROL_INTERFACE: 'control_interface',
+                ENV: 'env',
+                FWD_MODE: 'fwd_mode',
+                DATA_INTERFACE: 'netplugin_if',
+                SCHED_PROVIDER: 'scheduler_provider',
+                VIP_ADDR: 'service_vip',
+                UCP_BOOTSTRAP_NODE: 'ucp_bootstrap_node_name'};
 
             function getSettings(ctrl) {
                 var deferred = $q.defer();
@@ -24,42 +25,50 @@ angular.module('contiv.utils')
                     deferred.resolve(result.data);
                     ctrl.setting = result.data;
                     var extraVars = ctrl.setting.extra_vars;
-                    var sched_provider = extraVars[SCHED_PROVIDER];
-                    var network_mode = extraVars[CONTIV_NET_MODE];
+                    var sched_provider = extraVars[node_constants.SCHED_PROVIDER];
+                    var network_mode = extraVars[node_constants.CONTIV_NET_MODE];
 
-                    if (extraVars[CONTROL_INTERFACE]) {
-                        ctrl.extra_vars[CONTROL_INTERFACE] = extraVars[CONTROL_INTERFACE]; 
+                    if (extraVars[node_constants.CONTROL_INTERFACE]) {
+                        ctrl.extra_vars[node_constants.CONTROL_INTERFACE] = 
+                            extraVars[node_constants.CONTROL_INTERFACE]; 
                     }
-                    if (extraVars[DATA_INTERFACE]) {
-                        ctrl.extra_vars[DATA_INTERFACE] = extraVars[DATA_INTERFACE]; 
+                    if (extraVars[node_constants.DATA_INTERFACE]) {
+                        ctrl.extra_vars[node_constants.DATA_INTERFACE] = 
+                            extraVars[node_constants.DATA_INTERFACE]; 
                     }
-                    if (extraVars[VIP_ADDR]) {
-                        ctrl.extra_vars[VIP_ADDR] = extraVars[VIP_ADDR]; 
+                    if (extraVars[node_constants.VIP_ADDR]) {
+                        ctrl.extra_vars[node_constants.VIP_ADDR] = extraVars[node_constants.VIP_ADDR]; 
                     }
                     if (sched_provider) {
-                        ctrl.extra_vars[SCHED_PROVIDER] = sched_provider;
+                        ctrl.extra_vars[node_constants.SCHED_PROVIDER] = sched_provider;
                         if (sched_provider === 'ucp-swarm') {
-                            ctrl.extra_vars[UCP_BOOTSTRAP_NODE] = extraVars[UCP_BOOTSTRAP_NODE];
+                            ctrl.extra_vars[node_constants.UCP_BOOTSTRAP_NODE] = 
+                                extraVars[node_constants.UCP_BOOTSTRAP_NODE];
                         }
                     }
                     if (network_mode) {
-                        ctrl.extra_vars[CONTIV_NET_MODE] = network_mode;
+                        ctrl.extra_vars[node_constants.CONTIV_NET_MODE] = network_mode;
                         if (network_mode === 'standalone') {
-                            ctrl.extra_vars[FWD_MODE] = extraVars[FWD_MODE];
+                            ctrl.extra_vars[node_constants.FWD_MODE] = extraVars[node_constants.FWD_MODE];
                         }
                         else if (network_mode === 'aci') {
-                            ctrl.extra_vars[APIC_CONTR_UNRESTRICT_MODE] = 
-                                extraVars[APIC_CONTR_UNRESTRICT_MODE];
-                            ctrl.extra_vars[APIC_EPG_BRIDGE_DOMAIN] = 
-                                extraVars[APIC_EPG_BRIDGE_DOMAIN];
-                            ctrl.extra_vars[APIC_LEAF_NODES] = extraVars[APIC_LEAF_NODES];
-                            ctrl.extra_vars[APIC_PASSWORD] = extraVars[APIC_PASSWORD];
-                            ctrl.extra_vars[APIC_PHYS_DOMAIN] = extraVars[APIC_PHYS_DOMAIN];
-                            ctrl.extra_vars[APIC_URL] = extraVars[APIC_URL];
-                            ctrl.extra_vars[APIC_USERNAME] = extraVars[APIC_USERNAME];                        
+                            ctrl.extra_vars[node_constants.APIC_CONTR_UNRESTRICT_MODE] = 
+                                extraVars[node_constants.APIC_CONTR_UNRESTRICT_MODE];
+                            ctrl.extra_vars[node_constants.APIC_EPG_BRIDGE_DOMAIN] = 
+                                extraVars[node_constants.APIC_EPG_BRIDGE_DOMAIN];
+                            ctrl.extra_vars[node_constants.APIC_LEAF_NODES] = 
+                                extraVars[node_constants.APIC_LEAF_NODES];
+                            ctrl.extra_vars[node_constants.APIC_PASSWORD] = 
+                                extraVars[node_constants.APIC_PASSWORD];
+                            ctrl.extra_vars[node_constants.APIC_PHYS_DOMAIN] = 
+                                extraVars[node_constants.APIC_PHYS_DOMAIN];
+                            ctrl.extra_vars[node_constants.APIC_URL] = 
+                                extraVars[node_constants.APIC_URL];
+                            ctrl.extra_vars[node_constants.APIC_USERNAME] = 
+                                extraVars[node_constants.APIC_USERNAME];                        
                         }
                     }
-                    createEnvVariables(extraVars[ENV], ctrl.envVariables);
+                    createEnvVariables(extraVars[node_constants.ENV], ctrl.envVariables);
                     createAnsibleVariables(extraVars, ctrl.ansibleVariables);
                 }, function errorCallback(result) {
                     deferred.reject(result.data);
@@ -75,11 +84,14 @@ angular.module('contiv.utils')
             };
 
             function createAnsibleVariables(extraVars, ansibleVariables) {
-                var setting_filter = [APIC_CONTR_UNRESTRICT_MODE,
-                    APIC_EPG_BRIDGE_DOMAIN, APIC_LEAF_NODES, APIC_PASSWORD,
-                    APIC_PHYS_DOMAIN, APIC_URL, APIC_USERNAME, CONTIV_NET_MODE,
-                    CONTROL_INTERFACE, ENV, FWD_MODE, DATA_INTERFACE, SCHED_PROVIDER,
-                    VIP_ADDR, UCP_BOOTSTRAP_NODE];
+                var setting_filter = [node_constants.APIC_CONTR_UNRESTRICT_MODE,
+                    node_constants.APIC_EPG_BRIDGE_DOMAIN, node_constants.APIC_LEAF_NODES, 
+                    node_constants.APIC_PASSWORD, node_constants.APIC_PHYS_DOMAIN, 
+                    node_constants.APIC_URL, node_constants.APIC_USERNAME, 
+                    node_constants.CONTIV_NET_MODE, node_constants.CONTROL_INTERFACE, 
+                    node_constants.ENV, node_constants.FWD_MODE, node_constants.DATA_INTERFACE, 
+                    node_constants.SCHED_PROVIDER, node_constants.VIP_ADDR, 
+                    node_constants.UCP_BOOTSTRAP_NODE];
                 var i;
 
                 for (i in extraVars) {
@@ -118,7 +130,7 @@ angular.module('contiv.utils')
                 ctrl.envVariables.forEach(function (item) {
                     envVars[item.name] = item.value;
                 });
-                ctrl.extra_vars[ENV] = envVars;
+                ctrl.extra_vars[node_constants.ENV] = envVars;
                 ctrl.nodeOpsObj.extra_vars = JSON.stringify(ctrl.extra_vars);
             };
 
@@ -128,20 +140,20 @@ angular.module('contiv.utils')
              */
             function cleanupExtraVars(ctrl) {
                 //Cleanup for network mode
-                if (ctrl.extra_vars[CONTIV_NET_MODE] == 'aci') {
-                    delete ctrl.extra_vars[FWD_MODE];
+                if (ctrl.extra_vars[node_constants.CONTIV_NET_MODE] == 'aci') {
+                    delete ctrl.extra_vars[node_constants.FWD_MODE];
                 } else {
-                    delete ctrl.extra_vars[APIC_URL];
-                    delete ctrl.extra_vars[APIC_USERNAME];
-                    delete ctrl.extra_vars[APIC_PASSWORD];
-                    delete ctrl.extra_vars[APIC_LEAF_NODES];
-                    delete ctrl.extra_vars[APIC_PHYS_DOMAIN];
-                    delete ctrl.extra_vars[APIC_EPG_BRIDGE_DOMAIN];
-                    delete ctrl.extra_vars[APIC_CONTR_UNRESTRICT_MODE];
+                    delete ctrl.extra_vars[node_constants.APIC_URL];
+                    delete ctrl.extra_vars[node_constants.APIC_USERNAME];
+                    delete ctrl.extra_vars[node_constants.APIC_PASSWORD];
+                    delete ctrl.extra_vars[node_constants.APIC_LEAF_NODES];
+                    delete ctrl.extra_vars[node_constants.APIC_PHYS_DOMAIN];
+                    delete ctrl.extra_vars[node_constants.APIC_EPG_BRIDGE_DOMAIN];
+                    delete ctrl.extra_vars[node_constants.APIC_CONTR_UNRESTRICT_MODE];
                 }
                 //Cleanup for scheduler
-                if (ctrl.extra_vars[SCHED_PROVIDER] == 'native-swarm') {
-                    delete ctrl.extra_vars[UCP_BOOTSTRAP_NODE];
+                if (ctrl.extra_vars[node_constants.SCHED_PROVIDER] == 'native-swarm') {
+                    delete ctrl.extra_vars[node_constants.UCP_BOOTSTRAP_NODE];
                 }
             };
 
