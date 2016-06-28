@@ -27,14 +27,12 @@
         </div>
     </div>
     <ctv-controlinterface extravars="clusterSettingCtrl.extra_vars"></ctv-controlinterface>
-    <p></p>
-    <div class="field">
+    <div class="field" style="margin-top: 15px">
         <label for="dataInterface">Data interface</label>
         <input type="text" id="dataInterface" name="dataInterface"
                ng-model="clusterSettingCtrl.extra_vars['netplugin_if']"
                placeholder="Enter data interface" required>
     </div>
-    <p></p>
     <div class="field">
         <label for="serviceVIP">Virtual IP address for cluster services</label>
         <input type="text" id="serviceVIP" name="serviceVIP"
@@ -42,8 +40,7 @@
                placeholder="Enter virtual IP address" required>
     </div>
     <ctv-scheduler ctrl="clusterSettingCtrl" extravars="clusterSettingCtrl.extra_vars"></ctv-scheduler>
-    <p></p>
-    <div class="field">
+    <div class="field" style="margin-top: 15px">
         <label for="clusterName">Cluster name</label>
         <input type="text" id="clusterName" name="clusterName"
                ng-model="clusterSettingCtrl.extra_vars['cluster_name']"
@@ -62,7 +59,7 @@
     </ctv-collapsible>
 
     <div class="ui sixteen column grid">
-        <div class="right floated five wide column">
+        <div class="right floated four wide column">
             <div style="margin-top: 40px">
                 <button type="submit" class="ui blue button">
                     Update Cluster Settings
