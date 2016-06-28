@@ -19,7 +19,6 @@ angular.module('contiv.networkpolicies')
             function getPolicies(reload) {
                 BandwidthModel.get(reload)
                     .then(function successCallback(result) {
-                        //console.log(result);
                         CRUDHelperService.stopLoader(policiesListCtrl);
                         policiesListCtrl.policies = $filter('orderBy')(result, 'profileName');
                     }, function errorCallback(result) {

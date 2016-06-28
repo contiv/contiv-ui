@@ -5,10 +5,6 @@
 
 describe('contiv.networkpolicies module', function () {
 
-    beforeEach(module('ui.router'));
-
-    beforeEach(module('contiv.networkpolicies'));
-
     var policiesData = [
         {
             "key": "default:middleware_net_policy",
@@ -264,8 +260,11 @@ describe('contiv.networkpolicies module', function () {
         }
     ];
 
-    var $httpBackend;
+    beforeEach(module('ui.router'));
 
+    beforeEach(module('contiv.networkpolicies'));
+
+    var $httpBackend;
 
     beforeEach(inject(function (_$httpBackend_) {
         $httpBackend = _$httpBackend_;
@@ -273,8 +272,13 @@ describe('contiv.networkpolicies module', function () {
         $httpBackend.when('GET', ContivGlobals.NETWORKS_ENDPOINT).respond(networksData);
         $httpBackend.when('GET', ContivGlobals.APPLICATIONGROUPS_ENDPOINT).respond(groupsData);
         $httpBackend.when('GET', ContivGlobals.RULES_ENDPOINT).respond(rulesData);
+
         $httpBackend.when('GET', ContivGlobals.BANDWIDTH_ENDPOINT).respond(netprofileData);
+        $httpBackend.when('DELETE', ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
+        $httpBackend.when('POST', ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
+        $httpBackend.when('PUT', ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
     }));
+
 
     afterEach(function () {
         $httpBackend.verifyNoOutstandingExpectation();
@@ -314,6 +318,103 @@ describe('contiv.networkpolicies module', function () {
 
     });
 
+
+    describe('bandwidthpolicydetailsctrl', function () {
+
+        var $controller, $state, $stateParams;
+        var bandwidthPolicyDetailsCtrl;
+        beforeEach(inject(function (_$state_ ,_$stateParams_, _$controller_) {
+            $state = _$state_;
+            $state.go = function (stateName) {};
+            $stateParams = _$stateParams_;
+            $stateParams.key = netprofileData[0].key;
+            $controller = _$controller_;
+            bandwidthPolicyDetailsCtrl = $controller('BandwidthPolicyDetailsCtrl',
+                { $state: $state, $stateParams: $stateParams });
+        }));
+
+        it('should be defined', function () {
+            expect(bandwidthPolicyDetailsCtrl).toBeDefined();
+            $httpBackend.flush();
+        });
+
+        it('BandwidthPolicyDetailsCtrl should have showLoader property set to false after fetch', function () {
+            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.flush();
+            expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();
+        });
+
+        it('BandwidthPolicyDetailsCtrl.deletePolicy() should do a DELETE on /api/v1/netprofiles/ REST API', function () {
+            //Call flush to fulfill all the http requests to get netprofile policys before calling deleteNetwork()
+            $httpBackend.flush();
+            bandwidthPolicyDetailsCtrl.deletePolicy();
+            console.log(ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/');
+            $httpBackend.expectDELETE(ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/');
+            $httpBackend.flush();
+            expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();
+        });
+
+        it('BandwidthPolicyDetailsCtrl.savePolicy() should do a PUT on /api/v1/netprofiles/ REST API', function() {
+            $httpBackend.flush();
+            bandwidthPolicyDetailsCtrl.form = {'$valid' : true};
+            bandwidthPolicyDetailsCtrl.policy.bandwidthNumber = '10';
+            bandwidthPolicyDetailsCtrl.policy.bandwidthUnit = 'gbps';
+            bandwidthPolicyDetailsCtrl.policy.DSCP = 10;
+            bandwidthPolicyDetailsCtrl.savePolicy();
+            $httpBackend.expectPUT(ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/');
+            $httpBackend.flush();
+            expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();
+        });
+
+    });
+
+    describe('bandwidthpolicycreatectrl', function () {
+
+        var $controller,$state,$stateParams;
+        var bandwidthPolicyCreateCtrl;
+        beforeEach(inject(function (_$state_,_$stateParams_, _$controller_) {
+            $controller = _$controller_;
+            $state = _$state_;
+            $stateParams = _$stateParams_;
+            
+            $state.go = function (stateName) {};
+            $stateParams.key = netprofileData[0].key;
+            bandwidthPolicyCreateCtrl = $controller('BandwidthPolicyCreateCtrl',
+                { $state: $state});
+        }));
+
+        it('should be defined', function () {
+            var bandwidthPolicyCreateCtrl = $controller('BandwidthPolicyCreateCtrl');
+            expect(bandwidthPolicyCreateCtrl).toBeDefined();
+        });
+
+
+        it('BandwidthPolicyCreateCtrl.createPolicy should do a POST on /api/v1/netprofiles/ REST API', function () {
+            bandwidthPolicyCreateCtrl.form = {'$valid' : true};
+            bandwidthPolicyCreateCtrl.newPolicy.profileName = 'pr1';
+            bandwidthPolicyCreateCtrl.bandwidthNumber = '10';
+            bandwidthPolicyCreateCtrl.bandwidthUnit = 'gbps'
+            bandwidthPolicyCreateCtrl.newPolicy.DSCP = 10;
+            bandwidthPolicyCreateCtrl.createPolicy();
+            $httpBackend.expectPOST(ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/');
+            $httpBackend.flush();
+            expect(bandwidthPolicyCreateCtrl.showLoader).toBeFalsy();
+        });
+
+        it('BandwidthPolicyCreateCtrl.createPolicy should not do a POST on /api/v1/netprofiles/ REST API', function () {
+            bandwidthPolicyCreateCtrl.form = {'$valid' : false};
+            bandwidthPolicyCreateCtrl.newPolicy.profileName = 'pr1';
+            bandwidthPolicyCreateCtrl.bandwidthNumber = '10';
+            bandwidthPolicyCreateCtrl.bandwidthUnit = 'gbps'
+            bandwidthPolicyCreateCtrl.newPolicy.DSCP = 10;
+            bandwidthPolicyCreateCtrl.createPolicy();
+            $httpBackend.verifyNoOutstandingRequest();
+            expect(bandwidthPolicyCreateCtrl.showLoader).toBeFalsy();
+        });
+    });
+
+
+
     describe('isolationpolicylistctrl', function () {
 
         var $controller, $interval, $rootScope;
@@ -344,33 +445,6 @@ describe('contiv.networkpolicies module', function () {
             $httpBackend.flush();
             expect(policyListCtrl.showLoader).toBeFalsy();
         });
-
-    });
-
-    describe('bandwidthpolicydetailsctrl', function () {
-
-        var $controller, $state, $stateParams;
-        var bandwidthPolicyDetailsCtrl;
-        beforeEach(inject(function (_$state_ ,_$stateParams_, _$controller_) {
-            $state = _$state_;
-            $state.go = function (stateName) {};
-            $stateParams = _$stateParams_;
-            $stateParams.key = netprofileData[0].key;
-            $controller = _$controller_;
-            bandwidthPolicyDetailsCtrl = $controller('BandwidthPolicyDetailsCtrl',
-                { $state: $state, $stateParams: $stateParams });
-        }));
-
-        it('should be defined', function () {
-            expect(bandwidthPolicyDetailsCtrl).toBeDefined();
-            $httpBackend.flush();
-        });
-
-        it('BandwidthPolicyDetailsCtrl should have showLoader property set to false after fetch', function () {
-            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
-            $httpBackend.flush();
-            expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();
-        });
     });
 
 
@@ -378,6 +452,7 @@ describe('contiv.networkpolicies module', function () {
 
         var $controller, $state, $stateParams;
         var isolationPolicyDetailsCtrl;
+
         beforeEach(inject(function (_$state_ ,_$stateParams_, _$controller_) {
             $state = _$state_;
             $state.go = function (stateName) {};
@@ -399,22 +474,6 @@ describe('contiv.networkpolicies module', function () {
             expect(isolationPolicyDetailsCtrl.showLoader).toBeFalsy();
         });
     });
-
-
-    describe('bandwidthpolicycreatectrl', function () {
-
-        var $controller,$rootScope;
-        beforeEach(inject(function (_$controller_) {
-            $controller = _$controller_;
-        }));
-
-        it('should be defined', function () {
-            var bandwidthPolicyCreateCtrl = $controller('BandwidthPolicyCreateCtrl');
-            expect(bandwidthPolicyCreateCtrl).toBeDefined();
-        });
-
-    });
-
 
     describe('isolationpolicycreatectrl', function () {
 

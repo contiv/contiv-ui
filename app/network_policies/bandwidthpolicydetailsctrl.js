@@ -23,12 +23,9 @@ angular.module('contiv.networkpolicies')
     .controller('BandwidthPolicyDetailsCtrl', [
         '$state',
         '$stateParams',
-        'RulesModel',
         'BandwidthModel',
-        'NetworksModel',
-        'ApplicationGroupsModel',
         'CRUDHelperService',
-        function ($state, $stateParams, RulesModel, BandwidthModel,  NetworksModel, ApplicationGroupsModel, CRUDHelperService) {
+        function ($state, $stateParams, BandwidthModel, CRUDHelperService) {
             var bandwidthPolicyDetailsCtrl = this;
 
             bandwidthPolicyDetailsCtrl.bandwidthProfiles = [];
@@ -37,9 +34,6 @@ angular.module('contiv.networkpolicies')
             BandwidthModel.getModelByKey($stateParams.key)
                 .then(function (policy) {
                     bandwidthPolicyDetailsCtrl.policy = policy;
-                    bandwidthPolicyDetailsCtrl.bandwidthArray = bandwidthPolicyDetailsCtrl.policy.bandwidth.split(' ');
-                    bandwidthPolicyDetailsCtrl.bandwidthNumber = bandwidthPolicyDetailsCtrl.bandwidthArray[0];
-                    bandwidthPolicyDetailsCtrl.bandwidthUnit = bandwidthPolicyDetailsCtrl.bandwidthArray[1];
                 });
             
             /**
@@ -85,10 +79,7 @@ angular.module('contiv.networkpolicies')
                 if (bandwidthPolicyDetailsCtrl.form.$valid) {
                     CRUDHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
                     CRUDHelperService.startLoader(bandwidthPolicyDetailsCtrl);
-                    //createFilesystemCmds();
-
-                    bandwidthPolicyDetailsCtrl.policy.bandwidth = bandwidthPolicyDetailsCtrl.bandwidthNumber + " " + bandwidthPolicyDetailsCtrl.bandwidthUnit;
-
+                    bandwidthPolicyDetailsCtrl.policy.bandwidth = bandwidthPolicyDetailsCtrl.policy.bandwidthNumber + " " + bandwidthPolicyDetailsCtrl.policy.bandwidthUnit;
                     BandwidthModel.save(bandwidthPolicyDetailsCtrl.policy).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
                         returnToPolicyDetails();

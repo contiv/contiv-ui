@@ -64,12 +64,9 @@
             </tr>
             </tbody>
         </table>
-
     </div>
 
-
     <div ng-switch-when="edit">
-
         <form class="ui form" name="bandwidthPolicyDetailsCtrl.form" role="form"
               ng-submit="bandwidthPolicyDetailsCtrl.savePolicy(newpolicy)" novalidate>
             <div class="ui active inverted dimmer" ng-show="bandwidthPolicyDetailsCtrl.showLoader">
@@ -93,38 +90,8 @@
                 </div>
             </div>
             <h4 class="ui header">Basic Settings</h4>
-            <table class="ui very basic selectable table">
-                <tbody>
-                <tr>
-                    <td class="ctv-header three wide column">Profile Name</td>
-                    <td>{{bandwidthPolicyDetailsCtrl.policy.profileName}}</td>
-                </tr>
-                </tbody>
-            </table>
 
-            <div class="fields">
-                <div class = "thirteen wide field">
-                    <label for="newBandwidthNumber">Bandwidth </label>
-                    <input type="text" id="newBandwidthNumber" name="newBandwidthNumber"
-                           ng-model="bandwidthPolicyDetailsCtrl.bandwidthNumber" placeholder="Enter bandwidth" required>
-                </div>
-                <div class = "three wide field">
-                    <label for="newBandwidthUnit">Unit</label>
-                    <select name="newBandwidthUnit" id="newBandwidthUnit" class="ui dropdown" ng-model="bandwidthPolicyDetailsCtrl.bandwidthUnit" required>
-                        <option value="">-- Please select unit --</option>
-                        <option value="kbps">kbps</option>
-                        <option value="mbps">mbps</option>
-                        <option value="gbps">gbps</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="field">
-                <label for="newDSCP">DSCP</label>
-                <input type="number" id="newDSCP" name="newDSCP"
-                       ng-model="bandwidthPolicyDetailsCtrl.policy.DSCP" placeholder="Enter DSCP" required/>
-            </div>
-
+            <ctv-bandwidth type="edit" bandwidth-policy="bandwidthPolicyDetailsCtrl.policy"></ctv-bandwidth>
 
             <div class="ui sixteen column grid" style="margin-top: 40px">
                 <div class="right floated three wide column">
