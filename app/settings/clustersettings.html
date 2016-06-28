@@ -21,7 +21,7 @@
                     <li ng-show="clusterSettingCtrl.form.ucpBootstrapNodeName.$error.required">
                         Please enter node name
                     </li>
-                    <ctv-acivalid ctrl="clusterSettingCtrl.form"></ctv-acivalid>
+                    <ctv-acivalid form="clusterSettingCtrl.form"></ctv-acivalid>
                 </ul>
             </div>
         </div>
@@ -42,6 +42,13 @@
                placeholder="Enter virtual IP address" required>
     </div>
     <ctv-scheduler ctrl="clusterSettingCtrl" extravars="clusterSettingCtrl.extra_vars"></ctv-scheduler>
+    <p></p>
+    <div class="field">
+        <label for="clusterName">Cluster name</label>
+        <input type="text" id="clusterName" name="clusterName"
+               ng-model="clusterSettingCtrl.extra_vars['cluster_name']"
+               placeholder="Enter cluster name">
+    </div>
     <div class="ui section divider"></div>
     <ctv-networkmode extravars="clusterSettingCtrl.extra_vars"></ctv-networkmode>
     <div class="ui section divider"></div>
@@ -58,7 +65,7 @@
         <div class="right floated five wide column">
             <div style="margin-top: 40px">
                 <button type="submit" class="ui blue button">
-                    Update Global Cluster Settings
+                    Update Cluster Settings
                 </button>
             </div>
         </div>
