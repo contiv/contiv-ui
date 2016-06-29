@@ -12,12 +12,12 @@ angular.module('contiv.networkpolicies')
             })
         ;
     }])
-    .controller('BandwidthPolicyListCtrl', ['$scope', '$interval', '$filter', 'BandwidthModel', 'CRUDHelperService',
-        function ($scope, $interval, $filter, BandwidthModel, CRUDHelperService) {
+    .controller('BandwidthPolicyListCtrl', ['$scope', '$interval', '$filter', 'NetprofilesModel', 'CRUDHelperService',
+        function ($scope, $interval, $filter, NetprofilesModel, CRUDHelperService) {
             var policiesListCtrl = this;
 
             function getPolicies(reload) {
-                BandwidthModel.get(reload)
+                NetprofilesModel.get(reload)
                     .then(function successCallback(result) {
                         CRUDHelperService.stopLoader(policiesListCtrl);
                         policiesListCtrl.policies = $filter('orderBy')(result, 'profileName');

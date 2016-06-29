@@ -273,10 +273,10 @@ describe('contiv.networkpolicies module', function () {
         $httpBackend.when('GET', ContivGlobals.APPLICATIONGROUPS_ENDPOINT).respond(groupsData);
         $httpBackend.when('GET', ContivGlobals.RULES_ENDPOINT).respond(rulesData);
 
-        $httpBackend.when('GET', ContivGlobals.BANDWIDTH_ENDPOINT).respond(netprofileData);
-        $httpBackend.when('DELETE', ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
-        $httpBackend.when('POST', ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
-        $httpBackend.when('PUT', ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
+        $httpBackend.when('GET', ContivGlobals.NETPROFILES_ENDPOINT).respond(netprofileData);
+        $httpBackend.when('DELETE', ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
+        $httpBackend.when('POST', ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
+        $httpBackend.when('PUT', ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/').respond(netprofileData[0]);
     }));
 
 
@@ -301,17 +301,17 @@ describe('contiv.networkpolicies module', function () {
             $httpBackend.flush();
         });
         it('BandwidthPolicyListCtrl should do a GET on /api/v1/netprofiles/ REST API', function () {
-            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
             $httpBackend.flush();
         });
         it('BandwidthPolicyListCtrl should have policy array assigned to policies property', function () {
-            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
             $httpBackend.flush();
             expect(Array.isArray(policyListCtrl.policies)).toBeTruthy();
             expect(policyListCtrl.policies.length).toEqual(3);
         });
         it('BandwidthPolicyListCtrl should have showLoader property set to false after fetch', function () {
-            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
             $httpBackend.flush();
             expect(policyListCtrl.showLoader).toBeFalsy();
         });
@@ -339,7 +339,7 @@ describe('contiv.networkpolicies module', function () {
         });
 
         it('BandwidthPolicyDetailsCtrl should have showLoader property set to false after fetch', function () {
-            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
             $httpBackend.flush();
             expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();
         });
@@ -348,8 +348,8 @@ describe('contiv.networkpolicies module', function () {
             //Call flush to fulfill all the http requests to get netprofile policys before calling deleteNetwork()
             $httpBackend.flush();
             bandwidthPolicyDetailsCtrl.deletePolicy();
-            console.log(ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/');
-            $httpBackend.expectDELETE(ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/');
+            console.log(ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/');
+            $httpBackend.expectDELETE(ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/');
             $httpBackend.flush();
             expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();
         });
@@ -361,7 +361,7 @@ describe('contiv.networkpolicies module', function () {
             bandwidthPolicyDetailsCtrl.policy.bandwidthUnit = 'gbps';
             bandwidthPolicyDetailsCtrl.policy.DSCP = 10;
             bandwidthPolicyDetailsCtrl.savePolicy();
-            $httpBackend.expectPUT(ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/');
+            $httpBackend.expectPUT(ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/');
             $httpBackend.flush();
             expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();
         });
@@ -396,7 +396,7 @@ describe('contiv.networkpolicies module', function () {
             bandwidthPolicyCreateCtrl.bandwidthUnit = 'gbps'
             bandwidthPolicyCreateCtrl.newPolicy.DSCP = 10;
             bandwidthPolicyCreateCtrl.createPolicy();
-            $httpBackend.expectPOST(ContivGlobals.BANDWIDTH_ENDPOINT + netprofileData[0].key + '/');
+            $httpBackend.expectPOST(ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/');
             $httpBackend.flush();
             expect(bandwidthPolicyCreateCtrl.showLoader).toBeFalsy();
         });

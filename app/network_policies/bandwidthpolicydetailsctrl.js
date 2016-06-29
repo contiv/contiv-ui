@@ -23,15 +23,15 @@ angular.module('contiv.networkpolicies')
     .controller('BandwidthPolicyDetailsCtrl', [
         '$state',
         '$stateParams',
-        'BandwidthModel',
+        'NetprofilesModel',
         'CRUDHelperService',
-        function ($state, $stateParams, BandwidthModel, CRUDHelperService) {
+        function ($state, $stateParams, NetprofilesModel, CRUDHelperService) {
             var bandwidthPolicyDetailsCtrl = this;
 
             bandwidthPolicyDetailsCtrl.bandwidthProfiles = [];
 
             /* Get particular Profile for based on key*/
-            BandwidthModel.getModelByKey($stateParams.key)
+            NetprofilesModel.getModelByKey($stateParams.key)
                 .then(function (policy) {
                     bandwidthPolicyDetailsCtrl.policy = policy;
                 });
@@ -50,7 +50,7 @@ angular.module('contiv.networkpolicies')
             function deletePolicy() {
                 CRUDHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
                 CRUDHelperService.startLoader(bandwidthPolicyDetailsCtrl);
-                BandwidthModel.deleteUsingKey(bandwidthPolicyDetailsCtrl.policy.key, 'name').then(
+                NetprofilesModel.deleteUsingKey(bandwidthPolicyDetailsCtrl.policy.key, 'name').then(
                     function successCallback(result) {
                         CRUDHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
                         returnToPolicies();
@@ -80,7 +80,7 @@ angular.module('contiv.networkpolicies')
                     CRUDHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
                     CRUDHelperService.startLoader(bandwidthPolicyDetailsCtrl);
                     bandwidthPolicyDetailsCtrl.policy.bandwidth = bandwidthPolicyDetailsCtrl.policy.bandwidthNumber + " " + bandwidthPolicyDetailsCtrl.policy.bandwidthUnit;
-                    BandwidthModel.save(bandwidthPolicyDetailsCtrl.policy).then(function successCallback(result) {
+                    NetprofilesModel.save(bandwidthPolicyDetailsCtrl.policy).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
                         returnToPolicyDetails();
                     }, function errorCallback(result) {

@@ -8,27 +8,29 @@ describe('contiv.applicationgroups module', function () {
 
     var groupListData = [
         {
-            "key": "default:contiv-net3:prod_web",
-            "endpointGroupId": 2,
-            "groupName": "prod_web",
-            "networkName": "contiv-net3",
-            "policies": [
+            "key":"default:grp1",
+            "netProfile":"profile4",
+            "groupName":"grp1",
+            "networkName":"network1",
+            "policies":[
                 "proxy-net-policy"
             ],
-            "tenantName": "default",
-            "link-sets": {
-                "Policies": {
-                    "default:proxy-net-policy": {
-                        "type": "policy",
-                        "key": "default:proxy-net-policy"
+            "tenantName":"default",
+            "link-sets":{
+                "Policies":{
+                    "default:         proxy-net-policy":{
+                        "type":"policy",
+                        "key":"default:proxy-net-policy"
                     }
                 }
             },
-            "links": {
-                "Network": {},
-                "Tenant": {
-                    "type": "tenant",
-                    "key": "default"
+            "links":{
+                "Network":{
+
+                },
+                "Tenant":{
+                    "type":"tenant",
+                    "key":"default"
                 }
             }
         }
@@ -216,7 +218,9 @@ describe('contiv.applicationgroups module', function () {
                 $httpBackend.when('GET', ContivGlobals.NETWORKS_ENDPOINT).respond(networkListData);
                 $httpBackend.when('GET', ContivGlobals.POLICIES_ENDPOINT).respond(policyListData);
                 $httpBackend.when('GET', ContivGlobals.RULES_ENDPOINT).respond(ruleListData);
-                $httpBackend.when('GET', ContivGlobals.BANDWIDTH_ENDPOINT).respond(netprofileListData);
+                $httpBackend.when('GET', ContivGlobals.NETPROFILES_ENDPOINT).respond(netprofileListData);
+
+                $httpBackend.when('POST', ContivGlobals.APPLICATIONGROUPS_ENDPOINT + groupListData[0].key + '/').respond(groupListData);
             }));
 
         afterEach(function () {
@@ -224,9 +228,15 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.verifyNoOutstandingRequest();
         });
 
-        var $controller;
-        beforeEach(inject(function (_$controller_) {
+        var $controller,$state,applicationGroupCreateCtrl,$stateParams;
+        beforeEach(inject(function (_$state_,_$stateParams_,_$controller_) {
             $controller = _$controller_;
+            $state = _$state_;
+            $stateParams = _$stateParams_;
+
+            $state.go = function (stateName) {};
+            applicationGroupCreateCtrl = $controller('ApplicationGroupCreateCtrl',
+                { $state: $state});
         }));
         it('should be defined', function () {
             //spec body
@@ -247,17 +257,30 @@ describe('contiv.applicationgroups module', function () {
         });
         it('ApplicationGroupCreateCtrl should do a GET on /api/v1/netprofiles/ REST API', function () {
             $controller('ApplicationGroupCreateCtrl');
-            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
             $httpBackend.flush();
         });
         it('ApplicationGroupCreateCtrl.addIsolationPolicy() should do a GET on /api/rules/ REST API', function () {
-            var groupCreateCtrl = $controller(
-                'ApplicationGroupCreateCtrl');
+            var groupCreateCtrl = $controller('ApplicationGroupCreateCtrl');
             groupCreateCtrl.selectedPolicy = policyListData[0];
             groupCreateCtrl.addIsolationPolicy();
             $httpBackend.expectGET(ContivGlobals.RULES_ENDPOINT);
             $httpBackend.flush();
         });
+
+        it('ApplicationGroupCreateCtrl.createApplicationGroup should do a POST on /api/v1/endpointGroups/ REST API', function () {
+
+            applicationGroupCreateCtrl.form = {'$valid' : true};
+            applicationGroupCreateCtrl.applicationGroup.networkName = 'network1';
+            applicationGroupCreateCtrl.applicationGroup.groupName = 'grp1';
+            applicationGroupCreateCtrl.applicationGroup.profileName = 'profile4';
+            applicationGroupCreateCtrl.applicationGroup.tenantName = 'default';
+            applicationGroupCreateCtrl.createApplicationGroup();
+            $httpBackend.expectPOST(ContivGlobals.APPLICATIONGROUPS_ENDPOINT + groupListData[0].key + '/');
+            $httpBackend.flush();
+            expect(applicationGroupCreateCtrl.showLoader).toBeFalsy();
+        });
+
     });
 
     describe('applicationgroupsdetailsctrl', function () {
@@ -270,7 +293,8 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.when('GET', ContivGlobals.APPLICATIONGROUPS_ENDPOINT).respond(groupListData);
             $httpBackend.when('GET', ContivGlobals.POLICIES_ENDPOINT).respond(policyListData);
             $httpBackend.when('GET', ContivGlobals.RULES_ENDPOINT).respond(ruleListData);
-            $httpBackend.when('GET', ContivGlobals.BANDWIDTH_ENDPOINT).respond(netprofileListData);
+            $httpBackend.when('GET', ContivGlobals.NETPROFILES_ENDPOINT).respond(netprofileListData);
+
             $httpBackend.when('PUT', ContivGlobals.APPLICATIONGROUPS_ENDPOINT + groupListData[0].key + '/').respond(groupListData[0]);
             $httpBackend.when('DELETE', ContivGlobals.APPLICATIONGROUPS_ENDPOINT + groupListData[0].key + '/').respond(groupListData[0]);
             $state = _$state_;
@@ -305,7 +329,7 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.flush();
         });
         it('ApplicationGroupDetailsCtrl should do a GET on /api/netprofiles/ REST API', function () {
-            $httpBackend.expectGET(ContivGlobals.BANDWIDTH_ENDPOINT);
+            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
             $httpBackend.flush();
         });
         it('ApplicationGroupDetailsCtrl.saveApplicationGroup() should do a PUT on /api/endpointGroups/ REST API', function () {
@@ -346,6 +370,12 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.expectGET(ContivGlobals.APPLICATIONGROUPS_ENDPOINT);
             $httpBackend.flush();
             expect(groupDetailsCtrl.showLoader).toBeFalsy();
+        });
+        it('ApplicationGroupDetailsCtrl should have netprofiles array assigned to netprofiles property', function() {
+            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
+            $httpBackend.flush();
+            expect(groupDetailsCtrl.netProfiles.length).toEqual(1);
+            expect(groupDetailsCtrl.netProfiles[0]).toEqual(netprofileListData[0]);
         });
     });
 });

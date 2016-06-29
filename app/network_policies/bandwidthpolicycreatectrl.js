@@ -13,8 +13,8 @@ angular.module('contiv.networkpolicies')
             })
         ;
     }])
-    .controller('BandwidthPolicyCreateCtrl', ['$state', '$stateParams','BandwidthModel', 'CRUDHelperService',
-        function ($state, $stateParams, BandwidthModel, CRUDHelperService) {
+    .controller('BandwidthPolicyCreateCtrl', ['$state', '$stateParams','NetprofilesModel', 'CRUDHelperService',
+        function ($state, $stateParams, NetprofilesModel, CRUDHelperService) {
             var bandwidthPolicyCreateCtrl = this;
 
             function returnToPolicies() {
@@ -31,12 +31,12 @@ angular.module('contiv.networkpolicies')
                     CRUDHelperService.startLoader(bandwidthPolicyCreateCtrl);
 
                     bandwidthPolicyCreateCtrl.newPolicy.key =
-                        BandwidthModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
+                        NetprofilesModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
                     
                     bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.newPolicy.bandwidthNumber
                         + " "+ bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
                     
-                    BandwidthModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+                    NetprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);
                         returnToPolicies();
                     }, function errorCallback(result) {

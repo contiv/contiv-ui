@@ -21,7 +21,7 @@ angular.module('contiv.applicationgroups')
         '$stateParams',
         'ApplicationGroupsModel',
         'PoliciesModel',
-        'BandwidthModel',
+        'NetprofilesModel',
         'RulesModel',
         'ApplicationGroupService',
         'CRUDHelperService',
@@ -29,7 +29,7 @@ angular.module('contiv.applicationgroups')
                   $stateParams,
                   ApplicationGroupsModel,
                   PoliciesModel,
-                  BandwidthModel,
+                  NetprofilesModel,
                   RulesModel,
                   ApplicationGroupService,
                   CRUDHelperService) {
@@ -39,8 +39,8 @@ angular.module('contiv.applicationgroups')
             applicationGroupDetailsCtrl.selectedNetwork = {};
             applicationGroupDetailsCtrl.selectedPolicy = {};
             applicationGroupDetailsCtrl.selectedPolicies = [];
-            applicationGroupDetailsCtrl.selectedProfile = {};
-            applicationGroupDetailsCtrl.bandwidthProfiles = [];
+            applicationGroupDetailsCtrl.selectedNetprofile = {};
+            applicationGroupDetailsCtrl.netProfiles = [];
 
             //To display incoming and outgoing rules for selected policies
             applicationGroupDetailsCtrl.incomingRules = [];
@@ -130,7 +130,7 @@ angular.module('contiv.applicationgroups')
                 CRUDHelperService.hideServerError(applicationGroupDetailsCtrl);
                 CRUDHelperService.startLoader(applicationGroupDetailsCtrl);
 
-                applicationGroupDetailsCtrl.applicationGroup.netProfile = applicationGroupDetailsCtrl.selectedProfile.profileName;
+                applicationGroupDetailsCtrl.applicationGroup.netProfile = applicationGroupDetailsCtrl.selectedNetprofile.profileName;
 
                 ApplicationGroupsModel.save(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
                     CRUDHelperService.stopLoader(applicationGroupDetailsCtrl);
@@ -157,10 +157,10 @@ angular.module('contiv.applicationgroups')
             /**
              * Get profiles for the given tenant.
              */
-            function getBandwidthProfiles() {
+            function getNetprofiles() {
 
-                BandwidthModel.get().then(function (result) {
-                    applicationGroupDetailsCtrl.bandwidthProfiles = _.filter(result, {
+                NetprofilesModel.get().then(function (result) {
+                    applicationGroupDetailsCtrl.netProfiles = _.filter(result, {
                         'tenantName': 'default'//TODO: Remove hardcoded tenant.
                     });
                 });
@@ -168,7 +168,7 @@ angular.module('contiv.applicationgroups')
             }
 
 
-            getBandwidthProfiles();
+            getNetprofiles();
             getIsolationPolicies();
 
             applicationGroupDetailsCtrl.saveApplicationGroup = saveApplicationGroup;
