@@ -164,10 +164,8 @@ angular.module('contiv.applicationgroups')
                         'tenantName': 'default'//TODO: Remove hardcoded tenant.
                     });
                 });
-
             }
-
-
+            
             getNetprofiles();
             getIsolationPolicies();
 

@@ -2,7 +2,6 @@
  * Created by hardik gandhi on 6/24/16.
  */
 
-
 angular.module("contiv.networkpolicies")
     .directive("ctvBandwidth", function () {
         return {
@@ -27,7 +26,6 @@ angular.module("contiv.networkpolicies")
                     scope.bandwidthPolicy.mode = 'edit';
                 }
             },
-
 
             templateUrl: 'network_policies/bandwidthinput.html'
         }

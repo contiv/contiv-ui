@@ -144,8 +144,7 @@ angular.module('contiv.applicationgroups')
             getNetworks();
             getIsolationPolicies();
             getNetprofiles();
-
-
+            
             applicationGroupCreateCtrl.createApplicationGroup = createApplicationGroup;
             applicationGroupCreateCtrl.cancelCreating = cancelCreating;
             applicationGroupCreateCtrl.addIsolationPolicy = addIsolationPolicy;
