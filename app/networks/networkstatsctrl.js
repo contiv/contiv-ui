@@ -35,8 +35,8 @@ angular.module('contiv.networks')
                         --Used in displaying the container detail inside an accordion.
                  */
                 function buildEndPoints(endpointsarray){
-                    snapshots=[];
-                    endpointsobj={};
+                    var snapshots=[];
+                    var endpointsobj={};
                     for(var i in endpointsarray ){
                         snapshots.push(endpointsarray[i].name);
                         var keyvalpairs=[];
