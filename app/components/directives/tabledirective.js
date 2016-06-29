@@ -191,6 +191,20 @@ angular.module("contiv.directives")
             template: '<td ng-transclude></td>'
         }
     })
+    .directive("ctvTdAccordion", function () {
+        return {
+            restrict: 'E',
+            transclude: true,
+            scope: {
+                accordiondata: '=',
+                accname: '='
+            },
+            link:function(scope){
+                $('.ui.accordion').accordion();
+            },
+            templateUrl: 'components/directives/accordion.html'
+        }
+    })
     .directive("ctvTpagination", function () {
         return {
             restrict: 'E',

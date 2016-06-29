@@ -1,0 +1,57 @@
+<table class="ui very basic selectable table">
+    <tbody>
+    <tr>
+        <td class="ctv-header three wide column">Allocated Addresses Count</td>
+        <td>{{networkStatsCtrl.networkInspectStats.Oper.allocatedAddressesCount}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">Allocated IP-Addresses</td>
+        <td>{{networkStatsCtrl.networkInspectStats.Oper.allocatedIPAddresses}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">DNS Server-IP</td>
+        <td>{{networkStatsCtrl.networkInspectStats.Oper.dnsServerIP}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">External Packet Tag</td>
+        <td>{{networkStatsCtrl.networkInspectStats.Oper.externalPktTag}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">Number of Endpoints</td>
+        <td>{{networkStatsCtrl.networkInspectStats.Oper.numEndpoints}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">Packet Tag</td>
+        <td>{{networkStatsCtrl.networkInspectStats.Oper.pktTag}}</td>
+    </tr>
+    </tbody>
+</table>
+<ctv-collapsible title="End Points">
+    <ctv-table items="networkStatsCtrl.snapshots" filtereditems="networkStatsCtrl.filteredsnapshots" size="12">
+        <ctv-thead>
+            <ctv-tr>
+                <ctv-th>Container Names</ctv-th>
+                <ctv-th class="right floated three wide column">
+                    <ctv-tsearch placeholder="Search Container Name..." size="30"></ctv-tsearch>
+                </ctv-th>
+            </ctv-tr>
+        </ctv-thead>
+
+        <ctv-tbody>
+            <ctv-tr ng-repeat="snapshot in networkStatsCtrl.filteredsnapshots">
+                <ctv-td>
+                    <ctv-td-accordion accordiondata="networkStatsCtrl.endpoints[snapshot]" accname=snapshot></ctv-td-accordion>
+                </ctv-td>
+                <ctv-td></ctv-td>
+            </ctv-tr>
+        </ctv-tbody>
+
+        <ctv-tfoot>
+            <ctv-tr>
+                <ctv-th colspan="2">
+                    <ctv-tpagination></ctv-tpagination>
+                </ctv-th>
+            </ctv-tr>
+        </ctv-tfoot>
+    </ctv-table>
+</ctv-collapsible>
