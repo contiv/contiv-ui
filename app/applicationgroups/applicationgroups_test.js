@@ -18,7 +18,7 @@ describe('contiv.applicationgroups module', function () {
             "tenantName":"default",
             "link-sets":{
                 "Policies":{
-                    "default:         proxy-net-policy":{
+                    "default:proxy-net-policy":{
                         "type":"policy",
                         "key":"default:proxy-net-policy"
                     }

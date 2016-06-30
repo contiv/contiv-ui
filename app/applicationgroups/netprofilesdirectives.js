@@ -8,9 +8,29 @@ angular.module("contiv.applicationgroups")
             restrict: 'E',
             scope: {
                 type:"@",
-                applicationGroup:'='
+                netprofile:'='
             },
-            link:function(scope){},
+            link:function(scope){
+
+                console.log(scope.netprofile);
+            },
+
+            controller: ['$scope','NetprofilesModel', function ($scope,NetprofilesModel) {
+
+                var netProfiles = [];
+                /**
+                 * Get profiles for the given tenant.
+                 */
+                function getNetprofiles() {
+                    NetprofilesModel.get().then(function (result) {
+                        $scope.netProfiles = _.filter(result, {
+                            'tenantName': 'default'        //TODO: Remove hardcoded tenant.
+                        });
+                    });
+                }
+                getNetprofiles();
+            }],
+
             
             templateUrl: 'applicationgroups/netprofiles.html'
         }

@@ -19,12 +19,7 @@ angular.module("contiv.networkpolicies")
                     scope.bandwidthPolicy.bandwidthNumber = bandwidthArray[0];
                     scope.bandwidthPolicy.bandwidthUnit = bandwidthArray[1];
                  }
-                
-                if(scope.type == "create"){
-                    scope.bandwidthPolicy.mode = 'create';
-                } else if (scope.type == "edit"){
-                    scope.bandwidthPolicy.mode = 'edit';
-                }
+
             },
 
             templateUrl: 'network_policies/bandwidthinput.html'

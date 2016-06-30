@@ -153,20 +153,7 @@ angular.module('contiv.applicationgroups')
                     }
                     getRules();
                 });
-
-            /**
-             * Get profiles for the given tenant.
-             */
-            function getNetprofiles() {
-
-                NetprofilesModel.get().then(function (result) {
-                    applicationGroupDetailsCtrl.netProfiles = _.filter(result, {
-                        'tenantName': 'default'//TODO: Remove hardcoded tenant.
-                    });
-                });
-            }
             
-            getNetprofiles();
             getIsolationPolicies();
 
             applicationGroupDetailsCtrl.saveApplicationGroup = saveApplicationGroup;

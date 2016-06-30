@@ -10,8 +10,8 @@
                 </div>
             </td>
             <td>
-                <select class="ui dropdown" ng-model="applicationGroup.selectedNetprofile"
-                        ng-options="policy.profileName for policy in applicationGroup.netProfiles | filter:netProfileSearchText">
+                <select class="ui dropdown" ng-model="netprofile"
+                        ng-options="policy.profileName for policy in netProfiles | filter:netProfileSearchText">
                     <option value="">none</option>
                 </select>
             </td>
@@ -32,13 +32,11 @@
 
         <tbody>
         <tr>
-            <td>{{applicationGroup.selectedNetprofile.profileName}}</td>
-            <td>{{applicationGroup.selectedNetprofile.tenantName}}</td>
-            <td>{{applicationGroup.selectedNetprofile.bandwidth}}</td>
-            <td>{{applicationGroup.selectedNetprofile.DSCP}}</td>
-
+            <td>{{netprofile.profileName}}</td>
+            <td>{{netprofile.tenantName}}</td>
+            <td>{{netprofile.bandwidth}}</td>
+            <td>{{netprofile.DSCP}}</td>
         </tr>
-
         </tbody>
     </table>
 </div>

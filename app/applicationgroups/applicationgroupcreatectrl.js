@@ -118,18 +118,7 @@ angular.module('contiv.applicationgroups')
                         });
                 }
             }
-
-            /**
-             * Get profiles for the given tenant.
-             */
-            function getNetprofiles() {
-                NetprofilesModel.get().then(function (result) {
-                    applicationGroupCreateCtrl.netProfiles = _.filter(result, {
-                        'tenantName': 'default'//TODO: Remove hardcoded tenant.
-                    });
-                });
-            }
-             
+            
             function resetForm() {
                 CRUDHelperService.stopLoader(applicationGroupCreateCtrl);
                 CRUDHelperService.hideServerError(applicationGroupCreateCtrl);
@@ -143,7 +132,6 @@ angular.module('contiv.applicationgroups')
 
             getNetworks();
             getIsolationPolicies();
-            getNetprofiles();
             
             applicationGroupCreateCtrl.createApplicationGroup = createApplicationGroup;
             applicationGroupCreateCtrl.cancelCreating = cancelCreating;
