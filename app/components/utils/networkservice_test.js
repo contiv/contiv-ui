@@ -44,7 +44,7 @@ describe('contiv.utils module', function () {
         });
         it('NetworkService.getSettings() should do a GET on /netmaster/api/v1/globals/', function () {
             NetworkService.getSettings(ctrl).then(function(response) {
-                expect(response).toEqual(networksettingData);
+                expect(response).toEqual(networksettingData[0]);
             });
             $httpBackend.expectGET(ContivGlobals.NETWORK_SETTINGS_ENDPOINT);
             $httpBackend.flush();

@@ -11,21 +11,30 @@ angular.module('contiv.settings')
     .controller('NetworkSettingCtrl', ['CRUDHelperService', 'NetworkService',
         function (CRUDHelperService, NetworkService) {
             var networkSettingCtrl = this;
+            networkSettingCtrl.vlanPattern = ContivGlobals.VLAN_REGEX;
+            networkSettingCtrl.vxlanPattern = ContivGlobals.VXLAN_REGEX;
 
             function updateNetworkSettings() {
                 if (networkSettingCtrl.form.$valid) {
                     CRUDHelperService.hideServerError(networkSettingCtrl);
                     CRUDHelperService.startLoader(networkSettingCtrl);
-                    NetworkService.updateSettings(networkSettingCtrl).then(function successCallback(result) {
+                    NetworkService.updateSettings(networkSettingCtrl.setting).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(networkSettingCtrl);
+
                     }, function errorCallback(result) {
                         CRUDHelperService.stopLoader(networkSettingCtrl);
                         CRUDHelperService.showServerError(networkSettingCtrl, result);
                     });
                 }
             }
-            networkSettingCtrl.setting = {};
-            NetworkService.getSettings(networkSettingCtrl);
+
+            function getNetworkSettings() {
+                NetworkService.getSettings().then(function successCallback(result) {
+                    networkSettingCtrl.setting = result;
+                }, function errorCallback(result) {
+                });
+            }
+            getNetworkSettings();
             networkSettingCtrl.updateNetworkSettings = updateNetworkSettings;
 
             CRUDHelperService.stopLoader(networkSettingCtrl);
