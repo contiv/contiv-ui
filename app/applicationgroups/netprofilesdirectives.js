@@ -10,10 +10,6 @@ angular.module("contiv.applicationgroups")
                 type:"@",
                 netprofile:'='
             },
-            link:function(scope){
-
-                console.log(scope.netprofile);
-            },
 
             controller: ['$scope','NetprofilesModel', function ($scope,NetprofilesModel) {
 
