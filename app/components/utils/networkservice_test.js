@@ -5,7 +5,7 @@ describe('contiv.utils module', function () {
         {
             "key": "global",
             "name": "global",
-            "network-infra-type": "default",
+            "networkInfraType": "default",
             "vlans": "1-4093",
             "vxlans": "1-10000"
         }
