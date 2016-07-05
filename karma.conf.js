@@ -2,7 +2,8 @@ module.exports = function (config) {
     config.set({
 
         preprocessors: {
-            'app/components/directives/*.html': ['ng-html2js']
+            'app/components/directives/*.html': ['ng-html2js'],
+            'app/components/directives/**/*.html': ['ng-html2js']
         },
 
         basePath: './',
@@ -18,6 +19,7 @@ module.exports = function (config) {
             'app/components/models/module.js',
             'app/components/directives/module.js',
             'app/components/directives/*.html',
+            'app/components/directives/**/*.html',
             'app/components/utils/module.js',
             'app/components/**/*.js',
             'app/networks/module.js',//Needed because jasmine is unable to locate the contiv.networks module which is defined here
