@@ -16,7 +16,8 @@ angular.module('contiv.utils')
                 DATA_INTERFACE: 'netplugin_if',
                 SCHED_PROVIDER: 'scheduler_provider',
                 VIP_ADDR: 'service_vip',
-                UCP_BOOTSTRAP_NODE: 'ucp_bootstrap_node_name'};
+                UCP_BOOTSTRAP_NODE: 'ucp_bootstrap_node_name',
+                CLUSTER_NAME: 'cluster_name'};
 
             function getSettings(ctrl) {
                 var deferred = $q.defer();
@@ -68,6 +69,10 @@ angular.module('contiv.utils')
                                 extraVars[node_constants.APIC_USERNAME];                        
                         }
                     }
+                    if (extraVars[node_constants.CLUSTER_NAME]) {
+                        ctrl.extra_vars[node_constants.CLUSTER_NAME] =
+                            extraVars[node_constants.CLUSTER_NAME];
+                    }
                     createEnvVariables(extraVars[node_constants.ENV], ctrl.envVariables);
                     createAnsibleVariables(extraVars, ctrl.ansibleVariables);
                 }, function errorCallback(result) {
@@ -91,7 +96,7 @@ angular.module('contiv.utils')
                     node_constants.CONTIV_NET_MODE, node_constants.CONTROL_INTERFACE, 
                     node_constants.ENV, node_constants.FWD_MODE, node_constants.DATA_INTERFACE, 
                     node_constants.SCHED_PROVIDER, node_constants.VIP_ADDR, 
-                    node_constants.UCP_BOOTSTRAP_NODE];
+                    node_constants.UCP_BOOTSTRAP_NODE, node_constants.CLUSTER_NAME];
                 var i;
 
                 for (i in extraVars) {
@@ -102,22 +107,11 @@ angular.module('contiv.utils')
             };
 
             function updateSettings(nodeOpsObj) {
-                BaseCollection.call(this, $http, $q, ContivGlobals.NODES_SETTINGS_GET_ENDPOINT);
-                var settingscollection = this;
-                var deferred = settingscollection.$q.defer();
-                var url = ContivGlobals.NODES_SETTINGS_SET_ENDPOINT;
-                settingscollection.$http.post(url, nodeOpsObj, {
+                return $http.post(ContivGlobals.NODES_SETTINGS_SET_ENDPOINT, nodeOpsObj, {
                         'headers': {
                             'Content-Type': 'application/json'
                         }
-                    })
-                    .then(function successCallback(response) {
-                        //Server doesn't return any json in response
-                        deferred.resolve();
-                    }, function errorCallback(response) {
-                        deferred.reject(response);
                     });
-                return deferred.promise;
             };
 
             function createExtraVars(ctrl) {
