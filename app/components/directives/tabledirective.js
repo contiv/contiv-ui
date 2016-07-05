@@ -35,7 +35,6 @@ angular.module("contiv.directives")
 
                     if ($scope.items !== undefined) {//TODO: Check why items are undefined during initialization
                         var searchTextFilteredItems = filterFilter($scope.items, tableCtrl.searchText);
-
                         var noOfChunks = Math.ceil(searchTextFilteredItems.length / tableCtrl.size);
                         if (noOfChunks == 0) {
                             noOfChunks = 1;
@@ -189,20 +188,6 @@ angular.module("contiv.directives")
             replace: true,
             scope: true,
             template: '<td ng-transclude></td>'
-        }
-    })
-    .directive("ctvTdAccordion", function () {
-        return {
-            restrict: 'E',
-            transclude: true,
-            scope: {
-                accordiondata: '=',
-                accname: '='
-            },
-            link:function(scope){
-                $('.ui.accordion').accordion();
-            },
-            templateUrl: 'components/directives/accordion.html'
         }
     })
     .directive("ctvTpagination", function () {

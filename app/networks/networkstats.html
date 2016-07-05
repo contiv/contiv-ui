@@ -27,10 +27,12 @@
     </tbody>
 </table>
 <ctv-collapsible title="End Points">
-    <ctv-table items="networkStatsCtrl.snapshots" filtereditems="networkStatsCtrl.filteredsnapshots" size="12">
+    <ctv-table items="networkStatsCtrl.containerList" filtereditems="networkStatsCtrl.filteredsnapshots" size="12">
         <ctv-thead>
             <ctv-tr>
-                <ctv-th>Container Names</ctv-th>
+                <ctv-th>
+                    Container Name
+                </ctv-th>
                 <ctv-th class="right floated three wide column">
                     <ctv-tsearch placeholder="Search Container Name..." size="30"></ctv-tsearch>
                 </ctv-th>
@@ -40,7 +42,7 @@
         <ctv-tbody>
             <ctv-tr ng-repeat="snapshot in networkStatsCtrl.filteredsnapshots">
                 <ctv-td>
-                    <ctv-td-accordion accordiondata="networkStatsCtrl.endpoints[snapshot]" accname=snapshot></ctv-td-accordion>
+                    <ctv-accordion accordiondata="networkStatsCtrl.containerDetails[snapshot.split(' ')[0]]" accname="snapshot.split(' ')[0]"></ctv-accordion>
                 </ctv-td>
                 <ctv-td></ctv-td>
             </ctv-tr>

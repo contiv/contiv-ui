@@ -205,11 +205,13 @@ Collection.prototype.deleteUsingKey = function (key, keyname, url) {
     return deferred.promise;
 };
 
-Collection.prototype.getInspectByKey = function(key,url){
+
+Collection.prototype.getInspectByKey = function(key,url,refresh){
     var collection = this;
     var deferred = collection.$q.defer();
-    if(key in collection.inspectStats)
+    if(key in collection.inspectStats && refresh==false){
         deferred.resolve(collection.inspectStats[key]);
+    }
     else {
         collection.$http.get(url + key + '/')
             .then(function successCallback(response) {

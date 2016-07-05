@@ -319,24 +319,22 @@ describe('contiv.networks module', function () {
             $httpBackend.expectGET(ContivGlobals.NETWORKS_INSPECT_ENDPOINT + networksData[0].key + '/');
             $httpBackend.flush();
         });
-        it('buildEndPoints function should construct snapshot array with all the endpoints', function () {
+        it('buildEndPoints function should construct container list with all the endpoints', function () {
             $httpBackend.flush();
-            console.log("Test Snapshot = "+ networkStatsCtrl.snapshots);
-            expect(networkStatsCtrl.snapshots).toBeDefined();
-            expect(Array.isArray(networkStatsCtrl.snapshots)).toBeTruthy();
-            expect(networkStatsCtrl.snapshots.length).toEqual(networkOperData.Oper.endpoints.length);
+            expect(networkStatsCtrl.containerList).toBeDefined();
+            expect(Array.isArray(networkStatsCtrl.containerList)).toBeTruthy();
+            expect(networkStatsCtrl.containerList.length).toEqual(networkOperData.Oper.endpoints.length);
         });
         it('buildEndPoints function should construct endpoints object', function () {
             $httpBackend.flush();
-            console.log("Test endpoints = "+ JSON.stringify(networkStatsCtrl.endpoints));
-            expect(networkStatsCtrl.endpoints).toBeDefined();
-            var len = Object.keys(networkStatsCtrl.endpoints).length;
+            expect(networkStatsCtrl.containerDetails).toBeDefined();
+            var len = Object.keys(networkStatsCtrl.containerDetails).length;
             expect(len).toEqual(2);
         });
         it('Labels inside endpoints should be an array and Ip Address should be a string',function(){
             $httpBackend.flush();
             var endpoint = networkOperData.Oper.endpoints[0].name;
-            var endpointStatsArray = networkStatsCtrl.endpoints[endpoint];
+            var endpointStatsArray = networkStatsCtrl.containerDetails[endpoint];
             for(var i in endpointStatsArray){
                 if(endpointStatsArray[i].name=="labels")
                     expect(Array.isArray((endpointStatsArray[i].value))).toBeTruthy();
