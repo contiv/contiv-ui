@@ -9,6 +9,16 @@ angular.module('contiv.nodes')
                 controller: 'NodeListCtrl as nodeListCtrl',
                 templateUrl: 'nodes/nodelist.html'
             })
+            .state('contiv.menu.nodes.lastlog', {
+                url: '/activelog',
+                controller: 'NodeListCtrl as nodeListCtrl',
+                template: '<ctv-logs title="Active Job" log="nodeListCtrl.activeLogs"></ctv-logs>'
+            })
+            .state('contiv.menu.nodes.activelog', {
+                url: '/lastlog',
+                controller: 'NodeListCtrl as nodeListCtrl',
+                template: '<ctv-logs title="Last Job" log="nodeListCtrl.lastLogs"></ctv-logs>'
+            })
         ;
     }])
     .controller('NodeListCtrl', ['$scope', '$interval', '$filter', 'NodesModel', 'CRUDHelperService', 'LogService',
