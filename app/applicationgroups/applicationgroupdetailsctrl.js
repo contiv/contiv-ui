@@ -40,7 +40,6 @@ angular.module('contiv.applicationgroups')
             applicationGroupDetailsCtrl.selectedPolicy = {};
             applicationGroupDetailsCtrl.selectedPolicies = [];
             applicationGroupDetailsCtrl.selectedNetprofile = {};
-            applicationGroupDetailsCtrl.netProfiles = [];
 
             //To display incoming and outgoing rules for selected policies
             applicationGroupDetailsCtrl.incomingRules = [];

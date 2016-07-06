@@ -36,7 +36,6 @@ angular.module('contiv.applicationgroups')
             var applicationGroupCreateCtrl = this;
             applicationGroupCreateCtrl.networks = [];
             applicationGroupCreateCtrl.isolationPolicies = [];
-            applicationGroupCreateCtrl.netProfiles = [];
             applicationGroupCreateCtrl.applicationGroup = {};
             applicationGroupCreateCtrl.selectedNetwork = {};
             applicationGroupCreateCtrl.selectedPolicy = {};

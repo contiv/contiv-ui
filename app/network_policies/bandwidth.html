@@ -1,5 +1,5 @@
 
-<div ng-switch="type">
+<div ng-switch="mode">
     <div ng-switch-when="create">
         <div class="field">
             <label for="newProfileName">Profile name</label>
@@ -22,7 +22,7 @@
 <div class="fields">
     <div class = "thirteen wide field">
         <label for="newBandwidthNumber">Bandwidth </label>
-        <input type="text" id="newBandwidthNumber" name="newBandwidthNumber"
+        <input type="number" id="newBandwidthNumber" name="newBandwidthNumber"
                ng-model="bandwidthPolicy.bandwidthNumber" placeholder="Enter bandwidth" required>
     </div>
     <div class = "three wide field">

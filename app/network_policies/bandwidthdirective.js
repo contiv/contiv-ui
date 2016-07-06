@@ -8,20 +8,21 @@ angular.module("contiv.networkpolicies")
             restrict: 'E',
             scope: {
                 bandwidthPolicy:'=',
-                type:"@"
+                mode:"@"
             },
 
             link:function(scope) {
 
-                if (scope.bandwidthPolicy.bandwidth != '') {
+                if (scope.bandwidthPolicy.bandwidth != ''){
                     var bandwidthArray = scope.bandwidthPolicy.bandwidth.split(' ');
                  
-                    scope.bandwidthPolicy.bandwidthNumber = bandwidthArray[0];
+                    scope.bandwidthPolicy.bandwidthNumber = Number(bandwidthArray[0]);
                     scope.bandwidthPolicy.bandwidthUnit = bandwidthArray[1];
+
                  }
 
             },
 
-            templateUrl: 'network_policies/bandwidthinput.html'
+            templateUrl: 'network_policies/bandwidth.html'
         }
     });

@@ -348,7 +348,6 @@ describe('contiv.networkpolicies module', function () {
             //Call flush to fulfill all the http requests to get netprofile policys before calling deleteNetwork()
             $httpBackend.flush();
             bandwidthPolicyDetailsCtrl.deletePolicy();
-            console.log(ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/');
             $httpBackend.expectDELETE(ContivGlobals.NETPROFILES_ENDPOINT + netprofileData[0].key + '/');
             $httpBackend.flush();
             expect(bandwidthPolicyDetailsCtrl.showLoader).toBeFalsy();

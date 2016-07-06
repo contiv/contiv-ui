@@ -255,11 +255,7 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.expectGET(ContivGlobals.POLICIES_ENDPOINT);
             $httpBackend.flush();
         });
-        it('ApplicationGroupCreateCtrl should do a GET on /api/v1/netprofiles/ REST API', function () {
-            $controller('ApplicationGroupCreateCtrl');
-            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
-            $httpBackend.flush();
-        });
+
         it('ApplicationGroupCreateCtrl.addIsolationPolicy() should do a GET on /api/rules/ REST API', function () {
             var groupCreateCtrl = $controller('ApplicationGroupCreateCtrl');
             groupCreateCtrl.selectedPolicy = policyListData[0];
@@ -328,10 +324,7 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.expectGET(ContivGlobals.RULES_ENDPOINT);
             $httpBackend.flush();
         });
-        it('ApplicationGroupDetailsCtrl should do a GET on /api/netprofiles/ REST API', function () {
-            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
-            $httpBackend.flush();
-        });
+
         it('ApplicationGroupDetailsCtrl.saveApplicationGroup() should do a PUT on /api/endpointGroups/ REST API', function () {
             $httpBackend.expectGET(ContivGlobals.APPLICATIONGROUPS_ENDPOINT);
             $httpBackend.flush();
@@ -371,11 +364,6 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.flush();
             expect(groupDetailsCtrl.showLoader).toBeFalsy();
         });
-        it('ApplicationGroupDetailsCtrl should have netprofiles array assigned to netprofiles property', function() {
-            $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
-            $httpBackend.flush();
-            expect(groupDetailsCtrl.netProfiles.length).toEqual(1);
-            expect(groupDetailsCtrl.netProfiles[0]).toEqual(netprofileListData[0]);
-        });
+       
     });
 });

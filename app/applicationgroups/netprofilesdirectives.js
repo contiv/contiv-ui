@@ -3,6 +3,21 @@
  */
 
 angular.module("contiv.applicationgroups")
+    .controller('NetprofileCtrl',['$scope','NetprofilesModel', function ($scope,NetprofilesModel) {
+
+        var netProfiles = [];
+        /**
+         * Get profiles for the given tenant.
+         */
+        function getNetprofiles() {
+            NetprofilesModel.get().then(function (result) {
+                $scope.netProfiles = _.filter(result, {
+                    'tenantName': 'default'        //TODO: Remove hardcoded tenant.
+                });
+            });
+        }
+        getNetprofiles();
+    }])
     .directive("ctvNetprofiles", function() {
         return {
             restrict: 'E',
@@ -11,23 +26,8 @@ angular.module("contiv.applicationgroups")
                 netprofile:'='
             },
 
-            controller: ['$scope','NetprofilesModel', function ($scope,NetprofilesModel) {
+            controller: 'NetprofileCtrl',
 
-                var netProfiles = [];
-                /**
-                 * Get profiles for the given tenant.
-                 */
-                function getNetprofiles() {
-                    NetprofilesModel.get().then(function (result) {
-                        $scope.netProfiles = _.filter(result, {
-                            'tenantName': 'default'        //TODO: Remove hardcoded tenant.
-                        });
-                    });
-                }
-                getNetprofiles();
-            }],
-
-            
             templateUrl: 'applicationgroups/netprofiles.html'
         }
     });
