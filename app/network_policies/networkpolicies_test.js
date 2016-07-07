@@ -264,6 +264,8 @@ describe('contiv.networkpolicies module', function () {
 
     beforeEach(module('contiv.networkpolicies'));
 
+    beforeEach(module('contiv.test.directives'));
+
     var $httpBackend;
 
     beforeEach(inject(function (_$httpBackend_) {
@@ -486,5 +488,34 @@ describe('contiv.networkpolicies module', function () {
             expect(isolationPolicyCreateCtrl).toBeDefined();
         });
 
+    });
+    
+
+    describe('bandwidth directive', function () {
+        var element;
+        var $rootScope,$compile;
+
+        var policy = netprofileData[0];
+        var mode_var = "create";
+        
+        beforeEach(inject(function(_$compile_,_$rootScope_){
+            // The injector unwraps the underscores (_) from around the parameter names when matching
+            $rootScope = _$rootScope_;
+            $compile = _$compile_;
+
+        }));
+        beforeEach(inject(function() {
+            // Compile a piece of HTML containing the directive
+
+            element = $compile("<ctv-bandwidth mode=mode_var bandwidth-policy=policy></ctv-bandwidth>")($rootScope);
+            $rootScope.policy=policy;
+            $rootScope.mode = mode_var;
+            // fire all the watches, so the scope expression will be evaluated
+            $rootScope.$digest();
+        }));
+        it('Replaces the element with the appropriate content', function () {
+            expect(element.html()).toContain("<div ng-switch=\"mode\">");
+            
+        });
     });
 });
