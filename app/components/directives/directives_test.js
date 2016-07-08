@@ -8,13 +8,13 @@ describe('contiv.directives', function() {
         {name: 'fooEnv3', value: 'barEnv3'}
     ];
 
-    var accordionName="Accordion1";
+    var accordionTitle = "Accordion1";
 
-    var accordionContents = [
-        {name:"name1",value:"value1"},
-        {name:"name2",value:"value2"},
-        {name:"name3",value:"value3"},
-        {name:"labels",value:["label1=val1","label2=val2","label3=val3"]}
+    var accordionItems = [
+        {name: "name1", value: "value1"},
+        {name: "name2", value: "value2"},
+        {name: "name3", value: "value3"},
+        {name: "labels", value: ["label1=val1", "label2=val2", "label3=val3"]}
     ];
 
     var $compile, $rootScope;
@@ -97,47 +97,47 @@ describe('contiv.directives', function() {
         });
     });
 
-    describe('accordion directive',function(){
+    describe('accordion directive', function(){
         var element;
         beforeEach(inject(function(){
             // Compile a piece of HTML containing the directive
-            $rootScope.accordionContents = accordionContents;
-            $rootScope.accordionName=accordionName;
+            $rootScope.accordionItems = accordionItems;
+            $rootScope.accordionTitle = accordionTitle;
             $rootScope.accordion = function(){};
             // fire all the watches, so the scope expression will be evaluated
-            element = $compile("<ctv-accordion accordiondata='accordionContents' accname='accordionName'></ctv-accordion>")($rootScope);
+            element = $compile("<ctv-accordion items = 'accordionItems' title = 'accordionTitle'></ctv-accordion>")($rootScope);
             $rootScope.$digest();
             isolateScope = element.isolateScope();
         }));
 
-        it('Element with accordion class must be present',function(){
+        it('Element with accordion class must be present', function(){
             expect(element.find("div:first-child").hasClass("accordion")).toBeTruthy();
         });
 
-        it('Accordion shoud have the title with the assigned name',function(){
-            expect(element.find("div.title").text().replace(/\s/g, '')).toEqual(accordionName);
+        it('Accordion shoud have the title with the assigned name', function(){
+            expect(element.find("div.title").text().replace(/\s/g, '')).toEqual(accordionTitle);
         });
 
-        it('Number of table rows should be equal to the number of name value pairs in accordiondata',function(){
-            expect(element.find("tr").length).toBe(accordionContents.length);
+        it('Number of table rows should be equal to the number of name value pairs in accordiondata', function(){
+            expect(element.find("tr").length).toBe(accordionItems.length);
         });
 
-        it('Accordion contents must be valid',function(){
-            var i=0;
+        it('Accordion contents must be valid', function(){
+            var i = 0;
             var dataRows = element.find("tr");
-            dataRows.each(function (index,elem){
+            dataRows.each(function (index, elem){
                 var tableData = angular.element(elem).children();
-                expect(tableData[0].textContent.replace(/\s/g, '')).toEqual(accordionContents[i].name);
-                if(accordionContents[i].name=="labels"){
+                expect(tableData[0].textContent.replace(/\s/g, '')).toEqual(accordionItems[i].name);
+                if(accordionItems[i].name == "labels"){
                     var labelNodes = tableData[1].childNodes;
                     for(var j in labelNodes) {
-                        if(labelNodes[j].nodeType==1){
-                            expect(accordionContents[i].value).toContain(labelNodes[j].textContent.replace(/\s/g, ''));
+                        if(labelNodes[j].nodeType == 1){
+                            expect(accordionItems[i].value).toContain(labelNodes[j].textContent.replace(/\s/g, ''));
                         }
                     }
                 }
                 else{
-                    expect(tableData[1].textContent.replace(/\s/g, '')).toEqual(accordionContents[i].value);
+                    expect(tableData[1].textContent.replace(/\s/g, '')).toEqual(accordionItems[i].value);
                 }
                 i++;
             });

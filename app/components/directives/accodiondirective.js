@@ -5,13 +5,12 @@ angular.module("contiv.directives")
     .directive("ctvAccordion", function () {
         return {
             restrict: 'E',
-            //transclude: true,
             scope: {
-                accordiondata: '=',
-                accname: '='
+                items: '=',
+                title: '='
             },
-            link:function(scope,element){
-                if(typeof element.find('.ui.accordion').accordion=='function')
+            link:function(scope, element){
+                if(typeof element.find('.ui.accordion').accordion == 'function')
                     element.find('.ui.accordion').accordion();
             },
             templateUrl: 'components/directives/accordion.html'

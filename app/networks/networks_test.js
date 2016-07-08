@@ -321,9 +321,9 @@ describe('contiv.networks module', function () {
         });
         it('buildEndPoints function should construct container list with all the endpoints', function () {
             $httpBackend.flush();
-            expect(networkStatsCtrl.containerList).toBeDefined();
-            expect(Array.isArray(networkStatsCtrl.containerList)).toBeTruthy();
-            expect(networkStatsCtrl.containerList.length).toEqual(networkOperData.Oper.endpoints.length);
+            expect(networkStatsCtrl.endpoints).toBeDefined();
+            expect(Array.isArray(networkStatsCtrl.endpoints)).toBeTruthy();
+            expect(networkStatsCtrl.endpoints.length).toEqual(networkOperData.Oper.endpoints.length);
         });
         it('buildEndPoints function should construct endpoints object', function () {
             $httpBackend.flush();
@@ -336,9 +336,9 @@ describe('contiv.networks module', function () {
             var endpoint = networkOperData.Oper.endpoints[0].name;
             var endpointStatsArray = networkStatsCtrl.containerDetails[endpoint];
             for(var i in endpointStatsArray){
-                if(endpointStatsArray[i].name=="labels")
+                if(endpointStatsArray[i].name == "labels")
                     expect(Array.isArray((endpointStatsArray[i].value))).toBeTruthy();
-                if(endpointStatsArray[i].name=="ipAddress")
+                if(endpointStatsArray[i].name == "ipAddress")
                     expect(typeof endpointStatsArray[i].value == "string").toBeTruthy();
             }
         });

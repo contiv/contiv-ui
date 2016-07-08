@@ -206,17 +206,17 @@ Collection.prototype.deleteUsingKey = function (key, keyname, url) {
 };
 
 
-Collection.prototype.getInspectByKey = function(key,url,refresh){
+Collection.prototype.getInspectByKey = function(key, url, refresh){
     var collection = this;
     var deferred = collection.$q.defer();
-    if(key in collection.inspectStats && refresh==false){
+    if(key in collection.inspectStats && refresh == false){
         deferred.resolve(collection.inspectStats[key]);
     }
     else {
         collection.$http.get(url + key + '/')
             .then(function successCallback(response) {
                     var responseStats = collection.extract(response);
-                    collection.inspectStats[key]=responseStats
+                    collection.inspectStats[key] = responseStats
                     deferred.resolve(responseStats);
                 }
                 , function errorCallback(error) {

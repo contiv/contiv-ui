@@ -1,17 +1,17 @@
 <div class="ui accordion">
     <div class="title">
         <i class="dropdown icon"></i>
-        {{accname}}
+        {{title}}
     </div>
     <div class="content">
         <table style="margin-left:3%">
             <tbody style="border-style: hidden">
-            <tr ng-repeat="accrow in accordiondata">
-                <td>{{accrow.name}}</td>
-                <td ng-if="accrow.name=='labels'">
-                    <div class="ui label tiny" ng-repeat="selector in accrow.value" ng-if="accrow.value.length>0" style="margin-top: 2px;">{{selector}}</div>
+            <tr ng-repeat="item in items">
+                <td>{{item.name}}</td>
+                <td ng-if="item.format=='label'">
+                    <div class="ui label tiny" ng-repeat="selector in item.value" ng-if="item.type=='array'" style="margin-top: 2px;">{{selector}}</div>
                 </td>
-                <td ng-if="accrow.name!='labels'">{{accrow.value}}</td>
+                <td ng-if="item.format!='label'">{{item.value}}</td>
             </tr>
             </tbody>
         </table>
