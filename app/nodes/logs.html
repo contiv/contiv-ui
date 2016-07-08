@@ -4,29 +4,29 @@
             <i class="large arrow left icon"></i>
         </a>
     </div>
-    <div class="content; left floated ten wide column" style="font-size: 24px">{{title}}</div>
+    <div class="left floated ten wide column" style="font-size: 24px">{{title}}</div>
 </div>
 
 <table class="ui very basic table" style="margin-top:30px">
     <tbody> 
         <tr>
-            <td width='100px' valign="top"><b>Description</b></td>
+            <td class="ctv-header three wide column top aligned">Description</td>
             <td>{{log.desc}}</td>
         </tr>
         <tr>
-            <td valign="top"><b>Task</b></td>
+            <td class="ctv-header three wide column top aligned">Task</td>
             <td>{{log.task}}</td>
         </tr>
         <tr>
-            <td valign="top"><b>Status</b></td>
+            <td class="ctv-header three wide column top aligned">Status</td>
             <td>{{log.status}}</td>
         </tr>
         <tr> 
-            <td valign="top"><b>Error</b></td>
+            <td class="ctv-header three wide column top aligned">Error</td>
             <td>{{log.error}}</td>
         </tr>
         <tr> 
-            <td valign="top"><b>Logs</b></td>                  
+            <td class="ctv-header three wide column top aligned">Logs</td>
             <td>
                 <div ng-repeat="line in log.logs track by $index">{{ line }}</div>
             </td>
@@ -38,5 +38,4 @@
     table td { 
         word-break: break-word;
     }
-    tr:nth-child(even) {background: #f1fafe}
 </style>
