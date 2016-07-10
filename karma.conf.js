@@ -5,7 +5,7 @@ module.exports = function (config) {
             'app/components/directives/*.html': ['ng-html2js'],
             'app/network_policies/bandwidth.html': ['ng-html2js'],
             'app/applicationgroups/netprofile.html': ['ng-html2js'],
-            'app/components/directives/**/*.html': ['ng-html2js']
+            'app/components/directives/nodes/*.html': ['ng-html2js']
 
         },
 
