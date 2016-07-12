@@ -6,3 +6,7 @@ td.ctv-header {
 tr:nth-child(even) {
     background: #f1fafe
 }
+
+td.ctv-wordwrap {
+  word-break: break-all;
+}
