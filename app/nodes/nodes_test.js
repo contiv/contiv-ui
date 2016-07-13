@@ -177,7 +177,7 @@ describe("contiv.nodes module", function () {
             expect(nodeActiveJobLogsCtrl).toBeDefined();
             $httpBackend.flush();
         });
-        it('NodeListCtrl should do a GET on /info/job/active REST API', function () {
+        it('NodeActiveJobLogsCtrl should do a GET on /info/job/active REST API', function () {
             $httpBackend.expectGET(ContivGlobals.NODES_ACTIVE_JOB_ENDPOINT);
             $httpBackend.flush();
         });
@@ -198,7 +198,7 @@ describe("contiv.nodes module", function () {
             expect(nodeLastJobLogsCtrl).toBeDefined();
             $httpBackend.flush();
         });
-        it('NodeListCtrl should do a GET on /info/job/last REST API', function () {
+        it('NodeLastJobLogsCtrl should do a GET on /info/job/last REST API', function () {
             $httpBackend.expectGET(ContivGlobals.NODES_LAST_JOB_ENDPOINT);
             $httpBackend.flush();
         });
