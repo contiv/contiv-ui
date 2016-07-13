@@ -1,5 +1,5 @@
 angular.module('contiv.utils')
-    .factory('VolumesettingService', ['$http', '$q', function ($http, $q) {
+    .factory('VolumeSettingService', ['$http', '$q', function ($http, $q) {
 
         function getSettings() {
             var deferred = $q.defer();
@@ -14,7 +14,7 @@ angular.module('contiv.utils')
 
         function updateSettings(setting) {
             return $http.post(ContivGlobals.VOLUMES_GLOBAL_ENDPOINT, setting);
-        };
+        }
 
         return {
             getSettings: getSettings,

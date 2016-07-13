@@ -17,10 +17,10 @@
         <input type="text" id="mountpath" name="mountpath" ng-model="volumeSettingCtrl.setting.MountPath" placeholder="/mnt/ceph" required>
     </div>
     <div class="field">
-        <label>
+        <div class="ui checkbox">
             <input type="checkbox" name="debug" tabindex="0" ng-model="volumeSettingCtrl.setting.Debug">
-            Debug
-        </label>
+            <label>Debug</label>
+        </div>
     </div>
 
     <div class="ui sixteen column grid">

@@ -4,19 +4,19 @@ angular.module('contiv.settings')
             .state('contiv.menu.settings.details.volumes', {
                 url: '/volumes',
                 controller: 'VolumeSettingCtrl as volumeSettingCtrl',
-                templateUrl: '/settings/volumesetting.html'
+                templateUrl: '/settings/volumesettings.html'
             })
         ;
     }])
-    .controller('VolumeSettingCtrl', ['CRUDHelperService', 'VolumesettingService',
-        function (CRUDHelperService, VolumesettingService) {
+    .controller('VolumeSettingCtrl', ['CRUDHelperService', 'VolumeSettingService',
+        function (CRUDHelperService, VolumeSettingService) {
             var volumeSettingCtrl = this;
 
             function updateVolumeSettings() {
                 if (volumeSettingCtrl.form.$valid) {
                     CRUDHelperService.hideServerError(volumeSettingCtrl);
                     CRUDHelperService.startLoader(volumeSettingCtrl);
-                    VolumesettingService.updateSettings(volumeSettingCtrl.setting).then(function successCallback(result) {
+                    VolumeSettingService.updateSettings(volumeSettingCtrl.setting).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(volumeSettingCtrl);
 
                     }, function errorCallback(result) {
@@ -27,7 +27,7 @@ angular.module('contiv.settings')
             }
 
             function getVolumeSettings() {
-                VolumesettingService.getSettings().then(function successCallback(result) {
+                VolumeSettingService.getSettings().then(function successCallback(result) {
                     volumeSettingCtrl.setting = result;
                 }, function errorCallback(result) {
                 });
