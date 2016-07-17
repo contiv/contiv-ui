@@ -9,6 +9,11 @@ angular.module('contiv.servicelbs')
                 controller: 'ServicelbDetailsCtrl as servicelbDetailsCtrl',
                 templateUrl: 'service_lbs/servicelbdetails.html'
             })
+            .state('contiv.menu.servicelbs.details.info', {
+                url: '/info',
+                controller: 'ServicelbDetailsCtrl as servicelbDetailsCtrl',
+                templateUrl: 'service_lbs/servicelbinfo.html'
+            })
             .state('contiv.menu.servicelbs.edit', {
                 url: '/edit/:key',
                 controller: 'ServicelbDetailsCtrl as servicelbDetailsCtrl',
