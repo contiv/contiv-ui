@@ -12,6 +12,7 @@ angular.module("contiv.directives")
             link:function(scope, element){
                 if(typeof element.find('.ui.accordion').accordion == 'function')
                     element.find('.ui.accordion').accordion();
+                scope.title.ipAddress = scope.title.ipAddress.filter(function(v){return v.length > 0}).join();
             },
             templateUrl: 'components/directives/accordion.html'
         }

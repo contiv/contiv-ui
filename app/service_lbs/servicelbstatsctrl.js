@@ -11,7 +11,7 @@ angular.module('contiv.servicelbs')
             })
         ;
     }])
-    .controller('ServicelnStatsCtrl',
+    .controller('ServicelbStatsCtrl',
         ['$state', '$stateParams', '$scope', '$interval', '$filter', 'ServicelbsModel', 'InspectService',
             function ($state, $stateParams, $scope, $interval, $filter, ServicelbsModel, InspectService) {
 

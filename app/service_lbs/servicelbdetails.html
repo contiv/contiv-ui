@@ -21,12 +21,12 @@
             </div>
         </div>
         <button ng-switch-when="edit" class="ui disabled button"
-                ui-sref="contiv.menu.servicelbs.edit({key:servicelbDetailsCtrl.servicelb.key})">
+                ui-sref="contiv.menu.servicelbs.details.edit({key:servicelbDetailsCtrl.servicelb.key})">
             <i class="edit icon"></i>
             Edit
         </button>
         <button ng-switch-when="details" class="ui basic button"
-                ui-sref="contiv.menu.servicelbs.edit({key:servicelbDetailsCtrl.servicelb.key})">
+                ui-sref="contiv.menu.servicelbs.details.edit({key:servicelbDetailsCtrl.servicelb.key})">
             <i class="edit icon"></i>
             Edit
         </button>
@@ -49,3 +49,13 @@
     </div>
 </div>
 <div ui-view style="margin-top:30px"></div>
+<div ng-switch="servicelbDetailsCtrl.mode">
+    <ctv-error ng-switch-when="edit" ng-show="servicelbDetailsCtrl.showServerError"
+           header="Error saving service load balancer"
+           error="servicelbDetailsCtrl.serverErrorMessage">
+    </ctv-error>
+    <ctv-error ng-switch-when="details" ng-show="servicelbDetailsCtrl.showServerError"
+           header="Error deleting service load balancer"
+           error="servicelbDetailsCtrl.serverErrorMessage">
+    </ctv-error>
+</div>

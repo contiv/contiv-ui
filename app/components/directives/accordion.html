@@ -1,7 +1,9 @@
 <div class="ui accordion">
     <div class="title">
         <i class="dropdown icon"></i>
-        {{title}}
+        <div style="display:inline-block; width:42%">{{title.name.substr(0,12)}}</div>
+        <div style="display:inline-block; width:40%">{{title.ipAddress}}</div>
+        <div style="display:inline-block">{{title.homingHost}}</div>
     </div>
     <div class="content">
         <table style="margin-left:3%">
