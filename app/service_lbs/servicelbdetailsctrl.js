@@ -11,6 +11,7 @@ angular.module('contiv.servicelbs')
             })
             .state('contiv.menu.servicelbs.details.info', {
                 url: '/info',
+                //controller: 'ServicelbDetailsCtrl as servicelbDetailsCtrl',
                 templateUrl: 'service_lbs/servicelbinfo.html'
             })
             .state('contiv.menu.servicelbs.details.edit', {
@@ -30,11 +31,9 @@ angular.module('contiv.servicelbs')
                  */
                 function setMode() {
                     if ($state.is('contiv.menu.servicelbs.details.edit')) {
-                        console.log("Mode is getting set to edit")
                         servicelbDetailsCtrl.mode = 'edit';
                     } else {
                         servicelbDetailsCtrl.mode = 'details';
-                        console.log("Mode is getting set to details")
                     }
                 }
 
@@ -65,11 +64,14 @@ angular.module('contiv.servicelbs')
                 function saveServicelb() {
                     CRUDHelperService.hideServerError(servicelbDetailsCtrl);
                     CRUDHelperService.startLoader(servicelbDetailsCtrl);
+                    var existingLabels = servicelbDetailsCtrl.servicelb.selectors;
                     createLabelSelectorStrings();
                     ServicelbsModel.save(servicelbDetailsCtrl.servicelb).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(servicelbDetailsCtrl);
                         returnToServicelbDetails();
                     }, function errorCallback(result) {
+                        servicelbDetailsCtrl.servicelb.selectors = existingLabels;
+                        createLabelSelectors();
                         CRUDHelperService.stopLoader(servicelbDetailsCtrl);
                         CRUDHelperService.showServerError(servicelbDetailsCtrl, result);
                     });

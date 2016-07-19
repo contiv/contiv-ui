@@ -21,7 +21,14 @@
         </tbody>
     </table>
     <div ng-switch="servicelbDetailsCtrl.mode">
-
+        <ctv-error ng-switch-when="edit" ng-show="servicelbDetailsCtrl.showServerError"
+                   header="Error saving service load balancer"
+                   error="servicelbDetailsCtrl.serverErrorMessage">
+        </ctv-error>
+        <ctv-error ng-switch-when="details" ng-show="servicelbDetailsCtrl.showServerError"
+                   header="Error deleting service load balancer"
+                   error="servicelbDetailsCtrl.serverErrorMessage">
+        </ctv-error>
         <div ng-switch-when="details">
             <div class="ui section divider" style="margin-top: 40px"></div>
             <h4 class="ui header" style="margin-top: 40px">Label Selectors</h4>

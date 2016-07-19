@@ -8,7 +8,7 @@ describe('contiv.directives', function() {
         {name: 'fooEnv3', value: 'barEnv3'}
     ];
 
-    var accordionTitle = "Accordion1";
+    var accordionTitle = {name:"Accordion1",ipAddress:"20.1.1.2",homingHost:"contiv-net1"};
 
     var accordionItems = [
         {name: "name1", value: "value1"},
@@ -115,7 +115,15 @@ describe('contiv.directives', function() {
         });
 
         it('Accordion shoud have the title with the assigned name', function(){
-            expect(element.find("div.title").text().replace(/\s/g, '')).toEqual(accordionTitle);
+            expect(element.find("div.title div:nth-child(2)").text().replace(/\s/g, '')).toEqual(accordionTitle.name);
+        });
+
+        it('Accordion shoud have the title with the assigned container ipAddress', function(){
+            expect(element.find("div.title div:nth-child(3)").text().replace(/\s/g, '')).toEqual(accordionTitle.ipAddress);
+        });
+
+        it('Accordion shoud have the title with the assigned host name', function(){
+            expect(element.find("div.title div:nth-child(4)").text().replace(/\s/g, '')).toEqual(accordionTitle.homingHost);
         });
 
         it('Number of table rows should be equal to the number of name value pairs in accordiondata', function(){

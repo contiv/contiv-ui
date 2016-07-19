@@ -22,11 +22,11 @@ angular.module('contiv.servicelbs')
                     ServicelbsModel.getInspectByKey($stateParams.key, ContivGlobals.SERVICELBS_INSPECT_ENDPOINT, refresh)
                         .then(function (result) {
                             servicelbStatsCtrl.servicelbInspectStats = result.Oper;
-                            var endpoints = $filter('orderBy')(result.Oper.endpoints, 'name');
-                            var containerDetails = InspectService.buildEndPoints(endpoints);
-                            if(InspectService.checkContainerChanged(servicelbStatsCtrl.containerDetails,containerDetails)){
-                                servicelbStatsCtrl.endpoints = endpoints;
-                                servicelbStatsCtrl.containerDetails = containerDetails;
+                            var providers = $filter('orderBy')(result.Oper.providers, 'name');
+                            var providerDetails = InspectService.buildEndPoints(providers);
+                            if(InspectService.checkContainerChanged(servicelbStatsCtrl.providerDetails,providerDetails)){
+                                servicelbStatsCtrl.providers = providers;
+                                servicelbStatsCtrl.providerDetails = providerDetails;
                             }
                         });
                 }

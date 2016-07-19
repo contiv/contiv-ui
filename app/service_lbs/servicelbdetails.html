@@ -49,13 +49,3 @@
     </div>
 </div>
 <div ui-view style="margin-top:30px"></div>
-<div ng-switch="servicelbDetailsCtrl.mode">
-    <ctv-error ng-switch-when="edit" ng-show="servicelbDetailsCtrl.showServerError"
-           header="Error saving service load balancer"
-           error="servicelbDetailsCtrl.serverErrorMessage">
-    </ctv-error>
-    <ctv-error ng-switch-when="details" ng-show="servicelbDetailsCtrl.showServerError"
-           header="Error deleting service load balancer"
-           error="servicelbDetailsCtrl.serverErrorMessage">
-    </ctv-error>
-</div>

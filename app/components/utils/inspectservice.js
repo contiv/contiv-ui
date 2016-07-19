@@ -6,7 +6,7 @@ angular.module("contiv.utils")
 
         /* This function would build the containerDetails object.
          eg :
-         networkStatsCtrl.containerDetails={
+         containerDetails={
          ContainerName1 : [{name: "homingHost", value: "cluster-node1", type: "string", format: "none"},
          {name: macAddress, value: "02:02", type:"string", format:"none"}
          ],
