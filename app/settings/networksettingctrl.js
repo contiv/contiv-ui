@@ -40,9 +40,9 @@ angular.module('contiv.settings')
             function getGlobalOperStatus(){
                 NetworkService.getSettings(ContivGlobals.GLOBAL_OPERATIONAL_ENDPOINT).then(function(result){
                     var globOperStat = [];
-                    var operState=result["Oper"];
+                    var operState = result["Oper"];
                     for(var key in operState){
-                        globOperStat.push({globProperty:key,globPropertyVal:operState[key]});
+                        globOperStat.push({globProperty: key, globPropertyVal: operState[key]});
                     }
                     networkSettingCtrl.globalOperStat = globOperStat;
                 });

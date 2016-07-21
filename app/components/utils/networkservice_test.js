@@ -11,7 +11,16 @@ describe('contiv.utils module', function () {
         }
     ];
 
-    var globalOperationalState = {Oper:{numNetworks:5, vxlansInUse:"1-2", VlansInUse: "1-4,7,9-12", DefaultNetwork: "default:contiv-1", FreeVXLANsStart: "5"}};
+    var globalOperationalState = {
+        Oper: {
+            "numNetworks": 5,
+            "vxlansInUse": "1-2",
+            "VlansInUse": "1-4,7,9-12",
+            "DefaultNetwork": "default:contiv-1",
+            "FreeVXLANsStart": "5"
+        }
+    };
+
     beforeEach(module('ui.router'));
     beforeEach(module('contiv.utils'));
     beforeEach(module('contiv.settings'));
@@ -34,8 +43,8 @@ describe('contiv.utils module', function () {
         var $controller;
         var ctrl,$interval,$rootScope;
         beforeEach(inject(function ( _$controller_, $injector, _$interval_, _$rootScope_) {
-            $interval=_$interval_;
-            $rootScope=_$rootScope_;
+            $interval = _$interval_;
+            $rootScope = _$rootScope_;
             $controller = _$controller_;
             ctrl = $controller('NetworkSettingCtrl', {$interval: $interval, $scope: $rootScope});
 
@@ -43,7 +52,6 @@ describe('contiv.utils module', function () {
             $httpBackend = $injector.get('$httpBackend');
         }));
         it('should be defined', function () {
-            console.log("Network Service ---");
             expect(NetworkService).toBeDefined();
             $httpBackend.flush();
         });

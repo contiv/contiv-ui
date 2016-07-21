@@ -31,7 +31,15 @@ describe('contiv.settings module', function () {
         }
     ];
 
-    var globalOperationalState = {Oper:{numNetworks:5, vxlansInUse:"1-2", VlansInUse: "1-4,7,9-12", DefaultNetwork: "default:contiv-1", FreeVXLANsStart: "5"}};
+    var globalOperationalState = {
+        Oper: {
+            numNetworks: 5,
+            vxlansInUse: "1-2",
+            VlansInUse: "1-4,7,9-12",
+            DefaultNetwork: "default:contiv-1",
+            FreeVXLANsStart: "5"
+        }
+    };
 
     beforeEach(module('ui.router'));
     beforeEach(module('contiv.settings'));
