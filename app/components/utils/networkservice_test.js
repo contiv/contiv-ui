@@ -11,6 +11,7 @@ describe('contiv.utils module', function () {
         }
     ];
 
+    var globalOperationalState = {Oper:{numNetworks:5, vxlansInUse:"1-2", VlansInUse: "1-4,7,9-12", DefaultNetwork: "default:contiv-1", FreeVXLANsStart: "5"}};
     beforeEach(module('ui.router'));
     beforeEach(module('contiv.utils'));
     beforeEach(module('contiv.settings'));
@@ -21,6 +22,7 @@ describe('contiv.utils module', function () {
         $httpBackend = _$httpBackend_;
         $httpBackend.when('GET', ContivGlobals.NETWORK_SETTINGS_ENDPOINT).respond(networksettingData);
         $httpBackend.when('POST', ContivGlobals.NETWORK_SETTINGS_ENDPOINT + networksettingData[0].key + '/').respond();
+        $httpBackend.when('GET', ContivGlobals.GLOBAL_OPERATIONAL_ENDPOINT).respond(globalOperationalState);
     }));
 
     afterEach(function () {
@@ -30,21 +32,25 @@ describe('contiv.utils module', function () {
 
     describe("NetworkService", function () {
         var $controller;
-        var ctrl;
-        beforeEach(inject(function ( _$controller_, $injector) {
+        var ctrl,$interval,$rootScope;
+        beforeEach(inject(function ( _$controller_, $injector, _$interval_, _$rootScope_) {
+            $interval=_$interval_;
+            $rootScope=_$rootScope_;
             $controller = _$controller_;
-            ctrl = $controller('NetworkSettingCtrl', { });
+            ctrl = $controller('NetworkSettingCtrl', {$interval: $interval, $scope: $rootScope});
 
             NetworkService = $injector.get('NetworkService');
             $httpBackend = $injector.get('$httpBackend');
         }));
         it('should be defined', function () {
+            console.log("Network Service ---");
             expect(NetworkService).toBeDefined();
             $httpBackend.flush();
         });
         it('NetworkService.getSettings() should do a GET on /netmaster/api/v1/globals/', function () {
-            NetworkService.getSettings(ctrl).then(function(response) {
-                expect(response).toEqual(networksettingData[0]);
+            var url = ContivGlobals.NETWORK_SETTINGS_ENDPOINT;
+            NetworkService.getSettings(url).then(function(response) {
+                expect(response[0]).toEqual(networksettingData[0]);
             });
             $httpBackend.expectGET(ContivGlobals.NETWORK_SETTINGS_ENDPOINT);
             $httpBackend.flush();
@@ -53,6 +59,14 @@ describe('contiv.utils module', function () {
             ctrl.key = networksettingData[0].key;
             NetworkService.updateSettings(ctrl);
             $httpBackend.expectPOST(ContivGlobals.NETWORK_SETTINGS_ENDPOINT + networksettingData[0].key + '/');
+            $httpBackend.flush();
+        });
+        it('NetworkService.getSettings() should do a GET on /netmaster/api/v1/globals/', function () {
+            var url = ContivGlobals.GLOBAL_OPERATIONAL_ENDPOINT;
+            NetworkService.getSettings(url).then(function(response) {
+                expect(response.Oper).toEqual(globalOperationalState.Oper);
+            });
+            $httpBackend.expectGET(ContivGlobals.GLOBAL_OPERATIONAL_ENDPOINT);
             $httpBackend.flush();
         });
     });   

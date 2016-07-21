@@ -15,6 +15,7 @@ var ContivGlobals = (function () {
         'ORGANIZATIONS_ENDPOINT':'/netmaster/api/v1/tenants/',
         'NETWORK_SETTINGS_ENDPOINT': '/netmaster/api/v1/globals/',
         'NETPROFILES_ENDPOINT': '/netmaster/api/v1/netprofiles/',
+        'GLOBAL_OPERATIONAL_ENDPOINT': '/netmaster/api/v1/inspect/globals/global/',
 
 
 
