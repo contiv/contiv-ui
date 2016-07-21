@@ -56,3 +56,13 @@
     <ctv-error ng-show="networkSettingCtrl.showServerError" header="Error updating network settings" error="networkSettingCtrl.serverErrorMessage">
     </ctv-error>
 </form>
+<div class="ui section divider"></div>
+<h3 class="ui header" style="margin-top: 40px">Global Operational State</h3>
+<table class="ui very basic selectable table">
+    <tbody>
+        <tr ng-repeat="attribute in networkSettingCtrl.globalOperStat">
+            <td class="ctv-header three wide column">{{attribute.globProperty}}</td>
+            <td>{{attribute.globPropertyVal}}</td>
+        </tr>
+    </tbody>
+</table>

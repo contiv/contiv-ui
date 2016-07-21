@@ -8,8 +8,8 @@ angular.module('contiv.settings')
             })
         ;
     }])
-    .controller('NetworkSettingCtrl', ['CRUDHelperService', 'NetworkService',
-        function (CRUDHelperService, NetworkService) {
+    .controller('NetworkSettingCtrl', ['CRUDHelperService', 'NetworkService', '$interval', '$scope',
+        function (CRUDHelperService, NetworkService, $interval, $scope) {
             var networkSettingCtrl = this;
             networkSettingCtrl.vlanPattern = ContivGlobals.VLAN_REGEX;
             networkSettingCtrl.vxlanPattern = ContivGlobals.VXLAN_REGEX;
@@ -29,13 +29,39 @@ angular.module('contiv.settings')
             }
 
             function getNetworkSettings() {
-                NetworkService.getSettings().then(function successCallback(result) {
-                    networkSettingCtrl.setting = result;
+                NetworkService.getSettings(ContivGlobals.NETWORK_SETTINGS_ENDPOINT).then(function successCallback(result) {
+                    networkSettingCtrl.setting = result[0];
                 }, function errorCallback(result) {
                 });
             }
             getNetworkSettings();
             networkSettingCtrl.updateNetworkSettings = updateNetworkSettings;
+
+            function getGlobalOperStatus(){
+                NetworkService.getSettings(ContivGlobals.GLOBAL_OPERATIONAL_ENDPOINT).then(function(result){
+                    var globOperStat = [];
+                    var operState = result["Oper"];
+                    for(var key in operState){
+                        globOperStat.push({globProperty: key, globPropertyVal: operState[key]});
+                    }
+                    networkSettingCtrl.globalOperStat = globOperStat;
+                });
+            }
+
+            getGlobalOperStatus();
+
+            var promise;
+            //Don't do autorefresh if one is already in progress
+            if (!angular.isDefined(promise)) {
+                promise = $interval(function () {
+                    getGlobalOperStatus();
+                }, ContivGlobals.REFRESH_INTERVAL);
+            }
+
+            //stop polling when user moves away from the page
+            $scope.$on('$destroy', function () {
+                $interval.cancel(promise);
+            });
 
             CRUDHelperService.stopLoader(networkSettingCtrl);
             CRUDHelperService.hideServerError(networkSettingCtrl);

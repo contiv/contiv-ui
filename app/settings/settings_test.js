@@ -31,6 +31,16 @@ describe('contiv.settings module', function () {
         }
     ];
 
+    var globalOperationalState = {
+        Oper: {
+            numNetworks: 5,
+            vxlansInUse: "1-2",
+            VlansInUse: "1-4,7,9-12",
+            DefaultNetwork: "default:contiv-1",
+            FreeVXLANsStart: "5"
+        }
+    };
+
     beforeEach(module('ui.router'));
     beforeEach(module('contiv.settings'));
 
@@ -39,9 +49,9 @@ describe('contiv.settings module', function () {
         $httpBackend = _$httpBackend_;
         $httpBackend.when('GET', ContivGlobals.NODES_SETTINGS_GET_ENDPOINT).respond(clustersettingData);
         $httpBackend.when('POST', ContivGlobals.NODES_SETTINGS_SET_ENDPOINT).respond();
-
         $httpBackend.when('GET', ContivGlobals.NETWORK_SETTINGS_ENDPOINT).respond(networksettingData);
         $httpBackend.when('POST', ContivGlobals.NETWORK_SETTINGS_ENDPOINT + networksettingData[0].key + '/').respond();
+        $httpBackend.when('GET', ContivGlobals.GLOBAL_OPERATIONAL_ENDPOINT).respond(globalOperationalState);
     }));
 
     afterEach(function () {
@@ -91,11 +101,13 @@ describe('contiv.settings module', function () {
     });
 
     describe('networksettings controller', function () {
-        var $controller;
+        var $controller, $interval, $rootScope;
         var networkSettingCtrl;
-        beforeEach(inject(function (_$controller_) {
+        beforeEach(inject(function (_$interval_, _$rootScope_, _$controller_) {
+            $interval = _$interval_;
+            $rootScope = _$rootScope_;
             $controller = _$controller_;
-            networkSettingCtrl = $controller('NetworkSettingCtrl', {});
+            networkSettingCtrl = $controller('NetworkSettingCtrl', { $interval: $interval, $scope: $rootScope });
         }));
         it('should be defined', function () {
             expect(networkSettingCtrl).toBeDefined();
@@ -128,6 +140,22 @@ describe('contiv.settings module', function () {
             $httpBackend.expectGET(ContivGlobals.NETWORK_SETTINGS_ENDPOINT);
             $httpBackend.flush();
             expect(networkSettingCtrl.setting).toEqual(networksettingData[0]);
+        });
+        it('NetworkSettingCtrl should fetch the global operational state',function(){
+            $httpBackend.expectGET(ContivGlobals.GLOBAL_OPERATIONAL_ENDPOINT);
+            $httpBackend.flush();
+        });
+
+        it('Global operational state should be defined',function(){
+            $httpBackend.expectGET(ContivGlobals.GLOBAL_OPERATIONAL_ENDPOINT);
+            $httpBackend.flush();
+            expect(networkSettingCtrl.globalOperStat).toBeDefined();
+            expect(networkSettingCtrl.globalOperStat.length).toEqual(Object.keys(globalOperationalState.Oper).length);
+            var globStat = networkSettingCtrl.globalOperStat;
+            for(var i in globStat){
+                expect(globStat[i].globProperty in globalOperationalState.Oper).toBeTruthy();
+                expect(globStat[i].globPropertyVal).toEqual(globalOperationalState.Oper[globStat[i].globProperty]);
+            }
         });
     });
 });
