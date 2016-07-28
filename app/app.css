@@ -10,3 +10,13 @@ tr:nth-child(even) {
 td.ctv-wordwrap {
   word-break: break-all;
 }
+
+.ui.secondary.pointing.menu
+.active.item{
+    font-weight: 500;
+}
+
+.ui.menu
+.blue.active.item{
+    color: #1B1C1D!important;
+}
