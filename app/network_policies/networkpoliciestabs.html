@@ -7,18 +7,13 @@
 
     <div style="margin-top:30px"></div>
     <div class="ui secondary pointing menu">
-        <a class="blue item" ui-sref="contiv.menu.networkpolicies.isolation.list()" ui-sref-active="active"
-           ng-class="{active: $state.include('contiv.menu.networkpolicies.isolation.create')}">
+        <a class="blue item" ui-sref="contiv.menu.networkpolicies.isolation.list()" ui-sref-active="{'babab':'contiv.menu.networkpolicies.isolation'}">
             Isolation Policies
         </a>
-        <!--  <a class="blue item" ui-sref="contiv.menu.networkpolicies.prioritization()" ui-sref-active="active">
-              Prioritization Policies
-          </a>-->
-        <a class="blue item" ui-sref="contiv.menu.networkpolicies.bandwidth.list()" ui-sref-active="active"
-            ng-class="{active: ('contiv.menu.networkpolicies.bandwidth.create' | includedByState)||('contiv.menu.networkpolicies.bandwidth.details'| includedByState)||('contiv.menu.networkpolicies.bandwidth.edit'| includedByState)}">
+        <a class="blue item" ui-sref="contiv.menu.networkpolicies.bandwidth.list()" ui-sref-active="{'active':'contiv.menu.networkpolicies.bandwidth'}">
             Bandwidth Policies
         </a>
-        <a class="blue item" ui-sref="contiv.menu.networkpolicies.redirection()" ui-sref-active="active">
+        <a class="blue item" ui-sref="contiv.menu.networkpolicies.redirection()">
             Redirection Policies
         </a>
     </div>
