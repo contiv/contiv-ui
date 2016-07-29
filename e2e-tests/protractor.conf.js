@@ -9,7 +9,7 @@ exports.config = {
 
   baseUrl: 'http://localhost:8080/',
 
-  specs: ['./networks/*.js'],
+  specs: ['./**/*.js'],
 
   framework: 'jasmine',
 
