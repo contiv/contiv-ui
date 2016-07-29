@@ -31,9 +31,11 @@
         <ctv-thead>
             <ctv-tr>
                 <ctv-th>
-                    <div style="display:inline-block; width:45%">Container Name</div>
-                    <div style="display:inline-block; width:40%">IP Address</div>
-                    <div style="display:inline-block">Host</div>
+                    <div class="ui three column grid" style="margin-left:30px">
+                        <div class="column">Container Name</div>
+                        <div class="column">IP Address</div>
+                        <div class="column">Host</div>
+                    </div>
                 </ctv-th>
                 <ctv-th class="right floated three wide column">
                     <ctv-tsearch placeholder="Search Containers..." size="30"></ctv-tsearch>
@@ -44,7 +46,13 @@
         <ctv-tbody>
             <ctv-tr ng-repeat="endpoint in networkStatsCtrl.filteredendpoints">
                 <ctv-td>
-                    <ctv-accordion items="networkStatsCtrl.containerDetails[endpoint.name]" title="endpoint"></ctv-accordion>
+                    <ctv-accordion items="networkStatsCtrl.containerDetails[endpoint.name]">
+                        <div class="ui three column grid" style="margin-top: -35px; margin-left: 30px;">
+                            <div class="column">{{endpoint.name.substr(0,12)}}</div>
+                            <div class="column">{{endpoint.ipAddress.join(' ')}}</div>
+                            <div class="column">{{endpoint.homingHost}}</div>
+                        </div>
+                    </ctv-accordion>
                 </ctv-td>
                 <ctv-td></ctv-td>
             </ctv-tr>

@@ -8,8 +8,6 @@ describe('contiv.directives', function() {
         {name: 'fooEnv3', value: 'barEnv3'}
     ];
 
-    var accordionTitle = {name:"Accordion1",ipAddress:"20.1.1.2",homingHost:"contiv-net1"};
-
     var accordionItems = [
         {name: "name1", value: "value1"},
         {name: "name2", value: "value2"},
@@ -102,7 +100,6 @@ describe('contiv.directives', function() {
         beforeEach(inject(function(){
             // Compile a piece of HTML containing the directive
             $rootScope.accordionItems = accordionItems;
-            $rootScope.accordionTitle = accordionTitle;
             $rootScope.accordion = function(){};
             // fire all the watches, so the scope expression will be evaluated
             element = $compile("<ctv-accordion items = 'accordionItems' title = 'accordionTitle'></ctv-accordion>")($rootScope);
@@ -112,18 +109,6 @@ describe('contiv.directives', function() {
 
         it('Element with accordion class must be present', function(){
             expect(element.find("div:first-child").hasClass("accordion")).toBeTruthy();
-        });
-
-        it('Accordion shoud have the title with the assigned name', function(){
-            expect(element.find("div.title div:nth-child(2)").text().replace(/\s/g, '')).toEqual(accordionTitle.name);
-        });
-
-        it('Accordion shoud have the title with the assigned container ipAddress', function(){
-            expect(element.find("div.title div:nth-child(3)").text().replace(/\s/g, '')).toEqual(accordionTitle.ipAddress);
-        });
-
-        it('Accordion shoud have the title with the assigned host name', function(){
-            expect(element.find("div.title div:nth-child(4)").text().replace(/\s/g, '')).toEqual(accordionTitle.homingHost);
         });
 
         it('Number of table rows should be equal to the number of name value pairs in accordiondata', function(){
