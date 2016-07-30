@@ -61,32 +61,15 @@
         <div ng-switch-when="edit">
             <div class="ui section divider" style="margin-top: 30px"></div>
             <div class="field">
-                <div ng-click="servicelbDetailsCtrl.labelSelectorsVisible = !servicelbDetailsCtrl.labelSelectorsVisible">
-                    <h4 class="ui header">
-                        <i ng-if="servicelbDetailsCtrl.labelSelectorsVisible"
-                           class="grey minus circle outline icon"></i>
-                        <i ng-if="!servicelbDetailsCtrl.labelSelectorsVisible"
-                           class="grey plus circle outline icon"></i>
-                        Label Selectors
-                    </h4>
-                </div>
-                <div ng-show="servicelbDetailsCtrl.labelSelectorsVisible">
+                <ctv-collapsible title="Label Selectors">
                     <ctv-namevalue items="servicelbDetailsCtrl.labelSelectors"></ctv-namevalue>
-                </div>
+                </ctv-collapsible>
             </div>
-
             <div class="ui section divider"></div>
             <div class="field">
-                <div ng-click="servicelbDetailsCtrl.portsVisible = !servicelbDetailsCtrl.portsVisible">
-                    <h4 class="ui header">
-                        <i ng-if="servicelbDetailsCtrl.portsVisible" class="grey minus circle outline icon"></i>
-                        <i ng-if="!servicelbDetailsCtrl.portsVisible" class="grey plus circle outline icon"></i>
-                        Ports
-                    </h4>
-                </div>
-                <div ng-show="servicelbDetailsCtrl.portsVisible">
+                <ctv-collapsible title="Ports">
                     <ctv-servicelbports items="servicelbDetailsCtrl.servicelb.ports"></ctv-servicelbports>
-                </div>
+                </ctv-collapsible>
             </div>
         </div>
         <div class="ui sixteen column grid" style="margin-top: 40px">
