@@ -11,7 +11,7 @@ angular.module('contiv.servicelbs')
             })
             .state('contiv.menu.servicelbs.details.info', {
                 url: '/info',
-                //controller: 'ServicelbDetailsCtrl as servicelbDetailsCtrl',
+                controller: 'ServicelbDetailsCtrl as servicelbDetailsCtrl',
                 templateUrl: 'service_lbs/servicelbinfo.html'
             })
             .state('contiv.menu.servicelbs.details.edit', {
