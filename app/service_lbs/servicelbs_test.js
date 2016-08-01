@@ -284,13 +284,13 @@ describe('contiv.servicelbs module', function () {
             $httpBackend.expectGET(ContivGlobals.SERVICELBS_INSPECT_ENDPOINT+servicelbListData[0].key+'/');
             $httpBackend.flush();
         });
-        it('servicelbStatsCtrl should coonstruct providers object', function () {
+        it('servicelbStatsCtrl should construct providers object', function () {
             $httpBackend.flush();
             expect(servicelbStatsCtrl.providers).toBeDefined();
             expect(Array.isArray(servicelbStatsCtrl.providers)).toBeTruthy();
             expect(servicelbStatsCtrl.providers.length).toEqual(servicelbOperData.Oper.providers.length);
         });
-        it('servicelbStatsCtrl should coonstruct providerDetails object', function () {
+        it('servicelbStatsCtrl should construct providerDetails object', function () {
             $httpBackend.flush();
             expect(servicelbStatsCtrl.providerDetails).toBeDefined();
             var len = Object.keys(servicelbStatsCtrl.providerDetails).length;

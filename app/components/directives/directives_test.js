@@ -102,13 +102,17 @@ describe('contiv.directives', function() {
             $rootScope.accordionItems = accordionItems;
             $rootScope.accordion = function(){};
             // fire all the watches, so the scope expression will be evaluated
-            element = $compile("<ctv-accordion items = 'accordionItems' title = 'accordionTitle'></ctv-accordion>")($rootScope);
+            element = $compile("<ctv-accordion items = 'accordionItems'><span>Accordion Title</span></ctv-accordion>")($rootScope);
             $rootScope.$digest();
             isolateScope = element.isolateScope();
         }));
 
         it('Element with accordion class must be present', function(){
             expect(element.find("div:first-child").hasClass("accordion")).toBeTruthy();
+        });
+
+        it('Title must be present for an accordion', function(){
+            expect(element.find("div.title span").text()).toEqual("Accordion Title");
         });
 
         it('Number of table rows should be equal to the number of name value pairs in accordiondata', function(){
