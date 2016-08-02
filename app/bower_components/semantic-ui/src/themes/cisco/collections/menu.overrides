@@ -47,3 +47,12 @@
   background: rgba(0, 0, 0, 0.03);
   color: rgba(0, 0, 0, 0.95);
 }
+
+/*--------------
+     Types
+---------------*/
+
+.ui.vertical.menu
+.active.item  {
+    color: white;
+}

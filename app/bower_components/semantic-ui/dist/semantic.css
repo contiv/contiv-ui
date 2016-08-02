@@ -19411,6 +19411,10 @@ Floated Menu / Item
   color: rgba(0, 0, 0, 0.95);
 }
 
+.ui.vertical.menu .active.item {
+  color: white;
+}
+
 /*******************************
          Site Overrides
 *******************************/
