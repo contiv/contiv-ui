@@ -47,9 +47,9 @@
   color: rgba(0, 0, 0, 0.95);
 }
 
-/*--------------
-     Types
---------------*/
+/*----------------------
+   Vertical Menu Active
+------------------------*/
 
 .ui.vertical.menu .white.active  {
    color: #FFFFFF!important;
