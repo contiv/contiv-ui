@@ -23,7 +23,6 @@
   opacity: 1;
 }
 
-
 /*--------------
       Hover
 ---------------*/
@@ -50,9 +49,8 @@
 
 /*--------------
      Types
----------------*/
+--------------*/
 
-.ui.vertical.menu
-.active.item  {
-    color: white;
+.ui.vertical.menu .white.active  {
+   color: #FFFFFF!important;
 }
