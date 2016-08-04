@@ -4,8 +4,9 @@
 angular.module('contiv.networkpolicies')
     .config(['$stateProvider', function ($stateProvider) {
         $stateProvider
-            .state('contiv.menu.networkpolicies', {
-                url: '/networkpolicies',
+            .state('contiv.menu.networkpolicies.list', {
+                url: '/list',
+                abstract: true,
                 controller: 'NetworkPoliciesTabsCtrl as networkPoliciesTabsCtrl',
                 templateUrl: 'network_policies/networkpoliciestabs.html'
             })
@@ -35,10 +36,10 @@ angular.module('contiv.networkpolicies')
         var networkPoliciesTabsCtrl = this;
         
         function createNetworkPolicy() {
-            if($state.$current.includes['contiv.menu.networkpolicies.isolation']){
+            if($state.$current.includes['contiv.menu.networkpolicies.list.isolation']){
                 $state.go('contiv.menu.networkpolicies.isolation.create');
             }
-            if($state.$current.includes['contiv.menu.networkpolicies.bandwidth']) {
+            if($state.$current.includes['contiv.menu.networkpolicies.list.bandwidth']) {
                 $state.go('contiv.menu.networkpolicies.bandwidth.create');
             }
         }
