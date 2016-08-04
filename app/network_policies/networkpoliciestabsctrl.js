@@ -31,5 +31,17 @@ angular.module('contiv.networkpolicies')
             })
         ;
     }])
-    .controller('NetworkPoliciesTabsCtrl', ['$state', function ($state) {
+    .controller('NetworkPoliciesTabsCtrl', ['$state',function ($state) {
+        var networkPoliciesTabsCtrl = this;
+        
+        function createNetworkPolicy() {
+            if($state.$current.includes['contiv.menu.networkpolicies.isolation']){
+                $state.go('contiv.menu.networkpolicies.isolation.create');
+            }
+            if($state.$current.includes['contiv.menu.networkpolicies.bandwidth']) {
+                $state.go('contiv.menu.networkpolicies.bandwidth.create');
+            }
+        }
+
+        networkPoliciesTabsCtrl.createNetworkPolicy = createNetworkPolicy;
     }]);
