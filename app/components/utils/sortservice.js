@@ -1,7 +1,6 @@
 /**
  * Created by cshampur on 7/22/16.
  */
-
 angular.module("contiv.utils")
     .factory("SortService", function(){
         var sortservice = {}
@@ -12,8 +11,8 @@ angular.module("contiv.utils")
             sortObj.field = sortfield;
             sortObj.reverse = !ctrlSortObj.reverse;
             sortObj.iconDirection = {
-                "unassociated icon" : sortObj.reverse,
-                "up icon" : !sortObj.reverse
+                "arrow down icon" : !sortObj.reverse,
+                "arrow up icon" : sortObj.reverse
             }
             return sortObj;
         }
@@ -22,7 +21,7 @@ angular.module("contiv.utils")
             return {
                 field:sortfield,
                 reverse: false,
-                iconDirection: {"unassociated icon": true, "up icon": false}
+                iconDirection: {"arrow down icon": true, "arrow up icon": false}
             }
         }
 

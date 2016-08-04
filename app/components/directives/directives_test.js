@@ -203,6 +203,25 @@ describe('contiv.directives', function() {
             tableCtrl = element.controller("ctvTable");
         }));
 
+        //Function for verifying contents of generated table data
+        function verifyTableData(pageNo,field,direction){
+            var sortedTabItem = sortTestTabData(field,direction);
+            var domTableData = element.find("tbody tr");
+            var i=(pageNo-1) * 12;
+            domTableData.each(function(index,elem){
+                var textContent = elem.innerText;
+                expect(textContent).toContain(sortedTabItem[i].name);
+                expect(textContent).toContain(sortedTabItem[i].ipAddress);
+                expect(textContent).toContain(sortedTabItem[i].homingHost);
+                i++;
+            });
+        }
+
+        //function for sorting input table data array based on key
+        function sortTestTabData(field, direction){
+            return $filter('orderBy')(tableItems, field, direction);
+        }
+
         it("The number of items displayed should be equal to the size attribute",function() {
             expect(scope.filtItems.length).toEqual(scope.size);
         });
@@ -226,7 +245,7 @@ describe('contiv.directives', function() {
         });
 
         it("By default the items in the table must be sorted based on defaultsortcolumn",function() {
-            var sortedTabItem = $filter('orderBy')(tableItems, scope.name, false);
+            var sortedTabItem = sortTestTabData(scope.name,false);
             for (var i in scope.filtItems) {
                 expect(scope.filtItems[i].name).toEqual(sortedTabItem[i].name);
             }
@@ -235,7 +254,7 @@ describe('contiv.directives', function() {
         it("sort funciton should sort all items in the table based on the input sort field", function(){
             tableCtrl.sort("ipAddress");
             scope.$apply();
-            var sortedTabItem = $filter('orderBy')(tableItems,"ipAddress",true);
+            var sortedTabItem = sortTestTabData("ipAddress",true);
             for(var i in scope.filtItems){
                 expect(scope.filtItems[i].name).toEqual(sortedTabItem[i].name);
             }
@@ -258,7 +277,7 @@ describe('contiv.directives', function() {
             scope.$apply();
             tableCtrl.showPrevChunk();
             scope.$apply();
-            var sortedTabItem = $filter('orderBy')(tableItems, scope.name, false);
+            var sortedTabItem = sortTestTabData(scope.name,false);
             for (var i in scope.filtItems) {
                 expect(scope.filtItems[i].name).toEqual(sortedTabItem[i].name);
             }
@@ -266,26 +285,18 @@ describe('contiv.directives', function() {
 
         it("The directive must create a table element and update the dom with the input items",function(){
             expect(element.find("table").hasClass("ui very basic unstackable table")).toBeTruthy();
-            verifyTableData(1);
+            verifyTableData(1,scope.name,false);
         });
 
-        function verifyTableData(pageNo){
-            var sortedTabItem = $filter('orderBy')(tableItems, scope.name, false);
-            var domTableData = element.find("tbody tr");
-            var i=(pageNo-1) * 12;
-            domTableData.each(function(index,elem){
-                var textContent = elem.innerText;
-                expect(textContent).toContain(sortedTabItem[i].name);
-                expect(textContent).toContain(sortedTabItem[i].ipAddress);
-                expect(textContent).toContain(sortedTabItem[i].homingHost);
-                i++;
-            });
-        }
 
-        it("The column header on which the table is sorted should have the icon tag present", function(){
+        it("verify whether sorting icon is displayed pointing in the right direction", function(){
             var iconTag = element.find("th[field="+tableCtrl.sortObj.field+"]").children()[0];
             expect(iconTag.tagName).toEqual("I");
-            expect(iconTag.className).toContain("unassociated icon");
+            expect(iconTag.className).toContain("arrow down icon");
+            var firstColumn = element.find("th[field]")[0];
+            firstColumn.click();
+            scope.$apply();
+            expect(iconTag.className).toContain("arrow icon up");
         });
 
         it("Clicking on table header should call the sort function passing the sortfield ",function(){
@@ -301,10 +312,10 @@ describe('contiv.directives', function() {
                 var pagePrev = element.find("tfoot a.icon")[0];
                 pageNext.click();
                 scope.$apply();
-                verifyTableData(2);
+                verifyTableData(2,scope.name,false);
                 pagePrev.click();
                 scope.$apply();
-                verifyTableData(1);
+                verifyTableData(1,scope.name,false);
         });
 
         it("Number of page links displayed should be equal to chunks created", function(){
@@ -325,6 +336,13 @@ describe('contiv.directives', function() {
             var searchField = element.find("input[type='text']");
             searchField.val("cluster-1").trigger('input');
             expect(tableCtrl.showChunk).toHaveBeenCalledWith(tableCtrl.pageNo,"cluster-1");
+        });
+
+        it("sorting direction must change on click", function(){
+            var firstColumn = element.find("th[field]")[0];
+            firstColumn.click();
+            scope.$apply();
+            verifyTableData(1,scope.name,true);
         });
 
     });
