@@ -22,8 +22,8 @@ angular.module('contiv.networkpolicies')
             })
             .state('contiv.menu.networkpolicies.redirection', {
                 url: '/redirection',
-                controller: 'NetworkPoliciesTabsCtrl as networkPoliciesTabsCtrl',
-                templateUrl: 'network_policies/redirectionpolicylist.html'
+                abstract: true,
+                template: '<ui-view/>'
             })
         ;
     }])
