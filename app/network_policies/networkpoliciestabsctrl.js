@@ -15,11 +15,6 @@ angular.module('contiv.networkpolicies')
                 abstract: true,
                 template: '<ui-view/>'
             })
-            .state('contiv.menu.networkpolicies.prioritization', {
-                url: '/prioritization',
-                controller: 'NetworkPoliciesTabsCtrl as networkPoliciesTabsCtrl',
-                templateUrl: 'network_policies/prioritizationpolicylist.html'
-            })
             .state('contiv.menu.networkpolicies.bandwidth', {
                 url: '/bandwidth',
                 abstract: true,
