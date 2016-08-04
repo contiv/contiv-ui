@@ -272,7 +272,6 @@ describe('contiv.directives', function() {
         function verifyTableData(pageNo){
             var sortedTabItem = $filter('orderBy')(tableItems, scope.name, false);
             var domTableData = element.find("tbody tr");
-            //expect(domTableData.length).toEqual(scope.size);
             var i=(pageNo-1) * 12;
             domTableData.each(function(index,elem){
                 var textContent = elem.innerText;
