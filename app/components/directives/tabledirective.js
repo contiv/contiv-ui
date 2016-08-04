@@ -2,19 +2,21 @@
  * Created by vjain3 on 5/4/16.
  */
 angular.module("contiv.directives")
-    .directive("ctvTable", ['filterFilter', 'limitToFilter', function (filterFilter, limitToFilter) {
+    .directive("ctvTable", ['filterFilter', 'limitToFilter','SortService', function (filterFilter, limitToFilter,SortService) {
         return {
             restrict: 'E',
             transclude: true,
             scope: {
                 items: '=',
                 filtereditems: '=',
-                size: '@'
+                size: '@',
+                defaultsortcolumn: '@'
             },
-            controller: ['$scope', '$element', '$attrs', function ($scope, $element, $attrs) {
+            controller: ['$scope', '$element', '$attrs', '$filter', function ($scope, $element, $attrs, $filter) {
                 var tableCtrl = this;
                 tableCtrl.chunks = [];
                 tableCtrl.pageNo = 0;
+                tableCtrl.sortObj=SortService.initializeSort($scope.defaultsortcolumn);
 
                 tableCtrl.size = parseInt($scope.size, 10);
                 if (isNaN(tableCtrl.size)) {
@@ -29,12 +31,12 @@ angular.module("contiv.directives")
                  */
                 function showChunk(pageNo, searchText) {
                     tableCtrl.searchText = searchText;
-
                     if (pageNo === undefined || pageNo < 0) pageNo = 0;
                     tableCtrl.pageNo = pageNo;
 
                     if ($scope.items !== undefined) {//TODO: Check why items are undefined during initialization
                         var searchTextFilteredItems = filterFilter($scope.items, tableCtrl.searchText);
+                        searchTextFilteredItems = $filter('orderBy')(searchTextFilteredItems, tableCtrl.sortObj.field, tableCtrl.sortObj.reverse);
                         var noOfChunks = Math.ceil(searchTextFilteredItems.length / tableCtrl.size);
                         if (noOfChunks == 0) {
                             noOfChunks = 1;
@@ -48,7 +50,6 @@ angular.module("contiv.directives")
                         if (pageNo >= tableCtrl.chunks.length) {
                             tableCtrl.pageNo = 0;
                         }
-
                         tableCtrl.chunks[tableCtrl.pageNo].selected = true;
 
                         //Update number of chunks for pagination menu
@@ -72,7 +73,9 @@ angular.module("contiv.directives")
                         tableCtrl.filteredItems = limitToFilter(searchTextFilteredItems,
                             tableCtrl.size,
                             tableCtrl.pageNo * tableCtrl.size);
-                        $scope.filtereditems = tableCtrl.filteredItems;
+                        //$scope.filtereditems
+                        //$scope.filtereditems=$filter('orderBy')(tableCtrl.filteredItems, tableCtrl.sortObj.field, tableCtrl.sortObj.reverse);
+                        $scope.filtereditems=tableCtrl.filteredItems;
                     }
                     return false;
                 };
@@ -104,10 +107,17 @@ angular.module("contiv.directives")
                     $scope.paginationMenu = menu;
                 }
 
+                function sort(sortfield){
+                    tableCtrl.sortObj = SortService.sort(sortfield, tableCtrl.sortObj);
+                    $scope.items = $filter('orderBy')($scope.items, tableCtrl.sortObj.field, tableCtrl.sortObj.reverse);
+                    $scope.$apply();
+                }
+
                 tableCtrl.showChunk = showChunk;
                 tableCtrl.showNextChunk = showNextChunk;
                 tableCtrl.showPrevChunk = showPrevChunk;
                 tableCtrl.addPaginationMenu = addPaginationMenu;
+                tableCtrl.sort = sort;
             }],
             link: function (scope, element, attrs, tableCtrl) {
                 //Watch for items as they will be auto refreshed
@@ -132,10 +142,20 @@ angular.module("contiv.directives")
             restrict: 'E',
             transclude: true,
             replace: true,
+            require: '^^ctvTable',
             scope: {
-                class: '@'
+                class: '@',
+                field: '='
             },
-            template: '<th ng-class="class" ng-transclude></th>'
+            link:function(scope, element, attrs, tableCtrl){
+                scope.tablectrl = tableCtrl;
+                if(scope.field != undefined && scope.field != null){
+                    element.bind('click', function(){
+                        tableCtrl.sort(scope.field);
+                    });
+                }
+            },
+            templateUrl: 'components/directives/tableheader.html'
         }
     })
     .directive("ctvTbody", function () {

@@ -1,1 +1,1 @@
-angular.module("contiv.directives", []);
+angular.module("contiv.directives", ['contiv.utils']);
