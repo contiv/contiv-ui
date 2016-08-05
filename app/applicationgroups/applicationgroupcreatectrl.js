@@ -35,18 +35,9 @@ angular.module('contiv.applicationgroups')
                   CRUDHelperService) {
             var applicationGroupCreateCtrl = this;
             applicationGroupCreateCtrl.networks = [];
-            applicationGroupCreateCtrl.isolationPolicies = [];
             applicationGroupCreateCtrl.applicationGroup = {};
             applicationGroupCreateCtrl.selectedNetwork = {};
-            applicationGroupCreateCtrl.selectedPolicy = {};
-            applicationGroupCreateCtrl.selectedPolicies = [];
             applicationGroupCreateCtrl.selectedNetprofile = {};
-
-            //To display incoming and outgoing rules for selected policies
-            applicationGroupCreateCtrl.incomingRules = [];
-            applicationGroupCreateCtrl.outgoingRules = [];
-
-            applicationGroupCreateCtrl.isolationPoliciesVisible = false;
 
             function returnToApplicationGroup() {
                 $state.go('contiv.menu.applicationgroups.list');
@@ -67,31 +58,6 @@ angular.module('contiv.applicationgroups')
                 });
             }
 
-            /**
-             * Get policies for the given tenant.
-             */
-            function getIsolationPolicies() {
-                PoliciesModel.get().then(function (result) {
-                    applicationGroupCreateCtrl.isolationPolicies = _.filter(result, {
-                        'tenantName': 'default'//TODO: Remove hardcoded tenant.
-                    });
-                });
-            }
-
-            /**
-             * Add policy to new application group
-             */
-            function addIsolationPolicy() {
-                ApplicationGroupService.addIsolationPolicy(applicationGroupCreateCtrl);
-            }
-
-            /**
-             * Remove policy from new application group
-             */
-            function removeIsolationPolicy(policyName) {
-                ApplicationGroupService.removeIsolationPolicy(applicationGroupCreateCtrl, policyName);
-            }
-
             function createApplicationGroup() {
                 //form controller is injected by the html template
                 //checking if all validations have passed
@@ -103,7 +69,7 @@ angular.module('contiv.applicationgroups')
                     
                     applicationGroupCreateCtrl.applicationGroup.netProfile =
                         applicationGroupCreateCtrl.selectedNetprofile.profileName;
-                    
+
                     applicationGroupCreateCtrl.applicationGroup.key =
                         ApplicationGroupsModel.generateKey(applicationGroupCreateCtrl.applicationGroup);
 
@@ -130,13 +96,9 @@ angular.module('contiv.applicationgroups')
             }
 
             getNetworks();
-            getIsolationPolicies();
-            
+
             applicationGroupCreateCtrl.createApplicationGroup = createApplicationGroup;
             applicationGroupCreateCtrl.cancelCreating = cancelCreating;
-            applicationGroupCreateCtrl.addIsolationPolicy = addIsolationPolicy;
-            applicationGroupCreateCtrl.removeIsolationPolicy = removeIsolationPolicy;
-
 
             resetForm();
         }]);

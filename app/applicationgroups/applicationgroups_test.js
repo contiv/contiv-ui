@@ -409,5 +409,10 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.flush();
         });
     });
+    
+    
+    describe('rule directive', function(){
+        
+    });
 
 });
