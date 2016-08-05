@@ -27,14 +27,6 @@ angular.module("contiv.applicationgroups")
             outgoingRules : [],
             isolationPolicies : []
         };
-        //$scope.appGroupCtrl.applicationGroup = $scope.applicationGroup;
-        //appGroupCtrl.applicationGroup = {};
-        //appGroupCtrl.selectedPolicy = {};
-        //appGroupCtrl.selectedPolicies = [];
-        //var isolationPolicies = [];
-
-        //appGroupCtrl.incomingRules = [];
-        //appGroupCtrl.outgoingRules = [];
 
         function resetForm() {
             CRUDHelperService.stopLoader($scope.appGroupCtrl);
@@ -64,14 +56,13 @@ angular.module("contiv.applicationgroups")
         if($scope.mode == 'details' || $scope.applicationGroup.groupName != "") {
             ApplicationGroupsModel.getModelByKey($stateParams.key)
                 .then(function (group) {
-                    console.log("Detailing:"+$stateParams.key);
                     $scope.appGroupCtrl.applicationGroup.policies = group.policies;
-                    console.log("Group:" + group.policies);
+
                     //Application Groups might not have any policies associated with them so define an empty array
                     if ($scope.appGroupCtrl.applicationGroup.policies === undefined) {
                         $scope.appGroupCtrl.applicationGroup.policies = [];
                     }
-                    console.log($scope.appGroupCtrl.applicationGroup.policies);
+
                     getRules();
                 });
             }
@@ -96,7 +87,6 @@ angular.module("contiv.applicationgroups")
          */
         $scope.addIsolationPolicy = function() {
             ApplicationGroupService.addIsolationPolicy($scope.appGroupCtrl);
-            console.log("That sport:"+ $scope.appGroupCtrl.applicationGroup);
             $scope.applicationGroup.policies = $scope.appGroupCtrl.applicationGroup.policies;
         }
 
@@ -104,7 +94,6 @@ angular.module("contiv.applicationgroups")
          * Remove policy from application group
          */
         $scope.removeIsolationPolicy = function(policyName) {
-            console.log("remove isolation policy");
             ApplicationGroupService.removeIsolationPolicy($scope.appGroupCtrl, policyName);
             $scope.applicationGroup.policies = $scope.appGroupCtrl.applicationGroup.policies;
         }

@@ -10,14 +10,11 @@ angular.module('contiv.applicationgroups')
          * @param applicationGroupCtrl Controller for application group edit or create operation
          */
         function addIsolationPolicy(applicationGroupCtrl) {
-            console.log(applicationGroupCtrl.selectedPolicies);
-            console.log(_.find(applicationGroupCtrl.selectedPolicies, applicationGroupCtrl.selectedPolicy));
             if (_.find(applicationGroupCtrl.selectedPolicies, applicationGroupCtrl.selectedPolicy) === undefined ) {
                 //To display selected policies
                 applicationGroupCtrl.selectedPolicies.push(applicationGroupCtrl.selectedPolicy);
 
                 //To display rules of selected policies
-                console.log(applicationGroupCtrl);
                 RulesModel.getIncomingRules(applicationGroupCtrl.selectedPolicy.policyName, 'default')
                     .then(function (rules) {
                         Array.prototype.push.apply(applicationGroupCtrl.incomingRules, rules);
