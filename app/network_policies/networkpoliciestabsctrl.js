@@ -10,20 +10,9 @@ angular.module('contiv.networkpolicies')
                 controller: 'NetworkPoliciesTabsCtrl as networkPoliciesTabsCtrl',
                 templateUrl: 'network_policies/networkpoliciestabs.html'
             })
-            .state('contiv.menu.networkpolicies.isolation', {
-                url: '/isolation',
-                abstract: true,
-                template: '<ui-view/>'
-            })
-            .state('contiv.menu.networkpolicies.bandwidth', {
-                url: '/bandwidth',
-                abstract: true,
-                template: '<ui-view/>'
-            })
-            .state('contiv.menu.networkpolicies.redirection', {
+            .state('contiv.menu.networkpolicies.list.redirection', {
                 url: '/redirection',
-                abstract: true,
-                template: '<ui-view/>'
+                template: ''
             })
         ;
     }])

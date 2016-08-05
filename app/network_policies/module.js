@@ -10,4 +10,20 @@ angular.module('contiv.networkpolicies', ['contiv.models', 'contiv.directives', 
                 abstract: true,
                 template: '<div ui-view class="ui container"/>'
             })
+            .state('contiv.menu.networkpolicies.isolation', {
+                url: '/isolation',
+                abstract: true,
+                template: '<ui-view/>'
+            })
+            .state('contiv.menu.networkpolicies.bandwidth', {
+                url: '/bandwidth',
+                abstract: true,
+                template: '<ui-view/>'
+            })
+            .state('contiv.menu.networkpolicies.redirection', {
+                url: '/redirection',
+                abstract: true,
+                template: '<ui-view/>'
+            })
+        ;
     }]);
