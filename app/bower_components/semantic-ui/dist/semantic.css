@@ -7709,11 +7709,11 @@ i.icons .inverted.corner.icon {
   content: "\e92b";
 }
 
-.icon.arrow.down:before {
+.icon.angle.down:before {
   content: "\e95e";
 }
 
-.icon.arrow.up:before {
+.icon.angle.up:before {
   content: "\e95f";
 }
 

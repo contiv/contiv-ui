@@ -11,6 +11,6 @@ td.ctv-wordwrap {
   word-break: break-all;
 }
 
-table thead th[field] span{
+table thead th[sortfield] span{
     cursor: pointer;
 }

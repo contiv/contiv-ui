@@ -2,7 +2,7 @@
  * Created by vjain3 on 5/4/16.
  */
 angular.module("contiv.directives")
-    .directive("ctvTable", ['filterFilter', 'limitToFilter','SortService', function (filterFilter, limitToFilter,SortService) {
+    .directive("ctvTable", ['filterFilter', 'limitToFilter', function (filterFilter, limitToFilter) {
         return {
             restrict: 'E',
             transclude: true,
@@ -16,7 +16,7 @@ angular.module("contiv.directives")
                 var tableCtrl = this;
                 tableCtrl.chunks = [];
                 tableCtrl.pageNo = 0;
-                tableCtrl.sortObj=SortService.initializeSort($scope.defaultsortcolumn);
+                tableCtrl.sortObj=initializeSort($scope.defaultsortcolumn);
 
                 tableCtrl.size = parseInt($scope.size, 10);
                 if (isNaN(tableCtrl.size)) {
@@ -73,12 +73,10 @@ angular.module("contiv.directives")
                         tableCtrl.filteredItems = limitToFilter(searchTextFilteredItems,
                             tableCtrl.size,
                             tableCtrl.pageNo * tableCtrl.size);
-                        //$scope.filtereditems
-                        //$scope.filtereditems=$filter('orderBy')(tableCtrl.filteredItems, tableCtrl.sortObj.field, tableCtrl.sortObj.reverse);
                         $scope.filtereditems=tableCtrl.filteredItems;
                     }
                     return false;
-                };
+                }
 
                 function showPrevChunk() {
                     var prevChunk;
@@ -107,9 +105,27 @@ angular.module("contiv.directives")
                     $scope.paginationMenu = menu;
                 }
 
+                function initializeSort(sortfield){
+                    return {
+                        field:sortfield,
+                        reverse: false,
+                        iconDirection: {"angle down icon": true, "angle up icon": false}
+                    }
+                }
+
                 function sort(sortfield){
-                    tableCtrl.sortObj = SortService.sort(sortfield, tableCtrl.sortObj);
-                    $scope.items = $filter('orderBy')($scope.items, tableCtrl.sortObj.field, tableCtrl.sortObj.reverse);
+                    if (sortfield == tableCtrl.sortObj.field){
+                        tableCtrl.sortObj.field = sortfield;
+                        tableCtrl.sortObj.reverse = !tableCtrl.sortObj.reverse;
+                        tableCtrl.sortObj.iconDirection = {
+                            "angle down icon": !tableCtrl.sortObj.reverse,
+                            "angle up icon": tableCtrl.sortObj.reverse
+                        }
+                    }
+                    else{
+                        tableCtrl.sortObj = initializeSort(sortfield);
+                    }
+                    tableCtrl.showChunk(tableCtrl.pageNo, tableCtrl.searchText);
                     $scope.$apply();
                 }
 
@@ -145,13 +161,13 @@ angular.module("contiv.directives")
             require: '^^ctvTable',
             scope: {
                 class: '@',
-                field: '='
+                sortfield: '='
             },
             link:function(scope, element, attrs, tableCtrl){
                 scope.tablectrl = tableCtrl;
-                if(scope.field != undefined && scope.field != null){
+                if(scope.sortfield != undefined && scope.sortfield != null){
                     element.bind('click', function(){
-                        tableCtrl.sort(scope.field);
+                        tableCtrl.sort(scope.sortfield);
                     });
                 }
             },

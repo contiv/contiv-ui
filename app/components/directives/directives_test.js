@@ -177,9 +177,9 @@ describe('contiv.directives', function() {
             var elem =  "<ctv-table defaultsortcolumn='name' items='tableItems' filtereditems='filtItems' size='size'>" +
                         "   <ctv-thead>" +
                         "       <ctv-tr>" +
-                        "           <ctv-th field='name'>name</ctv-th>" +
-                        "           <ctv-th field='ipAddress'>ipAddress</ctv-th>" +
-                        "           <ctv-th field='homingHost'>homingHost</ctv-th>" +
+                        "           <ctv-th sortfield='name'>name</ctv-th>" +
+                        "           <ctv-th sortfield='ipAddress'>ipAddress</ctv-th>" +
+                        "           <ctv-th sortfield='homingHost'>homingHost</ctv-th>" +
                         "           <ctv-th><ctv-tsearch placeholder='Search' size='30'></ctv-tsearch></ctv-th>" +
                         "       </ctv-tr>" +
                         "   </ctv-thead>" +
@@ -254,7 +254,7 @@ describe('contiv.directives', function() {
         it("sort funciton should sort all items in the table based on the input sort field", function(){
             tableCtrl.sort("ipAddress");
             scope.$apply();
-            var sortedTabItem = sortTestTabData("ipAddress",true);
+            var sortedTabItem = sortTestTabData("ipAddress",false);
             for(var i in scope.filtItems){
                 expect(scope.filtItems[i].name).toEqual(sortedTabItem[i].name);
             }
@@ -290,18 +290,18 @@ describe('contiv.directives', function() {
 
 
         it("verify whether sorting icon is displayed pointing in the right direction", function(){
-            var iconTag = element.find("th[field="+tableCtrl.sortObj.field+"]").children()[0];
+            var iconTag = element.find("th[sortfield="+tableCtrl.sortObj.field+"]").children()[0];
             expect(iconTag.tagName).toEqual("I");
-            expect(iconTag.className).toContain("arrow down icon");
-            var firstColumn = element.find("th[field]")[0];
+            expect(iconTag.className).toContain("angle down icon");
+            var firstColumn = element.find("th[sortfield]")[0];
             firstColumn.click();
             scope.$apply();
-            expect(iconTag.className).toContain("arrow icon up");
+            expect(iconTag.className).toContain("angle icon up");
         });
 
         it("Clicking on table header should call the sort function passing the sortfield ",function(){
             spyOn(tableCtrl,"sort").and.callThrough();
-            var secondColumn = element.find("th[field]")[1];
+            var secondColumn = element.find("th[sortfield]")[1];
             secondColumn.click();
             expect(tableCtrl.sort).toHaveBeenCalledWith(scope.ipAddress);
         });
@@ -339,7 +339,7 @@ describe('contiv.directives', function() {
         });
 
         it("sorting direction must change on click", function(){
-            var firstColumn = element.find("th[field]")[0];
+            var firstColumn = element.find("th[sortfield]")[0];
             firstColumn.click();
             scope.$apply();
             verifyTableData(1,scope.name,true);
