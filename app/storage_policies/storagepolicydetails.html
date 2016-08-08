@@ -146,10 +146,10 @@
 
         <div class="ui section divider"></div>
         <ctv-collapsible title="Volumes created under this policy">
-            <ctv-table items="storagePolicyDetailsCtrl.volumes" filtereditems="storagePolicyDetailsCtrl.filteredVolumes" size="12">
+            <ctv-table defaultsortcolumn="name" items="storagePolicyDetailsCtrl.volumes" filtereditems="storagePolicyDetailsCtrl.filteredVolumes" size="12">
                 <ctv-thead>
                     <ctv-tr>
-                        <ctv-th>Name</ctv-th>
+                        <ctv-th sortfield="'name'">Name</ctv-th>
                         <ctv-th class="right floated three wide column">
                             <ctv-tsearch placeholder="Search volumes..." size="30">
                         </ctv-th>
