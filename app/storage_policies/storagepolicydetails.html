@@ -143,6 +143,37 @@
                 </tbody>
             </table>
         </ctv-collapsible>
+
+        <div class="ui section divider"></div>
+        <ctv-collapsible title="Volumes created under this policy">
+            <ctv-table items="storagePolicyDetailsCtrl.volumes" filtereditems="storagePolicyDetailsCtrl.filteredVolumes" size="12">
+                <ctv-thead>
+                    <ctv-tr>
+                        <ctv-th>Name</ctv-th>
+                        <ctv-th class="right floated three wide column">
+                            <ctv-tsearch placeholder="Search volumes..." size="30">
+                        </ctv-th>
+                    </ctv-tr>
+                </ctv-thead>
+
+                <ctv-tbody>
+                    <ctv-tr ng-repeat="volume in storagePolicyDetailsCtrl.filteredVolumes">
+                        <ctv-td>
+                            {{volume.name}}
+                        </ctv-td>
+                        <ctv-td></ctv-td>
+                    </ctv-tr>
+                </ctv-tbody>
+
+                <ctv-tfoot>
+                    <ctv-tr>
+                        <ctv-th colspan="2">
+                            <ctv-tpagination></ctv-tpagination>
+                        </ctv-th>
+                    </ctv-tr>
+                </ctv-tfoot>
+            </ctv-table>
+        </ctv-collapsible>
     </div>
     <div ng-switch-when="edit">
         <form class="ui form" name="storagePolicyDetailsCtrl.form" role="form"

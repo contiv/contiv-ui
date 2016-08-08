@@ -48,6 +48,7 @@ module.exports = function (config) {
             'app/organizations/**/*.js',
             'app/settings/module.js',
             'app/settings/**/*.js',
+            'app/storage_policies/**/*.js'
         ],
 
         autoWatch: true,
@@ -63,7 +64,7 @@ module.exports = function (config) {
             'karma-junit-reporter',
             'karma-ng-html2js-preprocessor'
         ],
-
+        
         junitReporter: {
             outputFile: 'test_out/unit.xml',
             suite: 'unit'
