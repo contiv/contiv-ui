@@ -1,6 +1,37 @@
 /**
  * Created by vjain3 on 5/4/16.
  */
+
+/*
+Directive Usage :
+
+a) ctvTable -
+   usage : <ctv-table defaultsortcolumn='name' items='tableItems' filtereditems='filtItems' size='size'></ctv-table>
+   attribute details :  defaultsortcolumn - The default column name(corresponding key inside the object of items array) on which the table will be sorted when it is loaded.
+                        items - An array of objects which will be displayed by the ctv-table directive.
+                        size - number of rows to be displayed inside the table. If items.length > size then remaining items
+                               will be displayed in next page.
+                        filtereditems - This is an output field which produces a filtered subset of items specefied by
+                                        the previous attribute, Items are filtered based on search text defined inside ctv-search,
+                                        and by the size mentioned in the ctv-table attribute
+b) ctvTH -
+   usage : <ctv-th sortfield='name'>name</ctv-th>
+   attribute details : sortfield - This is the key of the object present inside items array specefied in ctvTable, for eg :
+                                   if the array object is : [{ip: "20.1.2.3", host: "cluster-1"},{ip: "20.1.2.4", host: "cluster-2"}]
+                                   then directive will be <ctv-th sortfield="'ip'"> Ip Address </ctv-th>
+   Table can only be sorted on columns which has sortfield attribute specefied.
+
+c) ctvTsearch -
+   usage : <ctv-tsearch placeholder='Search' size='30'></ctv-tsearch>
+   attribute details : placeholder - specify the placeholder for the input text field
+                       size - specify the maximum length of the search string
+   Only items matching the search string are displayed inside the table.
+
+d) ctvTpagination -
+   usage : <ctv-tpagination></ctv-tpagination>
+   Provides link for moving back and forth of the result page.
+
+ */
 angular.module("contiv.directives")
     .directive("ctvTable", ['filterFilter', 'limitToFilter', function (filterFilter, limitToFilter) {
         return {
