@@ -116,6 +116,16 @@ angular.module('PolicyModule')
                 // var foci = state.foci;
                 var zooms = state.zooms;
                 var layout = state.layout;
+
+                //if there hasn't been a break event yet
+                if (state.layoutDefault == null) {
+                    var defaultLayout = {};
+                    _.forEach(thisGraph.nodes, function(n) {
+                        defaultLayout[n.id] = {x:n.x, y:n.y};
+                    })
+                    state.layoutDefault = defaultLayout;
+                }
+                
                 var layoutDefault = state.layoutDefault;
                 var ret = {nodes:nodes, links:links, 
                     states:state.savedStates, currTitle:currTitle, 
@@ -160,9 +170,46 @@ angular.module('PolicyModule')
                     }
                 }
 
-                thisGraph.updateGraph(function() {
+                var children_struct = thisGraph.children_struct;
+
+                _.forEach(thisGraph.nodes, function(d) {
+                    d.SplitJoinViewPolicy = {};
+                    if (_.includes(children_struct[state.focusGroups[0]], 
+                            d.id)) {
+                        d.SplitJoinViewPolicy.type = "focus";
+                    } else {
+                        d.SplitJoinViewPolicy.type = "connected";
+                    }
+                })
+
+                //loading a previous layout
+                var layout;
+                if (state.focusGroups.length === 0) {
+                    thisGraph.zoomed([0,0], 1);
+                    layout = state.layoutDefault;
+                } else {
+                    var zoom = state.zooms[state.focusGroups];
+                    if (zoom != null) {
+                        thisGraph.zoomed(zoom[0], zoom[1]);
+                    }
+                    layout = state.layout[state.focusGroups];
+                }
+
+                //layout can't be null
+                _.forEach(thisGraph.nodes, function(n) {
+                    var pos = layout[n.id];
+                    if (pos == null) {
+                        console.log(layout, n);
+                    }
+                    n.x = pos.x;
+                    n.y = pos.y;
+                })
+                thisGraph.state.initForce = true;
+                thisGraph.updateGraph.call(thisGraph, function() {
                     thisPolicy.updateGraphCallback.call(thisPolicy);
                 });
+                state.scale = thisGraph.dragSvg.scale();
+                state.translate = thisGraph.dragSvg.translate();
             }
 
             /**
