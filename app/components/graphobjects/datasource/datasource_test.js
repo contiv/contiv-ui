@@ -10,13 +10,11 @@ describe('DataSource', function(){
     var ancestors_struct;
 
     beforeEach(function(){
-        module('NodeModule');
-        module('LinkModule');
         module('DataModule');
         inject( function($injector){
             DataSource = $injector.get('DataSource');
-            VisualizerLink = $injector.get('VisualizerLink');
-            VisualizerNode = $injector.get('VisualizerNode');
+            // VisualizerLink = $injector.get('VisualizerLink');
+            // VisualizerNode = $injector.get('VisualizerNode');
         });
         //creating mock for testing
         nodes = [];

@@ -106,9 +106,9 @@ describe('SplitJoinNodePolicy', function(){
         ancestors_struct["Driver"] = [null];
         ancestors_struct["Web"] = [null];
         module('PolicyModule');
-        module('NodeModule');
+        // module('NodeModule');
         inject( function($injector){
-            VisualizerNode = $injector.get('VisualizerNode');
+            // VisualizerNode = $injector.get('VisualizerNode');
             policyFactory = $injector.get('SplitJoinNodePolicy');
         });
         //creating mock for testing

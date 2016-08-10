@@ -144,8 +144,13 @@ g.selected circle{
     line-height: 20px;
 }
 </style>
-<!-- <div class='three wide column' id='graph-title div'> -->
-<!-- <h3 id='graph-title' class= 'ui header'></h3>
- --><!-- </div> -->
-<svg></svg>
+<div id="backButton-div"  class="one float wide column">
+    <a style="opacity:0" id='backButton' ng-click= "visualizationGraph.state.SplitJoinViewPolicy.backButton()">
+        <i class="large arrow left icon"></i>
+    </a>
+    <h3 id='graph-title' class= 'ui header'></h3>
+</div>
+<div class="left floated eight wide column" id='graphContainer'>
+    <svg></svg>
+</div>
 

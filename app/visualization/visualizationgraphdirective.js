@@ -34,9 +34,9 @@ angular.module('contiv.visualization')
                 /** MAIN SVG **/
                 var rawSvg=elem.find('svg');
 
-                var offset = $('#visualization-graph').offset();
+                var offset = $(rawSvg.parent()).offset();
 
-                var divWidth = $('#visualization-graph').width();
+                var divWidth = $(rawSvg.parent()).width();
 
                 var svg = d3.select(rawSvg[0])
                     .attr("width", divWidth)
@@ -59,6 +59,7 @@ angular.module('contiv.visualization')
                 //load old view if it exists.
                 if (_.isEmpty(StateSave.savedStates) == false) {
                     var graph = scope.visualizationGraph;
+                    console.log(StateSave.savedStates);
                     graph.load(StateSave.savedStates);
                 } else {
                     scope.visualizationGraph.updateGraph();

@@ -147,7 +147,7 @@ angular.module('PolicyModule')
                             events: { 
                                 show: function() {
                                     var api = $(thisNode).qtip('api');
-                                    var offset = $('#visualization-graph').offset();
+                                    var offset = $('#graphContainer').offset();
                                     var position = [offset.left + ((d.x * thisGraph.dragSvg.scale()) + thisGraph.dragSvg.translate()[0]), 
                                             offset.top + ((d.y +d.radius) * thisGraph.dragSvg.scale())  + thisGraph.dragSvg.translate()[1]]
                                     api.set('position.target', position);
@@ -207,7 +207,7 @@ angular.module('PolicyModule')
                             },
                             show: {
                                 delay: 0,
-                                solo: $('#visualization-graph')
+                                solo: $('#graphContainer')
                             },
                             style: {
                                 classes: 'qtip-blue qtip-shadow'
