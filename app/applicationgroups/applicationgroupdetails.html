@@ -71,11 +71,11 @@
 
     <ctv-collapsible title="Isolation Policies">
         <div ng-if="applicationGroupDetailsCtrl.mode == 'edit'">
-            <ctv-rule mode="edit" application-group="applicationGroupDetailsCtrl.applicationGroup"></ctv-rule>
+            <ctv-policy mode="edit" applicationgroup="applicationGroupDetailsCtrl.applicationGroup"></ctv-policy>
         </div>
 
         <div ng-if="applicationGroupDetailsCtrl.mode == 'details'">
-            <ctv-rule mode = "details" application-group="applicationGroupDetailsCtrl.applicationGroup"></ctv-rule>
+            <ctv-policy mode = "details" applicationgroup="applicationGroupDetailsCtrl.applicationGroup"></ctv-policy>
         </div>
     </ctv-collapsible>
 

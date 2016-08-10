@@ -10,8 +10,9 @@
                 </div>
             </td>
             <td>
-                <select class="ui dropdown" ng-model="appGroupCtrl.selectedPolicy"
-                        ng-options="policy.policyName for policy in appGroupCtrl.isolationPolicies | filter:isolationPolicySearchText">
+                <select class="ui dropdown" ng-model="selectedPolicy.policy"
+                        ng-options="policy as policy.policyName for policy in isolationPolicies | filter:isolationPolicySearchText">
+                    <option value="">-- Please select policy --</option>
                 </select>
             </td>
             <td>
@@ -21,7 +22,7 @@
                 </button>
             </td>
         </tr>
-        <tr ng-repeat="policy in appGroupCtrl.applicationGroup.policies">
+        <tr ng-repeat="policy in applicationgroup.policies">
             <td>{{policy}}</td>
             <td></td>
             <td>
@@ -36,7 +37,7 @@
 
     <table ng-switch-when="details" class="ui very basic unstackable table">
         <tbody>
-        <tr ng-repeat="policy in appGroupCtrl.applicationGroup.policies">
+        <tr ng-repeat="policy in applicationgroup.policies">
             <td>{{policy}}</td>
         </tr>
         </tbody>
@@ -46,6 +47,7 @@
     <table class="ui very basic unstackable table" style="margin-top: 40px">
         <thead>
         <tr>
+            <th>Policy Name</th>
             <th>Priority</th>
             <th>Action</th>
             <th>From group</th>
@@ -57,7 +59,8 @@
         </thead>
 
         <tbody>
-        <tr ng-repeat="rule in appGroupCtrl.incomingRules">
+        <tr ng-repeat="rule in incomingRules">
+            <td>{{rule.policyName}}</td>
             <td>{{rule.priority}}</td>
             <td>{{rule.action}}</td>
             <td>{{rule.fromEndpointGroup}}</td>
@@ -74,6 +77,7 @@
     <table class="ui very basic unstackable table" style="margin-top: 40px">
         <thead>
         <tr>
+            <th>Policy Name</th>
             <th>Priority</th>
             <th>Action</th>
             <th>To group</th>
@@ -85,7 +89,8 @@
         </thead>
 
         <tbody>
-        <tr ng-repeat="rule in appGroupCtrl.outgoingRules">
+        <tr ng-repeat="rule in outgoingRules">
+            <td>{{rule.policyName}}</td>
             <td>{{rule.priority}}</td>
             <td>{{rule.action}}</td>
             <td>{{rule.toEndpointGroup}}</td>
