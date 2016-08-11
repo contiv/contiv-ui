@@ -48,7 +48,8 @@ module.exports = function (config) {
             'app/organizations/**/*.js',
             'app/settings/module.js',
             'app/settings/**/*.js',
-            'app/storage_policies/**/*.js'
+            'app/storage_policies/**/*.js',
+            'app/volumes/**/*.js'
         ],
 
         autoWatch: true,

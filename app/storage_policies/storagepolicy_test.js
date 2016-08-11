@@ -116,6 +116,7 @@ describe('contiv.storagepolicies module', function(){
 
     describe('storagepolicylist controller', function(){
         var $controller, $interval, $rootScope, $filter;
+        var storagePolicyListCtrl;
         beforeEach(inject(function(_$interval_, _$rootScope_, _$controller_, _$filter_){
             $interval = _$interval_;
             $rootScope = _$rootScope_;

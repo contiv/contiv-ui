@@ -48,7 +48,6 @@ angular.module('contiv.volumes')
                     CRUDHelperService.hideServerError(volumeCreateCtrl);
                     CRUDHelperService.startLoader(volumeCreateCtrl);
                     applyPolicySettings();
-                    volumeCreateCtrl.newVolume.name = volumeCreateCtrl.newVolume.volume;
                     VolumesModel.create(volumeCreateCtrl.newVolume).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(volumeCreateCtrl);
                         returnToVolumesModel();

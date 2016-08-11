@@ -52,17 +52,7 @@ angular.module('contiv.volumes')
                 })
             }
 
-            function copySnapshot(snapshot, newVolume) {
-                VolumesModel.copy(model, snapshot, newVolume)
-                    .then(function successCallback(result) {
-
-                    }, function errorCallback(result) {
-
-                    })
-            }
-
             volumeDetailsCtrl.deleteVolume = deleteVolume;
-            volumeDetailsCtrl.copySnapshot = copySnapshot;
 
             //Load from cache for quick display initially
             getVolumeInfo(false);

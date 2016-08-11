@@ -145,7 +145,7 @@
         </ctv-collapsible>
 
         <div class="ui section divider"></div>
-        <ctv-collapsible title="Volumes created under this policy">
+        <ctv-collapsible title="Volumes">
             <ctv-table defaultsortcolumn="name" items="storagePolicyDetailsCtrl.volumes" filtereditems="storagePolicyDetailsCtrl.filteredVolumes" size="12">
                 <ctv-thead>
                     <ctv-tr>
@@ -159,7 +159,7 @@
                 <ctv-tbody>
                     <ctv-tr ng-repeat="volume in storagePolicyDetailsCtrl.filteredVolumes">
                         <ctv-td>
-                            {{volume.name}}
+                            <a ui-sref="contiv.menu.volumes.details({key:volume.policy + '/' + volume.name})">{{volume.name}}</a>
                         </ctv-td>
                         <ctv-td></ctv-td>
                     </ctv-tr>
@@ -210,7 +210,7 @@
                        ng-model="storagePolicyDetailsCtrl.policy.driver.pool" placeholder="Enter pool" required>
             </div>
             <div class="field">
-                <label for="newStoragePolicyPool">Size</label>
+                <label for="newStoragePolicySize">Size</label>
                 <input type="text" id="newStoragePolicySize" name="newStoragePolicySize"
                        ng-model="storagePolicyDetailsCtrl.policy.create.size" placeholder="Enter size" required>
             </div>

@@ -48,10 +48,10 @@
 <div class="ui section divider" style="margin-top: 30px"></div>
 
 <ctv-collapsible title="Snapshots">
-    <ctv-table items="volumeDetailsCtrl.snapshots" filtereditems="volumeDetailsCtrl.filteredsnapshots" size="12">
+    <ctv-table defaultsortcolumn="key" items="volumeDetailsCtrl.snapshots" filtereditems="volumeDetailsCtrl.filteredsnapshots" size="12">
         <ctv-thead>
             <ctv-tr>
-                <ctv-th>Name</ctv-th>
+                <ctv-th sortfield="'key'">Name</ctv-th>
                 <ctv-th class="right floated three wide column">
                     <ctv-tsearch placeholder="Search snapshots..." size="30">
                 </ctv-th>
@@ -62,6 +62,11 @@
             <ctv-tr ng-repeat="snapshot in volumeDetailsCtrl.filteredsnapshots">
                 <ctv-td>
                     {{snapshot}}
+                </ctv-td>
+                <ctv-td>
+                    <a ui-sref="contiv.menu.volumes.copy({snapshot:snapshot, policy:volumeDetailsCtrl.volume.policy, volume:volumeDetailsCtrl.volume.name})">
+                        <i class="icon snapshot" ng-click="volumeDetailsCtrl.selectedsnapshot=snapshot"></i>
+                    </a>
                 </ctv-td>
                 <ctv-td></ctv-td>
             </ctv-tr>

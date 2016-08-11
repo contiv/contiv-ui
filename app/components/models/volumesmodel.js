@@ -47,7 +47,7 @@ angular.module('contiv.models')
             var deferred = collection.$q.defer();
             var url = ContivGlobals.VOLUMES_COPYSNAPSHOTS_ENDPOINT;
             var volcopymodel = {
-                volume: model.name,
+                name: model.name,
                 policy: model.policy,
                 Options: {
                     target: newVolume,
