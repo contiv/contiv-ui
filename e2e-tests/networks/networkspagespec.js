@@ -28,12 +28,16 @@ describe("Testing Networks create and list", function(){
         networkCreate.newNetworkCreateButton.submit();
     });
 
-
-
-    /*
-    it("View the created network,function(){
-
-    });
-    */
+    it('Verify the network list', function(){
+        expect(networkList.networkName.getText()).toEqual("a-Test-Net");
+        var detailsHref = ""
+        networkList.networkName.getAttribute("href").then(function(href){
+            detailsHref = href;
+            detailsHref = detailsHref.replace("%3A",":");
+        });
+        networkList.networkName.click().then(function(){
+            expect(browser.getCurrentUrl()).toEqual(detailsHref)
+        });
+    })
 
 });
