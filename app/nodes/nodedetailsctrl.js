@@ -163,6 +163,7 @@ angular.module('contiv.nodes')
 
             nodeDetailsCtrl.setMode = setMode;
             nodeDetailsCtrl.updateBgpInfo = updateBgpInfo;
+            nodeDetailsCtrl.returnToInfo = returnToInfo;
             nodeDetailsCtrl.neighbors = [];
             nodeDetailsCtrl.neighbor = {};
             nodeDetailsCtrl.key = $stateParams.key;
