@@ -1,4 +1,4 @@
-<th class={{class}}">
+<th class={{class}} ng-style="tablectrl.filteredItems.length==0 && {'border-top': 'none'}">
     <i ng-if="(tablectrl.sortObj.field==sortfield && sortfield!=undefined)" ng-class="tablectrl.sortObj.iconDirection"></i>
     <span ng-transclude></span>
 </th>

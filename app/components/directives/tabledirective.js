@@ -47,6 +47,7 @@ angular.module("contiv.directives")
                 var tableCtrl = this;
                 tableCtrl.chunks = [];
                 tableCtrl.pageNo = 0;
+                tableCtrl.filteredItems=[];
                 tableCtrl.sortObj=initializeSort($scope.defaultsortcolumn);
 
                 tableCtrl.size = parseInt($scope.size, 10);
