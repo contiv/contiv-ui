@@ -43,7 +43,7 @@ angular.module('contiv.servicelbs')
                 }
 
                 function returnToServicelbDetails() {
-                    $state.go('contiv.menu.servicelbs.details.info', {key: servicelbDetailsCtrl.servicelb.key,state:'details'});
+                    $state.go('contiv.menu.servicelbs.details.info', {'key': servicelbDetailsCtrl.servicelb.key,'state':'details'});
                 }
 
                 function cancelEditing() {
