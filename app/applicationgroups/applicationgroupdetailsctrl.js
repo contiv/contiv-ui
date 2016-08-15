@@ -20,18 +20,10 @@ angular.module('contiv.applicationgroups')
         '$state',
         '$stateParams',
         'ApplicationGroupsModel',
-        'PoliciesModel',
-        'NetprofilesModel',
-        'RulesModel',
-        'ApplicationGroupService',
         'CRUDHelperService',
         function ($state,
                   $stateParams,
                   ApplicationGroupsModel,
-                  PoliciesModel,
-                  NetprofilesModel,
-                  RulesModel,
-                  ApplicationGroupService,
                   CRUDHelperService) {
             var applicationGroupDetailsCtrl = this;
 

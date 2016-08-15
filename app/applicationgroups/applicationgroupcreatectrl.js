@@ -19,19 +19,11 @@ angular.module('contiv.applicationgroups')
         '$stateParams',
         'ApplicationGroupsModel',
         'NetworksModel',
-        'PoliciesModel',
-        'NetprofilesModel',
-        'RulesModel',
-        'ApplicationGroupService',
         'CRUDHelperService',
         function ($state,
                   $stateParams,
                   ApplicationGroupsModel,
                   NetworksModel,
-                  PoliciesModel,
-                  NetprofilesModel,
-                  RulesModel,
-                  ApplicationGroupService,
                   CRUDHelperService) {
             var applicationGroupCreateCtrl = this;
             applicationGroupCreateCtrl.networks = [];
