@@ -1,9 +1,9 @@
 exports.config = {
 
-  seleniumAddress: 'http://localhost:4444/wd/hub',
   capabilities: {
     'browserName': 'chrome'
   },
+  seleniumServerJar: "../node_modules/protractor/selenium/selenium-server-standalone-2.47.1.jar",
   
   baseUrl: 'http://localhost:8080/',
 

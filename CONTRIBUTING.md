@@ -180,17 +180,10 @@ Inside pageObject you would create object references for every page element that
 ######Running End to end tests -
 Protractor along with Standalone selenium web driver is used to execute these test scripts.
 
-* Start the standalone selenium web driver present in contiv-ui/node_modules/protractor folder. 
+```
+$ npm run protractor
+```
 
-```
-$ node_modules/protractor/bin/webdriver-manager start
-```
-* Add your test script inside e2e-tests/
-* Run your test scripts by specifying the location of your protractor conf file
-
-```
-$ node_modules/protractor/bin/protractor e2e-tests/protractor.conf.js
-```
 ######Debugging End to end tests using webstorm- 
 
 Follow the below instructions to configure your webstorm for running/debugging end to end tests.
