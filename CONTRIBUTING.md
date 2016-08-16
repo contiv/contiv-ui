@@ -178,7 +178,7 @@ Your page interaction test must be organized into two files pageObject.js and pa
 Inside pageObject you would create object references for every page element that the user can interact with. pageSpec.js would use the elements declared in pageObject.js to perform the actual test and verifications. 
 
 ######Running End to end tests -
-Protractor along with Standalone selenium web driver is used to execute these test scripts.
+Protractor along with Standalone selenium web driver is used to execute these test scripts. By default, Contiv UI is expected to run on http://localhost:8080/ for these tests to run.
 
 ```
 $ npm run protractor
