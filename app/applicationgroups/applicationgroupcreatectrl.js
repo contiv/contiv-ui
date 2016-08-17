@@ -29,7 +29,7 @@ angular.module('contiv.applicationgroups')
             applicationGroupCreateCtrl.networks = [];
             applicationGroupCreateCtrl.applicationGroup = {};
             applicationGroupCreateCtrl.selectedNetwork = {};
-            applicationGroupCreateCtrl.selectedNetprofile = {};
+            applicationGroupCreateCtrl.mode = "edit";
 
             function returnToApplicationGroup() {
                 $state.go('contiv.menu.applicationgroups.list');
@@ -58,13 +58,14 @@ angular.module('contiv.applicationgroups')
                     CRUDHelperService.startLoader(applicationGroupCreateCtrl);
                     applicationGroupCreateCtrl.applicationGroup.networkName =
                         applicationGroupCreateCtrl.selectedNetwork.networkName;
-                    
-                    applicationGroupCreateCtrl.applicationGroup.netProfile =
-                        applicationGroupCreateCtrl.selectedNetprofile.profileName;
 
                     applicationGroupCreateCtrl.applicationGroup.key =
                         ApplicationGroupsModel.generateKey(applicationGroupCreateCtrl.applicationGroup);
 
+                    /**
+                     * applicationGroup consist of Group Name, Network Name, Isolation Policies, Bandwidth Policy
+                     */
+                    
                     ApplicationGroupsModel.create(applicationGroupCreateCtrl.applicationGroup).then(
                         function successCallback(result) {
                             CRUDHelperService.stopLoader(applicationGroupCreateCtrl);
@@ -80,9 +81,10 @@ angular.module('contiv.applicationgroups')
                 CRUDHelperService.stopLoader(applicationGroupCreateCtrl);
                 CRUDHelperService.hideServerError(applicationGroupCreateCtrl);
                 applicationGroupCreateCtrl.applicationGroup = {
-                    groupName: '',
-                    networkName: '',
-                    policies: [],
+                    groupName: '',          // For Group Name
+                    networkName: '',        // For Network Name
+                    policies: [],           // For Isolation policies
+                    netProfile: '',         // For Bandwidth policy Name
                     tenantName: 'default'//TODO: Remove hardcoded tenant.
                 };
             }

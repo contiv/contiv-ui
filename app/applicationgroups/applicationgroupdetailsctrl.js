@@ -29,7 +29,6 @@ angular.module('contiv.applicationgroups')
 
             applicationGroupDetailsCtrl.applicationGroup = {};
             applicationGroupDetailsCtrl.selectedNetwork = {};
-            applicationGroupDetailsCtrl.selectedNetprofile = {};
 
             /**
              * To show edit or details screen based on the route
@@ -70,8 +69,6 @@ angular.module('contiv.applicationgroups')
             function saveApplicationGroup() {
                 CRUDHelperService.hideServerError(applicationGroupDetailsCtrl);
                 CRUDHelperService.startLoader(applicationGroupDetailsCtrl);
-
-                applicationGroupDetailsCtrl.applicationGroup.netProfile = applicationGroupDetailsCtrl.selectedNetprofile.profileName;
 
                 ApplicationGroupsModel.save(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
                     CRUDHelperService.stopLoader(applicationGroupDetailsCtrl);

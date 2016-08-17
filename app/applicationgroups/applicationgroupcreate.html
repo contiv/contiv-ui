@@ -59,13 +59,13 @@
         <div class="ui section divider"></div>
 
         <ctv-collapsible title="Isolation Policies">
-            <ctv-policy mode="edit" applicationgroup="applicationGroupCreateCtrl.applicationGroup"></ctv-policy>
+            <ctv-isolationpolicy mode="applicationGroupCreateCtrl.mode" applicationgroup="applicationGroupCreateCtrl.applicationGroup"></ctv-isolationpolicy>
         </ctv-collapsible>
 
         <div class="ui section divider"></div>
 
         <ctv-collapsible title="Bandwidth Policies">
-            <ctv-netprofiles type="create" netprofile="applicationGroupCreateCtrl.selectedNetprofile">
+            <ctv-bandwidthpolicy mode="applicationGroupCreateCtrl.mode" applicationgroup="applicationGroupCreateCtrl.applicationGroup"></ctv-bandwidthpolicy>
         </ctv-collapsible>
 
         <div class="ui section divider"></div>

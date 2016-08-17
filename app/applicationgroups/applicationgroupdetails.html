@@ -70,33 +70,13 @@
     <div class="ui section divider"></div>
 
     <ctv-collapsible title="Isolation Policies">
-        <div ng-if="applicationGroupDetailsCtrl.mode == 'edit'">
-            <ctv-policy mode="edit" applicationgroup="applicationGroupDetailsCtrl.applicationGroup"></ctv-policy>
-        </div>
-
-        <div ng-if="applicationGroupDetailsCtrl.mode == 'details'">
-            <ctv-policy mode = "details" applicationgroup="applicationGroupDetailsCtrl.applicationGroup"></ctv-policy>
-        </div>
+        <ctv-isolationpolicy mode="applicationGroupDetailsCtrl.mode" applicationgroup="applicationGroupDetailsCtrl.applicationGroup"></ctv-isolationpolicy>
     </ctv-collapsible>
 
     <div class="ui section divider"></div>
 
     <ctv-collapsible title="Bandwidth Policies">
-        <div ng-switch="applicationGroupDetailsCtrl.mode">
-            <div ng-switch-when="edit">
-                <ctv-netprofiles type="edit" netprofile="applicationGroupDetailsCtrl.selectedNetprofile">
-            </div>
-
-            <table ng-switch-when="details" class="ui very basic unstackable table">
-                <tbody>
-                    <tr>
-                        <td class="ctv-header three wide column">Profile Name</td>
-                        <td>{{applicationGroupDetailsCtrl.applicationGroup.netProfile}}</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </div>
+        <ctv-bandwidthpolicy mode="applicationGroupDetailsCtrl.mode" applicationgroup="applicationGroupDetailsCtrl.applicationGroup"></ctv-bandwidthpolicy>
     </ctv-collapsible>
 
 

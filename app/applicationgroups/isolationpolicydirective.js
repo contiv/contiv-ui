@@ -3,11 +3,11 @@
  */
 
 angular.module("contiv.applicationgroups")
-    .directive("ctvPolicy",function(){
+    .directive("ctvIsolationpolicy",function(){
         return{
             restrict:'E',
             scope:{
-                mode:'@',
+                mode:'=',
                 applicationgroup:'='
             },
             controller: [
@@ -30,6 +30,10 @@ angular.module("contiv.applicationgroups")
                     $scope.selectedPolicies = [];           // To Store policies selected by user to display
                     $scope.isolationPolicies = [];          // To Get all isolation policies of tenant
 
+
+                    /**
+                     * Get incoming and outgoing rules for each policy present in applicationgroup
+                     */
                     function getRules() {
                         $scope.applicationgroup.policies.forEach(function (policy) {
                             //To display rules of selected policies
@@ -60,7 +64,7 @@ angular.module("contiv.applicationgroups")
                     $scope.addIsolationPolicy = function() {
                         var currentPolicyName = $scope.selectedPolicy.policy.policyName;
 
-                        if (currentPolicyName != undefined && _.includes($scope.selectedPolicies, currentPolicyName) == false) {
+                        if (currentPolicyName !== undefined && _.includes($scope.selectedPolicies, currentPolicyName) == false) {
                             //To display selected policies
                             $scope.selectedPolicies.push(currentPolicyName);
 
@@ -78,40 +82,36 @@ angular.module("contiv.applicationgroups")
                             $scope.applicationgroup.policies
                                 .push(currentPolicyName);
                         }
-                    }
+                    };
 
                     /**
                      * Remove policy from application group
                      */
                     $scope.removeIsolationPolicy = function(policyName) {
                         _.remove($scope.selectedPolicies,function (policy) {
-                            return policy == policyName;
+                            return policy === policyName;
                         });
                         _.remove($scope.applicationgroup.policies, function (policy) {
-                            return policy == policyName;
+                            return policy === policyName;
                         });
                         _.remove($scope.incomingRules, function (rule) {
-                            return rule.policyName == policyName;
+                            return rule.policyName === policyName;
                         });
                         _.remove($scope.outgoingRules, function (rule) {
-                            return rule.policyName == policyName;
+                            return rule.policyName === policyName;
                         });
+                    };
+
+                    /**
+                     *  To check 'details' or 'edit' mode (not create mode)
+                     */
+                    if($scope.mode == 'details' || ($scope.mode == 'edit' && $scope.applicationgroup.groupName != "")) {
+                        //Application Groups might not have any policies associated with them so define an empty array
+                        if ($scope.applicationgroup.policies === undefined) {
+                            $scope.applicationgroup.policies = [];
+                        }
+                        getRules();
                     }
-
-
-                    if($scope.mode == 'details' || $scope.applicationgroup.groupName != "") {
-                        ApplicationGroupsModel.getModelByKey($stateParams.key)
-                            .then(function (group) {
-                                $scope.applicationgroup.policies = group.policies;
-
-                                //Application Groups might not have any policies associated with them so define an empty array
-                                if ($scope.applicationgroup.policies === undefined) {
-                                    $scope.applicationgroup.policies = [];
-                                }
-                                getRules();
-                            });
-                    }
-
                     getIsolationPolicies();
                 }],
             templateUrl:'applicationgroups/isolationpolicy.html'
