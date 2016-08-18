@@ -11,11 +11,19 @@
 angular.module('PolicyModule')
     .factory('SplitJoinViewPolicy', ['SplitJoinNodePolicy', 'VisualizerNode', function (SplitJoinNodePolicy, VisualizerNode) { 
         class SplitJoinViewPolicy extends SplitJoinNodePolicy.Policy{
+            /**
+             * Constructs the object.
+             */
             constructor() {
                 super();
                 this.policyName = "SplitJoinViewPolicy";
             }
 
+            /**
+             * Called when policy is installed
+             *
+             * @param      {Graph}  graph   The graph
+             */
             initialize(graph) {
                 if (this.initialized) {
                     return;
@@ -383,8 +391,8 @@ angular.module('PolicyModule')
              * will display it's children and will only show connections between
              * the two groups, and will replace focusGroup[1].
              * 
-             * @param      {D3Obj}  d3node  The d3 node
-             * @param      {Object}  d      The matching data object
+             * @param      {D3Obj}   d3node  The d3 node
+             * @param      {Object}  d       The matching data object
              */
             dblclick(d3node, d) {
                 var thisGraph = this.graph,

@@ -6,12 +6,15 @@ angular.module('PolicyModule')
     .factory('NodeSelectionPolicy', ['Policy', function (Policy) {
 
     	class NodeSelectionPolicy extends Policy.Policy {
+            /**
+             * Constructs the object.
+             */
             constructor() {
                 super("NodeSelectionPolicy");
             }
 
             /**
-             * Called when first installed
+             * Called when policy is installed
              * Overwrites the on drag event of the graph
              * 
              * @param      {Graph}  graph   The graph it is 
@@ -52,6 +55,12 @@ angular.module('PolicyModule')
                 })
             }
 
+            /**
+             * Adds the given node to the array of selected nodes
+             *
+             * @param      {D3Object}  d3Node    The d3 node
+             * @param      {Node}      nodeData  Matching Node object
+             */
             addSelectNode(d3Node, nodeData) {
                 var thisGraph = this.graph,
                     state = thisGraph.state.NodeSelectionPolicy,
@@ -61,6 +70,12 @@ angular.module('PolicyModule')
                 state.selectedNodes.push(nodeData);
             }
 
+            /**
+             * Removes the given node from the array of selected nodes.
+             *
+             * @param      {D3Object}  d3Node    The d3 node
+             * @param      {Node}      nodeData  Matching node object 
+             */
             removeSelectFromNode(d3Node, nodeData) {
                 var thisGraph = this.graph,
                     state = thisGraph.state.NodeSelectionPolicy,
@@ -73,6 +88,9 @@ angular.module('PolicyModule')
                 state.selectedNodes.splice(index, 1);
             }
 
+            /**
+             * Removes all selected nodes.
+             */
             removeAllSelectedNodes() {
                 var thisGraph = this.graph,
                     state = thisGraph.state.NodeSelectionPolicy,
@@ -82,6 +100,13 @@ angular.module('PolicyModule')
                 state.selectedNodes = [];
             }
 
+            /**
+             * On Mousedown, determines whether to change the
+             * selected status of the clicked node.
+             *
+             * @param      {D3Object}  d3node  The d3 node
+             * @param      {Node}      d       Matching Node Object       
+             */
             mousedown(d3node, d) {
                 var thisGraph = this.graph,
                     state = thisGraph.state.NodeSelectionPolicy,
@@ -100,6 +125,13 @@ angular.module('PolicyModule')
                 }
             }
 
+            /**
+             * On Mouseup, determines whether to change the
+             * selected status of the clicked node.
+             *
+             * @param      {D3Object}  d3node  The d3 node
+             * @param      {Node}      d       Matching Node Object
+             */
             mouseup(d3node, d) {
                 var thisGraph = this.graph,
                     state = thisGraph.state.NodeSelectionPolicy,

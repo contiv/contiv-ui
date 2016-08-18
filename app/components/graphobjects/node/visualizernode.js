@@ -3,8 +3,20 @@
  */
 angular.module('NodeModule')
     .factory('VisualizerNode', ['Node', function (Node) {
-
 		class VisualizerNode extends Node.Node {
+			/**
+			 * Constructs the object.
+			 *
+			 * @param      {number}  x       	x location
+			 * @param      {number}  y       	y location
+			 * @param      {string}  id      	The identifier
+			 * @param      {string}  text    	The text to display
+			 * @param      {number}  radius  	The radius of the node
+			 * @param      {string}  parent     The parent id
+			 * @param      {Array}   ancestors  Array of ancestors
+			 * @param      {number}  xStart     x loc to start animation
+			 * @param      {number}  yStart     y loc to start animation
+			 */
 		    constructor(x, y, id, text, radius, parent, ancestors, 
 		    	xStart, yStart) {
 		        super(x, y, id, text, radius);
@@ -18,7 +30,7 @@ angular.module('NodeModule')
 			 * Called during the first update graph for a node
 			 *
 			 * @param      {D3Object}  d3node  The d3 node
-			 * @param      {Object}    d       The matching data object
+			 * @param      {Node}    d         The matching Node
 			 */
 			newNodeAttr(d3node, d) {
 				var thisGraph = this.graph;

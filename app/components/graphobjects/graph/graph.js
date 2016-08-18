@@ -1,5 +1,6 @@
 /**
- * The base class the graph object.
+ * The base class the graph object. Any nodes or links that are contained in
+ * its nodes or links property will be drawn on updateGraph.
  * Supports policies.
  * 
  * To write your own graph object, create a new factory that uses the graph
@@ -15,15 +16,14 @@ angular.module('GraphModule')
              *
              * @param      {HTML SVG}  svg     The svg that will 
              *                                 hold the graph
-             * @param      {Node}  nodes   List of nodes for the graph
-             * @param      {Link}  links   List of links for the graph
+             * @param      {Array}  nodes      List of nodes for the graph
+             * @param      {Array}  links      List of links for the graph
              */
             constructor(svg, nodes, links) {
                 var thisGraph = this;
 
                 thisGraph.nodes = nodes || [];
                 thisGraph.links = links || [];
-
 
                 thisGraph.defaultNodePolicies = [];
                 thisGraph.defaultPathPolicies = [];
@@ -49,7 +49,6 @@ angular.module('GraphModule')
                     displayOffset: 60,
                 }
 
-
                 svg.on("mouseover", function(d){
                         thisGraph.svgPolicy["mouseover"].call(this, d);    
                     })
@@ -71,28 +70,27 @@ angular.module('GraphModule')
 
                 // define arrow markers for graph links
                 var defs = svg.append('svg:defs');
-                    defs.append('svg:marker')
-                        .attr('id', 'end-arrow')
-                        .attr("viewBox", "0 -5 10 10")
-                        .attr("refX", 20)
-                        .attr("refY", -1)
-                        .attr("markerWidth", 6)
-                        .attr("markerHeight", 6)
-                        .attr("orient", "auto")
-                        .append("path")
-                        .attr("d", "M0,-5L10,0L0,5");
+                defs.append('svg:marker')
+                    .attr('id', 'end-arrow')
+                    .attr("viewBox", "0 -5 10 10")
+                    .attr("refX", 20)
+                    .attr("refY", -1)
+                    .attr("markerWidth", 6)
+                    .attr("markerHeight", 6)
+                    .attr("orient", "auto")
+                    .append("path")
+                    .attr("d", "M0,-5L10,0L0,5");
 
-                    // define arrow markers for leading arrow
-                    defs.append('svg:marker')
-                        .attr('id', 'mark-end-arrow')
-                        .attr('viewBox', '0 -5 10 10')
-                        .attr('refX', 7)
-                        .attr('markerWidth', 3.5)
-                        .attr('markerHeight', 3.5)
-                        .attr('orient', 'auto')
-                        .append('svg:path')
-                        .attr('d', 'M0,-5L10,0L0,5');
-
+                // define arrow markers for leading arrow
+                defs.append('svg:marker')
+                    .attr('id', 'mark-end-arrow')
+                    .attr('viewBox', '0 -5 10 10')
+                    .attr('refX', 7)
+                    .attr('markerWidth', 3.5)
+                    .attr('markerHeight', 3.5)
+                    .attr('orient', 'auto')
+                    .append('svg:path')
+                    .attr('d', 'M0,-5L10,0L0,5');
 
                 thisGraph.svg = svg;
                 thisGraph.svgG = svg.append("g")
@@ -106,8 +104,6 @@ angular.module('GraphModule')
                 thisGraph.initLinks();
 
                 thisGraph.setPositions();
-                // thisGraph.updateGraph();
-                // thisGraph.setForce();
                 var resizeFunc = function() {
                     thisGraph.onWindowResize(svg);
                 }
@@ -269,8 +265,6 @@ angular.module('GraphModule')
                 thisGraph.defaultPathPolicies.push(policy);
                 policy.initialize(thisGraph);
             }
-
-            //Used to remove an installed policy for links
 
             /**
              * Used to remove an installed policy for links

@@ -4,6 +4,13 @@
 angular.module('LinkModule')
     .factory('VisualizerLink', ['Link', function (Link) {
 		class VisualizerLink extends Link.Link {
+			/**
+			 * Constructs the object.
+			 *
+			 * @param      {Node}  sourceNode  The source node
+			 * @param      {Node}  targetNode  The target node
+			 * @param      {number}  weight    The weight of the link
+			 */
 		    constructor(sourceNode, targetNode, weight) {
 		        super(sourceNode, targetNode);
 		        this.weight = weight;
@@ -13,11 +20,21 @@ angular.module('LinkModule')
 		        this.count = 1;
 		    }
 
+		    /**
+		     * Increases the count of the link
+		     * USed to keep track of how many paths to its subnodes
+		     * there are in order to calculate average traffic
+		     */
 		    increaseCount() {
 		        this.count += 1;
 		    }
 
-		    getMidpoint() {
+		    /**
+		     * Calculates where to place qtip for
+		     *
+		     * @return     {Object}  Object with qTip settings
+		     */
+		    qtipHelper() {
 		    	var ret;
 		    	var d = this;
 		    	var dx = (d.target.x - d.source.x) / 2,
@@ -26,7 +43,6 @@ angular.module('LinkModule')
 	    			ret = {
                         my: 'top center',
                         at: 'center center', // at the bottom right of...
-                        // target: $(thisPath) // my target
                         target: [dx, dy],
                         adjust: {
                         	y: 10
@@ -36,7 +52,6 @@ angular.module('LinkModule')
 	    			ret = {
                         my: 'bottom center',
                         at: 'center center', // at the bottom right of...
-                        // target: $(thisPath) // my target
                         target: [dx, dy],
                         adjust: {
                         	y: -10
@@ -44,10 +59,13 @@ angular.module('LinkModule')
                     }
 		    	}
 		    	return ret;
-		    	
 		    }
 
-		    //Called when the link is added to the graph
+		    /**
+			 * Called when a link is added to the graph
+			 *
+			 * @param      {Graph}  graph   The graph it is added to
+			 */
 			initialize(graph) {
 				if (this.initialized == false) {
 					super.initialize(graph);
@@ -61,23 +79,39 @@ angular.module('LinkModule')
 				}
 			}
 
-			//Sets whether the graph should use avg weight
+			/**
+			 * Sets whether the graph should use avg weight
+			 *
+			 * @param      {boolean}  val     The value to set to
+			 */
 			setUseAvgWeight(val) {
 		        this.graph.state.VisualizerLink.useAvgWeight = !!val;
 		    }
 
-		    //Sets the weight of this link
+		    /**
+		     * Sets the weight of this link
+		     *
+		     * @param      {number}  weight  The weight to set to
+		     */
 		    setWeight(weight) {
 		        this.weight = weight;
 		    }
 
-		    //Gets the actual weight value of the link
+		    /**
+		     * Gets the raw weight.
+		     *
+		     * @return     {number}  The raw weight.
+		     */
 		    getRawWeight() {
 		        return this.weight; 
 		    }
 
-		    //Gets the weight value of the link, depending on the
-		    //useAvgWeight setting
+		    /**
+		     * Gets the weight value of the link, depending on the
+		     * useAvgWeigth setting
+		     *
+		     * @return     {number}  The weight.
+		     */
 		    getWeight() {
 		        var thisGraph = this.graph,
 		            state = thisGraph.state.VisualizerLink;
@@ -89,7 +123,9 @@ angular.module('LinkModule')
 		        return this.weight;
 		    }
 
-		    //updates the max weight of the graph
+		    /**
+		     * Updates the max weight of the graph
+		     */
 		    updateMaxWeight () {
 		        var thisGraph = this.graph,
 		            state = thisGraph.state.VisualizerLink;
@@ -103,7 +139,12 @@ angular.module('LinkModule')
 		        state.maxWeight = maxLink.getWeight();
 		    }
 
-			//Called during the update graph for existing links
+			/**
+			 * Called during the update graph for existing links
+			 *
+			 * @param      {D3Object}  d3path  The d3 path
+			 * @param      {Link}  	   d       Matching Link Object       
+			 */
 			updateAttr(d3path, d) {
 		        var thisGraph = this.graph,
 		            state = thisGraph.state.VisualizerLink;
@@ -124,8 +165,13 @@ angular.module('LinkModule')
 		                return c;
 		            });
 			}
-
-			//Called during the first update graph for a link
+			
+			/**
+			 * Called during the first update graph for this link
+			 *
+			 * @param      {D3Object}  d3path  The d3 path
+			 * @param      {Link}  	   d       Matching Link Object
+			 */
 			newPathAttr(d3path, d) {
 		        var thisGraph = this.graph,
 		            state = thisGraph.state.VisualizerLink;
@@ -145,7 +191,6 @@ angular.module('LinkModule')
 		            })
 		            .attr('d', this.arrowPath.call(d));
 			}
-
 		}
 
 		return {

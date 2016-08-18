@@ -8,13 +8,20 @@
 angular.module('PolicyModule')
     .factory('SplitJoinNodePolicy', ['NodeSelectionPolicy', 'VisualizerNode', 
     		function (NodeSelectionPolicy, VisualizerNode) {
-
 		class SplitJoinNodePolicy extends NodeSelectionPolicy.Policy {
+			/**
+			 * Constructs the object.
+			 */
             constructor() {
                 super();
                 this.policyName = "SplitJoinNodePolicy";
             }
 
+            /**
+             * Called when policy is installed
+             *
+             * @param      {Graph}  graph   The graph
+             */
             initialize(graph) {
                 if (this.initialized) {
                     return;

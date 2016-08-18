@@ -7,6 +7,9 @@
 angular.module('PolicyModule')
     .factory('QTipPolicy', ['Policy', function (Policy) {
         class QTipPolicy extends Policy.Policy {
+            /**
+             * Constructs the object.
+             */
             constructor() {
                 super("QTipPolicy");
             }
@@ -54,11 +57,15 @@ angular.module('PolicyModule')
                 }
             }
 
+            /**
+             * Removes all qTips from the DOM.
+             * Called when the policy is uninstalled or
+             * the graph is destroyed.
+             */
             destroy() {
                 //removing all qtip from DOM
                 $('[id^="qtip"]').remove();
             }
-
 
             /**
              * Keeping track of mousedown state
@@ -94,8 +101,6 @@ angular.module('PolicyModule')
             updateNewNodes(newNodes) {
                 var thisGraph = this.graph,
                     state = thisGraph.state.QTipPolicy;
-
-                
 
                 //incase library hasn't loaded yet
                 if ($(document).qtip != undefined) {
@@ -135,9 +140,6 @@ angular.module('PolicyModule')
                         }
                         //remove last comma
                         text = text.slice(0, -2);
-
-                        // var offset = $('#visualization-graph').offset();
-                        // var position = [offset.left + d.x + d.radius, offset.top + d.y +d.radius];
 
                         $(thisNode).qtip({
                             content: {
@@ -193,7 +195,7 @@ angular.module('PolicyModule')
                         //getting midpoint of path
                         var pathEl   = d3.select(this).node();
                         var midpoint = pathEl.getPointAtLength(pathEl.getTotalLength()/2);
-                        var targetRet = d.getMidpoint();
+                        var targetRet = d.qtipHelper();
                         var text = "Bytes: " + d.getWeight();
                         $(thisPath).qtip({
                             content: {

@@ -4,6 +4,17 @@
 angular.module('GraphModule')
     .factory('VisualizerGraph', ['Graph', function (Graph) {
     	class VisualizerGraph extends Graph.Graph {
+    		/**
+    		 * Constructs the object.
+    		 *
+    		 * @param   {HTML SVG}  svg             The svg that will 
+             *                                      hold the graph
+             * @param   {Array}  nodes   		    List of nodes
+             * @param   {Array}  links   		    List of links
+    		 * @param   {DataSource}  dataSource    The data source
+    		 * @param   {Object}  children_struct   The children structure
+    		 * @param   {Object}  ancestors_struct  The ancestors structure
+    		 */
             constructor(svg, nodes, links, dataSource, children_struct, ancestors_struct) {
                 super(svg, nodes, links);
                 var thisGraph = this;
@@ -18,7 +29,7 @@ angular.module('GraphModule')
                 thisGraph.consts.containerClass = 'container';
 
                 //dataSource holds the server data and methods for
-                //converting it to data for this graph
+                //converting it to data for the graph
                 thisGraph.dataSource = dataSource;
                 //Hierarchy of children for nodes
                 thisGraph.children_struct = children_struct;
@@ -50,7 +61,6 @@ angular.module('GraphModule')
                 var zoom = d3.behavior.zoom()
                     .on("zoom", function(){
                         if (d3.event.sourceEvent != null && d3.event.sourceEvent.ctrlKey){
-                            // TODO  the internal d3 state is still changing
                             return false;
                         } else{
                             thisGraph.zoomed.call(thisGraph);
@@ -60,12 +70,17 @@ angular.module('GraphModule')
                     .on("zoomstart", function(d, i){
                     });
                 thisGraph.dragSvg = zoom;
-
                 thisGraph.svg.call(zoom).on("dblclick.zoom", null);
             }
 
-
-            //Called when the graph has a zoom action
+            /**
+             * Called with no args when the graph has a zoom action
+             * Can also be called with args to force a zoom or pan 
+             * event for the graph.
+             *
+             * @param      {Array}   translate  The amount to translate
+             * @param      {number}  scale      The amount to scale
+             */
             zoomed(translate, scale){
                 var thisGraph = this;
                 if (thisGraph.state.rightClick == true) {
@@ -91,8 +106,12 @@ angular.module('GraphModule')
                         .attr("transform", "translate(" + thisGraph.dragSvg.translate() + ") scale(" +thisGraph.dragSvg.scale() + ")"); 
                 }
             };
-
-            //Called when window resizes
+            
+            /**
+             * Called when the window resizes
+             *
+             * @param      {HTML SVG}  svg    The svg to resize
+             */
             onWindowResize(svg) {
                 var thisGraph = this;
                 var docEl = document.documentElement,
@@ -105,7 +124,9 @@ angular.module('GraphModule')
 
             };
 
-            //Called when the server sends update weights for the links
+            /**
+             * Called when the server sends updated data for the links
+             */
             updateLinkData() {
                 var thisGraph = this;
                 var node_names_set = [];

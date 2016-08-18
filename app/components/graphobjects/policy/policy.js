@@ -17,10 +17,16 @@
  * Ex. 
  *      graph.state.myPolicy = {};
  *      graph.consts.myPolicy = {};
+ *      
  */
 angular.module('PolicyModule')
     .factory('Policy', [function () {
         class Policy {
+            /**
+             * Constructs the object.
+             *
+             * @param      {string}  policyName  The policy name
+             */
             constructor(policyName) {
                 this.policyName = policyName;
                 this.graph = null;
