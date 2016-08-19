@@ -4,14 +4,12 @@ angular.module('contiv.visualization')
     .config(['$stateProvider', function ($stateProvider) {
         $stateProvider
             .state('contiv.menu.visualization.edge', {
-                url: '/edge/{sourceName, targetName, sourceList, targetList, sourceType, targetType}',
+                url: '/edge/{sourceName, targetName, sourceList, targetList}',
                 params: {
                     sourceName: null,
                     targetName: null,
                     sourceList: null,
                     targetList: null,
-                    sourceType: null,
-                    targetType: null
                 },
                 controller: 'VisualizationEdgeCtrl as visualizationedgeCtrl',
                 templateUrl: 'visualization/visualizationedge.html'
@@ -24,31 +22,20 @@ angular.module('contiv.visualization')
             var targetName = $stateParams.targetName;
             var sourceList = $stateParams.sourceList;
             var targetList = $stateParams.targetList;
-            var sourceType = $stateParams.sourceType;
-            var targetType = $stateParams.targetType;
-            // console.log($stateParams);
 
             var d = new Date();
             var t = d.getSeconds();
             $scope.edgeDataInterval = 
                 $interval(function() {
-                    VisualizationService.getEdgeData(sourceList, targetList, sourceType, targetType, t.toString())
+                    VisualizationService.getEdgeData(sourceList, targetList, t.toString())
                         .then(function successCallback(result) {
-                            //hardcoding for demo
-                            // if (source == 1) {
-                            //     source = "Passenger App Container -id:1"
-                            // } else if (source == 7) {
-                            //     source = "Passenger Db Container -id:7"
-                            // }
-                            // if (target == 1) {
-                            //     target = "Passenger App Container -id:1"
-                            // } else if (target == 7) {
-                            //     target = "Passenger Db Container -id:7"
-                            // }
-                            // if (_.isEmpty(result.results[0])) {
-                            //     return;
-                            // }
-                            var data = result.results[0].series[0].values[0][1];
+                            var results = result.results;
+                            var data = 0;
+                            _.forEach(results, function(r) {
+                                if (_.isEmpty(r) === false) {
+                                    data += r.series[0].values[0][1];
+                                }
+                            });
                             $scope.sourceName = sourceName;
                             $scope.targetName = targetName;
                             $scope.edgeData = data;
@@ -61,23 +48,27 @@ angular.module('contiv.visualization')
             //Destroying the interval function on route change
             $scope.$on('$destroy', function () { $interval.cancel($scope.edgeDataInterval); });
 
-            // var dereg = $rootScope.$on('$locationChangeSuccess', function() {
-            //     $interval.cancel($scope.interval);
-            //     dereg();
-            // });
 
-
-            VisualizationService.getOldEdgeData(sourceList, targetList, sourceType, targetType)
+            VisualizationService.getOldEdgeData(sourceList, targetList)
                 .then(function successCallback(result) {
-                    // console.log(result);
-                    // if (_.isEmpty(result.results[0])) {
-                    //     return;
-                    // }
-                    var data = result.results[0].series[0].values;
+                    var results = result.results;
                     var edgeData = [];
-                    _.forEach(data, function(d) {
-                        edgeData.push(d[1]);
-                    })
+                    //results, if not empty, are expected to have
+                    //6 data entries
+                    _.forEach(results, function(r) {
+                        if (_.isEmpty(r) === false) {
+                            var data = r.series[0].values;
+                            if (_.isEmpty(edgeData)) {
+                                _.forEach(data, function(d) {
+                                    edgeData.push(d[1]);
+                                })
+                            } else {
+                                _.forEach(data, function(d, i) {
+                                    edgeData[i] += d[1];
+                                })
+                            }
+                        }
+                    });
 
                     $scope.sourceName = sourceName;
                     $scope.targetName = targetName;

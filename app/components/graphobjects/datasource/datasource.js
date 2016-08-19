@@ -15,26 +15,51 @@ angular.module('DataModule')
     	function (VisualizerNode, VisualizerLink) {
 
     	class DataSource {
+    		/**
+    		 * Constructs the object.
+    		 *
+    		 * @param      {Array}   nodes              The node data 
+    		 * @param      {Array}   links              The link data
+    		 * @param      {Object}  children_struct    The children structure
+    		 * @param      {Object}  ancestors_struct   The ancestors structure
+    		 * @param      {Array}   labels             The labels
+    		 * @param      {Array}   selectors          The selectors
+    		 */
 			constructor(nodes, links, children_struct, ancestors_struct, 
-					endpoints, providers, labels, selectors) {
+					labels, selectors) {
 				this.nodes = nodes;
 				this.links = links;
 				this.children_struct = children_struct;
 				this.ancestors_struct = ancestors_struct;
-				this.endpoints = endpoints;
-				this.providers = providers;
 				this.labels = labels;
 				this.selectors = selectors;
 			}
 
+			/**
+			 * Replaces the node data
+			 *
+			 * @param      {Node}  nodes   The nodes
+			 */
 			updateNodes(nodes) {
 				this.nodes = nodes;
 			}
 
+			/**
+			 * Replaces the link data
+			 *
+			 * @param      {Link}  links   The links
+			 */
 			updateLinks(links) {
 				this.links = links;
 			}
 
+			/**
+			 * Returns the Name attribute of the Node with the 
+			 * matching id
+			 *
+			 * @param      {string}  id      The identifier
+			 * @return     {string}  name of the matching node
+			 */
 			nodeIdToName(id) {
 		        var nodes = this.nodes;
 		        for (var i = 0; i < nodes.length; i++) {
@@ -45,20 +70,17 @@ angular.module('DataModule')
 		    }
 
 		    /**
-		     * Given a set of nodes, returns the node
-		     * that matches the id
+		     * Determines if it has child.
 		     *
-		     * @param      {string} id      The identifier
-		     * @param      {Array}  nodes   The nodes
-		     * @return     {Node}   The node with the matching id
+		     * @param      {string}   id      The identifier
+		     * @return     {boolean}  True if has child, False otherwise.
 		     */
-		    findNodeById(id, nodes){
-		        for (var i = 0; i < nodes.length; i++) {
-		            if (id == nodes[i].id) {
-		                return nodes[i];
-		            }
-		        }
-		    };
+		    hasChild(id) {
+		    	if (this.children_struct[id] == null) {
+            		return false;
+            	}
+            	return true;	
+		    }
 
 		    /**
 		     * Sets the parent and ancestors attribute using 
@@ -122,7 +144,6 @@ angular.module('DataModule')
 		                        break;
 		                    }
 		                }
-
 		            }
 		        }   
 		        //modify links
@@ -163,7 +184,7 @@ angular.module('DataModule')
 		     *
 		     * @param      {Array}  nodeData  NodeData to convert 
 		     *                                to node objects
-		     * @return     {Array}   Node objects
+		     * @return     {Array}  Node objects
 		     */
 		    processNodeData(nodeData) {
 		    	var thisDataSource = this;
@@ -184,6 +205,20 @@ angular.module('DataModule')
 		     * @return     {Array}  Link objects
 		     */
 		    processLinkData(linkData, nodes) {
+		    	/**
+			     * Returns the node that matches the id
+			     *
+			     * @param      {string} id      The identifier
+			     * @return     {Node}   The node with the matching id
+			     */
+			    function findNodeById(id, nodes) {
+			        for (var i = 0; i < nodes.length; i++) {
+			            if (id == nodes[i].id) {
+			                return nodes[i];
+			            }
+			        }
+			    };
+
 		        var links = [];
 		        //a mapping from source.id-target.id to the link added
 		        var added_links = {};
@@ -191,8 +226,8 @@ angular.module('DataModule')
 		        for (var i = 0; i < linkData.length; i++) {
 		            if (linkData[i].source != linkData[i].target) {
 		            	// console.log(linkData[i])
-		                var source = this.findNodeById(linkData[i].source, nodes);
-		                var target = this.findNodeById(linkData[i].target, nodes);
+		                var source = findNodeById(linkData[i].source, nodes);
+		                var target = findNodeById(linkData[i].target, nodes);
 		                var weight = linkData[i].weight;
 		                //in order to sum all the weights of the links of the sub-nodes,
 		                //we use added_links to keep track if an link was added

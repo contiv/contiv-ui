@@ -15,16 +15,14 @@ angular.module('contiv.visualization')
             $scope.graphDataInterval = $interval(function() {
                 VisualizationService.getGraphData().then(function successCallback(result) {
                         var nodes = [];
-                        // var nodeNames = [];
                         var links = [];
-                        var endpoints = [];
-                        var providers = [];
+                        var nodeIds = [];
                         _.forEach(result.results[0].series, function(series) {
                             var endpoint = series.tags.EndpointIP;
                             var provider = series.tags.ProviderIP;
                             var node;
-                            if (_.includes(endpoints, endpoint) == false) {
-                                //create node
+                            //creating nodes
+                            if (_.includes(nodeIds, endpoint) == false) {
                                 node = {
                                     name: endpoint,
                                     id: endpoint,
@@ -32,10 +30,9 @@ angular.module('contiv.visualization')
                                     ancestors: null,
                                 };
                                 nodes.push(node);
-                                // nodeNames.push(endpoint);
-                                endpoints.push(endpoint);
+                                nodeIds.push(endpoint);
                             }
-                            if (_.includes(providers, provider) == false) {
+                            if (_.includes(nodeIds, provider) == false) {
                                 node = {
                                     name: provider,
                                     id: provider,
@@ -43,8 +40,7 @@ angular.module('contiv.visualization')
                                     ancestors: null,
                                 };
                                 nodes.push(node);
-                                // nodeNames.push(provider);
-                                providers.push(provider);
+                                nodeIds.push(provider);
                             }
                             //creating links
                             var linkOut = {
@@ -62,8 +58,6 @@ angular.module('contiv.visualization')
                         })
                         $scope.nodes = nodes;
                         $scope.links = links;
-                        $scope.endpoints = endpoints;
-                        // $scope.providers = providers;
                     }, function errorCallback(result) {
                         console.log("Couldn't load graph data");
                     });
@@ -75,11 +69,8 @@ angular.module('contiv.visualization')
             VisualizationService.getStructureData().then(function successCallback(result) {
                     $scope.ancestors_struct = result.ancestors_struct;
                     $scope.children_struct = result.children_struct;
-                    // $scope.endpoints = result.endpoints;
-                    $scope.providers = result.providers;
                     $scope.labels = result.labels;
                     $scope.serviceSelectors = result.serviceSelectors;
-
                 }, function errorCallback(result) {
                     console.log("Couldn't load structure data");
                 });

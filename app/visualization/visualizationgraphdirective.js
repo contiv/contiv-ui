@@ -14,8 +14,7 @@ angular.module('contiv.visualization')
 
                 //creating DataSource
                 var dataSource = new DataSource.DataSource(scope.nodes, scope.links, scope.children_struct, 
-                                    scope.ancestors_struct, scope.endpoints, scope.providers, scope.labels,
-                                    scope.serviceSelectors);
+                                    scope.ancestors_struct, scope.labels, scope.serviceSelectors);
                 dataSource.setAncestors();
 
                 var nodes, links;
@@ -59,7 +58,6 @@ angular.module('contiv.visualization')
                 //load old view if it exists.
                 if (_.isEmpty(StateSave.savedStates) == false) {
                     var graph = scope.visualizationGraph;
-                    console.log(StateSave.savedStates);
                     graph.load(StateSave.savedStates);
                 } else {
                     scope.visualizationGraph.updateGraph();

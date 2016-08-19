@@ -13,10 +13,8 @@ describe('DataSource', function(){
         module('DataModule');
         inject( function($injector){
             DataSource = $injector.get('DataSource');
-            // VisualizerLink = $injector.get('VisualizerLink');
-            // VisualizerNode = $injector.get('VisualizerNode');
         });
-        //creating mock for testing
+        //creating mock data for testing
         nodes = [];
         links = [];
         //client endpoints
@@ -66,12 +64,14 @@ describe('DataSource', function(){
     //incomplete
     it('Checking setAncestors', function(){
         var dataSource = new DataSource.DataSource(nodes, links, children_struct, ancestors_struct);
-        // dataSource.setAncestors();
+        dataSource.setAncestors();
         //check that the ancestor and parent attr is set correctly
-        // _.forEach(nodes, function(node) {
-        //     node.ancestors
-        // })
+        _.forEach(nodes, function(node) {
+            expect(_.isEqual(node.ancestors, ancestors_struct[node.id])).toBe(true);
+        })
     });
+
+    
 });
 
 

@@ -106,19 +106,12 @@ describe('contiv.visualization module', function () {
 
     beforeEach(module('contiv.visualization'));
 
-
-
     beforeEach(inject(function (_$httpBackend_) {
         $httpBackend = _$httpBackend_;
-        
         $httpBackend.when('GET', ContivGlobals.VISUALIZATION_ENDPOINT + 'influx/query', params).respond(envVariables);
         $httpBackend.when('GET', ContivGlobals.VISUALIZATION_ENDPOINT + 'data/services').respond(structureData);
     }));
 
-    // afterEach(function () {
-    //     $httpBackend.verifyNoOutstandingExpectation();
-    //     $httpBackend.verifyNoOutstandingRequest();
-    // });
     function getCompiledElement(){
 	  	var element = angular.element('<div visualization-graph></div>');
 	  	var compiledElement = $compile(element)($rootScope);
@@ -131,81 +124,34 @@ describe('contiv.visualization module', function () {
         $compile = _$compile_;
         $rootScope = _$rootScope_.$new();
         directiveElem = getCompiledElement();
-    }));
-
-    it('should have svg element', function () {
-	  	var svgElement = directiveElem.find('svg');
-	  	expect(svgElement).toBeDefined();
-	  	// $httpBackend.expectGET(ContivGlobals.NODES_LIST_ENDPOINT);	
-      //   $httpBackend.expect('GET', ContivGlobals.VISUALIZATION_ENDPOINT + 'influx/query', params);
-      //   $httpBackend.expect('GET', ContivGlobals.VISUALIZATION_ENDPOINT + 'data/services');
-     	// $httpBackend.flush();
      	$rootScope.nodes = envVariables.nodes;
      	$rootScope.links = envVariables.links;
      	$rootScope.children_struct = children_struct;
      	$rootScope.ancestors_struct = ancestors_struct;
      	$rootScope.$digest();
+    }));
+
+    it('should have svg element', function () {
+	  	var svgElement = directiveElem.find('svg');
+	  	var backButton = directiveElem.find('#backButton');
+	  	var graphTitle = directiveElem.find('#graph-title');
+	  	expect(svgElement).toBeDefined();
+	  	expect(backButton).toBeDefined();
+	  	expect(graphTitle).toBeDefined();
 	  	expect($rootScope.visualizationGraph).toBeDefined();
 	});
 
-   //  describe('visualization directive', function () {
-   //      var $controller, isolateScope, element, graph;
-   //      var visualizationListCtrl;
-   //      beforeEach(inject(function(_$rootScope_, _$controller_) {
-
-   //          // Compile a piece of HTML containing the directive
-   //   //        $rootScope.graphData = envVariables;
-   //   //        $rootScope.nodes = envVariables["nodes"];
-	  // 		// $rootScope.links = envVariables["links"];
-   //   //        $rootScope.children_struct = children_struct;
-   //   //        $rootScope.ancestors_struct = ancestors_struct;
-   //   	// angular.mock.module('contiv.visualization');
-   //   	var service;
-   //   	$rootScope = _$rootScope_;
-   //      $controller = _$controller_;
-    
-	  //   //Needs to be changed to be from controller, not from service
-
-	  //   // Get the service from the injector
-	  //   angular.mock.inject(function GetDependencies(VisualizationService) {
-	  //     service = VisualizationService;
-	  //   });
-
-	  //   var data = service.getGraphData();
-	  //   var res = service.getStructureData();
-	  //   var children_struct = res.children_struct;
-	  //   var ancestors_struct = res.ancestors_struct;
-	  //   // var ancestors_struct = service.getAncestorsStruct();
-	  //   $httpBackend.flush();
-
-	  //   var d = data.$$state.value;
-	  //   $rootScope.graphData = d;
-	  //   $rootScope.nodes = d.nodes;
-	  //   $rootScope.links = d.links;
-	  //   $rootScope.children_struct = children_struct.$$state.value;
-	  //   $rootScope.ancestors_struct = ancestors_struct.$$state.value;
-
-            
-   //          visualizationListCtrl = $controller('VisualizationListCtrl', {$scope: $rootScope, VisualizationService:service});
-
-   //          element = $compile("<div visualization-graph graph-data='envVariables' children-struct = 'children_struct' ancestors-struct = 'ancestors_struct'></div>")($rootScope);
-			// // expect(visualizationListCtrl).toBeDefined();
-   //          // fire all the watches, so the scope expression will be evaluated
-   //          $rootScope.$digest();
-   //          isolateScope = element.isolateScope();
-   //      	graph = $rootScope.visualizationGraph;
-   //      }));
-
-   //      it('should be defined', function () {
-   //          expect(visualizationListCtrl).toBeDefined();
-   //          $httpBackend.flush();
-   //      });
-
-   //      it('should do get on load', function() {
-   //      	// $httpBackend.expectGET(ContivGlobals.VISUALIZATION_ENDPOINT + 'data/graphdata');
-   //      	// $httpBackend.expectGET(ContivGlobals.VISUALIZATION_ENDPOINT + 'data/children-struct');
-   //      	// $httpBackend.expectGET(ContivGlobals.VISUALIZATION_ENDPOINT + 'data/ancestors-struct');
-   //       //    $httpBackend.flush();
-   //      })
-   //  });
+	it('testing on destroy', function() {
+		//adding test binding
+		var graph = $rootScope.visualizationGraph;
+		var destroyFired = false;
+		graph.destroy = function() {
+			destroyFired = true;
+		}
+		$rootScope.$destroy();
+		expect(destroyFired).toBe(true);
+	});
 });
+
+
+

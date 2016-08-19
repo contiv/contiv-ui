@@ -1,5 +1,12 @@
 angular.module('contiv.visualization')
     .factory('VisualizationService', ['$http', '$q', function ($http, $q) {
+        /**
+         * Makes a get request with the url and config.
+         *
+         * @param      {string}  url     The url
+         * @param      {Object}  config  The configurations
+         * @return     {$Http Promise}   Promise of the request
+         */
         function makeGet(url, config) {
             var deferred = $q.defer();
             $http.get(url, config).then(function successCallback(result) {
@@ -10,49 +17,80 @@ angular.module('contiv.visualization')
             return deferred.promise;
         }
 
-        // function getGraphData() {
-        //     var nodeData = getNodeData();
-        //     var linkData = getLinkData();
-        //     return {nodeData:nodeData, linkData:linkData}
-        // }
+        /**
+         * Makes a post request with the url and data
+         *
+         * @param      {string}  url     The url
+         * @param      {JSON}    data    The data
+         * @return     {$Http Promise}   Promise of the request
+         */
+        function makePost(url, data) {
+            /**
+             * converts the data into x-www-from-urlencoded
+             *
+             * @param      {JSON}  obj     JSON data object
+             * @return     {string}  x-www-form-urlencoded string
+             */
+            var param = function(obj) {
+                var query = '', name, value, fullSubName, subName, subValue, innerObj, i;
+                for (name in obj) {
+                  value = obj[name];
 
-        // function getNodeData() {
-        //     var url = ContivGlobals.VISUALIZATION_ENDPOINT
-        //     url += 'influx/';
-        //     var endpointUrl = url + `query?pretty=true --data-urlencode "db=telegraf" --data-urlencode 'q=show TAG VALUES from httpjson_svcstats with key = "EndpointIP"'`;
-        //     var endpoints = makeGet(endpointUrl);
-        //     var providerUrl = url + `query?pretty=true --data-urlencode "db=telegraf" --data-urlencode 'q=show TAG VALUES from httpjson_svcstats with key = "ProviderIP"'`;
-        //     var providers = makeGet(providerUrl);
-        //     return {endpoints:endpoints, providers:providers};
-        // }
+                    if (value instanceof Array) {
+                        for (i=0; i<value.length; ++i) {
+                            subValue = value[i];
+                            fullSubName = name + '[' + i + ']';
+                            innerObj = {};
+                            innerObj[fullSubName] = subValue;
+                            query += param(innerObj) + '&';
+                        }
+                    } else if (value instanceof Object) {
+                        for (subName in value) {
+                            subValue = value[subName];
+                            fullSubName = name + '[' + subName + ']';
+                            innerObj = {};
+                            innerObj[fullSubName] = subValue;
+                            query += param(innerObj) + '&';
+                        }
+                    } else if(value !== undefined && value !== null) {
+                        query += encodeURIComponent(name) + '=' + encodeURIComponent(value) + '&';
+                   }
+                }
+
+                return query.length ? query.substr(0, query.length - 1) : query;
+            };
+
+            var deferred = $q.defer();
+            $http({
+                url:url,
+                method:'POST',
+                data: data,
+                headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                transformRequest: [function(data) {
+                    return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
+                  }],
+            })
+            .then(function successCallback(result) {
+                deferred.resolve(result.data);
+            }, function errorCallback(result) {
+                deferred.reject(result.data);
+            });
+            return deferred.promise;
+        }
 
         function getGraphData() {
             var url = ContivGlobals.VISUALIZATION_ENDPOINT
             url += 'influx/query';
-            var linkInfluxData = [];
-            // var epUrl = url + `/query?pretty=true --data-urlencode "db=telegraf" --data-urlencode "q=SELECT BytesIn, BytesOut, EndpointIP, ProviderIP FROM httpjson_svcstats WHERE time > now() - 1m GROUP BY * LIMIT 1"`;
-            // console.log(epUrl);
             config = {
                 params: {
-                    pretty:true,
                     db:"telegraf",
-                    q:"SELECT BytesIn, BytesOut, EndpointIP, ProviderIP FROM httpjson_svcstats WHERE time > now() - 1m GROUP BY * LIMIT 1"
+                    q:"SELECT BytesIn, BytesOut, EndpointIP, ProviderIP FROM httpjson_svcstats WHERE time > now() - 1m GROUP BY * LIMIT 1",
                 }
             }
             return makeGet(url, config);
         }
-
-        // function getChildrenStruct() {
-        //     var url = ContivGlobals.VISUALIZATION_ENDPOINT
-        //     url += 'data/children-struct'
-        //     return makeGet(url);
-        // }
-
-        // function getAncestorsStruct() {
-        //     var url = ContivGlobals.VISUALIZATION_ENDPOINT
-        //     url += 'data/ancestors-struct'
-        //     return makeGet(url);
-        // }
 
         function getStructureData() {
             var url = ContivGlobals.VISUALIZATION_ENDPOINT
@@ -74,63 +112,46 @@ angular.module('contiv.visualization')
             return query;
         }
 
-        function getEdgeData(sourceList, targetList, sourceType, targetType, time) {
+        function getEdgeData(sourceList, targetList, time) {
             var direction;
             var url = ContivGlobals.VISUALIZATION_ENDPOINT
             url += 'influx/query';
+            if (sourceList == null || targetList == null);
 
-            if (sourceType == 'EndpointIP') {
-                direction = 'BytesOut';
-            } else {
-                direction = 'BytesIn';
-            }
-            config = {
-                params: {
-                    pretty : true,
+            var data = {
                     db : "telegraf",
-                    q: "SELECT sum(" + direction + ") from httpjson_svcstats WHERE time > now() - 15s AND "
-                         + buildWhereQuery(sourceList, sourceType) +" AND " 
-                         + buildWhereQuery(targetList, targetType) 
-                         + "GROUP BY time(20s) LIMIT 1"
-                }
-            }
-             // console.log('q', config.params.q);
-            // url += 'timedata/' + sourceId +'/' + targetId + '/' + time;
-            return makeGet(url, config);
+                    q: "SELECT sum(" + 'BytesOut' + ") from httpjson_svcstats WHERE time > now() - 15s AND "
+                         + buildWhereQuery(sourceList, "EndpointIP") +" AND " 
+                         + buildWhereQuery(targetList, 'ProviderIP') 
+                         + "GROUP BY time(20s) LIMIT 1; SELECT sum(" + 'BytesIn' + ") from httpjson_svcstats WHERE time > now() - 15s AND "
+                         + buildWhereQuery(sourceList, 'ProviderIP') +" AND " 
+                         + buildWhereQuery(targetList, 'EndpointIP') 
+                         + "GROUP BY time(20s) fill(0) LIMIT 1"
+                     };
+            return makePost(url, data);
         }
 
         
 
-        function getOldEdgeData(sourceList, targetList, sourceType, targetType) {
+        function getOldEdgeData(sourceList, targetList) {
             var direction;
-            // console.log(sourceList, targetList, sourceType, targetType);
             var url = ContivGlobals.VISUALIZATION_ENDPOINT
             url += 'influx/query';
-
-            if (sourceType == 'EndpointIP') {
-                direction = 'BytesOut';
-            } else {
-                direction = 'BytesIn';
-            }
-
-            config = {
-                params: {
-                    pretty : true,
+            var data = {
                     db : "telegraf",
-                    q: "SELECT sum(" + direction + ") FROM httpjson_svcstats WHERE time > now() - 1m AND "
-                         + buildWhereQuery(sourceList, sourceType) +" AND " 
-                         + buildWhereQuery(targetList, targetType) 
-                         + " GROUP BY time(10s) fill(none)"
-                }
-            }
-
-            return makeGet(url, config);
+                    q: "SELECT sum(" + 'BytesOut' + ") FROM httpjson_svcstats WHERE time > now() - 1m AND "
+                         + buildWhereQuery(sourceList, "EndpointIP") +" AND " 
+                         + buildWhereQuery(targetList, "ProviderIP") 
+                         + " GROUP BY time(10s) fill(0) LIMIT 6; SELECT sum(" + 'BytesIn' + ") FROM httpjson_svcstats WHERE time > now() - 1m AND "
+                         + buildWhereQuery(sourceList, "ProviderIP") +" AND " 
+                         + buildWhereQuery(targetList, "EndpointIP") 
+                         + " GROUP BY time(10s) fill(0) LIMIT 6",
+                     };
+            return makePost(url, data);
         }
 
         return {
             getGraphData: getGraphData,
-            // getAncestorsStruct: getAncestorsStruct,
-            // getChildrenStruct: getChildrenStruct,
             getStructureData: getStructureData,
             getEdgeData: getEdgeData,
             getOldEdgeData: getOldEdgeData
