@@ -14,56 +14,62 @@ angular.module('contiv.visualization')
         function($scope, $http, VisualizationService, $interval) {
             //to see the expected format to be returned from these calls,
             //look at app/components/graphobjects/datasource/visualizerdatasource.js
-            $scope.graphDataInterval = $interval(function() {
-                VisualizationService.getGraphData().then(function successCallback(result) {
-                        var nodes = [];
-                        var links = [];
-                        var nodeIds = [];
-                        _.forEach(result.results[0].series, function(series) {
-                            var endpoint = series.tags.EndpointIP;
-                            var provider = series.tags.ProviderIP;
-                            var node;
-                            //creating nodes
-                            if (_.includes(nodeIds, endpoint) == false) {
-                                node = {
-                                    name: endpoint,
-                                    id: endpoint,
-                                    parent: null,
-                                    ancestors: null,
-                                };
-                                nodes.push(node);
-                                nodeIds.push(endpoint);
-                            }
-                            if (_.includes(nodeIds, provider) == false) {
-                                node = {
-                                    name: provider,
-                                    id: provider,
-                                    parent: null,
-                                    ancestors: null,
-                                };
-                                nodes.push(node);
-                                nodeIds.push(provider);
-                            }
-                            //creating links
-                            var linkOut = {
-                                source: endpoint,
-                                target: provider,
-                                weight: series.values[0][2]
-                            }
-                            links.push(linkOut);
-                            var linkIn = {
-                                source: provider,
-                                target: endpoint,
-                                weight: series.values[0][1]
-                            }
-                            links.push(linkIn);
-                        })
-                        $scope.nodes = nodes;
-                        $scope.links = links;
-                    }, function errorCallback(result) {
-                        console.log("Couldn't load graph data");
-                    });
-                }, 3000);
+            var successGraphDataCallback = function(result) {
+                var nodes = [];
+                var links = [];
+                var nodeIds = [];
+                _.forEach(result.results[0].series, function(series) {
+                    var endpoint = series.tags.EndpointIP;
+                    var provider = series.tags.ProviderIP;
+                    var node;
+                    //creating nodes
+                    if (_.includes(nodeIds, endpoint) == false) {
+                        node = {
+                            name: endpoint,
+                            id: endpoint,
+                            parent: null,
+                            ancestors: null,
+                        };
+                        nodes.push(node);
+                        nodeIds.push(endpoint);
+                    }
+                    if (_.includes(nodeIds, provider) == false) {
+                        node = {
+                            name: provider,
+                            id: provider,
+                            parent: null,
+                            ancestors: null,
+                        };
+                        nodes.push(node);
+                        nodeIds.push(provider);
+                    }
+                    //creating links
+                    var linkOut = {
+                        source: endpoint,
+                        target: provider,
+                        weight: series.values[0][2]
+                    }
+                    links.push(linkOut);
+                    var linkIn = {
+                        source: provider,
+                        target: endpoint,
+                        weight: series.values[0][1]
+                    }
+                    links.push(linkIn);
+                })
+                $scope.nodes = nodes;
+                $scope.links = links;
+            }
+            //initial call
+            VisualizationService.getGraphData().then(successGraphDataCallback, function errorCallback(result) {
+                console.log("Couldn't load graph data");
+            });
+            //repeating call to update graph with live data from server
+            // $scope.graphDataInterval = $interval(function() {
+            //     VisualizationService.getGraphData().then(successGraphDataCallback, function errorCallback(result) {
+            //             console.log("Couldn't load graph data");
+            //     });
+            // }, 3000);
 
             $scope.$on('$destroy', function () { $interval.cancel($scope.graphDataInterval); });
 
