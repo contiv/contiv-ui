@@ -16,12 +16,19 @@ angular.module('contiv.visualization')
             })
         ;
     }])
-    .controller('VisualizationEdgeCtrl', ["$scope", "$http", '$stateParams', 'VisualizationService', '$interval',
-        function($scope, $http, $stateParams, VisualizationService, $interval) {
+    .controller('VisualizationEdgeCtrl', ["$scope", "$http", '$state', '$stateParams', 'VisualizationService', '$interval',
+        function($scope, $http, $state, $stateParams, VisualizationService, $interval) {
             var sourceName = $stateParams.sourceName;
             var targetName = $stateParams.targetName;
             var sourceList = $stateParams.sourceList;
             var targetList = $stateParams.targetList;
+
+            //If the page is reloaded, these state params are all null,
+            //so it will route them back to the visualization tab top view
+            if (sourceList == null || targetList == null) {
+                $state.go('contiv.menu.visualization.list');
+                return;
+            }
 
             var d = new Date();
             var t = d.getSeconds();
