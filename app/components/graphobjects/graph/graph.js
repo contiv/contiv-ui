@@ -273,6 +273,7 @@ angular.module('GraphModule')
              */
             uninstallDefaultPathPolicy(policyRemove) {
                 var policyRemoveName;
+                var thisGraph = this;
                 if (typeof policyRemove === 'string') {
                     policyRemoveName = policyRemove;
                 } else {

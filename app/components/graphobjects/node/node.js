@@ -80,6 +80,7 @@ angular.module('NodeModule')
 		     * @param      {Policy}  policy  The policy to install
 		     */
 			installNodePolicy(policy) {
+				this.hasPolicy = true;
 				this.nodePolicies.push(policy);
 				policy.initialize(this.graph);
 			}
@@ -87,20 +88,26 @@ angular.module('NodeModule')
 			/**
 			 * Used to uninstall policy for this node
 			 *
-			 * @param      {Policy}  policyRemove  The policy to remove
+			 * @param      {Policy|string}  policyRemove  The policy to remove
 			 */			
 			uninstallNodePolicy(policyRemove) {
 				var policyRemoveName;
+				var thisNode = this;
 				if (typeof policyRemove === 'string') {
 					policyRemoveName = policyRemove;
 				} else {
 					policyRemoveName = policyRemove.policyName;
 				}
-				_(this.nodePolicies).forEach(function(policy, index) {
+				_(thisNode.nodePolicies).forEach(function(policy, index) {
 					if (policy.policyName === policyRemoveName) {
-						this.nodePolicies.splice(index, 1);
+						policy.destroy();
+						thisNode.nodePolicies.splice(index, 1);
 					}
+					return;
 				});
+				if (thisNode.nodePolicies.length === 0) {
+					thisNode.hasPolicy = false;
+				}
 			}
 
 			/**

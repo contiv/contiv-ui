@@ -19,7 +19,6 @@ angular.module('LinkModule')
 			constructor(sourceNode, targetNode) {
 				this.source = sourceNode;
 				this.target = targetNode;
-				this.policy = null;
 				this.hasPolicy = false;
 				this.pathPolicies = [];
 				this.graph = null;
@@ -42,8 +41,9 @@ angular.module('LinkModule')
 			 * Called during the update graph for existing links
 			 *
 			 * @param      {D3Object}  d3path  The d3 path
+			 * @param      {Link}  	   d       Matching Link Object       
 			 */
-			updateAttr(d3path) {
+			updateAttr(d3path, d) {
 				d3path.style('marker-end', 'url(#end-arrow)')
 		            .attr("d", arrowPath);
 			}
@@ -52,8 +52,9 @@ angular.module('LinkModule')
 			 * Called during the first update graph for a link
 			 *
 			 * @param      {D3Object}  d3path  The d3 path
+			 * @param      {Link}  	   d       Matching Link Object       
 			 */
-			newPathAttr(d3path) {
+			newPathAttr(d3path, d) {
 				d3path.attr('d', arrowPath);
 			}
 
@@ -77,6 +78,7 @@ angular.module('LinkModule')
 		     * @param      {Policy}  policy  The policy to install
 		     */
 			installPathPolicy(policy) {
+				this.hasPolicy = true;
 				this.pathPolicies.push(policy);
 				policy.initialize(this.graph);
 			}
@@ -88,16 +90,22 @@ angular.module('LinkModule')
 			 */
 			uninstallPathPolicy(policyRemove) {
 				var policyRemoveName;
+				var thisPath = this;
 				if (typeof policyRemove === 'string') {
 					policyRemoveName = policyRemove;
 				} else {
 					policyRemoveName = policyRemove.policyName;
 				}
-				_(thisGraph.pathPolicies).forEach(function(policy, index) {
+				_(thisPath.pathPolicies).forEach(function(policy, index) {
 					if (policy.policyName === policyRemoveName) {
-						thisGraph.pathPolicies.splice(index, 1);
+						policy.destroy();
+						thisPath.pathPolicies.splice(index, 1);
+						return;
 					}
 				});
+				if (thisPath.pathPolicies.length === 0) {
+					thisPath.hasPolicy = false;
+				}
 			}
 
 			/**
@@ -110,7 +118,7 @@ angular.module('LinkModule')
 			pathPolicyEvent(event, d3path, d) {
 				var thisGraph = this;
 				_(d.pathPolicies).forEach(function(policy) {
-					policy[event](d3node, d);
+					policy[event](d3path, d);
 				})
 			}
 		}
