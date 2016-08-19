@@ -327,8 +327,8 @@ angular.module('PolicyModule')
                 //so that it is centered, but nodes will be forced to be
                 //within the offset bounds
                 var offset = consts.displayOffset;
-                var svgWidth = $('#visualization-graph').width() / thisGraph.dragSvg.scale();
-                var svgHeight = $('#visualization-graph').height() / thisGraph.dragSvg.scale();
+                var svgWidth = parseFloat(thisGraph.svg.style("width")) / thisGraph.dragSvg.scale();
+                var svgHeight = parseFloat(thisGraph.svg.style("height")) / thisGraph.dragSvg.scale();
 
 
                 var width = svgWidth;
