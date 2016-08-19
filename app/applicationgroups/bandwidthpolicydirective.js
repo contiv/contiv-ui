@@ -46,7 +46,7 @@ angular.module("contiv.applicationgroups")
                         }else{
                             $scope.applicationgroup.netProfile = $scope.selectedNetprofile.policy.profileName;
                         }
-                    }
+                    };
              
                     getNetprofiles();
             }],

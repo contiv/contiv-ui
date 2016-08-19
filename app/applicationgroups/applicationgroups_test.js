@@ -5,7 +5,7 @@ describe('contiv.applicationgroups module', function () {
     beforeEach(module('ui.router'));
 
     beforeEach(module('contiv.applicationgroups'));
-    
+
     beforeEach(module('contiv.test.directives'));
 
     var groupListData = [
@@ -228,9 +228,6 @@ describe('contiv.applicationgroups module', function () {
         }
     };
 
-    var mode = "edit";
-
-
     describe('applicationgroupslistctrl', function () {
         var $httpBackend;
 
@@ -391,20 +388,19 @@ describe('contiv.applicationgroups module', function () {
             $httpBackend.flush();
             expect(groupDetailsCtrl.showLoader).toBeFalsy();
         });
-       
+
     });
 
-    describe('netprofile directive', function () {
+    describe('bandwidthpolicy directive', function () {
         var $httpBackend,rootScope,element,isolateScope;
-        
+
         beforeEach(inject(
             function (_$httpBackend_,$rootScope,$compile) {
                 $httpBackend = _$httpBackend_;
                 $httpBackend.when('GET', ContivGlobals.NETPROFILES_ENDPOINT).respond(netprofileListData);
                 element = $compile("<ctv-bandwidthpolicy mode = 'mode' applicationgroup='appGroup'></ctv-bandwidthpolicy>")($rootScope);
-                $rootScope.mode = mode;
+                $rootScope.mode = 'edit';
                 $rootScope.appGroup = appGroup;
-                rootScope = $rootScope;
             }));
         afterEach(function () {
             $httpBackend.verifyNoOutstandingExpectation();
@@ -417,29 +413,23 @@ describe('contiv.applicationgroups module', function () {
         it('Bandwidthpolicy directive should have netProfiles array assigned to netprofiles property', function() {
             $httpBackend.expectGET(ContivGlobals.NETPROFILES_ENDPOINT);
             $httpBackend.flush();
-            rootScope.$digest();
             isolateScope = element.isolateScope();
             expect(isolateScope.netProfiles.length).toEqual(1);
         });
     });
 
     describe('isolationpolicy directive', function(){
-        var $httpBackend;
-        var element,isolateScope,rootScope,element_edit;
+        var $httpBackend, $rootScope, $compile;
+        var element,isolateScope;
 
-        beforeEach(inject(function (_$httpBackend_,$rootScope,$compile) {
+        beforeEach(inject(function (_$httpBackend_, _$rootScope_, _$compile_) {
             $httpBackend = _$httpBackend_;
             $httpBackend.when('GET', ContivGlobals.POLICIES_ENDPOINT).respond(policyListData);
             $httpBackend.when('GET', ContivGlobals.RULES_ENDPOINT).respond(ruleListData);
             $httpBackend.when('GET', ContivGlobals.APPLICATIONGROUPS_ENDPOINT).respond(groupListData);
 
-            element = $compile("<ctv-isolationpolicy mode='mode' applicationgroup='appGroup'></ctv-isolationpolicy>")($rootScope);
-            $rootScope.mode = mode;
-            $rootScope.appGroup = appGroup;
-
-            element_edit = $compile("<ctv-isolationpolicy mode='mode' applicationgroup='appGroup_edit'></ctv-isolationpolicy>")($rootScope);
-            $rootScope.appGroup_edit = appGroup_edit;
-            rootScope = $rootScope;
+            $rootScope = _$rootScope_;
+            $compile = _$compile_;
         }));
         afterEach(function () {
             $httpBackend.verifyNoOutstandingExpectation();
@@ -447,42 +437,52 @@ describe('contiv.applicationgroups module', function () {
         });
 
         it('Isolationpolicydirective should do a GET on /api/v1/policys/ REST API', function () {
+            $rootScope.mode = 'details';
+            $rootScope.appGroup = appGroup;
+            element = $compile("<ctv-isolationpolicy mode='mode' applicationgroup='appGroup'></ctv-isolationpolicy>")($rootScope);
             $httpBackend.expectGET(ContivGlobals.POLICIES_ENDPOINT);
             $httpBackend.flush();
         });
 
         it('addIsolationPolicy() should add policy to isolation directive scope object applicationgroup.policies', inject(function(){
-            rootScope.$digest();
+            $rootScope.mode = 'edit';
+            $rootScope.appGroup = appGroup_edit;
+            element = $compile("<ctv-isolationpolicy mode='mode' applicationgroup='appGroup'></ctv-isolationpolicy>")($rootScope);
+            $httpBackend.flush();
             isolateScope = element.isolateScope();
             isolateScope.selectedPolicy.policy.policyName = policyListData[0].policyName;
             isolateScope.addIsolationPolicy();
-            $httpBackend.expectGET(ContivGlobals.RULES_ENDPOINT);
-            $httpBackend.flush();
             expect(isolateScope.applicationgroup.policies.length).toEqual(2);
         }));
 
         it('removeIsolationPolicy() should delete policy from isolation directive scope object applicationgroup.policies', inject(function(){
-            rootScope.$digest();
+            $rootScope.mode = 'edit';
+            $rootScope.appGroup = appGroup_edit;
+            element = $compile("<ctv-isolationpolicy mode='mode' applicationgroup='appGroup'></ctv-isolationpolicy>")($rootScope);
+            $httpBackend.flush();
             isolateScope = element.isolateScope();
             isolateScope.selectedPolicy.policy.policyName = policyListData[0].policyName;
             isolateScope.removeIsolationPolicy("middleware_net_policy");
-            $httpBackend.flush();
             expect(isolateScope.applicationgroup.policies.length).toEqual(1);
         }));
 
         it('Isolationpolicydirective should have isolation policies array assigned to isolationPolicies property', function () {
+            $rootScope.mode = 'details';
+            $rootScope.appGroup = appGroup;
+            element = $compile("<ctv-isolationpolicy mode='mode' applicationgroup='appGroup'></ctv-isolationpolicy>")($rootScope);
             $httpBackend.expectGET(ContivGlobals.POLICIES_ENDPOINT);
-            rootScope.$digest();
             $httpBackend.flush();
             isolateScope = element.isolateScope();
             expect(isolateScope.isolationPolicies.length).toEqual(2);
         });
 
         it('Isolationpolicydirective should have incoming and outgoing rules array assigned to incomingRules & outgoingRules property', function () {
+            $rootScope.mode = 'edit';
+            $rootScope.appGroup = appGroup_edit;
+            element = $compile("<ctv-isolationpolicy mode='mode' applicationgroup='appGroup'></ctv-isolationpolicy>")($rootScope);
             $httpBackend.expectGET(ContivGlobals.RULES_ENDPOINT);
-            rootScope.$digest();
             $httpBackend.flush();
-            isolateScope = element_edit.isolateScope();
+            isolateScope = element.isolateScope();
             expect(Array.isArray(isolateScope.incomingRules)).toBeTruthy();
             expect(Array.isArray(isolateScope.outgoingRules)).toBeTruthy();
             expect(isolateScope.incomingRules.length).toEqual(2);
