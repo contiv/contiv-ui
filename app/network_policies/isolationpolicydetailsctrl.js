@@ -34,8 +34,14 @@ angular.module('contiv.networkpolicies')
             isolationPolicyDetailsCtrl.disableIncomingNetworkSelection = false;
             isolationPolicyDetailsCtrl.disableOutgoingApplicationGroupSelection = false;
             isolationPolicyDetailsCtrl.disableIncomingApplicationGroupSelection = false;
+            isolationPolicyDetailsCtrl.disableIncomingIPAddressSelection = false;
+            isolationPolicyDetailsCtrl.disableOutgoingIPAddressSelection = false;
             isolationPolicyDetailsCtrl.newIncomingSelectedApplicationGroup = '';
             isolationPolicyDetailsCtrl.newOutgoingSelectedApplicationGroup = '';
+            isolationPolicyDetailsCtrl.newIncomingSelectedNetwork = '';
+            isolationPolicyDetailsCtrl.newOutgoingSelectedNetwork = '';
+            isolationPolicyDetailsCtrl.incorrectCIDR = false;
+
 
             function returnToPolicies() {
                 $state.go('contiv.menu.networkpolicies.list.isolation');
@@ -87,16 +93,18 @@ angular.module('contiv.networkpolicies')
                     action: 'allow',//to make it default selected option in UI
                     fromEndpointGroup: '',
                     fromNetwork: '',
-                    fromIPAddress: '',
+                    fromIpAddress: '',
                     protocol: 'tcp',//to make it default selected option in UI
-                    port: '',
+                    port: 0,
                     direction: 'in',
                     tenantName: 'default',
                     policyName: isolationPolicyDetailsCtrl.policy.policyName
                 };
                 isolationPolicyDetailsCtrl.newIncomingSelectedApplicationGroup = '';
+                isolationPolicyDetailsCtrl.newIncomingSelectedNetwork = '';
                 isolationPolicyDetailsCtrl.disableIncomingNetworkSelection = false;
                 isolationPolicyDetailsCtrl.disableIncomingApplicationGroupSelection = false;
+                isolationPolicyDetailsCtrl.disableIncomingIPAddressSelection = false;
             }
 
             function resetNewOutgoingRule() {
@@ -107,16 +115,18 @@ angular.module('contiv.networkpolicies')
                     action: 'allow',//to make it default selected option in UI
                     toEndpointGroup: '',
                     toNetwork: '',
-                    toIPAddress: '',
+                    toIpAddress: '',
                     protocol: 'tcp',//to make it default selected option in UI
-                    port: '',
+                    port: 0,
                     direction: 'out',
                     tenantName: 'default',
                     policyName: isolationPolicyDetailsCtrl.policy.policyName
                 };
                 isolationPolicyDetailsCtrl.newOutgoingSelectedApplicationGroup = '';
+                isolationPolicyDetailsCtrl.newOutgoingSelectedNetwork = '';
                 isolationPolicyDetailsCtrl.disableOutgoingNetworkSelection = false;
                 isolationPolicyDetailsCtrl.disableOutgoingApplicationGroupSelection = false;
+                isolationPolicyDetailsCtrl.disableOutgoingIPAddressSelection = false;
             }
 
             /**
@@ -176,6 +186,7 @@ angular.module('contiv.networkpolicies')
                 } else {
                     //When 'none' is selected
                     isolationPolicyDetailsCtrl.newIncomingRule.fromEndpointGroup = '';
+                    isolationPolicyDetailsCtrl.disableOutgoingApplicationGroupSelection = false;
                     isolationPolicyDetailsCtrl.disableIncomingNetworkSelection = false;
                 }
 
@@ -186,12 +197,17 @@ angular.module('contiv.networkpolicies')
              * rule.
              */
             function onChangeOutgoingNetworkSelection() {
-                if (isolationPolicyDetailsCtrl.newOutgoingRule.toNetwork != null) {
+                if (isolationPolicyDetailsCtrl.newOutgoingSelectedNetwork!= null) {
                     //If network has been selected
+                    isolationPolicyDetailsCtrl.newOutgoingRule.toNetwork =
+                        isolationPolicyDetailsCtrl.newOutgoingSelectedNetwork;
                     isolationPolicyDetailsCtrl.newOutgoingRule.ToEndpointGroup = '';
                     isolationPolicyDetailsCtrl.disableOutgoingApplicationGroupSelection = true;
+                    isolationPolicyDetailsCtrl.disableOutgoingIPAddressSelection = true;
                 } else {
+                    isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress = '';
                     isolationPolicyDetailsCtrl.disableOutgoingApplicationGroupSelection = false;
+                    isolationPolicyDetailsCtrl.disableOutgoingIPAddressSelection = false;
                 }
             }
 
@@ -200,14 +216,20 @@ angular.module('contiv.networkpolicies')
              * rule.
              */
             function onChangeIncomingNetworkSelection() {
-                if (isolationPolicyDetailsCtrl.newIncomingRule.fromNetwork != null) {
+                if (isolationPolicyDetailsCtrl.newIncomingSelectedNetwork != null) {
                     //If network has been selected
+                    isolationPolicyDetailsCtrl.newIncomingRule.fromNetwork =
+                        isolationPolicyDetailsCtrl.newIncomingSelectedNetwork;
                     isolationPolicyDetailsCtrl.newIncomingRule.fromEndpointGroup = '';
                     isolationPolicyDetailsCtrl.disableIncomingApplicationGroupSelection = true;
+                    isolationPolicyDetailsCtrl.disableIncomingIPAddressSelection = true;
                 } else {
+                    isolationPolicyDetailsCtrl.newIncomingRule.fromNetwork = '';
                     isolationPolicyDetailsCtrl.disableIncomingApplicationGroupSelection = false;
+                    isolationPolicyDetailsCtrl.disableIncomingIPAddressSelection = false;
                 }
             }
+
             /**
              * Generates rule id
              * TODO Make it cryptographically stronger once we have multiple users updating same policy
@@ -222,36 +244,68 @@ angular.module('contiv.networkpolicies')
              * Rule is saved to server
              */
             function addIncomingRule() {
-                CRUDHelperService.hideServerError(isolationPolicyDetailsCtrl);
-                CRUDHelperService.startLoader(isolationPolicyDetailsCtrl);
-                generateRuleId(isolationPolicyDetailsCtrl.newIncomingRule);
-                isolationPolicyDetailsCtrl.newIncomingRule.key = RulesModel.generateKey(isolationPolicyDetailsCtrl.newIncomingRule);
-                RulesModel.create(isolationPolicyDetailsCtrl.newIncomingRule).then(function successCallback(result) {
-                    CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
-                    isolationPolicyDetailsCtrl.incomingRules.push(result);
-                    resetNewIncomingRule();
-                }, function errorCallback(result) {
-                    CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
-                    CRUDHelperService.showServerError(isolationPolicyDetailsCtrl, result);
-                });
+                if((isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress == '') ||
+                    (isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress != null &&
+                    validateCIDR(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress))) {
+                    CRUDHelperService.hideServerError(isolationPolicyDetailsCtrl);
+                    CRUDHelperService.startLoader(isolationPolicyDetailsCtrl);
+                    generateRuleId(isolationPolicyDetailsCtrl.newIncomingRule);
+                    isolationPolicyDetailsCtrl.newIncomingRule.key = RulesModel.generateKey(isolationPolicyDetailsCtrl.newIncomingRule);
+
+                    RulesModel.create(isolationPolicyDetailsCtrl.newIncomingRule).then(function successCallback(result) {
+                        CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
+                        isolationPolicyDetailsCtrl.incomingRules.push(result);
+                        resetNewIncomingRule();
+                    }, function errorCallback(result) {
+                        CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
+                        CRUDHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+                    });
+                }
+            }
+
+            function onChangeIncomingIPAddress(){
+                if(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress == ''){
+                    isolationPolicyDetailsCtrl.incorrectCIDR = false;
+                }
+            }
+            
+            function onChangeOutgoingIPAddress(){
+                if(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress == ''){
+                    isolationPolicyDetailsCtrl.incorrectCIDR = false;
+                }
+            }
+
+            function validateCIDR(ipaddress) {
+                var cidrPattern = new RegExp(ContivGlobals.CIDR_REGEX);
+
+                if (cidrPattern.test(ipaddress)) {
+                    isolationPolicyDetailsCtrl.incorrectCIDR = false;
+                    return true;
+                }
+                isolationPolicyDetailsCtrl.incorrectCIDR = true;
+                return false;
             }
 
             /**
              * Rule is saved to server
              */
             function addOutgoingRule() {
-                CRUDHelperService.hideServerError(isolationPolicyDetailsCtrl);
-                CRUDHelperService.startLoader(isolationPolicyDetailsCtrl);
-                generateRuleId(isolationPolicyDetailsCtrl.newOutgoingRule);
-                isolationPolicyDetailsCtrl.newOutgoingRule.key = RulesModel.generateKey(isolationPolicyDetailsCtrl.newOutgoingRule);
-                RulesModel.create(isolationPolicyDetailsCtrl.newOutgoingRule).then(function successCallback(result) {
-                    CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
-                    isolationPolicyDetailsCtrl.outgoingRules.push(result);
-                    resetNewOutgoingRule();
-                }, function errorCallback(result) {
-                    CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
-                    CRUDHelperService.showServerError(isolationPolicyDetailsCtrl, result);
-                });
+                if((isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress == '') ||
+                    (isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress != '' &&
+                    validateCIDR(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress))) {
+                    CRUDHelperService.hideServerError(isolationPolicyDetailsCtrl);
+                    CRUDHelperService.startLoader(isolationPolicyDetailsCtrl);
+                    generateRuleId(isolationPolicyDetailsCtrl.newOutgoingRule);
+                    isolationPolicyDetailsCtrl.newOutgoingRule.key = RulesModel.generateKey(isolationPolicyDetailsCtrl.newOutgoingRule);
+                    RulesModel.create(isolationPolicyDetailsCtrl.newOutgoingRule).then(function successCallback(result) {
+                        CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
+                        isolationPolicyDetailsCtrl.outgoingRules.push(result);
+                        resetNewOutgoingRule();
+                    }, function errorCallback(result) {
+                        CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
+                        CRUDHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+                    });
+                }
             }
 
             /**
@@ -318,6 +372,8 @@ angular.module('contiv.networkpolicies')
             isolationPolicyDetailsCtrl.onChangeIncomingApplicationGroupSelection = onChangeIncomingApplicationGroupSelection;
             isolationPolicyDetailsCtrl.onChangeOutgoingNetworkSelection = onChangeOutgoingNetworkSelection;
             isolationPolicyDetailsCtrl.onChangeIncomingNetworkSelection = onChangeIncomingNetworkSelection;
+            isolationPolicyDetailsCtrl.onChangeIncomingIPAddress = onChangeIncomingIPAddress;
+            isolationPolicyDetailsCtrl.onChangeOutgoingIPAddress = onChangeOutgoingIPAddress;
 
             setMode();
 
