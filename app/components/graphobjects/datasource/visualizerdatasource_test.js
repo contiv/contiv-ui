@@ -1,9 +1,7 @@
 'use strict';
 
-describe('DataSource', function(){
-    var DataSource;
-    var VisualizerLink;
-    var VisualizerNode;
+describe('VisualizerDataSource', function(){
+    var VisualizerDataSource;
     var nodes;
     var links;
     var children_struct;
@@ -12,7 +10,7 @@ describe('DataSource', function(){
     beforeEach(function(){
         module('DataModule');
         inject( function($injector){
-            DataSource = $injector.get('DataSource');
+            VisualizerDataSource = $injector.get('VisualizerDataSource');
         });
         //creating mock data for testing
         nodes = [];
@@ -63,7 +61,7 @@ describe('DataSource', function(){
 
     //incomplete
     it('Checking setAncestors', function(){
-        var dataSource = new DataSource.DataSource(nodes, links, children_struct, ancestors_struct);
+        var dataSource = new VisualizerDataSource.DataSource(nodes, links, children_struct, ancestors_struct);
         dataSource.setAncestors();
         //check that the ancestor and parent attr is set correctly
         _.forEach(nodes, function(node) {

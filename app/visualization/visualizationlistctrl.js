@@ -12,6 +12,8 @@ angular.module('contiv.visualization')
     }])
     .controller('VisualizationListCtrl', ["$scope", "$http", 'VisualizationService', '$interval', 
         function($scope, $http, VisualizationService, $interval) {
+            //to see the expected format to be returned from these calls,
+            //look at app/components/graphobjects/datasource/visualizerdatasource.js
             $scope.graphDataInterval = $interval(function() {
                 VisualizationService.getGraphData().then(function successCallback(result) {
                         var nodes = [];
@@ -65,15 +67,16 @@ angular.module('contiv.visualization')
 
             $scope.$on('$destroy', function () { $interval.cancel($scope.graphDataInterval); });
 
-                       
             VisualizationService.getStructureData().then(function successCallback(result) {
-                    $scope.ancestors_struct = result.ancestors_struct;
-                    $scope.children_struct = result.children_struct;
-                    $scope.labels = result.labels;
-                    $scope.serviceSelectors = result.serviceSelectors;
-                }, function errorCallback(result) {
-                    console.log("Couldn't load structure data");
-                });
+                //to see the expected form of ancestor_struct and children_struct, 
+                //look at app/components/graphobjects/datasource/visualizerdatasource.js
+                $scope.ancestors_struct = result.ancestors_struct;
+                $scope.children_struct = result.children_struct;
+                $scope.labels = result.labels;
+                $scope.serviceSelectors = result.serviceSelectors;
+            }, function errorCallback(result) {
+                console.log("Couldn't load structure data");
+            });
     }]);
 
 

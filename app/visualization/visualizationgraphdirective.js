@@ -3,9 +3,9 @@ angular.module('contiv.visualization')
     .service('StateSave', function () {
         this.savedStates = {};
     })
-    .directive("visualizationGraph", ['$window', '$state', 'VisualizerGraph', 'PolicyService', 'DataSource', 'StateSave',
-        function($window, $state, VisualizerGraph, PolicyService, DataSource, StateSave) {
-            function visualizationlistd3(scope, elem, attrs, d3, VisualizerGraph, PolicyService, DataSource, StateSave) {
+    .directive("visualizationGraph", ['$window', '$state', 'VisualizerGraph', 'PolicyService', 'VisualizerDataSource', 'StateSave',
+        function($window, $state, VisualizerGraph, PolicyService, VisualizerDataSource, StateSave) {
+            function visualizationlistd3(scope, elem, attrs, d3, VisualizerGraph, PolicyService, VisualizerDataSource, StateSave) {
                 //don't run until all initialization calls have returned
                 if (scope.nodes === undefined || scope.links === undefined || scope.children_struct === undefined ||
                     scope.ancestors_struct === undefined) {
@@ -13,7 +13,7 @@ angular.module('contiv.visualization')
                 }
 
                 //creating DataSource
-                var dataSource = new DataSource.DataSource(scope.nodes, scope.links, scope.children_struct, 
+                var dataSource = new VisualizerDataSource.DataSource(scope.nodes, scope.links, scope.children_struct, 
                                     scope.ancestors_struct, scope.labels, scope.serviceSelectors);
                 dataSource.setAncestors();
 
@@ -82,7 +82,7 @@ angular.module('contiv.visualization')
                             if (!scope.initialized) {
                                 scope.initialized = true;
                                 var d3 = $window.d3;
-                                visualizationlistd3(scope, elem, attrs, d3, VisualizerGraph, PolicyService, DataSource, StateSave);
+                                visualizationlistd3(scope, elem, attrs, d3, VisualizerGraph, PolicyService, VisualizerDataSource, StateSave);
                             } else {
                                 scope.visualizationGraph.dataSource.links = scope.links;
                                 scope.visualizationGraph.updateLinkData();
