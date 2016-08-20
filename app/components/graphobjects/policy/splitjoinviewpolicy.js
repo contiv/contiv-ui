@@ -848,7 +848,7 @@ angular.module('PolicyModule')
                     }
                 }
                 _.forEach(nodeToRemove, function(n) {
-                    thisGraph.nodes.splice(thisGraph.nodes.indexOf(n, 1));
+                    thisGraph.nodes.splice(thisGraph.nodes.indexOf(n), 1);
                 })
 
                 thisGraph.initNodes();

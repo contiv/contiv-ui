@@ -66,7 +66,8 @@ class myHandler(BaseHTTPRequestHandler):
 					selectorMapLocal[key] = val
 				selectorMap[serviceName] = selectorMapLocal
 
-				providerList = serviceJson["Oper"]["providers"]
+				oper = serviceJson["Oper"]
+				providerList = oper.get("providers", []);
 				ipAddrs = []
 				for provider in providerList:
 					for p in provider["ipAddress"]:
