@@ -91,6 +91,18 @@ angular.module('PolicyModule')
                 state.mousedown = false;
             }
 
+            whenQTipAvailable(callback) {
+                var thisPolicy = this;
+                var interval = 500; // ms
+                window.setTimeout(function() {
+                    if ($(document).qtip != null) {
+                        callback();
+                    } else {
+                        window.setTimeout(thisPolicy.whenQTipAvailable(callback), interval);
+                    }
+                }, interval);
+            }
+
             /**
              * Called when New Nodes are added during the
              * update graph function
@@ -102,8 +114,7 @@ angular.module('PolicyModule')
                 var thisGraph = this.graph,
                     state = thisGraph.state.QTipPolicy;
 
-                //incase library hasn't loaded yet
-                if ($(document).qtip != undefined) {
+                function attachQTip() {
                     //attaching qtip
                     newNodes.each(function(d) {
                         var thisNode = this,
@@ -173,6 +184,12 @@ angular.module('PolicyModule')
                             }
                         });
                     })
+                }
+                //incase library hasn't loaded yet
+                if ($(document).qtip != undefined) {
+                    attachQTip();
+                } else {
+                    this.whenQTipAvailable(attachQTip);
                 }
             }
 
