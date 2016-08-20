@@ -108,7 +108,6 @@ angular.module('contiv.networkpolicies')
                 isolationPolicyDetailsCtrl.disableIncomingIPAddressSelection = false;
                 isolationPolicyDetailsCtrl.incorrectCIDR = false;
                 isolationPolicyDetailsCtrl.validateCIDRFlag = false;
-
             }
 
             function resetNewOutgoingRule() {
@@ -133,7 +132,6 @@ angular.module('contiv.networkpolicies')
                 isolationPolicyDetailsCtrl.disableOutgoingIPAddressSelection = false;
                 isolationPolicyDetailsCtrl.incorrectCIDR = false;
                 isolationPolicyDetailsCtrl.validateCIDRFlag = false;
-
             }
 
             /**
@@ -279,7 +277,6 @@ angular.module('contiv.networkpolicies')
                     isolationPolicyDetailsCtrl.incorrectCIDR){
                     validateCIDR(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress);
                 }
-
             }
             
             function onChangeOutgoingIPAddress(){
