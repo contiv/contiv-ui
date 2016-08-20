@@ -41,6 +41,7 @@ angular.module('contiv.networkpolicies')
             isolationPolicyDetailsCtrl.newIncomingSelectedNetwork = '';
             isolationPolicyDetailsCtrl.newOutgoingSelectedNetwork = '';
             isolationPolicyDetailsCtrl.incorrectCIDR = false;
+            isolationPolicyDetailsCtrl.validateCIDRFlag = false;
 
 
             function returnToPolicies() {
@@ -105,6 +106,9 @@ angular.module('contiv.networkpolicies')
                 isolationPolicyDetailsCtrl.disableIncomingNetworkSelection = false;
                 isolationPolicyDetailsCtrl.disableIncomingApplicationGroupSelection = false;
                 isolationPolicyDetailsCtrl.disableIncomingIPAddressSelection = false;
+                isolationPolicyDetailsCtrl.incorrectCIDR = false;
+                isolationPolicyDetailsCtrl.validateCIDRFlag = false;
+
             }
 
             function resetNewOutgoingRule() {
@@ -127,6 +131,9 @@ angular.module('contiv.networkpolicies')
                 isolationPolicyDetailsCtrl.disableOutgoingNetworkSelection = false;
                 isolationPolicyDetailsCtrl.disableOutgoingApplicationGroupSelection = false;
                 isolationPolicyDetailsCtrl.disableOutgoingIPAddressSelection = false;
+                isolationPolicyDetailsCtrl.incorrectCIDR = false;
+                isolationPolicyDetailsCtrl.validateCIDRFlag = false;
+
             }
 
             /**
@@ -244,14 +251,11 @@ angular.module('contiv.networkpolicies')
              * Rule is saved to server
              */
             function addIncomingRule() {
-                if((isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress == '') ||
-                    (isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress != null &&
-                    validateCIDR(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress))) {
+                if(validateCIDR(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress)) {
                     CRUDHelperService.hideServerError(isolationPolicyDetailsCtrl);
                     CRUDHelperService.startLoader(isolationPolicyDetailsCtrl);
                     generateRuleId(isolationPolicyDetailsCtrl.newIncomingRule);
                     isolationPolicyDetailsCtrl.newIncomingRule.key = RulesModel.generateKey(isolationPolicyDetailsCtrl.newIncomingRule);
-
                     RulesModel.create(isolationPolicyDetailsCtrl.newIncomingRule).then(function successCallback(result) {
                         CRUDHelperService.stopLoader(isolationPolicyDetailsCtrl);
                         isolationPolicyDetailsCtrl.incomingRules.push(result);
@@ -266,23 +270,45 @@ angular.module('contiv.networkpolicies')
             function onChangeIncomingIPAddress(){
                 if(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress == ''){
                     isolationPolicyDetailsCtrl.incorrectCIDR = false;
+                    isolationPolicyDetailsCtrl.disableIncomingNetworkSelection = false;
+                }else{
+                    isolationPolicyDetailsCtrl.disableIncomingNetworkSelection = true;
                 }
+
+                if(isolationPolicyDetailsCtrl.validateCIDRFlag &&
+                    isolationPolicyDetailsCtrl.incorrectCIDR){
+                    validateCIDR(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress);
+                }
+
             }
             
             function onChangeOutgoingIPAddress(){
                 if(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress == ''){
                     isolationPolicyDetailsCtrl.incorrectCIDR = false;
+                    isolationPolicyDetailsCtrl.disableOutgoingNetworkSelection = false;
+                }else{
+                    isolationPolicyDetailsCtrl.disableOutgoingNetworkSelection = true;
+                }
+
+                if(isolationPolicyDetailsCtrl.validateCIDRFlag &&
+                    isolationPolicyDetailsCtrl.incorrectCIDR){
+                    validateCIDR(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress);
                 }
             }
 
             function validateCIDR(ipaddress) {
                 var cidrPattern = new RegExp(ContivGlobals.CIDR_REGEX);
 
+                if(ipaddress == ''){
+                    return true;
+                }
+
                 if (cidrPattern.test(ipaddress)) {
                     isolationPolicyDetailsCtrl.incorrectCIDR = false;
                     return true;
                 }
                 isolationPolicyDetailsCtrl.incorrectCIDR = true;
+                isolationPolicyDetailsCtrl.validateCIDRFlag = true;
                 return false;
             }
 
@@ -290,9 +316,7 @@ angular.module('contiv.networkpolicies')
              * Rule is saved to server
              */
             function addOutgoingRule() {
-                if((isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress == '') ||
-                    (isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress != '' &&
-                    validateCIDR(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress))) {
+                if(validateCIDR(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress)) {
                     CRUDHelperService.hideServerError(isolationPolicyDetailsCtrl);
                     CRUDHelperService.startLoader(isolationPolicyDetailsCtrl);
                     generateRuleId(isolationPolicyDetailsCtrl.newOutgoingRule);
