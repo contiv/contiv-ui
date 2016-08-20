@@ -402,7 +402,7 @@ angular.module('PolicyModule')
                 //check if can split
                 var name = d.id;
                 var children_struct = thisGraph.children_struct;
-                if (children_struct[name] === undefined) {
+                if (children_struct[name] === undefined || _.isEmpty(children_struct[name])) {
                     return;
                 }
 
@@ -478,8 +478,10 @@ angular.module('PolicyModule')
                     if (node.id !== d.id) {
                         d3.select(this).transition().delay(200).duration(400).style("opacity", 0);
                     } else {
-                        //disabling qtip
-                        $(this).qtip('disable', true);
+                        //disabling qtip if installed
+                        if ($(this).qtip != null) {
+                            $(this).qtip('disable', true);
+                        }
                     }
                 });
 
@@ -973,7 +975,7 @@ angular.module('PolicyModule')
                 var id = last.id;
                 var node;
                 if (last.event === 'join') {
-                    var children_struct = thisGraph.children_struct; 
+                    // var children_struct = thisGraph.children_struct; 
                     node = thisGraph.findNodeById(id);
                     var d3node = thisGraph.findD3Node(id);
                     thisPolicy.dblclick(d3node, node);

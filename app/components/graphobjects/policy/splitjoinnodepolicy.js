@@ -96,7 +96,7 @@ angular.module('PolicyModule')
                 var name = node.id
                 var children_struct = thisGraph.children_struct;
                 //if it has no children to split into
-                if (children_struct[name] === undefined) {
+                if (children_struct[name] === undefined || _.isEmpty(children_struct[name])) {
                     return;
                 }
 
