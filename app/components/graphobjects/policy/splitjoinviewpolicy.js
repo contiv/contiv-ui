@@ -38,6 +38,7 @@ angular.module('PolicyModule')
                 state.zooms = {};
                 state.layout = {};
                 state.layoutDefault = null;
+                state.zoomDefault = null;
                 state.nodeIdsToReshow = null;
                 state.backButtonElem = null;
                 state.titleElem = null;
@@ -132,15 +133,19 @@ angular.module('PolicyModule')
                         defaultLayout[n.id] = {x:n.x, y:n.y};
                     })
                     state.layoutDefault = defaultLayout;
+                    var scale = thisGraph.dragSvg.scale();
+                    var translate = thisGraph.dragSvg.translate();
+                    state.zoomDefault = [translate, scale];
                 }
                 
                 var layoutDefault = state.layoutDefault;
+                var zoomDefault = state.zoomDefault;
                 var ret = {nodes:nodes, links:links, 
                     states:state.savedStates, currTitle:currTitle, 
                     focusGroup:focusGroup, focusGroups: focusGroups,
                     eventHistory:eventHistory, zooms:zooms,
-                    layout:layout, layoutDefault:layoutDefault 
-                    };
+                    layout:layout, layoutDefault:layoutDefault,
+                    zoomDefault:zoomDefault};
                 savedState.SplitJoinViewPolicy = ret;
             }
 
@@ -171,6 +176,7 @@ angular.module('PolicyModule')
                 state.zooms = loadState.zooms;
                 state.layout = loadState.layout;
                 state.layoutDefault = loadState.layoutDefault;
+                state.zoomDefault = loadState.zoomDefault;
 
                 if (state.backButtonElem != null) {
                     if (state.eventHistory.length > 0) {
@@ -193,8 +199,9 @@ angular.module('PolicyModule')
                 //loading a previous layout
                 var layout;
                 if (state.focusGroups.length === 0) {
-                    thisGraph.zoomed([0,0], 1);
                     layout = state.layoutDefault;
+                    var zoom = state.zoomDefault; 
+                    thisGraph.zoomed(zoom[0], zoom[1]);
                 } else {
                     var zoom = state.zooms[state.focusGroups];
                     if (zoom != null) {
@@ -414,6 +421,9 @@ angular.module('PolicyModule')
                 if (state.focusGroups.length === 0) {
                     //create new dict
                     state.layoutDefault = layout
+                    var scale = thisGraph.dragSvg.scale();
+                    var translate = thisGraph.dragSvg.translate();
+                    state.zoomDefault = [translate, scale];
                 }
 
                 if (state.focusGroups.length === 0) { //toplevel split
@@ -917,8 +927,9 @@ angular.module('PolicyModule')
                 //loading a previous layout
                 var layout;
                 if (state.focusGroups.length === 0) {
-                    thisGraph.zoomed([0,0], 1);
                     layout = state.layoutDefault;
+                    var zoom = state.zoomDefault;
+                    thisGraph.zoomed(zoom[0], zoom[1]);
                 } else {
                     var zoom = state.zooms[state.focusGroups];
                     if (zoom != null) {
