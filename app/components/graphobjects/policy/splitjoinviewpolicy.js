@@ -334,8 +334,8 @@ angular.module('PolicyModule')
                 //so that it is centered, but nodes will be forced to be
                 //within the offset bounds
                 var offset = consts.displayOffset;
-                var svgWidth = parseFloat(thisGraph.svg.style("width")) / thisGraph.dragSvg.scale();
-                var svgHeight = parseFloat(thisGraph.svg.style("height")) / thisGraph.dragSvg.scale();
+                var svgWidth = parseFloat(thisGraph.svg.style("width"));
+                var svgHeight = parseFloat(thisGraph.svg.style("height"));
 
 
                 var width = svgWidth;
@@ -344,10 +344,14 @@ angular.module('PolicyModule')
                 var amount = calcMaxNodes(width - (2*offset), height - (2*offset));
                 var scale = 1;
                 if (nodes.length > amount) {
+                    console.log('scaling');
                     scale = amount / nodes.length;
                     thisGraph.zoomed(thisGraph.dragSvg.translate(), scale);
                     width /= scale;
                     height /= scale;
+                } else {
+                    console.log('not scale');
+                    thisGraph.zoomed(thisGraph.dragSvg.translate(), scale);
                 }
 
                 //calculating foci for simulation
@@ -587,7 +591,6 @@ angular.module('PolicyModule')
                         node.y = y;
                     }
                 })
-
             }
 
             /**
@@ -641,7 +644,7 @@ angular.module('PolicyModule')
                 });
 
                 thisGraph.state.initForce = false;
-                thisPolicy.setPositions();
+                // thisPolicy.setPositions();
                 var title = newNodes[0].parent;
                 state.focusGroup = title;
 
@@ -956,7 +959,7 @@ angular.module('PolicyModule')
                     //Need to run a force simulation as this layout
                     //hasn't been done before
                     thisGraph.state.initForce = false;
-                    thisPolicy.setPositions();
+                    // thisPolicy.setPositions();
                     thisGraph.updateGraph(function() {
                         thisPolicy.updateGraphCallback.call(thisPolicy);
                     });
