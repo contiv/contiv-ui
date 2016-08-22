@@ -57,7 +57,7 @@ angular.module('contiv.models')
             collection.$http.post(url, volcopymodel)
                 .then(function successCallback(response) {
                     //TODO: Add the new volume to the collection
-                    //collection.models.push(collection.extract(response));
+                    collection.models.push(collection.extract(response));
                     deferred.resolve(collection.extract(response));
                 }, function errorCallback(response) {
                     deferred.reject(collection.extract(response));

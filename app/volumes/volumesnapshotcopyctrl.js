@@ -33,7 +33,6 @@ angular.module('contiv.volumes')
                         model.name = $stateParams.volume;
                         VolumesModel.copy(model, $stateParams.snapshot, volumeSnapshotCopyCtrl.newvolume)
                             .then(function successCallback(result) {
-                                VolumesModel.models.push(result);
                                 CRUDHelperService.stopLoader(volumeSnapshotCopyCtrl);
                                 goToNewVolume();
                             }, function errorCallback(result) {

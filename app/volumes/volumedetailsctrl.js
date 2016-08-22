@@ -56,16 +56,14 @@ angular.module('contiv.volumes')
             }
 
             function takeVolumeSnapshot(){
-                volumeDetailsCtrl.snapshotSuccess=false;
+                volumeDetailsCtrl.snapshotSuccess = false;
                 CRUDHelperService.hideServerError(volumeDetailsCtrl);
                 CRUDHelperService.startLoader(volumeDetailsCtrl);
                 VolumeService.takeSnapshot(volumeDetailsCtrl.volume).then(function successCallback(result) {
-                    //volumeDetailsCtrl.snapshots.append(result.data);
-                    CRUDHelperService.stopLoader(volumeDetailsCtrl);
-                    volumeDetailsCtrl.snapshotSuccess=true;
+                    volumeDetailsCtrl.snapshotTaken = true;
                 }, function errorCallback(result){
-                    CRUDHelperService.stopLoader(volumeCreateCtrl);
-                    CRUDHelperService.showServerError(volumeCreateCtrl, result);
+                    CRUDHelperService.stopLoader(volumeDetailsCtrl);
+                    CRUDHelperService.showServerError(volumeDetailsCtrl, result);
                 });
             }
 
@@ -75,11 +73,17 @@ angular.module('contiv.volumes')
             //Load from cache for quick display initially
             getVolumeInfo(false);
 
+
             var promise;
             //Don't do auto-refresh if one is already in progress
             if (!angular.isDefined(promise)) {
                 promise = $interval(function () {
                     getVolumeInfo(true);
+                    if(volumeDetailsCtrl.snapshotTaken == true){
+                        volumeDetailsCtrl.snapshotSuccess = true;
+                        volumeDetailsCtrl.snapshotTaken = false;
+                    }
+                    CRUDHelperService.stopLoader(volumeDetailsCtrl);
                 }, ContivGlobals.REFRESH_INTERVAL);
             }
             //stop polling when user moves away from the page
