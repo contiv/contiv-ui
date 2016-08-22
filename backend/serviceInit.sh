@@ -42,7 +42,7 @@ then
 	cd ~
 	wget https://dl.influxdata.com/telegraf/releases/telegraf-0.13.1.x86_64.rpm
 	yes | sudo yum localinstall telegraf-0.13.1.x86_64.rpm
-	docker run --net=host influxdb
+	nohup docker run --net=host influxdb &
 fi
 exit
 
