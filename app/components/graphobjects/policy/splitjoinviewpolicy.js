@@ -31,7 +31,7 @@ angular.module('PolicyModule')
                 super.initialize(graph)
                 var state = graph.state.SplitJoinViewPolicy = {};
                 state.savedStates = [];
-                state.focusGroup = null;
+                // state.focusGroup = null;
                 state.eventHistory = [];
                 state.focusGroups = [];
                 state.foci = [];
@@ -119,7 +119,7 @@ angular.module('PolicyModule')
                 if (state.titleElem != null) {
                     currTitle = state.titleElem.text();
                 }
-                var focusGroup = state.focusGroup;
+                // var focusGroup = state.focusGroup;
                 var focusGroups = state.focusGroups;
                 var eventHistory = state.eventHistory;
                 // var foci = state.foci;
@@ -142,7 +142,7 @@ angular.module('PolicyModule')
                 var zoomDefault = state.zoomDefault;
                 var ret = {nodes:nodes, links:links, 
                     states:state.savedStates, currTitle:currTitle, 
-                    focusGroup:focusGroup, focusGroups: focusGroups,
+                    focusGroups: focusGroups,
                     eventHistory:eventHistory, zooms:zooms,
                     layout:layout, layoutDefault:layoutDefault,
                     zoomDefault:zoomDefault};
@@ -170,7 +170,7 @@ angular.module('PolicyModule')
                 if (state.titleElem != null) {
                     state.titleElem.text(currTitle);
                 }
-                state.focusGroup = loadState.focusGroup;
+                // state.focusGroup = loadState.focusGroup;
                 state.eventHistory = loadState.eventHistory;
                 state.focusGroups = loadState.focusGroups;
                 state.zooms = loadState.zooms;
@@ -344,13 +344,13 @@ angular.module('PolicyModule')
                 var amount = calcMaxNodes(width - (2*offset), height - (2*offset));
                 var scale = 1;
                 if (nodes.length > amount) {
-                    console.log('scaling');
+                    // console.log('scaling');
                     scale = amount / nodes.length;
                     thisGraph.zoomed(thisGraph.dragSvg.translate(), scale);
                     width /= scale;
                     height /= scale;
                 } else {
-                    console.log('not scale');
+                    // console.log('not scale');
                     thisGraph.zoomed(thisGraph.dragSvg.translate(), scale);
                 }
 
@@ -394,13 +394,13 @@ angular.module('PolicyModule')
              * nodes it has connections to.
              * 
              * When a focus group length is >= 1, if the node to be
-             * split is a focus node, it will replace focusGroup[0] and
+             * split is a focus node, it will replace focusGroups[0] and
              * the top half will be its children, and bottom half will
              * be the nodes it has connections to.
              * 
              * If the split is in the bottom half, then the bottom half
              * will display it's children and will only show connections between
-             * the two groups, and will replace focusGroup[1].
+             * the two groups, and will replace focusGroups[1].
              * 
              * @param      {D3Obj}   d3node  The d3 node
              * @param      {Object}  d       The matching data object
@@ -510,8 +510,11 @@ angular.module('PolicyModule')
                 }
 
                 //centering the node that is splitting
-                var xLoc = $('#visualization-graph').width() / 2;
-                var yLoc = $('#visualization-graph').height() / 2;
+                // var xLoc = $('#visualization-graph').width() / 2;
+                // var yLoc = $('#visualization-graph').height() / 2;
+
+                var xLoc = parseFloat(thisGraph.svg.style("width")) / 2;
+                var yLoc = parseFloat(thisGraph.svg.style("height")) / 2;
 
                 d.xStart = d.x;
                 d.yStart = d.y;
@@ -643,10 +646,8 @@ angular.module('PolicyModule')
                     }
                 });
 
-                thisGraph.state.initForce = false;
-                // thisPolicy.setPositions();
                 var title = newNodes[0].parent;
-                state.focusGroup = title;
+                // state.focusGroup = title;
 
                 //if the last event has the same id, it must be the
                 //oppposite of this event, so we remove that event from
@@ -677,20 +678,78 @@ angular.module('PolicyModule')
 
                 //re-enable graph update
                 thisGraph.state.disableUpdate = false;
-                thisGraph.updateGraph(function() {
-                    thisPolicy.updateGraphCallback.call(thisPolicy);
-                });
-                state.zooms[state.focusGroups] = [thisGraph.dragSvg.translate(),
-                                                    thisGraph.dragSvg.scale()];
-                state.scale = thisGraph.dragSvg.scale();
-                state.translate = thisGraph.dragSvg.translate();
+                thisPolicy.setLayout();
+                // thisGraph.state.initForce = false;
+                // thisPolicy.setPositions();
 
-                //save current layout
-                var layout = {};
-                _.forEach(thisGraph.nodes, function(n) {
-                    layout[n.id] = {x:n.x, y:n.y};
-                })
-                state.layout[state.focusGroups] = layout;
+
+                // thisGraph.updateGraph(function() {
+                //     thisPolicy.updateGraphCallback.call(thisPolicy);
+                // });
+                // state.zooms[state.focusGroups] = [thisGraph.dragSvg.translate(),
+                //                                     thisGraph.dragSvg.scale()];
+                // state.scale = thisGraph.dragSvg.scale();
+                // state.translate = thisGraph.dragSvg.translate();
+
+                // //save current layout
+                // var layout = {};
+                // _.forEach(thisGraph.nodes, function(n) {
+                //     layout[n.id] = {x:n.x, y:n.y};
+                // })
+                // state.layout[state.focusGroups] = layout;
+            }
+
+            setLayout() {
+                var thisPolicy = this;
+                var thisGraph = this.graph,
+                    state = thisGraph.state.SplitJoinViewPolicy,
+                    consts = thisGraph.consts.SplitJoinViewPolicy; 
+                var layout;
+                if (state.focusGroups.length === 0) {
+                    layout = state.layoutDefault;
+                    var zoom = state.zoomDefault;
+                    thisGraph.zoomed(zoom[0], zoom[1]);
+                } else {
+                    var zoom = state.zooms[state.focusGroups];
+                    if (zoom != null) {
+                        thisGraph.zoomed(zoom[0], zoom[1]);
+                    }
+                    layout = state.layout[state.focusGroups];
+                }
+
+                if (layout != null) {
+                    _.forEach(thisGraph.nodes, function(n) {
+                        var pos = layout[n.id];
+                        if (pos == null) {
+                            console.log(layout, n);
+                        }
+                        n.x = pos.x;
+                        n.y = pos.y;
+                    })
+                    thisGraph.updateGraph.call(thisGraph, function() {
+                        thisPolicy.updateGraphCallback.call(thisPolicy);
+                    });
+                    state.scale = thisGraph.dragSvg.scale();
+                    state.translate = thisGraph.dragSvg.translate();
+                } else {
+                    //Need to run a force simulation as this layout
+                    //hasn't been done before
+                    thisGraph.state.initForce = false;
+                    // thisPolicy.setPositions();
+                    thisGraph.updateGraph(function() {
+                        thisPolicy.updateGraphCallback.call(thisPolicy);
+                    });
+                    state.zooms[state.focusGroups] = [thisGraph.dragSvg.translate(),
+                                                        thisGraph.dragSvg.scale()];
+                    state.scale = thisGraph.dragSvg.scale();
+                    state.translate = thisGraph.dragSvg.translate();
+
+                    var layout = {};
+                    _.forEach(thisGraph.nodes, function(n) {
+                        layout[n.id] = {x:n.x, y:n.y};
+                    })
+                    state.layout[state.focusGroups] = layout;
+                } 
             }
 
             /**
@@ -735,7 +794,7 @@ angular.module('PolicyModule')
 
                 var ancestors_struct = thisGraph.ancestors_struct;
                 var children_struct = thisGraph.children_struct;
-                // - setting focusGroup -
+                // - setting focusGroups -
                 //either replacing one of the groups,
                 //or joining back into a top level, so there is only
                 //one focus
@@ -926,54 +985,7 @@ angular.module('PolicyModule')
                     }
                     state.titleElem.text(text);
                 }
-
-                //loading a previous layout
-                var layout;
-                if (state.focusGroups.length === 0) {
-                    layout = state.layoutDefault;
-                    var zoom = state.zoomDefault;
-                    thisGraph.zoomed(zoom[0], zoom[1]);
-                } else {
-                    var zoom = state.zooms[state.focusGroups];
-                    if (zoom != null) {
-                        thisGraph.zoomed(zoom[0], zoom[1]);
-                    }
-                    layout = state.layout[state.focusGroups];
-                }
-
-                if (layout != null) {
-                    _.forEach(thisGraph.nodes, function(n) {
-                        var pos = layout[n.id];
-                        if (pos == null) {
-                            console.log(layout, n);
-                        }
-                        n.x = pos.x;
-                        n.y = pos.y;
-                    })
-                    thisGraph.updateGraph.call(thisGraph, function() {
-                        thisPolicy.updateGraphCallback.call(thisPolicy);
-                    });
-                    state.scale = thisGraph.dragSvg.scale();
-                    state.translate = thisGraph.dragSvg.translate();
-                } else {
-                    //Need to run a force simulation as this layout
-                    //hasn't been done before
-                    thisGraph.state.initForce = false;
-                    // thisPolicy.setPositions();
-                    thisGraph.updateGraph(function() {
-                        thisPolicy.updateGraphCallback.call(thisPolicy);
-                    });
-                    state.zooms[state.focusGroups] = [thisGraph.dragSvg.translate(),
-                                                        thisGraph.dragSvg.scale()];
-                    state.scale = thisGraph.dragSvg.scale();
-                    state.translate = thisGraph.dragSvg.translate();
-
-                    var layout = {};
-                    _.forEach(thisGraph.nodes, function(n) {
-                        layout[n.id] = {x:n.x, y:n.y};
-                    })
-                    state.layout[state.focusGroups] = layout;
-                }
+                thisPolicy.setLayout();
             }
 
             /**
