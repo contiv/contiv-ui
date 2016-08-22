@@ -13,6 +13,7 @@ gulp.task('build', function () {
             'app/**/*.js',
             '!app/bundle.js',//Exclude generated bundle.js
             '!app/**/*test.js',//Exclude test files
+            '!app/**/*.md', //Exclude .md files
             '!app/bower_components/**/*.js',
             '!app/components/graphobjects/**/*.js',
             ])//Exclude vendor libraries
@@ -20,7 +21,8 @@ gulp.task('build', function () {
     //ES6 code
     var s2 = gulp.src(['app/components/graphobjects/**/module.js',
             'app/components/graphobjects/**/*.js',
-            '!app/components/graphobjects/**/*test.js'
+            '!app/components/graphobjects/**/*test.js',
+            '!app/components/graphobjects/**/*.md'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init())
         .pipe(babel());
@@ -40,6 +42,7 @@ gulp.task('dev-build', function () {
             'app/**/*.js',
             '!app/bundle.js',//Exclude generated bundle.js
             '!app/**/*test.js',//Exclude test files
+            '!app/**/*.md', //Exclude .md files
             '!app/bower_components/**/*.js',
             '!app/components/graphobjects/**/*.js',
             ])//Exclude vendor libraries
@@ -47,7 +50,8 @@ gulp.task('dev-build', function () {
     //ES6 code
     var s2 = gulp.src(['app/components/graphobjects/**/module.js',
             'app/components/graphobjects/**/*.js',
-            '!app/components/graphobjects/**/*test.js'
+            '!app/components/graphobjects/**/*test.js',
+            '!app/components/graphobjects/**/*.md'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init())
         .pipe(babel());
