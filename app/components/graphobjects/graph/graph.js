@@ -125,6 +125,7 @@ angular.module('GraphModule')
                 _(thisGraph.defaultPathPolicies).forEach(function(policy) {
                     policy.destroy();
                 });
+                thisGraph.svgPolicy.destroy();
                 for (var key in thisGraph.bindings) {
                     $(window).off(key, thisGraph.bindings[key]);
                 }

@@ -85,10 +85,10 @@ angular.module('DataModule')
 		    }
 
 		    /**
-		     * process the linkData output of getFlowBetweenSet
+		     * process the linkData
 		     *
 		     * @param      {Array}  linkData  The link data
-		     * @param      {Array}  nodes     The nodes
+		     * @param      {Array}  nodes     The nodes from processNodeData
 		     * @return     {Array}  Link objects
 		     */
 		    processLinkData(linkData, nodes) {

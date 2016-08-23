@@ -17,8 +17,8 @@ describe('visualizer node', function(){
         expect(node.id).toBe('testId');
         expect(node.text).toBe('testText');
         expect(node.radius).toBe(5);
-        expect(node.parent).toBe(5);
-        expect(node.ancestor).toBe(5);
+        expect(node.parent).toBe('p');
+        expect(node.ancestors).toBe('a');
         expect(node.xStart).toBe(0);
         expect(node.yStart).toBe(-1);
         expect(node.graph).toBe(null);

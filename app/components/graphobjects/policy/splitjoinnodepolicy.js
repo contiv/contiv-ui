@@ -94,7 +94,7 @@ angular.module('PolicyModule')
                 var thisGraph = this.graph,
                     state = thisGraph.state.SplitJoinNodePolicy;
                 var name = node.id
-                var children_struct = thisGraph.children_struct;
+                var children_struct = thisGraph.dataSource.children_struct;
                 //if it has no children to split into
                 if (children_struct[name] === undefined || _.isEmpty(children_struct[name])) {
                     return;
@@ -223,7 +223,7 @@ angular.module('PolicyModule')
                     return;
                 }
 
-                var children_struct = thisGraph.children_struct;
+                var children_struct = thisGraph.dataSource.children_struct;
                 var name = node.id
                 //if it has no ancestor, nothing to join
                 if (children_struct.topLevel.indexOf(name) > -1) {

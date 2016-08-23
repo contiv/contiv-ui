@@ -12,10 +12,8 @@ angular.module('GraphModule')
              * @param   {Array}  nodes   		    List of nodes
              * @param   {Array}  links   		    List of links
     		 * @param   {DataSource}  dataSource    The data source
-    		 * @param   {Object}  children_struct   The children structure
-    		 * @param   {Object}  ancestors_struct  The ancestors structure
     		 */
-            constructor(svg, nodes, links, dataSource, children_struct, ancestors_struct) {
+            constructor(svg, nodes, links, dataSource) {
                 super(svg, nodes, links);
                 var thisGraph = this;
 
@@ -31,11 +29,6 @@ angular.module('GraphModule')
                 //dataSource holds the server data and methods for
                 //converting it to data for the graph
                 thisGraph.dataSource = dataSource;
-                //Hierarchy of children for nodes
-                thisGraph.children_struct = children_struct;
-                //Hierarchy of ancestors for nodes
-                thisGraph.ancestors_struct = ancestors_struct;
-
                 
                 //Drag behavior for nodes
                 var drag = d3.behavior.drag()

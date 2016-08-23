@@ -13,7 +13,7 @@ angular.module('NodeModule')
 			 * @param      {string}  text    	The text to display
 			 * @param      {number}  radius  	The radius of the node
 			 * @param      {string}  parent     The parent id
-			 * @param      {Array}   ancestors  Array of ancestors
+			 * @param      {Array}   ancestors  Array of ancestors Id
 			 * @param      {number}  xStart     x loc to start animation
 			 * @param      {number}  yStart     y loc to start animation
 			 */
@@ -22,8 +22,16 @@ angular.module('NodeModule')
 		        super(x, y, id, text, radius);
 		        this.parent = parent;
 		        this.ancestors = ancestors;
-		        this.xStart = xStart || x;
-		        this.yStart = yStart || y;
+		        if (xStart == null) {
+		        	this.xStart = x;
+		        } else {
+		        	this.xStart = xStart;
+		        }
+		        if (yStart == null) {
+		        	this.yStart = y;
+		        } else {
+		        	this.yStart = yStart;
+		        }
 		    }
 
 			/**
@@ -35,7 +43,7 @@ angular.module('NodeModule')
 			newNodeAttr(d3node, d) {
 				var thisGraph = this.graph;
 				if (thisGraph.consts.containerClass != null &&
-						thisGraph.children_struct[d.id] == null) {
+						thisGraph.dataSource.children_struct[d.id] == null) {
 					d3node.classed(thisGraph.consts.containerClass, true);
 				}
 				d3node.transition("nodePositionTransition")

@@ -125,10 +125,11 @@ describe('SplitJoinNodePolicy', function(){
                     consts:{radiusDecay: .9},
                     nodes: [],
                     links: [],
-                    children_struct: children_struct,
-                    ancestors_struct: ancestors_struct,
                     spliceLinksForNode: function(){},
-                    dataSource: {getFlowBetweenSet: function(nameset) {
+                    dataSource: {
+                        children_struct: children_struct,
+                        ancestors_struct: ancestors_struct,
+                        getFlowBetweenSet: function(nameset) {
                         if (_.includes(nameset, "Web") && 
                             _.includes(nameset, "Passenger App") && 
                             _.includes(nameset, "Passenger Db") &&
