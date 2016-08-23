@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <button class="ui basic button" ng-click="volumeDetailsCtrl.takeVolumeSnapshot()">
+        <button class="ui basic button" ng-click="volumeDetailsCtrl.triggerVolumeSnapshot()">
             <i class="icon snapshot"></i>
             Snapshot
         </button>
@@ -56,7 +56,7 @@
     <div ng-show="volumeDetailsCtrl.snapshotSuccess" class="ui positive message">
         <i class="close icon" ng-click="volumeDetailsCtrl.snapshotSuccess=false"></i>
         <div class="header">
-            Snapshot taken successfully.
+            Snapshot triggered
         </div>
     </div>
     <ctv-error ng-show="volumeDetailsCtrl.showServerError" header="Error creating Snapshot"

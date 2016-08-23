@@ -104,11 +104,9 @@ angular.module('contiv.storagepolicies')
                     .then(function (policy) {
                         storagePolicyDetailsCtrl.policy = policy;
                         initializeFilesystemCmdsArray();
-                        //getVolumes(false);
+                        getVolumes(false);
                     });
-
-                getVolumes(false);
-
+                
                 storagePolicyDetailsCtrl.deletePolicy = deletePolicy;
                 storagePolicyDetailsCtrl.savePolicy = savePolicy;
                 storagePolicyDetailsCtrl.cancelEditing = cancelEditing;

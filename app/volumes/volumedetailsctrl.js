@@ -55,20 +55,21 @@ angular.module('contiv.volumes')
                 });
             }
 
-            function takeVolumeSnapshot(){
-                volumeDetailsCtrl.snapshotSuccess = false;
+            function triggerVolumeSnapshot(){
+                volumeDetailsCtrl.snapshotSuccess=false;
                 CRUDHelperService.hideServerError(volumeDetailsCtrl);
                 CRUDHelperService.startLoader(volumeDetailsCtrl);
-                VolumeService.takeSnapshot(volumeDetailsCtrl.volume).then(function successCallback(result) {
-                    volumeDetailsCtrl.snapshotTaken = true;
-                }, function errorCallback(result){
+                VolumeService.triggerSnapshot(volumeDetailsCtrl.volume).then(function successCallback(result) {
+                    CRUDHelperService.stopLoader(volumeDetailsCtrl);
+                    volumeDetailsCtrl.snapshotSuccess=true;
+                },  function errorCallback(result){
                     CRUDHelperService.stopLoader(volumeDetailsCtrl);
                     CRUDHelperService.showServerError(volumeDetailsCtrl, result);
                 });
             }
 
             volumeDetailsCtrl.deleteVolume = deleteVolume;
-            volumeDetailsCtrl.takeVolumeSnapshot = takeVolumeSnapshot;
+            volumeDetailsCtrl.triggerVolumeSnapshot = triggerVolumeSnapshot;
 
             //Load from cache for quick display initially
             getVolumeInfo(false);
@@ -79,11 +80,6 @@ angular.module('contiv.volumes')
             if (!angular.isDefined(promise)) {
                 promise = $interval(function () {
                     getVolumeInfo(true);
-                    if(volumeDetailsCtrl.snapshotTaken == true){
-                        volumeDetailsCtrl.snapshotSuccess = true;
-                        volumeDetailsCtrl.snapshotTaken = false;
-                    }
-                    CRUDHelperService.stopLoader(volumeDetailsCtrl);
                 }, ContivGlobals.REFRESH_INTERVAL);
             }
             //stop polling when user moves away from the page

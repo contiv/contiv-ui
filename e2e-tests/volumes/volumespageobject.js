@@ -13,7 +13,7 @@ var volCreate = function(){
     this.volumepolicy = element(by.id("newVolumePolicy")).element(by.css("[label='"+testConfig.volumes.policy+"']"));
     this.volumecreate = element(by.cssContainingText("button", "Create"));
     this.volumecancel = element(by.cssContainingText("button", "Cancel"));
-    this.collapsible = element.all(by.css("i.plus.circle"));
+    this.collapsible = element.all(by.css("div[ng-click='collapsed = !collapsed'] h4"));
     this.serverMessage = element(by.cssContainingText("ctv-error div div", "Error creating volume"));
 }
 
@@ -22,7 +22,7 @@ var volDetails = function(){
     this.policyDetails = element(by.css("ctv-collapsible[title='Policy Settings']")).all(by.css("table tbody tr"));
     this.snapshotDetails = element(by.css("ctv-collapsible[title='Snapshots']")).all(by.css("table tbody tr"));
     this.snapshotButton = element(by.cssContainingText("button", "Snapshot"));
-    this.collapsible = element.all(by.css("i.plus.circle"));
+    this.collapsible = element.all(by.css("div[ng-click='collapsed = !collapsed'] h4"));
     this.snapshotSuccessMes = element(by.css("div[class='ui positive message']"));
     this.snapshotIcon = element(by.css("ctv-collapsible[title='Snapshots']")).all(by.css("td a")).get(0);
 }

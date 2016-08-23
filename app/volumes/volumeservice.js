@@ -30,7 +30,7 @@ angular.module('contiv.volumes')
             return deferred.promise;
         }
 
-        function takeSnapshot(volume){
+        function triggerSnapshot(volume){
             var deferred = $q.defer();
             var url = ContivGlobals.VOLUMES_SNAPSHOTS_ENDPOINT + "take/" 
                 + volume.policy
@@ -46,6 +46,6 @@ angular.module('contiv.volumes')
         return {
             getVolumeUseInfo: getVolumeUseInfo,
             getVolumeSnapshots: getVolumeSnapshots,
-            takeSnapshot: takeSnapshot
+            triggerSnapshot: triggerSnapshot
         }
     }]);

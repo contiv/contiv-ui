@@ -34,7 +34,35 @@ describe('contiv.storagepolicies module', function(){
            }
        },
        {
-           "policy":"policy1",
+           "policy": "policy1",
+           "name": "vol3",
+           "driver": {
+               "pool": "rbd"
+           },
+           "mount": "",
+           "create": {
+               "size": "50MB",
+               "filesystem": "ext4"
+           },
+           "runtime": {
+               "snapshots": true,
+               "snapshot": {
+                   "frequency": "30m",
+                   "keep": 20
+               },
+               "rate-limit": {
+                   "write-bps": 100000,
+                   "read-bps": 100000
+               }
+           },
+           "backends": {
+               "crud": "ceph",
+               "mount": "ceph",
+               "snapshot": "ceph"
+           }
+       },
+       {
+           "policy":"policy8",
            "name":"vol3",
            "driver":{
                "pool":"rbd"
@@ -172,7 +200,10 @@ describe('contiv.storagepolicies module', function(){
         it('Should do a get on /volmaster/volumes/ Rest API', function(){
             $httpBackend.expectGET(ContivGlobals.VOLUMES_ENDPOINT);
             $httpBackend.flush();
-            expect(storagePolicyDetailsCtrl.volumes.length).toEqual(volumeData.length);
+            var filteredVolumeslength =  volumeData.filter(function(item,index){
+                return (item.policy == storagePolicyData[0].name);
+            }).length;
+            expect(storagePolicyDetailsCtrl.volumes.length).toEqual(filteredVolumeslength);
         });
 
         it('filesystemcmds must be defined', function(){

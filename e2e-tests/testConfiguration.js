@@ -108,7 +108,8 @@ function removeObject(page, itemName){
     });
 }
 
-function waitForPageLoad(){
+function waitForPageLoad(sec){
+    browser.driver.sleep(parseInt(sec));
     var el = element(by.css("div.inverted.dimmer"));
     return browser.driver.wait(function() {
         return el.isDisplayed().then(function(present) {

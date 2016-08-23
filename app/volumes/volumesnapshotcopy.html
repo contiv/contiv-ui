@@ -26,12 +26,12 @@
     </table>
     <form class="ui form" id="volumeSnapshotCopyCtrl.form" name="volumeSnapshotCopyCtrl.form" ng-submit="volumeSnapshotCopyCtrl.copySnapshot();" novalidate>
         <div class="field">
-            <label for="newvolume">Volume Name</label>
+            <label for="newvolume">Volume name</label>
             <input type="text" id="newvolume" name="newvolume"
-                   ng-model="volumeSnapshotCopyCtrl.newvolume" placeholder="Volume Name" required>
+                   ng-model="volumeSnapshotCopyCtrl.newvolume" placeholder="Enter name" required>
         </div>
-        <div class="ui sixteen column grid">
-            <div class="right floated three wide column">
+        <div class="ui grid">
+            <div class="right aligned sixteen wide column">
                 <div style="margin-top: 40px">
                     <button type="button" class="ui basic button" ng-click="volumeSnapshotCopyCtrl.cancelCopy()">
                         Cancel

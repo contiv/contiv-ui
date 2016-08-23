@@ -86,12 +86,13 @@ describe('contiv.volumes module', function(){
     beforeEach(inject(function (_$httpBackend_) {
         $httpBackend = _$httpBackend_;
         $httpBackend.when('GET', ContivGlobals.VOLUMES_ENDPOINT).respond(volumeList);
-        $httpBackend.when('GET', ContivGlobals.VOLUMES_USES_ENDPOINT+policy+'/'+volume).respond(volMount);
-        $httpBackend.when('GET', ContivGlobals.VOLUMES_SNAPSHOTS_ENDPOINT+policy+'/'+volume).respond(volSnapshots);
+        $httpBackend.when('GET', ContivGlobals.VOLUMES_USES_ENDPOINT + policy + '/' + volume).respond(volMount);
+        $httpBackend.when('GET', ContivGlobals.VOLUMES_SNAPSHOTS_ENDPOINT + policy + '/' + volume).respond(volSnapshots);
         $httpBackend.when('GET', ContivGlobals.STORAGEPOLICIES_ENDPOINT).respond(storagePolicyData);
         $httpBackend.when('DELETE', ContivGlobals.VOLUMES_DELETE_ENDPOINT).respond(200);
         $httpBackend.when('POST', ContivGlobals.VOLUMES_CREATE_ENDPOINT).respond(200);
         $httpBackend.when('POST', ContivGlobals.VOLUMES_COPYSNAPSHOTS_ENDPOINT).respond(200);
+        $httpBackend.when('POST', ContivGlobals.VOLUMES_SNAPSHOTS_ENDPOINT + "take" + '/' + policy + '/' + volume).respond(200);
     }));
 
     afterEach(function () {
@@ -171,6 +172,13 @@ describe('contiv.volumes module', function(){
             $httpBackend.flush();
             volumeDetailsCtrl.deleteVolume();
             $httpBackend.expectDELETE(ContivGlobals.VOLUMES_DELETE_ENDPOINT);
+            $httpBackend.flush();
+        });
+
+        it('should do a POST on /volmaster/snapshots/take/ Rest Api', function(){
+            $httpBackend.flush();
+            volumeDetailsCtrl.triggerVolumeSnapshot();
+            $httpBackend.expectPOST(ContivGlobals.VOLUMES_SNAPSHOTS_ENDPOINT + "take/" + policy + '/' + volume);
             $httpBackend.flush();
         });
     });

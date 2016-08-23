@@ -18,7 +18,10 @@ describe("Volumes", function(){
         testConfig.clickLink(volList.createButton);
         volCreate.volumename.sendKeys(testConfig.volumes.name);
         volCreate.collapsible.each(function(element, index){
-            element.click();
+            browser.actions()
+                .mouseMove(element, {x: 0, y: 0}) // 100px from left, 100 px from top of plot0
+                .click()
+                .perform();
         });
         volCreate.volumepolicy.click();
         volCreate.volumecreate.submit();
@@ -33,7 +36,10 @@ describe("Volumes", function(){
     it("verify storage policy details", function(){
         volList.volumeName.click().then(function(){
             volDetails.collapsible.each(function(element, index){
-                element.click();
+                browser.actions()
+                    .mouseMove(element, {x: 0, y: 0}) // 100px from left, 100 px from top of plot0
+                    .click()
+                    .perform();
             });
             volDetails.detailsTable.then(function(elements){    
                 expect(elements[0].all(by.css("td")).get(1).getText()).toEqual(testConfig.volumes.name);
@@ -50,11 +56,14 @@ describe("Volumes", function(){
     it("verify snapshot create", function(){
         volList.volumeName.click().then(function(){
             volDetails.collapsible.each(function(element, index){
-                element.click();
+                browser.actions()
+                    .mouseMove(element, {x: 0, y: 0}) // 100px from left, 100 px from top of plot0
+                    .click()
+                    .perform();
             });
             expect(volDetails.snapshotSuccessMes.isPresent()).toBeFalsy();
             volDetails.snapshotButton.click().then(function(){
-                testConfig.waitForPageLoad();
+                testConfig.waitForPageLoad(5000);
                 browser.waitForAngular();
                 expect(volDetails.snapshotSuccessMes.isPresent()).toBeTruthy();
                 expect(volDetails.snapshotDetails.all(by.css("td")).get(0).isPresent()).toBeTruthy();
@@ -66,7 +75,10 @@ describe("Volumes", function(){
     it("verify snapshot copy", function(){
         volList.volumeName.click().then(function(){
             volDetails.collapsible.each(function(element, index){
-                element.click();
+                browser.actions()
+                    .mouseMove(element, {x: 0, y: 0}) // 100px from left, 100 px from top of plot0
+                    .click()
+                    .perform();
             });
             var snapshot = "";
             volDetails.snapshotDetails.all(by.css("td")).get(0).getText().then(function(text){
@@ -90,7 +102,4 @@ describe("Volumes", function(){
             });
         });
     });
-
-
-
 });
