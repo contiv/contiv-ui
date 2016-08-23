@@ -11,6 +11,7 @@ angular.module('contiv.visualization')
                     scope.ancestors_struct === undefined) {
                     return;
                 }
+                console.time('directive');
 
                 //creating DataSource
                 var dataSource = new VisualizerDataSource.DataSource(scope.nodes, scope.links, scope.children_struct, 
@@ -62,6 +63,7 @@ angular.module('contiv.visualization')
                 } else {
                     scope.visualizationGraph.updateGraph();
                 }
+                console.timeEnd('directive');
                 
             }
 

@@ -705,7 +705,7 @@ angular.module('GraphModule')
                     return;
                 }
 
-                var bounds = this.d3ForceBounds();
+                var bounds = thisGraph.d3ForceBounds();
 
                 var force = d3.layout.force()
                     .size([bounds.width, bounds.height])

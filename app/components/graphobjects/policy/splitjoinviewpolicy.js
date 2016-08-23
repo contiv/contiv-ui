@@ -52,6 +52,7 @@ angular.module('PolicyModule')
                 graph.d3ForceBounds = this.d3ForceBounds;
                 graph.d3ForceTick = this.d3ForceTick;
                 graph.d3ForceStart = this.d3ForceStart;
+                graph.d3ForceEnd = this.d3ForceEnd;
             }
 
             /**
@@ -113,8 +114,8 @@ angular.module('PolicyModule')
                 var thisGraph = this.graph,
                     state = thisGraph.state.SplitJoinViewPolicy;
 
-                var nodes = this.graph.nodes;
-                var links = this.graph.links;
+                var nodes = thisGraph.nodes;
+                var links = thisGraph.links;
                 var currTitle = null;
                 if (state.titleElem != null) {
                     currTitle = state.titleElem.text();
@@ -127,16 +128,16 @@ angular.module('PolicyModule')
                 var layout = state.layout;
 
                 //if there hasn't been a break event yet
-                if (state.layoutDefault == null) {
-                    var defaultLayout = {};
-                    _.forEach(thisGraph.nodes, function(n) {
-                        defaultLayout[n.id] = {x:n.x, y:n.y};
-                    })
-                    state.layoutDefault = defaultLayout;
-                    var scale = thisGraph.dragSvg.scale();
-                    var translate = thisGraph.dragSvg.translate();
-                    state.zoomDefault = [translate, scale];
-                }
+                // if (state.layoutDefault == null) {
+                //     var defaultLayout = {};
+                //     _.forEach(thisGraph.nodes, function(n) {
+                //         defaultLayout[n.id] = {x:n.x, y:n.y};
+                //     })
+                //     state.layoutDefault = defaultLayout;
+                //     var scale = thisGraph.dragSvg.scale();
+                //     var translate = thisGraph.dragSvg.translate();
+                //     state.zoomDefault = [translate, scale];
+                // }
                 
                 var layoutDefault = state.layoutDefault;
                 var zoomDefault = state.zoomDefault;
@@ -146,6 +147,7 @@ angular.module('PolicyModule')
                     eventHistory:eventHistory, zooms:zooms,
                     layout:layout, layoutDefault:layoutDefault,
                     zoomDefault:zoomDefault};
+                // console.log(ret);
                 savedState.SplitJoinViewPolicy = ret;
             }
 
@@ -241,7 +243,7 @@ angular.module('PolicyModule')
                     statePolicy = state.SplitJoinViewPolicy;
 
                 var offset = consts.displayOffset;
-                var scale = state.SplitJoinViewPolicy.scale;
+                var scale = thisGraph.dragSvg.scale();
                 var nodes = thisGraph.nodes;
 
                 // Move nodes toward cluster focus.
@@ -256,7 +258,6 @@ angular.module('PolicyModule')
                         }
                         d.x += (width/2 - d.x) * alpha;
                     } else {
-
                         d.y += (height/2 - d.y) * alpha;
                         d.x += (width/2 - d.x) * alpha;
                     }
@@ -264,16 +265,17 @@ angular.module('PolicyModule')
                 }
 
                 // Make sure no nodes overlap
-                var q = d3.geom.quadtree(thisGraph.nodes),
-                      i = 0,
-                      n = nodes.length;
+                // var q = d3.geom.quadtree(thisGraph.nodes),
+                //       i = 0,
+                //       n = nodes.length;
 
-                  while (++i < n) {
-                    q.visit(this.d3ForceCollide(nodes[i]));
-                  }
+                //   while (++i < n) {
+                //     q.visit(this.d3ForceCollide(nodes[i]));
+                //   }
 
                 // Make sure nodes are within bounds
-                thisGraph.circles.each(this.d3ForceCollide(.5))
+                thisGraph.circles
+                .each(this.d3ForceCollide(.5))
                     .each(gravity(.2 * e.alpha))
                     .attr("cx", function(d) { 
                         return d.x = Math.max((d.radius + offset)/scale, Math.min(width + ((-offset- d.radius) / scale), d.x));
@@ -344,19 +346,18 @@ angular.module('PolicyModule')
                 var amount = calcMaxNodes(width - (2*offset), height - (2*offset));
                 var scale = 1;
                 if (nodes.length > amount) {
-                    // console.log('scaling');
                     scale = amount / nodes.length;
                     thisGraph.zoomed(thisGraph.dragSvg.translate(), scale);
                     width /= scale;
                     height /= scale;
                 } else {
-                    // console.log('not scale');
                     thisGraph.zoomed(thisGraph.dragSvg.translate(), scale);
                 }
 
                 //calculating foci for simulation
                 var focusGroups = statePolicy.focusGroups;
-                var foci = statePolicy.foci;
+                // var foci = statePolicy.foci;
+                var foci;
                 if (focusGroups.length === 0) {
                     foci = [height/2];
                 } else {
@@ -379,6 +380,7 @@ angular.module('PolicyModule')
                     foci = [top/2, top + bot / 2];
 
                 }
+                statePolicy.foci = foci;
                 return {width:width, height:height};
             }
 
@@ -418,17 +420,18 @@ angular.module('PolicyModule')
                 }
 
                 //save current layout
-                var layout = {};
-                _.forEach(thisGraph.nodes, function(n) {
-                    layout[n.id] = {x:n.x, y:n.y};
-                })
-                if (state.focusGroups.length === 0) {
-                    //create new dict
-                    state.layoutDefault = layout
-                    var scale = thisGraph.dragSvg.scale();
-                    var translate = thisGraph.dragSvg.translate();
-                    state.zoomDefault = [translate, scale];
-                }
+                // var layout = {};
+                // _.forEach(thisGraph.nodes, function(n) {
+                //     layout[n.id] = {x:n.x, y:n.y};
+                // })
+                // if (state.focusGroups.length === 0) {
+                //     //create new dict
+                //     state.layoutDefault = layout
+                //     var scale = thisGraph.dragSvg.scale();
+                //     var translate = thisGraph.dragSvg.translate();
+                //     state.zoomDefault = [translate, scale];
+                // }
+                var originalFocusGroups = state.focusGroups.slice();
 
                 if (state.focusGroups.length === 0) { //toplevel split
                     state.focusGroups.push(d.id);
@@ -502,12 +505,19 @@ angular.module('PolicyModule')
                 
 
                 //scaling the graph to its original zoom for the current view
-                var currScale = thisGraph.dragSvg.scale();
-                var currTranslate = thisGraph.dragSvg.translate();
-                if (currScale !== state.scale || 
-                        currTranslate !== state.translate) {
-                    thisGraph.zoomed(state.translate, state.scale);
-                }
+                // var currScale = thisGraph.dragSvg.scale();
+                // var currTranslate = thisGraph.dragSvg.translate();
+                // if (currScale !== state.scale || 
+                //         currTranslate !== state.translate) {
+                //     thisGraph.zoomed(state.translate, state.scale);
+                // }
+                // var origZoom;
+                // if (_.isEmpty(originalFocusGroups)) {
+                //     origZoom = state.zoomDefault;
+                // } else {
+                //     origZoom = state.zooms[originalFocusGroups];
+                // }
+                thisGraph.zoomed([0, 0], 1);
 
                 //centering the node that is splitting
                 // var xLoc = $('#visualization-graph').width() / 2;
@@ -619,6 +629,38 @@ angular.module('PolicyModule')
 
                 thisGraph.paths
                     .attr('x1', function(d) { return d.source.x; })
+                    .attr('y1', function(d) { return d.source.y; })
+                    .attr('x2', function(d) { return d.target.x; })
+                    .attr('y2', function(d) { return d.target.y; });
+            }
+
+            /**
+             * Called on the start of the d3 force simulation
+             * Will override the method of the graph
+             * "this" points to the graph
+             */
+            d3ForceEnd() {
+                var thisGraph = this,
+                    state = thisGraph.state,
+                    consts = thisGraph.consts,
+                    constsPolicy = consts.SplitJoinViewPolicy,
+                    statePolicy = state.SplitJoinViewPolicy;
+                if (statePolicy.layoutDefault == null) {
+                    var defaultLayout = {};
+                    _.forEach(thisGraph.nodes, function(n) {
+                        defaultLayout[n.id] = {x:n.x, y:n.y};
+                    })
+                    statePolicy.layoutDefault = defaultLayout;
+                    var scale = thisGraph.dragSvg.scale();
+                    var translate = thisGraph.dragSvg.translate();
+                    statePolicy.zoomDefault = [translate, scale]; 
+                }
+
+                thisGraph.circles
+                    .attr('cx', function(d) { return d.x; })
+                    .attr('cy', function(d) { return d.y; });
+
+                thisGraph.paths.attr('x1', function(d) { return d.source.x; })
                     .attr('y1', function(d) { return d.source.y; })
                     .attr('x2', function(d) { return d.target.x; })
                     .attr('y2', function(d) { return d.target.y; });
