@@ -7721,6 +7721,10 @@ i.icons .inverted.corner.icon {
   content: "\e959";
 }
 
+.icon.copysnapshot:before {
+  content: "\e960";
+}
+
 .icon.checkmark:before {
   content: "\e92d";
 }
