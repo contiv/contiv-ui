@@ -6,7 +6,7 @@ describe('SaveStatePolicy', function(){
     var defaultNodePolicies;
     var defaultPathPolicies;
     beforeEach(function(){
-        module('PolicyModule');
+        module('contiv.graph');
         inject( function($injector){
             policyFactory = $injector.get('SaveStatePolicy');
         });

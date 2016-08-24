@@ -8,7 +8,7 @@
  * Return the class object with Graph as key.
  * 
  */
-angular.module('GraphModule')
+angular.module('contiv.graph')
     .factory('Graph', ['PolicyService', function (PolicyService) {
         class Graph {
             /**

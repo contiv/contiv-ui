@@ -42,7 +42,7 @@ The graph is composed of five components. Each of these components has a base cl
   * Multiple policies can be installed at the same time.
   * Has a handler for all the standard mouse interactions, and these handlers will fire for the object it is installed on when the event occurs.
 
-Node objects, Link objects, and Graph objects all support policy installation and uninstallation. Graph objects support installing a policy for interaction with the graph, as well as default policies for nodes and links. When an event occurs, if the Node or Link in the event has its own policies installed, it will call the event handler for all the node or link's installed policies. If it doesn't have any of its own policies, it will call the event handler for the graph's default node policies or default path policies. This allows for certain nodes or links to have specialized policies if needed while still having a convenient way to install a policy on all nodes or on all links.
+To use the graph object, include the contiv.graph module as a dependency for your module. Then you can inject which ever objects you need. Node objects, Link objects, and Graph objects all support policy installation and uninstallation. Graph objects support installing a policy for interaction with the graph, as well as default policies for nodes and links. When an event occurs, if the Node or Link in the event has its own policies installed, it will call the event handler for all the node or link's installed policies. If it doesn't have any of its own policies, it will call the event handler for the graph's default node policies or default path policies. This allows for certain nodes or links to have specialized policies if needed while still having a convenient way to install a policy on all nodes or on all links.
 
 ###Data Source Objects
 =======================
@@ -191,6 +191,8 @@ It's constructor has the following expectations:
 ###Policy Objects
 =======================
 Policies are used to isolate features for a graph. Policies can be installed on nodes, links, or the graph. Each policy has interaction handlers that will be called by the graph if installed. Policies can also modify graph functions (see QTipPolicy for an example). Multiple policies can be installed for a node or link. The destroy method will trigger when the graph is destroyed, or if the policy is uninstalled.
+
+For using policies, you only need to inject PolicyService, which will contain all the policy objects.
 
 To write your own policy, create a new factory that uses the policy you want to inherit as a dependency, and extend its policy. Return the class object with Policy as key, and add the policy to the PolicyService factory. 
 

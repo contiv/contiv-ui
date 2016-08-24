@@ -10,7 +10,7 @@
  * This policy must be loaded first in order for it saved variables 
  * to be loaded when the view comes back to the graph
  */
-angular.module('PolicyModule')
+angular.module('contiv.graph')
     .factory('SaveStatePolicy', ['Policy', function (Policy) {
     	class SaveStatePolicy extends Policy.Policy {
     		

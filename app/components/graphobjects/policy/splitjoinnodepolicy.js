@@ -5,7 +5,7 @@
  * If multiple nodes are selected at the time of a split or join event,
  * it will split or join all of them.
  */
-angular.module('PolicyModule')
+angular.module('contiv.graph')
     .factory('SplitJoinNodePolicy', ['NodeSelectionPolicy', 'VisualizerNode', 
     		function (NodeSelectionPolicy, VisualizerNode) {
 		class SplitJoinNodePolicy extends NodeSelectionPolicy.Policy {

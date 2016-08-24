@@ -7,7 +7,7 @@
  * Return the class object with Node as key
  * 
  */
-angular.module('NodeModule')
+angular.module('contiv.graph')
     .factory('Node', [function () {
 		class Node {
 			/**

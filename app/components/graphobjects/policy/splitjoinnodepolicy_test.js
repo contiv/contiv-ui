@@ -105,7 +105,7 @@ describe('SplitJoinNodePolicy', function(){
         ancestors_struct["Passenger"] = [null];
         ancestors_struct["Driver"] = [null];
         ancestors_struct["Web"] = [null];
-        module('PolicyModule');
+        module('contiv.graph');
         // module('NodeModule');
         inject( function($injector){
             // VisualizerNode = $injector.get('VisualizerNode');

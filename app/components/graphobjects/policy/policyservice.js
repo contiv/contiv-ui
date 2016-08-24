@@ -2,7 +2,7 @@
  * Contains all the policies.
  * See policy.js for info on how policies work.
  */
-angular.module('PolicyModule')
+angular.module('contiv.graph')
     .factory('PolicyService', ['Policy','QTipPolicy', 'PathChangeViewPolicy', 
         'NodeSelectionPolicy', 'SplitJoinNodePolicy', 'SplitJoinViewPolicy',
         'SaveStatePolicy',

@@ -4,7 +4,7 @@ describe('PathChangeViewPolicy', function(){
     var policyFactory;
     var $state;
     beforeEach(function(){
-        module('PolicyModule');
+        module('contiv.graph');
         inject( function($injector){
             policyFactory = $injector.get('PathChangeViewPolicy');
         });

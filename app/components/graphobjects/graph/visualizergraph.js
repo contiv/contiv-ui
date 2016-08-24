@@ -1,7 +1,7 @@
 /**
  * The graph that is used specifically for the visualization tab.
  */
-angular.module('GraphModule')
+angular.module('contiv.graph')
     .factory('VisualizerGraph', ['Graph', function (Graph) {
     	class VisualizerGraph extends Graph.Graph {
     		/**

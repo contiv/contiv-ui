@@ -2,7 +2,7 @@
  * This policy is used to add a select node feature.
  * Supports selecting multiple nodes by using the ctrl key.
  */
-angular.module('PolicyModule')
+angular.module('contiv.graph')
     .factory('NodeSelectionPolicy', ['Policy', function (Policy) {
 
     	class NodeSelectionPolicy extends Policy.Policy {

@@ -4,7 +4,7 @@
  * 
  * Uses the qTip jQuery plugin
  */
-angular.module('PolicyModule')
+angular.module('contiv.graph')
     .factory('QTipPolicy', ['Policy', function (Policy) {
         class QTipPolicy extends Policy.Policy {
             /**

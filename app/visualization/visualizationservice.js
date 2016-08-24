@@ -83,7 +83,7 @@ angular.module('contiv.visualization')
         function getGraphData() {
             var url = ContivGlobals.VISUALIZATION_ENDPOINT
             url += 'influx/query';
-            config = {
+            var config = {
                 params: {
                     db:"telegraf",
                     q:"SELECT BytesIn, BytesOut, EndpointIP, ProviderIP FROM httpjson_svcstats WHERE time > now() - 1m GROUP BY * LIMIT 1",

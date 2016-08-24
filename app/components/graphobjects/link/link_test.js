@@ -4,7 +4,7 @@ describe('link', function(){
     var linkFactory;
     var link;
     beforeEach(function(){
-        module('LinkModule');
+        module('contiv.graph');
         inject( function($injector){
             linkFactory = $injector.get('Link');
             link = new linkFactory.Link('source', 'target');

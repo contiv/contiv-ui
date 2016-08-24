@@ -8,7 +8,7 @@ describe('VisualizerDataSource', function(){
     var ancestors_struct;
 
     beforeEach(function(){
-        module('DataModule');
+        module('contiv.graph');
         inject( function($injector){
             VisualizerDataSource = $injector.get('VisualizerDataSource');
         });

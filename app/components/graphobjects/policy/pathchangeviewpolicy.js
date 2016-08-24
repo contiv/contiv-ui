@@ -1,7 +1,7 @@
 /**
  * This policy changes the view to the timegraph of link data on click.
  */
-angular.module('PolicyModule')
+angular.module('contiv.graph')
     .factory('PathChangeViewPolicy', ['Policy', function (Policy) {
     	class PathChangeViewPolicy extends Policy.Policy {
             /**

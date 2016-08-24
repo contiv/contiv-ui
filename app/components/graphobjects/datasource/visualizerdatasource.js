@@ -9,7 +9,7 @@
  * {source: sourceNodeId, target: targetNodeId, weight: linkWeight}
  * 
  */
-angular.module('DataModule')
+angular.module('contiv.graph')
     .factory('VisualizerDataSource', ['DataSource', 'VisualizerNode', 'VisualizerLink', 
     	function (DataSource, VisualizerNode, VisualizerLink) {
 

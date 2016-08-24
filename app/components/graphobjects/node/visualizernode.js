@@ -1,7 +1,7 @@
 /**
  * The node that is used specifically for the visualization tab.
  */
-angular.module('NodeModule')
+angular.module('contiv.graph')
     .factory('VisualizerNode', ['Node', function (Node) {
 		class VisualizerNode extends Node.Node {
 			/**

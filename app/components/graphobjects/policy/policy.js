@@ -19,7 +19,7 @@
  *      graph.consts.myPolicy = {};
  *      
  */
-angular.module('PolicyModule')
+angular.module('contiv.graph')
     .factory('Policy', [function () {
         class Policy {
             /**

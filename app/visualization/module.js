@@ -1,8 +1,7 @@
 
 
 angular.module('contiv.visualization', ['contiv.models', 'contiv.directives', 'contiv.utils', 
-	'GraphModule', 'PolicyModule', 'DataModule', 
-	'NodeModule', 'LinkModule'])
+	'contiv.graph'])
  .config(['$stateProvider', function ($stateProvider) {
         $stateProvider.state('contiv.menu.visualization', {
             url: '/visualization',

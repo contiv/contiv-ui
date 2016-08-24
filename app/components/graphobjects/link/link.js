@@ -7,7 +7,7 @@
  * Return the class object with Link as key
  * 
  */
-angular.module('LinkModule')
+angular.module('contiv.graph')
     .factory('Link', [function () {
     	class Link {
     		/**

@@ -1,7 +1,7 @@
 /**
  * The link that is used specifically for the visualization tab.
  */
-angular.module('LinkModule')
+angular.module('contiv.graph')
     .factory('VisualizerLink', ['Link', function (Link) {
 		class VisualizerLink extends Link.Link {
 			/**

@@ -8,7 +8,7 @@
  * Has back button support.
  * Can auto change the title of the graph.
  */
-angular.module('PolicyModule')
+angular.module('contiv.graph')
     .factory('SplitJoinViewPolicy', ['SplitJoinNodePolicy', 'VisualizerNode', function (SplitJoinNodePolicy, VisualizerNode) { 
         class SplitJoinViewPolicy extends SplitJoinNodePolicy.Policy{
             /**

@@ -4,7 +4,7 @@ describe('node', function(){
     var nodeFactory;
     var node;
     beforeEach(function(){
-        module('NodeModule');
+        module('contiv.graph');
         inject( function($injector){
             nodeFactory = $injector.get('Node');
             node = new nodeFactory.Node(1, 2, 'testId', 'testText', 5);

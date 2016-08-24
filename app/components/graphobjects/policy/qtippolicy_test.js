@@ -4,7 +4,7 @@ describe('policy', function(){
     var policyFactory;
     var graph;
     beforeEach(function(){
-        module('PolicyModule');
+        module('contiv.graph');
         inject( function($injector){
             policyFactory = $injector.get('QTipPolicy');
         });

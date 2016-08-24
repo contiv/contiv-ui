@@ -17,7 +17,7 @@
  * {source: sourceNodeId, target: targetNodeId}
  * 
  */
-angular.module('DataModule')
+angular.module('contiv.graph')
     .factory('DataSource', ['Node', 'Link', 
     	function (Node, Link) {
 
