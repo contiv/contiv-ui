@@ -25,8 +25,6 @@ angular.module('contivApp', [
                 url: '',
                 abstract: true,
                 template: '<div ui-view class="ui fluid container"/>'
-            })
-        ;
-
+            });
         $urlRouterProvider.otherwise('/');
     }]);
