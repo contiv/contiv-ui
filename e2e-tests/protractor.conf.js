@@ -3,7 +3,8 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome'
   },
-  seleniumServerJar: "../node_modules/protractor/selenium/selenium-server-standalone-2.47.1.jar",
+  
+  directConnect: true,
 
   baseUrl: 'http://localhost:8080/',
 
