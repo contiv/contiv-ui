@@ -15,7 +15,7 @@ then
    	netctl net create contiv-srv-net -s 100.1.1.0/24
 
 	#app-svc service
-	netctl service create app-svc --network contiv-srv-net --tenant default --selector=tier=web --selector=release=stable --selector=environment=prod --port 8080:80:TCP
+	netctl service create app-svc --ip 100.1.1.3 --network contiv-srv-net --tenant default --selector=tier=web --selector=release=stable --selector=environment=prod --port 8080:80:TCP
 	netctl net create contiv-net -s 10.1.1.0/24 -g 10.1.1.254
 	for i in `seq 1 14`;
         do
@@ -39,10 +39,6 @@ then
 
 	#endpoint to app-db
 	docker exec -it $(docker run -itd --net=client-net  contiv/alpine sh) sh -c "nc -znvw 1 100.1.1.4 8080"
-	cd ~
-	wget https://dl.influxdata.com/telegraf/releases/telegraf-0.13.1.x86_64.rpm
-	yes | sudo yum localinstall telegraf-0.13.1.x86_64.rpm
-	nohup docker run --net=host influxdb &
 fi
 exit
 
