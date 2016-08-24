@@ -757,17 +757,12 @@ angular.module('contiv.graph')
                     consts = thisGraph.consts,
                     state = thisGraph.state;
 
-                // var docEl = document.documentElement,
-                //     bodyEl = document.getElementsByTagName('body')[0];
-              
                 var offset = thisGraph.consts.displayOffset;
                 var svgWidth = $('#visualization-graph').width();
                 var svgHeight = $('#visualization-graph').height();
 
                 var width = svgWidth - (2*offset);
                 var height = svgHeight - (2*offset);
-
-                
 
                 var nodes = thisGraph.nodes;
 

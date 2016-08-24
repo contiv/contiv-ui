@@ -12,7 +12,6 @@ angular.module('contiv.visualization')
 
 
                 //taken from http://bl.ocks.org/simenbrekken/6634070
-
                 // /** MAIN SVG **/
                 var limit = 59,
                 duration = 750,
@@ -66,23 +65,6 @@ angular.module('contiv.visualization')
                     .attr('class', 'x axis')
                     .attr('transform', 'translate(0,' + height + ')')
                     .call(x.axis = d3.svg.axis().scale(x).orient('bottom'))
-
-
-
-                // var yAxis = d3.svg.axis().scale(y).orient("left")
-
-                // Add the Y Axis
-
-                // var yAxis = d3.svg.axis().scale(y)
-                //     .orient("left").tickValues([1, 2, 3, 5, 8, 13, 21]);
-                // var yAxis = svg.append("g")
-                //     .attr("class", "y axis")
-                //     .call(d3.svg.axis().scale(y).orient("left").ticks(5));
-
-                // svg.append("g")
-                // .attr("class", "y axis")
-                // .call(yAxis);
-
 
                 var paths = svg.append('g');
 
@@ -146,8 +128,6 @@ angular.module('contiv.visualization')
                 link: function(scope, elem, attrs){
                     scope.$watchGroup(['edgeData', 'oldEdgeData'],
                         function() {
-
-                            // console.log(scope.edgeData, scope.oldEdgeData);
                             if (scope.edgeData != null &&
                                     scope.oldEdgeData != null ) {
                                 if (!scope.initialize) {
@@ -157,7 +137,6 @@ angular.module('contiv.visualization')
                                 }
                             } 
                         });
-            
                }
            };
         }

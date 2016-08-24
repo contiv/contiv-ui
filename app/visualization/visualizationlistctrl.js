@@ -1,5 +1,3 @@
-
-
 angular.module('contiv.visualization')
     .config(['$stateProvider', function ($stateProvider) {
         $stateProvider
@@ -62,14 +60,8 @@ angular.module('contiv.visualization')
             }
             //initial call
             VisualizationService.getGraphData().then(successGraphDataCallback, function errorCallback(result) {
-                console.log("Couldn't load graph data");
+                //will fail silently, graph won't be displayed
             });
-            //repeating call to update graph with live data from server
-            // $scope.graphDataInterval = $interval(function() {
-            //     VisualizationService.getGraphData().then(successGraphDataCallback, function errorCallback(result) {
-            //             console.log("Couldn't load graph data");
-            //     });
-            // }, 3000);
 
             $scope.$on('$destroy', function () { $interval.cancel($scope.graphDataInterval); });
 
@@ -81,7 +73,7 @@ angular.module('contiv.visualization')
                 $scope.labels = result.labels;
                 $scope.serviceSelectors = result.serviceSelectors;
             }, function errorCallback(result) {
-                console.log("Couldn't load structure data");
+                //will fail silently, graph won't be displayed
             });
     }]);
 
