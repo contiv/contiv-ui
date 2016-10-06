@@ -31,8 +31,8 @@
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-beta.12",
-    "systemjs": "0.19.39",
-    "zone.js": "^0.6.25"
+    "zone.js": "^0.6.25",
+    "ie-shim": "^0.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -55,12 +55,21 @@
     "protractor": "^2.1.0",
     "shelljs": "^0.2.6",
     "typescript": "^2.0.3",
-    "typings": "^1.4.0"
+    "typings": "^1.4.0",
+    "@types/core-js": "^0.9.32",
+    "@types/node": "^6.0.38",
+    "angular2-template-loader": "^0.4.0",
+    "awesome-typescript-loader": "^1.1.1",
+    "css-loader": "^0.23.1",
+    "raw-loader": "^0.5.1",
+    "to-string-loader": "^1.1.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-merge": "^0.8.4"
   },
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
@@ -68,6 +77,10 @@
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js",
+    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
+    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base app",
+    "watch": "npm run build -- --watch",
+    "start": "npm run server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
