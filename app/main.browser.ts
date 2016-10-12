@@ -13,6 +13,11 @@ import { ApplicationGroupsModel } from "./components/models/applicationgroupsmod
 import { NodesModel } from "./components/models/nodesmodel";
 import { RulesModel } from "./components/models/rulesmodel";
 import { NetprofilesModel } from "./components/models/netprofilesmodel";
+import { CRUDHelperService } from "./components/utils/crudhelperservice";
+import { InspectService } from "./components/utils/inspectservice";
+import { NetworkService } from "./components/utils/networkservice";
+import { VolumeSettingService } from "./components/utils/volumesettingservice";
+import { NodesService } from "./components/utils/nodesservice";
 
 let upgradeAdapter = new UpgradeAdapter(AppModule);
 
@@ -36,5 +41,15 @@ angular.module('contiv.models')
     .factory('RulesModel', upgradeAdapter.downgradeNg2Provider(RulesModel));
 angular.module('contiv.models')
     .factory('NetprofilesModel', upgradeAdapter.downgradeNg2Provider(NetprofilesModel));
+angular.module('contiv.utils')
+    .factory('CRUDHelperService', upgradeAdapter.downgradeNg2Provider(CRUDHelperService));
+angular.module("contiv.utils")
+    .factory("InspectService", upgradeAdapter.downgradeNg2Provider(InspectService));
+angular.module('contiv.utils')
+    .factory('NetworkService', upgradeAdapter.downgradeNg2Provider(NetworkService));
+angular.module('contiv.utils')
+    .factory('VolumeSettingService', upgradeAdapter.downgradeNg2Provider(VolumeSettingService));
+angular.module('contiv.utils')
+    .factory('NodesService', upgradeAdapter.downgradeNg2Provider(NodesService));
 
 upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);

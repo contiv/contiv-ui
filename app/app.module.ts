@@ -14,6 +14,11 @@ import { RulesModel } from "./components/models/rulesmodel";
 import { ServicelbsModel } from "./components/models/servicelbsmodel";
 import { StoragePoliciesModel } from "./components/models/storagepoliciesmodel";
 import { VolumesModel } from "./components/models/volumesmodel";
+import { CRUDHelperService } from "./components/utils/crudhelperservice";
+import { InspectService } from "./components/utils/inspectservice";
+import { NetworkService } from "./components/utils/networkservice";
+import { VolumeSettingService } from "./components/utils/volumesettingservice";
+import { NodesService } from "./components/utils/nodesservice";
 
 @NgModule({
     imports: [
@@ -29,7 +34,12 @@ import { VolumesModel } from "./components/models/volumesmodel";
         RulesModel,
         ServicelbsModel,
         StoragePoliciesModel,
-        VolumesModel
+        VolumesModel,
+        CRUDHelperService,
+        InspectService,
+        NetworkService,
+        VolumeSettingService,
+        NodesService
     ]
 })
 export class AppModule {}
