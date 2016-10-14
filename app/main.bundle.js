@@ -7,23 +7,24 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/6/16.
 	 */
-	var upgrade_1 = __webpack_require__(127);
-	var app_module_1 = __webpack_require__(217);
-	var networksmodel_1 = __webpack_require__(133);
-	var organizationsmodel_1 = __webpack_require__(135);
-	var servicelbsmodel_1 = __webpack_require__(138);
-	var storagepoliciesmodel_1 = __webpack_require__(139);
-	var policiesmodel_1 = __webpack_require__(136);
-	var volumesmodel_1 = __webpack_require__(140);
-	var applicationgroupsmodel_1 = __webpack_require__(130);
-	var nodesmodel_1 = __webpack_require__(134);
-	var rulesmodel_1 = __webpack_require__(137);
-	var netprofilesmodel_1 = __webpack_require__(132);
+	var upgrade_1 = __webpack_require__(133);
+	var app_module_1 = __webpack_require__(218);
+	var networksmodel_1 = __webpack_require__(94);
+	var organizationsmodel_1 = __webpack_require__(138);
+	var servicelbsmodel_1 = __webpack_require__(140);
+	var storagepoliciesmodel_1 = __webpack_require__(97);
+	var policiesmodel_1 = __webpack_require__(96);
+	var volumesmodel_1 = __webpack_require__(98);
+	var applicationgroupsmodel_1 = __webpack_require__(93);
+	var nodesmodel_1 = __webpack_require__(95);
+	var rulesmodel_1 = __webpack_require__(139);
+	var netprofilesmodel_1 = __webpack_require__(137);
 	var crudhelperservice_1 = __webpack_require__(141);
 	var inspectservice_1 = __webpack_require__(142);
 	var networkservice_1 = __webpack_require__(143);
 	var volumesettingservice_1 = __webpack_require__(145);
 	var nodesservice_1 = __webpack_require__(144);
+	var dashboardctrl_1 = __webpack_require__(146);
 	var upgradeAdapter = new upgrade_1.UpgradeAdapter(app_module_1.AppModule);
 	angular.module('contiv.models')
 	    .factory('NetworksModel', upgradeAdapter.downgradeNg2Provider(networksmodel_1.NetworksModel));
@@ -55,6 +56,8 @@ webpackJsonp([2],{
 	    .factory('VolumeSettingService', upgradeAdapter.downgradeNg2Provider(volumesettingservice_1.VolumeSettingService));
 	angular.module('contiv.utils')
 	    .factory('NodesService', upgradeAdapter.downgradeNg2Provider(nodesservice_1.NodesService));
+	angular.module('contiv.dashboard')
+	    .directive('dashboard', upgradeAdapter.downgradeNg2Component(dashboardctrl_1.DashboardComponent));
 	upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);
 	
 
@@ -69,7 +72,7 @@ webpackJsonp([2],{
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var basecollection_1 = __webpack_require__(131);
+	var basecollection_1 = __webpack_require__(136);
 	var _ = __webpack_require__(65);
 	var Collection = (function (_super) {
 	    __extends(Collection, _super);
@@ -17179,11 +17182,11 @@ webpackJsonp([2],{
 	  }
 	}.call(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(649)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(650)(module)))
 
 /***/ },
 
-/***/ 130:
+/***/ 93:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17231,161 +17234,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 131:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	__webpack_require__(54);
-	var _ = __webpack_require__(65);
-	/**
-	 * BaseCollection class that does just fetch of the objects.
-	 * @param $http
-	 * @param $q
-	 * @param url Used for doing HTTP GET and fetch objects from server
-	 * @constructor
-	 */
-	var BaseCollection = (function () {
-	    function BaseCollection(http, url) {
-	        this.http = http;
-	        this.url = url;
-	        this.models = [];
-	        this.url = url;
-	    }
-	    /**
-	     *
-	     * @param reload Optional. Default is false
-	     * @returns {*}
-	     */
-	    BaseCollection.prototype.get = function (reload) {
-	        var collection = this;
-	        if (reload === undefined)
-	            reload = false;
-	        return (!reload && collection.models.length > 0) ?
-	            new Promise(function (resolve) {
-	                resolve(collection.models);
-	            }) : collection.http.get(collection.url).map(function (res) { return res.json(); }).toPromise()
-	            .then(function (result) {
-	            collection.models = result;
-	            return collection.models;
-	        });
-	    };
-	    ;
-	    /**
-	     *
-	     * @param key
-	     * @param reload Optional. Default is false
-	     * @param keyname
-	     * @returns {*}
-	     */
-	    BaseCollection.prototype.getModelByKey = function (key, reload, keyname) {
-	        var collection = this;
-	        if (reload === undefined)
-	            reload = false;
-	        if (keyname === undefined)
-	            keyname = 'key';
-	        var promise = new Promise(function (resolve) {
-	            if (!reload && collection.models.length > 0) {
-	                resolve(findModel());
-	            }
-	            else {
-	                collection.get(reload)
-	                    .then(function () {
-	                    resolve(findModel());
-	                });
-	            }
-	        });
-	        function findModel() {
-	            return _.find(collection.models, function (c) {
-	                return c[keyname] == key;
-	            });
-	        }
-	        return promise;
-	    };
-	    ;
-	    /**
-	     *
-	     * @param model
-	     * @param reload Optional. Default is false
-	     * @returns {*}
-	     */
-	    BaseCollection.prototype.getModel = function (model, reload) {
-	        var collection = this;
-	        if (reload === undefined)
-	            reload = false;
-	        var promise = new Promise(function (resolve) {
-	            if (!reload && collection.models.length > 0) {
-	                resolve(findModel());
-	            }
-	            else {
-	                collection.get(reload)
-	                    .then(function () {
-	                    resolve(findModel());
-	                });
-	            }
-	        });
-	        function findModel() {
-	            return _.find(collection.models, model);
-	        }
-	        return promise;
-	    };
-	    ;
-	    return BaseCollection;
-	}());
-	exports.BaseCollection = BaseCollection;
-	
-
-/***/ },
-
-/***/ 132:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by hardik gandhi on 6/15/16.
-	 */
-	var core_1 = __webpack_require__(8);
-	var http_1 = __webpack_require__(15);
-	var collection_1 = __webpack_require__(34);
-	var NetprofilesModel = (function (_super) {
-	    __extends(NetprofilesModel, _super);
-	    function NetprofilesModel(http) {
-	        _super.call(this, http, ContivGlobals.NETPROFILES_ENDPOINT);
-	    }
-	    /**
-	     * Generate policy key to save policy on server
-	     * @param policy
-	     * @returns {string}
-	     */
-	    NetprofilesModel.prototype.generateKey = function (policy) {
-	        return policy.tenantName + ':' + policy.profileName;
-	    };
-	    NetprofilesModel = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], NetprofilesModel);
-	    return NetprofilesModel;
-	    var _a;
-	}(collection_1.Collection));
-	exports.NetprofilesModel = NetprofilesModel;
-	
-
-/***/ },
-
-/***/ 133:
+/***/ 94:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17423,7 +17272,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 134:
+/***/ 95:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17446,7 +17295,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(8);
 	var http_1 = __webpack_require__(15);
-	var basecollection_1 = __webpack_require__(131);
+	var basecollection_1 = __webpack_require__(136);
 	__webpack_require__(54);
 	var NodesModel = (function (_super) {
 	    __extends(NodesModel, _super);
@@ -17553,45 +17402,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 135:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(8);
-	var http_1 = __webpack_require__(15);
-	var collection_1 = __webpack_require__(34);
-	var OrganizationsModel = (function (_super) {
-	    __extends(OrganizationsModel, _super);
-	    function OrganizationsModel(http) {
-	        _super.call(this, http, ContivGlobals.ORGANIZATIONS_ENDPOINT);
-	    }
-	    OrganizationsModel = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], OrganizationsModel);
-	    return OrganizationsModel;
-	    var _a;
-	}(collection_1.Collection));
-	exports.OrganizationsModel = OrganizationsModel;
-	
-
-/***/ },
-
-/***/ 136:
+/***/ 96:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17637,130 +17448,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 137:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 3/8/16.
-	 */
-	var core_1 = __webpack_require__(8);
-	var http_1 = __webpack_require__(15);
-	var collection_1 = __webpack_require__(34);
-	var _ = __webpack_require__(65);
-	var RulesModel = (function (_super) {
-	    __extends(RulesModel, _super);
-	    function RulesModel(http) {
-	        _super.call(this, http, ContivGlobals.RULES_ENDPOINT);
-	    }
-	    /**
-	     * Get incoming rules for a given policy and a tenant
-	     * @param policyName
-	     * @param tenantName
-	     * @returns {*|webdriver.promise.Promise}
-	     */
-	    RulesModel.prototype.getIncomingRules = function (policyName, tenantName) {
-	        var rulesmodel = this;
-	        return rulesmodel.get(false).then(function (result) {
-	            return _.filter(result, {
-	                'policyName': policyName,
-	                'direction': 'in',
-	                'tenantName': tenantName
-	            });
-	        });
-	    };
-	    /**
-	     * Get outgoing rules for a given policy and a tenant
-	     * @param policyName
-	     * @param tenantName
-	     * @returns {*|webdriver.promise.Promise}
-	     */
-	    RulesModel.prototype.getOutgoingRules = function (policyName, tenantName) {
-	        var rulesmodel = this;
-	        return rulesmodel.get(false).then(function (result) {
-	            return _.filter(result, {
-	                'policyName': policyName,
-	                'direction': 'out',
-	                'tenantName': tenantName
-	            });
-	        });
-	    };
-	    /**
-	     * Generate rule key to save rule on server
-	     * @param rule
-	     * @returns {string}
-	     */
-	    RulesModel.prototype.generateKey = function (rule) {
-	        return rule.tenantName + ':' + rule.policyName + ':' + rule.ruleId;
-	    };
-	    RulesModel = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], RulesModel);
-	    return RulesModel;
-	    var _a;
-	}(collection_1.Collection));
-	exports.RulesModel = RulesModel;
-	
-
-/***/ },
-
-/***/ 138:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 5/11/16.
-	 */
-	var core_1 = __webpack_require__(8);
-	var http_1 = __webpack_require__(15);
-	var collection_1 = __webpack_require__(34);
-	var ServicelbsModel = (function (_super) {
-	    __extends(ServicelbsModel, _super);
-	    function ServicelbsModel(http) {
-	        _super.call(this, http, ContivGlobals.SERVICELBS_ENDPOINT);
-	    }
-	    ServicelbsModel = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], ServicelbsModel);
-	    return ServicelbsModel;
-	    var _a;
-	}(collection_1.Collection));
-	exports.ServicelbsModel = ServicelbsModel;
-	
-
-/***/ },
-
-/***/ 139:
+/***/ 97:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17824,7 +17512,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 140:
+/***/ 98:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -17910,6 +17598,321 @@ webpackJsonp([2],{
 	    var _a;
 	}(collection_1.Collection));
 	exports.VolumesModel = VolumesModel;
+	
+
+/***/ },
+
+/***/ 136:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	__webpack_require__(54);
+	var _ = __webpack_require__(65);
+	/**
+	 * BaseCollection class that does just fetch of the objects.
+	 * @param $http
+	 * @param $q
+	 * @param url Used for doing HTTP GET and fetch objects from server
+	 * @constructor
+	 */
+	var BaseCollection = (function () {
+	    function BaseCollection(http, url) {
+	        this.http = http;
+	        this.url = url;
+	        this.models = [];
+	        this.url = url;
+	    }
+	    /**
+	     *
+	     * @param reload Optional. Default is false
+	     * @returns {*}
+	     */
+	    BaseCollection.prototype.get = function (reload) {
+	        var collection = this;
+	        if (reload === undefined)
+	            reload = false;
+	        return (!reload && collection.models.length > 0) ?
+	            new Promise(function (resolve) {
+	                resolve(collection.models);
+	            }) : collection.http.get(collection.url).map(function (res) { return res.json(); }).toPromise()
+	            .then(function (result) {
+	            collection.models = result;
+	            return collection.models;
+	        });
+	    };
+	    ;
+	    /**
+	     *
+	     * @param key
+	     * @param reload Optional. Default is false
+	     * @param keyname
+	     * @returns {*}
+	     */
+	    BaseCollection.prototype.getModelByKey = function (key, reload, keyname) {
+	        var collection = this;
+	        if (reload === undefined)
+	            reload = false;
+	        if (keyname === undefined)
+	            keyname = 'key';
+	        var promise = new Promise(function (resolve) {
+	            if (!reload && collection.models.length > 0) {
+	                resolve(findModel());
+	            }
+	            else {
+	                collection.get(reload)
+	                    .then(function () {
+	                    resolve(findModel());
+	                });
+	            }
+	        });
+	        function findModel() {
+	            return _.find(collection.models, function (c) {
+	                return c[keyname] == key;
+	            });
+	        }
+	        return promise;
+	    };
+	    ;
+	    /**
+	     *
+	     * @param model
+	     * @param reload Optional. Default is false
+	     * @returns {*}
+	     */
+	    BaseCollection.prototype.getModel = function (model, reload) {
+	        var collection = this;
+	        if (reload === undefined)
+	            reload = false;
+	        var promise = new Promise(function (resolve) {
+	            if (!reload && collection.models.length > 0) {
+	                resolve(findModel());
+	            }
+	            else {
+	                collection.get(reload)
+	                    .then(function () {
+	                    resolve(findModel());
+	                });
+	            }
+	        });
+	        function findModel() {
+	            return _.find(collection.models, model);
+	        }
+	        return promise;
+	    };
+	    ;
+	    return BaseCollection;
+	}());
+	exports.BaseCollection = BaseCollection;
+	
+
+/***/ },
+
+/***/ 137:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by hardik gandhi on 6/15/16.
+	 */
+	var core_1 = __webpack_require__(8);
+	var http_1 = __webpack_require__(15);
+	var collection_1 = __webpack_require__(34);
+	var NetprofilesModel = (function (_super) {
+	    __extends(NetprofilesModel, _super);
+	    function NetprofilesModel(http) {
+	        _super.call(this, http, ContivGlobals.NETPROFILES_ENDPOINT);
+	    }
+	    /**
+	     * Generate policy key to save policy on server
+	     * @param policy
+	     * @returns {string}
+	     */
+	    NetprofilesModel.prototype.generateKey = function (policy) {
+	        return policy.tenantName + ':' + policy.profileName;
+	    };
+	    NetprofilesModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], NetprofilesModel);
+	    return NetprofilesModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.NetprofilesModel = NetprofilesModel;
+	
+
+/***/ },
+
+/***/ 138:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(8);
+	var http_1 = __webpack_require__(15);
+	var collection_1 = __webpack_require__(34);
+	var OrganizationsModel = (function (_super) {
+	    __extends(OrganizationsModel, _super);
+	    function OrganizationsModel(http) {
+	        _super.call(this, http, ContivGlobals.ORGANIZATIONS_ENDPOINT);
+	    }
+	    OrganizationsModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], OrganizationsModel);
+	    return OrganizationsModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.OrganizationsModel = OrganizationsModel;
+	
+
+/***/ },
+
+/***/ 139:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/8/16.
+	 */
+	var core_1 = __webpack_require__(8);
+	var http_1 = __webpack_require__(15);
+	var collection_1 = __webpack_require__(34);
+	var _ = __webpack_require__(65);
+	var RulesModel = (function (_super) {
+	    __extends(RulesModel, _super);
+	    function RulesModel(http) {
+	        _super.call(this, http, ContivGlobals.RULES_ENDPOINT);
+	    }
+	    /**
+	     * Get incoming rules for a given policy and a tenant
+	     * @param policyName
+	     * @param tenantName
+	     * @returns {*|webdriver.promise.Promise}
+	     */
+	    RulesModel.prototype.getIncomingRules = function (policyName, tenantName) {
+	        var rulesmodel = this;
+	        return rulesmodel.get(false).then(function (result) {
+	            return _.filter(result, {
+	                'policyName': policyName,
+	                'direction': 'in',
+	                'tenantName': tenantName
+	            });
+	        });
+	    };
+	    /**
+	     * Get outgoing rules for a given policy and a tenant
+	     * @param policyName
+	     * @param tenantName
+	     * @returns {*|webdriver.promise.Promise}
+	     */
+	    RulesModel.prototype.getOutgoingRules = function (policyName, tenantName) {
+	        var rulesmodel = this;
+	        return rulesmodel.get(false).then(function (result) {
+	            return _.filter(result, {
+	                'policyName': policyName,
+	                'direction': 'out',
+	                'tenantName': tenantName
+	            });
+	        });
+	    };
+	    /**
+	     * Generate rule key to save rule on server
+	     * @param rule
+	     * @returns {string}
+	     */
+	    RulesModel.prototype.generateKey = function (rule) {
+	        return rule.tenantName + ':' + rule.policyName + ':' + rule.ruleId;
+	    };
+	    RulesModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], RulesModel);
+	    return RulesModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.RulesModel = RulesModel;
+	
+
+/***/ },
+
+/***/ 140:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 5/11/16.
+	 */
+	var core_1 = __webpack_require__(8);
+	var http_1 = __webpack_require__(15);
+	var collection_1 = __webpack_require__(34);
+	var ServicelbsModel = (function (_super) {
+	    __extends(ServicelbsModel, _super);
+	    function ServicelbsModel(http) {
+	        _super.call(this, http, ContivGlobals.SERVICELBS_ENDPOINT);
+	    }
+	    ServicelbsModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], ServicelbsModel);
+	    return ServicelbsModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.ServicelbsModel = ServicelbsModel;
 	
 
 /***/ },
@@ -18328,7 +18331,181 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 217:
+/***/ 146:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(8);
+	var Observable_1 = __webpack_require__(1);
+	var applicationgroupsmodel_1 = __webpack_require__(93);
+	var policiesmodel_1 = __webpack_require__(96);
+	var storagepoliciesmodel_1 = __webpack_require__(97);
+	var nodesmodel_1 = __webpack_require__(95);
+	var networksmodel_1 = __webpack_require__(94);
+	var volumesmodel_1 = __webpack_require__(98);
+	/*
+	angular.module('contiv.dashboard')
+	    .config(['$stateProvider', function ($stateProvider) {
+	        $stateProvider
+	            .state('contiv.menu.dashboard', {
+	                url: '/dashboard',
+	                controller: 'DashboardCtrl as dashboardCtrl',
+	                templateUrl: 'dashboard/dashboard.html'
+	            });
+	    }])
+	    .controller('DashboardCtrl',
+	        [
+	            '$scope',
+	            '$interval',
+	            'NodesModel',
+	            'NetworksModel',
+	            'VolumesModel',
+	            'ApplicationGroupsModel',
+	            'PoliciesModel',
+	            'StoragePoliciesModel',
+	            function ($scope,
+	                      $interval,
+	                      NodesModel,
+	                      NetworksModel,
+	                      VolumesModel,
+	                      ApplicationGroupsModel,
+	                      PoliciesModel,
+	                      StoragePoliciesModel) {
+	                var dashboardCtrl = this;
+
+	                function getDashboardInfo(reload) {
+	                    NodesModel.get(reload)
+	                        .then(function (result) {
+	                            dashboardCtrl.nodes = result.length;
+	                        });
+	                    NetworksModel.get(reload)
+	                        .then(function (result) {
+	                            dashboardCtrl.networks = result.length;
+	                        });
+	                    VolumesModel.get(reload)
+	                        .then(function (result) {
+	                            dashboardCtrl.volumes = result.length;
+	                        });
+	                    ApplicationGroupsModel.get(reload)
+	                        .then(function (result) {
+	                            dashboardCtrl.groups = result.length;
+	                        });
+	                    PoliciesModel.get(reload)
+	                        .then(function (result) {
+	                            dashboardCtrl.networkpolicies = result.length;
+	                        });
+	                    StoragePoliciesModel.get(reload)
+	                        .then(function (result) {
+	                            dashboardCtrl.storagepolicies = result.length;
+	                        });
+	                }
+
+	                //Will display 0 if there is error fetching data
+	                dashboardCtrl.nodes = 0;
+	                dashboardCtrl.networks = 0;
+	                dashboardCtrl.volumes = 0;
+	                dashboardCtrl.groups = 0;
+	                dashboardCtrl.networkpolicies = 0;
+	                dashboardCtrl.storagepolicies = 0;
+
+	                //Load from cache for quick display initially
+	                getDashboardInfo(false);
+
+	                var promise = $interval(function () {
+	                    getDashboardInfo(true);
+	                }, 5000);
+
+	                //stop polling when user moves away from the page
+	                $scope.$on('$destroy', function () {
+	                    $interval.cancel(promise);
+	                });
+	            }]);*/
+	var DashboardComponent = (function () {
+	    function DashboardComponent(nodesModel, networksModel, volumesModel, applicationGroupsModel, policiesModel, storagePoliciesModel) {
+	        this.nodesModel = nodesModel;
+	        this.networksModel = networksModel;
+	        this.volumesModel = volumesModel;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.policiesModel = policiesModel;
+	        this.storagePoliciesModel = storagePoliciesModel;
+	        this.nodes = 0;
+	        this.networks = 0;
+	        this.volumes = 0;
+	        this.groups = 0;
+	        this.networkpolicies = 0;
+	        this.storagepolicies = 0;
+	        var dashboardComponent = this;
+	        function getDashboardInfo(reload) {
+	            nodesModel.get(reload)
+	                .then(function (result) {
+	                dashboardComponent.nodes = result.length;
+	            });
+	            networksModel.get(reload)
+	                .then(function (result) {
+	                dashboardComponent.networks = result.length;
+	            });
+	            volumesModel.get(reload)
+	                .then(function (result) {
+	                dashboardComponent.volumes = result.length;
+	            });
+	            applicationGroupsModel.get(reload)
+	                .then(function (result) {
+	                dashboardComponent.groups = result.length;
+	            });
+	            policiesModel.get(reload)
+	                .then(function (result) {
+	                dashboardComponent.networkpolicies = result.length;
+	            });
+	            storagePoliciesModel.get(reload)
+	                .then(function (result) {
+	                dashboardComponent.storagepolicies = result.length;
+	            });
+	        }
+	        //Load from cache for quick display initially
+	        getDashboardInfo(false);
+	        dashboardComponent.observable = Observable_1.Observable.create(function subscribe(observer) {
+	            var id = setInterval(function () {
+	                observer.next();
+	            }, 5000);
+	            return function unsubscribe() {
+	                clearInterval(id);
+	            };
+	        });
+	        dashboardComponent.subscription = dashboardComponent.observable.subscribe(function () {
+	            getDashboardInfo(true);
+	        });
+	    }
+	    DashboardComponent.prototype.ngOnDestroy = function () {
+	        this.subscription.unsubscribe();
+	    };
+	    DashboardComponent = __decorate([
+	        core_1.Component({
+	            selector: 'dashboard',
+	            templateUrl: 'dashboard/dashboard.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof nodesmodel_1.NodesModel !== 'undefined' && nodesmodel_1.NodesModel) === 'function' && _a) || Object, (typeof (_b = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _b) || Object, (typeof (_c = typeof volumesmodel_1.VolumesModel !== 'undefined' && volumesmodel_1.VolumesModel) === 'function' && _c) || Object, (typeof (_d = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _d) || Object, (typeof (_e = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _e) || Object, (typeof (_f = typeof storagepoliciesmodel_1.StoragePoliciesModel !== 'undefined' && storagepoliciesmodel_1.StoragePoliciesModel) === 'function' && _f) || Object])
+	    ], DashboardComponent);
+	    return DashboardComponent;
+	    var _a, _b, _c, _d, _e, _f;
+	}());
+	exports.DashboardComponent = DashboardComponent;
+	
+
+/***/ },
+
+/***/ 218:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18347,21 +18524,22 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(8);
 	var platform_browser_1 = __webpack_require__(72);
 	var http_1 = __webpack_require__(15);
-	var netprofilesmodel_1 = __webpack_require__(132);
-	var applicationgroupsmodel_1 = __webpack_require__(130);
-	var networksmodel_1 = __webpack_require__(133);
-	var nodesmodel_1 = __webpack_require__(134);
-	var organizationsmodel_1 = __webpack_require__(135);
-	var policiesmodel_1 = __webpack_require__(136);
-	var rulesmodel_1 = __webpack_require__(137);
-	var servicelbsmodel_1 = __webpack_require__(138);
-	var storagepoliciesmodel_1 = __webpack_require__(139);
-	var volumesmodel_1 = __webpack_require__(140);
+	var netprofilesmodel_1 = __webpack_require__(137);
+	var applicationgroupsmodel_1 = __webpack_require__(93);
+	var networksmodel_1 = __webpack_require__(94);
+	var nodesmodel_1 = __webpack_require__(95);
+	var organizationsmodel_1 = __webpack_require__(138);
+	var policiesmodel_1 = __webpack_require__(96);
+	var rulesmodel_1 = __webpack_require__(139);
+	var servicelbsmodel_1 = __webpack_require__(140);
+	var storagepoliciesmodel_1 = __webpack_require__(97);
+	var volumesmodel_1 = __webpack_require__(98);
 	var crudhelperservice_1 = __webpack_require__(141);
 	var inspectservice_1 = __webpack_require__(142);
 	var networkservice_1 = __webpack_require__(143);
 	var volumesettingservice_1 = __webpack_require__(145);
 	var nodesservice_1 = __webpack_require__(144);
+	var dashboardctrl_1 = __webpack_require__(146);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -18369,6 +18547,9 @@ webpackJsonp([2],{
 	        core_1.NgModule({
 	            imports: [
 	                platform_browser_1.BrowserModule, http_1.HttpModule
+	            ],
+	            declarations: [
+	                dashboardctrl_1.DashboardComponent,
 	            ],
 	            providers: [
 	                applicationgroupsmodel_1.ApplicationGroupsModel,
@@ -18397,7 +18578,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 649:
+/***/ 650:
 /***/ function(module, exports) {
 
 	module.exports = function(module) {

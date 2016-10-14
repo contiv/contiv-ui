@@ -18,6 +18,7 @@ import { InspectService } from "./components/utils/inspectservice";
 import { NetworkService } from "./components/utils/networkservice";
 import { VolumeSettingService } from "./components/utils/volumesettingservice";
 import { NodesService } from "./components/utils/nodesservice";
+import { DashboardComponent } from "./dashboard/dashboardctrl";
 
 let upgradeAdapter = new UpgradeAdapter(AppModule);
 
@@ -51,5 +52,9 @@ angular.module('contiv.utils')
     .factory('VolumeSettingService', upgradeAdapter.downgradeNg2Provider(VolumeSettingService));
 angular.module('contiv.utils')
     .factory('NodesService', upgradeAdapter.downgradeNg2Provider(NodesService));
-
+angular.module('contiv.dashboard')
+    .directive(
+        'dashboard',
+        upgradeAdapter.downgradeNg2Component(DashboardComponent) as angular.IDirectiveFactory
+    );
 upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);

@@ -19,10 +19,14 @@ import { InspectService } from "./components/utils/inspectservice";
 import { NetworkService } from "./components/utils/networkservice";
 import { VolumeSettingService } from "./components/utils/volumesettingservice";
 import { NodesService } from "./components/utils/nodesservice";
+import { DashboardComponent } from "./dashboard/dashboardctrl";
 
 @NgModule({
     imports: [
         BrowserModule, HttpModule
+    ],
+    declarations: [
+        DashboardComponent,
     ],
     providers: [
         ApplicationGroupsModel,
