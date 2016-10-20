@@ -28,6 +28,12 @@ import { ApplicationGroupDetailsComponent } from "./applicationgroups/applicatio
 import { NetworkSettingsComponent } from "./settings/networksettingctrl";
 import { VolumeSettingsComponent } from "./settings/volumesettingctrl";
 
+import {
+    CtvTableComponent, CtvThComponent, CtvSearchComponent,
+    CtvTpaginationComponent
+} from "./components/directives/tabledirective";
+import {NetworkListComponent} from "./networks/networklistctrl";
+import {AppGrouplistComponent} from "./applicationgroups/applicationgrouplistctrl";
 
 upgradeAdapter.upgradeNg1Provider('$state');
 upgradeAdapter.upgradeNg1Provider('$stateParams');
@@ -102,5 +108,22 @@ angular.module("contiv.directives")
 angular.module('contiv.settings')
     .directive('networksetting', upgradeAdapter.downgradeNg2Component(NetworkSettingsComponent) as angular.IDirectiveFactory)
     .directive('volumesetting', upgradeAdapter.downgradeNg2Component(VolumeSettingsComponent) as angular.IDirectiveFactory);
-
+angular.module('contiv.directives')
+    .directive('ctvTable', upgradeAdapter.downgradeNg2Component(CtvTableComponent) as angular.IDirectiveFactory);
+angular.module('contiv.directives')
+    .directive('ctvTh', upgradeAdapter.downgradeNg2Component(CtvThComponent) as angular.IDirectiveFactory);
+angular.module('contiv.directives')
+    .directive('ctvSearch', upgradeAdapter.downgradeNg2Component(CtvSearchComponent) as angular.IDirectiveFactory);
+angular.module('contiv.directives')
+    .directive('ctvTpagination', upgradeAdapter.downgradeNg2Component(CtvTpaginationComponent) as angular.IDirectiveFactory);
+angular.module('contiv.networks')
+    .directive(
+        'networkList',
+        upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory
+    );
+angular.module('contiv.applicationgroups')
+    .directive(
+        'applicationGrouplist',
+        upgradeAdapter.downgradeNg2Component(AppGrouplistComponent) as angular.IDirectiveFactory
+    );
 upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);

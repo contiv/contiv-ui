@@ -35,6 +35,7 @@ gulp.task('build', function () {
             '!app/dashboard/dashboardctrl.js',
             '!app/network_policies/networkpolicies.module.js',
             '!app/network_policies/isolationpolicycreatectrl.js',
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
             '!app/network_policies/isolationpolicydetailsctrl.js',
             '!app/network_policies/bandwidthpolicycreatectrl.js',
             '!app/network_policies/bandwidthpolicydetailsctrl.js',
@@ -46,6 +47,14 @@ gulp.task('build', function () {
             '!app/settings/settings.module.js',
             '!app/settings/networksettingctrl.js',
             '!app/settings/volumesettingctrl.js'
+=======
+            '!app/network_policies/bandwidthpolicycreatectrl.js',
+            '!app/components/directives/tabledirective.js',
+            '!app/networks/networklistctrl.js',
+            '!app/networks/network.module.js',
+            '!app/applicationgroups/applicationgroup.module.js',
+            '!app/applicationgroups/applicationgrouplistctrl.js'
+>>>>>>> Table directive to angular 2
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
@@ -94,6 +103,7 @@ gulp.task('dev-build', function () {
             '!app/dashboard/dashboardctrl.js',
             '!app/network_policies/networkpolicies.module.js',
             '!app/network_policies/isolationpolicycreatectrl.js',
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
             '!app/network_policies/isolationpolicydetailsctrl.js',
             '!app/network_policies/bandwidthpolicycreatectrl.js',
             '!app/network_policies/bandwidthpolicydetailsctrl.js',
@@ -105,6 +115,14 @@ gulp.task('dev-build', function () {
             '!app/settings/settings.module.js',
             '!app/settings/networksettingctrl.js',
             '!app/settings/volumesettingctrl.js'
+=======
+            '!app/network_policies/bandwidthpolicycreatectrl.js',
+            '!app/components/directives/tabledirective.js',
+            '!app/networks/networklistctrl.js',
+            '!app/networks/network.module.js',
+            '!app/applicationgroups/applicationgroup.module.js',
+            '!app/applicationgroups/applicationgrouplistctrl.js'
+>>>>>>> Table directive to angular 2
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code

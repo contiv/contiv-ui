@@ -4,6 +4,7 @@ webpackJsonp([2],{
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var upgradeadapter_1 = __webpack_require__(302);
 	var networksmodel_1 = __webpack_require__(79);
 	var organizationsmodel_1 = __webpack_require__(189);
@@ -29,6 +30,31 @@ webpackJsonp([2],{
 	var applicationgroupdetailsctrl_1 = __webpack_require__(185);
 	var networksettingctrl_1 = __webpack_require__(200);
 	var volumesettingctrl_1 = __webpack_require__(201);
+=======
+	var upgradeadapter_1 = __webpack_require__(296);
+	var networksmodel_1 = __webpack_require__(93);
+	var organizationsmodel_1 = __webpack_require__(188);
+	var servicelbsmodel_1 = __webpack_require__(190);
+	var storagepoliciesmodel_1 = __webpack_require__(131);
+	var policiesmodel_1 = __webpack_require__(94);
+	var volumesmodel_1 = __webpack_require__(132);
+	var applicationgroupsmodel_1 = __webpack_require__(92);
+	var nodesmodel_1 = __webpack_require__(130);
+	var rulesmodel_1 = __webpack_require__(189);
+	var netprofilesmodel_1 = __webpack_require__(129);
+	var crudhelperservice_1 = __webpack_require__(67);
+	var inspectservice_1 = __webpack_require__(191);
+	var networkservice_1 = __webpack_require__(192);
+	var volumesettingservice_1 = __webpack_require__(194);
+	var nodesservice_1 = __webpack_require__(193);
+	var dashboardctrl_1 = __webpack_require__(195);
+	var isolationpolicycreatectrl_1 = __webpack_require__(197);
+	var errormessagedirective_1 = __webpack_require__(185);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(196);
+	var tabledirective_1 = __webpack_require__(186);
+	var networklistctrl_1 = __webpack_require__(198);
+	var applicationgrouplistctrl_1 = __webpack_require__(184);
+>>>>>>> Table directive to angular 2
 	upgradeadapter_1.upgradeAdapter.upgradeNg1Provider('$state');
 	upgradeadapter_1.upgradeAdapter.upgradeNg1Provider('$stateParams');
 	angular.module('contiv.models')
@@ -69,9 +95,24 @@ webpackJsonp([2],{
 	angular.module("contiv.directives")
 	    .directive("ctvCollapsible", upgradeadapter_1.upgradeAdapter.downgradeNg2Component(collapsibledirective_1.CollapsibleComponent))
 	    .directive("ctvError", upgradeadapter_1.upgradeAdapter.downgradeNg2Component(errormessagedirective_1.ErrorMessageComponent));
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	angular.module('contiv.settings')
 	    .directive('networksetting', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(networksettingctrl_1.NetworkSettingsComponent))
 	    .directive('volumesetting', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(volumesettingctrl_1.VolumeSettingsComponent));
+=======
+	angular.module('contiv.directives')
+	    .directive('ctvTable', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(tabledirective_1.CtvTableComponent));
+	angular.module('contiv.directives')
+	    .directive('ctvTh', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(tabledirective_1.CtvThComponent));
+	angular.module('contiv.directives')
+	    .directive('ctvSearch', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(tabledirective_1.CtvSearchComponent));
+	angular.module('contiv.directives')
+	    .directive('ctvTpagination', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(tabledirective_1.CtvTpaginationComponent));
+	angular.module('contiv.networks')
+	    .directive('networkList', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(networklistctrl_1.NetworkListComponent));
+	angular.module('contiv.applicationgroups')
+	    .directive('applicationGrouplist', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(applicationgrouplistctrl_1.AppGrouplistComponent));
+>>>>>>> Table directive to angular 2
 	upgradeadapter_1.upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);
 	
 
@@ -925,11 +966,19 @@ webpackJsonp([2],{
 	/** @module common_strings */ /** */
 	"use strict";
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var rejectFactory_1 = __webpack_require__(77);
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(15);
 	var transition_1 = __webpack_require__(124);
 	var resolvable_1 = __webpack_require__(57);
+=======
+	var rejectFactory_1 = __webpack_require__(74);
+	var common_1 = __webpack_require__(4);
+	var hof_1 = __webpack_require__(15);
+	var transition_1 = __webpack_require__(122);
+	var resolvable_1 = __webpack_require__(56);
+>>>>>>> Table directive to angular 2
 	/**
 	 * Returns a string shortened to a maximum length
 	 *
@@ -1335,8 +1384,13 @@ webpackJsonp([2],{
 	var trace_1 = __webpack_require__(40);
 	var coreservices_1 = __webpack_require__(18);
 	var interface_1 = __webpack_require__(176);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var resolvable_1 = __webpack_require__(57);
 	var pathFactory_1 = __webpack_require__(95);
+=======
+	var resolvable_1 = __webpack_require__(56);
+	var pathFactory_1 = __webpack_require__(91);
+>>>>>>> Table directive to angular 2
 	var strings_1 = __webpack_require__(34);
 	var when = interface_1.resolvePolicies.when;
 	var ALL_WHENS = [when.EAGER, when.LAZY];
@@ -1522,8 +1576,13 @@ webpackJsonp([2],{
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var basecollection_1 = __webpack_require__(188);
 	var _ = __webpack_require__(65);
+=======
+	var basecollection_1 = __webpack_require__(187);
+	var _ = __webpack_require__(70);
+>>>>>>> Table directive to angular 2
 	var Collection = (function (_super) {
 	    __extends(Collection, _super);
 	    /**
@@ -1675,8 +1734,13 @@ webpackJsonp([2],{
 	var hof_1 = __webpack_require__(15);
 	var predicates_1 = __webpack_require__(9);
 	var coreservices_1 = __webpack_require__(18);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var urlMatcherConfig_1 = __webpack_require__(127);
 	var type_1 = __webpack_require__(119);
+=======
+	var urlMatcherConfig_1 = __webpack_require__(125);
+	var type_1 = __webpack_require__(117);
+>>>>>>> Table directive to angular 2
 	var hasOwn = Object.prototype.hasOwnProperty;
 	var isShorthand = function (cfg) {
 	    return ["value", "type", "squash", "array", "dynamic"].filter(hasOwn.bind(cfg || {})).length === 0;
@@ -1849,7 +1913,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 57:
+=======
+/***/ 56:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1985,8 +2053,140 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 65:
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ function(module, exports, __webpack_require__) {
 
+=======
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @module state */ /** for typedoc */
+	"use strict";
+	var common_1 = __webpack_require__(4);
+	/**
+	 * @ngdoc object
+	 * @name ui.router.state.type:TargetState
+	 *
+	 * @description
+	 * Encapsulate the desired target of a transition.
+	 * Wraps an identifier for a state, a set of parameters, and transition options with the definition of the state.
+	 *
+	 * @param {StateOrName} _identifier  An identifier for a state. Either a fully-qualified path, or the object
+	 *            used to define the state.
+	 * @param {IState} _definition The `State` object definition.
+	 * @param {ParamsOrArray} _params Parameters for the target state
+	 * @param {TransitionOptions} _options Transition options.
+	 */
+	var TargetState = (function () {
+	    function TargetState(_identifier, _definition, _params, _options) {
+	        if (_params === void 0) { _params = {}; }
+	        if (_options === void 0) { _options = {}; }
+	        this._identifier = _identifier;
+	        this._definition = _definition;
+	        this._options = _options;
+	        this._params = _params || {};
+	    }
+	    TargetState.prototype.name = function () {
+	        return this._definition && this._definition.name || this._identifier;
+	    };
+	    TargetState.prototype.identifier = function () {
+	        return this._identifier;
+	    };
+	    TargetState.prototype.params = function () {
+	        return this._params;
+	    };
+	    TargetState.prototype.$state = function () {
+	        return this._definition;
+	    };
+	    TargetState.prototype.state = function () {
+	        return this._definition && this._definition.self;
+	    };
+	    TargetState.prototype.options = function () {
+	        return this._options;
+	    };
+	    TargetState.prototype.exists = function () {
+	        return !!(this._definition && this._definition.self);
+	    };
+	    TargetState.prototype.valid = function () {
+	        return !this.error();
+	    };
+	    TargetState.prototype.error = function () {
+	        var base = this.options().relative;
+	        if (!this._definition && !!base) {
+	            var stateName = base.name ? base.name : base;
+	            return "Could not resolve '" + this.name() + "' from state '" + stateName + "'";
+	        }
+	        if (!this._definition)
+	            return "No such state '" + this.name() + "'";
+	        if (!this._definition.self)
+	            return "State '" + this.name() + "' has an invalid definition";
+	    };
+	    TargetState.prototype.toString = function () {
+	        return "'" + this.name() + "'" + common_1.toJson(this.params());
+	    };
+	    return TargetState;
+	}());
+	exports.TargetState = TargetState;
+	//# sourceMappingURL=targetState.js.map
+
+/***/ },
+
+/***/ 66:
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(291);
+	module.exports = angular;
+
+
+/***/ },
+
+/***/ 67:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 4/29/16.
+	 */
+	var core_1 = __webpack_require__(5);
+	var CRUDHelperService = (function () {
+	    function CRUDHelperService() {
+	    }
+	    CRUDHelperService.prototype.startLoader = function (controller) {
+	        controller.showLoader = true;
+	    };
+	    CRUDHelperService.prototype.stopLoader = function (controller) {
+	        controller.showLoader = false;
+	    };
+	    CRUDHelperService.prototype.showServerError = function (controller, message) {
+	        controller.showServerError = true;
+	        controller.serverErrorMessage = message;
+	    };
+	    CRUDHelperService.prototype.hideServerError = function (controller) {
+	        controller.showServerError = false;
+	    };
+	    CRUDHelperService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [])
+	    ], CRUDHelperService);
+	    return CRUDHelperService;
+	}());
+	exports.CRUDHelperService = CRUDHelperService;
+	
+
+/***/ },
+
+/***/ 70:
+/***/ function(module, exports, __webpack_require__) {
+
+>>>>>>> Table directive to angular 2
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {/**
 	 * @license
 	 * lodash <https://lodash.com/>
@@ -2001,7 +2201,7 @@ webpackJsonp([2],{
 	  var undefined;
 
 	  /** Used as the semantic version number. */
-	  var VERSION = '4.16.3';
+	  var VERSION = '4.16.4';
 
 	  /** Used as the size to enable large array optimizations. */
 	  var LARGE_ARRAY_SIZE = 200;
@@ -4376,18 +4576,26 @@ webpackJsonp([2],{
 	     * @returns {Array} Returns the array of property names.
 	     */
 	    function arrayLikeKeys(value, inherited) {
-	      // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
-	      // Safari 9 makes `arguments.length` enumerable in strict mode.
-	      var result = (isArray(value) || isArguments(value))
-	        ? baseTimes(value.length, String)
-	        : [];
-
-	      var length = result.length,
-	          skipIndexes = !!length;
+	      var isArr = isArray(value),
+	          isArg = !isArr && isArguments(value),
+	          isBuff = !isArr && !isArg && isBuffer(value),
+	          isType = !isArr && !isArg && !isBuff && isTypedArray(value),
+	          skipIndexes = isArr || isArg || isBuff || isType,
+	          result = skipIndexes ? baseTimes(value.length, String) : [],
+	          length = result.length;
 
 	      for (var key in value) {
 	        if ((inherited || hasOwnProperty.call(value, key)) &&
-	            !(skipIndexes && (key == 'length' || isIndex(key, length)))) {
+	            !(skipIndexes && (
+	               // Safari 9 has enumerable `arguments.length` in strict mode.
+	               key == 'length' ||
+	               // Node.js 0.10 has enumerable non-index properties on buffers.
+	               (isBuff && (key == 'offset' || key == 'parent')) ||
+	               // PhantomJS 2 has enumerable non-index properties on typed arrays.
+	               (isType && (key == 'buffer' || key == 'byteLength' || key == 'byteOffset')) ||
+	               // Skip index properties.
+	               isIndex(key, length)
+	            ))) {
 	          result.push(key);
 	        }
 	      }
@@ -4415,7 +4623,7 @@ webpackJsonp([2],{
 	     * @returns {Array} Returns the random elements.
 	     */
 	    function arraySampleSize(array, n) {
-	      return shuffleSelf(copyArray(array), n);
+	      return shuffleSelf(copyArray(array), baseClamp(n, 0, array.length));
 	    }
 
 	    /**
@@ -4651,9 +4859,7 @@ webpackJsonp([2],{
 	      }
 	      stack.set(value, result);
 
-	      if (!isArr) {
-	        var props = isFull ? getAllKeys(value) : keys(value);
-	      }
+	      var props = isArr ? undefined : (isFull ? getAllKeys : keys)(value);
 	      arrayEach(props || value, function(subValue, key) {
 	        if (props) {
 	          key = subValue;
@@ -5188,6 +5394,17 @@ webpackJsonp([2],{
 	    }
 
 	    /**
+	     * The base implementation of `_.isArguments`.
+	     *
+	     * @private
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+	     */
+	    function baseIsArguments(value) {
+	      return isObjectLike(value) && objectToString.call(value) == argsTag;
+	    }
+
+	    /**
 	     * The base implementation of `_.isArrayBuffer` without Node.js optimizations.
 	     *
 	     * @private
@@ -5563,14 +5780,7 @@ webpackJsonp([2],{
 	      if (object === source) {
 	        return;
 	      }
-	      if (!(isArray(source) || isTypedArray(source))) {
-	        var props = baseKeysIn(source);
-	      }
-	      arrayEach(props || source, function(srcValue, key) {
-	        if (props) {
-	          key = srcValue;
-	          srcValue = source[key];
-	        }
+	      baseFor(source, function(srcValue, key) {
 	        if (isObject(srcValue)) {
 	          stack || (stack = new Stack);
 	          baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
@@ -5585,7 +5795,7 @@ webpackJsonp([2],{
 	          }
 	          assignMergeValue(object, key, newValue);
 	        }
-	      });
+	      }, keysIn);
 	    }
 
 	    /**
@@ -5620,15 +5830,20 @@ webpackJsonp([2],{
 
 	      if (isCommon) {
 	        var isArr = isArray(srcValue),
-	            isTyped = !isArr && isTypedArray(srcValue);
+	            isBuff = !isArr && isBuffer(srcValue),
+	            isTyped = !isArr && !isBuff && isTypedArray(srcValue);
 
 	        newValue = srcValue;
-	        if (isArr || isTyped) {
+	        if (isArr || isBuff || isTyped) {
 	          if (isArray(objValue)) {
 	            newValue = objValue;
 	          }
 	          else if (isArrayLikeObject(objValue)) {
 	            newValue = copyArray(objValue);
+	          }
+	          else if (isBuff) {
+	            isCommon = false;
+	            newValue = cloneBuffer(srcValue, true);
 	          }
 	          else if (isTyped) {
 	            isCommon = false;
@@ -5926,7 +6141,8 @@ webpackJsonp([2],{
 	     * @returns {Array} Returns the random elements.
 	     */
 	    function baseSampleSize(collection, n) {
-	      return shuffleSelf(values(collection), n);
+	      var array = values(collection);
+	      return shuffleSelf(array, baseClamp(n, 0, array.length));
 	    }
 
 	    /**
@@ -6202,6 +6418,10 @@ webpackJsonp([2],{
 	      // Exit early for strings to avoid a performance hit in some environments.
 	      if (typeof value == 'string') {
 	        return value;
+	      }
+	      if (isArray(value)) {
+	        // Recursively convert values (susceptible to call stack limits).
+	        return arrayMap(value, baseToString) + '';
 	      }
 	      if (isSymbol(value)) {
 	        return symbolToString ? symbolToString.call(value) : '';
@@ -8598,7 +8818,7 @@ webpackJsonp([2],{
 	          length = array.length,
 	          lastIndex = length - 1;
 
-	      size = size === undefined ? length : baseClamp(size, 0, length);
+	      size = size === undefined ? length : size;
 	      while (++index < size) {
 	        var rand = baseRandom(index, lastIndex),
 	            value = array[rand];
@@ -13171,11 +13391,10 @@ webpackJsonp([2],{
 	     * _.isArguments([1, 2, 3]);
 	     * // => false
 	     */
-	    function isArguments(value) {
-	      // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
-	      return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
-	        (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
-	    }
+	    var isArguments = baseIsArguments(function() { return arguments; }()) ? baseIsArguments : function(value) {
+	      return isObjectLike(value) && hasOwnProperty.call(value, 'callee') &&
+	        !propertyIsEnumerable.call(value, 'callee');
+	    };
 
 	    /**
 	     * Checks if `value` is classified as an `Array` object.
@@ -13395,8 +13614,8 @@ webpackJsonp([2],{
 	     */
 	    function isEmpty(value) {
 	      if (isArrayLike(value) &&
-	          (isArray(value) || typeof value == 'string' ||
-	            typeof value.splice == 'function' || isBuffer(value) || isArguments(value))) {
+	          (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' ||
+	            isBuffer(value) || isTypedArray(value) || isArguments(value))) {
 	        return !value.length;
 	      }
 	      var tag = getTag(value);
@@ -13404,7 +13623,7 @@ webpackJsonp([2],{
 	        return !value.size;
 	      }
 	      if (isPrototype(value)) {
-	        return !nativeKeys(value).length;
+	        return !baseKeys(value).length;
 	      }
 	      for (var key in value) {
 	        if (hasOwnProperty.call(value, key)) {
@@ -13559,7 +13778,7 @@ webpackJsonp([2],{
 	     */
 	    function isFunction(value) {
 	      // The use of `Object#toString` avoids issues with the `typeof` operator
-	      // in Safari 8-9 which returns 'object' for typed array and other constructors.
+	      // in Safari 9 which returns 'object' for typed array and other constructors.
 	      var tag = isObject(value) ? objectToString.call(value) : '';
 	      return tag == funcTag || tag == genTag || tag == proxyTag;
 	    }
@@ -14449,8 +14668,8 @@ webpackJsonp([2],{
 	     * @memberOf _
 	     * @since 4.0.0
 	     * @category Lang
-	     * @param {*} value The value to process.
-	     * @returns {string} Returns the string.
+	     * @param {*} value The value to convert.
+	     * @returns {string} Returns the converted string.
 	     * @example
 	     *
 	     * _.toString(null);
@@ -15634,22 +15853,23 @@ webpackJsonp([2],{
 	     * // => { '1': ['a', 'c'], '2': ['b'] }
 	     */
 	    function transform(object, iteratee, accumulator) {
-	      var isArr = isArray(object) || isTypedArray(object);
-	      iteratee = getIteratee(iteratee, 4);
+	      var isArr = isArray(object),
+	          isArrLike = isArr || isBuffer(object) || isTypedArray(object);
 
+	      iteratee = getIteratee(iteratee, 4);
 	      if (accumulator == null) {
-	        if (isArr || isObject(object)) {
-	          var Ctor = object.constructor;
-	          if (isArr) {
-	            accumulator = isArray(object) ? new Ctor : [];
-	          } else {
-	            accumulator = isFunction(Ctor) ? baseCreate(getPrototype(object)) : {};
-	          }
-	        } else {
+	        var Ctor = object && object.constructor;
+	        if (isArrLike) {
+	          accumulator = isArr ? new Ctor : [];
+	        }
+	        else if (isObject(object)) {
+	          accumulator = isFunction(Ctor) ? baseCreate(getPrototype(object)) : {};
+	        }
+	        else {
 	          accumulator = {};
 	        }
 	      }
-	      (isArr ? arrayEach : baseForOwn)(object, function(value, index, object) {
+	      (isArrLike ? arrayEach : baseForOwn)(object, function(value, index, object) {
 	        return iteratee(accumulator, value, index, object);
 	      });
 	      return accumulator;
@@ -18950,6 +19170,7 @@ webpackJsonp([2],{
 	  }
 	}.call(this));
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(734)(module)))
 
 /***/ },
@@ -19158,13 +19379,26 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 76:
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(731)(module)))
+
+/***/ },
+
+/***/ 73:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/** @module path */ /** for typedoc */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(15);
 	var param_1 = __webpack_require__(49);
+=======
+	var common_1 = __webpack_require__(4);
+	var hof_1 = __webpack_require__(15);
+	var param_1 = __webpack_require__(47);
+>>>>>>> Table directive to angular 2
 	/**
 	 * A node in a [[TreeChanges]] path
 	 *
@@ -19248,12 +19482,20 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 77:
+=======
+/***/ 74:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module transition */ /** for typedoc */
 	"use strict";
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var common_1 = __webpack_require__(5);
+=======
+	var common_1 = __webpack_require__(4);
+>>>>>>> Table directive to angular 2
 	var strings_1 = __webpack_require__(34);
 	(function (RejectType) {
 	    RejectType[RejectType["SUPERSEDED"] = 2] = "SUPERSEDED";
@@ -19325,6 +19567,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 78:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -19413,6 +19656,9 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 94:
+=======
+/***/ 89:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19502,15 +19748,50 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 95:
+=======
+/***/ 90:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Main entry point for angular 1.x build
+	 * @module ng1
+	 */
+	/** for typedoc */
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	__export(__webpack_require__(271));
+	__export(__webpack_require__(115));
+	__export(__webpack_require__(116));
+	__export(__webpack_require__(172));
+	__webpack_require__(278);
+	__webpack_require__(281);
+	__webpack_require__(279);
+	__webpack_require__(283);
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = "ui.router";
+	//# sourceMappingURL=ng1.js.map
+
+/***/ },
+
+/***/ 91:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module path */ /** for typedoc */
 	"use strict";
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(15);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var targetState_1 = __webpack_require__(68);
 	var node_1 = __webpack_require__(76);
+=======
+	var targetState_1 = __webpack_require__(65);
+	var node_1 = __webpack_require__(73);
+>>>>>>> Table directive to angular 2
 	/**
 	 * This class contains functions which convert TargetStates, Nodes and paths from one type to another.
 	 */
@@ -19637,7 +19918,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 96:
+=======
+/***/ 92:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19656,6 +19941,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	/**
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	 * Created by vjain3 on 3/8/16.
 	 */
 	var core_1 = __webpack_require__(4);
@@ -19715,11 +20001,142 @@ webpackJsonp([2],{
 	    var _a;
 	}(collection_1.Collection));
 	exports.RulesModel = RulesModel;
+=======
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	var collection_1 = __webpack_require__(41);
+	var ApplicationGroupsModel = (function (_super) {
+	    __extends(ApplicationGroupsModel, _super);
+	    function ApplicationGroupsModel(http) {
+	        _super.call(this, http, ContivGlobals.APPLICATIONGROUPS_ENDPOINT);
+	    }
+	    /**
+	     * Generate key for application group
+	     * @param group
+	     */
+	    ApplicationGroupsModel.prototype.generateKey = function (group) {
+	        return group.tenantName + ':' + group.groupName;
+	    };
+	    ApplicationGroupsModel.prototype.get = function (reload) {
+	        return _super.prototype.get.call(this, reload)
+	            .then(function (result) {
+	            //add logic for result processing
+	            var items = [];
+	            for (var _i = 0, result_1 = result; _i < result_1.length; _i++) {
+	                var item = result_1[_i];
+	                if (typeof item.policies === 'undefined')
+	                    item['policies'] = [];
+	                if (typeof item.networkName === 'undefined')
+	                    item['networkName'] = '';
+	                items.push(item);
+	            }
+	            return items;
+	        });
+	    };
+	    ApplicationGroupsModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], ApplicationGroupsModel);
+	    return ApplicationGroupsModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.ApplicationGroupsModel = ApplicationGroupsModel;
 	
 
 /***/ },
 
+/***/ 93:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	var collection_1 = __webpack_require__(41);
+	var NetworksModel = (function (_super) {
+	    __extends(NetworksModel, _super);
+	    function NetworksModel(http) {
+	        _super.call(this, http, ContivGlobals.NETWORKS_ENDPOINT);
+	    }
+	    NetworksModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], NetworksModel);
+	    return NetworksModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.NetworksModel = NetworksModel;
+	
+
+/***/ },
+
+/***/ 94:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	var collection_1 = __webpack_require__(41);
+	var PoliciesModel = (function (_super) {
+	    __extends(PoliciesModel, _super);
+	    function PoliciesModel(http) {
+	        _super.call(this, http, ContivGlobals.POLICIES_ENDPOINT);
+	    }
+	    /**
+	     * Generate policy key to save policy on server
+	     * @param policy
+	     * @returns {string}
+	     */
+	    PoliciesModel.prototype.generateKey = function (policy) {
+	        return policy.tenantName + ':' + policy.policyName;
+	    };
+	    PoliciesModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], PoliciesModel);
+	    return PoliciesModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.PoliciesModel = PoliciesModel;
+>>>>>>> Table directive to angular 2
+	
+
+/***/ },
+
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 116:
+=======
+/***/ 114:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports) {
 
 	/** @module common */ /** for typedoc */
@@ -19768,7 +20185,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 117:
+=======
+/***/ 115:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -19783,11 +20204,16 @@ webpackJsonp([2],{
 	 */
 	"use strict";
 	/** for typedoc */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var router_1 = __webpack_require__(120);
+=======
+	var router_1 = __webpack_require__(118);
+>>>>>>> Table directive to angular 2
 	var coreservices_1 = __webpack_require__(18);
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(15);
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var resolveService_1 = __webpack_require__(282);
 	var trace_1 = __webpack_require__(40);
 	var views_1 = __webpack_require__(118);
@@ -19795,6 +20221,15 @@ webpackJsonp([2],{
 	var stateProvider_1 = __webpack_require__(172);
 	var onEnterExitRetain_1 = __webpack_require__(284);
 	var angular = __webpack_require__(69);
+=======
+	var resolveService_1 = __webpack_require__(280);
+	var trace_1 = __webpack_require__(39);
+	var views_1 = __webpack_require__(116);
+	var templateFactory_1 = __webpack_require__(173);
+	var stateProvider_1 = __webpack_require__(172);
+	var onEnterExitRetain_1 = __webpack_require__(282);
+	var angular = __webpack_require__(66);
+>>>>>>> Table directive to angular 2
 	/** @hidden */
 	var app = angular.module("ui.router.angular1", []);
 	/**
@@ -20124,12 +20559,17 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 118:
+=======
+/***/ 116:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var common_1 = __webpack_require__(5);
 	var strings_1 = __webpack_require__(34);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var view_1 = __webpack_require__(129);
 	var predicates_1 = __webpack_require__(9);
 	var coreservices_1 = __webpack_require__(18);
@@ -20138,6 +20578,16 @@ webpackJsonp([2],{
 	var resolveContext_1 = __webpack_require__(41);
 	var resolvable_1 = __webpack_require__(57);
 	var angular = __webpack_require__(69);
+=======
+	var view_1 = __webpack_require__(127);
+	var predicates_1 = __webpack_require__(9);
+	var coreservices_1 = __webpack_require__(18);
+	var trace_1 = __webpack_require__(39);
+	var templateFactory_1 = __webpack_require__(173);
+	var resolveContext_1 = __webpack_require__(40);
+	var resolvable_1 = __webpack_require__(56);
+	var angular = __webpack_require__(66);
+>>>>>>> Table directive to angular 2
 	exports.ng1ViewConfigFactory = function (path, view) {
 	    return [new Ng1ViewConfig(path, view)];
 	};
@@ -20274,7 +20724,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 119:
+=======
+/***/ 117:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20409,16 +20863,27 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 120:
+=======
+/***/ 118:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/** @module core */ /** */
 	var urlMatcherFactory_1 = __webpack_require__(183);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var urlRouter_1 = __webpack_require__(128);
 	var urlRouter_2 = __webpack_require__(128);
 	var transitionService_1 = __webpack_require__(126);
 	var view_1 = __webpack_require__(129);
+=======
+	var urlRouter_1 = __webpack_require__(126);
+	var urlRouter_2 = __webpack_require__(126);
+	var transitionService_1 = __webpack_require__(124);
+	var view_1 = __webpack_require__(127);
+>>>>>>> Table directive to angular 2
 	var stateRegistry_1 = __webpack_require__(179);
 	var stateService_1 = __webpack_require__(180);
 	var globals_1 = __webpack_require__(171);
@@ -20452,7 +20917,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 121:
+=======
+/***/ 119:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20461,8 +20930,13 @@ webpackJsonp([2],{
 	var predicates_1 = __webpack_require__(9);
 	var strings_1 = __webpack_require__(34);
 	var hof_1 = __webpack_require__(15);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var param_1 = __webpack_require__(49);
 	var resolvable_1 = __webpack_require__(57);
+=======
+	var param_1 = __webpack_require__(47);
+	var resolvable_1 = __webpack_require__(56);
+>>>>>>> Table directive to angular 2
 	var coreservices_1 = __webpack_require__(18);
 	var parseUrl = function (url) {
 	    if (!predicates_1.isString(url))
@@ -20728,7 +21202,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 122:
+=======
+/***/ 120:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module state */ /** for typedoc */
@@ -20819,14 +21297,22 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 123:
+=======
+/***/ 121:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/** @module transition */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var glob_1 = __webpack_require__(94);
+=======
+	var glob_1 = __webpack_require__(89);
+>>>>>>> Table directive to angular 2
 	/**
 	 * Determines if the given state matches the matchCriteria
 	 *
@@ -20957,7 +21443,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 124:
+=======
+/***/ 122:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -20968,6 +21458,7 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
 	var hof_1 = __webpack_require__(15);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var transitionHook_1 = __webpack_require__(125);
 	var hookRegistry_1 = __webpack_require__(123);
 	var hookBuilder_1 = __webpack_require__(181);
@@ -20979,6 +21470,19 @@ webpackJsonp([2],{
 	var rejectFactory_1 = __webpack_require__(77);
 	var resolveContext_1 = __webpack_require__(41);
 	var router_1 = __webpack_require__(120);
+=======
+	var transitionHook_1 = __webpack_require__(123);
+	var hookRegistry_1 = __webpack_require__(121);
+	var hookBuilder_1 = __webpack_require__(181);
+	var node_1 = __webpack_require__(73);
+	var pathFactory_1 = __webpack_require__(91);
+	var targetState_1 = __webpack_require__(65);
+	var param_1 = __webpack_require__(47);
+	var resolvable_1 = __webpack_require__(56);
+	var rejectFactory_1 = __webpack_require__(74);
+	var resolveContext_1 = __webpack_require__(40);
+	var router_1 = __webpack_require__(118);
+>>>>>>> Table directive to angular 2
 	var transitionCount = 0;
 	var stateSelf = hof_1.prop("self");
 	/**
@@ -21464,7 +21968,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 125:
+=======
+/***/ 123:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21474,8 +21982,13 @@ webpackJsonp([2],{
 	var hof_1 = __webpack_require__(15);
 	var trace_1 = __webpack_require__(40);
 	var coreservices_1 = __webpack_require__(18);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var rejectFactory_1 = __webpack_require__(77);
 	var targetState_1 = __webpack_require__(68);
+=======
+	var rejectFactory_1 = __webpack_require__(74);
+	var targetState_1 = __webpack_require__(65);
+>>>>>>> Table directive to angular 2
 	var defaultOptions = {
 	    async: true,
 	    rejectIfSuperseded: true,
@@ -21582,6 +22095,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 126:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -21594,6 +22108,20 @@ webpackJsonp([2],{
 	var redirectTo_1 = __webpack_require__(276);
 	var onEnterExitRetain_1 = __webpack_require__(275);
 	var lazyLoadStates_1 = __webpack_require__(274);
+=======
+/***/ 124:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var transition_1 = __webpack_require__(122);
+	var hookRegistry_1 = __webpack_require__(121);
+	var resolve_1 = __webpack_require__(275);
+	var views_1 = __webpack_require__(277);
+	var url_1 = __webpack_require__(276);
+	var redirectTo_1 = __webpack_require__(274);
+	var onEnterExitRetain_1 = __webpack_require__(273);
+	var lazyLoadStates_1 = __webpack_require__(272);
+>>>>>>> Table directive to angular 2
 	/**
 	 * The default [[Transition]] options.
 	 *
@@ -21692,7 +22220,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 127:
+=======
+/***/ 125:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21724,7 +22256,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 128:
+=======
+/***/ 126:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22123,7 +22659,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 129:
+=======
+/***/ 127:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22362,7 +22902,10 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 130:
+=======
+/***/ 128:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22378,6 +22921,61 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/17/16.
 	 */
+	var core_1 = __webpack_require__(5);
+	var common_1 = __webpack_require__(55);
+	var errormessagedirective_1 = __webpack_require__(185);
+	var tabledirective_1 = __webpack_require__(186);
+	var forms_1 = __webpack_require__(72);
+	var DirectivesModule = (function () {
+	    function DirectivesModule() {
+	    }
+	    DirectivesModule = __decorate([
+	        core_1.NgModule({
+	            imports: [
+	                common_1.CommonModule, forms_1.FormsModule
+	            ],
+	            declarations: [
+	                errormessagedirective_1.ErrorMessageComponent,
+	                tabledirective_1.CtvTableComponent,
+	                tabledirective_1.CtvThComponent,
+	                tabledirective_1.CtvSearchComponent,
+	                tabledirective_1.CtvTpaginationComponent
+	            ],
+	            exports: [
+	                errormessagedirective_1.ErrorMessageComponent,
+	                tabledirective_1.CtvTableComponent,
+	                tabledirective_1.CtvThComponent,
+	                tabledirective_1.CtvSearchComponent,
+	                tabledirective_1.CtvTpaginationComponent
+	            ]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], DirectivesModule);
+	    return DirectivesModule;
+	}());
+	exports.DirectivesModule = DirectivesModule;
+	
+
+/***/ },
+
+/***/ 129:
+>>>>>>> Table directive to angular 2
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 10/17/16.
+	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var common_1 = __webpack_require__(48);
 	var errormessagedirective_1 = __webpack_require__(187);
@@ -22404,11 +23002,41 @@ webpackJsonp([2],{
 	    return DirectivesModule;
 	}());
 	exports.DirectivesModule = DirectivesModule;
+=======
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	var collection_1 = __webpack_require__(41);
+	var NetprofilesModel = (function (_super) {
+	    __extends(NetprofilesModel, _super);
+	    function NetprofilesModel(http) {
+	        _super.call(this, http, ContivGlobals.NETPROFILES_ENDPOINT);
+	    }
+	    /**
+	     * Generate policy key to save policy on server
+	     * @param policy
+	     * @returns {string}
+	     */
+	    NetprofilesModel.prototype.generateKey = function (policy) {
+	        return policy.tenantName + ':' + policy.profileName;
+	    };
+	    NetprofilesModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], NetprofilesModel);
+	    return NetprofilesModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.NetprofilesModel = NetprofilesModel;
+>>>>>>> Table directive to angular 2
 	
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 131:
+=======
+/***/ 130:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22429,10 +23057,17 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/22/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(19);
 	var basecollection_1 = __webpack_require__(188);
 	__webpack_require__(66);
+=======
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	var basecollection_1 = __webpack_require__(187);
+	__webpack_require__(64);
+>>>>>>> Table directive to angular 2
 	var NodesModel = (function (_super) {
 	    __extends(NodesModel, _super);
 	    function NodesModel(http) {
@@ -22538,7 +23173,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 132:
+=======
+/***/ 131:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22559,10 +23198,17 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 4/18/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(19);
 	var collection_1 = __webpack_require__(42);
 	var _ = __webpack_require__(65);
+=======
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	var collection_1 = __webpack_require__(41);
+	var _ = __webpack_require__(70);
+>>>>>>> Table directive to angular 2
 	var StoragePoliciesModel = (function (_super) {
 	    __extends(StoragePoliciesModel, _super);
 	    function StoragePoliciesModel(http) {
@@ -22602,7 +23248,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 133:
+=======
+/***/ 132:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22623,11 +23273,19 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/22/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(19);
 	var collection_1 = __webpack_require__(42);
 	__webpack_require__(66);
 	var _ = __webpack_require__(65);
+=======
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	var collection_1 = __webpack_require__(41);
+	__webpack_require__(64);
+	var _ = __webpack_require__(70);
+>>>>>>> Table directive to angular 2
 	var VolumesModel = (function (_super) {
 	    __extends(VolumesModel, _super);
 	    function VolumesModel(http) {
@@ -22698,8 +23356,13 @@ webpackJsonp([2],{
 	"use strict";
 	/** @module core */ /** */
 	var stateParams_1 = __webpack_require__(175);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var queue_1 = __webpack_require__(116);
 	var common_1 = __webpack_require__(5);
+=======
+	var queue_1 = __webpack_require__(114);
+	var common_1 = __webpack_require__(4);
+>>>>>>> Table directive to angular 2
 	/**
 	 * Global mutable state
 	 */
@@ -22892,8 +23555,13 @@ webpackJsonp([2],{
 	/** @module view */ /** for typedoc */
 	var predicates_1 = __webpack_require__(9);
 	var coreservices_1 = __webpack_require__(18);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var common_1 = __webpack_require__(5);
 	var resolvable_1 = __webpack_require__(57);
+=======
+	var common_1 = __webpack_require__(4);
+	var resolvable_1 = __webpack_require__(56);
+>>>>>>> Table directive to angular 2
 	/**
 	 * Service which manages loading of templates from a ViewConfig.
 	 */
@@ -22981,7 +23649,11 @@ webpackJsonp([2],{
 	var predicates_1 = __webpack_require__(9);
 	var hof_1 = __webpack_require__(15);
 	var coreservices_1 = __webpack_require__(18);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var type_1 = __webpack_require__(119);
+=======
+	var type_1 = __webpack_require__(117);
+>>>>>>> Table directive to angular 2
 	// Use tildes to pre-encode slashes.
 	// If the slashes are simply URLEncoded, the browser can choose to pre-decode them,
 	// and bidirectional encoding/decoding fails.
@@ -23155,8 +23827,13 @@ webpackJsonp([2],{
 	"use strict";
 	/** @module state */ /** for typedoc */
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var glob_1 = __webpack_require__(94);
 	var common_1 = __webpack_require__(5);
+=======
+	var glob_1 = __webpack_require__(89);
+	var common_1 = __webpack_require__(4);
+>>>>>>> Table directive to angular 2
 	var StateMatcher = (function () {
 	    function StateMatcher(_states) {
 	        this._states = _states;
@@ -23221,7 +23898,11 @@ webpackJsonp([2],{
 	/** @module state */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var stateObject_1 = __webpack_require__(122);
+=======
+	var stateObject_1 = __webpack_require__(120);
+>>>>>>> Table directive to angular 2
 	var StateQueueManager = (function () {
 	    function StateQueueManager(states, builder, $urlRouterProvider, listeners) {
 	        this.states = states;
@@ -23313,9 +23994,15 @@ webpackJsonp([2],{
 	/** @module state */ /** for typedoc */
 	"use strict";
 	var stateMatcher_1 = __webpack_require__(177);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var stateBuilder_1 = __webpack_require__(121);
 	var stateQueueManager_1 = __webpack_require__(178);
 	var common_1 = __webpack_require__(5);
+=======
+	var stateBuilder_1 = __webpack_require__(119);
+	var stateQueueManager_1 = __webpack_require__(178);
+	var common_1 = __webpack_require__(4);
+>>>>>>> Table directive to angular 2
 	var StateRegistry = (function () {
 	    function StateRegistry(urlMatcherFactory, urlRouterProvider) {
 	        this.urlRouterProvider = urlRouterProvider;
@@ -23458,6 +24145,7 @@ webpackJsonp([2],{
 	/** @module state */ /** */
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var queue_1 = __webpack_require__(116);
 	var coreservices_1 = __webpack_require__(18);
 	var pathFactory_1 = __webpack_require__(95);
@@ -23470,6 +24158,20 @@ webpackJsonp([2],{
 	var common_2 = __webpack_require__(5);
 	var common_3 = __webpack_require__(5);
 	var resolveContext_1 = __webpack_require__(41);
+=======
+	var queue_1 = __webpack_require__(114);
+	var coreservices_1 = __webpack_require__(18);
+	var pathFactory_1 = __webpack_require__(91);
+	var node_1 = __webpack_require__(73);
+	var transitionService_1 = __webpack_require__(124);
+	var rejectFactory_1 = __webpack_require__(74);
+	var targetState_1 = __webpack_require__(65);
+	var param_1 = __webpack_require__(47);
+	var glob_1 = __webpack_require__(89);
+	var common_2 = __webpack_require__(4);
+	var common_3 = __webpack_require__(4);
+	var resolveContext_1 = __webpack_require__(40);
+>>>>>>> Table directive to angular 2
 	var StateService = (function () {
 	    /** @hidden */
 	    function StateService(router) {
@@ -24025,8 +24727,13 @@ webpackJsonp([2],{
 	"use strict";
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var transitionHook_1 = __webpack_require__(125);
 	var resolveContext_1 = __webpack_require__(41);
+=======
+	var transitionHook_1 = __webpack_require__(123);
+	var resolveContext_1 = __webpack_require__(40);
+>>>>>>> Table directive to angular 2
 	/**
 	 * This class returns applicable TransitionHooks for a specific Transition instance.
 	 *
@@ -24596,8 +25303,13 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
 	var urlMatcher_1 = __webpack_require__(182);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var urlMatcherConfig_1 = __webpack_require__(127);
 	var param_1 = __webpack_require__(49);
+=======
+	var urlMatcherConfig_1 = __webpack_require__(125);
+	var param_1 = __webpack_require__(47);
+>>>>>>> Table directive to angular 2
 	var paramTypes_1 = __webpack_require__(174);
 	/** @hidden */
 	function getDefaultConfig() {
@@ -24719,6 +25431,7 @@ webpackJsonp([2],{
 /***/ 184:
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	"use strict";
 	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
 	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -24826,6 +25539,11 @@ webpackJsonp([2],{
 /***/ 185:
 /***/ function(module, exports, __webpack_require__) {
 
+=======
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
+>>>>>>> Table directive to angular 2
 	"use strict";
 	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
 	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -24839,6 +25557,7 @@ webpackJsonp([2],{
 	var __param = (this && this.__param) || function (paramIndex, decorator) {
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	/**
 	 * Created by vjain3 on 3/15/16.
 	 */
@@ -24967,11 +25686,68 @@ webpackJsonp([2],{
 	    return CollapsibleComponent;
 	}());
 	exports.CollapsibleComponent = CollapsibleComponent;
+=======
+	var core_1 = __webpack_require__(5);
+	var applicationgroupsmodel_1 = __webpack_require__(92);
+	var crudhelperservice_1 = __webpack_require__(67);
+	var rxjs_1 = __webpack_require__(155);
+	var ng1_1 = __webpack_require__(90);
+	var AppGrouplistComponent = (function () {
+	    function AppGrouplistComponent($state, appGroupModel, crudHelperService) {
+	        var _this = this;
+	        this.$state = $state;
+	        debugger;
+	        this.appGroupModel = appGroupModel;
+	        this.crudHelperService = crudHelperService;
+	        this.applicationGroupListCtrl = this;
+	        this['showLoader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getApplicationGroup(true);
+	        });
+	    }
+	    AppGrouplistComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.getApplicationGroup(false);
+	    };
+	    AppGrouplistComponent.prototype.getApplicationGroup = function (reload) {
+	        debugger;
+	        var applicationGroupListCtrl = this;
+	        this.appGroupModel.get(reload)
+	            .then(function (result) {
+	            applicationGroupListCtrl['groups'] = result;
+	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
+	        }, function (error) {
+	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
+	        });
+	    };
+	    AppGrouplistComponent.prototype.create = function () {
+	        this.$state.go('contiv.menu.applicationgroups.create');
+	    };
+	    AppGrouplistComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    AppGrouplistComponent = __decorate([
+	        core_1.Component({
+	            selector: 'app-group',
+	            template: __webpack_require__(458)
+	        }),
+	        __param(0, core_1.Inject('$state')), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
+	    ], AppGrouplistComponent);
+	    return AppGrouplistComponent;
+	    var _a, _b, _c;
+	}());
+	exports.AppGrouplistComponent = AppGrouplistComponent;
+>>>>>>> Table directive to angular 2
 	
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 187:
+=======
+/***/ 185:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -24987,7 +25763,11 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 4/28/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(5);
+>>>>>>> Table directive to angular 2
 	var ErrorMessageComponent = (function () {
 	    function ErrorMessageComponent() {
 	        this.showError = true;
@@ -25020,12 +25800,314 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 188:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	__webpack_require__(66);
 	var _ = __webpack_require__(65);
+=======
+/***/ 186:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/10/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(5);
+	var util_1 = __webpack_require__(730);
+	var _ = __webpack_require__(70);
+	var CtvTableComponent = (function () {
+	    function CtvTableComponent() {
+	        debugger;
+	        this.filteredinputitems = new core_1.EventEmitter();
+	        this.table = { chunks: [], pageNo: 0, tableSize: 12, searchText: '' };
+	        this.pageChunks = [];
+	        this.defaultSortColumn = '';
+	        this.size = 12;
+	        this.items = [];
+	        this.sortObj = this.initializeSort(this.defaultSortColumn);
+	    }
+	    CtvTableComponent.prototype.ngOnInit = function () {
+	        if (isNaN(this.size))
+	            this.size = 12;
+	        this.table.tableSize = this.size;
+	        this.sortObj = this.initializeSort(this.defaultSortColumn);
+	        this.showChunk(this.table.pageNo, this.table.searchText);
+	    };
+	    CtvTableComponent.prototype.ngOnChanges = function () {
+	        debugger;
+	        this.showChunk(this.table.pageNo, this.table.searchText);
+	    };
+	    CtvTableComponent.prototype.showChunk = function (pageNo, searchText) {
+	        debugger;
+	        this.table.searchText = searchText;
+	        if (util_1.isUndefined(pageNo) || pageNo < 0) {
+	            pageNo = 0;
+	        }
+	        this.table.pageNo = pageNo;
+	        if (!(util_1.isUndefined(this.items))) {
+	            var searchTextFilteredItems = this.filterItems(searchText);
+	            var sortedItems = this.sort(searchTextFilteredItems);
+	            var noOfChunks = Math.ceil(sortedItems.length / this.table.tableSize);
+	            if (noOfChunks == 0) {
+	                noOfChunks = 1;
+	            }
+	            this.table.chunks = [];
+	            for (var i = 0; i < noOfChunks; i++) {
+	                this.table.chunks.push({ selected: false, pageNo: i });
+	            }
+	            if (pageNo >= this.table.chunks.length) {
+	                this.table.pageNo = 0;
+	            }
+	            this.table.chunks[this.table.pageNo]['selected'] = true;
+	            if (this.table.chunks.length > 5) {
+	                var sliceStart, sliceEnd;
+	                sliceStart = this.table.pageNo - 2;
+	                sliceEnd = this.table.pageNo + 3;
+	                if (sliceStart < 0) {
+	                    sliceEnd = sliceEnd = sliceStart;
+	                    sliceStart = 0;
+	                }
+	                if (sliceEnd > this.table.chunks.length) {
+	                    sliceStart = sliceStart = (sliceEnd = this.table.chunks.length);
+	                    sliceEnd = this.table.chunks.length;
+	                }
+	                this.pageChunks = this.table.chunks.slice(sliceStart, sliceEnd);
+	            }
+	            else {
+	                this.pageChunks = this.table.chunks;
+	            }
+	            var filtitems = this.limitItems(this.table.tableSize, this.table.pageNo * this.table.tableSize, sortedItems);
+	            this.filteredinputitems.emit(filtitems);
+	        }
+	        return false;
+	    };
+	    CtvTableComponent.prototype.showPrevChunk = function () {
+	        var prevChunk;
+	        if (this.table.pageNo <= 0) {
+	            prevChunk = 0;
+	        }
+	        else {
+	            prevChunk = this.table.pageNo - 1;
+	        }
+	        return this.showChunk(prevChunk, this.table.searchText);
+	    };
+	    CtvTableComponent.prototype.showNextChunk = function () {
+	        var nextChunk;
+	        nextChunk = this.table.pageNo + 1;
+	        if (nextChunk > this.table.chunks.length - 1) {
+	            nextChunk = this.table.chunks.length - 1;
+	        }
+	        return this.showChunk(nextChunk, this.table.searchText);
+	    };
+	    CtvTableComponent.prototype.filterItems = function (searchText) {
+	        var selectedItems = [];
+	        if (searchText.length === 0) {
+	            return this.items;
+	        }
+	        for (var _i = 0, _a = this.items; _i < _a.length; _i++) {
+	            var item = _a[_i];
+	            var str = JSON.stringify(item);
+	            if (str.search(searchText) > -1) {
+	                selectedItems.push(item);
+	            }
+	        }
+	        return selectedItems;
+	    };
+	    CtvTableComponent.prototype.limitItems = function (limitSize, start, items) {
+	        var selectedItems = [];
+	        for (var i = start; (i < items.length) && (i < (start + limitSize)); i++) {
+	            selectedItems.push(items[i]);
+	        }
+	        return selectedItems;
+	    };
+	    CtvTableComponent.prototype.initializeSort = function (sortfield) {
+	        return {
+	            field: sortfield,
+	            reverse: false,
+	            iconDirection: { "down": true, "up": false }
+	        };
+	    };
+	    CtvTableComponent.prototype.applysort = function (sortfield) {
+	        if (sortfield == this.sortObj.field) {
+	            this.sortObj.field = sortfield;
+	            this.sortObj.reverse = !this.sortObj.reverse;
+	            this.sortObj.iconDirection = {
+	                "down": !(this.sortObj.reverse),
+	                "up": this.sortObj.reverse
+	            };
+	        }
+	        else {
+	            this.sortObj = this.initializeSort(sortfield);
+	        }
+	        this.showChunk(this.table.pageNo, this.table.searchText);
+	    };
+	    CtvTableComponent.prototype.sort = function (items) {
+	        var sortedItems;
+	        if (this.sortObj.field == '')
+	            return items;
+	        sortedItems = _.sortBy(items, [this.sortObj.field]);
+	        if (this.sortObj.reverse)
+	            sortedItems = _.reverse(sortedItems);
+	        return sortedItems;
+	    };
+	    __decorate([
+	        core_1.Input('items'), 
+	        __metadata('design:type', Array)
+	    ], CtvTableComponent.prototype, "items", void 0);
+	    __decorate([
+	        core_1.Input('size'), 
+	        __metadata('design:type', Number)
+	    ], CtvTableComponent.prototype, "size", void 0);
+	    __decorate([
+	        core_1.Output('filtereditems'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], CtvTableComponent.prototype, "filteredinputitems", void 0);
+	    __decorate([
+	        core_1.Input('defaultSortColumn'), 
+	        __metadata('design:type', String)
+	    ], CtvTableComponent.prototype, "defaultSortColumn", void 0);
+	    CtvTableComponent = __decorate([
+	        core_1.Component({
+	            selector: 'ctv-table',
+	            templateUrl: 'components/directives/table.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], CtvTableComponent);
+	    return CtvTableComponent;
+	    var _a;
+	}());
+	exports.CtvTableComponent = CtvTableComponent;
+	var CtvThComponent = (function () {
+	    function CtvThComponent() {
+	        debugger;
+	        this.sortdata = new core_1.EventEmitter();
+	        this.sortfield = '';
+	    }
+	    CtvThComponent.prototype.sortColumn = function () {
+	        debugger;
+	        this.sortdata.emit(this.sortfield);
+	    };
+	    __decorate([
+	        core_1.Input('sortfield'), 
+	        __metadata('design:type', String)
+	    ], CtvThComponent.prototype, "sortfield", void 0);
+	    __decorate([
+	        core_1.Output('sortdata'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], CtvThComponent.prototype, "sortdata", void 0);
+	    __decorate([
+	        core_1.Input('sortobject'), 
+	        __metadata('design:type', Object)
+	    ], CtvThComponent.prototype, "sortobject", void 0);
+	    CtvThComponent = __decorate([
+	        core_1.Component({
+	            selector: "ctv-th",
+	            templateUrl: 'components/directives/tableheader.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], CtvThComponent);
+	    return CtvThComponent;
+	    var _a;
+	}());
+	exports.CtvThComponent = CtvThComponent;
+	var CtvTpaginationComponent = (function () {
+	    function CtvTpaginationComponent() {
+	        debugger;
+	        this.chunks = [];
+	        this.showPage = new core_1.EventEmitter();
+	        this.prevChunk = new core_1.EventEmitter();
+	        this.nextChunk = new core_1.EventEmitter();
+	    }
+	    CtvTpaginationComponent.prototype.showPrevChunk = function () {
+	        this.prevChunk.emit();
+	    };
+	    CtvTpaginationComponent.prototype.showNextChunk = function () {
+	        this.nextChunk.emit();
+	    };
+	    CtvTpaginationComponent.prototype.showClickedPage = function (pageNo) {
+	        this.showPage.emit(pageNo);
+	    };
+	    __decorate([
+	        core_1.Input('chunks'), 
+	        __metadata('design:type', Array)
+	    ], CtvTpaginationComponent.prototype, "chunks", void 0);
+	    __decorate([
+	        core_1.Output('showPage'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], CtvTpaginationComponent.prototype, "showPage", void 0);
+	    __decorate([
+	        core_1.Output('prevChunk'), 
+	        __metadata('design:type', (typeof (_b = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _b) || Object)
+	    ], CtvTpaginationComponent.prototype, "prevChunk", void 0);
+	    __decorate([
+	        core_1.Output('nextChunk'), 
+	        __metadata('design:type', (typeof (_c = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _c) || Object)
+	    ], CtvTpaginationComponent.prototype, "nextChunk", void 0);
+	    CtvTpaginationComponent = __decorate([
+	        core_1.Component({
+	            selector: "ctv-tpagination",
+	            templateUrl: 'components/directives/paginationmenu.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], CtvTpaginationComponent);
+	    return CtvTpaginationComponent;
+	    var _a, _b, _c;
+	}());
+	exports.CtvTpaginationComponent = CtvTpaginationComponent;
+	var CtvSearchComponent = (function () {
+	    function CtvSearchComponent() {
+	        this.searchTextChange = new core_1.EventEmitter();
+	        debugger;
+	        this.searchText = '';
+	        this.size = 30;
+	        this.placeholder = 'Search';
+	    }
+	    CtvSearchComponent.prototype.showChunk = function (event) {
+	        debugger;
+	        this.searchTextChange.emit(event);
+	    };
+	    __decorate([
+	        core_1.Input('placeholder'), 
+	        __metadata('design:type', String)
+	    ], CtvSearchComponent.prototype, "placeholder", void 0);
+	    __decorate([
+	        core_1.Output('searchTextChange'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], CtvSearchComponent.prototype, "searchTextChange", void 0);
+	    CtvSearchComponent = __decorate([
+	        core_1.Component({
+	            selector: 'ctv-search',
+	            templateUrl: 'components/directives/searchinput.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], CtvSearchComponent);
+	    return CtvSearchComponent;
+	    var _a;
+	}());
+	exports.CtvSearchComponent = CtvSearchComponent;
+	
+
+/***/ },
+
+/***/ 187:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	__webpack_require__(64);
+	var _ = __webpack_require__(70);
+>>>>>>> Table directive to angular 2
 	/**
 	 * BaseCollection class that does just fetch of the objects.
 	 * @param $http
@@ -25125,7 +26207,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 189:
+=======
+/***/ 188:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25143,7 +26229,11 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(5);
+>>>>>>> Table directive to angular 2
 	var http_1 = __webpack_require__(19);
 	var collection_1 = __webpack_require__(42);
 	var OrganizationsModel = (function (_super) {
@@ -25163,6 +26253,91 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
+=======
+/***/ 189:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/8/16.
+	 */
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	var collection_1 = __webpack_require__(41);
+	var _ = __webpack_require__(70);
+	var RulesModel = (function (_super) {
+	    __extends(RulesModel, _super);
+	    function RulesModel(http) {
+	        _super.call(this, http, ContivGlobals.RULES_ENDPOINT);
+	    }
+	    /**
+	     * Get incoming rules for a given policy and a tenant
+	     * @param policyName
+	     * @param tenantName
+	     * @returns {*|webdriver.promise.Promise}
+	     */
+	    RulesModel.prototype.getIncomingRules = function (policyName, tenantName) {
+	        var rulesmodel = this;
+	        return rulesmodel.get(false).then(function (result) {
+	            return _.filter(result, {
+	                'policyName': policyName,
+	                'direction': 'in',
+	                'tenantName': tenantName
+	            });
+	        });
+	    };
+	    /**
+	     * Get outgoing rules for a given policy and a tenant
+	     * @param policyName
+	     * @param tenantName
+	     * @returns {*|webdriver.promise.Promise}
+	     */
+	    RulesModel.prototype.getOutgoingRules = function (policyName, tenantName) {
+	        var rulesmodel = this;
+	        return rulesmodel.get(false).then(function (result) {
+	            return _.filter(result, {
+	                'policyName': policyName,
+	                'direction': 'out',
+	                'tenantName': tenantName
+	            });
+	        });
+	    };
+	    /**
+	     * Generate rule key to save rule on server
+	     * @param rule
+	     * @returns {string}
+	     */
+	    RulesModel.prototype.generateKey = function (rule) {
+	        return rule.tenantName + ':' + rule.policyName + ':' + rule.ruleId;
+	    };
+	    RulesModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], RulesModel);
+	    return RulesModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.RulesModel = RulesModel;
+	
+
+/***/ },
+
+>>>>>>> Table directive to angular 2
 /***/ 190:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -25184,7 +26359,11 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 5/11/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(5);
+>>>>>>> Table directive to angular 2
 	var http_1 = __webpack_require__(19);
 	var collection_1 = __webpack_require__(42);
 	var ServicelbsModel = (function (_super) {
@@ -25220,7 +26399,11 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 7/17/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(5);
+>>>>>>> Table directive to angular 2
 	var InspectService = (function () {
 	    function InspectService() {
 	    }
@@ -25303,9 +26486,15 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(19);
 	__webpack_require__(66);
+=======
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	__webpack_require__(64);
+>>>>>>> Table directive to angular 2
 	var NetworkService = (function () {
 	    function NetworkService(http) {
 	        this.http = http;
@@ -25352,9 +26541,15 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(19);
 	__webpack_require__(66);
+=======
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	__webpack_require__(64);
+>>>>>>> Table directive to angular 2
 	var NodesService = (function () {
 	    function NodesService(http) {
 	        this.http = http;
@@ -25538,9 +26733,15 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(19);
 	__webpack_require__(66);
+=======
+	var core_1 = __webpack_require__(5);
+	var http_1 = __webpack_require__(19);
+	__webpack_require__(64);
+>>>>>>> Table directive to angular 2
 	var VolumeSettingService = (function () {
 	    function VolumeSettingService(http) {
 	        this.http = http;
@@ -25590,6 +26791,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var Observable_1 = __webpack_require__(1);
 	var applicationgroupsmodel_1 = __webpack_require__(70);
@@ -25598,6 +26800,16 @@ webpackJsonp([2],{
 	var nodesmodel_1 = __webpack_require__(131);
 	var networksmodel_1 = __webpack_require__(79);
 	var volumesmodel_1 = __webpack_require__(133);
+=======
+	var core_1 = __webpack_require__(5);
+	var Observable_1 = __webpack_require__(1);
+	var applicationgroupsmodel_1 = __webpack_require__(92);
+	var policiesmodel_1 = __webpack_require__(94);
+	var storagepoliciesmodel_1 = __webpack_require__(131);
+	var nodesmodel_1 = __webpack_require__(130);
+	var networksmodel_1 = __webpack_require__(93);
+	var volumesmodel_1 = __webpack_require__(132);
+>>>>>>> Table directive to angular 2
 	var DashboardComponent = (function () {
 	    function DashboardComponent(nodesModel, networksModel, volumesModel, applicationGroupsModel, policiesModel, storagePoliciesModel) {
 	        this.nodesModel = nodesModel;
@@ -25691,10 +26903,77 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/14/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var ng1_1 = __webpack_require__(67);
 	var netprofilesmodel_1 = __webpack_require__(78);
 	var crudhelperservice_1 = __webpack_require__(35);
+=======
+	var core_1 = __webpack_require__(5);
+	var ng1_1 = __webpack_require__(90);
+	var netprofilesmodel_1 = __webpack_require__(129);
+	var crudhelperservice_1 = __webpack_require__(67);
+	/*
+	angular.module('contiv.networkpolicies')
+	    .config(['$stateProvider', function ($stateProvider) {
+	        $stateProvider
+	            .state('contiv.menu.networkpolicies.bandwidth.create', {
+	                url: '/create',
+	                controller: 'BandwidthPolicyCreateCtrl as bandwidthPolicyCreateCtrl',
+	                templateUrl: 'network_policies/bandwidthpolicycreate.html'
+	            })
+	        ;
+	    }])
+	    .controller('BandwidthPolicyCreateCtrl', ['$state', '$stateParams','NetprofilesModel', 'CRUDHelperService',
+	        function ($state, $stateParams, NetprofilesModel, CRUDHelperService) {
+	            var bandwidthPolicyCreateCtrl = this;
+
+	            function returnToPolicies() {
+	                $state.go('contiv.menu.networkpolicies.list.bandwidth');
+	            }
+
+	            function cancelCreating() {
+	                returnToPolicies();
+	            }
+
+	            function createPolicy() {
+	                if (bandwidthPolicyCreateCtrl.form.$valid) {
+	                    CRUDHelperService.hideServerError(bandwidthPolicyCreateCtrl);
+	                    CRUDHelperService.startLoader(bandwidthPolicyCreateCtrl);
+
+	                    bandwidthPolicyCreateCtrl.newPolicy.key =
+	                        NetprofilesModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
+	                    
+	                    bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.newPolicy.bandwidthNumber
+	                        + " "+ bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
+	                    
+	                    NetprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+	                        CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);
+	                        returnToPolicies();
+	                    }, function errorCallback(result) {
+	                        CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);
+	                        CRUDHelperService.showServerError(bandwidthPolicyCreateCtrl, result);
+	                    });
+	                }
+	            }
+
+	            function resetForm() {
+	                CRUDHelperService.stopLoader(bandwidthPolicyCreateCtrl);
+	                CRUDHelperService.hideServerError(bandwidthPolicyCreateCtrl);
+	                bandwidthPolicyCreateCtrl.newPolicy = {
+	                    profileName: '',
+	                    tenantName: 'default', //TODO: Remove hardcoded tenant.
+	                    bandwidth: '',
+	                    DSCP: ''
+	                };
+	            }
+
+	            bandwidthPolicyCreateCtrl.createPolicy = createPolicy;
+	            bandwidthPolicyCreateCtrl.cancelCreating = cancelCreating;
+
+	            resetForm();
+	        }]);*/
+>>>>>>> Table directive to angular 2
 	var BandwidthPolicyCreateComponent = (function () {
 	    function BandwidthPolicyCreateComponent($state, netprofilesModel, crudHelperService) {
 	        this.$state = $state;
@@ -25754,6 +27033,7 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 197:
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25863,6 +27143,8 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 198:
+=======
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25881,10 +27163,17 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/10/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var policiesmodel_1 = __webpack_require__(71);
 	var crudhelperservice_1 = __webpack_require__(35);
 	var ng1_1 = __webpack_require__(67);
+=======
+	var core_1 = __webpack_require__(5);
+	var policiesmodel_1 = __webpack_require__(94);
+	var crudhelperservice_1 = __webpack_require__(67);
+	var ng1_1 = __webpack_require__(90);
+>>>>>>> Table directive to angular 2
 	var IsolationPolicyCreateComponent = (function () {
 	    function IsolationPolicyCreateComponent($state, policiesModel, crudHelperService) {
 	        this.$state = $state;
@@ -25939,9 +27228,18 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 199:
 /***/ function(module, exports, __webpack_require__) {
 
+=======
+/***/ 198:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
+	 */
+>>>>>>> Table directive to angular 2
 	"use strict";
 	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
 	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -25955,6 +27253,7 @@ webpackJsonp([2],{
 	var __param = (this && this.__param) || function (paramIndex, decorator) {
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	/**
 	 * Created by vjain3 on 3/8/16.
 	 */
@@ -26451,11 +27750,67 @@ webpackJsonp([2],{
 	    var _a, _b;
 	}());
 	exports.VolumeSettingsComponent = VolumeSettingsComponent;
+=======
+	var core_1 = __webpack_require__(5);
+	var networksmodel_1 = __webpack_require__(93);
+	var crudhelperservice_1 = __webpack_require__(67);
+	var rxjs_1 = __webpack_require__(155);
+	var ng1_1 = __webpack_require__(90);
+	var NetworkListComponent = (function () {
+	    function NetworkListComponent($state, networksModel, crudHelperService) {
+	        var _this = this;
+	        this.$state = $state;
+	        this.networksModel = networksModel;
+	        this.crudHelperService = crudHelperService;
+	        this.networkListComp = this;
+	        this['showLoader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getNetworks(true);
+	        });
+	    }
+	    NetworkListComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.getNetworks(false);
+	    };
+	    NetworkListComponent.prototype.getNetworks = function (reload) {
+	        debugger;
+	        var networkListComp = this;
+	        this.networksModel.get(reload)
+	            .then(function successCallback(result) {
+	            networkListComp['networks'] = result;
+	            networkListComp.crudHelperService.stopLoader(networkListComp);
+	        }, function errorCallback(result) {
+	            networkListComp.crudHelperService.stopLoader(networkListComp);
+	        });
+	    };
+	    NetworkListComponent.prototype.create = function () {
+	        this.$state.go('contiv.menu.networks.create');
+	    };
+	    NetworkListComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    NetworkListComponent = __decorate([
+	        core_1.Component({
+	            selector: 'net-list',
+	            template: __webpack_require__(459)
+	        }),
+	        __param(0, core_1.Inject('$state')), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
+	    ], NetworkListComponent);
+	    return NetworkListComponent;
+	    var _a, _b, _c;
+	}());
+	exports.NetworkListComponent = NetworkListComponent;
+>>>>>>> Table directive to angular 2
 	
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 272:
+=======
+/***/ 270:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26465,17 +27820,28 @@ webpackJsonp([2],{
 	/** @module common */ /** for typedoc */
 	__export(__webpack_require__(5));
 	__export(__webpack_require__(18));
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(94));
 	__export(__webpack_require__(15));
 	__export(__webpack_require__(9));
 	__export(__webpack_require__(116));
+=======
+	__export(__webpack_require__(89));
+	__export(__webpack_require__(15));
+	__export(__webpack_require__(9));
+	__export(__webpack_require__(114));
+>>>>>>> Table directive to angular 2
 	__export(__webpack_require__(34));
 	__export(__webpack_require__(40));
 	//# sourceMappingURL=module.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 273:
+=======
+/***/ 271:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module common */ /** */
@@ -26483,22 +27849,37 @@ webpackJsonp([2],{
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(272));
+=======
+	__export(__webpack_require__(270));
+	__export(__webpack_require__(284));
+	__export(__webpack_require__(285));
+>>>>>>> Table directive to angular 2
 	__export(__webpack_require__(286));
 	__export(__webpack_require__(287));
 	__export(__webpack_require__(288));
 	__export(__webpack_require__(289));
 	__export(__webpack_require__(290));
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(291));
 	__export(__webpack_require__(292));
 	__export(__webpack_require__(171));
 	var router_1 = __webpack_require__(120);
+=======
+	__export(__webpack_require__(171));
+	var router_1 = __webpack_require__(118);
+>>>>>>> Table directive to angular 2
 	exports.UIRouter = router_1.UIRouter;
 	//# sourceMappingURL=core.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 274:
+=======
+/***/ 272:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26566,7 +27947,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 275:
+=======
+/***/ 273:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -26627,14 +28012,22 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 276:
+=======
+/***/ 274:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/** @module hooks */ /** */
 	var predicates_1 = __webpack_require__(9);
 	var coreservices_1 = __webpack_require__(18);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var targetState_1 = __webpack_require__(68);
+=======
+	var targetState_1 = __webpack_require__(65);
+>>>>>>> Table directive to angular 2
 	/**
 	 * A [[TransitionHookFn]] that redirects to a different state or params
 	 *
@@ -26667,7 +28060,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 277:
+=======
+/***/ 275:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26714,7 +28111,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 278:
+=======
+/***/ 276:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -26744,7 +28145,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 279:
+=======
+/***/ 277:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26795,7 +28200,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 280:
+=======
+/***/ 278:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26806,8 +28215,13 @@ webpackJsonp([2],{
 	 *
 	 * @preferred @module ng1_directives
 	 */ /** for typedoc */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var angular = __webpack_require__(69);
 	var common_1 = __webpack_require__(5);
+=======
+	var angular = __webpack_require__(66);
+	var common_1 = __webpack_require__(4);
+>>>>>>> Table directive to angular 2
 	var predicates_1 = __webpack_require__(9);
 	var hof_1 = __webpack_require__(15);
 	/** @hidden */
@@ -27210,20 +28624,34 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 281:
+=======
+/***/ 279:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module ng1_directives */ /** for typedoc */
 	"use strict";
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var trace_1 = __webpack_require__(40);
 	var views_1 = __webpack_require__(118);
+=======
+	var trace_1 = __webpack_require__(39);
+	var views_1 = __webpack_require__(116);
+>>>>>>> Table directive to angular 2
 	var hof_1 = __webpack_require__(15);
 	var resolveContext_1 = __webpack_require__(41);
 	var strings_1 = __webpack_require__(34);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var services_1 = __webpack_require__(117);
 	var angular = __webpack_require__(69);
+=======
+	var services_1 = __webpack_require__(115);
+	var angular = __webpack_require__(66);
+>>>>>>> Table directive to angular 2
 	/**
 	 * `ui-view`: A viewport directive which is filled in by a view from the active state.
 	 *
@@ -27594,16 +29022,28 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 282:
+=======
+/***/ 280:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/** @module ng1 */ /** */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var stateObject_1 = __webpack_require__(122);
 	var node_1 = __webpack_require__(76);
 	var resolveContext_1 = __webpack_require__(41);
 	var common_1 = __webpack_require__(5);
 	var stateBuilder_1 = __webpack_require__(121);
+=======
+	var stateObject_1 = __webpack_require__(120);
+	var node_1 = __webpack_require__(73);
+	var resolveContext_1 = __webpack_require__(40);
+	var common_1 = __webpack_require__(4);
+	var stateBuilder_1 = __webpack_require__(119);
+>>>>>>> Table directive to angular 2
 	/**
 	 * Implementation of the legacy `$resolve` service for angular 1.
 	 */
@@ -27662,12 +29102,20 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 283:
+=======
+/***/ 281:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module state */ /** for typedoc */
 	"use strict";
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var angular = __webpack_require__(69);
+=======
+	var angular = __webpack_require__(66);
+>>>>>>> Table directive to angular 2
 	/**
 	 * @ngdoc filter
 	 * @name ui.router.state.filter:isState
@@ -27711,14 +29159,24 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 284:
+=======
+/***/ 282:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var coreservices_1 = __webpack_require__(18);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var services_1 = __webpack_require__(117);
 	var resolveContext_1 = __webpack_require__(41);
 	var common_1 = __webpack_require__(5);
+=======
+	var services_1 = __webpack_require__(115);
+	var resolveContext_1 = __webpack_require__(40);
+	var common_1 = __webpack_require__(4);
+>>>>>>> Table directive to angular 2
 	/**
 	 * This is a [[StateBuilder.builder]] function for angular1 `onEnter`, `onExit`,
 	 * `onRetain` callback hooks on a [[Ng1StateDeclaration]].
@@ -27740,12 +29198,20 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 285:
+=======
+/***/ 283:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/** @module ng1 */ /** */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var angular = __webpack_require__(69);
+=======
+	var angular = __webpack_require__(66);
+>>>>>>> Table directive to angular 2
 	/**
 	 * @ngdoc object
 	 * @name ui.router.state.$uiViewScrollProvider
@@ -27797,7 +29263,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 286:
+=======
+/***/ 284:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27812,15 +29282,26 @@ webpackJsonp([2],{
 	 * @preferred doc
 	 */
 	/** for typedoc */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(49));
 	__export(__webpack_require__(174));
 	__export(__webpack_require__(175));
 	__export(__webpack_require__(119));
+=======
+	__export(__webpack_require__(47));
+	__export(__webpack_require__(174));
+	__export(__webpack_require__(175));
+	__export(__webpack_require__(117));
+>>>>>>> Table directive to angular 2
 	//# sourceMappingURL=module.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 287:
+=======
+/***/ 285:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27828,13 +29309,22 @@ webpackJsonp([2],{
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	/** @module path */ /** for typedoc */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(76));
 	__export(__webpack_require__(95));
+=======
+	__export(__webpack_require__(73));
+	__export(__webpack_require__(91));
+>>>>>>> Table directive to angular 2
 	//# sourceMappingURL=module.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 288:
+=======
+/***/ 286:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27843,13 +29333,22 @@ webpackJsonp([2],{
 	}
 	/** @module resolve */ /** for typedoc */
 	__export(__webpack_require__(176));
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(57));
 	__export(__webpack_require__(41));
+=======
+	__export(__webpack_require__(56));
+	__export(__webpack_require__(40));
+>>>>>>> Table directive to angular 2
 	//# sourceMappingURL=module.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 289:
+=======
+/***/ 287:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27857,18 +29356,31 @@ webpackJsonp([2],{
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	/** @module state */ /** for typedoc */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(121));
 	__export(__webpack_require__(122));
+=======
+	__export(__webpack_require__(119));
+	__export(__webpack_require__(120));
+>>>>>>> Table directive to angular 2
 	__export(__webpack_require__(177));
 	__export(__webpack_require__(178));
 	__export(__webpack_require__(179));
 	__export(__webpack_require__(180));
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(68));
+=======
+	__export(__webpack_require__(65));
+>>>>>>> Table directive to angular 2
 	//# sourceMappingURL=module.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 290:
+=======
+/***/ 288:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27885,16 +29397,28 @@ webpackJsonp([2],{
 	 */
 	/** for typedoc */
 	__export(__webpack_require__(181));
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(123));
 	__export(__webpack_require__(77));
 	__export(__webpack_require__(124));
 	__export(__webpack_require__(125));
 	__export(__webpack_require__(126));
+=======
+	__export(__webpack_require__(121));
+	__export(__webpack_require__(74));
+	__export(__webpack_require__(122));
+	__export(__webpack_require__(123));
+	__export(__webpack_require__(124));
+>>>>>>> Table directive to angular 2
 	//# sourceMappingURL=module.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 291:
+=======
+/***/ 289:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27903,14 +29427,24 @@ webpackJsonp([2],{
 	}
 	/** @module url */ /** for typedoc */
 	__export(__webpack_require__(182));
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(127));
 	__export(__webpack_require__(183));
 	__export(__webpack_require__(128));
+=======
+	__export(__webpack_require__(125));
+	__export(__webpack_require__(183));
+	__export(__webpack_require__(126));
+>>>>>>> Table directive to angular 2
 	//# sourceMappingURL=module.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 292:
+=======
+/***/ 290:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27918,12 +29452,20 @@ webpackJsonp([2],{
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	/** @module view */ /** for typedoc */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__export(__webpack_require__(129));
+=======
+	__export(__webpack_require__(127));
+>>>>>>> Table directive to angular 2
 	//# sourceMappingURL=module.js.map
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 293:
+=======
+/***/ 291:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports) {
 
 	/**
@@ -59697,7 +61239,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 294:
+=======
+/***/ 292:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59713,6 +61259,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/6/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var platform_browser_1 = __webpack_require__(93);
 	var http_1 = __webpack_require__(19);
@@ -59730,11 +61277,33 @@ webpackJsonp([2],{
 	var storagepoliciesmodel_1 = __webpack_require__(132);
 	var volumesmodel_1 = __webpack_require__(133);
 	var crudhelperservice_1 = __webpack_require__(35);
+=======
+	var core_1 = __webpack_require__(5);
+	var platform_browser_1 = __webpack_require__(88);
+	var http_1 = __webpack_require__(19);
+	var networkpolicies_module_1 = __webpack_require__(294);
+	var netprofilesmodel_1 = __webpack_require__(129);
+	var applicationgroupsmodel_1 = __webpack_require__(92);
+	var networksmodel_1 = __webpack_require__(93);
+	var nodesmodel_1 = __webpack_require__(130);
+	var organizationsmodel_1 = __webpack_require__(188);
+	var policiesmodel_1 = __webpack_require__(94);
+	var rulesmodel_1 = __webpack_require__(189);
+	var servicelbsmodel_1 = __webpack_require__(190);
+	var storagepoliciesmodel_1 = __webpack_require__(131);
+	var volumesmodel_1 = __webpack_require__(132);
+	var crudhelperservice_1 = __webpack_require__(67);
+>>>>>>> Table directive to angular 2
 	var inspectservice_1 = __webpack_require__(191);
 	var networkservice_1 = __webpack_require__(192);
 	var volumesettingservice_1 = __webpack_require__(194);
 	var nodesservice_1 = __webpack_require__(193);
 	var dashboardctrl_1 = __webpack_require__(195);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
+=======
+	var network_module_1 = __webpack_require__(295);
+	var applicationgroup_module_1 = __webpack_require__(293);
+>>>>>>> Table directive to angular 2
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -59744,8 +61313,13 @@ webpackJsonp([2],{
 	                platform_browser_1.BrowserModule,
 	                http_1.HttpModule,
 	                networkpolicies_module_1.NetworkPoliciesModule,
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	                applicationgroups_module_ts_1.ApplicationGroupsModule,
 	                settings_module_1.SettingsModule
+=======
+	                network_module_1.NetworkModule,
+	                applicationgroup_module_1.ApplicationGroupModule
+>>>>>>> Table directive to angular 2
 	            ],
 	            declarations: [
 	                dashboardctrl_1.DashboardComponent
@@ -59777,7 +61351,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 295:
+=======
+/***/ 293:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59791,6 +61369,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	/**
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	 * Created by vjain3 on 10/21/16.
 	 */
 	var core_1 = __webpack_require__(4);
@@ -60201,11 +61780,46 @@ webpackJsonp([2],{
 	}());
 	exports.PipesModule = PipesModule;
 	3;
+=======
+	 * Created by cshampur on 10/18/16.
+	 */
+	var core_1 = __webpack_require__(5);
+	var forms_1 = __webpack_require__(72);
+	var common_1 = __webpack_require__(55);
+	var directives_module_1 = __webpack_require__(128);
+	var applicationgrouplistctrl_1 = __webpack_require__(184);
+	var ApplicationGroupModule = (function () {
+	    function ApplicationGroupModule() {
+	    }
+	    ApplicationGroupModule = __decorate([
+	        core_1.NgModule({
+	            imports: [
+	                forms_1.FormsModule,
+	                common_1.CommonModule,
+	                directives_module_1.DirectivesModule
+	            ],
+	            declarations: [
+	                applicationgrouplistctrl_1.AppGrouplistComponent
+	            ],
+	            exports: [
+	                applicationgrouplistctrl_1.AppGrouplistComponent
+	            ]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], ApplicationGroupModule);
+	    return ApplicationGroupModule;
+	}());
+	exports.ApplicationGroupModule = ApplicationGroupModule;
+>>>>>>> Table directive to angular 2
 	
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 300:
+=======
+/***/ 294:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -60221,6 +61835,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/14/16.
 	 */
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var core_1 = __webpack_require__(4);
 	var forms_1 = __webpack_require__(75);
 	var common_1 = __webpack_require__(48);
@@ -60229,6 +61844,14 @@ webpackJsonp([2],{
 	var isolationpolicydetailsctrl_1 = __webpack_require__(199);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(196);
 	var bandwidthpolicydetailsctrl_1 = __webpack_require__(197);
+=======
+	var core_1 = __webpack_require__(5);
+	var forms_1 = __webpack_require__(72);
+	var common_1 = __webpack_require__(55);
+	var directives_module_1 = __webpack_require__(128);
+	var isolationpolicycreatectrl_1 = __webpack_require__(197);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(196);
+>>>>>>> Table directive to angular 2
 	var NetworkPoliciesModule = (function () {
 	    function NetworkPoliciesModule() {
 	    }
@@ -60264,7 +61887,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 301:
+=======
+/***/ 295:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -60278,6 +61905,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	/**
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	 * Created by vjain3 on 10/25/16.
 	 */
 	var core_1 = __webpack_require__(4);
@@ -60290,6 +61918,19 @@ webpackJsonp([2],{
 	    function SettingsModule() {
 	    }
 	    SettingsModule = __decorate([
+=======
+	 * Created by cshampur on 10/18/16.
+	 */
+	var core_1 = __webpack_require__(5);
+	var forms_1 = __webpack_require__(72);
+	var common_1 = __webpack_require__(55);
+	var directives_module_1 = __webpack_require__(128);
+	var networklistctrl_1 = __webpack_require__(198);
+	var NetworkModule = (function () {
+	    function NetworkModule() {
+	    }
+	    NetworkModule = __decorate([
+>>>>>>> Table directive to angular 2
 	        core_1.NgModule({
 	            imports: [
 	                forms_1.FormsModule,
@@ -60297,6 +61938,7 @@ webpackJsonp([2],{
 	                directives_module_1.DirectivesModule
 	            ],
 	            declarations: [
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	                networksettingctrl_1.NetworkSettingsComponent,
 	                volumesettingctrl_1.VolumeSettingsComponent
 	            ],
@@ -60313,11 +61955,28 @@ webpackJsonp([2],{
 	    return SettingsModule;
 	}());
 	exports.SettingsModule = SettingsModule;
+=======
+	                networklistctrl_1.NetworkListComponent
+	            ],
+	            exports: [
+	                networklistctrl_1.NetworkListComponent
+	            ]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], NetworkModule);
+	    return NetworkModule;
+	}());
+	exports.NetworkModule = NetworkModule;
+>>>>>>> Table directive to angular 2
 	
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 302:
+=======
+/***/ 296:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -60325,13 +61984,671 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/14/16.
 	 */
 	var upgrade_1 = __webpack_require__(168);
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var app_module_1 = __webpack_require__(294);
+=======
+	var app_module_1 = __webpack_require__(292);
+>>>>>>> Table directive to angular 2
 	exports.upgradeAdapter = new upgrade_1.UpgradeAdapter(app_module_1.AppModule);
 	
 
 /***/ },
 
+<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /***/ 734:
+=======
+/***/ 458:
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned twelve wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Application Groups</div>\n    </div>\n\n    <div class=\"center aligned four wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Application Group\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n    <div class=\"ui active inverted dimmer\" *ngIf=\"applicationGroupListCtrl.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n    <ctv-table #tableRef [defaultSortColumn]=\"'groupName'\"\n               [items]=\"applicationGroupListCtrl['groups']\"\n               (filtereditems)=\"applicationGroupListCtrl['filteredgroups']=$event;\"\n               [size]=\"12\">\n        <thead>\n            <tr>\n                <th><ctv-th [sortfield]=\"'groupName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Network</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'policies'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Policies</ctv-th></th>\n                <th class=\"right floated three wide column\">\n                    <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search application groups...'\"></ctv-search>\n                </th>\n            </tr>\n        </thead>\n\n        <tbody>\n            <tr *ngFor=\"let group of applicationGroupListCtrl['filteredgroups']\">\n                <td><a href=\"/#/m/applicationgroups/details/{{group.key}}\">{{group.groupName}}</a></td>\n                <td>{{group.networkName}}</td>\n                <td>{{group.policies.join(\", \")}}</td>\n                <td></td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n            <tr>\n                <td colspan=\"4\">\n                    <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                     (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                     (prevChunk)=\"tableRef.showPrevChunk()\"\n                                     (nextChunk)=\"tableRef.showNextChunk()\">\n\n                    </ctv-tpagination>\n                </td>\n            </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
+
+/***/ },
+
+/***/ 459:
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned thirteen wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <div class=\"center aligned three wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n            <th class=\"right floated three wide column\">\n                <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search networks...'\"></ctv-search>\n            </th>\n        </tr>\n        </thead>\n\n        <tbody>\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a href=\"/#/m/networks/details/{{network.key}}/info\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n            <td></td>\n        </tr>\n        </tbody>\n        <tfoot>\n        <tr>\n            <td colspan=\"5\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
+
+/***/ },
+
+/***/ 728:
+/***/ function(module, exports) {
+
+	if (typeof Object.create === 'function') {
+	  // implementation from standard node.js 'util' module
+	  module.exports = function inherits(ctor, superCtor) {
+	    ctor.super_ = superCtor
+	    ctor.prototype = Object.create(superCtor.prototype, {
+	      constructor: {
+	        value: ctor,
+	        enumerable: false,
+	        writable: true,
+	        configurable: true
+	      }
+	    });
+	  };
+	} else {
+	  // old school shim for old browsers
+	  module.exports = function inherits(ctor, superCtor) {
+	    ctor.super_ = superCtor
+	    var TempCtor = function () {}
+	    TempCtor.prototype = superCtor.prototype
+	    ctor.prototype = new TempCtor()
+	    ctor.prototype.constructor = ctor
+	  }
+	}
+
+
+/***/ },
+
+/***/ 729:
+/***/ function(module, exports) {
+
+	module.exports = function isBuffer(arg) {
+	  return arg && typeof arg === 'object'
+	    && typeof arg.copy === 'function'
+	    && typeof arg.fill === 'function'
+	    && typeof arg.readUInt8 === 'function';
+	}
+
+/***/ },
+
+/***/ 730:
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global, process) {// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+	var formatRegExp = /%[sdj%]/g;
+	exports.format = function(f) {
+	  if (!isString(f)) {
+	    var objects = [];
+	    for (var i = 0; i < arguments.length; i++) {
+	      objects.push(inspect(arguments[i]));
+	    }
+	    return objects.join(' ');
+	  }
+
+	  var i = 1;
+	  var args = arguments;
+	  var len = args.length;
+	  var str = String(f).replace(formatRegExp, function(x) {
+	    if (x === '%%') return '%';
+	    if (i >= len) return x;
+	    switch (x) {
+	      case '%s': return String(args[i++]);
+	      case '%d': return Number(args[i++]);
+	      case '%j':
+	        try {
+	          return JSON.stringify(args[i++]);
+	        } catch (_) {
+	          return '[Circular]';
+	        }
+	      default:
+	        return x;
+	    }
+	  });
+	  for (var x = args[i]; i < len; x = args[++i]) {
+	    if (isNull(x) || !isObject(x)) {
+	      str += ' ' + x;
+	    } else {
+	      str += ' ' + inspect(x);
+	    }
+	  }
+	  return str;
+	};
+
+
+	// Mark that a method should not be used.
+	// Returns a modified function which warns once by default.
+	// If --no-deprecation is set, then it is a no-op.
+	exports.deprecate = function(fn, msg) {
+	  // Allow for deprecating things in the process of starting up.
+	  if (isUndefined(global.process)) {
+	    return function() {
+	      return exports.deprecate(fn, msg).apply(this, arguments);
+	    };
+	  }
+
+	  if (process.noDeprecation === true) {
+	    return fn;
+	  }
+
+	  var warned = false;
+	  function deprecated() {
+	    if (!warned) {
+	      if (process.throwDeprecation) {
+	        throw new Error(msg);
+	      } else if (process.traceDeprecation) {
+	        console.trace(msg);
+	      } else {
+	        console.error(msg);
+	      }
+	      warned = true;
+	    }
+	    return fn.apply(this, arguments);
+	  }
+
+	  return deprecated;
+	};
+
+
+	var debugs = {};
+	var debugEnviron;
+	exports.debuglog = function(set) {
+	  if (isUndefined(debugEnviron))
+	    debugEnviron = process.env.NODE_DEBUG || '';
+	  set = set.toUpperCase();
+	  if (!debugs[set]) {
+	    if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {
+	      var pid = process.pid;
+	      debugs[set] = function() {
+	        var msg = exports.format.apply(exports, arguments);
+	        console.error('%s %d: %s', set, pid, msg);
+	      };
+	    } else {
+	      debugs[set] = function() {};
+	    }
+	  }
+	  return debugs[set];
+	};
+
+
+	/**
+	 * Echos the value of a value. Trys to print the value out
+	 * in the best way possible given the different types.
+	 *
+	 * @param {Object} obj The object to print out.
+	 * @param {Object} opts Optional options object that alters the output.
+	 */
+	/* legacy: obj, showHidden, depth, colors*/
+	function inspect(obj, opts) {
+	  // default options
+	  var ctx = {
+	    seen: [],
+	    stylize: stylizeNoColor
+	  };
+	  // legacy...
+	  if (arguments.length >= 3) ctx.depth = arguments[2];
+	  if (arguments.length >= 4) ctx.colors = arguments[3];
+	  if (isBoolean(opts)) {
+	    // legacy...
+	    ctx.showHidden = opts;
+	  } else if (opts) {
+	    // got an "options" object
+	    exports._extend(ctx, opts);
+	  }
+	  // set default options
+	  if (isUndefined(ctx.showHidden)) ctx.showHidden = false;
+	  if (isUndefined(ctx.depth)) ctx.depth = 2;
+	  if (isUndefined(ctx.colors)) ctx.colors = false;
+	  if (isUndefined(ctx.customInspect)) ctx.customInspect = true;
+	  if (ctx.colors) ctx.stylize = stylizeWithColor;
+	  return formatValue(ctx, obj, ctx.depth);
+	}
+	exports.inspect = inspect;
+
+
+	// http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
+	inspect.colors = {
+	  'bold' : [1, 22],
+	  'italic' : [3, 23],
+	  'underline' : [4, 24],
+	  'inverse' : [7, 27],
+	  'white' : [37, 39],
+	  'grey' : [90, 39],
+	  'black' : [30, 39],
+	  'blue' : [34, 39],
+	  'cyan' : [36, 39],
+	  'green' : [32, 39],
+	  'magenta' : [35, 39],
+	  'red' : [31, 39],
+	  'yellow' : [33, 39]
+	};
+
+	// Don't use 'blue' not visible on cmd.exe
+	inspect.styles = {
+	  'special': 'cyan',
+	  'number': 'yellow',
+	  'boolean': 'yellow',
+	  'undefined': 'grey',
+	  'null': 'bold',
+	  'string': 'green',
+	  'date': 'magenta',
+	  // "name": intentionally not styling
+	  'regexp': 'red'
+	};
+
+
+	function stylizeWithColor(str, styleType) {
+	  var style = inspect.styles[styleType];
+
+	  if (style) {
+	    return '\u001b[' + inspect.colors[style][0] + 'm' + str +
+	           '\u001b[' + inspect.colors[style][1] + 'm';
+	  } else {
+	    return str;
+	  }
+	}
+
+
+	function stylizeNoColor(str, styleType) {
+	  return str;
+	}
+
+
+	function arrayToHash(array) {
+	  var hash = {};
+
+	  array.forEach(function(val, idx) {
+	    hash[val] = true;
+	  });
+
+	  return hash;
+	}
+
+
+	function formatValue(ctx, value, recurseTimes) {
+	  // Provide a hook for user-specified inspect functions.
+	  // Check that value is an object with an inspect function on it
+	  if (ctx.customInspect &&
+	      value &&
+	      isFunction(value.inspect) &&
+	      // Filter out the util module, it's inspect function is special
+	      value.inspect !== exports.inspect &&
+	      // Also filter out any prototype objects using the circular check.
+	      !(value.constructor && value.constructor.prototype === value)) {
+	    var ret = value.inspect(recurseTimes, ctx);
+	    if (!isString(ret)) {
+	      ret = formatValue(ctx, ret, recurseTimes);
+	    }
+	    return ret;
+	  }
+
+	  // Primitive types cannot have properties
+	  var primitive = formatPrimitive(ctx, value);
+	  if (primitive) {
+	    return primitive;
+	  }
+
+	  // Look up the keys of the object.
+	  var keys = Object.keys(value);
+	  var visibleKeys = arrayToHash(keys);
+
+	  if (ctx.showHidden) {
+	    keys = Object.getOwnPropertyNames(value);
+	  }
+
+	  // IE doesn't make error fields non-enumerable
+	  // http://msdn.microsoft.com/en-us/library/ie/dww52sbt(v=vs.94).aspx
+	  if (isError(value)
+	      && (keys.indexOf('message') >= 0 || keys.indexOf('description') >= 0)) {
+	    return formatError(value);
+	  }
+
+	  // Some type of object without properties can be shortcutted.
+	  if (keys.length === 0) {
+	    if (isFunction(value)) {
+	      var name = value.name ? ': ' + value.name : '';
+	      return ctx.stylize('[Function' + name + ']', 'special');
+	    }
+	    if (isRegExp(value)) {
+	      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
+	    }
+	    if (isDate(value)) {
+	      return ctx.stylize(Date.prototype.toString.call(value), 'date');
+	    }
+	    if (isError(value)) {
+	      return formatError(value);
+	    }
+	  }
+
+	  var base = '', array = false, braces = ['{', '}'];
+
+	  // Make Array say that they are Array
+	  if (isArray(value)) {
+	    array = true;
+	    braces = ['[', ']'];
+	  }
+
+	  // Make functions say that they are functions
+	  if (isFunction(value)) {
+	    var n = value.name ? ': ' + value.name : '';
+	    base = ' [Function' + n + ']';
+	  }
+
+	  // Make RegExps say that they are RegExps
+	  if (isRegExp(value)) {
+	    base = ' ' + RegExp.prototype.toString.call(value);
+	  }
+
+	  // Make dates with properties first say the date
+	  if (isDate(value)) {
+	    base = ' ' + Date.prototype.toUTCString.call(value);
+	  }
+
+	  // Make error with message first say the error
+	  if (isError(value)) {
+	    base = ' ' + formatError(value);
+	  }
+
+	  if (keys.length === 0 && (!array || value.length == 0)) {
+	    return braces[0] + base + braces[1];
+	  }
+
+	  if (recurseTimes < 0) {
+	    if (isRegExp(value)) {
+	      return ctx.stylize(RegExp.prototype.toString.call(value), 'regexp');
+	    } else {
+	      return ctx.stylize('[Object]', 'special');
+	    }
+	  }
+
+	  ctx.seen.push(value);
+
+	  var output;
+	  if (array) {
+	    output = formatArray(ctx, value, recurseTimes, visibleKeys, keys);
+	  } else {
+	    output = keys.map(function(key) {
+	      return formatProperty(ctx, value, recurseTimes, visibleKeys, key, array);
+	    });
+	  }
+
+	  ctx.seen.pop();
+
+	  return reduceToSingleString(output, base, braces);
+	}
+
+
+	function formatPrimitive(ctx, value) {
+	  if (isUndefined(value))
+	    return ctx.stylize('undefined', 'undefined');
+	  if (isString(value)) {
+	    var simple = '\'' + JSON.stringify(value).replace(/^"|"$/g, '')
+	                                             .replace(/'/g, "\\'")
+	                                             .replace(/\\"/g, '"') + '\'';
+	    return ctx.stylize(simple, 'string');
+	  }
+	  if (isNumber(value))
+	    return ctx.stylize('' + value, 'number');
+	  if (isBoolean(value))
+	    return ctx.stylize('' + value, 'boolean');
+	  // For some reason typeof null is "object", so special case here.
+	  if (isNull(value))
+	    return ctx.stylize('null', 'null');
+	}
+
+
+	function formatError(value) {
+	  return '[' + Error.prototype.toString.call(value) + ']';
+	}
+
+
+	function formatArray(ctx, value, recurseTimes, visibleKeys, keys) {
+	  var output = [];
+	  for (var i = 0, l = value.length; i < l; ++i) {
+	    if (hasOwnProperty(value, String(i))) {
+	      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
+	          String(i), true));
+	    } else {
+	      output.push('');
+	    }
+	  }
+	  keys.forEach(function(key) {
+	    if (!key.match(/^\d+$/)) {
+	      output.push(formatProperty(ctx, value, recurseTimes, visibleKeys,
+	          key, true));
+	    }
+	  });
+	  return output;
+	}
+
+
+	function formatProperty(ctx, value, recurseTimes, visibleKeys, key, array) {
+	  var name, str, desc;
+	  desc = Object.getOwnPropertyDescriptor(value, key) || { value: value[key] };
+	  if (desc.get) {
+	    if (desc.set) {
+	      str = ctx.stylize('[Getter/Setter]', 'special');
+	    } else {
+	      str = ctx.stylize('[Getter]', 'special');
+	    }
+	  } else {
+	    if (desc.set) {
+	      str = ctx.stylize('[Setter]', 'special');
+	    }
+	  }
+	  if (!hasOwnProperty(visibleKeys, key)) {
+	    name = '[' + key + ']';
+	  }
+	  if (!str) {
+	    if (ctx.seen.indexOf(desc.value) < 0) {
+	      if (isNull(recurseTimes)) {
+	        str = formatValue(ctx, desc.value, null);
+	      } else {
+	        str = formatValue(ctx, desc.value, recurseTimes - 1);
+	      }
+	      if (str.indexOf('\n') > -1) {
+	        if (array) {
+	          str = str.split('\n').map(function(line) {
+	            return '  ' + line;
+	          }).join('\n').substr(2);
+	        } else {
+	          str = '\n' + str.split('\n').map(function(line) {
+	            return '   ' + line;
+	          }).join('\n');
+	        }
+	      }
+	    } else {
+	      str = ctx.stylize('[Circular]', 'special');
+	    }
+	  }
+	  if (isUndefined(name)) {
+	    if (array && key.match(/^\d+$/)) {
+	      return str;
+	    }
+	    name = JSON.stringify('' + key);
+	    if (name.match(/^"([a-zA-Z_][a-zA-Z_0-9]*)"$/)) {
+	      name = name.substr(1, name.length - 2);
+	      name = ctx.stylize(name, 'name');
+	    } else {
+	      name = name.replace(/'/g, "\\'")
+	                 .replace(/\\"/g, '"')
+	                 .replace(/(^"|"$)/g, "'");
+	      name = ctx.stylize(name, 'string');
+	    }
+	  }
+
+	  return name + ': ' + str;
+	}
+
+
+	function reduceToSingleString(output, base, braces) {
+	  var numLinesEst = 0;
+	  var length = output.reduce(function(prev, cur) {
+	    numLinesEst++;
+	    if (cur.indexOf('\n') >= 0) numLinesEst++;
+	    return prev + cur.replace(/\u001b\[\d\d?m/g, '').length + 1;
+	  }, 0);
+
+	  if (length > 60) {
+	    return braces[0] +
+	           (base === '' ? '' : base + '\n ') +
+	           ' ' +
+	           output.join(',\n  ') +
+	           ' ' +
+	           braces[1];
+	  }
+
+	  return braces[0] + base + ' ' + output.join(', ') + ' ' + braces[1];
+	}
+
+
+	// NOTE: These type checking functions intentionally don't use `instanceof`
+	// because it is fragile and can be easily faked with `Object.create()`.
+	function isArray(ar) {
+	  return Array.isArray(ar);
+	}
+	exports.isArray = isArray;
+
+	function isBoolean(arg) {
+	  return typeof arg === 'boolean';
+	}
+	exports.isBoolean = isBoolean;
+
+	function isNull(arg) {
+	  return arg === null;
+	}
+	exports.isNull = isNull;
+
+	function isNullOrUndefined(arg) {
+	  return arg == null;
+	}
+	exports.isNullOrUndefined = isNullOrUndefined;
+
+	function isNumber(arg) {
+	  return typeof arg === 'number';
+	}
+	exports.isNumber = isNumber;
+
+	function isString(arg) {
+	  return typeof arg === 'string';
+	}
+	exports.isString = isString;
+
+	function isSymbol(arg) {
+	  return typeof arg === 'symbol';
+	}
+	exports.isSymbol = isSymbol;
+
+	function isUndefined(arg) {
+	  return arg === void 0;
+	}
+	exports.isUndefined = isUndefined;
+
+	function isRegExp(re) {
+	  return isObject(re) && objectToString(re) === '[object RegExp]';
+	}
+	exports.isRegExp = isRegExp;
+
+	function isObject(arg) {
+	  return typeof arg === 'object' && arg !== null;
+	}
+	exports.isObject = isObject;
+
+	function isDate(d) {
+	  return isObject(d) && objectToString(d) === '[object Date]';
+	}
+	exports.isDate = isDate;
+
+	function isError(e) {
+	  return isObject(e) &&
+	      (objectToString(e) === '[object Error]' || e instanceof Error);
+	}
+	exports.isError = isError;
+
+	function isFunction(arg) {
+	  return typeof arg === 'function';
+	}
+	exports.isFunction = isFunction;
+
+	function isPrimitive(arg) {
+	  return arg === null ||
+	         typeof arg === 'boolean' ||
+	         typeof arg === 'number' ||
+	         typeof arg === 'string' ||
+	         typeof arg === 'symbol' ||  // ES6 symbol
+	         typeof arg === 'undefined';
+	}
+	exports.isPrimitive = isPrimitive;
+
+	exports.isBuffer = __webpack_require__(729);
+
+	function objectToString(o) {
+	  return Object.prototype.toString.call(o);
+	}
+
+
+	function pad(n) {
+	  return n < 10 ? '0' + n.toString(10) : n.toString(10);
+	}
+
+
+	var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
+	              'Oct', 'Nov', 'Dec'];
+
+	// 26 Feb 16:19:34
+	function timestamp() {
+	  var d = new Date();
+	  var time = [pad(d.getHours()),
+	              pad(d.getMinutes()),
+	              pad(d.getSeconds())].join(':');
+	  return [d.getDate(), months[d.getMonth()], time].join(' ');
+	}
+
+
+	// log is just a thin wrapper to console.log that prepends a timestamp
+	exports.log = function() {
+	  console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
+	};
+
+
+	/**
+	 * Inherit the prototype methods from one constructor into another.
+	 *
+	 * The Function.prototype.inherits from lang.js rewritten as a standalone
+	 * function (not on Function.prototype). NOTE: If this file is to be loaded
+	 * during bootstrapping this function needs to be rewritten using some native
+	 * functions as prototype setup using normal JavaScript does not work as
+	 * expected during bootstrapping (see mirror.js in r114903).
+	 *
+	 * @param {function} ctor Constructor function which needs to inherit the
+	 *     prototype.
+	 * @param {function} superCtor Constructor function to inherit prototype from.
+	 */
+	exports.inherits = __webpack_require__(728);
+
+	exports._extend = function(origin, add) {
+	  // Don't do anything if add isn't an object
+	  if (!add || !isObject(add)) return origin;
+
+	  var keys = Object.keys(add);
+	  var i = keys.length;
+	  while (i--) {
+	    origin[keys[i]] = add[keys[i]];
+	  }
+	  return origin;
+	};
+
+	function hasOwnProperty(obj, prop) {
+	  return Object.prototype.hasOwnProperty.call(obj, prop);
+	}
+
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(234)))
+
+/***/ },
+
+/***/ 731:
+>>>>>>> Table directive to angular 2
 /***/ function(module, exports) {
 
 	module.exports = function(module) {

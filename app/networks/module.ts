@@ -8,4 +8,8 @@ angular.module('contiv.networks', ['contiv.models', 'contiv.directives', 'contiv
             abstract: true,
             template: '<div ui-view class="ui container"/>'
         })
+            .state('contiv.menu.networks.list', {
+                url: '/list',
+                component: 'networkList'
+            })
     }]);
