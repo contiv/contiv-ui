@@ -9,6 +9,10 @@ angular.module('contiv.networks')
             .state('contiv.menu.networks.details.info', {
                 url: '/info',
                 templateUrl: 'networks/networkinfo.html'
+            })
+            .state('contiv.menu.networks.details.stats', {
+                url: '/stats',
+                component: 'networkstat'
             });
     }])
     .controller('NetworkDetailsCtrl',

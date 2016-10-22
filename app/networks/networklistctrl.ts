@@ -8,8 +8,9 @@ import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Observable, Subscription} from "rxjs";
 import { StateService } from "angular-ui-router/commonjs/ng1";
 
+
 @Component({
-    selector: 'net-list',
+    selector: 'networkList',
     template: require("./networklist.html")
 })
 
@@ -37,7 +38,6 @@ export class NetworkListComponent implements OnInit, OnDestroy{
     }
 
     getNetworks(reload: boolean){
-        debugger;
         var networkListComp = this;
         this.networksModel.get(reload)
             .then(function successCallback(result){

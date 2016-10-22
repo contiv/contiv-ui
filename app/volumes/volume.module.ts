@@ -5,8 +5,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { DirectivesModule } from "../components/directives/directives.module";
-import {NetworkListComponent} from "./networklistctrl";
-import {NetworkStatComponent} from "./networkstatsctrl";
+import {VolumeListComponent} from "./volumelistctrl";
 
 @NgModule({
     imports: [
@@ -15,12 +14,10 @@ import {NetworkStatComponent} from "./networkstatsctrl";
         DirectivesModule
     ],
     declarations: [
-        NetworkListComponent,
-        NetworkStatComponent
+        VolumeListComponent
     ],
     exports: [
-        NetworkListComponent,
-        NetworkStatComponent
+        VolumeListComponent
     ]
 })
-export class NetworkModule {}
+export class VolumeModule {}

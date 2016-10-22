@@ -22,7 +22,6 @@ export class AppGrouplistComponent implements OnInit, OnDestroy{
     constructor(@Inject('$state') private $state: StateService,
                 appGroupModel: ApplicationGroupsModel,
                 crudHelperService:CRUDHelperService){
-        debugger;
         this.appGroupModel = appGroupModel;
         this.crudHelperService = crudHelperService;
         this.applicationGroupListCtrl = this;
@@ -39,7 +38,6 @@ export class AppGrouplistComponent implements OnInit, OnDestroy{
     }
 
     getApplicationGroup(reload: boolean){
-        debugger;
         var applicationGroupListCtrl = this;
         this.appGroupModel.get(reload)
             .then((result) => {

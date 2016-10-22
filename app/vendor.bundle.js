@@ -8,6 +8,7 @@ webpackJsonp([1],[
 	// Vendors
 	"use strict";
 	// Angular 2
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__webpack_require__(4);
 	__webpack_require__(48);
@@ -28,15 +29,26 @@ webpackJsonp([1],[
 	__webpack_require__(113);
 	__webpack_require__(88);
 	__webpack_require__(167);
+=======
+	__webpack_require__(4);
+	__webpack_require__(40);
+	__webpack_require__(120);
+	__webpack_require__(94);
+	__webpack_require__(170);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	__webpack_require__(19);
-	__webpack_require__(267);
-	__webpack_require__(72);
-	__webpack_require__(168);
+	__webpack_require__(275);
+	__webpack_require__(59);
+	__webpack_require__(171);
 	// RxJS 5
-	__webpack_require__(155);
+	__webpack_require__(48);
 	// other libraries
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(269);
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(277);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	// For vendors for example jQuery, Lodash, angular2-jwt import them here
 	// Also see src/typings.d.ts as you also need to run `typings install x` where `x` is your module 
 	
@@ -47,6 +59,7 @@ webpackJsonp([1],[
 
 	"use strict";
 	var root_1 = __webpack_require__(25);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var toSubscriber_1 = __webpack_require__(733);
 	var observable_1 = __webpack_require__(111);
@@ -54,6 +67,10 @@ webpackJsonp([1],[
 	var toSubscriber_1 = __webpack_require__(727);
 	var observable_1 = __webpack_require__(109);
 >>>>>>> Table directive to angular 2
+=======
+	var toSubscriber_1 = __webpack_require__(738);
+	var observable_1 = __webpack_require__(116);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * A representation of any set of values over any amount of time. This the most basic building block
 	 * of RxJS.
@@ -202,8 +219,9 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var isFunction_1 = __webpack_require__(165);
+	var isFunction_1 = __webpack_require__(168);
 	var Subscription_1 = __webpack_require__(21);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var Observer_1 = __webpack_require__(466);
 	var rxSubscriber_1 = __webpack_require__(112);
@@ -211,6 +229,10 @@ webpackJsonp([1],[
 	var Observer_1 = __webpack_require__(461);
 	var rxSubscriber_1 = __webpack_require__(110);
 >>>>>>> Table directive to angular 2
+=======
+	var Observer_1 = __webpack_require__(472);
+	var rxSubscriber_1 = __webpack_require__(117);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Implements the {@link Observer} interface and extends the
 	 * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -452,12 +474,16 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Subscriber.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 4 */
 =======
 /* 4 */,
 /* 5 */
 >>>>>>> Table directive to angular 2
+=======
+/* 4 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -10300,10 +10326,14 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 5 */,
 =======
 >>>>>>> Table directive to angular 2
+=======
+/* 5 */,
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -10344,6 +10374,7 @@ webpackJsonp([1],[
 
 	"use strict";
 	var root_1 = __webpack_require__(25);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
 	var isPromise_1 = __webpack_require__(267);
@@ -10359,6 +10390,14 @@ webpackJsonp([1],[
 	var InnerSubscriber_1 = __webpack_require__(460);
 	var observable_1 = __webpack_require__(109);
 >>>>>>> Table directive to angular 2
+=======
+	var isArray_1 = __webpack_require__(39);
+	var isPromise_1 = __webpack_require__(273);
+	var Observable_1 = __webpack_require__(1);
+	var iterator_1 = __webpack_require__(91);
+	var InnerSubscriber_1 = __webpack_require__(471);
+	var observable_1 = __webpack_require__(116);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
 	    var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
 	    if (destination.closed) {
@@ -10447,6 +10486,7 @@ webpackJsonp([1],[
 	var Observable_1 = __webpack_require__(1);
 	var Subscriber_1 = __webpack_require__(3);
 	var Subscription_1 = __webpack_require__(21);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var ObjectUnsubscribedError_1 = __webpack_require__(164);
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var SubjectSubscription_1 = __webpack_require__(469);
@@ -10455,6 +10495,11 @@ webpackJsonp([1],[
 	var SubjectSubscription_1 = __webpack_require__(463);
 	var rxSubscriber_1 = __webpack_require__(110);
 >>>>>>> Table directive to angular 2
+=======
+	var ObjectUnsubscribedError_1 = __webpack_require__(167);
+	var SubjectSubscription_1 = __webpack_require__(474);
+	var rxSubscriber_1 = __webpack_require__(117);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * @class SubjectSubscriber<T>
 	 */
@@ -10616,11 +10661,15 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(4), __webpack_require__(1), __webpack_require__(93)) :
 =======
 	     true ? factory(exports, __webpack_require__(5), __webpack_require__(1), __webpack_require__(88)) :
 >>>>>>> Table directive to angular 2
+=======
+	     true ? factory(exports, __webpack_require__(4), __webpack_require__(1), __webpack_require__(94)) :
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'rxjs/Observable', '@angular/platform-browser'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.http = global.ng.http || {}),global.ng.core,global.Rx,global.ng.platformBrowser));
 	}(this, function (exports,_angular_core,rxjs_Observable,_angular_platformBrowser) { 'use strict';
@@ -12624,6 +12673,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
 	var isObject_1 = __webpack_require__(731);
@@ -12639,6 +12689,14 @@ webpackJsonp([1],[
 	var errorObject_1 = __webpack_require__(22);
 	var UnsubscriptionError_1 = __webpack_require__(263);
 >>>>>>> Table directive to angular 2
+=======
+	var isArray_1 = __webpack_require__(39);
+	var isObject_1 = __webpack_require__(736);
+	var isFunction_1 = __webpack_require__(168);
+	var tryCatch_1 = __webpack_require__(23);
+	var errorObject_1 = __webpack_require__(22);
+	var UnsubscriptionError_1 = __webpack_require__(271);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Represents a disposable resource, such as the execution of an Observable. A
 	 * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -12847,6 +12905,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncAction_1 = __webpack_require__(89);
 	var AsyncScheduler_1 = __webpack_require__(90);
@@ -12854,6 +12913,10 @@ webpackJsonp([1],[
 	var AsyncAction_1 = __webpack_require__(84);
 	var AsyncScheduler_1 = __webpack_require__(85);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncAction_1 = __webpack_require__(89);
+	var AsyncScheduler_1 = __webpack_require__(90);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.async = new AsyncScheduler_1.AsyncScheduler(AsyncAction_1.AsyncAction);
 	//# sourceMappingURL=async.js.map
 
@@ -12877,6 +12940,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isArray.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 40 */,
 /* 41 */,
 /* 42 */,
@@ -13118,6 +13182,9 @@ webpackJsonp([1],[
 /***/ },
 /* 55 */
 >>>>>>> Table directive to angular 2
+=======
+/* 40 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -13126,11 +13193,15 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(4)) :
 =======
 	     true ? factory(exports, __webpack_require__(5)) :
 >>>>>>> Table directive to angular 2
+=======
+	     true ? factory(exports, __webpack_require__(4)) :
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/core'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.common = global.ng.common || {}),global.ng.core));
 	}(this, function (exports,_angular_core) { 'use strict';
@@ -16251,6 +16322,7 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 49 */,
 /* 50 */,
@@ -16371,10 +16443,28 @@ webpackJsonp([1],[
 /* 64 */,
 /* 65 */,
 /* 66 */
+=======
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+	/* tslint:disable:no-unused-variable */
+	// Subject imported before Observable to bypass circular dependency issue since
+	// Subject extends Observable and Observable references Subject in it's
+	// definition
+	var Subject_1 = __webpack_require__(16);
+	exports.Subject = Subject_1.Subject;
+	/* tslint:enable:no-unused-variable */
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var map_1 = __webpack_require__(109);
 	Observable_1.Observable.prototype.map = map_1.map;
 	//# sourceMappingURL=map.js.map
@@ -16396,63 +16486,469 @@ webpackJsonp([1],[
 	var map_1 = __webpack_require__(107);
 	Observable_1.Observable.prototype.map = map_1.map;
 	//# sourceMappingURL=map.js.map
+=======
+	exports.Observable = Observable_1.Observable;
+	// statics
+	/* tslint:disable:no-use-before-declare */
+	__webpack_require__(475);
+	__webpack_require__(476);
+	__webpack_require__(477);
+	__webpack_require__(478);
+	__webpack_require__(479);
+	__webpack_require__(482);
+	__webpack_require__(483);
+	__webpack_require__(484);
+	__webpack_require__(485);
+	__webpack_require__(486);
+	__webpack_require__(487);
+	__webpack_require__(488);
+	__webpack_require__(489);
+	__webpack_require__(490);
+	__webpack_require__(491);
+	__webpack_require__(496);
+	__webpack_require__(492);
+	__webpack_require__(493);
+	__webpack_require__(494);
+	__webpack_require__(495);
+	__webpack_require__(497);
+	__webpack_require__(500);
+	__webpack_require__(498);
+	__webpack_require__(499);
+	__webpack_require__(501);
+	//dom
+	__webpack_require__(480);
+	__webpack_require__(481);
+	//operators
+	__webpack_require__(504);
+	__webpack_require__(505);
+	__webpack_require__(506);
+	__webpack_require__(507);
+	__webpack_require__(508);
+	__webpack_require__(509);
+	__webpack_require__(510);
+	__webpack_require__(511);
+	__webpack_require__(512);
+	__webpack_require__(513);
+	__webpack_require__(514);
+	__webpack_require__(515);
+	__webpack_require__(516);
+	__webpack_require__(517);
+	__webpack_require__(522);
+	__webpack_require__(518);
+	__webpack_require__(519);
+	__webpack_require__(520);
+	__webpack_require__(243);
+	__webpack_require__(521);
+	__webpack_require__(523);
+	__webpack_require__(524);
+	__webpack_require__(525);
+	__webpack_require__(526);
+	__webpack_require__(527);
+	__webpack_require__(530);
+	__webpack_require__(531);
+	__webpack_require__(532);
+	__webpack_require__(528);
+	__webpack_require__(533);
+	__webpack_require__(534);
+	__webpack_require__(535);
+	__webpack_require__(536);
+	__webpack_require__(537);
+	__webpack_require__(538);
+	__webpack_require__(539);
+	__webpack_require__(540);
+	__webpack_require__(502);
+	__webpack_require__(503);
+	__webpack_require__(541);
+	__webpack_require__(542);
+	__webpack_require__(529);
+	__webpack_require__(68);
+	__webpack_require__(543);
+	__webpack_require__(544);
+	__webpack_require__(545);
+	__webpack_require__(546);
+	__webpack_require__(547);
+	__webpack_require__(548);
+	__webpack_require__(549);
+	__webpack_require__(550);
+	__webpack_require__(551);
+	__webpack_require__(552);
+	__webpack_require__(553);
+	__webpack_require__(554);
+	__webpack_require__(555);
+	__webpack_require__(556);
+	__webpack_require__(557);
+	__webpack_require__(558);
+	__webpack_require__(559);
+	__webpack_require__(561);
+	__webpack_require__(560);
+	__webpack_require__(562);
+	__webpack_require__(563);
+	__webpack_require__(564);
+	__webpack_require__(565);
+	__webpack_require__(566);
+	__webpack_require__(567);
+	__webpack_require__(568);
+	__webpack_require__(569);
+	__webpack_require__(570);
+	__webpack_require__(571);
+	__webpack_require__(572);
+	__webpack_require__(573);
+	__webpack_require__(574);
+	__webpack_require__(575);
+	__webpack_require__(576);
+	__webpack_require__(577);
+	__webpack_require__(578);
+	__webpack_require__(579);
+	__webpack_require__(580);
+	__webpack_require__(581);
+	__webpack_require__(582);
+	__webpack_require__(583);
+	__webpack_require__(584);
+	__webpack_require__(585);
+	__webpack_require__(586);
+	__webpack_require__(587);
+	__webpack_require__(588);
+	__webpack_require__(589);
+	__webpack_require__(590);
+	__webpack_require__(591);
+	__webpack_require__(592);
+	__webpack_require__(593);
+	__webpack_require__(594);
+	__webpack_require__(595);
+	__webpack_require__(596);
+	__webpack_require__(597);
+	__webpack_require__(598);
+	__webpack_require__(599);
+	__webpack_require__(600);
+	__webpack_require__(601);
+	/* tslint:disable:no-unused-variable */
+	var Subscription_1 = __webpack_require__(21);
+	exports.Subscription = Subscription_1.Subscription;
+	var Subscriber_1 = __webpack_require__(3);
+	exports.Subscriber = Subscriber_1.Subscriber;
+	var AsyncSubject_1 = __webpack_require__(112);
+	exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
+	var ReplaySubject_1 = __webpack_require__(113);
+	exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
+	var BehaviorSubject_1 = __webpack_require__(158);
+	exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
+	var MulticastObservable_1 = __webpack_require__(245);
+	exports.MulticastObservable = MulticastObservable_1.MulticastObservable;
+	var ConnectableObservable_1 = __webpack_require__(159);
+	exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
+	var Notification_1 = __webpack_require__(87);
+	exports.Notification = Notification_1.Notification;
+	var EmptyError_1 = __webpack_require__(92);
+	exports.EmptyError = EmptyError_1.EmptyError;
+	var ArgumentOutOfRangeError_1 = __webpack_require__(118);
+	exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
+	var ObjectUnsubscribedError_1 = __webpack_require__(167);
+	exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
+	var UnsubscriptionError_1 = __webpack_require__(271);
+	exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
+	var timeInterval_1 = __webpack_require__(263);
+	exports.TimeInterval = timeInterval_1.TimeInterval;
+	var timestamp_1 = __webpack_require__(264);
+	exports.Timestamp = timestamp_1.Timestamp;
+	var TestScheduler_1 = __webpack_require__(729);
+	exports.TestScheduler = TestScheduler_1.TestScheduler;
+	var VirtualTimeScheduler_1 = __webpack_require__(266);
+	exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
+	var AjaxObservable_1 = __webpack_require__(247);
+	exports.AjaxResponse = AjaxObservable_1.AjaxResponse;
+	exports.AjaxError = AjaxObservable_1.AjaxError;
+	exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
+	var asap_1 = __webpack_require__(267);
+	var async_1 = __webpack_require__(27);
+	var queue_1 = __webpack_require__(268);
+	var animationFrame_1 = __webpack_require__(726);
+	var rxSubscriber_1 = __webpack_require__(117);
+	var iterator_1 = __webpack_require__(91);
+	var observable_1 = __webpack_require__(116);
+	/* tslint:enable:no-unused-variable */
+	/**
+	 * @typedef {Object} Rx.Scheduler
+	 * @property {Scheduler} queue Schedules on a queue in the current event frame
+	 * (trampoline scheduler). Use this for iteration operations.
+	 * @property {Scheduler} asap Schedules on the micro task queue, which uses the
+	 * fastest transport mechanism available, either Node.js' `process.nextTick()`
+	 * or Web Worker MessageChannel or setTimeout or others. Use this for
+	 * asynchronous conversions.
+	 * @property {Scheduler} async Schedules work with `setInterval`. Use this for
+	 * time-based operations.
+	 * @property {Scheduler} animationFrame Schedules work with `requestAnimationFrame`.
+	 * Use this for synchronizing with the platform's painting
+	 */
+	var Scheduler = {
+	    asap: asap_1.asap,
+	    queue: queue_1.queue,
+	    animationFrame: animationFrame_1.animationFrame,
+	    async: async_1.async
+	};
+	exports.Scheduler = Scheduler;
+	/**
+	 * @typedef {Object} Rx.Symbol
+	 * @property {Symbol|string} rxSubscriber A symbol to use as a property name to
+	 * retrieve an "Rx safe" Observer from an object. "Rx safety" can be defined as
+	 * an object that has all of the traits of an Rx Subscriber, including the
+	 * ability to add and remove subscriptions to the subscription chain and
+	 * guarantees involving event triggering (can't "next" after unsubscription,
+	 * etc).
+	 * @property {Symbol|string} observable A symbol to use as a property name to
+	 * retrieve an Observable as defined by the [ECMAScript "Observable" spec](https://github.com/zenparsing/es-observable).
+	 * @property {Symbol|string} iterator The ES6 symbol to use as a property name
+	 * to retrieve an iterator from an object.
+	 */
+	var Symbol = {
+	    rxSubscriber: rxSubscriber_1.$$rxSubscriber,
+	    observable: observable_1.$$observable,
+	    iterator: iterator_1.$$iterator
+	};
+	exports.Symbol = Symbol;
+	//# sourceMappingURL=Rx.js.map
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var MulticastObservable_1 = __webpack_require__(237);
 >>>>>>> Table directive to angular 2
 	var ConnectableObservable_1 = __webpack_require__(156);
+=======
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var Observable_1 = __webpack_require__(1);
+	var ScalarObservable_1 = __webpack_require__(160);
+	var EmptyObservable_1 = __webpack_require__(57);
+	var isScheduler_1 = __webpack_require__(58);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
-	 * Returns an Observable that emits the results of invoking a specified selector on items
-	 * emitted by a ConnectableObservable that shares a single subscription to the underlying stream.
-	 *
-	 * <img src="./img/multicast.png" width="100%">
-	 *
-	 * @param {Function|Subject} Factory function to create an intermediate subject through
-	 * which the source sequence's elements will be multicast to the selector function
-	 * or Subject to push source elements into.
-	 * @param {Function} Optional selector function that can use the multicasted source stream
-	 * as many times as needed, without causing multiple subscriptions to the source stream.
-	 * Subscribers to the given source will receive all notifications of the source from the
-	 * time of the subscription forward.
-	 * @return {Observable} an Observable that emits the results of invoking the selector
-	 * on the items emitted by a `ConnectableObservable` that shares a single subscription to
-	 * the underlying stream.
-	 * @method multicast
-	 * @owner Observable
+	 * We need this JSDoc comment for affecting ESDoc.
+	 * @extends {Ignored}
+	 * @hide true
 	 */
-	function multicast(subjectOrSubjectFactory, selector) {
-	    var subjectFactory;
-	    if (typeof subjectOrSubjectFactory === 'function') {
-	        subjectFactory = subjectOrSubjectFactory;
+	var ArrayObservable = (function (_super) {
+	    __extends(ArrayObservable, _super);
+	    function ArrayObservable(array, scheduler) {
+	        _super.call(this);
+	        this.array = array;
+	        this.scheduler = scheduler;
+	        if (!scheduler && array.length === 1) {
+	            this._isScalar = true;
+	            this.value = array[0];
+	        }
 	    }
-	    else {
-	        subjectFactory = function subjectFactory() {
-	            return subjectOrSubjectFactory;
-	        };
-	    }
-	    return !selector ?
-	        new ConnectableObservable_1.ConnectableObservable(this, subjectFactory) :
-	        new MulticastObservable_1.MulticastObservable(this, subjectFactory, selector);
-	}
-	exports.multicast = multicast;
-	//# sourceMappingURL=multicast.js.map
+	    ArrayObservable.create = function (array, scheduler) {
+	        return new ArrayObservable(array, scheduler);
+	    };
+	    /**
+	     * Creates an Observable that emits some values you specify as arguments,
+	     * immediately one after the other, and then emits a complete notification.
+	     *
+	     * <span class="informal">Emits the arguments you provide, then completes.
+	     * </span>
+	     *
+	     * <img src="./img/of.png" width="100%">
+	     *
+	     * This static operator is useful for creating a simple Observable that only
+	     * emits the arguments given, and the complete notification thereafter. It can
+	     * be used for composing with other Observables, such as with {@link concat}.
+	     * By default, it uses a `null` Scheduler, which means the `next`
+	     * notifications are sent synchronously, although with a different Scheduler
+	     * it is possible to determine when those notifications will be delivered.
+	     *
+	     * @example <caption>Emit 10, 20, 30, then 'a', 'b', 'c', then start ticking every second.</caption>
+	     * var numbers = Rx.Observable.of(10, 20, 30);
+	     * var letters = Rx.Observable.of('a', 'b', 'c');
+	     * var interval = Rx.Observable.interval(1000);
+	     * var result = numbers.concat(letters).concat(interval);
+	     * result.subscribe(x => console.log(x));
+	     *
+	     * @see {@link create}
+	     * @see {@link empty}
+	     * @see {@link never}
+	     * @see {@link throw}
+	     *
+	     * @param {...T} values Arguments that represent `next` values to be emitted.
+	     * @param {Scheduler} [scheduler] A {@link Scheduler} to use for scheduling
+	     * the emissions of the `next` notifications.
+	     * @return {Observable<T>} An Observable that emits each given input value.
+	     * @static true
+	     * @name of
+	     * @owner Observable
+	     */
+	    ArrayObservable.of = function () {
+	        var array = [];
+	        for (var _i = 0; _i < arguments.length; _i++) {
+	            array[_i - 0] = arguments[_i];
+	        }
+	        var scheduler = array[array.length - 1];
+	        if (isScheduler_1.isScheduler(scheduler)) {
+	            array.pop();
+	        }
+	        else {
+	            scheduler = null;
+	        }
+	        var len = array.length;
+	        if (len > 1) {
+	            return new ArrayObservable(array, scheduler);
+	        }
+	        else if (len === 1) {
+	            return new ScalarObservable_1.ScalarObservable(array[0], scheduler);
+	        }
+	        else {
+	            return new EmptyObservable_1.EmptyObservable(scheduler);
+	        }
+	    };
+	    ArrayObservable.dispatch = function (state) {
+	        var array = state.array, index = state.index, count = state.count, subscriber = state.subscriber;
+	        if (index >= count) {
+	            subscriber.complete();
+	            return;
+	        }
+	        subscriber.next(array[index]);
+	        if (subscriber.closed) {
+	            return;
+	        }
+	        state.index = index + 1;
+	        this.schedule(state);
+	    };
+	    ArrayObservable.prototype._subscribe = function (subscriber) {
+	        var index = 0;
+	        var array = this.array;
+	        var count = array.length;
+	        var scheduler = this.scheduler;
+	        if (scheduler) {
+	            return scheduler.schedule(ArrayObservable.dispatch, 0, {
+	                array: array, index: index, count: count, subscriber: subscriber
+	            });
+	        }
+	        else {
+	            for (var i = 0; i < count && !subscriber.closed; i++) {
+	                subscriber.next(array[i]);
+	            }
+	            subscriber.complete();
+	        }
+	    };
+	    return ArrayObservable;
+	}(Observable_1.Observable));
+	exports.ArrayObservable = ArrayObservable;
+	//# sourceMappingURL=ArrayObservable.js.map
 
 /***/ },
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var Observable_1 = __webpack_require__(1);
+	/**
+	 * We need this JSDoc comment for affecting ESDoc.
+	 * @extends {Ignored}
+	 * @hide true
+	 */
+	var EmptyObservable = (function (_super) {
+	    __extends(EmptyObservable, _super);
+	    function EmptyObservable(scheduler) {
+	        _super.call(this);
+	        this.scheduler = scheduler;
+	    }
+	    /**
+	     * Creates an Observable that emits no items to the Observer and immediately
+	     * emits a complete notification.
+	     *
+	     * <span class="informal">Just emits 'complete', and nothing else.
+	     * </span>
+	     *
+	     * <img src="./img/empty.png" width="100%">
+	     *
+	     * This static operator is useful for creating a simple Observable that only
+	     * emits the complete notification. It can be used for composing with other
+	     * Observables, such as in a {@link mergeMap}.
+	     *
+	     * @example <caption>Emit the number 7, then complete.</caption>
+	     * var result = Rx.Observable.empty().startWith(7);
+	     * result.subscribe(x => console.log(x));
+	     *
+	     * @example <caption>Map and flatten only odd numbers to the sequence 'a', 'b', 'c'</caption>
+	     * var interval = Rx.Observable.interval(1000);
+	     * var result = interval.mergeMap(x =>
+	     *   x % 2 === 1 ? Rx.Observable.of('a', 'b', 'c') : Rx.Observable.empty()
+	     * );
+	     * result.subscribe(x => console.log(x));
+	     *
+	     * @see {@link create}
+	     * @see {@link never}
+	     * @see {@link of}
+	     * @see {@link throw}
+	     *
+	     * @param {Scheduler} [scheduler] A {@link Scheduler} to use for scheduling
+	     * the emission of the complete notification.
+	     * @return {Observable} An "empty" Observable: emits only the complete
+	     * notification.
+	     * @static true
+	     * @name empty
+	     * @owner Observable
+	     */
+	    EmptyObservable.create = function (scheduler) {
+	        return new EmptyObservable(scheduler);
+	    };
+	    EmptyObservable.dispatch = function (arg) {
+	        var subscriber = arg.subscriber;
+	        subscriber.complete();
+	    };
+	    EmptyObservable.prototype._subscribe = function (subscriber) {
+	        var scheduler = this.scheduler;
+	        if (scheduler) {
+	            return scheduler.schedule(EmptyObservable.dispatch, 0, { subscriber: subscriber });
+	        }
+	        else {
+	            subscriber.complete();
+	        }
+	    };
+	    return EmptyObservable;
+	}(Observable_1.Observable));
+	exports.EmptyObservable = EmptyObservable;
+	//# sourceMappingURL=EmptyObservable.js.map
+
+/***/ },
+/* 58 */
+/***/ function(module, exports) {
+
+	"use strict";
+	function isScheduler(value) {
+	    return value && typeof value.schedule === 'function';
+	}
+	exports.isScheduler = isScheduler;
+	//# sourceMappingURL=isScheduler.js.map
+
+/***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 75 */
 =======
 /* 72 */
 >>>>>>> Table directive to angular 2
+=======
+/* 59 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16461,11 +16957,15 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(4), __webpack_require__(259), __webpack_require__(16), __webpack_require__(1), __webpack_require__(158)) :
 =======
 	     true ? factory(exports, __webpack_require__(5), __webpack_require__(257), __webpack_require__(16), __webpack_require__(1), __webpack_require__(158)) :
 >>>>>>> Table directive to angular 2
+=======
+	     true ? factory(exports, __webpack_require__(4), __webpack_require__(265), __webpack_require__(16), __webpack_require__(1), __webpack_require__(161)) :
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'rxjs/operator/toPromise', 'rxjs/Subject', 'rxjs/Observable', 'rxjs/observable/fromPromise'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.forms = global.ng.forms || {}),global.ng.core,global.Rx.Observable.prototype,global.Rx,global.Rx,global.Rx.Observable));
 	}(this, function (exports,_angular_core,rxjs_operator_toPromise,rxjs_Subject,rxjs_Observable,rxjs_observable_fromPromise) { 'use strict';
@@ -21106,6 +21606,7 @@ webpackJsonp([1],[
 	        return AbstractControl;
 	    }());
 	    /**
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	     * @whatItDoes Tracks the value and validation status of an individual form control.
 	     *
 	     * It is one of the three fundamental building blocks of Angular forms, along with
@@ -21208,6 +21709,221 @@ webpackJsonp([1],[
 	        };
 	        return FormControl;
 	    }(AbstractControl));
+=======
+	     * The ng module for reactive forms.
+	     * @stable
+	     */
+	    var ReactiveFormsModule = (function () {
+	        function ReactiveFormsModule() {
+	        }
+	        ReactiveFormsModule.decorators = [
+	            { type: _angular_core.NgModule, args: [{
+	                        declarations: [REACTIVE_DRIVEN_DIRECTIVES],
+	                        providers: [FormBuilder, RadioControlRegistry],
+	                        exports: [InternalFormsSharedModule, REACTIVE_DRIVEN_DIRECTIVES]
+	                    },] },
+	        ];
+	        /** @nocollapse */
+	        ReactiveFormsModule.ctorParameters = [];
+	        return ReactiveFormsModule;
+	    }());
+
+	    exports.AbstractControlDirective = AbstractControlDirective;
+	    exports.AbstractFormGroupDirective = AbstractFormGroupDirective;
+	    exports.CheckboxControlValueAccessor = CheckboxControlValueAccessor;
+	    exports.ControlContainer = ControlContainer;
+	    exports.NG_VALUE_ACCESSOR = NG_VALUE_ACCESSOR;
+	    exports.DefaultValueAccessor = DefaultValueAccessor;
+	    exports.NgControl = NgControl;
+	    exports.NgControlStatus = NgControlStatus;
+	    exports.NgControlStatusGroup = NgControlStatusGroup;
+	    exports.NgForm = NgForm;
+	    exports.NgModel = NgModel;
+	    exports.NgModelGroup = NgModelGroup;
+	    exports.RadioControlValueAccessor = RadioControlValueAccessor;
+	    exports.FormControlDirective = FormControlDirective;
+	    exports.FormControlName = FormControlName;
+	    exports.FormGroupDirective = FormGroupDirective;
+	    exports.FormArrayName = FormArrayName;
+	    exports.FormGroupName = FormGroupName;
+	    exports.NgSelectOption = NgSelectOption;
+	    exports.SelectControlValueAccessor = SelectControlValueAccessor;
+	    exports.SelectMultipleControlValueAccessor = SelectMultipleControlValueAccessor;
+	    exports.MaxLengthValidator = MaxLengthValidator;
+	    exports.MinLengthValidator = MinLengthValidator;
+	    exports.PatternValidator = PatternValidator;
+	    exports.RequiredValidator = RequiredValidator;
+	    exports.FormBuilder = FormBuilder;
+	    exports.AbstractControl = AbstractControl;
+	    exports.FormArray = FormArray;
+	    exports.FormControl = FormControl;
+	    exports.FormGroup = FormGroup;
+	    exports.NG_ASYNC_VALIDATORS = NG_ASYNC_VALIDATORS;
+	    exports.NG_VALIDATORS = NG_VALIDATORS;
+	    exports.Validators = Validators;
+	    exports.FormsModule = FormsModule;
+	    exports.ReactiveFormsModule = ReactiveFormsModule;
+
+	}));
+
+
+/***/ },
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	var map_1 = __webpack_require__(114);
+	Observable_1.Observable.prototype.map = map_1.map;
+	//# sourceMappingURL=map.js.map
+
+/***/ },
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var MulticastObservable_1 = __webpack_require__(245);
+	var ConnectableObservable_1 = __webpack_require__(159);
+	/**
+	 * Returns an Observable that emits the results of invoking a specified selector on items
+	 * emitted by a ConnectableObservable that shares a single subscription to the underlying stream.
+	 *
+	 * <img src="./img/multicast.png" width="100%">
+	 *
+	 * @param {Function|Subject} Factory function to create an intermediate subject through
+	 * which the source sequence's elements will be multicast to the selector function
+	 * or Subject to push source elements into.
+	 * @param {Function} Optional selector function that can use the multicasted source stream
+	 * as many times as needed, without causing multiple subscriptions to the source stream.
+	 * Subscribers to the given source will receive all notifications of the source from the
+	 * time of the subscription forward.
+	 * @return {Observable} an Observable that emits the results of invoking the selector
+	 * on the items emitted by a `ConnectableObservable` that shares a single subscription to
+	 * the underlying stream.
+	 * @method multicast
+	 * @owner Observable
+	 */
+	function multicast(subjectOrSubjectFactory, selector) {
+	    var subjectFactory;
+	    if (typeof subjectOrSubjectFactory === 'function') {
+	        subjectFactory = subjectOrSubjectFactory;
+	    }
+	    else {
+	        subjectFactory = function subjectFactory() {
+	            return subjectOrSubjectFactory;
+	        };
+	    }
+	    return !selector ?
+	        new ConnectableObservable_1.ConnectableObservable(this, subjectFactory) :
+	        new MulticastObservable_1.MulticastObservable(this, subjectFactory, selector);
+	}
+	exports.multicast = multicast;
+	//# sourceMappingURL=multicast.js.map
+
+/***/ },
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var Observable_1 = __webpack_require__(1);
+	/**
+	 * Represents a push-based event or value that an {@link Observable} can emit.
+	 * This class is particularly useful for operators that manage notifications,
+	 * like {@link materialize}, {@link dematerialize}, {@link observeOn}, and
+	 * others. Besides wrapping the actual delivered value, it also annotates it
+	 * with metadata of, for instance, what type of push message it is (`next`,
+	 * `error`, or `complete`).
+	 *
+	 * @see {@link materialize}
+	 * @see {@link dematerialize}
+	 * @see {@link observeOn}
+	 *
+	 * @class Notification<T>
+	 */
+	var Notification = (function () {
+	    function Notification(kind, value, exception) {
+	        this.kind = kind;
+	        this.value = value;
+	        this.exception = exception;
+	        this.hasValue = kind === 'N';
+	    }
+	    /**
+	     * Delivers to the given `observer` the value wrapped by this Notification.
+	     * @param {Observer} observer
+	     * @return
+	     */
+	    Notification.prototype.observe = function (observer) {
+	        switch (this.kind) {
+	            case 'N':
+	                return observer.next && observer.next(this.value);
+	            case 'E':
+	                return observer.error && observer.error(this.exception);
+	            case 'C':
+	                return observer.complete && observer.complete();
+	        }
+	    };
+	    /**
+	     * Given some {@link Observer} callbacks, deliver the value represented by the
+	     * current Notification to the correctly corresponding callback.
+	     * @param {function(value: T): void} next An Observer `next` callback.
+	     * @param {function(err: any): void} [error] An Observer `error` callback.
+	     * @param {function(): void} [complete] An Observer `complete` callback.
+	     * @return {any}
+	     */
+	    Notification.prototype.do = function (next, error, complete) {
+	        var kind = this.kind;
+	        switch (kind) {
+	            case 'N':
+	                return next && next(this.value);
+	            case 'E':
+	                return error && error(this.exception);
+	            case 'C':
+	                return complete && complete();
+	        }
+	    };
+	    /**
+	     * Takes an Observer or its individual callback functions, and calls `observe`
+	     * or `do` methods accordingly.
+	     * @param {Observer|function(value: T): void} nextOrObserver An Observer or
+	     * the `next` callback.
+	     * @param {function(err: any): void} [error] An Observer `error` callback.
+	     * @param {function(): void} [complete] An Observer `complete` callback.
+	     * @return {any}
+	     */
+	    Notification.prototype.accept = function (nextOrObserver, error, complete) {
+	        if (nextOrObserver && typeof nextOrObserver.next === 'function') {
+	            return this.observe(nextOrObserver);
+	        }
+	        else {
+	            return this.do(nextOrObserver, error, complete);
+	        }
+	    };
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    /**
 	     * @whatItDoes Tracks the value and validity state of a group of {@link FormControl}
 	     * instances.
@@ -21459,6 +22175,314 @@ webpackJsonp([1],[
 	            this._setUpControls();
 	            this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
 	        }
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
+=======
+	        return this.undefinedValueNotification;
+	    };
+	    /**
+	     * A shortcut to create a Notification instance of the type `error` from a
+	     * given error.
+	     * @param {any} [err] The `error` exception.
+	     * @return {Notification<T>} The "error" Notification representing the
+	     * argument.
+	     */
+	    Notification.createError = function (err) {
+	        return new Notification('E', undefined, err);
+	    };
+	    /**
+	     * A shortcut to create a Notification instance of the type `complete`.
+	     * @return {Notification<any>} The valueless "complete" Notification.
+	     */
+	    Notification.createComplete = function () {
+	        return this.completeNotification;
+	    };
+	    Notification.completeNotification = new Notification('C');
+	    Notification.undefinedValueNotification = new Notification('N', undefined);
+	    return Notification;
+	}());
+	exports.Notification = Notification;
+	//# sourceMappingURL=Notification.js.map
+
+/***/ },
+/* 88 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var OuterSubscriber_1 = __webpack_require__(6);
+	var subscribeToResult_1 = __webpack_require__(7);
+	/**
+	 * Converts a higher-order Observable into a first-order Observable which
+	 * concurrently delivers all values that are emitted on the inner Observables.
+	 *
+	 * <span class="informal">Flattens an Observable-of-Observables.</span>
+	 *
+	 * <img src="./img/mergeAll.png" width="100%">
+	 *
+	 * `mergeAll` subscribes to an Observable that emits Observables, also known as
+	 * a higher-order Observable. Each time it observes one of these emitted inner
+	 * Observables, it subscribes to that and delivers all the values from the
+	 * inner Observable on the output Observable. The output Observable only
+	 * completes once all inner Observables have completed. Any error delivered by
+	 * a inner Observable will be immediately emitted on the output Observable.
+	 *
+	 * @example <caption>Spawn a new interval Observable for each click event, and blend their outputs as one Observable</caption>
+	 * var clicks = Rx.Observable.fromEvent(document, 'click');
+	 * var higherOrder = clicks.map((ev) => Rx.Observable.interval(1000));
+	 * var firstOrder = higherOrder.mergeAll();
+	 * firstOrder.subscribe(x => console.log(x));
+	 *
+	 * @example <caption>Count from 0 to 9 every second for each click, but only allow 2 concurrent timers</caption>
+	 * var clicks = Rx.Observable.fromEvent(document, 'click');
+	 * var higherOrder = clicks.map((ev) => Rx.Observable.interval(1000).take(10));
+	 * var firstOrder = higherOrder.mergeAll(2);
+	 * firstOrder.subscribe(x => console.log(x));
+	 *
+	 * @see {@link combineAll}
+	 * @see {@link concatAll}
+	 * @see {@link exhaust}
+	 * @see {@link merge}
+	 * @see {@link mergeMap}
+	 * @see {@link mergeMapTo}
+	 * @see {@link mergeScan}
+	 * @see {@link switch}
+	 * @see {@link zipAll}
+	 *
+	 * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of inner
+	 * Observables being subscribed to concurrently.
+	 * @return {Observable} An Observable that emits values coming from all the
+	 * inner Observables emitted by the source Observable.
+	 * @method mergeAll
+	 * @owner Observable
+	 */
+	function mergeAll(concurrent) {
+	    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
+	    return this.lift(new MergeAllOperator(concurrent));
+	}
+	exports.mergeAll = mergeAll;
+	var MergeAllOperator = (function () {
+	    function MergeAllOperator(concurrent) {
+	        this.concurrent = concurrent;
+	    }
+	    MergeAllOperator.prototype.call = function (observer, source) {
+	        return source._subscribe(new MergeAllSubscriber(observer, this.concurrent));
+	    };
+	    return MergeAllOperator;
+	}());
+	exports.MergeAllOperator = MergeAllOperator;
+	/**
+	 * We need this JSDoc comment for affecting ESDoc.
+	 * @ignore
+	 * @extends {Ignored}
+	 */
+	var MergeAllSubscriber = (function (_super) {
+	    __extends(MergeAllSubscriber, _super);
+	    function MergeAllSubscriber(destination, concurrent) {
+	        _super.call(this, destination);
+	        this.concurrent = concurrent;
+	        this.hasCompleted = false;
+	        this.buffer = [];
+	        this.active = 0;
+	    }
+	    MergeAllSubscriber.prototype._next = function (observable) {
+	        if (this.active < this.concurrent) {
+	            this.active++;
+	            this.add(subscribeToResult_1.subscribeToResult(this, observable));
+	        }
+	        else {
+	            this.buffer.push(observable);
+	        }
+	    };
+	    MergeAllSubscriber.prototype._complete = function () {
+	        this.hasCompleted = true;
+	        if (this.active === 0 && this.buffer.length === 0) {
+	            this.destination.complete();
+	        }
+	    };
+	    MergeAllSubscriber.prototype.notifyComplete = function (innerSub) {
+	        var buffer = this.buffer;
+	        this.remove(innerSub);
+	        this.active--;
+	        if (buffer.length > 0) {
+	            this._next(buffer.shift());
+	        }
+	        else if (this.active === 0 && this.hasCompleted) {
+	            this.destination.complete();
+	        }
+	    };
+	    return MergeAllSubscriber;
+	}(OuterSubscriber_1.OuterSubscriber));
+	exports.MergeAllSubscriber = MergeAllSubscriber;
+	//# sourceMappingURL=mergeAll.js.map
+
+/***/ },
+/* 89 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var root_1 = __webpack_require__(25);
+	var Action_1 = __webpack_require__(719);
+	/**
+	 * We need this JSDoc comment for affecting ESDoc.
+	 * @ignore
+	 * @extends {Ignored}
+	 */
+	var AsyncAction = (function (_super) {
+	    __extends(AsyncAction, _super);
+	    function AsyncAction(scheduler, work) {
+	        _super.call(this, scheduler, work);
+	        this.scheduler = scheduler;
+	        this.work = work;
+	        this.pending = false;
+	    }
+	    AsyncAction.prototype.schedule = function (state, delay) {
+	        if (delay === void 0) { delay = 0; }
+	        if (this.closed) {
+	            return this;
+	        }
+	        // Always replace the current state with the new state.
+	        this.state = state;
+	        // Set the pending flag indicating that this action has been scheduled, or
+	        // has recursively rescheduled itself.
+	        this.pending = true;
+	        var id = this.id;
+	        var scheduler = this.scheduler;
+	        //
+	        // Important implementation note:
+	        //
+	        // Actions only execute once by default, unless rescheduled from within the
+	        // scheduled callback. This allows us to implement single and repeat
+	        // actions via the same code path, without adding API surface area, as well
+	        // as mimic traditional recursion but across asynchronous boundaries.
+	        //
+	        // However, JS runtimes and timers distinguish between intervals achieved by
+	        // serial `setTimeout` calls vs. a single `setInterval` call. An interval of
+	        // serial `setTimeout` calls can be individually delayed, which delays
+	        // scheduling the next `setTimeout`, and so on. `setInterval` attempts to
+	        // guarantee the interval callback will be invoked more precisely to the
+	        // interval period, regardless of load.
+	        //
+	        // Therefore, we use `setInterval` to schedule single and repeat actions.
+	        // If the action reschedules itself with the same delay, the interval is not
+	        // canceled. If the action doesn't reschedule, or reschedules with a
+	        // different delay, the interval will be canceled after scheduled callback
+	        // execution.
+	        //
+	        if (id != null) {
+	            this.id = this.recycleAsyncId(scheduler, id, delay);
+	        }
+	        this.delay = delay;
+	        // If this action has already an async Id, don't request a new one.
+	        this.id = this.id || this.requestAsyncId(scheduler, this.id, delay);
+	        return this;
+	    };
+	    AsyncAction.prototype.requestAsyncId = function (scheduler, id, delay) {
+	        if (delay === void 0) { delay = 0; }
+	        return root_1.root.setInterval(scheduler.flush.bind(scheduler, this), delay);
+	    };
+	    AsyncAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
+	        if (delay === void 0) { delay = 0; }
+	        // If this action is rescheduled with the same delay time, don't clear the interval id.
+	        if (delay !== null && this.delay === delay) {
+	            return id;
+	        }
+	        // Otherwise, if the action's delay time is different from the current delay,
+	        // clear the interval id
+	        return root_1.root.clearInterval(id) && undefined || undefined;
+	    };
+	    /**
+	     * Immediately executes this action and the `work` it contains.
+	     * @return {any}
+	     */
+	    AsyncAction.prototype.execute = function (state, delay) {
+	        if (this.closed) {
+	            return new Error('executing a cancelled action');
+	        }
+	        this.pending = false;
+	        var error = this._execute(state, delay);
+	        if (error) {
+	            return error;
+	        }
+	        else if (this.pending === false && this.id != null) {
+	            // Dequeue if the action didn't reschedule itself. Don't call
+	            // unsubscribe(), because the action could reschedule later.
+	            // For example:
+	            // ```
+	            // scheduler.schedule(function doWork(counter) {
+	            //   /* ... I'm a busy worker bee ... */
+	            //   var originalAction = this;
+	            //   /* wait 100ms before rescheduling the action */
+	            //   setTimeout(function () {
+	            //     originalAction.schedule(counter + 1);
+	            //   }, 100);
+	            // }, 1000);
+	            // ```
+	            this.id = this.recycleAsyncId(this.scheduler, this.id, null);
+	        }
+	    };
+	    AsyncAction.prototype._execute = function (state, delay) {
+	        var errored = false;
+	        var errorValue = undefined;
+	        try {
+	            this.work(state);
+	        }
+	        catch (e) {
+	            errored = true;
+	            errorValue = !!e && e || new Error(e);
+	        }
+	        if (errored) {
+	            this.unsubscribe();
+	            return errorValue;
+	        }
+	    };
+	    AsyncAction.prototype._unsubscribe = function () {
+	        var id = this.id;
+	        var scheduler = this.scheduler;
+	        var actions = scheduler.actions;
+	        var index = actions.indexOf(this);
+	        this.work = null;
+	        this.delay = null;
+	        this.state = null;
+	        this.pending = false;
+	        this.scheduler = null;
+	        if (index !== -1) {
+	            actions.splice(index, 1);
+	        }
+	        if (id != null) {
+	            this.id = this.recycleAsyncId(scheduler, id, null);
+	        }
+	    };
+	    return AsyncAction;
+	}(Action_1.Action));
+	exports.AsyncAction = AsyncAction;
+	//# sourceMappingURL=AsyncAction.js.map
+
+/***/ },
+/* 90 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var Scheduler_1 = __webpack_require__(473);
+	var AsyncScheduler = (function (_super) {
+	    __extends(AsyncScheduler, _super);
+	    function AsyncScheduler() {
+	        _super.apply(this, arguments);
+	        this.actions = [];
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	        /**
 	         * Registers a control with the group's list of controls.
 	         *
@@ -21476,10 +22500,135 @@ webpackJsonp([1],[
 	        /**
 	         * Add a control to this group.
 	         */
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	        FormGroup.prototype.addControl = function (name, control) {
 	            this.registerControl(name, control);
 	            this.updateValueAndValidity();
 	            this._onCollectionChange();
+=======
+	        this.scheduled = undefined;
+	    }
+	    AsyncScheduler.prototype.flush = function (action) {
+	        var actions = this.actions;
+	        if (this.active) {
+	            actions.push(action);
+	            return;
+	        }
+	        var error;
+	        this.active = true;
+	        do {
+	            if (error = action.execute(action.state, action.delay)) {
+	                break;
+	            }
+	        } while (action = actions.shift()); // exhaust the scheduler queue
+	        this.active = false;
+	        if (error) {
+	            while (action = actions.shift()) {
+	                action.unsubscribe();
+	            }
+	            throw error;
+	        }
+	    };
+	    return AsyncScheduler;
+	}(Scheduler_1.Scheduler));
+	exports.AsyncScheduler = AsyncScheduler;
+	//# sourceMappingURL=AsyncScheduler.js.map
+
+/***/ },
+/* 91 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var root_1 = __webpack_require__(25);
+	var Symbol = root_1.root.Symbol;
+	if (typeof Symbol === 'function') {
+	    if (Symbol.iterator) {
+	        exports.$$iterator = Symbol.iterator;
+	    }
+	    else if (typeof Symbol.for === 'function') {
+	        exports.$$iterator = Symbol.for('iterator');
+	    }
+	}
+	else {
+	    if (root_1.root.Set && typeof new root_1.root.Set()['@@iterator'] === 'function') {
+	        // Bug for mozilla version
+	        exports.$$iterator = '@@iterator';
+	    }
+	    else if (root_1.root.Map) {
+	        // es6-shim specific logic
+	        var keys = Object.getOwnPropertyNames(root_1.root.Map.prototype);
+	        for (var i = 0; i < keys.length; ++i) {
+	            var key = keys[i];
+	            if (key !== 'entries' && key !== 'size' && root_1.root.Map.prototype[key] === root_1.root.Map.prototype['entries']) {
+	                exports.$$iterator = key;
+	                break;
+	            }
+	        }
+	    }
+	    else {
+	        exports.$$iterator = '@@iterator';
+	    }
+	}
+	//# sourceMappingURL=iterator.js.map
+
+/***/ },
+/* 92 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	/**
+	 * An error thrown when an Observable or a sequence was queried but has no
+	 * elements.
+	 *
+	 * @see {@link first}
+	 * @see {@link last}
+	 * @see {@link single}
+	 *
+	 * @class EmptyError
+	 */
+	var EmptyError = (function (_super) {
+	    __extends(EmptyError, _super);
+	    function EmptyError() {
+	        var err = _super.call(this, 'no elements in sequence');
+	        this.name = err.name = 'EmptyError';
+	        this.stack = err.stack;
+	        this.message = err.message;
+	    }
+	    return EmptyError;
+	}(Error));
+	exports.EmptyError = EmptyError;
+	//# sourceMappingURL=EmptyError.js.map
+
+/***/ },
+/* 93 */,
+/* 94 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * @license Angular v2.0.2
+	 * (c) 2010-2016 Google, Inc. https://angular.io/
+	 * License: MIT
+	 */
+	(function (global, factory) {
+	     true ? factory(exports, __webpack_require__(40), __webpack_require__(4)) :
+	    typeof define === 'function' && define.amd ? define(['exports', '@angular/common', '@angular/core'], factory) :
+	    (factory((global.ng = global.ng || {}, global.ng.platformBrowser = global.ng.platformBrowser || {}),global.ng.common,global.ng.core));
+	}(this, function (exports,_angular_common,_angular_core) { 'use strict';
+
+	    var DebugDomRootRenderer = _angular_core.__core_private__.DebugDomRootRenderer;
+	    var NoOpAnimationPlayer = _angular_core.__core_private__.NoOpAnimationPlayer;
+
+	    var _NoOpAnimationDriver = (function () {
+	        function _NoOpAnimationDriver() {
+	        }
+	        _NoOpAnimationDriver.prototype.animate = function (element, startingStyles, keyframes, duration, delay, easing) {
+	            return new NoOpAnimationPlayer();
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	        };
 	        /**
 	         * Remove a control from this group.
@@ -47895,12 +49044,6 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 89 */,
-/* 90 */,
-/* 91 */,
-/* 92 */,
-/* 93 */,
-/* 94 */,
 /* 95 */,
 /* 96 */,
 /* 97 */,
@@ -47911,7 +49054,14 @@ webpackJsonp([1],[
 /* 102 */,
 /* 103 */,
 /* 104 */,
-/* 105 */
+/* 105 */,
+/* 106 */,
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -47964,7 +49114,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AsyncSubject.js.map
 
 /***/ },
-/* 106 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -47974,8 +49124,8 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subject_1 = __webpack_require__(16);
-	var queue_1 = __webpack_require__(260);
-	var observeOn_1 = __webpack_require__(162);
+	var queue_1 = __webpack_require__(268);
+	var observeOn_1 = __webpack_require__(165);
 	/**
 	 * @class ReplaySubject<T>
 	 */
@@ -48048,7 +49198,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ReplaySubject.js.map
 
 /***/ },
-/* 107 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -48140,7 +49290,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=map.js.map
 
 /***/ },
-/* 108 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -48257,7 +49407,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=reduce.js.map
 
 /***/ },
-/* 109 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -48284,7 +49434,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=observable.js.map
 
 /***/ },
-/* 110 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -48295,7 +49445,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=rxSubscriber.js.map
 
 /***/ },
-/* 111 */
+/* 118 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -48328,7 +49478,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ArgumentOutOfRangeError.js.map
 
 /***/ },
-/* 112 */
+/* 119 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -48339,7 +49489,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isDate.js.map
 
 /***/ },
-/* 113 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -48348,7 +49498,7 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
-	   true ? factory(exports, __webpack_require__(5)) :
+	   true ? factory(exports, __webpack_require__(4)) :
 	  typeof define === 'function' && define.amd ? define(['exports', '@angular/core'], factory) :
 	  (factory((global.ng = global.ng || {}, global.ng.compiler = global.ng.compiler || {}),global.ng.core));
 	}(this, function (exports,_angular_core) { 'use strict';
@@ -67174,7 +68324,48 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 161 */
+=======
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67183,6 +68374,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var subscribeToResult_1 = __webpack_require__(7);
 	var OuterSubscriber_1 = __webpack_require__(6);
 	/**
@@ -67318,6 +68510,10 @@ webpackJsonp([1],[
 	            result = this.resultSelector(outerValue, innerValue, outerIndex, innerIndex);
 =======
 	var ObjectUnsubscribedError_1 = __webpack_require__(164);
+=======
+	var Subject_1 = __webpack_require__(16);
+	var ObjectUnsubscribedError_1 = __webpack_require__(167);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * @class BehaviorSubject<T>
 	 */
@@ -67361,240 +68557,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ },
-/* 155 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/* tslint:disable:no-unused-variable */
-	// Subject imported before Observable to bypass circular dependency issue since
-	// Subject extends Observable and Observable references Subject in it's
-	// definition
-	var Subject_1 = __webpack_require__(16);
-	exports.Subject = Subject_1.Subject;
-	/* tslint:enable:no-unused-variable */
-	var Observable_1 = __webpack_require__(1);
-	exports.Observable = Observable_1.Observable;
-	// statics
-	/* tslint:disable:no-use-before-declare */
-	__webpack_require__(464);
-	__webpack_require__(465);
-	__webpack_require__(466);
-	__webpack_require__(467);
-	__webpack_require__(468);
-	__webpack_require__(471);
-	__webpack_require__(472);
-	__webpack_require__(473);
-	__webpack_require__(474);
-	__webpack_require__(475);
-	__webpack_require__(476);
-	__webpack_require__(477);
-	__webpack_require__(478);
-	__webpack_require__(479);
-	__webpack_require__(480);
-	__webpack_require__(485);
-	__webpack_require__(481);
-	__webpack_require__(482);
-	__webpack_require__(483);
-	__webpack_require__(484);
-	__webpack_require__(486);
-	__webpack_require__(489);
-	__webpack_require__(487);
-	__webpack_require__(488);
-	__webpack_require__(490);
-	//dom
-	__webpack_require__(469);
-	__webpack_require__(470);
-	//operators
-	__webpack_require__(493);
-	__webpack_require__(494);
-	__webpack_require__(495);
-	__webpack_require__(496);
-	__webpack_require__(497);
-	__webpack_require__(498);
-	__webpack_require__(499);
-	__webpack_require__(500);
-	__webpack_require__(501);
-	__webpack_require__(502);
-	__webpack_require__(503);
-	__webpack_require__(504);
-	__webpack_require__(505);
-	__webpack_require__(506);
-	__webpack_require__(511);
-	__webpack_require__(507);
-	__webpack_require__(508);
-	__webpack_require__(509);
-	__webpack_require__(235);
-	__webpack_require__(510);
-	__webpack_require__(512);
-	__webpack_require__(513);
-	__webpack_require__(514);
-	__webpack_require__(515);
-	__webpack_require__(516);
-	__webpack_require__(519);
-	__webpack_require__(520);
-	__webpack_require__(521);
-	__webpack_require__(517);
-	__webpack_require__(522);
-	__webpack_require__(523);
-	__webpack_require__(524);
-	__webpack_require__(525);
-	__webpack_require__(526);
-	__webpack_require__(527);
-	__webpack_require__(528);
-	__webpack_require__(529);
-	__webpack_require__(491);
-	__webpack_require__(492);
-	__webpack_require__(530);
-	__webpack_require__(531);
-	__webpack_require__(518);
-	__webpack_require__(64);
-	__webpack_require__(532);
-	__webpack_require__(533);
-	__webpack_require__(534);
-	__webpack_require__(535);
-	__webpack_require__(536);
-	__webpack_require__(537);
-	__webpack_require__(538);
-	__webpack_require__(539);
-	__webpack_require__(540);
-	__webpack_require__(541);
-	__webpack_require__(542);
-	__webpack_require__(543);
-	__webpack_require__(544);
-	__webpack_require__(545);
-	__webpack_require__(546);
-	__webpack_require__(547);
-	__webpack_require__(548);
-	__webpack_require__(550);
-	__webpack_require__(549);
-	__webpack_require__(551);
-	__webpack_require__(552);
-	__webpack_require__(553);
-	__webpack_require__(554);
-	__webpack_require__(555);
-	__webpack_require__(556);
-	__webpack_require__(557);
-	__webpack_require__(558);
-	__webpack_require__(559);
-	__webpack_require__(560);
-	__webpack_require__(561);
-	__webpack_require__(562);
-	__webpack_require__(563);
-	__webpack_require__(564);
-	__webpack_require__(565);
-	__webpack_require__(566);
-	__webpack_require__(567);
-	__webpack_require__(568);
-	__webpack_require__(569);
-	__webpack_require__(570);
-	__webpack_require__(571);
-	__webpack_require__(572);
-	__webpack_require__(573);
-	__webpack_require__(574);
-	__webpack_require__(575);
-	__webpack_require__(576);
-	__webpack_require__(577);
-	__webpack_require__(578);
-	__webpack_require__(579);
-	__webpack_require__(580);
-	__webpack_require__(581);
-	__webpack_require__(582);
-	__webpack_require__(583);
-	__webpack_require__(584);
-	__webpack_require__(585);
-	__webpack_require__(586);
-	__webpack_require__(587);
-	__webpack_require__(588);
-	__webpack_require__(589);
-	__webpack_require__(590);
-	/* tslint:disable:no-unused-variable */
-	var Subscription_1 = __webpack_require__(21);
-	exports.Subscription = Subscription_1.Subscription;
-	var Subscriber_1 = __webpack_require__(3);
-	exports.Subscriber = Subscriber_1.Subscriber;
-	var AsyncSubject_1 = __webpack_require__(105);
-	exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
-	var ReplaySubject_1 = __webpack_require__(106);
-	exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
-	var BehaviorSubject_1 = __webpack_require__(154);
-	exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
-	var MulticastObservable_1 = __webpack_require__(237);
-	exports.MulticastObservable = MulticastObservable_1.MulticastObservable;
-	var ConnectableObservable_1 = __webpack_require__(156);
-	exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
-	var Notification_1 = __webpack_require__(82);
-	exports.Notification = Notification_1.Notification;
-	var EmptyError_1 = __webpack_require__(87);
-	exports.EmptyError = EmptyError_1.EmptyError;
-	var ArgumentOutOfRangeError_1 = __webpack_require__(111);
-	exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
-	var ObjectUnsubscribedError_1 = __webpack_require__(164);
-	exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
-	var UnsubscriptionError_1 = __webpack_require__(263);
-	exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
-	var timeInterval_1 = __webpack_require__(255);
-	exports.TimeInterval = timeInterval_1.TimeInterval;
-	var timestamp_1 = __webpack_require__(256);
-	exports.Timestamp = timestamp_1.Timestamp;
-	var TestScheduler_1 = __webpack_require__(718);
-	exports.TestScheduler = TestScheduler_1.TestScheduler;
-	var VirtualTimeScheduler_1 = __webpack_require__(258);
-	exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
-	var AjaxObservable_1 = __webpack_require__(239);
-	exports.AjaxResponse = AjaxObservable_1.AjaxResponse;
-	exports.AjaxError = AjaxObservable_1.AjaxError;
-	exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
-	var asap_1 = __webpack_require__(259);
-	var async_1 = __webpack_require__(27);
-	var queue_1 = __webpack_require__(260);
-	var animationFrame_1 = __webpack_require__(715);
-	var rxSubscriber_1 = __webpack_require__(110);
-	var iterator_1 = __webpack_require__(86);
-	var observable_1 = __webpack_require__(109);
-	/* tslint:enable:no-unused-variable */
-	/**
-	 * @typedef {Object} Rx.Scheduler
-	 * @property {Scheduler} queue Schedules on a queue in the current event frame
-	 * (trampoline scheduler). Use this for iteration operations.
-	 * @property {Scheduler} asap Schedules on the micro task queue, which uses the
-	 * fastest transport mechanism available, either Node.js' `process.nextTick()`
-	 * or Web Worker MessageChannel or setTimeout or others. Use this for
-	 * asynchronous conversions.
-	 * @property {Scheduler} async Schedules work with `setInterval`. Use this for
-	 * time-based operations.
-	 * @property {Scheduler} animationFrame Schedules work with `requestAnimationFrame`.
-	 * Use this for synchronizing with the platform's painting
-	 */
-	var Scheduler = {
-	    asap: asap_1.asap,
-	    queue: queue_1.queue,
-	    animationFrame: animationFrame_1.animationFrame,
-	    async: async_1.async
-	};
-	exports.Scheduler = Scheduler;
-	/**
-	 * @typedef {Object} Rx.Symbol
-	 * @property {Symbol|string} rxSubscriber A symbol to use as a property name to
-	 * retrieve an "Rx safe" Observer from an object. "Rx safety" can be defined as
-	 * an object that has all of the traits of an Rx Subscriber, including the
-	 * ability to add and remove subscriptions to the subscription chain and
-	 * guarantees involving event triggering (can't "next" after unsubscription,
-	 * etc).
-	 * @property {Symbol|string} observable A symbol to use as a property name to
-	 * retrieve an Observable as defined by the [ECMAScript "Observable" spec](https://github.com/zenparsing/es-observable).
-	 * @property {Symbol|string} iterator The ES6 symbol to use as a property name
-	 * to retrieve an iterator from an object.
-	 */
-	var Symbol = {
-	    rxSubscriber: rxSubscriber_1.$$rxSubscriber,
-	    observable: observable_1.$$observable,
-	    iterator: iterator_1.$$iterator
-	};
-	exports.Symbol = Symbol;
-	//# sourceMappingURL=Rx.js.map
-
-/***/ },
-/* 156 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67753,7 +68716,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ },
-/* 157 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67816,16 +68779,16 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ScalarObservable.js.map
 
 /***/ },
-/* 158 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var PromiseObservable_1 = __webpack_require__(238);
+	var PromiseObservable_1 = __webpack_require__(246);
 	exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 	//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
-/* 159 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67834,8 +68797,8 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var ArrayObservable_1 = __webpack_require__(46);
-	var isArray_1 = __webpack_require__(38);
+	var ArrayObservable_1 = __webpack_require__(49);
+	var isArray_1 = __webpack_require__(39);
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
 	var none = {};
@@ -67977,13 +68940,13 @@ webpackJsonp([1],[
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
-/* 160 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var isScheduler_1 = __webpack_require__(54);
-	var ArrayObservable_1 = __webpack_require__(46);
-	var mergeAll_1 = __webpack_require__(83);
+	var isScheduler_1 = __webpack_require__(58);
+	var ArrayObservable_1 = __webpack_require__(49);
+	var mergeAll_1 = __webpack_require__(88);
 	/**
 	 * Creates an output Observable which sequentially emits all values from every
 	 * given input Observable after the current Observable.
@@ -68090,7 +69053,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 161 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68500,7 +69463,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mergeMap.js.map
 
 /***/ },
-/* 162 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68510,7 +69473,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
-	var Notification_1 = __webpack_require__(82);
+	var Notification_1 = __webpack_require__(87);
 	/**
 	 * @see {@link Notification}
 	 *
@@ -68580,7 +69543,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=observeOn.js.map
 
 /***/ },
-/* 163 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68589,12 +69552,12 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var ArrayObservable_1 = __webpack_require__(46);
-	var isArray_1 = __webpack_require__(38);
+	var ArrayObservable_1 = __webpack_require__(49);
+	var isArray_1 = __webpack_require__(39);
 	var Subscriber_1 = __webpack_require__(3);
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
-	var iterator_1 = __webpack_require__(86);
+	var iterator_1 = __webpack_require__(91);
 	/**
 	 * @param observables
 	 * @return {Observable<R>}
@@ -68840,7 +69803,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 164 */
+/* 167 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -68872,7 +69835,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ },
-/* 165 */
+/* 168 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -68883,15 +69846,19 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isFunction.js.map
 
 /***/ },
-/* 166 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
 =======
 	var isArray_1 = __webpack_require__(38);
 >>>>>>> Table directive to angular 2
+=======
+	var isArray_1 = __webpack_require__(39);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	function isNumeric(val) {
 	    // parseFloat NaNs numeric-cast false positives (null|true|false|"")
 	    // ...but misinterprets leading-number strings, particularly hex literals ("0x...")
@@ -68904,7 +69871,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isNumeric.js.map
 
 /***/ },
-/* 167 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -68913,11 +69880,15 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(115), __webpack_require__(4), __webpack_require__(93)) :
 =======
 	     true ? factory(exports, __webpack_require__(113), __webpack_require__(5), __webpack_require__(88)) :
 >>>>>>> Table directive to angular 2
+=======
+	     true ? factory(exports, __webpack_require__(120), __webpack_require__(4), __webpack_require__(94)) :
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/compiler', '@angular/core', '@angular/platform-browser'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.platformBrowserDynamic = global.ng.platformBrowserDynamic || {}),global.ng.compiler,global.ng.core,global.ng.platformBrowser));
 	}(this, function (exports,_angular_compiler,_angular_core,_angular_platformBrowser) { 'use strict';
@@ -69121,7 +70092,7 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 168 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69130,11 +70101,15 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(4), __webpack_require__(167), __webpack_require__(115)) :
 =======
 	     true ? factory(exports, __webpack_require__(5), __webpack_require__(167), __webpack_require__(113)) :
 >>>>>>> Table directive to angular 2
+=======
+	     true ? factory(exports, __webpack_require__(4), __webpack_require__(170), __webpack_require__(120)) :
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/platform-browser-dynamic', '@angular/compiler'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.upgrade = global.ng.upgrade || {}),global.ng.core,global.ng.platformBrowserDynamic,global.ng.compiler));
 	}(this, function (exports,_angular_core,_angular_platformBrowserDynamic,_angular_compiler) { 'use strict';
@@ -70282,7 +71257,7 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 169 */
+/* 172 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -70742,7 +71717,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=http-status-codes.js.map
 
 /***/ },
-/* 170 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -71225,11 +72200,11 @@ webpackJsonp([1],[
 	exports.InMemoryBackendService = InMemoryBackendService;
 =======
 	"use strict";
-	var core_1 = __webpack_require__(5);
+	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(19);
 	var Observable_1 = __webpack_require__(1);
-	__webpack_require__(235);
-	var http_status_codes_1 = __webpack_require__(169);
+	__webpack_require__(243);
+	var http_status_codes_1 = __webpack_require__(172);
 	////////////  HELPERS ///////////
 	/**
 	 * Create an error Response from an HTTP status code and error message
@@ -71725,9 +72700,6 @@ webpackJsonp([1],[
 	//# sourceMappingURL=in-memory-backend.service.js.map
 
 /***/ },
-/* 171 */,
-/* 172 */,
-/* 173 */,
 /* 174 */,
 /* 175 */,
 /* 176 */,
@@ -71789,6 +72761,7 @@ webpackJsonp([1],[
 /* 232 */,
 /* 233 */,
 /* 234 */,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 235 */,
 /* 236 */,
@@ -71796,24 +72769,43 @@ webpackJsonp([1],[
 =======
 /* 235 */
 >>>>>>> Table directive to angular 2
+=======
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var delay_1 = __webpack_require__(652);
 =======
 	var delay_1 = __webpack_require__(646);
 >>>>>>> Table directive to angular 2
+=======
+	var delay_1 = __webpack_require__(657);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.delay = delay_1.delay;
 	//# sourceMappingURL=delay.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 238 */
 =======
 /* 236 */
 >>>>>>> Table directive to angular 2
+=======
+/* 244 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71822,6 +72814,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
 	var isPromise_1 = __webpack_require__(267);
@@ -71845,6 +72838,18 @@ webpackJsonp([1],[
 	var observeOn_1 = __webpack_require__(162);
 	var observable_1 = __webpack_require__(109);
 >>>>>>> Table directive to angular 2
+=======
+	var isArray_1 = __webpack_require__(39);
+	var isPromise_1 = __webpack_require__(273);
+	var PromiseObservable_1 = __webpack_require__(246);
+	var IteratorObservable_1 = __webpack_require__(613);
+	var ArrayObservable_1 = __webpack_require__(49);
+	var ArrayLikeObservable_1 = __webpack_require__(602);
+	var iterator_1 = __webpack_require__(91);
+	var Observable_1 = __webpack_require__(1);
+	var observeOn_1 = __webpack_require__(165);
+	var observable_1 = __webpack_require__(116);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
@@ -71947,11 +72952,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=FromObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 239 */
 =======
 /* 237 */
 >>>>>>> Table directive to angular 2
+=======
+/* 245 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71961,7 +72970,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
-	var ConnectableObservable_1 = __webpack_require__(156);
+	var ConnectableObservable_1 = __webpack_require__(159);
 	var MulticastObservable = (function (_super) {
 	    __extends(MulticastObservable, _super);
 	    function MulticastObservable(source, subjectFactory, selector) {
@@ -71983,11 +72992,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=MulticastObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 240 */
 =======
 /* 238 */
 >>>>>>> Table directive to angular 2
+=======
+/* 246 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72113,11 +73126,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=PromiseObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 241 */
 =======
 /* 239 */
 >>>>>>> Table directive to angular 2
+=======
+/* 247 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72131,11 +73148,15 @@ webpackJsonp([1],[
 	var errorObject_1 = __webpack_require__(22);
 	var Observable_1 = __webpack_require__(1);
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var map_1 = __webpack_require__(109);
 =======
 	var map_1 = __webpack_require__(107);
 >>>>>>> Table directive to angular 2
+=======
+	var map_1 = __webpack_require__(114);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	function getCORSRequest() {
 	    if (root_1.root.XMLHttpRequest) {
 	        var xhr = new root_1.root.XMLHttpRequest();
@@ -72519,6 +73540,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AjaxObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 242 */
 /***/ function(module, exports, __webpack_require__) {
@@ -72532,10 +73554,18 @@ webpackJsonp([1],[
 	"use strict";
 	var FromObservable_1 = __webpack_require__(236);
 >>>>>>> Table directive to angular 2
+=======
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var FromObservable_1 = __webpack_require__(244);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.from = FromObservable_1.FromObservable.create;
 	//# sourceMappingURL=from.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 243 */
 =======
@@ -72545,15 +73575,26 @@ webpackJsonp([1],[
 
 	"use strict";
 	var ArrayObservable_1 = __webpack_require__(47);
+=======
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ArrayObservable_1 = __webpack_require__(49);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.of = ArrayObservable_1.ArrayObservable.of;
 	//# sourceMappingURL=of.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 244 */
 =======
 /* 242 */
 >>>>>>> Table directive to angular 2
+=======
+/* 250 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72623,6 +73664,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=catch.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
@@ -72636,6 +73678,13 @@ webpackJsonp([1],[
 	"use strict";
 	var mergeAll_1 = __webpack_require__(83);
 >>>>>>> Table directive to angular 2
+=======
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var mergeAll_1 = __webpack_require__(88);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Converts a higher-order Observable into a first-order Observable by
 	 * concatenating the inner Observables in order.
@@ -72685,11 +73734,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concatAll.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 246 */
 =======
 /* 244 */
 >>>>>>> Table directive to angular 2
+=======
+/* 252 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72777,11 +73830,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=distinct.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 247 */
 =======
 /* 245 */
 >>>>>>> Table directive to angular 2
+=======
+/* 253 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72863,11 +73920,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 248 */
 =======
 /* 246 */
 >>>>>>> Table directive to angular 2
+=======
+/* 254 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72940,11 +74001,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=every.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 249 */
 =======
 /* 247 */
 >>>>>>> Table directive to angular 2
+=======
+/* 255 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73042,11 +74107,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=filter.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 250 */
 =======
 /* 248 */
 >>>>>>> Table directive to angular 2
+=======
+/* 256 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73151,11 +74220,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=find.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 251 */
 =======
 /* 249 */
 >>>>>>> Table directive to angular 2
+=======
+/* 257 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73165,11 +74238,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var EmptyError_1 = __webpack_require__(92);
 =======
 	var EmptyError_1 = __webpack_require__(87);
 >>>>>>> Table directive to angular 2
+=======
+	var EmptyError_1 = __webpack_require__(92);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Emits only the first value (or the first value that meets some condition)
 	 * emitted by the source Observable.
@@ -73312,11 +74389,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=first.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 252 */
 =======
 /* 250 */
 >>>>>>> Table directive to angular 2
+=======
+/* 258 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73326,11 +74407,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var EmptyError_1 = __webpack_require__(92);
 =======
 	var EmptyError_1 = __webpack_require__(87);
 >>>>>>> Table directive to angular 2
+=======
+	var EmptyError_1 = __webpack_require__(92);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Returns an Observable that emits only the last item emitted by the source Observable.
 	 * It optionally takes a predicate function as a parameter, in which case, rather than emitting
@@ -73443,6 +74528,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=last.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 253 */
 /***/ function(module, exports, __webpack_require__) {
@@ -73460,6 +74546,15 @@ webpackJsonp([1],[
 	var mergeAll_1 = __webpack_require__(83);
 	var isScheduler_1 = __webpack_require__(54);
 >>>>>>> Table directive to angular 2
+=======
+/* 259 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ArrayObservable_1 = __webpack_require__(49);
+	var mergeAll_1 = __webpack_require__(88);
+	var isScheduler_1 = __webpack_require__(58);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Creates an output Observable which concurrently emits all values from every
 	 * given input Observable.
@@ -73588,11 +74683,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 254 */
 =======
 /* 252 */
 >>>>>>> Table directive to angular 2
+=======
+/* 260 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73751,11 +74850,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 255 */
 =======
 /* 253 */
 >>>>>>> Table directive to angular 2
+=======
+/* 261 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73764,6 +74867,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var FromObservable_1 = __webpack_require__(238);
 	var isArray_1 = __webpack_require__(39);
@@ -73771,6 +74875,10 @@ webpackJsonp([1],[
 	var FromObservable_1 = __webpack_require__(236);
 	var isArray_1 = __webpack_require__(38);
 >>>>>>> Table directive to angular 2
+=======
+	var FromObservable_1 = __webpack_require__(244);
+	var isArray_1 = __webpack_require__(39);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
 	function onErrorResumeNext() {
@@ -73840,11 +74948,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 256 */
 =======
 /* 254 */
 >>>>>>> Table directive to angular 2
+=======
+/* 262 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73853,6 +74965,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
 	var ArrayObservable_1 = __webpack_require__(47);
@@ -73860,6 +74973,10 @@ webpackJsonp([1],[
 	var isArray_1 = __webpack_require__(38);
 	var ArrayObservable_1 = __webpack_require__(46);
 >>>>>>> Table directive to angular 2
+=======
+	var isArray_1 = __webpack_require__(39);
+	var ArrayObservable_1 = __webpack_require__(49);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
 	/**
@@ -73965,11 +75082,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=race.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 257 */
 =======
 /* 255 */
 >>>>>>> Table directive to angular 2
+=======
+/* 263 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74033,11 +75154,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=timeInterval.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 258 */
 =======
 /* 256 */
 >>>>>>> Table directive to angular 2
+=======
+/* 264 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74092,11 +75217,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=timestamp.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 259 */
 =======
 /* 257 */
 >>>>>>> Table directive to angular 2
+=======
+/* 265 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74129,11 +75258,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=toPromise.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 260 */
 =======
 /* 258 */
 >>>>>>> Table directive to angular 2
+=======
+/* 266 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74142,6 +75275,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncAction_1 = __webpack_require__(89);
 	var AsyncScheduler_1 = __webpack_require__(90);
@@ -74149,6 +75283,10 @@ webpackJsonp([1],[
 	var AsyncAction_1 = __webpack_require__(84);
 	var AsyncScheduler_1 = __webpack_require__(85);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncAction_1 = __webpack_require__(89);
+	var AsyncScheduler_1 = __webpack_require__(90);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var VirtualTimeScheduler = (function (_super) {
 	    __extends(VirtualTimeScheduler, _super);
 	    function VirtualTimeScheduler(SchedulerAction, maxFrames) {
@@ -74241,6 +75379,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=VirtualTimeScheduler.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 261 */
 /***/ function(module, exports, __webpack_require__) {
@@ -74256,10 +75395,19 @@ webpackJsonp([1],[
 	var AsapAction_1 = __webpack_require__(711);
 	var AsapScheduler_1 = __webpack_require__(712);
 >>>>>>> Table directive to angular 2
+=======
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var AsapAction_1 = __webpack_require__(722);
+	var AsapScheduler_1 = __webpack_require__(723);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 	//# sourceMappingURL=asap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 262 */
 /***/ function(module, exports, __webpack_require__) {
@@ -74275,15 +75423,27 @@ webpackJsonp([1],[
 	var QueueAction_1 = __webpack_require__(713);
 	var QueueScheduler_1 = __webpack_require__(714);
 >>>>>>> Table directive to angular 2
+=======
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var QueueAction_1 = __webpack_require__(724);
+	var QueueScheduler_1 = __webpack_require__(725);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
 	//# sourceMappingURL=queue.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 263 */
 =======
 /* 261 */
 >>>>>>> Table directive to angular 2
+=======
+/* 269 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -74299,6 +75459,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=SubscriptionLog.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 264 */
 /***/ function(module, exports, __webpack_require__) {
@@ -74312,6 +75473,13 @@ webpackJsonp([1],[
 	"use strict";
 	var SubscriptionLog_1 = __webpack_require__(261);
 >>>>>>> Table directive to angular 2
+=======
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var SubscriptionLog_1 = __webpack_require__(269);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var SubscriptionLoggable = (function () {
 	    function SubscriptionLoggable() {
 	        this.subscriptions = [];
@@ -74331,11 +75499,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=SubscriptionLoggable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 265 */
 =======
 /* 263 */
 >>>>>>> Table directive to angular 2
+=======
+/* 271 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -74365,11 +75537,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 266 */
 =======
 /* 264 */
 >>>>>>> Table directive to angular 2
+=======
+/* 272 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -74387,11 +75563,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=applyMixins.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 267 */
 =======
 /* 265 */
 >>>>>>> Table directive to angular 2
+=======
+/* 273 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -74402,11 +75582,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isPromise.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 268 */
 =======
 /* 266 */
 >>>>>>> Table directive to angular 2
+=======
+/* 274 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -74416,11 +75600,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=noop.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 269 */
 =======
 /* 267 */
 >>>>>>> Table directive to angular 2
+=======
+/* 275 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74429,11 +75617,15 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(48), __webpack_require__(4), __webpack_require__(16), __webpack_require__(242), __webpack_require__(243), __webpack_require__(248), __webpack_require__(109), __webpack_require__(88), __webpack_require__(161), __webpack_require__(110), __webpack_require__(1), __webpack_require__(244), __webpack_require__(245), __webpack_require__(251), __webpack_require__(92), __webpack_require__(158), __webpack_require__(252), __webpack_require__(155)) :
 =======
 	     true ? factory(exports, __webpack_require__(55), __webpack_require__(5), __webpack_require__(16), __webpack_require__(240), __webpack_require__(241), __webpack_require__(246), __webpack_require__(107), __webpack_require__(83), __webpack_require__(161), __webpack_require__(108), __webpack_require__(1), __webpack_require__(242), __webpack_require__(243), __webpack_require__(249), __webpack_require__(87), __webpack_require__(158), __webpack_require__(250), __webpack_require__(154)) :
 >>>>>>> Table directive to angular 2
+=======
+	     true ? factory(exports, __webpack_require__(40), __webpack_require__(4), __webpack_require__(16), __webpack_require__(248), __webpack_require__(249), __webpack_require__(254), __webpack_require__(114), __webpack_require__(88), __webpack_require__(164), __webpack_require__(115), __webpack_require__(1), __webpack_require__(250), __webpack_require__(251), __webpack_require__(257), __webpack_require__(92), __webpack_require__(161), __webpack_require__(258), __webpack_require__(158)) :
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/common', '@angular/core', 'rxjs/Subject', 'rxjs/observable/from', 'rxjs/observable/of', 'rxjs/operator/every', 'rxjs/operator/map', 'rxjs/operator/mergeAll', 'rxjs/operator/mergeMap', 'rxjs/operator/reduce', 'rxjs/Observable', 'rxjs/operator/catch', 'rxjs/operator/concatAll', 'rxjs/operator/first', 'rxjs/util/EmptyError', 'rxjs/observable/fromPromise', 'rxjs/operator/last', 'rxjs/BehaviorSubject'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.router = global.ng.router || {}),global.ng.common,global.ng.core,global.Rx,global.Rx.Observable,global.Rx.Observable,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx,global.Rx.Observable,global.Rx.Observable.prototype,global.Rx));
 	}(this, function (exports,_angular_common,_angular_core,rxjs_Subject,rxjs_observable_from,rxjs_observable_of,rxjs_operator_every,rxjs_operator_map,rxjs_operator_mergeAll,rxjs_operator_mergeMap,rxjs_operator_reduce,rxjs_Observable,rxjs_operator_catch,rxjs_operator_concatAll,rxjs_operator_first,rxjs_util_EmptyError,rxjs_observable_fromPromise,l,rxjs_BehaviorSubject) { 'use strict';
@@ -78146,6 +79338,7 @@ webpackJsonp([1],[
 
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 270 */
 /***/ function(module, exports, __webpack_require__) {
@@ -78159,8 +79352,15 @@ webpackJsonp([1],[
 	"use strict";
 	var core_1 = __webpack_require__(5);
 >>>>>>> Table directive to angular 2
+=======
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var core_1 = __webpack_require__(4);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var http_1 = __webpack_require__(19);
-	var in_memory_backend_service_1 = __webpack_require__(170);
+	var in_memory_backend_service_1 = __webpack_require__(173);
 	// AoT requires factory to be exported
 	function inMemoryBackendServiceFactory(injector, dbService, options) {
 	    var backend = new in_memory_backend_service_1.InMemoryBackendService(injector, dbService, options);
@@ -78207,17 +79407,22 @@ webpackJsonp([1],[
 	//# sourceMappingURL=in-memory-web-api.module.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 271 */
 =======
 /* 269 */
 >>>>>>> Table directive to angular 2
+=======
+/* 277 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__export(__webpack_require__(169));
 	__export(__webpack_require__(170));
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -78239,6 +79444,14 @@ webpackJsonp([1],[
 /* 275 */,
 /* 276 */,
 /* 277 */,
+=======
+	__export(__webpack_require__(172));
+	__export(__webpack_require__(173));
+	__export(__webpack_require__(276));
+	//# sourceMappingURL=index.js.map
+
+/***/ },
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 278 */,
 /* 279 */,
 /* 280 */,
@@ -78421,16 +79634,29 @@ webpackJsonp([1],[
 /* 457 */,
 /* 458 */,
 /* 459 */,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
+=======
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 460 */,
 /* 461 */,
 /* 462 */,
 /* 463 */,
 /* 464 */,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 465 */
 =======
 /* 460 */
 >>>>>>> Table directive to angular 2
+=======
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -78471,11 +79697,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 466 */
 =======
 /* 461 */
 >>>>>>> Table directive to angular 2
+=======
+/* 472 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -78488,6 +79718,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Observer.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 467 */
 /***/ function(module, exports, __webpack_require__) {
@@ -78726,6 +79957,9 @@ webpackJsonp([1],[
 =======
 /* 462 */
 >>>>>>> Table directive to angular 2
+=======
+/* 473 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -78779,11 +80013,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Scheduler.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 469 */
 =======
 /* 463 */
 >>>>>>> Table directive to angular 2
+=======
+/* 474 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -78828,2280 +80066,3276 @@ webpackJsonp([1],[
 	//# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 470 */
 =======
 /* 464 */
 >>>>>>> Table directive to angular 2
+=======
+/* 475 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bindCallback_1 = __webpack_require__(615);
 =======
 	var bindCallback_1 = __webpack_require__(609);
 >>>>>>> Table directive to angular 2
+=======
+	var bindCallback_1 = __webpack_require__(620);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
 	//# sourceMappingURL=bindCallback.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 471 */
 =======
 /* 465 */
 >>>>>>> Table directive to angular 2
+=======
+/* 476 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bindNodeCallback_1 = __webpack_require__(616);
 =======
 	var bindNodeCallback_1 = __webpack_require__(610);
 >>>>>>> Table directive to angular 2
+=======
+	var bindNodeCallback_1 = __webpack_require__(621);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
 	//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 472 */
 =======
 /* 466 */
 >>>>>>> Table directive to angular 2
+=======
+/* 477 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var combineLatest_1 = __webpack_require__(617);
 =======
 	var combineLatest_1 = __webpack_require__(611);
 >>>>>>> Table directive to angular 2
+=======
+	var combineLatest_1 = __webpack_require__(622);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 473 */
 =======
 /* 467 */
 >>>>>>> Table directive to angular 2
+=======
+/* 478 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var concat_1 = __webpack_require__(618);
 =======
 	var concat_1 = __webpack_require__(612);
 >>>>>>> Table directive to angular 2
+=======
+	var concat_1 = __webpack_require__(623);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.concat = concat_1.concat;
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 474 */
 =======
 /* 468 */
 >>>>>>> Table directive to angular 2
+=======
+/* 479 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var defer_1 = __webpack_require__(619);
 =======
 	var defer_1 = __webpack_require__(613);
 >>>>>>> Table directive to angular 2
+=======
+	var defer_1 = __webpack_require__(624);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.defer = defer_1.defer;
 	//# sourceMappingURL=defer.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 475 */
 =======
 /* 469 */
 >>>>>>> Table directive to angular 2
+=======
+/* 480 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ajax_1 = __webpack_require__(621);
 =======
 	var ajax_1 = __webpack_require__(615);
 >>>>>>> Table directive to angular 2
+=======
+	var ajax_1 = __webpack_require__(626);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.ajax = ajax_1.ajax;
 	//# sourceMappingURL=ajax.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 476 */
 =======
 /* 470 */
 >>>>>>> Table directive to angular 2
+=======
+/* 481 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var webSocket_1 = __webpack_require__(622);
 =======
 	var webSocket_1 = __webpack_require__(616);
 >>>>>>> Table directive to angular 2
+=======
+	var webSocket_1 = __webpack_require__(627);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.webSocket = webSocket_1.webSocket;
 	//# sourceMappingURL=webSocket.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 477 */
 =======
 /* 471 */
 >>>>>>> Table directive to angular 2
+=======
+/* 482 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var empty_1 = __webpack_require__(623);
 =======
 	var empty_1 = __webpack_require__(617);
 >>>>>>> Table directive to angular 2
+=======
+	var empty_1 = __webpack_require__(628);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.empty = empty_1.empty;
 	//# sourceMappingURL=empty.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 478 */
 =======
 /* 472 */
 >>>>>>> Table directive to angular 2
+=======
+/* 483 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var forkJoin_1 = __webpack_require__(624);
 =======
 	var forkJoin_1 = __webpack_require__(618);
 >>>>>>> Table directive to angular 2
+=======
+	var forkJoin_1 = __webpack_require__(629);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 	//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 479 */
 =======
 /* 473 */
 >>>>>>> Table directive to angular 2
+=======
+/* 484 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var from_1 = __webpack_require__(242);
 =======
 	var from_1 = __webpack_require__(240);
 >>>>>>> Table directive to angular 2
+=======
+	var from_1 = __webpack_require__(248);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.from = from_1.from;
 	//# sourceMappingURL=from.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 480 */
 =======
 /* 474 */
 >>>>>>> Table directive to angular 2
+=======
+/* 485 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var fromEvent_1 = __webpack_require__(625);
 =======
 	var fromEvent_1 = __webpack_require__(619);
 >>>>>>> Table directive to angular 2
+=======
+	var fromEvent_1 = __webpack_require__(630);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 	//# sourceMappingURL=fromEvent.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 481 */
 =======
 /* 475 */
 >>>>>>> Table directive to angular 2
+=======
+/* 486 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var fromEventPattern_1 = __webpack_require__(626);
 =======
 	var fromEventPattern_1 = __webpack_require__(620);
 >>>>>>> Table directive to angular 2
+=======
+	var fromEventPattern_1 = __webpack_require__(631);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 	//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 482 */
 =======
 /* 476 */
 >>>>>>> Table directive to angular 2
+=======
+/* 487 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var fromPromise_1 = __webpack_require__(158);
+	var fromPromise_1 = __webpack_require__(161);
 	Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
 	//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 483 */
 =======
 /* 477 */
 >>>>>>> Table directive to angular 2
+=======
+/* 488 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var GenerateObservable_1 = __webpack_require__(605);
 =======
 	var GenerateObservable_1 = __webpack_require__(599);
 >>>>>>> Table directive to angular 2
+=======
+	var GenerateObservable_1 = __webpack_require__(610);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
 	//# sourceMappingURL=generate.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 484 */
 =======
 /* 478 */
 >>>>>>> Table directive to angular 2
+=======
+/* 489 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var if_1 = __webpack_require__(627);
 =======
 	var if_1 = __webpack_require__(621);
 >>>>>>> Table directive to angular 2
+=======
+	var if_1 = __webpack_require__(632);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.if = if_1._if;
 	//# sourceMappingURL=if.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 485 */
 =======
 /* 479 */
 >>>>>>> Table directive to angular 2
+=======
+/* 490 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var interval_1 = __webpack_require__(628);
 =======
 	var interval_1 = __webpack_require__(622);
 >>>>>>> Table directive to angular 2
+=======
+	var interval_1 = __webpack_require__(633);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.interval = interval_1.interval;
 	//# sourceMappingURL=interval.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 486 */
 =======
 /* 480 */
 >>>>>>> Table directive to angular 2
+=======
+/* 491 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var merge_1 = __webpack_require__(629);
 =======
 	var merge_1 = __webpack_require__(623);
 >>>>>>> Table directive to angular 2
+=======
+	var merge_1 = __webpack_require__(634);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.merge = merge_1.merge;
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 487 */
 =======
 /* 481 */
 >>>>>>> Table directive to angular 2
+=======
+/* 492 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var never_1 = __webpack_require__(630);
 =======
 	var never_1 = __webpack_require__(624);
 >>>>>>> Table directive to angular 2
+=======
+	var never_1 = __webpack_require__(635);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.never = never_1.never;
 	//# sourceMappingURL=never.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 488 */
 =======
 /* 482 */
 >>>>>>> Table directive to angular 2
+=======
+/* 493 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var of_1 = __webpack_require__(243);
 =======
 	var of_1 = __webpack_require__(241);
 >>>>>>> Table directive to angular 2
+=======
+	var of_1 = __webpack_require__(249);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.of = of_1.of;
 	//# sourceMappingURL=of.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 489 */
 =======
 /* 483 */
 >>>>>>> Table directive to angular 2
+=======
+/* 494 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var onErrorResumeNext_1 = __webpack_require__(255);
 =======
 	var onErrorResumeNext_1 = __webpack_require__(253);
 >>>>>>> Table directive to angular 2
+=======
+	var onErrorResumeNext_1 = __webpack_require__(261);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
 	//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 490 */
 =======
 /* 484 */
 >>>>>>> Table directive to angular 2
+=======
+/* 495 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var pairs_1 = __webpack_require__(631);
 =======
 	var pairs_1 = __webpack_require__(625);
 >>>>>>> Table directive to angular 2
+=======
+	var pairs_1 = __webpack_require__(636);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.pairs = pairs_1.pairs;
 	//# sourceMappingURL=pairs.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 491 */
 =======
 /* 485 */
 >>>>>>> Table directive to angular 2
+=======
+/* 496 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var race_1 = __webpack_require__(256);
 =======
 	var race_1 = __webpack_require__(254);
 >>>>>>> Table directive to angular 2
+=======
+	var race_1 = __webpack_require__(262);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.race = race_1.raceStatic;
 	//# sourceMappingURL=race.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 492 */
 =======
 /* 486 */
 >>>>>>> Table directive to angular 2
+=======
+/* 497 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var range_1 = __webpack_require__(632);
 =======
 	var range_1 = __webpack_require__(626);
 >>>>>>> Table directive to angular 2
+=======
+	var range_1 = __webpack_require__(637);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.range = range_1.range;
 	//# sourceMappingURL=range.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 493 */
 =======
 /* 487 */
 >>>>>>> Table directive to angular 2
+=======
+/* 498 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var throw_1 = __webpack_require__(633);
 =======
 	var throw_1 = __webpack_require__(627);
 >>>>>>> Table directive to angular 2
+=======
+	var throw_1 = __webpack_require__(638);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.throw = throw_1._throw;
 	//# sourceMappingURL=throw.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 494 */
 =======
 /* 488 */
 >>>>>>> Table directive to angular 2
+=======
+/* 499 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timer_1 = __webpack_require__(634);
 =======
 	var timer_1 = __webpack_require__(628);
 >>>>>>> Table directive to angular 2
+=======
+	var timer_1 = __webpack_require__(639);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.timer = timer_1.timer;
 	//# sourceMappingURL=timer.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 495 */
 =======
 /* 489 */
 >>>>>>> Table directive to angular 2
+=======
+/* 500 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var using_1 = __webpack_require__(635);
 =======
 	var using_1 = __webpack_require__(629);
 >>>>>>> Table directive to angular 2
+=======
+	var using_1 = __webpack_require__(640);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.using = using_1.using;
 	//# sourceMappingURL=using.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 496 */
 =======
 /* 490 */
 >>>>>>> Table directive to angular 2
+=======
+/* 501 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var zip_1 = __webpack_require__(636);
 =======
 	var zip_1 = __webpack_require__(630);
 >>>>>>> Table directive to angular 2
+=======
+	var zip_1 = __webpack_require__(641);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.zip = zip_1.zip;
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 497 */
 =======
 /* 491 */
 >>>>>>> Table directive to angular 2
+=======
+/* 502 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var audit_1 = __webpack_require__(637);
 =======
 	var audit_1 = __webpack_require__(631);
 >>>>>>> Table directive to angular 2
+=======
+	var audit_1 = __webpack_require__(642);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.audit = audit_1.audit;
 	//# sourceMappingURL=audit.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 498 */
 =======
 /* 492 */
 >>>>>>> Table directive to angular 2
+=======
+/* 503 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var auditTime_1 = __webpack_require__(638);
 =======
 	var auditTime_1 = __webpack_require__(632);
 >>>>>>> Table directive to angular 2
+=======
+	var auditTime_1 = __webpack_require__(643);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
 	//# sourceMappingURL=auditTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 499 */
 =======
 /* 493 */
 >>>>>>> Table directive to angular 2
+=======
+/* 504 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var buffer_1 = __webpack_require__(639);
 =======
 	var buffer_1 = __webpack_require__(633);
 >>>>>>> Table directive to angular 2
+=======
+	var buffer_1 = __webpack_require__(644);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.buffer = buffer_1.buffer;
 	//# sourceMappingURL=buffer.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 500 */
 =======
 /* 494 */
 >>>>>>> Table directive to angular 2
+=======
+/* 505 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bufferCount_1 = __webpack_require__(640);
 =======
 	var bufferCount_1 = __webpack_require__(634);
 >>>>>>> Table directive to angular 2
+=======
+	var bufferCount_1 = __webpack_require__(645);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
 	//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 501 */
 =======
 /* 495 */
 >>>>>>> Table directive to angular 2
+=======
+/* 506 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bufferTime_1 = __webpack_require__(641);
 =======
 	var bufferTime_1 = __webpack_require__(635);
 >>>>>>> Table directive to angular 2
+=======
+	var bufferTime_1 = __webpack_require__(646);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
 	//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 502 */
 =======
 /* 496 */
 >>>>>>> Table directive to angular 2
+=======
+/* 507 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bufferToggle_1 = __webpack_require__(642);
 =======
 	var bufferToggle_1 = __webpack_require__(636);
 >>>>>>> Table directive to angular 2
+=======
+	var bufferToggle_1 = __webpack_require__(647);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
 	//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 503 */
 =======
 /* 497 */
 >>>>>>> Table directive to angular 2
+=======
+/* 508 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bufferWhen_1 = __webpack_require__(643);
 =======
 	var bufferWhen_1 = __webpack_require__(637);
 >>>>>>> Table directive to angular 2
+=======
+	var bufferWhen_1 = __webpack_require__(648);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 	//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 504 */
 =======
 /* 498 */
 >>>>>>> Table directive to angular 2
+=======
+/* 509 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var cache_1 = __webpack_require__(644);
 =======
 	var cache_1 = __webpack_require__(638);
 >>>>>>> Table directive to angular 2
+=======
+	var cache_1 = __webpack_require__(649);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.cache = cache_1.cache;
 	//# sourceMappingURL=cache.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 505 */
 =======
 /* 499 */
 >>>>>>> Table directive to angular 2
+=======
+/* 510 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var catch_1 = __webpack_require__(244);
 =======
 	var catch_1 = __webpack_require__(242);
 >>>>>>> Table directive to angular 2
+=======
+	var catch_1 = __webpack_require__(250);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.catch = catch_1._catch;
 	Observable_1.Observable.prototype._catch = catch_1._catch;
 	//# sourceMappingURL=catch.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 506 */
 =======
 /* 500 */
 >>>>>>> Table directive to angular 2
+=======
+/* 511 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var combineAll_1 = __webpack_require__(645);
 =======
 	var combineAll_1 = __webpack_require__(639);
 >>>>>>> Table directive to angular 2
+=======
+	var combineAll_1 = __webpack_require__(650);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 	//# sourceMappingURL=combineAll.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 507 */
 =======
 /* 501 */
 >>>>>>> Table directive to angular 2
+=======
+/* 512 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var combineLatest_1 = __webpack_require__(159);
+	var combineLatest_1 = __webpack_require__(162);
 	Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 508 */
 =======
 /* 502 */
 >>>>>>> Table directive to angular 2
+=======
+/* 513 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var concat_1 = __webpack_require__(160);
+	var concat_1 = __webpack_require__(163);
 	Observable_1.Observable.prototype.concat = concat_1.concat;
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 509 */
 =======
 /* 503 */
 >>>>>>> Table directive to angular 2
+=======
+/* 514 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var concatAll_1 = __webpack_require__(245);
 =======
 	var concatAll_1 = __webpack_require__(243);
 >>>>>>> Table directive to angular 2
+=======
+	var concatAll_1 = __webpack_require__(251);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 	//# sourceMappingURL=concatAll.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 510 */
 =======
 /* 504 */
 >>>>>>> Table directive to angular 2
+=======
+/* 515 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var concatMap_1 = __webpack_require__(646);
 =======
 	var concatMap_1 = __webpack_require__(640);
 >>>>>>> Table directive to angular 2
+=======
+	var concatMap_1 = __webpack_require__(651);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 	//# sourceMappingURL=concatMap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 511 */
 =======
 /* 505 */
 >>>>>>> Table directive to angular 2
+=======
+/* 516 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var concatMapTo_1 = __webpack_require__(647);
 =======
 	var concatMapTo_1 = __webpack_require__(641);
 >>>>>>> Table directive to angular 2
+=======
+	var concatMapTo_1 = __webpack_require__(652);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 	//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 512 */
 =======
 /* 506 */
 >>>>>>> Table directive to angular 2
+=======
+/* 517 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var count_1 = __webpack_require__(648);
 =======
 	var count_1 = __webpack_require__(642);
 >>>>>>> Table directive to angular 2
+=======
+	var count_1 = __webpack_require__(653);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.count = count_1.count;
 	//# sourceMappingURL=count.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 513 */
 =======
 /* 507 */
 >>>>>>> Table directive to angular 2
+=======
+/* 518 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var debounce_1 = __webpack_require__(649);
 =======
 	var debounce_1 = __webpack_require__(643);
 >>>>>>> Table directive to angular 2
+=======
+	var debounce_1 = __webpack_require__(654);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 	//# sourceMappingURL=debounce.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 514 */
 =======
 /* 508 */
 >>>>>>> Table directive to angular 2
+=======
+/* 519 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var debounceTime_1 = __webpack_require__(650);
 =======
 	var debounceTime_1 = __webpack_require__(644);
 >>>>>>> Table directive to angular 2
+=======
+	var debounceTime_1 = __webpack_require__(655);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 	//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 515 */
 =======
 /* 509 */
 >>>>>>> Table directive to angular 2
+=======
+/* 520 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var defaultIfEmpty_1 = __webpack_require__(651);
 =======
 	var defaultIfEmpty_1 = __webpack_require__(645);
 >>>>>>> Table directive to angular 2
+=======
+	var defaultIfEmpty_1 = __webpack_require__(656);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
 	//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 516 */
 =======
 /* 510 */
 >>>>>>> Table directive to angular 2
+=======
+/* 521 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var delayWhen_1 = __webpack_require__(653);
 =======
 	var delayWhen_1 = __webpack_require__(647);
 >>>>>>> Table directive to angular 2
+=======
+	var delayWhen_1 = __webpack_require__(658);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 	//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 517 */
 =======
 /* 511 */
 >>>>>>> Table directive to angular 2
+=======
+/* 522 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var dematerialize_1 = __webpack_require__(654);
 =======
 	var dematerialize_1 = __webpack_require__(648);
 >>>>>>> Table directive to angular 2
+=======
+	var dematerialize_1 = __webpack_require__(659);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 	//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 518 */
 =======
 /* 512 */
 >>>>>>> Table directive to angular 2
+=======
+/* 523 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var distinct_1 = __webpack_require__(246);
 =======
 	var distinct_1 = __webpack_require__(244);
 >>>>>>> Table directive to angular 2
+=======
+	var distinct_1 = __webpack_require__(252);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.distinct = distinct_1.distinct;
 	//# sourceMappingURL=distinct.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 519 */
 =======
 /* 513 */
 >>>>>>> Table directive to angular 2
+=======
+/* 524 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var distinctKey_1 = __webpack_require__(655);
 =======
 	var distinctKey_1 = __webpack_require__(649);
 >>>>>>> Table directive to angular 2
+=======
+	var distinctKey_1 = __webpack_require__(660);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.distinctKey = distinctKey_1.distinctKey;
 	//# sourceMappingURL=distinctKey.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 520 */
 =======
 /* 514 */
 >>>>>>> Table directive to angular 2
+=======
+/* 525 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var distinctUntilChanged_1 = __webpack_require__(247);
 =======
 	var distinctUntilChanged_1 = __webpack_require__(245);
 >>>>>>> Table directive to angular 2
+=======
+	var distinctUntilChanged_1 = __webpack_require__(253);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
 	//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 521 */
 =======
 /* 515 */
 >>>>>>> Table directive to angular 2
+=======
+/* 526 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var distinctUntilKeyChanged_1 = __webpack_require__(656);
 =======
 	var distinctUntilKeyChanged_1 = __webpack_require__(650);
 >>>>>>> Table directive to angular 2
+=======
+	var distinctUntilKeyChanged_1 = __webpack_require__(661);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
 	//# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 522 */
 =======
 /* 516 */
 >>>>>>> Table directive to angular 2
+=======
+/* 527 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var do_1 = __webpack_require__(657);
 =======
 	var do_1 = __webpack_require__(651);
 >>>>>>> Table directive to angular 2
+=======
+	var do_1 = __webpack_require__(662);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.do = do_1._do;
 	Observable_1.Observable.prototype._do = do_1._do;
 	//# sourceMappingURL=do.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 523 */
 =======
 /* 517 */
 >>>>>>> Table directive to angular 2
+=======
+/* 528 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var elementAt_1 = __webpack_require__(658);
 =======
 	var elementAt_1 = __webpack_require__(652);
 >>>>>>> Table directive to angular 2
+=======
+	var elementAt_1 = __webpack_require__(663);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 	//# sourceMappingURL=elementAt.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 524 */
 =======
 /* 518 */
 >>>>>>> Table directive to angular 2
+=======
+/* 529 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var every_1 = __webpack_require__(248);
 =======
 	var every_1 = __webpack_require__(246);
 >>>>>>> Table directive to angular 2
+=======
+	var every_1 = __webpack_require__(254);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.every = every_1.every;
 	//# sourceMappingURL=every.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 525 */
 =======
 /* 519 */
 >>>>>>> Table directive to angular 2
+=======
+/* 530 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var exhaust_1 = __webpack_require__(659);
 =======
 	var exhaust_1 = __webpack_require__(653);
 >>>>>>> Table directive to angular 2
+=======
+	var exhaust_1 = __webpack_require__(664);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
 	//# sourceMappingURL=exhaust.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 526 */
 =======
 /* 520 */
 >>>>>>> Table directive to angular 2
+=======
+/* 531 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var exhaustMap_1 = __webpack_require__(660);
 =======
 	var exhaustMap_1 = __webpack_require__(654);
 >>>>>>> Table directive to angular 2
+=======
+	var exhaustMap_1 = __webpack_require__(665);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
 	//# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 527 */
 =======
 /* 521 */
 >>>>>>> Table directive to angular 2
+=======
+/* 532 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var expand_1 = __webpack_require__(661);
 =======
 	var expand_1 = __webpack_require__(655);
 >>>>>>> Table directive to angular 2
+=======
+	var expand_1 = __webpack_require__(666);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.expand = expand_1.expand;
 	//# sourceMappingURL=expand.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 528 */
 =======
 /* 522 */
 >>>>>>> Table directive to angular 2
+=======
+/* 533 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var filter_1 = __webpack_require__(249);
 =======
 	var filter_1 = __webpack_require__(247);
 >>>>>>> Table directive to angular 2
+=======
+	var filter_1 = __webpack_require__(255);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.filter = filter_1.filter;
 	//# sourceMappingURL=filter.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 529 */
 =======
 /* 523 */
 >>>>>>> Table directive to angular 2
+=======
+/* 534 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var finally_1 = __webpack_require__(662);
 =======
 	var finally_1 = __webpack_require__(656);
 >>>>>>> Table directive to angular 2
+=======
+	var finally_1 = __webpack_require__(667);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.finally = finally_1._finally;
 	Observable_1.Observable.prototype._finally = finally_1._finally;
 	//# sourceMappingURL=finally.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 530 */
 =======
 /* 524 */
 >>>>>>> Table directive to angular 2
+=======
+/* 535 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var find_1 = __webpack_require__(250);
 =======
 	var find_1 = __webpack_require__(248);
 >>>>>>> Table directive to angular 2
+=======
+	var find_1 = __webpack_require__(256);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.find = find_1.find;
 	//# sourceMappingURL=find.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 531 */
 =======
 /* 525 */
 >>>>>>> Table directive to angular 2
+=======
+/* 536 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var findIndex_1 = __webpack_require__(663);
 =======
 	var findIndex_1 = __webpack_require__(657);
 >>>>>>> Table directive to angular 2
+=======
+	var findIndex_1 = __webpack_require__(668);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 	//# sourceMappingURL=findIndex.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 532 */
 =======
 /* 526 */
 >>>>>>> Table directive to angular 2
+=======
+/* 537 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var first_1 = __webpack_require__(251);
 =======
 	var first_1 = __webpack_require__(249);
 >>>>>>> Table directive to angular 2
+=======
+	var first_1 = __webpack_require__(257);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.first = first_1.first;
 	//# sourceMappingURL=first.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 533 */
 =======
 /* 527 */
 >>>>>>> Table directive to angular 2
+=======
+/* 538 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var groupBy_1 = __webpack_require__(664);
 =======
 	var groupBy_1 = __webpack_require__(658);
 >>>>>>> Table directive to angular 2
+=======
+	var groupBy_1 = __webpack_require__(669);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 	//# sourceMappingURL=groupBy.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 534 */
 =======
 /* 528 */
 >>>>>>> Table directive to angular 2
+=======
+/* 539 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ignoreElements_1 = __webpack_require__(665);
 =======
 	var ignoreElements_1 = __webpack_require__(659);
 >>>>>>> Table directive to angular 2
+=======
+	var ignoreElements_1 = __webpack_require__(670);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
 	//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 535 */
 =======
 /* 529 */
 >>>>>>> Table directive to angular 2
+=======
+/* 540 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isEmpty_1 = __webpack_require__(666);
 =======
 	var isEmpty_1 = __webpack_require__(660);
 >>>>>>> Table directive to angular 2
+=======
+	var isEmpty_1 = __webpack_require__(671);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 	//# sourceMappingURL=isEmpty.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 536 */
 =======
 /* 530 */
 >>>>>>> Table directive to angular 2
+=======
+/* 541 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var last_1 = __webpack_require__(252);
 =======
 	var last_1 = __webpack_require__(250);
 >>>>>>> Table directive to angular 2
+=======
+	var last_1 = __webpack_require__(258);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.last = last_1.last;
 	//# sourceMappingURL=last.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 537 */
 =======
 /* 531 */
 >>>>>>> Table directive to angular 2
+=======
+/* 542 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var let_1 = __webpack_require__(667);
 =======
 	var let_1 = __webpack_require__(661);
 >>>>>>> Table directive to angular 2
+=======
+	var let_1 = __webpack_require__(672);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.let = let_1.letProto;
 	Observable_1.Observable.prototype.letBind = let_1.letProto;
 	//# sourceMappingURL=let.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 538 */
 =======
 /* 532 */
 >>>>>>> Table directive to angular 2
+=======
+/* 543 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var mapTo_1 = __webpack_require__(668);
 =======
 	var mapTo_1 = __webpack_require__(662);
 >>>>>>> Table directive to angular 2
+=======
+	var mapTo_1 = __webpack_require__(673);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
 	//# sourceMappingURL=mapTo.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 539 */
 =======
 /* 533 */
 >>>>>>> Table directive to angular 2
+=======
+/* 544 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var materialize_1 = __webpack_require__(669);
 =======
 	var materialize_1 = __webpack_require__(663);
 >>>>>>> Table directive to angular 2
+=======
+	var materialize_1 = __webpack_require__(674);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.materialize = materialize_1.materialize;
 	//# sourceMappingURL=materialize.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 540 */
 =======
 /* 534 */
 >>>>>>> Table directive to angular 2
+=======
+/* 545 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var max_1 = __webpack_require__(670);
 =======
 	var max_1 = __webpack_require__(664);
 >>>>>>> Table directive to angular 2
+=======
+	var max_1 = __webpack_require__(675);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.max = max_1.max;
 	//# sourceMappingURL=max.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 541 */
 =======
 /* 535 */
 >>>>>>> Table directive to angular 2
+=======
+/* 546 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var merge_1 = __webpack_require__(253);
 =======
 	var merge_1 = __webpack_require__(251);
 >>>>>>> Table directive to angular 2
+=======
+	var merge_1 = __webpack_require__(259);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.merge = merge_1.merge;
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 542 */
 =======
 /* 536 */
 >>>>>>> Table directive to angular 2
+=======
+/* 547 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var mergeAll_1 = __webpack_require__(88);
 =======
 	var mergeAll_1 = __webpack_require__(83);
 >>>>>>> Table directive to angular 2
+=======
+	var mergeAll_1 = __webpack_require__(88);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 	//# sourceMappingURL=mergeAll.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 543 */
 =======
 /* 537 */
 >>>>>>> Table directive to angular 2
+=======
+/* 548 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var mergeMap_1 = __webpack_require__(161);
+	var mergeMap_1 = __webpack_require__(164);
 	Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
 	Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 	//# sourceMappingURL=mergeMap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 544 */
 =======
 /* 538 */
 >>>>>>> Table directive to angular 2
+=======
+/* 549 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var mergeMapTo_1 = __webpack_require__(254);
 =======
 	var mergeMapTo_1 = __webpack_require__(252);
 >>>>>>> Table directive to angular 2
+=======
+	var mergeMapTo_1 = __webpack_require__(260);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
 	Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 	//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 545 */
 =======
 /* 539 */
 >>>>>>> Table directive to angular 2
+=======
+/* 550 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var mergeScan_1 = __webpack_require__(671);
 =======
 	var mergeScan_1 = __webpack_require__(665);
 >>>>>>> Table directive to angular 2
+=======
+	var mergeScan_1 = __webpack_require__(676);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
 	//# sourceMappingURL=mergeScan.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 546 */
 =======
 /* 540 */
 >>>>>>> Table directive to angular 2
+=======
+/* 551 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var min_1 = __webpack_require__(672);
 =======
 	var min_1 = __webpack_require__(666);
 >>>>>>> Table directive to angular 2
+=======
+	var min_1 = __webpack_require__(677);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.min = min_1.min;
 	//# sourceMappingURL=min.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 547 */
 =======
 /* 541 */
 >>>>>>> Table directive to angular 2
+=======
+/* 552 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var multicast_1 = __webpack_require__(74);
 =======
 	var multicast_1 = __webpack_require__(71);
 >>>>>>> Table directive to angular 2
+=======
+	var multicast_1 = __webpack_require__(74);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.multicast = multicast_1.multicast;
 	//# sourceMappingURL=multicast.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 548 */
 =======
 /* 542 */
 >>>>>>> Table directive to angular 2
+=======
+/* 553 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var observeOn_1 = __webpack_require__(162);
+	var observeOn_1 = __webpack_require__(165);
 	Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
 	//# sourceMappingURL=observeOn.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 549 */
 =======
 /* 543 */
 >>>>>>> Table directive to angular 2
+=======
+/* 554 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var onErrorResumeNext_1 = __webpack_require__(255);
 =======
 	var onErrorResumeNext_1 = __webpack_require__(253);
 >>>>>>> Table directive to angular 2
+=======
+	var onErrorResumeNext_1 = __webpack_require__(261);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
 	//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 550 */
 =======
 /* 544 */
 >>>>>>> Table directive to angular 2
+=======
+/* 555 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var pairwise_1 = __webpack_require__(673);
 =======
 	var pairwise_1 = __webpack_require__(667);
 >>>>>>> Table directive to angular 2
+=======
+	var pairwise_1 = __webpack_require__(678);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
 	//# sourceMappingURL=pairwise.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 551 */
 =======
 /* 545 */
 >>>>>>> Table directive to angular 2
+=======
+/* 556 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var partition_1 = __webpack_require__(674);
 =======
 	var partition_1 = __webpack_require__(668);
 >>>>>>> Table directive to angular 2
+=======
+	var partition_1 = __webpack_require__(679);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.partition = partition_1.partition;
 	//# sourceMappingURL=partition.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 552 */
 =======
 /* 546 */
 >>>>>>> Table directive to angular 2
+=======
+/* 557 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var pluck_1 = __webpack_require__(675);
 =======
 	var pluck_1 = __webpack_require__(669);
 >>>>>>> Table directive to angular 2
+=======
+	var pluck_1 = __webpack_require__(680);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.pluck = pluck_1.pluck;
 	//# sourceMappingURL=pluck.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 553 */
 =======
 /* 547 */
 >>>>>>> Table directive to angular 2
+=======
+/* 558 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var publish_1 = __webpack_require__(676);
 =======
 	var publish_1 = __webpack_require__(670);
 >>>>>>> Table directive to angular 2
+=======
+	var publish_1 = __webpack_require__(681);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.publish = publish_1.publish;
 	//# sourceMappingURL=publish.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 554 */
 =======
 /* 548 */
 >>>>>>> Table directive to angular 2
+=======
+/* 559 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var publishBehavior_1 = __webpack_require__(677);
 =======
 	var publishBehavior_1 = __webpack_require__(671);
 >>>>>>> Table directive to angular 2
+=======
+	var publishBehavior_1 = __webpack_require__(682);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
 	//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 555 */
 =======
 /* 549 */
 >>>>>>> Table directive to angular 2
+=======
+/* 560 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var publishLast_1 = __webpack_require__(678);
 =======
 	var publishLast_1 = __webpack_require__(672);
 >>>>>>> Table directive to angular 2
+=======
+	var publishLast_1 = __webpack_require__(683);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
 	//# sourceMappingURL=publishLast.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 556 */
 =======
 /* 550 */
 >>>>>>> Table directive to angular 2
+=======
+/* 561 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var publishReplay_1 = __webpack_require__(679);
 =======
 	var publishReplay_1 = __webpack_require__(673);
 >>>>>>> Table directive to angular 2
+=======
+	var publishReplay_1 = __webpack_require__(684);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 	//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 557 */
 =======
 /* 551 */
 >>>>>>> Table directive to angular 2
+=======
+/* 562 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var race_1 = __webpack_require__(256);
 =======
 	var race_1 = __webpack_require__(254);
 >>>>>>> Table directive to angular 2
+=======
+	var race_1 = __webpack_require__(262);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.race = race_1.race;
 	//# sourceMappingURL=race.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 558 */
 =======
 /* 552 */
 >>>>>>> Table directive to angular 2
+=======
+/* 563 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var reduce_1 = __webpack_require__(110);
 =======
 	var reduce_1 = __webpack_require__(108);
 >>>>>>> Table directive to angular 2
+=======
+	var reduce_1 = __webpack_require__(115);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 	//# sourceMappingURL=reduce.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 559 */
 =======
 /* 553 */
 >>>>>>> Table directive to angular 2
+=======
+/* 564 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var repeat_1 = __webpack_require__(680);
 =======
 	var repeat_1 = __webpack_require__(674);
 >>>>>>> Table directive to angular 2
+=======
+	var repeat_1 = __webpack_require__(685);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.repeat = repeat_1.repeat;
 	//# sourceMappingURL=repeat.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 560 */
 =======
 /* 554 */
 >>>>>>> Table directive to angular 2
+=======
+/* 565 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var repeatWhen_1 = __webpack_require__(681);
 =======
 	var repeatWhen_1 = __webpack_require__(675);
 >>>>>>> Table directive to angular 2
+=======
+	var repeatWhen_1 = __webpack_require__(686);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
 	//# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 561 */
 =======
 /* 555 */
 >>>>>>> Table directive to angular 2
+=======
+/* 566 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var retry_1 = __webpack_require__(682);
 =======
 	var retry_1 = __webpack_require__(676);
 >>>>>>> Table directive to angular 2
+=======
+	var retry_1 = __webpack_require__(687);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.retry = retry_1.retry;
 	//# sourceMappingURL=retry.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 562 */
 =======
 /* 556 */
 >>>>>>> Table directive to angular 2
+=======
+/* 567 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var retryWhen_1 = __webpack_require__(683);
 =======
 	var retryWhen_1 = __webpack_require__(677);
 >>>>>>> Table directive to angular 2
+=======
+	var retryWhen_1 = __webpack_require__(688);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 	//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 563 */
 =======
 /* 557 */
 >>>>>>> Table directive to angular 2
+=======
+/* 568 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var sample_1 = __webpack_require__(684);
 =======
 	var sample_1 = __webpack_require__(678);
 >>>>>>> Table directive to angular 2
+=======
+	var sample_1 = __webpack_require__(689);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.sample = sample_1.sample;
 	//# sourceMappingURL=sample.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 564 */
 =======
 /* 558 */
 >>>>>>> Table directive to angular 2
+=======
+/* 569 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var sampleTime_1 = __webpack_require__(685);
 =======
 	var sampleTime_1 = __webpack_require__(679);
 >>>>>>> Table directive to angular 2
+=======
+	var sampleTime_1 = __webpack_require__(690);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 	//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 565 */
 =======
 /* 559 */
 >>>>>>> Table directive to angular 2
+=======
+/* 570 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var scan_1 = __webpack_require__(686);
 =======
 	var scan_1 = __webpack_require__(680);
 >>>>>>> Table directive to angular 2
+=======
+	var scan_1 = __webpack_require__(691);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.scan = scan_1.scan;
 	//# sourceMappingURL=scan.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 566 */
 =======
 /* 560 */
 >>>>>>> Table directive to angular 2
+=======
+/* 571 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var sequenceEqual_1 = __webpack_require__(687);
 =======
 	var sequenceEqual_1 = __webpack_require__(681);
 >>>>>>> Table directive to angular 2
+=======
+	var sequenceEqual_1 = __webpack_require__(692);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
 	//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 567 */
 =======
 /* 561 */
 >>>>>>> Table directive to angular 2
+=======
+/* 572 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var share_1 = __webpack_require__(688);
 =======
 	var share_1 = __webpack_require__(682);
 >>>>>>> Table directive to angular 2
+=======
+	var share_1 = __webpack_require__(693);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.share = share_1.share;
 	//# sourceMappingURL=share.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 568 */
 =======
 /* 562 */
 >>>>>>> Table directive to angular 2
+=======
+/* 573 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var single_1 = __webpack_require__(689);
 =======
 	var single_1 = __webpack_require__(683);
 >>>>>>> Table directive to angular 2
+=======
+	var single_1 = __webpack_require__(694);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.single = single_1.single;
 	//# sourceMappingURL=single.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 569 */
 =======
 /* 563 */
 >>>>>>> Table directive to angular 2
+=======
+/* 574 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var skip_1 = __webpack_require__(690);
 =======
 	var skip_1 = __webpack_require__(684);
 >>>>>>> Table directive to angular 2
+=======
+	var skip_1 = __webpack_require__(695);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.skip = skip_1.skip;
 	//# sourceMappingURL=skip.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 570 */
 =======
 /* 564 */
 >>>>>>> Table directive to angular 2
+=======
+/* 575 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var skipUntil_1 = __webpack_require__(691);
 =======
 	var skipUntil_1 = __webpack_require__(685);
 >>>>>>> Table directive to angular 2
+=======
+	var skipUntil_1 = __webpack_require__(696);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 	//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 571 */
 =======
 /* 565 */
 >>>>>>> Table directive to angular 2
+=======
+/* 576 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var skipWhile_1 = __webpack_require__(692);
 =======
 	var skipWhile_1 = __webpack_require__(686);
 >>>>>>> Table directive to angular 2
+=======
+	var skipWhile_1 = __webpack_require__(697);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 	//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 572 */
 =======
 /* 566 */
 >>>>>>> Table directive to angular 2
+=======
+/* 577 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var startWith_1 = __webpack_require__(693);
 =======
 	var startWith_1 = __webpack_require__(687);
 >>>>>>> Table directive to angular 2
+=======
+	var startWith_1 = __webpack_require__(698);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 	//# sourceMappingURL=startWith.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 573 */
 =======
 /* 567 */
 >>>>>>> Table directive to angular 2
+=======
+/* 578 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var subscribeOn_1 = __webpack_require__(694);
 =======
 	var subscribeOn_1 = __webpack_require__(688);
 >>>>>>> Table directive to angular 2
+=======
+	var subscribeOn_1 = __webpack_require__(699);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 	//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 574 */
 =======
 /* 568 */
 >>>>>>> Table directive to angular 2
+=======
+/* 579 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var switch_1 = __webpack_require__(695);
 =======
 	var switch_1 = __webpack_require__(689);
 >>>>>>> Table directive to angular 2
+=======
+	var switch_1 = __webpack_require__(700);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.switch = switch_1._switch;
 	Observable_1.Observable.prototype._switch = switch_1._switch;
 	//# sourceMappingURL=switch.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 575 */
 =======
 /* 569 */
 >>>>>>> Table directive to angular 2
+=======
+/* 580 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var switchMap_1 = __webpack_require__(696);
 =======
 	var switchMap_1 = __webpack_require__(690);
 >>>>>>> Table directive to angular 2
+=======
+	var switchMap_1 = __webpack_require__(701);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 	//# sourceMappingURL=switchMap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 576 */
 =======
 /* 570 */
 >>>>>>> Table directive to angular 2
+=======
+/* 581 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var switchMapTo_1 = __webpack_require__(697);
 =======
 	var switchMapTo_1 = __webpack_require__(691);
 >>>>>>> Table directive to angular 2
+=======
+	var switchMapTo_1 = __webpack_require__(702);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 	//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 577 */
 =======
 /* 571 */
 >>>>>>> Table directive to angular 2
+=======
+/* 582 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var take_1 = __webpack_require__(698);
 =======
 	var take_1 = __webpack_require__(692);
 >>>>>>> Table directive to angular 2
+=======
+	var take_1 = __webpack_require__(703);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.take = take_1.take;
 	//# sourceMappingURL=take.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 578 */
 =======
 /* 572 */
 >>>>>>> Table directive to angular 2
+=======
+/* 583 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var takeLast_1 = __webpack_require__(699);
 =======
 	var takeLast_1 = __webpack_require__(693);
 >>>>>>> Table directive to angular 2
+=======
+	var takeLast_1 = __webpack_require__(704);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 	//# sourceMappingURL=takeLast.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 579 */
 =======
 /* 573 */
 >>>>>>> Table directive to angular 2
+=======
+/* 584 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var takeUntil_1 = __webpack_require__(700);
 =======
 	var takeUntil_1 = __webpack_require__(694);
 >>>>>>> Table directive to angular 2
+=======
+	var takeUntil_1 = __webpack_require__(705);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 	//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 580 */
 =======
 /* 574 */
 >>>>>>> Table directive to angular 2
+=======
+/* 585 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var takeWhile_1 = __webpack_require__(701);
 =======
 	var takeWhile_1 = __webpack_require__(695);
 >>>>>>> Table directive to angular 2
+=======
+	var takeWhile_1 = __webpack_require__(706);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 	//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 581 */
 =======
 /* 575 */
 >>>>>>> Table directive to angular 2
+=======
+/* 586 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var throttle_1 = __webpack_require__(702);
 =======
 	var throttle_1 = __webpack_require__(696);
 >>>>>>> Table directive to angular 2
+=======
+	var throttle_1 = __webpack_require__(707);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 	//# sourceMappingURL=throttle.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 582 */
 =======
 /* 576 */
 >>>>>>> Table directive to angular 2
+=======
+/* 587 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var throttleTime_1 = __webpack_require__(703);
 =======
 	var throttleTime_1 = __webpack_require__(697);
 >>>>>>> Table directive to angular 2
+=======
+	var throttleTime_1 = __webpack_require__(708);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 	//# sourceMappingURL=throttleTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 583 */
 =======
 /* 577 */
 >>>>>>> Table directive to angular 2
+=======
+/* 588 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timeInterval_1 = __webpack_require__(257);
 =======
 	var timeInterval_1 = __webpack_require__(255);
 >>>>>>> Table directive to angular 2
+=======
+	var timeInterval_1 = __webpack_require__(263);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
 	//# sourceMappingURL=timeInterval.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 584 */
 =======
 /* 578 */
 >>>>>>> Table directive to angular 2
+=======
+/* 589 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timeout_1 = __webpack_require__(704);
 =======
 	var timeout_1 = __webpack_require__(698);
 >>>>>>> Table directive to angular 2
+=======
+	var timeout_1 = __webpack_require__(709);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 	//# sourceMappingURL=timeout.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 585 */
 =======
 /* 579 */
 >>>>>>> Table directive to angular 2
+=======
+/* 590 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timeoutWith_1 = __webpack_require__(705);
 =======
 	var timeoutWith_1 = __webpack_require__(699);
 >>>>>>> Table directive to angular 2
+=======
+	var timeoutWith_1 = __webpack_require__(710);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 	//# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 586 */
 =======
 /* 580 */
 >>>>>>> Table directive to angular 2
+=======
+/* 591 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timestamp_1 = __webpack_require__(258);
 =======
 	var timestamp_1 = __webpack_require__(256);
 >>>>>>> Table directive to angular 2
+=======
+	var timestamp_1 = __webpack_require__(264);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
 	//# sourceMappingURL=timestamp.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 587 */
 =======
 /* 581 */
 >>>>>>> Table directive to angular 2
+=======
+/* 592 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var toArray_1 = __webpack_require__(706);
 =======
 	var toArray_1 = __webpack_require__(700);
 >>>>>>> Table directive to angular 2
+=======
+	var toArray_1 = __webpack_require__(711);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 	//# sourceMappingURL=toArray.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 588 */
 =======
 /* 582 */
 >>>>>>> Table directive to angular 2
+=======
+/* 593 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var toPromise_1 = __webpack_require__(259);
 =======
 	var toPromise_1 = __webpack_require__(257);
 >>>>>>> Table directive to angular 2
+=======
+	var toPromise_1 = __webpack_require__(265);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 	//# sourceMappingURL=toPromise.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 589 */
 =======
 /* 583 */
 >>>>>>> Table directive to angular 2
+=======
+/* 594 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var window_1 = __webpack_require__(707);
 =======
 	var window_1 = __webpack_require__(701);
 >>>>>>> Table directive to angular 2
+=======
+	var window_1 = __webpack_require__(712);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.window = window_1.window;
 	//# sourceMappingURL=window.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 590 */
 =======
 /* 584 */
 >>>>>>> Table directive to angular 2
+=======
+/* 595 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var windowCount_1 = __webpack_require__(708);
 =======
 	var windowCount_1 = __webpack_require__(702);
 >>>>>>> Table directive to angular 2
+=======
+	var windowCount_1 = __webpack_require__(713);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 	//# sourceMappingURL=windowCount.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 591 */
 =======
 /* 585 */
 >>>>>>> Table directive to angular 2
+=======
+/* 596 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var windowTime_1 = __webpack_require__(709);
 =======
 	var windowTime_1 = __webpack_require__(703);
 >>>>>>> Table directive to angular 2
+=======
+	var windowTime_1 = __webpack_require__(714);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 	//# sourceMappingURL=windowTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 592 */
 =======
 /* 586 */
 >>>>>>> Table directive to angular 2
+=======
+/* 597 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var windowToggle_1 = __webpack_require__(710);
 =======
 	var windowToggle_1 = __webpack_require__(704);
 >>>>>>> Table directive to angular 2
+=======
+	var windowToggle_1 = __webpack_require__(715);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 	//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 593 */
 =======
 /* 587 */
 >>>>>>> Table directive to angular 2
+=======
+/* 598 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var windowWhen_1 = __webpack_require__(711);
 =======
 	var windowWhen_1 = __webpack_require__(705);
 >>>>>>> Table directive to angular 2
+=======
+	var windowWhen_1 = __webpack_require__(716);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
 	//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 594 */
 =======
 /* 588 */
 >>>>>>> Table directive to angular 2
+=======
+/* 599 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var withLatestFrom_1 = __webpack_require__(712);
 =======
 	var withLatestFrom_1 = __webpack_require__(706);
 >>>>>>> Table directive to angular 2
+=======
+	var withLatestFrom_1 = __webpack_require__(717);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
 	//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 595 */
 =======
 /* 589 */
 >>>>>>> Table directive to angular 2
+=======
+/* 600 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var zip_1 = __webpack_require__(163);
+	var zip_1 = __webpack_require__(166);
 	Observable_1.Observable.prototype.zip = zip_1.zipProto;
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 596 */
 =======
 /* 590 */
 >>>>>>> Table directive to angular 2
+=======
+/* 601 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var zipAll_1 = __webpack_require__(713);
 =======
 	var zipAll_1 = __webpack_require__(707);
 >>>>>>> Table directive to angular 2
+=======
+	var zipAll_1 = __webpack_require__(718);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 	//# sourceMappingURL=zipAll.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 597 */
 =======
 /* 591 */
 >>>>>>> Table directive to angular 2
+=======
+/* 602 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81111,12 +83345,17 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var ScalarObservable_1 = __webpack_require__(157);
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var EmptyObservable_1 = __webpack_require__(55);
 =======
 	var EmptyObservable_1 = __webpack_require__(53);
 >>>>>>> Table directive to angular 2
+=======
+	var ScalarObservable_1 = __webpack_require__(160);
+	var EmptyObservable_1 = __webpack_require__(57);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -81180,11 +83419,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 598 */
 =======
 /* 592 */
 >>>>>>> Table directive to angular 2
+=======
+/* 603 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81196,11 +83439,15 @@ webpackJsonp([1],[
 	var Observable_1 = __webpack_require__(1);
 	var tryCatch_1 = __webpack_require__(23);
 	var errorObject_1 = __webpack_require__(22);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncSubject_1 = __webpack_require__(107);
 =======
 	var AsyncSubject_1 = __webpack_require__(105);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncSubject_1 = __webpack_require__(112);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -81357,11 +83604,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=BoundCallbackObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 599 */
 =======
 /* 593 */
 >>>>>>> Table directive to angular 2
+=======
+/* 604 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81373,11 +83624,15 @@ webpackJsonp([1],[
 	var Observable_1 = __webpack_require__(1);
 	var tryCatch_1 = __webpack_require__(23);
 	var errorObject_1 = __webpack_require__(22);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncSubject_1 = __webpack_require__(107);
 =======
 	var AsyncSubject_1 = __webpack_require__(105);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncSubject_1 = __webpack_require__(112);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -81546,11 +83801,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 600 */
 =======
 /* 594 */
 >>>>>>> Table directive to angular 2
+=======
+/* 605 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81648,11 +83907,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=DeferObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 601 */
 =======
 /* 595 */
 >>>>>>> Table directive to angular 2
+=======
+/* 606 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81739,11 +84002,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ErrorObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 602 */
 =======
 /* 596 */
 >>>>>>> Table directive to angular 2
+=======
+/* 607 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81753,6 +84020,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var EmptyObservable_1 = __webpack_require__(55);
 	var isArray_1 = __webpack_require__(39);
@@ -81760,6 +84028,10 @@ webpackJsonp([1],[
 	var EmptyObservable_1 = __webpack_require__(53);
 	var isArray_1 = __webpack_require__(38);
 >>>>>>> Table directive to angular 2
+=======
+	var EmptyObservable_1 = __webpack_require__(57);
+	var isArray_1 = __webpack_require__(39);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var subscribeToResult_1 = __webpack_require__(7);
 	var OuterSubscriber_1 = __webpack_require__(6);
 	/**
@@ -81865,11 +84137,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 603 */
 =======
 /* 597 */
 >>>>>>> Table directive to angular 2
+=======
+/* 608 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81880,7 +84156,7 @@ webpackJsonp([1],[
 	};
 	var Observable_1 = __webpack_require__(1);
 	var tryCatch_1 = __webpack_require__(23);
-	var isFunction_1 = __webpack_require__(165);
+	var isFunction_1 = __webpack_require__(168);
 	var errorObject_1 = __webpack_require__(22);
 	var Subscription_1 = __webpack_require__(21);
 	function isNodeStyleEventEmmitter(sourceObj) {
@@ -82006,11 +84282,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=FromEventObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 604 */
 =======
 /* 598 */
 >>>>>>> Table directive to angular 2
+=======
+/* 609 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82123,11 +84403,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=FromEventPatternObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 605 */
 =======
 /* 599 */
 >>>>>>> Table directive to angular 2
+=======
+/* 610 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82137,7 +84421,11 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var isScheduler_1 = __webpack_require__(56);
+=======
+	var isScheduler_1 = __webpack_require__(58);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var selfSelector = function (value) { return value; };
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
@@ -82267,11 +84555,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=GenerateObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 606 */
 =======
 /* 600 */
 >>>>>>> Table directive to angular 2
+=======
+/* 611 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82337,11 +84629,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=IfObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 607 */
 =======
 /* 601 */
 >>>>>>> Table directive to angular 2
+=======
+/* 612 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82350,7 +84646,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var isNumeric_1 = __webpack_require__(166);
+	var isNumeric_1 = __webpack_require__(169);
 	var Observable_1 = __webpack_require__(1);
 	var async_1 = __webpack_require__(27);
 	/**
@@ -82434,11 +84730,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=IntervalObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 608 */
 =======
 /* 602 */
 >>>>>>> Table directive to angular 2
+=======
+/* 613 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82449,11 +84749,15 @@ webpackJsonp([1],[
 	};
 	var root_1 = __webpack_require__(25);
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var iterator_1 = __webpack_require__(91);
 =======
 	var iterator_1 = __webpack_require__(86);
 >>>>>>> Table directive to angular 2
+=======
+	var iterator_1 = __webpack_require__(91);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -82604,11 +84908,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 609 */
 =======
 /* 603 */
 >>>>>>> Table directive to angular 2
+=======
+/* 614 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82618,11 +84926,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var noop_1 = __webpack_require__(268);
 =======
 	var noop_1 = __webpack_require__(266);
 >>>>>>> Table directive to angular 2
+=======
+	var noop_1 = __webpack_require__(274);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -82676,11 +84988,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=NeverObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 610 */
 =======
 /* 604 */
 >>>>>>> Table directive to angular 2
+=======
+/* 615 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82770,11 +85086,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=PairsObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 611 */
 =======
 /* 605 */
 >>>>>>> Table directive to angular 2
+=======
+/* 616 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82875,11 +85195,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=RangeObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 612 */
 =======
 /* 606 */
 >>>>>>> Table directive to angular 2
+=======
+/* 617 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82889,12 +85213,17 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var asap_1 = __webpack_require__(261);
 =======
 	var asap_1 = __webpack_require__(259);
 >>>>>>> Table directive to angular 2
 	var isNumeric_1 = __webpack_require__(166);
+=======
+	var asap_1 = __webpack_require__(267);
+	var isNumeric_1 = __webpack_require__(169);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -82939,11 +85268,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=SubscribeOnObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 613 */
 =======
 /* 607 */
 >>>>>>> Table directive to angular 2
+=======
+/* 618 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82952,9 +85285,10 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var isNumeric_1 = __webpack_require__(166);
+	var isNumeric_1 = __webpack_require__(169);
 	var Observable_1 = __webpack_require__(1);
 	var async_1 = __webpack_require__(27);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isScheduler_1 = __webpack_require__(56);
 	var isDate_1 = __webpack_require__(114);
@@ -82962,6 +85296,10 @@ webpackJsonp([1],[
 	var isScheduler_1 = __webpack_require__(54);
 	var isDate_1 = __webpack_require__(112);
 >>>>>>> Table directive to angular 2
+=======
+	var isScheduler_1 = __webpack_require__(58);
+	var isDate_1 = __webpack_require__(119);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -83060,11 +85398,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=TimerObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 614 */
 =======
 /* 608 */
 >>>>>>> Table directive to angular 2
+=======
+/* 619 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83130,6 +85472,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=UsingObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 615 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83143,10 +85486,18 @@ webpackJsonp([1],[
 	"use strict";
 	var BoundCallbackObservable_1 = __webpack_require__(592);
 >>>>>>> Table directive to angular 2
+=======
+/* 620 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var BoundCallbackObservable_1 = __webpack_require__(603);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
 	//# sourceMappingURL=bindCallback.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 616 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83160,10 +85511,18 @@ webpackJsonp([1],[
 	"use strict";
 	var BoundNodeCallbackObservable_1 = __webpack_require__(593);
 >>>>>>> Table directive to angular 2
+=======
+/* 621 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var BoundNodeCallbackObservable_1 = __webpack_require__(604);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 	//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 617 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83182,6 +85541,16 @@ webpackJsonp([1],[
 	var ArrayObservable_1 = __webpack_require__(46);
 >>>>>>> Table directive to angular 2
 	var combineLatest_1 = __webpack_require__(159);
+=======
+/* 622 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var isScheduler_1 = __webpack_require__(58);
+	var isArray_1 = __webpack_require__(39);
+	var ArrayObservable_1 = __webpack_require__(49);
+	var combineLatest_1 = __webpack_require__(162);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/* tslint:enable:max-line-length */
 	/**
 	 * Combines multiple Observables to create an Observable whose values are
@@ -83250,19 +85619,24 @@ webpackJsonp([1],[
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 618 */
 =======
 /* 612 */
 >>>>>>> Table directive to angular 2
+=======
+/* 623 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var concat_1 = __webpack_require__(160);
+	var concat_1 = __webpack_require__(163);
 	exports.concat = concat_1.concatStatic;
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 619 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83276,15 +85650,26 @@ webpackJsonp([1],[
 	"use strict";
 	var DeferObservable_1 = __webpack_require__(594);
 >>>>>>> Table directive to angular 2
+=======
+/* 624 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var DeferObservable_1 = __webpack_require__(605);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.defer = DeferObservable_1.DeferObservable.create;
 	//# sourceMappingURL=defer.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 620 */
 =======
 /* 614 */
 >>>>>>> Table directive to angular 2
+=======
+/* 625 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83298,6 +85683,7 @@ webpackJsonp([1],[
 	var Observable_1 = __webpack_require__(1);
 	var Subscription_1 = __webpack_require__(21);
 	var root_1 = __webpack_require__(25);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ReplaySubject_1 = __webpack_require__(108);
 	var tryCatch_1 = __webpack_require__(23);
@@ -83309,6 +85695,12 @@ webpackJsonp([1],[
 	var errorObject_1 = __webpack_require__(22);
 	var assign_1 = __webpack_require__(724);
 >>>>>>> Table directive to angular 2
+=======
+	var ReplaySubject_1 = __webpack_require__(113);
+	var tryCatch_1 = __webpack_require__(23);
+	var errorObject_1 = __webpack_require__(22);
+	var assign_1 = __webpack_require__(735);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -83501,6 +85893,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=WebSocketSubject.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 621 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83514,10 +85907,18 @@ webpackJsonp([1],[
 	"use strict";
 	var AjaxObservable_1 = __webpack_require__(239);
 >>>>>>> Table directive to angular 2
+=======
+/* 626 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var AjaxObservable_1 = __webpack_require__(247);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.ajax = AjaxObservable_1.AjaxObservable.create;
 	//# sourceMappingURL=ajax.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 622 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83531,10 +85932,18 @@ webpackJsonp([1],[
 	"use strict";
 	var WebSocketSubject_1 = __webpack_require__(614);
 >>>>>>> Table directive to angular 2
+=======
+/* 627 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var WebSocketSubject_1 = __webpack_require__(625);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.webSocket = WebSocketSubject_1.WebSocketSubject.create;
 	//# sourceMappingURL=webSocket.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 623 */
 =======
@@ -83544,10 +85953,18 @@ webpackJsonp([1],[
 
 	"use strict";
 	var EmptyObservable_1 = __webpack_require__(55);
+=======
+/* 628 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var EmptyObservable_1 = __webpack_require__(57);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.empty = EmptyObservable_1.EmptyObservable.create;
 	//# sourceMappingURL=empty.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 624 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83561,10 +85978,18 @@ webpackJsonp([1],[
 	"use strict";
 	var ForkJoinObservable_1 = __webpack_require__(596);
 >>>>>>> Table directive to angular 2
+=======
+/* 629 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ForkJoinObservable_1 = __webpack_require__(607);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 	//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 625 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83578,10 +86003,18 @@ webpackJsonp([1],[
 	"use strict";
 	var FromEventObservable_1 = __webpack_require__(597);
 >>>>>>> Table directive to angular 2
+=======
+/* 630 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var FromEventObservable_1 = __webpack_require__(608);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 	//# sourceMappingURL=fromEvent.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 626 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83595,10 +86028,18 @@ webpackJsonp([1],[
 	"use strict";
 	var FromEventPatternObservable_1 = __webpack_require__(598);
 >>>>>>> Table directive to angular 2
+=======
+/* 631 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var FromEventPatternObservable_1 = __webpack_require__(609);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
 	//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 627 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83612,10 +86053,18 @@ webpackJsonp([1],[
 	"use strict";
 	var IfObservable_1 = __webpack_require__(600);
 >>>>>>> Table directive to angular 2
+=======
+/* 632 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var IfObservable_1 = __webpack_require__(611);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports._if = IfObservable_1.IfObservable.create;
 	//# sourceMappingURL=if.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 628 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83629,10 +86078,18 @@ webpackJsonp([1],[
 	"use strict";
 	var IntervalObservable_1 = __webpack_require__(601);
 >>>>>>> Table directive to angular 2
+=======
+/* 633 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var IntervalObservable_1 = __webpack_require__(612);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.interval = IntervalObservable_1.IntervalObservable.create;
 	//# sourceMappingURL=interval.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 629 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83646,10 +86103,18 @@ webpackJsonp([1],[
 	"use strict";
 	var merge_1 = __webpack_require__(251);
 >>>>>>> Table directive to angular 2
+=======
+/* 634 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var merge_1 = __webpack_require__(259);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.merge = merge_1.mergeStatic;
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 630 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83663,10 +86128,18 @@ webpackJsonp([1],[
 	"use strict";
 	var NeverObservable_1 = __webpack_require__(603);
 >>>>>>> Table directive to angular 2
+=======
+/* 635 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var NeverObservable_1 = __webpack_require__(614);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.never = NeverObservable_1.NeverObservable.create;
 	//# sourceMappingURL=never.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 631 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83680,10 +86153,18 @@ webpackJsonp([1],[
 	"use strict";
 	var PairsObservable_1 = __webpack_require__(604);
 >>>>>>> Table directive to angular 2
+=======
+/* 636 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var PairsObservable_1 = __webpack_require__(615);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.pairs = PairsObservable_1.PairsObservable.create;
 	//# sourceMappingURL=pairs.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 632 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83697,10 +86178,18 @@ webpackJsonp([1],[
 	"use strict";
 	var RangeObservable_1 = __webpack_require__(605);
 >>>>>>> Table directive to angular 2
+=======
+/* 637 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var RangeObservable_1 = __webpack_require__(616);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.range = RangeObservable_1.RangeObservable.create;
 	//# sourceMappingURL=range.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 633 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83714,10 +86203,18 @@ webpackJsonp([1],[
 	"use strict";
 	var ErrorObservable_1 = __webpack_require__(595);
 >>>>>>> Table directive to angular 2
+=======
+/* 638 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ErrorObservable_1 = __webpack_require__(606);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports._throw = ErrorObservable_1.ErrorObservable.create;
 	//# sourceMappingURL=throw.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 634 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83731,10 +86228,18 @@ webpackJsonp([1],[
 	"use strict";
 	var TimerObservable_1 = __webpack_require__(607);
 >>>>>>> Table directive to angular 2
+=======
+/* 639 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var TimerObservable_1 = __webpack_require__(618);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.timer = TimerObservable_1.TimerObservable.create;
 	//# sourceMappingURL=timer.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 635 */
 /***/ function(module, exports, __webpack_require__) {
@@ -83748,28 +86253,43 @@ webpackJsonp([1],[
 	"use strict";
 	var UsingObservable_1 = __webpack_require__(608);
 >>>>>>> Table directive to angular 2
+=======
+/* 640 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var UsingObservable_1 = __webpack_require__(619);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.using = UsingObservable_1.UsingObservable.create;
 	//# sourceMappingURL=using.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 636 */
 =======
 /* 630 */
 >>>>>>> Table directive to angular 2
+=======
+/* 641 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var zip_1 = __webpack_require__(163);
+	var zip_1 = __webpack_require__(166);
 	exports.zip = zip_1.zipStatic;
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 637 */
 =======
 /* 631 */
 >>>>>>> Table directive to angular 2
+=======
+/* 642 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83884,11 +86404,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=audit.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 638 */
 =======
 /* 632 */
 >>>>>>> Table directive to angular 2
+=======
+/* 643 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83997,11 +86521,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=auditTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 639 */
 =======
 /* 633 */
 >>>>>>> Table directive to angular 2
+=======
+/* 644 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84082,11 +86610,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=buffer.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 640 */
 =======
 /* 634 */
 >>>>>>> Table directive to angular 2
+=======
+/* 645 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84205,11 +86737,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 641 */
 =======
 /* 635 */
 >>>>>>> Table directive to angular 2
+=======
+/* 646 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84220,7 +86756,11 @@ webpackJsonp([1],[
 	};
 	var async_1 = __webpack_require__(27);
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var isScheduler_1 = __webpack_require__(56);
+=======
+	var isScheduler_1 = __webpack_require__(58);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Buffers the source Observable values for a specific time period.
 	 *
@@ -84412,11 +86952,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 642 */
 =======
 /* 636 */
 >>>>>>> Table directive to angular 2
+=======
+/* 647 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84573,11 +87117,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 643 */
 =======
 /* 637 */
 >>>>>>> Table directive to angular 2
+=======
+/* 648 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84704,20 +87252,28 @@ webpackJsonp([1],[
 	//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 644 */
 =======
 /* 638 */
 >>>>>>> Table directive to angular 2
+=======
+/* 649 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ReplaySubject_1 = __webpack_require__(108);
 =======
 	var ReplaySubject_1 = __webpack_require__(106);
 >>>>>>> Table directive to angular 2
+=======
+	var ReplaySubject_1 = __webpack_require__(113);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * @param bufferSize
 	 * @param windowTime
@@ -84766,15 +87322,19 @@ webpackJsonp([1],[
 	//# sourceMappingURL=cache.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 645 */
 =======
 /* 639 */
 >>>>>>> Table directive to angular 2
+=======
+/* 650 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var combineLatest_1 = __webpack_require__(159);
+	var combineLatest_1 = __webpack_require__(162);
 	/**
 	 * Converts a higher-order Observable into a first-order Observable by waiting
 	 * for the outer Observable to complete, then applying {@link combineLatest}.
@@ -84822,15 +87382,19 @@ webpackJsonp([1],[
 	//# sourceMappingURL=combineAll.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 646 */
 =======
 /* 640 */
 >>>>>>> Table directive to angular 2
+=======
+/* 651 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var mergeMap_1 = __webpack_require__(161);
+	var mergeMap_1 = __webpack_require__(164);
 	/**
 	 * Projects each source value to an Observable which is merged in the output
 	 * Observable, in a serialized fashion waiting for each one to complete before
@@ -84894,6 +87458,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concatMap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 647 */
 /***/ function(module, exports, __webpack_require__) {
@@ -84907,6 +87472,13 @@ webpackJsonp([1],[
 	"use strict";
 	var mergeMapTo_1 = __webpack_require__(252);
 >>>>>>> Table directive to angular 2
+=======
+/* 652 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var mergeMapTo_1 = __webpack_require__(260);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Projects each source value to the same Observable which is merged multiple
 	 * times in a serialized fashion on the output Observable.
@@ -84964,11 +87536,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 648 */
 =======
 /* 642 */
 >>>>>>> Table directive to angular 2
+=======
+/* 653 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85081,11 +87657,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=count.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 649 */
 =======
 /* 643 */
 >>>>>>> Table directive to angular 2
+=======
+/* 654 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85217,11 +87797,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=debounce.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 650 */
 =======
 /* 644 */
 >>>>>>> Table directive to angular 2
+=======
+/* 655 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85342,11 +87926,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 651 */
 =======
 /* 645 */
 >>>>>>> Table directive to angular 2
+=======
+/* 656 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85427,11 +88015,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 652 */
 =======
 /* 646 */
 >>>>>>> Table directive to angular 2
+=======
+/* 657 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85441,6 +88033,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var async_1 = __webpack_require__(27);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isDate_1 = __webpack_require__(114);
 	var Subscriber_1 = __webpack_require__(3);
@@ -85450,6 +88043,11 @@ webpackJsonp([1],[
 	var Subscriber_1 = __webpack_require__(3);
 	var Notification_1 = __webpack_require__(82);
 >>>>>>> Table directive to angular 2
+=======
+	var isDate_1 = __webpack_require__(119);
+	var Subscriber_1 = __webpack_require__(3);
+	var Notification_1 = __webpack_require__(87);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Delays the emission of items from the source Observable by a given timeout or
 	 * until a given Date.
@@ -85577,11 +88175,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=delay.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 653 */
 =======
 /* 647 */
 >>>>>>> Table directive to angular 2
+=======
+/* 658 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85776,11 +88378,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 654 */
 =======
 /* 648 */
 >>>>>>> Table directive to angular 2
+=======
+/* 659 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85855,6 +88461,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 655 */
 /***/ function(module, exports, __webpack_require__) {
@@ -85868,6 +88475,13 @@ webpackJsonp([1],[
 	"use strict";
 	var distinct_1 = __webpack_require__(244);
 >>>>>>> Table directive to angular 2
+=======
+/* 660 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var distinct_1 = __webpack_require__(252);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items,
 	 * using a property accessed by using the key provided to check if the two items are distinct.
@@ -85894,6 +88508,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=distinctKey.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 656 */
 /***/ function(module, exports, __webpack_require__) {
@@ -85907,6 +88522,13 @@ webpackJsonp([1],[
 	"use strict";
 	var distinctUntilChanged_1 = __webpack_require__(245);
 >>>>>>> Table directive to angular 2
+=======
+/* 661 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var distinctUntilChanged_1 = __webpack_require__(253);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item,
 	 * using a property accessed by using the key provided to check if the two items are distinct.
@@ -85930,11 +88552,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 657 */
 =======
 /* 651 */
 >>>>>>> Table directive to angular 2
+=======
+/* 662 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86051,11 +88677,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=do.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 658 */
 =======
 /* 652 */
 >>>>>>> Table directive to angular 2
+=======
+/* 663 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86065,11 +88695,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ArgumentOutOfRangeError_1 = __webpack_require__(113);
 =======
 	var ArgumentOutOfRangeError_1 = __webpack_require__(111);
 >>>>>>> Table directive to angular 2
+=======
+	var ArgumentOutOfRangeError_1 = __webpack_require__(118);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Emits the single value at the specified `index` in a sequence of emissions
 	 * from the source Observable.
@@ -86159,11 +88793,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=elementAt.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 659 */
 =======
 /* 653 */
 >>>>>>> Table directive to angular 2
+=======
+/* 664 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86258,11 +88896,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=exhaust.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 660 */
 =======
 /* 654 */
 >>>>>>> Table directive to angular 2
+=======
+/* 665 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86404,11 +89046,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 661 */
 =======
 /* 655 */
 >>>>>>> Table directive to angular 2
+=======
+/* 666 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86563,11 +89209,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=expand.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 662 */
 =======
 /* 656 */
 >>>>>>> Table directive to angular 2
+=======
+/* 667 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86615,6 +89265,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=finally.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 663 */
 /***/ function(module, exports, __webpack_require__) {
@@ -86628,6 +89279,13 @@ webpackJsonp([1],[
 	"use strict";
 	var find_1 = __webpack_require__(248);
 >>>>>>> Table directive to angular 2
+=======
+/* 668 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var find_1 = __webpack_require__(256);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Emits only the index of the first value emitted by the source Observable that
 	 * meets some condition.
@@ -86669,11 +89327,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=findIndex.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 664 */
 =======
 /* 658 */
 >>>>>>> Table directive to angular 2
+=======
+/* 669 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86686,6 +89348,7 @@ webpackJsonp([1],[
 	var Subscription_1 = __webpack_require__(21);
 	var Observable_1 = __webpack_require__(1);
 	var Subject_1 = __webpack_require__(16);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var Map_1 = __webpack_require__(728);
 	var FastMap_1 = __webpack_require__(726);
@@ -86693,6 +89356,10 @@ webpackJsonp([1],[
 	var Map_1 = __webpack_require__(722);
 	var FastMap_1 = __webpack_require__(720);
 >>>>>>> Table directive to angular 2
+=======
+	var Map_1 = __webpack_require__(733);
+	var FastMap_1 = __webpack_require__(731);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Groups the items emitted by an Observable according to a specified criterion,
 	 * and emits these grouped items as `GroupedObservables`, one
@@ -86915,11 +89582,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=groupBy.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 665 */
 =======
 /* 659 */
 >>>>>>> Table directive to angular 2
+=======
+/* 670 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86929,11 +89600,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var noop_1 = __webpack_require__(268);
 =======
 	var noop_1 = __webpack_require__(266);
 >>>>>>> Table directive to angular 2
+=======
+	var noop_1 = __webpack_require__(274);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Ignores all items emitted by the source Observable and only passes calls of `complete` or `error`.
 	 *
@@ -86975,11 +89650,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 666 */
 =======
 /* 660 */
 >>>>>>> Table directive to angular 2
+=======
+/* 671 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87036,11 +89715,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isEmpty.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 667 */
 =======
 /* 661 */
 >>>>>>> Table directive to angular 2
+=======
+/* 672 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -87057,11 +89740,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=let.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 668 */
 =======
 /* 662 */
 >>>>>>> Table directive to angular 2
+=======
+/* 673 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87129,11 +89816,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mapTo.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 669 */
 =======
 /* 663 */
 >>>>>>> Table directive to angular 2
+=======
+/* 674 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87143,11 +89834,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var Notification_1 = __webpack_require__(87);
 =======
 	var Notification_1 = __webpack_require__(82);
 >>>>>>> Table directive to angular 2
+=======
+	var Notification_1 = __webpack_require__(87);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Represents all of the notifications from the source Observable as `next`
 	 * emissions marked with their original types within {@link Notification}
@@ -87225,6 +89920,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=materialize.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 670 */
 /***/ function(module, exports, __webpack_require__) {
@@ -87238,6 +89934,13 @@ webpackJsonp([1],[
 	"use strict";
 	var reduce_1 = __webpack_require__(108);
 >>>>>>> Table directive to angular 2
+=======
+/* 675 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var reduce_1 = __webpack_require__(115);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * The Max operator operates on an Observable that emits numbers (or items that can be evaluated as numbers),
 	 * and when source Observable completes it emits a single item: the item with the largest number.
@@ -87260,11 +89963,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=max.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 671 */
 =======
 /* 665 */
 >>>>>>> Table directive to angular 2
+=======
+/* 676 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87375,6 +90082,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mergeScan.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 672 */
 /***/ function(module, exports, __webpack_require__) {
@@ -87388,6 +90096,13 @@ webpackJsonp([1],[
 	"use strict";
 	var reduce_1 = __webpack_require__(108);
 >>>>>>> Table directive to angular 2
+=======
+/* 677 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var reduce_1 = __webpack_require__(115);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * The Min operator operates on an Observable that emits numbers (or items that can be evaluated as numbers),
 	 * and when source Observable completes it emits a single item: the item with the smallest number.
@@ -87409,11 +90124,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=min.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 673 */
 =======
 /* 667 */
 >>>>>>> Table directive to angular 2
+=======
+/* 678 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87495,6 +90214,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=pairwise.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 674 */
 /***/ function(module, exports, __webpack_require__) {
@@ -87510,6 +90230,14 @@ webpackJsonp([1],[
 	var not_1 = __webpack_require__(726);
 	var filter_1 = __webpack_require__(247);
 >>>>>>> Table directive to angular 2
+=======
+/* 679 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var not_1 = __webpack_require__(737);
+	var filter_1 = __webpack_require__(255);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Splits the source Observable into two, one with values that satisfy a
 	 * predicate, and another with values that don't satisfy the predicate.
@@ -87561,6 +90289,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=partition.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 675 */
 /***/ function(module, exports, __webpack_require__) {
@@ -87574,6 +90303,13 @@ webpackJsonp([1],[
 	"use strict";
 	var map_1 = __webpack_require__(107);
 >>>>>>> Table directive to angular 2
+=======
+/* 680 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var map_1 = __webpack_require__(114);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Maps each source value (an object) to its specified nested property.
 	 *
@@ -87632,20 +90368,28 @@ webpackJsonp([1],[
 	//# sourceMappingURL=pluck.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 676 */
 =======
 /* 670 */
 >>>>>>> Table directive to angular 2
+=======
+/* 681 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Subject_1 = __webpack_require__(16);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var multicast_1 = __webpack_require__(74);
 =======
 	var multicast_1 = __webpack_require__(71);
 >>>>>>> Table directive to angular 2
+=======
+	var multicast_1 = __webpack_require__(74);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Returns a ConnectableObservable, which is a variety of Observable that waits until its connect method is called
 	 * before it begins emitting items to those Observers that have subscribed to it.
@@ -87667,6 +90411,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=publish.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 677 */
 /***/ function(module, exports, __webpack_require__) {
@@ -87682,6 +90427,14 @@ webpackJsonp([1],[
 	var BehaviorSubject_1 = __webpack_require__(154);
 	var multicast_1 = __webpack_require__(71);
 >>>>>>> Table directive to angular 2
+=======
+/* 682 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var BehaviorSubject_1 = __webpack_require__(158);
+	var multicast_1 = __webpack_require__(74);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * @param value
 	 * @return {ConnectableObservable<T>}
@@ -87695,6 +90448,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 678 */
 /***/ function(module, exports, __webpack_require__) {
@@ -87710,6 +90464,14 @@ webpackJsonp([1],[
 	var AsyncSubject_1 = __webpack_require__(105);
 	var multicast_1 = __webpack_require__(71);
 >>>>>>> Table directive to angular 2
+=======
+/* 683 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var AsyncSubject_1 = __webpack_require__(112);
+	var multicast_1 = __webpack_require__(74);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * @return {ConnectableObservable<T>}
 	 * @method publishLast
@@ -87722,6 +90484,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=publishLast.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 679 */
 /***/ function(module, exports, __webpack_require__) {
@@ -87737,6 +90500,14 @@ webpackJsonp([1],[
 	var ReplaySubject_1 = __webpack_require__(106);
 	var multicast_1 = __webpack_require__(71);
 >>>>>>> Table directive to angular 2
+=======
+/* 684 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ReplaySubject_1 = __webpack_require__(113);
+	var multicast_1 = __webpack_require__(74);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * @param bufferSize
 	 * @param windowTime
@@ -87754,11 +90525,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 680 */
 =======
 /* 674 */
 >>>>>>> Table directive to angular 2
+=======
+/* 685 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87768,7 +90543,11 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var EmptyObservable_1 = __webpack_require__(55);
+=======
+	var EmptyObservable_1 = __webpack_require__(57);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Returns an Observable that repeats the stream of items emitted by the source Observable at most count times,
 	 * on a particular Scheduler.
@@ -87838,11 +90617,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=repeat.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 681 */
 =======
 /* 675 */
 >>>>>>> Table directive to angular 2
+=======
+/* 686 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87953,11 +90736,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 682 */
 =======
 /* 676 */
 >>>>>>> Table directive to angular 2
+=======
+/* 687 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88031,11 +90818,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=retry.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 683 */
 =======
 /* 677 */
 >>>>>>> Table directive to angular 2
+=======
+/* 688 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88146,11 +90937,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 684 */
 =======
 /* 678 */
 >>>>>>> Table directive to angular 2
+=======
+/* 689 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88241,11 +91036,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=sample.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 685 */
 =======
 /* 679 */
 >>>>>>> Table directive to angular 2
+=======
+/* 690 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88341,11 +91140,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 686 */
 =======
 /* 680 */
 >>>>>>> Table directive to angular 2
+=======
+/* 691 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88458,11 +91261,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=scan.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 687 */
 =======
 /* 681 */
 >>>>>>> Table directive to angular 2
+=======
+/* 692 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88631,6 +91438,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 688 */
 /***/ function(module, exports, __webpack_require__) {
@@ -88644,6 +91452,13 @@ webpackJsonp([1],[
 	"use strict";
 	var multicast_1 = __webpack_require__(71);
 >>>>>>> Table directive to angular 2
+=======
+/* 693 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var multicast_1 = __webpack_require__(74);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var Subject_1 = __webpack_require__(16);
 	function shareSubjectFactory() {
 	    return new Subject_1.Subject();
@@ -88668,11 +91483,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=share.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 689 */
 =======
 /* 683 */
 >>>>>>> Table directive to angular 2
+=======
+/* 694 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88682,11 +91501,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var EmptyError_1 = __webpack_require__(92);
 =======
 	var EmptyError_1 = __webpack_require__(87);
 >>>>>>> Table directive to angular 2
+=======
+	var EmptyError_1 = __webpack_require__(92);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Returns an Observable that emits the single item emitted by the source Observable that matches a specified
 	 * predicate, if that Observable emits one such item. If the source Observable emits more than one such item or no
@@ -88776,11 +91599,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=single.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 690 */
 =======
 /* 684 */
 >>>>>>> Table directive to angular 2
+=======
+/* 695 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88836,11 +91663,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=skip.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 691 */
 =======
 /* 685 */
 >>>>>>> Table directive to angular 2
+=======
+/* 696 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88916,11 +91747,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 692 */
 =======
 /* 686 */
 >>>>>>> Table directive to angular 2
+=======
+/* 697 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88991,6 +91826,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 693 */
 /***/ function(module, exports, __webpack_require__) {
@@ -89012,6 +91848,17 @@ webpackJsonp([1],[
 	var concat_1 = __webpack_require__(160);
 	var isScheduler_1 = __webpack_require__(54);
 >>>>>>> Table directive to angular 2
+=======
+/* 698 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ArrayObservable_1 = __webpack_require__(49);
+	var ScalarObservable_1 = __webpack_require__(160);
+	var EmptyObservable_1 = __webpack_require__(57);
+	var concat_1 = __webpack_require__(163);
+	var isScheduler_1 = __webpack_require__(58);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Returns an Observable that emits the items in a specified Iterable before it begins to emit items emitted by the
 	 * source Observable.
@@ -89051,6 +91898,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=startWith.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 694 */
 /***/ function(module, exports, __webpack_require__) {
@@ -89064,6 +91912,13 @@ webpackJsonp([1],[
 	"use strict";
 	var SubscribeOnObservable_1 = __webpack_require__(606);
 >>>>>>> Table directive to angular 2
+=======
+/* 699 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var SubscribeOnObservable_1 = __webpack_require__(617);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Asynchronously subscribes Observers to this Observable on the specified Scheduler.
 	 *
@@ -89083,11 +91938,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 695 */
 =======
 /* 689 */
 >>>>>>> Table directive to angular 2
+=======
+/* 700 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89200,11 +92059,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=switch.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 696 */
 =======
 /* 690 */
 >>>>>>> Table directive to angular 2
+=======
+/* 701 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89348,11 +92211,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=switchMap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 697 */
 =======
 /* 691 */
 >>>>>>> Table directive to angular 2
+=======
+/* 702 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89483,11 +92350,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 698 */
 =======
 /* 692 */
 >>>>>>> Table directive to angular 2
+=======
+/* 703 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89497,6 +92368,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ArgumentOutOfRangeError_1 = __webpack_require__(113);
 	var EmptyObservable_1 = __webpack_require__(55);
@@ -89504,6 +92376,10 @@ webpackJsonp([1],[
 	var ArgumentOutOfRangeError_1 = __webpack_require__(111);
 	var EmptyObservable_1 = __webpack_require__(53);
 >>>>>>> Table directive to angular 2
+=======
+	var ArgumentOutOfRangeError_1 = __webpack_require__(118);
+	var EmptyObservable_1 = __webpack_require__(57);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Emits only the first `count` values emitted by the source Observable.
 	 *
@@ -89585,11 +92461,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=take.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 699 */
 =======
 /* 693 */
 >>>>>>> Table directive to angular 2
+=======
+/* 704 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89599,6 +92479,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ArgumentOutOfRangeError_1 = __webpack_require__(113);
 	var EmptyObservable_1 = __webpack_require__(55);
@@ -89606,6 +92487,10 @@ webpackJsonp([1],[
 	var ArgumentOutOfRangeError_1 = __webpack_require__(111);
 	var EmptyObservable_1 = __webpack_require__(53);
 >>>>>>> Table directive to angular 2
+=======
+	var ArgumentOutOfRangeError_1 = __webpack_require__(118);
+	var EmptyObservable_1 = __webpack_require__(57);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * Emits only the last `count` values emitted by the source Observable.
 	 *
@@ -89706,11 +92591,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=takeLast.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 700 */
 =======
 /* 694 */
 >>>>>>> Table directive to angular 2
+=======
+/* 705 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89790,11 +92679,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 701 */
 =======
 /* 695 */
 >>>>>>> Table directive to angular 2
+=======
+/* 706 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89891,11 +92784,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 702 */
 =======
 /* 696 */
 >>>>>>> Table directive to angular 2
+=======
+/* 707 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90008,11 +92905,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=throttle.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 703 */
 =======
 /* 697 */
 >>>>>>> Table directive to angular 2
+=======
+/* 708 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90112,11 +93013,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=throttleTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 704 */
 =======
 /* 698 */
 >>>>>>> Table directive to angular 2
+=======
+/* 709 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90126,11 +93031,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var async_1 = __webpack_require__(27);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isDate_1 = __webpack_require__(114);
 =======
 	var isDate_1 = __webpack_require__(112);
 >>>>>>> Table directive to angular 2
+=======
+	var isDate_1 = __webpack_require__(119);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var Subscriber_1 = __webpack_require__(3);
 	/**
 	 * @param due
@@ -90227,11 +93136,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=timeout.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 705 */
 =======
 /* 699 */
 >>>>>>> Table directive to angular 2
+=======
+/* 710 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90241,11 +93154,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var async_1 = __webpack_require__(27);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isDate_1 = __webpack_require__(114);
 =======
 	var isDate_1 = __webpack_require__(112);
 >>>>>>> Table directive to angular 2
+=======
+	var isDate_1 = __webpack_require__(119);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
 	/**
@@ -90350,11 +93267,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 706 */
 =======
 /* 700 */
 >>>>>>> Table directive to angular 2
+=======
+/* 711 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90404,11 +93325,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=toArray.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 707 */
 =======
 /* 701 */
 >>>>>>> Table directive to angular 2
+=======
+/* 712 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90523,11 +93448,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=window.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 708 */
 =======
 /* 702 */
 >>>>>>> Table directive to angular 2
+=======
+/* 713 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90663,11 +93592,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=windowCount.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 709 */
 =======
 /* 703 */
 >>>>>>> Table directive to angular 2
+=======
+/* 714 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90841,11 +93774,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=windowTime.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 710 */
 =======
 /* 704 */
 >>>>>>> Table directive to angular 2
+=======
+/* 715 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91030,11 +93967,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 711 */
 =======
 /* 705 */
 >>>>>>> Table directive to angular 2
+=======
+/* 716 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91166,11 +94107,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 712 */
 =======
 /* 706 */
 >>>>>>> Table directive to angular 2
+=======
+/* 717 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91305,15 +94250,19 @@ webpackJsonp([1],[
 	//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 713 */
 =======
 /* 707 */
 >>>>>>> Table directive to angular 2
+=======
+/* 718 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var zip_1 = __webpack_require__(163);
+	var zip_1 = __webpack_require__(166);
 	/**
 	 * @param project
 	 * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
@@ -91327,11 +94276,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=zipAll.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 714 */
 =======
 /* 708 */
 >>>>>>> Table directive to angular 2
+=======
+/* 719 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91380,11 +94333,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Action.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 715 */
 =======
 /* 709 */
 >>>>>>> Table directive to angular 2
+=======
+/* 720 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91393,6 +94350,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncAction_1 = __webpack_require__(89);
 	var AnimationFrame_1 = __webpack_require__(725);
@@ -91400,6 +94358,10 @@ webpackJsonp([1],[
 	var AsyncAction_1 = __webpack_require__(84);
 	var AnimationFrame_1 = __webpack_require__(719);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncAction_1 = __webpack_require__(89);
+	var AnimationFrame_1 = __webpack_require__(730);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -91447,11 +94409,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AnimationFrameAction.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 716 */
 =======
 /* 710 */
 >>>>>>> Table directive to angular 2
+=======
+/* 721 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91460,11 +94426,15 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncScheduler_1 = __webpack_require__(90);
 =======
 	var AsyncScheduler_1 = __webpack_require__(85);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncScheduler_1 = __webpack_require__(90);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var AnimationFrameScheduler = (function (_super) {
 	    __extends(AnimationFrameScheduler, _super);
 	    function AnimationFrameScheduler() {
@@ -91497,11 +94467,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AnimationFrameScheduler.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 717 */
 =======
 /* 711 */
 >>>>>>> Table directive to angular 2
+=======
+/* 722 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91510,6 +94484,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var Immediate_1 = __webpack_require__(727);
 	var AsyncAction_1 = __webpack_require__(89);
@@ -91517,6 +94492,10 @@ webpackJsonp([1],[
 	var Immediate_1 = __webpack_require__(721);
 	var AsyncAction_1 = __webpack_require__(84);
 >>>>>>> Table directive to angular 2
+=======
+	var Immediate_1 = __webpack_require__(732);
+	var AsyncAction_1 = __webpack_require__(89);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -91564,11 +94543,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AsapAction.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 718 */
 =======
 /* 712 */
 >>>>>>> Table directive to angular 2
+=======
+/* 723 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91577,11 +94560,15 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncScheduler_1 = __webpack_require__(90);
 =======
 	var AsyncScheduler_1 = __webpack_require__(85);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncScheduler_1 = __webpack_require__(90);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var AsapScheduler = (function (_super) {
 	    __extends(AsapScheduler, _super);
 	    function AsapScheduler() {
@@ -91614,11 +94601,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AsapScheduler.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 719 */
 =======
 /* 713 */
 >>>>>>> Table directive to angular 2
+=======
+/* 724 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91627,11 +94618,15 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncAction_1 = __webpack_require__(89);
 =======
 	var AsyncAction_1 = __webpack_require__(84);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncAction_1 = __webpack_require__(89);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -91674,11 +94669,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=QueueAction.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 720 */
 =======
 /* 714 */
 >>>>>>> Table directive to angular 2
+=======
+/* 725 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91687,11 +94686,15 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncScheduler_1 = __webpack_require__(90);
 =======
 	var AsyncScheduler_1 = __webpack_require__(85);
 >>>>>>> Table directive to angular 2
+=======
+	var AsyncScheduler_1 = __webpack_require__(90);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var QueueScheduler = (function (_super) {
 	    __extends(QueueScheduler, _super);
 	    function QueueScheduler() {
@@ -91703,6 +94706,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=QueueScheduler.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 721 */
 /***/ function(module, exports, __webpack_require__) {
@@ -91718,15 +94722,27 @@ webpackJsonp([1],[
 	var AnimationFrameAction_1 = __webpack_require__(709);
 	var AnimationFrameScheduler_1 = __webpack_require__(710);
 >>>>>>> Table directive to angular 2
+=======
+/* 726 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var AnimationFrameAction_1 = __webpack_require__(720);
+	var AnimationFrameScheduler_1 = __webpack_require__(721);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.animationFrame = new AnimationFrameScheduler_1.AnimationFrameScheduler(AnimationFrameAction_1.AnimationFrameAction);
 	//# sourceMappingURL=animationFrame.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 722 */
 =======
 /* 716 */
 >>>>>>> Table directive to angular 2
+=======
+/* 727 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91737,6 +94753,7 @@ webpackJsonp([1],[
 	};
 	var Observable_1 = __webpack_require__(1);
 	var Subscription_1 = __webpack_require__(21);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var SubscriptionLoggable_1 = __webpack_require__(264);
 	var applyMixins_1 = __webpack_require__(266);
@@ -91744,6 +94761,10 @@ webpackJsonp([1],[
 	var SubscriptionLoggable_1 = __webpack_require__(262);
 	var applyMixins_1 = __webpack_require__(264);
 >>>>>>> Table directive to angular 2
+=======
+	var SubscriptionLoggable_1 = __webpack_require__(270);
+	var applyMixins_1 = __webpack_require__(272);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -91782,11 +94803,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ColdObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 723 */
 =======
 /* 717 */
 >>>>>>> Table directive to angular 2
+=======
+/* 728 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91797,6 +94822,7 @@ webpackJsonp([1],[
 	};
 	var Subject_1 = __webpack_require__(16);
 	var Subscription_1 = __webpack_require__(21);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var SubscriptionLoggable_1 = __webpack_require__(264);
 	var applyMixins_1 = __webpack_require__(266);
@@ -91804,6 +94830,10 @@ webpackJsonp([1],[
 	var SubscriptionLoggable_1 = __webpack_require__(262);
 	var applyMixins_1 = __webpack_require__(264);
 >>>>>>> Table directive to angular 2
+=======
+	var SubscriptionLoggable_1 = __webpack_require__(270);
+	var applyMixins_1 = __webpack_require__(272);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -91844,11 +94874,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=HotObservable.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 724 */
 =======
 /* 718 */
 >>>>>>> Table directive to angular 2
+=======
+/* 729 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91858,6 +94892,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var Notification_1 = __webpack_require__(87);
 	var ColdObservable_1 = __webpack_require__(722);
@@ -91871,6 +94906,13 @@ webpackJsonp([1],[
 	var SubscriptionLog_1 = __webpack_require__(261);
 	var VirtualTimeScheduler_1 = __webpack_require__(258);
 >>>>>>> Table directive to angular 2
+=======
+	var Notification_1 = __webpack_require__(87);
+	var ColdObservable_1 = __webpack_require__(727);
+	var HotObservable_1 = __webpack_require__(728);
+	var SubscriptionLog_1 = __webpack_require__(269);
+	var VirtualTimeScheduler_1 = __webpack_require__(266);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	var defaultMaxFrame = 750;
 	var TestScheduler = (function (_super) {
 	    __extends(TestScheduler, _super);
@@ -92084,11 +95126,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=TestScheduler.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 725 */
 =======
 /* 719 */
 >>>>>>> Table directive to angular 2
+=======
+/* 730 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92127,11 +95173,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AnimationFrame.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 726 */
 =======
 /* 720 */
 >>>>>>> Table directive to angular 2
+=======
+/* 731 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -92167,11 +95217,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=FastMap.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 727 */
 =======
 /* 721 */
 >>>>>>> Table directive to angular 2
+=======
+/* 732 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -92385,29 +95439,41 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Immediate.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 728 */
 =======
 /* 722 */
 >>>>>>> Table directive to angular 2
+=======
+/* 733 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var root_1 = __webpack_require__(25);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var MapPolyfill_1 = __webpack_require__(729);
 =======
 	var MapPolyfill_1 = __webpack_require__(723);
 >>>>>>> Table directive to angular 2
+=======
+	var MapPolyfill_1 = __webpack_require__(734);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 	//# sourceMappingURL=Map.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 729 */
 =======
 /* 723 */
 >>>>>>> Table directive to angular 2
+=======
+/* 734 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -92459,11 +95525,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=MapPolyfill.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 730 */
 =======
 /* 724 */
 >>>>>>> Table directive to angular 2
+=======
+/* 735 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92499,11 +95569,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=assign.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 731 */
 =======
 /* 725 */
 >>>>>>> Table directive to angular 2
+=======
+/* 736 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -92514,11 +95588,15 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isObject.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 732 */
 =======
 /* 726 */
 >>>>>>> Table directive to angular 2
+=======
+/* 737 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -92534,20 +95612,28 @@ webpackJsonp([1],[
 	//# sourceMappingURL=not.js.map
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 733 */
 =======
 /* 727 */
 >>>>>>> Table directive to angular 2
+=======
+/* 738 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var rxSubscriber_1 = __webpack_require__(112);
 =======
 	var rxSubscriber_1 = __webpack_require__(110);
 >>>>>>> Table directive to angular 2
+=======
+	var rxSubscriber_1 = __webpack_require__(117);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	function toSubscriber(nextOrObserver, error, complete) {
 	    if (nextOrObserver) {
 	        if (nextOrObserver instanceof Subscriber_1.Subscriber) {

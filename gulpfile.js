@@ -50,11 +50,24 @@ gulp.task('build', function () {
 =======
             '!app/network_policies/bandwidthpolicycreatectrl.js',
             '!app/components/directives/tabledirective.js',
+            '!app/components/directives/accordiondirective.js',
             '!app/networks/networklistctrl.js',
             '!app/networks/network.module.js',
             '!app/applicationgroups/applicationgroup.module.js',
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
             '!app/applicationgroups/applicationgrouplistctrl.js'
 >>>>>>> Table directive to angular 2
+=======
+            '!app/applicationgroups/applicationgrouplistctrl.js',
+            '!app/network_policies/isolationpolicylistctrl.js',
+            '!app/network_policies/bandwidthpolicylistctrl.js',
+            '!app/networks/networkstatsctrl.js',
+            '!app/service_lbs/servicelb.module.js',
+            '!app/service_lbs/servicelblistctrl.js',
+            '!app/service_lbs/servicelbstatsctrl.js',
+            '!app/volumes/volume.module.js',
+            '!app/volumes/volumelistctrl.js'
+>>>>>>> converting volumelist, servicelist ctrl to ang2
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
@@ -118,11 +131,24 @@ gulp.task('dev-build', function () {
 =======
             '!app/network_policies/bandwidthpolicycreatectrl.js',
             '!app/components/directives/tabledirective.js',
+            '!app/components/directives/accordiondirective.js',
             '!app/networks/networklistctrl.js',
             '!app/networks/network.module.js',
             '!app/applicationgroups/applicationgroup.module.js',
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
             '!app/applicationgroups/applicationgrouplistctrl.js'
 >>>>>>> Table directive to angular 2
+=======
+            '!app/applicationgroups/applicationgrouplistctrl.js',
+            '!app/network_policies/isolationpolicylistctrl.js',
+            '!app/network_policies/bandwidthpolicylistctrl.js',
+            '!app/networks/networkstatsctrl.js',
+            '!app/service_lbs/servicelb.module.js',
+            '!app/service_lbs/servicelblistctrl.js',
+            '!app/service_lbs/servicelbstatsctrl.js',
+            '!app/volumes/volume.module.js',
+            '!app/volumes/volumelistctrl.js'
+>>>>>>> converting volumelist, servicelist ctrl to ang2
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code

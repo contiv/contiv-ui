@@ -103,6 +103,7 @@
 	 */
 	// Polyfills
 	"use strict";
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__webpack_require__(463); // Internet Explorer 9 support
 	// import 'core-js/es6';
@@ -131,31 +132,40 @@
 	__webpack_require__(735);
 =======
 	__webpack_require__(457); // Internet Explorer 9 support
+=======
+	__webpack_require__(467); // Internet Explorer 9 support
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	// import 'core-js/es6';
 	// Added parts of es6 which are necessary for your project or your browser support requirements.
-	__webpack_require__(310);
-	__webpack_require__(303);
-	__webpack_require__(299);
-	__webpack_require__(305);
-	__webpack_require__(304);
-	__webpack_require__(302);
-	__webpack_require__(301);
-	__webpack_require__(309);
-	__webpack_require__(298);
-	__webpack_require__(297);
-	__webpack_require__(307);
-	__webpack_require__(300);
-	__webpack_require__(308);
-	__webpack_require__(312);
+	__webpack_require__(320);
 	__webpack_require__(313);
+	__webpack_require__(309);
+	__webpack_require__(315);
+	__webpack_require__(314);
+	__webpack_require__(312);
 	__webpack_require__(311);
-	__webpack_require__(306);
+	__webpack_require__(319);
+	__webpack_require__(308);
+	__webpack_require__(307);
+	__webpack_require__(317);
+	__webpack_require__(310);
+	__webpack_require__(318);
+	__webpack_require__(322);
+	__webpack_require__(323);
+	__webpack_require__(321);
+	__webpack_require__(316);
 	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
 	// import 'core-js/es6/promise';
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(314);
 	__webpack_require__(733);
 	__webpack_require__(732);
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(324);
+	__webpack_require__(743);
+	__webpack_require__(742);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	
 
 /***/ },
@@ -165,13 +175,17 @@
 
 	var global    = __webpack_require__(12)
 	  , core      = __webpack_require__(13)
-	  , hide      = __webpack_require__(30)
+	  , hide      = __webpack_require__(31)
 	  , redefine  = __webpack_require__(28)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , ctx       = __webpack_require__(59)
 =======
 	  , ctx       = __webpack_require__(58)
 >>>>>>> Table directive to angular 2
+=======
+	  , ctx       = __webpack_require__(62)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , PROTOTYPE = 'prototype';
 
 	var $export = function(type, name, source){
@@ -267,6 +281,7 @@
 /* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var store      = __webpack_require__(102)('wks')
 	  , uid        = __webpack_require__(63)
@@ -274,6 +289,10 @@
 	var store      = __webpack_require__(100)('wks')
 	  , uid        = __webpack_require__(62)
 >>>>>>> Table directive to angular 2
+=======
+	var store      = __webpack_require__(107)('wks')
+	  , uid        = __webpack_require__(66)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , Symbol     = __webpack_require__(12).Symbol
 	  , USE_SYMBOL = typeof Symbol == 'function';
 
@@ -291,6 +310,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject       = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , IE8_DOM_DEFINE = __webpack_require__(211)
 	  , toPrimitive    = __webpack_require__(54)
@@ -298,6 +318,10 @@
 	  , IE8_DOM_DEFINE = __webpack_require__(208)
 	  , toPrimitive    = __webpack_require__(52)
 >>>>>>> Table directive to angular 2
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(216)
+	  , toPrimitive    = __webpack_require__(56)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , dP             = Object.defineProperty;
 
 	exports.f = __webpack_require__(20) ? Object.defineProperty : function defineProperty(O, P, Attributes){
@@ -331,7 +355,11 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.15 ToLength
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var toInteger = __webpack_require__(53)
+=======
+	var toInteger = __webpack_require__(55)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , min       = Math.min;
 	module.exports = function(it){
 	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -353,13 +381,17 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var global    = __webpack_require__(12)
-	  , hide      = __webpack_require__(30)
+	  , hide      = __webpack_require__(31)
 	  , has       = __webpack_require__(26)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , SRC       = __webpack_require__(63)('src')
 =======
 	  , SRC       = __webpack_require__(62)('src')
 >>>>>>> Table directive to angular 2
+=======
+	  , SRC       = __webpack_require__(66)('src')
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , TO_STRING = 'toString'
 	  , $toString = Function[TO_STRING]
 	  , TPL       = ('' + $toString).split(TO_STRING);
@@ -395,7 +427,11 @@
 
 	var $export = __webpack_require__(2)
 	  , fails   = __webpack_require__(10)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , defined = __webpack_require__(43)
+=======
+	  , defined = __webpack_require__(44)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , quot    = /"/g;
 	// B.2.3.2.1 CreateHTML(string, tag, attribute, value)
 	var createHTML = function(string, tag, attribute, value) {
@@ -414,11 +450,16 @@
 	};
 
 /***/ },
-/* 30 */
+/* 30 */,
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP         = __webpack_require__(17)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , createDesc = __webpack_require__(52);
+=======
+	  , createDesc = __webpack_require__(54);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = __webpack_require__(20) ? function(object, key, value){
 	  return dP.f(object, key, createDesc(1, value));
 	} : function(object, key, value){
@@ -427,17 +468,21 @@
 	};
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var defined = __webpack_require__(43);
+=======
+	var defined = __webpack_require__(44);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(it){
 	  return Object(defined(it));
 	};
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var fails = __webpack_require__(10);
@@ -449,10 +494,11 @@
 	};
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var IObject = __webpack_require__(82)
 	  , defined = __webpack_require__(43);
@@ -460,12 +506,19 @@
 	var IObject = __webpack_require__(77)
 	  , defined = __webpack_require__(42);
 >>>>>>> Table directive to angular 2
+=======
+	var IObject = __webpack_require__(82)
+	  , defined = __webpack_require__(44);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(it){
 	  return IObject(defined(it));
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 34 */,
+=======
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 35 */,
 /* 36 */
 /***/ function(module, exports, __webpack_require__) {
@@ -477,6 +530,7 @@
 	// 4 -> Array#every
 	// 5 -> Array#find
 	// 6 -> Array#findIndex
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ctx      = __webpack_require__(59)
 	  , IObject  = __webpack_require__(82)
@@ -490,6 +544,13 @@
 	  , toLength = __webpack_require__(24)
 	  , asc      = __webpack_require__(317);
 >>>>>>> Table directive to angular 2
+=======
+	var ctx      = __webpack_require__(62)
+	  , IObject  = __webpack_require__(82)
+	  , toObject = __webpack_require__(32)
+	  , toLength = __webpack_require__(24)
+	  , asc      = __webpack_require__(327);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(TYPE, $create){
 	  var IS_MAP        = TYPE == 1
 	    , IS_FILTER     = TYPE == 2
@@ -529,12 +590,17 @@
 
 	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 	var has         = __webpack_require__(26)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , toObject    = __webpack_require__(31)
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , IE_PROTO    = __webpack_require__(149)('IE_PROTO')
 =======
 	  , IE_PROTO    = __webpack_require__(148)('IE_PROTO')
 >>>>>>> Table directive to angular 2
+=======
+	  , toObject    = __webpack_require__(32)
+	  , IE_PROTO    = __webpack_require__(152)('IE_PROTO')
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , ObjectProto = Object.prototype;
 
 	module.exports = Object.getPrototypeOf || function(O){
@@ -565,7 +631,12 @@
 /* 40 */,
 /* 41 */,
 /* 42 */,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 43 */
+=======
+/* 43 */,
+/* 44 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -575,6 +646,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -589,6 +661,15 @@
 	  , shared  = __webpack_require__(100)('metadata')
 	  , store   = shared.store || (shared.store = new (__webpack_require__(233)));
 >>>>>>> Table directive to angular 2
+=======
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Map     = __webpack_require__(233)
+	  , $export = __webpack_require__(2)
+	  , shared  = __webpack_require__(107)('metadata')
+	  , store   = shared.store || (shared.store = new (__webpack_require__(241)));
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	var getOrCreateMetadataMap = function(target, targetKey, create){
 	  var targetMetadata = store.get(target);
@@ -638,6 +719,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -656,6 +738,17 @@
 =======
 	  , IE8_DOM_DEFINE = __webpack_require__(208)
 >>>>>>> Table directive to angular 2
+=======
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pIE            = __webpack_require__(106)
+	  , createDesc     = __webpack_require__(54)
+	  , toIObject      = __webpack_require__(34)
+	  , toPrimitive    = __webpack_require__(56)
+	  , has            = __webpack_require__(26)
+	  , IE8_DOM_DEFINE = __webpack_require__(216)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
 	exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
@@ -668,11 +761,16 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 46 */
+=======
+/* 47 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	if(__webpack_require__(20)){
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  var LIBRARY             = __webpack_require__(83)
 	    , global              = __webpack_require__(12)
@@ -712,32 +810,36 @@
 	    , arrayCopyWithin     = __webpack_require__(203)
 =======
 	  var LIBRARY             = __webpack_require__(78)
+=======
+	  var LIBRARY             = __webpack_require__(83)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    , global              = __webpack_require__(12)
 	    , fails               = __webpack_require__(10)
 	    , $export             = __webpack_require__(2)
-	    , $typed              = __webpack_require__(102)
-	    , $buffer             = __webpack_require__(151)
-	    , ctx                 = __webpack_require__(58)
-	    , anInstance          = __webpack_require__(76)
-	    , propertyDesc        = __webpack_require__(50)
-	    , hide                = __webpack_require__(30)
-	    , redefineAll         = __webpack_require__(79)
-	    , toInteger           = __webpack_require__(51)
+	    , $typed              = __webpack_require__(109)
+	    , $buffer             = __webpack_require__(155)
+	    , ctx                 = __webpack_require__(62)
+	    , anInstance          = __webpack_require__(81)
+	    , propertyDesc        = __webpack_require__(54)
+	    , hide                = __webpack_require__(31)
+	    , redefineAll         = __webpack_require__(84)
+	    , toInteger           = __webpack_require__(55)
 	    , toLength            = __webpack_require__(24)
-	    , toIndex             = __webpack_require__(61)
-	    , toPrimitive         = __webpack_require__(52)
+	    , toIndex             = __webpack_require__(65)
+	    , toPrimitive         = __webpack_require__(56)
 	    , has                 = __webpack_require__(26)
-	    , same                = __webpack_require__(220)
-	    , classof             = __webpack_require__(135)
+	    , same                = __webpack_require__(228)
+	    , classof             = __webpack_require__(139)
 	    , isObject            = __webpack_require__(11)
-	    , toObject            = __webpack_require__(31)
-	    , isArrayIter         = __webpack_require__(140)
-	    , create              = __webpack_require__(59)
-	    , getPrototypeOf      = __webpack_require__(36)
-	    , gOPN                = __webpack_require__(60).f
-	    , getIterFn           = __webpack_require__(152)
-	    , uid                 = __webpack_require__(62)
+	    , toObject            = __webpack_require__(32)
+	    , isArrayIter         = __webpack_require__(144)
+	    , create              = __webpack_require__(63)
+	    , getPrototypeOf      = __webpack_require__(37)
+	    , gOPN                = __webpack_require__(64).f
+	    , getIterFn           = __webpack_require__(156)
+	    , uid                 = __webpack_require__(66)
 	    , wks                 = __webpack_require__(14)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	    , createArrayMethod   = __webpack_require__(35)
 	    , createArrayIncludes = __webpack_require__(134)
 	    , speciesConstructor  = __webpack_require__(221)
@@ -750,6 +852,19 @@
 >>>>>>> Table directive to angular 2
 	    , $DP                 = __webpack_require__(17)
 	    , $GOPD               = __webpack_require__(45)
+=======
+	    , createArrayMethod   = __webpack_require__(36)
+	    , createArrayIncludes = __webpack_require__(138)
+	    , speciesConstructor  = __webpack_require__(229)
+	    , ArrayIterators      = __webpack_require__(110)
+	    , Iterators           = __webpack_require__(71)
+	    , $iterDetect         = __webpack_require__(148)
+	    , setSpecies          = __webpack_require__(85)
+	    , arrayFill           = __webpack_require__(137)
+	    , arrayCopyWithin     = __webpack_require__(208)
+	    , $DP                 = __webpack_require__(17)
+	    , $GOPD               = __webpack_require__(46)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    , dP                  = $DP.f
 	    , gOPD                = $GOPD.f
 	    , RangeError          = global.RangeError
@@ -1191,10 +1306,18 @@
 	} else module.exports = function(){ /* empty */ };
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 47 */,
 /* 48 */,
 /* 49 */,
 /* 50 */
+=======
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -1203,6 +1326,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1211,6 +1335,12 @@
 =======
 	var META     = __webpack_require__(62)('meta')
 >>>>>>> Table directive to angular 2
+=======
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var META     = __webpack_require__(66)('meta')
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , isObject = __webpack_require__(11)
 	  , has      = __webpack_require__(26)
 	  , setDesc  = __webpack_require__(17).f
@@ -1265,7 +1395,11 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 52 */
+=======
+/* 54 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	module.exports = function(bitmap, value){
@@ -1278,7 +1412,11 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 53 */
+=======
+/* 55 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// 7.1.4 ToInteger
@@ -1289,7 +1427,11 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 54 */
+=======
+/* 56 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.1 ToPrimitive(input [, PreferredType])
@@ -1306,6 +1448,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 55 */,
 /* 56 */,
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -1314,6 +1457,13 @@
 =======
 /* 57 */
 >>>>>>> Table directive to angular 2
+=======
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -1323,6 +1473,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 59 */
 =======
@@ -1332,6 +1483,13 @@
 
 	// optional / simple context binding
 	var aFunction = __webpack_require__(50);
+=======
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// optional / simple context binding
+	var aFunction = __webpack_require__(52);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(fn, that, length){
 	  aFunction(fn);
 	  if(that === undefined)return fn;
@@ -1352,15 +1510,20 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 60 */
 =======
 /* 59 */
 >>>>>>> Table directive to angular 2
+=======
+/* 63 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	var anObject    = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , dPs         = __webpack_require__(218)
 	  , enumBugKeys = __webpack_require__(137)
@@ -1370,27 +1533,40 @@
 	  , enumBugKeys = __webpack_require__(136)
 	  , IE_PROTO    = __webpack_require__(148)('IE_PROTO')
 >>>>>>> Table directive to angular 2
+=======
+	  , dPs         = __webpack_require__(223)
+	  , enumBugKeys = __webpack_require__(140)
+	  , IE_PROTO    = __webpack_require__(152)('IE_PROTO')
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , Empty       = function(){ /* empty */ }
 	  , PROTOTYPE   = 'prototype';
 
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  var iframe = __webpack_require__(209)('iframe')
 =======
 	  var iframe = __webpack_require__(206)('iframe')
 >>>>>>> Table directive to angular 2
+=======
+	  var iframe = __webpack_require__(214)('iframe')
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    , i      = enumBugKeys.length
 	    , lt     = '<'
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  __webpack_require__(210).appendChild(iframe);
 =======
 	  __webpack_require__(207).appendChild(iframe);
 >>>>>>> Table directive to angular 2
+=======
+	  __webpack_require__(215).appendChild(iframe);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -1417,6 +1593,7 @@
 
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 61 */
 /***/ function(module, exports, __webpack_require__) {
@@ -1432,12 +1609,21 @@
 	var $keys      = __webpack_require__(217)
 	  , hiddenKeys = __webpack_require__(136).concat('length', 'prototype');
 >>>>>>> Table directive to angular 2
+=======
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+	var $keys      = __webpack_require__(225)
+	  , hiddenKeys = __webpack_require__(140).concat('length', 'prototype');
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
 	  return $keys(O, hiddenKeys);
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 62 */
 =======
@@ -1446,6 +1632,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(53)
+=======
+/* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var toInteger = __webpack_require__(55)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , max       = Math.max
 	  , min       = Math.min;
 	module.exports = function(index, length){
@@ -1454,11 +1646,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 63 */
 =======
 /* 62 */
 >>>>>>> Table directive to angular 2
+=======
+/* 66 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	var id = 0
@@ -1468,20 +1664,28 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 64 */
 =======
 /* 63 */
 >>>>>>> Table directive to angular 2
+=======
+/* 67 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 19.1.3.6 Object.prototype.toString()
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var classof = __webpack_require__(136)
 =======
 	var classof = __webpack_require__(135)
 >>>>>>> Table directive to angular 2
+=======
+	var classof = __webpack_require__(139)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , test    = {};
 	test[__webpack_require__(14)('toStringTag')] = 'z';
 	if(test + '' != '[object z]'){
@@ -1491,6 +1695,7 @@
 	}
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 65 */,
 /* 66 */,
@@ -1507,11 +1712,18 @@
 /* 67 */,
 /* 68 */
 >>>>>>> Table directive to angular 2
+=======
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	module.exports = {};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 73 */
 /***/ function(module, exports, __webpack_require__) {
@@ -1527,12 +1739,21 @@
 	var $keys       = __webpack_require__(217)
 	  , enumBugKeys = __webpack_require__(136);
 >>>>>>> Table directive to angular 2
+=======
+/* 72 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+	var $keys       = __webpack_require__(225)
+	  , enumBugKeys = __webpack_require__(140);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = Object.keys || function keys(O){
 	  return $keys(O, enumBugKeys);
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 74 */,
 /* 75 */,
@@ -1549,22 +1770,36 @@
 /* 74 */,
 /* 75 */
 >>>>>>> Table directive to angular 2
+=======
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.31 Array.prototype[@@unscopables]
 	var UNSCOPABLES = __webpack_require__(14)('unscopables')
 	  , ArrayProto  = Array.prototype;
-	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(30)(ArrayProto, UNSCOPABLES, {});
+	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(31)(ArrayProto, UNSCOPABLES, {});
 	module.exports = function(key){
 	  ArrayProto[UNSCOPABLES][key] = true;
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 81 */
 =======
 /* 76 */
 >>>>>>> Table directive to angular 2
+=======
+/* 81 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	module.exports = function(it, Constructor, name, forbiddenField){
@@ -1574,6 +1809,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 82 */
 /***/ function(module, exports, __webpack_require__) {
@@ -1587,26 +1823,41 @@
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
 	var cof = __webpack_require__(57);
 >>>>>>> Table directive to angular 2
+=======
+/* 82 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// fallback for non-array-like ES3 and non-enumerable old V8 strings
+	var cof = __webpack_require__(61);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 83 */
 =======
 /* 78 */
 >>>>>>> Table directive to angular 2
+=======
+/* 83 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	module.exports = false;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 84 */
 =======
 /* 79 */
 >>>>>>> Table directive to angular 2
+=======
+/* 84 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var redefine = __webpack_require__(28);
@@ -1616,11 +1867,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 85 */
 =======
 /* 80 */
 >>>>>>> Table directive to angular 2
+=======
+/* 85 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1638,11 +1893,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 86 */
 =======
 /* 81 */
 >>>>>>> Table directive to angular 2
+=======
+/* 86 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var def = __webpack_require__(17).f
@@ -1654,6 +1913,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 =======
 /* 82 */,
@@ -1662,6 +1922,8 @@
 /* 85 */,
 /* 86 */,
 >>>>>>> Table directive to angular 2
+=======
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 87 */,
 /* 88 */,
 /* 89 */,
@@ -1670,6 +1932,7 @@
 /* 92 */,
 /* 93 */,
 /* 94 */,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 95 */,
 /* 96 */,
@@ -1677,12 +1940,23 @@
 =======
 /* 95 */
 >>>>>>> Table directive to angular 2
+=======
+/* 95 */,
+/* 96 */,
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var global            = __webpack_require__(12)
 	  , $export           = __webpack_require__(2)
 	  , redefine          = __webpack_require__(28)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , redefineAll       = __webpack_require__(84)
 	  , meta              = __webpack_require__(51)
@@ -1704,6 +1978,17 @@
 	  , setToStringTag    = __webpack_require__(81)
 	  , inheritIfRequired = __webpack_require__(139);
 >>>>>>> Table directive to angular 2
+=======
+	  , redefineAll       = __webpack_require__(84)
+	  , meta              = __webpack_require__(53)
+	  , forOf             = __webpack_require__(104)
+	  , anInstance        = __webpack_require__(81)
+	  , isObject          = __webpack_require__(11)
+	  , fails             = __webpack_require__(10)
+	  , $iterDetect       = __webpack_require__(148)
+	  , setToStringTag    = __webpack_require__(86)
+	  , inheritIfRequired = __webpack_require__(143);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK){
 	  var Base  = global[NAME]
@@ -1778,18 +2063,26 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 98 */
 =======
 /* 96 */
 >>>>>>> Table directive to angular 2
+=======
+/* 103 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var hide     = __webpack_require__(30)
+	var hide     = __webpack_require__(31)
 	  , redefine = __webpack_require__(28)
 	  , fails    = __webpack_require__(10)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , defined  = __webpack_require__(43)
+=======
+	  , defined  = __webpack_require__(44)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , wks      = __webpack_require__(14);
 
 	module.exports = function(KEY, length, exec){
@@ -1815,6 +2108,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 99 */
 /***/ function(module, exports, __webpack_require__) {
@@ -1827,15 +2121,22 @@
 	  , getIterFn   = __webpack_require__(153)
 =======
 /* 97 */
+=======
+/* 104 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
-	var ctx         = __webpack_require__(58)
-	  , call        = __webpack_require__(210)
-	  , isArrayIter = __webpack_require__(140)
+	var ctx         = __webpack_require__(62)
+	  , call        = __webpack_require__(218)
+	  , isArrayIter = __webpack_require__(144)
 	  , anObject    = __webpack_require__(8)
 	  , toLength    = __webpack_require__(24)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , getIterFn   = __webpack_require__(152)
 >>>>>>> Table directive to angular 2
+=======
+	  , getIterFn   = __webpack_require__(156)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , BREAK       = {}
 	  , RETURN      = {};
 	var exports = module.exports = function(iterable, entries, fn, that, ITERATOR){
@@ -1857,31 +2158,43 @@
 	exports.RETURN = RETURN;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 100 */
 =======
 /* 98 */
 >>>>>>> Table directive to angular 2
+=======
+/* 105 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	exports.f = Object.getOwnPropertySymbols;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 101 */
 =======
 /* 99 */
 >>>>>>> Table directive to angular 2
+=======
+/* 106 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	exports.f = {}.propertyIsEnumerable;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 102 */
 =======
 /* 100 */
 >>>>>>> Table directive to angular 2
+=======
+/* 107 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global = __webpack_require__(12)
@@ -1892,6 +2205,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 103 */
 =======
@@ -1907,6 +2221,15 @@
 =======
 	  , spaces  = __webpack_require__(150)
 >>>>>>> Table directive to angular 2
+=======
+/* 108 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export = __webpack_require__(2)
+	  , defined = __webpack_require__(44)
+	  , fails   = __webpack_require__(10)
+	  , spaces  = __webpack_require__(154)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , space   = '[' + spaces + ']'
 	  , non     = '\u200b\u0085'
 	  , ltrim   = RegExp('^' + space + space + '*')
@@ -1935,6 +2258,7 @@
 	module.exports = exporter;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 104 */
 =======
@@ -1949,6 +2273,14 @@
 =======
 	  , uid    = __webpack_require__(62)
 >>>>>>> Table directive to angular 2
+=======
+/* 109 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global = __webpack_require__(12)
+	  , hide   = __webpack_require__(31)
+	  , uid    = __webpack_require__(66)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , TYPED  = uid('typed_array')
 	  , VIEW   = uid('view')
 	  , ABV    = !!(global.ArrayBuffer && global.DataView)
@@ -1974,6 +2306,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 105 */
 /***/ function(module, exports, __webpack_require__) {
@@ -1992,16 +2325,30 @@
 	  , Iterators        = __webpack_require__(68)
 >>>>>>> Table directive to angular 2
 	  , toIObject        = __webpack_require__(33);
+=======
+/* 110 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var addToUnscopables = __webpack_require__(80)
+	  , step             = __webpack_require__(220)
+	  , Iterators        = __webpack_require__(71)
+	  , toIObject        = __webpack_require__(34);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	// 22.1.3.4 Array.prototype.entries()
 	// 22.1.3.13 Array.prototype.keys()
 	// 22.1.3.29 Array.prototype.values()
 	// 22.1.3.30 Array.prototype[@@iterator]()
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	module.exports = __webpack_require__(144)(Array, 'Array', function(iterated, kind){
 =======
 	module.exports = __webpack_require__(143)(Array, 'Array', function(iterated, kind){
 >>>>>>> Table directive to angular 2
+=======
+	module.exports = __webpack_require__(147)(Array, 'Array', function(iterated, kind){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  this._t = toIObject(iterated); // target
 	  this._i = 0;                   // next index
 	  this._k = kind;                // kind
@@ -2027,6 +2374,7 @@
 	addToUnscopables('entries');
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 106 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2038,14 +2386,21 @@
 	__webpack_require__(144)(String, 'String', function(iterated){
 =======
 /* 104 */
+=======
+/* 111 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $at  = __webpack_require__(222)(true);
+	var $at  = __webpack_require__(230)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(143)(String, 'String', function(iterated){
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(147)(String, 'String', function(iterated){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  this._t = String(iterated); // target
 	  this._i = 0;                // next index
 	// 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -2060,6 +2415,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 =======
 /* 105 */,
@@ -2070,6 +2426,8 @@
 /* 109 */,
 /* 110 */,
 /* 111 */,
+=======
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 112 */,
 /* 113 */,
 /* 114 */,
@@ -2091,22 +2449,35 @@
 /* 130 */,
 /* 131 */,
 /* 132 */,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 133 */,
 /* 134 */
 =======
 /* 133 */
 >>>>>>> Table directive to angular 2
+=======
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	'use strict';
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var toObject = __webpack_require__(31)
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , toIndex  = __webpack_require__(62)
 =======
 	  , toIndex  = __webpack_require__(61)
 >>>>>>> Table directive to angular 2
+=======
+	var toObject = __webpack_require__(32)
+	  , toIndex  = __webpack_require__(65)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , toLength = __webpack_require__(24);
 	module.exports = function fill(value /*, start = 0, end = @length */){
 	  var O      = toObject(this)
@@ -2120,22 +2491,30 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 135 */
 =======
 /* 134 */
 >>>>>>> Table directive to angular 2
+=======
+/* 138 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
-	var toIObject = __webpack_require__(33)
+	var toIObject = __webpack_require__(34)
 	  , toLength  = __webpack_require__(24)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , toIndex   = __webpack_require__(62);
 =======
 	  , toIndex   = __webpack_require__(61);
 >>>>>>> Table directive to angular 2
+=======
+	  , toIndex   = __webpack_require__(65);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -2154,6 +2533,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 136 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2167,6 +2547,13 @@
 	// getting tag from 19.1.3.6 Object.prototype.toString()
 	var cof = __webpack_require__(57)
 >>>>>>> Table directive to angular 2
+=======
+/* 139 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// getting tag from 19.1.3.6 Object.prototype.toString()
+	var cof = __webpack_require__(61)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , TAG = __webpack_require__(14)('toStringTag')
 	  // ES3 wrong here
 	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
@@ -2190,11 +2577,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 137 */
 =======
 /* 136 */
 >>>>>>> Table directive to angular 2
+=======
+/* 140 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// IE 8- don't enum bug keys
@@ -2203,11 +2594,15 @@
 	).split(',');
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 138 */
 =======
 /* 137 */
 >>>>>>> Table directive to angular 2
+=======
+/* 141 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var MATCH = __webpack_require__(14)('match');
@@ -2224,11 +2619,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 139 */
 =======
 /* 138 */
 >>>>>>> Table directive to angular 2
+=======
+/* 142 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2246,6 +2645,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 140 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2259,6 +2659,13 @@
 	var isObject       = __webpack_require__(11)
 	  , setPrototypeOf = __webpack_require__(147).set;
 >>>>>>> Table directive to angular 2
+=======
+/* 143 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject       = __webpack_require__(11)
+	  , setPrototypeOf = __webpack_require__(151).set;
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(that, target, C){
 	  var P, S = target.constructor;
 	  if(S !== C && typeof S == 'function' && (P = S.prototype) !== C.prototype && isObject(P) && setPrototypeOf){
@@ -2267,6 +2674,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 141 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2280,6 +2688,13 @@
 	// check on default Array iterator
 	var Iterators  = __webpack_require__(68)
 >>>>>>> Table directive to angular 2
+=======
+/* 144 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// check on default Array iterator
+	var Iterators  = __webpack_require__(71)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , ITERATOR   = __webpack_require__(14)('iterator')
 	  , ArrayProto = Array.prototype;
 
@@ -2288,6 +2703,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 142 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2301,25 +2717,40 @@
 	// 7.2.2 IsArray(argument)
 	var cof = __webpack_require__(57);
 >>>>>>> Table directive to angular 2
+=======
+/* 145 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.2.2 IsArray(argument)
+	var cof = __webpack_require__(61);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = Array.isArray || function isArray(arg){
 	  return cof(arg) == 'Array';
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 143 */
 =======
 /* 142 */
 >>>>>>> Table directive to angular 2
+=======
+/* 146 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.8 IsRegExp(argument)
 	var isObject = __webpack_require__(11)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , cof      = __webpack_require__(58)
 =======
 	  , cof      = __webpack_require__(57)
 >>>>>>> Table directive to angular 2
+=======
+	  , cof      = __webpack_require__(61)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , MATCH    = __webpack_require__(14)('match');
 	module.exports = function(it){
 	  var isRegExp;
@@ -2327,6 +2758,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 144 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2340,10 +2772,18 @@
 	'use strict';
 	var LIBRARY        = __webpack_require__(78)
 >>>>>>> Table directive to angular 2
+=======
+/* 147 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var LIBRARY        = __webpack_require__(83)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $export        = __webpack_require__(2)
 	  , redefine       = __webpack_require__(28)
-	  , hide           = __webpack_require__(30)
+	  , hide           = __webpack_require__(31)
 	  , has            = __webpack_require__(26)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , Iterators      = __webpack_require__(72)
 	  , $iterCreate    = __webpack_require__(214)
@@ -2355,6 +2795,12 @@
 	  , setToStringTag = __webpack_require__(81)
 	  , getPrototypeOf = __webpack_require__(36)
 >>>>>>> Table directive to angular 2
+=======
+	  , Iterators      = __webpack_require__(71)
+	  , $iterCreate    = __webpack_require__(219)
+	  , setToStringTag = __webpack_require__(86)
+	  , getPrototypeOf = __webpack_require__(37)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , ITERATOR       = __webpack_require__(14)('iterator')
 	  , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
 	  , FF_ITERATOR    = '@@iterator'
@@ -2417,11 +2863,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 145 */
 =======
 /* 144 */
 >>>>>>> Table directive to angular 2
+=======
+/* 148 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var ITERATOR     = __webpack_require__(14)('iterator')
@@ -2447,11 +2897,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 146 */
 =======
 /* 145 */
 >>>>>>> Table directive to angular 2
+=======
+/* 149 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// 20.2.2.14 Math.expm1(x)
@@ -2466,11 +2920,15 @@
 	} : $expm1;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 147 */
 =======
 /* 146 */
 >>>>>>> Table directive to angular 2
+=======
+/* 150 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// 20.2.2.28 Math.sign(x)
@@ -2479,11 +2937,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 148 */
 =======
 /* 147 */
 >>>>>>> Table directive to angular 2
+=======
+/* 151 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -2498,11 +2960,15 @@
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function(test, buggy, set){
 	      try {
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	        set = __webpack_require__(59)(Function.call, __webpack_require__(45).f(Object.prototype, '__proto__').set, 2);
 =======
 	        set = __webpack_require__(58)(Function.call, __webpack_require__(44).f(Object.prototype, '__proto__').set, 2);
 >>>>>>> Table directive to angular 2
+=======
+	        set = __webpack_require__(62)(Function.call, __webpack_require__(46).f(Object.prototype, '__proto__').set, 2);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch(e){ buggy = true; }
@@ -2517,6 +2983,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 149 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2530,11 +2997,19 @@
 	var shared = __webpack_require__(100)('keys')
 	  , uid    = __webpack_require__(62);
 >>>>>>> Table directive to angular 2
+=======
+/* 152 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var shared = __webpack_require__(107)('keys')
+	  , uid    = __webpack_require__(66);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(key){
 	  return shared[key] || (shared[key] = uid(key));
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 150 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2550,6 +3025,14 @@
 	var isRegExp = __webpack_require__(142)
 	  , defined  = __webpack_require__(42);
 >>>>>>> Table directive to angular 2
+=======
+/* 153 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// helper for String#{startsWith, endsWith, includes}
+	var isRegExp = __webpack_require__(146)
+	  , defined  = __webpack_require__(44);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = function(that, searchString, NAME){
 	  if(isRegExp(searchString))throw TypeError('String#' + NAME + " doesn't accept regex!");
@@ -2557,27 +3040,36 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 151 */
 =======
 /* 150 */
 >>>>>>> Table directive to angular 2
+=======
+/* 154 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
 	  '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 152 */
 =======
 /* 151 */
 >>>>>>> Table directive to angular 2
+=======
+/* 155 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var global         = __webpack_require__(12)
 	  , DESCRIPTORS    = __webpack_require__(20)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , LIBRARY        = __webpack_require__(83)
 	  , $typed         = __webpack_require__(104)
@@ -2596,15 +3088,26 @@
 	  , $typed         = __webpack_require__(102)
 	  , hide           = __webpack_require__(30)
 	  , redefineAll    = __webpack_require__(79)
+=======
+	  , LIBRARY        = __webpack_require__(83)
+	  , $typed         = __webpack_require__(109)
+	  , hide           = __webpack_require__(31)
+	  , redefineAll    = __webpack_require__(84)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , fails          = __webpack_require__(10)
-	  , anInstance     = __webpack_require__(76)
-	  , toInteger      = __webpack_require__(51)
+	  , anInstance     = __webpack_require__(81)
+	  , toInteger      = __webpack_require__(55)
 	  , toLength       = __webpack_require__(24)
-	  , gOPN           = __webpack_require__(60).f
+	  , gOPN           = __webpack_require__(64).f
 	  , dP             = __webpack_require__(17).f
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , arrayFill      = __webpack_require__(133)
 	  , setToStringTag = __webpack_require__(81)
 >>>>>>> Table directive to angular 2
+=======
+	  , arrayFill      = __webpack_require__(137)
+	  , setToStringTag = __webpack_require__(86)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , ARRAY_BUFFER   = 'ArrayBuffer'
 	  , DATA_VIEW      = 'DataView'
 	  , PROTOTYPE      = 'prototype'
@@ -2865,6 +3368,7 @@
 	exports[DATA_VIEW] = $DataView;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 153 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2874,12 +3378,19 @@
 	  , Iterators = __webpack_require__(72);
 =======
 /* 152 */
+=======
+/* 156 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
-	var classof   = __webpack_require__(135)
+	var classof   = __webpack_require__(139)
 	  , ITERATOR  = __webpack_require__(14)('iterator')
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , Iterators = __webpack_require__(68);
 >>>>>>> Table directive to angular 2
+=======
+	  , Iterators = __webpack_require__(71);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = __webpack_require__(13).getIteratorMethod = function(it){
 	  if(it != undefined)return it[ITERATOR]
 	    || it['@@iterator']
@@ -2887,6 +3398,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 154 */
 /***/ function(module, exports, __webpack_require__) {
@@ -2898,14 +3410,22 @@
 	  , Iterators     = __webpack_require__(72)
 =======
 /* 153 */
+=======
+/* 157 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
-	var $iterators    = __webpack_require__(103)
+	var $iterators    = __webpack_require__(110)
 	  , redefine      = __webpack_require__(28)
 	  , global        = __webpack_require__(12)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , hide          = __webpack_require__(30)
 	  , Iterators     = __webpack_require__(68)
 >>>>>>> Table directive to angular 2
+=======
+	  , hide          = __webpack_require__(31)
+	  , Iterators     = __webpack_require__(71)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , wks           = __webpack_require__(14)
 	  , ITERATOR      = wks('iterator')
 	  , TO_STRING_TAG = wks('toStringTag')
@@ -2925,6 +3445,7 @@
 	}
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 =======
 /* 154 */,
@@ -2932,6 +3453,8 @@
 /* 155 */,
 /* 156 */,
 /* 157 */,
+=======
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 158 */,
 /* 159 */,
 /* 160 */,
@@ -2973,6 +3496,7 @@
 /* 196 */,
 /* 197 */,
 /* 198 */,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 199 */,
 /* 200 */,
@@ -2987,27 +3511,50 @@
 
 	var cof = __webpack_require__(57);
 >>>>>>> Table directive to angular 2
+=======
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var cof = __webpack_require__(61);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(it, msg){
 	  if(typeof it != 'number' && cof(it) != 'Number')throw TypeError(msg);
 	  return +it;
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 203 */
 =======
 /* 200 */
 >>>>>>> Table directive to angular 2
+=======
+/* 208 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	'use strict';
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var toObject = __webpack_require__(31)
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , toIndex  = __webpack_require__(62)
 =======
 	  , toIndex  = __webpack_require__(61)
 >>>>>>> Table directive to angular 2
+=======
+	var toObject = __webpack_require__(32)
+	  , toIndex  = __webpack_require__(65)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , toLength = __webpack_require__(24);
 
 	module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0, end = @length*/){
@@ -3032,6 +3579,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 204 */
 =======
@@ -3046,6 +3594,14 @@
 =======
 	  , IObject   = __webpack_require__(77)
 >>>>>>> Table directive to angular 2
+=======
+/* 209 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var aFunction = __webpack_require__(52)
+	  , toObject  = __webpack_require__(32)
+	  , IObject   = __webpack_require__(82)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , toLength  = __webpack_require__(24);
 
 	module.exports = function(that, callbackfn, aLen, memo, isRight){
@@ -3073,6 +3629,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 205 */
 =======
@@ -3088,6 +3645,15 @@
 =======
 	  , invoke     = __webpack_require__(320)
 >>>>>>> Table directive to angular 2
+=======
+/* 210 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var aFunction  = __webpack_require__(52)
+	  , isObject   = __webpack_require__(11)
+	  , invoke     = __webpack_require__(330)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , arraySlice = [].slice
 	  , factories  = {};
 
@@ -3110,15 +3676,20 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 206 */
 =======
 /* 203 */
 >>>>>>> Table directive to angular 2
+=======
+/* 211 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var dP          = __webpack_require__(17).f
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , create      = __webpack_require__(60)
 	  , redefineAll = __webpack_require__(84)
@@ -3142,6 +3713,19 @@
 >>>>>>> Table directive to angular 2
 	  , DESCRIPTORS = __webpack_require__(20)
 	  , fastKey     = __webpack_require__(51).fastKey
+=======
+	  , create      = __webpack_require__(63)
+	  , redefineAll = __webpack_require__(84)
+	  , ctx         = __webpack_require__(62)
+	  , anInstance  = __webpack_require__(81)
+	  , defined     = __webpack_require__(44)
+	  , forOf       = __webpack_require__(104)
+	  , $iterDefine = __webpack_require__(147)
+	  , step        = __webpack_require__(220)
+	  , setSpecies  = __webpack_require__(85)
+	  , DESCRIPTORS = __webpack_require__(20)
+	  , fastKey     = __webpack_require__(53).fastKey
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , SIZE        = DESCRIPTORS ? '_s' : 'size';
 
 	var getEntry = function(that, key){
@@ -3273,6 +3857,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 207 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3287,17 +3872,26 @@
 	  , createArrayMethod = __webpack_require__(36)
 =======
 /* 204 */
+=======
+/* 212 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var redefineAll       = __webpack_require__(79)
-	  , getWeak           = __webpack_require__(49).getWeak
+	var redefineAll       = __webpack_require__(84)
+	  , getWeak           = __webpack_require__(53).getWeak
 	  , anObject          = __webpack_require__(8)
 	  , isObject          = __webpack_require__(11)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , anInstance        = __webpack_require__(76)
 	  , forOf             = __webpack_require__(97)
 	  , createArrayMethod = __webpack_require__(35)
 >>>>>>> Table directive to angular 2
+=======
+	  , anInstance        = __webpack_require__(81)
+	  , forOf             = __webpack_require__(104)
+	  , createArrayMethod = __webpack_require__(36)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $has              = __webpack_require__(26)
 	  , arrayFind         = createArrayMethod(5)
 	  , arrayFindIndex    = createArrayMethod(6)
@@ -3375,16 +3969,24 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 208 */
 =======
 /* 205 */
 >>>>>>> Table directive to angular 2
+=======
+/* 213 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $defineProperty = __webpack_require__(17)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , createDesc      = __webpack_require__(52);
+=======
+	  , createDesc      = __webpack_require__(54);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = function(object, index, value){
 	  if(index in object)$defineProperty.f(object, index, createDesc(0, value));
@@ -3392,11 +3994,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 209 */
 =======
 /* 206 */
 >>>>>>> Table directive to angular 2
+=======
+/* 214 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -3408,16 +4014,21 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 210 */
 =======
 /* 207 */
 >>>>>>> Table directive to angular 2
+=======
+/* 215 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(12).document && document.documentElement;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 211 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3430,15 +4041,22 @@
 /* 212 */
 =======
 /* 208 */
+=======
+/* 216 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = !__webpack_require__(20) && !__webpack_require__(10)(function(){
-	  return Object.defineProperty(__webpack_require__(206)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	  return Object.defineProperty(__webpack_require__(214)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 209 */
 >>>>>>> Table directive to angular 2
+=======
+/* 217 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
@@ -3449,11 +4067,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 213 */
 =======
 /* 210 */
 >>>>>>> Table directive to angular 2
+=======
+/* 218 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
@@ -3470,6 +4092,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 214 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3487,10 +4110,19 @@
 	  , descriptor     = __webpack_require__(50)
 	  , setToStringTag = __webpack_require__(81)
 >>>>>>> Table directive to angular 2
+=======
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var create         = __webpack_require__(63)
+	  , descriptor     = __webpack_require__(54)
+	  , setToStringTag = __webpack_require__(86)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , IteratorPrototype = {};
 
 	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-	__webpack_require__(30)(IteratorPrototype, __webpack_require__(14)('iterator'), function(){ return this; });
+	__webpack_require__(31)(IteratorPrototype, __webpack_require__(14)('iterator'), function(){ return this; });
 
 	module.exports = function(Constructor, NAME, next){
 	  Constructor.prototype = create(IteratorPrototype, {next: descriptor(1, next)});
@@ -3498,11 +4130,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 215 */
 =======
 /* 212 */
 >>>>>>> Table directive to angular 2
+=======
+/* 220 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -3510,11 +4146,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 216 */
 =======
 /* 213 */
 >>>>>>> Table directive to angular 2
+=======
+/* 221 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// 20.2.2.20 Math.log1p(x)
@@ -3523,15 +4163,20 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 217 */
 =======
 /* 214 */
 >>>>>>> Table directive to angular 2
+=======
+/* 222 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 19.1.2.1 Object.assign(target, source, ...)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var getKeys  = __webpack_require__(73)
 	  , gOPS     = __webpack_require__(100)
@@ -3545,6 +4190,13 @@
 	  , toObject = __webpack_require__(31)
 	  , IObject  = __webpack_require__(77)
 >>>>>>> Table directive to angular 2
+=======
+	var getKeys  = __webpack_require__(72)
+	  , gOPS     = __webpack_require__(105)
+	  , pIE      = __webpack_require__(106)
+	  , toObject = __webpack_require__(32)
+	  , IObject  = __webpack_require__(82)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $assign  = Object.assign;
 
 	// should work with symbols and should have deterministic property order (V8 bug)
@@ -3573,20 +4225,28 @@
 	} : $assign;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 218 */
 =======
 /* 215 */
 >>>>>>> Table directive to angular 2
+=======
+/* 223 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP       = __webpack_require__(17)
 	  , anObject = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , getKeys  = __webpack_require__(73);
 =======
 	  , getKeys  = __webpack_require__(69);
 >>>>>>> Table directive to angular 2
+=======
+	  , getKeys  = __webpack_require__(72);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = __webpack_require__(20) ? Object.defineProperties : function defineProperties(O, Properties){
 	  anObject(O);
@@ -3599,6 +4259,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 219 */
 =======
@@ -3613,6 +4274,14 @@
 =======
 	  , gOPN      = __webpack_require__(60).f
 >>>>>>> Table directive to angular 2
+=======
+/* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
+	var toIObject = __webpack_require__(34)
+	  , gOPN      = __webpack_require__(64).f
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , toString  = {}.toString;
 
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -3632,6 +4301,7 @@
 
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 220 */
 =======
@@ -3648,6 +4318,15 @@
 	  , arrayIndexOf = __webpack_require__(134)(false)
 	  , IE_PROTO     = __webpack_require__(148)('IE_PROTO');
 >>>>>>> Table directive to angular 2
+=======
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var has          = __webpack_require__(26)
+	  , toIObject    = __webpack_require__(34)
+	  , arrayIndexOf = __webpack_require__(138)(false)
+	  , IE_PROTO     = __webpack_require__(152)('IE_PROTO');
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = function(object, names){
 	  var O      = toIObject(object)
@@ -3663,6 +4342,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 221 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3673,19 +4353,27 @@
 	module.exports = 1 / $parseFloat(__webpack_require__(151) + '-0') !== -Infinity ? function parseFloat(str){
 =======
 /* 218 */
+=======
+/* 226 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseFloat = __webpack_require__(12).parseFloat
-	  , $trim       = __webpack_require__(101).trim;
+	  , $trim       = __webpack_require__(108).trim;
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	module.exports = 1 / $parseFloat(__webpack_require__(150) + '-0') !== -Infinity ? function parseFloat(str){
 >>>>>>> Table directive to angular 2
+=======
+	module.exports = 1 / $parseFloat(__webpack_require__(154) + '-0') !== -Infinity ? function parseFloat(str){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  var string = $trim(String(str), 3)
 	    , result = $parseFloat(string);
 	  return result === 0 && string.charAt(0) == '-' ? -0 : result;
 	} : $parseFloat;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 222 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3701,6 +4389,14 @@
 	  , $trim     = __webpack_require__(101).trim
 	  , ws        = __webpack_require__(150)
 >>>>>>> Table directive to angular 2
+=======
+/* 227 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $parseInt = __webpack_require__(12).parseInt
+	  , $trim     = __webpack_require__(108).trim
+	  , ws        = __webpack_require__(154)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , hex       = /^[\-+]?0[xX]/;
 
 	module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix){
@@ -3709,11 +4405,15 @@
 	} : $parseInt;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 223 */
 =======
 /* 220 */
 >>>>>>> Table directive to angular 2
+=======
+/* 228 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// 7.2.9 SameValue(x, y)
@@ -3722,20 +4422,28 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 224 */
 =======
 /* 221 */
 >>>>>>> Table directive to angular 2
+=======
+/* 229 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
 	var anObject  = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , aFunction = __webpack_require__(50)
 =======
 	  , aFunction = __webpack_require__(48)
 >>>>>>> Table directive to angular 2
+=======
+	  , aFunction = __webpack_require__(52)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , SPECIES   = __webpack_require__(14)('species');
 	module.exports = function(O, D){
 	  var C = anObject(O).constructor, S;
@@ -3743,6 +4451,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 225 */
 =======
@@ -3752,6 +4461,13 @@
 
 	var toInteger = __webpack_require__(53)
 	  , defined   = __webpack_require__(43);
+=======
+/* 230 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var toInteger = __webpack_require__(55)
+	  , defined   = __webpack_require__(44);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	// true  -> String#at
 	// false -> String#codePointAt
 	module.exports = function(TO_STRING){
@@ -3769,6 +4485,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 226 */
 =======
@@ -3779,6 +4496,14 @@
 	'use strict';
 	var toInteger = __webpack_require__(53)
 	  , defined   = __webpack_require__(43);
+=======
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var toInteger = __webpack_require__(55)
+	  , defined   = __webpack_require__(44);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = function repeat(count){
 	  var str = String(defined(this))
@@ -3790,16 +4515,21 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 227 */
 =======
 /* 224 */
 >>>>>>> Table directive to angular 2
+=======
+/* 232 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.f = __webpack_require__(14);
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 228 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3811,14 +4541,21 @@
 	module.exports = __webpack_require__(97)('Map', function(get){
 =======
 /* 225 */
+=======
+/* 233 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(203);
+	var strong = __webpack_require__(211);
 
 	// 23.1 Map Objects
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	module.exports = __webpack_require__(95)('Map', function(get){
 >>>>>>> Table directive to angular 2
+=======
+	module.exports = __webpack_require__(102)('Map', function(get){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Map(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.1.3.6 Map.prototype.get(key)
@@ -3833,16 +4570,21 @@
 	}, strong, true);
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 229 */
 =======
 /* 226 */
 >>>>>>> Table directive to angular 2
+=======
+/* 234 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
 	if(__webpack_require__(20) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
 	  configurable: true,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  get: __webpack_require__(139)
 	});
@@ -3855,15 +4597,22 @@
 	__webpack_require__(98)('match', 1, function(defined, MATCH, $match){
 =======
 	  get: __webpack_require__(138)
+=======
+	  get: __webpack_require__(142)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	});
 
 /***/ },
-/* 227 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@match logic
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(96)('match', 1, function(defined, MATCH, $match){
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(103)('match', 1, function(defined, MATCH, $match){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  // 21.1.3.11 String.prototype.match(regexp)
 	  return [function match(regexp){
 	    'use strict';
@@ -3874,6 +4623,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 231 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3887,6 +4637,13 @@
 	// @@replace logic
 	__webpack_require__(96)('replace', 2, function(defined, REPLACE, $replace){
 >>>>>>> Table directive to angular 2
+=======
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// @@replace logic
+	__webpack_require__(103)('replace', 2, function(defined, REPLACE, $replace){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  // 21.1.3.14 String.prototype.replace(searchValue, replaceValue)
 	  return [function replace(searchValue, replaceValue){
 	    'use strict';
@@ -3899,6 +4656,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 232 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3912,6 +4670,13 @@
 	// @@search logic
 	__webpack_require__(96)('search', 1, function(defined, SEARCH, $search){
 >>>>>>> Table directive to angular 2
+=======
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// @@search logic
+	__webpack_require__(103)('search', 1, function(defined, SEARCH, $search){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  // 21.1.3.15 String.prototype.search(regexp)
 	  return [function search(regexp){
 	    'use strict';
@@ -3922,6 +4687,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 233 */
 /***/ function(module, exports, __webpack_require__) {
@@ -3932,13 +4698,20 @@
 	  var isRegExp   = __webpack_require__(143)
 =======
 /* 230 */
+=======
+/* 238 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@split logic
-	__webpack_require__(96)('split', 2, function(defined, SPLIT, $split){
+	__webpack_require__(103)('split', 2, function(defined, SPLIT, $split){
 	  'use strict';
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  var isRegExp   = __webpack_require__(142)
 >>>>>>> Table directive to angular 2
+=======
+	  var isRegExp   = __webpack_require__(146)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    , _split     = $split
 	    , $push      = [].push
 	    , $SPLIT     = 'split'
@@ -4007,6 +4780,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 234 */
 /***/ function(module, exports, __webpack_require__) {
@@ -4018,14 +4792,21 @@
 	module.exports = __webpack_require__(97)('Set', function(get){
 =======
 /* 231 */
+=======
+/* 239 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(203);
+	var strong = __webpack_require__(211);
 
 	// 23.2 Set Objects
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	module.exports = __webpack_require__(95)('Set', function(get){
 >>>>>>> Table directive to angular 2
+=======
+	module.exports = __webpack_require__(102)('Set', function(get){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Set(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.2.3.1 Set.prototype.add(value)
@@ -4035,11 +4816,15 @@
 	}, strong);
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 235 */
 =======
 /* 232 */
 >>>>>>> Table directive to angular 2
+=======
+/* 240 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4049,6 +4834,7 @@
 	  , DESCRIPTORS    = __webpack_require__(20)
 	  , $export        = __webpack_require__(2)
 	  , redefine       = __webpack_require__(28)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , META           = __webpack_require__(51).KEY
 	  , $fails         = __webpack_require__(10)
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4074,22 +4860,33 @@
 	  , shared         = __webpack_require__(100)
 	  , setToStringTag = __webpack_require__(81)
 	  , uid            = __webpack_require__(62)
+=======
+	  , META           = __webpack_require__(53).KEY
+	  , $fails         = __webpack_require__(10)
+	  , shared         = __webpack_require__(107)
+	  , setToStringTag = __webpack_require__(86)
+	  , uid            = __webpack_require__(66)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , wks            = __webpack_require__(14)
-	  , wksExt         = __webpack_require__(224)
-	  , wksDefine      = __webpack_require__(323)
-	  , keyOf          = __webpack_require__(321)
-	  , enumKeys       = __webpack_require__(319)
-	  , isArray        = __webpack_require__(141)
+	  , wksExt         = __webpack_require__(232)
+	  , wksDefine      = __webpack_require__(333)
+	  , keyOf          = __webpack_require__(331)
+	  , enumKeys       = __webpack_require__(329)
+	  , isArray        = __webpack_require__(145)
 	  , anObject       = __webpack_require__(8)
-	  , toIObject      = __webpack_require__(33)
-	  , toPrimitive    = __webpack_require__(52)
-	  , createDesc     = __webpack_require__(50)
-	  , _create        = __webpack_require__(59)
-	  , gOPNExt        = __webpack_require__(216)
-	  , $GOPD          = __webpack_require__(44)
+	  , toIObject      = __webpack_require__(34)
+	  , toPrimitive    = __webpack_require__(56)
+	  , createDesc     = __webpack_require__(54)
+	  , _create        = __webpack_require__(63)
+	  , gOPNExt        = __webpack_require__(224)
+	  , $GOPD          = __webpack_require__(46)
 	  , $DP            = __webpack_require__(17)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , $keys          = __webpack_require__(69)
 >>>>>>> Table directive to angular 2
+=======
+	  , $keys          = __webpack_require__(72)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , gOPD           = $GOPD.f
 	  , dP             = $DP.f
 	  , gOPN           = gOPNExt.f
@@ -4212,6 +5009,7 @@
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  __webpack_require__(61).f = gOPNExt.f = $getOwnPropertyNames;
 	  __webpack_require__(101).f  = $propertyIsEnumerable;
@@ -4225,6 +5023,13 @@
 
 	  if(DESCRIPTORS && !__webpack_require__(78)){
 >>>>>>> Table directive to angular 2
+=======
+	  __webpack_require__(64).f = gOPNExt.f = $getOwnPropertyNames;
+	  __webpack_require__(106).f  = $propertyIsEnumerable;
+	  __webpack_require__(105).f = $getOwnPropertySymbols;
+
+	  if(DESCRIPTORS && !__webpack_require__(83)){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
 	  }
 
@@ -4299,7 +5104,7 @@
 	});
 
 	// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
-	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(30)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(31)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
 	// 19.4.3.5 Symbol.prototype[@@toStringTag]
 	setToStringTag($Symbol, 'Symbol');
 	// 20.2.1.9 Math[@@toStringTag]
@@ -4308,16 +5113,21 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 236 */
 =======
 /* 233 */
 >>>>>>> Table directive to angular 2
+=======
+/* 241 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var each         = __webpack_require__(36)(0)
 	  , redefine     = __webpack_require__(28)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , meta         = __webpack_require__(51)
 	  , assign       = __webpack_require__(217)
@@ -4327,6 +5137,11 @@
 	  , assign       = __webpack_require__(214)
 	  , weak         = __webpack_require__(204)
 >>>>>>> Table directive to angular 2
+=======
+	  , meta         = __webpack_require__(53)
+	  , assign       = __webpack_require__(222)
+	  , weak         = __webpack_require__(212)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , isObject     = __webpack_require__(11)
 	  , getWeak      = meta.getWeak
 	  , isExtensible = Object.isExtensible
@@ -4356,11 +5171,15 @@
 	};
 
 	// 23.3 WeakMap Objects
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var $WeakMap = module.exports = __webpack_require__(97)('WeakMap', wrapper, methods, weak, true, true);
 =======
 	var $WeakMap = module.exports = __webpack_require__(95)('WeakMap', wrapper, methods, weak, true, true);
 >>>>>>> Table directive to angular 2
+=======
+	var $WeakMap = module.exports = __webpack_require__(102)('WeakMap', wrapper, methods, weak, true, true);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	// IE11 WeakMap frozen keys fix
 	if(new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7){
@@ -4383,6 +5202,7 @@
 	}
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 237 */,
 /* 238 */,
@@ -4513,6 +5333,9 @@
 
 =======
 /* 234 */
+=======
+/* 242 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -4698,14 +5521,6 @@
 
 
 /***/ },
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -4760,67 +5575,78 @@
 /* 294 */,
 /* 295 */,
 /* 296 */,
-/* 297 */
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(104);
-	__webpack_require__(333);
-	__webpack_require__(331);
-	__webpack_require__(337);
-	__webpack_require__(334);
-	__webpack_require__(340);
-	__webpack_require__(342);
-	__webpack_require__(330);
-	__webpack_require__(336);
-	__webpack_require__(327);
+	__webpack_require__(111);
+	__webpack_require__(343);
 	__webpack_require__(341);
-	__webpack_require__(325);
+	__webpack_require__(347);
+	__webpack_require__(344);
+	__webpack_require__(350);
+	__webpack_require__(352);
+	__webpack_require__(340);
+	__webpack_require__(346);
+	__webpack_require__(337);
+	__webpack_require__(351);
+	__webpack_require__(335);
+	__webpack_require__(349);
+	__webpack_require__(348);
+	__webpack_require__(342);
+	__webpack_require__(345);
+	__webpack_require__(334);
+	__webpack_require__(336);
 	__webpack_require__(339);
 	__webpack_require__(338);
-	__webpack_require__(332);
-	__webpack_require__(335);
-	__webpack_require__(324);
-	__webpack_require__(326);
-	__webpack_require__(329);
-	__webpack_require__(328);
-	__webpack_require__(343);
-	__webpack_require__(103);
+	__webpack_require__(353);
+	__webpack_require__(110);
 	module.exports = __webpack_require__(13).Array;
 
 /***/ },
-/* 298 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(344);
-	__webpack_require__(346);
-	__webpack_require__(345);
-	__webpack_require__(348);
-	__webpack_require__(347);
+	__webpack_require__(354);
+	__webpack_require__(356);
+	__webpack_require__(355);
+	__webpack_require__(358);
+	__webpack_require__(357);
 	module.exports = Date;
 
 /***/ },
-/* 299 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(349);
-	__webpack_require__(351);
-	__webpack_require__(350);
+	__webpack_require__(359);
+	__webpack_require__(361);
+	__webpack_require__(360);
 	module.exports = __webpack_require__(13).Function;
 
 /***/ },
-/* 300 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(63);
-	__webpack_require__(104);
-	__webpack_require__(153);
-	__webpack_require__(225);
+	__webpack_require__(67);
+	__webpack_require__(111);
+	__webpack_require__(157);
+	__webpack_require__(233);
 	module.exports = __webpack_require__(13).Map;
 
 /***/ },
-/* 301 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(352);
 	__webpack_require__(353);
 	__webpack_require__(354);
@@ -4832,6 +5658,8 @@
 	__webpack_require__(359);
 	__webpack_require__(360);
 	__webpack_require__(361);
+=======
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	__webpack_require__(362);
 	__webpack_require__(363);
 	__webpack_require__(364);
@@ -4839,15 +5667,7 @@
 	__webpack_require__(366);
 	__webpack_require__(367);
 	__webpack_require__(368);
-	module.exports = __webpack_require__(13).Math;
-
-/***/ },
-/* 302 */
-/***/ function(module, exports, __webpack_require__) {
-
 	__webpack_require__(369);
-	__webpack_require__(379);
-	__webpack_require__(380);
 	__webpack_require__(370);
 	__webpack_require__(371);
 	__webpack_require__(372);
@@ -4892,51 +5712,70 @@
 	__webpack_require__(376);
 	__webpack_require__(377);
 	__webpack_require__(378);
+	module.exports = __webpack_require__(13).Math;
+
+/***/ },
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(379);
+	__webpack_require__(389);
+	__webpack_require__(390);
+	__webpack_require__(380);
+	__webpack_require__(381);
+	__webpack_require__(382);
+	__webpack_require__(383);
+	__webpack_require__(384);
+	__webpack_require__(385);
+	__webpack_require__(386);
+	__webpack_require__(387);
+	__webpack_require__(388);
 	module.exports = __webpack_require__(13).Number;
 
 /***/ },
-/* 303 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(232);
-	__webpack_require__(382);
-	__webpack_require__(384);
-	__webpack_require__(383);
-	__webpack_require__(386);
-	__webpack_require__(388);
-	__webpack_require__(393);
-	__webpack_require__(387);
-	__webpack_require__(385);
-	__webpack_require__(395);
-	__webpack_require__(394);
-	__webpack_require__(390);
-	__webpack_require__(391);
-	__webpack_require__(389);
-	__webpack_require__(381);
+	__webpack_require__(240);
 	__webpack_require__(392);
+	__webpack_require__(394);
+	__webpack_require__(393);
 	__webpack_require__(396);
-	__webpack_require__(63);
+	__webpack_require__(398);
+	__webpack_require__(403);
+	__webpack_require__(397);
+	__webpack_require__(395);
+	__webpack_require__(405);
+	__webpack_require__(404);
+	__webpack_require__(400);
+	__webpack_require__(401);
+	__webpack_require__(399);
+	__webpack_require__(391);
+	__webpack_require__(402);
+	__webpack_require__(406);
+	__webpack_require__(67);
 
 	module.exports = __webpack_require__(13).Object;
 
 /***/ },
-/* 304 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(397);
+	__webpack_require__(407);
 	module.exports = __webpack_require__(13).parseFloat;
 
 /***/ },
-/* 305 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(398);
+	__webpack_require__(408);
 	module.exports = __webpack_require__(13).parseInt;
 
 /***/ },
-/* 306 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(399);
 	__webpack_require__(400);
 >>>>>>> Table directive to angular 2
@@ -5025,26 +5864,39 @@
 	__webpack_require__(405);
 	__webpack_require__(407);
 	__webpack_require__(408);
+=======
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	__webpack_require__(409);
 	__webpack_require__(410);
-	__webpack_require__(412);
 	__webpack_require__(411);
+	__webpack_require__(412);
+	__webpack_require__(413);
+	__webpack_require__(416);
+	__webpack_require__(414);
+	__webpack_require__(415);
+	__webpack_require__(417);
+	__webpack_require__(418);
+	__webpack_require__(419);
+	__webpack_require__(420);
+	__webpack_require__(422);
+	__webpack_require__(421);
 	module.exports = __webpack_require__(13).Reflect;
 
 /***/ },
-/* 307 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(413);
-	__webpack_require__(414);
-	__webpack_require__(226);
-	__webpack_require__(227);
-	__webpack_require__(228);
-	__webpack_require__(229);
-	__webpack_require__(230);
+	__webpack_require__(423);
+	__webpack_require__(424);
+	__webpack_require__(234);
+	__webpack_require__(235);
+	__webpack_require__(236);
+	__webpack_require__(237);
+	__webpack_require__(238);
 	module.exports = __webpack_require__(13).RegExp;
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -5133,11 +5985,22 @@
 	__webpack_require__(105);
 	__webpack_require__(236);
 	module.exports = __webpack_require__(13).WeakMap;
+=======
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(67);
+	__webpack_require__(111);
+	__webpack_require__(157);
+	__webpack_require__(239);
+	module.exports = __webpack_require__(13).Set;
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
 /* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(64);
 	__webpack_require__(154);
 	__webpack_require__(453);
@@ -5158,63 +6021,85 @@
 	__webpack_require__(462);
 =======
 	__webpack_require__(430);
+=======
+	__webpack_require__(434);
+	__webpack_require__(438);
+	__webpack_require__(445);
+	__webpack_require__(111);
+	__webpack_require__(429);
+	__webpack_require__(430);
+	__webpack_require__(435);
+	__webpack_require__(439);
+	__webpack_require__(441);
+	__webpack_require__(425);
+	__webpack_require__(426);
+	__webpack_require__(427);
+	__webpack_require__(428);
+	__webpack_require__(431);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	__webpack_require__(432);
 	__webpack_require__(433);
-	__webpack_require__(434);
-	__webpack_require__(227);
-	__webpack_require__(228);
-	__webpack_require__(229);
-	__webpack_require__(230);
+	__webpack_require__(436);
+	__webpack_require__(437);
+	__webpack_require__(440);
+	__webpack_require__(442);
+	__webpack_require__(443);
+	__webpack_require__(444);
+	__webpack_require__(235);
+	__webpack_require__(236);
+	__webpack_require__(237);
+	__webpack_require__(238);
 	module.exports = __webpack_require__(13).String;
 
 /***/ },
-/* 310 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(232);
-	__webpack_require__(63);
+	__webpack_require__(240);
+	__webpack_require__(67);
 	module.exports = __webpack_require__(13).Symbol;
 
 /***/ },
-/* 311 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(436);
-	__webpack_require__(437);
-	__webpack_require__(442);
-	__webpack_require__(445);
 	__webpack_require__(446);
-	__webpack_require__(440);
-	__webpack_require__(443);
-	__webpack_require__(441);
-	__webpack_require__(444);
-	__webpack_require__(438);
-	__webpack_require__(439);
-	__webpack_require__(63);
+	__webpack_require__(447);
+	__webpack_require__(452);
+	__webpack_require__(455);
+	__webpack_require__(456);
+	__webpack_require__(450);
+	__webpack_require__(453);
+	__webpack_require__(451);
+	__webpack_require__(454);
+	__webpack_require__(448);
+	__webpack_require__(449);
+	__webpack_require__(67);
 	module.exports = __webpack_require__(13);
 
 /***/ },
-/* 312 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(63);
-	__webpack_require__(103);
-	__webpack_require__(233);
+	__webpack_require__(67);
+	__webpack_require__(110);
+	__webpack_require__(241);
 	module.exports = __webpack_require__(13).WeakMap;
 
 /***/ },
-/* 313 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(63);
-	__webpack_require__(153);
-	__webpack_require__(447);
+	__webpack_require__(67);
+	__webpack_require__(157);
+	__webpack_require__(457);
 	module.exports = __webpack_require__(13).WeakSet;
 
 /***/ },
-/* 314 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(448);
 	__webpack_require__(449);
 	__webpack_require__(451);
@@ -5225,10 +6110,22 @@
 	__webpack_require__(455);
 	__webpack_require__(456);
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(458);
+	__webpack_require__(459);
+	__webpack_require__(461);
+	__webpack_require__(460);
+	__webpack_require__(463);
+	__webpack_require__(462);
+	__webpack_require__(464);
+	__webpack_require__(465);
+	__webpack_require__(466);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = __webpack_require__(13).Reflect;
 
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 321 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5240,6 +6137,12 @@
 
 	var forOf = __webpack_require__(97);
 >>>>>>> Table directive to angular 2
+=======
+/* 325 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var forOf = __webpack_require__(104);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = function(iter, ITERATOR){
 	  var result = [];
@@ -5249,6 +6152,7 @@
 
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 322 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5262,6 +6166,13 @@
 	var isObject = __webpack_require__(11)
 	  , isArray  = __webpack_require__(141)
 >>>>>>> Table directive to angular 2
+=======
+/* 326 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(11)
+	  , isArray  = __webpack_require__(145)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , SPECIES  = __webpack_require__(14)('species');
 
 	module.exports = function(original){
@@ -5278,6 +6189,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 323 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5291,26 +6203,41 @@
 	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 	var speciesConstructor = __webpack_require__(316);
 >>>>>>> Table directive to angular 2
+=======
+/* 327 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+	var speciesConstructor = __webpack_require__(326);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	module.exports = function(original, length){
 	  return new (speciesConstructor(original))(length);
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 324 */
 =======
 /* 318 */
 >>>>>>> Table directive to angular 2
+=======
+/* 328 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var anObject    = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , toPrimitive = __webpack_require__(54)
 =======
 	  , toPrimitive = __webpack_require__(52)
 >>>>>>> Table directive to angular 2
+=======
+	  , toPrimitive = __webpack_require__(56)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , NUMBER      = 'number';
 
 	module.exports = function(hint){
@@ -5319,6 +6246,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 325 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5336,6 +6264,15 @@
 	  , gOPS    = __webpack_require__(98)
 	  , pIE     = __webpack_require__(99);
 >>>>>>> Table directive to angular 2
+=======
+/* 329 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// all enumerable object keys, includes symbols
+	var getKeys = __webpack_require__(72)
+	  , gOPS    = __webpack_require__(105)
+	  , pIE     = __webpack_require__(106);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(it){
 	  var result     = getKeys(it)
 	    , getSymbols = gOPS.f;
@@ -5349,11 +6286,15 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 326 */
 =======
 /* 320 */
 >>>>>>> Table directive to angular 2
+=======
+/* 330 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	// fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -5374,6 +6315,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 327 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5386,6 +6328,13 @@
 	var getKeys   = __webpack_require__(69)
 >>>>>>> Table directive to angular 2
 	  , toIObject = __webpack_require__(33);
+=======
+/* 331 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var getKeys   = __webpack_require__(72)
+	  , toIObject = __webpack_require__(34);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	module.exports = function(object, el){
 	  var O      = toIObject(object)
 	    , keys   = getKeys(O)
@@ -5396,6 +6345,7 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 328 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5411,6 +6361,14 @@
 	var gOPN     = __webpack_require__(60)
 	  , gOPS     = __webpack_require__(98)
 >>>>>>> Table directive to angular 2
+=======
+/* 332 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// all object keys, includes non-enumerable and symbols
+	var gOPN     = __webpack_require__(64)
+	  , gOPS     = __webpack_require__(105)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject = __webpack_require__(8)
 	  , Reflect  = __webpack_require__(12).Reflect;
 	module.exports = Reflect && Reflect.ownKeys || function ownKeys(it){
@@ -5420,15 +6378,20 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 329 */
 =======
 /* 323 */
 >>>>>>> Table directive to angular 2
+=======
+/* 333 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global         = __webpack_require__(12)
 	  , core           = __webpack_require__(13)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , LIBRARY        = __webpack_require__(83)
 	  , wksExt         = __webpack_require__(227)
@@ -5436,6 +6399,10 @@
 	  , LIBRARY        = __webpack_require__(78)
 	  , wksExt         = __webpack_require__(224)
 >>>>>>> Table directive to angular 2
+=======
+	  , LIBRARY        = __webpack_require__(83)
+	  , wksExt         = __webpack_require__(232)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , defineProperty = __webpack_require__(17).f;
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
@@ -5443,16 +6410,21 @@
 	};
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 330 */
 =======
 /* 324 */
 >>>>>>> Table directive to angular 2
+=======
+/* 334 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(203)});
 
@@ -5462,19 +6434,26 @@
 /* 331 */
 =======
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(200)});
+=======
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(208)});
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
-	__webpack_require__(75)('copyWithin');
+	__webpack_require__(80)('copyWithin');
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 325 */
 >>>>>>> Table directive to angular 2
+=======
+/* 335 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
 	  , $every  = __webpack_require__(36)(4);
 
-	$export($export.P + $export.F * !__webpack_require__(32)([].every, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(33)([].every, true), 'Array', {
 	  // 22.1.3.5 / 15.4.4.16 Array.prototype.every(callbackfn [, thisArg])
 	  every: function every(callbackfn /* , thisArg */){
 	    return $every(this, callbackfn, arguments[1]);
@@ -5482,16 +6461,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 332 */
 =======
 /* 326 */
 >>>>>>> Table directive to angular 2
+=======
+/* 336 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.P, 'Array', {fill: __webpack_require__(134)});
 
@@ -5501,19 +6485,26 @@
 /* 333 */
 =======
 	$export($export.P, 'Array', {fill: __webpack_require__(133)});
+=======
+	$export($export.P, 'Array', {fill: __webpack_require__(137)});
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
-	__webpack_require__(75)('fill');
+	__webpack_require__(80)('fill');
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 327 */
 >>>>>>> Table directive to angular 2
+=======
+/* 337 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
 	  , $filter = __webpack_require__(36)(2);
 
-	$export($export.P + $export.F * !__webpack_require__(32)([].filter, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(33)([].filter, true), 'Array', {
 	  // 22.1.3.7 / 15.4.4.20 Array.prototype.filter(callbackfn [, thisArg])
 	  filter: function filter(callbackfn /* , thisArg */){
 	    return $filter(this, callbackfn, arguments[1]);
@@ -5521,11 +6512,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 334 */
 =======
 /* 328 */
 >>>>>>> Table directive to angular 2
+=======
+/* 338 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5541,6 +6536,7 @@
 	    return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
 	  }
 	});
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__webpack_require__(80)(KEY);
 
@@ -5552,6 +6548,12 @@
 /***/ },
 /* 329 */
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(80)(KEY);
+
+/***/ },
+/* 339 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5567,6 +6569,7 @@
 	    return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
 	  }
 	});
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__webpack_require__(80)(KEY);
 
@@ -5578,12 +6581,22 @@
 /***/ },
 /* 330 */
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(80)(KEY);
+
+/***/ },
+/* 340 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export  = __webpack_require__(2)
 	  , $forEach = __webpack_require__(36)(0)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , STRICT   = __webpack_require__(32)([].forEach, true);
+=======
+	  , STRICT   = __webpack_require__(33)([].forEach, true);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	$export($export.P + $export.F * !STRICT, 'Array', {
 	  // 22.1.3.10 / 15.4.4.18 Array.prototype.forEach(callbackfn [, thisArg])
@@ -5593,6 +6606,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 337 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5610,20 +6624,27 @@
 	$export($export.S + $export.F * !__webpack_require__(145)(function(iter){ Array.from(iter); }), 'Array', {
 =======
 /* 331 */
+=======
+/* 341 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var ctx            = __webpack_require__(58)
+	var ctx            = __webpack_require__(62)
 	  , $export        = __webpack_require__(2)
-	  , toObject       = __webpack_require__(31)
-	  , call           = __webpack_require__(210)
-	  , isArrayIter    = __webpack_require__(140)
+	  , toObject       = __webpack_require__(32)
+	  , call           = __webpack_require__(218)
+	  , isArrayIter    = __webpack_require__(144)
 	  , toLength       = __webpack_require__(24)
-	  , createProperty = __webpack_require__(205)
-	  , getIterFn      = __webpack_require__(152);
+	  , createProperty = __webpack_require__(213)
+	  , getIterFn      = __webpack_require__(156);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	$export($export.S + $export.F * !__webpack_require__(144)(function(iter){ Array.from(iter); }), 'Array', {
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S + $export.F * !__webpack_require__(148)(function(iter){ Array.from(iter); }), 'Array', {
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
 	  from: function from(arrayLike/*, mapfn = undefined, thisArg = undefined*/){
 	    var O       = toObject(arrayLike)
@@ -5653,24 +6674,32 @@
 
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 338 */
 =======
 /* 332 */
 >>>>>>> Table directive to angular 2
+=======
+/* 342 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export       = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , $indexOf      = __webpack_require__(135)(false)
 =======
 	  , $indexOf      = __webpack_require__(134)(false)
 >>>>>>> Table directive to angular 2
+=======
+	  , $indexOf      = __webpack_require__(138)(false)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $native       = [].indexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].indexOf(1, -0) < 0;
 
-	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(32)($native)), 'Array', {
+	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(33)($native)), 'Array', {
 	  // 22.1.3.11 / 15.4.4.14 Array.prototype.indexOf(searchElement [, fromIndex])
 	  indexOf: function indexOf(searchElement /*, fromIndex = 0 */){
 	    return NEGATIVE_ZERO
@@ -5681,16 +6710,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 339 */
 =======
 /* 333 */
 >>>>>>> Table directive to angular 2
+=======
+/* 343 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Array', {isArray: __webpack_require__(142)});
 
@@ -5702,42 +6736,61 @@
 /***/ },
 /* 334 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S, 'Array', {isArray: __webpack_require__(145)});
+
+/***/ },
+/* 344 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.13 Array.prototype.join(separator)
 	var $export   = __webpack_require__(2)
-	  , toIObject = __webpack_require__(33)
+	  , toIObject = __webpack_require__(34)
 	  , arrayJoin = [].join;
 
 	// fallback for not array-like strings
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.P + $export.F * (__webpack_require__(82) != Object || !__webpack_require__(32)(arrayJoin)), 'Array', {
 =======
 	$export($export.P + $export.F * (__webpack_require__(77) != Object || !__webpack_require__(32)(arrayJoin)), 'Array', {
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.P + $export.F * (__webpack_require__(82) != Object || !__webpack_require__(33)(arrayJoin)), 'Array', {
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  join: function join(separator){
 	    return arrayJoin.call(toIObject(this), separator === undefined ? ',' : separator);
 	  }
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 341 */
 =======
 /* 335 */
 >>>>>>> Table directive to angular 2
+=======
+/* 345 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export       = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , toIObject     = __webpack_require__(33)
 	  , toInteger     = __webpack_require__(53)
+=======
+	  , toIObject     = __webpack_require__(34)
+	  , toInteger     = __webpack_require__(55)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , toLength      = __webpack_require__(24)
 	  , $native       = [].lastIndexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].lastIndexOf(1, -0) < 0;
 
-	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(32)($native)), 'Array', {
+	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(33)($native)), 'Array', {
 	  // 22.1.3.14 / 15.4.4.15 Array.prototype.lastIndexOf(searchElement [, fromIndex])
 	  lastIndexOf: function lastIndexOf(searchElement /*, fromIndex = @[*-1] */){
 	    // convert -0 to +0
@@ -5753,18 +6806,22 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 342 */
 =======
 /* 336 */
 >>>>>>> Table directive to angular 2
+=======
+/* 346 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
 	  , $map    = __webpack_require__(36)(1);
 
-	$export($export.P + $export.F * !__webpack_require__(32)([].map, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(33)([].map, true), 'Array', {
 	  // 22.1.3.15 / 15.4.4.19 Array.prototype.map(callbackfn [, thisArg])
 	  map: function map(callbackfn /* , thisArg */){
 	    return $map(this, callbackfn, arguments[1]);
@@ -5772,20 +6829,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 343 */
 =======
 /* 337 */
 >>>>>>> Table directive to angular 2
+=======
+/* 347 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export        = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , createProperty = __webpack_require__(208);
 =======
 	  , createProperty = __webpack_require__(205);
 >>>>>>> Table directive to angular 2
+=======
+	  , createProperty = __webpack_require__(213);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	// WebKit Array.of isn't generic
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -5804,22 +6869,30 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 344 */
 =======
 /* 338 */
 >>>>>>> Table directive to angular 2
+=======
+/* 348 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , $reduce = __webpack_require__(204);
 =======
 	  , $reduce = __webpack_require__(201);
 >>>>>>> Table directive to angular 2
+=======
+	  , $reduce = __webpack_require__(209);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
-	$export($export.P + $export.F * !__webpack_require__(32)([].reduceRight, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(33)([].reduceRight, true), 'Array', {
 	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
 	  reduceRight: function reduceRight(callbackfn /* , initialValue */){
 	    return $reduce(this, callbackfn, arguments.length, arguments[1], true);
@@ -5827,22 +6900,30 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 345 */
 =======
 /* 339 */
 >>>>>>> Table directive to angular 2
+=======
+/* 349 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , $reduce = __webpack_require__(204);
 =======
 	  , $reduce = __webpack_require__(201);
 >>>>>>> Table directive to angular 2
+=======
+	  , $reduce = __webpack_require__(209);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
-	$export($export.P + $export.F * !__webpack_require__(32)([].reduce, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(33)([].reduce, true), 'Array', {
 	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
 	  reduce: function reduce(callbackfn /* , initialValue */){
 	    return $reduce(this, callbackfn, arguments.length, arguments[1], false);
@@ -5850,15 +6931,20 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 346 */
 =======
 /* 340 */
 >>>>>>> Table directive to angular 2
+=======
+/* 350 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export    = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , html       = __webpack_require__(210)
 	  , cof        = __webpack_require__(58)
@@ -5868,6 +6954,11 @@
 	  , cof        = __webpack_require__(57)
 	  , toIndex    = __webpack_require__(61)
 >>>>>>> Table directive to angular 2
+=======
+	  , html       = __webpack_require__(215)
+	  , cof        = __webpack_require__(61)
+	  , toIndex    = __webpack_require__(65)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , toLength   = __webpack_require__(24)
 	  , arraySlice = [].slice;
 
@@ -5893,18 +6984,22 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 347 */
 =======
 /* 341 */
 >>>>>>> Table directive to angular 2
+=======
+/* 351 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
 	  , $some   = __webpack_require__(36)(3);
 
-	$export($export.P + $export.F * !__webpack_require__(32)([].some, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(33)([].some, true), 'Array', {
 	  // 22.1.3.23 / 15.4.4.17 Array.prototype.some(callbackfn [, thisArg])
 	  some: function some(callbackfn /* , thisArg */){
 	    return $some(this, callbackfn, arguments[1]);
@@ -5912,17 +7007,26 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 348 */
 =======
 /* 342 */
 >>>>>>> Table directive to angular 2
+=======
+/* 352 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export   = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , aFunction = __webpack_require__(50)
 	  , toObject  = __webpack_require__(31)
+=======
+	  , aFunction = __webpack_require__(52)
+	  , toObject  = __webpack_require__(32)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , fails     = __webpack_require__(10)
 	  , $sort     = [].sort
 	  , test      = [1, 2, 3];
@@ -5934,7 +7038,7 @@
 	  // V8 bug
 	  test.sort(null);
 	  // Old WebKit
-	}) || !__webpack_require__(32)($sort)), 'Array', {
+	}) || !__webpack_require__(33)($sort)), 'Array', {
 	  // 22.1.3.25 Array.prototype.sort(comparefn)
 	  sort: function sort(comparefn){
 	    return comparefn === undefined
@@ -5944,6 +7048,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 349 */
 /***/ function(module, exports, __webpack_require__) {
@@ -5954,13 +7059,20 @@
 /* 350 */
 =======
 /* 343 */
+=======
+/* 353 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(80)('Array');
+	__webpack_require__(85)('Array');
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 344 */
 >>>>>>> Table directive to angular 2
+=======
+/* 354 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.3.3.1 / 15.9.4.4 Date.now()
@@ -5969,11 +7081,15 @@
 	$export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 351 */
 =======
 /* 345 */
 >>>>>>> Table directive to angular 2
+=======
+/* 355 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6006,17 +7122,26 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 352 */
 =======
 /* 346 */
 >>>>>>> Table directive to angular 2
+=======
+/* 356 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export     = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , toObject    = __webpack_require__(31)
 	  , toPrimitive = __webpack_require__(54);
+=======
+	  , toObject    = __webpack_require__(32)
+	  , toPrimitive = __webpack_require__(56);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	$export($export.P + $export.F * __webpack_require__(10)(function(){
 	  return new Date(NaN).toJSON() !== null || Date.prototype.toJSON.call({toISOString: function(){ return 1; }}) !== 1;
@@ -6029,16 +7154,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 353 */
 =======
 /* 347 */
 >>>>>>> Table directive to angular 2
+=======
+/* 357 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var TO_PRIMITIVE = __webpack_require__(14)('toPrimitive')
 	  , proto        = Date.prototype;
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	if(!(TO_PRIMITIVE in proto))__webpack_require__(30)(proto, TO_PRIMITIVE, __webpack_require__(324));
 
@@ -6050,6 +7180,12 @@
 /***/ },
 /* 348 */
 >>>>>>> Table directive to angular 2
+=======
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(31)(proto, TO_PRIMITIVE, __webpack_require__(328));
+
+/***/ },
+/* 358 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var DateProto    = Date.prototype
@@ -6065,16 +7201,21 @@
 	}
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 355 */
 =======
 /* 349 */
 >>>>>>> Table directive to angular 2
+=======
+/* 359 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.P, 'Function', {bind: __webpack_require__(205)});
 
@@ -6086,6 +7227,12 @@
 /***/ },
 /* 350 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.P, 'Function', {bind: __webpack_require__(210)});
+
+/***/ },
+/* 360 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6103,6 +7250,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 357 */
 =======
@@ -6112,6 +7260,13 @@
 
 	var dP         = __webpack_require__(17).f
 	  , createDesc = __webpack_require__(52)
+=======
+/* 361 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var dP         = __webpack_require__(17).f
+	  , createDesc = __webpack_require__(54)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , has        = __webpack_require__(26)
 	  , FProto     = Function.prototype
 	  , nameRE     = /^\s*function ([^ (]*)/
@@ -6137,20 +7292,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 358 */
 =======
 /* 352 */
 >>>>>>> Table directive to angular 2
+=======
+/* 362 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.3 Math.acosh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , log1p   = __webpack_require__(216)
 =======
 	  , log1p   = __webpack_require__(213)
 >>>>>>> Table directive to angular 2
+=======
+	  , log1p   = __webpack_require__(221)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , sqrt    = Math.sqrt
 	  , $acosh  = Math.acosh;
 
@@ -6168,11 +7331,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 359 */
 =======
 /* 353 */
 >>>>>>> Table directive to angular 2
+=======
+/* 363 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.5 Math.asinh(x)
@@ -6187,11 +7354,15 @@
 	$export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 360 */
 =======
 /* 354 */
 >>>>>>> Table directive to angular 2
+=======
+/* 364 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.7 Math.atanh(x)
@@ -6206,20 +7377,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 361 */
 =======
 /* 355 */
 >>>>>>> Table directive to angular 2
+=======
+/* 365 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.9 Math.cbrt(x)
 	var $export = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , sign    = __webpack_require__(147);
 =======
 	  , sign    = __webpack_require__(146);
 >>>>>>> Table directive to angular 2
+=======
+	  , sign    = __webpack_require__(150);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	$export($export.S, 'Math', {
 	  cbrt: function cbrt(x){
@@ -6228,11 +7407,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 362 */
 =======
 /* 356 */
 >>>>>>> Table directive to angular 2
+=======
+/* 366 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.11 Math.clz32(x)
@@ -6245,11 +7428,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 363 */
 =======
 /* 357 */
 >>>>>>> Table directive to angular 2
+=======
+/* 367 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.12 Math.cosh(x)
@@ -6263,38 +7450,54 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 364 */
 =======
 /* 358 */
 >>>>>>> Table directive to angular 2
+=======
+/* 368 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.14 Math.expm1(x)
 	var $export = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , $expm1  = __webpack_require__(146);
 =======
 	  , $expm1  = __webpack_require__(145);
 >>>>>>> Table directive to angular 2
+=======
+	  , $expm1  = __webpack_require__(149);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	$export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 365 */
 =======
 /* 359 */
 >>>>>>> Table directive to angular 2
+=======
+/* 369 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.16 Math.fround(x)
 	var $export   = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , sign      = __webpack_require__(147)
 =======
 	  , sign      = __webpack_require__(146)
 >>>>>>> Table directive to angular 2
+=======
+	  , sign      = __webpack_require__(150)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , pow       = Math.pow
 	  , EPSILON   = pow(2, -52)
 	  , EPSILON32 = pow(2, -23)
@@ -6320,11 +7523,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 366 */
 =======
 /* 360 */
 >>>>>>> Table directive to angular 2
+=======
+/* 370 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -6354,11 +7561,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 367 */
 =======
 /* 361 */
 >>>>>>> Table directive to angular 2
+=======
+/* 371 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.18 Math.imul(x, y)
@@ -6380,11 +7591,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 368 */
 =======
 /* 362 */
 >>>>>>> Table directive to angular 2
+=======
+/* 372 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.21 Math.log10(x)
@@ -6397,16 +7612,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 369 */
 =======
 /* 363 */
 >>>>>>> Table directive to angular 2
+=======
+/* 373 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.20 Math.log1p(x)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Math', {log1p: __webpack_require__(216)});
 
@@ -6418,6 +7638,12 @@
 /***/ },
 /* 364 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S, 'Math', {log1p: __webpack_require__(221)});
+
+/***/ },
+/* 374 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.22 Math.log2(x)
@@ -6430,16 +7656,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 371 */
 =======
 /* 365 */
 >>>>>>> Table directive to angular 2
+=======
+/* 375 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.28 Math.sign(x)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Math', {sign: __webpack_require__(147)});
 
@@ -6451,15 +7682,25 @@
 /***/ },
 /* 366 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S, 'Math', {sign: __webpack_require__(150)});
+
+/***/ },
+/* 376 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.30 Math.sinh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , expm1   = __webpack_require__(146)
 =======
 	  , expm1   = __webpack_require__(145)
 >>>>>>> Table directive to angular 2
+=======
+	  , expm1   = __webpack_require__(149)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , exp     = Math.exp;
 
 	// V8 near Chromium 38 has a problem with very small numbers
@@ -6474,20 +7715,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 373 */
 =======
 /* 367 */
 >>>>>>> Table directive to angular 2
+=======
+/* 377 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.33 Math.tanh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , expm1   = __webpack_require__(146)
 =======
 	  , expm1   = __webpack_require__(145)
 >>>>>>> Table directive to angular 2
+=======
+	  , expm1   = __webpack_require__(149)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , exp     = Math.exp;
 
 	$export($export.S, 'Math', {
@@ -6499,11 +7748,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 374 */
 =======
 /* 368 */
 >>>>>>> Table directive to angular 2
+=======
+/* 378 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.34 Math.trunc(x)
@@ -6516,16 +7769,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 375 */
 =======
 /* 369 */
 >>>>>>> Table directive to angular 2
+=======
+/* 379 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var global            = __webpack_require__(12)
 	  , has               = __webpack_require__(26)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , cof               = __webpack_require__(58)
 	  , inheritIfRequired = __webpack_require__(140)
@@ -6539,22 +7797,35 @@
 	  , cof               = __webpack_require__(57)
 	  , inheritIfRequired = __webpack_require__(139)
 	  , toPrimitive       = __webpack_require__(52)
+=======
+	  , cof               = __webpack_require__(61)
+	  , inheritIfRequired = __webpack_require__(143)
+	  , toPrimitive       = __webpack_require__(56)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , fails             = __webpack_require__(10)
-	  , gOPN              = __webpack_require__(60).f
-	  , gOPD              = __webpack_require__(44).f
+	  , gOPN              = __webpack_require__(64).f
+	  , gOPD              = __webpack_require__(46).f
 	  , dP                = __webpack_require__(17).f
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , $trim             = __webpack_require__(101).trim
 >>>>>>> Table directive to angular 2
+=======
+	  , $trim             = __webpack_require__(108).trim
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , NUMBER            = 'Number'
 	  , $Number           = global[NUMBER]
 	  , Base              = $Number
 	  , proto             = $Number.prototype
 	  // Opera ~12 has broken Object#toString
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , BROKEN_COF        = cof(__webpack_require__(60)(proto)) == NUMBER
 =======
 	  , BROKEN_COF        = cof(__webpack_require__(59)(proto)) == NUMBER
 >>>>>>> Table directive to angular 2
+=======
+	  , BROKEN_COF        = cof(__webpack_require__(63)(proto)) == NUMBER
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , TRIM              = 'trim' in String.prototype;
 
 	// 7.1.3 ToNumber(argument)
@@ -6609,11 +7880,15 @@
 	}
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 376 */
 =======
 /* 370 */
 >>>>>>> Table directive to angular 2
+=======
+/* 380 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.1 Number.EPSILON
@@ -6622,11 +7897,15 @@
 	$export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 377 */
 =======
 /* 371 */
 >>>>>>> Table directive to angular 2
+=======
+/* 381 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.2 Number.isFinite(number)
@@ -6640,16 +7919,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 378 */
 =======
 /* 372 */
 >>>>>>> Table directive to angular 2
+=======
+/* 382 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Number', {isInteger: __webpack_require__(212)});
 
@@ -6661,6 +7945,12 @@
 /***/ },
 /* 373 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S, 'Number', {isInteger: __webpack_require__(217)});
+
+/***/ },
+/* 383 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.4 Number.isNaN(number)
@@ -6673,20 +7963,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 380 */
 =======
 /* 374 */
 >>>>>>> Table directive to angular 2
+=======
+/* 384 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , isInteger = __webpack_require__(212)
 =======
 	  , isInteger = __webpack_require__(209)
 >>>>>>> Table directive to angular 2
+=======
+	  , isInteger = __webpack_require__(217)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , abs       = Math.abs;
 
 	$export($export.S, 'Number', {
@@ -6696,11 +7994,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 381 */
 =======
 /* 375 */
 >>>>>>> Table directive to angular 2
+=======
+/* 385 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -6709,11 +8011,15 @@
 	$export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 382 */
 =======
 /* 376 */
 >>>>>>> Table directive to angular 2
+=======
+/* 386 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -6722,6 +8028,7 @@
 	$export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 383 */
 /***/ function(module, exports, __webpack_require__) {
@@ -6735,10 +8042,18 @@
 	var $export     = __webpack_require__(2)
 	  , $parseFloat = __webpack_require__(218);
 >>>>>>> Table directive to angular 2
+=======
+/* 387 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(2)
+	  , $parseFloat = __webpack_require__(226);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	// 20.1.2.12 Number.parseFloat(string)
 	$export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 384 */
 /***/ function(module, exports, __webpack_require__) {
@@ -6752,19 +8067,31 @@
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(219);
 >>>>>>> Table directive to angular 2
+=======
+/* 388 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(227);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	// 20.1.2.13 Number.parseInt(string, radix)
 	$export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 385 */
 =======
 /* 379 */
 >>>>>>> Table directive to angular 2
+=======
+/* 389 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , toInteger    = __webpack_require__(53)
 	  , aNumberValue = __webpack_require__(202)
@@ -6774,6 +8101,11 @@
 	  , aNumberValue = __webpack_require__(199)
 	  , repeat       = __webpack_require__(223)
 >>>>>>> Table directive to angular 2
+=======
+	  , toInteger    = __webpack_require__(55)
+	  , aNumberValue = __webpack_require__(207)
+	  , repeat       = __webpack_require__(231)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $toFixed     = 1..toFixed
 	  , floor        = Math.floor
 	  , data         = [0, 0, 0, 0, 0, 0]
@@ -6884,21 +8216,29 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 386 */
 =======
 /* 380 */
 >>>>>>> Table directive to angular 2
+=======
+/* 390 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
 	  , $fails       = __webpack_require__(10)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , aNumberValue = __webpack_require__(202)
 =======
 	  , aNumberValue = __webpack_require__(199)
 >>>>>>> Table directive to angular 2
+=======
+	  , aNumberValue = __webpack_require__(207)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $toPrecision = 1..toPrecision;
 
 	$export($export.P + $export.F * ($fails(function(){
@@ -6915,16 +8255,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 387 */
 =======
 /* 381 */
 >>>>>>> Table directive to angular 2
+=======
+/* 391 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(217)});
 
@@ -6936,10 +8281,17 @@
 /***/ },
 /* 382 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(222)});
+
+/***/ },
+/* 392 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Object', {create: __webpack_require__(60)});
 
@@ -6951,10 +8303,17 @@
 /***/ },
 /* 383 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S, 'Object', {create: __webpack_require__(63)});
+
+/***/ },
+/* 393 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(218)});
 
@@ -6966,6 +8325,12 @@
 /***/ },
 /* 384 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(223)});
+
+/***/ },
+/* 394 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
@@ -6973,16 +8338,24 @@
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(17).f});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 391 */
 =======
 /* 385 */
 >>>>>>> Table directive to angular 2
+=======
+/* 395 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.5 Object.freeze(O)
 	var isObject = __webpack_require__(11)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , meta     = __webpack_require__(51).onFreeze;
+=======
+	  , meta     = __webpack_require__(53).onFreeze;
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	__webpack_require__(38)('freeze', function($freeze){
 	  return function freeze(it){
@@ -6991,6 +8364,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 392 */
 =======
@@ -7001,6 +8375,14 @@
 	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
 	var toIObject                 = __webpack_require__(33)
 	  , $getOwnPropertyDescriptor = __webpack_require__(45).f;
+=======
+/* 396 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
+	var toIObject                 = __webpack_require__(34)
+	  , $getOwnPropertyDescriptor = __webpack_require__(46).f;
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	__webpack_require__(38)('getOwnPropertyDescriptor', function(){
 	  return function getOwnPropertyDescriptor(it, key){
@@ -7009,6 +8391,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 393 */
 /***/ function(module, exports, __webpack_require__) {
@@ -7022,20 +8405,31 @@
 /* 394 */
 =======
 /* 387 */
+=======
+/* 397 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 Object.getOwnPropertyNames(O)
-	__webpack_require__(37)('getOwnPropertyNames', function(){
-	  return __webpack_require__(216).f;
+	__webpack_require__(38)('getOwnPropertyNames', function(){
+	  return __webpack_require__(224).f;
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 388 */
 >>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
 	var toObject        = __webpack_require__(31)
+=======
+/* 398 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.9 Object.getPrototypeOf(O)
+	var toObject        = __webpack_require__(32)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $getPrototypeOf = __webpack_require__(37);
 
 	__webpack_require__(38)('getPrototypeOf', function(){
@@ -7045,11 +8439,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 395 */
 =======
 /* 389 */
 >>>>>>> Table directive to angular 2
+=======
+/* 399 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.11 Object.isExtensible(O)
@@ -7062,11 +8460,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 396 */
 =======
 /* 390 */
 >>>>>>> Table directive to angular 2
+=======
+/* 400 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.12 Object.isFrozen(O)
@@ -7079,11 +8481,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 397 */
 =======
 /* 391 */
 >>>>>>> Table directive to angular 2
+=======
+/* 401 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.13 Object.isSealed(O)
@@ -7096,15 +8502,20 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 398 */
 =======
 /* 392 */
 >>>>>>> Table directive to angular 2
+=======
+/* 402 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.10 Object.is(value1, value2)
 	var $export = __webpack_require__(2);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Object', {is: __webpack_require__(223)});
 
@@ -7125,6 +8536,17 @@
 =======
 	  , $keys    = __webpack_require__(69);
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S, 'Object', {is: __webpack_require__(228)});
+
+/***/ },
+/* 403 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.14 Object.keys(O)
+	var toObject = __webpack_require__(32)
+	  , $keys    = __webpack_require__(72);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	__webpack_require__(38)('keys', function(){
 	  return function keys(it){
@@ -7133,16 +8555,24 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 400 */
 =======
 /* 394 */
 >>>>>>> Table directive to angular 2
+=======
+/* 404 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.15 Object.preventExtensions(O)
 	var isObject = __webpack_require__(11)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , meta     = __webpack_require__(51).onFreeze;
+=======
+	  , meta     = __webpack_require__(53).onFreeze;
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	__webpack_require__(38)('preventExtensions', function($preventExtensions){
 	  return function preventExtensions(it){
@@ -7151,16 +8581,24 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 401 */
 =======
 /* 395 */
 >>>>>>> Table directive to angular 2
+=======
+/* 405 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.17 Object.seal(O)
 	var isObject = __webpack_require__(11)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , meta     = __webpack_require__(51).onFreeze;
+=======
+	  , meta     = __webpack_require__(53).onFreeze;
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	__webpack_require__(38)('seal', function($seal){
 	  return function seal(it){
@@ -7169,15 +8607,20 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 402 */
 =======
 /* 396 */
 >>>>>>> Table directive to angular 2
+=======
+/* 406 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
 	var $export = __webpack_require__(2);
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(148).set});
 
@@ -7189,18 +8632,26 @@
 	  , $parseFloat = __webpack_require__(221);
 =======
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(147).set});
+=======
+	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(151).set});
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
-/* 397 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , $parseFloat = __webpack_require__(218);
 >>>>>>> Table directive to angular 2
+=======
+	  , $parseFloat = __webpack_require__(226);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	// 18.2.4 parseFloat(string)
 	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 404 */
 /***/ function(module, exports, __webpack_require__) {
@@ -7214,24 +8665,39 @@
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(219);
 >>>>>>> Table directive to angular 2
+=======
+/* 408 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(227);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	// 18.2.5 parseInt(string, radix)
 	$export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 405 */
 =======
 /* 399 */
 >>>>>>> Table directive to angular 2
+=======
+/* 409 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
 	var $export   = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , aFunction = __webpack_require__(50)
 =======
 	  , aFunction = __webpack_require__(48)
 >>>>>>> Table directive to angular 2
+=======
+	  , aFunction = __webpack_require__(52)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject  = __webpack_require__(8)
 	  , rApply    = (__webpack_require__(12).Reflect || {}).apply
 	  , fApply    = Function.apply;
@@ -7247,15 +8713,20 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 406 */
 =======
 /* 400 */
 >>>>>>> Table directive to angular 2
+=======
+/* 410 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 	var $export    = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , create     = __webpack_require__(60)
 	  , aFunction  = __webpack_require__(50)
@@ -7271,6 +8742,14 @@
 	  , fails      = __webpack_require__(10)
 	  , bind       = __webpack_require__(202)
 >>>>>>> Table directive to angular 2
+=======
+	  , create     = __webpack_require__(63)
+	  , aFunction  = __webpack_require__(52)
+	  , anObject   = __webpack_require__(8)
+	  , isObject   = __webpack_require__(11)
+	  , fails      = __webpack_require__(10)
+	  , bind       = __webpack_require__(210)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , rConstruct = (__webpack_require__(12).Reflect || {}).construct;
 
 	// MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -7312,22 +8791,30 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 407 */
 =======
 /* 401 */
 >>>>>>> Table directive to angular 2
+=======
+/* 411 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
 	var dP          = __webpack_require__(17)
 	  , $export     = __webpack_require__(2)
 	  , anObject    = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , toPrimitive = __webpack_require__(54);
 =======
 	  , toPrimitive = __webpack_require__(52);
 >>>>>>> Table directive to angular 2
+=======
+	  , toPrimitive = __webpack_require__(56);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	// MS Edge has broken Reflect.defineProperty - throwing instead of returning false
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -7347,20 +8834,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 408 */
 =======
 /* 402 */
 >>>>>>> Table directive to angular 2
+=======
+/* 412 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.4 Reflect.deleteProperty(target, propertyKey)
 	var $export  = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , gOPD     = __webpack_require__(45).f
 =======
 	  , gOPD     = __webpack_require__(44).f
 >>>>>>> Table directive to angular 2
+=======
+	  , gOPD     = __webpack_require__(46).f
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject = __webpack_require__(8);
 
 	$export($export.S, 'Reflect', {
@@ -7371,11 +8866,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 409 */
 =======
 /* 403 */
 >>>>>>> Table directive to angular 2
+=======
+/* 413 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7389,11 +8888,15 @@
 	    , key;
 	  for(key in iterated)keys.push(key);
 	};
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__webpack_require__(214)(Enumerate, 'Object', function(){
 =======
 	__webpack_require__(211)(Enumerate, 'Object', function(){
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(219)(Enumerate, 'Object', function(){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  var that = this
 	    , keys = that._k
 	    , key;
@@ -7410,6 +8913,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 410 */
 =======
@@ -7419,6 +8923,13 @@
 
 	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
 	var gOPD     = __webpack_require__(45)
+=======
+/* 414 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
+	var gOPD     = __webpack_require__(46)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $export  = __webpack_require__(2)
 	  , anObject = __webpack_require__(8);
 
@@ -7429,20 +8940,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 411 */
 =======
 /* 405 */
 >>>>>>> Table directive to angular 2
+=======
+/* 415 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.8 Reflect.getPrototypeOf(target)
 	var $export  = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , getProto = __webpack_require__(37)
 =======
 	  , getProto = __webpack_require__(36)
 >>>>>>> Table directive to angular 2
+=======
+	  , getProto = __webpack_require__(37)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject = __webpack_require__(8);
 
 	$export($export.S, 'Reflect', {
@@ -7452,6 +8971,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 412 */
 =======
@@ -7461,6 +8981,13 @@
 
 	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
 	var gOPD           = __webpack_require__(45)
+=======
+/* 416 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
+	var gOPD           = __webpack_require__(46)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , getPrototypeOf = __webpack_require__(37)
 	  , has            = __webpack_require__(26)
 	  , $export        = __webpack_require__(2)
@@ -7482,11 +9009,15 @@
 	$export($export.S, 'Reflect', {get: get});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 413 */
 =======
 /* 407 */
 >>>>>>> Table directive to angular 2
+=======
+/* 417 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.9 Reflect.has(target, propertyKey)
@@ -7499,11 +9030,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 414 */
 =======
 /* 408 */
 >>>>>>> Table directive to angular 2
+=======
+/* 418 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.10 Reflect.isExtensible(target)
@@ -7519,16 +9054,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 415 */
 =======
 /* 409 */
 >>>>>>> Table directive to angular 2
+=======
+/* 419 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.11 Reflect.ownKeys(target)
 	var $export = __webpack_require__(2);
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(328)});
 
@@ -7540,6 +9080,12 @@
 /***/ },
 /* 410 */
 >>>>>>> Table directive to angular 2
+=======
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(332)});
+
+/***/ },
+/* 420 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.12 Reflect.preventExtensions(target)
@@ -7560,20 +9106,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 417 */
 =======
 /* 411 */
 >>>>>>> Table directive to angular 2
+=======
+/* 421 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.14 Reflect.setPrototypeOf(target, proto)
 	var $export  = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , setProto = __webpack_require__(148);
 =======
 	  , setProto = __webpack_require__(147);
 >>>>>>> Table directive to angular 2
+=======
+	  , setProto = __webpack_require__(151);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 	if(setProto)$export($export.S, 'Reflect', {
 	  setPrototypeOf: function setPrototypeOf(target, proto){
@@ -7588,15 +9142,20 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 418 */
 =======
 /* 412 */
 >>>>>>> Table directive to angular 2
+=======
+/* 422 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
 	var dP             = __webpack_require__(17)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , gOPD           = __webpack_require__(45)
 	  , getPrototypeOf = __webpack_require__(37)
 	  , has            = __webpack_require__(26)
@@ -7606,6 +9165,13 @@
 =======
 	  , createDesc     = __webpack_require__(50)
 >>>>>>> Table directive to angular 2
+=======
+	  , gOPD           = __webpack_require__(46)
+	  , getPrototypeOf = __webpack_require__(37)
+	  , has            = __webpack_require__(26)
+	  , $export        = __webpack_require__(2)
+	  , createDesc     = __webpack_require__(54)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject       = __webpack_require__(8)
 	  , isObject       = __webpack_require__(11);
 
@@ -7632,6 +9198,7 @@
 	$export($export.S, 'Reflect', {set: set});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 419 */
 /***/ function(module, exports, __webpack_require__) {
@@ -7644,15 +9211,24 @@
 	  , $flags            = __webpack_require__(139)
 =======
 /* 413 */
+=======
+/* 423 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global            = __webpack_require__(12)
-	  , inheritIfRequired = __webpack_require__(139)
+	  , inheritIfRequired = __webpack_require__(143)
 	  , dP                = __webpack_require__(17).f
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , gOPN              = __webpack_require__(60).f
 	  , isRegExp          = __webpack_require__(142)
 	  , $flags            = __webpack_require__(138)
 >>>>>>> Table directive to angular 2
+=======
+	  , gOPN              = __webpack_require__(64).f
+	  , isRegExp          = __webpack_require__(146)
+	  , $flags            = __webpack_require__(142)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $RegExp           = global.RegExp
 	  , Base              = $RegExp
 	  , proto             = $RegExp.prototype
@@ -7689,6 +9265,7 @@
 	  __webpack_require__(28)(global, 'RegExp', $RegExp);
 	}
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__webpack_require__(85)('RegExp');
 
@@ -7702,16 +9279,23 @@
 	  , $flags      = __webpack_require__(139)
 =======
 	__webpack_require__(80)('RegExp');
+=======
+	__webpack_require__(85)('RegExp');
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
-/* 414 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	__webpack_require__(226);
+	__webpack_require__(234);
 	var anObject    = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , $flags      = __webpack_require__(138)
 >>>>>>> Table directive to angular 2
+=======
+	  , $flags      = __webpack_require__(142)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , DESCRIPTORS = __webpack_require__(20)
 	  , TO_STRING   = 'toString'
 	  , $toString   = /./[TO_STRING];
@@ -7735,11 +9319,15 @@
 	}
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 421 */
 =======
 /* 415 */
 >>>>>>> Table directive to angular 2
+=======
+/* 425 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7751,11 +9339,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 422 */
 =======
 /* 416 */
 >>>>>>> Table directive to angular 2
+=======
+/* 426 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7767,11 +9359,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 423 */
 =======
 /* 417 */
 >>>>>>> Table directive to angular 2
+=======
+/* 427 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7783,11 +9379,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 424 */
 =======
 /* 418 */
 >>>>>>> Table directive to angular 2
+=======
+/* 428 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7799,20 +9399,28 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 425 */
 =======
 /* 419 */
 >>>>>>> Table directive to angular 2
+=======
+/* 429 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , $at     = __webpack_require__(225)(false);
 =======
 	  , $at     = __webpack_require__(222)(false);
 >>>>>>> Table directive to angular 2
+=======
+	  , $at     = __webpack_require__(230)(false);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	$export($export.P, 'String', {
 	  // 21.1.3.3 String.prototype.codePointAt(pos)
 	  codePointAt: function codePointAt(pos){
@@ -7821,17 +9429,22 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 426 */
 =======
 /* 420 */
 >>>>>>> Table directive to angular 2
+=======
+/* 430 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
 	'use strict';
 	var $export   = __webpack_require__(2)
 	  , toLength  = __webpack_require__(24)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , context   = __webpack_require__(150)
 	  , ENDS_WITH = 'endsWith'
@@ -7845,6 +9458,13 @@
 
 	$export($export.P + $export.F * __webpack_require__(137)(ENDS_WITH), 'String', {
 >>>>>>> Table directive to angular 2
+=======
+	  , context   = __webpack_require__(153)
+	  , ENDS_WITH = 'endsWith'
+	  , $endsWith = ''[ENDS_WITH];
+
+	$export($export.P + $export.F * __webpack_require__(141)(ENDS_WITH), 'String', {
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  endsWith: function endsWith(searchString /*, endPosition = @length */){
 	    var that = context(this, searchString, ENDS_WITH)
 	      , endPosition = arguments.length > 1 ? arguments[1] : undefined
@@ -7858,11 +9478,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 427 */
 =======
 /* 421 */
 >>>>>>> Table directive to angular 2
+=======
+/* 431 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7874,11 +9498,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 428 */
 =======
 /* 422 */
 >>>>>>> Table directive to angular 2
+=======
+/* 432 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7890,11 +9518,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 429 */
 =======
 /* 423 */
 >>>>>>> Table directive to angular 2
+=======
+/* 433 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7906,6 +9538,7 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 430 */
 /***/ function(module, exports, __webpack_require__) {
@@ -7919,6 +9552,13 @@
 	var $export        = __webpack_require__(2)
 	  , toIndex        = __webpack_require__(61)
 >>>>>>> Table directive to angular 2
+=======
+/* 434 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export        = __webpack_require__(2)
+	  , toIndex        = __webpack_require__(65)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , fromCharCode   = String.fromCharCode
 	  , $fromCodePoint = String.fromCodePoint;
 
@@ -7942,16 +9582,21 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 431 */
 =======
 /* 425 */
 >>>>>>> Table directive to angular 2
+=======
+/* 435 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.7 String.prototype.includes(searchString, position = 0)
 	'use strict';
 	var $export  = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , context  = __webpack_require__(150)
 	  , INCLUDES = 'includes';
@@ -7963,6 +9608,12 @@
 
 	$export($export.P + $export.F * __webpack_require__(137)(INCLUDES), 'String', {
 >>>>>>> Table directive to angular 2
+=======
+	  , context  = __webpack_require__(153)
+	  , INCLUDES = 'includes';
+
+	$export($export.P + $export.F * __webpack_require__(141)(INCLUDES), 'String', {
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  includes: function includes(searchString /*, position = 0 */){
 	    return !!~context(this, searchString, INCLUDES)
 	      .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
@@ -7970,11 +9621,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 432 */
 =======
 /* 426 */
 >>>>>>> Table directive to angular 2
+=======
+/* 436 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7986,11 +9641,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 433 */
 =======
 /* 427 */
 >>>>>>> Table directive to angular 2
+=======
+/* 437 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8002,15 +9661,19 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 434 */
 =======
 /* 428 */
 >>>>>>> Table directive to angular 2
+=======
+/* 438 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
-	  , toIObject = __webpack_require__(33)
+	  , toIObject = __webpack_require__(34)
 	  , toLength  = __webpack_require__(24);
 
 	$export($export.S, 'String', {
@@ -8029,17 +9692,22 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 435 */
 =======
 /* 429 */
 >>>>>>> Table directive to angular 2
+=======
+/* 439 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 
 	$export($export.P, 'String', {
 	  // 21.1.3.13 String.prototype.repeat(count)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  repeat: __webpack_require__(226)
 	});
@@ -8053,6 +9721,13 @@
 /***/ },
 /* 430 */
 >>>>>>> Table directive to angular 2
+=======
+	  repeat: __webpack_require__(231)
+	});
+
+/***/ },
+/* 440 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8064,17 +9739,22 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 437 */
 =======
 /* 431 */
 >>>>>>> Table directive to angular 2
+=======
+/* 441 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.18 String.prototype.startsWith(searchString [, position ])
 	'use strict';
 	var $export     = __webpack_require__(2)
 	  , toLength    = __webpack_require__(24)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , context     = __webpack_require__(150)
 	  , STARTS_WITH = 'startsWith'
@@ -8088,6 +9768,13 @@
 
 	$export($export.P + $export.F * __webpack_require__(137)(STARTS_WITH), 'String', {
 >>>>>>> Table directive to angular 2
+=======
+	  , context     = __webpack_require__(153)
+	  , STARTS_WITH = 'startsWith'
+	  , $startsWith = ''[STARTS_WITH];
+
+	$export($export.P + $export.F * __webpack_require__(141)(STARTS_WITH), 'String', {
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  startsWith: function startsWith(searchString /*, position = 0 */){
 	    var that   = context(this, searchString, STARTS_WITH)
 	      , index  = toLength(Math.min(arguments.length > 1 ? arguments[1] : undefined, that.length))
@@ -8099,11 +9786,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 438 */
 =======
 /* 432 */
 >>>>>>> Table directive to angular 2
+=======
+/* 442 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8115,11 +9806,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 439 */
 =======
 /* 433 */
 >>>>>>> Table directive to angular 2
+=======
+/* 443 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8131,11 +9826,15 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 440 */
 =======
 /* 434 */
 >>>>>>> Table directive to angular 2
+=======
+/* 444 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8147,35 +9846,48 @@
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 441 */
 =======
 /* 435 */
 >>>>>>> Table directive to angular 2
+=======
+/* 445 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 21.1.3.25 String.prototype.trim()
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__webpack_require__(103)('trim', function($trim){
 =======
 	__webpack_require__(101)('trim', function($trim){
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(108)('trim', function($trim){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function trim(){
 	    return $trim(this, 3);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 442 */
 =======
 /* 436 */
 >>>>>>> Table directive to angular 2
+=======
+/* 446 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , $typed       = __webpack_require__(104)
 	  , buffer       = __webpack_require__(152)
@@ -8188,13 +9900,21 @@
 =======
 	  , $typed       = __webpack_require__(102)
 	  , buffer       = __webpack_require__(151)
+=======
+	  , $typed       = __webpack_require__(109)
+	  , buffer       = __webpack_require__(155)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject     = __webpack_require__(8)
-	  , toIndex      = __webpack_require__(61)
+	  , toIndex      = __webpack_require__(65)
 	  , toLength     = __webpack_require__(24)
 	  , isObject     = __webpack_require__(11)
 	  , ArrayBuffer  = __webpack_require__(12).ArrayBuffer
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , speciesConstructor = __webpack_require__(221)
 >>>>>>> Table directive to angular 2
+=======
+	  , speciesConstructor = __webpack_require__(229)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $ArrayBuffer = buffer.ArrayBuffer
 	  , $DataView    = buffer.DataView
 	  , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -8230,6 +9950,7 @@
 	  }
 	});
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	__webpack_require__(85)(ARRAY_BUFFER);
 
@@ -8246,28 +9967,39 @@
 /* 444 */
 =======
 	__webpack_require__(80)(ARRAY_BUFFER);
+=======
+	__webpack_require__(85)(ARRAY_BUFFER);
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
-/* 437 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
-	$export($export.G + $export.W + $export.F * !__webpack_require__(102).ABV, {
-	  DataView: __webpack_require__(151).DataView
+	$export($export.G + $export.W + $export.F * !__webpack_require__(109).ABV, {
+	  DataView: __webpack_require__(155).DataView
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 438 */
 >>>>>>> Table directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Float32', 4, function(init){
+=======
+/* 448 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Float32', 4, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Float32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 445 */
 =======
@@ -8276,12 +10008,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Float64', 8, function(init){
+=======
+/* 449 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Float64', 8, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Float64Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 446 */
 =======
@@ -8290,12 +10029,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Int16', 2, function(init){
+=======
+/* 450 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Int16', 2, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Int16Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 447 */
 =======
@@ -8304,12 +10050,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Int32', 4, function(init){
+=======
+/* 451 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Int32', 4, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Int32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 448 */
 =======
@@ -8318,12 +10071,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Int8', 1, function(init){
+=======
+/* 452 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Int8', 1, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Int8Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 449 */
 =======
@@ -8332,12 +10092,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Uint16', 2, function(init){
+=======
+/* 453 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Uint16', 2, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Uint16Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 450 */
 =======
@@ -8346,12 +10113,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Uint32', 4, function(init){
+=======
+/* 454 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Uint32', 4, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Uint32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 451 */
 =======
@@ -8360,12 +10134,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Uint8', 1, function(init){
+=======
+/* 455 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Uint8', 1, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Uint8Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 452 */
 =======
@@ -8374,12 +10155,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(46)('Uint8', 1, function(init){
+=======
+/* 456 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(47)('Uint8', 1, function(init){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function Uint8ClampedArray(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	}, true);
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 453 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8391,14 +10179,21 @@
 	__webpack_require__(97)('WeakSet', function(get){
 =======
 /* 447 */
+=======
+/* 457 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var weak = __webpack_require__(204);
+	var weak = __webpack_require__(212);
 
 	// 23.4 WeakSet Objects
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(95)('WeakSet', function(get){
 >>>>>>> Table directive to angular 2
+=======
+	__webpack_require__(102)('WeakSet', function(get){
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  return function WeakSet(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.4.3.1 WeakSet.prototype.add(value)
@@ -8408,6 +10203,7 @@
 	}, weak, false, true);
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 454 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8419,6 +10215,12 @@
 
 	var metadata                  = __webpack_require__(43)
 >>>>>>> Table directive to angular 2
+=======
+/* 458 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata                  = __webpack_require__(45)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject                  = __webpack_require__(8)
 	  , toMetaKey                 = metadata.key
 	  , ordinaryDefineOwnMetadata = metadata.set;
@@ -8428,6 +10230,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 455 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8439,6 +10242,12 @@
 
 	var metadata               = __webpack_require__(43)
 >>>>>>> Table directive to angular 2
+=======
+/* 459 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(45)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject               = __webpack_require__(8)
 	  , toMetaKey              = metadata.key
 	  , getOrCreateMetadataMap = metadata.map
@@ -8455,6 +10264,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 456 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8466,14 +10276,21 @@
 	  , getPrototypeOf          = __webpack_require__(37)
 =======
 /* 450 */
+=======
+/* 460 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
-	var Set                     = __webpack_require__(231)
-	  , from                    = __webpack_require__(315)
-	  , metadata                = __webpack_require__(43)
+	var Set                     = __webpack_require__(239)
+	  , from                    = __webpack_require__(325)
+	  , metadata                = __webpack_require__(45)
 	  , anObject                = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , getPrototypeOf          = __webpack_require__(36)
 >>>>>>> Table directive to angular 2
+=======
+	  , getPrototypeOf          = __webpack_require__(37)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , ordinaryOwnMetadataKeys = metadata.keys
 	  , toMetaKey               = metadata.key;
 
@@ -8490,6 +10307,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 457 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8499,12 +10317,19 @@
 	  , getPrototypeOf         = __webpack_require__(37)
 =======
 /* 451 */
+=======
+/* 461 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(43)
+	var metadata               = __webpack_require__(45)
 	  , anObject               = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , getPrototypeOf         = __webpack_require__(36)
 >>>>>>> Table directive to angular 2
+=======
+	  , getPrototypeOf         = __webpack_require__(37)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , ordinaryGetOwnMetadata = metadata.get
 	  , toMetaKey              = metadata.key;
@@ -8521,6 +10346,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 458 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8532,6 +10358,12 @@
 
 	var metadata                = __webpack_require__(43)
 >>>>>>> Table directive to angular 2
+=======
+/* 462 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata                = __webpack_require__(45)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject                = __webpack_require__(8)
 	  , ordinaryOwnMetadataKeys = metadata.keys
 	  , toMetaKey               = metadata.key;
@@ -8541,6 +10373,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 459 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8552,6 +10385,12 @@
 
 	var metadata               = __webpack_require__(43)
 >>>>>>> Table directive to angular 2
+=======
+/* 463 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(45)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject               = __webpack_require__(8)
 	  , ordinaryGetOwnMetadata = metadata.get
 	  , toMetaKey              = metadata.key;
@@ -8562,6 +10401,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 460 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8571,12 +10411,19 @@
 	  , getPrototypeOf         = __webpack_require__(37)
 =======
 /* 454 */
+=======
+/* 464 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(43)
+	var metadata               = __webpack_require__(45)
 	  , anObject               = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , getPrototypeOf         = __webpack_require__(36)
 >>>>>>> Table directive to angular 2
+=======
+	  , getPrototypeOf         = __webpack_require__(37)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , toMetaKey              = metadata.key;
 
@@ -8592,6 +10439,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 461 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8603,6 +10451,12 @@
 
 	var metadata               = __webpack_require__(43)
 >>>>>>> Table directive to angular 2
+=======
+/* 465 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(45)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , anObject               = __webpack_require__(8)
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , toMetaKey              = metadata.key;
@@ -8613,6 +10467,7 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 462 */
 /***/ function(module, exports, __webpack_require__) {
@@ -8622,12 +10477,19 @@
 	  , aFunction                 = __webpack_require__(50)
 =======
 /* 456 */
+=======
+/* 466 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata                  = __webpack_require__(43)
+	var metadata                  = __webpack_require__(45)
 	  , anObject                  = __webpack_require__(8)
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , aFunction                 = __webpack_require__(48)
 >>>>>>> Table directive to angular 2
+=======
+	  , aFunction                 = __webpack_require__(52)
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , toMetaKey                 = metadata.key
 	  , ordinaryDefineOwnMetadata = metadata.set;
 
@@ -8642,11 +10504,15 @@
 	}});
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 463 */
 =======
 /* 457 */
 >>>>>>> Table directive to angular 2
+=======
+/* 467 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// function.name (all IE)
@@ -8967,6 +10833,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 =======
 /* 458 */,
@@ -8980,6 +10847,8 @@
 /* 465 */,
 /* 466 */,
 /* 467 */,
+=======
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 468 */,
 /* 469 */,
 /* 470 */,
@@ -9244,6 +11113,7 @@
 /* 729 */,
 /* 730 */,
 /* 731 */,
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 732 */,
 /* 733 */,
@@ -9252,6 +11122,19 @@
 =======
 /* 732 */
 >>>>>>> Table directive to angular 2
+=======
+/* 732 */,
+/* 733 */,
+/* 734 */,
+/* 735 */,
+/* 736 */,
+/* 737 */,
+/* 738 */,
+/* 739 */,
+/* 740 */,
+/* 741 */,
+/* 742 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9414,11 +11297,15 @@
 
 
 /***/ },
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 736 */
 =======
 /* 733 */
 >>>>>>> Table directive to angular 2
+=======
+/* 743 */
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -10848,11 +12735,15 @@
 
 	})));
 
+<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(464)))
 =======
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(234)))
 >>>>>>> Table directive to angular 2
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(242)))
+>>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ }
 /******/ ]);

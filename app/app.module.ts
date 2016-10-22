@@ -24,6 +24,8 @@ import { VolumeSettingService } from "./components/utils/volumesettingservice";
 import { NodesService } from "./components/utils/nodesservice";
 import { DashboardComponent } from "./dashboard/dashboardctrl";
 import {NetworkModule} from "./networks/network.module";
+import {ServicelbModule} from "./service_lbs/servicelb.module";
+import {VolumeModule} from "./volumes/volume.module";
 
 @NgModule({
     imports: [
@@ -33,6 +35,8 @@ import {NetworkModule} from "./networks/network.module";
         ApplicationGroupsModule,
         SettingsModule,
         NetworkModule,
+        ServicelbModule,
+        VolumeModule
     ],
     declarations: [
         DashboardComponent

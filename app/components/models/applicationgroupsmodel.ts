@@ -20,7 +20,7 @@ export class ApplicationGroupsModel extends Collection {
         return group.tenantName + ':' + group.groupName;
     }
 
-    public get(reload:boolean): Promise{
+    public get(reload:boolean): Promise<any>{
         return super.get(reload)
                     .then((result) => {
                         //add logic for result processing

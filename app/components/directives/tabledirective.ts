@@ -41,7 +41,6 @@ export class CtvTableComponent implements OnChanges, OnInit {
     public sortObj: SortObj
 
     constructor(){
-        debugger;
         this.filteredinputitems = new EventEmitter<any>();
         this.table = {chunks:[], pageNo: 0, tableSize: 12, searchText:''};
         this.pageChunks = [];
@@ -60,13 +59,11 @@ export class CtvTableComponent implements OnChanges, OnInit {
     }
 
     ngOnChanges(){
-        debugger;
         this.showChunk(this.table.pageNo, this.table.searchText);
     }
 
 
     public showChunk(pageNo: number, searchText: string): boolean{
-        debugger;
         this.table.searchText = searchText;
 
         if(isUndefined(pageNo) || pageNo < 0){
@@ -146,7 +143,10 @@ export class CtvTableComponent implements OnChanges, OnInit {
             return this.items;
         }
         for(var item of this.items){
-            var str = JSON.stringify(item);
+            var str='';
+            for(var key in item){
+                str+=JSON.stringify(item[key]);
+            }
             if (str.search(searchText) > -1){
                 selectedItems.push(item);
             }
@@ -188,7 +188,8 @@ export class CtvTableComponent implements OnChanges, OnInit {
     private sort(items: Object[]): Object[]{
         var sortedItems: Object[];
         if(this.sortObj.field=='') return items;
-        sortedItems = _.sortBy(items,[this.sortObj.field]);
+        sortedItems = _.sortBy(items, [this.defaultSortColumn]);
+        sortedItems = _.sortBy(sortedItems, [this.sortObj.field]);
         if(this.sortObj.reverse)
             sortedItems = _.reverse(sortedItems);
         return sortedItems;
@@ -200,19 +201,21 @@ export class CtvTableComponent implements OnChanges, OnInit {
     templateUrl: 'components/directives/tableheader.html'
 })
 
-export class CtvThComponent{
+export class CtvThComponent implements OnInit{
     @Input('sortfield') sortfield: string;
     @Output('sortdata') sortdata: EventEmitter<any>;
     @Input('sortobject') sortobject: SortObj;
     constructor(){
-        debugger
         this.sortdata = new EventEmitter<any>();
         this.sortfield = '';
+        this.sortobject = {field: '', iconDirection: {down: true, up: false}, reverse: false};
     }
 
     sortColumn(){
-        debugger;
         this.sortdata.emit(this.sortfield);
+    }
+
+    ngOnInit(){
     }
 }
 
@@ -229,7 +232,6 @@ export class CtvTpaginationComponent{
     @Output('nextChunk') nextChunk: EventEmitter<any>;
 
     constructor(){
-        debugger;
         this.chunks = [];
         this.showPage = new EventEmitter<any>();
         this.prevChunk = new EventEmitter<any>();
@@ -263,14 +265,12 @@ export class CtvSearchComponent{
     public size:number;
 
     constructor(){
-        debugger;
         this.searchText = '';
         this.size = 30;
         this.placeholder = 'Search';
     }
 
     public showChunk(event: any){
-        debugger;
         this.searchTextChange.emit(event);
     }
 }

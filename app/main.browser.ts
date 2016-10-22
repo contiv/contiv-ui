@@ -34,96 +34,76 @@ import {
 } from "./components/directives/tabledirective";
 import {NetworkListComponent} from "./networks/networklistctrl";
 import {AppGrouplistComponent} from "./applicationgroups/applicationgrouplistctrl";
+import {IsolationListComponent} from "./network_policies/isolationpolicylistctrl";
+import {BandwidthListComponent} from "./network_policies/bandwidthpolicylistctrl";
+import {NetworkStatComponent} from "./networks/networkstatsctrl";
+import {CtvAccordionComponent} from "./components/directives/accordiondirective";
+import {ServicelbListComponent} from "./service_lbs/servicelblistctrl";
+import {ServicelbStatComponent} from "./service_lbs/servicelbstatsctrl";
+import {VolumeListComponent} from "./volumes/volumelistctrl";
+import {VolumeSettingService} from "./components/utils/volumesettingservice";
+import {NetworkService} from "./components/utils/networkservice";
 
 upgradeAdapter.upgradeNg1Provider('$state');
 upgradeAdapter.upgradeNg1Provider('$stateParams');
 
 angular.module('contiv.models')
-    .factory('NetworksModel', upgradeAdapter.downgradeNg2Provider(NetworksModel));
-angular.module('contiv.models')
-    .factory('OrganizationsModel', upgradeAdapter.downgradeNg2Provider(OrganizationsModel));
-angular.module('contiv.models')
-    .factory('ServicelbsModel', upgradeAdapter.downgradeNg2Provider(ServicelbsModel));
-angular.module('contiv.models')
-    .factory('StoragePoliciesModel', upgradeAdapter.downgradeNg2Provider(StoragePoliciesModel));
-angular.module('contiv.models')
-    .factory('PoliciesModel', upgradeAdapter.downgradeNg2Provider(PoliciesModel));
-angular.module('contiv.models')
-    .factory('VolumesModel', upgradeAdapter.downgradeNg2Provider(VolumesModel));
-angular.module('contiv.models')
-    .factory('ApplicationGroupsModel', upgradeAdapter.downgradeNg2Provider(ApplicationGroupsModel));
-angular.module('contiv.models')
-    .factory('NodesModel', upgradeAdapter.downgradeNg2Provider(NodesModel));
-angular.module('contiv.models')
-    .factory('RulesModel', upgradeAdapter.downgradeNg2Provider(RulesModel));
-angular.module('contiv.models')
+    .factory('NetworksModel', upgradeAdapter.downgradeNg2Provider(NetworksModel))
+    .factory('OrganizationsModel', upgradeAdapter.downgradeNg2Provider(OrganizationsModel))
+    .factory('ServicelbsModel', upgradeAdapter.downgradeNg2Provider(ServicelbsModel))
+    .factory('StoragePoliciesModel', upgradeAdapter.downgradeNg2Provider(StoragePoliciesModel))
+    .factory('PoliciesModel', upgradeAdapter.downgradeNg2Provider(PoliciesModel))
+    .factory('VolumesModel', upgradeAdapter.downgradeNg2Provider(VolumesModel))
+    .factory('ApplicationGroupsModel', upgradeAdapter.downgradeNg2Provider(ApplicationGroupsModel))
+    .factory('NodesModel', upgradeAdapter.downgradeNg2Provider(NodesModel))
+    .factory('RulesModel', upgradeAdapter.downgradeNg2Provider(RulesModel))
     .factory('NetprofilesModel', upgradeAdapter.downgradeNg2Provider(NetprofilesModel));
-angular.module('contiv.utils')
-    .factory('CRUDHelperService', upgradeAdapter.downgradeNg2Provider(CRUDHelperService));
-
-angular.module("contiv.utils")
-    .factory("InspectService", upgradeAdapter.downgradeNg2Provider(InspectService))
-    .factory('NodesService', upgradeAdapter.downgradeNg2Provider(NodesService));
-
-angular.module('contiv.dashboard')
-    .directive(
-        'dashboard',
-        upgradeAdapter.downgradeNg2Component(DashboardComponent) as angular.IDirectiveFactory
-    );
-
-angular.module('contiv.networkpolicies')
-    .directive(
-        'isolationpolicycreate',
-        upgradeAdapter.downgradeNg2Component(IsolationPolicyCreateComponent) as angular.IDirectiveFactory
-    )
-    .directive(
-        'isolationpolicydetails',
-        upgradeAdapter.downgradeNg2Component(IsolationPolicyDetailsComponent) as angular.IDirectiveFactory
-    )
-    .directive(
-        'bandwidthpolicycreate',
-        upgradeAdapter.downgradeNg2Component(BandwidthPolicyCreateComponent) as angular.IDirectiveFactory
-    )
-    .directive(
-        'bandwidthpolicydetails',
-        upgradeAdapter.downgradeNg2Component(BandwidthPolicyDetailsComponent) as angular.IDirectiveFactory
-    );
-
-angular.module('contiv.applicationgroups')
-    .directive(
-        'applicationgroupcreate',
-        upgradeAdapter.downgradeNg2Component(ApplicationGroupCreateComponent) as angular.IDirectiveFactory
-    )
-    .directive(
-        'applicationgroupdetails',
-        upgradeAdapter.downgradeNg2Component(ApplicationGroupDetailsComponent) as angular.IDirectiveFactory
-    );
-
-angular.module("contiv.directives")
-    .directive("ctvCollapsible", upgradeAdapter.downgradeNg2Component(CollapsibleComponent) as angular.IDirectiveFactory
-    )
-    .directive("ctvError", upgradeAdapter.downgradeNg2Component(ErrorMessageComponent) as angular.IDirectiveFactory
-    );
 
 angular.module('contiv.settings')
     .directive('networksetting', upgradeAdapter.downgradeNg2Component(NetworkSettingsComponent) as angular.IDirectiveFactory)
     .directive('volumesetting', upgradeAdapter.downgradeNg2Component(VolumeSettingsComponent) as angular.IDirectiveFactory);
-angular.module('contiv.directives')
-    .directive('ctvTable', upgradeAdapter.downgradeNg2Component(CtvTableComponent) as angular.IDirectiveFactory);
-angular.module('contiv.directives')
-    .directive('ctvTh', upgradeAdapter.downgradeNg2Component(CtvThComponent) as angular.IDirectiveFactory);
-angular.module('contiv.directives')
-    .directive('ctvSearch', upgradeAdapter.downgradeNg2Component(CtvSearchComponent) as angular.IDirectiveFactory);
-angular.module('contiv.directives')
-    .directive('ctvTpagination', upgradeAdapter.downgradeNg2Component(CtvTpaginationComponent) as angular.IDirectiveFactory);
+
+angular.module('contiv.utils')
+    .factory('CRUDHelperService', upgradeAdapter.downgradeNg2Provider(CRUDHelperService))
+    .factory("InspectService", upgradeAdapter.downgradeNg2Provider(InspectService))
+    .factory('NetworkService', upgradeAdapter.downgradeNg2Provider(NetworkService))
+    .factory('VolumeSettingService', upgradeAdapter.downgradeNg2Provider(VolumeSettingService))
+    .factory('NodesService', upgradeAdapter.downgradeNg2Provider(NodesService));
+
+angular.module('contiv.dashboard')
+    .directive('dashboard', upgradeAdapter.downgradeNg2Component(DashboardComponent) as angular.IDirectiveFactory);
+
+angular.module('contiv.networkpolicies')
+    .directive('isolationpolicycreate', upgradeAdapter.downgradeNg2Component(IsolationPolicyCreateComponent) as angular.IDirectiveFactory)
+    .directive('bandwidthpolicycreate', upgradeAdapter.downgradeNg2Component(BandwidthPolicyCreateComponent) as angular.IDirectiveFactory)
+    .directive('isolationpolicylist', upgradeAdapter.downgradeNg2Component(IsolationListComponent) as angular.IDirectiveFactory)
+    .directive('bandwidthpolicylist', upgradeAdapter.downgradeNg2Component(BandwidthListComponent) as angular.IDirectiveFactory)
+    .directive('isolationpolicydetails', upgradeAdapter.downgradeNg2Component(IsolationPolicyDetailsComponent) as angular.IDirectiveFactory)
+    .directive('bandwidthpolicydetails', upgradeAdapter.downgradeNg2Component(BandwidthPolicyDetailsComponent) as angular.IDirectiveFactory);
+
+angular.module("contiv.directives")
+    .directive("ctvError", upgradeAdapter.downgradeNg2Component(ErrorMessageComponent) as angular.IDirectiveFactory)
+    .directive('ctvTable', upgradeAdapter.downgradeNg2Component(CtvTableComponent) as angular.IDirectiveFactory)
+    .directive('ctvTh', upgradeAdapter.downgradeNg2Component(CtvThComponent) as angular.IDirectiveFactory)
+    .directive('ctvSearch', upgradeAdapter.downgradeNg2Component(CtvSearchComponent) as angular.IDirectiveFactory)
+    .directive('ctvTpagination', upgradeAdapter.downgradeNg2Component(CtvTpaginationComponent) as angular.IDirectiveFactory)
+    .directive("ctvCollapsible", upgradeAdapter.downgradeNg2Component(CollapsibleComponent) as angular.IDirectiveFactory)
+    .directive('ctvAccordion', upgradeAdapter.downgradeNg2Component(CtvAccordionComponent) as angular.IDirectiveFactory);
+
 angular.module('contiv.networks')
-    .directive(
-        'networkList',
-        upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory
-    );
+    .directive('networkList', upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory)
+    .directive('networkstat', upgradeAdapter.downgradeNg2Component(NetworkStatComponent) as angular.IDirectiveFactory);
+
 angular.module('contiv.applicationgroups')
-    .directive(
-        'applicationGrouplist',
-        upgradeAdapter.downgradeNg2Component(AppGrouplistComponent) as angular.IDirectiveFactory
-    );
+    .directive('applicationGrouplist', upgradeAdapter.downgradeNg2Component(AppGrouplistComponent) as angular.IDirectiveFactory)
+    .directive('applicationgroupcreate', upgradeAdapter.downgradeNg2Component(ApplicationGroupCreateComponent) as angular.IDirectiveFactory)
+    .directive('applicationgroupdetails', upgradeAdapter.downgradeNg2Component(ApplicationGroupDetailsComponent) as angular.IDirectiveFactory);
+
+angular.module('contiv.servicelbs')
+    .directive('servicelbList', upgradeAdapter.downgradeNg2Component(ServicelbListComponent) as angular.IDirectiveFactory)
+    .directive('servicelbstat', upgradeAdapter.downgradeNg2Component(ServicelbStatComponent) as angular.IDirectiveFactory);
+
+angular.module('contiv.volumes')
+    .directive('volumelist', upgradeAdapter.downgradeNg2Component(VolumeListComponent) as angular.IDirectiveFactory)
+
 upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);

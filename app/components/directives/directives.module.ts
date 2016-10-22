@@ -7,6 +7,7 @@ import { ErrorMessageComponent } from "./errormessagedirective";
 import { CollapsibleComponent } from "./collapsibledirective";
 import {CtvTableComponent, CtvThComponent, CtvSearchComponent, CtvTpaginationComponent} from "./tabledirective";
 import {FormsModule} from "@angular/forms";
+import {CtvAccordionComponent} from "./accordiondirective";
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import {FormsModule} from "@angular/forms";
         CtvTableComponent,
         CtvThComponent,
         CtvSearchComponent,
-        CtvTpaginationComponent
+        CtvTpaginationComponent,
+        CtvAccordionComponent
     ],
     exports: [
         ErrorMessageComponent,
@@ -26,7 +28,8 @@ import {FormsModule} from "@angular/forms";
         CtvTableComponent,
         CtvThComponent,
         CtvSearchComponent,
-        CtvTpaginationComponent
+        CtvTpaginationComponent,
+        CtvAccordionComponent
     ]
 })
 export class DirectivesModule {}
