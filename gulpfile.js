@@ -35,7 +35,6 @@ gulp.task('build', function () {
             '!app/dashboard/dashboardctrl.js',
             '!app/network_policies/networkpolicies.module.js',
             '!app/network_policies/isolationpolicycreatectrl.js',
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
             '!app/network_policies/isolationpolicydetailsctrl.js',
             '!app/network_policies/bandwidthpolicycreatectrl.js',
             '!app/network_policies/bandwidthpolicydetailsctrl.js',
@@ -46,18 +45,11 @@ gulp.task('build', function () {
             '!app/applicationgroups/bandwidthpolicydirective.js',
             '!app/settings/settings.module.js',
             '!app/settings/networksettingctrl.js',
-            '!app/settings/volumesettingctrl.js'
-=======
-            '!app/network_policies/bandwidthpolicycreatectrl.js',
+            '!app/settings/volumesettingctrl.js',
             '!app/components/directives/tabledirective.js',
             '!app/components/directives/accordiondirective.js',
             '!app/networks/networklistctrl.js',
             '!app/networks/network.module.js',
-            '!app/applicationgroups/applicationgroup.module.js',
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-            '!app/applicationgroups/applicationgrouplistctrl.js'
->>>>>>> Table directive to angular 2
-=======
             '!app/applicationgroups/applicationgrouplistctrl.js',
             '!app/network_policies/isolationpolicylistctrl.js',
             '!app/network_policies/bandwidthpolicylistctrl.js',
@@ -66,8 +58,9 @@ gulp.task('build', function () {
             '!app/service_lbs/servicelblistctrl.js',
             '!app/service_lbs/servicelbstatsctrl.js',
             '!app/volumes/volume.module.js',
-            '!app/volumes/volumelistctrl.js'
->>>>>>> converting volumelist, servicelist ctrl to ang2
+            '!app/volumes/volumelistctrl.js',
+            '!app/storage_policies/storagepolicy.module.js',
+            '!app/storage_policies/storagepolicylistctrl.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
@@ -116,7 +109,6 @@ gulp.task('dev-build', function () {
             '!app/dashboard/dashboardctrl.js',
             '!app/network_policies/networkpolicies.module.js',
             '!app/network_policies/isolationpolicycreatectrl.js',
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
             '!app/network_policies/isolationpolicydetailsctrl.js',
             '!app/network_policies/bandwidthpolicycreatectrl.js',
             '!app/network_policies/bandwidthpolicydetailsctrl.js',
@@ -127,18 +119,11 @@ gulp.task('dev-build', function () {
             '!app/applicationgroups/bandwidthpolicydirective.js',
             '!app/settings/settings.module.js',
             '!app/settings/networksettingctrl.js',
-            '!app/settings/volumesettingctrl.js'
-=======
-            '!app/network_policies/bandwidthpolicycreatectrl.js',
+            '!app/settings/volumesettingctrl.js',
             '!app/components/directives/tabledirective.js',
             '!app/components/directives/accordiondirective.js',
             '!app/networks/networklistctrl.js',
             '!app/networks/network.module.js',
-            '!app/applicationgroups/applicationgroup.module.js',
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-            '!app/applicationgroups/applicationgrouplistctrl.js'
->>>>>>> Table directive to angular 2
-=======
             '!app/applicationgroups/applicationgrouplistctrl.js',
             '!app/network_policies/isolationpolicylistctrl.js',
             '!app/network_policies/bandwidthpolicylistctrl.js',
@@ -147,8 +132,9 @@ gulp.task('dev-build', function () {
             '!app/service_lbs/servicelblistctrl.js',
             '!app/service_lbs/servicelbstatsctrl.js',
             '!app/volumes/volume.module.js',
-            '!app/volumes/volumelistctrl.js'
->>>>>>> converting volumelist, servicelist ctrl to ang2
+            '!app/volumes/volumelistctrl.js',
+            '!app/storage_policies/storagepolicy.module.js',
+            '!app/storage_policies/storagepolicylistctrl.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code

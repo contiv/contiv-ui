@@ -31,24 +31,28 @@ webpackJsonp([1],[
 	__webpack_require__(167);
 =======
 	__webpack_require__(4);
-	__webpack_require__(40);
-	__webpack_require__(120);
+	__webpack_require__(35);
+	__webpack_require__(121);
 	__webpack_require__(94);
 	__webpack_require__(170);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 	__webpack_require__(19);
-	__webpack_require__(275);
-	__webpack_require__(59);
+	__webpack_require__(276);
+	__webpack_require__(51);
 	__webpack_require__(171);
 	// RxJS 5
-	__webpack_require__(48);
+	__webpack_require__(40);
 	// other libraries
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(269);
 >>>>>>> Table directive to angular 2
 =======
 	__webpack_require__(277);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	__webpack_require__(278);
+>>>>>>> adding storage policy list - angular 2
 	// For vendors for example jQuery, Lodash, angular2-jwt import them here
 	// Also see src/typings.d.ts as you also need to run `typings install x` where `x` is your module 
 	
@@ -59,6 +63,7 @@ webpackJsonp([1],[
 
 	"use strict";
 	var root_1 = __webpack_require__(25);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var toSubscriber_1 = __webpack_require__(733);
@@ -71,6 +76,10 @@ webpackJsonp([1],[
 	var toSubscriber_1 = __webpack_require__(738);
 	var observable_1 = __webpack_require__(116);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var toSubscriber_1 = __webpack_require__(740);
+	var observable_1 = __webpack_require__(117);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * A representation of any set of values over any amount of time. This the most basic building block
 	 * of RxJS.
@@ -221,6 +230,7 @@ webpackJsonp([1],[
 	};
 	var isFunction_1 = __webpack_require__(168);
 	var Subscription_1 = __webpack_require__(21);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var Observer_1 = __webpack_require__(466);
@@ -233,6 +243,10 @@ webpackJsonp([1],[
 	var Observer_1 = __webpack_require__(472);
 	var rxSubscriber_1 = __webpack_require__(117);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var Observer_1 = __webpack_require__(474);
+	var rxSubscriber_1 = __webpack_require__(118);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Implements the {@link Observer} interface and extends the
 	 * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -10374,6 +10388,7 @@ webpackJsonp([1],[
 
 	"use strict";
 	var root_1 = __webpack_require__(25);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
@@ -10398,6 +10413,14 @@ webpackJsonp([1],[
 	var InnerSubscriber_1 = __webpack_require__(471);
 	var observable_1 = __webpack_require__(116);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isArray_1 = __webpack_require__(41);
+	var isPromise_1 = __webpack_require__(274);
+	var Observable_1 = __webpack_require__(1);
+	var iterator_1 = __webpack_require__(91);
+	var InnerSubscriber_1 = __webpack_require__(473);
+	var observable_1 = __webpack_require__(117);
+>>>>>>> adding storage policy list - angular 2
 	function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
 	    var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
 	    if (destination.closed) {
@@ -10497,9 +10520,14 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 	var ObjectUnsubscribedError_1 = __webpack_require__(167);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	var SubjectSubscription_1 = __webpack_require__(474);
 	var rxSubscriber_1 = __webpack_require__(117);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var SubjectSubscription_1 = __webpack_require__(476);
+	var rxSubscriber_1 = __webpack_require__(118);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * @class SubjectSubscriber<T>
 	 */
@@ -12673,6 +12701,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
@@ -12697,6 +12726,14 @@ webpackJsonp([1],[
 	var errorObject_1 = __webpack_require__(22);
 	var UnsubscriptionError_1 = __webpack_require__(271);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isArray_1 = __webpack_require__(41);
+	var isObject_1 = __webpack_require__(738);
+	var isFunction_1 = __webpack_require__(168);
+	var tryCatch_1 = __webpack_require__(23);
+	var errorObject_1 = __webpack_require__(22);
+	var UnsubscriptionError_1 = __webpack_require__(272);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Represents a disposable resource, such as the execution of an Observable. A
 	 * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -12928,6 +12965,7 @@ webpackJsonp([1],[
 /* 32 */,
 /* 33 */,
 /* 34 */,
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 /* 35 */,
 /* 36 */,
 /* 37 */,
@@ -13185,6 +13223,9 @@ webpackJsonp([1],[
 =======
 /* 40 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 35 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -16322,6 +16363,7 @@ webpackJsonp([1],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 49 */,
@@ -16453,6 +16495,13 @@ webpackJsonp([1],[
 /* 47 */,
 /* 48 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16490,13 +16539,11 @@ webpackJsonp([1],[
 	exports.Observable = Observable_1.Observable;
 	// statics
 	/* tslint:disable:no-use-before-declare */
-	__webpack_require__(475);
-	__webpack_require__(476);
 	__webpack_require__(477);
 	__webpack_require__(478);
 	__webpack_require__(479);
-	__webpack_require__(482);
-	__webpack_require__(483);
+	__webpack_require__(480);
+	__webpack_require__(481);
 	__webpack_require__(484);
 	__webpack_require__(485);
 	__webpack_require__(486);
@@ -16505,22 +16552,22 @@ webpackJsonp([1],[
 	__webpack_require__(489);
 	__webpack_require__(490);
 	__webpack_require__(491);
-	__webpack_require__(496);
 	__webpack_require__(492);
 	__webpack_require__(493);
+	__webpack_require__(498);
 	__webpack_require__(494);
 	__webpack_require__(495);
+	__webpack_require__(496);
 	__webpack_require__(497);
-	__webpack_require__(500);
-	__webpack_require__(498);
 	__webpack_require__(499);
+	__webpack_require__(502);
+	__webpack_require__(500);
 	__webpack_require__(501);
+	__webpack_require__(503);
 	//dom
-	__webpack_require__(480);
-	__webpack_require__(481);
+	__webpack_require__(482);
+	__webpack_require__(483);
 	//operators
-	__webpack_require__(504);
-	__webpack_require__(505);
 	__webpack_require__(506);
 	__webpack_require__(507);
 	__webpack_require__(508);
@@ -16533,37 +16580,37 @@ webpackJsonp([1],[
 	__webpack_require__(515);
 	__webpack_require__(516);
 	__webpack_require__(517);
-	__webpack_require__(522);
 	__webpack_require__(518);
 	__webpack_require__(519);
-	__webpack_require__(520);
-	__webpack_require__(243);
-	__webpack_require__(521);
-	__webpack_require__(523);
 	__webpack_require__(524);
+	__webpack_require__(520);
+	__webpack_require__(521);
+	__webpack_require__(522);
+	__webpack_require__(244);
+	__webpack_require__(523);
 	__webpack_require__(525);
 	__webpack_require__(526);
 	__webpack_require__(527);
-	__webpack_require__(530);
-	__webpack_require__(531);
-	__webpack_require__(532);
 	__webpack_require__(528);
+	__webpack_require__(529);
+	__webpack_require__(532);
 	__webpack_require__(533);
 	__webpack_require__(534);
+	__webpack_require__(530);
 	__webpack_require__(535);
 	__webpack_require__(536);
 	__webpack_require__(537);
 	__webpack_require__(538);
 	__webpack_require__(539);
 	__webpack_require__(540);
-	__webpack_require__(502);
-	__webpack_require__(503);
 	__webpack_require__(541);
 	__webpack_require__(542);
-	__webpack_require__(529);
-	__webpack_require__(68);
+	__webpack_require__(504);
+	__webpack_require__(505);
 	__webpack_require__(543);
 	__webpack_require__(544);
+	__webpack_require__(531);
+	__webpack_require__(68);
 	__webpack_require__(545);
 	__webpack_require__(546);
 	__webpack_require__(547);
@@ -16579,10 +16626,10 @@ webpackJsonp([1],[
 	__webpack_require__(557);
 	__webpack_require__(558);
 	__webpack_require__(559);
-	__webpack_require__(561);
 	__webpack_require__(560);
-	__webpack_require__(562);
+	__webpack_require__(561);
 	__webpack_require__(563);
+	__webpack_require__(562);
 	__webpack_require__(564);
 	__webpack_require__(565);
 	__webpack_require__(566);
@@ -16621,18 +16668,20 @@ webpackJsonp([1],[
 	__webpack_require__(599);
 	__webpack_require__(600);
 	__webpack_require__(601);
+	__webpack_require__(602);
+	__webpack_require__(603);
 	/* tslint:disable:no-unused-variable */
 	var Subscription_1 = __webpack_require__(21);
 	exports.Subscription = Subscription_1.Subscription;
 	var Subscriber_1 = __webpack_require__(3);
 	exports.Subscriber = Subscriber_1.Subscriber;
-	var AsyncSubject_1 = __webpack_require__(112);
+	var AsyncSubject_1 = __webpack_require__(113);
 	exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
-	var ReplaySubject_1 = __webpack_require__(113);
+	var ReplaySubject_1 = __webpack_require__(114);
 	exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
 	var BehaviorSubject_1 = __webpack_require__(158);
 	exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
-	var MulticastObservable_1 = __webpack_require__(245);
+	var MulticastObservable_1 = __webpack_require__(246);
 	exports.MulticastObservable = MulticastObservable_1.MulticastObservable;
 	var ConnectableObservable_1 = __webpack_require__(159);
 	exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
@@ -16640,31 +16689,31 @@ webpackJsonp([1],[
 	exports.Notification = Notification_1.Notification;
 	var EmptyError_1 = __webpack_require__(92);
 	exports.EmptyError = EmptyError_1.EmptyError;
-	var ArgumentOutOfRangeError_1 = __webpack_require__(118);
+	var ArgumentOutOfRangeError_1 = __webpack_require__(119);
 	exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
 	var ObjectUnsubscribedError_1 = __webpack_require__(167);
 	exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
-	var UnsubscriptionError_1 = __webpack_require__(271);
+	var UnsubscriptionError_1 = __webpack_require__(272);
 	exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
-	var timeInterval_1 = __webpack_require__(263);
+	var timeInterval_1 = __webpack_require__(264);
 	exports.TimeInterval = timeInterval_1.TimeInterval;
-	var timestamp_1 = __webpack_require__(264);
+	var timestamp_1 = __webpack_require__(265);
 	exports.Timestamp = timestamp_1.Timestamp;
-	var TestScheduler_1 = __webpack_require__(729);
+	var TestScheduler_1 = __webpack_require__(731);
 	exports.TestScheduler = TestScheduler_1.TestScheduler;
-	var VirtualTimeScheduler_1 = __webpack_require__(266);
+	var VirtualTimeScheduler_1 = __webpack_require__(267);
 	exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
-	var AjaxObservable_1 = __webpack_require__(247);
+	var AjaxObservable_1 = __webpack_require__(248);
 	exports.AjaxResponse = AjaxObservable_1.AjaxResponse;
 	exports.AjaxError = AjaxObservable_1.AjaxError;
 	exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
-	var asap_1 = __webpack_require__(267);
+	var asap_1 = __webpack_require__(268);
 	var async_1 = __webpack_require__(27);
-	var queue_1 = __webpack_require__(268);
-	var animationFrame_1 = __webpack_require__(726);
-	var rxSubscriber_1 = __webpack_require__(117);
+	var queue_1 = __webpack_require__(269);
+	var animationFrame_1 = __webpack_require__(728);
+	var rxSubscriber_1 = __webpack_require__(118);
 	var iterator_1 = __webpack_require__(91);
-	var observable_1 = __webpack_require__(116);
+	var observable_1 = __webpack_require__(117);
 	/* tslint:enable:no-unused-variable */
 	/**
 	 * @typedef {Object} Rx.Scheduler
@@ -16709,7 +16758,23 @@ webpackJsonp([1],[
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
-/* 49 */
+/* 41 */
+/***/ function(module, exports) {
+
+	"use strict";
+	exports.isArray = Array.isArray || (function (x) { return x && typeof x.length === 'number'; });
+	//# sourceMappingURL=isArray.js.map
+
+/***/ },
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -16725,9 +16790,14 @@ webpackJsonp([1],[
 	};
 	var Observable_1 = __webpack_require__(1);
 	var ScalarObservable_1 = __webpack_require__(160);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	var EmptyObservable_1 = __webpack_require__(57);
 	var isScheduler_1 = __webpack_require__(58);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var EmptyObservable_1 = __webpack_require__(58);
+	var isScheduler_1 = __webpack_require__(59);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -16842,6 +16912,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ArrayObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 /* 50 */,
 /* 51 */,
 /* 52 */,
@@ -16949,6 +17020,9 @@ webpackJsonp([1],[
 =======
 /* 59 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 51 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -16957,6 +17031,7 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(4), __webpack_require__(259), __webpack_require__(16), __webpack_require__(1), __webpack_require__(158)) :
@@ -16966,6 +17041,9 @@ webpackJsonp([1],[
 =======
 	     true ? factory(exports, __webpack_require__(4), __webpack_require__(265), __webpack_require__(16), __webpack_require__(1), __webpack_require__(161)) :
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	     true ? factory(exports, __webpack_require__(4), __webpack_require__(266), __webpack_require__(16), __webpack_require__(1), __webpack_require__(161)) :
+>>>>>>> adding storage policy list - angular 2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'rxjs/operator/toPromise', 'rxjs/Subject', 'rxjs/Observable', 'rxjs/observable/fromPromise'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.forms = global.ng.forms || {}),global.ng.core,global.Rx.Observable.prototype,global.Rx,global.Rx,global.Rx.Observable));
 	}(this, function (exports,_angular_core,rxjs_operator_toPromise,rxjs_Subject,rxjs_Observable,rxjs_observable_fromPromise) { 'use strict';
@@ -21768,6 +21846,103 @@ webpackJsonp([1],[
 
 
 /***/ },
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var Observable_1 = __webpack_require__(1);
+	/**
+	 * We need this JSDoc comment for affecting ESDoc.
+	 * @extends {Ignored}
+	 * @hide true
+	 */
+	var EmptyObservable = (function (_super) {
+	    __extends(EmptyObservable, _super);
+	    function EmptyObservable(scheduler) {
+	        _super.call(this);
+	        this.scheduler = scheduler;
+	    }
+	    /**
+	     * Creates an Observable that emits no items to the Observer and immediately
+	     * emits a complete notification.
+	     *
+	     * <span class="informal">Just emits 'complete', and nothing else.
+	     * </span>
+	     *
+	     * <img src="./img/empty.png" width="100%">
+	     *
+	     * This static operator is useful for creating a simple Observable that only
+	     * emits the complete notification. It can be used for composing with other
+	     * Observables, such as in a {@link mergeMap}.
+	     *
+	     * @example <caption>Emit the number 7, then complete.</caption>
+	     * var result = Rx.Observable.empty().startWith(7);
+	     * result.subscribe(x => console.log(x));
+	     *
+	     * @example <caption>Map and flatten only odd numbers to the sequence 'a', 'b', 'c'</caption>
+	     * var interval = Rx.Observable.interval(1000);
+	     * var result = interval.mergeMap(x =>
+	     *   x % 2 === 1 ? Rx.Observable.of('a', 'b', 'c') : Rx.Observable.empty()
+	     * );
+	     * result.subscribe(x => console.log(x));
+	     *
+	     * @see {@link create}
+	     * @see {@link never}
+	     * @see {@link of}
+	     * @see {@link throw}
+	     *
+	     * @param {Scheduler} [scheduler] A {@link Scheduler} to use for scheduling
+	     * the emission of the complete notification.
+	     * @return {Observable} An "empty" Observable: emits only the complete
+	     * notification.
+	     * @static true
+	     * @name empty
+	     * @owner Observable
+	     */
+	    EmptyObservable.create = function (scheduler) {
+	        return new EmptyObservable(scheduler);
+	    };
+	    EmptyObservable.dispatch = function (arg) {
+	        var subscriber = arg.subscriber;
+	        subscriber.complete();
+	    };
+	    EmptyObservable.prototype._subscribe = function (subscriber) {
+	        var scheduler = this.scheduler;
+	        if (scheduler) {
+	            return scheduler.schedule(EmptyObservable.dispatch, 0, { subscriber: subscriber });
+	        }
+	        else {
+	            subscriber.complete();
+	        }
+	    };
+	    return EmptyObservable;
+	}(Observable_1.Observable));
+	exports.EmptyObservable = EmptyObservable;
+	//# sourceMappingURL=EmptyObservable.js.map
+
+/***/ },
+/* 59 */
+/***/ function(module, exports) {
+
+	"use strict";
+	function isScheduler(value) {
+	    return value && typeof value.schedule === 'function';
+	}
+	exports.isScheduler = isScheduler;
+	//# sourceMappingURL=isScheduler.js.map
+
+/***/ },
 /* 60 */,
 /* 61 */,
 /* 62 */,
@@ -21781,7 +21956,7 @@ webpackJsonp([1],[
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
-	var map_1 = __webpack_require__(114);
+	var map_1 = __webpack_require__(115);
 	Observable_1.Observable.prototype.map = map_1.map;
 	//# sourceMappingURL=map.js.map
 
@@ -21791,11 +21966,12 @@ webpackJsonp([1],[
 /* 71 */,
 /* 72 */,
 /* 73 */,
-/* 74 */
+/* 74 */,
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var MulticastObservable_1 = __webpack_require__(245);
+	var MulticastObservable_1 = __webpack_require__(246);
 	var ConnectableObservable_1 = __webpack_require__(159);
 	/**
 	 * Returns an Observable that emits the results of invoking a specified selector on items
@@ -21834,7 +22010,6 @@ webpackJsonp([1],[
 	//# sourceMappingURL=multicast.js.map
 
 /***/ },
-/* 75 */,
 /* 76 */,
 /* 77 */,
 /* 78 */,
@@ -22330,7 +22505,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var root_1 = __webpack_require__(25);
-	var Action_1 = __webpack_require__(719);
+	var Action_1 = __webpack_require__(721);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -22476,7 +22651,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var Scheduler_1 = __webpack_require__(473);
+	var Scheduler_1 = __webpack_require__(475);
 	var AsyncScheduler = (function (_super) {
 	    __extends(AsyncScheduler, _super);
 	    function AsyncScheduler() {
@@ -22615,7 +22790,7 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
-	     true ? factory(exports, __webpack_require__(40), __webpack_require__(4)) :
+	     true ? factory(exports, __webpack_require__(35), __webpack_require__(4)) :
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/common', '@angular/core'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.platformBrowser = global.ng.platformBrowser || {}),global.ng.common,global.ng.core));
 	}(this, function (exports,_angular_common,_angular_core) { 'use strict';
@@ -49061,7 +49236,8 @@ webpackJsonp([1],[
 /* 109 */,
 /* 110 */,
 /* 111 */,
-/* 112 */
+/* 112 */,
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49114,7 +49290,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AsyncSubject.js.map
 
 /***/ },
-/* 113 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49124,7 +49300,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subject_1 = __webpack_require__(16);
-	var queue_1 = __webpack_require__(268);
+	var queue_1 = __webpack_require__(269);
 	var observeOn_1 = __webpack_require__(165);
 	/**
 	 * @class ReplaySubject<T>
@@ -49198,7 +49374,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ReplaySubject.js.map
 
 /***/ },
-/* 114 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49290,7 +49466,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=map.js.map
 
 /***/ },
-/* 115 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49407,7 +49583,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=reduce.js.map
 
 /***/ },
-/* 116 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49434,7 +49610,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=observable.js.map
 
 /***/ },
-/* 117 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49445,7 +49621,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=rxSubscriber.js.map
 
 /***/ },
-/* 118 */
+/* 119 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -49478,7 +49654,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ArgumentOutOfRangeError.js.map
 
 /***/ },
-/* 119 */
+/* 120 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -49489,7 +49665,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isDate.js.map
 
 /***/ },
-/* 120 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -68324,10 +68500,13 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 161 */
 =======
 /* 121 */,
+=======
+>>>>>>> adding storage policy list - angular 2
 /* 122 */,
 /* 123 */,
 /* 124 */,
@@ -68783,7 +68962,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var PromiseObservable_1 = __webpack_require__(246);
+	var PromiseObservable_1 = __webpack_require__(247);
 	exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 	//# sourceMappingURL=fromPromise.js.map
 
@@ -68797,8 +68976,8 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var ArrayObservable_1 = __webpack_require__(49);
-	var isArray_1 = __webpack_require__(39);
+	var ArrayObservable_1 = __webpack_require__(50);
+	var isArray_1 = __webpack_require__(41);
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
 	var none = {};
@@ -68944,8 +69123,8 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var isScheduler_1 = __webpack_require__(58);
-	var ArrayObservable_1 = __webpack_require__(49);
+	var isScheduler_1 = __webpack_require__(59);
+	var ArrayObservable_1 = __webpack_require__(50);
 	var mergeAll_1 = __webpack_require__(88);
 	/**
 	 * Creates an output Observable which sequentially emits all values from every
@@ -69552,8 +69731,8 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var ArrayObservable_1 = __webpack_require__(49);
-	var isArray_1 = __webpack_require__(39);
+	var ArrayObservable_1 = __webpack_require__(50);
+	var isArray_1 = __webpack_require__(41);
 	var Subscriber_1 = __webpack_require__(3);
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
@@ -69850,6 +70029,7 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
@@ -69859,6 +70039,9 @@ webpackJsonp([1],[
 =======
 	var isArray_1 = __webpack_require__(39);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isArray_1 = __webpack_require__(41);
+>>>>>>> adding storage policy list - angular 2
 	function isNumeric(val) {
 	    // parseFloat NaNs numeric-cast false positives (null|true|false|"")
 	    // ...but misinterprets leading-number strings, particularly hex literals ("0x...")
@@ -69880,6 +70063,7 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(115), __webpack_require__(4), __webpack_require__(93)) :
@@ -69889,6 +70073,9 @@ webpackJsonp([1],[
 =======
 	     true ? factory(exports, __webpack_require__(120), __webpack_require__(4), __webpack_require__(94)) :
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	     true ? factory(exports, __webpack_require__(121), __webpack_require__(4), __webpack_require__(94)) :
+>>>>>>> adding storage policy list - angular 2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/compiler', '@angular/core', '@angular/platform-browser'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.platformBrowserDynamic = global.ng.platformBrowserDynamic || {}),global.ng.compiler,global.ng.core,global.ng.platformBrowser));
 	}(this, function (exports,_angular_compiler,_angular_core,_angular_platformBrowser) { 'use strict';
@@ -70101,6 +70288,7 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(4), __webpack_require__(167), __webpack_require__(115)) :
@@ -70110,6 +70298,9 @@ webpackJsonp([1],[
 =======
 	     true ? factory(exports, __webpack_require__(4), __webpack_require__(170), __webpack_require__(120)) :
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	     true ? factory(exports, __webpack_require__(4), __webpack_require__(170), __webpack_require__(121)) :
+>>>>>>> adding storage policy list - angular 2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/platform-browser-dynamic', '@angular/compiler'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.upgrade = global.ng.upgrade || {}),global.ng.core,global.ng.platformBrowserDynamic,global.ng.compiler));
 	}(this, function (exports,_angular_core,_angular_platformBrowserDynamic,_angular_compiler) { 'use strict';
@@ -72203,7 +72394,7 @@ webpackJsonp([1],[
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(19);
 	var Observable_1 = __webpack_require__(1);
-	__webpack_require__(243);
+	__webpack_require__(244);
 	var http_status_codes_1 = __webpack_require__(172);
 	////////////  HELPERS ///////////
 	/**
@@ -72778,12 +72969,18 @@ webpackJsonp([1],[
 /* 240 */,
 /* 241 */,
 /* 242 */,
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 /* 243 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 243 */,
+/* 244 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var delay_1 = __webpack_require__(652);
@@ -72793,10 +72990,14 @@ webpackJsonp([1],[
 =======
 	var delay_1 = __webpack_require__(657);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var delay_1 = __webpack_require__(659);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.delay = delay_1.delay;
 	//# sourceMappingURL=delay.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 238 */
@@ -72806,6 +73007,9 @@ webpackJsonp([1],[
 =======
 /* 244 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 245 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72814,6 +73018,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
@@ -72850,6 +73055,18 @@ webpackJsonp([1],[
 	var observeOn_1 = __webpack_require__(165);
 	var observable_1 = __webpack_require__(116);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isArray_1 = __webpack_require__(41);
+	var isPromise_1 = __webpack_require__(274);
+	var PromiseObservable_1 = __webpack_require__(247);
+	var IteratorObservable_1 = __webpack_require__(615);
+	var ArrayObservable_1 = __webpack_require__(50);
+	var ArrayLikeObservable_1 = __webpack_require__(604);
+	var iterator_1 = __webpack_require__(91);
+	var Observable_1 = __webpack_require__(1);
+	var observeOn_1 = __webpack_require__(165);
+	var observable_1 = __webpack_require__(117);
+>>>>>>> adding storage policy list - angular 2
 	var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
@@ -72952,6 +73169,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=FromObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 239 */
@@ -72961,6 +73179,9 @@ webpackJsonp([1],[
 =======
 /* 245 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 246 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -72992,6 +73213,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=MulticastObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 240 */
@@ -73001,6 +73223,9 @@ webpackJsonp([1],[
 =======
 /* 246 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 247 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73126,6 +73351,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=PromiseObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 241 */
@@ -73135,6 +73361,9 @@ webpackJsonp([1],[
 =======
 /* 247 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 248 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73148,6 +73377,7 @@ webpackJsonp([1],[
 	var errorObject_1 = __webpack_require__(22);
 	var Observable_1 = __webpack_require__(1);
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var map_1 = __webpack_require__(109);
@@ -73157,6 +73387,9 @@ webpackJsonp([1],[
 =======
 	var map_1 = __webpack_require__(114);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var map_1 = __webpack_require__(115);
+>>>>>>> adding storage policy list - angular 2
 	function getCORSRequest() {
 	    if (root_1.root.XMLHttpRequest) {
 	        var xhr = new root_1.root.XMLHttpRequest();
@@ -73540,6 +73773,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AjaxObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 242 */
@@ -73561,10 +73795,18 @@ webpackJsonp([1],[
 	"use strict";
 	var FromObservable_1 = __webpack_require__(244);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var FromObservable_1 = __webpack_require__(245);
+>>>>>>> adding storage policy list - angular 2
 	exports.from = FromObservable_1.FromObservable.create;
 	//# sourceMappingURL=from.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 243 */
@@ -73582,10 +73824,18 @@ webpackJsonp([1],[
 	"use strict";
 	var ArrayObservable_1 = __webpack_require__(49);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ArrayObservable_1 = __webpack_require__(50);
+>>>>>>> adding storage policy list - angular 2
 	exports.of = ArrayObservable_1.ArrayObservable.of;
 	//# sourceMappingURL=of.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 244 */
@@ -73595,6 +73845,9 @@ webpackJsonp([1],[
 =======
 /* 250 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 251 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73664,6 +73917,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=catch.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 245 */
@@ -73680,6 +73934,9 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 /* 251 */
+=======
+/* 252 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73734,6 +73991,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concatAll.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 246 */
@@ -73743,6 +74001,9 @@ webpackJsonp([1],[
 =======
 /* 252 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 253 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73830,6 +74091,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=distinct.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 247 */
@@ -73839,6 +74101,9 @@ webpackJsonp([1],[
 =======
 /* 253 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 254 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -73920,6 +74185,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 248 */
@@ -73929,6 +74195,9 @@ webpackJsonp([1],[
 =======
 /* 254 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 255 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74001,6 +74270,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=every.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 249 */
@@ -74010,6 +74280,9 @@ webpackJsonp([1],[
 =======
 /* 255 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 256 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74107,6 +74380,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=filter.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 250 */
@@ -74116,6 +74390,9 @@ webpackJsonp([1],[
 =======
 /* 256 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 257 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74220,6 +74497,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=find.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 251 */
@@ -74229,6 +74507,9 @@ webpackJsonp([1],[
 =======
 /* 257 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 258 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74389,6 +74670,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=first.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 252 */
@@ -74398,6 +74680,9 @@ webpackJsonp([1],[
 =======
 /* 258 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 259 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74528,6 +74813,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=last.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 253 */
@@ -74548,13 +74834,20 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 /* 259 */
+=======
+/* 260 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ArrayObservable_1 = __webpack_require__(49);
+	var ArrayObservable_1 = __webpack_require__(50);
 	var mergeAll_1 = __webpack_require__(88);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	var isScheduler_1 = __webpack_require__(58);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isScheduler_1 = __webpack_require__(59);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Creates an output Observable which concurrently emits all values from every
 	 * given input Observable.
@@ -74683,6 +74976,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 254 */
@@ -74692,6 +74986,9 @@ webpackJsonp([1],[
 =======
 /* 260 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 261 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74850,6 +75147,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 255 */
@@ -74859,6 +75157,9 @@ webpackJsonp([1],[
 =======
 /* 261 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 262 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74867,6 +75168,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var FromObservable_1 = __webpack_require__(238);
@@ -74879,6 +75181,10 @@ webpackJsonp([1],[
 	var FromObservable_1 = __webpack_require__(244);
 	var isArray_1 = __webpack_require__(39);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var FromObservable_1 = __webpack_require__(245);
+	var isArray_1 = __webpack_require__(41);
+>>>>>>> adding storage policy list - angular 2
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
 	function onErrorResumeNext() {
@@ -74948,6 +75254,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 256 */
@@ -74957,6 +75264,9 @@ webpackJsonp([1],[
 =======
 /* 262 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 263 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -74965,6 +75275,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isArray_1 = __webpack_require__(39);
@@ -74977,6 +75288,10 @@ webpackJsonp([1],[
 	var isArray_1 = __webpack_require__(39);
 	var ArrayObservable_1 = __webpack_require__(49);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isArray_1 = __webpack_require__(41);
+	var ArrayObservable_1 = __webpack_require__(50);
+>>>>>>> adding storage policy list - angular 2
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
 	/**
@@ -75082,6 +75397,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=race.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 257 */
@@ -75091,6 +75407,9 @@ webpackJsonp([1],[
 =======
 /* 263 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 264 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -75154,6 +75473,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=timeInterval.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 258 */
@@ -75163,6 +75483,9 @@ webpackJsonp([1],[
 =======
 /* 264 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 265 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -75217,6 +75540,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=timestamp.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 259 */
@@ -75226,6 +75550,9 @@ webpackJsonp([1],[
 =======
 /* 265 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 266 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -75258,6 +75585,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=toPromise.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 260 */
@@ -75267,6 +75595,9 @@ webpackJsonp([1],[
 =======
 /* 266 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 267 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -75379,6 +75710,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=VirtualTimeScheduler.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 261 */
@@ -75403,10 +75735,19 @@ webpackJsonp([1],[
 	var AsapAction_1 = __webpack_require__(722);
 	var AsapScheduler_1 = __webpack_require__(723);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var AsapAction_1 = __webpack_require__(724);
+	var AsapScheduler_1 = __webpack_require__(725);
+>>>>>>> adding storage policy list - angular 2
 	exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 	//# sourceMappingURL=asap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 262 */
@@ -75431,10 +75772,19 @@ webpackJsonp([1],[
 	var QueueAction_1 = __webpack_require__(724);
 	var QueueScheduler_1 = __webpack_require__(725);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var QueueAction_1 = __webpack_require__(726);
+	var QueueScheduler_1 = __webpack_require__(727);
+>>>>>>> adding storage policy list - angular 2
 	exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
 	//# sourceMappingURL=queue.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 263 */
@@ -75444,6 +75794,9 @@ webpackJsonp([1],[
 =======
 /* 269 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 270 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -75459,6 +75812,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=SubscriptionLog.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 264 */
@@ -75480,6 +75834,13 @@ webpackJsonp([1],[
 	"use strict";
 	var SubscriptionLog_1 = __webpack_require__(269);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var SubscriptionLog_1 = __webpack_require__(270);
+>>>>>>> adding storage policy list - angular 2
 	var SubscriptionLoggable = (function () {
 	    function SubscriptionLoggable() {
 	        this.subscriptions = [];
@@ -75499,6 +75860,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=SubscriptionLoggable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 265 */
@@ -75508,6 +75870,9 @@ webpackJsonp([1],[
 =======
 /* 271 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 272 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -75537,6 +75902,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 266 */
@@ -75546,6 +75912,9 @@ webpackJsonp([1],[
 =======
 /* 272 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 273 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -75563,6 +75932,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=applyMixins.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 267 */
@@ -75572,6 +75942,9 @@ webpackJsonp([1],[
 =======
 /* 273 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 274 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -75582,6 +75955,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isPromise.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 268 */
@@ -75591,6 +75965,9 @@ webpackJsonp([1],[
 =======
 /* 274 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 275 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -75600,6 +75977,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=noop.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 269 */
@@ -75609,6 +75987,9 @@ webpackJsonp([1],[
 =======
 /* 275 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 276 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75617,6 +75998,7 @@ webpackJsonp([1],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	     true ? factory(exports, __webpack_require__(48), __webpack_require__(4), __webpack_require__(16), __webpack_require__(242), __webpack_require__(243), __webpack_require__(248), __webpack_require__(109), __webpack_require__(88), __webpack_require__(161), __webpack_require__(110), __webpack_require__(1), __webpack_require__(244), __webpack_require__(245), __webpack_require__(251), __webpack_require__(92), __webpack_require__(158), __webpack_require__(252), __webpack_require__(155)) :
@@ -75626,6 +76008,9 @@ webpackJsonp([1],[
 =======
 	     true ? factory(exports, __webpack_require__(40), __webpack_require__(4), __webpack_require__(16), __webpack_require__(248), __webpack_require__(249), __webpack_require__(254), __webpack_require__(114), __webpack_require__(88), __webpack_require__(164), __webpack_require__(115), __webpack_require__(1), __webpack_require__(250), __webpack_require__(251), __webpack_require__(257), __webpack_require__(92), __webpack_require__(161), __webpack_require__(258), __webpack_require__(158)) :
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	     true ? factory(exports, __webpack_require__(35), __webpack_require__(4), __webpack_require__(16), __webpack_require__(249), __webpack_require__(250), __webpack_require__(255), __webpack_require__(115), __webpack_require__(88), __webpack_require__(164), __webpack_require__(116), __webpack_require__(1), __webpack_require__(251), __webpack_require__(252), __webpack_require__(258), __webpack_require__(92), __webpack_require__(161), __webpack_require__(259), __webpack_require__(158)) :
+>>>>>>> adding storage policy list - angular 2
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/common', '@angular/core', 'rxjs/Subject', 'rxjs/observable/from', 'rxjs/observable/of', 'rxjs/operator/every', 'rxjs/operator/map', 'rxjs/operator/mergeAll', 'rxjs/operator/mergeMap', 'rxjs/operator/reduce', 'rxjs/Observable', 'rxjs/operator/catch', 'rxjs/operator/concatAll', 'rxjs/operator/first', 'rxjs/util/EmptyError', 'rxjs/observable/fromPromise', 'rxjs/operator/last', 'rxjs/BehaviorSubject'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.router = global.ng.router || {}),global.ng.common,global.ng.core,global.Rx,global.Rx.Observable,global.Rx.Observable,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx.Observable.prototype,global.Rx,global.Rx.Observable,global.Rx.Observable.prototype,global.Rx));
 	}(this, function (exports,_angular_common,_angular_core,rxjs_Subject,rxjs_observable_from,rxjs_observable_of,rxjs_operator_every,rxjs_operator_map,rxjs_operator_mergeAll,rxjs_operator_mergeMap,rxjs_operator_reduce,rxjs_Observable,rxjs_operator_catch,rxjs_operator_concatAll,rxjs_operator_first,rxjs_util_EmptyError,rxjs_observable_fromPromise,l,rxjs_BehaviorSubject) { 'use strict';
@@ -79338,6 +79723,7 @@ webpackJsonp([1],[
 
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 270 */
@@ -79354,6 +79740,9 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 /* 276 */
+=======
+/* 277 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -79407,6 +79796,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=in-memory-web-api.module.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 271 */
@@ -79416,6 +79806,9 @@ webpackJsonp([1],[
 =======
 /* 277 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 278 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -79447,12 +79840,15 @@ webpackJsonp([1],[
 =======
 	__export(__webpack_require__(172));
 	__export(__webpack_require__(173));
-	__export(__webpack_require__(276));
+	__export(__webpack_require__(277));
 	//# sourceMappingURL=index.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 278 */,
+=======
+>>>>>>> adding storage policy list - angular 2
 /* 279 */,
 /* 280 */,
 /* 281 */,
@@ -79655,8 +80051,14 @@ webpackJsonp([1],[
 /* 468 */,
 /* 469 */,
 /* 470 */,
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 /* 471 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 471 */,
+/* 472 */,
+/* 473 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -79697,6 +80099,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 466 */
@@ -79706,6 +80109,9 @@ webpackJsonp([1],[
 =======
 /* 472 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 474 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -79718,6 +80124,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Observer.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 467 */
@@ -79960,6 +80367,9 @@ webpackJsonp([1],[
 =======
 /* 473 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 475 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -80013,6 +80423,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Scheduler.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 469 */
@@ -80022,6 +80433,9 @@ webpackJsonp([1],[
 =======
 /* 474 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 476 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -80066,6 +80480,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 470 */
@@ -80075,10 +80490,14 @@ webpackJsonp([1],[
 =======
 /* 475 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 477 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bindCallback_1 = __webpack_require__(615);
@@ -80088,10 +80507,14 @@ webpackJsonp([1],[
 =======
 	var bindCallback_1 = __webpack_require__(620);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var bindCallback_1 = __webpack_require__(622);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
 	//# sourceMappingURL=bindCallback.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 471 */
@@ -80101,10 +80524,14 @@ webpackJsonp([1],[
 =======
 /* 476 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 478 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bindNodeCallback_1 = __webpack_require__(616);
@@ -80114,10 +80541,14 @@ webpackJsonp([1],[
 =======
 	var bindNodeCallback_1 = __webpack_require__(621);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var bindNodeCallback_1 = __webpack_require__(623);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
 	//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 472 */
@@ -80127,10 +80558,14 @@ webpackJsonp([1],[
 =======
 /* 477 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 479 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var combineLatest_1 = __webpack_require__(617);
@@ -80140,10 +80575,14 @@ webpackJsonp([1],[
 =======
 	var combineLatest_1 = __webpack_require__(622);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var combineLatest_1 = __webpack_require__(624);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 473 */
@@ -80153,10 +80592,14 @@ webpackJsonp([1],[
 =======
 /* 478 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 480 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var concat_1 = __webpack_require__(618);
@@ -80166,10 +80609,14 @@ webpackJsonp([1],[
 =======
 	var concat_1 = __webpack_require__(623);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var concat_1 = __webpack_require__(625);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.concat = concat_1.concat;
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 474 */
@@ -80179,10 +80626,14 @@ webpackJsonp([1],[
 =======
 /* 479 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 481 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var defer_1 = __webpack_require__(619);
@@ -80192,10 +80643,14 @@ webpackJsonp([1],[
 =======
 	var defer_1 = __webpack_require__(624);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var defer_1 = __webpack_require__(626);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.defer = defer_1.defer;
 	//# sourceMappingURL=defer.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 475 */
@@ -80205,10 +80660,14 @@ webpackJsonp([1],[
 =======
 /* 480 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 482 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ajax_1 = __webpack_require__(621);
@@ -80218,10 +80677,14 @@ webpackJsonp([1],[
 =======
 	var ajax_1 = __webpack_require__(626);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var ajax_1 = __webpack_require__(628);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.ajax = ajax_1.ajax;
 	//# sourceMappingURL=ajax.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 476 */
@@ -80231,10 +80694,14 @@ webpackJsonp([1],[
 =======
 /* 481 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 483 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var webSocket_1 = __webpack_require__(622);
@@ -80244,10 +80711,14 @@ webpackJsonp([1],[
 =======
 	var webSocket_1 = __webpack_require__(627);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var webSocket_1 = __webpack_require__(629);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.webSocket = webSocket_1.webSocket;
 	//# sourceMappingURL=webSocket.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 477 */
@@ -80257,10 +80728,14 @@ webpackJsonp([1],[
 =======
 /* 482 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 484 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var empty_1 = __webpack_require__(623);
@@ -80270,10 +80745,14 @@ webpackJsonp([1],[
 =======
 	var empty_1 = __webpack_require__(628);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var empty_1 = __webpack_require__(630);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.empty = empty_1.empty;
 	//# sourceMappingURL=empty.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 478 */
@@ -80283,10 +80762,14 @@ webpackJsonp([1],[
 =======
 /* 483 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 485 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var forkJoin_1 = __webpack_require__(624);
@@ -80296,10 +80779,14 @@ webpackJsonp([1],[
 =======
 	var forkJoin_1 = __webpack_require__(629);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var forkJoin_1 = __webpack_require__(631);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 	//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 479 */
@@ -80309,10 +80796,14 @@ webpackJsonp([1],[
 =======
 /* 484 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 486 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var from_1 = __webpack_require__(242);
@@ -80322,10 +80813,14 @@ webpackJsonp([1],[
 =======
 	var from_1 = __webpack_require__(248);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var from_1 = __webpack_require__(249);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.from = from_1.from;
 	//# sourceMappingURL=from.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 480 */
@@ -80335,10 +80830,14 @@ webpackJsonp([1],[
 =======
 /* 485 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 487 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var fromEvent_1 = __webpack_require__(625);
@@ -80348,10 +80847,14 @@ webpackJsonp([1],[
 =======
 	var fromEvent_1 = __webpack_require__(630);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var fromEvent_1 = __webpack_require__(632);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 	//# sourceMappingURL=fromEvent.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 481 */
@@ -80361,10 +80864,14 @@ webpackJsonp([1],[
 =======
 /* 486 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 488 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var fromEventPattern_1 = __webpack_require__(626);
@@ -80374,10 +80881,14 @@ webpackJsonp([1],[
 =======
 	var fromEventPattern_1 = __webpack_require__(631);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var fromEventPattern_1 = __webpack_require__(633);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 	//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 482 */
@@ -80387,6 +80898,9 @@ webpackJsonp([1],[
 =======
 /* 487 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 489 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -80396,6 +80910,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 483 */
@@ -80405,10 +80920,14 @@ webpackJsonp([1],[
 =======
 /* 488 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 490 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var GenerateObservable_1 = __webpack_require__(605);
@@ -80418,10 +80937,14 @@ webpackJsonp([1],[
 =======
 	var GenerateObservable_1 = __webpack_require__(610);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var GenerateObservable_1 = __webpack_require__(612);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
 	//# sourceMappingURL=generate.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 484 */
@@ -80431,10 +80954,14 @@ webpackJsonp([1],[
 =======
 /* 489 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 491 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var if_1 = __webpack_require__(627);
@@ -80444,10 +80971,14 @@ webpackJsonp([1],[
 =======
 	var if_1 = __webpack_require__(632);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var if_1 = __webpack_require__(634);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.if = if_1._if;
 	//# sourceMappingURL=if.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 485 */
@@ -80457,10 +80988,14 @@ webpackJsonp([1],[
 =======
 /* 490 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 492 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var interval_1 = __webpack_require__(628);
@@ -80470,10 +81005,14 @@ webpackJsonp([1],[
 =======
 	var interval_1 = __webpack_require__(633);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var interval_1 = __webpack_require__(635);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.interval = interval_1.interval;
 	//# sourceMappingURL=interval.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 486 */
@@ -80483,10 +81022,14 @@ webpackJsonp([1],[
 =======
 /* 491 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 493 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var merge_1 = __webpack_require__(629);
@@ -80496,10 +81039,14 @@ webpackJsonp([1],[
 =======
 	var merge_1 = __webpack_require__(634);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var merge_1 = __webpack_require__(636);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.merge = merge_1.merge;
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 487 */
@@ -80509,10 +81056,14 @@ webpackJsonp([1],[
 =======
 /* 492 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 494 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var never_1 = __webpack_require__(630);
@@ -80522,10 +81073,14 @@ webpackJsonp([1],[
 =======
 	var never_1 = __webpack_require__(635);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var never_1 = __webpack_require__(637);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.never = never_1.never;
 	//# sourceMappingURL=never.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 488 */
@@ -80535,10 +81090,14 @@ webpackJsonp([1],[
 =======
 /* 493 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 495 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var of_1 = __webpack_require__(243);
@@ -80548,10 +81107,14 @@ webpackJsonp([1],[
 =======
 	var of_1 = __webpack_require__(249);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var of_1 = __webpack_require__(250);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.of = of_1.of;
 	//# sourceMappingURL=of.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 489 */
@@ -80561,10 +81124,14 @@ webpackJsonp([1],[
 =======
 /* 494 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 496 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var onErrorResumeNext_1 = __webpack_require__(255);
@@ -80574,10 +81141,14 @@ webpackJsonp([1],[
 =======
 	var onErrorResumeNext_1 = __webpack_require__(261);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var onErrorResumeNext_1 = __webpack_require__(262);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
 	//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 490 */
@@ -80587,10 +81158,14 @@ webpackJsonp([1],[
 =======
 /* 495 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 497 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var pairs_1 = __webpack_require__(631);
@@ -80600,10 +81175,14 @@ webpackJsonp([1],[
 =======
 	var pairs_1 = __webpack_require__(636);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var pairs_1 = __webpack_require__(638);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.pairs = pairs_1.pairs;
 	//# sourceMappingURL=pairs.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 491 */
@@ -80613,10 +81192,14 @@ webpackJsonp([1],[
 =======
 /* 496 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 498 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var race_1 = __webpack_require__(256);
@@ -80626,10 +81209,14 @@ webpackJsonp([1],[
 =======
 	var race_1 = __webpack_require__(262);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var race_1 = __webpack_require__(263);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.race = race_1.raceStatic;
 	//# sourceMappingURL=race.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 492 */
@@ -80639,10 +81226,14 @@ webpackJsonp([1],[
 =======
 /* 497 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 499 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var range_1 = __webpack_require__(632);
@@ -80652,10 +81243,14 @@ webpackJsonp([1],[
 =======
 	var range_1 = __webpack_require__(637);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var range_1 = __webpack_require__(639);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.range = range_1.range;
 	//# sourceMappingURL=range.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 493 */
@@ -80665,10 +81260,14 @@ webpackJsonp([1],[
 =======
 /* 498 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 500 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var throw_1 = __webpack_require__(633);
@@ -80678,10 +81277,14 @@ webpackJsonp([1],[
 =======
 	var throw_1 = __webpack_require__(638);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var throw_1 = __webpack_require__(640);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.throw = throw_1._throw;
 	//# sourceMappingURL=throw.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 494 */
@@ -80691,10 +81294,14 @@ webpackJsonp([1],[
 =======
 /* 499 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 501 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timer_1 = __webpack_require__(634);
@@ -80704,10 +81311,14 @@ webpackJsonp([1],[
 =======
 	var timer_1 = __webpack_require__(639);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var timer_1 = __webpack_require__(641);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.timer = timer_1.timer;
 	//# sourceMappingURL=timer.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 495 */
@@ -80717,10 +81328,14 @@ webpackJsonp([1],[
 =======
 /* 500 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 502 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var using_1 = __webpack_require__(635);
@@ -80730,10 +81345,14 @@ webpackJsonp([1],[
 =======
 	var using_1 = __webpack_require__(640);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var using_1 = __webpack_require__(642);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.using = using_1.using;
 	//# sourceMappingURL=using.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 496 */
@@ -80743,10 +81362,14 @@ webpackJsonp([1],[
 =======
 /* 501 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 503 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var zip_1 = __webpack_require__(636);
@@ -80756,10 +81379,14 @@ webpackJsonp([1],[
 =======
 	var zip_1 = __webpack_require__(641);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var zip_1 = __webpack_require__(643);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.zip = zip_1.zip;
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 497 */
@@ -80769,10 +81396,14 @@ webpackJsonp([1],[
 =======
 /* 502 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 504 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var audit_1 = __webpack_require__(637);
@@ -80782,10 +81413,14 @@ webpackJsonp([1],[
 =======
 	var audit_1 = __webpack_require__(642);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var audit_1 = __webpack_require__(644);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.audit = audit_1.audit;
 	//# sourceMappingURL=audit.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 498 */
@@ -80795,10 +81430,14 @@ webpackJsonp([1],[
 =======
 /* 503 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 505 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var auditTime_1 = __webpack_require__(638);
@@ -80808,10 +81447,14 @@ webpackJsonp([1],[
 =======
 	var auditTime_1 = __webpack_require__(643);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var auditTime_1 = __webpack_require__(645);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
 	//# sourceMappingURL=auditTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 499 */
@@ -80821,10 +81464,14 @@ webpackJsonp([1],[
 =======
 /* 504 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 506 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var buffer_1 = __webpack_require__(639);
@@ -80834,10 +81481,14 @@ webpackJsonp([1],[
 =======
 	var buffer_1 = __webpack_require__(644);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var buffer_1 = __webpack_require__(646);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.buffer = buffer_1.buffer;
 	//# sourceMappingURL=buffer.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 500 */
@@ -80847,10 +81498,14 @@ webpackJsonp([1],[
 =======
 /* 505 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 507 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bufferCount_1 = __webpack_require__(640);
@@ -80860,10 +81515,14 @@ webpackJsonp([1],[
 =======
 	var bufferCount_1 = __webpack_require__(645);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var bufferCount_1 = __webpack_require__(647);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
 	//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 501 */
@@ -80873,10 +81532,14 @@ webpackJsonp([1],[
 =======
 /* 506 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 508 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bufferTime_1 = __webpack_require__(641);
@@ -80886,10 +81549,14 @@ webpackJsonp([1],[
 =======
 	var bufferTime_1 = __webpack_require__(646);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var bufferTime_1 = __webpack_require__(648);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
 	//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 502 */
@@ -80899,10 +81566,14 @@ webpackJsonp([1],[
 =======
 /* 507 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 509 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bufferToggle_1 = __webpack_require__(642);
@@ -80912,10 +81583,14 @@ webpackJsonp([1],[
 =======
 	var bufferToggle_1 = __webpack_require__(647);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var bufferToggle_1 = __webpack_require__(649);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
 	//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 503 */
@@ -80925,10 +81600,14 @@ webpackJsonp([1],[
 =======
 /* 508 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 510 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var bufferWhen_1 = __webpack_require__(643);
@@ -80938,10 +81617,14 @@ webpackJsonp([1],[
 =======
 	var bufferWhen_1 = __webpack_require__(648);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var bufferWhen_1 = __webpack_require__(650);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 	//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 504 */
@@ -80951,10 +81634,14 @@ webpackJsonp([1],[
 =======
 /* 509 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 511 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var cache_1 = __webpack_require__(644);
@@ -80964,10 +81651,14 @@ webpackJsonp([1],[
 =======
 	var cache_1 = __webpack_require__(649);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var cache_1 = __webpack_require__(651);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.cache = cache_1.cache;
 	//# sourceMappingURL=cache.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 505 */
@@ -80977,10 +81668,14 @@ webpackJsonp([1],[
 =======
 /* 510 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 512 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var catch_1 = __webpack_require__(244);
@@ -80990,11 +81685,15 @@ webpackJsonp([1],[
 =======
 	var catch_1 = __webpack_require__(250);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var catch_1 = __webpack_require__(251);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.catch = catch_1._catch;
 	Observable_1.Observable.prototype._catch = catch_1._catch;
 	//# sourceMappingURL=catch.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 506 */
@@ -81004,10 +81703,14 @@ webpackJsonp([1],[
 =======
 /* 511 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 513 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var combineAll_1 = __webpack_require__(645);
@@ -81017,10 +81720,14 @@ webpackJsonp([1],[
 =======
 	var combineAll_1 = __webpack_require__(650);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var combineAll_1 = __webpack_require__(652);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 	//# sourceMappingURL=combineAll.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 507 */
@@ -81030,6 +81737,9 @@ webpackJsonp([1],[
 =======
 /* 512 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 514 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81039,6 +81749,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 508 */
@@ -81048,6 +81759,9 @@ webpackJsonp([1],[
 =======
 /* 513 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 515 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81057,6 +81771,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 509 */
@@ -81066,10 +81781,14 @@ webpackJsonp([1],[
 =======
 /* 514 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 516 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var concatAll_1 = __webpack_require__(245);
@@ -81079,10 +81798,14 @@ webpackJsonp([1],[
 =======
 	var concatAll_1 = __webpack_require__(251);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var concatAll_1 = __webpack_require__(252);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 	//# sourceMappingURL=concatAll.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 510 */
@@ -81092,10 +81815,14 @@ webpackJsonp([1],[
 =======
 /* 515 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 517 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var concatMap_1 = __webpack_require__(646);
@@ -81105,10 +81832,14 @@ webpackJsonp([1],[
 =======
 	var concatMap_1 = __webpack_require__(651);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var concatMap_1 = __webpack_require__(653);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 	//# sourceMappingURL=concatMap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 511 */
@@ -81118,10 +81849,14 @@ webpackJsonp([1],[
 =======
 /* 516 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 518 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var concatMapTo_1 = __webpack_require__(647);
@@ -81131,10 +81866,14 @@ webpackJsonp([1],[
 =======
 	var concatMapTo_1 = __webpack_require__(652);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var concatMapTo_1 = __webpack_require__(654);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 	//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 512 */
@@ -81144,10 +81883,14 @@ webpackJsonp([1],[
 =======
 /* 517 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 519 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var count_1 = __webpack_require__(648);
@@ -81157,10 +81900,14 @@ webpackJsonp([1],[
 =======
 	var count_1 = __webpack_require__(653);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var count_1 = __webpack_require__(655);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.count = count_1.count;
 	//# sourceMappingURL=count.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 513 */
@@ -81170,10 +81917,14 @@ webpackJsonp([1],[
 =======
 /* 518 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 520 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var debounce_1 = __webpack_require__(649);
@@ -81183,10 +81934,14 @@ webpackJsonp([1],[
 =======
 	var debounce_1 = __webpack_require__(654);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var debounce_1 = __webpack_require__(656);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 	//# sourceMappingURL=debounce.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 514 */
@@ -81196,10 +81951,14 @@ webpackJsonp([1],[
 =======
 /* 519 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 521 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var debounceTime_1 = __webpack_require__(650);
@@ -81209,10 +81968,14 @@ webpackJsonp([1],[
 =======
 	var debounceTime_1 = __webpack_require__(655);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var debounceTime_1 = __webpack_require__(657);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 	//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 515 */
@@ -81222,10 +81985,14 @@ webpackJsonp([1],[
 =======
 /* 520 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 522 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var defaultIfEmpty_1 = __webpack_require__(651);
@@ -81235,10 +82002,14 @@ webpackJsonp([1],[
 =======
 	var defaultIfEmpty_1 = __webpack_require__(656);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var defaultIfEmpty_1 = __webpack_require__(658);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
 	//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 516 */
@@ -81248,10 +82019,14 @@ webpackJsonp([1],[
 =======
 /* 521 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 523 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var delayWhen_1 = __webpack_require__(653);
@@ -81261,10 +82036,14 @@ webpackJsonp([1],[
 =======
 	var delayWhen_1 = __webpack_require__(658);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var delayWhen_1 = __webpack_require__(660);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 	//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 517 */
@@ -81274,10 +82053,14 @@ webpackJsonp([1],[
 =======
 /* 522 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 524 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var dematerialize_1 = __webpack_require__(654);
@@ -81287,10 +82070,14 @@ webpackJsonp([1],[
 =======
 	var dematerialize_1 = __webpack_require__(659);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var dematerialize_1 = __webpack_require__(661);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 	//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 518 */
@@ -81300,10 +82087,14 @@ webpackJsonp([1],[
 =======
 /* 523 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 525 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var distinct_1 = __webpack_require__(246);
@@ -81313,10 +82104,14 @@ webpackJsonp([1],[
 =======
 	var distinct_1 = __webpack_require__(252);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var distinct_1 = __webpack_require__(253);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.distinct = distinct_1.distinct;
 	//# sourceMappingURL=distinct.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 519 */
@@ -81326,10 +82121,14 @@ webpackJsonp([1],[
 =======
 /* 524 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 526 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var distinctKey_1 = __webpack_require__(655);
@@ -81339,10 +82138,14 @@ webpackJsonp([1],[
 =======
 	var distinctKey_1 = __webpack_require__(660);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var distinctKey_1 = __webpack_require__(662);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.distinctKey = distinctKey_1.distinctKey;
 	//# sourceMappingURL=distinctKey.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 520 */
@@ -81352,10 +82155,14 @@ webpackJsonp([1],[
 =======
 /* 525 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 527 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var distinctUntilChanged_1 = __webpack_require__(247);
@@ -81365,10 +82172,14 @@ webpackJsonp([1],[
 =======
 	var distinctUntilChanged_1 = __webpack_require__(253);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var distinctUntilChanged_1 = __webpack_require__(254);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
 	//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 521 */
@@ -81378,10 +82189,14 @@ webpackJsonp([1],[
 =======
 /* 526 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 528 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var distinctUntilKeyChanged_1 = __webpack_require__(656);
@@ -81391,10 +82206,14 @@ webpackJsonp([1],[
 =======
 	var distinctUntilKeyChanged_1 = __webpack_require__(661);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var distinctUntilKeyChanged_1 = __webpack_require__(663);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
 	//# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 522 */
@@ -81404,10 +82223,14 @@ webpackJsonp([1],[
 =======
 /* 527 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 529 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var do_1 = __webpack_require__(657);
@@ -81417,11 +82240,15 @@ webpackJsonp([1],[
 =======
 	var do_1 = __webpack_require__(662);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var do_1 = __webpack_require__(664);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.do = do_1._do;
 	Observable_1.Observable.prototype._do = do_1._do;
 	//# sourceMappingURL=do.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 523 */
@@ -81431,10 +82258,14 @@ webpackJsonp([1],[
 =======
 /* 528 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 530 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var elementAt_1 = __webpack_require__(658);
@@ -81444,10 +82275,14 @@ webpackJsonp([1],[
 =======
 	var elementAt_1 = __webpack_require__(663);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var elementAt_1 = __webpack_require__(665);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 	//# sourceMappingURL=elementAt.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 524 */
@@ -81457,10 +82292,14 @@ webpackJsonp([1],[
 =======
 /* 529 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 531 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var every_1 = __webpack_require__(248);
@@ -81470,10 +82309,14 @@ webpackJsonp([1],[
 =======
 	var every_1 = __webpack_require__(254);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var every_1 = __webpack_require__(255);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.every = every_1.every;
 	//# sourceMappingURL=every.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 525 */
@@ -81483,10 +82326,14 @@ webpackJsonp([1],[
 =======
 /* 530 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 532 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var exhaust_1 = __webpack_require__(659);
@@ -81496,10 +82343,14 @@ webpackJsonp([1],[
 =======
 	var exhaust_1 = __webpack_require__(664);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var exhaust_1 = __webpack_require__(666);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
 	//# sourceMappingURL=exhaust.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 526 */
@@ -81509,10 +82360,14 @@ webpackJsonp([1],[
 =======
 /* 531 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 533 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var exhaustMap_1 = __webpack_require__(660);
@@ -81522,10 +82377,14 @@ webpackJsonp([1],[
 =======
 	var exhaustMap_1 = __webpack_require__(665);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var exhaustMap_1 = __webpack_require__(667);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
 	//# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 527 */
@@ -81535,10 +82394,14 @@ webpackJsonp([1],[
 =======
 /* 532 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 534 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var expand_1 = __webpack_require__(661);
@@ -81548,10 +82411,14 @@ webpackJsonp([1],[
 =======
 	var expand_1 = __webpack_require__(666);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var expand_1 = __webpack_require__(668);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.expand = expand_1.expand;
 	//# sourceMappingURL=expand.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 528 */
@@ -81561,10 +82428,14 @@ webpackJsonp([1],[
 =======
 /* 533 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 535 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var filter_1 = __webpack_require__(249);
@@ -81574,10 +82445,14 @@ webpackJsonp([1],[
 =======
 	var filter_1 = __webpack_require__(255);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var filter_1 = __webpack_require__(256);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.filter = filter_1.filter;
 	//# sourceMappingURL=filter.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 529 */
@@ -81587,10 +82462,14 @@ webpackJsonp([1],[
 =======
 /* 534 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 536 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var finally_1 = __webpack_require__(662);
@@ -81600,11 +82479,15 @@ webpackJsonp([1],[
 =======
 	var finally_1 = __webpack_require__(667);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var finally_1 = __webpack_require__(669);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.finally = finally_1._finally;
 	Observable_1.Observable.prototype._finally = finally_1._finally;
 	//# sourceMappingURL=finally.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 530 */
@@ -81614,10 +82497,14 @@ webpackJsonp([1],[
 =======
 /* 535 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 537 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var find_1 = __webpack_require__(250);
@@ -81627,10 +82514,14 @@ webpackJsonp([1],[
 =======
 	var find_1 = __webpack_require__(256);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var find_1 = __webpack_require__(257);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.find = find_1.find;
 	//# sourceMappingURL=find.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 531 */
@@ -81640,10 +82531,14 @@ webpackJsonp([1],[
 =======
 /* 536 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 538 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var findIndex_1 = __webpack_require__(663);
@@ -81653,10 +82548,14 @@ webpackJsonp([1],[
 =======
 	var findIndex_1 = __webpack_require__(668);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var findIndex_1 = __webpack_require__(670);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 	//# sourceMappingURL=findIndex.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 532 */
@@ -81666,10 +82565,14 @@ webpackJsonp([1],[
 =======
 /* 537 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 539 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var first_1 = __webpack_require__(251);
@@ -81679,10 +82582,14 @@ webpackJsonp([1],[
 =======
 	var first_1 = __webpack_require__(257);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var first_1 = __webpack_require__(258);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.first = first_1.first;
 	//# sourceMappingURL=first.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 533 */
@@ -81692,10 +82599,14 @@ webpackJsonp([1],[
 =======
 /* 538 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 540 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var groupBy_1 = __webpack_require__(664);
@@ -81705,10 +82616,14 @@ webpackJsonp([1],[
 =======
 	var groupBy_1 = __webpack_require__(669);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var groupBy_1 = __webpack_require__(671);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 	//# sourceMappingURL=groupBy.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 534 */
@@ -81718,10 +82633,14 @@ webpackJsonp([1],[
 =======
 /* 539 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 541 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ignoreElements_1 = __webpack_require__(665);
@@ -81731,10 +82650,14 @@ webpackJsonp([1],[
 =======
 	var ignoreElements_1 = __webpack_require__(670);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var ignoreElements_1 = __webpack_require__(672);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
 	//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 535 */
@@ -81744,10 +82667,14 @@ webpackJsonp([1],[
 =======
 /* 540 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 542 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isEmpty_1 = __webpack_require__(666);
@@ -81757,10 +82684,14 @@ webpackJsonp([1],[
 =======
 	var isEmpty_1 = __webpack_require__(671);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isEmpty_1 = __webpack_require__(673);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 	//# sourceMappingURL=isEmpty.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 536 */
@@ -81770,10 +82701,14 @@ webpackJsonp([1],[
 =======
 /* 541 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 543 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var last_1 = __webpack_require__(252);
@@ -81783,10 +82718,14 @@ webpackJsonp([1],[
 =======
 	var last_1 = __webpack_require__(258);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var last_1 = __webpack_require__(259);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.last = last_1.last;
 	//# sourceMappingURL=last.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 537 */
@@ -81796,10 +82735,14 @@ webpackJsonp([1],[
 =======
 /* 542 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 544 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var let_1 = __webpack_require__(667);
@@ -81809,11 +82752,15 @@ webpackJsonp([1],[
 =======
 	var let_1 = __webpack_require__(672);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var let_1 = __webpack_require__(674);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.let = let_1.letProto;
 	Observable_1.Observable.prototype.letBind = let_1.letProto;
 	//# sourceMappingURL=let.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 538 */
@@ -81823,10 +82770,14 @@ webpackJsonp([1],[
 =======
 /* 543 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 545 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var mapTo_1 = __webpack_require__(668);
@@ -81836,10 +82787,14 @@ webpackJsonp([1],[
 =======
 	var mapTo_1 = __webpack_require__(673);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var mapTo_1 = __webpack_require__(675);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
 	//# sourceMappingURL=mapTo.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 539 */
@@ -81849,10 +82804,14 @@ webpackJsonp([1],[
 =======
 /* 544 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 546 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var materialize_1 = __webpack_require__(669);
@@ -81862,10 +82821,14 @@ webpackJsonp([1],[
 =======
 	var materialize_1 = __webpack_require__(674);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var materialize_1 = __webpack_require__(676);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.materialize = materialize_1.materialize;
 	//# sourceMappingURL=materialize.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 540 */
@@ -81875,10 +82838,14 @@ webpackJsonp([1],[
 =======
 /* 545 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 547 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var max_1 = __webpack_require__(670);
@@ -81888,10 +82855,14 @@ webpackJsonp([1],[
 =======
 	var max_1 = __webpack_require__(675);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var max_1 = __webpack_require__(677);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.max = max_1.max;
 	//# sourceMappingURL=max.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 541 */
@@ -81901,10 +82872,14 @@ webpackJsonp([1],[
 =======
 /* 546 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 548 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var merge_1 = __webpack_require__(253);
@@ -81914,10 +82889,14 @@ webpackJsonp([1],[
 =======
 	var merge_1 = __webpack_require__(259);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var merge_1 = __webpack_require__(260);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.merge = merge_1.merge;
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 542 */
@@ -81927,6 +82906,9 @@ webpackJsonp([1],[
 =======
 /* 547 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 549 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81944,6 +82926,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mergeAll.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 543 */
@@ -81953,6 +82936,9 @@ webpackJsonp([1],[
 =======
 /* 548 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 550 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -81963,6 +82949,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mergeMap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 544 */
@@ -81972,10 +82959,14 @@ webpackJsonp([1],[
 =======
 /* 549 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 551 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var mergeMapTo_1 = __webpack_require__(254);
@@ -81985,11 +82976,15 @@ webpackJsonp([1],[
 =======
 	var mergeMapTo_1 = __webpack_require__(260);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var mergeMapTo_1 = __webpack_require__(261);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
 	Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 	//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 545 */
@@ -81999,10 +82994,14 @@ webpackJsonp([1],[
 =======
 /* 550 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 552 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var mergeScan_1 = __webpack_require__(671);
@@ -82012,10 +83011,14 @@ webpackJsonp([1],[
 =======
 	var mergeScan_1 = __webpack_require__(676);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var mergeScan_1 = __webpack_require__(678);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
 	//# sourceMappingURL=mergeScan.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 546 */
@@ -82025,10 +83028,14 @@ webpackJsonp([1],[
 =======
 /* 551 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 553 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var min_1 = __webpack_require__(672);
@@ -82038,10 +83045,14 @@ webpackJsonp([1],[
 =======
 	var min_1 = __webpack_require__(677);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var min_1 = __webpack_require__(679);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.min = min_1.min;
 	//# sourceMappingURL=min.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 547 */
@@ -82051,10 +83062,14 @@ webpackJsonp([1],[
 =======
 /* 552 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 554 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var multicast_1 = __webpack_require__(74);
@@ -82064,10 +83079,14 @@ webpackJsonp([1],[
 =======
 	var multicast_1 = __webpack_require__(74);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var multicast_1 = __webpack_require__(75);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.multicast = multicast_1.multicast;
 	//# sourceMappingURL=multicast.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 548 */
@@ -82077,6 +83096,9 @@ webpackJsonp([1],[
 =======
 /* 553 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 555 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -82086,6 +83108,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=observeOn.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 549 */
@@ -82095,10 +83118,14 @@ webpackJsonp([1],[
 =======
 /* 554 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 556 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var onErrorResumeNext_1 = __webpack_require__(255);
@@ -82108,10 +83135,14 @@ webpackJsonp([1],[
 =======
 	var onErrorResumeNext_1 = __webpack_require__(261);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var onErrorResumeNext_1 = __webpack_require__(262);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
 	//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 550 */
@@ -82121,10 +83152,14 @@ webpackJsonp([1],[
 =======
 /* 555 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 557 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var pairwise_1 = __webpack_require__(673);
@@ -82134,10 +83169,14 @@ webpackJsonp([1],[
 =======
 	var pairwise_1 = __webpack_require__(678);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var pairwise_1 = __webpack_require__(680);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
 	//# sourceMappingURL=pairwise.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 551 */
@@ -82147,10 +83186,14 @@ webpackJsonp([1],[
 =======
 /* 556 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 558 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var partition_1 = __webpack_require__(674);
@@ -82160,10 +83203,14 @@ webpackJsonp([1],[
 =======
 	var partition_1 = __webpack_require__(679);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var partition_1 = __webpack_require__(681);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.partition = partition_1.partition;
 	//# sourceMappingURL=partition.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 552 */
@@ -82173,10 +83220,14 @@ webpackJsonp([1],[
 =======
 /* 557 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 559 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var pluck_1 = __webpack_require__(675);
@@ -82186,10 +83237,14 @@ webpackJsonp([1],[
 =======
 	var pluck_1 = __webpack_require__(680);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var pluck_1 = __webpack_require__(682);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.pluck = pluck_1.pluck;
 	//# sourceMappingURL=pluck.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 553 */
@@ -82199,10 +83254,14 @@ webpackJsonp([1],[
 =======
 /* 558 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 560 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var publish_1 = __webpack_require__(676);
@@ -82212,10 +83271,14 @@ webpackJsonp([1],[
 =======
 	var publish_1 = __webpack_require__(681);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var publish_1 = __webpack_require__(683);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.publish = publish_1.publish;
 	//# sourceMappingURL=publish.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 554 */
@@ -82225,10 +83288,14 @@ webpackJsonp([1],[
 =======
 /* 559 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 561 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var publishBehavior_1 = __webpack_require__(677);
@@ -82238,10 +83305,14 @@ webpackJsonp([1],[
 =======
 	var publishBehavior_1 = __webpack_require__(682);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var publishBehavior_1 = __webpack_require__(684);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
 	//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 555 */
@@ -82251,10 +83322,14 @@ webpackJsonp([1],[
 =======
 /* 560 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 562 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var publishLast_1 = __webpack_require__(678);
@@ -82264,10 +83339,14 @@ webpackJsonp([1],[
 =======
 	var publishLast_1 = __webpack_require__(683);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var publishLast_1 = __webpack_require__(685);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
 	//# sourceMappingURL=publishLast.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 556 */
@@ -82277,10 +83356,14 @@ webpackJsonp([1],[
 =======
 /* 561 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 563 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var publishReplay_1 = __webpack_require__(679);
@@ -82290,10 +83373,14 @@ webpackJsonp([1],[
 =======
 	var publishReplay_1 = __webpack_require__(684);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var publishReplay_1 = __webpack_require__(686);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 	//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 557 */
@@ -82303,10 +83390,14 @@ webpackJsonp([1],[
 =======
 /* 562 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 564 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var race_1 = __webpack_require__(256);
@@ -82316,10 +83407,14 @@ webpackJsonp([1],[
 =======
 	var race_1 = __webpack_require__(262);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var race_1 = __webpack_require__(263);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.race = race_1.race;
 	//# sourceMappingURL=race.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 558 */
@@ -82329,10 +83424,14 @@ webpackJsonp([1],[
 =======
 /* 563 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 565 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var reduce_1 = __webpack_require__(110);
@@ -82342,10 +83441,14 @@ webpackJsonp([1],[
 =======
 	var reduce_1 = __webpack_require__(115);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var reduce_1 = __webpack_require__(116);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 	//# sourceMappingURL=reduce.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 559 */
@@ -82355,10 +83458,14 @@ webpackJsonp([1],[
 =======
 /* 564 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 566 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var repeat_1 = __webpack_require__(680);
@@ -82368,10 +83475,14 @@ webpackJsonp([1],[
 =======
 	var repeat_1 = __webpack_require__(685);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var repeat_1 = __webpack_require__(687);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.repeat = repeat_1.repeat;
 	//# sourceMappingURL=repeat.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 560 */
@@ -82381,10 +83492,14 @@ webpackJsonp([1],[
 =======
 /* 565 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 567 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var repeatWhen_1 = __webpack_require__(681);
@@ -82394,10 +83509,14 @@ webpackJsonp([1],[
 =======
 	var repeatWhen_1 = __webpack_require__(686);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var repeatWhen_1 = __webpack_require__(688);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
 	//# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 561 */
@@ -82407,10 +83526,14 @@ webpackJsonp([1],[
 =======
 /* 566 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 568 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var retry_1 = __webpack_require__(682);
@@ -82420,10 +83543,14 @@ webpackJsonp([1],[
 =======
 	var retry_1 = __webpack_require__(687);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var retry_1 = __webpack_require__(689);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.retry = retry_1.retry;
 	//# sourceMappingURL=retry.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 562 */
@@ -82433,10 +83560,14 @@ webpackJsonp([1],[
 =======
 /* 567 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 569 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var retryWhen_1 = __webpack_require__(683);
@@ -82446,10 +83577,14 @@ webpackJsonp([1],[
 =======
 	var retryWhen_1 = __webpack_require__(688);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var retryWhen_1 = __webpack_require__(690);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 	//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 563 */
@@ -82459,10 +83594,14 @@ webpackJsonp([1],[
 =======
 /* 568 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 570 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var sample_1 = __webpack_require__(684);
@@ -82472,10 +83611,14 @@ webpackJsonp([1],[
 =======
 	var sample_1 = __webpack_require__(689);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var sample_1 = __webpack_require__(691);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.sample = sample_1.sample;
 	//# sourceMappingURL=sample.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 564 */
@@ -82485,10 +83628,14 @@ webpackJsonp([1],[
 =======
 /* 569 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 571 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var sampleTime_1 = __webpack_require__(685);
@@ -82498,10 +83645,14 @@ webpackJsonp([1],[
 =======
 	var sampleTime_1 = __webpack_require__(690);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var sampleTime_1 = __webpack_require__(692);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 	//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 565 */
@@ -82511,10 +83662,14 @@ webpackJsonp([1],[
 =======
 /* 570 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 572 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var scan_1 = __webpack_require__(686);
@@ -82524,10 +83679,14 @@ webpackJsonp([1],[
 =======
 	var scan_1 = __webpack_require__(691);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var scan_1 = __webpack_require__(693);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.scan = scan_1.scan;
 	//# sourceMappingURL=scan.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 566 */
@@ -82537,10 +83696,14 @@ webpackJsonp([1],[
 =======
 /* 571 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 573 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var sequenceEqual_1 = __webpack_require__(687);
@@ -82550,10 +83713,14 @@ webpackJsonp([1],[
 =======
 	var sequenceEqual_1 = __webpack_require__(692);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var sequenceEqual_1 = __webpack_require__(694);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
 	//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 567 */
@@ -82563,10 +83730,14 @@ webpackJsonp([1],[
 =======
 /* 572 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 574 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var share_1 = __webpack_require__(688);
@@ -82576,10 +83747,14 @@ webpackJsonp([1],[
 =======
 	var share_1 = __webpack_require__(693);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var share_1 = __webpack_require__(695);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.share = share_1.share;
 	//# sourceMappingURL=share.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 568 */
@@ -82589,10 +83764,14 @@ webpackJsonp([1],[
 =======
 /* 573 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 575 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var single_1 = __webpack_require__(689);
@@ -82602,10 +83781,14 @@ webpackJsonp([1],[
 =======
 	var single_1 = __webpack_require__(694);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var single_1 = __webpack_require__(696);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.single = single_1.single;
 	//# sourceMappingURL=single.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 569 */
@@ -82615,10 +83798,14 @@ webpackJsonp([1],[
 =======
 /* 574 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 576 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var skip_1 = __webpack_require__(690);
@@ -82628,10 +83815,14 @@ webpackJsonp([1],[
 =======
 	var skip_1 = __webpack_require__(695);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var skip_1 = __webpack_require__(697);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.skip = skip_1.skip;
 	//# sourceMappingURL=skip.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 570 */
@@ -82641,10 +83832,14 @@ webpackJsonp([1],[
 =======
 /* 575 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 577 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var skipUntil_1 = __webpack_require__(691);
@@ -82654,10 +83849,14 @@ webpackJsonp([1],[
 =======
 	var skipUntil_1 = __webpack_require__(696);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var skipUntil_1 = __webpack_require__(698);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 	//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 571 */
@@ -82667,10 +83866,14 @@ webpackJsonp([1],[
 =======
 /* 576 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 578 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var skipWhile_1 = __webpack_require__(692);
@@ -82680,10 +83883,14 @@ webpackJsonp([1],[
 =======
 	var skipWhile_1 = __webpack_require__(697);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var skipWhile_1 = __webpack_require__(699);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 	//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 572 */
@@ -82693,10 +83900,14 @@ webpackJsonp([1],[
 =======
 /* 577 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 579 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var startWith_1 = __webpack_require__(693);
@@ -82706,10 +83917,14 @@ webpackJsonp([1],[
 =======
 	var startWith_1 = __webpack_require__(698);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var startWith_1 = __webpack_require__(700);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 	//# sourceMappingURL=startWith.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 573 */
@@ -82719,10 +83934,14 @@ webpackJsonp([1],[
 =======
 /* 578 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 580 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var subscribeOn_1 = __webpack_require__(694);
@@ -82732,10 +83951,14 @@ webpackJsonp([1],[
 =======
 	var subscribeOn_1 = __webpack_require__(699);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var subscribeOn_1 = __webpack_require__(701);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 	//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 574 */
@@ -82745,10 +83968,14 @@ webpackJsonp([1],[
 =======
 /* 579 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 581 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var switch_1 = __webpack_require__(695);
@@ -82758,11 +83985,15 @@ webpackJsonp([1],[
 =======
 	var switch_1 = __webpack_require__(700);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var switch_1 = __webpack_require__(702);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.switch = switch_1._switch;
 	Observable_1.Observable.prototype._switch = switch_1._switch;
 	//# sourceMappingURL=switch.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 575 */
@@ -82772,10 +84003,14 @@ webpackJsonp([1],[
 =======
 /* 580 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 582 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var switchMap_1 = __webpack_require__(696);
@@ -82785,10 +84020,14 @@ webpackJsonp([1],[
 =======
 	var switchMap_1 = __webpack_require__(701);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var switchMap_1 = __webpack_require__(703);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 	//# sourceMappingURL=switchMap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 576 */
@@ -82798,10 +84037,14 @@ webpackJsonp([1],[
 =======
 /* 581 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 583 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var switchMapTo_1 = __webpack_require__(697);
@@ -82811,10 +84054,14 @@ webpackJsonp([1],[
 =======
 	var switchMapTo_1 = __webpack_require__(702);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var switchMapTo_1 = __webpack_require__(704);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 	//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 577 */
@@ -82824,10 +84071,14 @@ webpackJsonp([1],[
 =======
 /* 582 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 584 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var take_1 = __webpack_require__(698);
@@ -82837,10 +84088,14 @@ webpackJsonp([1],[
 =======
 	var take_1 = __webpack_require__(703);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var take_1 = __webpack_require__(705);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.take = take_1.take;
 	//# sourceMappingURL=take.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 578 */
@@ -82850,10 +84105,14 @@ webpackJsonp([1],[
 =======
 /* 583 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 585 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var takeLast_1 = __webpack_require__(699);
@@ -82863,10 +84122,14 @@ webpackJsonp([1],[
 =======
 	var takeLast_1 = __webpack_require__(704);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var takeLast_1 = __webpack_require__(706);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 	//# sourceMappingURL=takeLast.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 579 */
@@ -82876,10 +84139,14 @@ webpackJsonp([1],[
 =======
 /* 584 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 586 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var takeUntil_1 = __webpack_require__(700);
@@ -82889,10 +84156,14 @@ webpackJsonp([1],[
 =======
 	var takeUntil_1 = __webpack_require__(705);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var takeUntil_1 = __webpack_require__(707);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 	//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 580 */
@@ -82902,10 +84173,14 @@ webpackJsonp([1],[
 =======
 /* 585 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 587 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var takeWhile_1 = __webpack_require__(701);
@@ -82915,10 +84190,14 @@ webpackJsonp([1],[
 =======
 	var takeWhile_1 = __webpack_require__(706);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var takeWhile_1 = __webpack_require__(708);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 	//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 581 */
@@ -82928,10 +84207,14 @@ webpackJsonp([1],[
 =======
 /* 586 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 588 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var throttle_1 = __webpack_require__(702);
@@ -82941,10 +84224,14 @@ webpackJsonp([1],[
 =======
 	var throttle_1 = __webpack_require__(707);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var throttle_1 = __webpack_require__(709);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 	//# sourceMappingURL=throttle.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 582 */
@@ -82954,10 +84241,14 @@ webpackJsonp([1],[
 =======
 /* 587 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 589 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var throttleTime_1 = __webpack_require__(703);
@@ -82967,10 +84258,14 @@ webpackJsonp([1],[
 =======
 	var throttleTime_1 = __webpack_require__(708);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var throttleTime_1 = __webpack_require__(710);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 	//# sourceMappingURL=throttleTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 583 */
@@ -82980,10 +84275,14 @@ webpackJsonp([1],[
 =======
 /* 588 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 590 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timeInterval_1 = __webpack_require__(257);
@@ -82993,10 +84292,14 @@ webpackJsonp([1],[
 =======
 	var timeInterval_1 = __webpack_require__(263);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var timeInterval_1 = __webpack_require__(264);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
 	//# sourceMappingURL=timeInterval.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 584 */
@@ -83006,10 +84309,14 @@ webpackJsonp([1],[
 =======
 /* 589 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 591 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timeout_1 = __webpack_require__(704);
@@ -83019,10 +84326,14 @@ webpackJsonp([1],[
 =======
 	var timeout_1 = __webpack_require__(709);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var timeout_1 = __webpack_require__(711);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 	//# sourceMappingURL=timeout.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 585 */
@@ -83032,10 +84343,14 @@ webpackJsonp([1],[
 =======
 /* 590 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 592 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timeoutWith_1 = __webpack_require__(705);
@@ -83045,10 +84360,14 @@ webpackJsonp([1],[
 =======
 	var timeoutWith_1 = __webpack_require__(710);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var timeoutWith_1 = __webpack_require__(712);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 	//# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 586 */
@@ -83058,10 +84377,14 @@ webpackJsonp([1],[
 =======
 /* 591 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 593 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var timestamp_1 = __webpack_require__(258);
@@ -83071,10 +84394,14 @@ webpackJsonp([1],[
 =======
 	var timestamp_1 = __webpack_require__(264);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var timestamp_1 = __webpack_require__(265);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
 	//# sourceMappingURL=timestamp.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 587 */
@@ -83084,10 +84411,14 @@ webpackJsonp([1],[
 =======
 /* 592 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 594 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var toArray_1 = __webpack_require__(706);
@@ -83097,10 +84428,14 @@ webpackJsonp([1],[
 =======
 	var toArray_1 = __webpack_require__(711);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var toArray_1 = __webpack_require__(713);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 	//# sourceMappingURL=toArray.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 588 */
@@ -83110,10 +84445,14 @@ webpackJsonp([1],[
 =======
 /* 593 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 595 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var toPromise_1 = __webpack_require__(259);
@@ -83123,10 +84462,14 @@ webpackJsonp([1],[
 =======
 	var toPromise_1 = __webpack_require__(265);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var toPromise_1 = __webpack_require__(266);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 	//# sourceMappingURL=toPromise.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 589 */
@@ -83136,10 +84479,14 @@ webpackJsonp([1],[
 =======
 /* 594 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 596 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var window_1 = __webpack_require__(707);
@@ -83149,10 +84496,14 @@ webpackJsonp([1],[
 =======
 	var window_1 = __webpack_require__(712);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var window_1 = __webpack_require__(714);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.window = window_1.window;
 	//# sourceMappingURL=window.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 590 */
@@ -83162,10 +84513,14 @@ webpackJsonp([1],[
 =======
 /* 595 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 597 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var windowCount_1 = __webpack_require__(708);
@@ -83175,10 +84530,14 @@ webpackJsonp([1],[
 =======
 	var windowCount_1 = __webpack_require__(713);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var windowCount_1 = __webpack_require__(715);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 	//# sourceMappingURL=windowCount.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 591 */
@@ -83188,10 +84547,14 @@ webpackJsonp([1],[
 =======
 /* 596 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 598 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var windowTime_1 = __webpack_require__(709);
@@ -83201,10 +84564,14 @@ webpackJsonp([1],[
 =======
 	var windowTime_1 = __webpack_require__(714);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var windowTime_1 = __webpack_require__(716);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 	//# sourceMappingURL=windowTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 592 */
@@ -83214,10 +84581,14 @@ webpackJsonp([1],[
 =======
 /* 597 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 599 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var windowToggle_1 = __webpack_require__(710);
@@ -83227,10 +84598,14 @@ webpackJsonp([1],[
 =======
 	var windowToggle_1 = __webpack_require__(715);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var windowToggle_1 = __webpack_require__(717);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 	//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 593 */
@@ -83240,10 +84615,14 @@ webpackJsonp([1],[
 =======
 /* 598 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 600 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var windowWhen_1 = __webpack_require__(711);
@@ -83253,10 +84632,14 @@ webpackJsonp([1],[
 =======
 	var windowWhen_1 = __webpack_require__(716);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var windowWhen_1 = __webpack_require__(718);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
 	//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 594 */
@@ -83266,10 +84649,14 @@ webpackJsonp([1],[
 =======
 /* 599 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 601 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var withLatestFrom_1 = __webpack_require__(712);
@@ -83279,10 +84666,14 @@ webpackJsonp([1],[
 =======
 	var withLatestFrom_1 = __webpack_require__(717);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var withLatestFrom_1 = __webpack_require__(719);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
 	//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 595 */
@@ -83292,6 +84683,9 @@ webpackJsonp([1],[
 =======
 /* 600 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 602 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83301,6 +84695,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 596 */
@@ -83310,10 +84705,14 @@ webpackJsonp([1],[
 =======
 /* 601 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 603 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var zipAll_1 = __webpack_require__(713);
@@ -83323,10 +84722,14 @@ webpackJsonp([1],[
 =======
 	var zipAll_1 = __webpack_require__(718);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var zipAll_1 = __webpack_require__(720);
+>>>>>>> adding storage policy list - angular 2
 	Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 	//# sourceMappingURL=zipAll.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 597 */
@@ -83336,6 +84739,9 @@ webpackJsonp([1],[
 =======
 /* 602 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 604 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83354,8 +84760,12 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 	var ScalarObservable_1 = __webpack_require__(160);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	var EmptyObservable_1 = __webpack_require__(57);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var EmptyObservable_1 = __webpack_require__(58);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -83419,6 +84829,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 598 */
@@ -83428,6 +84839,9 @@ webpackJsonp([1],[
 =======
 /* 603 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 605 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83439,6 +84853,7 @@ webpackJsonp([1],[
 	var Observable_1 = __webpack_require__(1);
 	var tryCatch_1 = __webpack_require__(23);
 	var errorObject_1 = __webpack_require__(22);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncSubject_1 = __webpack_require__(107);
@@ -83448,6 +84863,9 @@ webpackJsonp([1],[
 =======
 	var AsyncSubject_1 = __webpack_require__(112);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var AsyncSubject_1 = __webpack_require__(113);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -83604,6 +85022,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=BoundCallbackObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 599 */
@@ -83613,6 +85032,9 @@ webpackJsonp([1],[
 =======
 /* 604 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 606 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83624,6 +85046,7 @@ webpackJsonp([1],[
 	var Observable_1 = __webpack_require__(1);
 	var tryCatch_1 = __webpack_require__(23);
 	var errorObject_1 = __webpack_require__(22);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var AsyncSubject_1 = __webpack_require__(107);
@@ -83633,6 +85056,9 @@ webpackJsonp([1],[
 =======
 	var AsyncSubject_1 = __webpack_require__(112);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var AsyncSubject_1 = __webpack_require__(113);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -83801,6 +85227,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 600 */
@@ -83810,6 +85237,9 @@ webpackJsonp([1],[
 =======
 /* 605 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 607 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -83907,6 +85337,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=DeferObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 601 */
@@ -83916,6 +85347,9 @@ webpackJsonp([1],[
 =======
 /* 606 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 608 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84002,6 +85436,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ErrorObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 602 */
@@ -84011,6 +85446,9 @@ webpackJsonp([1],[
 =======
 /* 607 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 609 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84020,6 +85458,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var EmptyObservable_1 = __webpack_require__(55);
@@ -84032,6 +85471,10 @@ webpackJsonp([1],[
 	var EmptyObservable_1 = __webpack_require__(57);
 	var isArray_1 = __webpack_require__(39);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var EmptyObservable_1 = __webpack_require__(58);
+	var isArray_1 = __webpack_require__(41);
+>>>>>>> adding storage policy list - angular 2
 	var subscribeToResult_1 = __webpack_require__(7);
 	var OuterSubscriber_1 = __webpack_require__(6);
 	/**
@@ -84137,6 +85580,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 603 */
@@ -84146,6 +85590,9 @@ webpackJsonp([1],[
 =======
 /* 608 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 610 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84282,6 +85729,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=FromEventObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 604 */
@@ -84291,6 +85739,9 @@ webpackJsonp([1],[
 =======
 /* 609 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 611 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84403,6 +85854,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=FromEventPatternObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 605 */
@@ -84412,6 +85864,9 @@ webpackJsonp([1],[
 =======
 /* 610 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 612 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84421,11 +85876,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var isScheduler_1 = __webpack_require__(56);
 =======
 	var isScheduler_1 = __webpack_require__(58);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isScheduler_1 = __webpack_require__(59);
+>>>>>>> adding storage policy list - angular 2
 	var selfSelector = function (value) { return value; };
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
@@ -84555,6 +86014,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=GenerateObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 606 */
@@ -84564,6 +86024,9 @@ webpackJsonp([1],[
 =======
 /* 611 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 613 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84629,6 +86092,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=IfObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 607 */
@@ -84638,6 +86102,9 @@ webpackJsonp([1],[
 =======
 /* 612 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 614 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84730,6 +86197,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=IntervalObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 608 */
@@ -84739,6 +86207,9 @@ webpackJsonp([1],[
 =======
 /* 613 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 615 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84908,6 +86379,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 609 */
@@ -84917,6 +86389,9 @@ webpackJsonp([1],[
 =======
 /* 614 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 616 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -84926,6 +86401,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var noop_1 = __webpack_require__(268);
@@ -84935,6 +86411,9 @@ webpackJsonp([1],[
 =======
 	var noop_1 = __webpack_require__(274);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var noop_1 = __webpack_require__(275);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -84988,6 +86467,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=NeverObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 610 */
@@ -84997,6 +86477,9 @@ webpackJsonp([1],[
 =======
 /* 615 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 617 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85086,6 +86569,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=PairsObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 611 */
@@ -85095,6 +86579,9 @@ webpackJsonp([1],[
 =======
 /* 616 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 618 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85195,6 +86682,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=RangeObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 612 */
@@ -85204,6 +86692,9 @@ webpackJsonp([1],[
 =======
 /* 617 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 619 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85213,6 +86704,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var asap_1 = __webpack_require__(261);
@@ -85222,6 +86714,9 @@ webpackJsonp([1],[
 	var isNumeric_1 = __webpack_require__(166);
 =======
 	var asap_1 = __webpack_require__(267);
+=======
+	var asap_1 = __webpack_require__(268);
+>>>>>>> adding storage policy list - angular 2
 	var isNumeric_1 = __webpack_require__(169);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
@@ -85268,6 +86763,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=SubscribeOnObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 613 */
@@ -85277,6 +86773,9 @@ webpackJsonp([1],[
 =======
 /* 618 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 620 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85288,6 +86787,7 @@ webpackJsonp([1],[
 	var isNumeric_1 = __webpack_require__(169);
 	var Observable_1 = __webpack_require__(1);
 	var async_1 = __webpack_require__(27);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isScheduler_1 = __webpack_require__(56);
@@ -85300,6 +86800,10 @@ webpackJsonp([1],[
 	var isScheduler_1 = __webpack_require__(58);
 	var isDate_1 = __webpack_require__(119);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isScheduler_1 = __webpack_require__(59);
+	var isDate_1 = __webpack_require__(120);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -85398,6 +86902,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=TimerObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 614 */
@@ -85407,6 +86912,9 @@ webpackJsonp([1],[
 =======
 /* 619 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 621 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85472,6 +86980,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=UsingObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 615 */
@@ -85493,10 +87002,18 @@ webpackJsonp([1],[
 	"use strict";
 	var BoundCallbackObservable_1 = __webpack_require__(603);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 622 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var BoundCallbackObservable_1 = __webpack_require__(605);
+>>>>>>> adding storage policy list - angular 2
 	exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
 	//# sourceMappingURL=bindCallback.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 616 */
@@ -85518,10 +87035,18 @@ webpackJsonp([1],[
 	"use strict";
 	var BoundNodeCallbackObservable_1 = __webpack_require__(604);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 623 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var BoundNodeCallbackObservable_1 = __webpack_require__(606);
+>>>>>>> adding storage policy list - angular 2
 	exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 	//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 617 */
@@ -85543,12 +87068,15 @@ webpackJsonp([1],[
 	var combineLatest_1 = __webpack_require__(159);
 =======
 /* 622 */
+=======
+/* 624 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var isScheduler_1 = __webpack_require__(58);
-	var isArray_1 = __webpack_require__(39);
-	var ArrayObservable_1 = __webpack_require__(49);
+	var isScheduler_1 = __webpack_require__(59);
+	var isArray_1 = __webpack_require__(41);
+	var ArrayObservable_1 = __webpack_require__(50);
 	var combineLatest_1 = __webpack_require__(162);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 	/* tslint:enable:max-line-length */
@@ -85619,6 +87147,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 618 */
@@ -85628,6 +87157,9 @@ webpackJsonp([1],[
 =======
 /* 623 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 625 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85636,6 +87168,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concat.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 619 */
@@ -85657,10 +87190,18 @@ webpackJsonp([1],[
 	"use strict";
 	var DeferObservable_1 = __webpack_require__(605);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 626 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var DeferObservable_1 = __webpack_require__(607);
+>>>>>>> adding storage policy list - angular 2
 	exports.defer = DeferObservable_1.DeferObservable.create;
 	//# sourceMappingURL=defer.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 620 */
@@ -85670,6 +87211,9 @@ webpackJsonp([1],[
 =======
 /* 625 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 627 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -85683,6 +87227,7 @@ webpackJsonp([1],[
 	var Observable_1 = __webpack_require__(1);
 	var Subscription_1 = __webpack_require__(21);
 	var root_1 = __webpack_require__(25);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ReplaySubject_1 = __webpack_require__(108);
@@ -85701,6 +87246,12 @@ webpackJsonp([1],[
 	var errorObject_1 = __webpack_require__(22);
 	var assign_1 = __webpack_require__(735);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var ReplaySubject_1 = __webpack_require__(114);
+	var tryCatch_1 = __webpack_require__(23);
+	var errorObject_1 = __webpack_require__(22);
+	var assign_1 = __webpack_require__(737);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -85893,6 +87444,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=WebSocketSubject.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 621 */
@@ -85914,10 +87466,18 @@ webpackJsonp([1],[
 	"use strict";
 	var AjaxObservable_1 = __webpack_require__(247);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 628 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var AjaxObservable_1 = __webpack_require__(248);
+>>>>>>> adding storage policy list - angular 2
 	exports.ajax = AjaxObservable_1.AjaxObservable.create;
 	//# sourceMappingURL=ajax.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 622 */
@@ -85939,10 +87499,18 @@ webpackJsonp([1],[
 	"use strict";
 	var WebSocketSubject_1 = __webpack_require__(625);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 629 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var WebSocketSubject_1 = __webpack_require__(627);
+>>>>>>> adding storage policy list - angular 2
 	exports.webSocket = WebSocketSubject_1.WebSocketSubject.create;
 	//# sourceMappingURL=webSocket.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 623 */
@@ -85960,10 +87528,18 @@ webpackJsonp([1],[
 	"use strict";
 	var EmptyObservable_1 = __webpack_require__(57);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 630 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var EmptyObservable_1 = __webpack_require__(58);
+>>>>>>> adding storage policy list - angular 2
 	exports.empty = EmptyObservable_1.EmptyObservable.create;
 	//# sourceMappingURL=empty.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 624 */
@@ -85985,10 +87561,18 @@ webpackJsonp([1],[
 	"use strict";
 	var ForkJoinObservable_1 = __webpack_require__(607);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 631 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ForkJoinObservable_1 = __webpack_require__(609);
+>>>>>>> adding storage policy list - angular 2
 	exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 	//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 625 */
@@ -86010,10 +87594,18 @@ webpackJsonp([1],[
 	"use strict";
 	var FromEventObservable_1 = __webpack_require__(608);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 632 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var FromEventObservable_1 = __webpack_require__(610);
+>>>>>>> adding storage policy list - angular 2
 	exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 	//# sourceMappingURL=fromEvent.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 626 */
@@ -86035,10 +87627,18 @@ webpackJsonp([1],[
 	"use strict";
 	var FromEventPatternObservable_1 = __webpack_require__(609);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 633 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var FromEventPatternObservable_1 = __webpack_require__(611);
+>>>>>>> adding storage policy list - angular 2
 	exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
 	//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 627 */
@@ -86060,10 +87660,18 @@ webpackJsonp([1],[
 	"use strict";
 	var IfObservable_1 = __webpack_require__(611);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 634 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var IfObservable_1 = __webpack_require__(613);
+>>>>>>> adding storage policy list - angular 2
 	exports._if = IfObservable_1.IfObservable.create;
 	//# sourceMappingURL=if.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 628 */
@@ -86085,10 +87693,18 @@ webpackJsonp([1],[
 	"use strict";
 	var IntervalObservable_1 = __webpack_require__(612);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 635 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var IntervalObservable_1 = __webpack_require__(614);
+>>>>>>> adding storage policy list - angular 2
 	exports.interval = IntervalObservable_1.IntervalObservable.create;
 	//# sourceMappingURL=interval.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 629 */
@@ -86110,10 +87726,18 @@ webpackJsonp([1],[
 	"use strict";
 	var merge_1 = __webpack_require__(259);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 636 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var merge_1 = __webpack_require__(260);
+>>>>>>> adding storage policy list - angular 2
 	exports.merge = merge_1.mergeStatic;
 	//# sourceMappingURL=merge.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 630 */
@@ -86135,10 +87759,18 @@ webpackJsonp([1],[
 	"use strict";
 	var NeverObservable_1 = __webpack_require__(614);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 637 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var NeverObservable_1 = __webpack_require__(616);
+>>>>>>> adding storage policy list - angular 2
 	exports.never = NeverObservable_1.NeverObservable.create;
 	//# sourceMappingURL=never.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 631 */
@@ -86160,10 +87792,18 @@ webpackJsonp([1],[
 	"use strict";
 	var PairsObservable_1 = __webpack_require__(615);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 638 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var PairsObservable_1 = __webpack_require__(617);
+>>>>>>> adding storage policy list - angular 2
 	exports.pairs = PairsObservable_1.PairsObservable.create;
 	//# sourceMappingURL=pairs.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 632 */
@@ -86185,10 +87825,18 @@ webpackJsonp([1],[
 	"use strict";
 	var RangeObservable_1 = __webpack_require__(616);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 639 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var RangeObservable_1 = __webpack_require__(618);
+>>>>>>> adding storage policy list - angular 2
 	exports.range = RangeObservable_1.RangeObservable.create;
 	//# sourceMappingURL=range.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 633 */
@@ -86210,10 +87858,18 @@ webpackJsonp([1],[
 	"use strict";
 	var ErrorObservable_1 = __webpack_require__(606);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 640 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ErrorObservable_1 = __webpack_require__(608);
+>>>>>>> adding storage policy list - angular 2
 	exports._throw = ErrorObservable_1.ErrorObservable.create;
 	//# sourceMappingURL=throw.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 634 */
@@ -86235,10 +87891,18 @@ webpackJsonp([1],[
 	"use strict";
 	var TimerObservable_1 = __webpack_require__(618);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 641 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var TimerObservable_1 = __webpack_require__(620);
+>>>>>>> adding storage policy list - angular 2
 	exports.timer = TimerObservable_1.TimerObservable.create;
 	//# sourceMappingURL=timer.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 635 */
@@ -86260,10 +87924,18 @@ webpackJsonp([1],[
 	"use strict";
 	var UsingObservable_1 = __webpack_require__(619);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 642 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var UsingObservable_1 = __webpack_require__(621);
+>>>>>>> adding storage policy list - angular 2
 	exports.using = UsingObservable_1.UsingObservable.create;
 	//# sourceMappingURL=using.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 636 */
@@ -86273,6 +87945,9 @@ webpackJsonp([1],[
 =======
 /* 641 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 643 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86281,6 +87956,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=zip.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 637 */
@@ -86290,6 +87966,9 @@ webpackJsonp([1],[
 =======
 /* 642 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 644 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86404,6 +88083,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=audit.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 638 */
@@ -86413,6 +88093,9 @@ webpackJsonp([1],[
 =======
 /* 643 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 645 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86521,6 +88204,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=auditTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 639 */
@@ -86530,6 +88214,9 @@ webpackJsonp([1],[
 =======
 /* 644 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 646 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86610,6 +88297,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=buffer.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 640 */
@@ -86619,6 +88307,9 @@ webpackJsonp([1],[
 =======
 /* 645 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 647 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86737,6 +88428,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 641 */
@@ -86746,6 +88438,9 @@ webpackJsonp([1],[
 =======
 /* 646 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 648 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -86756,11 +88451,15 @@ webpackJsonp([1],[
 	};
 	var async_1 = __webpack_require__(27);
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var isScheduler_1 = __webpack_require__(56);
 =======
 	var isScheduler_1 = __webpack_require__(58);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isScheduler_1 = __webpack_require__(59);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Buffers the source Observable values for a specific time period.
 	 *
@@ -86952,6 +88651,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 642 */
@@ -86961,6 +88661,9 @@ webpackJsonp([1],[
 =======
 /* 647 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 649 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87117,6 +88820,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 643 */
@@ -87126,6 +88830,9 @@ webpackJsonp([1],[
 =======
 /* 648 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 650 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87252,6 +88959,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 644 */
@@ -87261,10 +88969,14 @@ webpackJsonp([1],[
 =======
 /* 649 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 651 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ReplaySubject_1 = __webpack_require__(108);
@@ -87274,6 +88986,9 @@ webpackJsonp([1],[
 =======
 	var ReplaySubject_1 = __webpack_require__(113);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var ReplaySubject_1 = __webpack_require__(114);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * @param bufferSize
 	 * @param windowTime
@@ -87322,6 +89037,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=cache.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 645 */
@@ -87331,6 +89047,9 @@ webpackJsonp([1],[
 =======
 /* 650 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 652 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87382,6 +89101,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=combineAll.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 646 */
@@ -87391,6 +89111,9 @@ webpackJsonp([1],[
 =======
 /* 651 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 653 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87458,6 +89181,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concatMap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 647 */
@@ -87479,6 +89203,13 @@ webpackJsonp([1],[
 	"use strict";
 	var mergeMapTo_1 = __webpack_require__(260);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 654 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var mergeMapTo_1 = __webpack_require__(261);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Projects each source value to the same Observable which is merged multiple
 	 * times in a serialized fashion on the output Observable.
@@ -87536,6 +89267,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 648 */
@@ -87545,6 +89277,9 @@ webpackJsonp([1],[
 =======
 /* 653 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 655 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87657,6 +89392,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=count.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 649 */
@@ -87666,6 +89402,9 @@ webpackJsonp([1],[
 =======
 /* 654 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 656 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87797,6 +89536,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=debounce.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 650 */
@@ -87806,6 +89546,9 @@ webpackJsonp([1],[
 =======
 /* 655 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 657 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -87926,6 +89669,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 651 */
@@ -87935,6 +89679,9 @@ webpackJsonp([1],[
 =======
 /* 656 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 658 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88015,6 +89762,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 652 */
@@ -88024,6 +89772,9 @@ webpackJsonp([1],[
 =======
 /* 657 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 659 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88033,6 +89784,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var async_1 = __webpack_require__(27);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isDate_1 = __webpack_require__(114);
@@ -88045,6 +89797,9 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 	var isDate_1 = __webpack_require__(119);
+=======
+	var isDate_1 = __webpack_require__(120);
+>>>>>>> adding storage policy list - angular 2
 	var Subscriber_1 = __webpack_require__(3);
 	var Notification_1 = __webpack_require__(87);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
@@ -88175,6 +89930,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=delay.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 653 */
@@ -88184,6 +89940,9 @@ webpackJsonp([1],[
 =======
 /* 658 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 660 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88378,6 +90137,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 654 */
@@ -88387,6 +90147,9 @@ webpackJsonp([1],[
 =======
 /* 659 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 661 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88461,6 +90224,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 655 */
@@ -88482,6 +90246,13 @@ webpackJsonp([1],[
 	"use strict";
 	var distinct_1 = __webpack_require__(252);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 662 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var distinct_1 = __webpack_require__(253);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items,
 	 * using a property accessed by using the key provided to check if the two items are distinct.
@@ -88508,6 +90279,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=distinctKey.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 656 */
@@ -88529,6 +90301,13 @@ webpackJsonp([1],[
 	"use strict";
 	var distinctUntilChanged_1 = __webpack_require__(253);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 663 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var distinctUntilChanged_1 = __webpack_require__(254);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item,
 	 * using a property accessed by using the key provided to check if the two items are distinct.
@@ -88552,6 +90331,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 657 */
@@ -88561,6 +90341,9 @@ webpackJsonp([1],[
 =======
 /* 662 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 664 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88677,6 +90460,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=do.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 658 */
@@ -88686,6 +90470,9 @@ webpackJsonp([1],[
 =======
 /* 663 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 665 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88695,6 +90482,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ArgumentOutOfRangeError_1 = __webpack_require__(113);
@@ -88704,6 +90492,9 @@ webpackJsonp([1],[
 =======
 	var ArgumentOutOfRangeError_1 = __webpack_require__(118);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var ArgumentOutOfRangeError_1 = __webpack_require__(119);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Emits the single value at the specified `index` in a sequence of emissions
 	 * from the source Observable.
@@ -88793,6 +90584,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=elementAt.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 659 */
@@ -88802,6 +90594,9 @@ webpackJsonp([1],[
 =======
 /* 664 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 666 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -88896,6 +90691,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=exhaust.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 660 */
@@ -88905,6 +90701,9 @@ webpackJsonp([1],[
 =======
 /* 665 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 667 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89046,6 +90845,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 661 */
@@ -89055,6 +90855,9 @@ webpackJsonp([1],[
 =======
 /* 666 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 668 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89209,6 +91012,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=expand.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 662 */
@@ -89218,6 +91022,9 @@ webpackJsonp([1],[
 =======
 /* 667 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 669 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89265,6 +91072,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=finally.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 663 */
@@ -89286,6 +91094,13 @@ webpackJsonp([1],[
 	"use strict";
 	var find_1 = __webpack_require__(256);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 670 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var find_1 = __webpack_require__(257);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Emits only the index of the first value emitted by the source Observable that
 	 * meets some condition.
@@ -89327,6 +91142,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=findIndex.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 664 */
@@ -89336,6 +91152,9 @@ webpackJsonp([1],[
 =======
 /* 669 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 671 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89348,6 +91167,7 @@ webpackJsonp([1],[
 	var Subscription_1 = __webpack_require__(21);
 	var Observable_1 = __webpack_require__(1);
 	var Subject_1 = __webpack_require__(16);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var Map_1 = __webpack_require__(728);
@@ -89360,6 +91180,10 @@ webpackJsonp([1],[
 	var Map_1 = __webpack_require__(733);
 	var FastMap_1 = __webpack_require__(731);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var Map_1 = __webpack_require__(735);
+	var FastMap_1 = __webpack_require__(733);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Groups the items emitted by an Observable according to a specified criterion,
 	 * and emits these grouped items as `GroupedObservables`, one
@@ -89582,6 +91406,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=groupBy.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 665 */
@@ -89591,6 +91416,9 @@ webpackJsonp([1],[
 =======
 /* 670 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 672 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89600,6 +91428,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var noop_1 = __webpack_require__(268);
@@ -89609,6 +91438,9 @@ webpackJsonp([1],[
 =======
 	var noop_1 = __webpack_require__(274);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var noop_1 = __webpack_require__(275);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Ignores all items emitted by the source Observable and only passes calls of `complete` or `error`.
 	 *
@@ -89650,6 +91482,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 666 */
@@ -89659,6 +91492,9 @@ webpackJsonp([1],[
 =======
 /* 671 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 673 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89715,6 +91551,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isEmpty.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 667 */
@@ -89724,6 +91561,9 @@ webpackJsonp([1],[
 =======
 /* 672 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 674 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -89740,6 +91580,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=let.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 668 */
@@ -89749,6 +91590,9 @@ webpackJsonp([1],[
 =======
 /* 673 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 675 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89816,6 +91660,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mapTo.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 669 */
@@ -89825,6 +91670,9 @@ webpackJsonp([1],[
 =======
 /* 674 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 676 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89920,6 +91768,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=materialize.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 670 */
@@ -89941,6 +91790,13 @@ webpackJsonp([1],[
 	"use strict";
 	var reduce_1 = __webpack_require__(115);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 677 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var reduce_1 = __webpack_require__(116);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * The Max operator operates on an Observable that emits numbers (or items that can be evaluated as numbers),
 	 * and when source Observable completes it emits a single item: the item with the largest number.
@@ -89963,6 +91819,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=max.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 671 */
@@ -89972,6 +91829,9 @@ webpackJsonp([1],[
 =======
 /* 676 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 678 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90082,6 +91942,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=mergeScan.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 672 */
@@ -90103,6 +91964,13 @@ webpackJsonp([1],[
 	"use strict";
 	var reduce_1 = __webpack_require__(115);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 679 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var reduce_1 = __webpack_require__(116);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * The Min operator operates on an Observable that emits numbers (or items that can be evaluated as numbers),
 	 * and when source Observable completes it emits a single item: the item with the smallest number.
@@ -90124,6 +91992,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=min.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 673 */
@@ -90133,6 +92002,9 @@ webpackJsonp([1],[
 =======
 /* 678 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 680 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90214,6 +92086,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=pairwise.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 674 */
@@ -90238,6 +92111,14 @@ webpackJsonp([1],[
 	var not_1 = __webpack_require__(737);
 	var filter_1 = __webpack_require__(255);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 681 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var not_1 = __webpack_require__(739);
+	var filter_1 = __webpack_require__(256);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Splits the source Observable into two, one with values that satisfy a
 	 * predicate, and another with values that don't satisfy the predicate.
@@ -90289,6 +92170,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=partition.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 675 */
@@ -90310,6 +92192,13 @@ webpackJsonp([1],[
 	"use strict";
 	var map_1 = __webpack_require__(114);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 682 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var map_1 = __webpack_require__(115);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Maps each source value (an object) to its specified nested property.
 	 *
@@ -90368,6 +92257,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=pluck.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 676 */
@@ -90377,10 +92267,14 @@ webpackJsonp([1],[
 =======
 /* 681 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 683 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Subject_1 = __webpack_require__(16);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var multicast_1 = __webpack_require__(74);
@@ -90390,6 +92284,9 @@ webpackJsonp([1],[
 =======
 	var multicast_1 = __webpack_require__(74);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var multicast_1 = __webpack_require__(75);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Returns a ConnectableObservable, which is a variety of Observable that waits until its connect method is called
 	 * before it begins emitting items to those Observers that have subscribed to it.
@@ -90411,6 +92308,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=publish.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 677 */
@@ -90429,12 +92327,19 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 /* 682 */
+=======
+/* 684 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var BehaviorSubject_1 = __webpack_require__(158);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	var multicast_1 = __webpack_require__(74);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var multicast_1 = __webpack_require__(75);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * @param value
 	 * @return {ConnectableObservable<T>}
@@ -90448,6 +92353,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 678 */
@@ -90472,6 +92378,14 @@ webpackJsonp([1],[
 	var AsyncSubject_1 = __webpack_require__(112);
 	var multicast_1 = __webpack_require__(74);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 685 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var AsyncSubject_1 = __webpack_require__(113);
+	var multicast_1 = __webpack_require__(75);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * @return {ConnectableObservable<T>}
 	 * @method publishLast
@@ -90484,6 +92398,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=publishLast.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 679 */
@@ -90508,6 +92423,14 @@ webpackJsonp([1],[
 	var ReplaySubject_1 = __webpack_require__(113);
 	var multicast_1 = __webpack_require__(74);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 686 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var ReplaySubject_1 = __webpack_require__(114);
+	var multicast_1 = __webpack_require__(75);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * @param bufferSize
 	 * @param windowTime
@@ -90525,6 +92448,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 680 */
@@ -90534,6 +92458,9 @@ webpackJsonp([1],[
 =======
 /* 685 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 687 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90543,11 +92470,15 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var EmptyObservable_1 = __webpack_require__(55);
 =======
 	var EmptyObservable_1 = __webpack_require__(57);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var EmptyObservable_1 = __webpack_require__(58);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Returns an Observable that repeats the stream of items emitted by the source Observable at most count times,
 	 * on a particular Scheduler.
@@ -90617,6 +92548,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=repeat.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 681 */
@@ -90626,6 +92558,9 @@ webpackJsonp([1],[
 =======
 /* 686 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 688 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90736,6 +92671,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 682 */
@@ -90745,6 +92681,9 @@ webpackJsonp([1],[
 =======
 /* 687 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 689 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90818,6 +92757,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=retry.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 683 */
@@ -90827,6 +92767,9 @@ webpackJsonp([1],[
 =======
 /* 688 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 690 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -90937,6 +92880,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 684 */
@@ -90946,6 +92890,9 @@ webpackJsonp([1],[
 =======
 /* 689 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 691 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91036,6 +92983,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=sample.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 685 */
@@ -91045,6 +92993,9 @@ webpackJsonp([1],[
 =======
 /* 690 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 692 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91140,6 +93091,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 686 */
@@ -91149,6 +93101,9 @@ webpackJsonp([1],[
 =======
 /* 691 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 693 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91261,6 +93216,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=scan.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 687 */
@@ -91270,6 +93226,9 @@ webpackJsonp([1],[
 =======
 /* 692 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 694 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91438,6 +93397,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 688 */
@@ -91459,6 +93419,13 @@ webpackJsonp([1],[
 	"use strict";
 	var multicast_1 = __webpack_require__(74);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 695 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var multicast_1 = __webpack_require__(75);
+>>>>>>> adding storage policy list - angular 2
 	var Subject_1 = __webpack_require__(16);
 	function shareSubjectFactory() {
 	    return new Subject_1.Subject();
@@ -91483,6 +93450,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=share.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 689 */
@@ -91492,6 +93460,9 @@ webpackJsonp([1],[
 =======
 /* 694 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 696 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91599,6 +93570,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=single.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 690 */
@@ -91608,6 +93580,9 @@ webpackJsonp([1],[
 =======
 /* 695 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 697 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91663,6 +93638,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=skip.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 691 */
@@ -91672,6 +93648,9 @@ webpackJsonp([1],[
 =======
 /* 696 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 698 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91747,6 +93726,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 692 */
@@ -91756,6 +93736,9 @@ webpackJsonp([1],[
 =======
 /* 697 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 699 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -91826,6 +93809,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 693 */
@@ -91850,15 +93834,22 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 /* 698 */
+=======
+/* 700 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var ArrayObservable_1 = __webpack_require__(49);
+	var ArrayObservable_1 = __webpack_require__(50);
 	var ScalarObservable_1 = __webpack_require__(160);
-	var EmptyObservable_1 = __webpack_require__(57);
+	var EmptyObservable_1 = __webpack_require__(58);
 	var concat_1 = __webpack_require__(163);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	var isScheduler_1 = __webpack_require__(58);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isScheduler_1 = __webpack_require__(59);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Returns an Observable that emits the items in a specified Iterable before it begins to emit items emitted by the
 	 * source Observable.
@@ -91898,6 +93889,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=startWith.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 694 */
@@ -91919,6 +93911,13 @@ webpackJsonp([1],[
 	"use strict";
 	var SubscribeOnObservable_1 = __webpack_require__(617);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 701 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var SubscribeOnObservable_1 = __webpack_require__(619);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Asynchronously subscribes Observers to this Observable on the specified Scheduler.
 	 *
@@ -91938,6 +93937,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 695 */
@@ -91947,6 +93947,9 @@ webpackJsonp([1],[
 =======
 /* 700 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 702 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92059,6 +94062,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=switch.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 696 */
@@ -92068,6 +94072,9 @@ webpackJsonp([1],[
 =======
 /* 701 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 703 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92211,6 +94218,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=switchMap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 697 */
@@ -92220,6 +94228,9 @@ webpackJsonp([1],[
 =======
 /* 702 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 704 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92350,6 +94361,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 698 */
@@ -92359,6 +94371,9 @@ webpackJsonp([1],[
 =======
 /* 703 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 705 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92368,6 +94383,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ArgumentOutOfRangeError_1 = __webpack_require__(113);
@@ -92380,6 +94396,10 @@ webpackJsonp([1],[
 	var ArgumentOutOfRangeError_1 = __webpack_require__(118);
 	var EmptyObservable_1 = __webpack_require__(57);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var ArgumentOutOfRangeError_1 = __webpack_require__(119);
+	var EmptyObservable_1 = __webpack_require__(58);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Emits only the first `count` values emitted by the source Observable.
 	 *
@@ -92461,6 +94481,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=take.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 699 */
@@ -92470,6 +94491,9 @@ webpackJsonp([1],[
 =======
 /* 704 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 706 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92479,6 +94503,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ArgumentOutOfRangeError_1 = __webpack_require__(113);
@@ -92491,6 +94516,10 @@ webpackJsonp([1],[
 	var ArgumentOutOfRangeError_1 = __webpack_require__(118);
 	var EmptyObservable_1 = __webpack_require__(57);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var ArgumentOutOfRangeError_1 = __webpack_require__(119);
+	var EmptyObservable_1 = __webpack_require__(58);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * Emits only the last `count` values emitted by the source Observable.
 	 *
@@ -92591,6 +94620,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=takeLast.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 700 */
@@ -92600,6 +94630,9 @@ webpackJsonp([1],[
 =======
 /* 705 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 707 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92679,6 +94712,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 701 */
@@ -92688,6 +94722,9 @@ webpackJsonp([1],[
 =======
 /* 706 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 708 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92784,6 +94821,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 702 */
@@ -92793,6 +94831,9 @@ webpackJsonp([1],[
 =======
 /* 707 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 709 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -92905,6 +94946,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=throttle.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 703 */
@@ -92914,6 +94956,9 @@ webpackJsonp([1],[
 =======
 /* 708 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 710 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -93013,6 +95058,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=throttleTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 704 */
@@ -93022,6 +95068,9 @@ webpackJsonp([1],[
 =======
 /* 709 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 711 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -93031,6 +95080,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var async_1 = __webpack_require__(27);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isDate_1 = __webpack_require__(114);
@@ -93040,6 +95090,9 @@ webpackJsonp([1],[
 =======
 	var isDate_1 = __webpack_require__(119);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isDate_1 = __webpack_require__(120);
+>>>>>>> adding storage policy list - angular 2
 	var Subscriber_1 = __webpack_require__(3);
 	/**
 	 * @param due
@@ -93136,6 +95189,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=timeout.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 705 */
@@ -93145,6 +95199,9 @@ webpackJsonp([1],[
 =======
 /* 710 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 712 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -93154,6 +95211,7 @@ webpackJsonp([1],[
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var async_1 = __webpack_require__(27);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var isDate_1 = __webpack_require__(114);
@@ -93163,6 +95221,9 @@ webpackJsonp([1],[
 =======
 	var isDate_1 = __webpack_require__(119);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var isDate_1 = __webpack_require__(120);
+>>>>>>> adding storage policy list - angular 2
 	var OuterSubscriber_1 = __webpack_require__(6);
 	var subscribeToResult_1 = __webpack_require__(7);
 	/**
@@ -93267,6 +95328,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 706 */
@@ -93276,6 +95338,9 @@ webpackJsonp([1],[
 =======
 /* 711 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 713 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -93325,6 +95390,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=toArray.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 707 */
@@ -93334,6 +95400,9 @@ webpackJsonp([1],[
 =======
 /* 712 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 714 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -93448,6 +95517,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=window.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 708 */
@@ -93457,6 +95527,9 @@ webpackJsonp([1],[
 =======
 /* 713 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 715 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -93592,6 +95665,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=windowCount.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 709 */
@@ -93601,6 +95675,9 @@ webpackJsonp([1],[
 =======
 /* 714 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 716 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -93774,6 +95851,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=windowTime.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 710 */
@@ -93783,6 +95861,9 @@ webpackJsonp([1],[
 =======
 /* 715 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 717 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -93967,6 +96048,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 711 */
@@ -93976,6 +96058,9 @@ webpackJsonp([1],[
 =======
 /* 716 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 718 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94107,6 +96192,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 712 */
@@ -94116,6 +96202,9 @@ webpackJsonp([1],[
 =======
 /* 717 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 719 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94250,6 +96339,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 713 */
@@ -94259,6 +96349,9 @@ webpackJsonp([1],[
 =======
 /* 718 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 720 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94276,6 +96369,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=zipAll.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 714 */
@@ -94285,6 +96379,9 @@ webpackJsonp([1],[
 =======
 /* 719 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 721 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94333,6 +96430,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Action.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 715 */
@@ -94342,6 +96440,9 @@ webpackJsonp([1],[
 =======
 /* 720 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 722 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94360,8 +96461,12 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 	var AsyncAction_1 = __webpack_require__(89);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	var AnimationFrame_1 = __webpack_require__(730);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var AnimationFrame_1 = __webpack_require__(732);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -94409,6 +96514,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AnimationFrameAction.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 716 */
@@ -94418,6 +96524,9 @@ webpackJsonp([1],[
 =======
 /* 721 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 723 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94467,6 +96576,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AnimationFrameScheduler.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 717 */
@@ -94476,6 +96586,9 @@ webpackJsonp([1],[
 =======
 /* 722 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 724 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94484,6 +96597,7 @@ webpackJsonp([1],[
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var Immediate_1 = __webpack_require__(727);
@@ -94494,6 +96608,9 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 	var Immediate_1 = __webpack_require__(732);
+=======
+	var Immediate_1 = __webpack_require__(734);
+>>>>>>> adding storage policy list - angular 2
 	var AsyncAction_1 = __webpack_require__(89);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 	/**
@@ -94543,6 +96660,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AsapAction.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 718 */
@@ -94552,6 +96670,9 @@ webpackJsonp([1],[
 =======
 /* 723 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 725 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94601,6 +96722,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AsapScheduler.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 719 */
@@ -94610,6 +96732,9 @@ webpackJsonp([1],[
 =======
 /* 724 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 726 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94669,6 +96794,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=QueueAction.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 720 */
@@ -94678,6 +96804,9 @@ webpackJsonp([1],[
 =======
 /* 725 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 727 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94706,6 +96835,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=QueueScheduler.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 721 */
@@ -94730,10 +96860,19 @@ webpackJsonp([1],[
 	var AnimationFrameAction_1 = __webpack_require__(720);
 	var AnimationFrameScheduler_1 = __webpack_require__(721);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 728 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var AnimationFrameAction_1 = __webpack_require__(722);
+	var AnimationFrameScheduler_1 = __webpack_require__(723);
+>>>>>>> adding storage policy list - angular 2
 	exports.animationFrame = new AnimationFrameScheduler_1.AnimationFrameScheduler(AnimationFrameAction_1.AnimationFrameAction);
 	//# sourceMappingURL=animationFrame.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 722 */
@@ -94743,6 +96882,9 @@ webpackJsonp([1],[
 =======
 /* 727 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 729 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94753,6 +96895,7 @@ webpackJsonp([1],[
 	};
 	var Observable_1 = __webpack_require__(1);
 	var Subscription_1 = __webpack_require__(21);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var SubscriptionLoggable_1 = __webpack_require__(264);
@@ -94765,6 +96908,10 @@ webpackJsonp([1],[
 	var SubscriptionLoggable_1 = __webpack_require__(270);
 	var applyMixins_1 = __webpack_require__(272);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var SubscriptionLoggable_1 = __webpack_require__(271);
+	var applyMixins_1 = __webpack_require__(273);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -94803,6 +96950,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=ColdObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 723 */
@@ -94812,6 +96960,9 @@ webpackJsonp([1],[
 =======
 /* 728 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 730 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94822,6 +96973,7 @@ webpackJsonp([1],[
 	};
 	var Subject_1 = __webpack_require__(16);
 	var Subscription_1 = __webpack_require__(21);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var SubscriptionLoggable_1 = __webpack_require__(264);
@@ -94834,6 +96986,10 @@ webpackJsonp([1],[
 	var SubscriptionLoggable_1 = __webpack_require__(270);
 	var applyMixins_1 = __webpack_require__(272);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var SubscriptionLoggable_1 = __webpack_require__(271);
+	var applyMixins_1 = __webpack_require__(273);
+>>>>>>> adding storage policy list - angular 2
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -94874,6 +97030,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=HotObservable.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 724 */
@@ -94883,6 +97040,9 @@ webpackJsonp([1],[
 =======
 /* 729 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 731 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -94908,11 +97068,18 @@ webpackJsonp([1],[
 >>>>>>> Table directive to angular 2
 =======
 	var Notification_1 = __webpack_require__(87);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	var ColdObservable_1 = __webpack_require__(727);
 	var HotObservable_1 = __webpack_require__(728);
 	var SubscriptionLog_1 = __webpack_require__(269);
 	var VirtualTimeScheduler_1 = __webpack_require__(266);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var ColdObservable_1 = __webpack_require__(729);
+	var HotObservable_1 = __webpack_require__(730);
+	var SubscriptionLog_1 = __webpack_require__(270);
+	var VirtualTimeScheduler_1 = __webpack_require__(267);
+>>>>>>> adding storage policy list - angular 2
 	var defaultMaxFrame = 750;
 	var TestScheduler = (function (_super) {
 	    __extends(TestScheduler, _super);
@@ -95126,6 +97293,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=TestScheduler.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 725 */
@@ -95135,6 +97303,9 @@ webpackJsonp([1],[
 =======
 /* 730 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 732 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -95173,6 +97344,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=AnimationFrame.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 726 */
@@ -95182,6 +97354,9 @@ webpackJsonp([1],[
 =======
 /* 731 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 733 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -95217,6 +97392,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=FastMap.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 727 */
@@ -95226,6 +97402,9 @@ webpackJsonp([1],[
 =======
 /* 732 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 734 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -95439,6 +97618,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=Immediate.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 728 */
@@ -95448,10 +97628,14 @@ webpackJsonp([1],[
 =======
 /* 733 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 735 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var root_1 = __webpack_require__(25);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var MapPolyfill_1 = __webpack_require__(729);
@@ -95461,10 +97645,14 @@ webpackJsonp([1],[
 =======
 	var MapPolyfill_1 = __webpack_require__(734);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var MapPolyfill_1 = __webpack_require__(736);
+>>>>>>> adding storage policy list - angular 2
 	exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 	//# sourceMappingURL=Map.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 729 */
@@ -95474,6 +97662,9 @@ webpackJsonp([1],[
 =======
 /* 734 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 736 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -95525,6 +97716,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=MapPolyfill.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 730 */
@@ -95534,6 +97726,9 @@ webpackJsonp([1],[
 =======
 /* 735 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 737 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -95569,6 +97764,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=assign.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 731 */
@@ -95578,6 +97774,9 @@ webpackJsonp([1],[
 =======
 /* 736 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 738 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -95588,6 +97787,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=isObject.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 732 */
@@ -95597,6 +97797,9 @@ webpackJsonp([1],[
 =======
 /* 737 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 739 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports) {
 
 	"use strict";
@@ -95612,6 +97815,7 @@ webpackJsonp([1],[
 	//# sourceMappingURL=not.js.map
 
 /***/ },
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 733 */
@@ -95621,10 +97825,14 @@ webpackJsonp([1],[
 =======
 /* 738 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 740 */
+>>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Subscriber_1 = __webpack_require__(3);
+<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var rxSubscriber_1 = __webpack_require__(112);
@@ -95634,6 +97842,9 @@ webpackJsonp([1],[
 =======
 	var rxSubscriber_1 = __webpack_require__(117);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var rxSubscriber_1 = __webpack_require__(118);
+>>>>>>> adding storage policy list - angular 2
 	function toSubscriber(nextOrObserver, error, complete) {
 	    if (nextOrObserver) {
 	        if (nextOrObserver instanceof Subscriber_1.Subscriber) {

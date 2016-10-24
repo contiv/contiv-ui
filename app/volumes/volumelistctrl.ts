@@ -28,7 +28,7 @@ export class VolumeListComponent implements OnInit, OnDestroy{
         this.crudHelperService = crudHelperService;
         this.volumeListCtrl = this;
         this['showLoader']=true;
-        this.refresh=Observable.interval(500000).subscribe(() => {
+        this.refresh=Observable.interval(5000).subscribe(() => {
             this.getVolumes(true);
         })
     }
