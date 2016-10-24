@@ -27,6 +27,7 @@ import {NetworkModule} from "./networks/network.module";
 import {ServicelbModule} from "./service_lbs/servicelb.module";
 import {VolumeModule} from "./volumes/volume.module";
 import {StoragepolicyModule} from "./storage_policies/storagepolicy.module";
+import {OrganizationModule} from "./organizations/organization.module";
 
 @NgModule({
     imports: [
@@ -38,7 +39,8 @@ import {StoragepolicyModule} from "./storage_policies/storagepolicy.module";
         NetworkModule,
         ServicelbModule,
         VolumeModule,
-        StoragepolicyModule
+        StoragepolicyModule,
+        OrganizationModule
     ],
     declarations: [
         DashboardComponent

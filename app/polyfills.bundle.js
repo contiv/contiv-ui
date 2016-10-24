@@ -103,6 +103,7 @@
 	 */
 	// Polyfills
 	"use strict";
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -139,27 +140,31 @@
 =======
 	__webpack_require__(469); // Internet Explorer 9 support
 >>>>>>> adding storage policy list - angular 2
+=======
+	__webpack_require__(471); // Internet Explorer 9 support
+>>>>>>> organizationlist to angular 2
 	// import 'core-js/es6';
 	// Added parts of es6 which are necessary for your project or your browser support requirements.
-	__webpack_require__(322);
-	__webpack_require__(315);
-	__webpack_require__(311);
-	__webpack_require__(317);
-	__webpack_require__(316);
-	__webpack_require__(314);
-	__webpack_require__(313);
-	__webpack_require__(321);
-	__webpack_require__(310);
-	__webpack_require__(309);
-	__webpack_require__(319);
-	__webpack_require__(312);
-	__webpack_require__(320);
 	__webpack_require__(324);
-	__webpack_require__(325);
-	__webpack_require__(323);
+	__webpack_require__(317);
+	__webpack_require__(313);
+	__webpack_require__(319);
 	__webpack_require__(318);
+	__webpack_require__(316);
+	__webpack_require__(315);
+	__webpack_require__(323);
+	__webpack_require__(312);
+	__webpack_require__(311);
+	__webpack_require__(321);
+	__webpack_require__(314);
+	__webpack_require__(322);
+	__webpack_require__(326);
+	__webpack_require__(327);
+	__webpack_require__(325);
+	__webpack_require__(320);
 	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
 	// import 'core-js/es6/promise';
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(314);
@@ -176,6 +181,11 @@
 	__webpack_require__(745);
 	__webpack_require__(744);
 >>>>>>> adding storage policy list - angular 2
+=======
+	__webpack_require__(328);
+	__webpack_require__(746);
+	__webpack_require__(745);
+>>>>>>> organizationlist to angular 2
 	
 
 /***/ },
@@ -197,9 +207,13 @@
 =======
 =======
 	  , redefine  = __webpack_require__(29)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 >>>>>>> adding storage policy list - angular 2
 	  , ctx       = __webpack_require__(62)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , ctx       = __webpack_require__(63)
+>>>>>>> organizationlist to angular 2
 	  , PROTOTYPE = 'prototype';
 
 	var $export = function(type, name, source){
@@ -308,9 +322,13 @@
 	var store      = __webpack_require__(107)('wks')
 =======
 	var store      = __webpack_require__(108)('wks')
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 >>>>>>> adding storage policy list - angular 2
 	  , uid        = __webpack_require__(66)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , uid        = __webpack_require__(67)
+>>>>>>> organizationlist to angular 2
 	  , Symbol     = __webpack_require__(12).Symbol
 	  , USE_SYMBOL = typeof Symbol == 'function';
 
@@ -328,6 +346,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject       = __webpack_require__(8)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -343,6 +362,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , IE8_DOM_DEFINE = __webpack_require__(217)
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(218)
+>>>>>>> organizationlist to angular 2
 	  , toPrimitive    = __webpack_require__(57)
 >>>>>>> adding storage policy list - angular 2
 	  , dP             = Object.defineProperty;
@@ -394,7 +416,8 @@
 
 /***/ },
 /* 25 */,
-/* 26 */
+/* 26 */,
+/* 27 */
 /***/ function(module, exports) {
 
 	var hasOwnProperty = {}.hasOwnProperty;
@@ -403,13 +426,13 @@
 	};
 
 /***/ },
-/* 27 */,
 /* 28 */,
 /* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var global    = __webpack_require__(12)
 	  , hide      = __webpack_require__(31)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , has       = __webpack_require__(26)
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -420,6 +443,10 @@
 =======
 	  , SRC       = __webpack_require__(66)('src')
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , has       = __webpack_require__(27)
+	  , SRC       = __webpack_require__(67)('src')
+>>>>>>> organizationlist to angular 2
 	  , TO_STRING = 'toString'
 	  , $toString = Function[TO_STRING]
 	  , TPL       = ('' + $toString).split(TO_STRING);
@@ -455,6 +482,7 @@
 
 	var $export = __webpack_require__(2)
 	  , fails   = __webpack_require__(10)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , defined = __webpack_require__(43)
@@ -464,6 +492,9 @@
 =======
 	  , defined = __webpack_require__(46)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , defined = __webpack_require__(47)
+>>>>>>> organizationlist to angular 2
 	  , quot    = /"/g;
 	// B.2.3.2.1 CreateHTML(string, tag, attribute, value)
 	var createHTML = function(string, tag, attribute, value) {
@@ -507,6 +538,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	var defined = __webpack_require__(43);
@@ -516,12 +548,16 @@
 =======
 	var defined = __webpack_require__(46);
 >>>>>>> adding storage policy list - angular 2
+=======
+	var defined = __webpack_require__(47);
+>>>>>>> organizationlist to angular 2
 	module.exports = function(it){
 	  return Object(defined(it));
 	};
 
 /***/ },
-/* 33 */
+/* 33 */,
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var fails = __webpack_require__(10);
@@ -533,13 +569,14 @@
 	};
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var IObject = __webpack_require__(82)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , defined = __webpack_require__(43);
 =======
 	var IObject = __webpack_require__(77)
@@ -553,18 +590,26 @@
 =======
 	  , defined = __webpack_require__(46);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , defined = __webpack_require__(47);
+>>>>>>> organizationlist to angular 2
 	module.exports = function(it){
 	  return IObject(defined(it));
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 34 */,
 =======
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 35 */,
+=======
+>>>>>>> organizationlist to angular 2
 /* 36 */,
-/* 37 */
+/* 37 */,
+/* 38 */,
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 0 -> Array#forEach
@@ -574,6 +619,7 @@
 	// 4 -> Array#every
 	// 5 -> Array#find
 	// 6 -> Array#findIndex
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var ctx      = __webpack_require__(59)
@@ -599,6 +645,13 @@
 =======
 	  , asc      = __webpack_require__(329);
 >>>>>>> adding storage policy list - angular 2
+=======
+	var ctx      = __webpack_require__(63)
+	  , IObject  = __webpack_require__(82)
+	  , toObject = __webpack_require__(32)
+	  , toLength = __webpack_require__(24)
+	  , asc      = __webpack_require__(331);
+>>>>>>> organizationlist to angular 2
 	module.exports = function(TYPE, $create){
 	  var IS_MAP        = TYPE == 1
 	    , IS_FILTER     = TYPE == 2
@@ -633,10 +686,11 @@
 	};
 
 /***/ },
-/* 38 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var has         = __webpack_require__(26)
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , toObject    = __webpack_require__(31)
@@ -649,6 +703,11 @@
 	  , toObject    = __webpack_require__(32)
 	  , IE_PROTO    = __webpack_require__(152)('IE_PROTO')
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var has         = __webpack_require__(27)
+	  , toObject    = __webpack_require__(32)
+	  , IE_PROTO    = __webpack_require__(153)('IE_PROTO')
+>>>>>>> organizationlist to angular 2
 	  , ObjectProto = Object.prototype;
 
 	module.exports = Object.getPrototypeOf || function(O){
@@ -660,7 +719,7 @@
 	};
 
 /***/ },
-/* 39 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// most Object methods by ES6 should accept primitives
@@ -675,8 +734,6 @@
 	};
 
 /***/ },
-/* 40 */,
-/* 41 */,
 /* 42 */,
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 43 */
@@ -688,8 +745,13 @@
 =======
 /* 44 */,
 /* 45 */,
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 /* 46 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 46 */,
+/* 47 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -699,6 +761,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 44 */
@@ -720,9 +783,12 @@
 =======
 /* 47 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 48 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var Map     = __webpack_require__(234)
+	var Map     = __webpack_require__(235)
 	  , $export = __webpack_require__(2)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , shared  = __webpack_require__(107)('metadata')
@@ -730,8 +796,12 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , shared  = __webpack_require__(108)('metadata')
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , store   = shared.store || (shared.store = new (__webpack_require__(242)));
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , store   = shared.store || (shared.store = new (__webpack_require__(243)));
+>>>>>>> organizationlist to angular 2
 
 	var getOrCreateMetadataMap = function(target, targetKey, create){
 	  var targetMetadata = store.get(target);
@@ -781,6 +851,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 45 */
@@ -806,12 +877,16 @@
 =======
 /* 48 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 49 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var pIE            = __webpack_require__(107)
 	  , createDesc     = __webpack_require__(55)
-	  , toIObject      = __webpack_require__(34)
+	  , toIObject      = __webpack_require__(35)
 	  , toPrimitive    = __webpack_require__(57)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , has            = __webpack_require__(26)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , IE8_DOM_DEFINE = __webpack_require__(216)
@@ -819,6 +894,10 @@
 =======
 	  , IE8_DOM_DEFINE = __webpack_require__(217)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , has            = __webpack_require__(27)
+	  , IE8_DOM_DEFINE = __webpack_require__(218)
+>>>>>>> organizationlist to angular 2
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
 	exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
@@ -831,6 +910,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 46 */
@@ -840,6 +920,9 @@
 =======
 /* 49 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 50 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -891,28 +974,29 @@
 	    , fails               = __webpack_require__(10)
 	    , $export             = __webpack_require__(2)
 	    , $typed              = __webpack_require__(110)
-	    , $buffer             = __webpack_require__(155)
-	    , ctx                 = __webpack_require__(62)
+	    , $buffer             = __webpack_require__(156)
+	    , ctx                 = __webpack_require__(63)
 	    , anInstance          = __webpack_require__(81)
 	    , propertyDesc        = __webpack_require__(55)
 	    , hide                = __webpack_require__(31)
 	    , redefineAll         = __webpack_require__(84)
 	    , toInteger           = __webpack_require__(56)
 	    , toLength            = __webpack_require__(24)
-	    , toIndex             = __webpack_require__(65)
+	    , toIndex             = __webpack_require__(66)
 	    , toPrimitive         = __webpack_require__(57)
-	    , has                 = __webpack_require__(26)
-	    , same                = __webpack_require__(229)
-	    , classof             = __webpack_require__(139)
+	    , has                 = __webpack_require__(27)
+	    , same                = __webpack_require__(230)
+	    , classof             = __webpack_require__(140)
 	    , isObject            = __webpack_require__(11)
 	    , toObject            = __webpack_require__(32)
-	    , isArrayIter         = __webpack_require__(144)
-	    , create              = __webpack_require__(63)
-	    , getPrototypeOf      = __webpack_require__(38)
-	    , gOPN                = __webpack_require__(64).f
-	    , getIterFn           = __webpack_require__(156)
-	    , uid                 = __webpack_require__(66)
+	    , isArrayIter         = __webpack_require__(145)
+	    , create              = __webpack_require__(64)
+	    , getPrototypeOf      = __webpack_require__(40)
+	    , gOPN                = __webpack_require__(65).f
+	    , getIterFn           = __webpack_require__(157)
+	    , uid                 = __webpack_require__(67)
 	    , wks                 = __webpack_require__(14)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	    , createArrayMethod   = __webpack_require__(35)
@@ -934,19 +1018,28 @@
 >>>>>>> adding storage policy list - angular 2
 	    , createArrayIncludes = __webpack_require__(138)
 	    , speciesConstructor  = __webpack_require__(230)
+=======
+	    , createArrayMethod   = __webpack_require__(39)
+	    , createArrayIncludes = __webpack_require__(139)
+	    , speciesConstructor  = __webpack_require__(231)
+>>>>>>> organizationlist to angular 2
 	    , ArrayIterators      = __webpack_require__(111)
 	    , Iterators           = __webpack_require__(72)
-	    , $iterDetect         = __webpack_require__(148)
+	    , $iterDetect         = __webpack_require__(149)
 	    , setSpecies          = __webpack_require__(85)
-	    , arrayFill           = __webpack_require__(137)
-	    , arrayCopyWithin     = __webpack_require__(209)
+	    , arrayFill           = __webpack_require__(138)
+	    , arrayCopyWithin     = __webpack_require__(210)
 	    , $DP                 = __webpack_require__(17)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	    , $GOPD               = __webpack_require__(46)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	    , $GOPD               = __webpack_require__(48)
 >>>>>>> adding storage policy list - angular 2
+=======
+	    , $GOPD               = __webpack_require__(49)
+>>>>>>> organizationlist to angular 2
 	    , dP                  = $DP.f
 	    , gOPD                = $GOPD.f
 	    , RangeError          = global.RangeError
@@ -1388,6 +1481,7 @@
 	} else module.exports = function(){ /* empty */ };
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 47 */,
@@ -1403,6 +1497,8 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 50 */,
+=======
+>>>>>>> organizationlist to angular 2
 /* 51 */,
 /* 52 */,
 /* 53 */
@@ -1432,10 +1528,14 @@
 >>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var META     = __webpack_require__(66)('meta')
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var META     = __webpack_require__(67)('meta')
+>>>>>>> organizationlist to angular 2
 	  , isObject = __webpack_require__(11)
-	  , has      = __webpack_require__(26)
+	  , has      = __webpack_require__(27)
 	  , setDesc  = __webpack_require__(17).f
 	  , id       = 0;
 	var isExtensible = Object.isExtensible || function(){
@@ -1570,8 +1670,13 @@
 /* 58 */,
 /* 59 */,
 /* 60 */,
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 /* 61 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 61 */,
+/* 62 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -1581,6 +1686,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 59 */
@@ -1593,6 +1699,9 @@
 	var aFunction = __webpack_require__(50);
 =======
 /* 62 */
+=======
+/* 63 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
@@ -1622,6 +1731,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 60 */
@@ -1631,10 +1741,14 @@
 =======
 /* 63 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 64 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	var anObject    = __webpack_require__(8)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -1654,12 +1768,18 @@
 	  , enumBugKeys = __webpack_require__(140)
 	  , IE_PROTO    = __webpack_require__(152)('IE_PROTO')
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , dPs         = __webpack_require__(225)
+	  , enumBugKeys = __webpack_require__(141)
+	  , IE_PROTO    = __webpack_require__(153)('IE_PROTO')
+>>>>>>> organizationlist to angular 2
 	  , Empty       = function(){ /* empty */ }
 	  , PROTOTYPE   = 'prototype';
 
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -1673,11 +1793,15 @@
 =======
 	  var iframe = __webpack_require__(215)('iframe')
 >>>>>>> adding storage policy list - angular 2
+=======
+	  var iframe = __webpack_require__(216)('iframe')
+>>>>>>> organizationlist to angular 2
 	    , i      = enumBugKeys.length
 	    , lt     = '<'
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -1691,6 +1815,9 @@
 =======
 	  __webpack_require__(216).appendChild(iframe);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  __webpack_require__(217).appendChild(iframe);
+>>>>>>> organizationlist to angular 2
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -1717,6 +1844,7 @@
 
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 61 */
@@ -1741,12 +1869,21 @@
 	var $keys      = __webpack_require__(226)
 	  , hiddenKeys = __webpack_require__(140).concat('length', 'prototype');
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+	var $keys      = __webpack_require__(227)
+	  , hiddenKeys = __webpack_require__(141).concat('length', 'prototype');
+>>>>>>> organizationlist to angular 2
 
 	exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
 	  return $keys(O, hiddenKeys);
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 62 */
@@ -1758,6 +1895,9 @@
 	var toInteger = __webpack_require__(53)
 =======
 /* 65 */
+=======
+/* 66 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -1774,6 +1914,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 63 */
@@ -1783,6 +1924,9 @@
 =======
 /* 66 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 67 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	var id = 0
@@ -1792,6 +1936,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 64 */
@@ -1801,10 +1946,14 @@
 =======
 /* 67 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 68 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 19.1.3.6 Object.prototype.toString()
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	var classof = __webpack_require__(136)
@@ -1814,6 +1963,9 @@
 =======
 	var classof = __webpack_require__(139)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var classof = __webpack_require__(140)
+>>>>>>> organizationlist to angular 2
 	  , test    = {};
 	test[__webpack_require__(14)('toStringTag')] = 'z';
 	if(test + '' != '[object z]'){
@@ -1823,6 +1975,7 @@
 	}
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 65 */,
@@ -1842,6 +1995,8 @@
 >>>>>>> Table directive to angular 2
 =======
 /* 68 */,
+=======
+>>>>>>> organizationlist to angular 2
 /* 69 */,
 /* 70 */,
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -1881,9 +2036,14 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var $keys       = __webpack_require__(226)
 	  , enumBugKeys = __webpack_require__(140);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var $keys       = __webpack_require__(227)
+	  , enumBugKeys = __webpack_require__(141);
+>>>>>>> organizationlist to angular 2
 
 	module.exports = Object.keys || function keys(O){
 	  return $keys(O, enumBugKeys);
@@ -1968,8 +2128,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var cof = __webpack_require__(61);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var cof = __webpack_require__(62);
+>>>>>>> organizationlist to angular 2
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
@@ -2045,7 +2209,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var def = __webpack_require__(17).f
-	  , has = __webpack_require__(26)
+	  , has = __webpack_require__(27)
 	  , TAG = __webpack_require__(14)('toStringTag');
 
 	module.exports = function(it, tag, stat){
@@ -2134,10 +2298,14 @@
 	  , anInstance        = __webpack_require__(81)
 	  , isObject          = __webpack_require__(11)
 	  , fails             = __webpack_require__(10)
-	  , $iterDetect       = __webpack_require__(148)
+	  , $iterDetect       = __webpack_require__(149)
 	  , setToStringTag    = __webpack_require__(86)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , inheritIfRequired = __webpack_require__(143);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , inheritIfRequired = __webpack_require__(144);
+>>>>>>> organizationlist to angular 2
 
 	module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK){
 	  var Base  = global[NAME]
@@ -2231,6 +2399,7 @@
 	var hide     = __webpack_require__(31)
 	  , redefine = __webpack_require__(29)
 	  , fails    = __webpack_require__(10)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , defined  = __webpack_require__(43)
@@ -2240,6 +2409,9 @@
 =======
 	  , defined  = __webpack_require__(46)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , defined  = __webpack_require__(47)
+>>>>>>> organizationlist to angular 2
 	  , wks      = __webpack_require__(14);
 
 	module.exports = function(KEY, length, exec){
@@ -2287,17 +2459,21 @@
 >>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var ctx         = __webpack_require__(62)
-	  , call        = __webpack_require__(219)
-	  , isArrayIter = __webpack_require__(144)
+	var ctx         = __webpack_require__(63)
+	  , call        = __webpack_require__(220)
+	  , isArrayIter = __webpack_require__(145)
 	  , anObject    = __webpack_require__(8)
 	  , toLength    = __webpack_require__(24)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , getIterFn   = __webpack_require__(152)
 >>>>>>> Table directive to angular 2
 =======
 	  , getIterFn   = __webpack_require__(156)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , getIterFn   = __webpack_require__(157)
+>>>>>>> organizationlist to angular 2
 	  , BREAK       = {}
 	  , RETURN      = {};
 	var exports = module.exports = function(iterable, entries, fn, that, ITERATOR){
@@ -2403,10 +2579,14 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
-	  , defined = __webpack_require__(46)
+	  , defined = __webpack_require__(47)
 	  , fails   = __webpack_require__(10)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , spaces  = __webpack_require__(154)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , spaces  = __webpack_require__(155)
+>>>>>>> organizationlist to angular 2
 	  , space   = '[' + spaces + ']'
 	  , non     = '\u200b\u0085'
 	  , ltrim   = RegExp('^' + space + space + '*')
@@ -2460,8 +2640,12 @@
 
 	var global = __webpack_require__(12)
 	  , hide   = __webpack_require__(31)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , uid    = __webpack_require__(66)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , uid    = __webpack_require__(67)
+>>>>>>> organizationlist to angular 2
 	  , TYPED  = uid('typed_array')
 	  , VIEW   = uid('view')
 	  , ABV    = !!(global.ArrayBuffer && global.DataView)
@@ -2516,15 +2700,20 @@
 
 	'use strict';
 	var addToUnscopables = __webpack_require__(80)
-	  , step             = __webpack_require__(221)
+	  , step             = __webpack_require__(222)
 	  , Iterators        = __webpack_require__(72)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , toIObject        = __webpack_require__(34);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , toIObject        = __webpack_require__(35);
+>>>>>>> organizationlist to angular 2
 
 	// 22.1.3.4 Array.prototype.entries()
 	// 22.1.3.13 Array.prototype.keys()
 	// 22.1.3.29 Array.prototype.values()
 	// 22.1.3.30 Array.prototype[@@iterator]()
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	module.exports = __webpack_require__(144)(Array, 'Array', function(iterated, kind){
@@ -2534,6 +2723,9 @@
 =======
 	module.exports = __webpack_require__(147)(Array, 'Array', function(iterated, kind){
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	module.exports = __webpack_require__(148)(Array, 'Array', function(iterated, kind){
+>>>>>>> organizationlist to angular 2
 	  this._t = toIObject(iterated); // target
 	  this._i = 0;                   // next index
 	  this._k = kind;                // kind
@@ -2581,15 +2773,19 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $at  = __webpack_require__(231)(true);
+	var $at  = __webpack_require__(232)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(143)(String, 'String', function(iterated){
 >>>>>>> Table directive to angular 2
 =======
 	__webpack_require__(147)(String, 'String', function(iterated){
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	__webpack_require__(148)(String, 'String', function(iterated){
+>>>>>>> organizationlist to angular 2
 	  this._t = String(iterated); // target
 	  this._i = 0;                // next index
 	// 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -2653,8 +2849,13 @@
 /* 134 */,
 /* 135 */,
 /* 136 */,
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 /* 137 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 137 */,
+/* 138 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
@@ -2668,8 +2869,12 @@
 >>>>>>> Table directive to angular 2
 =======
 	var toObject = __webpack_require__(32)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , toIndex  = __webpack_require__(65)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , toIndex  = __webpack_require__(66)
+>>>>>>> organizationlist to angular 2
 	  , toLength = __webpack_require__(24);
 	module.exports = function fill(value /*, start = 0, end = @length */){
 	  var O      = toObject(this)
@@ -2683,6 +2888,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 135 */
@@ -2692,12 +2898,16 @@
 =======
 /* 138 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 139 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
-	var toIObject = __webpack_require__(34)
+	var toIObject = __webpack_require__(35)
 	  , toLength  = __webpack_require__(24)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , toIndex   = __webpack_require__(62);
@@ -2707,6 +2917,9 @@
 =======
 	  , toIndex   = __webpack_require__(65);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , toIndex   = __webpack_require__(66);
+>>>>>>> organizationlist to angular 2
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -2725,6 +2938,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 136 */
@@ -2746,6 +2960,13 @@
 	// getting tag from 19.1.3.6 Object.prototype.toString()
 	var cof = __webpack_require__(61)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 140 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// getting tag from 19.1.3.6 Object.prototype.toString()
+	var cof = __webpack_require__(62)
+>>>>>>> organizationlist to angular 2
 	  , TAG = __webpack_require__(14)('toStringTag')
 	  // ES3 wrong here
 	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
@@ -2769,6 +2990,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 137 */
@@ -2778,6 +3000,9 @@
 =======
 /* 140 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 141 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	// IE 8- don't enum bug keys
@@ -2786,6 +3011,7 @@
 	).split(',');
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 138 */
@@ -2795,6 +3021,9 @@
 =======
 /* 141 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 142 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var MATCH = __webpack_require__(14)('match');
@@ -2811,6 +3040,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 139 */
@@ -2820,6 +3050,9 @@
 =======
 /* 142 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 143 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2837,6 +3070,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 140 */
@@ -2858,6 +3092,13 @@
 	var isObject       = __webpack_require__(11)
 	  , setPrototypeOf = __webpack_require__(151).set;
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 144 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject       = __webpack_require__(11)
+	  , setPrototypeOf = __webpack_require__(152).set;
+>>>>>>> organizationlist to angular 2
 	module.exports = function(that, target, C){
 	  var P, S = target.constructor;
 	  if(S !== C && typeof S == 'function' && (P = S.prototype) !== C.prototype && isObject(P) && setPrototypeOf){
@@ -2866,6 +3107,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 141 */
@@ -2882,6 +3124,9 @@
 >>>>>>> Table directive to angular 2
 =======
 /* 144 */
+=======
+/* 145 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// check on default Array iterator
@@ -2899,6 +3144,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 142 */
@@ -2920,11 +3166,19 @@
 	// 7.2.2 IsArray(argument)
 	var cof = __webpack_require__(61);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 146 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.2.2 IsArray(argument)
+	var cof = __webpack_require__(62);
+>>>>>>> organizationlist to angular 2
 	module.exports = Array.isArray || function isArray(arg){
 	  return cof(arg) == 'Array';
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 143 */
@@ -2934,10 +3188,14 @@
 =======
 /* 146 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 147 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.8 IsRegExp(argument)
 	var isObject = __webpack_require__(11)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , cof      = __webpack_require__(58)
@@ -2947,6 +3205,9 @@
 =======
 	  , cof      = __webpack_require__(61)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , cof      = __webpack_require__(62)
+>>>>>>> organizationlist to angular 2
 	  , MATCH    = __webpack_require__(14)('match');
 	module.exports = function(it){
 	  var isRegExp;
@@ -2954,6 +3215,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 144 */
@@ -2970,6 +3232,9 @@
 >>>>>>> Table directive to angular 2
 =======
 /* 147 */
+=======
+/* 148 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2978,6 +3243,7 @@
 	  , $export        = __webpack_require__(2)
 	  , redefine       = __webpack_require__(29)
 	  , hide           = __webpack_require__(31)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , has            = __webpack_require__(26)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -2999,11 +3265,18 @@
 	  , getPrototypeOf = __webpack_require__(37)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
+=======
+	  , has            = __webpack_require__(27)
+>>>>>>> organizationlist to angular 2
 	  , Iterators      = __webpack_require__(72)
-	  , $iterCreate    = __webpack_require__(220)
+	  , $iterCreate    = __webpack_require__(221)
 	  , setToStringTag = __webpack_require__(86)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , getPrototypeOf = __webpack_require__(38)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , getPrototypeOf = __webpack_require__(40)
+>>>>>>> organizationlist to angular 2
 	  , ITERATOR       = __webpack_require__(14)('iterator')
 	  , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
 	  , FF_ITERATOR    = '@@iterator'
@@ -3066,6 +3339,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 145 */
@@ -3075,6 +3349,9 @@
 =======
 /* 148 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 149 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var ITERATOR     = __webpack_require__(14)('iterator')
@@ -3100,6 +3377,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 146 */
@@ -3109,6 +3387,9 @@
 =======
 /* 149 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 150 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	// 20.2.2.14 Math.expm1(x)
@@ -3123,6 +3404,7 @@
 	} : $expm1;
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 147 */
@@ -3132,6 +3414,9 @@
 =======
 /* 150 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 151 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	// 20.2.2.28 Math.sign(x)
@@ -3140,6 +3425,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 148 */
@@ -3149,6 +3435,9 @@
 =======
 /* 151 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 152 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -3163,6 +3452,7 @@
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function(test, buggy, set){
 	      try {
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -3176,6 +3466,9 @@
 =======
 	        set = __webpack_require__(62)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
 >>>>>>> adding storage policy list - angular 2
+=======
+	        set = __webpack_require__(63)(Function.call, __webpack_require__(49).f(Object.prototype, '__proto__').set, 2);
+>>>>>>> organizationlist to angular 2
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch(e){ buggy = true; }
@@ -3190,6 +3483,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 149 */
@@ -3211,11 +3505,19 @@
 	var shared = __webpack_require__(108)('keys')
 	  , uid    = __webpack_require__(66);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 153 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var shared = __webpack_require__(108)('keys')
+	  , uid    = __webpack_require__(67);
+>>>>>>> organizationlist to angular 2
 	module.exports = function(key){
 	  return shared[key] || (shared[key] = uid(key));
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 150 */
@@ -3244,6 +3546,14 @@
 =======
 	  , defined  = __webpack_require__(46);
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 154 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// helper for String#{startsWith, endsWith, includes}
+	var isRegExp = __webpack_require__(147)
+	  , defined  = __webpack_require__(47);
+>>>>>>> organizationlist to angular 2
 
 	module.exports = function(that, searchString, NAME){
 	  if(isRegExp(searchString))throw TypeError('String#' + NAME + " doesn't accept regex!");
@@ -3251,6 +3561,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 151 */
@@ -3260,12 +3571,16 @@
 =======
 /* 154 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 155 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
 	  '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 152 */
@@ -3275,6 +3590,9 @@
 =======
 /* 155 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 156 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3309,14 +3627,18 @@
 	  , anInstance     = __webpack_require__(81)
 	  , toInteger      = __webpack_require__(56)
 	  , toLength       = __webpack_require__(24)
-	  , gOPN           = __webpack_require__(64).f
+	  , gOPN           = __webpack_require__(65).f
 	  , dP             = __webpack_require__(17).f
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , arrayFill      = __webpack_require__(133)
 	  , setToStringTag = __webpack_require__(81)
 >>>>>>> Table directive to angular 2
 =======
 	  , arrayFill      = __webpack_require__(137)
+=======
+	  , arrayFill      = __webpack_require__(138)
+>>>>>>> organizationlist to angular 2
 	  , setToStringTag = __webpack_require__(86)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , ARRAY_BUFFER   = 'ArrayBuffer'
@@ -3579,6 +3901,7 @@
 	exports[DATA_VIEW] = $DataView;
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 153 */
@@ -3592,9 +3915,12 @@
 =======
 /* 156 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 157 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var classof   = __webpack_require__(139)
+	var classof   = __webpack_require__(140)
 	  , ITERATOR  = __webpack_require__(14)('iterator')
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -3613,6 +3939,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 /* 154 */
@@ -3628,6 +3955,9 @@
 =======
 /* 157 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 158 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $iterators    = __webpack_require__(111)
@@ -3664,6 +3994,7 @@
 	}
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 =======
@@ -3675,6 +4006,8 @@
 =======
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 /* 158 */,
+=======
+>>>>>>> organizationlist to angular 2
 /* 159 */,
 /* 160 */,
 /* 161 */,
@@ -3740,17 +4073,23 @@
 /* 205 */,
 /* 206 */,
 /* 207 */,
-/* 208 */
+/* 208 */,
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var cof = __webpack_require__(61);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	var cof = __webpack_require__(62);
+>>>>>>> organizationlist to angular 2
 	module.exports = function(it, msg){
 	  if(typeof it != 'number' && cof(it) != 'Number')throw TypeError(msg);
 	  return +it;
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -3764,6 +4103,9 @@
 =======
 /* 209 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 210 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
@@ -3777,8 +4119,12 @@
 >>>>>>> Table directive to angular 2
 =======
 	var toObject = __webpack_require__(32)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , toIndex  = __webpack_require__(65)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , toIndex  = __webpack_require__(66)
+>>>>>>> organizationlist to angular 2
 	  , toLength = __webpack_require__(24);
 
 	module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0, end = @length*/){
@@ -3803,6 +4149,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -3824,6 +4171,9 @@
 =======
 /* 210 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 211 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var aFunction = __webpack_require__(53)
@@ -3857,6 +4207,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -3879,17 +4230,24 @@
 =======
 /* 211 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 212 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var aFunction  = __webpack_require__(53)
 	  , isObject   = __webpack_require__(11)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , invoke     = __webpack_require__(330)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , invoke     = __webpack_require__(332)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , invoke     = __webpack_require__(334)
+>>>>>>> organizationlist to angular 2
 	  , arraySlice = [].slice
 	  , factories  = {};
 
@@ -3912,6 +4270,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -3925,10 +4284,14 @@
 =======
 /* 212 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 213 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var dP          = __webpack_require__(17).f
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , create      = __webpack_require__(60)
@@ -3955,13 +4318,16 @@
 	  , fastKey     = __webpack_require__(51).fastKey
 =======
 	  , create      = __webpack_require__(63)
+=======
+	  , create      = __webpack_require__(64)
+>>>>>>> organizationlist to angular 2
 	  , redefineAll = __webpack_require__(84)
-	  , ctx         = __webpack_require__(62)
+	  , ctx         = __webpack_require__(63)
 	  , anInstance  = __webpack_require__(81)
-	  , defined     = __webpack_require__(46)
+	  , defined     = __webpack_require__(47)
 	  , forOf       = __webpack_require__(105)
-	  , $iterDefine = __webpack_require__(147)
-	  , step        = __webpack_require__(221)
+	  , $iterDefine = __webpack_require__(148)
+	  , step        = __webpack_require__(222)
 	  , setSpecies  = __webpack_require__(85)
 	  , DESCRIPTORS = __webpack_require__(20)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -4101,6 +4467,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4123,6 +4490,9 @@
 =======
 /* 213 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 214 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4143,9 +4513,14 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , forOf             = __webpack_require__(105)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , createArrayMethod = __webpack_require__(37)
 >>>>>>> adding storage policy list - angular 2
 	  , $has              = __webpack_require__(26)
+=======
+	  , createArrayMethod = __webpack_require__(39)
+	  , $has              = __webpack_require__(27)
+>>>>>>> organizationlist to angular 2
 	  , arrayFind         = createArrayMethod(5)
 	  , arrayFindIndex    = createArrayMethod(6)
 	  , id                = 0;
@@ -4222,6 +4597,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4235,6 +4611,9 @@
 =======
 /* 214 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 215 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4255,6 +4634,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4268,6 +4648,9 @@
 =======
 /* 215 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 216 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -4279,6 +4662,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4292,11 +4676,15 @@
 =======
 /* 216 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 217 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(12).document && document.documentElement;
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4317,13 +4705,17 @@
 =======
 /* 217 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 218 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = !__webpack_require__(20) && !__webpack_require__(10)(function(){
-	  return Object.defineProperty(__webpack_require__(215)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	  return Object.defineProperty(__webpack_require__(216)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 209 */
@@ -4334,6 +4726,9 @@
 =======
 /* 218 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 219 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
@@ -4344,6 +4739,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4357,6 +4753,9 @@
 =======
 /* 219 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 220 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
@@ -4373,6 +4772,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4397,10 +4797,13 @@
 =======
 /* 220 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 221 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var create         = __webpack_require__(63)
+	var create         = __webpack_require__(64)
 	  , descriptor     = __webpack_require__(55)
 	  , setToStringTag = __webpack_require__(86)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
@@ -4415,6 +4818,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4428,6 +4832,9 @@
 =======
 /* 221 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 222 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -4435,6 +4842,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4448,6 +4856,9 @@
 =======
 /* 222 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 223 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	// 20.2.2.20 Math.log1p(x)
@@ -4456,6 +4867,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4469,6 +4881,9 @@
 =======
 /* 223 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 224 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4528,6 +4943,7 @@
 	} : $assign;
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4541,6 +4957,9 @@
 =======
 /* 224 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 225 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP       = __webpack_require__(17)
@@ -4570,6 +4989,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4597,6 +5017,14 @@
 	var toIObject = __webpack_require__(34)
 	  , gOPN      = __webpack_require__(64).f
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
+	var toIObject = __webpack_require__(35)
+	  , gOPN      = __webpack_require__(65).f
+>>>>>>> organizationlist to angular 2
 	  , toString  = {}.toString;
 
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -4616,6 +5044,7 @@
 
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4646,6 +5075,15 @@
 	  , arrayIndexOf = __webpack_require__(138)(false)
 	  , IE_PROTO     = __webpack_require__(152)('IE_PROTO');
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 227 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var has          = __webpack_require__(27)
+	  , toIObject    = __webpack_require__(35)
+	  , arrayIndexOf = __webpack_require__(139)(false)
+	  , IE_PROTO     = __webpack_require__(153)('IE_PROTO');
+>>>>>>> organizationlist to angular 2
 
 	module.exports = function(object, names){
 	  var O      = toIObject(object)
@@ -4661,6 +5099,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4679,23 +5118,31 @@
 =======
 /* 227 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 228 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseFloat = __webpack_require__(12).parseFloat
 	  , $trim       = __webpack_require__(109).trim;
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	module.exports = 1 / $parseFloat(__webpack_require__(150) + '-0') !== -Infinity ? function parseFloat(str){
 >>>>>>> Table directive to angular 2
 =======
 	module.exports = 1 / $parseFloat(__webpack_require__(154) + '-0') !== -Infinity ? function parseFloat(str){
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	module.exports = 1 / $parseFloat(__webpack_require__(155) + '-0') !== -Infinity ? function parseFloat(str){
+>>>>>>> organizationlist to angular 2
 	  var string = $trim(String(str), 3)
 	    , result = $parseFloat(string);
 	  return result === 0 && string.charAt(0) == '-' ? -0 : result;
 	} : $parseFloat;
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4718,12 +5165,19 @@
 =======
 /* 228 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 229 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseInt = __webpack_require__(12).parseInt
 	  , $trim     = __webpack_require__(109).trim
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , ws        = __webpack_require__(154)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , ws        = __webpack_require__(155)
+>>>>>>> organizationlist to angular 2
 	  , hex       = /^[\-+]?0[xX]/;
 
 	module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix){
@@ -4732,6 +5186,7 @@
 	} : $parseInt;
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4745,6 +5200,9 @@
 =======
 /* 229 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 230 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	// 7.2.9 SameValue(x, y)
@@ -4753,6 +5211,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4766,6 +5225,9 @@
 =======
 /* 230 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 231 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
@@ -4790,6 +5252,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4815,6 +5278,13 @@
 	var toInteger = __webpack_require__(56)
 	  , defined   = __webpack_require__(46);
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var toInteger = __webpack_require__(56)
+	  , defined   = __webpack_require__(47);
+>>>>>>> organizationlist to angular 2
 	// true  -> String#at
 	// false -> String#codePointAt
 	module.exports = function(TO_STRING){
@@ -4832,6 +5302,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4854,12 +5325,19 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 232 */
+=======
+/* 233 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var toInteger = __webpack_require__(56)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , defined   = __webpack_require__(46);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , defined   = __webpack_require__(47);
+>>>>>>> organizationlist to angular 2
 
 	module.exports = function repeat(count){
 	  var str = String(defined(this))
@@ -4871,6 +5349,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4884,11 +5363,15 @@
 =======
 /* 233 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 234 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.f = __webpack_require__(14);
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4908,10 +5391,13 @@
 =======
 /* 234 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 235 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(212);
+	var strong = __webpack_require__(213);
 
 	// 23.1 Map Objects
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -4938,6 +5424,7 @@
 	}, strong, true);
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4951,11 +5438,15 @@
 =======
 /* 235 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 236 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
 	if(__webpack_require__(20) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
 	  configurable: true,
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  get: __webpack_require__(139)
@@ -4972,10 +5463,13 @@
 =======
 	  get: __webpack_require__(142)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  get: __webpack_require__(143)
+>>>>>>> organizationlist to angular 2
 	});
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@match logic
@@ -4999,6 +5493,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -5023,6 +5518,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 237 */
+=======
+/* 238 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@replace logic
@@ -5040,6 +5538,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -5064,6 +5563,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 238 */
+=======
+/* 239 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@search logic
@@ -5079,6 +5581,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -5097,17 +5600,24 @@
 =======
 /* 239 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 240 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@split logic
 	__webpack_require__(104)('split', 2, function(defined, SPLIT, $split){
 	  'use strict';
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  var isRegExp   = __webpack_require__(142)
 >>>>>>> Table directive to angular 2
 =======
 	  var isRegExp   = __webpack_require__(146)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  var isRegExp   = __webpack_require__(147)
+>>>>>>> organizationlist to angular 2
 	    , _split     = $split
 	    , $push      = [].push
 	    , $SPLIT     = 'split'
@@ -5176,6 +5686,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -5195,10 +5706,13 @@
 =======
 /* 240 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 241 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(212);
+	var strong = __webpack_require__(213);
 
 	// 23.2 Set Objects
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -5220,6 +5734,7 @@
 	}, strong);
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -5233,12 +5748,15 @@
 =======
 /* 241 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 242 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// ECMAScript 6 symbols shim
 	var global         = __webpack_require__(12)
-	  , has            = __webpack_require__(26)
+	  , has            = __webpack_require__(27)
 	  , DESCRIPTORS    = __webpack_require__(20)
 	  , $export        = __webpack_require__(2)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -5278,21 +5796,25 @@
 	  , $fails         = __webpack_require__(10)
 	  , shared         = __webpack_require__(108)
 	  , setToStringTag = __webpack_require__(86)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , uid            = __webpack_require__(66)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , uid            = __webpack_require__(67)
+>>>>>>> organizationlist to angular 2
 	  , wks            = __webpack_require__(14)
-	  , wksExt         = __webpack_require__(233)
-	  , wksDefine      = __webpack_require__(335)
-	  , keyOf          = __webpack_require__(333)
-	  , enumKeys       = __webpack_require__(331)
-	  , isArray        = __webpack_require__(145)
+	  , wksExt         = __webpack_require__(234)
+	  , wksDefine      = __webpack_require__(337)
+	  , keyOf          = __webpack_require__(335)
+	  , enumKeys       = __webpack_require__(333)
+	  , isArray        = __webpack_require__(146)
 	  , anObject       = __webpack_require__(8)
-	  , toIObject      = __webpack_require__(34)
+	  , toIObject      = __webpack_require__(35)
 	  , toPrimitive    = __webpack_require__(57)
 	  , createDesc     = __webpack_require__(55)
-	  , _create        = __webpack_require__(63)
-	  , gOPNExt        = __webpack_require__(225)
-	  , $GOPD          = __webpack_require__(48)
+	  , _create        = __webpack_require__(64)
+	  , gOPNExt        = __webpack_require__(226)
+	  , $GOPD          = __webpack_require__(49)
 	  , $DP            = __webpack_require__(17)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5426,6 +5948,7 @@
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  __webpack_require__(61).f = gOPNExt.f = $getOwnPropertyNames;
@@ -5442,6 +5965,9 @@
 >>>>>>> Table directive to angular 2
 =======
 	  __webpack_require__(64).f = gOPNExt.f = $getOwnPropertyNames;
+=======
+	  __webpack_require__(65).f = gOPNExt.f = $getOwnPropertyNames;
+>>>>>>> organizationlist to angular 2
 	  __webpack_require__(107).f  = $propertyIsEnumerable;
 	  __webpack_require__(106).f = $getOwnPropertySymbols;
 
@@ -5530,6 +6056,7 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -5562,15 +6089,23 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 242 */
+=======
+/* 243 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var each         = __webpack_require__(37)(0)
+	var each         = __webpack_require__(39)(0)
 	  , redefine     = __webpack_require__(29)
 	  , meta         = __webpack_require__(54)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , assign       = __webpack_require__(223)
 	  , weak         = __webpack_require__(213)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , assign       = __webpack_require__(224)
+	  , weak         = __webpack_require__(214)
+>>>>>>> organizationlist to angular 2
 	  , isObject     = __webpack_require__(11)
 	  , getWeak      = meta.getWeak
 	  , isExtensible = Object.isExtensible
@@ -5635,6 +6170,7 @@
 	}
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -5773,6 +6309,9 @@
 =======
 /* 243 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 244 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -5958,7 +6497,6 @@
 
 
 /***/ },
-/* 244 */,
 /* 245 */,
 /* 246 */,
 /* 247 */,
@@ -6023,67 +6561,70 @@
 /* 306 */,
 /* 307 */,
 /* 308 */,
-/* 309 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(112);
-	__webpack_require__(345);
-	__webpack_require__(343);
-	__webpack_require__(349);
-	__webpack_require__(346);
-	__webpack_require__(352);
-	__webpack_require__(354);
-	__webpack_require__(342);
-	__webpack_require__(348);
-	__webpack_require__(339);
-	__webpack_require__(353);
-	__webpack_require__(337);
-	__webpack_require__(351);
-	__webpack_require__(350);
-	__webpack_require__(344);
-	__webpack_require__(347);
-	__webpack_require__(336);
-	__webpack_require__(338);
-	__webpack_require__(341);
-	__webpack_require__(340);
-	__webpack_require__(355);
-	__webpack_require__(111);
-	module.exports = __webpack_require__(13).Array;
-
-/***/ },
-/* 310 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(356);
-	__webpack_require__(358);
-	__webpack_require__(357);
-	__webpack_require__(360);
-	__webpack_require__(359);
-	module.exports = Date;
-
-/***/ },
+/* 309 */,
+/* 310 */,
 /* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(361);
-	__webpack_require__(363);
-	__webpack_require__(362);
-	module.exports = __webpack_require__(13).Function;
+	__webpack_require__(112);
+	__webpack_require__(347);
+	__webpack_require__(345);
+	__webpack_require__(351);
+	__webpack_require__(348);
+	__webpack_require__(354);
+	__webpack_require__(356);
+	__webpack_require__(344);
+	__webpack_require__(350);
+	__webpack_require__(341);
+	__webpack_require__(355);
+	__webpack_require__(339);
+	__webpack_require__(353);
+	__webpack_require__(352);
+	__webpack_require__(346);
+	__webpack_require__(349);
+	__webpack_require__(338);
+	__webpack_require__(340);
+	__webpack_require__(343);
+	__webpack_require__(342);
+	__webpack_require__(357);
+	__webpack_require__(111);
+	module.exports = __webpack_require__(13).Array;
 
 /***/ },
 /* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(67);
-	__webpack_require__(112);
-	__webpack_require__(157);
-	__webpack_require__(234);
-	module.exports = __webpack_require__(13).Map;
+	__webpack_require__(358);
+	__webpack_require__(360);
+	__webpack_require__(359);
+	__webpack_require__(362);
+	__webpack_require__(361);
+	module.exports = Date;
 
 /***/ },
 /* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(363);
+	__webpack_require__(365);
+	__webpack_require__(364);
+	module.exports = __webpack_require__(13).Function;
+
+/***/ },
+/* 314 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(68);
+	__webpack_require__(112);
+	__webpack_require__(158);
+	__webpack_require__(235);
+	module.exports = __webpack_require__(13).Map;
+
+/***/ },
+/* 315 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(352);
@@ -6105,6 +6646,8 @@
 >>>>>>> adding storage policy list - angular 2
 	__webpack_require__(364);
 	__webpack_require__(365);
+=======
+>>>>>>> organizationlist to angular 2
 	__webpack_require__(366);
 	__webpack_require__(367);
 	__webpack_require__(368);
@@ -6155,17 +6698,17 @@
 	__webpack_require__(378);
 	__webpack_require__(379);
 	__webpack_require__(380);
+	__webpack_require__(381);
+	__webpack_require__(382);
 	module.exports = __webpack_require__(13).Math;
 
 /***/ },
-/* 314 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(381);
-	__webpack_require__(391);
-	__webpack_require__(392);
-	__webpack_require__(382);
 	__webpack_require__(383);
+	__webpack_require__(393);
+	__webpack_require__(394);
 	__webpack_require__(384);
 	__webpack_require__(385);
 	__webpack_require__(386);
@@ -6173,51 +6716,54 @@
 	__webpack_require__(388);
 	__webpack_require__(389);
 	__webpack_require__(390);
+	__webpack_require__(391);
+	__webpack_require__(392);
 	module.exports = __webpack_require__(13).Number;
-
-/***/ },
-/* 315 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(241);
-	__webpack_require__(394);
-	__webpack_require__(396);
-	__webpack_require__(395);
-	__webpack_require__(398);
-	__webpack_require__(400);
-	__webpack_require__(405);
-	__webpack_require__(399);
-	__webpack_require__(397);
-	__webpack_require__(407);
-	__webpack_require__(406);
-	__webpack_require__(402);
-	__webpack_require__(403);
-	__webpack_require__(401);
-	__webpack_require__(393);
-	__webpack_require__(404);
-	__webpack_require__(408);
-	__webpack_require__(67);
-
-	module.exports = __webpack_require__(13).Object;
-
-/***/ },
-/* 316 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(409);
-	module.exports = __webpack_require__(13).parseFloat;
 
 /***/ },
 /* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(242);
+	__webpack_require__(396);
+	__webpack_require__(398);
+	__webpack_require__(397);
+	__webpack_require__(400);
+	__webpack_require__(402);
+	__webpack_require__(407);
+	__webpack_require__(401);
+	__webpack_require__(399);
+	__webpack_require__(409);
+	__webpack_require__(408);
+	__webpack_require__(404);
+	__webpack_require__(405);
+	__webpack_require__(403);
+	__webpack_require__(395);
+	__webpack_require__(406);
 	__webpack_require__(410);
-	module.exports = __webpack_require__(13).parseInt;
+	__webpack_require__(68);
+
+	module.exports = __webpack_require__(13).Object;
 
 /***/ },
 /* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(411);
+	module.exports = __webpack_require__(13).parseFloat;
+
+/***/ },
+/* 319 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(412);
+	module.exports = __webpack_require__(13).parseInt;
+
+/***/ },
+/* 320 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(399);
@@ -6316,21 +6862,26 @@
 >>>>>>> adding storage policy list - angular 2
 	__webpack_require__(411);
 	__webpack_require__(412);
+=======
+>>>>>>> organizationlist to angular 2
 	__webpack_require__(413);
 	__webpack_require__(414);
 	__webpack_require__(415);
-	__webpack_require__(418);
 	__webpack_require__(416);
 	__webpack_require__(417);
-	__webpack_require__(419);
 	__webpack_require__(420);
+	__webpack_require__(418);
+	__webpack_require__(419);
 	__webpack_require__(421);
 	__webpack_require__(422);
-	__webpack_require__(424);
 	__webpack_require__(423);
+	__webpack_require__(424);
+	__webpack_require__(426);
+	__webpack_require__(425);
 	module.exports = __webpack_require__(13).Reflect;
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 /* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -6439,19 +6990,36 @@
 =======
 /* 320 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(67);
-	__webpack_require__(112);
-	__webpack_require__(157);
+	__webpack_require__(427);
+	__webpack_require__(428);
+	__webpack_require__(236);
+	__webpack_require__(237);
+	__webpack_require__(238);
+	__webpack_require__(239);
 	__webpack_require__(240);
+	module.exports = __webpack_require__(13).RegExp;
+
+/***/ },
+/* 322 */
+>>>>>>> organizationlist to angular 2
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(68);
+	__webpack_require__(112);
+	__webpack_require__(158);
+	__webpack_require__(241);
 	module.exports = __webpack_require__(13).Set;
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
-/* 321 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(64);
@@ -6506,67 +7074,85 @@
 >>>>>>> adding storage policy list - angular 2
 	__webpack_require__(433);
 	__webpack_require__(434);
-	__webpack_require__(435);
+=======
 	__webpack_require__(438);
-	__webpack_require__(439);
 	__webpack_require__(442);
-	__webpack_require__(444);
+	__webpack_require__(449);
+	__webpack_require__(112);
+	__webpack_require__(433);
+	__webpack_require__(434);
+	__webpack_require__(439);
+	__webpack_require__(443);
 	__webpack_require__(445);
+	__webpack_require__(429);
+	__webpack_require__(430);
+	__webpack_require__(431);
+	__webpack_require__(432);
+>>>>>>> organizationlist to angular 2
+	__webpack_require__(435);
+	__webpack_require__(436);
+	__webpack_require__(437);
+	__webpack_require__(440);
+	__webpack_require__(441);
+	__webpack_require__(444);
 	__webpack_require__(446);
-	__webpack_require__(236);
+	__webpack_require__(447);
+	__webpack_require__(448);
 	__webpack_require__(237);
 	__webpack_require__(238);
 	__webpack_require__(239);
+	__webpack_require__(240);
 	module.exports = __webpack_require__(13).String;
-
-/***/ },
-/* 322 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(241);
-	__webpack_require__(67);
-	module.exports = __webpack_require__(13).Symbol;
-
-/***/ },
-/* 323 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(448);
-	__webpack_require__(449);
-	__webpack_require__(454);
-	__webpack_require__(457);
-	__webpack_require__(458);
-	__webpack_require__(452);
-	__webpack_require__(455);
-	__webpack_require__(453);
-	__webpack_require__(456);
-	__webpack_require__(450);
-	__webpack_require__(451);
-	__webpack_require__(67);
-	module.exports = __webpack_require__(13);
 
 /***/ },
 /* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(67);
-	__webpack_require__(111);
 	__webpack_require__(242);
-	module.exports = __webpack_require__(13).WeakMap;
+	__webpack_require__(68);
+	module.exports = __webpack_require__(13).Symbol;
 
 /***/ },
 /* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(67);
-	__webpack_require__(157);
+	__webpack_require__(450);
+	__webpack_require__(451);
+	__webpack_require__(456);
 	__webpack_require__(459);
-	module.exports = __webpack_require__(13).WeakSet;
+	__webpack_require__(460);
+	__webpack_require__(454);
+	__webpack_require__(457);
+	__webpack_require__(455);
+	__webpack_require__(458);
+	__webpack_require__(452);
+	__webpack_require__(453);
+	__webpack_require__(68);
+	module.exports = __webpack_require__(13);
 
 /***/ },
 /* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(68);
+	__webpack_require__(111);
+	__webpack_require__(243);
+	module.exports = __webpack_require__(13).WeakMap;
+
+/***/ },
+/* 327 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(68);
+	__webpack_require__(158);
+	__webpack_require__(461);
+	module.exports = __webpack_require__(13).WeakSet;
+
+/***/ },
+/* 328 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	__webpack_require__(448);
@@ -6588,20 +7174,33 @@
 	__webpack_require__(460);
 	__webpack_require__(461);
 	__webpack_require__(463);
+=======
+>>>>>>> organizationlist to angular 2
 	__webpack_require__(462);
+	__webpack_require__(463);
 	__webpack_require__(465);
 	__webpack_require__(464);
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	__webpack_require__(466);
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
+=======
+>>>>>>> organizationlist to angular 2
 	__webpack_require__(467);
+	__webpack_require__(466);
 	__webpack_require__(468);
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 >>>>>>> adding storage policy list - angular 2
+=======
+	__webpack_require__(469);
+	__webpack_require__(470);
+>>>>>>> organizationlist to angular 2
 	module.exports = __webpack_require__(13).Reflect;
 
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6623,6 +7222,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 327 */
+=======
+/* 329 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var forOf = __webpack_require__(105);
@@ -6636,6 +7238,7 @@
 
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6661,6 +7264,13 @@
 	var isObject = __webpack_require__(11)
 	  , isArray  = __webpack_require__(145)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 330 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(11)
+	  , isArray  = __webpack_require__(146)
+>>>>>>> organizationlist to angular 2
 	  , SPECIES  = __webpack_require__(14)('species');
 
 	module.exports = function(original){
@@ -6677,6 +7287,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6706,12 +7317,20 @@
 	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 	var speciesConstructor = __webpack_require__(328);
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 331 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+	var speciesConstructor = __webpack_require__(330);
+>>>>>>> organizationlist to angular 2
 
 	module.exports = function(original, length){
 	  return new (speciesConstructor(original))(length);
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6725,6 +7344,9 @@
 =======
 /* 330 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 332 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6750,6 +7372,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6780,6 +7403,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 331 */
+=======
+/* 333 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
@@ -6800,6 +7426,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6813,6 +7440,9 @@
 =======
 /* 332 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 334 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	// fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -6833,6 +7463,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6857,6 +7488,13 @@
 	var getKeys   = __webpack_require__(73)
 	  , toIObject = __webpack_require__(34);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 335 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var getKeys   = __webpack_require__(73)
+	  , toIObject = __webpack_require__(35);
+>>>>>>> organizationlist to angular 2
 	module.exports = function(object, el){
 	  var O      = toIObject(object)
 	    , keys   = getKeys(O)
@@ -6867,6 +7505,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6897,6 +7536,13 @@
 	  , gOPS     = __webpack_require__(105)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
+=======
+/* 336 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// all object keys, includes non-enumerable and symbols
+	var gOPN     = __webpack_require__(65)
+>>>>>>> organizationlist to angular 2
 	  , gOPS     = __webpack_require__(106)
 >>>>>>> adding storage policy list - angular 2
 	  , anObject = __webpack_require__(8)
@@ -6908,6 +7554,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6921,6 +7568,9 @@
 =======
 /* 335 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 337 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global         = __webpack_require__(12)
@@ -6935,12 +7585,16 @@
 >>>>>>> Table directive to angular 2
 =======
 	  , LIBRARY        = __webpack_require__(83)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , wksExt         = __webpack_require__(232)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , wksExt         = __webpack_require__(233)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , wksExt         = __webpack_require__(234)
+>>>>>>> organizationlist to angular 2
 	  , defineProperty = __webpack_require__(17).f;
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
@@ -6948,6 +7602,7 @@
 	};
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6961,11 +7616,15 @@
 =======
 /* 336 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 338 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6983,10 +7642,14 @@
 =======
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(209)});
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(210)});
+>>>>>>> organizationlist to angular 2
 
 	__webpack_require__(80)('copyWithin');
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 325 */
@@ -6997,13 +7660,16 @@
 =======
 /* 337 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 339 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-	  , $every  = __webpack_require__(37)(4);
+	  , $every  = __webpack_require__(39)(4);
 
-	$export($export.P + $export.F * !__webpack_require__(33)([].every, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(34)([].every, true), 'Array', {
 	  // 22.1.3.5 / 15.4.4.16 Array.prototype.every(callbackfn [, thisArg])
 	  every: function every(callbackfn /* , thisArg */){
 	    return $every(this, callbackfn, arguments[1]);
@@ -7011,6 +7677,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7024,11 +7691,15 @@
 =======
 /* 338 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 340 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.P, 'Array', {fill: __webpack_require__(134)});
@@ -7042,10 +7713,14 @@
 =======
 	$export($export.P, 'Array', {fill: __webpack_require__(137)});
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	$export($export.P, 'Array', {fill: __webpack_require__(138)});
+>>>>>>> organizationlist to angular 2
 
 	__webpack_require__(80)('fill');
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 327 */
@@ -7056,13 +7731,16 @@
 =======
 /* 339 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 341 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-	  , $filter = __webpack_require__(37)(2);
+	  , $filter = __webpack_require__(39)(2);
 
-	$export($export.P + $export.F * !__webpack_require__(33)([].filter, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(34)([].filter, true), 'Array', {
 	  // 22.1.3.7 / 15.4.4.20 Array.prototype.filter(callbackfn [, thisArg])
 	  filter: function filter(callbackfn /* , thisArg */){
 	    return $filter(this, callbackfn, arguments[1]);
@@ -7070,6 +7748,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7083,12 +7762,15 @@
 =======
 /* 340 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 342 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.9 Array.prototype.findIndex(predicate, thisArg = undefined)
 	var $export = __webpack_require__(2)
-	  , $find   = __webpack_require__(37)(6)
+	  , $find   = __webpack_require__(39)(6)
 	  , KEY     = 'findIndex'
 	  , forced  = true;
 	// Shouldn't skip holes
@@ -7114,18 +7796,22 @@
 	__webpack_require__(80)(KEY);
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 /* 339 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 341 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 343 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
 	var $export = __webpack_require__(2)
-	  , $find   = __webpack_require__(37)(5)
+	  , $find   = __webpack_require__(39)(5)
 	  , KEY     = 'find'
 	  , forced  = true;
 	// Shouldn't skip holes
@@ -7151,16 +7837,21 @@
 	__webpack_require__(80)(KEY);
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 /* 340 */
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 342 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 344 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export  = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , $forEach = __webpack_require__(36)(0)
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -7171,6 +7862,10 @@
 >>>>>>> adding storage policy list - angular 2
 	  , STRICT   = __webpack_require__(33)([].forEach, true);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , $forEach = __webpack_require__(39)(0)
+	  , STRICT   = __webpack_require__(34)([].forEach, true);
+>>>>>>> organizationlist to angular 2
 
 	$export($export.P + $export.F * !STRICT, 'Array', {
 	  // 22.1.3.10 / 15.4.4.18 Array.prototype.forEach(callbackfn [, thisArg])
@@ -7180,6 +7875,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7205,24 +7901,31 @@
 =======
 /* 343 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 345 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var ctx            = __webpack_require__(62)
+	var ctx            = __webpack_require__(63)
 	  , $export        = __webpack_require__(2)
 	  , toObject       = __webpack_require__(32)
-	  , call           = __webpack_require__(219)
-	  , isArrayIter    = __webpack_require__(144)
+	  , call           = __webpack_require__(220)
+	  , isArrayIter    = __webpack_require__(145)
 	  , toLength       = __webpack_require__(24)
-	  , createProperty = __webpack_require__(214)
-	  , getIterFn      = __webpack_require__(156);
+	  , createProperty = __webpack_require__(215)
+	  , getIterFn      = __webpack_require__(157);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	$export($export.S + $export.F * !__webpack_require__(144)(function(iter){ Array.from(iter); }), 'Array', {
 >>>>>>> Table directive to angular 2
 =======
 	$export($export.S + $export.F * !__webpack_require__(148)(function(iter){ Array.from(iter); }), 'Array', {
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	$export($export.S + $export.F * !__webpack_require__(149)(function(iter){ Array.from(iter); }), 'Array', {
+>>>>>>> organizationlist to angular 2
 	  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
 	  from: function from(arrayLike/*, mapfn = undefined, thisArg = undefined*/){
 	    var O       = toObject(arrayLike)
@@ -7252,6 +7955,7 @@
 
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7265,10 +7969,14 @@
 =======
 /* 344 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 346 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export       = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , $indexOf      = __webpack_require__(135)(false)
@@ -7278,10 +7986,13 @@
 =======
 	  , $indexOf      = __webpack_require__(138)(false)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , $indexOf      = __webpack_require__(139)(false)
+>>>>>>> organizationlist to angular 2
 	  , $native       = [].indexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].indexOf(1, -0) < 0;
 
-	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(33)($native)), 'Array', {
+	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(34)($native)), 'Array', {
 	  // 22.1.3.11 / 15.4.4.14 Array.prototype.indexOf(searchElement [, fromIndex])
 	  indexOf: function indexOf(searchElement /*, fromIndex = 0 */){
 	    return NEGATIVE_ZERO
@@ -7292,6 +8003,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7305,11 +8017,15 @@
 =======
 /* 345 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 347 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Array', {isArray: __webpack_require__(142)});
@@ -7332,15 +8048,22 @@
 =======
 /* 346 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S, 'Array', {isArray: __webpack_require__(146)});
+
+/***/ },
+/* 348 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.13 Array.prototype.join(separator)
 	var $export   = __webpack_require__(2)
-	  , toIObject = __webpack_require__(34)
+	  , toIObject = __webpack_require__(35)
 	  , arrayJoin = [].join;
 
 	// fallback for not array-like strings
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.P + $export.F * (__webpack_require__(82) != Object || !__webpack_require__(32)(arrayJoin)), 'Array', {
@@ -7350,12 +8073,16 @@
 =======
 	$export($export.P + $export.F * (__webpack_require__(82) != Object || !__webpack_require__(33)(arrayJoin)), 'Array', {
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	$export($export.P + $export.F * (__webpack_require__(82) != Object || !__webpack_require__(34)(arrayJoin)), 'Array', {
+>>>>>>> organizationlist to angular 2
 	  join: function join(separator){
 	    return arrayJoin.call(toIObject(this), separator === undefined ? ',' : separator);
 	  }
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7369,10 +8096,14 @@
 =======
 /* 347 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 349 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export       = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , toIObject     = __webpack_require__(33)
 	  , toInteger     = __webpack_require__(53)
@@ -7382,13 +8113,16 @@
 	  , toInteger     = __webpack_require__(55)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
+=======
+	  , toIObject     = __webpack_require__(35)
+>>>>>>> organizationlist to angular 2
 	  , toInteger     = __webpack_require__(56)
 >>>>>>> adding storage policy list - angular 2
 	  , toLength      = __webpack_require__(24)
 	  , $native       = [].lastIndexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].lastIndexOf(1, -0) < 0;
 
-	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(33)($native)), 'Array', {
+	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(34)($native)), 'Array', {
 	  // 22.1.3.14 / 15.4.4.15 Array.prototype.lastIndexOf(searchElement [, fromIndex])
 	  lastIndexOf: function lastIndexOf(searchElement /*, fromIndex = @[*-1] */){
 	    // convert -0 to +0
@@ -7404,6 +8138,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7417,13 +8152,16 @@
 =======
 /* 348 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 350 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-	  , $map    = __webpack_require__(37)(1);
+	  , $map    = __webpack_require__(39)(1);
 
-	$export($export.P + $export.F * !__webpack_require__(33)([].map, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(34)([].map, true), 'Array', {
 	  // 22.1.3.15 / 15.4.4.19 Array.prototype.map(callbackfn [, thisArg])
 	  map: function map(callbackfn /* , thisArg */){
 	    return $map(this, callbackfn, arguments[1]);
@@ -7431,6 +8169,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7444,10 +8183,14 @@
 =======
 /* 349 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 351 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export        = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7461,6 +8204,9 @@
 =======
 	  , createProperty = __webpack_require__(214);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , createProperty = __webpack_require__(215);
+>>>>>>> organizationlist to angular 2
 
 	// WebKit Array.of isn't generic
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -7479,6 +8225,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7492,10 +8239,14 @@
 =======
 /* 350 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 352 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7509,8 +8260,11 @@
 =======
 	  , $reduce = __webpack_require__(210);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , $reduce = __webpack_require__(211);
+>>>>>>> organizationlist to angular 2
 
-	$export($export.P + $export.F * !__webpack_require__(33)([].reduceRight, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(34)([].reduceRight, true), 'Array', {
 	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
 	  reduceRight: function reduceRight(callbackfn /* , initialValue */){
 	    return $reduce(this, callbackfn, arguments.length, arguments[1], true);
@@ -7518,6 +8272,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7531,10 +8286,14 @@
 =======
 /* 351 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 353 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7548,8 +8307,11 @@
 =======
 	  , $reduce = __webpack_require__(210);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , $reduce = __webpack_require__(211);
+>>>>>>> organizationlist to angular 2
 
-	$export($export.P + $export.F * !__webpack_require__(33)([].reduce, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(34)([].reduce, true), 'Array', {
 	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
 	  reduce: function reduce(callbackfn /* , initialValue */){
 	    return $reduce(this, callbackfn, arguments.length, arguments[1], false);
@@ -7557,6 +8319,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7570,10 +8333,14 @@
 =======
 /* 352 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 354 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export    = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7593,6 +8360,11 @@
 	  , cof        = __webpack_require__(61)
 	  , toIndex    = __webpack_require__(65)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , html       = __webpack_require__(217)
+	  , cof        = __webpack_require__(62)
+	  , toIndex    = __webpack_require__(66)
+>>>>>>> organizationlist to angular 2
 	  , toLength   = __webpack_require__(24)
 	  , arraySlice = [].slice;
 
@@ -7618,6 +8390,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7631,13 +8404,16 @@
 =======
 /* 353 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 355 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-	  , $some   = __webpack_require__(37)(3);
+	  , $some   = __webpack_require__(39)(3);
 
-	$export($export.P + $export.F * !__webpack_require__(33)([].some, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(34)([].some, true), 'Array', {
 	  // 22.1.3.23 / 15.4.4.17 Array.prototype.some(callbackfn [, thisArg])
 	  some: function some(callbackfn /* , thisArg */){
 	    return $some(this, callbackfn, arguments[1]);
@@ -7645,6 +8421,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7658,6 +8435,9 @@
 =======
 /* 354 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 356 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7684,7 +8464,7 @@
 	  // V8 bug
 	  test.sort(null);
 	  // Old WebKit
-	}) || !__webpack_require__(33)($sort)), 'Array', {
+	}) || !__webpack_require__(34)($sort)), 'Array', {
 	  // 22.1.3.25 Array.prototype.sort(comparefn)
 	  sort: function sort(comparefn){
 	    return comparefn === undefined
@@ -7694,6 +8474,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7712,11 +8493,15 @@
 =======
 /* 355 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 357 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(85)('Array');
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 344 */
@@ -7727,6 +8512,9 @@
 =======
 /* 356 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 358 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.3.3.1 / 15.9.4.4 Date.now()
@@ -7735,6 +8523,7 @@
 	$export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7748,6 +8537,9 @@
 =======
 /* 357 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 359 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7780,6 +8572,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7793,6 +8586,9 @@
 =======
 /* 358 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 360 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7820,6 +8616,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7833,11 +8630,15 @@
 =======
 /* 359 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 361 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var TO_PRIMITIVE = __webpack_require__(14)('toPrimitive')
 	  , proto        = Date.prototype;
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7863,6 +8664,12 @@
 /***/ },
 /* 360 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(31)(proto, TO_PRIMITIVE, __webpack_require__(332));
+
+/***/ },
+/* 362 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var DateProto    = Date.prototype
@@ -7878,6 +8685,7 @@
 	}
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7891,11 +8699,15 @@
 =======
 /* 361 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 363 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7921,11 +8733,17 @@
 /***/ },
 /* 362 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.P, 'Function', {bind: __webpack_require__(212)});
+
+/***/ },
+/* 364 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var isObject       = __webpack_require__(11)
-	  , getPrototypeOf = __webpack_require__(38)
+	  , getPrototypeOf = __webpack_require__(40)
 	  , HAS_INSTANCE   = __webpack_require__(14)('hasInstance')
 	  , FunctionProto  = Function.prototype;
 	// 19.2.3.6 Function.prototype[@@hasInstance](V)
@@ -7938,6 +8756,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -7958,12 +8777,19 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 363 */
+=======
+/* 365 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP         = __webpack_require__(17).f
 	  , createDesc = __webpack_require__(55)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 >>>>>>> adding storage policy list - angular 2
 	  , has        = __webpack_require__(26)
+=======
+	  , has        = __webpack_require__(27)
+>>>>>>> organizationlist to angular 2
 	  , FProto     = Function.prototype
 	  , nameRE     = /^\s*function ([^ (]*)/
 	  , NAME       = 'name';
@@ -7988,6 +8814,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8001,10 +8828,14 @@
 =======
 /* 364 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 366 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.3 Math.acosh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8018,6 +8849,9 @@
 =======
 	  , log1p   = __webpack_require__(222)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , log1p   = __webpack_require__(223)
+>>>>>>> organizationlist to angular 2
 	  , sqrt    = Math.sqrt
 	  , $acosh  = Math.acosh;
 
@@ -8035,6 +8869,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8048,6 +8883,9 @@
 =======
 /* 365 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 367 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.5 Math.asinh(x)
@@ -8062,6 +8900,7 @@
 	$export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8075,6 +8914,9 @@
 =======
 /* 366 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 368 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.7 Math.atanh(x)
@@ -8089,6 +8931,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8102,10 +8945,14 @@
 =======
 /* 367 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 369 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.9 Math.cbrt(x)
 	var $export = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , sign    = __webpack_require__(147);
@@ -8115,6 +8962,9 @@
 =======
 	  , sign    = __webpack_require__(150);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , sign    = __webpack_require__(151);
+>>>>>>> organizationlist to angular 2
 
 	$export($export.S, 'Math', {
 	  cbrt: function cbrt(x){
@@ -8123,6 +8973,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8136,6 +8987,9 @@
 =======
 /* 368 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 370 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.11 Math.clz32(x)
@@ -8148,6 +9002,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8161,6 +9016,9 @@
 =======
 /* 369 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 371 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.12 Math.cosh(x)
@@ -8174,6 +9032,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8187,10 +9046,14 @@
 =======
 /* 370 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 372 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.14 Math.expm1(x)
 	var $export = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , $expm1  = __webpack_require__(146);
@@ -8200,10 +9063,14 @@
 =======
 	  , $expm1  = __webpack_require__(149);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , $expm1  = __webpack_require__(150);
+>>>>>>> organizationlist to angular 2
 
 	$export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8217,10 +9084,14 @@
 =======
 /* 371 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 373 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.16 Math.fround(x)
 	var $export   = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , sign      = __webpack_require__(147)
@@ -8230,6 +9101,9 @@
 =======
 	  , sign      = __webpack_require__(150)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , sign      = __webpack_require__(151)
+>>>>>>> organizationlist to angular 2
 	  , pow       = Math.pow
 	  , EPSILON   = pow(2, -52)
 	  , EPSILON32 = pow(2, -23)
@@ -8255,6 +9129,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8268,6 +9143,9 @@
 =======
 /* 372 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 374 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -8297,6 +9175,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8310,6 +9189,9 @@
 =======
 /* 373 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 375 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.18 Math.imul(x, y)
@@ -8331,6 +9213,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8344,6 +9227,9 @@
 =======
 /* 374 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 376 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.21 Math.log10(x)
@@ -8356,6 +9242,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8369,11 +9256,15 @@
 =======
 /* 375 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 377 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.20 Math.log1p(x)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8399,6 +9290,12 @@
 /***/ },
 /* 376 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S, 'Math', {log1p: __webpack_require__(223)});
+
+/***/ },
+/* 378 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.22 Math.log2(x)
@@ -8411,6 +9308,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8424,11 +9322,15 @@
 =======
 /* 377 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 379 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.28 Math.sign(x)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Math', {sign: __webpack_require__(147)});
@@ -8451,10 +9353,17 @@
 =======
 /* 378 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S, 'Math', {sign: __webpack_require__(151)});
+
+/***/ },
+/* 380 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.30 Math.sinh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , expm1   = __webpack_require__(146)
@@ -8464,6 +9373,9 @@
 =======
 	  , expm1   = __webpack_require__(149)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , expm1   = __webpack_require__(150)
+>>>>>>> organizationlist to angular 2
 	  , exp     = Math.exp;
 
 	// V8 near Chromium 38 has a problem with very small numbers
@@ -8478,6 +9390,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8491,10 +9404,14 @@
 =======
 /* 379 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 381 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.33 Math.tanh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , expm1   = __webpack_require__(146)
@@ -8504,6 +9421,9 @@
 =======
 	  , expm1   = __webpack_require__(149)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , expm1   = __webpack_require__(150)
+>>>>>>> organizationlist to angular 2
 	  , exp     = Math.exp;
 
 	$export($export.S, 'Math', {
@@ -8515,6 +9435,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8528,6 +9449,9 @@
 =======
 /* 380 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 382 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.34 Math.trunc(x)
@@ -8540,6 +9464,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8553,10 +9478,14 @@
 =======
 /* 381 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 383 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var global            = __webpack_require__(12)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , has               = __webpack_require__(26)
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8579,11 +9508,16 @@
 	  , toPrimitive       = __webpack_require__(56)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
+=======
+	  , has               = __webpack_require__(27)
+	  , cof               = __webpack_require__(62)
+	  , inheritIfRequired = __webpack_require__(144)
+>>>>>>> organizationlist to angular 2
 	  , toPrimitive       = __webpack_require__(57)
 >>>>>>> adding storage policy list - angular 2
 	  , fails             = __webpack_require__(10)
-	  , gOPN              = __webpack_require__(64).f
-	  , gOPD              = __webpack_require__(48).f
+	  , gOPN              = __webpack_require__(65).f
+	  , gOPD              = __webpack_require__(49).f
 	  , dP                = __webpack_require__(17).f
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -8600,6 +9534,7 @@
 	  , Base              = $Number
 	  , proto             = $Number.prototype
 	  // Opera ~12 has broken Object#toString
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , BROKEN_COF        = cof(__webpack_require__(60)(proto)) == NUMBER
@@ -8609,6 +9544,9 @@
 =======
 	  , BROKEN_COF        = cof(__webpack_require__(63)(proto)) == NUMBER
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , BROKEN_COF        = cof(__webpack_require__(64)(proto)) == NUMBER
+>>>>>>> organizationlist to angular 2
 	  , TRIM              = 'trim' in String.prototype;
 
 	// 7.1.3 ToNumber(argument)
@@ -8663,6 +9601,7 @@
 	}
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8676,6 +9615,9 @@
 =======
 /* 382 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 384 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.1 Number.EPSILON
@@ -8684,6 +9626,7 @@
 	$export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8697,6 +9640,9 @@
 =======
 /* 383 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 385 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.2 Number.isFinite(number)
@@ -8710,6 +9656,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8723,11 +9670,15 @@
 =======
 /* 384 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 386 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8753,6 +9704,12 @@
 /***/ },
 /* 385 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S, 'Number', {isInteger: __webpack_require__(219)});
+
+/***/ },
+/* 387 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.4 Number.isNaN(number)
@@ -8765,6 +9722,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8778,10 +9736,14 @@
 =======
 /* 386 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 388 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8795,6 +9757,9 @@
 =======
 	  , isInteger = __webpack_require__(218)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , isInteger = __webpack_require__(219)
+>>>>>>> organizationlist to angular 2
 	  , abs       = Math.abs;
 
 	$export($export.S, 'Number', {
@@ -8804,6 +9769,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8817,6 +9783,9 @@
 =======
 /* 387 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 389 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -8825,6 +9794,7 @@
 	$export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8838,6 +9808,9 @@
 =======
 /* 388 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 390 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -8846,6 +9819,7 @@
 	$export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8875,10 +9849,18 @@
 	var $export     = __webpack_require__(2)
 	  , $parseFloat = __webpack_require__(227);
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 391 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(2)
+	  , $parseFloat = __webpack_require__(228);
+>>>>>>> organizationlist to angular 2
 	// 20.1.2.12 Number.parseFloat(string)
 	$export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8908,10 +9890,18 @@
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(228);
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 392 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(229);
+>>>>>>> organizationlist to angular 2
 	// 20.1.2.13 Number.parseInt(string, radix)
 	$export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -8925,6 +9915,9 @@
 =======
 /* 391 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 393 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8947,9 +9940,14 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , toInteger    = __webpack_require__(56)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , aNumberValue = __webpack_require__(208)
 	  , repeat       = __webpack_require__(232)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , aNumberValue = __webpack_require__(209)
+	  , repeat       = __webpack_require__(233)
+>>>>>>> organizationlist to angular 2
 	  , $toFixed     = 1..toFixed
 	  , floor        = Math.floor
 	  , data         = [0, 0, 0, 0, 0, 0]
@@ -9060,6 +10058,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9073,11 +10072,15 @@
 =======
 /* 392 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 394 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
 	  , $fails       = __webpack_require__(10)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9091,6 +10094,9 @@
 =======
 	  , aNumberValue = __webpack_require__(208)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , aNumberValue = __webpack_require__(209)
+>>>>>>> organizationlist to angular 2
 	  , $toPrecision = 1..toPrecision;
 
 	$export($export.P + $export.F * ($fails(function(){
@@ -9107,6 +10113,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9120,11 +10127,15 @@
 =======
 /* 393 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 395 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9150,10 +10161,17 @@
 /***/ },
 /* 394 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(224)});
+
+/***/ },
+/* 396 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Object', {create: __webpack_require__(60)});
@@ -9176,10 +10194,17 @@
 =======
 /* 395 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S, 'Object', {create: __webpack_require__(64)});
+
+/***/ },
+/* 397 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9205,6 +10230,12 @@
 /***/ },
 /* 396 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(225)});
+
+/***/ },
+/* 398 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
@@ -9212,6 +10243,7 @@
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(17).f});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9225,6 +10257,9 @@
 =======
 /* 397 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 399 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.5 Object.freeze(O)
@@ -9239,13 +10274,14 @@
 	  , meta     = __webpack_require__(54).onFreeze;
 >>>>>>> adding storage policy list - angular 2
 
-	__webpack_require__(39)('freeze', function($freeze){
+	__webpack_require__(41)('freeze', function($freeze){
 	  return function freeze(it){
 	    return $freeze && isObject(it) ? $freeze(meta(it)) : it;
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9273,14 +10309,23 @@
 =======
 	  , $getOwnPropertyDescriptor = __webpack_require__(48).f;
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 400 */
+/***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(39)('getOwnPropertyDescriptor', function(){
+	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
+	var toIObject                 = __webpack_require__(35)
+	  , $getOwnPropertyDescriptor = __webpack_require__(49).f;
+>>>>>>> organizationlist to angular 2
+
+	__webpack_require__(41)('getOwnPropertyDescriptor', function(){
 	  return function getOwnPropertyDescriptor(it, key){
 	    return $getOwnPropertyDescriptor(toIObject(it), key);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9302,14 +10347,18 @@
 =======
 /* 399 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 401 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 Object.getOwnPropertyNames(O)
-	__webpack_require__(39)('getOwnPropertyNames', function(){
-	  return __webpack_require__(225).f;
+	__webpack_require__(41)('getOwnPropertyNames', function(){
+	  return __webpack_require__(226).f;
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 388 */
@@ -9323,24 +10372,32 @@
 =======
 /* 400 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 402 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
 	var toObject        = __webpack_require__(32)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 	  , $getPrototypeOf = __webpack_require__(37);
 =======
 	  , $getPrototypeOf = __webpack_require__(38);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , $getPrototypeOf = __webpack_require__(40);
+>>>>>>> organizationlist to angular 2
 
-	__webpack_require__(39)('getPrototypeOf', function(){
+	__webpack_require__(41)('getPrototypeOf', function(){
 	  return function getPrototypeOf(it){
 	    return $getPrototypeOf(toObject(it));
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9354,18 +10411,22 @@
 =======
 /* 401 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 403 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.11 Object.isExtensible(O)
 	var isObject = __webpack_require__(11);
 
-	__webpack_require__(39)('isExtensible', function($isExtensible){
+	__webpack_require__(41)('isExtensible', function($isExtensible){
 	  return function isExtensible(it){
 	    return isObject(it) ? $isExtensible ? $isExtensible(it) : true : false;
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9379,18 +10440,22 @@
 =======
 /* 402 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 404 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.12 Object.isFrozen(O)
 	var isObject = __webpack_require__(11);
 
-	__webpack_require__(39)('isFrozen', function($isFrozen){
+	__webpack_require__(41)('isFrozen', function($isFrozen){
 	  return function isFrozen(it){
 	    return isObject(it) ? $isFrozen ? $isFrozen(it) : false : true;
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9404,18 +10469,22 @@
 =======
 /* 403 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 405 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.13 Object.isSealed(O)
 	var isObject = __webpack_require__(11);
 
-	__webpack_require__(39)('isSealed', function($isSealed){
+	__webpack_require__(41)('isSealed', function($isSealed){
 	  return function isSealed(it){
 	    return isObject(it) ? $isSealed ? $isSealed(it) : false : true;
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9429,10 +10498,14 @@
 =======
 /* 404 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 406 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.10 Object.is(value1, value2)
 	var $export = __webpack_require__(2);
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9460,9 +10533,12 @@
 =======
 	$export($export.S, 'Object', {is: __webpack_require__(229)});
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S, 'Object', {is: __webpack_require__(230)});
+>>>>>>> organizationlist to angular 2
 
 /***/ },
-/* 405 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
@@ -9474,13 +10550,14 @@
 	  , $keys    = __webpack_require__(73);
 >>>>>>> adding storage policy list - angular 2
 
-	__webpack_require__(39)('keys', function(){
+	__webpack_require__(41)('keys', function(){
 	  return function keys(it){
 	    return $keys(toObject(it));
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9494,6 +10571,9 @@
 =======
 /* 406 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 408 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.15 Object.preventExtensions(O)
@@ -9508,13 +10588,14 @@
 	  , meta     = __webpack_require__(54).onFreeze;
 >>>>>>> adding storage policy list - angular 2
 
-	__webpack_require__(39)('preventExtensions', function($preventExtensions){
+	__webpack_require__(41)('preventExtensions', function($preventExtensions){
 	  return function preventExtensions(it){
 	    return $preventExtensions && isObject(it) ? $preventExtensions(meta(it)) : it;
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9528,6 +10609,9 @@
 =======
 /* 407 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 409 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.17 Object.seal(O)
@@ -9542,13 +10626,14 @@
 	  , meta     = __webpack_require__(54).onFreeze;
 >>>>>>> adding storage policy list - angular 2
 
-	__webpack_require__(39)('seal', function($seal){
+	__webpack_require__(41)('seal', function($seal){
 	  return function seal(it){
 	    return $seal && isObject(it) ? $seal(meta(it)) : it;
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9562,10 +10647,14 @@
 =======
 /* 408 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 410 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
 	var $export = __webpack_require__(2);
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(148).set});
@@ -9581,12 +10670,16 @@
 =======
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(151).set});
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(152).set});
+>>>>>>> organizationlist to angular 2
 
 /***/ },
-/* 409 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , $parseFloat = __webpack_require__(218);
@@ -9597,10 +10690,14 @@
 =======
 	  , $parseFloat = __webpack_require__(227);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , $parseFloat = __webpack_require__(228);
+>>>>>>> organizationlist to angular 2
 	// 18.2.4 parseFloat(string)
 	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9630,10 +10727,18 @@
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(228);
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 412 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(229);
+>>>>>>> organizationlist to angular 2
 	// 18.2.5 parseInt(string, radix)
 	$export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9647,6 +10752,9 @@
 =======
 /* 411 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 413 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
@@ -9679,6 +10787,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9692,10 +10801,14 @@
 =======
 /* 412 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 414 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 	var $export    = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , create     = __webpack_require__(60)
@@ -9714,16 +10827,23 @@
 >>>>>>> Table directive to angular 2
 =======
 	  , create     = __webpack_require__(63)
+=======
+	  , create     = __webpack_require__(64)
+>>>>>>> organizationlist to angular 2
 	  , aFunction  = __webpack_require__(53)
 	  , anObject   = __webpack_require__(8)
 	  , isObject   = __webpack_require__(11)
 	  , fails      = __webpack_require__(10)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , bind       = __webpack_require__(210)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , bind       = __webpack_require__(211)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , bind       = __webpack_require__(212)
+>>>>>>> organizationlist to angular 2
 	  , rConstruct = (__webpack_require__(12).Reflect || {}).construct;
 
 	// MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -9765,6 +10885,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9778,6 +10899,9 @@
 =======
 /* 413 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 415 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
@@ -9816,6 +10940,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9829,10 +10954,14 @@
 =======
 /* 414 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 416 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.4 Reflect.deleteProperty(target, propertyKey)
 	var $export  = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9846,6 +10975,9 @@
 =======
 	  , gOPD     = __webpack_require__(48).f
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , gOPD     = __webpack_require__(49).f
+>>>>>>> organizationlist to angular 2
 	  , anObject = __webpack_require__(8);
 
 	$export($export.S, 'Reflect', {
@@ -9856,6 +10988,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9869,6 +11002,9 @@
 =======
 /* 415 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 417 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9882,6 +11018,7 @@
 	    , key;
 	  for(key in iterated)keys.push(key);
 	};
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9895,6 +11032,9 @@
 =======
 	__webpack_require__(220)(Enumerate, 'Object', function(){
 >>>>>>> adding storage policy list - angular 2
+=======
+	__webpack_require__(221)(Enumerate, 'Object', function(){
+>>>>>>> organizationlist to angular 2
 	  var that = this
 	    , keys = that._k
 	    , key;
@@ -9911,6 +11051,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9936,6 +11077,13 @@
 	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
 	var gOPD     = __webpack_require__(48)
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 418 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
+	var gOPD     = __webpack_require__(49)
+>>>>>>> organizationlist to angular 2
 	  , $export  = __webpack_require__(2)
 	  , anObject = __webpack_require__(8);
 
@@ -9946,6 +11094,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9959,10 +11108,14 @@
 =======
 /* 417 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 419 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.8 Reflect.getPrototypeOf(target)
 	var $export  = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -9976,6 +11129,9 @@
 =======
 	  , getProto = __webpack_require__(38)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , getProto = __webpack_require__(40)
+>>>>>>> organizationlist to angular 2
 	  , anObject = __webpack_require__(8);
 
 	$export($export.S, 'Reflect', {
@@ -9985,6 +11141,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10013,6 +11170,15 @@
 	  , getPrototypeOf = __webpack_require__(38)
 >>>>>>> adding storage policy list - angular 2
 	  , has            = __webpack_require__(26)
+=======
+/* 420 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
+	var gOPD           = __webpack_require__(49)
+	  , getPrototypeOf = __webpack_require__(40)
+	  , has            = __webpack_require__(27)
+>>>>>>> organizationlist to angular 2
 	  , $export        = __webpack_require__(2)
 	  , isObject       = __webpack_require__(11)
 	  , anObject       = __webpack_require__(8);
@@ -10032,6 +11198,7 @@
 	$export($export.S, 'Reflect', {get: get});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10045,6 +11212,9 @@
 =======
 /* 419 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 421 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.9 Reflect.has(target, propertyKey)
@@ -10057,6 +11227,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10070,6 +11241,9 @@
 =======
 /* 420 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 422 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.10 Reflect.isExtensible(target)
@@ -10085,6 +11259,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10098,11 +11273,15 @@
 =======
 /* 421 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 423 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.11 Reflect.ownKeys(target)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10128,6 +11307,12 @@
 /***/ },
 /* 422 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(336)});
+
+/***/ },
+/* 424 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.12 Reflect.preventExtensions(target)
@@ -10148,6 +11333,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10161,10 +11347,14 @@
 =======
 /* 423 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 425 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.14 Reflect.setPrototypeOf(target, proto)
 	var $export  = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , setProto = __webpack_require__(148);
@@ -10174,6 +11364,9 @@
 =======
 	  , setProto = __webpack_require__(151);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , setProto = __webpack_require__(152);
+>>>>>>> organizationlist to angular 2
 
 	if(setProto)$export($export.S, 'Reflect', {
 	  setPrototypeOf: function setPrototypeOf(target, proto){
@@ -10188,6 +11381,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10201,10 +11395,14 @@
 =======
 /* 424 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 426 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
 	var dP             = __webpack_require__(17)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , gOPD           = __webpack_require__(45)
@@ -10227,6 +11425,11 @@
 	  , gOPD           = __webpack_require__(48)
 	  , getPrototypeOf = __webpack_require__(38)
 	  , has            = __webpack_require__(26)
+=======
+	  , gOPD           = __webpack_require__(49)
+	  , getPrototypeOf = __webpack_require__(40)
+	  , has            = __webpack_require__(27)
+>>>>>>> organizationlist to angular 2
 	  , $export        = __webpack_require__(2)
 	  , createDesc     = __webpack_require__(55)
 >>>>>>> adding storage policy list - angular 2
@@ -10256,6 +11459,7 @@
 	$export($export.S, 'Reflect', {set: set});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10276,11 +11480,15 @@
 =======
 /* 425 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 427 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global            = __webpack_require__(12)
-	  , inheritIfRequired = __webpack_require__(143)
+	  , inheritIfRequired = __webpack_require__(144)
 	  , dP                = __webpack_require__(17).f
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , gOPN              = __webpack_require__(60).f
 	  , isRegExp          = __webpack_require__(142)
@@ -10291,6 +11499,11 @@
 	  , isRegExp          = __webpack_require__(146)
 	  , $flags            = __webpack_require__(142)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , gOPN              = __webpack_require__(65).f
+	  , isRegExp          = __webpack_require__(147)
+	  , $flags            = __webpack_require__(143)
+>>>>>>> organizationlist to angular 2
 	  , $RegExp           = global.RegExp
 	  , Base              = $RegExp
 	  , proto             = $RegExp.prototype
@@ -10346,18 +11559,22 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
-/* 426 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	__webpack_require__(235);
+	__webpack_require__(236);
 	var anObject    = __webpack_require__(8)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , $flags      = __webpack_require__(138)
 >>>>>>> Table directive to angular 2
 =======
 	  , $flags      = __webpack_require__(142)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , $flags      = __webpack_require__(143)
+>>>>>>> organizationlist to angular 2
 	  , DESCRIPTORS = __webpack_require__(20)
 	  , TO_STRING   = 'toString'
 	  , $toString   = /./[TO_STRING];
@@ -10381,6 +11598,7 @@
 	}
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10394,6 +11612,9 @@
 =======
 /* 427 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 429 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10405,6 +11626,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10418,6 +11640,9 @@
 =======
 /* 428 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 430 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10429,6 +11654,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10442,6 +11668,9 @@
 =======
 /* 429 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 431 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10453,6 +11682,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10466,6 +11696,9 @@
 =======
 /* 430 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 432 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10477,6 +11710,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10490,10 +11724,14 @@
 =======
 /* 431 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 433 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10507,6 +11745,9 @@
 =======
 	  , $at     = __webpack_require__(231)(false);
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , $at     = __webpack_require__(232)(false);
+>>>>>>> organizationlist to angular 2
 	$export($export.P, 'String', {
 	  // 21.1.3.3 String.prototype.codePointAt(pos)
 	  codePointAt: function codePointAt(pos){
@@ -10515,6 +11756,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10528,12 +11770,16 @@
 =======
 /* 432 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 434 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
 	'use strict';
 	var $export   = __webpack_require__(2)
 	  , toLength  = __webpack_require__(24)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , context   = __webpack_require__(150)
@@ -10555,6 +11801,13 @@
 
 	$export($export.P + $export.F * __webpack_require__(141)(ENDS_WITH), 'String', {
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , context   = __webpack_require__(154)
+	  , ENDS_WITH = 'endsWith'
+	  , $endsWith = ''[ENDS_WITH];
+
+	$export($export.P + $export.F * __webpack_require__(142)(ENDS_WITH), 'String', {
+>>>>>>> organizationlist to angular 2
 	  endsWith: function endsWith(searchString /*, endPosition = @length */){
 	    var that = context(this, searchString, ENDS_WITH)
 	      , endPosition = arguments.length > 1 ? arguments[1] : undefined
@@ -10568,6 +11821,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10581,6 +11835,9 @@
 =======
 /* 433 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 435 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10592,6 +11849,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10605,6 +11863,9 @@
 =======
 /* 434 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 436 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10616,6 +11877,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10629,6 +11891,9 @@
 =======
 /* 435 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 437 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10640,6 +11905,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10665,6 +11931,13 @@
 	var $export        = __webpack_require__(2)
 	  , toIndex        = __webpack_require__(65)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+/* 438 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export        = __webpack_require__(2)
+	  , toIndex        = __webpack_require__(66)
+>>>>>>> organizationlist to angular 2
 	  , fromCharCode   = String.fromCharCode
 	  , $fromCodePoint = String.fromCodePoint;
 
@@ -10688,6 +11961,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10701,11 +11975,15 @@
 =======
 /* 437 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 439 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.7 String.prototype.includes(searchString, position = 0)
 	'use strict';
 	var $export  = __webpack_require__(2)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , context  = __webpack_require__(150)
@@ -10724,6 +12002,12 @@
 
 	$export($export.P + $export.F * __webpack_require__(141)(INCLUDES), 'String', {
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , context  = __webpack_require__(154)
+	  , INCLUDES = 'includes';
+
+	$export($export.P + $export.F * __webpack_require__(142)(INCLUDES), 'String', {
+>>>>>>> organizationlist to angular 2
 	  includes: function includes(searchString /*, position = 0 */){
 	    return !!~context(this, searchString, INCLUDES)
 	      .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
@@ -10731,6 +12015,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10744,6 +12029,9 @@
 =======
 /* 438 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 440 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10755,6 +12043,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10768,6 +12057,9 @@
 =======
 /* 439 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 441 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10779,6 +12071,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10792,10 +12085,13 @@
 =======
 /* 440 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 442 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
-	  , toIObject = __webpack_require__(34)
+	  , toIObject = __webpack_require__(35)
 	  , toLength  = __webpack_require__(24);
 
 	$export($export.S, 'String', {
@@ -10814,6 +12110,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10827,12 +12124,16 @@
 =======
 /* 441 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 443 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 
 	$export($export.P, 'String', {
 	  // 21.1.3.13 String.prototype.repeat(count)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10862,6 +12163,13 @@
 /***/ },
 /* 442 */
 >>>>>>> adding storage policy list - angular 2
+=======
+	  repeat: __webpack_require__(233)
+	});
+
+/***/ },
+/* 444 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10873,6 +12181,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10886,12 +12195,16 @@
 =======
 /* 443 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 445 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.18 String.prototype.startsWith(searchString [, position ])
 	'use strict';
 	var $export     = __webpack_require__(2)
 	  , toLength    = __webpack_require__(24)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 	  , context     = __webpack_require__(150)
@@ -10913,6 +12226,13 @@
 
 	$export($export.P + $export.F * __webpack_require__(141)(STARTS_WITH), 'String', {
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , context     = __webpack_require__(154)
+	  , STARTS_WITH = 'startsWith'
+	  , $startsWith = ''[STARTS_WITH];
+
+	$export($export.P + $export.F * __webpack_require__(142)(STARTS_WITH), 'String', {
+>>>>>>> organizationlist to angular 2
 	  startsWith: function startsWith(searchString /*, position = 0 */){
 	    var that   = context(this, searchString, STARTS_WITH)
 	      , index  = toLength(Math.min(arguments.length > 1 ? arguments[1] : undefined, that.length))
@@ -10924,6 +12244,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10937,6 +12258,9 @@
 =======
 /* 444 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 446 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10948,6 +12272,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10961,6 +12286,9 @@
 =======
 /* 445 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 447 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10972,6 +12300,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -10985,6 +12314,9 @@
 =======
 /* 446 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 448 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10996,6 +12328,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11009,6 +12342,9 @@
 =======
 /* 447 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 449 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11032,6 +12368,7 @@
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11045,6 +12382,9 @@
 =======
 /* 448 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 450 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11067,14 +12407,19 @@
 	  , $typed       = __webpack_require__(109)
 =======
 	  , $typed       = __webpack_require__(110)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 >>>>>>> adding storage policy list - angular 2
 	  , buffer       = __webpack_require__(155)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
+=======
+	  , buffer       = __webpack_require__(156)
+>>>>>>> organizationlist to angular 2
 	  , anObject     = __webpack_require__(8)
-	  , toIndex      = __webpack_require__(65)
+	  , toIndex      = __webpack_require__(66)
 	  , toLength     = __webpack_require__(24)
 	  , isObject     = __webpack_require__(11)
 	  , ArrayBuffer  = __webpack_require__(12).ArrayBuffer
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , speciesConstructor = __webpack_require__(221)
@@ -11085,6 +12430,9 @@
 =======
 	  , speciesConstructor = __webpack_require__(230)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , speciesConstructor = __webpack_require__(231)
+>>>>>>> organizationlist to angular 2
 	  , $ArrayBuffer = buffer.ArrayBuffer
 	  , $DataView    = buffer.DataView
 	  , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -11142,15 +12490,16 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 
 /***/ },
-/* 449 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 	$export($export.G + $export.W + $export.F * !__webpack_require__(110).ABV, {
-	  DataView: __webpack_require__(155).DataView
+	  DataView: __webpack_require__(156).DataView
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 /* 438 */
@@ -11170,12 +12519,19 @@
 
 	__webpack_require__(49)('Float32', 4, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 452 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Float32', 4, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Float32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11198,12 +12554,19 @@
 
 	__webpack_require__(49)('Float64', 8, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 453 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Float64', 8, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Float64Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11226,12 +12589,19 @@
 
 	__webpack_require__(49)('Int16', 2, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 454 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Int16', 2, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Int16Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11254,12 +12624,19 @@
 
 	__webpack_require__(49)('Int32', 4, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 455 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Int32', 4, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Int32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11282,12 +12659,19 @@
 
 	__webpack_require__(49)('Int8', 1, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 456 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Int8', 1, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Int8Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11310,12 +12694,19 @@
 
 	__webpack_require__(49)('Uint16', 2, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 457 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Uint16', 2, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Uint16Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11338,12 +12729,19 @@
 
 	__webpack_require__(49)('Uint32', 4, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 458 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Uint32', 4, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Uint32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11366,12 +12764,19 @@
 
 	__webpack_require__(49)('Uint8', 1, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 459 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Uint8', 1, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Uint8Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11394,12 +12799,19 @@
 
 	__webpack_require__(49)('Uint8', 1, function(init){
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 460 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(50)('Uint8', 1, function(init){
+>>>>>>> organizationlist to angular 2
 	  return function Uint8ClampedArray(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	}, true);
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11419,10 +12831,13 @@
 =======
 /* 459 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 461 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var weak = __webpack_require__(213);
+	var weak = __webpack_require__(214);
 
 	// 23.4 WeakSet Objects
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11444,6 +12859,7 @@
 	}, weak, false, true);
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11469,6 +12885,12 @@
 
 	var metadata                  = __webpack_require__(47)
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 462 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata                  = __webpack_require__(48)
+>>>>>>> organizationlist to angular 2
 	  , anObject                  = __webpack_require__(8)
 	  , toMetaKey                 = metadata.key
 	  , ordinaryDefineOwnMetadata = metadata.set;
@@ -11478,6 +12900,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11503,6 +12926,12 @@
 
 	var metadata               = __webpack_require__(47)
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 463 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(48)
+>>>>>>> organizationlist to angular 2
 	  , anObject               = __webpack_require__(8)
 	  , toMetaKey              = metadata.key
 	  , getOrCreateMetadataMap = metadata.map
@@ -11519,6 +12948,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11538,12 +12968,16 @@
 =======
 /* 462 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 464 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var Set                     = __webpack_require__(240)
-	  , from                    = __webpack_require__(327)
-	  , metadata                = __webpack_require__(47)
+	var Set                     = __webpack_require__(241)
+	  , from                    = __webpack_require__(329)
+	  , metadata                = __webpack_require__(48)
 	  , anObject                = __webpack_require__(8)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , getPrototypeOf          = __webpack_require__(36)
@@ -11554,6 +12988,9 @@
 =======
 	  , getPrototypeOf          = __webpack_require__(38)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , getPrototypeOf          = __webpack_require__(40)
+>>>>>>> organizationlist to angular 2
 	  , ordinaryOwnMetadataKeys = metadata.keys
 	  , toMetaKey               = metadata.key;
 
@@ -11570,6 +13007,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11587,10 +13025,14 @@
 =======
 /* 463 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 465 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(47)
+	var metadata               = __webpack_require__(48)
 	  , anObject               = __webpack_require__(8)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , getPrototypeOf         = __webpack_require__(36)
@@ -11601,6 +13043,9 @@
 =======
 	  , getPrototypeOf         = __webpack_require__(38)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , getPrototypeOf         = __webpack_require__(40)
+>>>>>>> organizationlist to angular 2
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , ordinaryGetOwnMetadata = metadata.get
 	  , toMetaKey              = metadata.key;
@@ -11617,6 +13062,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11642,6 +13088,12 @@
 
 	var metadata                = __webpack_require__(47)
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 466 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata                = __webpack_require__(48)
+>>>>>>> organizationlist to angular 2
 	  , anObject                = __webpack_require__(8)
 	  , ordinaryOwnMetadataKeys = metadata.keys
 	  , toMetaKey               = metadata.key;
@@ -11651,6 +13103,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11676,6 +13129,12 @@
 
 	var metadata               = __webpack_require__(47)
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 467 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(48)
+>>>>>>> organizationlist to angular 2
 	  , anObject               = __webpack_require__(8)
 	  , ordinaryGetOwnMetadata = metadata.get
 	  , toMetaKey              = metadata.key;
@@ -11686,6 +13145,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11703,10 +13163,14 @@
 =======
 /* 466 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 468 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(47)
+	var metadata               = __webpack_require__(48)
 	  , anObject               = __webpack_require__(8)
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , getPrototypeOf         = __webpack_require__(36)
@@ -11717,6 +13181,9 @@
 =======
 	  , getPrototypeOf         = __webpack_require__(38)
 >>>>>>> adding storage policy list - angular 2
+=======
+	  , getPrototypeOf         = __webpack_require__(40)
+>>>>>>> organizationlist to angular 2
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , toMetaKey              = metadata.key;
 
@@ -11732,6 +13199,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11757,6 +13225,12 @@
 
 	var metadata               = __webpack_require__(47)
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 469 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(48)
+>>>>>>> organizationlist to angular 2
 	  , anObject               = __webpack_require__(8)
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , toMetaKey              = metadata.key;
@@ -11767,6 +13241,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11784,9 +13259,12 @@
 =======
 /* 468 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 470 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata                  = __webpack_require__(47)
+	var metadata                  = __webpack_require__(48)
 	  , anObject                  = __webpack_require__(8)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -11812,6 +13290,7 @@
 	}});
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11825,6 +13304,9 @@
 =======
 /* 469 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 471 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// function.name (all IE)
@@ -12145,6 +13627,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -12168,6 +13651,8 @@
 >>>>>>> adding storage policy list - angular 2
 /* 470 */,
 /* 471 */,
+=======
+>>>>>>> organizationlist to angular 2
 /* 472 */,
 /* 473 */,
 /* 474 */,
@@ -12454,8 +13939,13 @@
 =======
 /* 742 */,
 /* 743 */,
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 /* 744 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 744 */,
+/* 745 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -12618,6 +14108,7 @@
 
 
 /***/ },
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -12631,6 +14122,9 @@
 =======
 /* 745 */
 >>>>>>> adding storage policy list - angular 2
+=======
+/* 746 */
+>>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -14060,6 +15554,7 @@
 
 	})));
 
+<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -14073,6 +15568,9 @@
 =======
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(243)))
 >>>>>>> adding storage policy list - angular 2
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(244)))
+>>>>>>> organizationlist to angular 2
 
 /***/ }
 /******/ ]);

@@ -60,7 +60,9 @@ gulp.task('build', function () {
             '!app/volumes/volume.module.js',
             '!app/volumes/volumelistctrl.js',
             '!app/storage_policies/storagepolicy.module.js',
-            '!app/storage_policies/storagepolicylistctrl.js'
+            '!app/storage_policies/storagepolicylistctrl.js',
+            '!app/organizations/organization.module.js',
+            '!app/organizations/organizationlistctrl.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
@@ -134,7 +136,9 @@ gulp.task('dev-build', function () {
             '!app/volumes/volume.module.js',
             '!app/volumes/volumelistctrl.js',
             '!app/storage_policies/storagepolicy.module.js',
-            '!app/storage_policies/storagepolicylistctrl.js'
+            '!app/storage_policies/storagepolicylistctrl.js',
+            '!app/organizations/organization.module.js',
+            '!app/organizations/organizationlistctrl.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code

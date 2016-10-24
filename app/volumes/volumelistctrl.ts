@@ -12,7 +12,7 @@ import {VolumesModel} from "../components/models/volumesmodel";
 
 @Component({
     selector: 'volumelist',
-    template: require("./volumelist.html")
+    templateUrl: "volumes/volumelist.html"
 })
 
 export class VolumeListComponent implements OnInit, OnDestroy{
