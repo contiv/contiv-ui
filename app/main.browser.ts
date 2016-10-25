@@ -45,6 +45,8 @@ import {VolumeSettingService} from "./components/utils/volumesettingservice";
 import {NetworkService} from "./components/utils/networkservice";
 import {StoragepolicyListComponent} from "./storage_policies/storagepolicylistctrl";
 import {OrganizationListComponent} from "./organizations/organizationlistctrl";
+import {NetworkInfoComponent} from "./networks/networkinfoctrl";
+import {NetworkdetailsComponent} from "./networks/networkdetailsctrl";
 
 upgradeAdapter.upgradeNg1Provider('$state');
 upgradeAdapter.upgradeNg1Provider('$stateParams');
@@ -94,7 +96,9 @@ angular.module("contiv.directives")
 
 angular.module('contiv.networks')
     .directive('networkList', upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory)
-    .directive('networkstat', upgradeAdapter.downgradeNg2Component(NetworkStatComponent) as angular.IDirectiveFactory);
+    .directive('networkStat', upgradeAdapter.downgradeNg2Component(NetworkStatComponent) as angular.IDirectiveFactory)
+    .directive('networkInfo', upgradeAdapter.downgradeNg2Component(NetworkInfoComponent) as angular.IDirectiveFactory)
+    .directive('networkdetails', upgradeAdapter.downgradeNg2Component(NetworkdetailsComponent) as angular.IDirectiveFactory);
 
 angular.module('contiv.applicationgroups')
     .directive('applicationGrouplist', upgradeAdapter.downgradeNg2Component(AppGrouplistComponent) as angular.IDirectiveFactory)

@@ -7,6 +7,8 @@ import { CommonModule } from "@angular/common";
 import { DirectivesModule } from "../components/directives/directives.module";
 import {NetworkListComponent} from "./networklistctrl";
 import {NetworkStatComponent} from "./networkstatsctrl";
+import {NetworkdetailsComponent} from "./networkdetailsctrl";
+import {NetworkInfoComponent} from "./networkinfoctrl";
 
 @NgModule({
     imports: [
@@ -16,10 +18,15 @@ import {NetworkStatComponent} from "./networkstatsctrl";
     ],
     declarations: [
         NetworkListComponent,
-        NetworkStatComponent
+        NetworkStatComponent,
+        NetworkInfoComponent,
+        NetworkdetailsComponent
+
     ],
     exports: [
         NetworkListComponent,
+        NetworkStatComponent,
+        NetworkInfoComponent,
         NetworkStatComponent
     ]
 })

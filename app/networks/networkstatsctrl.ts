@@ -1,33 +1,34 @@
-import {Component, Inject, OnInit, OnDestroy} from "@angular/core";
+import {Component, OnInit, OnDestroy, Input} from "@angular/core";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Subscription, Observable} from "rxjs";
 import {NetworksModel} from "../components/models/networksmodel";
-import { StateService } from "angular-ui-router/commonjs/ng1";
 import {InspectService} from "../components/utils/inspectservice";
 import {isUndefined} from "util";
 
 @Component({
-    selector: 'networkstat',
+    selector: 'network-stat',
     templateUrl: 'networks/networkstats.html'
 })
 export class NetworkStatComponent implements OnInit, OnDestroy{
 
     public networkStatsCtrl: any;
+    @Input('statKey') statKey: string;
     private crudHelperService: CRUDHelperService;
     private refresh: Subscription;
     private networksModel: NetworksModel;
     private inspectSerrvice: InspectService;
     networkInspectStats:any; config:any; endpoints:any; filteredendpoints:any; containerDetails:any;
     constructor(networksModel: NetworksModel,
-                @Inject('$state') private $state: StateService,
                 crudHelperService: CRUDHelperService,
                 inspectSerrvice: InspectService){
         this.crudHelperService = crudHelperService;
         this.networksModel = networksModel;
         this.inspectSerrvice = inspectSerrvice;
+        this.statKey = '';
         this['showloader'] = true;
         this.refresh = Observable.interval(5000).subscribe(() => {
-            this.getNetworkInspect(true);
+            if(this.statKey!='')
+                this.getNetworkInspect(true);
         })
         this.networkInspectStats= {
                     allocatedAddressesCount: '',
@@ -47,12 +48,13 @@ export class NetworkStatComponent implements OnInit, OnDestroy{
 
     ngOnInit(){
         this.crudHelperService.startLoader(this);
-        this.getNetworkInspect(false);
+        if(this.statKey!='')
+            this.getNetworkInspect(false);
     }
 
     getNetworkInspect(reload: boolean){
         var networkStatsCtrl = this;
-        this.networksModel.getInspectByKey(this.$state.params['key'],
+        this.networksModel.getInspectByKey(this.statKey,
             ContivGlobals.NETWORKS_INSPECT_ENDPOINT, reload)
             .then((result) => {
                     networkStatsCtrl['networkInspectStats'] = result['Oper'];
