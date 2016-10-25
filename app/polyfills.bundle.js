@@ -103,6 +103,7 @@
 	 */
 	// Polyfills
 	"use strict";
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -147,27 +148,31 @@
 =======
 	__webpack_require__(470); // Internet Explorer 9 support
 >>>>>>> network details to angular 2
+=======
+	__webpack_require__(471); // Internet Explorer 9 support
+>>>>>>> added collapsible directive to angular 2
 	// import 'core-js/es6';
 	// Added parts of es6 which are necessary for your project or your browser support requirements.
-	__webpack_require__(323);
-	__webpack_require__(316);
-	__webpack_require__(312);
-	__webpack_require__(318);
+	__webpack_require__(324);
 	__webpack_require__(317);
+	__webpack_require__(313);
+	__webpack_require__(319);
+	__webpack_require__(318);
+	__webpack_require__(316);
 	__webpack_require__(315);
+	__webpack_require__(323);
+	__webpack_require__(312);
+	__webpack_require__(311);
+	__webpack_require__(321);
 	__webpack_require__(314);
 	__webpack_require__(322);
-	__webpack_require__(311);
-	__webpack_require__(310);
-	__webpack_require__(320);
-	__webpack_require__(313);
-	__webpack_require__(321);
-	__webpack_require__(325);
 	__webpack_require__(326);
-	__webpack_require__(324);
-	__webpack_require__(319);
+	__webpack_require__(327);
+	__webpack_require__(325);
+	__webpack_require__(320);
 	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
 	// import 'core-js/es6/promise';
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -196,6 +201,11 @@
 	__webpack_require__(745);
 	__webpack_require__(744);
 >>>>>>> network details to angular 2
+=======
+	__webpack_require__(328);
+	__webpack_require__(746);
+	__webpack_require__(745);
+>>>>>>> added collapsible directive to angular 2
 	
 
 /***/ },
@@ -356,6 +366,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject       = __webpack_require__(8)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -375,6 +386,9 @@
 =======
 	  , IE8_DOM_DEFINE = __webpack_require__(218)
 >>>>>>> organizationlist to angular 2
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(219)
+>>>>>>> added collapsible directive to angular 2
 	  , toPrimitive    = __webpack_require__(57)
 >>>>>>> adding storage policy list - angular 2
 	  , dP             = Object.defineProperty;
@@ -677,8 +691,12 @@
 >>>>>>> organizationlist to angular 2
 =======
 	  , toLength = __webpack_require__(25)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 	  , asc      = __webpack_require__(330);
 >>>>>>> network details to angular 2
+=======
+	  , asc      = __webpack_require__(331);
+>>>>>>> added collapsible directive to angular 2
 	module.exports = function(TYPE, $create){
 	  var IS_MAP        = TYPE == 1
 	    , IS_FILTER     = TYPE == 2
@@ -815,7 +833,7 @@
 >>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var Map     = __webpack_require__(235)
+	var Map     = __webpack_require__(236)
 	  , $export = __webpack_require__(2)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , shared  = __webpack_require__(107)('metadata')
@@ -823,12 +841,16 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , shared  = __webpack_require__(108)('metadata')
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , store   = shared.store || (shared.store = new (__webpack_require__(242)));
 >>>>>>> adding storage policy list - angular 2
 =======
 	  , store   = shared.store || (shared.store = new (__webpack_require__(243)));
 >>>>>>> organizationlist to angular 2
+=======
+	  , store   = shared.store || (shared.store = new (__webpack_require__(244)));
+>>>>>>> added collapsible directive to angular 2
 
 	var getOrCreateMetadataMap = function(target, targetKey, create){
 	  var targetMetadata = store.get(target);
@@ -923,8 +945,12 @@
 >>>>>>> adding storage policy list - angular 2
 =======
 	  , has            = __webpack_require__(27)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 	  , IE8_DOM_DEFINE = __webpack_require__(218)
 >>>>>>> organizationlist to angular 2
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(219)
+>>>>>>> added collapsible directive to angular 2
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
 	exports.f = __webpack_require__(19) ? gOPD : function getOwnPropertyDescriptor(O, P){
@@ -1017,7 +1043,7 @@
 	    , toIndex             = __webpack_require__(66)
 	    , toPrimitive         = __webpack_require__(57)
 	    , has                 = __webpack_require__(27)
-	    , same                = __webpack_require__(230)
+	    , same                = __webpack_require__(231)
 	    , classof             = __webpack_require__(140)
 	    , isObject            = __webpack_require__(11)
 	    , toObject            = __webpack_require__(32)
@@ -1053,14 +1079,18 @@
 =======
 	    , createArrayMethod   = __webpack_require__(39)
 	    , createArrayIncludes = __webpack_require__(139)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 	    , speciesConstructor  = __webpack_require__(231)
 >>>>>>> organizationlist to angular 2
+=======
+	    , speciesConstructor  = __webpack_require__(232)
+>>>>>>> added collapsible directive to angular 2
 	    , ArrayIterators      = __webpack_require__(111)
 	    , Iterators           = __webpack_require__(74)
 	    , $iterDetect         = __webpack_require__(149)
 	    , setSpecies          = __webpack_require__(87)
 	    , arrayFill           = __webpack_require__(138)
-	    , arrayCopyWithin     = __webpack_require__(210)
+	    , arrayCopyWithin     = __webpack_require__(211)
 	    , $DP                 = __webpack_require__(17)
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -1780,6 +1810,7 @@
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	var anObject    = __webpack_require__(8)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -1802,6 +1833,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , dPs         = __webpack_require__(225)
+=======
+	  , dPs         = __webpack_require__(226)
+>>>>>>> added collapsible directive to angular 2
 	  , enumBugKeys = __webpack_require__(141)
 	  , IE_PROTO    = __webpack_require__(153)('IE_PROTO')
 >>>>>>> organizationlist to angular 2
@@ -1811,6 +1845,7 @@
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -1828,11 +1863,15 @@
 =======
 	  var iframe = __webpack_require__(216)('iframe')
 >>>>>>> organizationlist to angular 2
+=======
+	  var iframe = __webpack_require__(217)('iframe')
+>>>>>>> added collapsible directive to angular 2
 	    , i      = enumBugKeys.length
 	    , lt     = '<'
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -1850,6 +1889,9 @@
 =======
 	  __webpack_require__(217).appendChild(iframe);
 >>>>>>> organizationlist to angular 2
+=======
+	  __webpack_require__(218).appendChild(iframe);
+>>>>>>> added collapsible directive to angular 2
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -1906,7 +1948,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-	var $keys      = __webpack_require__(227)
+	var $keys      = __webpack_require__(228)
 	  , hiddenKeys = __webpack_require__(141).concat('length', 'prototype');
 >>>>>>> organizationlist to angular 2
 
@@ -2078,12 +2120,16 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var $keys       = __webpack_require__(226)
 	  , enumBugKeys = __webpack_require__(140);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	var $keys       = __webpack_require__(227)
+=======
+	var $keys       = __webpack_require__(228)
+>>>>>>> added collapsible directive to angular 2
 	  , enumBugKeys = __webpack_require__(141);
 >>>>>>> organizationlist to angular 2
 
@@ -2546,7 +2592,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var ctx         = __webpack_require__(63)
-	  , call        = __webpack_require__(220)
+	  , call        = __webpack_require__(221)
 	  , isArrayIter = __webpack_require__(145)
 	  , anObject    = __webpack_require__(8)
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -2790,6 +2836,7 @@
 
 	'use strict';
 	var addToUnscopables = __webpack_require__(82)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 	  , step             = __webpack_require__(222)
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 	  , Iterators        = __webpack_require__(72)
@@ -2800,6 +2847,9 @@
 	  , toIObject        = __webpack_require__(35);
 >>>>>>> organizationlist to angular 2
 =======
+=======
+	  , step             = __webpack_require__(223)
+>>>>>>> added collapsible directive to angular 2
 	  , Iterators        = __webpack_require__(74)
 	  , toIObject        = __webpack_require__(36);
 >>>>>>> network details to angular 2
@@ -2868,7 +2918,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $at  = __webpack_require__(232)(true);
+	var $at  = __webpack_require__(233)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -3390,7 +3440,7 @@
 =======
 =======
 	  , Iterators      = __webpack_require__(74)
-	  , $iterCreate    = __webpack_require__(221)
+	  , $iterCreate    = __webpack_require__(222)
 	  , setToStringTag = __webpack_require__(88)
 >>>>>>> network details to angular 2
 	  , getPrototypeOf = __webpack_require__(40)
@@ -4212,7 +4262,8 @@
 /* 206 */,
 /* 207 */,
 /* 208 */,
-/* 209 */
+/* 209 */,
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -4227,6 +4278,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4244,6 +4296,9 @@
 =======
 /* 210 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 211 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
@@ -4291,6 +4346,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4316,6 +4372,9 @@
 =======
 /* 211 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 212 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var aFunction = __webpack_require__(53)
@@ -4354,6 +4413,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4380,11 +4440,15 @@
 =======
 /* 212 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 213 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var aFunction  = __webpack_require__(53)
 	  , isObject   = __webpack_require__(11)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -4399,6 +4463,9 @@
 =======
 	  , invoke     = __webpack_require__(333)
 >>>>>>> network details to angular 2
+=======
+	  , invoke     = __webpack_require__(334)
+>>>>>>> added collapsible directive to angular 2
 	  , arraySlice = [].slice
 	  , factories  = {};
 
@@ -4421,6 +4488,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4438,6 +4506,9 @@
 =======
 /* 213 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 214 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4482,6 +4553,7 @@
 	  , defined     = __webpack_require__(47)
 	  , forOf       = __webpack_require__(105)
 	  , $iterDefine = __webpack_require__(148)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 	  , step        = __webpack_require__(222)
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 	  , setSpecies  = __webpack_require__(85)
@@ -4491,6 +4563,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 =======
+=======
+	  , step        = __webpack_require__(223)
+>>>>>>> added collapsible directive to angular 2
 	  , setSpecies  = __webpack_require__(87)
 	  , DESCRIPTORS = __webpack_require__(19)
 >>>>>>> network details to angular 2
@@ -4627,6 +4702,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4653,6 +4729,9 @@
 =======
 /* 214 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 215 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4761,6 +4840,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4778,6 +4858,9 @@
 =======
 /* 215 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 216 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4798,6 +4881,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4815,6 +4899,9 @@
 =======
 /* 216 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 217 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -4826,6 +4913,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4843,11 +4931,15 @@
 =======
 /* 217 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 218 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(12).document && document.documentElement;
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4872,13 +4964,17 @@
 =======
 /* 218 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 219 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = !__webpack_require__(19) && !__webpack_require__(10)(function(){
-	  return Object.defineProperty(__webpack_require__(216)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	  return Object.defineProperty(__webpack_require__(217)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4893,6 +4989,9 @@
 =======
 /* 219 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 220 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
@@ -4903,6 +5002,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4920,6 +5020,9 @@
 =======
 /* 220 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 221 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
@@ -4936,6 +5039,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -4964,6 +5068,9 @@
 =======
 /* 221 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 222 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4986,6 +5093,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5003,6 +5111,9 @@
 =======
 /* 222 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 223 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -5010,6 +5121,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5027,6 +5139,9 @@
 =======
 /* 223 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 224 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports) {
 
 	// 20.2.2.20 Math.log1p(x)
@@ -5035,6 +5150,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5052,6 +5168,9 @@
 =======
 /* 224 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 225 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5119,6 +5238,7 @@
 	} : $assign;
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5136,6 +5256,9 @@
 =======
 /* 225 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 226 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP       = __webpack_require__(17)
@@ -5169,6 +5292,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5199,6 +5323,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 226 */
+=======
+/* 227 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -5224,6 +5351,7 @@
 
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5257,6 +5385,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 227 */
+=======
+/* 228 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var has          = __webpack_require__(27)
@@ -5279,6 +5410,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5301,6 +5433,9 @@
 =======
 /* 228 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 229 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseFloat = __webpack_require__(12).parseFloat
@@ -5322,6 +5457,7 @@
 	} : $parseFloat;
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5348,6 +5484,9 @@
 =======
 /* 229 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 230 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseInt = __webpack_require__(12).parseInt
@@ -5366,6 +5505,7 @@
 	} : $parseInt;
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5383,6 +5523,9 @@
 =======
 /* 230 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 231 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports) {
 
 	// 7.2.9 SameValue(x, y)
@@ -5391,6 +5534,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5408,6 +5552,9 @@
 =======
 /* 231 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 232 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
@@ -5432,6 +5579,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5460,6 +5608,9 @@
 >>>>>>> adding storage policy list - angular 2
 =======
 /* 232 */
+=======
+/* 233 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(56)
@@ -5482,6 +5633,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5508,6 +5660,9 @@
 =======
 /* 233 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 234 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5529,6 +5684,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5546,11 +5702,15 @@
 =======
 /* 234 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 235 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.f = __webpack_require__(14);
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5574,10 +5734,13 @@
 =======
 /* 235 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 236 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(213);
+	var strong = __webpack_require__(214);
 
 	// 23.1 Map Objects
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -5604,6 +5767,7 @@
 	}, strong, true);
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5621,6 +5785,9 @@
 =======
 /* 236 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 237 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
@@ -5649,7 +5816,7 @@
 	});
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@match logic
@@ -5673,6 +5840,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5701,6 +5869,9 @@
 =======
 /* 238 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 239 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@replace logic
@@ -5718,6 +5889,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5746,6 +5918,9 @@
 =======
 /* 239 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 240 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@search logic
@@ -5761,6 +5936,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5783,6 +5959,9 @@
 =======
 /* 240 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 241 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@split logic
@@ -5866,6 +6045,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5889,10 +6069,13 @@
 =======
 /* 241 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 242 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(213);
+	var strong = __webpack_require__(214);
 
 	// 23.2 Set Objects
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -5914,6 +6097,7 @@
 	}, strong);
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -5931,6 +6115,9 @@
 =======
 /* 242 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 243 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5987,17 +6174,17 @@
 	  , uid            = __webpack_require__(67)
 >>>>>>> organizationlist to angular 2
 	  , wks            = __webpack_require__(14)
-	  , wksExt         = __webpack_require__(234)
-	  , wksDefine      = __webpack_require__(336)
-	  , keyOf          = __webpack_require__(334)
-	  , enumKeys       = __webpack_require__(332)
+	  , wksExt         = __webpack_require__(235)
+	  , wksDefine      = __webpack_require__(337)
+	  , keyOf          = __webpack_require__(335)
+	  , enumKeys       = __webpack_require__(333)
 	  , isArray        = __webpack_require__(146)
 	  , anObject       = __webpack_require__(8)
 	  , toIObject      = __webpack_require__(36)
 	  , toPrimitive    = __webpack_require__(57)
 	  , createDesc     = __webpack_require__(55)
 	  , _create        = __webpack_require__(64)
-	  , gOPNExt        = __webpack_require__(226)
+	  , gOPNExt        = __webpack_require__(227)
 	  , $GOPD          = __webpack_require__(49)
 	  , $DP            = __webpack_require__(17)
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -6248,6 +6435,7 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -6284,12 +6472,16 @@
 =======
 /* 243 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 244 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var each         = __webpack_require__(39)(0)
 	  , redefine     = __webpack_require__(29)
 	  , meta         = __webpack_require__(54)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , assign       = __webpack_require__(223)
 	  , weak         = __webpack_require__(213)
@@ -6298,6 +6490,10 @@
 	  , assign       = __webpack_require__(224)
 	  , weak         = __webpack_require__(214)
 >>>>>>> organizationlist to angular 2
+=======
+	  , assign       = __webpack_require__(225)
+	  , weak         = __webpack_require__(215)
+>>>>>>> added collapsible directive to angular 2
 	  , isObject     = __webpack_require__(11)
 	  , getWeak      = meta.getWeak
 	  , isExtensible = Object.isExtensible
@@ -6362,6 +6558,7 @@
 	}
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -6504,6 +6701,9 @@
 =======
 /* 244 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 245 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -6689,7 +6889,6 @@
 
 
 /***/ },
-/* 245 */,
 /* 246 */,
 /* 247 */,
 /* 248 */,
@@ -6754,67 +6953,69 @@
 /* 307 */,
 /* 308 */,
 /* 309 */,
-/* 310 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(112);
-	__webpack_require__(346);
-	__webpack_require__(344);
-	__webpack_require__(350);
-	__webpack_require__(347);
-	__webpack_require__(353);
-	__webpack_require__(355);
-	__webpack_require__(343);
-	__webpack_require__(349);
-	__webpack_require__(340);
-	__webpack_require__(354);
-	__webpack_require__(338);
-	__webpack_require__(352);
-	__webpack_require__(351);
-	__webpack_require__(345);
-	__webpack_require__(348);
-	__webpack_require__(337);
-	__webpack_require__(339);
-	__webpack_require__(342);
-	__webpack_require__(341);
-	__webpack_require__(356);
-	__webpack_require__(111);
-	module.exports = __webpack_require__(13).Array;
-
-/***/ },
+/* 310 */,
 /* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(112);
+	__webpack_require__(347);
+	__webpack_require__(345);
+	__webpack_require__(351);
+	__webpack_require__(348);
+	__webpack_require__(354);
+	__webpack_require__(356);
+	__webpack_require__(344);
+	__webpack_require__(350);
+	__webpack_require__(341);
+	__webpack_require__(355);
+	__webpack_require__(339);
+	__webpack_require__(353);
+	__webpack_require__(352);
+	__webpack_require__(346);
+	__webpack_require__(349);
+	__webpack_require__(338);
+	__webpack_require__(340);
+	__webpack_require__(343);
+	__webpack_require__(342);
 	__webpack_require__(357);
-	__webpack_require__(359);
-	__webpack_require__(358);
-	__webpack_require__(361);
-	__webpack_require__(360);
-	module.exports = Date;
+	__webpack_require__(111);
+	module.exports = __webpack_require__(13).Array;
 
 /***/ },
 /* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(358);
+	__webpack_require__(360);
+	__webpack_require__(359);
 	__webpack_require__(362);
-	__webpack_require__(364);
-	__webpack_require__(363);
-	module.exports = __webpack_require__(13).Function;
+	__webpack_require__(361);
+	module.exports = Date;
 
 /***/ },
 /* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(68);
-	__webpack_require__(112);
-	__webpack_require__(158);
-	__webpack_require__(235);
-	module.exports = __webpack_require__(13).Map;
+	__webpack_require__(363);
+	__webpack_require__(365);
+	__webpack_require__(364);
+	module.exports = __webpack_require__(13).Function;
 
 /***/ },
 /* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(68);
+	__webpack_require__(112);
+	__webpack_require__(158);
+	__webpack_require__(236);
+	module.exports = __webpack_require__(13).Map;
+
+/***/ },
+/* 315 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -6843,6 +7044,8 @@
 =======
 	__webpack_require__(365);
 >>>>>>> network details to angular 2
+=======
+>>>>>>> added collapsible directive to angular 2
 	__webpack_require__(366);
 	__webpack_require__(367);
 	__webpack_require__(368);
@@ -6894,16 +7097,16 @@
 	__webpack_require__(379);
 	__webpack_require__(380);
 	__webpack_require__(381);
+	__webpack_require__(382);
 	module.exports = __webpack_require__(13).Math;
 
 /***/ },
-/* 315 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(382);
-	__webpack_require__(392);
-	__webpack_require__(393);
 	__webpack_require__(383);
+	__webpack_require__(393);
+	__webpack_require__(394);
 	__webpack_require__(384);
 	__webpack_require__(385);
 	__webpack_require__(386);
@@ -6912,51 +7115,53 @@
 	__webpack_require__(389);
 	__webpack_require__(390);
 	__webpack_require__(391);
+	__webpack_require__(392);
 	module.exports = __webpack_require__(13).Number;
-
-/***/ },
-/* 316 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(242);
-	__webpack_require__(395);
-	__webpack_require__(397);
-	__webpack_require__(396);
-	__webpack_require__(399);
-	__webpack_require__(401);
-	__webpack_require__(406);
-	__webpack_require__(400);
-	__webpack_require__(398);
-	__webpack_require__(408);
-	__webpack_require__(407);
-	__webpack_require__(403);
-	__webpack_require__(404);
-	__webpack_require__(402);
-	__webpack_require__(394);
-	__webpack_require__(405);
-	__webpack_require__(409);
-	__webpack_require__(68);
-
-	module.exports = __webpack_require__(13).Object;
 
 /***/ },
 /* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(243);
+	__webpack_require__(396);
+	__webpack_require__(398);
+	__webpack_require__(397);
+	__webpack_require__(400);
+	__webpack_require__(402);
+	__webpack_require__(407);
+	__webpack_require__(401);
+	__webpack_require__(399);
+	__webpack_require__(409);
+	__webpack_require__(408);
+	__webpack_require__(404);
+	__webpack_require__(405);
+	__webpack_require__(403);
+	__webpack_require__(395);
+	__webpack_require__(406);
 	__webpack_require__(410);
-	module.exports = __webpack_require__(13).parseFloat;
+	__webpack_require__(68);
+
+	module.exports = __webpack_require__(13).Object;
 
 /***/ },
 /* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(411);
-	module.exports = __webpack_require__(13).parseInt;
+	module.exports = __webpack_require__(13).parseFloat;
 
 /***/ },
 /* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(412);
+	module.exports = __webpack_require__(13).parseInt;
+
+/***/ },
+/* 320 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7006,10 +7211,13 @@
 =======
 	__webpack_require__(412);
 >>>>>>> network details to angular 2
+=======
+>>>>>>> added collapsible directive to angular 2
 	__webpack_require__(413);
 	__webpack_require__(414);
 	__webpack_require__(415);
 	__webpack_require__(416);
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 	__webpack_require__(418);
 	__webpack_require__(417);
@@ -7032,30 +7240,35 @@
 /* 314 */
 =======
 	__webpack_require__(419);
+=======
+>>>>>>> added collapsible directive to angular 2
 	__webpack_require__(417);
-	__webpack_require__(418);
 	__webpack_require__(420);
+	__webpack_require__(418);
+	__webpack_require__(419);
 	__webpack_require__(421);
 	__webpack_require__(422);
 	__webpack_require__(423);
-	__webpack_require__(425);
 	__webpack_require__(424);
+	__webpack_require__(426);
+	__webpack_require__(425);
 	module.exports = __webpack_require__(13).Reflect;
 
 /***/ },
-/* 320 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(426);
 	__webpack_require__(427);
-	__webpack_require__(236);
+	__webpack_require__(428);
 	__webpack_require__(237);
 	__webpack_require__(238);
 	__webpack_require__(239);
 	__webpack_require__(240);
+	__webpack_require__(241);
 	module.exports = __webpack_require__(13).RegExp;
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 /* 321 */
 >>>>>>> network details to angular 2
 /***/ function(module, exports, __webpack_require__) {
@@ -7355,49 +7568,102 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(242);
+=======
+/* 322 */
+/***/ function(module, exports, __webpack_require__) {
+
 	__webpack_require__(68);
-	module.exports = __webpack_require__(13).Symbol;
+	__webpack_require__(112);
+	__webpack_require__(158);
+	__webpack_require__(242);
+	module.exports = __webpack_require__(13).Set;
+
+/***/ },
+/* 323 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(438);
+	__webpack_require__(442);
+	__webpack_require__(449);
+	__webpack_require__(112);
+	__webpack_require__(433);
+	__webpack_require__(434);
+	__webpack_require__(439);
+	__webpack_require__(443);
+	__webpack_require__(445);
+	__webpack_require__(429);
+	__webpack_require__(430);
+	__webpack_require__(431);
+	__webpack_require__(432);
+	__webpack_require__(435);
+	__webpack_require__(436);
+	__webpack_require__(437);
+	__webpack_require__(440);
+	__webpack_require__(441);
+	__webpack_require__(444);
+	__webpack_require__(446);
+	__webpack_require__(447);
+	__webpack_require__(448);
+	__webpack_require__(238);
+	__webpack_require__(239);
+	__webpack_require__(240);
+	__webpack_require__(241);
+	module.exports = __webpack_require__(13).String;
 
 /***/ },
 /* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(449);
-	__webpack_require__(450);
-	__webpack_require__(455);
-	__webpack_require__(458);
-	__webpack_require__(459);
-	__webpack_require__(453);
-	__webpack_require__(456);
-	__webpack_require__(454);
-	__webpack_require__(457);
-	__webpack_require__(451);
-	__webpack_require__(452);
+	__webpack_require__(243);
+>>>>>>> added collapsible directive to angular 2
 	__webpack_require__(68);
-	module.exports = __webpack_require__(13);
+	module.exports = __webpack_require__(13).Symbol;
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
+/* 324 */
+=======
 /* 325 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(450);
+	__webpack_require__(451);
+	__webpack_require__(456);
+	__webpack_require__(459);
+	__webpack_require__(460);
+	__webpack_require__(454);
+	__webpack_require__(457);
+	__webpack_require__(455);
+	__webpack_require__(458);
+	__webpack_require__(452);
+	__webpack_require__(453);
 	__webpack_require__(68);
-	__webpack_require__(111);
-	__webpack_require__(243);
-	module.exports = __webpack_require__(13).WeakMap;
+	module.exports = __webpack_require__(13);
 
 /***/ },
 /* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(68);
-	__webpack_require__(158);
-	__webpack_require__(460);
-	module.exports = __webpack_require__(13).WeakSet;
+	__webpack_require__(111);
+	__webpack_require__(244);
+	module.exports = __webpack_require__(13).WeakMap;
 
 /***/ },
 /* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(68);
+	__webpack_require__(158);
+	__webpack_require__(461);
+	module.exports = __webpack_require__(13).WeakSet;
+
+/***/ },
+/* 328 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7426,11 +7692,12 @@
 =======
 	__webpack_require__(461);
 >>>>>>> network details to angular 2
+=======
+>>>>>>> added collapsible directive to angular 2
 	__webpack_require__(462);
-	__webpack_require__(464);
 	__webpack_require__(463);
-	__webpack_require__(466);
 	__webpack_require__(465);
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 	__webpack_require__(464);
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -7442,21 +7709,30 @@
 >>>>>>> organizationlist to angular 2
 =======
 >>>>>>> network details to angular 2
+=======
+	__webpack_require__(464);
+>>>>>>> added collapsible directive to angular 2
 	__webpack_require__(467);
+	__webpack_require__(466);
 	__webpack_require__(468);
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 >>>>>>> adding storage policy list - angular 2
 =======
 	__webpack_require__(469);
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 	__webpack_require__(470);
 >>>>>>> organizationlist to angular 2
 =======
 >>>>>>> network details to angular 2
+=======
+	__webpack_require__(470);
+>>>>>>> added collapsible directive to angular 2
 	module.exports = __webpack_require__(13).Reflect;
 
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7486,6 +7762,9 @@
 =======
 /* 328 */
 >>>>>>> network details to angular 2
+=======
+/* 329 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var forOf = __webpack_require__(105);
@@ -7499,6 +7778,7 @@
 
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7531,6 +7811,9 @@
 =======
 /* 329 */
 >>>>>>> network details to angular 2
+=======
+/* 330 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -7552,6 +7835,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7597,12 +7881,20 @@
 	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 	var speciesConstructor = __webpack_require__(329);
 >>>>>>> network details to angular 2
+=======
+/* 331 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+	var speciesConstructor = __webpack_require__(330);
+>>>>>>> added collapsible directive to angular 2
 
 	module.exports = function(original, length){
 	  return new (speciesConstructor(original))(length);
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7624,6 +7916,9 @@
 =======
 /* 331 */
 >>>>>>> network details to angular 2
+=======
+/* 332 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7649,6 +7944,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7687,6 +7983,9 @@
 =======
 /* 332 */
 >>>>>>> network details to angular 2
+=======
+/* 333 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
@@ -7707,6 +8006,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7728,6 +8028,9 @@
 =======
 /* 333 */
 >>>>>>> network details to angular 2
+=======
+/* 334 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports) {
 
 	// fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -7748,6 +8051,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7783,6 +8087,9 @@
 >>>>>>> organizationlist to angular 2
 =======
 /* 334 */
+=======
+/* 335 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var getKeys   = __webpack_require__(75)
@@ -7798,6 +8105,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7835,6 +8143,9 @@
 =======
 /* 335 */
 >>>>>>> network details to angular 2
+=======
+/* 336 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// all object keys, includes non-enumerable and symbols
@@ -7851,6 +8162,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7872,6 +8184,9 @@
 =======
 /* 336 */
 >>>>>>> network details to angular 2
+=======
+/* 337 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global         = __webpack_require__(12)
@@ -7897,9 +8212,13 @@
 =======
 =======
 	  , LIBRARY        = __webpack_require__(85)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 >>>>>>> network details to angular 2
 	  , wksExt         = __webpack_require__(234)
 >>>>>>> organizationlist to angular 2
+=======
+	  , wksExt         = __webpack_require__(235)
+>>>>>>> added collapsible directive to angular 2
 	  , defineProperty = __webpack_require__(17).f;
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
@@ -7907,6 +8226,7 @@
 	};
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7928,11 +8248,15 @@
 =======
 /* 337 */
 >>>>>>> network details to angular 2
+=======
+/* 338 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	var $export = __webpack_require__(2);
 
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -7954,10 +8278,14 @@
 =======
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(210)});
 >>>>>>> organizationlist to angular 2
+=======
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(211)});
+>>>>>>> added collapsible directive to angular 2
 
 	__webpack_require__(82)('copyWithin');
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -7976,6 +8304,9 @@
 =======
 /* 338 */
 >>>>>>> network details to angular 2
+=======
+/* 339 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7990,6 +8321,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8011,6 +8343,9 @@
 =======
 /* 339 */
 >>>>>>> network details to angular 2
+=======
+/* 340 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
@@ -8037,6 +8372,7 @@
 	__webpack_require__(82)('fill');
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8055,6 +8391,9 @@
 =======
 /* 340 */
 >>>>>>> network details to angular 2
+=======
+/* 341 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8069,6 +8408,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8090,6 +8430,9 @@
 =======
 /* 341 */
 >>>>>>> network details to angular 2
+=======
+/* 342 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8136,8 +8479,12 @@
 	__webpack_require__(82)(KEY);
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 /* 342 */
 >>>>>>> network details to angular 2
+=======
+/* 343 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8184,8 +8531,12 @@
 	__webpack_require__(82)(KEY);
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 /* 343 */
 >>>>>>> network details to angular 2
+=======
+/* 344 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8218,6 +8569,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8251,16 +8603,19 @@
 =======
 /* 344 */
 >>>>>>> network details to angular 2
+=======
+/* 345 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var ctx            = __webpack_require__(63)
 	  , $export        = __webpack_require__(2)
 	  , toObject       = __webpack_require__(32)
-	  , call           = __webpack_require__(220)
+	  , call           = __webpack_require__(221)
 	  , isArrayIter    = __webpack_require__(145)
 	  , toLength       = __webpack_require__(25)
-	  , createProperty = __webpack_require__(215)
+	  , createProperty = __webpack_require__(216)
 	  , getIterFn      = __webpack_require__(157);
 
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -8302,6 +8657,7 @@
 
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8323,6 +8679,9 @@
 =======
 /* 345 */
 >>>>>>> network details to angular 2
+=======
+/* 346 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8354,6 +8713,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8375,6 +8735,9 @@
 =======
 /* 346 */
 >>>>>>> network details to angular 2
+=======
+/* 347 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
@@ -8407,12 +8770,16 @@
 	$export($export.S, 'Array', {isArray: __webpack_require__(146)});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 /* 348 */
 >>>>>>> organizationlist to angular 2
 =======
 /* 347 */
 >>>>>>> network details to angular 2
+=======
+/* 348 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8445,6 +8812,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8466,6 +8834,9 @@
 =======
 /* 348 */
 >>>>>>> network details to angular 2
+=======
+/* 349 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8511,6 +8882,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8532,6 +8904,9 @@
 =======
 /* 349 */
 >>>>>>> network details to angular 2
+=======
+/* 350 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8546,6 +8921,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8567,10 +8943,14 @@
 =======
 /* 350 */
 >>>>>>> network details to angular 2
+=======
+/* 351 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export        = __webpack_require__(2)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -8588,6 +8968,9 @@
 =======
 	  , createProperty = __webpack_require__(215);
 >>>>>>> organizationlist to angular 2
+=======
+	  , createProperty = __webpack_require__(216);
+>>>>>>> added collapsible directive to angular 2
 
 	// WebKit Array.of isn't generic
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -8606,6 +8989,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8627,10 +9011,14 @@
 =======
 /* 351 */
 >>>>>>> network details to angular 2
+=======
+/* 352 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -8648,6 +9036,9 @@
 =======
 	  , $reduce = __webpack_require__(211);
 >>>>>>> organizationlist to angular 2
+=======
+	  , $reduce = __webpack_require__(212);
+>>>>>>> added collapsible directive to angular 2
 
 	$export($export.P + $export.F * !__webpack_require__(35)([].reduceRight, true), 'Array', {
 	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
@@ -8657,6 +9048,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8678,10 +9070,14 @@
 =======
 /* 352 */
 >>>>>>> network details to angular 2
+=======
+/* 353 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -8699,6 +9095,9 @@
 =======
 	  , $reduce = __webpack_require__(211);
 >>>>>>> organizationlist to angular 2
+=======
+	  , $reduce = __webpack_require__(212);
+>>>>>>> added collapsible directive to angular 2
 
 	$export($export.P + $export.F * !__webpack_require__(35)([].reduce, true), 'Array', {
 	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
@@ -8708,6 +9107,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8729,10 +9129,14 @@
 =======
 /* 353 */
 >>>>>>> network details to angular 2
+=======
+/* 354 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export    = __webpack_require__(2)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -8755,6 +9159,9 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , html       = __webpack_require__(217)
+=======
+	  , html       = __webpack_require__(218)
+>>>>>>> added collapsible directive to angular 2
 	  , cof        = __webpack_require__(62)
 	  , toIndex    = __webpack_require__(66)
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8787,6 +9194,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8808,6 +9216,9 @@
 =======
 /* 354 */
 >>>>>>> network details to angular 2
+=======
+/* 355 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8822,6 +9233,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8843,6 +9255,9 @@
 =======
 /* 355 */
 >>>>>>> network details to angular 2
+=======
+/* 356 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8879,6 +9294,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8905,11 +9321,15 @@
 =======
 /* 356 */
 >>>>>>> network details to angular 2
+=======
+/* 357 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(87)('Array');
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8928,6 +9348,9 @@
 =======
 /* 357 */
 >>>>>>> network details to angular 2
+=======
+/* 358 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.3.3.1 / 15.9.4.4 Date.now()
@@ -8936,6 +9359,7 @@
 	$export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -8957,6 +9381,9 @@
 =======
 /* 358 */
 >>>>>>> network details to angular 2
+=======
+/* 359 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8989,6 +9416,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9010,6 +9438,9 @@
 =======
 /* 359 */
 >>>>>>> network details to angular 2
+=======
+/* 360 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9037,6 +9468,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9058,11 +9490,15 @@
 =======
 /* 360 */
 >>>>>>> network details to angular 2
+=======
+/* 361 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var TO_PRIMITIVE = __webpack_require__(14)('toPrimitive')
 	  , proto        = Date.prototype;
 
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9102,6 +9538,12 @@
 /***/ },
 /* 361 */
 >>>>>>> network details to angular 2
+=======
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(31)(proto, TO_PRIMITIVE, __webpack_require__(332));
+
+/***/ },
+/* 362 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var DateProto    = Date.prototype
@@ -9117,6 +9559,7 @@
 	}
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9138,11 +9581,15 @@
 =======
 /* 362 */
 >>>>>>> network details to angular 2
+=======
+/* 363 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 	var $export = __webpack_require__(2);
 
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -9179,6 +9626,12 @@
 =======
 /* 363 */
 >>>>>>> network details to angular 2
+=======
+	$export($export.P, 'Function', {bind: __webpack_require__(213)});
+
+/***/ },
+/* 364 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9196,6 +9649,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9224,6 +9678,9 @@
 =======
 /* 364 */
 >>>>>>> network details to angular 2
+=======
+/* 365 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP         = __webpack_require__(17).f
@@ -9258,6 +9715,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9279,10 +9737,14 @@
 =======
 /* 365 */
 >>>>>>> network details to angular 2
+=======
+/* 366 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.3 Math.acosh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -9300,6 +9762,9 @@
 =======
 	  , log1p   = __webpack_require__(223)
 >>>>>>> organizationlist to angular 2
+=======
+	  , log1p   = __webpack_require__(224)
+>>>>>>> added collapsible directive to angular 2
 	  , sqrt    = Math.sqrt
 	  , $acosh  = Math.acosh;
 
@@ -9317,6 +9782,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9338,6 +9804,9 @@
 =======
 /* 366 */
 >>>>>>> network details to angular 2
+=======
+/* 367 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.5 Math.asinh(x)
@@ -9352,6 +9821,7 @@
 	$export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9373,6 +9843,9 @@
 =======
 /* 367 */
 >>>>>>> network details to angular 2
+=======
+/* 368 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.7 Math.atanh(x)
@@ -9387,6 +9860,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9408,6 +9882,9 @@
 =======
 /* 368 */
 >>>>>>> network details to angular 2
+=======
+/* 369 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.9 Math.cbrt(x)
@@ -9433,6 +9910,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9454,6 +9932,9 @@
 =======
 /* 369 */
 >>>>>>> network details to angular 2
+=======
+/* 370 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.11 Math.clz32(x)
@@ -9466,6 +9947,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9487,6 +9969,9 @@
 =======
 /* 370 */
 >>>>>>> network details to angular 2
+=======
+/* 371 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.12 Math.cosh(x)
@@ -9500,6 +9985,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9521,6 +10007,9 @@
 =======
 /* 371 */
 >>>>>>> network details to angular 2
+=======
+/* 372 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.14 Math.expm1(x)
@@ -9542,6 +10031,7 @@
 	$export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9563,6 +10053,9 @@
 =======
 /* 372 */
 >>>>>>> network details to angular 2
+=======
+/* 373 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.16 Math.fround(x)
@@ -9605,6 +10098,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9626,6 +10120,9 @@
 =======
 /* 373 */
 >>>>>>> network details to angular 2
+=======
+/* 374 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -9655,6 +10152,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9676,6 +10174,9 @@
 =======
 /* 374 */
 >>>>>>> network details to angular 2
+=======
+/* 375 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.18 Math.imul(x, y)
@@ -9697,6 +10198,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9718,6 +10220,9 @@
 =======
 /* 375 */
 >>>>>>> network details to angular 2
+=======
+/* 376 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.21 Math.log10(x)
@@ -9730,6 +10235,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9751,11 +10257,15 @@
 =======
 /* 376 */
 >>>>>>> network details to angular 2
+=======
+/* 377 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.20 Math.log1p(x)
 	var $export = __webpack_require__(2);
 
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -9792,6 +10302,12 @@
 =======
 /* 377 */
 >>>>>>> network details to angular 2
+=======
+	$export($export.S, 'Math', {log1p: __webpack_require__(224)});
+
+/***/ },
+/* 378 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.22 Math.log2(x)
@@ -9804,6 +10320,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9825,6 +10342,9 @@
 =======
 /* 378 */
 >>>>>>> network details to angular 2
+=======
+/* 379 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.28 Math.sign(x)
@@ -9857,12 +10377,16 @@
 	$export($export.S, 'Math', {sign: __webpack_require__(151)});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 /* 380 */
 >>>>>>> organizationlist to angular 2
 =======
 /* 379 */
 >>>>>>> network details to angular 2
+=======
+/* 380 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.30 Math.sinh(x)
@@ -9894,6 +10418,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9915,6 +10440,9 @@
 =======
 /* 380 */
 >>>>>>> network details to angular 2
+=======
+/* 381 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.33 Math.tanh(x)
@@ -9943,6 +10471,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9964,6 +10493,9 @@
 =======
 /* 381 */
 >>>>>>> network details to angular 2
+=======
+/* 382 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.34 Math.trunc(x)
@@ -9976,6 +10508,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -9997,6 +10530,9 @@
 =======
 /* 382 */
 >>>>>>> network details to angular 2
+=======
+/* 383 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10117,6 +10653,7 @@
 	}
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10138,6 +10675,9 @@
 =======
 /* 383 */
 >>>>>>> network details to angular 2
+=======
+/* 384 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.1 Number.EPSILON
@@ -10146,6 +10686,7 @@
 	$export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10167,6 +10708,9 @@
 =======
 /* 384 */
 >>>>>>> network details to angular 2
+=======
+/* 385 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.2 Number.isFinite(number)
@@ -10180,6 +10724,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10201,11 +10746,15 @@
 =======
 /* 385 */
 >>>>>>> network details to angular 2
+=======
+/* 386 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
 	var $export = __webpack_require__(2);
 
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -10242,6 +10791,12 @@
 =======
 /* 386 */
 >>>>>>> network details to angular 2
+=======
+	$export($export.S, 'Number', {isInteger: __webpack_require__(220)});
+
+/***/ },
+/* 387 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.4 Number.isNaN(number)
@@ -10254,6 +10809,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10275,10 +10831,14 @@
 =======
 /* 387 */
 >>>>>>> network details to angular 2
+=======
+/* 388 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(2)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -10296,6 +10856,9 @@
 =======
 	  , isInteger = __webpack_require__(219)
 >>>>>>> organizationlist to angular 2
+=======
+	  , isInteger = __webpack_require__(220)
+>>>>>>> added collapsible directive to angular 2
 	  , abs       = Math.abs;
 
 	$export($export.S, 'Number', {
@@ -10305,6 +10868,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10326,6 +10890,9 @@
 =======
 /* 388 */
 >>>>>>> network details to angular 2
+=======
+/* 389 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -10334,6 +10901,7 @@
 	$export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10355,6 +10923,9 @@
 =======
 /* 389 */
 >>>>>>> network details to angular 2
+=======
+/* 390 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -10363,6 +10934,7 @@
 	$export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10404,10 +10976,18 @@
 	var $export     = __webpack_require__(2)
 	  , $parseFloat = __webpack_require__(228);
 >>>>>>> organizationlist to angular 2
+=======
+/* 391 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(2)
+	  , $parseFloat = __webpack_require__(229);
+>>>>>>> added collapsible directive to angular 2
 	// 20.1.2.12 Number.parseFloat(string)
 	$export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10449,10 +11029,18 @@
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(229);
 >>>>>>> organizationlist to angular 2
+=======
+/* 392 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(230);
+>>>>>>> added collapsible directive to angular 2
 	// 20.1.2.13 Number.parseInt(string, radix)
 	$export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10474,6 +11062,9 @@
 =======
 /* 392 */
 >>>>>>> network details to angular 2
+=======
+/* 393 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10496,6 +11087,7 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , toInteger    = __webpack_require__(56)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	  , aNumberValue = __webpack_require__(208)
 	  , repeat       = __webpack_require__(232)
@@ -10504,6 +11096,10 @@
 	  , aNumberValue = __webpack_require__(209)
 	  , repeat       = __webpack_require__(233)
 >>>>>>> organizationlist to angular 2
+=======
+	  , aNumberValue = __webpack_require__(210)
+	  , repeat       = __webpack_require__(234)
+>>>>>>> added collapsible directive to angular 2
 	  , $toFixed     = 1..toFixed
 	  , floor        = Math.floor
 	  , data         = [0, 0, 0, 0, 0, 0]
@@ -10614,6 +11210,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10635,11 +11232,15 @@
 =======
 /* 393 */
 >>>>>>> network details to angular 2
+=======
+/* 394 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
 	  , $fails       = __webpack_require__(10)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -10657,6 +11258,9 @@
 =======
 	  , aNumberValue = __webpack_require__(209)
 >>>>>>> organizationlist to angular 2
+=======
+	  , aNumberValue = __webpack_require__(210)
+>>>>>>> added collapsible directive to angular 2
 	  , $toPrecision = 1..toPrecision;
 
 	$export($export.P + $export.F * ($fails(function(){
@@ -10673,6 +11277,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10694,11 +11299,15 @@
 =======
 /* 394 */
 >>>>>>> network details to angular 2
+=======
+/* 395 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(2);
 
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -10735,6 +11344,12 @@
 =======
 /* 395 */
 >>>>>>> network details to angular 2
+=======
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(225)});
+
+/***/ },
+/* 396 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
@@ -10766,16 +11381,21 @@
 	$export($export.S, 'Object', {create: __webpack_require__(64)});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 /* 397 */
 >>>>>>> organizationlist to angular 2
 =======
 /* 396 */
 >>>>>>> network details to angular 2
+=======
+/* 397 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10815,6 +11435,12 @@
 /***/ },
 /* 397 */
 >>>>>>> network details to angular 2
+=======
+	$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperties: __webpack_require__(226)});
+
+/***/ },
+/* 398 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
@@ -10822,6 +11448,7 @@
 	$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperty: __webpack_require__(17).f});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10843,6 +11470,9 @@
 =======
 /* 398 */
 >>>>>>> network details to angular 2
+=======
+/* 399 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.5 Object.freeze(O)
@@ -10864,6 +11494,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10898,6 +11529,9 @@
 =======
 /* 399 */
 >>>>>>> network details to angular 2
+=======
+/* 400 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
@@ -10912,6 +11546,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10941,14 +11576,18 @@
 =======
 /* 400 */
 >>>>>>> network details to angular 2
+=======
+/* 401 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 Object.getOwnPropertyNames(O)
 	__webpack_require__(41)('getOwnPropertyNames', function(){
-	  return __webpack_require__(226).f;
+	  return __webpack_require__(227).f;
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -10970,6 +11609,9 @@
 =======
 /* 401 */
 >>>>>>> network details to angular 2
+=======
+/* 402 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
@@ -10992,6 +11634,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11013,6 +11656,9 @@
 =======
 /* 402 */
 >>>>>>> network details to angular 2
+=======
+/* 403 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.11 Object.isExtensible(O)
@@ -11025,6 +11671,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11046,6 +11693,9 @@
 =======
 /* 403 */
 >>>>>>> network details to angular 2
+=======
+/* 404 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.12 Object.isFrozen(O)
@@ -11058,6 +11708,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11079,6 +11730,9 @@
 =======
 /* 404 */
 >>>>>>> network details to angular 2
+=======
+/* 405 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.13 Object.isSealed(O)
@@ -11091,6 +11745,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11112,10 +11767,14 @@
 =======
 /* 405 */
 >>>>>>> network details to angular 2
+=======
+/* 406 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.10 Object.is(value1, value2)
 	var $export = __webpack_require__(2);
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -11147,9 +11806,12 @@
 =======
 	$export($export.S, 'Object', {is: __webpack_require__(230)});
 >>>>>>> organizationlist to angular 2
+=======
+	$export($export.S, 'Object', {is: __webpack_require__(231)});
+>>>>>>> added collapsible directive to angular 2
 
 /***/ },
-/* 406 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
@@ -11172,6 +11834,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11193,6 +11856,9 @@
 =======
 /* 407 */
 >>>>>>> network details to angular 2
+=======
+/* 408 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.15 Object.preventExtensions(O)
@@ -11214,6 +11880,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11235,6 +11902,9 @@
 =======
 /* 408 */
 >>>>>>> network details to angular 2
+=======
+/* 409 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.17 Object.seal(O)
@@ -11256,6 +11926,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11277,6 +11948,9 @@
 =======
 /* 409 */
 >>>>>>> network details to angular 2
+=======
+/* 410 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
@@ -11302,10 +11976,11 @@
 >>>>>>> organizationlist to angular 2
 
 /***/ },
-/* 410 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(2)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -11320,10 +11995,14 @@
 =======
 	  , $parseFloat = __webpack_require__(228);
 >>>>>>> organizationlist to angular 2
+=======
+	  , $parseFloat = __webpack_require__(229);
+>>>>>>> added collapsible directive to angular 2
 	// 18.2.4 parseFloat(string)
 	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11365,10 +12044,18 @@
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(229);
 >>>>>>> organizationlist to angular 2
+=======
+/* 412 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(230);
+>>>>>>> added collapsible directive to angular 2
 	// 18.2.5 parseInt(string, radix)
 	$export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11390,6 +12077,9 @@
 =======
 /* 412 */
 >>>>>>> network details to angular 2
+=======
+/* 413 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
@@ -11422,6 +12112,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11443,6 +12134,9 @@
 =======
 /* 413 */
 >>>>>>> network details to angular 2
+=======
+/* 414 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
@@ -11473,6 +12167,7 @@
 	  , anObject   = __webpack_require__(8)
 	  , isObject   = __webpack_require__(11)
 	  , fails      = __webpack_require__(10)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , bind       = __webpack_require__(210)
@@ -11483,6 +12178,9 @@
 =======
 	  , bind       = __webpack_require__(212)
 >>>>>>> organizationlist to angular 2
+=======
+	  , bind       = __webpack_require__(213)
+>>>>>>> added collapsible directive to angular 2
 	  , rConstruct = (__webpack_require__(12).Reflect || {}).construct;
 
 	// MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -11524,6 +12222,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11545,6 +12244,9 @@
 =======
 /* 414 */
 >>>>>>> network details to angular 2
+=======
+/* 415 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
@@ -11583,6 +12285,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11604,6 +12307,9 @@
 =======
 /* 415 */
 >>>>>>> network details to angular 2
+=======
+/* 416 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.4 Reflect.deleteProperty(target, propertyKey)
@@ -11635,6 +12341,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11656,6 +12363,9 @@
 =======
 /* 416 */
 >>>>>>> network details to angular 2
+=======
+/* 417 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11669,6 +12379,7 @@
 	    , key;
 	  for(key in iterated)keys.push(key);
 	};
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -11686,6 +12397,9 @@
 =======
 	__webpack_require__(221)(Enumerate, 'Object', function(){
 >>>>>>> organizationlist to angular 2
+=======
+	__webpack_require__(222)(Enumerate, 'Object', function(){
+>>>>>>> added collapsible directive to angular 2
 	  var that = this
 	    , keys = that._k
 	    , key;
@@ -11702,6 +12416,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11734,6 +12449,9 @@
 =======
 /* 417 */
 >>>>>>> network details to angular 2
+=======
+/* 418 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
@@ -11749,6 +12467,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11770,6 +12489,9 @@
 =======
 /* 418 */
 >>>>>>> network details to angular 2
+=======
+/* 419 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.8 Reflect.getPrototypeOf(target)
@@ -11800,6 +12522,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11835,6 +12558,9 @@
 =======
 /* 419 */
 >>>>>>> network details to angular 2
+=======
+/* 420 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
@@ -11861,6 +12587,7 @@
 	$export($export.S, 'Reflect', {get: get});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11882,6 +12609,9 @@
 =======
 /* 420 */
 >>>>>>> network details to angular 2
+=======
+/* 421 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.9 Reflect.has(target, propertyKey)
@@ -11894,6 +12624,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11915,6 +12646,9 @@
 =======
 /* 421 */
 >>>>>>> network details to angular 2
+=======
+/* 422 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.10 Reflect.isExtensible(target)
@@ -11930,6 +12664,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11951,11 +12686,15 @@
 =======
 /* 422 */
 >>>>>>> network details to angular 2
+=======
+/* 423 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.11 Reflect.ownKeys(target)
 	var $export = __webpack_require__(2);
 
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11995,6 +12734,12 @@
 /***/ },
 /* 423 */
 >>>>>>> network details to angular 2
+=======
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(336)});
+
+/***/ },
+/* 424 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.12 Reflect.preventExtensions(target)
@@ -12015,6 +12760,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12036,6 +12782,9 @@
 =======
 /* 424 */
 >>>>>>> network details to angular 2
+=======
+/* 425 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.14 Reflect.setPrototypeOf(target, proto)
@@ -12067,6 +12816,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12088,6 +12838,9 @@
 =======
 /* 425 */
 >>>>>>> network details to angular 2
+=======
+/* 426 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
@@ -12149,6 +12902,7 @@
 	$export($export.S, 'Reflect', {set: set});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12177,6 +12931,9 @@
 =======
 /* 426 */
 >>>>>>> network details to angular 2
+=======
+/* 427 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global            = __webpack_require__(12)
@@ -12257,11 +13014,11 @@
 >>>>>>> network details to angular 2
 
 /***/ },
-/* 427 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	__webpack_require__(236);
+	__webpack_require__(237);
 	var anObject    = __webpack_require__(8)
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -12300,6 +13057,7 @@
 	}
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12321,6 +13079,9 @@
 =======
 /* 428 */
 >>>>>>> network details to angular 2
+=======
+/* 429 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12332,6 +13093,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12353,6 +13115,9 @@
 =======
 /* 429 */
 >>>>>>> network details to angular 2
+=======
+/* 430 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12364,6 +13129,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12385,6 +13151,9 @@
 =======
 /* 430 */
 >>>>>>> network details to angular 2
+=======
+/* 431 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12396,6 +13165,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12417,6 +13187,9 @@
 =======
 /* 431 */
 >>>>>>> network details to angular 2
+=======
+/* 432 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12428,6 +13201,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12449,10 +13223,14 @@
 =======
 /* 432 */
 >>>>>>> network details to angular 2
+=======
+/* 433 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -12470,6 +13248,9 @@
 =======
 	  , $at     = __webpack_require__(232)(false);
 >>>>>>> organizationlist to angular 2
+=======
+	  , $at     = __webpack_require__(233)(false);
+>>>>>>> added collapsible directive to angular 2
 	$export($export.P, 'String', {
 	  // 21.1.3.3 String.prototype.codePointAt(pos)
 	  codePointAt: function codePointAt(pos){
@@ -12478,6 +13259,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12499,6 +13281,9 @@
 =======
 /* 433 */
 >>>>>>> network details to angular 2
+=======
+/* 434 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
@@ -12551,6 +13336,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12572,6 +13358,9 @@
 =======
 /* 434 */
 >>>>>>> network details to angular 2
+=======
+/* 435 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12583,6 +13372,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12604,6 +13394,9 @@
 =======
 /* 435 */
 >>>>>>> network details to angular 2
+=======
+/* 436 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12615,6 +13408,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12636,6 +13430,9 @@
 =======
 /* 436 */
 >>>>>>> network details to angular 2
+=======
+/* 437 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12647,6 +13444,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12679,6 +13477,9 @@
 =======
 /* 437 */
 >>>>>>> network details to angular 2
+=======
+/* 438 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export        = __webpack_require__(2)
@@ -12707,6 +13508,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12728,6 +13530,9 @@
 =======
 /* 438 */
 >>>>>>> network details to angular 2
+=======
+/* 439 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.7 String.prototype.includes(searchString, position = 0)
@@ -12765,6 +13570,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12786,6 +13592,9 @@
 =======
 /* 439 */
 >>>>>>> network details to angular 2
+=======
+/* 440 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12797,6 +13606,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12818,6 +13628,9 @@
 =======
 /* 440 */
 >>>>>>> network details to angular 2
+=======
+/* 441 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12829,6 +13642,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12850,6 +13664,9 @@
 =======
 /* 441 */
 >>>>>>> network details to angular 2
+=======
+/* 442 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
@@ -12872,6 +13689,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12893,12 +13711,16 @@
 =======
 /* 442 */
 >>>>>>> network details to angular 2
+=======
+/* 443 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 
 	$export($export.P, 'String', {
 	  // 21.1.3.13 String.prototype.repeat(count)
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -12940,6 +13762,13 @@
 =======
 /* 443 */
 >>>>>>> network details to angular 2
+=======
+	  repeat: __webpack_require__(234)
+	});
+
+/***/ },
+/* 444 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12951,6 +13780,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -12972,6 +13802,9 @@
 =======
 /* 444 */
 >>>>>>> network details to angular 2
+=======
+/* 445 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.18 String.prototype.startsWith(searchString [, position ])
@@ -13022,6 +13855,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13043,6 +13877,9 @@
 =======
 /* 445 */
 >>>>>>> network details to angular 2
+=======
+/* 446 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13054,6 +13891,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13075,6 +13913,9 @@
 =======
 /* 446 */
 >>>>>>> network details to angular 2
+=======
+/* 447 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13086,6 +13927,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13107,6 +13949,9 @@
 =======
 /* 447 */
 >>>>>>> network details to angular 2
+=======
+/* 448 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13118,6 +13963,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13139,6 +13985,9 @@
 =======
 /* 448 */
 >>>>>>> network details to angular 2
+=======
+/* 449 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13162,6 +14011,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13183,6 +14033,9 @@
 =======
 /* 449 */
 >>>>>>> network details to angular 2
+=======
+/* 450 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13217,6 +14070,7 @@
 	  , toLength     = __webpack_require__(25)
 	  , isObject     = __webpack_require__(11)
 	  , ArrayBuffer  = __webpack_require__(12).ArrayBuffer
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -13231,6 +14085,9 @@
 =======
 	  , speciesConstructor = __webpack_require__(231)
 >>>>>>> organizationlist to angular 2
+=======
+	  , speciesConstructor = __webpack_require__(232)
+>>>>>>> added collapsible directive to angular 2
 	  , $ArrayBuffer = buffer.ArrayBuffer
 	  , $DataView    = buffer.DataView
 	  , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -13292,7 +14149,7 @@
 >>>>>>> network details to angular 2
 
 /***/ },
-/* 450 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
@@ -13301,6 +14158,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13327,6 +14185,9 @@
 =======
 /* 451 */
 >>>>>>> network details to angular 2
+=======
+/* 452 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Float32', 4, function(init){
@@ -13337,6 +14198,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13366,6 +14228,9 @@
 =======
 /* 452 */
 >>>>>>> network details to angular 2
+=======
+/* 453 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Float64', 8, function(init){
@@ -13376,6 +14241,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13405,6 +14271,9 @@
 =======
 /* 453 */
 >>>>>>> network details to angular 2
+=======
+/* 454 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Int16', 2, function(init){
@@ -13415,6 +14284,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13444,6 +14314,9 @@
 =======
 /* 454 */
 >>>>>>> network details to angular 2
+=======
+/* 455 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Int32', 4, function(init){
@@ -13454,6 +14327,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13483,6 +14357,9 @@
 =======
 /* 455 */
 >>>>>>> network details to angular 2
+=======
+/* 456 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Int8', 1, function(init){
@@ -13493,6 +14370,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13522,6 +14400,9 @@
 =======
 /* 456 */
 >>>>>>> network details to angular 2
+=======
+/* 457 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Uint16', 2, function(init){
@@ -13532,6 +14413,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13561,6 +14443,9 @@
 =======
 /* 457 */
 >>>>>>> network details to angular 2
+=======
+/* 458 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Uint32', 4, function(init){
@@ -13571,6 +14456,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13600,6 +14486,9 @@
 =======
 /* 458 */
 >>>>>>> network details to angular 2
+=======
+/* 459 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Uint8', 1, function(init){
@@ -13610,6 +14499,7 @@
 	});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13639,6 +14529,9 @@
 =======
 /* 459 */
 >>>>>>> network details to angular 2
+=======
+/* 460 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Uint8', 1, function(init){
@@ -13649,6 +14542,7 @@
 	}, true);
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13676,10 +14570,13 @@
 =======
 /* 460 */
 >>>>>>> network details to angular 2
+=======
+/* 461 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var weak = __webpack_require__(214);
+	var weak = __webpack_require__(215);
 
 	// 23.4 WeakSet Objects
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13701,6 +14598,7 @@
 	}, weak, false, true);
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13733,6 +14631,9 @@
 =======
 /* 461 */
 >>>>>>> network details to angular 2
+=======
+/* 462 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                  = __webpack_require__(48)
@@ -13746,6 +14647,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13778,6 +14680,9 @@
 =======
 /* 462 */
 >>>>>>> network details to angular 2
+=======
+/* 463 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -13798,6 +14703,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13825,10 +14731,13 @@
 =======
 /* 463 */
 >>>>>>> network details to angular 2
+=======
+/* 464 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var Set                     = __webpack_require__(241)
-	  , from                    = __webpack_require__(328)
+	var Set                     = __webpack_require__(242)
+	  , from                    = __webpack_require__(329)
 	  , metadata                = __webpack_require__(48)
 	  , anObject                = __webpack_require__(8)
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -13861,6 +14770,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13886,6 +14796,9 @@
 =======
 /* 464 */
 >>>>>>> network details to angular 2
+=======
+/* 465 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -13920,6 +14833,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13952,6 +14866,9 @@
 =======
 /* 465 */
 >>>>>>> network details to angular 2
+=======
+/* 466 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                = __webpack_require__(48)
@@ -13965,6 +14882,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -13997,6 +14915,9 @@
 =======
 /* 466 */
 >>>>>>> network details to angular 2
+=======
+/* 467 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -14011,6 +14932,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -14036,6 +14958,9 @@
 =======
 /* 467 */
 >>>>>>> network details to angular 2
+=======
+/* 468 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -14069,6 +14994,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -14101,6 +15027,9 @@
 =======
 /* 468 */
 >>>>>>> network details to angular 2
+=======
+/* 469 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -14115,6 +15044,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -14140,6 +15070,9 @@
 =======
 /* 469 */
 >>>>>>> network details to angular 2
+=======
+/* 470 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                  = __webpack_require__(48)
@@ -14168,6 +15101,7 @@
 	}});
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -14189,6 +15123,9 @@
 =======
 /* 470 */
 >>>>>>> network details to angular 2
+=======
+/* 471 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// function.name (all IE)
@@ -14509,6 +15446,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -14539,6 +15477,8 @@
 =======
 /* 471 */,
 >>>>>>> network details to angular 2
+=======
+>>>>>>> added collapsible directive to angular 2
 /* 472 */,
 /* 473 */,
 /* 474 */,
@@ -14825,6 +15765,7 @@
 =======
 /* 742 */,
 /* 743 */,
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 /* 744 */
@@ -14836,6 +15777,10 @@
 =======
 /* 744 */
 >>>>>>> network details to angular 2
+=======
+/* 744 */,
+/* 745 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -14998,6 +15943,7 @@
 
 
 /***/ },
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -15019,6 +15965,9 @@
 =======
 /* 745 */
 >>>>>>> network details to angular 2
+=======
+/* 746 */
+>>>>>>> added collapsible directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -16448,6 +17397,7 @@
 
 	})));
 
+<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -16465,6 +17415,9 @@
 =======
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(244)))
 >>>>>>> organizationlist to angular 2
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(245)))
+>>>>>>> added collapsible directive to angular 2
 
 /***/ }
 /******/ ]);

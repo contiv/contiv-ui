@@ -17,7 +17,6 @@ import { CRUDHelperService } from "./components/utils/crudhelperservice";
 import { InspectService } from "./components/utils/inspectservice";
 import { NodesService } from "./components/utils/nodesservice";
 import { ErrorMessageComponent } from "./components/directives/errormessagedirective";
-import { CollapsibleComponent } from "./components/directives/collapsibledirective";
 import { DashboardComponent } from "./dashboard/dashboardctrl";
 import { IsolationPolicyCreateComponent } from "./network_policies/isolationpolicycreatectrl";
 import { IsolationPolicyDetailsComponent } from "./network_policies/isolationpolicydetailsctrl";
@@ -47,6 +46,7 @@ import {StoragepolicyListComponent} from "./storage_policies/storagepolicylistct
 import {OrganizationListComponent} from "./organizations/organizationlistctrl";
 import {NetworkInfoComponent} from "./networks/networkinfoctrl";
 import {NetworkdetailsComponent} from "./networks/networkdetailsctrl";
+import {CtvCollapsibleComponent} from "./components/directives/collapsibledirective";
 
 upgradeAdapter.upgradeNg1Provider('$state');
 upgradeAdapter.upgradeNg1Provider('$stateParams');
@@ -91,8 +91,8 @@ angular.module("contiv.directives")
     .directive('ctvTh', upgradeAdapter.downgradeNg2Component(CtvThComponent) as angular.IDirectiveFactory)
     .directive('ctvSearch', upgradeAdapter.downgradeNg2Component(CtvSearchComponent) as angular.IDirectiveFactory)
     .directive('ctvTpagination', upgradeAdapter.downgradeNg2Component(CtvTpaginationComponent) as angular.IDirectiveFactory)
-    .directive("ctvCollapsible", upgradeAdapter.downgradeNg2Component(CollapsibleComponent) as angular.IDirectiveFactory)
-    .directive('ctvAccordion', upgradeAdapter.downgradeNg2Component(CtvAccordionComponent) as angular.IDirectiveFactory);
+    .directive('ctvAccordion', upgradeAdapter.downgradeNg2Component(CtvAccordionComponent) as angular.IDirectiveFactory)
+    .directive('ctvCollapsible', upgradeAdapter.downgradeNg2Component(CtvCollapsibleComponent) as angular.IDirectiveFactory);
 
 angular.module('contiv.networks')
     .directive('networkList', upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory)

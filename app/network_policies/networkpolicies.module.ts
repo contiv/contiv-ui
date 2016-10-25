@@ -22,7 +22,7 @@ import {BandwidthListComponent} from "./bandwidthpolicylistctrl";
         IsolationPolicyCreateComponent,
         IsolationPolicyDetailsComponent,
         BandwidthPolicyCreateComponent,
-        BandwidthPolicyDetailsComponent
+        BandwidthPolicyDetailsComponent,
         BandwidthPolicyCreateComponent,
         IsolationListComponent,
         BandwidthListComponent

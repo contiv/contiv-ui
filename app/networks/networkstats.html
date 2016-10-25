@@ -36,7 +36,7 @@
 </table>
 
 <div class="ui section divider"></div>
-<!--<ctv-collapsible title="End Points"> -->
+<ctv-collapsible title="End Points">
     <ctv-table #tableRef [defaultSortColumn]="'containerName'"
                [items]="networkStatsCtrl['endpoints']"
                (filtereditems)="networkStatsCtrl['filteredendpoints']=$event;"
@@ -82,5 +82,5 @@
             </tr>
         </tfoot>
     </ctv-table>
-<!-- </ctv-collapsible> -->
+</ctv-collapsible>
 </div>
