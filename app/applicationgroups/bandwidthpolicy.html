@@ -16,7 +16,7 @@
                         name="selectNetprofile"
                         #selectedNetprofile
                         ngModel
-                        (change)="updateApplicationgroup(selectedNetprofile.value)">
+                        (change)="updateApplicationgroup($event.target.value)">
                     <option value="">-- Please select bandwidth --</option>
                     <option *ngFor="let policy of (netProfiles | filter:netProfileSearchText)"
                             [ngValue]="policy">
