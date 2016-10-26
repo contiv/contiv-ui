@@ -6,6 +6,8 @@ import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { DirectivesModule } from "../components/directives/directives.module";
 import {VolumeListComponent} from "./volumelistctrl";
+import {VolumeService} from "./volumeservice";
+import {VolumeDetailsComponent} from "./volumedetailsctrl";
 
 @NgModule({
     imports: [
@@ -14,10 +16,13 @@ import {VolumeListComponent} from "./volumelistctrl";
         DirectivesModule
     ],
     declarations: [
-        VolumeListComponent
+        VolumeListComponent,
+        VolumeDetailsComponent,
     ],
     exports: [
-        VolumeListComponent
-    ]
+        VolumeListComponent,
+        VolumeDetailsComponent,
+    ],
+    providers: [VolumeService]
 })
 export class VolumeModule {}

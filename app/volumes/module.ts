@@ -13,4 +13,8 @@ angular.module('contiv.volumes', ['contiv.models', 'contiv.directives', 'contiv.
                 url: '/list',
                 component: 'volumelist'
             })
+            .state('contiv.menu.volumes.details', {
+                url: '/details/:key',
+                component: 'volumedetails'
+            })
     }]);

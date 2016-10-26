@@ -30,7 +30,6 @@ gulp.task('build', function () {
             '!app/components/utils/*service.js',
             '!app/components/directives/directives.module.js',
             '!app/components/directives/errormessagedirective.js',
-            '!app/components/directives/collapsibledirective.js',
             '!app/components/pipes/*.js',
             '!app/dashboard/dashboardctrl.js',
             '!app/network_policies/networkpolicies.module.js',
@@ -64,7 +63,10 @@ gulp.task('build', function () {
             '!app/organizations/organization.module.js',
             '!app/organizations/organizationlistctrl.js',
             '!app/networks/networkdetailsctrl.js',
-            '!app/networks/networkinfoctrl.js'
+            '!app/networks/networkinfoctrl.js',
+            '!app/components/directives/collapsibledirective.js',
+            '!app/volumes/volumedetailsctrl.js',
+            '!app/volumes/volumeservice.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
@@ -108,7 +110,6 @@ gulp.task('dev-build', function () {
             '!app/components/utils/*service.js',
             '!app/components/directives/directives.module.js',
             '!app/components/directives/errormessagedirective.js',
-            '!app/components/directives/collapsibledirective.js',
             '!app/components/pipes/*.js',
             '!app/dashboard/dashboardctrl.js',
             '!app/network_policies/networkpolicies.module.js',
@@ -142,7 +143,10 @@ gulp.task('dev-build', function () {
             '!app/organizations/organization.module.js',
             '!app/organizations/organizationlistctrl.js',
             '!app/networks/networkdetailsctrl.js',
-            '!app/networks/networkinfoctrl.js'
+            '!app/networks/networkinfoctrl.js',
+            '!app/components/directives/collapsibledirective.js',
+            '!app/volumes/volumedetailsctrl.js',
+            '!app/volumes/volumeservice.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code

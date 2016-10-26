@@ -47,6 +47,8 @@ import {OrganizationListComponent} from "./organizations/organizationlistctrl";
 import {NetworkInfoComponent} from "./networks/networkinfoctrl";
 import {NetworkdetailsComponent} from "./networks/networkdetailsctrl";
 import {CtvCollapsibleComponent} from "./components/directives/collapsibledirective";
+import {VolumeDetailsComponent} from "./volumes/volumedetailsctrl";
+import {VolumeService} from "./volumes/volumeservice";
 
 upgradeAdapter.upgradeNg1Provider('$state');
 upgradeAdapter.upgradeNg1Provider('$stateParams');
@@ -110,7 +112,9 @@ angular.module('contiv.servicelbs')
     .directive('servicelbstat', upgradeAdapter.downgradeNg2Component(ServicelbStatComponent) as angular.IDirectiveFactory);
 
 angular.module('contiv.volumes')
-    .directive('volumelist', upgradeAdapter.downgradeNg2Component(VolumeListComponent) as angular.IDirectiveFactory);
+    .directive('volumelist', upgradeAdapter.downgradeNg2Component(VolumeListComponent) as angular.IDirectiveFactory)
+    .directive('volumedetails', upgradeAdapter.downgradeNg2Component(VolumeDetailsComponent) as angular.IDirectiveFactory)
+    .factory('VolumeService',upgradeAdapter.downgradeNg2Provider(VolumeService));
 
 angular.module('contiv.storagepolicies')
     .directive('storagepolicylist', upgradeAdapter.downgradeNg2Component(StoragepolicyListComponent) as angular.IDirectiveFactory);
