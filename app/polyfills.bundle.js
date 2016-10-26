@@ -103,6 +103,7 @@
 	 */
 	// Polyfills
 	"use strict";
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -155,27 +156,31 @@
 =======
 	__webpack_require__(473); // Internet Explorer 9 support
 >>>>>>> volumes details to angular 2
+=======
+	__webpack_require__(474); // Internet Explorer 9 support
+>>>>>>> added ctvNamevalaue directive to angular 2
 	// import 'core-js/es6';
 	// Added parts of es6 which are necessary for your project or your browser support requirements.
-	__webpack_require__(326);
-	__webpack_require__(319);
-	__webpack_require__(315);
-	__webpack_require__(321);
+	__webpack_require__(327);
 	__webpack_require__(320);
+	__webpack_require__(316);
+	__webpack_require__(322);
+	__webpack_require__(321);
+	__webpack_require__(319);
 	__webpack_require__(318);
+	__webpack_require__(326);
+	__webpack_require__(315);
+	__webpack_require__(314);
+	__webpack_require__(324);
 	__webpack_require__(317);
 	__webpack_require__(325);
-	__webpack_require__(314);
-	__webpack_require__(313);
-	__webpack_require__(323);
-	__webpack_require__(316);
-	__webpack_require__(324);
-	__webpack_require__(328);
 	__webpack_require__(329);
-	__webpack_require__(327);
-	__webpack_require__(322);
+	__webpack_require__(330);
+	__webpack_require__(328);
+	__webpack_require__(323);
 	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
 	// import 'core-js/es6/promise';
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -216,6 +221,11 @@
 	__webpack_require__(748);
 	__webpack_require__(747);
 >>>>>>> volumes details to angular 2
+=======
+	__webpack_require__(331);
+	__webpack_require__(749);
+	__webpack_require__(748);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	
 
 /***/ },
@@ -246,9 +256,13 @@
 =======
 	  , hide      = __webpack_require__(32)
 	  , redefine  = __webpack_require__(30)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 >>>>>>> volumes details to angular 2
 	  , ctx       = __webpack_require__(63)
 >>>>>>> organizationlist to angular 2
+=======
+	  , ctx       = __webpack_require__(64)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , PROTOTYPE = 'prototype';
 
 	var $export = function(type, name, source){
@@ -357,6 +371,7 @@
 	var store      = __webpack_require__(107)('wks')
 =======
 	var store      = __webpack_require__(108)('wks')
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 >>>>>>> adding storage policy list - angular 2
 	  , uid        = __webpack_require__(66)
@@ -364,6 +379,9 @@
 =======
 	  , uid        = __webpack_require__(67)
 >>>>>>> organizationlist to angular 2
+=======
+	  , uid        = __webpack_require__(68)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , Symbol     = __webpack_require__(12).Symbol
 	  , USE_SYMBOL = typeof Symbol == 'function';
 
@@ -381,6 +399,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject       = __webpack_require__(8)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -408,6 +427,9 @@
 =======
 	  , IE8_DOM_DEFINE = __webpack_require__(221)
 >>>>>>> volumes details to angular 2
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(222)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , toPrimitive    = __webpack_require__(57)
 >>>>>>> adding storage policy list - angular 2
 	  , dP             = Object.defineProperty;
@@ -493,8 +515,12 @@
 	  , hide      = __webpack_require__(32)
 >>>>>>> volumes details to angular 2
 	  , has       = __webpack_require__(27)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	  , SRC       = __webpack_require__(67)('src')
 >>>>>>> organizationlist to angular 2
+=======
+	  , SRC       = __webpack_require__(68)('src')
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , TO_STRING = 'toString'
 	  , $toString = Function[TO_STRING]
 	  , TPL       = ('' + $toString).split(TO_STRING);
@@ -690,6 +716,7 @@
 	// 4 -> Array#every
 	// 5 -> Array#find
 	// 6 -> Array#findIndex
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -739,6 +766,13 @@
 	  , toLength = __webpack_require__(25)
 	  , asc      = __webpack_require__(333);
 >>>>>>> volumes details to angular 2
+=======
+	var ctx      = __webpack_require__(64)
+	  , IObject  = __webpack_require__(85)
+	  , toObject = __webpack_require__(33)
+	  , toLength = __webpack_require__(25)
+	  , asc      = __webpack_require__(334);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	module.exports = function(TYPE, $create){
 	  var IS_MAP        = TYPE == 1
 	    , IS_FILTER     = TYPE == 2
@@ -880,7 +914,7 @@
 >>>>>>> organizationlist to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var Map     = __webpack_require__(238)
+	var Map     = __webpack_require__(239)
 	  , $export = __webpack_require__(2)
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 	  , shared  = __webpack_require__(107)('metadata')
@@ -888,6 +922,7 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , shared  = __webpack_require__(108)('metadata')
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -902,6 +937,9 @@
 =======
 	  , store   = shared.store || (shared.store = new (__webpack_require__(246)));
 >>>>>>> volumes details to angular 2
+=======
+	  , store   = shared.store || (shared.store = new (__webpack_require__(247)));
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 	var getOrCreateMetadataMap = function(target, targetKey, create){
 	  var targetMetadata = store.get(target);
@@ -996,6 +1034,7 @@
 >>>>>>> adding storage policy list - angular 2
 =======
 	  , has            = __webpack_require__(27)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 	  , IE8_DOM_DEFINE = __webpack_require__(218)
@@ -1006,6 +1045,9 @@
 =======
 	  , IE8_DOM_DEFINE = __webpack_require__(221)
 >>>>>>> volumes details to angular 2
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(222)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
 	exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
@@ -1093,26 +1135,26 @@
 	    , $export             = __webpack_require__(2)
 	    , $typed              = __webpack_require__(110)
 	    , $buffer             = __webpack_require__(157)
-	    , ctx                 = __webpack_require__(63)
+	    , ctx                 = __webpack_require__(64)
 	    , anInstance          = __webpack_require__(84)
 	    , propertyDesc        = __webpack_require__(55)
 	    , hide                = __webpack_require__(32)
 	    , redefineAll         = __webpack_require__(87)
 	    , toInteger           = __webpack_require__(56)
 	    , toLength            = __webpack_require__(25)
-	    , toIndex             = __webpack_require__(66)
+	    , toIndex             = __webpack_require__(67)
 	    , toPrimitive         = __webpack_require__(57)
 	    , has                 = __webpack_require__(27)
-	    , same                = __webpack_require__(233)
+	    , same                = __webpack_require__(234)
 	    , classof             = __webpack_require__(141)
 	    , isObject            = __webpack_require__(11)
 	    , toObject            = __webpack_require__(33)
 	    , isArrayIter         = __webpack_require__(146)
-	    , create              = __webpack_require__(64)
+	    , create              = __webpack_require__(65)
 	    , getPrototypeOf      = __webpack_require__(40)
-	    , gOPN                = __webpack_require__(65).f
+	    , gOPN                = __webpack_require__(66).f
 	    , getIterFn           = __webpack_require__(158)
-	    , uid                 = __webpack_require__(67)
+	    , uid                 = __webpack_require__(68)
 	    , wks                 = __webpack_require__(14)
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -1148,14 +1190,18 @@
 >>>>>>> added collapsible directive to angular 2
 =======
 	    , createArrayIncludes = __webpack_require__(140)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	    , speciesConstructor  = __webpack_require__(234)
 >>>>>>> volumes details to angular 2
+=======
+	    , speciesConstructor  = __webpack_require__(235)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	    , ArrayIterators      = __webpack_require__(111)
 	    , Iterators           = __webpack_require__(75)
 	    , $iterDetect         = __webpack_require__(150)
 	    , setSpecies          = __webpack_require__(88)
 	    , arrayFill           = __webpack_require__(139)
-	    , arrayCopyWithin     = __webpack_require__(213)
+	    , arrayCopyWithin     = __webpack_require__(214)
 	    , $DP                 = __webpack_require__(17)
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -1655,12 +1701,16 @@
 >>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var META     = __webpack_require__(66)('meta')
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	var META     = __webpack_require__(67)('meta')
 >>>>>>> organizationlist to angular 2
+=======
+	var META     = __webpack_require__(68)('meta')
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , isObject = __webpack_require__(11)
 	  , has      = __webpack_require__(27)
 	  , setDesc  = __webpack_require__(17).f
@@ -1802,8 +1852,13 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 /* 61 */,
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 /* 62 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 62 */,
+/* 63 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -1813,6 +1868,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -1829,6 +1885,9 @@
 =======
 /* 63 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 64 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
@@ -1858,6 +1917,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -1871,10 +1931,14 @@
 =======
 /* 64 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 65 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	var anObject    = __webpack_require__(8)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -1907,6 +1971,9 @@
 >>>>>>> organizationlist to angular 2
 =======
 	  , dPs         = __webpack_require__(228)
+=======
+	  , dPs         = __webpack_require__(229)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , enumBugKeys = __webpack_require__(142)
 	  , IE_PROTO    = __webpack_require__(154)('IE_PROTO')
 >>>>>>> volumes details to angular 2
@@ -1916,6 +1983,7 @@
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -1941,11 +2009,15 @@
 =======
 	  var iframe = __webpack_require__(219)('iframe')
 >>>>>>> volumes details to angular 2
+=======
+	  var iframe = __webpack_require__(220)('iframe')
+>>>>>>> added ctvNamevalaue directive to angular 2
 	    , i      = enumBugKeys.length
 	    , lt     = '<'
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -1971,6 +2043,9 @@
 =======
 	  __webpack_require__(220).appendChild(iframe);
 >>>>>>> volumes details to angular 2
+=======
+	  __webpack_require__(221).appendChild(iframe);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -1997,6 +2072,7 @@
 
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -2033,6 +2109,13 @@
 >>>>>>> organizationlist to angular 2
 =======
 	var $keys      = __webpack_require__(230)
+=======
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+	var $keys      = __webpack_require__(231)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , hiddenKeys = __webpack_require__(142).concat('length', 'prototype');
 >>>>>>> volumes details to angular 2
 
@@ -2041,6 +2124,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -2056,6 +2140,9 @@
 =======
 /* 66 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 67 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -2072,6 +2159,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -2085,6 +2173,9 @@
 =======
 /* 67 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 68 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports) {
 
 	var id = 0
@@ -2094,6 +2185,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -2107,6 +2199,9 @@
 =======
 /* 68 */
 >>>>>>> organizationlist to angular 2
+=======
+/* 69 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2137,6 +2232,7 @@
 	}
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -2160,6 +2256,8 @@
 =======
 >>>>>>> organizationlist to angular 2
 /* 69 */,
+=======
+>>>>>>> added ctvNamevalaue directive to angular 2
 /* 70 */,
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 /* 71 */
@@ -2231,7 +2329,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-	var $keys       = __webpack_require__(230)
+	var $keys       = __webpack_require__(231)
 	  , enumBugKeys = __webpack_require__(142);
 >>>>>>> volumes details to angular 2
 
@@ -2351,12 +2449,16 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var cof = __webpack_require__(61);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	var cof = __webpack_require__(62);
 >>>>>>> organizationlist to angular 2
+=======
+	var cof = __webpack_require__(63);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
@@ -2739,8 +2841,8 @@
 >>>>>>> adding storage policy list - angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var ctx         = __webpack_require__(63)
-	  , call        = __webpack_require__(223)
+	var ctx         = __webpack_require__(64)
+	  , call        = __webpack_require__(224)
 	  , isArrayIter = __webpack_require__(146)
 	  , anObject    = __webpack_require__(8)
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -2939,9 +3041,13 @@
 =======
 =======
 	  , hide   = __webpack_require__(32)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 >>>>>>> volumes details to angular 2
 	  , uid    = __webpack_require__(67)
 >>>>>>> organizationlist to angular 2
+=======
+	  , uid    = __webpack_require__(68)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , TYPED  = uid('typed_array')
 	  , VIEW   = uid('view')
 	  , ABV    = !!(global.ArrayBuffer && global.DataView)
@@ -3016,7 +3122,7 @@
 >>>>>>> network details to angular 2
 =======
 	var addToUnscopables = __webpack_require__(83)
-	  , step             = __webpack_require__(225)
+	  , step             = __webpack_require__(226)
 	  , Iterators        = __webpack_require__(75)
 	  , toIObject        = __webpack_require__(37);
 >>>>>>> volumes details to angular 2
@@ -3089,7 +3195,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $at  = __webpack_require__(235)(true);
+	var $at  = __webpack_require__(236)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
@@ -3201,12 +3307,16 @@
 =======
 =======
 	var toObject = __webpack_require__(33)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 >>>>>>> volumes details to angular 2
 	  , toIndex  = __webpack_require__(66)
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 >>>>>>> organizationlist to angular 2
 	  , toLength = __webpack_require__(24);
 =======
+=======
+	  , toIndex  = __webpack_require__(67)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , toLength = __webpack_require__(25);
 >>>>>>> network details to angular 2
 	module.exports = function fill(value /*, start = 0, end = @length */){
@@ -3263,9 +3373,13 @@
 	var toIObject = __webpack_require__(37)
 >>>>>>> volumes details to angular 2
 	  , toLength  = __webpack_require__(25)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 >>>>>>> network details to angular 2
 	  , toIndex   = __webpack_require__(66);
 >>>>>>> organizationlist to angular 2
+=======
+	  , toIndex   = __webpack_require__(67);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -3315,8 +3429,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// getting tag from 19.1.3.6 Object.prototype.toString()
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	var cof = __webpack_require__(62)
 >>>>>>> organizationlist to angular 2
+=======
+	var cof = __webpack_require__(63)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , TAG = __webpack_require__(14)('toStringTag')
 	  // ES3 wrong here
 	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
@@ -3557,8 +3675,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.2 IsArray(argument)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	var cof = __webpack_require__(62);
 >>>>>>> organizationlist to angular 2
+=======
+	var cof = __webpack_require__(63);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	module.exports = Array.isArray || function isArray(arg){
 	  return cof(arg) == 'Array';
 	};
@@ -3585,6 +3707,7 @@
 
 	// 7.2.8 IsRegExp(argument)
 	var isObject = __webpack_require__(11)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -3598,6 +3721,9 @@
 =======
 	  , cof      = __webpack_require__(62)
 >>>>>>> organizationlist to angular 2
+=======
+	  , cof      = __webpack_require__(63)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , MATCH    = __webpack_require__(14)('match');
 	module.exports = function(it){
 	  var isRegExp;
@@ -3687,7 +3813,7 @@
 	  , hide           = __webpack_require__(32)
 	  , has            = __webpack_require__(27)
 	  , Iterators      = __webpack_require__(75)
-	  , $iterCreate    = __webpack_require__(224)
+	  , $iterCreate    = __webpack_require__(225)
 	  , setToStringTag = __webpack_require__(89)
 >>>>>>> volumes details to angular 2
 	  , getPrototypeOf = __webpack_require__(40)
@@ -3883,6 +4009,7 @@
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function(test, buggy, set){
 	      try {
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
@@ -3900,6 +4027,9 @@
 =======
 	        set = __webpack_require__(63)(Function.call, __webpack_require__(49).f(Object.prototype, '__proto__').set, 2);
 >>>>>>> organizationlist to angular 2
+=======
+	        set = __webpack_require__(64)(Function.call, __webpack_require__(49).f(Object.prototype, '__proto__').set, 2);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch(e){ buggy = true; }
@@ -3945,8 +4075,12 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var shared = __webpack_require__(108)('keys')
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	  , uid    = __webpack_require__(67);
 >>>>>>> organizationlist to angular 2
+=======
+	  , uid    = __webpack_require__(68);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	module.exports = function(key){
 	  return shared[key] || (shared[key] = uid(key));
 	};
@@ -4090,7 +4224,7 @@
 	  , anInstance     = __webpack_require__(84)
 	  , toInteger      = __webpack_require__(56)
 	  , toLength       = __webpack_require__(25)
-	  , gOPN           = __webpack_require__(65).f
+	  , gOPN           = __webpack_require__(66).f
 	  , dP             = __webpack_require__(17).f
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -4577,21 +4711,27 @@
 /* 209 */,
 /* 210 */,
 /* 211 */,
-/* 212 */
+/* 212 */,
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 	var cof = __webpack_require__(61);
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	var cof = __webpack_require__(62);
 >>>>>>> organizationlist to angular 2
+=======
+	var cof = __webpack_require__(63);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	module.exports = function(it, msg){
 	  if(typeof it != 'number' && cof(it) != 'Number')throw TypeError(msg);
 	  return +it;
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -4617,6 +4757,9 @@
 =======
 /* 213 */
 >>>>>>> volumes details to angular 2
+=======
+/* 214 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
@@ -4637,12 +4780,16 @@
 =======
 =======
 	var toObject = __webpack_require__(33)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 >>>>>>> volumes details to angular 2
 	  , toIndex  = __webpack_require__(66)
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 >>>>>>> organizationlist to angular 2
 	  , toLength = __webpack_require__(24);
 =======
+=======
+	  , toIndex  = __webpack_require__(67)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , toLength = __webpack_require__(25);
 >>>>>>> network details to angular 2
 
@@ -4668,6 +4815,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -4710,6 +4858,9 @@
 	  , IObject   = __webpack_require__(84)
 =======
 /* 214 */
+=======
+/* 215 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var aFunction = __webpack_require__(53)
@@ -4744,6 +4895,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -4778,11 +4930,15 @@
 =======
 /* 215 */
 >>>>>>> volumes details to angular 2
+=======
+/* 216 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var aFunction  = __webpack_require__(53)
 	  , isObject   = __webpack_require__(11)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -4805,6 +4961,9 @@
 =======
 	  , invoke     = __webpack_require__(336)
 >>>>>>> volumes details to angular 2
+=======
+	  , invoke     = __webpack_require__(337)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , arraySlice = [].slice
 	  , factories  = {};
 
@@ -4827,6 +4986,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -4852,10 +5012,14 @@
 =======
 /* 216 */
 >>>>>>> volumes details to angular 2
+=======
+/* 217 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var dP          = __webpack_require__(17).f
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -4896,6 +5060,11 @@
 	  , redefineAll = __webpack_require__(87)
 >>>>>>> volumes details to angular 2
 	  , ctx         = __webpack_require__(63)
+=======
+	  , create      = __webpack_require__(65)
+	  , redefineAll = __webpack_require__(87)
+	  , ctx         = __webpack_require__(64)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , anInstance  = __webpack_require__(84)
 	  , defined     = __webpack_require__(47)
 	  , forOf       = __webpack_require__(105)
@@ -4919,7 +5088,7 @@
 >>>>>>> network details to angular 2
 =======
 	  , $iterDefine = __webpack_require__(149)
-	  , step        = __webpack_require__(225)
+	  , step        = __webpack_require__(226)
 	  , setSpecies  = __webpack_require__(88)
 	  , DESCRIPTORS = __webpack_require__(20)
 >>>>>>> volumes details to angular 2
@@ -5056,6 +5225,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5090,6 +5260,9 @@
 =======
 /* 217 */
 >>>>>>> volumes details to angular 2
+=======
+/* 218 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5202,6 +5375,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5227,6 +5401,9 @@
 =======
 /* 218 */
 >>>>>>> volumes details to angular 2
+=======
+/* 219 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5247,6 +5424,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5272,6 +5450,9 @@
 =======
 /* 219 */
 >>>>>>> volumes details to angular 2
+=======
+/* 220 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -5283,6 +5464,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5308,11 +5490,15 @@
 =======
 /* 220 */
 >>>>>>> volumes details to angular 2
+=======
+/* 221 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(12).document && document.documentElement;
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5345,13 +5531,17 @@
 =======
 /* 221 */
 >>>>>>> volumes details to angular 2
+=======
+/* 222 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = !__webpack_require__(20) && !__webpack_require__(10)(function(){
-	  return Object.defineProperty(__webpack_require__(219)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	  return Object.defineProperty(__webpack_require__(220)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5374,6 +5564,9 @@
 =======
 /* 222 */
 >>>>>>> volumes details to angular 2
+=======
+/* 223 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
@@ -5384,6 +5577,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5409,6 +5603,9 @@
 =======
 /* 223 */
 >>>>>>> volumes details to angular 2
+=======
+/* 224 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
@@ -5425,6 +5622,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5461,10 +5659,13 @@
 =======
 /* 224 */
 >>>>>>> volumes details to angular 2
+=======
+/* 225 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var create         = __webpack_require__(64)
+	var create         = __webpack_require__(65)
 	  , descriptor     = __webpack_require__(55)
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -5487,6 +5688,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5512,6 +5714,9 @@
 =======
 /* 225 */
 >>>>>>> volumes details to angular 2
+=======
+/* 226 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -5519,6 +5724,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5544,6 +5750,9 @@
 =======
 /* 226 */
 >>>>>>> volumes details to angular 2
+=======
+/* 227 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports) {
 
 	// 20.2.2.20 Math.log1p(x)
@@ -5552,6 +5761,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5577,6 +5787,9 @@
 =======
 /* 227 */
 >>>>>>> volumes details to angular 2
+=======
+/* 228 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5652,6 +5865,7 @@
 	} : $assign;
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5677,6 +5891,9 @@
 =======
 /* 228 */
 >>>>>>> volumes details to angular 2
+=======
+/* 229 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP       = __webpack_require__(17)
@@ -5714,6 +5931,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5752,12 +5970,19 @@
 =======
 /* 229 */
 >>>>>>> volumes details to angular 2
+=======
+/* 230 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
 	var toIObject = __webpack_require__(37)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	  , gOPN      = __webpack_require__(65).f
 >>>>>>> organizationlist to angular 2
+=======
+	  , gOPN      = __webpack_require__(66).f
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , toString  = {}.toString;
 
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -5777,6 +6002,7 @@
 
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5824,6 +6050,9 @@
 >>>>>>> organizationlist to angular 2
 =======
 /* 230 */
+=======
+/* 231 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var has          = __webpack_require__(27)
@@ -5846,6 +6075,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5876,6 +6106,9 @@
 =======
 /* 231 */
 >>>>>>> volumes details to angular 2
+=======
+/* 232 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseFloat = __webpack_require__(12).parseFloat
@@ -5901,6 +6134,7 @@
 	} : $parseFloat;
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5935,6 +6169,9 @@
 =======
 /* 232 */
 >>>>>>> volumes details to angular 2
+=======
+/* 233 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseInt = __webpack_require__(12).parseInt
@@ -5957,6 +6194,7 @@
 	} : $parseInt;
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -5982,6 +6220,9 @@
 =======
 /* 233 */
 >>>>>>> volumes details to angular 2
+=======
+/* 234 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports) {
 
 	// 7.2.9 SameValue(x, y)
@@ -5990,6 +6231,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6015,6 +6257,9 @@
 =======
 /* 234 */
 >>>>>>> volumes details to angular 2
+=======
+/* 235 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
@@ -6039,6 +6284,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6075,6 +6321,9 @@
 =======
 /* 235 */
 >>>>>>> volumes details to angular 2
+=======
+/* 236 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(56)
@@ -6097,6 +6346,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6131,6 +6381,9 @@
 =======
 /* 236 */
 >>>>>>> volumes details to angular 2
+=======
+/* 237 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6152,6 +6405,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6177,11 +6431,15 @@
 =======
 /* 237 */
 >>>>>>> volumes details to angular 2
+=======
+/* 238 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.f = __webpack_require__(14);
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6193,6 +6451,13 @@
 
 	'use strict';
 	var strong = __webpack_require__(206);
+=======
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strong = __webpack_require__(217);
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 	// 23.1 Map Objects
 	module.exports = __webpack_require__(97)('Map', function(get){
@@ -6243,6 +6508,7 @@
 	}, strong, true);
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6268,6 +6534,9 @@
 =======
 /* 239 */
 >>>>>>> volumes details to angular 2
+=======
+/* 240 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
@@ -6300,7 +6569,7 @@
 	});
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@match logic
@@ -6324,6 +6593,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6360,6 +6630,9 @@
 =======
 /* 241 */
 >>>>>>> volumes details to angular 2
+=======
+/* 242 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@replace logic
@@ -6377,6 +6650,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6413,6 +6687,9 @@
 =======
 /* 242 */
 >>>>>>> volumes details to angular 2
+=======
+/* 243 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@search logic
@@ -6428,6 +6705,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6458,6 +6736,9 @@
 =======
 /* 243 */
 >>>>>>> volumes details to angular 2
+=======
+/* 244 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@split logic
@@ -6545,6 +6826,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6584,6 +6866,13 @@
 
 	'use strict';
 	var strong = __webpack_require__(214);
+=======
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strong = __webpack_require__(217);
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 	// 23.2 Set Objects
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -6605,6 +6894,7 @@
 	}, strong);
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -6630,6 +6920,9 @@
 =======
 /* 245 */
 >>>>>>> volumes details to angular 2
+=======
+/* 246 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6690,21 +6983,25 @@
 >>>>>>> network details to angular 2
 =======
 	  , setToStringTag = __webpack_require__(89)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 >>>>>>> volumes details to angular 2
 	  , uid            = __webpack_require__(67)
 >>>>>>> organizationlist to angular 2
+=======
+	  , uid            = __webpack_require__(68)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , wks            = __webpack_require__(14)
-	  , wksExt         = __webpack_require__(237)
-	  , wksDefine      = __webpack_require__(339)
-	  , keyOf          = __webpack_require__(337)
-	  , enumKeys       = __webpack_require__(335)
+	  , wksExt         = __webpack_require__(238)
+	  , wksDefine      = __webpack_require__(340)
+	  , keyOf          = __webpack_require__(338)
+	  , enumKeys       = __webpack_require__(336)
 	  , isArray        = __webpack_require__(147)
 	  , anObject       = __webpack_require__(8)
 	  , toIObject      = __webpack_require__(37)
 	  , toPrimitive    = __webpack_require__(57)
 	  , createDesc     = __webpack_require__(55)
-	  , _create        = __webpack_require__(64)
-	  , gOPNExt        = __webpack_require__(229)
+	  , _create        = __webpack_require__(65)
+	  , gOPNExt        = __webpack_require__(230)
 	  , $GOPD          = __webpack_require__(49)
 	  , $DP            = __webpack_require__(17)
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
@@ -6847,6 +7144,7 @@
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -6867,6 +7165,9 @@
 =======
 	  __webpack_require__(65).f = gOPNExt.f = $getOwnPropertyNames;
 >>>>>>> organizationlist to angular 2
+=======
+	  __webpack_require__(66).f = gOPNExt.f = $getOwnPropertyNames;
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  __webpack_require__(107).f  = $propertyIsEnumerable;
 	  __webpack_require__(106).f = $getOwnPropertySymbols;
 
@@ -6963,6 +7264,7 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -7007,12 +7309,16 @@
 =======
 /* 246 */
 >>>>>>> volumes details to angular 2
+=======
+/* 247 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var each         = __webpack_require__(39)(0)
 	  , redefine     = __webpack_require__(30)
 	  , meta         = __webpack_require__(54)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -7031,6 +7337,10 @@
 	  , assign       = __webpack_require__(227)
 	  , weak         = __webpack_require__(217)
 >>>>>>> volumes details to angular 2
+=======
+	  , assign       = __webpack_require__(228)
+	  , weak         = __webpack_require__(218)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , isObject     = __webpack_require__(11)
 	  , getWeak      = meta.getWeak
 	  , isExtensible = Object.isExtensible
@@ -7095,6 +7405,7 @@
 	}
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -7245,6 +7556,9 @@
 =======
 /* 247 */
 >>>>>>> volumes details to angular 2
+=======
+/* 248 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -7430,7 +7744,6 @@
 
 
 /***/ },
-/* 248 */,
 /* 249 */,
 /* 250 */,
 /* 251 */,
@@ -7495,67 +7808,69 @@
 /* 310 */,
 /* 311 */,
 /* 312 */,
-/* 313 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(112);
-	__webpack_require__(349);
-	__webpack_require__(347);
-	__webpack_require__(353);
-	__webpack_require__(350);
-	__webpack_require__(356);
-	__webpack_require__(358);
-	__webpack_require__(346);
-	__webpack_require__(352);
-	__webpack_require__(343);
-	__webpack_require__(357);
-	__webpack_require__(341);
-	__webpack_require__(355);
-	__webpack_require__(354);
-	__webpack_require__(348);
-	__webpack_require__(351);
-	__webpack_require__(340);
-	__webpack_require__(342);
-	__webpack_require__(345);
-	__webpack_require__(344);
-	__webpack_require__(359);
-	__webpack_require__(111);
-	module.exports = __webpack_require__(13).Array;
-
-/***/ },
+/* 313 */,
 /* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(112);
+	__webpack_require__(350);
+	__webpack_require__(348);
+	__webpack_require__(354);
+	__webpack_require__(351);
+	__webpack_require__(357);
+	__webpack_require__(359);
+	__webpack_require__(347);
+	__webpack_require__(353);
+	__webpack_require__(344);
+	__webpack_require__(358);
+	__webpack_require__(342);
+	__webpack_require__(356);
+	__webpack_require__(355);
+	__webpack_require__(349);
+	__webpack_require__(352);
+	__webpack_require__(341);
+	__webpack_require__(343);
+	__webpack_require__(346);
+	__webpack_require__(345);
 	__webpack_require__(360);
-	__webpack_require__(362);
-	__webpack_require__(361);
-	__webpack_require__(364);
-	__webpack_require__(363);
-	module.exports = Date;
+	__webpack_require__(111);
+	module.exports = __webpack_require__(13).Array;
 
 /***/ },
 /* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(361);
+	__webpack_require__(363);
+	__webpack_require__(362);
 	__webpack_require__(365);
-	__webpack_require__(367);
-	__webpack_require__(366);
-	module.exports = __webpack_require__(13).Function;
+	__webpack_require__(364);
+	module.exports = Date;
 
 /***/ },
 /* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(68);
-	__webpack_require__(112);
-	__webpack_require__(159);
-	__webpack_require__(238);
-	module.exports = __webpack_require__(13).Map;
+	__webpack_require__(366);
+	__webpack_require__(368);
+	__webpack_require__(367);
+	module.exports = __webpack_require__(13).Function;
 
 /***/ },
 /* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(69);
+	__webpack_require__(112);
+	__webpack_require__(159);
+	__webpack_require__(239);
+	module.exports = __webpack_require__(13).Map;
+
+/***/ },
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -7593,6 +7908,8 @@
 =======
 >>>>>>> volumes details to angular 2
 	__webpack_require__(368);
+=======
+>>>>>>> added ctvNamevalaue directive to angular 2
 	__webpack_require__(369);
 	__webpack_require__(370);
 	__webpack_require__(371);
@@ -7644,16 +7961,16 @@
 	__webpack_require__(382);
 	__webpack_require__(383);
 	__webpack_require__(384);
+	__webpack_require__(385);
 	module.exports = __webpack_require__(13).Math;
 
 /***/ },
-/* 318 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(385);
-	__webpack_require__(395);
-	__webpack_require__(396);
 	__webpack_require__(386);
+	__webpack_require__(396);
+	__webpack_require__(397);
 	__webpack_require__(387);
 	__webpack_require__(388);
 	__webpack_require__(389);
@@ -7662,51 +7979,53 @@
 	__webpack_require__(392);
 	__webpack_require__(393);
 	__webpack_require__(394);
+	__webpack_require__(395);
 	module.exports = __webpack_require__(13).Number;
-
-/***/ },
-/* 319 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(245);
-	__webpack_require__(398);
-	__webpack_require__(400);
-	__webpack_require__(399);
-	__webpack_require__(402);
-	__webpack_require__(404);
-	__webpack_require__(409);
-	__webpack_require__(403);
-	__webpack_require__(401);
-	__webpack_require__(411);
-	__webpack_require__(410);
-	__webpack_require__(406);
-	__webpack_require__(407);
-	__webpack_require__(405);
-	__webpack_require__(397);
-	__webpack_require__(408);
-	__webpack_require__(412);
-	__webpack_require__(68);
-
-	module.exports = __webpack_require__(13).Object;
 
 /***/ },
 /* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(246);
+	__webpack_require__(399);
+	__webpack_require__(401);
+	__webpack_require__(400);
+	__webpack_require__(403);
+	__webpack_require__(405);
+	__webpack_require__(410);
+	__webpack_require__(404);
+	__webpack_require__(402);
+	__webpack_require__(412);
+	__webpack_require__(411);
+	__webpack_require__(407);
+	__webpack_require__(408);
+	__webpack_require__(406);
+	__webpack_require__(398);
+	__webpack_require__(409);
 	__webpack_require__(413);
-	module.exports = __webpack_require__(13).parseFloat;
+	__webpack_require__(69);
+
+	module.exports = __webpack_require__(13).Object;
 
 /***/ },
 /* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(414);
-	module.exports = __webpack_require__(13).parseInt;
+	module.exports = __webpack_require__(13).parseFloat;
 
 /***/ },
 /* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(415);
+	module.exports = __webpack_require__(13).parseInt;
+
+/***/ },
+/* 323 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -7798,17 +8117,29 @@
 	__webpack_require__(420);
 	__webpack_require__(421);
 	__webpack_require__(423);
+=======
+	__webpack_require__(416);
+	__webpack_require__(417);
+	__webpack_require__(418);
+	__webpack_require__(419);
+	__webpack_require__(420);
+	__webpack_require__(423);
+	__webpack_require__(421);
+	__webpack_require__(422);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	__webpack_require__(424);
 	__webpack_require__(425);
 	__webpack_require__(426);
-	__webpack_require__(428);
 	__webpack_require__(427);
+	__webpack_require__(429);
+	__webpack_require__(428);
 	module.exports = __webpack_require__(13).Reflect;
 
 /***/ },
-/* 323 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	__webpack_require__(429);
 	__webpack_require__(430);
 	__webpack_require__(239);
@@ -8155,51 +8486,70 @@
 	__webpack_require__(444);
 =======
 /* 324 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(68);
-	__webpack_require__(112);
-	__webpack_require__(159);
-	__webpack_require__(244);
-	module.exports = __webpack_require__(13).Set;
-
-/***/ },
-/* 325 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(440);
-	__webpack_require__(444);
-	__webpack_require__(451);
-	__webpack_require__(112);
-	__webpack_require__(435);
-	__webpack_require__(436);
-	__webpack_require__(441);
-	__webpack_require__(445);
-	__webpack_require__(447);
+=======
+	__webpack_require__(430);
 	__webpack_require__(431);
-	__webpack_require__(432);
-	__webpack_require__(433);
-	__webpack_require__(434);
-	__webpack_require__(437);
-	__webpack_require__(438);
-	__webpack_require__(439);
-	__webpack_require__(442);
-	__webpack_require__(443);
->>>>>>> volumes details to angular 2
-	__webpack_require__(446);
-	__webpack_require__(448);
-	__webpack_require__(449);
-	__webpack_require__(450);
 	__webpack_require__(240);
 	__webpack_require__(241);
 	__webpack_require__(242);
 	__webpack_require__(243);
-	module.exports = __webpack_require__(13).String;
+	__webpack_require__(244);
+	module.exports = __webpack_require__(13).RegExp;
+
+/***/ },
+/* 325 */
+>>>>>>> added ctvNamevalaue directive to angular 2
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(69);
+	__webpack_require__(112);
+	__webpack_require__(159);
+	__webpack_require__(245);
+	module.exports = __webpack_require__(13).Set;
 
 /***/ },
 /* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(441);
+	__webpack_require__(445);
+	__webpack_require__(452);
+	__webpack_require__(112);
+	__webpack_require__(436);
+	__webpack_require__(437);
+	__webpack_require__(442);
+	__webpack_require__(446);
+	__webpack_require__(448);
+	__webpack_require__(432);
+	__webpack_require__(433);
+	__webpack_require__(434);
+	__webpack_require__(435);
+	__webpack_require__(438);
+	__webpack_require__(439);
+	__webpack_require__(440);
+	__webpack_require__(443);
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
+>>>>>>> volumes details to angular 2
+	__webpack_require__(446);
+	__webpack_require__(448);
+=======
+	__webpack_require__(444);
+	__webpack_require__(447);
+>>>>>>> added ctvNamevalaue directive to angular 2
+	__webpack_require__(449);
+	__webpack_require__(450);
+	__webpack_require__(451);
+	__webpack_require__(241);
+	__webpack_require__(242);
+	__webpack_require__(243);
+	__webpack_require__(244);
+	module.exports = __webpack_require__(13).String;
+
+/***/ },
+/* 327 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 	__webpack_require__(243);
 >>>>>>> added collapsible directive to angular 2
@@ -8219,44 +8569,53 @@
 =======
 /* 327 */
 >>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(452);
-	__webpack_require__(453);
-	__webpack_require__(458);
-	__webpack_require__(461);
-	__webpack_require__(462);
-	__webpack_require__(456);
-	__webpack_require__(459);
-	__webpack_require__(457);
-	__webpack_require__(460);
-	__webpack_require__(454);
-	__webpack_require__(455);
-	__webpack_require__(68);
-	module.exports = __webpack_require__(13);
+=======
+	__webpack_require__(246);
+	__webpack_require__(69);
+	module.exports = __webpack_require__(13).Symbol;
 
 /***/ },
 /* 328 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(68);
-	__webpack_require__(111);
-	__webpack_require__(246);
-	module.exports = __webpack_require__(13).WeakMap;
+	__webpack_require__(453);
+	__webpack_require__(454);
+	__webpack_require__(459);
+	__webpack_require__(462);
+	__webpack_require__(463);
+	__webpack_require__(457);
+	__webpack_require__(460);
+	__webpack_require__(458);
+	__webpack_require__(461);
+	__webpack_require__(455);
+	__webpack_require__(456);
+	__webpack_require__(69);
+	module.exports = __webpack_require__(13);
 
 /***/ },
 /* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(68);
-	__webpack_require__(159);
-	__webpack_require__(463);
-	module.exports = __webpack_require__(13).WeakSet;
+	__webpack_require__(69);
+	__webpack_require__(111);
+	__webpack_require__(247);
+	module.exports = __webpack_require__(13).WeakMap;
 
 /***/ },
 /* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
+	__webpack_require__(69);
+	__webpack_require__(159);
+	__webpack_require__(464);
+	module.exports = __webpack_require__(13).WeakSet;
+
+/***/ },
+/* 331 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8325,19 +8684,26 @@
 >>>>>>> added collapsible directive to angular 2
 =======
 	__webpack_require__(464);
+=======
+>>>>>>> added ctvNamevalaue directive to angular 2
 	__webpack_require__(465);
-	__webpack_require__(467);
 	__webpack_require__(466);
-	__webpack_require__(469);
 	__webpack_require__(468);
+	__webpack_require__(467);
 	__webpack_require__(470);
+	__webpack_require__(469);
 	__webpack_require__(471);
 	__webpack_require__(472);
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 >>>>>>> volumes details to angular 2
+=======
+	__webpack_require__(473);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	module.exports = __webpack_require__(13).Reflect;
 
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8375,6 +8741,9 @@
 =======
 /* 331 */
 >>>>>>> volumes details to angular 2
+=======
+/* 332 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var forOf = __webpack_require__(105);
@@ -8388,6 +8757,7 @@
 
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8432,6 +8802,9 @@
 >>>>>>> organizationlist to angular 2
 =======
 /* 332 */
+=======
+/* 333 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -8453,6 +8826,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8514,12 +8888,20 @@
 	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 	var speciesConstructor = __webpack_require__(332);
 >>>>>>> volumes details to angular 2
+=======
+/* 334 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+	var speciesConstructor = __webpack_require__(333);
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 	module.exports = function(original, length){
 	  return new (speciesConstructor(original))(length);
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8549,6 +8931,9 @@
 =======
 /* 334 */
 >>>>>>> volumes details to angular 2
+=======
+/* 335 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8574,6 +8959,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8620,6 +9006,9 @@
 =======
 /* 335 */
 >>>>>>> volumes details to angular 2
+=======
+/* 336 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
@@ -8640,6 +9029,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8669,6 +9059,9 @@
 =======
 /* 336 */
 >>>>>>> volumes details to angular 2
+=======
+/* 337 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports) {
 
 	// fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -8689,6 +9082,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8736,6 +9130,9 @@
 >>>>>>> network details to angular 2
 =======
 /* 337 */
+=======
+/* 338 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var getKeys   = __webpack_require__(76)
@@ -8751,6 +9148,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8801,6 +9199,13 @@
 	// all object keys, includes non-enumerable and symbols
 	var gOPN     = __webpack_require__(65)
 >>>>>>> organizationlist to angular 2
+=======
+/* 339 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// all object keys, includes non-enumerable and symbols
+	var gOPN     = __webpack_require__(66)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , gOPS     = __webpack_require__(106)
 >>>>>>> adding storage policy list - angular 2
 	  , anObject = __webpack_require__(8)
@@ -8812,6 +9217,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8841,6 +9247,9 @@
 =======
 /* 339 */
 >>>>>>> volumes details to angular 2
+=======
+/* 340 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global         = __webpack_require__(12)
@@ -8876,8 +9285,12 @@
 >>>>>>> added collapsible directive to angular 2
 =======
 	  , LIBRARY        = __webpack_require__(86)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	  , wksExt         = __webpack_require__(237)
 >>>>>>> volumes details to angular 2
+=======
+	  , wksExt         = __webpack_require__(238)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , defineProperty = __webpack_require__(17).f;
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
@@ -8885,6 +9298,7 @@
 	};
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8914,11 +9328,15 @@
 =======
 /* 340 */
 >>>>>>> volumes details to angular 2
+=======
+/* 341 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -8948,10 +9366,14 @@
 =======
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(213)});
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(214)});
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 	__webpack_require__(83)('copyWithin');
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -8978,6 +9400,9 @@
 =======
 /* 341 */
 >>>>>>> volumes details to angular 2
+=======
+/* 342 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8992,6 +9417,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9021,6 +9447,9 @@
 =======
 /* 342 */
 >>>>>>> volumes details to angular 2
+=======
+/* 343 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
@@ -9051,6 +9480,7 @@
 	__webpack_require__(83)('fill');
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9077,6 +9507,9 @@
 =======
 /* 343 */
 >>>>>>> volumes details to angular 2
+=======
+/* 344 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9091,6 +9524,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9120,6 +9554,9 @@
 =======
 /* 344 */
 >>>>>>> volumes details to angular 2
+=======
+/* 345 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9177,8 +9614,12 @@
 	__webpack_require__(83)(KEY);
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 /* 345 */
 >>>>>>> volumes details to angular 2
+=======
+/* 346 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9236,8 +9677,12 @@
 	__webpack_require__(83)(KEY);
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 /* 346 */
 >>>>>>> volumes details to angular 2
+=======
+/* 347 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9274,6 +9719,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9315,16 +9761,19 @@
 =======
 /* 347 */
 >>>>>>> volumes details to angular 2
+=======
+/* 348 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var ctx            = __webpack_require__(63)
+	var ctx            = __webpack_require__(64)
 	  , $export        = __webpack_require__(2)
 	  , toObject       = __webpack_require__(33)
-	  , call           = __webpack_require__(223)
+	  , call           = __webpack_require__(224)
 	  , isArrayIter    = __webpack_require__(146)
 	  , toLength       = __webpack_require__(25)
-	  , createProperty = __webpack_require__(218)
+	  , createProperty = __webpack_require__(219)
 	  , getIterFn      = __webpack_require__(158);
 
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
@@ -9370,6 +9819,7 @@
 
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9399,6 +9849,9 @@
 =======
 /* 348 */
 >>>>>>> volumes details to angular 2
+=======
+/* 349 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9434,6 +9887,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9463,6 +9917,9 @@
 =======
 /* 349 */
 >>>>>>> volumes details to angular 2
+=======
+/* 350 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
@@ -9510,8 +9967,12 @@
 	$export($export.S, 'Array', {isArray: __webpack_require__(147)});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 /* 350 */
 >>>>>>> volumes details to angular 2
+=======
+/* 351 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9548,6 +10009,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9577,6 +10039,9 @@
 =======
 /* 351 */
 >>>>>>> volumes details to angular 2
+=======
+/* 352 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9626,6 +10091,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9655,6 +10121,9 @@
 =======
 /* 352 */
 >>>>>>> volumes details to angular 2
+=======
+/* 353 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9669,6 +10138,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9698,10 +10168,14 @@
 =======
 /* 353 */
 >>>>>>> volumes details to angular 2
+=======
+/* 354 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export        = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -9727,6 +10201,9 @@
 =======
 	  , createProperty = __webpack_require__(218);
 >>>>>>> volumes details to angular 2
+=======
+	  , createProperty = __webpack_require__(219);
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 	// WebKit Array.of isn't generic
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -9745,6 +10222,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9774,10 +10252,14 @@
 =======
 /* 354 */
 >>>>>>> volumes details to angular 2
+=======
+/* 355 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -9803,6 +10285,9 @@
 =======
 	  , $reduce = __webpack_require__(214);
 >>>>>>> volumes details to angular 2
+=======
+	  , $reduce = __webpack_require__(215);
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].reduceRight, true), 'Array', {
 	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
@@ -9812,6 +10297,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9841,10 +10327,14 @@
 =======
 /* 355 */
 >>>>>>> volumes details to angular 2
+=======
+/* 356 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -9870,6 +10360,9 @@
 =======
 	  , $reduce = __webpack_require__(214);
 >>>>>>> volumes details to angular 2
+=======
+	  , $reduce = __webpack_require__(215);
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].reduce, true), 'Array', {
 	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
@@ -9879,6 +10372,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -9908,10 +10402,14 @@
 =======
 /* 356 */
 >>>>>>> volumes details to angular 2
+=======
+/* 357 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export    = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -9948,6 +10446,11 @@
 >>>>>>> organizationlist to angular 2
 	  , toLength   = __webpack_require__(24)
 =======
+=======
+	  , html       = __webpack_require__(221)
+	  , cof        = __webpack_require__(63)
+	  , toIndex    = __webpack_require__(67)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , toLength   = __webpack_require__(25)
 >>>>>>> network details to angular 2
 	  , arraySlice = [].slice;
@@ -9974,6 +10477,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10003,6 +10507,9 @@
 =======
 /* 357 */
 >>>>>>> volumes details to angular 2
+=======
+/* 358 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10017,6 +10524,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10046,6 +10554,9 @@
 =======
 /* 358 */
 >>>>>>> volumes details to angular 2
+=======
+/* 359 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10086,6 +10597,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10120,11 +10632,15 @@
 =======
 /* 359 */
 >>>>>>> volumes details to angular 2
+=======
+/* 360 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(88)('Array');
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10151,6 +10667,9 @@
 =======
 /* 360 */
 >>>>>>> volumes details to angular 2
+=======
+/* 361 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.3.3.1 / 15.9.4.4 Date.now()
@@ -10159,6 +10678,7 @@
 	$export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10188,6 +10708,9 @@
 =======
 /* 361 */
 >>>>>>> volumes details to angular 2
+=======
+/* 362 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10220,6 +10743,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10249,6 +10773,9 @@
 =======
 /* 362 */
 >>>>>>> volumes details to angular 2
+=======
+/* 363 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10280,6 +10807,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10309,11 +10837,15 @@
 =======
 /* 363 */
 >>>>>>> volumes details to angular 2
+=======
+/* 364 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var TO_PRIMITIVE = __webpack_require__(14)('toPrimitive')
 	  , proto        = Date.prototype;
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10367,6 +10899,12 @@
 /***/ },
 /* 364 */
 >>>>>>> volumes details to angular 2
+=======
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(32)(proto, TO_PRIMITIVE, __webpack_require__(335));
+
+/***/ },
+/* 365 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var DateProto    = Date.prototype
@@ -10382,6 +10920,7 @@
 	}
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10411,11 +10950,15 @@
 =======
 /* 365 */
 >>>>>>> volumes details to angular 2
+=======
+/* 366 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -10466,6 +11009,12 @@
 /***/ },
 /* 366 */
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.P, 'Function', {bind: __webpack_require__(216)});
+
+/***/ },
+/* 367 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10483,6 +11032,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10519,6 +11069,9 @@
 =======
 /* 367 */
 >>>>>>> volumes details to angular 2
+=======
+/* 368 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP         = __webpack_require__(17).f
@@ -10553,6 +11106,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10582,10 +11136,14 @@
 =======
 /* 368 */
 >>>>>>> volumes details to angular 2
+=======
+/* 369 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.3 Math.acosh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -10611,6 +11169,9 @@
 =======
 	  , log1p   = __webpack_require__(226)
 >>>>>>> volumes details to angular 2
+=======
+	  , log1p   = __webpack_require__(227)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , sqrt    = Math.sqrt
 	  , $acosh  = Math.acosh;
 
@@ -10628,6 +11189,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10657,6 +11219,9 @@
 =======
 /* 369 */
 >>>>>>> volumes details to angular 2
+=======
+/* 370 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.5 Math.asinh(x)
@@ -10671,6 +11236,7 @@
 	$export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10700,6 +11266,9 @@
 =======
 /* 370 */
 >>>>>>> volumes details to angular 2
+=======
+/* 371 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.7 Math.atanh(x)
@@ -10714,6 +11283,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10743,6 +11313,9 @@
 =======
 /* 371 */
 >>>>>>> volumes details to angular 2
+=======
+/* 372 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.9 Math.cbrt(x)
@@ -10772,6 +11345,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10801,6 +11375,9 @@
 =======
 /* 372 */
 >>>>>>> volumes details to angular 2
+=======
+/* 373 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.11 Math.clz32(x)
@@ -10813,6 +11390,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10842,6 +11420,9 @@
 =======
 /* 373 */
 >>>>>>> volumes details to angular 2
+=======
+/* 374 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.12 Math.cosh(x)
@@ -10855,6 +11436,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10884,6 +11466,9 @@
 =======
 /* 374 */
 >>>>>>> volumes details to angular 2
+=======
+/* 375 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.14 Math.expm1(x)
@@ -10909,6 +11494,7 @@
 	$export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -10938,6 +11524,9 @@
 =======
 /* 375 */
 >>>>>>> volumes details to angular 2
+=======
+/* 376 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.16 Math.fround(x)
@@ -10984,6 +11573,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11013,6 +11603,9 @@
 =======
 /* 376 */
 >>>>>>> volumes details to angular 2
+=======
+/* 377 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -11042,6 +11635,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11071,6 +11665,9 @@
 =======
 /* 377 */
 >>>>>>> volumes details to angular 2
+=======
+/* 378 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.18 Math.imul(x, y)
@@ -11092,6 +11689,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11121,6 +11719,9 @@
 =======
 /* 378 */
 >>>>>>> volumes details to angular 2
+=======
+/* 379 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.21 Math.log10(x)
@@ -11133,6 +11734,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11162,11 +11764,15 @@
 =======
 /* 379 */
 >>>>>>> volumes details to angular 2
+=======
+/* 380 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.20 Math.log1p(x)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -11217,6 +11823,12 @@
 /***/ },
 /* 380 */
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.S, 'Math', {log1p: __webpack_require__(227)});
+
+/***/ },
+/* 381 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.22 Math.log2(x)
@@ -11229,6 +11841,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11258,6 +11871,9 @@
 =======
 /* 381 */
 >>>>>>> volumes details to angular 2
+=======
+/* 382 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.28 Math.sign(x)
@@ -11305,8 +11921,12 @@
 	$export($export.S, 'Math', {sign: __webpack_require__(152)});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 /* 382 */
 >>>>>>> volumes details to angular 2
+=======
+/* 383 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.30 Math.sinh(x)
@@ -11342,6 +11962,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11371,6 +11992,9 @@
 =======
 /* 383 */
 >>>>>>> volumes details to angular 2
+=======
+/* 384 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.33 Math.tanh(x)
@@ -11403,6 +12027,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11432,6 +12057,9 @@
 =======
 /* 384 */
 >>>>>>> volumes details to angular 2
+=======
+/* 385 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.34 Math.trunc(x)
@@ -11444,6 +12072,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11473,6 +12102,9 @@
 =======
 /* 385 */
 >>>>>>> volumes details to angular 2
+=======
+/* 386 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11502,17 +12134,21 @@
 =======
 =======
 	  , has               = __webpack_require__(27)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	  , cof               = __webpack_require__(62)
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 	  , inheritIfRequired = __webpack_require__(144)
 >>>>>>> organizationlist to angular 2
 =======
+=======
+	  , cof               = __webpack_require__(63)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , inheritIfRequired = __webpack_require__(145)
 >>>>>>> volumes details to angular 2
 	  , toPrimitive       = __webpack_require__(57)
 >>>>>>> adding storage policy list - angular 2
 	  , fails             = __webpack_require__(10)
-	  , gOPN              = __webpack_require__(65).f
+	  , gOPN              = __webpack_require__(66).f
 	  , gOPD              = __webpack_require__(49).f
 	  , dP                = __webpack_require__(17).f
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -11530,6 +12166,7 @@
 	  , Base              = $Number
 	  , proto             = $Number.prototype
 	  // Opera ~12 has broken Object#toString
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -11543,6 +12180,9 @@
 =======
 	  , BROKEN_COF        = cof(__webpack_require__(64)(proto)) == NUMBER
 >>>>>>> organizationlist to angular 2
+=======
+	  , BROKEN_COF        = cof(__webpack_require__(65)(proto)) == NUMBER
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , TRIM              = 'trim' in String.prototype;
 
 	// 7.1.3 ToNumber(argument)
@@ -11597,6 +12237,7 @@
 	}
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11626,6 +12267,9 @@
 =======
 /* 386 */
 >>>>>>> volumes details to angular 2
+=======
+/* 387 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.1 Number.EPSILON
@@ -11634,6 +12278,7 @@
 	$export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11663,6 +12308,9 @@
 =======
 /* 387 */
 >>>>>>> volumes details to angular 2
+=======
+/* 388 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.2 Number.isFinite(number)
@@ -11676,6 +12324,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11705,11 +12354,15 @@
 =======
 /* 388 */
 >>>>>>> volumes details to angular 2
+=======
+/* 389 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -11760,6 +12413,12 @@
 /***/ },
 /* 389 */
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.S, 'Number', {isInteger: __webpack_require__(223)});
+
+/***/ },
+/* 390 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.4 Number.isNaN(number)
@@ -11772,6 +12431,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11801,10 +12461,14 @@
 =======
 /* 390 */
 >>>>>>> volumes details to angular 2
+=======
+/* 391 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -11830,6 +12494,9 @@
 =======
 	  , isInteger = __webpack_require__(222)
 >>>>>>> volumes details to angular 2
+=======
+	  , isInteger = __webpack_require__(223)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , abs       = Math.abs;
 
 	$export($export.S, 'Number', {
@@ -11839,6 +12506,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11868,6 +12536,9 @@
 =======
 /* 391 */
 >>>>>>> volumes details to angular 2
+=======
+/* 392 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -11876,6 +12547,7 @@
 	$export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11905,6 +12577,9 @@
 =======
 /* 392 */
 >>>>>>> volumes details to angular 2
+=======
+/* 393 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -11913,6 +12588,7 @@
 	$export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -11970,10 +12646,18 @@
 	var $export     = __webpack_require__(2)
 	  , $parseFloat = __webpack_require__(231);
 >>>>>>> volumes details to angular 2
+=======
+/* 394 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(2)
+	  , $parseFloat = __webpack_require__(232);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	// 20.1.2.12 Number.parseFloat(string)
 	$export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12031,10 +12715,18 @@
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(232);
 >>>>>>> volumes details to angular 2
+=======
+/* 395 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(233);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	// 20.1.2.13 Number.parseInt(string, radix)
 	$export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12064,6 +12756,9 @@
 =======
 /* 395 */
 >>>>>>> volumes details to angular 2
+=======
+/* 396 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12086,6 +12781,7 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	  , toInteger    = __webpack_require__(56)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -12104,6 +12800,10 @@
 	  , aNumberValue = __webpack_require__(212)
 	  , repeat       = __webpack_require__(236)
 >>>>>>> volumes details to angular 2
+=======
+	  , aNumberValue = __webpack_require__(213)
+	  , repeat       = __webpack_require__(237)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , $toFixed     = 1..toFixed
 	  , floor        = Math.floor
 	  , data         = [0, 0, 0, 0, 0, 0]
@@ -12214,6 +12914,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12243,11 +12944,15 @@
 =======
 /* 396 */
 >>>>>>> volumes details to angular 2
+=======
+/* 397 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
 	  , $fails       = __webpack_require__(10)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -12273,6 +12978,9 @@
 =======
 	  , aNumberValue = __webpack_require__(212)
 >>>>>>> volumes details to angular 2
+=======
+	  , aNumberValue = __webpack_require__(213)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , $toPrecision = 1..toPrecision;
 
 	$export($export.P + $export.F * ($fails(function(){
@@ -12289,6 +12997,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12347,6 +13056,10 @@
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(223)});
+=======
+/* 398 */
+/***/ function(module, exports, __webpack_require__) {
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 /***/ },
 /* 394 */
@@ -12364,6 +13077,7 @@
 =======
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(225)});
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 /***/ },
 /* 396 */
 >>>>>>> added collapsible directive to angular 2
@@ -12373,10 +13087,17 @@
 /***/ },
 /* 398 */
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(228)});
+
+/***/ },
+/* 399 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -12418,10 +13139,17 @@
 =======
 /* 399 */
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.S, 'Object', {create: __webpack_require__(65)});
+
+/***/ },
+/* 400 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12475,6 +13203,12 @@
 /***/ },
 /* 400 */
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(229)});
+
+/***/ },
+/* 401 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
@@ -12482,6 +13216,7 @@
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(17).f});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12511,6 +13246,9 @@
 =======
 /* 401 */
 >>>>>>> volumes details to angular 2
+=======
+/* 402 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.5 Object.freeze(O)
@@ -12532,6 +13270,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12574,6 +13313,9 @@
 =======
 /* 402 */
 >>>>>>> volumes details to angular 2
+=======
+/* 403 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
@@ -12588,6 +13330,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12625,14 +13368,18 @@
 =======
 /* 403 */
 >>>>>>> volumes details to angular 2
+=======
+/* 404 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 Object.getOwnPropertyNames(O)
 	__webpack_require__(41)('getOwnPropertyNames', function(){
-	  return __webpack_require__(229).f;
+	  return __webpack_require__(230).f;
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12673,6 +13420,9 @@
 =======
 =======
 /* 404 */
+=======
+/* 405 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
@@ -12688,6 +13438,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12717,6 +13468,9 @@
 =======
 /* 405 */
 >>>>>>> volumes details to angular 2
+=======
+/* 406 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.11 Object.isExtensible(O)
@@ -12729,6 +13483,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12758,6 +13513,9 @@
 =======
 /* 406 */
 >>>>>>> volumes details to angular 2
+=======
+/* 407 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.12 Object.isFrozen(O)
@@ -12770,6 +13528,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12799,6 +13558,9 @@
 =======
 /* 407 */
 >>>>>>> volumes details to angular 2
+=======
+/* 408 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.13 Object.isSealed(O)
@@ -12811,6 +13573,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12840,10 +13603,14 @@
 =======
 /* 408 */
 >>>>>>> volumes details to angular 2
+=======
+/* 409 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.10 Object.is(value1, value2)
 	var $export = __webpack_require__(2);
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -12883,9 +13650,12 @@
 =======
 	$export($export.S, 'Object', {is: __webpack_require__(233)});
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.S, 'Object', {is: __webpack_require__(234)});
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 /***/ },
-/* 409 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
@@ -12913,6 +13683,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12942,6 +13713,9 @@
 =======
 /* 410 */
 >>>>>>> volumes details to angular 2
+=======
+/* 411 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.15 Object.preventExtensions(O)
@@ -12963,6 +13737,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -12992,6 +13767,9 @@
 =======
 /* 411 */
 >>>>>>> volumes details to angular 2
+=======
+/* 412 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.17 Object.seal(O)
@@ -13013,6 +13791,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13141,6 +13920,9 @@
 >>>>>>> added collapsible directive to angular 2
 =======
 /* 412 */
+=======
+/* 413 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
@@ -13148,25 +13930,30 @@
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(153).set});
 
 /***/ },
-/* 413 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(231);
+	  , $parseFloat = __webpack_require__(232);
 	// 18.2.4 parseFloat(string)
 	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
-/* 414 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	  , $parseInt = __webpack_require__(232);
 >>>>>>> volumes details to angular 2
+=======
+	  , $parseInt = __webpack_require__(233);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	// 18.2.5 parseInt(string, radix)
 	$export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13196,6 +13983,9 @@
 =======
 /* 415 */
 >>>>>>> volumes details to angular 2
+=======
+/* 416 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
@@ -13228,6 +14018,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13257,10 +14048,14 @@
 =======
 /* 416 */
 >>>>>>> volumes details to angular 2
+=======
+/* 417 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 	var $export    = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 <<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
@@ -13283,10 +14078,14 @@
 =======
 	  , create     = __webpack_require__(64)
 >>>>>>> organizationlist to angular 2
+=======
+	  , create     = __webpack_require__(65)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , aFunction  = __webpack_require__(53)
 	  , anObject   = __webpack_require__(8)
 	  , isObject   = __webpack_require__(11)
 	  , fails      = __webpack_require__(10)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -13305,6 +14104,9 @@
 =======
 	  , bind       = __webpack_require__(215)
 >>>>>>> volumes details to angular 2
+=======
+	  , bind       = __webpack_require__(216)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , rConstruct = (__webpack_require__(12).Reflect || {}).construct;
 
 	// MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -13346,6 +14148,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13375,6 +14178,9 @@
 =======
 /* 417 */
 >>>>>>> volumes details to angular 2
+=======
+/* 418 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
@@ -13413,6 +14219,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13442,6 +14249,9 @@
 =======
 /* 418 */
 >>>>>>> volumes details to angular 2
+=======
+/* 419 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.4 Reflect.deleteProperty(target, propertyKey)
@@ -13473,6 +14283,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13502,6 +14313,9 @@
 =======
 /* 419 */
 >>>>>>> volumes details to angular 2
+=======
+/* 420 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13515,6 +14329,7 @@
 	    , key;
 	  for(key in iterated)keys.push(key);
 	};
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -13540,6 +14355,9 @@
 =======
 	__webpack_require__(224)(Enumerate, 'Object', function(){
 >>>>>>> volumes details to angular 2
+=======
+	__webpack_require__(225)(Enumerate, 'Object', function(){
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  var that = this
 	    , keys = that._k
 	    , key;
@@ -13556,6 +14374,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13596,6 +14415,9 @@
 =======
 /* 420 */
 >>>>>>> volumes details to angular 2
+=======
+/* 421 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
@@ -13611,6 +14433,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13640,6 +14463,9 @@
 =======
 /* 421 */
 >>>>>>> volumes details to angular 2
+=======
+/* 422 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.8 Reflect.getPrototypeOf(target)
@@ -13670,6 +14496,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13713,6 +14540,9 @@
 =======
 /* 422 */
 >>>>>>> volumes details to angular 2
+=======
+/* 423 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
@@ -13739,6 +14569,7 @@
 	$export($export.S, 'Reflect', {get: get});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13768,6 +14599,9 @@
 =======
 /* 423 */
 >>>>>>> volumes details to angular 2
+=======
+/* 424 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.9 Reflect.has(target, propertyKey)
@@ -13780,6 +14614,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13809,6 +14644,9 @@
 =======
 /* 424 */
 >>>>>>> volumes details to angular 2
+=======
+/* 425 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.10 Reflect.isExtensible(target)
@@ -13824,6 +14662,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13853,11 +14692,15 @@
 =======
 /* 425 */
 >>>>>>> volumes details to angular 2
+=======
+/* 426 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.11 Reflect.ownKeys(target)
 	var $export = __webpack_require__(2);
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13911,6 +14754,12 @@
 /***/ },
 /* 426 */
 >>>>>>> volumes details to angular 2
+=======
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(339)});
+
+/***/ },
+/* 427 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.12 Reflect.preventExtensions(target)
@@ -13931,6 +14780,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -13960,6 +14810,9 @@
 =======
 /* 427 */
 >>>>>>> volumes details to angular 2
+=======
+/* 428 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.14 Reflect.setPrototypeOf(target, proto)
@@ -13995,6 +14848,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14024,6 +14878,9 @@
 =======
 /* 428 */
 >>>>>>> volumes details to angular 2
+=======
+/* 429 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
@@ -14085,6 +14942,7 @@
 	$export($export.S, 'Reflect', {set: set});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14121,11 +14979,15 @@
 =======
 /* 429 */
 >>>>>>> volumes details to angular 2
+=======
+/* 430 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global            = __webpack_require__(12)
 	  , inheritIfRequired = __webpack_require__(145)
 	  , dP                = __webpack_require__(17).f
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
 <<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
 	  , gOPN              = __webpack_require__(60).f
@@ -14144,6 +15006,9 @@
 	  , $flags            = __webpack_require__(143)
 >>>>>>> organizationlist to angular 2
 =======
+=======
+	  , gOPN              = __webpack_require__(66).f
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , isRegExp          = __webpack_require__(148)
 	  , $flags            = __webpack_require__(144)
 >>>>>>> volumes details to angular 2
@@ -14210,11 +15075,11 @@
 >>>>>>> volumes details to angular 2
 
 /***/ },
-/* 430 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	__webpack_require__(239);
+	__webpack_require__(240);
 	var anObject    = __webpack_require__(8)
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -14258,6 +15123,7 @@
 	}
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14287,6 +15153,9 @@
 =======
 /* 431 */
 >>>>>>> volumes details to angular 2
+=======
+/* 432 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14298,6 +15167,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14327,6 +15197,9 @@
 =======
 /* 432 */
 >>>>>>> volumes details to angular 2
+=======
+/* 433 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14338,6 +15211,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14367,6 +15241,9 @@
 =======
 /* 433 */
 >>>>>>> volumes details to angular 2
+=======
+/* 434 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14378,6 +15255,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14407,6 +15285,9 @@
 =======
 /* 434 */
 >>>>>>> volumes details to angular 2
+=======
+/* 435 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14418,6 +15299,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14447,10 +15329,14 @@
 =======
 /* 435 */
 >>>>>>> volumes details to angular 2
+=======
+/* 436 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -14476,6 +15362,9 @@
 =======
 	  , $at     = __webpack_require__(235)(false);
 >>>>>>> volumes details to angular 2
+=======
+	  , $at     = __webpack_require__(236)(false);
+>>>>>>> added ctvNamevalaue directive to angular 2
 	$export($export.P, 'String', {
 	  // 21.1.3.3 String.prototype.codePointAt(pos)
 	  codePointAt: function codePointAt(pos){
@@ -14484,6 +15373,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14513,6 +15403,9 @@
 =======
 /* 436 */
 >>>>>>> volumes details to angular 2
+=======
+/* 437 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
@@ -14573,6 +15466,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14602,6 +15496,9 @@
 =======
 /* 437 */
 >>>>>>> volumes details to angular 2
+=======
+/* 438 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14613,6 +15510,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14642,6 +15540,9 @@
 =======
 /* 438 */
 >>>>>>> volumes details to angular 2
+=======
+/* 439 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14653,6 +15554,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14682,6 +15584,9 @@
 =======
 /* 439 */
 >>>>>>> volumes details to angular 2
+=======
+/* 440 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14693,6 +15598,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14738,6 +15644,13 @@
 	var $export        = __webpack_require__(2)
 	  , toIndex        = __webpack_require__(66)
 >>>>>>> organizationlist to angular 2
+=======
+/* 441 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export        = __webpack_require__(2)
+	  , toIndex        = __webpack_require__(67)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , fromCharCode   = String.fromCharCode
 	  , $fromCodePoint = String.fromCodePoint;
 
@@ -14761,6 +15674,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14790,6 +15704,9 @@
 =======
 /* 441 */
 >>>>>>> volumes details to angular 2
+=======
+/* 442 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.7 String.prototype.includes(searchString, position = 0)
@@ -14834,6 +15751,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14863,6 +15781,9 @@
 =======
 /* 442 */
 >>>>>>> volumes details to angular 2
+=======
+/* 443 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14874,6 +15795,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14903,6 +15825,9 @@
 =======
 /* 443 */
 >>>>>>> volumes details to angular 2
+=======
+/* 444 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14914,6 +15839,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14943,6 +15869,9 @@
 =======
 /* 444 */
 >>>>>>> volumes details to angular 2
+=======
+/* 445 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
@@ -14965,6 +15894,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -14994,12 +15924,16 @@
 =======
 /* 445 */
 >>>>>>> volumes details to angular 2
+=======
+/* 446 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 
 	$export($export.P, 'String', {
 	  // 21.1.3.13 String.prototype.repeat(count)
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -15057,6 +15991,13 @@
 /***/ },
 /* 446 */
 >>>>>>> volumes details to angular 2
+=======
+	  repeat: __webpack_require__(237)
+	});
+
+/***/ },
+/* 447 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15068,6 +16009,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15097,6 +16039,9 @@
 =======
 /* 447 */
 >>>>>>> volumes details to angular 2
+=======
+/* 448 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.18 String.prototype.startsWith(searchString [, position ])
@@ -15155,6 +16100,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15184,6 +16130,9 @@
 =======
 /* 448 */
 >>>>>>> volumes details to angular 2
+=======
+/* 449 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15195,6 +16144,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15224,6 +16174,9 @@
 =======
 /* 449 */
 >>>>>>> volumes details to angular 2
+=======
+/* 450 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15235,6 +16188,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15264,6 +16218,9 @@
 =======
 /* 450 */
 >>>>>>> volumes details to angular 2
+=======
+/* 451 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15275,6 +16232,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15304,6 +16262,9 @@
 =======
 /* 451 */
 >>>>>>> volumes details to angular 2
+=======
+/* 452 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15327,6 +16288,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15356,6 +16318,9 @@
 =======
 /* 452 */
 >>>>>>> volumes details to angular 2
+=======
+/* 453 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15390,10 +16355,11 @@
 	  , buffer       = __webpack_require__(157)
 >>>>>>> volumes details to angular 2
 	  , anObject     = __webpack_require__(8)
-	  , toIndex      = __webpack_require__(66)
+	  , toIndex      = __webpack_require__(67)
 	  , toLength     = __webpack_require__(25)
 	  , isObject     = __webpack_require__(11)
 	  , ArrayBuffer  = __webpack_require__(12).ArrayBuffer
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -15416,6 +16382,9 @@
 =======
 	  , speciesConstructor = __webpack_require__(234)
 >>>>>>> volumes details to angular 2
+=======
+	  , speciesConstructor = __webpack_require__(235)
+>>>>>>> added ctvNamevalaue directive to angular 2
 	  , $ArrayBuffer = buffer.ArrayBuffer
 	  , $DataView    = buffer.DataView
 	  , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -15481,7 +16450,7 @@
 >>>>>>> volumes details to angular 2
 
 /***/ },
-/* 453 */
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
@@ -15490,6 +16459,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15524,6 +16494,9 @@
 =======
 /* 454 */
 >>>>>>> volumes details to angular 2
+=======
+/* 455 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Float32', 4, function(init){
@@ -15534,6 +16507,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15571,6 +16545,9 @@
 =======
 /* 455 */
 >>>>>>> volumes details to angular 2
+=======
+/* 456 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Float64', 8, function(init){
@@ -15581,6 +16558,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15618,6 +16596,9 @@
 =======
 /* 456 */
 >>>>>>> volumes details to angular 2
+=======
+/* 457 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Int16', 2, function(init){
@@ -15628,6 +16609,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15665,6 +16647,9 @@
 =======
 /* 457 */
 >>>>>>> volumes details to angular 2
+=======
+/* 458 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Int32', 4, function(init){
@@ -15675,6 +16660,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15712,6 +16698,9 @@
 =======
 /* 458 */
 >>>>>>> volumes details to angular 2
+=======
+/* 459 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Int8', 1, function(init){
@@ -15722,6 +16711,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15759,6 +16749,9 @@
 =======
 /* 459 */
 >>>>>>> volumes details to angular 2
+=======
+/* 460 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Uint16', 2, function(init){
@@ -15769,6 +16762,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15806,6 +16800,9 @@
 =======
 /* 460 */
 >>>>>>> volumes details to angular 2
+=======
+/* 461 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Uint32', 4, function(init){
@@ -15816,6 +16813,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15853,6 +16851,9 @@
 =======
 /* 461 */
 >>>>>>> volumes details to angular 2
+=======
+/* 462 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Uint8', 1, function(init){
@@ -15863,6 +16864,7 @@
 	});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15900,6 +16902,9 @@
 =======
 /* 462 */
 >>>>>>> volumes details to angular 2
+=======
+/* 463 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(50)('Uint8', 1, function(init){
@@ -15910,6 +16915,7 @@
 	}, true);
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -15945,10 +16951,13 @@
 =======
 /* 463 */
 >>>>>>> volumes details to angular 2
+=======
+/* 464 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var weak = __webpack_require__(217);
+	var weak = __webpack_require__(218);
 
 	// 23.4 WeakSet Objects
 <<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
@@ -15970,6 +16979,7 @@
 	}, weak, false, true);
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16010,6 +17020,9 @@
 =======
 /* 464 */
 >>>>>>> volumes details to angular 2
+=======
+/* 465 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                  = __webpack_require__(48)
@@ -16023,6 +17036,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16063,6 +17077,9 @@
 =======
 /* 465 */
 >>>>>>> volumes details to angular 2
+=======
+/* 466 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -16083,6 +17100,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16118,10 +17136,13 @@
 =======
 /* 466 */
 >>>>>>> volumes details to angular 2
+=======
+/* 467 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	var Set                     = __webpack_require__(244)
-	  , from                    = __webpack_require__(331)
+	var Set                     = __webpack_require__(245)
+	  , from                    = __webpack_require__(332)
 	  , metadata                = __webpack_require__(48)
 	  , anObject                = __webpack_require__(8)
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -16154,6 +17175,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16187,6 +17209,9 @@
 =======
 /* 467 */
 >>>>>>> volumes details to angular 2
+=======
+/* 468 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -16242,6 +17267,7 @@
 /* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 	var metadata                = __webpack_require__(45)
 >>>>>>> converting volumelist, servicelist ctrl to ang2
 =======
@@ -16261,6 +17287,10 @@
 =======
 /* 468 */
 >>>>>>> volumes details to angular 2
+=======
+/***/ },
+/* 469 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                = __webpack_require__(48)
@@ -16274,6 +17304,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16314,6 +17345,9 @@
 =======
 /* 469 */
 >>>>>>> volumes details to angular 2
+=======
+/* 470 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -16328,6 +17362,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16361,6 +17396,9 @@
 =======
 /* 470 */
 >>>>>>> volumes details to angular 2
+=======
+/* 471 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -16394,6 +17432,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16434,6 +17473,9 @@
 =======
 /* 471 */
 >>>>>>> volumes details to angular 2
+=======
+/* 472 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(48)
@@ -16448,6 +17490,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16481,6 +17524,9 @@
 =======
 /* 472 */
 >>>>>>> volumes details to angular 2
+=======
+/* 473 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                  = __webpack_require__(48)
@@ -16509,6 +17555,7 @@
 	}});
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16538,6 +17585,9 @@
 =======
 /* 473 */
 >>>>>>> volumes details to angular 2
+=======
+/* 474 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// function.name (all IE)
@@ -16858,6 +17908,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -16897,6 +17948,8 @@
 =======
 >>>>>>> volumes details to angular 2
 /* 474 */,
+=======
+>>>>>>> added ctvNamevalaue directive to angular 2
 /* 475 */,
 /* 476 */,
 /* 477 */,
@@ -17200,8 +18253,13 @@
 =======
 /* 745 */,
 /* 746 */,
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 /* 747 */
 >>>>>>> volumes details to angular 2
+=======
+/* 747 */,
+/* 748 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -17364,6 +18422,7 @@
 
 
 /***/ },
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
@@ -17393,6 +18452,9 @@
 =======
 /* 748 */
 >>>>>>> volumes details to angular 2
+=======
+/* 749 */
+>>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -18822,6 +19884,7 @@
 
 	})));
 
+<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
 <<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
 <<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
 <<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
@@ -18847,6 +19910,9 @@
 =======
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(247)))
 >>>>>>> volumes details to angular 2
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(248)))
+>>>>>>> added ctvNamevalaue directive to angular 2
 
 /***/ }
 /******/ ]);

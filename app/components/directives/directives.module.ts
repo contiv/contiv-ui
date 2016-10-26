@@ -8,7 +8,7 @@ import {CtvTableComponent, CtvThComponent, CtvSearchComponent, CtvTpaginationCom
 import {FormsModule} from "@angular/forms";
 import {CtvAccordionComponent} from "./accordiondirective";
 import {CtvCollapsibleComponent} from "./collapsibledirective";
-
+import {CtvNamevalueComponent} from "./namevaluedirective";
 @NgModule({
     imports: [
         CommonModule, FormsModule
@@ -20,7 +20,8 @@ import {CtvCollapsibleComponent} from "./collapsibledirective";
         CtvSearchComponent,
         CtvTpaginationComponent,
         CtvAccordionComponent,
-        CtvCollapsibleComponent
+        CtvCollapsibleComponent,
+        CtvNamevalueComponent
     ],
     exports: [
         ErrorMessageComponent,
@@ -29,7 +30,8 @@ import {CtvCollapsibleComponent} from "./collapsibledirective";
         CtvSearchComponent,
         CtvTpaginationComponent,
         CtvAccordionComponent,
-        CtvCollapsibleComponent
+        CtvCollapsibleComponent,
+        CtvNamevalueComponent
     ]
 })
 export class DirectivesModule {}

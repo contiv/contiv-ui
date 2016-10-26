@@ -49,6 +49,7 @@ import {NetworkdetailsComponent} from "./networks/networkdetailsctrl";
 import {CtvCollapsibleComponent} from "./components/directives/collapsibledirective";
 import {VolumeDetailsComponent} from "./volumes/volumedetailsctrl";
 import {VolumeService} from "./volumes/volumeservice";
+import {CtvNamevalueComponent} from "./components/directives/namevaluedirective";
 
 upgradeAdapter.upgradeNg1Provider('$state');
 upgradeAdapter.upgradeNg1Provider('$stateParams');
@@ -94,7 +95,9 @@ angular.module("contiv.directives")
     .directive('ctvSearch', upgradeAdapter.downgradeNg2Component(CtvSearchComponent) as angular.IDirectiveFactory)
     .directive('ctvTpagination', upgradeAdapter.downgradeNg2Component(CtvTpaginationComponent) as angular.IDirectiveFactory)
     .directive('ctvAccordion', upgradeAdapter.downgradeNg2Component(CtvAccordionComponent) as angular.IDirectiveFactory)
-    .directive('ctvCollapsible', upgradeAdapter.downgradeNg2Component(CtvCollapsibleComponent) as angular.IDirectiveFactory);
+    .directive('ctvCollapsible', upgradeAdapter.downgradeNg2Component(CtvCollapsibleComponent) as angular.IDirectiveFactory)
+    .directive('ctvNamevalue', upgradeAdapter.downgradeNg2Component(CtvNamevalueComponent) as angular.IDirectiveFactory)
+
 
 angular.module('contiv.networks')
     .directive('networkList', upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory)
