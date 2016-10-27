@@ -4,18 +4,31 @@ webpackJsonp([2],{
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var upgradeadapter_1 = __webpack_require__(323);
 	var networksmodel_1 = __webpack_require__(56);
+=======
+	var upgradeadapter_1 = __webpack_require__(324);
+	var networksmodel_1 = __webpack_require__(48);
+>>>>>>> CCN Directives (#200)
 	var organizationsmodel_1 = __webpack_require__(138);
 	var servicelbsmodel_1 = __webpack_require__(101);
 	var storagepoliciesmodel_1 = __webpack_require__(102);
 	var policiesmodel_1 = __webpack_require__(65);
 	var volumesmodel_1 = __webpack_require__(83);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var applicationgroupsmodel_1 = __webpack_require__(55);
 	var nodesmodel_1 = __webpack_require__(137);
 	var rulesmodel_1 = __webpack_require__(100);
 	var netprofilesmodel_1 = __webpack_require__(77);
 	var crudhelperservice_1 = __webpack_require__(13);
+=======
+	var applicationgroupsmodel_1 = __webpack_require__(56);
+	var nodesmodel_1 = __webpack_require__(137);
+	var rulesmodel_1 = __webpack_require__(100);
+	var netprofilesmodel_1 = __webpack_require__(77);
+	var crudhelperservice_1 = __webpack_require__(12);
+>>>>>>> CCN Directives (#200)
 	var inspectservice_1 = __webpack_require__(103);
 	var nodesservice_1 = __webpack_require__(199);
 	var errormessagedirective_1 = __webpack_require__(195);
@@ -26,6 +39,7 @@ webpackJsonp([2],{
 	var bandwidthpolicydetailsctrl_1 = __webpack_require__(202);
 	var applicationgroupcreatectrl_1 = __webpack_require__(190);
 	var applicationgroupdetailsctrl_1 = __webpack_require__(191);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var networksettingctrl_1 = __webpack_require__(214);
 	var volumesettingctrl_1 = __webpack_require__(215);
 	var tabledirective_1 = __webpack_require__(197);
@@ -48,6 +62,31 @@ webpackJsonp([2],{
 	var volumedetailsctrl_1 = __webpack_require__(217);
 	var volumeservice_1 = __webpack_require__(141);
 	var namevaluedirective_1 = __webpack_require__(196);
+=======
+	var networksettingctrl_1 = __webpack_require__(215);
+	var volumesettingctrl_1 = __webpack_require__(216);
+	var tabledirective_1 = __webpack_require__(197);
+	var networklistctrl_1 = __webpack_require__(210);
+	var applicationgrouplistctrl_1 = __webpack_require__(192);
+	var isolationpolicylistctrl_1 = __webpack_require__(206);
+	var bandwidthpolicylistctrl_1 = __webpack_require__(203);
+	var networkstatsctrl_1 = __webpack_require__(211);
+	var accordiondirective_1 = __webpack_require__(193);
+	var servicelblistctrl_1 = __webpack_require__(213);
+	var servicelbstatsctrl_1 = __webpack_require__(214);
+	var volumelistctrl_1 = __webpack_require__(219);
+	var volumesettingservice_1 = __webpack_require__(140);
+	var networkservice_1 = __webpack_require__(139);
+	var storagepolicylistctrl_1 = __webpack_require__(217);
+	var organizationlistctrl_1 = __webpack_require__(212);
+	var networkinfoctrl_1 = __webpack_require__(209);
+	var networkdetailsctrl_1 = __webpack_require__(208);
+	var collapsibledirective_1 = __webpack_require__(194);
+	var volumedetailsctrl_1 = __webpack_require__(218);
+	var volumeservice_1 = __webpack_require__(141);
+	var namevaluedirective_1 = __webpack_require__(196);
+	var networkcreatectrl_1 = __webpack_require__(207);
+>>>>>>> CCN Directives (#200)
 	upgradeadapter_1.upgradeAdapter.upgradeNg1Provider('$state');
 	upgradeadapter_1.upgradeAdapter.upgradeNg1Provider('$stateParams');
 	angular.module('contiv.models')
@@ -92,7 +131,12 @@ webpackJsonp([2],{
 	    .directive('networkList', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(networklistctrl_1.NetworkListComponent))
 	    .directive('networkStat', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(networkstatsctrl_1.NetworkStatComponent))
 	    .directive('networkInfo', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(networkinfoctrl_1.NetworkInfoComponent))
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	    .directive('networkdetails', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(networkdetailsctrl_1.NetworkdetailsComponent));
+=======
+	    .directive('networkdetails', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(networkdetailsctrl_1.NetworkdetailsComponent))
+	    .directive('networkcreate', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(networkcreatectrl_1.NetworkCreateComponent));
+>>>>>>> CCN Directives (#200)
 	angular.module('contiv.applicationgroups')
 	    .directive('applicationGrouplist', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(applicationgrouplistctrl_1.AppGrouplistComponent))
 	    .directive('applicationgroupcreate', upgradeadapter_1.upgradeAdapter.downgradeNg2Component(applicationgroupcreatectrl_1.ApplicationGroupCreateComponent))
@@ -686,7 +730,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 13:
+=======
+/***/ 12:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -999,7 +1047,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 25:
+=======
+/***/ 24:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -1011,6 +1063,7 @@ webpackJsonp([2],{
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	__export(__webpack_require__(290));
 	__export(__webpack_require__(124));
 	__export(__webpack_require__(125));
@@ -1019,6 +1072,16 @@ webpackJsonp([2],{
 	__webpack_require__(300);
 	__webpack_require__(298);
 	__webpack_require__(302);
+=======
+	__export(__webpack_require__(291));
+	__export(__webpack_require__(124));
+	__export(__webpack_require__(125));
+	__export(__webpack_require__(178));
+	__webpack_require__(298);
+	__webpack_require__(301);
+	__webpack_require__(299);
+	__webpack_require__(303);
+>>>>>>> CCN Directives (#200)
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = "ui.router";
 	//# sourceMappingURL=ng1.js.map
@@ -4158,6 +4221,31 @@ webpackJsonp([2],{
 	     * @param {Array|string} path The path of the property to get.
 	     * @returns {*} Returns the resolved value.
 	     */
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	    function arrayLikeKeys(value, inherited) {
+	      var isArr = isArray(value),
+	          isArg = !isArr && isArguments(value),
+	          isBuff = !isArr && !isArg && isBuffer(value),
+	          isType = !isArr && !isArg && !isBuff && isTypedArray(value),
+	          skipIndexes = isArr || isArg || isBuff || isType,
+	          result = skipIndexes ? baseTimes(value.length, String) : [],
+	          length = result.length;
+
+	      for (var key in value) {
+	        if ((inherited || hasOwnProperty.call(value, key)) &&
+	            !(skipIndexes && (
+	               // Safari 9 has enumerable `arguments.length` in strict mode.
+	               key == 'length' ||
+	               // Node.js 0.10 has enumerable non-index properties on buffers.
+	               (isBuff && (key == 'offset' || key == 'parent')) ||
+	               // PhantomJS 2 has enumerable non-index properties on typed arrays.
+	               (isType && (key == 'buffer' || key == 'byteLength' || key == 'byteOffset')) ||
+	               // Skip index properties.
+	               isIndex(key, length)
+	            ))) {
+	          result.push(key);
+	        }
+=======
 	    function baseGet(object, path) {
 	      path = isKey(path, object) ? [path] : castPath(path);
 
@@ -4166,6 +4254,7 @@ webpackJsonp([2],{
 
 	      while (object != null && index < length) {
 	        object = object[toKey(path[index++])];
+>>>>>>> CCN Directives (#200)
 	      }
 	      return (index && index == length) ? object : undefined;
 	    }
@@ -4193,8 +4282,13 @@ webpackJsonp([2],{
 	     * @param {*} value The value to query.
 	     * @returns {string} Returns the `toStringTag`.
 	     */
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	    function arraySampleSize(array, n) {
+	      return shuffleSelf(copyArray(array), baseClamp(n, 0, array.length));
+=======
 	    function baseGetTag(value) {
 	      return objectToString.call(value);
+>>>>>>> CCN Directives (#200)
 	    }
 
 	    /**
@@ -4456,12 +4550,20 @@ webpackJsonp([2],{
 	        var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
 	            othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	      var props = isArr ? undefined : (isFull ? getAllKeys : keys)(value);
+	      arrayEach(props || value, function(subValue, key) {
+	        if (props) {
+	          key = subValue;
+	          subValue = value[key];
+=======
 	        if (objIsWrapped || othIsWrapped) {
 	          var objUnwrapped = objIsWrapped ? object.value() : object,
 	              othUnwrapped = othIsWrapped ? other.value() : other;
 
 	          stack || (stack = new Stack);
 	          return equalFunc(objUnwrapped, othUnwrapped, customizer, bitmask, stack);
+>>>>>>> CCN Directives (#200)
 	        }
 	      }
 	      if (!isSameTag) {
@@ -5037,7 +5139,22 @@ webpackJsonp([2],{
 	    }
 
 	    /**
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * The base implementation of `_.isArguments`.
+	     *
+	     * @private
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+	     */
+	    function baseIsArguments(value) {
+	      return isObjectLike(value) && objectToString.call(value) == argsTag;
+	    }
+
+	    /**
+	     * The base implementation of `_.isArrayBuffer` without Node.js optimizations.
+=======
 	     * The base implementation of `_.repeat` which doesn't coerce arguments.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @private
 	     * @param {string} string The string to repeat.
@@ -5374,6 +5491,24 @@ webpackJsonp([2],{
 	      if (typeof value == 'string') {
 	        return value;
 	      }
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	      baseFor(source, function(srcValue, key) {
+	        if (isObject(srcValue)) {
+	          stack || (stack = new Stack);
+	          baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
+	        }
+	        else {
+	          var newValue = customizer
+	            ? customizer(object[key], srcValue, (key + ''), object, source, stack)
+	            : undefined;
+
+	          if (newValue === undefined) {
+	            newValue = srcValue;
+	          }
+	          assignMergeValue(object, key, newValue);
+	        }
+	      }, keysIn);
+=======
 	      if (isArray(value)) {
 	        // Recursively convert values (susceptible to call stack limits).
 	        return arrayMap(value, baseToString) + '';
@@ -5383,6 +5518,7 @@ webpackJsonp([2],{
 	      }
 	      var result = (value + '');
 	      return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+>>>>>>> CCN Directives (#200)
 	    }
 
 	    /**
@@ -5406,6 +5542,34 @@ webpackJsonp([2],{
 	        isCommon = false;
 	        includes = arrayIncludesWith;
 	      }
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	      var newValue = customizer
+	        ? customizer(objValue, srcValue, (key + ''), object, source, stack)
+	        : undefined;
+
+	      var isCommon = newValue === undefined;
+
+	      if (isCommon) {
+	        var isArr = isArray(srcValue),
+	            isBuff = !isArr && isBuffer(srcValue),
+	            isTyped = !isArr && !isBuff && isTypedArray(srcValue);
+
+	        newValue = srcValue;
+	        if (isArr || isBuff || isTyped) {
+	          if (isArray(objValue)) {
+	            newValue = objValue;
+	          }
+	          else if (isArrayLikeObject(objValue)) {
+	            newValue = copyArray(objValue);
+	          }
+	          else if (isBuff) {
+	            isCommon = false;
+	            newValue = cloneBuffer(srcValue, true);
+	          }
+	          else if (isTyped) {
+	            isCommon = false;
+	            newValue = cloneTypedArray(srcValue, true);
+=======
 	      else if (length >= LARGE_ARRAY_SIZE) {
 	        var set = iteratee ? null : createSet(array);
 	        if (set) {
@@ -5430,6 +5594,7 @@ webpackJsonp([2],{
 	            if (seen[seenIndex] === computed) {
 	              continue outer;
 	            }
+>>>>>>> CCN Directives (#200)
 	          }
 	          if (iteratee) {
 	            seen.push(computed);
@@ -5631,9 +5796,16 @@ webpackJsonp([2],{
 	     * @private
 	     * @param {number|Object} id The timer id or timeout object of the timer to clear.
 	     */
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	    function baseSampleSize(collection, n) {
+	      var array = values(collection);
+	      return shuffleSelf(array, baseClamp(n, 0, array.length));
+	    }
+=======
 	    var clearTimeout = ctxClearTimeout || function(id) {
 	      return root.clearTimeout(id);
 	    };
+>>>>>>> CCN Directives (#200)
 
 	    /**
 	     * Creates a clone of  `buffer`.
@@ -5884,9 +6056,18 @@ webpackJsonp([2],{
 	      while (++argsIndex < rangeLength) {
 	        result[argsIndex] = args[argsIndex];
 	      }
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	      if (isArray(value)) {
+	        // Recursively convert values (susceptible to call stack limits).
+	        return arrayMap(value, baseToString) + '';
+	      }
+	      if (isSymbol(value)) {
+	        return symbolToString ? symbolToString.call(value) : '';
+=======
 	      var offset = argsIndex;
 	      while (++rightIndex < rightLength) {
 	        result[offset + rightIndex] = partials[rightIndex];
+>>>>>>> CCN Directives (#200)
 	      }
 	      while (++holdersIndex < holdersLength) {
 	        if (isUncurried || argsIndex < argsLength) {
@@ -8876,9 +9057,16 @@ webpackJsonp([2],{
 	      var length = array ? array.length : 0,
 	          result = baseAt(array, indexes);
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	      size = size === undefined ? length : size;
+	      while (++index < size) {
+	        var rand = baseRandom(index, lastIndex),
+	            value = array[rand];
+=======
 	      basePullAt(array, arrayMap(indexes, function(index) {
 	        return isIndex(index, length) ? +index : index;
 	      }).sort(compareAscending));
+>>>>>>> CCN Directives (#200)
 
 	      return result;
 	    });
@@ -11574,6 +11762,588 @@ webpackJsonp([2],{
 	     * @returns {Function} Returns the new flipped function.
 	     * @example
 	     *
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * _.countBy([6.1, 4.2, 6.3], Math.floor);
+	     * // => { '4': 1, '6': 2 }
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.countBy(['one', 'two', 'three'], 'length');
+	     * // => { '3': 2, '5': 1 }
+	     */
+	    var countBy = createAggregator(function(result, value, key) {
+	      if (hasOwnProperty.call(result, key)) {
+	        ++result[key];
+	      } else {
+	        baseAssignValue(result, key, 1);
+	      }
+	    });
+
+	    /**
+	     * Checks if `predicate` returns truthy for **all** elements of `collection`.
+	     * Iteration is stopped once `predicate` returns falsey. The predicate is
+	     * invoked with three arguments: (value, index|key, collection).
+	     *
+	     * **Note:** This method returns `true` for
+	     * [empty collections](https://en.wikipedia.org/wiki/Empty_set) because
+	     * [everything is true](https://en.wikipedia.org/wiki/Vacuous_truth) of
+	     * elements of empty collections.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [predicate=_.identity]
+	     *  The function invoked per iteration.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {boolean} Returns `true` if all elements pass the predicate check,
+	     *  else `false`.
+	     * @example
+	     *
+	     * _.every([true, 1, null, 'yes'], Boolean);
+	     * // => false
+	     *
+	     * var users = [
+	     *   { 'user': 'barney', 'age': 36, 'active': false },
+	     *   { 'user': 'fred',   'age': 40, 'active': false }
+	     * ];
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.every(users, { 'user': 'barney', 'active': false });
+	     * // => false
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.every(users, ['active', false]);
+	     * // => true
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.every(users, 'active');
+	     * // => false
+	     */
+	    function every(collection, predicate, guard) {
+	      var func = isArray(collection) ? arrayEvery : baseEvery;
+	      if (guard && isIterateeCall(collection, predicate, guard)) {
+	        predicate = undefined;
+	      }
+	      return func(collection, getIteratee(predicate, 3));
+	    }
+
+	    /**
+	     * Iterates over elements of `collection`, returning an array of all elements
+	     * `predicate` returns truthy for. The predicate is invoked with three
+	     * arguments: (value, index|key, collection).
+	     *
+	     * **Note:** Unlike `_.remove`, this method returns a new array.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [predicate=_.identity]
+	     *  The function invoked per iteration.
+	     * @returns {Array} Returns the new filtered array.
+	     * @see _.reject
+	     * @example
+	     *
+	     * var users = [
+	     *   { 'user': 'barney', 'age': 36, 'active': true },
+	     *   { 'user': 'fred',   'age': 40, 'active': false }
+	     * ];
+	     *
+	     * _.filter(users, function(o) { return !o.active; });
+	     * // => objects for ['fred']
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.filter(users, { 'age': 36, 'active': true });
+	     * // => objects for ['barney']
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.filter(users, ['active', false]);
+	     * // => objects for ['fred']
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.filter(users, 'active');
+	     * // => objects for ['barney']
+	     */
+	    function filter(collection, predicate) {
+	      var func = isArray(collection) ? arrayFilter : baseFilter;
+	      return func(collection, getIteratee(predicate, 3));
+	    }
+
+	    /**
+	     * Iterates over elements of `collection`, returning the first element
+	     * `predicate` returns truthy for. The predicate is invoked with three
+	     * arguments: (value, index|key, collection).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to inspect.
+	     * @param {Function} [predicate=_.identity]
+	     *  The function invoked per iteration.
+	     * @param {number} [fromIndex=0] The index to search from.
+	     * @returns {*} Returns the matched element, else `undefined`.
+	     * @example
+	     *
+	     * var users = [
+	     *   { 'user': 'barney',  'age': 36, 'active': true },
+	     *   { 'user': 'fred',    'age': 40, 'active': false },
+	     *   { 'user': 'pebbles', 'age': 1,  'active': true }
+	     * ];
+	     *
+	     * _.find(users, function(o) { return o.age < 40; });
+	     * // => object for 'barney'
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.find(users, { 'age': 1, 'active': true });
+	     * // => object for 'pebbles'
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.find(users, ['active', false]);
+	     * // => object for 'fred'
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.find(users, 'active');
+	     * // => object for 'barney'
+	     */
+	    var find = createFind(findIndex);
+
+	    /**
+	     * This method is like `_.find` except that it iterates over elements of
+	     * `collection` from right to left.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.0.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to inspect.
+	     * @param {Function} [predicate=_.identity]
+	     *  The function invoked per iteration.
+	     * @param {number} [fromIndex=collection.length-1] The index to search from.
+	     * @returns {*} Returns the matched element, else `undefined`.
+	     * @example
+	     *
+	     * _.findLast([1, 2, 3, 4], function(n) {
+	     *   return n % 2 == 1;
+	     * });
+	     * // => 3
+	     */
+	    var findLast = createFind(findLastIndex);
+
+	    /**
+	     * Creates a flattened array of values by running each element in `collection`
+	     * thru `iteratee` and flattening the mapped results. The iteratee is invoked
+	     * with three arguments: (value, index|key, collection).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity]
+	     *  The function invoked per iteration.
+	     * @returns {Array} Returns the new flattened array.
+	     * @example
+	     *
+	     * function duplicate(n) {
+	     *   return [n, n];
+	     * }
+	     *
+	     * _.flatMap([1, 2], duplicate);
+	     * // => [1, 1, 2, 2]
+	     */
+	    function flatMap(collection, iteratee) {
+	      return baseFlatten(map(collection, iteratee), 1);
+	    }
+
+	    /**
+	     * This method is like `_.flatMap` except that it recursively flattens the
+	     * mapped results.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.7.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity]
+	     *  The function invoked per iteration.
+	     * @returns {Array} Returns the new flattened array.
+	     * @example
+	     *
+	     * function duplicate(n) {
+	     *   return [[[n, n]]];
+	     * }
+	     *
+	     * _.flatMapDeep([1, 2], duplicate);
+	     * // => [1, 1, 2, 2]
+	     */
+	    function flatMapDeep(collection, iteratee) {
+	      return baseFlatten(map(collection, iteratee), INFINITY);
+	    }
+
+	    /**
+	     * This method is like `_.flatMap` except that it recursively flattens the
+	     * mapped results up to `depth` times.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.7.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity]
+	     *  The function invoked per iteration.
+	     * @param {number} [depth=1] The maximum recursion depth.
+	     * @returns {Array} Returns the new flattened array.
+	     * @example
+	     *
+	     * function duplicate(n) {
+	     *   return [[[n, n]]];
+	     * }
+	     *
+	     * _.flatMapDepth([1, 2], duplicate, 2);
+	     * // => [[1, 1], [2, 2]]
+	     */
+	    function flatMapDepth(collection, iteratee, depth) {
+	      depth = depth === undefined ? 1 : toInteger(depth);
+	      return baseFlatten(map(collection, iteratee), depth);
+	    }
+
+	    /**
+	     * Iterates over elements of `collection` and invokes `iteratee` for each element.
+	     * The iteratee is invoked with three arguments: (value, index|key, collection).
+	     * Iteratee functions may exit iteration early by explicitly returning `false`.
+	     *
+	     * **Note:** As with other "Collections" methods, objects with a "length"
+	     * property are iterated like arrays. To avoid this behavior use `_.forIn`
+	     * or `_.forOwn` for object iteration.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @alias each
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Array|Object} Returns `collection`.
+	     * @see _.forEachRight
+	     * @example
+	     *
+	     * _.forEach([1, 2], function(value) {
+	     *   console.log(value);
+	     * });
+	     * // => Logs `1` then `2`.
+	     *
+	     * _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+	     *   console.log(key);
+	     * });
+	     * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+	     */
+	    function forEach(collection, iteratee) {
+	      var func = isArray(collection) ? arrayEach : baseEach;
+	      return func(collection, getIteratee(iteratee, 3));
+	    }
+
+	    /**
+	     * This method is like `_.forEach` except that it iterates over elements of
+	     * `collection` from right to left.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.0.0
+	     * @alias eachRight
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Array|Object} Returns `collection`.
+	     * @see _.forEach
+	     * @example
+	     *
+	     * _.forEachRight([1, 2], function(value) {
+	     *   console.log(value);
+	     * });
+	     * // => Logs `2` then `1`.
+	     */
+	    function forEachRight(collection, iteratee) {
+	      var func = isArray(collection) ? arrayEachRight : baseEachRight;
+	      return func(collection, getIteratee(iteratee, 3));
+	    }
+
+	    /**
+	     * Creates an object composed of keys generated from the results of running
+	     * each element of `collection` thru `iteratee`. The order of grouped values
+	     * is determined by the order they occur in `collection`. The corresponding
+	     * value of each key is an array of elements responsible for generating the
+	     * key. The iteratee is invoked with one argument: (value).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity]
+	     *  The iteratee to transform keys.
+	     * @returns {Object} Returns the composed aggregate object.
+	     * @example
+	     *
+	     * _.groupBy([6.1, 4.2, 6.3], Math.floor);
+	     * // => { '4': [4.2], '6': [6.1, 6.3] }
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.groupBy(['one', 'two', 'three'], 'length');
+	     * // => { '3': ['one', 'two'], '5': ['three'] }
+	     */
+	    var groupBy = createAggregator(function(result, value, key) {
+	      if (hasOwnProperty.call(result, key)) {
+	        result[key].push(value);
+	      } else {
+	        baseAssignValue(result, key, [value]);
+	      }
+	    });
+
+	    /**
+	     * Checks if `value` is in `collection`. If `collection` is a string, it's
+	     * checked for a substring of `value`, otherwise
+	     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+	     * is used for equality comparisons. If `fromIndex` is negative, it's used as
+	     * the offset from the end of `collection`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object|string} collection The collection to inspect.
+	     * @param {*} value The value to search for.
+	     * @param {number} [fromIndex=0] The index to search from.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.reduce`.
+	     * @returns {boolean} Returns `true` if `value` is found, else `false`.
+	     * @example
+	     *
+	     * _.includes([1, 2, 3], 1);
+	     * // => true
+	     *
+	     * _.includes([1, 2, 3], 1, 2);
+	     * // => false
+	     *
+	     * _.includes({ 'a': 1, 'b': 2 }, 1);
+	     * // => true
+	     *
+	     * _.includes('abcd', 'bc');
+	     * // => true
+	     */
+	    function includes(collection, value, fromIndex, guard) {
+	      collection = isArrayLike(collection) ? collection : values(collection);
+	      fromIndex = (fromIndex && !guard) ? toInteger(fromIndex) : 0;
+
+	      var length = collection.length;
+	      if (fromIndex < 0) {
+	        fromIndex = nativeMax(length + fromIndex, 0);
+	      }
+	      return isString(collection)
+	        ? (fromIndex <= length && collection.indexOf(value, fromIndex) > -1)
+	        : (!!length && baseIndexOf(collection, value, fromIndex) > -1);
+	    }
+
+	    /**
+	     * Invokes the method at `path` of each element in `collection`, returning
+	     * an array of the results of each invoked method. Any additional arguments
+	     * are provided to each invoked method. If `path` is a function, it's invoked
+	     * for, and `this` bound to, each element in `collection`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Array|Function|string} path The path of the method to invoke or
+	     *  the function invoked per iteration.
+	     * @param {...*} [args] The arguments to invoke each method with.
+	     * @returns {Array} Returns the array of results.
+	     * @example
+	     *
+	     * _.invokeMap([[5, 1, 7], [3, 2, 1]], 'sort');
+	     * // => [[1, 5, 7], [1, 2, 3]]
+	     *
+	     * _.invokeMap([123, 456], String.prototype.split, '');
+	     * // => [['1', '2', '3'], ['4', '5', '6']]
+	     */
+	    var invokeMap = baseRest(function(collection, path, args) {
+	      var index = -1,
+	          isFunc = typeof path == 'function',
+	          isProp = isKey(path),
+	          result = isArrayLike(collection) ? Array(collection.length) : [];
+
+	      baseEach(collection, function(value) {
+	        var func = isFunc ? path : ((isProp && value != null) ? value[path] : undefined);
+	        result[++index] = func ? apply(func, value, args) : baseInvoke(value, path, args);
+	      });
+	      return result;
+	    });
+
+	    /**
+	     * Creates an object composed of keys generated from the results of running
+	     * each element of `collection` thru `iteratee`. The corresponding value of
+	     * each key is the last element responsible for generating the key. The
+	     * iteratee is invoked with one argument: (value).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity]
+	     *  The iteratee to transform keys.
+	     * @returns {Object} Returns the composed aggregate object.
+	     * @example
+	     *
+	     * var array = [
+	     *   { 'dir': 'left', 'code': 97 },
+	     *   { 'dir': 'right', 'code': 100 }
+	     * ];
+	     *
+	     * _.keyBy(array, function(o) {
+	     *   return String.fromCharCode(o.code);
+	     * });
+	     * // => { 'a': { 'dir': 'left', 'code': 97 }, 'd': { 'dir': 'right', 'code': 100 } }
+	     *
+	     * _.keyBy(array, 'dir');
+	     * // => { 'left': { 'dir': 'left', 'code': 97 }, 'right': { 'dir': 'right', 'code': 100 } }
+	     */
+	    var keyBy = createAggregator(function(result, value, key) {
+	      baseAssignValue(result, key, value);
+	    });
+
+	    /**
+	     * Creates an array of values by running each element in `collection` thru
+	     * `iteratee`. The iteratee is invoked with three arguments:
+	     * (value, index|key, collection).
+	     *
+	     * Many lodash methods are guarded to work as iteratees for methods like
+	     * `_.every`, `_.filter`, `_.map`, `_.mapValues`, `_.reject`, and `_.some`.
+	     *
+	     * The guarded methods are:
+	     * `ary`, `chunk`, `curry`, `curryRight`, `drop`, `dropRight`, `every`,
+	     * `fill`, `invert`, `parseInt`, `random`, `range`, `rangeRight`, `repeat`,
+	     * `sampleSize`, `slice`, `some`, `sortBy`, `split`, `take`, `takeRight`,
+	     * `template`, `trim`, `trimEnd`, `trimStart`, and `words`
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Array} Returns the new mapped array.
+	     * @example
+	     *
+	     * function square(n) {
+	     *   return n * n;
+	     * }
+	     *
+	     * _.map([4, 8], square);
+	     * // => [16, 64]
+	     *
+	     * _.map({ 'a': 4, 'b': 8 }, square);
+	     * // => [16, 64] (iteration order is not guaranteed)
+	     *
+	     * var users = [
+	     *   { 'user': 'barney' },
+	     *   { 'user': 'fred' }
+	     * ];
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.map(users, 'user');
+	     * // => ['barney', 'fred']
+	     */
+	    function map(collection, iteratee) {
+	      var func = isArray(collection) ? arrayMap : baseMap;
+	      return func(collection, getIteratee(iteratee, 3));
+	    }
+
+	    /**
+	     * This method is like `_.sortBy` except that it allows specifying the sort
+	     * orders of the iteratees to sort by. If `orders` is unspecified, all values
+	     * are sorted in ascending order. Otherwise, specify an order of "desc" for
+	     * descending or "asc" for ascending sort order of corresponding values.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Array[]|Function[]|Object[]|string[]} [iteratees=[_.identity]]
+	     *  The iteratees to sort by.
+	     * @param {string[]} [orders] The sort orders of `iteratees`.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.reduce`.
+	     * @returns {Array} Returns the new sorted array.
+	     * @example
+	     *
+	     * var users = [
+	     *   { 'user': 'fred',   'age': 48 },
+	     *   { 'user': 'barney', 'age': 34 },
+	     *   { 'user': 'fred',   'age': 40 },
+	     *   { 'user': 'barney', 'age': 36 }
+	     * ];
+	     *
+	     * // Sort by `user` in ascending order and by `age` in descending order.
+	     * _.orderBy(users, ['user', 'age'], ['asc', 'desc']);
+	     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+	     */
+	    function orderBy(collection, iteratees, orders, guard) {
+	      if (collection == null) {
+	        return [];
+	      }
+	      if (!isArray(iteratees)) {
+	        iteratees = iteratees == null ? [] : [iteratees];
+	      }
+	      orders = guard ? undefined : orders;
+	      if (!isArray(orders)) {
+	        orders = orders == null ? [] : [orders];
+	      }
+	      return baseOrderBy(collection, iteratees, orders);
+	    }
+
+	    /**
+	     * Creates an array of elements split into two groups, the first of which
+	     * contains elements `predicate` returns truthy for, the second of which
+	     * contains elements `predicate` returns falsey for. The predicate is
+	     * invoked with one argument: (value).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+	     * @returns {Array} Returns the array of grouped elements.
+	     * @example
+	     *
+	     * var users = [
+	     *   { 'user': 'barney',  'age': 36, 'active': false },
+	     *   { 'user': 'fred',    'age': 40, 'active': true },
+	     *   { 'user': 'pebbles', 'age': 1,  'active': false }
+	     * ];
+	     *
+	     * _.partition(users, function(o) { return o.active; });
+	     * // => objects for [['fred'], ['barney', 'pebbles']]
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.partition(users, { 'age': 1, 'active': false });
+	     * // => objects for [['pebbles'], ['barney', 'fred']]
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.partition(users, ['active', false]);
+	     * // => objects for [['barney', 'pebbles'], ['fred']]
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.partition(users, 'active');
+	     * // => objects for [['fred'], ['barney', 'pebbles']]
+	     */
+	    var partition = createAggregator(function(result, value, key) {
+	      result[key ? 0 : 1].push(value);
+	    }, function() { return [[], []]; });
+=======
 	     * var flipped = _.flip(function() {
 	     *   return _.toArray(arguments);
 	     * });
@@ -11648,11 +12418,89 @@ webpackJsonp([2],{
 	      memoized.cache = new (memoize.Cache || MapCache);
 	      return memoized;
 	    }
+>>>>>>> CCN Directives (#200)
 
 	    // Expose `MapCache`.
 	    memoize.Cache = MapCache;
 
 	    /**
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * Reduces `collection` to a value which is the accumulated result of running
+	     * each element in `collection` thru `iteratee`, where each successive
+	     * invocation is supplied the return value of the previous. If `accumulator`
+	     * is not given, the first element of `collection` is used as the initial
+	     * value. The iteratee is invoked with four arguments:
+	     * (accumulator, value, index|key, collection).
+	     *
+	     * Many lodash methods are guarded to work as iteratees for methods like
+	     * `_.reduce`, `_.reduceRight`, and `_.transform`.
+	     *
+	     * The guarded methods are:
+	     * `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `orderBy`,
+	     * and `sortBy`
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @param {*} [accumulator] The initial value.
+	     * @returns {*} Returns the accumulated value.
+	     * @see _.reduceRight
+	     * @example
+	     *
+	     * _.reduce([1, 2], function(sum, n) {
+	     *   return sum + n;
+	     * }, 0);
+	     * // => 3
+	     *
+	     * _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+	     *   (result[value] || (result[value] = [])).push(key);
+	     *   return result;
+	     * }, {});
+	     * // => { '1': ['a', 'c'], '2': ['b'] } (iteration order is not guaranteed)
+	     */
+	    function reduce(collection, iteratee, accumulator) {
+	      var func = isArray(collection) ? arrayReduce : baseReduce,
+	          initAccum = arguments.length < 3;
+
+	      return func(collection, getIteratee(iteratee, 4), accumulator, initAccum, baseEach);
+	    }
+
+	    /**
+	     * This method is like `_.reduce` except that it iterates over elements of
+	     * `collection` from right to left.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @param {*} [accumulator] The initial value.
+	     * @returns {*} Returns the accumulated value.
+	     * @see _.reduce
+	     * @example
+	     *
+	     * var array = [[0, 1], [2, 3], [4, 5]];
+	     *
+	     * _.reduceRight(array, function(flattened, other) {
+	     *   return flattened.concat(other);
+	     * }, []);
+	     * // => [4, 5, 2, 3, 0, 1]
+	     */
+	    function reduceRight(collection, iteratee, accumulator) {
+	      var func = isArray(collection) ? arrayReduceRight : baseReduce,
+	          initAccum = arguments.length < 3;
+
+	      return func(collection, getIteratee(iteratee, 4), accumulator, initAccum, baseEachRight);
+	    }
+
+	    /**
+	     * The opposite of `_.filter`; this method returns the elements of `collection`
+	     * that `predicate` does **not** return truthy for.
+=======
 	     * Creates a function that negates the result of the predicate `func`. The
 	     * `func` predicate is invoked with the `this` binding and arguments of the
 	     * created function.
@@ -11692,10 +12540,47 @@ webpackJsonp([2],{
 	     * Creates a function that is restricted to invoking `func` once. Repeat calls
 	     * to the function return the value of the first invocation. The `func` is
 	     * invoked with the `this` binding and arguments of the created function.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 0.1.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+	     * @returns {Array} Returns the new filtered array.
+	     * @see _.filter
+	     * @example
+	     *
+	     * var users = [
+	     *   { 'user': 'barney', 'age': 36, 'active': false },
+	     *   { 'user': 'fred',   'age': 40, 'active': true }
+	     * ];
+	     *
+	     * _.reject(users, function(o) { return !o.active; });
+	     * // => objects for ['fred']
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.reject(users, { 'age': 40, 'active': true });
+	     * // => objects for ['barney']
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.reject(users, ['active', false]);
+	     * // => objects for ['fred']
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.reject(users, 'active');
+	     * // => objects for ['barney']
+	     */
+	    function reject(collection, predicate) {
+	      var func = isArray(collection) ? arrayFilter : baseFilter;
+	      return func(collection, negate(getIteratee(predicate, 3)));
+	    }
+
+	    /**
+	     * Gets a random element from `collection`.
+=======
 	     * @category Function
 	     * @param {Function} func The function to restrict.
 	     * @returns {Function} Returns the new restricted function.
@@ -11712,10 +12597,324 @@ webpackJsonp([2],{
 
 	    /**
 	     * Creates a function that invokes `func` with its arguments transformed.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @since 4.0.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 2.0.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to sample.
+	     * @returns {*} Returns the random element.
+	     * @example
+	     *
+	     * _.sample([1, 2, 3, 4]);
+	     * // => 2
+	     */
+	    function sample(collection) {
+	      var func = isArray(collection) ? arraySample : baseSample;
+	      return func(collection);
+	    }
+
+	    /**
+	     * Gets `n` random elements at unique keys from `collection` up to the
+	     * size of `collection`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to sample.
+	     * @param {number} [n=1] The number of elements to sample.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {Array} Returns the random elements.
+	     * @example
+	     *
+	     * _.sampleSize([1, 2, 3], 2);
+	     * // => [3, 1]
+	     *
+	     * _.sampleSize([1, 2, 3], 4);
+	     * // => [2, 3, 1]
+	     */
+	    function sampleSize(collection, n, guard) {
+	      if ((guard ? isIterateeCall(collection, n, guard) : n === undefined)) {
+	        n = 1;
+	      } else {
+	        n = toInteger(n);
+	      }
+	      var func = isArray(collection) ? arraySampleSize : baseSampleSize;
+	      return func(collection, n);
+	    }
+
+	    /**
+	     * Creates an array of shuffled values, using a version of the
+	     * [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher-Yates_shuffle).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to shuffle.
+	     * @returns {Array} Returns the new shuffled array.
+	     * @example
+	     *
+	     * _.shuffle([1, 2, 3, 4]);
+	     * // => [4, 1, 3, 2]
+	     */
+	    function shuffle(collection) {
+	      var func = isArray(collection) ? arrayShuffle : baseShuffle;
+	      return func(collection);
+	    }
+
+	    /**
+	     * Gets the size of `collection` by returning its length for array-like
+	     * values or the number of own enumerable string keyed properties for objects.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object|string} collection The collection to inspect.
+	     * @returns {number} Returns the collection size.
+	     * @example
+	     *
+	     * _.size([1, 2, 3]);
+	     * // => 3
+	     *
+	     * _.size({ 'a': 1, 'b': 2 });
+	     * // => 2
+	     *
+	     * _.size('pebbles');
+	     * // => 7
+	     */
+	    function size(collection) {
+	      if (collection == null) {
+	        return 0;
+	      }
+	      if (isArrayLike(collection)) {
+	        return isString(collection) ? stringSize(collection) : collection.length;
+	      }
+	      var tag = getTag(collection);
+	      if (tag == mapTag || tag == setTag) {
+	        return collection.size;
+	      }
+	      return baseKeys(collection).length;
+	    }
+
+	    /**
+	     * Checks if `predicate` returns truthy for **any** element of `collection`.
+	     * Iteration is stopped once `predicate` returns truthy. The predicate is
+	     * invoked with three arguments: (value, index|key, collection).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {boolean} Returns `true` if any element passes the predicate check,
+	     *  else `false`.
+	     * @example
+	     *
+	     * _.some([null, 0, 'yes', false], Boolean);
+	     * // => true
+	     *
+	     * var users = [
+	     *   { 'user': 'barney', 'active': true },
+	     *   { 'user': 'fred',   'active': false }
+	     * ];
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.some(users, { 'user': 'barney', 'active': false });
+	     * // => false
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.some(users, ['active', false]);
+	     * // => true
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.some(users, 'active');
+	     * // => true
+	     */
+	    function some(collection, predicate, guard) {
+	      var func = isArray(collection) ? arraySome : baseSome;
+	      if (guard && isIterateeCall(collection, predicate, guard)) {
+	        predicate = undefined;
+	      }
+	      return func(collection, getIteratee(predicate, 3));
+	    }
+
+	    /**
+	     * Creates an array of elements, sorted in ascending order by the results of
+	     * running each element in a collection thru each iteratee. This method
+	     * performs a stable sort, that is, it preserves the original sort order of
+	     * equal elements. The iteratees are invoked with one argument: (value).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Collection
+	     * @param {Array|Object} collection The collection to iterate over.
+	     * @param {...(Function|Function[])} [iteratees=[_.identity]]
+	     *  The iteratees to sort by.
+	     * @returns {Array} Returns the new sorted array.
+	     * @example
+	     *
+	     * var users = [
+	     *   { 'user': 'fred',   'age': 48 },
+	     *   { 'user': 'barney', 'age': 36 },
+	     *   { 'user': 'fred',   'age': 40 },
+	     *   { 'user': 'barney', 'age': 34 }
+	     * ];
+	     *
+	     * _.sortBy(users, [function(o) { return o.user; }]);
+	     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+	     *
+	     * _.sortBy(users, ['user', 'age']);
+	     * // => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
+	     */
+	    var sortBy = baseRest(function(collection, iteratees) {
+	      if (collection == null) {
+	        return [];
+	      }
+	      var length = iteratees.length;
+	      if (length > 1 && isIterateeCall(collection, iteratees[0], iteratees[1])) {
+	        iteratees = [];
+	      } else if (length > 2 && isIterateeCall(iteratees[0], iteratees[1], iteratees[2])) {
+	        iteratees = [iteratees[0]];
+	      }
+	      return baseOrderBy(collection, baseFlatten(iteratees, 1), []);
+	    });
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+	     * Gets the timestamp of the number of milliseconds that have elapsed since
+	     * the Unix epoch (1 January 1970 00:00:00 UTC).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.4.0
+	     * @category Date
+	     * @returns {number} Returns the timestamp.
+	     * @example
+	     *
+	     * _.defer(function(stamp) {
+	     *   console.log(_.now() - stamp);
+	     * }, _.now());
+	     * // => Logs the number of milliseconds it took for the deferred invocation.
+	     */
+	    var now = ctxNow || function() {
+	      return root.Date.now();
+	    };
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+	     * The opposite of `_.before`; this method creates a function that invokes
+	     * `func` once it's called `n` or more times.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Function
+	     * @param {number} n The number of calls before `func` is invoked.
+	     * @param {Function} func The function to restrict.
+	     * @returns {Function} Returns the new restricted function.
+	     * @example
+	     *
+	     * var saves = ['profile', 'settings'];
+	     *
+	     * var done = _.after(saves.length, function() {
+	     *   console.log('done saving!');
+	     * });
+	     *
+	     * _.forEach(saves, function(type) {
+	     *   asyncSave({ 'type': type, 'complete': done });
+	     * });
+	     * // => Logs 'done saving!' after the two async saves have completed.
+	     */
+	    function after(n, func) {
+	      if (typeof func != 'function') {
+	        throw new TypeError(FUNC_ERROR_TEXT);
+	      }
+	      n = toInteger(n);
+	      return function() {
+	        if (--n < 1) {
+	          return func.apply(this, arguments);
+	        }
+	      };
+	    }
+
+	    /**
+	     * Creates a function that invokes `func`, with up to `n` arguments,
+	     * ignoring any additional arguments.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Function
+	     * @param {Function} func The function to cap arguments for.
+	     * @param {number} [n=func.length] The arity cap.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {Function} Returns the new capped function.
+	     * @example
+	     *
+	     * _.map(['6', '8', '10'], _.ary(parseInt, 1));
+	     * // => [6, 8, 10]
+	     */
+	    function ary(func, n, guard) {
+	      n = guard ? undefined : n;
+	      n = (func && n == null) ? func.length : n;
+	      return createWrap(func, ARY_FLAG, undefined, undefined, undefined, undefined, n);
+	    }
+
+	    /**
+	     * Creates a function that invokes `func`, with the `this` binding and arguments
+	     * of the created function, while it's called less than `n` times. Subsequent
+	     * calls to the created function return the result of the last `func` invocation.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Function
+	     * @param {number} n The number of calls at which `func` is no longer invoked.
+	     * @param {Function} func The function to restrict.
+	     * @returns {Function} Returns the new restricted function.
+	     * @example
+	     *
+	     * jQuery(element).on('click', _.before(5, addContactToList));
+	     * // => Allows adding up to 4 contacts to the list.
+	     */
+	    function before(n, func) {
+	      var result;
+	      if (typeof func != 'function') {
+	        throw new TypeError(FUNC_ERROR_TEXT);
+	      }
+	      n = toInteger(n);
+	      return function() {
+	        if (--n > 0) {
+	          result = func.apply(this, arguments);
+	        }
+	        if (n <= 1) {
+	          func = undefined;
+	        }
+	        return result;
+	      };
+	    }
+
+	    /**
+	     * Creates a function that invokes `func` with the `this` binding of `thisArg`
+	     * and `partials` prepended to the arguments it receives.
+	     *
+	     * The `_.bind.placeholder` value, which defaults to `_` in monolithic builds,
+	     * may be used as a placeholder for partially applied arguments.
+	     *
+	     * **Note:** Unlike native `Function#bind`, this method doesn't set the "length"
+	     * property of bound functions.
+=======
 	     * @category Function
 	     * @param {Function} func The function to wrap.
 	     * @param {...(Function|Function[])} [transforms=[_.identity]]
@@ -12103,10 +13302,370 @@ webpackJsonp([2],{
 	     * arrays. The own enumerable properties of `arguments` objects are cloned
 	     * as plain objects. An empty object is returned for uncloneable values such
 	     * as error objects, functions, DOM nodes, and WeakMaps.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 0.1.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Function
+	     * @param {Function} func The function to bind.
+	     * @param {*} thisArg The `this` binding of `func`.
+	     * @param {...*} [partials] The arguments to be partially applied.
+	     * @returns {Function} Returns the new bound function.
+	     * @example
+	     *
+	     * function greet(greeting, punctuation) {
+	     *   return greeting + ' ' + this.user + punctuation;
+	     * }
+	     *
+	     * var object = { 'user': 'fred' };
+	     *
+	     * var bound = _.bind(greet, object, 'hi');
+	     * bound('!');
+	     * // => 'hi fred!'
+	     *
+	     * // Bound with placeholders.
+	     * var bound = _.bind(greet, object, _, '!');
+	     * bound('hi');
+	     * // => 'hi fred!'
+	     */
+	    var bind = baseRest(function(func, thisArg, partials) {
+	      var bitmask = BIND_FLAG;
+	      if (partials.length) {
+	        var holders = replaceHolders(partials, getHolder(bind));
+	        bitmask |= PARTIAL_FLAG;
+	      }
+	      return createWrap(func, bitmask, thisArg, partials, holders);
+	    });
+
+	    /**
+	     * Creates a function that invokes the method at `object[key]` with `partials`
+	     * prepended to the arguments it receives.
+	     *
+	     * This method differs from `_.bind` by allowing bound functions to reference
+	     * methods that may be redefined or don't yet exist. See
+	     * [Peter Michaux's article](http://peter.michaux.ca/articles/lazy-function-definition-pattern)
+	     * for more details.
+	     *
+	     * The `_.bindKey.placeholder` value, which defaults to `_` in monolithic
+	     * builds, may be used as a placeholder for partially applied arguments.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.10.0
+	     * @category Function
+	     * @param {Object} object The object to invoke the method on.
+	     * @param {string} key The key of the method.
+	     * @param {...*} [partials] The arguments to be partially applied.
+	     * @returns {Function} Returns the new bound function.
+	     * @example
+	     *
+	     * var object = {
+	     *   'user': 'fred',
+	     *   'greet': function(greeting, punctuation) {
+	     *     return greeting + ' ' + this.user + punctuation;
+	     *   }
+	     * };
+	     *
+	     * var bound = _.bindKey(object, 'greet', 'hi');
+	     * bound('!');
+	     * // => 'hi fred!'
+	     *
+	     * object.greet = function(greeting, punctuation) {
+	     *   return greeting + 'ya ' + this.user + punctuation;
+	     * };
+	     *
+	     * bound('!');
+	     * // => 'hiya fred!'
+	     *
+	     * // Bound with placeholders.
+	     * var bound = _.bindKey(object, 'greet', _, '!');
+	     * bound('hi');
+	     * // => 'hiya fred!'
+	     */
+	    var bindKey = baseRest(function(object, key, partials) {
+	      var bitmask = BIND_FLAG | BIND_KEY_FLAG;
+	      if (partials.length) {
+	        var holders = replaceHolders(partials, getHolder(bindKey));
+	        bitmask |= PARTIAL_FLAG;
+	      }
+	      return createWrap(key, bitmask, object, partials, holders);
+	    });
+
+	    /**
+	     * Creates a function that accepts arguments of `func` and either invokes
+	     * `func` returning its result, if at least `arity` number of arguments have
+	     * been provided, or returns a function that accepts the remaining `func`
+	     * arguments, and so on. The arity of `func` may be specified if `func.length`
+	     * is not sufficient.
+	     *
+	     * The `_.curry.placeholder` value, which defaults to `_` in monolithic builds,
+	     * may be used as a placeholder for provided arguments.
+	     *
+	     * **Note:** This method doesn't set the "length" property of curried functions.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.0.0
+	     * @category Function
+	     * @param {Function} func The function to curry.
+	     * @param {number} [arity=func.length] The arity of `func`.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {Function} Returns the new curried function.
+	     * @example
+	     *
+	     * var abc = function(a, b, c) {
+	     *   return [a, b, c];
+	     * };
+	     *
+	     * var curried = _.curry(abc);
+	     *
+	     * curried(1)(2)(3);
+	     * // => [1, 2, 3]
+	     *
+	     * curried(1, 2)(3);
+	     * // => [1, 2, 3]
+	     *
+	     * curried(1, 2, 3);
+	     * // => [1, 2, 3]
+	     *
+	     * // Curried with placeholders.
+	     * curried(1)(_, 3)(2);
+	     * // => [1, 2, 3]
+	     */
+	    function curry(func, arity, guard) {
+	      arity = guard ? undefined : arity;
+	      var result = createWrap(func, CURRY_FLAG, undefined, undefined, undefined, undefined, undefined, arity);
+	      result.placeholder = curry.placeholder;
+	      return result;
+	    }
+
+	    /**
+	     * This method is like `_.curry` except that arguments are applied to `func`
+	     * in the manner of `_.partialRight` instead of `_.partial`.
+	     *
+	     * The `_.curryRight.placeholder` value, which defaults to `_` in monolithic
+	     * builds, may be used as a placeholder for provided arguments.
+	     *
+	     * **Note:** This method doesn't set the "length" property of curried functions.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Function
+	     * @param {Function} func The function to curry.
+	     * @param {number} [arity=func.length] The arity of `func`.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {Function} Returns the new curried function.
+	     * @example
+	     *
+	     * var abc = function(a, b, c) {
+	     *   return [a, b, c];
+	     * };
+	     *
+	     * var curried = _.curryRight(abc);
+	     *
+	     * curried(3)(2)(1);
+	     * // => [1, 2, 3]
+	     *
+	     * curried(2, 3)(1);
+	     * // => [1, 2, 3]
+	     *
+	     * curried(1, 2, 3);
+	     * // => [1, 2, 3]
+	     *
+	     * // Curried with placeholders.
+	     * curried(3)(1, _)(2);
+	     * // => [1, 2, 3]
+	     */
+	    function curryRight(func, arity, guard) {
+	      arity = guard ? undefined : arity;
+	      var result = createWrap(func, CURRY_RIGHT_FLAG, undefined, undefined, undefined, undefined, undefined, arity);
+	      result.placeholder = curryRight.placeholder;
+	      return result;
+	    }
+
+	    /**
+	     * Creates a debounced function that delays invoking `func` until after `wait`
+	     * milliseconds have elapsed since the last time the debounced function was
+	     * invoked. The debounced function comes with a `cancel` method to cancel
+	     * delayed `func` invocations and a `flush` method to immediately invoke them.
+	     * Provide `options` to indicate whether `func` should be invoked on the
+	     * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
+	     * with the last arguments provided to the debounced function. Subsequent
+	     * calls to the debounced function return the result of the last `func`
+	     * invocation.
+	     *
+	     * **Note:** If `leading` and `trailing` options are `true`, `func` is
+	     * invoked on the trailing edge of the timeout only if the debounced function
+	     * is invoked more than once during the `wait` timeout.
+	     *
+	     * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+	     * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+	     *
+	     * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+	     * for details over the differences between `_.debounce` and `_.throttle`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Function
+	     * @param {Function} func The function to debounce.
+	     * @param {number} [wait=0] The number of milliseconds to delay.
+	     * @param {Object} [options={}] The options object.
+	     * @param {boolean} [options.leading=false]
+	     *  Specify invoking on the leading edge of the timeout.
+	     * @param {number} [options.maxWait]
+	     *  The maximum time `func` is allowed to be delayed before it's invoked.
+	     * @param {boolean} [options.trailing=true]
+	     *  Specify invoking on the trailing edge of the timeout.
+	     * @returns {Function} Returns the new debounced function.
+	     * @example
+	     *
+	     * // Avoid costly calculations while the window size is in flux.
+	     * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
+	     *
+	     * // Invoke `sendMail` when clicked, debouncing subsequent calls.
+	     * jQuery(element).on('click', _.debounce(sendMail, 300, {
+	     *   'leading': true,
+	     *   'trailing': false
+	     * }));
+	     *
+	     * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
+	     * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
+	     * var source = new EventSource('/stream');
+	     * jQuery(source).on('message', debounced);
+	     *
+	     * // Cancel the trailing debounced invocation.
+	     * jQuery(window).on('popstate', debounced.cancel);
+	     */
+	    function debounce(func, wait, options) {
+	      var lastArgs,
+	          lastThis,
+	          maxWait,
+	          result,
+	          timerId,
+	          lastCallTime,
+	          lastInvokeTime = 0,
+	          leading = false,
+	          maxing = false,
+	          trailing = true;
+
+	      if (typeof func != 'function') {
+	        throw new TypeError(FUNC_ERROR_TEXT);
+	      }
+	      wait = toNumber(wait) || 0;
+	      if (isObject(options)) {
+	        leading = !!options.leading;
+	        maxing = 'maxWait' in options;
+	        maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+	        trailing = 'trailing' in options ? !!options.trailing : trailing;
+	      }
+
+	      function invokeFunc(time) {
+	        var args = lastArgs,
+	            thisArg = lastThis;
+
+	        lastArgs = lastThis = undefined;
+	        lastInvokeTime = time;
+	        result = func.apply(thisArg, args);
+	        return result;
+	      }
+
+	      function leadingEdge(time) {
+	        // Reset any `maxWait` timer.
+	        lastInvokeTime = time;
+	        // Start the timer for the trailing edge.
+	        timerId = setTimeout(timerExpired, wait);
+	        // Invoke the leading edge.
+	        return leading ? invokeFunc(time) : result;
+	      }
+
+	      function remainingWait(time) {
+	        var timeSinceLastCall = time - lastCallTime,
+	            timeSinceLastInvoke = time - lastInvokeTime,
+	            result = wait - timeSinceLastCall;
+
+	        return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;
+	      }
+
+	      function shouldInvoke(time) {
+	        var timeSinceLastCall = time - lastCallTime,
+	            timeSinceLastInvoke = time - lastInvokeTime;
+
+	        // Either this is the first call, activity has stopped and we're at the
+	        // trailing edge, the system time has gone backwards and we're treating
+	        // it as the trailing edge, or we've hit the `maxWait` limit.
+	        return (lastCallTime === undefined || (timeSinceLastCall >= wait) ||
+	          (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
+	      }
+
+	      function timerExpired() {
+	        var time = now();
+	        if (shouldInvoke(time)) {
+	          return trailingEdge(time);
+	        }
+	        // Restart the timer.
+	        timerId = setTimeout(timerExpired, remainingWait(time));
+	      }
+
+	      function trailingEdge(time) {
+	        timerId = undefined;
+
+	        // Only invoke if we have `lastArgs` which means `func` has been
+	        // debounced at least once.
+	        if (trailing && lastArgs) {
+	          return invokeFunc(time);
+	        }
+	        lastArgs = lastThis = undefined;
+	        return result;
+	      }
+
+	      function cancel() {
+	        if (timerId !== undefined) {
+	          clearTimeout(timerId);
+	        }
+	        lastInvokeTime = 0;
+	        lastArgs = lastCallTime = lastThis = timerId = undefined;
+	      }
+
+	      function flush() {
+	        return timerId === undefined ? result : trailingEdge(now());
+	      }
+
+	      function debounced() {
+	        var time = now(),
+	            isInvoking = shouldInvoke(time);
+
+	        lastArgs = arguments;
+	        lastThis = this;
+	        lastCallTime = time;
+
+	        if (isInvoking) {
+	          if (timerId === undefined) {
+	            return leadingEdge(lastCallTime);
+	          }
+	          if (maxing) {
+	            // Handle invocations in a tight loop.
+	            timerId = setTimeout(timerExpired, wait);
+	            return invokeFunc(lastCallTime);
+	          }
+	        }
+	        if (timerId === undefined) {
+	          timerId = setTimeout(timerExpired, wait);
+	        }
+	        return result;
+	      }
+	      debounced.cancel = cancel;
+	      debounced.flush = flush;
+	      return debounced;
+	    }
+
+	    /**
+	     * Defers invoking the `func` until the current call stack has cleared. Any
+	     * additional arguments are provided to `func` when it's invoked.
+=======
 	     * @category Lang
 	     * @param {*} value The value to clone.
 	     * @returns {*} Returns the cloned value.
@@ -12330,10 +13889,31 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `value` is likely an `arguments` object.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 0.1.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Function
+	     * @param {Function} func The function to defer.
+	     * @param {...*} [args] The arguments to invoke `func` with.
+	     * @returns {number} Returns the timer id.
+	     * @example
+	     *
+	     * _.defer(function(text) {
+	     *   console.log(text);
+	     * }, 'deferred');
+	     * // => Logs 'deferred' after one millisecond.
+	     */
+	    var defer = baseRest(function(func, args) {
+	      return baseDelay(func, 1, args);
+	    });
+
+	    /**
+	     * Invokes `func` after `wait` milliseconds. Any additional arguments are
+	     * provided to `func` when it's invoked.
+=======
 	     * @category Lang
 	     * @param {*} value The value to check.
 	     * @returns {boolean} Returns `true` if `value` is an `arguments` object,
@@ -12353,10 +13933,158 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `value` is classified as an `Array` object.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 0.1.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Function
+	     * @param {Function} func The function to delay.
+	     * @param {number} wait The number of milliseconds to delay invocation.
+	     * @param {...*} [args] The arguments to invoke `func` with.
+	     * @returns {number} Returns the timer id.
+	     * @example
+	     *
+	     * _.delay(function(text) {
+	     *   console.log(text);
+	     * }, 1000, 'later');
+	     * // => Logs 'later' after one second.
+	     */
+	    var delay = baseRest(function(func, wait, args) {
+	      return baseDelay(func, toNumber(wait) || 0, args);
+	    });
+
+	    /**
+	     * Creates a function that invokes `func` with arguments reversed.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Function
+	     * @param {Function} func The function to flip arguments for.
+	     * @returns {Function} Returns the new flipped function.
+	     * @example
+	     *
+	     * var flipped = _.flip(function() {
+	     *   return _.toArray(arguments);
+	     * });
+	     *
+	     * flipped('a', 'b', 'c', 'd');
+	     * // => ['d', 'c', 'b', 'a']
+	     */
+	    function flip(func) {
+	      return createWrap(func, FLIP_FLAG);
+	    }
+
+	    /**
+	     * Creates a function that memoizes the result of `func`. If `resolver` is
+	     * provided, it determines the cache key for storing the result based on the
+	     * arguments provided to the memoized function. By default, the first argument
+	     * provided to the memoized function is used as the map cache key. The `func`
+	     * is invoked with the `this` binding of the memoized function.
+	     *
+	     * **Note:** The cache is exposed as the `cache` property on the memoized
+	     * function. Its creation may be customized by replacing the `_.memoize.Cache`
+	     * constructor with one whose instances implement the
+	     * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+	     * method interface of `delete`, `get`, `has`, and `set`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Function
+	     * @param {Function} func The function to have its output memoized.
+	     * @param {Function} [resolver] The function to resolve the cache key.
+	     * @returns {Function} Returns the new memoized function.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': 2 };
+	     * var other = { 'c': 3, 'd': 4 };
+	     *
+	     * var values = _.memoize(_.values);
+	     * values(object);
+	     * // => [1, 2]
+	     *
+	     * values(other);
+	     * // => [3, 4]
+	     *
+	     * object.a = 2;
+	     * values(object);
+	     * // => [1, 2]
+	     *
+	     * // Modify the result cache.
+	     * values.cache.set(object, ['a', 'b']);
+	     * values(object);
+	     * // => ['a', 'b']
+	     *
+	     * // Replace `_.memoize.Cache`.
+	     * _.memoize.Cache = WeakMap;
+	     */
+	    function memoize(func, resolver) {
+	      if (typeof func != 'function' || (resolver && typeof resolver != 'function')) {
+	        throw new TypeError(FUNC_ERROR_TEXT);
+	      }
+	      var memoized = function() {
+	        var args = arguments,
+	            key = resolver ? resolver.apply(this, args) : args[0],
+	            cache = memoized.cache;
+
+	        if (cache.has(key)) {
+	          return cache.get(key);
+	        }
+	        var result = func.apply(this, args);
+	        memoized.cache = cache.set(key, result) || cache;
+	        return result;
+	      };
+	      memoized.cache = new (memoize.Cache || MapCache);
+	      return memoized;
+	    }
+
+	    // Expose `MapCache`.
+	    memoize.Cache = MapCache;
+
+	    /**
+	     * Creates a function that negates the result of the predicate `func`. The
+	     * `func` predicate is invoked with the `this` binding and arguments of the
+	     * created function.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Function
+	     * @param {Function} predicate The predicate to negate.
+	     * @returns {Function} Returns the new negated function.
+	     * @example
+	     *
+	     * function isEven(n) {
+	     *   return n % 2 == 0;
+	     * }
+	     *
+	     * _.filter([1, 2, 3, 4, 5, 6], _.negate(isEven));
+	     * // => [1, 3, 5]
+	     */
+	    function negate(predicate) {
+	      if (typeof predicate != 'function') {
+	        throw new TypeError(FUNC_ERROR_TEXT);
+	      }
+	      return function() {
+	        var args = arguments;
+	        switch (args.length) {
+	          case 0: return !predicate.call(this);
+	          case 1: return !predicate.call(this, args[0]);
+	          case 2: return !predicate.call(this, args[0], args[1]);
+	          case 3: return !predicate.call(this, args[0], args[1], args[2]);
+	        }
+	        return !predicate.apply(this, args);
+	      };
+	    }
+
+	    /**
+	     * Creates a function that is restricted to invoking `func` once. Repeat calls
+	     * to the function return the value of the first invocation. The `func` is
+	     * invoked with the `this` binding and arguments of the created function.
+=======
 	     * @category Lang
 	     * @param {*} value The value to check.
 	     * @returns {boolean} Returns `true` if `value` is an array, else `false`.
@@ -12496,10 +14224,29 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `value` is classified as a `Date` object.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 0.1.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Function
+	     * @param {Function} func The function to restrict.
+	     * @returns {Function} Returns the new restricted function.
+	     * @example
+	     *
+	     * var initialize = _.once(createApplication);
+	     * initialize();
+	     * initialize();
+	     * // => `createApplication` is invoked once
+	     */
+	    function once(func) {
+	      return before(2, func);
+	    }
+
+	    /**
+	     * Creates a function that invokes `func` with its arguments transformed.
+=======
 	     * @category Lang
 	     * @param {*} value The value to check.
 	     * @returns {boolean} Returns `true` if `value` is a date object, else `false`.
@@ -12515,9 +14262,99 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `value` is likely a DOM element.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 4.0.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Function
+	     * @param {Function} func The function to wrap.
+	     * @param {...(Function|Function[])} [transforms=[_.identity]]
+	     *  The argument transforms.
+	     * @returns {Function} Returns the new function.
+	     * @example
+	     *
+	     * function doubled(n) {
+	     *   return n * 2;
+	     * }
+	     *
+	     * function square(n) {
+	     *   return n * n;
+	     * }
+	     *
+	     * var func = _.overArgs(function(x, y) {
+	     *   return [x, y];
+	     * }, [square, doubled]);
+	     *
+	     * func(9, 3);
+	     * // => [81, 6]
+	     *
+	     * func(10, 5);
+	     * // => [100, 10]
+	     */
+	    var overArgs = castRest(function(func, transforms) {
+	      transforms = (transforms.length == 1 && isArray(transforms[0]))
+	        ? arrayMap(transforms[0], baseUnary(getIteratee()))
+	        : arrayMap(baseFlatten(transforms, 1), baseUnary(getIteratee()));
+
+	      var funcsLength = transforms.length;
+	      return baseRest(function(args) {
+	        var index = -1,
+	            length = nativeMin(args.length, funcsLength);
+
+	        while (++index < length) {
+	          args[index] = transforms[index].call(this, args[index]);
+	        }
+	        return apply(func, this, args);
+	      });
+	    });
+
+	    /**
+	     * Creates a function that invokes `func` with `partials` prepended to the
+	     * arguments it receives. This method is like `_.bind` except it does **not**
+	     * alter the `this` binding.
+	     *
+	     * The `_.partial.placeholder` value, which defaults to `_` in monolithic
+	     * builds, may be used as a placeholder for partially applied arguments.
+	     *
+	     * **Note:** This method doesn't set the "length" property of partially
+	     * applied functions.
 	     *
 	     * @static
 	     * @memberOf _
+	     * @since 0.2.0
+	     * @category Function
+	     * @param {Function} func The function to partially apply arguments to.
+	     * @param {...*} [partials] The arguments to be partially applied.
+	     * @returns {Function} Returns the new partially applied function.
+	     * @example
+	     *
+	     * function greet(greeting, name) {
+	     *   return greeting + ' ' + name;
+	     * }
+	     *
+	     * var sayHelloTo = _.partial(greet, 'hello');
+	     * sayHelloTo('fred');
+	     * // => 'hello fred'
+	     *
+	     * // Partially applied with placeholders.
+	     * var greetFred = _.partial(greet, _, 'fred');
+	     * greetFred('hi');
+	     * // => 'hi fred'
+	     */
+	    var partial = baseRest(function(func, partials) {
+	      var holders = replaceHolders(partials, getHolder(partial));
+	      return createWrap(func, PARTIAL_FLAG, undefined, partials, holders);
+	    });
+
+	    /**
+	     * This method is like `_.partial` except that partially applied arguments
+	     * are appended to the arguments it receives.
+	     *
+	     * The `_.partialRight.placeholder` value, which defaults to `_` in monolithic
+	     * builds, may be used as a placeholder for partially applied arguments.
+=======
 	     * @since 0.1.0
 	     * @category Lang
 	     * @param {*} value The value to check.
@@ -12597,9 +14434,168 @@ webpackJsonp([2],{
 	     * sets, strings, symbols, and typed arrays. `Object` objects are compared
 	     * by their own, not inherited, enumerable properties. Functions and DOM
 	     * nodes are **not** supported.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * **Note:** This method doesn't set the "length" property of partially
+	     * applied functions.
 	     *
 	     * @static
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 1.0.0
+	     * @category Function
+	     * @param {Function} func The function to partially apply arguments to.
+	     * @param {...*} [partials] The arguments to be partially applied.
+	     * @returns {Function} Returns the new partially applied function.
+	     * @example
+	     *
+	     * function greet(greeting, name) {
+	     *   return greeting + ' ' + name;
+	     * }
+	     *
+	     * var greetFred = _.partialRight(greet, 'fred');
+	     * greetFred('hi');
+	     * // => 'hi fred'
+	     *
+	     * // Partially applied with placeholders.
+	     * var sayHelloTo = _.partialRight(greet, 'hello', _);
+	     * sayHelloTo('fred');
+	     * // => 'hello fred'
+	     */
+	    var partialRight = baseRest(function(func, partials) {
+	      var holders = replaceHolders(partials, getHolder(partialRight));
+	      return createWrap(func, PARTIAL_RIGHT_FLAG, undefined, partials, holders);
+	    });
+
+	    /**
+	     * Creates a function that invokes `func` with arguments arranged according
+	     * to the specified `indexes` where the argument value at the first index is
+	     * provided as the first argument, the argument value at the second index is
+	     * provided as the second argument, and so on.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Function
+	     * @param {Function} func The function to rearrange arguments for.
+	     * @param {...(number|number[])} indexes The arranged argument indexes.
+	     * @returns {Function} Returns the new function.
+	     * @example
+	     *
+	     * var rearged = _.rearg(function(a, b, c) {
+	     *   return [a, b, c];
+	     * }, [2, 0, 1]);
+	     *
+	     * rearged('b', 'c', 'a')
+	     * // => ['a', 'b', 'c']
+	     */
+	    var rearg = flatRest(function(func, indexes) {
+	      return createWrap(func, REARG_FLAG, undefined, undefined, undefined, indexes);
+	    });
+
+	    /**
+	     * Creates a function that invokes `func` with the `this` binding of the
+	     * created function and arguments from `start` and beyond provided as
+	     * an array.
+	     *
+	     * **Note:** This method is based on the
+	     * [rest parameter](https://mdn.io/rest_parameters).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Function
+	     * @param {Function} func The function to apply a rest parameter to.
+	     * @param {number} [start=func.length-1] The start position of the rest parameter.
+	     * @returns {Function} Returns the new function.
+	     * @example
+	     *
+	     * var say = _.rest(function(what, names) {
+	     *   return what + ' ' + _.initial(names).join(', ') +
+	     *     (_.size(names) > 1 ? ', & ' : '') + _.last(names);
+	     * });
+	     *
+	     * say('hello', 'fred', 'barney', 'pebbles');
+	     * // => 'hello fred, barney, & pebbles'
+	     */
+	    function rest(func, start) {
+	      if (typeof func != 'function') {
+	        throw new TypeError(FUNC_ERROR_TEXT);
+	      }
+	      start = start === undefined ? start : toInteger(start);
+	      return baseRest(func, start);
+	    }
+
+	    /**
+	     * Creates a function that invokes `func` with the `this` binding of the
+	     * create function and an array of arguments much like
+	     * [`Function#apply`](http://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
+	     *
+	     * **Note:** This method is based on the
+	     * [spread operator](https://mdn.io/spread_operator).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.2.0
+	     * @category Function
+	     * @param {Function} func The function to spread arguments over.
+	     * @param {number} [start=0] The start position of the spread.
+	     * @returns {Function} Returns the new function.
+	     * @example
+	     *
+	     * var say = _.spread(function(who, what) {
+	     *   return who + ' says ' + what;
+	     * });
+	     *
+	     * say(['fred', 'hello']);
+	     * // => 'fred says hello'
+	     *
+	     * var numbers = Promise.all([
+	     *   Promise.resolve(40),
+	     *   Promise.resolve(36)
+	     * ]);
+	     *
+	     * numbers.then(_.spread(function(x, y) {
+	     *   return x + y;
+	     * }));
+	     * // => a Promise of 76
+	     */
+	    function spread(func, start) {
+	      if (typeof func != 'function') {
+	        throw new TypeError(FUNC_ERROR_TEXT);
+	      }
+	      start = start === undefined ? 0 : nativeMax(toInteger(start), 0);
+	      return baseRest(function(args) {
+	        var array = args[start],
+	            otherArgs = castSlice(args, 0, start);
+
+	        if (array) {
+	          arrayPush(otherArgs, array);
+	        }
+	        return apply(func, this, otherArgs);
+	      });
+	    }
+
+	    /**
+	     * Creates a throttled function that only invokes `func` at most once per
+	     * every `wait` milliseconds. The throttled function comes with a `cancel`
+	     * method to cancel delayed `func` invocations and a `flush` method to
+	     * immediately invoke them. Provide `options` to indicate whether `func`
+	     * should be invoked on the leading and/or trailing edge of the `wait`
+	     * timeout. The `func` is invoked with the last arguments provided to the
+	     * throttled function. Subsequent calls to the throttled function return the
+	     * result of the last `func` invocation.
+	     *
+	     * **Note:** If `leading` and `trailing` options are `true`, `func` is
+	     * invoked on the trailing edge of the timeout only if the throttled function
+	     * is invoked more than once during the `wait` timeout.
+	     *
+	     * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+	     * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+	     *
+	     * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+	     * for details over the differences between `_.throttle` and `_.debounce`.
+=======
 	     * @since 0.1.0
 	     * @category Lang
 	     * @param {*} value The value to compare.
@@ -12689,10 +14685,230 @@ webpackJsonp([2],{
 	     *
 	     * **Note:** This method is based on
 	     * [`Number.isFinite`](https://mdn.io/Number/isFinite).
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 0.1.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Function
+	     * @param {Function} func The function to throttle.
+	     * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
+	     * @param {Object} [options={}] The options object.
+	     * @param {boolean} [options.leading=true]
+	     *  Specify invoking on the leading edge of the timeout.
+	     * @param {boolean} [options.trailing=true]
+	     *  Specify invoking on the trailing edge of the timeout.
+	     * @returns {Function} Returns the new throttled function.
+	     * @example
+	     *
+	     * // Avoid excessively updating the position while scrolling.
+	     * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
+	     *
+	     * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
+	     * var throttled = _.throttle(renewToken, 300000, { 'trailing': false });
+	     * jQuery(element).on('click', throttled);
+	     *
+	     * // Cancel the trailing throttled invocation.
+	     * jQuery(window).on('popstate', throttled.cancel);
+	     */
+	    function throttle(func, wait, options) {
+	      var leading = true,
+	          trailing = true;
+
+	      if (typeof func != 'function') {
+	        throw new TypeError(FUNC_ERROR_TEXT);
+	      }
+	      if (isObject(options)) {
+	        leading = 'leading' in options ? !!options.leading : leading;
+	        trailing = 'trailing' in options ? !!options.trailing : trailing;
+	      }
+	      return debounce(func, wait, {
+	        'leading': leading,
+	        'maxWait': wait,
+	        'trailing': trailing
+	      });
+	    }
+
+	    /**
+	     * Creates a function that accepts up to one argument, ignoring any
+	     * additional arguments.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Function
+	     * @param {Function} func The function to cap arguments for.
+	     * @returns {Function} Returns the new capped function.
+	     * @example
+	     *
+	     * _.map(['6', '8', '10'], _.unary(parseInt));
+	     * // => [6, 8, 10]
+	     */
+	    function unary(func) {
+	      return ary(func, 1);
+	    }
+
+	    /**
+	     * Creates a function that provides `value` to `wrapper` as its first
+	     * argument. Any additional arguments provided to the function are appended
+	     * to those provided to the `wrapper`. The wrapper is invoked with the `this`
+	     * binding of the created function.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Function
+	     * @param {*} value The value to wrap.
+	     * @param {Function} [wrapper=identity] The wrapper function.
+	     * @returns {Function} Returns the new function.
+	     * @example
+	     *
+	     * var p = _.wrap(_.escape, function(func, text) {
+	     *   return '<p>' + func(text) + '</p>';
+	     * });
+	     *
+	     * p('fred, barney, & pebbles');
+	     * // => '<p>fred, barney, &amp; pebbles</p>'
+	     */
+	    function wrap(value, wrapper) {
+	      wrapper = wrapper == null ? identity : wrapper;
+	      return partial(wrapper, value);
+	    }
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+	     * Casts `value` as an array if it's not one.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.4.0
+	     * @category Lang
+	     * @param {*} value The value to inspect.
+	     * @returns {Array} Returns the cast array.
+	     * @example
+	     *
+	     * _.castArray(1);
+	     * // => [1]
+	     *
+	     * _.castArray({ 'a': 1 });
+	     * // => [{ 'a': 1 }]
+	     *
+	     * _.castArray('abc');
+	     * // => ['abc']
+	     *
+	     * _.castArray(null);
+	     * // => [null]
+	     *
+	     * _.castArray(undefined);
+	     * // => [undefined]
+	     *
+	     * _.castArray();
+	     * // => []
+	     *
+	     * var array = [1, 2, 3];
+	     * console.log(_.castArray(array) === array);
+	     * // => true
+	     */
+	    function castArray() {
+	      if (!arguments.length) {
+	        return [];
+	      }
+	      var value = arguments[0];
+	      return isArray(value) ? value : [value];
+	    }
+
+	    /**
+	     * Creates a shallow clone of `value`.
+	     *
+	     * **Note:** This method is loosely based on the
+	     * [structured clone algorithm](https://mdn.io/Structured_clone_algorithm)
+	     * and supports cloning arrays, array buffers, booleans, date objects, maps,
+	     * numbers, `Object` objects, regexes, sets, strings, symbols, and typed
+	     * arrays. The own enumerable properties of `arguments` objects are cloned
+	     * as plain objects. An empty object is returned for uncloneable values such
+	     * as error objects, functions, DOM nodes, and WeakMaps.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+	     * @param {*} value The value to clone.
+	     * @returns {*} Returns the cloned value.
+	     * @see _.cloneDeep
+	     * @example
+	     *
+	     * var objects = [{ 'a': 1 }, { 'b': 2 }];
+	     *
+	     * var shallow = _.clone(objects);
+	     * console.log(shallow[0] === objects[0]);
+	     * // => true
+	     */
+	    function clone(value) {
+	      return baseClone(value, false, true);
+	    }
+
+	    /**
+	     * This method is like `_.clone` except that it accepts `customizer` which
+	     * is invoked to produce the cloned value. If `customizer` returns `undefined`,
+	     * cloning is handled by the method instead. The `customizer` is invoked with
+	     * up to four arguments; (value [, index|key, object, stack]).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to clone.
+	     * @param {Function} [customizer] The function to customize cloning.
+	     * @returns {*} Returns the cloned value.
+	     * @see _.cloneDeepWith
+	     * @example
+	     *
+	     * function customizer(value) {
+	     *   if (_.isElement(value)) {
+	     *     return value.cloneNode(false);
+	     *   }
+	     * }
+	     *
+	     * var el = _.cloneWith(document.body, customizer);
+	     *
+	     * console.log(el === document.body);
+	     * // => false
+	     * console.log(el.nodeName);
+	     * // => 'BODY'
+	     * console.log(el.childNodes.length);
+	     * // => 0
+	     */
+	    function cloneWith(value, customizer) {
+	      return baseClone(value, false, true, customizer);
+	    }
+
+	    /**
+	     * This method is like `_.clone` except that it recursively clones `value`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 1.0.0
+	     * @category Lang
+	     * @param {*} value The value to recursively clone.
+	     * @returns {*} Returns the deep cloned value.
+	     * @see _.clone
+	     * @example
+	     *
+	     * var objects = [{ 'a': 1 }, { 'b': 2 }];
+	     *
+	     * var deep = _.cloneDeep(objects);
+	     * console.log(deep[0] === objects[0]);
+	     * // => false
+	     */
+	    function cloneDeep(value) {
+	      return baseClone(value, true, true);
+	    }
+
+	    /**
+	     * This method is like `_.cloneWith` except that it recursively clones `value`.
+=======
 	     * @category Lang
 	     * @param {*} value The value to check.
 	     * @returns {boolean} Returns `true` if `value` is a finite number, else `false`.
@@ -12743,11 +14959,71 @@ webpackJsonp([2],{
 	     *
 	     * **Note:** This method is based on
 	     * [`Number.isInteger`](https://mdn.io/Number/isInteger).
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 4.0.0
 	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to recursively clone.
+	     * @param {Function} [customizer] The function to customize cloning.
+	     * @returns {*} Returns the deep cloned value.
+	     * @see _.cloneWith
+	     * @example
+	     *
+	     * function customizer(value) {
+	     *   if (_.isElement(value)) {
+	     *     return value.cloneNode(true);
+	     *   }
+	     * }
+	     *
+	     * var el = _.cloneDeepWith(document.body, customizer);
+	     *
+	     * console.log(el === document.body);
+	     * // => false
+	     * console.log(el.nodeName);
+	     * // => 'BODY'
+	     * console.log(el.childNodes.length);
+	     * // => 20
+	     */
+	    function cloneDeepWith(value, customizer) {
+	      return baseClone(value, true, true, customizer);
+	    }
+
+	    /**
+	     * Checks if `object` conforms to `source` by invoking the predicate
+	     * properties of `source` with the corresponding property values of `object`.
+	     *
+	     * **Note:** This method is equivalent to `_.conforms` when `source` is
+	     * partially applied.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.14.0
+	     * @category Lang
+	     * @param {Object} object The object to inspect.
+	     * @param {Object} source The object of property predicates to conform to.
+	     * @returns {boolean} Returns `true` if `object` conforms, else `false`.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': 2 };
+	     *
+	     * _.conformsTo(object, { 'b': function(n) { return n > 1; } });
+	     * // => true
+	     *
+	     * _.conformsTo(object, { 'b': function(n) { return n > 2; } });
+	     * // => false
+	     */
+	    function conformsTo(object, source) {
+	      return source == null || baseConformsTo(object, source, keys(source));
+	    }
+
+	    /**
+	     * Performs a
+	     * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+	     * comparison between two values to determine if they are equivalent.
+=======
 	     * @param {*} value The value to check.
 	     * @returns {boolean} Returns `true` if `value` is an integer, else `false`.
 	     * @example
@@ -12832,11 +15108,220 @@ webpackJsonp([2],{
 	    /**
 	     * Checks if `value` is object-like. A value is object-like if it's not `null`
 	     * and has a `typeof` result of "object".
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 4.0.0
 	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to compare.
+	     * @param {*} other The other value to compare.
+	     * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	     * @example
+	     *
+	     * var object = { 'a': 1 };
+	     * var other = { 'a': 1 };
+	     *
+	     * _.eq(object, object);
+	     * // => true
+	     *
+	     * _.eq(object, other);
+	     * // => false
+	     *
+	     * _.eq('a', 'a');
+	     * // => true
+	     *
+	     * _.eq('a', Object('a'));
+	     * // => false
+	     *
+	     * _.eq(NaN, NaN);
+	     * // => true
+	     */
+	    function eq(value, other) {
+	      return value === other || (value !== value && other !== other);
+	    }
+
+	    /**
+	     * Checks if `value` is greater than `other`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.9.0
+	     * @category Lang
+	     * @param {*} value The value to compare.
+	     * @param {*} other The other value to compare.
+	     * @returns {boolean} Returns `true` if `value` is greater than `other`,
+	     *  else `false`.
+	     * @see _.lt
+	     * @example
+	     *
+	     * _.gt(3, 1);
+	     * // => true
+	     *
+	     * _.gt(3, 3);
+	     * // => false
+	     *
+	     * _.gt(1, 3);
+	     * // => false
+	     */
+	    var gt = createRelationalOperation(baseGt);
+
+	    /**
+	     * Checks if `value` is greater than or equal to `other`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.9.0
+	     * @category Lang
+	     * @param {*} value The value to compare.
+	     * @param {*} other The other value to compare.
+	     * @returns {boolean} Returns `true` if `value` is greater than or equal to
+	     *  `other`, else `false`.
+	     * @see _.lte
+	     * @example
+	     *
+	     * _.gte(3, 1);
+	     * // => true
+	     *
+	     * _.gte(3, 3);
+	     * // => true
+	     *
+	     * _.gte(1, 3);
+	     * // => false
+	     */
+	    var gte = createRelationalOperation(function(value, other) {
+	      return value >= other;
+	    });
+
+	    /**
+	     * Checks if `value` is likely an `arguments` object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+	     *  else `false`.
+	     * @example
+	     *
+	     * _.isArguments(function() { return arguments; }());
+	     * // => true
+	     *
+	     * _.isArguments([1, 2, 3]);
+	     * // => false
+	     */
+	    var isArguments = baseIsArguments(function() { return arguments; }()) ? baseIsArguments : function(value) {
+	      return isObjectLike(value) && hasOwnProperty.call(value, 'callee') &&
+	        !propertyIsEnumerable.call(value, 'callee');
+	    };
+
+	    /**
+	     * Checks if `value` is classified as an `Array` object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+	     * @example
+	     *
+	     * _.isArray([1, 2, 3]);
+	     * // => true
+	     *
+	     * _.isArray(document.body.children);
+	     * // => false
+	     *
+	     * _.isArray('abc');
+	     * // => false
+	     *
+	     * _.isArray(_.noop);
+	     * // => false
+	     */
+	    var isArray = Array.isArray;
+
+	    /**
+	     * Checks if `value` is classified as an `ArrayBuffer` object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.3.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an array buffer, else `false`.
+	     * @example
+	     *
+	     * _.isArrayBuffer(new ArrayBuffer(2));
+	     * // => true
+	     *
+	     * _.isArrayBuffer(new Array(2));
+	     * // => false
+	     */
+	    var isArrayBuffer = nodeIsArrayBuffer ? baseUnary(nodeIsArrayBuffer) : baseIsArrayBuffer;
+
+	    /**
+	     * Checks if `value` is array-like. A value is considered array-like if it's
+	     * not a function and has a `value.length` that's an integer greater than or
+	     * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+	     * @example
+	     *
+	     * _.isArrayLike([1, 2, 3]);
+	     * // => true
+	     *
+	     * _.isArrayLike(document.body.children);
+	     * // => true
+	     *
+	     * _.isArrayLike('abc');
+	     * // => true
+	     *
+	     * _.isArrayLike(_.noop);
+	     * // => false
+	     */
+	    function isArrayLike(value) {
+	      return value != null && isLength(value.length) && !isFunction(value);
+	    }
+
+	    /**
+	     * This method is like `_.isArrayLike` except that it also checks if `value`
+	     * is an object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an array-like object,
+	     *  else `false`.
+	     * @example
+	     *
+	     * _.isArrayLikeObject([1, 2, 3]);
+	     * // => true
+	     *
+	     * _.isArrayLikeObject(document.body.children);
+	     * // => true
+	     *
+	     * _.isArrayLikeObject('abc');
+	     * // => false
+	     *
+	     * _.isArrayLikeObject(_.noop);
+	     * // => false
+	     */
+	    function isArrayLikeObject(value) {
+	      return isObjectLike(value) && isArrayLike(value);
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a boolean primitive or object.
+=======
 	     * @param {*} value The value to check.
 	     * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
 	     * @example
@@ -13015,12 +15500,69 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `value` is `null`.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 0.1.0
 	     * @category Lang
 	     * @param {*} value The value to check.
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @returns {boolean} Returns `true` if `value` is a boolean, else `false`.
+	     * @example
+	     *
+	     * _.isBoolean(false);
+	     * // => true
+	     *
+	     * _.isBoolean(null);
+	     * // => false
+	     */
+	    function isBoolean(value) {
+	      return value === true || value === false ||
+	        (isObjectLike(value) && objectToString.call(value) == boolTag);
+	    }
+
+	    /**
+	     * Checks if `value` is a buffer.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.3.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a buffer, else `false`.
+	     * @example
+	     *
+	     * _.isBuffer(new Buffer(2));
+	     * // => true
+	     *
+	     * _.isBuffer(new Uint8Array(2));
+	     * // => false
+	     */
+	    var isBuffer = nativeIsBuffer || stubFalse;
+
+	    /**
+	     * Checks if `value` is classified as a `Date` object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a date object, else `false`.
+	     * @example
+	     *
+	     * _.isDate(new Date);
+	     * // => true
+	     *
+	     * _.isDate('Mon April 23 2012');
+	     * // => false
+	     */
+	    var isDate = nodeIsDate ? baseUnary(nodeIsDate) : baseIsDate;
+
+	    /**
+	     * Checks if `value` is likely a DOM element.
+=======
 	     * @returns {boolean} Returns `true` if `value` is `null`, else `false`.
 	     * @example
 	     *
@@ -13063,12 +15605,91 @@ webpackJsonp([2],{
 	     *
 	     * **Note:** To exclude `Infinity`, `-Infinity`, and `NaN`, which are
 	     * classified as numbers, use the `_.isFinite` method.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 0.1.0
 	     * @category Lang
 	     * @param {*} value The value to check.
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @returns {boolean} Returns `true` if `value` is a DOM element, else `false`.
+	     * @example
+	     *
+	     * _.isElement(document.body);
+	     * // => true
+	     *
+	     * _.isElement('<body>');
+	     * // => false
+	     */
+	    function isElement(value) {
+	      return value != null && value.nodeType === 1 && isObjectLike(value) && !isPlainObject(value);
+	    }
+
+	    /**
+	     * Checks if `value` is an empty object, collection, map, or set.
+	     *
+	     * Objects are considered empty if they have no own enumerable string keyed
+	     * properties.
+	     *
+	     * Array-like values such as `arguments` objects, arrays, buffers, strings, or
+	     * jQuery-like collections are considered empty if they have a `length` of `0`.
+	     * Similarly, maps and sets are considered empty if they have a `size` of `0`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is empty, else `false`.
+	     * @example
+	     *
+	     * _.isEmpty(null);
+	     * // => true
+	     *
+	     * _.isEmpty(true);
+	     * // => true
+	     *
+	     * _.isEmpty(1);
+	     * // => true
+	     *
+	     * _.isEmpty([1, 2, 3]);
+	     * // => false
+	     *
+	     * _.isEmpty({ 'a': 1 });
+	     * // => false
+	     */
+	    function isEmpty(value) {
+	      if (isArrayLike(value) &&
+	          (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' ||
+	            isBuffer(value) || isTypedArray(value) || isArguments(value))) {
+	        return !value.length;
+	      }
+	      var tag = getTag(value);
+	      if (tag == mapTag || tag == setTag) {
+	        return !value.size;
+	      }
+	      if (isPrototype(value)) {
+	        return !baseKeys(value).length;
+	      }
+	      for (var key in value) {
+	        if (hasOwnProperty.call(value, key)) {
+	          return false;
+	        }
+	      }
+	      return true;
+	    }
+
+	    /**
+	     * Performs a deep comparison between two values to determine if they are
+	     * equivalent.
+	     *
+	     * **Note:** This method supports comparing arrays, array buffers, booleans,
+	     * date objects, error objects, maps, numbers, `Object` objects, regexes,
+	     * sets, strings, symbols, and typed arrays. `Object` objects are compared
+	     * by their own, not inherited, enumerable properties. Functions and DOM
+	     * nodes are **not** supported.
+=======
 	     * @returns {boolean} Returns `true` if `value` is a number, else `false`.
 	     * @example
 	     *
@@ -13132,6 +15753,1041 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `value` is classified as a `RegExp` object.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to compare.
+	     * @param {*} other The other value to compare.
+	     * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	     * @example
+	     *
+	     * var object = { 'a': 1 };
+	     * var other = { 'a': 1 };
+	     *
+	     * _.isEqual(object, other);
+	     * // => true
+	     *
+	     * object === other;
+	     * // => false
+	     */
+	    function isEqual(value, other) {
+	      return baseIsEqual(value, other);
+	    }
+
+	    /**
+	     * This method is like `_.isEqual` except that it accepts `customizer` which
+	     * is invoked to compare values. If `customizer` returns `undefined`, comparisons
+	     * are handled by the method instead. The `customizer` is invoked with up to
+	     * six arguments: (objValue, othValue [, index|key, object, other, stack]).
+=======
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a regexp, else `false`.
+	     * @example
+	     *
+	     * _.isRegExp(/abc/);
+	     * // => true
+	     *
+	     * _.isRegExp('/abc/');
+	     * // => false
+	     */
+	    var isRegExp = nodeIsRegExp ? baseUnary(nodeIsRegExp) : baseIsRegExp;
+
+	    /**
+	     * Checks if `value` is a safe integer. An integer is safe if it's an IEEE-754
+	     * double precision number which isn't the result of a rounded unsafe integer.
+	     *
+	     * **Note:** This method is based on
+	     * [`Number.isSafeInteger`](https://mdn.io/Number/isSafeInteger).
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to compare.
+	     * @param {*} other The other value to compare.
+	     * @param {Function} [customizer] The function to customize comparisons.
+	     * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	     * @example
+	     *
+	     * function isGreeting(value) {
+	     *   return /^h(?:i|ello)$/.test(value);
+	     * }
+	     *
+	     * function customizer(objValue, othValue) {
+	     *   if (isGreeting(objValue) && isGreeting(othValue)) {
+	     *     return true;
+	     *   }
+	     * }
+	     *
+	     * var array = ['hello', 'goodbye'];
+	     * var other = ['hi', 'goodbye'];
+	     *
+	     * _.isEqualWith(array, other, customizer);
+	     * // => true
+	     */
+	    function isEqualWith(value, other, customizer) {
+	      customizer = typeof customizer == 'function' ? customizer : undefined;
+	      var result = customizer ? customizer(value, other) : undefined;
+	      return result === undefined ? baseIsEqual(value, other, customizer) : !!result;
+	    }
+
+	    /**
+	     * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
+	     * `SyntaxError`, `TypeError`, or `URIError` object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an error object, else `false`.
+	     * @example
+	     *
+	     * _.isError(new Error);
+	     * // => true
+	     *
+	     * _.isError(Error);
+	     * // => false
+	     */
+	    function isError(value) {
+	      if (!isObjectLike(value)) {
+	        return false;
+	      }
+	      return (objectToString.call(value) == errorTag) ||
+	        (typeof value.message == 'string' && typeof value.name == 'string');
+	    }
+
+	    /**
+	     * Checks if `value` is a finite primitive number.
+	     *
+	     * **Note:** This method is based on
+	     * [`Number.isFinite`](https://mdn.io/Number/isFinite).
+=======
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a safe integer, else `false`.
+	     * @example
+	     *
+	     * _.isSafeInteger(3);
+	     * // => true
+	     *
+	     * _.isSafeInteger(Number.MIN_VALUE);
+	     * // => false
+	     *
+	     * _.isSafeInteger(Infinity);
+	     * // => false
+	     *
+	     * _.isSafeInteger('3');
+	     * // => false
+	     */
+	    function isSafeInteger(value) {
+	      return isInteger(value) && value >= -MAX_SAFE_INTEGER && value <= MAX_SAFE_INTEGER;
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a `Set` object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.3.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a set, else `false`.
+	     * @example
+	     *
+	     * _.isSet(new Set);
+	     * // => true
+	     *
+	     * _.isSet(new WeakSet);
+	     * // => false
+	     */
+	    var isSet = nodeIsSet ? baseUnary(nodeIsSet) : baseIsSet;
+
+	    /**
+	     * Checks if `value` is classified as a `String` primitive or object.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+	     * @category Lang
+	     * @param {*} value The value to check.
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @returns {boolean} Returns `true` if `value` is a finite number, else `false`.
+	     * @example
+	     *
+	     * _.isFinite(3);
+	     * // => true
+	     *
+	     * _.isFinite(Number.MIN_VALUE);
+	     * // => true
+	     *
+	     * _.isFinite(Infinity);
+	     * // => false
+	     *
+	     * _.isFinite('3');
+	     * // => false
+	     */
+	    function isFinite(value) {
+	      return typeof value == 'number' && nativeIsFinite(value);
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a `Function` object.
+=======
+	     * @returns {boolean} Returns `true` if `value` is a string, else `false`.
+	     * @example
+	     *
+	     * _.isString('abc');
+	     * // => true
+	     *
+	     * _.isString(1);
+	     * // => false
+	     */
+	    function isString(value) {
+	      return typeof value == 'string' ||
+	        (!isArray(value) && isObjectLike(value) && objectToString.call(value) == stringTag);
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a `Symbol` primitive or object.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+	     * @example
+	     *
+	     * _.isFunction(_);
+	     * // => true
+	     *
+	     * _.isFunction(/abc/);
+	     * // => false
+	     */
+	    function isFunction(value) {
+	      // The use of `Object#toString` avoids issues with the `typeof` operator
+	      // in Safari 9 which returns 'object' for typed array and other constructors.
+	      var tag = isObject(value) ? objectToString.call(value) : '';
+	      return tag == funcTag || tag == genTag || tag == proxyTag;
+	    }
+
+	    /**
+	     * Checks if `value` is an integer.
+	     *
+	     * **Note:** This method is based on
+	     * [`Number.isInteger`](https://mdn.io/Number/isInteger).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an integer, else `false`.
+	     * @example
+	     *
+	     * _.isInteger(3);
+	     * // => true
+	     *
+	     * _.isInteger(Number.MIN_VALUE);
+	     * // => false
+	     *
+	     * _.isInteger(Infinity);
+	     * // => false
+	     *
+	     * _.isInteger('3');
+	     * // => false
+	     */
+	    function isInteger(value) {
+	      return typeof value == 'number' && value == toInteger(value);
+	    }
+
+	    /**
+	     * Checks if `value` is a valid array-like length.
+	     *
+	     * **Note:** This method is loosely based on
+	     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+=======
+	     * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+	     * @example
+	     *
+	     * _.isSymbol(Symbol.iterator);
+	     * // => true
+	     *
+	     * _.isSymbol('abc');
+	     * // => false
+	     */
+	    function isSymbol(value) {
+	      return typeof value == 'symbol' ||
+	        (isObjectLike(value) && objectToString.call(value) == symbolTag);
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a typed array.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+	     * @example
+	     *
+	     * _.isTypedArray(new Uint8Array);
+	     * // => true
+	     *
+	     * _.isTypedArray([]);
+	     * // => false
+	     */
+	    var isTypedArray = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
+
+	    /**
+	     * Checks if `value` is `undefined`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+	     * @category Lang
+	     * @param {*} value The value to check.
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+	     * @example
+	     *
+	     * _.isLength(3);
+	     * // => true
+	     *
+	     * _.isLength(Number.MIN_VALUE);
+	     * // => false
+	     *
+	     * _.isLength(Infinity);
+	     * // => false
+	     *
+	     * _.isLength('3');
+	     * // => false
+	     */
+	    function isLength(value) {
+	      return typeof value == 'number' &&
+	        value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+	    }
+
+	    /**
+	     * Checks if `value` is the
+	     * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+	     * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	     * @example
+	     *
+	     * _.isObject({});
+	     * // => true
+	     *
+	     * _.isObject([1, 2, 3]);
+	     * // => true
+	     *
+	     * _.isObject(_.noop);
+	     * // => true
+	     *
+	     * _.isObject(null);
+	     * // => false
+	     */
+	    function isObject(value) {
+	      var type = typeof value;
+	      return value != null && (type == 'object' || type == 'function');
+	    }
+
+	    /**
+	     * Checks if `value` is object-like. A value is object-like if it's not `null`
+	     * and has a `typeof` result of "object".
+=======
+	     * @returns {boolean} Returns `true` if `value` is `undefined`, else `false`.
+	     * @example
+	     *
+	     * _.isUndefined(void 0);
+	     * // => true
+	     *
+	     * _.isUndefined(null);
+	     * // => false
+	     */
+	    function isUndefined(value) {
+	      return value === undefined;
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a `WeakMap` object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.3.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a weak map, else `false`.
+	     * @example
+	     *
+	     * _.isWeakMap(new WeakMap);
+	     * // => true
+	     *
+	     * _.isWeakMap(new Map);
+	     * // => false
+	     */
+	    function isWeakMap(value) {
+	      return isObjectLike(value) && getTag(value) == weakMapTag;
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a `WeakSet` object.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.3.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	     * @example
+	     *
+	     * _.isObjectLike({});
+	     * // => true
+	     *
+	     * _.isObjectLike([1, 2, 3]);
+	     * // => true
+	     *
+	     * _.isObjectLike(_.noop);
+	     * // => false
+	     *
+	     * _.isObjectLike(null);
+	     * // => false
+	     */
+	    function isObjectLike(value) {
+	      return value != null && typeof value == 'object';
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a `Map` object.
+=======
+	     * @returns {boolean} Returns `true` if `value` is a weak set, else `false`.
+	     * @example
+	     *
+	     * _.isWeakSet(new WeakSet);
+	     * // => true
+	     *
+	     * _.isWeakSet(new Set);
+	     * // => false
+	     */
+	    function isWeakSet(value) {
+	      return isObjectLike(value) && objectToString.call(value) == weakSetTag;
+	    }
+
+	    /**
+	     * Checks if `value` is less than `other`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.3.0
+	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a map, else `false`.
+	     * @example
+	     *
+	     * _.isMap(new Map);
+	     * // => true
+	     *
+	     * _.isMap(new WeakMap);
+	     * // => false
+	     */
+	    var isMap = nodeIsMap ? baseUnary(nodeIsMap) : baseIsMap;
+
+	    /**
+	     * Performs a partial deep comparison between `object` and `source` to
+	     * determine if `object` contains equivalent property values.
+	     *
+	     * **Note:** This method is equivalent to `_.matches` when `source` is
+	     * partially applied.
+	     *
+	     * Partial comparisons will match empty array and empty object `source`
+	     * values against any array or object value, respectively. See `_.isEqual`
+	     * for a list of supported value comparisons.
+=======
+	     * @param {*} value The value to compare.
+	     * @param {*} other The other value to compare.
+	     * @returns {boolean} Returns `true` if `value` is less than `other`,
+	     *  else `false`.
+	     * @see _.gt
+	     * @example
+	     *
+	     * _.lt(1, 3);
+	     * // => true
+	     *
+	     * _.lt(3, 3);
+	     * // => false
+	     *
+	     * _.lt(3, 1);
+	     * // => false
+	     */
+	    var lt = createRelationalOperation(baseLt);
+
+	    /**
+	     * Checks if `value` is less than or equal to `other`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {Object} object The object to inspect.
+	     * @param {Object} source The object of property values to match.
+	     * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': 2 };
+	     *
+	     * _.isMatch(object, { 'b': 2 });
+	     * // => true
+	     *
+	     * _.isMatch(object, { 'b': 1 });
+	     * // => false
+	     */
+	    function isMatch(object, source) {
+	      return object === source || baseIsMatch(object, source, getMatchData(source));
+	    }
+
+	    /**
+	     * This method is like `_.isMatch` except that it accepts `customizer` which
+	     * is invoked to compare values. If `customizer` returns `undefined`, comparisons
+	     * are handled by the method instead. The `customizer` is invoked with five
+	     * arguments: (objValue, srcValue, index|key, object, source).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {Object} object The object to inspect.
+	     * @param {Object} source The object of property values to match.
+	     * @param {Function} [customizer] The function to customize comparisons.
+	     * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+	     * @example
+	     *
+	     * function isGreeting(value) {
+	     *   return /^h(?:i|ello)$/.test(value);
+	     * }
+	     *
+	     * function customizer(objValue, srcValue) {
+	     *   if (isGreeting(objValue) && isGreeting(srcValue)) {
+	     *     return true;
+	     *   }
+	     * }
+	     *
+	     * var object = { 'greeting': 'hello' };
+	     * var source = { 'greeting': 'hi' };
+	     *
+	     * _.isMatchWith(object, source, customizer);
+	     * // => true
+	     */
+	    function isMatchWith(object, source, customizer) {
+	      customizer = typeof customizer == 'function' ? customizer : undefined;
+	      return baseIsMatch(object, source, getMatchData(source), customizer);
+	    }
+
+	    /**
+	     * Checks if `value` is `NaN`.
+	     *
+	     * **Note:** This method is based on
+	     * [`Number.isNaN`](https://mdn.io/Number/isNaN) and is not the same as
+	     * global [`isNaN`](https://mdn.io/isNaN) which returns `true` for
+	     * `undefined` and other non-number values.
+=======
+	     * @param {*} value The value to compare.
+	     * @param {*} other The other value to compare.
+	     * @returns {boolean} Returns `true` if `value` is less than or equal to
+	     *  `other`, else `false`.
+	     * @see _.gte
+	     * @example
+	     *
+	     * _.lte(1, 3);
+	     * // => true
+	     *
+	     * _.lte(3, 3);
+	     * // => true
+	     *
+	     * _.lte(3, 1);
+	     * // => false
+	     */
+	    var lte = createRelationalOperation(function(value, other) {
+	      return value <= other;
+	    });
+
+	    /**
+	     * Converts `value` to an array.
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {Array} Returns the converted array.
+	     * @example
+	     *
+	     * _.toArray({ 'a': 1, 'b': 2 });
+	     * // => [1, 2]
+	     *
+	     * _.toArray('abc');
+	     * // => ['a', 'b', 'c']
+	     *
+	     * _.toArray(1);
+	     * // => []
+	     *
+	     * _.toArray(null);
+	     * // => []
+	     */
+	    function toArray(value) {
+	      if (!value) {
+	        return [];
+	      }
+	      if (isArrayLike(value)) {
+	        return isString(value) ? stringToArray(value) : copyArray(value);
+	      }
+	      if (iteratorSymbol && value[iteratorSymbol]) {
+	        return iteratorToArray(value[iteratorSymbol]());
+	      }
+	      var tag = getTag(value),
+	          func = tag == mapTag ? mapToArray : (tag == setTag ? setToArray : values);
+
+	      return func(value);
+	    }
+
+	    /**
+	     * Converts `value` to a finite number.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.12.0
+	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is `NaN`, else `false`.
+	     * @example
+	     *
+	     * _.isNaN(NaN);
+	     * // => true
+	     *
+	     * _.isNaN(new Number(NaN));
+	     * // => true
+	     *
+	     * isNaN(undefined);
+	     * // => true
+	     *
+	     * _.isNaN(undefined);
+	     * // => false
+	     */
+	    function isNaN(value) {
+	      // An `NaN` primitive is the only value that is not equal to itself.
+	      // Perform the `toStringTag` check first to avoid errors with some
+	      // ActiveX objects in IE.
+	      return isNumber(value) && value != +value;
+	    }
+
+	    /**
+	     * Checks if `value` is a pristine native function.
+	     *
+	     * **Note:** This method can't reliably detect native functions in the presence
+	     * of the core-js package because core-js circumvents this kind of detection.
+	     * Despite multiple requests, the core-js maintainer has made it clear: any
+	     * attempt to fix the detection will be obstructed. As a result, we're left
+	     * with little choice but to throw an error. Unfortunately, this also affects
+	     * packages, like [babel-polyfill](https://www.npmjs.com/package/babel-polyfill),
+	     * which rely on core-js.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a native function,
+	     *  else `false`.
+	     * @example
+	     *
+	     * _.isNative(Array.prototype.push);
+	     * // => true
+	     *
+	     * _.isNative(_);
+	     * // => false
+	     */
+	    function isNative(value) {
+	      if (isMaskable(value)) {
+	        throw new Error(CORE_ERROR_TEXT);
+	      }
+	      return baseIsNative(value);
+	    }
+
+	    /**
+	     * Checks if `value` is `null`.
+=======
+	     * @param {*} value The value to convert.
+	     * @returns {number} Returns the converted number.
+	     * @example
+	     *
+	     * _.toFinite(3.2);
+	     * // => 3.2
+	     *
+	     * _.toFinite(Number.MIN_VALUE);
+	     * // => 5e-324
+	     *
+	     * _.toFinite(Infinity);
+	     * // => 1.7976931348623157e+308
+	     *
+	     * _.toFinite('3.2');
+	     * // => 3.2
+	     */
+	    function toFinite(value) {
+	      if (!value) {
+	        return value === 0 ? value : 0;
+	      }
+	      value = toNumber(value);
+	      if (value === INFINITY || value === -INFINITY) {
+	        var sign = (value < 0 ? -1 : 1);
+	        return sign * MAX_INTEGER;
+	      }
+	      return value === value ? value : 0;
+	    }
+
+	    /**
+	     * Converts `value` to an integer.
+	     *
+	     * **Note:** This method is loosely based on
+	     * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {number} Returns the converted integer.
+	     * @example
+	     *
+	     * _.toInteger(3.2);
+	     * // => 3
+	     *
+	     * _.toInteger(Number.MIN_VALUE);
+	     * // => 0
+	     *
+	     * _.toInteger(Infinity);
+	     * // => 1.7976931348623157e+308
+	     *
+	     * _.toInteger('3.2');
+	     * // => 3
+	     */
+	    function toInteger(value) {
+	      var result = toFinite(value),
+	          remainder = result % 1;
+
+	      return result === result ? (remainder ? result - remainder : result) : 0;
+	    }
+
+	    /**
+	     * Converts `value` to an integer suitable for use as the length of an
+	     * array-like object.
+	     *
+	     * **Note:** This method is based on
+	     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.1.0
+	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is `null`, else `false`.
+	     * @example
+	     *
+	     * _.isNull(null);
+	     * // => true
+	     *
+	     * _.isNull(void 0);
+	     * // => false
+	     */
+	    function isNull(value) {
+	      return value === null;
+	    }
+
+	    /**
+	     * Checks if `value` is `null` or `undefined`.
+=======
+	     * @param {*} value The value to convert.
+	     * @returns {number} Returns the converted integer.
+	     * @example
+	     *
+	     * _.toLength(3.2);
+	     * // => 3
+	     *
+	     * _.toLength(Number.MIN_VALUE);
+	     * // => 0
+	     *
+	     * _.toLength(Infinity);
+	     * // => 4294967295
+	     *
+	     * _.toLength('3.2');
+	     * // => 3
+	     */
+	    function toLength(value) {
+	      return value ? baseClamp(toInteger(value), 0, MAX_ARRAY_LENGTH) : 0;
+	    }
+
+	    /**
+	     * Converts `value` to a number.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to process.
+	     * @returns {number} Returns the number.
+	     * @example
+	     *
+	     * _.toNumber(3.2);
+	     * // => 3.2
+	     *
+	     * _.toNumber(Number.MIN_VALUE);
+	     * // => 5e-324
+	     *
+	     * _.toNumber(Infinity);
+	     * // => Infinity
+	     *
+	     * _.toNumber('3.2');
+	     * // => 3.2
+	     */
+	    function toNumber(value) {
+	      if (typeof value == 'number') {
+	        return value;
+	      }
+	      if (isSymbol(value)) {
+	        return NAN;
+	      }
+	      if (isObject(value)) {
+	        var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
+	        value = isObject(other) ? (other + '') : other;
+	      }
+	      if (typeof value != 'string') {
+	        return value === 0 ? value : +value;
+	      }
+	      value = value.replace(reTrim, '');
+	      var isBinary = reIsBinary.test(value);
+	      return (isBinary || reIsOctal.test(value))
+	        ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
+	        : (reIsBadHex.test(value) ? NAN : +value);
+	    }
+
+	    /**
+	     * Converts `value` to a plain object flattening inherited enumerable string
+	     * keyed properties of `value` to own properties of the plain object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {Object} Returns the converted plain object.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.assign({ 'a': 1 }, new Foo);
+	     * // => { 'a': 1, 'b': 2 }
+	     *
+	     * _.assign({ 'a': 1 }, _.toPlainObject(new Foo));
+	     * // => { 'a': 1, 'b': 2, 'c': 3 }
+	     */
+	    function toPlainObject(value) {
+	      return copyObject(value, keysIn(value));
+	    }
+
+	    /**
+	     * Converts `value` to a safe integer. A safe integer can be compared and
+	     * represented correctly.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is nullish, else `false`.
+	     * @example
+	     *
+	     * _.isNil(null);
+	     * // => true
+	     *
+	     * _.isNil(void 0);
+	     * // => true
+	     *
+	     * _.isNil(NaN);
+	     * // => false
+	     */
+	    function isNil(value) {
+	      return value == null;
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a `Number` primitive or object.
+	     *
+	     * **Note:** To exclude `Infinity`, `-Infinity`, and `NaN`, which are
+	     * classified as numbers, use the `_.isFinite` method.
+=======
+	     * @param {*} value The value to convert.
+	     * @returns {number} Returns the converted integer.
+	     * @example
+	     *
+	     * _.toSafeInteger(3.2);
+	     * // => 3
+	     *
+	     * _.toSafeInteger(Number.MIN_VALUE);
+	     * // => 0
+	     *
+	     * _.toSafeInteger(Infinity);
+	     * // => 9007199254740991
+	     *
+	     * _.toSafeInteger('3.2');
+	     * // => 3
+	     */
+	    function toSafeInteger(value) {
+	      return baseClamp(toInteger(value), -MAX_SAFE_INTEGER, MAX_SAFE_INTEGER);
+	    }
+
+	    /**
+	     * Converts `value` to a string. An empty string is returned for `null`
+	     * and `undefined` values. The sign of `-0` is preserved.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a number, else `false`.
+	     * @example
+	     *
+	     * _.isNumber(3);
+	     * // => true
+	     *
+	     * _.isNumber(Number.MIN_VALUE);
+	     * // => true
+	     *
+	     * _.isNumber(Infinity);
+	     * // => true
+	     *
+	     * _.isNumber('3');
+	     * // => false
+	     */
+	    function isNumber(value) {
+	      return typeof value == 'number' ||
+	        (isObjectLike(value) && objectToString.call(value) == numberTag);
+=======
+	     * @param {*} value The value to convert.
+	     * @returns {string} Returns the converted string.
+	     * @example
+	     *
+	     * _.toString(null);
+	     * // => ''
+	     *
+	     * _.toString(-0);
+	     * // => '-0'
+	     *
+	     * _.toString([1, 2, 3]);
+	     * // => '1,2,3'
+	     */
+	    function toString(value) {
+	      return value == null ? '' : baseToString(value);
+>>>>>>> CCN Directives (#200)
+	    }
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * Checks if `value` is a plain object, that is, an object created by the
+	     * `Object` constructor or one with a `[[Prototype]]` of `null`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.8.0
+	     * @category Lang
+	     * @param {*} value The value to check.
+	     * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+=======
+	     * Assigns own enumerable string keyed properties of source objects to the
+	     * destination object. Source objects are applied from left to right.
+	     * Subsequent sources overwrite property assignments of previous sources.
+	     *
+	     * **Note:** This method mutates `object` and is loosely based on
+	     * [`Object.assign`](https://mdn.io/Object/assign).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.10.0
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} [sources] The source objects.
+	     * @returns {Object} Returns `object`.
+	     * @see _.assignIn
+>>>>>>> CCN Directives (#200)
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     * }
+	     *
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * _.isPlainObject(new Foo);
+	     * // => false
+	     *
+	     * _.isPlainObject([1, 2, 3]);
+	     * // => false
+	     *
+	     * _.isPlainObject({ 'x': 0, 'y': 0 });
+	     * // => true
+	     *
+	     * _.isPlainObject(Object.create(null));
+	     * // => true
+	     */
+	    function isPlainObject(value) {
+	      if (!isObjectLike(value) || objectToString.call(value) != objectTag) {
+	        return false;
+	      }
+	      var proto = getPrototype(value);
+	      if (proto === null) {
+	        return true;
+	      }
+	      var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
+	      return (typeof Ctor == 'function' &&
+	        Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString);
+	    }
+
+	    /**
+	     * Checks if `value` is classified as a `RegExp` object.
 	     *
 	     * @static
 	     * @memberOf _
@@ -13155,10 +16811,110 @@ webpackJsonp([2],{
 	     *
 	     * **Note:** This method is based on
 	     * [`Number.isSafeInteger`](https://mdn.io/Number/isSafeInteger).
+=======
+	     * function Bar() {
+	     *   this.c = 3;
+	     * }
+	     *
+	     * Foo.prototype.b = 2;
+	     * Bar.prototype.d = 4;
+	     *
+	     * _.assign({ 'a': 0 }, new Foo, new Bar);
+	     * // => { 'a': 1, 'c': 3 }
+	     */
+	    var assign = createAssigner(function(object, source) {
+	      if (isPrototype(source) || isArrayLike(source)) {
+	        copyObject(source, keys(source), object);
+	        return;
+	      }
+	      for (var key in source) {
+	        if (hasOwnProperty.call(source, key)) {
+	          assignValue(object, key, source[key]);
+	        }
+	      }
+	    });
+
+	    /**
+	     * This method is like `_.assign` except that it iterates over own and
+	     * inherited source properties.
+	     *
+	     * **Note:** This method mutates `object`.
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 4.0.0
+	     * @alias extend
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} [sources] The source objects.
+	     * @returns {Object} Returns `object`.
+	     * @see _.assign
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     * }
+	     *
+	     * function Bar() {
+	     *   this.c = 3;
+	     * }
+	     *
+	     * Foo.prototype.b = 2;
+	     * Bar.prototype.d = 4;
+	     *
+	     * _.assignIn({ 'a': 0 }, new Foo, new Bar);
+	     * // => { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
+	     */
+	    var assignIn = createAssigner(function(object, source) {
+	      copyObject(source, keysIn(source), object);
+	    });
+
+	    /**
+	     * This method is like `_.assignIn` except that it accepts `customizer`
+	     * which is invoked to produce the assigned values. If `customizer` returns
+	     * `undefined`, assignment is handled by the method instead. The `customizer`
+	     * is invoked with five arguments: (objValue, srcValue, key, object, source).
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @alias extendWith
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} sources The source objects.
+	     * @param {Function} [customizer] The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @see _.assignWith
+	     * @example
+	     *
+	     * function customizer(objValue, srcValue) {
+	     *   return _.isUndefined(objValue) ? srcValue : objValue;
+	     * }
+	     *
+	     * var defaults = _.partialRight(_.assignInWith, customizer);
+	     *
+	     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+	     * // => { 'a': 1, 'b': 2 }
+	     */
+	    var assignInWith = createAssigner(function(object, source, srcIndex, customizer) {
+	      copyObject(source, keysIn(source), object, customizer);
+	    });
+
+	    /**
+	     * This method is like `_.assign` except that it accepts `customizer`
+	     * which is invoked to produce the assigned values. If `customizer` returns
+	     * `undefined`, assignment is handled by the method instead. The `customizer`
+	     * is invoked with five arguments: (objValue, srcValue, key, object, source).
+	     *
+	     * **Note:** This method mutates `object`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @category Lang
 	     * @param {*} value The value to check.
 	     * @returns {boolean} Returns `true` if `value` is a safe integer, else `false`.
@@ -13201,21 +16957,96 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `value` is classified as a `String` primitive or object.
+=======
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} sources The source objects.
+	     * @param {Function} [customizer] The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @see _.assignInWith
+	     * @example
+	     *
+	     * function customizer(objValue, srcValue) {
+	     *   return _.isUndefined(objValue) ? srcValue : objValue;
+	     * }
+	     *
+	     * var defaults = _.partialRight(_.assignWith, customizer);
+	     *
+	     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+	     * // => { 'a': 1, 'b': 2 }
+	     */
+	    var assignWith = createAssigner(function(object, source, srcIndex, customizer) {
+	      copyObject(source, keys(source), object, customizer);
+	    });
+
+	    /**
+	     * Creates an array of values corresponding to `paths` of `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 1.0.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {...(string|string[])} [paths] The property paths of elements to pick.
+	     * @returns {Array} Returns the picked values.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
+	     *
+	     * _.at(object, ['a[0].b.c', 'a[1]']);
+	     * // => [3, 4]
+	     */
+	    var at = flatRest(baseAt);
+
+	    /**
+	     * Creates an object that inherits from the `prototype` object. If a
+	     * `properties` object is given, its own enumerable string keyed properties
+	     * are assigned to the created object.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @category Lang
 	     * @param {*} value The value to check.
 	     * @returns {boolean} Returns `true` if `value` is a string, else `false`.
 	     * @example
 	     *
 	     * _.isString('abc');
+=======
+	     * @since 2.3.0
+	     * @category Object
+	     * @param {Object} prototype The object to inherit from.
+	     * @param {Object} [properties] The properties to assign to the object.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * function Shape() {
+	     *   this.x = 0;
+	     *   this.y = 0;
+	     * }
+	     *
+	     * function Circle() {
+	     *   Shape.call(this);
+	     * }
+	     *
+	     * Circle.prototype = _.create(Shape.prototype, {
+	     *   'constructor': Circle
+	     * });
+	     *
+	     * var circle = new Circle;
+	     * circle instanceof Circle;
+	     * // => true
+	     *
+	     * circle instanceof Shape;
+>>>>>>> CCN Directives (#200)
 	     * // => true
 	     *
 	     * _.isString(1);
 	     * // => false
 	     */
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	    function isString(value) {
 	      return typeof value == 'string' ||
 	        (!isArray(value) && isObjectLike(value) && objectToString.call(value) == stringTag);
@@ -13223,9 +17054,25 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `value` is classified as a `Symbol` primitive or object.
+=======
+	    function create(prototype, properties) {
+	      var result = baseCreate(prototype);
+	      return properties ? baseAssign(result, properties) : result;
+	    }
+
+	    /**
+	     * Assigns own and inherited enumerable string keyed properties of source
+	     * objects to the destination object for all destination properties that
+	     * resolve to `undefined`. Source objects are applied from left to right.
+	     * Once a property is set, additional values of the same property are ignored.
+	     *
+	     * **Note:** This method mutates `object`.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
+	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @since 4.0.0
 	     * @category Lang
 	     * @param {*} value The value to check.
@@ -13379,482 +17226,7 @@ webpackJsonp([2],{
 
 	    /**
 	     * Converts `value` to an array.
-	     *
-	     * @static
-	     * @since 0.1.0
-	     * @memberOf _
-	     * @category Lang
-	     * @param {*} value The value to convert.
-	     * @returns {Array} Returns the converted array.
-	     * @example
-	     *
-	     * _.toArray({ 'a': 1, 'b': 2 });
-	     * // => [1, 2]
-	     *
-	     * _.toArray('abc');
-	     * // => ['a', 'b', 'c']
-	     *
-	     * _.toArray(1);
-	     * // => []
-	     *
-	     * _.toArray(null);
-	     * // => []
-	     */
-	    function toArray(value) {
-	      if (!value) {
-	        return [];
-	      }
-	      if (isArrayLike(value)) {
-	        return isString(value) ? stringToArray(value) : copyArray(value);
-	      }
-	      if (iteratorSymbol && value[iteratorSymbol]) {
-	        return iteratorToArray(value[iteratorSymbol]());
-	      }
-	      var tag = getTag(value),
-	          func = tag == mapTag ? mapToArray : (tag == setTag ? setToArray : values);
-
-	      return func(value);
-	    }
-
-	    /**
-	     * Converts `value` to a finite number.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.12.0
-	     * @category Lang
-	     * @param {*} value The value to convert.
-	     * @returns {number} Returns the converted number.
-	     * @example
-	     *
-	     * _.toFinite(3.2);
-	     * // => 3.2
-	     *
-	     * _.toFinite(Number.MIN_VALUE);
-	     * // => 5e-324
-	     *
-	     * _.toFinite(Infinity);
-	     * // => 1.7976931348623157e+308
-	     *
-	     * _.toFinite('3.2');
-	     * // => 3.2
-	     */
-	    function toFinite(value) {
-	      if (!value) {
-	        return value === 0 ? value : 0;
-	      }
-	      value = toNumber(value);
-	      if (value === INFINITY || value === -INFINITY) {
-	        var sign = (value < 0 ? -1 : 1);
-	        return sign * MAX_INTEGER;
-	      }
-	      return value === value ? value : 0;
-	    }
-
-	    /**
-	     * Converts `value` to an integer.
-	     *
-	     * **Note:** This method is loosely based on
-	     * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Lang
-	     * @param {*} value The value to convert.
-	     * @returns {number} Returns the converted integer.
-	     * @example
-	     *
-	     * _.toInteger(3.2);
-	     * // => 3
-	     *
-	     * _.toInteger(Number.MIN_VALUE);
-	     * // => 0
-	     *
-	     * _.toInteger(Infinity);
-	     * // => 1.7976931348623157e+308
-	     *
-	     * _.toInteger('3.2');
-	     * // => 3
-	     */
-	    function toInteger(value) {
-	      var result = toFinite(value),
-	          remainder = result % 1;
-
-	      return result === result ? (remainder ? result - remainder : result) : 0;
-	    }
-
-	    /**
-	     * Converts `value` to an integer suitable for use as the length of an
-	     * array-like object.
-	     *
-	     * **Note:** This method is based on
-	     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Lang
-	     * @param {*} value The value to convert.
-	     * @returns {number} Returns the converted integer.
-	     * @example
-	     *
-	     * _.toLength(3.2);
-	     * // => 3
-	     *
-	     * _.toLength(Number.MIN_VALUE);
-	     * // => 0
-	     *
-	     * _.toLength(Infinity);
-	     * // => 4294967295
-	     *
-	     * _.toLength('3.2');
-	     * // => 3
-	     */
-	    function toLength(value) {
-	      return value ? baseClamp(toInteger(value), 0, MAX_ARRAY_LENGTH) : 0;
-	    }
-
-	    /**
-	     * Converts `value` to a number.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Lang
-	     * @param {*} value The value to process.
-	     * @returns {number} Returns the number.
-	     * @example
-	     *
-	     * _.toNumber(3.2);
-	     * // => 3.2
-	     *
-	     * _.toNumber(Number.MIN_VALUE);
-	     * // => 5e-324
-	     *
-	     * _.toNumber(Infinity);
-	     * // => Infinity
-	     *
-	     * _.toNumber('3.2');
-	     * // => 3.2
-	     */
-	    function toNumber(value) {
-	      if (typeof value == 'number') {
-	        return value;
-	      }
-	      if (isSymbol(value)) {
-	        return NAN;
-	      }
-	      if (isObject(value)) {
-	        var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
-	        value = isObject(other) ? (other + '') : other;
-	      }
-	      if (typeof value != 'string') {
-	        return value === 0 ? value : +value;
-	      }
-	      value = value.replace(reTrim, '');
-	      var isBinary = reIsBinary.test(value);
-	      return (isBinary || reIsOctal.test(value))
-	        ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
-	        : (reIsBadHex.test(value) ? NAN : +value);
-	    }
-
-	    /**
-	     * Converts `value` to a plain object flattening inherited enumerable string
-	     * keyed properties of `value` to own properties of the plain object.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 3.0.0
-	     * @category Lang
-	     * @param {*} value The value to convert.
-	     * @returns {Object} Returns the converted plain object.
-	     * @example
-	     *
-	     * function Foo() {
-	     *   this.b = 2;
-	     * }
-	     *
-	     * Foo.prototype.c = 3;
-	     *
-	     * _.assign({ 'a': 1 }, new Foo);
-	     * // => { 'a': 1, 'b': 2 }
-	     *
-	     * _.assign({ 'a': 1 }, _.toPlainObject(new Foo));
-	     * // => { 'a': 1, 'b': 2, 'c': 3 }
-	     */
-	    function toPlainObject(value) {
-	      return copyObject(value, keysIn(value));
-	    }
-
-	    /**
-	     * Converts `value` to a safe integer. A safe integer can be compared and
-	     * represented correctly.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Lang
-	     * @param {*} value The value to convert.
-	     * @returns {number} Returns the converted integer.
-	     * @example
-	     *
-	     * _.toSafeInteger(3.2);
-	     * // => 3
-	     *
-	     * _.toSafeInteger(Number.MIN_VALUE);
-	     * // => 0
-	     *
-	     * _.toSafeInteger(Infinity);
-	     * // => 9007199254740991
-	     *
-	     * _.toSafeInteger('3.2');
-	     * // => 3
-	     */
-	    function toSafeInteger(value) {
-	      return baseClamp(toInteger(value), -MAX_SAFE_INTEGER, MAX_SAFE_INTEGER);
-	    }
-
-	    /**
-	     * Converts `value` to a string. An empty string is returned for `null`
-	     * and `undefined` values. The sign of `-0` is preserved.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Lang
-	     * @param {*} value The value to convert.
-	     * @returns {string} Returns the converted string.
-	     * @example
-	     *
-	     * _.toString(null);
-	     * // => ''
-	     *
-	     * _.toString(-0);
-	     * // => '-0'
-	     *
-	     * _.toString([1, 2, 3]);
-	     * // => '1,2,3'
-	     */
-	    function toString(value) {
-	      return value == null ? '' : baseToString(value);
-	    }
-
-	    /*------------------------------------------------------------------------*/
-
-	    /**
-	     * Assigns own enumerable string keyed properties of source objects to the
-	     * destination object. Source objects are applied from left to right.
-	     * Subsequent sources overwrite property assignments of previous sources.
-	     *
-	     * **Note:** This method mutates `object` and is loosely based on
-	     * [`Object.assign`](https://mdn.io/Object/assign).
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 0.10.0
-	     * @category Object
-	     * @param {Object} object The destination object.
-	     * @param {...Object} [sources] The source objects.
-	     * @returns {Object} Returns `object`.
-	     * @see _.assignIn
-	     * @example
-	     *
-	     * function Foo() {
-	     *   this.a = 1;
-	     * }
-	     *
-	     * function Bar() {
-	     *   this.c = 3;
-	     * }
-	     *
-	     * Foo.prototype.b = 2;
-	     * Bar.prototype.d = 4;
-	     *
-	     * _.assign({ 'a': 0 }, new Foo, new Bar);
-	     * // => { 'a': 1, 'c': 3 }
-	     */
-	    var assign = createAssigner(function(object, source) {
-	      if (isPrototype(source) || isArrayLike(source)) {
-	        copyObject(source, keys(source), object);
-	        return;
-	      }
-	      for (var key in source) {
-	        if (hasOwnProperty.call(source, key)) {
-	          assignValue(object, key, source[key]);
-	        }
-	      }
-	    });
-
-	    /**
-	     * This method is like `_.assign` except that it iterates over own and
-	     * inherited source properties.
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @alias extend
-	     * @category Object
-	     * @param {Object} object The destination object.
-	     * @param {...Object} [sources] The source objects.
-	     * @returns {Object} Returns `object`.
-	     * @see _.assign
-	     * @example
-	     *
-	     * function Foo() {
-	     *   this.a = 1;
-	     * }
-	     *
-	     * function Bar() {
-	     *   this.c = 3;
-	     * }
-	     *
-	     * Foo.prototype.b = 2;
-	     * Bar.prototype.d = 4;
-	     *
-	     * _.assignIn({ 'a': 0 }, new Foo, new Bar);
-	     * // => { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
-	     */
-	    var assignIn = createAssigner(function(object, source) {
-	      copyObject(source, keysIn(source), object);
-	    });
-
-	    /**
-	     * This method is like `_.assignIn` except that it accepts `customizer`
-	     * which is invoked to produce the assigned values. If `customizer` returns
-	     * `undefined`, assignment is handled by the method instead. The `customizer`
-	     * is invoked with five arguments: (objValue, srcValue, key, object, source).
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @alias extendWith
-	     * @category Object
-	     * @param {Object} object The destination object.
-	     * @param {...Object} sources The source objects.
-	     * @param {Function} [customizer] The function to customize assigned values.
-	     * @returns {Object} Returns `object`.
-	     * @see _.assignWith
-	     * @example
-	     *
-	     * function customizer(objValue, srcValue) {
-	     *   return _.isUndefined(objValue) ? srcValue : objValue;
-	     * }
-	     *
-	     * var defaults = _.partialRight(_.assignInWith, customizer);
-	     *
-	     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
-	     * // => { 'a': 1, 'b': 2 }
-	     */
-	    var assignInWith = createAssigner(function(object, source, srcIndex, customizer) {
-	      copyObject(source, keysIn(source), object, customizer);
-	    });
-
-	    /**
-	     * This method is like `_.assign` except that it accepts `customizer`
-	     * which is invoked to produce the assigned values. If `customizer` returns
-	     * `undefined`, assignment is handled by the method instead. The `customizer`
-	     * is invoked with five arguments: (objValue, srcValue, key, object, source).
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Object
-	     * @param {Object} object The destination object.
-	     * @param {...Object} sources The source objects.
-	     * @param {Function} [customizer] The function to customize assigned values.
-	     * @returns {Object} Returns `object`.
-	     * @see _.assignInWith
-	     * @example
-	     *
-	     * function customizer(objValue, srcValue) {
-	     *   return _.isUndefined(objValue) ? srcValue : objValue;
-	     * }
-	     *
-	     * var defaults = _.partialRight(_.assignWith, customizer);
-	     *
-	     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
-	     * // => { 'a': 1, 'b': 2 }
-	     */
-	    var assignWith = createAssigner(function(object, source, srcIndex, customizer) {
-	      copyObject(source, keys(source), object, customizer);
-	    });
-
-	    /**
-	     * Creates an array of values corresponding to `paths` of `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 1.0.0
-	     * @category Object
-	     * @param {Object} object The object to iterate over.
-	     * @param {...(string|string[])} [paths] The property paths of elements to pick.
-	     * @returns {Array} Returns the picked values.
-	     * @example
-	     *
-	     * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
-	     *
-	     * _.at(object, ['a[0].b.c', 'a[1]']);
-	     * // => [3, 4]
-	     */
-	    var at = flatRest(baseAt);
-
-	    /**
-	     * Creates an object that inherits from the `prototype` object. If a
-	     * `properties` object is given, its own enumerable string keyed properties
-	     * are assigned to the created object.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 2.3.0
-	     * @category Object
-	     * @param {Object} prototype The object to inherit from.
-	     * @param {Object} [properties] The properties to assign to the object.
-	     * @returns {Object} Returns the new object.
-	     * @example
-	     *
-	     * function Shape() {
-	     *   this.x = 0;
-	     *   this.y = 0;
-	     * }
-	     *
-	     * function Circle() {
-	     *   Shape.call(this);
-	     * }
-	     *
-	     * Circle.prototype = _.create(Shape.prototype, {
-	     *   'constructor': Circle
-	     * });
-	     *
-	     * var circle = new Circle;
-	     * circle instanceof Circle;
-	     * // => true
-	     *
-	     * circle instanceof Shape;
-	     * // => true
-	     */
-	    function create(prototype, properties) {
-	      var result = baseCreate(prototype);
-	      return properties ? baseAssign(result, properties) : result;
-	    }
-
-	    /**
-	     * Assigns own and inherited enumerable string keyed properties of source
-	     * objects to the destination object for all destination properties that
-	     * resolve to `undefined`. Source objects are applied from left to right.
-	     * Once a property is set, additional values of the same property are ignored.
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @since 0.1.0
-	     * @memberOf _
+=======
 	     * @category Object
 	     * @param {Object} object The destination object.
 	     * @param {...Object} [sources] The source objects.
@@ -14073,9 +17445,48 @@ webpackJsonp([2],{
 	    /**
 	     * This method is like `_.forOwn` except that it iterates over properties of
 	     * `object` in the opposite order.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
+	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {Array} Returns the converted array.
+	     * @example
+	     *
+	     * _.toArray({ 'a': 1, 'b': 2 });
+	     * // => [1, 2]
+	     *
+	     * _.toArray('abc');
+	     * // => ['a', 'b', 'c']
+	     *
+	     * _.toArray(1);
+	     * // => []
+	     *
+	     * _.toArray(null);
+	     * // => []
+	     */
+	    function toArray(value) {
+	      if (!value) {
+	        return [];
+	      }
+	      if (isArrayLike(value)) {
+	        return isString(value) ? stringToArray(value) : copyArray(value);
+	      }
+	      if (iteratorSymbol && value[iteratorSymbol]) {
+	        return iteratorToArray(value[iteratorSymbol]());
+	      }
+	      var tag = getTag(value),
+	          func = tag == mapTag ? mapToArray : (tag == setTag ? setToArray : values);
+
+	      return func(value);
+	    }
+
+	    /**
+	     * Converts `value` to a finite number.
+=======
 	     * @since 2.0.0
 	     * @category Object
 	     * @param {Object} object The object to iterate over.
@@ -14103,10 +17514,48 @@ webpackJsonp([2],{
 	    /**
 	     * Creates an array of function property names from own enumerable properties
 	     * of `object`.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 4.12.0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {number} Returns the converted number.
+	     * @example
+	     *
+	     * _.toFinite(3.2);
+	     * // => 3.2
+	     *
+	     * _.toFinite(Number.MIN_VALUE);
+	     * // => 5e-324
+	     *
+	     * _.toFinite(Infinity);
+	     * // => 1.7976931348623157e+308
+	     *
+	     * _.toFinite('3.2');
+	     * // => 3.2
+	     */
+	    function toFinite(value) {
+	      if (!value) {
+	        return value === 0 ? value : 0;
+	      }
+	      value = toNumber(value);
+	      if (value === INFINITY || value === -INFINITY) {
+	        var sign = (value < 0 ? -1 : 1);
+	        return sign * MAX_INTEGER;
+	      }
+	      return value === value ? value : 0;
+	    }
+
+	    /**
+	     * Converts `value` to an integer.
+	     *
+	     * **Note:** This method is loosely based on
+	     * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+=======
 	     * @category Object
 	     * @param {Object} object The object to inspect.
 	     * @returns {Array} Returns the function names.
@@ -14130,10 +17579,70 @@ webpackJsonp([2],{
 	    /**
 	     * Creates an array of function property names from own and inherited
 	     * enumerable properties of `object`.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {number} Returns the converted integer.
+	     * @example
+	     *
+	     * _.toInteger(3.2);
+	     * // => 3
+	     *
+	     * _.toInteger(Number.MIN_VALUE);
+	     * // => 0
+	     *
+	     * _.toInteger(Infinity);
+	     * // => 1.7976931348623157e+308
+	     *
+	     * _.toInteger('3.2');
+	     * // => 3
+	     */
+	    function toInteger(value) {
+	      var result = toFinite(value),
+	          remainder = result % 1;
+
+	      return result === result ? (remainder ? result - remainder : result) : 0;
+	    }
+
+	    /**
+	     * Converts `value` to an integer suitable for use as the length of an
+	     * array-like object.
+	     *
+	     * **Note:** This method is based on
+	     * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {number} Returns the converted integer.
+	     * @example
+	     *
+	     * _.toLength(3.2);
+	     * // => 3
+	     *
+	     * _.toLength(Number.MIN_VALUE);
+	     * // => 0
+	     *
+	     * _.toLength(Infinity);
+	     * // => 4294967295
+	     *
+	     * _.toLength('3.2');
+	     * // => 3
+	     */
+	    function toLength(value) {
+	      return value ? baseClamp(toInteger(value), 0, MAX_ARRAY_LENGTH) : 0;
+	    }
+
+	    /**
+	     * Converts `value` to a number.
+=======
 	     * @category Object
 	     * @param {Object} object The object to inspect.
 	     * @returns {Array} Returns the function names.
@@ -14186,10 +17695,1321 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `path` is a direct property of `object`.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to process.
+	     * @returns {number} Returns the number.
+	     * @example
+	     *
+	     * _.toNumber(3.2);
+	     * // => 3.2
+	     *
+	     * _.toNumber(Number.MIN_VALUE);
+	     * // => 5e-324
+	     *
+	     * _.toNumber(Infinity);
+	     * // => Infinity
+	     *
+	     * _.toNumber('3.2');
+	     * // => 3.2
+	     */
+	    function toNumber(value) {
+	      if (typeof value == 'number') {
+	        return value;
+	      }
+	      if (isSymbol(value)) {
+	        return NAN;
+	      }
+	      if (isObject(value)) {
+	        var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
+	        value = isObject(other) ? (other + '') : other;
+	      }
+	      if (typeof value != 'string') {
+	        return value === 0 ? value : +value;
+	      }
+	      value = value.replace(reTrim, '');
+	      var isBinary = reIsBinary.test(value);
+	      return (isBinary || reIsOctal.test(value))
+	        ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
+	        : (reIsBadHex.test(value) ? NAN : +value);
+	    }
+
+	    /**
+	     * Converts `value` to a plain object flattening inherited enumerable string
+	     * keyed properties of `value` to own properties of the plain object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {Object} Returns the converted plain object.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.assign({ 'a': 1 }, new Foo);
+	     * // => { 'a': 1, 'b': 2 }
+	     *
+	     * _.assign({ 'a': 1 }, _.toPlainObject(new Foo));
+	     * // => { 'a': 1, 'b': 2, 'c': 3 }
+	     */
+	    function toPlainObject(value) {
+	      return copyObject(value, keysIn(value));
+	    }
+
+	    /**
+	     * Converts `value` to a safe integer. A safe integer can be compared and
+	     * represented correctly.
+=======
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @param {Array|string} path The path to check.
+	     * @returns {boolean} Returns `true` if `path` exists, else `false`.
+	     * @example
+	     *
+	     * var object = { 'a': { 'b': 2 } };
+	     * var other = _.create({ 'a': _.create({ 'b': 2 }) });
+	     *
+	     * _.has(object, 'a');
+	     * // => true
+	     *
+	     * _.has(object, 'a.b');
+	     * // => true
+	     *
+	     * _.has(object, ['a', 'b']);
+	     * // => true
+	     *
+	     * _.has(other, 'a');
+	     * // => false
+	     */
+	    function has(object, path) {
+	      return object != null && hasPath(object, path, baseHas);
+	    }
+
+	    /**
+	     * Checks if `path` is a direct or inherited property of `object`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {number} Returns the converted integer.
+	     * @example
+	     *
+	     * _.toSafeInteger(3.2);
+	     * // => 3
+	     *
+	     * _.toSafeInteger(Number.MIN_VALUE);
+	     * // => 0
+	     *
+	     * _.toSafeInteger(Infinity);
+	     * // => 9007199254740991
+	     *
+	     * _.toSafeInteger('3.2');
+	     * // => 3
+	     */
+	    function toSafeInteger(value) {
+	      return baseClamp(toInteger(value), -MAX_SAFE_INTEGER, MAX_SAFE_INTEGER);
+	    }
+
+	    /**
+	     * Converts `value` to a string. An empty string is returned for `null`
+	     * and `undefined` values. The sign of `-0` is preserved.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Lang
+	     * @param {*} value The value to convert.
+	     * @returns {string} Returns the converted string.
+	     * @example
+	     *
+	     * _.toString(null);
+	     * // => ''
+	     *
+	     * _.toString(-0);
+	     * // => '-0'
+	     *
+	     * _.toString([1, 2, 3]);
+	     * // => '1,2,3'
+	     */
+	    function toString(value) {
+	      return value == null ? '' : baseToString(value);
+	    }
+=======
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @param {Array|string} path The path to check.
+	     * @returns {boolean} Returns `true` if `path` exists, else `false`.
+	     * @example
+	     *
+	     * var object = _.create({ 'a': _.create({ 'b': 2 }) });
+	     *
+	     * _.hasIn(object, 'a');
+	     * // => true
+	     *
+	     * _.hasIn(object, 'a.b');
+	     * // => true
+	     *
+	     * _.hasIn(object, ['a', 'b']);
+	     * // => true
+	     *
+	     * _.hasIn(object, 'b');
+	     * // => false
+	     */
+	    function hasIn(object, path) {
+	      return object != null && hasPath(object, path, baseHasIn);
+	    }
+
+	    /**
+	     * Creates an object composed of the inverted keys and values of `object`.
+	     * If `object` contains duplicate values, subsequent values overwrite
+	     * property assignments of previous values.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.7.0
+	     * @category Object
+	     * @param {Object} object The object to invert.
+	     * @returns {Object} Returns the new inverted object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': 2, 'c': 1 };
+	     *
+	     * _.invert(object);
+	     * // => { '1': 'c', '2': 'b' }
+	     */
+	    var invert = createInverter(function(result, value, key) {
+	      result[value] = key;
+	    }, constant(identity));
+>>>>>>> CCN Directives (#200)
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * Assigns own enumerable string keyed properties of source objects to the
+	     * destination object. Source objects are applied from left to right.
+	     * Subsequent sources overwrite property assignments of previous sources.
+	     *
+	     * **Note:** This method mutates `object` and is loosely based on
+	     * [`Object.assign`](https://mdn.io/Object/assign).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.10.0
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} [sources] The source objects.
+	     * @returns {Object} Returns `object`.
+	     * @see _.assignIn
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     * }
+	     *
+	     * function Bar() {
+	     *   this.c = 3;
+	     * }
+	     *
+	     * Foo.prototype.b = 2;
+	     * Bar.prototype.d = 4;
+	     *
+	     * _.assign({ 'a': 0 }, new Foo, new Bar);
+	     * // => { 'a': 1, 'c': 3 }
+	     */
+	    var assign = createAssigner(function(object, source) {
+	      if (isPrototype(source) || isArrayLike(source)) {
+	        copyObject(source, keys(source), object);
+	        return;
+	      }
+	      for (var key in source) {
+	        if (hasOwnProperty.call(source, key)) {
+	          assignValue(object, key, source[key]);
+	        }
+	      }
+	    });
+
+	    /**
+	     * This method is like `_.assign` except that it iterates over own and
+	     * inherited source properties.
+	     *
+	     * **Note:** This method mutates `object`.
+=======
+	     * This method is like `_.invert` except that the inverted object is generated
+	     * from the results of running each element of `object` thru `iteratee`. The
+	     * corresponding inverted value of each inverted key is an array of keys
+	     * responsible for generating the inverted value. The iteratee is invoked
+	     * with one argument: (value).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.1.0
+	     * @category Object
+	     * @param {Object} object The object to invert.
+	     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+	     * @returns {Object} Returns the new inverted object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': 2, 'c': 1 };
+	     *
+	     * _.invertBy(object);
+	     * // => { '1': ['a', 'c'], '2': ['b'] }
+	     *
+	     * _.invertBy(object, function(value) {
+	     *   return 'group' + value;
+	     * });
+	     * // => { 'group1': ['a', 'c'], 'group2': ['b'] }
+	     */
+	    var invertBy = createInverter(function(result, value, key) {
+	      if (hasOwnProperty.call(result, value)) {
+	        result[value].push(key);
+	      } else {
+	        result[value] = [key];
+	      }
+	    }, getIteratee);
+
+	    /**
+	     * Invokes the method at `path` of `object`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @alias extend
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} [sources] The source objects.
+	     * @returns {Object} Returns `object`.
+	     * @see _.assign
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     * }
+	     *
+	     * function Bar() {
+	     *   this.c = 3;
+	     * }
+	     *
+	     * Foo.prototype.b = 2;
+	     * Bar.prototype.d = 4;
+	     *
+	     * _.assignIn({ 'a': 0 }, new Foo, new Bar);
+	     * // => { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
+	     */
+	    var assignIn = createAssigner(function(object, source) {
+	      copyObject(source, keysIn(source), object);
+	    });
+
+	    /**
+	     * This method is like `_.assignIn` except that it accepts `customizer`
+	     * which is invoked to produce the assigned values. If `customizer` returns
+	     * `undefined`, assignment is handled by the method instead. The `customizer`
+	     * is invoked with five arguments: (objValue, srcValue, key, object, source).
+	     *
+	     * **Note:** This method mutates `object`.
+=======
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @param {Array|string} path The path of the method to invoke.
+	     * @param {...*} [args] The arguments to invoke the method with.
+	     * @returns {*} Returns the result of the invoked method.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': [1, 2, 3, 4] } }] };
+	     *
+	     * _.invoke(object, 'a[0].b.c.slice', 1, 3);
+	     * // => [2, 3]
+	     */
+	    var invoke = baseRest(baseInvoke);
+
+	    /**
+	     * Creates an array of the own enumerable property names of `object`.
+	     *
+	     * **Note:** Non-object values are coerced to objects. See the
+	     * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+	     * for more details.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 4.0.0
+	     * @alias extendWith
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} sources The source objects.
+	     * @param {Function} [customizer] The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @see _.assignWith
+	     * @example
+	     *
+	     * function customizer(objValue, srcValue) {
+	     *   return _.isUndefined(objValue) ? srcValue : objValue;
+	     * }
+	     *
+	     * var defaults = _.partialRight(_.assignInWith, customizer);
+	     *
+	     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+	     * // => { 'a': 1, 'b': 2 }
+	     */
+	    var assignInWith = createAssigner(function(object, source, srcIndex, customizer) {
+	      copyObject(source, keysIn(source), object, customizer);
+	    });
+
+	    /**
+	     * This method is like `_.assign` except that it accepts `customizer`
+	     * which is invoked to produce the assigned values. If `customizer` returns
+	     * `undefined`, assignment is handled by the method instead. The `customizer`
+	     * is invoked with five arguments: (objValue, srcValue, key, object, source).
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} sources The source objects.
+	     * @param {Function} [customizer] The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @see _.assignInWith
+	     * @example
+	     *
+	     * function customizer(objValue, srcValue) {
+	     *   return _.isUndefined(objValue) ? srcValue : objValue;
+	     * }
+	     *
+	     * var defaults = _.partialRight(_.assignWith, customizer);
+	     *
+	     * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+	     * // => { 'a': 1, 'b': 2 }
+	     */
+	    var assignWith = createAssigner(function(object, source, srcIndex, customizer) {
+	      copyObject(source, keys(source), object, customizer);
+	    });
+
+	    /**
+	     * Creates an array of values corresponding to `paths` of `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 1.0.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {...(string|string[])} [paths] The property paths of elements to pick.
+	     * @returns {Array} Returns the picked values.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
+	     *
+	     * _.at(object, ['a[0].b.c', 'a[1]']);
+	     * // => [3, 4]
+	     */
+	    var at = flatRest(baseAt);
+
+	    /**
+	     * Creates an object that inherits from the `prototype` object. If a
+	     * `properties` object is given, its own enumerable string keyed properties
+	     * are assigned to the created object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.3.0
+	     * @category Object
+	     * @param {Object} prototype The object to inherit from.
+	     * @param {Object} [properties] The properties to assign to the object.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * function Shape() {
+	     *   this.x = 0;
+	     *   this.y = 0;
+	     * }
+	     *
+	     * function Circle() {
+	     *   Shape.call(this);
+	     * }
+	     *
+	     * Circle.prototype = _.create(Shape.prototype, {
+	     *   'constructor': Circle
+	     * });
+	     *
+	     * var circle = new Circle;
+	     * circle instanceof Circle;
+	     * // => true
+	     *
+	     * circle instanceof Shape;
+	     * // => true
+	     */
+	    function create(prototype, properties) {
+	      var result = baseCreate(prototype);
+	      return properties ? baseAssign(result, properties) : result;
+	    }
+
+	    /**
+	     * Assigns own and inherited enumerable string keyed properties of source
+	     * objects to the destination object for all destination properties that
+	     * resolve to `undefined`. Source objects are applied from left to right.
+	     * Once a property is set, additional values of the same property are ignored.
+=======
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the array of property names.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.keys(new Foo);
+	     * // => ['a', 'b'] (iteration order is not guaranteed)
+	     *
+	     * _.keys('hi');
+	     * // => ['0', '1']
+	     */
+	    function keys(object) {
+	      return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
+	    }
+
+	    /**
+	     * Creates an array of the own and inherited enumerable property names of `object`.
+	     *
+	     * **Note:** Non-object values are coerced to objects.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the array of property names.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.keysIn(new Foo);
+	     * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+	     */
+	    function keysIn(object) {
+	      return isArrayLike(object) ? arrayLikeKeys(object, true) : baseKeysIn(object);
+	    }
+
+	    /**
+	     * The opposite of `_.mapValues`; this method creates an object with the
+	     * same values as `object` and keys generated by running each own enumerable
+	     * string keyed property of `object` thru `iteratee`. The iteratee is invoked
+	     * with three arguments: (value, key, object).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.8.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Object} Returns the new mapped object.
+	     * @see _.mapValues
+	     * @example
+	     *
+	     * _.mapKeys({ 'a': 1, 'b': 2 }, function(value, key) {
+	     *   return key + value;
+	     * });
+	     * // => { 'a1': 1, 'b2': 2 }
+	     */
+	    function mapKeys(object, iteratee) {
+	      var result = {};
+	      iteratee = getIteratee(iteratee, 3);
+
+	      baseForOwn(object, function(value, key, object) {
+	        baseAssignValue(result, iteratee(value, key, object), value);
+	      });
+	      return result;
+	    }
+
+	    /**
+	     * Creates an object with the same keys as `object` and values generated
+	     * by running each own enumerable string keyed property of `object` thru
+	     * `iteratee`. The iteratee is invoked with three arguments:
+	     * (value, key, object).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.4.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Object} Returns the new mapped object.
+	     * @see _.mapKeys
+	     * @example
+	     *
+	     * var users = {
+	     *   'fred':    { 'user': 'fred',    'age': 40 },
+	     *   'pebbles': { 'user': 'pebbles', 'age': 1 }
+	     * };
+	     *
+	     * _.mapValues(users, function(o) { return o.age; });
+	     * // => { 'fred': 40, 'pebbles': 1 } (iteration order is not guaranteed)
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.mapValues(users, 'age');
+	     * // => { 'fred': 40, 'pebbles': 1 } (iteration order is not guaranteed)
+	     */
+	    function mapValues(object, iteratee) {
+	      var result = {};
+	      iteratee = getIteratee(iteratee, 3);
+
+	      baseForOwn(object, function(value, key, object) {
+	        baseAssignValue(result, key, iteratee(value, key, object));
+	      });
+	      return result;
+	    }
+
+	    /**
+	     * This method is like `_.assign` except that it recursively merges own and
+	     * inherited enumerable string keyed properties of source objects into the
+	     * destination object. Source properties that resolve to `undefined` are
+	     * skipped if a destination value exists. Array and plain object properties
+	     * are merged recursively. Other objects and value types are overridden by
+	     * assignment. Source objects are applied from left to right. Subsequent
+	     * sources overwrite property assignments of previous sources.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+=======
+	     * @since 0.5.0
+>>>>>>> CCN Directives (#200)
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} [sources] The source objects.
+	     * @returns {Object} Returns `object`.
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @see _.defaultsDeep
+	     * @example
+	     *
+	     * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+	     * // => { 'a': 1, 'b': 2 }
+	     */
+	    var defaults = baseRest(function(args) {
+	      args.push(undefined, assignInDefaults);
+	      return apply(assignInWith, undefined, args);
+	    });
+
+	    /**
+	     * This method is like `_.defaults` except that it recursively assigns
+	     * default properties.
+=======
+	     * @example
+	     *
+	     * var object = {
+	     *   'a': [{ 'b': 2 }, { 'd': 4 }]
+	     * };
+	     *
+	     * var other = {
+	     *   'a': [{ 'c': 3 }, { 'e': 5 }]
+	     * };
+	     *
+	     * _.merge(object, other);
+	     * // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
+	     */
+	    var merge = createAssigner(function(object, source, srcIndex) {
+	      baseMerge(object, source, srcIndex);
+	    });
+
+	    /**
+	     * This method is like `_.merge` except that it accepts `customizer` which
+	     * is invoked to produce the merged values of the destination and source
+	     * properties. If `customizer` returns `undefined`, merging is handled by the
+	     * method instead. The `customizer` is invoked with six arguments:
+	     * (objValue, srcValue, key, object, source, stack).
+>>>>>>> CCN Directives (#200)
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 3.10.0
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} [sources] The source objects.
+	     * @returns {Object} Returns `object`.
+	     * @see _.defaults
+	     * @example
+	     *
+	     * _.defaultsDeep({ 'a': { 'b': 2 } }, { 'a': { 'b': 1, 'c': 3 } });
+	     * // => { 'a': { 'b': 2, 'c': 3 } }
+	     */
+	    var defaultsDeep = baseRest(function(args) {
+	      args.push(undefined, mergeDefaults);
+	      return apply(mergeWith, undefined, args);
+	    });
+
+	    /**
+	     * This method is like `_.find` except that it returns the key of the first
+	     * element `predicate` returns truthy for instead of the element itself.
+=======
+	     * @since 4.0.0
+	     * @category Object
+	     * @param {Object} object The destination object.
+	     * @param {...Object} sources The source objects.
+	     * @param {Function} customizer The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * function customizer(objValue, srcValue) {
+	     *   if (_.isArray(objValue)) {
+	     *     return objValue.concat(srcValue);
+	     *   }
+	     * }
+	     *
+	     * var object = { 'a': [1], 'b': [2] };
+	     * var other = { 'a': [3], 'b': [4] };
+	     *
+	     * _.mergeWith(object, other, customizer);
+	     * // => { 'a': [1, 3], 'b': [2, 4] }
+	     */
+	    var mergeWith = createAssigner(function(object, source, srcIndex, customizer) {
+	      baseMerge(object, source, srcIndex, customizer);
+	    });
+
+	    /**
+	     * The opposite of `_.pick`; this method creates an object composed of the
+	     * own and inherited enumerable string keyed properties of `object` that are
+	     * not omitted.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 1.1.0
+	     * @category Object
+	     * @param {Object} object The object to inspect.
+	     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+	     * @returns {string|undefined} Returns the key of the matched element,
+	     *  else `undefined`.
+	     * @example
+	     *
+	     * var users = {
+	     *   'barney':  { 'age': 36, 'active': true },
+	     *   'fred':    { 'age': 40, 'active': false },
+	     *   'pebbles': { 'age': 1,  'active': true }
+	     * };
+	     *
+	     * _.findKey(users, function(o) { return o.age < 40; });
+	     * // => 'barney' (iteration order is not guaranteed)
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.findKey(users, { 'age': 1, 'active': true });
+	     * // => 'pebbles'
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.findKey(users, ['active', false]);
+	     * // => 'fred'
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.findKey(users, 'active');
+	     * // => 'barney'
+	     */
+	    function findKey(object, predicate) {
+	      return baseFindKey(object, getIteratee(predicate, 3), baseForOwn);
+	    }
+
+	    /**
+	     * This method is like `_.findKey` except that it iterates over elements of
+	     * a collection in the opposite order.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.0.0
+	     * @category Object
+	     * @param {Object} object The object to inspect.
+	     * @param {Function} [predicate=_.identity] The function invoked per iteration.
+	     * @returns {string|undefined} Returns the key of the matched element,
+	     *  else `undefined`.
+	     * @example
+	     *
+	     * var users = {
+	     *   'barney':  { 'age': 36, 'active': true },
+	     *   'fred':    { 'age': 40, 'active': false },
+	     *   'pebbles': { 'age': 1,  'active': true }
+	     * };
+	     *
+	     * _.findLastKey(users, function(o) { return o.age < 40; });
+	     * // => returns 'pebbles' assuming `_.findKey` returns 'barney'
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.findLastKey(users, { 'age': 36, 'active': true });
+	     * // => 'barney'
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.findLastKey(users, ['active', false]);
+	     * // => 'fred'
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.findLastKey(users, 'active');
+	     * // => 'pebbles'
+	     */
+	    function findLastKey(object, predicate) {
+	      return baseFindKey(object, getIteratee(predicate, 3), baseForOwnRight);
+	    }
+
+	    /**
+	     * Iterates over own and inherited enumerable string keyed properties of an
+	     * object and invokes `iteratee` for each property. The iteratee is invoked
+	     * with three arguments: (value, key, object). Iteratee functions may exit
+	     * iteration early by explicitly returning `false`.
+=======
+	     * @category Object
+	     * @param {Object} object The source object.
+	     * @param {...(string|string[])} [props] The property identifiers to omit.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+	     *
+	     * _.omit(object, ['a', 'c']);
+	     * // => { 'b': '2' }
+	     */
+	    var omit = flatRest(function(object, props) {
+	      if (object == null) {
+	        return {};
+	      }
+	      props = arrayMap(props, toKey);
+	      return basePick(object, baseDifference(getAllKeysIn(object), props));
+	    });
+
+	    /**
+	     * The opposite of `_.pickBy`; this method creates an object composed of
+	     * the own and inherited enumerable string keyed properties of `object` that
+	     * `predicate` doesn't return truthy for. The predicate is invoked with two
+	     * arguments: (value, key).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Object
+	     * @param {Object} object The source object.
+	     * @param {Function} [predicate=_.identity] The function invoked per property.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+	     *
+	     * _.omitBy(object, _.isNumber);
+	     * // => { 'b': '2' }
+	     */
+	    function omitBy(object, predicate) {
+	      return pickBy(object, negate(getIteratee(predicate)));
+	    }
+
+	    /**
+	     * Creates an object composed of the picked `object` properties.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 0.3.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Object} Returns `object`.
+	     * @see _.forInRight
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.forIn(new Foo, function(value, key) {
+	     *   console.log(key);
+	     * });
+	     * // => Logs 'a', 'b', then 'c' (iteration order is not guaranteed).
+	     */
+	    function forIn(object, iteratee) {
+	      return object == null
+	        ? object
+	        : baseFor(object, getIteratee(iteratee, 3), keysIn);
+	    }
+
+	    /**
+	     * This method is like `_.forIn` except that it iterates over properties of
+	     * `object` in the opposite order.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.0.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Object} Returns `object`.
+	     * @see _.forIn
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.forInRight(new Foo, function(value, key) {
+	     *   console.log(key);
+	     * });
+	     * // => Logs 'c', 'b', then 'a' assuming `_.forIn` logs 'a', 'b', then 'c'.
+	     */
+	    function forInRight(object, iteratee) {
+	      return object == null
+	        ? object
+	        : baseForRight(object, getIteratee(iteratee, 3), keysIn);
+	    }
+
+	    /**
+	     * Iterates over own enumerable string keyed properties of an object and
+	     * invokes `iteratee` for each property. The iteratee is invoked with three
+	     * arguments: (value, key, object). Iteratee functions may exit iteration
+	     * early by explicitly returning `false`.
+=======
+	     * @category Object
+	     * @param {Object} object The source object.
+	     * @param {...(string|string[])} [props] The property identifiers to pick.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+	     *
+	     * _.pick(object, ['a', 'c']);
+	     * // => { 'a': 1, 'c': 3 }
+	     */
+	    var pick = flatRest(function(object, props) {
+	      return object == null ? {} : basePick(object, arrayMap(props, toKey));
+	    });
+
+	    /**
+	     * Creates an object composed of the `object` properties `predicate` returns
+	     * truthy for. The predicate is invoked with two arguments: (value, key).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Object
+	     * @param {Object} object The source object.
+	     * @param {Function} [predicate=_.identity] The function invoked per property.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+	     *
+	     * _.pickBy(object, _.isNumber);
+	     * // => { 'a': 1, 'c': 3 }
+	     */
+	    function pickBy(object, predicate) {
+	      return object == null ? {} : basePickBy(object, getAllKeysIn(object), getIteratee(predicate));
+	    }
+
+	    /**
+	     * This method is like `_.get` except that if the resolved value is a
+	     * function it's invoked with the `this` binding of its parent object and
+	     * its result is returned.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 0.3.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Object} Returns `object`.
+	     * @see _.forOwnRight
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.forOwn(new Foo, function(value, key) {
+	     *   console.log(key);
+	     * });
+	     * // => Logs 'a' then 'b' (iteration order is not guaranteed).
+	     */
+	    function forOwn(object, iteratee) {
+	      return object && baseForOwn(object, getIteratee(iteratee, 3));
+	    }
+
+	    /**
+	     * This method is like `_.forOwn` except that it iterates over properties of
+	     * `object` in the opposite order.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.0.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Object} Returns `object`.
+	     * @see _.forOwn
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.forOwnRight(new Foo, function(value, key) {
+	     *   console.log(key);
+	     * });
+	     * // => Logs 'b' then 'a' assuming `_.forOwn` logs 'a' then 'b'.
+	     */
+	    function forOwnRight(object, iteratee) {
+	      return object && baseForOwnRight(object, getIteratee(iteratee, 3));
+	    }
+
+	    /**
+	     * Creates an array of function property names from own enumerable properties
+	     * of `object`.
+=======
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @param {Array|string} path The path of the property to resolve.
+	     * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+	     * @returns {*} Returns the resolved value.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
+	     *
+	     * _.result(object, 'a[0].b.c1');
+	     * // => 3
+	     *
+	     * _.result(object, 'a[0].b.c2');
+	     * // => 4
+	     *
+	     * _.result(object, 'a[0].b.c3', 'default');
+	     * // => 'default'
+	     *
+	     * _.result(object, 'a[0].b.c3', _.constant('default'));
+	     * // => 'default'
+	     */
+	    function result(object, path, defaultValue) {
+	      path = isKey(path, object) ? [path] : castPath(path);
+
+	      var index = -1,
+	          length = path.length;
+
+	      // Ensure the loop is entered when path is empty.
+	      if (!length) {
+	        object = undefined;
+	        length = 1;
+	      }
+	      while (++index < length) {
+	        var value = object == null ? undefined : object[toKey(path[index])];
+	        if (value === undefined) {
+	          index = length;
+	          value = defaultValue;
+	        }
+	        object = isFunction(value) ? value.call(object) : value;
+	      }
+	      return object;
+	    }
+
+	    /**
+	     * Sets the value at `path` of `object`. If a portion of `path` doesn't exist,
+	     * it's created. Arrays are created for missing index properties while objects
+	     * are created for all other missing properties. Use `_.setWith` to customize
+	     * `path` creation.
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.7.0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to set.
+	     * @param {*} value The value to set.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	     *
+	     * _.set(object, 'a[0].b.c', 4);
+	     * console.log(object.a[0].b.c);
+	     * // => 4
+	     *
+	     * _.set(object, ['x', '0', 'y', 'z'], 5);
+	     * console.log(object.x[0].y.z);
+	     * // => 5
+	     */
+	    function set(object, path, value) {
+	      return object == null ? object : baseSet(object, path, value);
+	    }
+
+	    /**
+	     * This method is like `_.set` except that it accepts `customizer` which is
+	     * invoked to produce the objects of `path`.  If `customizer` returns `undefined`
+	     * path creation is handled by the method instead. The `customizer` is invoked
+	     * with three arguments: (nsValue, key, nsObject).
+	     *
+	     * **Note:** This method mutates `object`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The object to inspect.
+	     * @returns {Array} Returns the function names.
+	     * @see _.functionsIn
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = _.constant('a');
+	     *   this.b = _.constant('b');
+	     * }
+	     *
+	     * Foo.prototype.c = _.constant('c');
+	     *
+	     * _.functions(new Foo);
+	     * // => ['a', 'b']
+	     */
+	    function functions(object) {
+	      return object == null ? [] : baseFunctions(object, keys(object));
+	    }
+
+	    /**
+	     * Creates an array of function property names from own and inherited
+	     * enumerable properties of `object`.
+=======
+	     * @since 4.0.0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to set.
+	     * @param {*} value The value to set.
+	     * @param {Function} [customizer] The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var object = {};
+	     *
+	     * _.setWith(object, '[0][1]', 'a', Object);
+	     * // => { '0': { '1': 'a' } }
+	     */
+	    function setWith(object, path, value, customizer) {
+	      customizer = typeof customizer == 'function' ? customizer : undefined;
+	      return object == null ? object : baseSet(object, path, value, customizer);
+	    }
+
+	    /**
+	     * Creates an array of own enumerable string keyed-value pairs for `object`
+	     * which can be consumed by `_.fromPairs`. If `object` is a map or set, its
+	     * entries are returned.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The object to inspect.
+	     * @returns {Array} Returns the function names.
+	     * @see _.functions
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = _.constant('a');
+	     *   this.b = _.constant('b');
+	     * }
+	     *
+	     * Foo.prototype.c = _.constant('c');
+	     *
+	     * _.functionsIn(new Foo);
+	     * // => ['a', 'b', 'c']
+	     */
+	    function functionsIn(object) {
+	      return object == null ? [] : baseFunctions(object, keysIn(object));
+	    }
+
+	    /**
+	     * Gets the value at `path` of `object`. If the resolved value is
+	     * `undefined`, the `defaultValue` is returned in its place.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.7.0
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @param {Array|string} path The path of the property to get.
+	     * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+	     * @returns {*} Returns the resolved value.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	     *
+	     * _.get(object, 'a[0].b.c');
+	     * // => 3
+	     *
+	     * _.get(object, ['a', '0', 'b', 'c']);
+	     * // => 3
+	     *
+	     * _.get(object, 'a.b.c', 'default');
+	     * // => 'default'
+	     */
+	    function get(object, path, defaultValue) {
+	      var result = object == null ? undefined : baseGet(object, path);
+	      return result === undefined ? defaultValue : result;
+	    }
+
+	    /**
+	     * Checks if `path` is a direct property of `object`.
+=======
+	     * @alias entries
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the key-value pairs.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.toPairs(new Foo);
+	     * // => [['a', 1], ['b', 2]] (iteration order is not guaranteed)
+	     */
+	    var toPairs = createToPairs(keys);
+
+	    /**
+	     * Creates an array of own and inherited enumerable string keyed-value pairs
+	     * for `object` which can be consumed by `_.fromPairs`. If `object` is a map
+	     * or set, its entries are returned.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @alias entriesIn
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the key-value pairs.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.toPairsIn(new Foo);
+	     * // => [['a', 1], ['b', 2], ['c', 3]] (iteration order is not guaranteed)
+	     */
+	    var toPairsIn = createToPairs(keysIn);
+
+	    /**
+	     * An alternative to `_.reduce`; this method transforms `object` to a new
+	     * `accumulator` object which is the result of running each of its own
+	     * enumerable string keyed properties thru `iteratee`, with each invocation
+	     * potentially mutating the `accumulator` object. If `accumulator` is not
+	     * provided, a new object with the same `[[Prototype]]` will be used. The
+	     * iteratee is invoked with four arguments: (accumulator, value, key, object).
+	     * Iteratee functions may exit iteration early by explicitly returning `false`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 1.3.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @param {*} [accumulator] The custom accumulator value.
+	     * @returns {*} Returns the accumulated value.
+	     * @example
+	     *
+	     * _.transform([2, 3, 4], function(result, n) {
+	     *   result.push(n *= n);
+	     *   return n % 2 == 0;
+	     * }, []);
+	     * // => [4, 9]
+	     *
+	     * _.transform({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+	     *   (result[value] || (result[value] = [])).push(key);
+	     * }, {});
+	     * // => { '1': ['a', 'c'], '2': ['b'] }
+	     */
+	    function transform(object, iteratee, accumulator) {
+	      var isArr = isArray(object),
+	          isArrLike = isArr || isBuffer(object) || isTypedArray(object);
+
+	      iteratee = getIteratee(iteratee, 4);
+	      if (accumulator == null) {
+	        var Ctor = object && object.constructor;
+	        if (isArrLike) {
+	          accumulator = isArr ? new Ctor : [];
+	        }
+	        else if (isObject(object)) {
+	          accumulator = isFunction(Ctor) ? baseCreate(getPrototype(object)) : {};
+	        }
+	        else {
+	          accumulator = {};
+	        }
+	      }
+	      (isArrLike ? arrayEach : baseForOwn)(object, function(value, index, object) {
+	        return iteratee(accumulator, value, index, object);
+	      });
+	      return accumulator;
+	    }
+
+	    /**
+	     * Removes the property at `path` of `object`.
+	     *
+	     * **Note:** This method mutates `object`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @category Object
 	     * @param {Object} object The object to query.
 	     * @param {Array|string} path The path to check.
@@ -14273,9 +19093,101 @@ webpackJsonp([2],{
 	     * corresponding inverted value of each inverted key is an array of keys
 	     * responsible for generating the inverted value. The iteratee is invoked
 	     * with one argument: (value).
+=======
+	     * @since 4.0.0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to unset.
+	     * @returns {boolean} Returns `true` if the property is deleted, else `false`.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 7 } }] };
+	     * _.unset(object, 'a[0].b.c');
+	     * // => true
+	     *
+	     * console.log(object);
+	     * // => { 'a': [{ 'b': {} }] };
+	     *
+	     * _.unset(object, ['a', '0', 'b', 'c']);
+	     * // => true
+	     *
+	     * console.log(object);
+	     * // => { 'a': [{ 'b': {} }] };
+	     */
+	    function unset(object, path) {
+	      return object == null ? true : baseUnset(object, path);
+	    }
+
+	    /**
+	     * This method is like `_.set` except that accepts `updater` to produce the
+	     * value to set. Use `_.updateWith` to customize `path` creation. The `updater`
+	     * is invoked with one argument: (value).
+	     *
+	     * **Note:** This method mutates `object`.
 	     *
 	     * @static
 	     * @memberOf _
+	     * @since 4.6.0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to set.
+	     * @param {Function} updater The function to produce the updated value.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	     *
+	     * _.update(object, 'a[0].b.c', function(n) { return n * n; });
+	     * console.log(object.a[0].b.c);
+	     * // => 9
+	     *
+	     * _.update(object, 'x[0].y.z', function(n) { return n ? n + 1 : 0; });
+	     * console.log(object.x[0].y.z);
+	     * // => 0
+	     */
+	    function update(object, path, updater) {
+	      return object == null ? object : baseUpdate(object, path, castFunction(updater));
+	    }
+
+	    /**
+	     * This method is like `_.update` except that it accepts `customizer` which is
+	     * invoked to produce the objects of `path`.  If `customizer` returns `undefined`
+	     * path creation is handled by the method instead. The `customizer` is invoked
+	     * with three arguments: (nsValue, key, nsObject).
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.6.0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to set.
+	     * @param {Function} updater The function to produce the updated value.
+	     * @param {Function} [customizer] The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var object = {};
+	     *
+	     * _.updateWith(object, '[0][1]', _.constant('a'), Object);
+	     * // => { '0': { '1': 'a' } }
+	     */
+	    function updateWith(object, path, updater, customizer) {
+	      customizer = typeof customizer == 'function' ? customizer : undefined;
+	      return object == null ? object : baseUpdate(object, path, castFunction(updater), customizer);
+	    }
+
+	    /**
+	     * Creates an array of the own enumerable string keyed property values of `object`.
+	     *
+	     * **Note:** Non-object values are coerced to objects.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @since 4.1.0
 	     * @category Object
 	     * @param {Object} object The object to invert.
@@ -14327,10 +19239,67 @@ webpackJsonp([2],{
 	     * **Note:** Non-object values are coerced to objects. See the
 	     * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
 	     * for more details.
+=======
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the array of property values.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.values(new Foo);
+	     * // => [1, 2] (iteration order is not guaranteed)
+	     *
+	     * _.values('hi');
+	     * // => ['h', 'i']
+	     */
+	    function values(object) {
+	      return object ? baseValues(object, keys(object)) : [];
+	    }
+
+	    /**
+	     * Creates an array of the own and inherited enumerable string keyed property
+	     * values of `object`.
+	     *
+	     * **Note:** Non-object values are coerced to objects.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the array of property values.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.valuesIn(new Foo);
+	     * // => [1, 2, 3] (iteration order is not guaranteed)
+	     */
+	    function valuesIn(object) {
+	      return object == null ? [] : baseValues(object, keysIn(object));
+	    }
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+	     * Clamps `number` within the inclusive `lower` and `upper` bounds.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @category Object
 	     * @param {Object} object The object to query.
 	     * @returns {Array} Returns the array of property names.
@@ -14523,469 +19492,7 @@ webpackJsonp([2],{
 	     * The opposite of `_.pick`; this method creates an object composed of the
 	     * own and inherited enumerable string keyed properties of `object` that are
 	     * not omitted.
-	     *
-	     * @static
-	     * @since 0.1.0
-	     * @memberOf _
-	     * @category Object
-	     * @param {Object} object The source object.
-	     * @param {...(string|string[])} [props] The property identifiers to omit.
-	     * @returns {Object} Returns the new object.
-	     * @example
-	     *
-	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
-	     *
-	     * _.omit(object, ['a', 'c']);
-	     * // => { 'b': '2' }
-	     */
-	    var omit = flatRest(function(object, props) {
-	      if (object == null) {
-	        return {};
-	      }
-	      props = arrayMap(props, toKey);
-	      return basePick(object, baseDifference(getAllKeysIn(object), props));
-	    });
-
-	    /**
-	     * The opposite of `_.pickBy`; this method creates an object composed of
-	     * the own and inherited enumerable string keyed properties of `object` that
-	     * `predicate` doesn't return truthy for. The predicate is invoked with two
-	     * arguments: (value, key).
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Object
-	     * @param {Object} object The source object.
-	     * @param {Function} [predicate=_.identity] The function invoked per property.
-	     * @returns {Object} Returns the new object.
-	     * @example
-	     *
-	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
-	     *
-	     * _.omitBy(object, _.isNumber);
-	     * // => { 'b': '2' }
-	     */
-	    function omitBy(object, predicate) {
-	      return pickBy(object, negate(getIteratee(predicate)));
-	    }
-
-	    /**
-	     * Creates an object composed of the picked `object` properties.
-	     *
-	     * @static
-	     * @since 0.1.0
-	     * @memberOf _
-	     * @category Object
-	     * @param {Object} object The source object.
-	     * @param {...(string|string[])} [props] The property identifiers to pick.
-	     * @returns {Object} Returns the new object.
-	     * @example
-	     *
-	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
-	     *
-	     * _.pick(object, ['a', 'c']);
-	     * // => { 'a': 1, 'c': 3 }
-	     */
-	    var pick = flatRest(function(object, props) {
-	      return object == null ? {} : basePick(object, arrayMap(props, toKey));
-	    });
-
-	    /**
-	     * Creates an object composed of the `object` properties `predicate` returns
-	     * truthy for. The predicate is invoked with two arguments: (value, key).
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Object
-	     * @param {Object} object The source object.
-	     * @param {Function} [predicate=_.identity] The function invoked per property.
-	     * @returns {Object} Returns the new object.
-	     * @example
-	     *
-	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
-	     *
-	     * _.pickBy(object, _.isNumber);
-	     * // => { 'a': 1, 'c': 3 }
-	     */
-	    function pickBy(object, predicate) {
-	      return object == null ? {} : basePickBy(object, getAllKeysIn(object), getIteratee(predicate));
-	    }
-
-	    /**
-	     * This method is like `_.get` except that if the resolved value is a
-	     * function it's invoked with the `this` binding of its parent object and
-	     * its result is returned.
-	     *
-	     * @static
-	     * @since 0.1.0
-	     * @memberOf _
-	     * @category Object
-	     * @param {Object} object The object to query.
-	     * @param {Array|string} path The path of the property to resolve.
-	     * @param {*} [defaultValue] The value returned for `undefined` resolved values.
-	     * @returns {*} Returns the resolved value.
-	     * @example
-	     *
-	     * var object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
-	     *
-	     * _.result(object, 'a[0].b.c1');
-	     * // => 3
-	     *
-	     * _.result(object, 'a[0].b.c2');
-	     * // => 4
-	     *
-	     * _.result(object, 'a[0].b.c3', 'default');
-	     * // => 'default'
-	     *
-	     * _.result(object, 'a[0].b.c3', _.constant('default'));
-	     * // => 'default'
-	     */
-	    function result(object, path, defaultValue) {
-	      path = isKey(path, object) ? [path] : castPath(path);
-
-	      var index = -1,
-	          length = path.length;
-
-	      // Ensure the loop is entered when path is empty.
-	      if (!length) {
-	        object = undefined;
-	        length = 1;
-	      }
-	      while (++index < length) {
-	        var value = object == null ? undefined : object[toKey(path[index])];
-	        if (value === undefined) {
-	          index = length;
-	          value = defaultValue;
-	        }
-	        object = isFunction(value) ? value.call(object) : value;
-	      }
-	      return object;
-	    }
-
-	    /**
-	     * Sets the value at `path` of `object`. If a portion of `path` doesn't exist,
-	     * it's created. Arrays are created for missing index properties while objects
-	     * are created for all other missing properties. Use `_.setWith` to customize
-	     * `path` creation.
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 3.7.0
-	     * @category Object
-	     * @param {Object} object The object to modify.
-	     * @param {Array|string} path The path of the property to set.
-	     * @param {*} value The value to set.
-	     * @returns {Object} Returns `object`.
-	     * @example
-	     *
-	     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
-	     *
-	     * _.set(object, 'a[0].b.c', 4);
-	     * console.log(object.a[0].b.c);
-	     * // => 4
-	     *
-	     * _.set(object, ['x', '0', 'y', 'z'], 5);
-	     * console.log(object.x[0].y.z);
-	     * // => 5
-	     */
-	    function set(object, path, value) {
-	      return object == null ? object : baseSet(object, path, value);
-	    }
-
-	    /**
-	     * This method is like `_.set` except that it accepts `customizer` which is
-	     * invoked to produce the objects of `path`.  If `customizer` returns `undefined`
-	     * path creation is handled by the method instead. The `customizer` is invoked
-	     * with three arguments: (nsValue, key, nsObject).
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Object
-	     * @param {Object} object The object to modify.
-	     * @param {Array|string} path The path of the property to set.
-	     * @param {*} value The value to set.
-	     * @param {Function} [customizer] The function to customize assigned values.
-	     * @returns {Object} Returns `object`.
-	     * @example
-	     *
-	     * var object = {};
-	     *
-	     * _.setWith(object, '[0][1]', 'a', Object);
-	     * // => { '0': { '1': 'a' } }
-	     */
-	    function setWith(object, path, value, customizer) {
-	      customizer = typeof customizer == 'function' ? customizer : undefined;
-	      return object == null ? object : baseSet(object, path, value, customizer);
-	    }
-
-	    /**
-	     * Creates an array of own enumerable string keyed-value pairs for `object`
-	     * which can be consumed by `_.fromPairs`. If `object` is a map or set, its
-	     * entries are returned.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @alias entries
-	     * @category Object
-	     * @param {Object} object The object to query.
-	     * @returns {Array} Returns the key-value pairs.
-	     * @example
-	     *
-	     * function Foo() {
-	     *   this.a = 1;
-	     *   this.b = 2;
-	     * }
-	     *
-	     * Foo.prototype.c = 3;
-	     *
-	     * _.toPairs(new Foo);
-	     * // => [['a', 1], ['b', 2]] (iteration order is not guaranteed)
-	     */
-	    var toPairs = createToPairs(keys);
-
-	    /**
-	     * Creates an array of own and inherited enumerable string keyed-value pairs
-	     * for `object` which can be consumed by `_.fromPairs`. If `object` is a map
-	     * or set, its entries are returned.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @alias entriesIn
-	     * @category Object
-	     * @param {Object} object The object to query.
-	     * @returns {Array} Returns the key-value pairs.
-	     * @example
-	     *
-	     * function Foo() {
-	     *   this.a = 1;
-	     *   this.b = 2;
-	     * }
-	     *
-	     * Foo.prototype.c = 3;
-	     *
-	     * _.toPairsIn(new Foo);
-	     * // => [['a', 1], ['b', 2], ['c', 3]] (iteration order is not guaranteed)
-	     */
-	    var toPairsIn = createToPairs(keysIn);
-
-	    /**
-	     * An alternative to `_.reduce`; this method transforms `object` to a new
-	     * `accumulator` object which is the result of running each of its own
-	     * enumerable string keyed properties thru `iteratee`, with each invocation
-	     * potentially mutating the `accumulator` object. If `accumulator` is not
-	     * provided, a new object with the same `[[Prototype]]` will be used. The
-	     * iteratee is invoked with four arguments: (accumulator, value, key, object).
-	     * Iteratee functions may exit iteration early by explicitly returning `false`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 1.3.0
-	     * @category Object
-	     * @param {Object} object The object to iterate over.
-	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
-	     * @param {*} [accumulator] The custom accumulator value.
-	     * @returns {*} Returns the accumulated value.
-	     * @example
-	     *
-	     * _.transform([2, 3, 4], function(result, n) {
-	     *   result.push(n *= n);
-	     *   return n % 2 == 0;
-	     * }, []);
-	     * // => [4, 9]
-	     *
-	     * _.transform({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
-	     *   (result[value] || (result[value] = [])).push(key);
-	     * }, {});
-	     * // => { '1': ['a', 'c'], '2': ['b'] }
-	     */
-	    function transform(object, iteratee, accumulator) {
-	      var isArr = isArray(object),
-	          isArrLike = isArr || isBuffer(object) || isTypedArray(object);
-
-	      iteratee = getIteratee(iteratee, 4);
-	      if (accumulator == null) {
-	        var Ctor = object && object.constructor;
-	        if (isArrLike) {
-	          accumulator = isArr ? new Ctor : [];
-	        }
-	        else if (isObject(object)) {
-	          accumulator = isFunction(Ctor) ? baseCreate(getPrototype(object)) : {};
-	        }
-	        else {
-	          accumulator = {};
-	        }
-	      }
-	      (isArrLike ? arrayEach : baseForOwn)(object, function(value, index, object) {
-	        return iteratee(accumulator, value, index, object);
-	      });
-	      return accumulator;
-	    }
-
-	    /**
-	     * Removes the property at `path` of `object`.
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Object
-	     * @param {Object} object The object to modify.
-	     * @param {Array|string} path The path of the property to unset.
-	     * @returns {boolean} Returns `true` if the property is deleted, else `false`.
-	     * @example
-	     *
-	     * var object = { 'a': [{ 'b': { 'c': 7 } }] };
-	     * _.unset(object, 'a[0].b.c');
-	     * // => true
-	     *
-	     * console.log(object);
-	     * // => { 'a': [{ 'b': {} }] };
-	     *
-	     * _.unset(object, ['a', '0', 'b', 'c']);
-	     * // => true
-	     *
-	     * console.log(object);
-	     * // => { 'a': [{ 'b': {} }] };
-	     */
-	    function unset(object, path) {
-	      return object == null ? true : baseUnset(object, path);
-	    }
-
-	    /**
-	     * This method is like `_.set` except that accepts `updater` to produce the
-	     * value to set. Use `_.updateWith` to customize `path` creation. The `updater`
-	     * is invoked with one argument: (value).
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.6.0
-	     * @category Object
-	     * @param {Object} object The object to modify.
-	     * @param {Array|string} path The path of the property to set.
-	     * @param {Function} updater The function to produce the updated value.
-	     * @returns {Object} Returns `object`.
-	     * @example
-	     *
-	     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
-	     *
-	     * _.update(object, 'a[0].b.c', function(n) { return n * n; });
-	     * console.log(object.a[0].b.c);
-	     * // => 9
-	     *
-	     * _.update(object, 'x[0].y.z', function(n) { return n ? n + 1 : 0; });
-	     * console.log(object.x[0].y.z);
-	     * // => 0
-	     */
-	    function update(object, path, updater) {
-	      return object == null ? object : baseUpdate(object, path, castFunction(updater));
-	    }
-
-	    /**
-	     * This method is like `_.update` except that it accepts `customizer` which is
-	     * invoked to produce the objects of `path`.  If `customizer` returns `undefined`
-	     * path creation is handled by the method instead. The `customizer` is invoked
-	     * with three arguments: (nsValue, key, nsObject).
-	     *
-	     * **Note:** This method mutates `object`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.6.0
-	     * @category Object
-	     * @param {Object} object The object to modify.
-	     * @param {Array|string} path The path of the property to set.
-	     * @param {Function} updater The function to produce the updated value.
-	     * @param {Function} [customizer] The function to customize assigned values.
-	     * @returns {Object} Returns `object`.
-	     * @example
-	     *
-	     * var object = {};
-	     *
-	     * _.updateWith(object, '[0][1]', _.constant('a'), Object);
-	     * // => { '0': { '1': 'a' } }
-	     */
-	    function updateWith(object, path, updater, customizer) {
-	      customizer = typeof customizer == 'function' ? customizer : undefined;
-	      return object == null ? object : baseUpdate(object, path, castFunction(updater), customizer);
-	    }
-
-	    /**
-	     * Creates an array of the own enumerable string keyed property values of `object`.
-	     *
-	     * **Note:** Non-object values are coerced to objects.
-	     *
-	     * @static
-	     * @since 0.1.0
-	     * @memberOf _
-	     * @category Object
-	     * @param {Object} object The object to query.
-	     * @returns {Array} Returns the array of property values.
-	     * @example
-	     *
-	     * function Foo() {
-	     *   this.a = 1;
-	     *   this.b = 2;
-	     * }
-	     *
-	     * Foo.prototype.c = 3;
-	     *
-	     * _.values(new Foo);
-	     * // => [1, 2] (iteration order is not guaranteed)
-	     *
-	     * _.values('hi');
-	     * // => ['h', 'i']
-	     */
-	    function values(object) {
-	      return object ? baseValues(object, keys(object)) : [];
-	    }
-
-	    /**
-	     * Creates an array of the own and inherited enumerable string keyed property
-	     * values of `object`.
-	     *
-	     * **Note:** Non-object values are coerced to objects.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 3.0.0
-	     * @category Object
-	     * @param {Object} object The object to query.
-	     * @returns {Array} Returns the array of property values.
-	     * @example
-	     *
-	     * function Foo() {
-	     *   this.a = 1;
-	     *   this.b = 2;
-	     * }
-	     *
-	     * Foo.prototype.c = 3;
-	     *
-	     * _.valuesIn(new Foo);
-	     * // => [1, 2, 3] (iteration order is not guaranteed)
-	     */
-	    function valuesIn(object) {
-	      return object == null ? [] : baseValues(object, keysIn(object));
-	    }
-
-	    /*------------------------------------------------------------------------*/
-
-	    /**
-	     * Clamps `number` within the inclusive `lower` and `upper` bounds.
-	     *
-	     * @static
-	     * @memberOf _
+=======
 	     * @since 4.0.0
 	     * @category Number
 	     * @param {number} number The number to clamp.
@@ -15207,9 +19714,58 @@ webpackJsonp([2],{
 
 	    /**
 	     * Checks if `string` ends with the given target string.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The source object.
+	     * @param {...(string|string[])} [props] The property identifiers to omit.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+	     *
+	     * _.omit(object, ['a', 'c']);
+	     * // => { 'b': '2' }
+	     */
+	    var omit = flatRest(function(object, props) {
+	      if (object == null) {
+	        return {};
+	      }
+	      props = arrayMap(props, toKey);
+	      return basePick(object, baseDifference(getAllKeysIn(object), props));
+	    });
+
+	    /**
+	     * The opposite of `_.pickBy`; this method creates an object composed of
+	     * the own and inherited enumerable string keyed properties of `object` that
+	     * `predicate` doesn't return truthy for. The predicate is invoked with two
+	     * arguments: (value, key).
 	     *
 	     * @static
 	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Object
+	     * @param {Object} object The source object.
+	     * @param {Function} [predicate=_.identity] The function invoked per property.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+	     *
+	     * _.omitBy(object, _.isNumber);
+	     * // => { 'b': '2' }
+	     */
+	    function omitBy(object, predicate) {
+	      return pickBy(object, negate(getIteratee(predicate)));
+	    }
+
+	    /**
+	     * Creates an object composed of the picked `object` properties.
+=======
 	     * @since 3.0.0
 	     * @category String
 	     * @param {string} [string=''] The string to inspect.
@@ -15302,6 +19858,1432 @@ webpackJsonp([2],{
 	    /**
 	     * Converts `string` to
 	     * [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles).
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The source object.
+	     * @param {...(string|string[])} [props] The property identifiers to pick.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+	     *
+	     * _.pick(object, ['a', 'c']);
+	     * // => { 'a': 1, 'c': 3 }
+	     */
+	    var pick = flatRest(function(object, props) {
+	      return object == null ? {} : basePick(object, arrayMap(props, toKey));
+	    });
+
+	    /**
+	     * Creates an object composed of the `object` properties `predicate` returns
+	     * truthy for. The predicate is invoked with two arguments: (value, key).
+=======
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the kebab cased string.
+	     * @example
+	     *
+	     * _.kebabCase('Foo Bar');
+	     * // => 'foo-bar'
+	     *
+	     * _.kebabCase('fooBar');
+	     * // => 'foo-bar'
+	     *
+	     * _.kebabCase('__FOO_BAR__');
+	     * // => 'foo-bar'
+	     */
+	    var kebabCase = createCompounder(function(result, word, index) {
+	      return result + (index ? '-' : '') + word.toLowerCase();
+	    });
+
+	    /**
+	     * Converts `string`, as space separated words, to lower case.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The source object.
+	     * @param {Function} [predicate=_.identity] The function invoked per property.
+	     * @returns {Object} Returns the new object.
+	     * @example
+	     *
+	     * var object = { 'a': 1, 'b': '2', 'c': 3 };
+	     *
+	     * _.pickBy(object, _.isNumber);
+	     * // => { 'a': 1, 'c': 3 }
+	     */
+	    function pickBy(object, predicate) {
+	      return object == null ? {} : basePickBy(object, getAllKeysIn(object), getIteratee(predicate));
+	    }
+
+	    /**
+	     * This method is like `_.get` except that if the resolved value is a
+	     * function it's invoked with the `this` binding of its parent object and
+	     * its result is returned.
+=======
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the lower cased string.
+	     * @example
+	     *
+	     * _.lowerCase('--Foo-Bar--');
+	     * // => 'foo bar'
+	     *
+	     * _.lowerCase('fooBar');
+	     * // => 'foo bar'
+	     *
+	     * _.lowerCase('__FOO_BAR__');
+	     * // => 'foo bar'
+	     */
+	    var lowerCase = createCompounder(function(result, word, index) {
+	      return result + (index ? ' ' : '') + word.toLowerCase();
+	    });
+
+	    /**
+	     * Converts the first character of `string` to lower case.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @param {Array|string} path The path of the property to resolve.
+	     * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+	     * @returns {*} Returns the resolved value.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c1': 3, 'c2': _.constant(4) } }] };
+	     *
+	     * _.result(object, 'a[0].b.c1');
+	     * // => 3
+	     *
+	     * _.result(object, 'a[0].b.c2');
+	     * // => 4
+	     *
+	     * _.result(object, 'a[0].b.c3', 'default');
+	     * // => 'default'
+	     *
+	     * _.result(object, 'a[0].b.c3', _.constant('default'));
+	     * // => 'default'
+	     */
+	    function result(object, path, defaultValue) {
+	      path = isKey(path, object) ? [path] : castPath(path);
+
+	      var index = -1,
+	          length = path.length;
+
+	      // Ensure the loop is entered when path is empty.
+	      if (!length) {
+	        object = undefined;
+	        length = 1;
+	      }
+	      while (++index < length) {
+	        var value = object == null ? undefined : object[toKey(path[index])];
+	        if (value === undefined) {
+	          index = length;
+	          value = defaultValue;
+	        }
+	        object = isFunction(value) ? value.call(object) : value;
+	      }
+	      return object;
+	    }
+
+	    /**
+	     * Sets the value at `path` of `object`. If a portion of `path` doesn't exist,
+	     * it's created. Arrays are created for missing index properties while objects
+	     * are created for all other missing properties. Use `_.setWith` to customize
+	     * `path` creation.
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.7.0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to set.
+	     * @param {*} value The value to set.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	     *
+	     * _.set(object, 'a[0].b.c', 4);
+	     * console.log(object.a[0].b.c);
+	     * // => 4
+	     *
+	     * _.set(object, ['x', '0', 'y', 'z'], 5);
+	     * console.log(object.x[0].y.z);
+	     * // => 5
+	     */
+	    function set(object, path, value) {
+	      return object == null ? object : baseSet(object, path, value);
+	    }
+
+	    /**
+	     * This method is like `_.set` except that it accepts `customizer` which is
+	     * invoked to produce the objects of `path`.  If `customizer` returns `undefined`
+	     * path creation is handled by the method instead. The `customizer` is invoked
+	     * with three arguments: (nsValue, key, nsObject).
+	     *
+	     * **Note:** This method mutates `object`.
+=======
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the converted string.
+	     * @example
+	     *
+	     * _.lowerFirst('Fred');
+	     * // => 'fred'
+	     *
+	     * _.lowerFirst('FRED');
+	     * // => 'fRED'
+	     */
+	    var lowerFirst = createCaseFirst('toLowerCase');
+
+	    /**
+	     * Pads `string` on the left and right sides if it's shorter than `length`.
+	     * Padding characters are truncated if they can't be evenly divided by `length`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to pad.
+	     * @param {number} [length=0] The padding length.
+	     * @param {string} [chars=' '] The string used as padding.
+	     * @returns {string} Returns the padded string.
+	     * @example
+	     *
+	     * _.pad('abc', 8);
+	     * // => '  abc   '
+	     *
+	     * _.pad('abc', 8, '_-');
+	     * // => '_-abc_-_'
+	     *
+	     * _.pad('abc', 3);
+	     * // => 'abc'
+	     */
+	    function pad(string, length, chars) {
+	      string = toString(string);
+	      length = toInteger(length);
+
+	      var strLength = length ? stringSize(string) : 0;
+	      if (!length || strLength >= length) {
+	        return string;
+	      }
+	      var mid = (length - strLength) / 2;
+	      return (
+	        createPadding(nativeFloor(mid), chars) +
+	        string +
+	        createPadding(nativeCeil(mid), chars)
+	      );
+	    }
+
+	    /**
+	     * Pads `string` on the right side if it's shorter than `length`. Padding
+	     * characters are truncated if they exceed `length`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to set.
+	     * @param {*} value The value to set.
+	     * @param {Function} [customizer] The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var object = {};
+	     *
+	     * _.setWith(object, '[0][1]', 'a', Object);
+	     * // => { '0': { '1': 'a' } }
+	     */
+	    function setWith(object, path, value, customizer) {
+	      customizer = typeof customizer == 'function' ? customizer : undefined;
+	      return object == null ? object : baseSet(object, path, value, customizer);
+	    }
+
+	    /**
+	     * Creates an array of own enumerable string keyed-value pairs for `object`
+	     * which can be consumed by `_.fromPairs`. If `object` is a map or set, its
+	     * entries are returned.
+=======
+	     * @category String
+	     * @param {string} [string=''] The string to pad.
+	     * @param {number} [length=0] The padding length.
+	     * @param {string} [chars=' '] The string used as padding.
+	     * @returns {string} Returns the padded string.
+	     * @example
+	     *
+	     * _.padEnd('abc', 6);
+	     * // => 'abc   '
+	     *
+	     * _.padEnd('abc', 6, '_-');
+	     * // => 'abc_-_'
+	     *
+	     * _.padEnd('abc', 3);
+	     * // => 'abc'
+	     */
+	    function padEnd(string, length, chars) {
+	      string = toString(string);
+	      length = toInteger(length);
+
+	      var strLength = length ? stringSize(string) : 0;
+	      return (length && strLength < length)
+	        ? (string + createPadding(length - strLength, chars))
+	        : string;
+	    }
+
+	    /**
+	     * Pads `string` on the left side if it's shorter than `length`. Padding
+	     * characters are truncated if they exceed `length`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @alias entries
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the key-value pairs.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.toPairs(new Foo);
+	     * // => [['a', 1], ['b', 2]] (iteration order is not guaranteed)
+	     */
+	    var toPairs = createToPairs(keys);
+
+	    /**
+	     * Creates an array of own and inherited enumerable string keyed-value pairs
+	     * for `object` which can be consumed by `_.fromPairs`. If `object` is a map
+	     * or set, its entries are returned.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @alias entriesIn
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the key-value pairs.
+	     * @example
+	     *
+	     * function Foo() {
+	     *   this.a = 1;
+	     *   this.b = 2;
+	     * }
+	     *
+	     * Foo.prototype.c = 3;
+	     *
+	     * _.toPairsIn(new Foo);
+	     * // => [['a', 1], ['b', 2], ['c', 3]] (iteration order is not guaranteed)
+	     */
+	    var toPairsIn = createToPairs(keysIn);
+
+	    /**
+	     * An alternative to `_.reduce`; this method transforms `object` to a new
+	     * `accumulator` object which is the result of running each of its own
+	     * enumerable string keyed properties thru `iteratee`, with each invocation
+	     * potentially mutating the `accumulator` object. If `accumulator` is not
+	     * provided, a new object with the same `[[Prototype]]` will be used. The
+	     * iteratee is invoked with four arguments: (accumulator, value, key, object).
+	     * Iteratee functions may exit iteration early by explicitly returning `false`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 1.3.0
+	     * @category Object
+	     * @param {Object} object The object to iterate over.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @param {*} [accumulator] The custom accumulator value.
+	     * @returns {*} Returns the accumulated value.
+	     * @example
+	     *
+	     * _.transform([2, 3, 4], function(result, n) {
+	     *   result.push(n *= n);
+	     *   return n % 2 == 0;
+	     * }, []);
+	     * // => [4, 9]
+	     *
+	     * _.transform({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+	     *   (result[value] || (result[value] = [])).push(key);
+	     * }, {});
+	     * // => { '1': ['a', 'c'], '2': ['b'] }
+	     */
+	    function transform(object, iteratee, accumulator) {
+	      var isArr = isArray(object),
+	          isArrLike = isArr || isBuffer(object) || isTypedArray(object);
+
+	      iteratee = getIteratee(iteratee, 4);
+	      if (accumulator == null) {
+	        var Ctor = object && object.constructor;
+	        if (isArrLike) {
+	          accumulator = isArr ? new Ctor : [];
+	        }
+	        else if (isObject(object)) {
+	          accumulator = isFunction(Ctor) ? baseCreate(getPrototype(object)) : {};
+	        }
+	        else {
+	          accumulator = {};
+	        }
+	      }
+	      (isArrLike ? arrayEach : baseForOwn)(object, function(value, index, object) {
+	        return iteratee(accumulator, value, index, object);
+	      });
+	      return accumulator;
+	    }
+
+	    /**
+	     * Removes the property at `path` of `object`.
+	     *
+	     * **Note:** This method mutates `object`.
+=======
+	     * @category String
+	     * @param {string} [string=''] The string to pad.
+	     * @param {number} [length=0] The padding length.
+	     * @param {string} [chars=' '] The string used as padding.
+	     * @returns {string} Returns the padded string.
+	     * @example
+	     *
+	     * _.padStart('abc', 6);
+	     * // => '   abc'
+	     *
+	     * _.padStart('abc', 6, '_-');
+	     * // => '_-_abc'
+	     *
+	     * _.padStart('abc', 3);
+	     * // => 'abc'
+	     */
+	    function padStart(string, length, chars) {
+	      string = toString(string);
+	      length = toInteger(length);
+
+	      var strLength = length ? stringSize(string) : 0;
+	      return (length && strLength < length)
+	        ? (createPadding(length - strLength, chars) + string)
+	        : string;
+	    }
+
+	    /**
+	     * Converts `string` to an integer of the specified radix. If `radix` is
+	     * `undefined` or `0`, a `radix` of `10` is used unless `value` is a
+	     * hexadecimal, in which case a `radix` of `16` is used.
+	     *
+	     * **Note:** This method aligns with the
+	     * [ES5 implementation](https://es5.github.io/#x15.1.2.2) of `parseInt`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 1.1.0
+	     * @category String
+	     * @param {string} string The string to convert.
+	     * @param {number} [radix=10] The radix to interpret `value` by.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {number} Returns the converted integer.
+	     * @example
+	     *
+	     * _.parseInt('08');
+	     * // => 8
+	     *
+	     * _.map(['6', '08', '10'], _.parseInt);
+	     * // => [6, 8, 10]
+	     */
+	    function parseInt(string, radix, guard) {
+	      if (guard || radix == null) {
+	        radix = 0;
+	      } else if (radix) {
+	        radix = +radix;
+	      }
+	      return nativeParseInt(toString(string).replace(reTrimStart, ''), radix || 0);
+	    }
+
+	    /**
+	     * Repeats the given string `n` times.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to repeat.
+	     * @param {number} [n=1] The number of times to repeat the string.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {string} Returns the repeated string.
+	     * @example
+	     *
+	     * _.repeat('*', 3);
+	     * // => '***'
+	     *
+	     * _.repeat('abc', 2);
+	     * // => 'abcabc'
+	     *
+	     * _.repeat('abc', 0);
+	     * // => ''
+	     */
+	    function repeat(string, n, guard) {
+	      if ((guard ? isIterateeCall(string, n, guard) : n === undefined)) {
+	        n = 1;
+	      } else {
+	        n = toInteger(n);
+	      }
+	      return baseRepeat(toString(string), n);
+	    }
+
+	    /**
+	     * Replaces matches for `pattern` in `string` with `replacement`.
+	     *
+	     * **Note:** This method is based on
+	     * [`String#replace`](https://mdn.io/String/replace).
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to unset.
+	     * @returns {boolean} Returns `true` if the property is deleted, else `false`.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 7 } }] };
+	     * _.unset(object, 'a[0].b.c');
+	     * // => true
+	     *
+	     * console.log(object);
+	     * // => { 'a': [{ 'b': {} }] };
+	     *
+	     * _.unset(object, ['a', '0', 'b', 'c']);
+	     * // => true
+	     *
+	     * console.log(object);
+	     * // => { 'a': [{ 'b': {} }] };
+	     */
+	    function unset(object, path) {
+	      return object == null ? true : baseUnset(object, path);
+	    }
+
+	    /**
+	     * This method is like `_.set` except that accepts `updater` to produce the
+	     * value to set. Use `_.updateWith` to customize `path` creation. The `updater`
+	     * is invoked with one argument: (value).
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.6.0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to set.
+	     * @param {Function} updater The function to produce the updated value.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+	     *
+	     * _.update(object, 'a[0].b.c', function(n) { return n * n; });
+	     * console.log(object.a[0].b.c);
+	     * // => 9
+	     *
+	     * _.update(object, 'x[0].y.z', function(n) { return n ? n + 1 : 0; });
+	     * console.log(object.x[0].y.z);
+	     * // => 0
+	     */
+	    function update(object, path, updater) {
+	      return object == null ? object : baseUpdate(object, path, castFunction(updater));
+	    }
+
+	    /**
+	     * This method is like `_.update` except that it accepts `customizer` which is
+	     * invoked to produce the objects of `path`.  If `customizer` returns `undefined`
+	     * path creation is handled by the method instead. The `customizer` is invoked
+	     * with three arguments: (nsValue, key, nsObject).
+	     *
+	     * **Note:** This method mutates `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.6.0
+	     * @category Object
+	     * @param {Object} object The object to modify.
+	     * @param {Array|string} path The path of the property to set.
+	     * @param {Function} updater The function to produce the updated value.
+	     * @param {Function} [customizer] The function to customize assigned values.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var object = {};
+	     *
+	     * _.updateWith(object, '[0][1]', _.constant('a'), Object);
+	     * // => { '0': { '1': 'a' } }
+	     */
+	    function updateWith(object, path, updater, customizer) {
+	      customizer = typeof customizer == 'function' ? customizer : undefined;
+	      return object == null ? object : baseUpdate(object, path, castFunction(updater), customizer);
+	    }
+
+	    /**
+	     * Creates an array of the own enumerable string keyed property values of `object`.
+	     *
+	     * **Note:** Non-object values are coerced to objects.
+=======
+	     * @category String
+	     * @param {string} [string=''] The string to modify.
+	     * @param {RegExp|string} pattern The pattern to replace.
+	     * @param {Function|string} replacement The match replacement.
+	     * @returns {string} Returns the modified string.
+	     * @example
+	     *
+	     * _.replace('Hi Fred', 'Fred', 'Barney');
+	     * // => 'Hi Barney'
+	     */
+	    function replace() {
+	      var args = arguments,
+	          string = toString(args[0]);
+
+	      return args.length < 3 ? string : string.replace(args[1], args[2]);
+	    }
+
+	    /**
+	     * Converts `string` to
+	     * [snake case](https://en.wikipedia.org/wiki/Snake_case).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the snake cased string.
+	     * @example
+	     *
+	     * _.snakeCase('Foo Bar');
+	     * // => 'foo_bar'
+	     *
+	     * _.snakeCase('fooBar');
+	     * // => 'foo_bar'
+	     *
+	     * _.snakeCase('--FOO-BAR--');
+	     * // => 'foo_bar'
+	     */
+	    var snakeCase = createCompounder(function(result, word, index) {
+	      return result + (index ? '_' : '') + word.toLowerCase();
+	    });
+
+	    /**
+	     * Splits `string` by `separator`.
+	     *
+	     * **Note:** This method is based on
+	     * [`String#split`](https://mdn.io/String/split).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to split.
+	     * @param {RegExp|string} separator The separator pattern to split by.
+	     * @param {number} [limit] The length to truncate results to.
+	     * @returns {Array} Returns the string segments.
+	     * @example
+	     *
+	     * _.split('a-b-c', '-', 2);
+	     * // => ['a', 'b']
+	     */
+	    function split(string, separator, limit) {
+	      if (limit && typeof limit != 'number' && isIterateeCall(string, separator, limit)) {
+	        separator = limit = undefined;
+	      }
+	      limit = limit === undefined ? MAX_ARRAY_LENGTH : limit >>> 0;
+	      if (!limit) {
+	        return [];
+	      }
+	      string = toString(string);
+	      if (string && (
+	            typeof separator == 'string' ||
+	            (separator != null && !isRegExp(separator))
+	          )) {
+	        separator = baseToString(separator);
+	        if (!separator && hasUnicode(string)) {
+	          return castSlice(stringToArray(string), 0, limit);
+	        }
+	      }
+	      return string.split(separator, limit);
+	    }
+
+	    /**
+	     * Converts `string` to
+	     * [start case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.1.0
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the start cased string.
+	     * @example
+	     *
+	     * _.startCase('--foo-bar--');
+	     * // => 'Foo Bar'
+	     *
+	     * _.startCase('fooBar');
+	     * // => 'Foo Bar'
+	     *
+	     * _.startCase('__FOO_BAR__');
+	     * // => 'FOO BAR'
+	     */
+	    var startCase = createCompounder(function(result, word, index) {
+	      return result + (index ? ' ' : '') + upperFirst(word);
+	    });
+
+	    /**
+	     * Checks if `string` starts with the given target string.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the array of property values.
+=======
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to inspect.
+	     * @param {string} [target] The string to search for.
+	     * @param {number} [position=0] The position to search from.
+	     * @returns {boolean} Returns `true` if `string` starts with `target`,
+	     *  else `false`.
+>>>>>>> CCN Directives (#200)
+	     * @example
+	     *
+	     * _.startsWith('abc', 'a');
+	     * // => true
+	     *
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * _.values(new Foo);
+	     * // => [1, 2] (iteration order is not guaranteed)
+	     *
+	     * _.values('hi');
+	     * // => ['h', 'i']
+	     */
+	    function values(object) {
+	      return object ? baseValues(object, keys(object)) : [];
+	    }
+
+	    /**
+	     * Creates an array of the own and inherited enumerable string keyed property
+	     * values of `object`.
+=======
+	     * _.startsWith('abc', 'b');
+	     * // => false
+	     *
+	     * _.startsWith('abc', 'b', 1);
+	     * // => true
+	     */
+	    function startsWith(string, target, position) {
+	      string = toString(string);
+	      position = baseClamp(toInteger(position), 0, string.length);
+	      target = baseToString(target);
+	      return string.slice(position, position + target.length) == target;
+	    }
+
+	    /**
+	     * Creates a compiled template function that can interpolate data properties
+	     * in "interpolate" delimiters, HTML-escape interpolated data properties in
+	     * "escape" delimiters, and execute JavaScript in "evaluate" delimiters. Data
+	     * properties may be accessed as free variables in the template. If a setting
+	     * object is given, it takes precedence over `_.templateSettings` values.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * **Note:** In the development build `_.template` utilizes
+	     * [sourceURLs](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-sourceurl)
+	     * for easier debugging.
+	     *
+	     * For more information on precompiling templates see
+	     * [lodash's custom builds documentation](https://lodash.com/custom-builds).
+	     *
+	     * For more information on Chrome extension sandboxes see
+	     * [Chrome's extensions documentation](https://developer.chrome.com/extensions/sandboxingEval).
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 3.0.0
+	     * @category Object
+	     * @param {Object} object The object to query.
+	     * @returns {Array} Returns the array of property values.
+=======
+	     * @category String
+	     * @param {string} [string=''] The template string.
+	     * @param {Object} [options={}] The options object.
+	     * @param {RegExp} [options.escape=_.templateSettings.escape]
+	     *  The HTML "escape" delimiter.
+	     * @param {RegExp} [options.evaluate=_.templateSettings.evaluate]
+	     *  The "evaluate" delimiter.
+	     * @param {Object} [options.imports=_.templateSettings.imports]
+	     *  An object to import into the template as free variables.
+	     * @param {RegExp} [options.interpolate=_.templateSettings.interpolate]
+	     *  The "interpolate" delimiter.
+	     * @param {string} [options.sourceURL='lodash.templateSources[n]']
+	     *  The sourceURL of the compiled template.
+	     * @param {string} [options.variable='obj']
+	     *  The data object variable name.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {Function} Returns the compiled template function.
+>>>>>>> CCN Directives (#200)
+	     * @example
+	     *
+	     * // Use the "interpolate" delimiter to create a compiled template.
+	     * var compiled = _.template('hello <%= user %>!');
+	     * compiled({ 'user': 'fred' });
+	     * // => 'hello fred!'
+	     *
+	     * // Use the HTML "escape" delimiter to escape data property values.
+	     * var compiled = _.template('<b><%- value %></b>');
+	     * compiled({ 'value': '<script>' });
+	     * // => '<b>&lt;script&gt;</b>'
+	     *
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * _.valuesIn(new Foo);
+	     * // => [1, 2, 3] (iteration order is not guaranteed)
+	     */
+	    function valuesIn(object) {
+	      return object == null ? [] : baseValues(object, keysIn(object));
+	    }
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+	     * Clamps `number` within the inclusive `lower` and `upper` bounds.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Number
+	     * @param {number} number The number to clamp.
+	     * @param {number} [lower] The lower bound.
+	     * @param {number} upper The upper bound.
+	     * @returns {number} Returns the clamped number.
+	     * @example
+	     *
+	     * _.clamp(-10, -5, 5);
+	     * // => -5
+	     *
+	     * _.clamp(10, -5, 5);
+	     * // => 5
+	     */
+	    function clamp(number, lower, upper) {
+	      if (upper === undefined) {
+	        upper = lower;
+	        lower = undefined;
+	      }
+	      if (upper !== undefined) {
+	        upper = toNumber(upper);
+	        upper = upper === upper ? upper : 0;
+	      }
+	      if (lower !== undefined) {
+	        lower = toNumber(lower);
+	        lower = lower === lower ? lower : 0;
+	      }
+	      return baseClamp(toNumber(number), lower, upper);
+	    }
+
+	    /**
+	     * Checks if `n` is between `start` and up to, but not including, `end`. If
+	     * `end` is not specified, it's set to `start` with `start` then set to `0`.
+	     * If `start` is greater than `end` the params are swapped to support
+	     * negative ranges.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.3.0
+	     * @category Number
+	     * @param {number} number The number to check.
+	     * @param {number} [start=0] The start of the range.
+	     * @param {number} end The end of the range.
+	     * @returns {boolean} Returns `true` if `number` is in the range, else `false`.
+	     * @see _.range, _.rangeRight
+	     * @example
+	     *
+	     * _.inRange(3, 2, 4);
+	     * // => true
+	     *
+	     * _.inRange(4, 8);
+	     * // => true
+	     *
+	     * _.inRange(4, 2);
+	     * // => false
+	     *
+	     * _.inRange(2, 2);
+	     * // => false
+	     *
+	     * _.inRange(1.2, 2);
+	     * // => true
+	     *
+	     * _.inRange(5.2, 4);
+	     * // => false
+	     *
+	     * _.inRange(-3, -2, -6);
+	     * // => true
+	     */
+	    function inRange(number, start, end) {
+	      start = toFinite(start);
+	      if (end === undefined) {
+	        end = start;
+	        start = 0;
+	      } else {
+	        end = toFinite(end);
+	      }
+	      number = toNumber(number);
+	      return baseInRange(number, start, end);
+	    }
+
+	    /**
+	     * Produces a random number between the inclusive `lower` and `upper` bounds.
+	     * If only one argument is provided a number between `0` and the given number
+	     * is returned. If `floating` is `true`, or either `lower` or `upper` are
+	     * floats, a floating-point number is returned instead of an integer.
+	     *
+	     * **Note:** JavaScript follows the IEEE-754 standard for resolving
+	     * floating-point values which can produce unexpected results.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.7.0
+	     * @category Number
+	     * @param {number} [lower=0] The lower bound.
+	     * @param {number} [upper=1] The upper bound.
+	     * @param {boolean} [floating] Specify returning a floating-point number.
+	     * @returns {number} Returns the random number.
+	     * @example
+	     *
+	     * _.random(0, 5);
+	     * // => an integer between 0 and 5
+	     *
+	     * _.random(5);
+	     * // => also an integer between 0 and 5
+	     *
+	     * _.random(5, true);
+	     * // => a floating-point number between 0 and 5
+	     *
+	     * _.random(1.2, 5.2);
+	     * // => a floating-point number between 1.2 and 5.2
+	     */
+	    function random(lower, upper, floating) {
+	      if (floating && typeof floating != 'boolean' && isIterateeCall(lower, upper, floating)) {
+	        upper = floating = undefined;
+	      }
+	      if (floating === undefined) {
+	        if (typeof upper == 'boolean') {
+	          floating = upper;
+	          upper = undefined;
+	        }
+	        else if (typeof lower == 'boolean') {
+	          floating = lower;
+	          lower = undefined;
+	        }
+	      }
+	      if (lower === undefined && upper === undefined) {
+	        lower = 0;
+	        upper = 1;
+	      }
+	      else {
+	        lower = toFinite(lower);
+	        if (upper === undefined) {
+	          upper = lower;
+	          lower = 0;
+	        } else {
+	          upper = toFinite(upper);
+	        }
+	      }
+	      if (lower > upper) {
+	        var temp = lower;
+	        lower = upper;
+	        upper = temp;
+	      }
+	      if (floating || lower % 1 || upper % 1) {
+	        var rand = nativeRandom();
+	        return nativeMin(lower + (rand * (upper - lower + freeParseFloat('1e-' + ((rand + '').length - 1)))), upper);
+	      }
+	      return baseRandom(lower, upper);
+	    }
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+	     * Converts `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the camel cased string.
+	     * @example
+	     *
+	     * _.camelCase('Foo Bar');
+	     * // => 'fooBar'
+	     *
+	     * _.camelCase('--foo-bar--');
+	     * // => 'fooBar'
+	     *
+	     * _.camelCase('__FOO_BAR__');
+	     * // => 'fooBar'
+	     */
+	    var camelCase = createCompounder(function(result, word, index) {
+	      word = word.toLowerCase();
+	      return result + (index ? capitalize(word) : word);
+	    });
+
+	    /**
+	     * Converts the first character of `string` to upper case and the remaining
+	     * to lower case.
+=======
+	     * // Use the "evaluate" delimiter to execute JavaScript and generate HTML.
+	     * var compiled = _.template('<% _.forEach(users, function(user) { %><li><%- user %></li><% }); %>');
+	     * compiled({ 'users': ['fred', 'barney'] });
+	     * // => '<li>fred</li><li>barney</li>'
+	     *
+	     * // Use the internal `print` function in "evaluate" delimiters.
+	     * var compiled = _.template('<% print("hello " + user); %>!');
+	     * compiled({ 'user': 'barney' });
+	     * // => 'hello barney!'
+	     *
+	     * // Use the ES template literal delimiter as an "interpolate" delimiter.
+	     * // Disable support by replacing the "interpolate" delimiter.
+	     * var compiled = _.template('hello ${ user }!');
+	     * compiled({ 'user': 'pebbles' });
+	     * // => 'hello pebbles!'
+	     *
+	     * // Use backslashes to treat delimiters as plain text.
+	     * var compiled = _.template('<%= "\\<%- value %\\>" %>');
+	     * compiled({ 'value': 'ignored' });
+	     * // => '<%- value %>'
+	     *
+	     * // Use the `imports` option to import `jQuery` as `jq`.
+	     * var text = '<% jq.each(users, function(user) { %><li><%- user %></li><% }); %>';
+	     * var compiled = _.template(text, { 'imports': { 'jq': jQuery } });
+	     * compiled({ 'users': ['fred', 'barney'] });
+	     * // => '<li>fred</li><li>barney</li>'
+	     *
+	     * // Use the `sourceURL` option to specify a custom sourceURL for the template.
+	     * var compiled = _.template('hello <%= user %>!', { 'sourceURL': '/basic/greeting.jst' });
+	     * compiled(data);
+	     * // => Find the source of "greeting.jst" under the Sources tab or Resources panel of the web inspector.
+	     *
+	     * // Use the `variable` option to ensure a with-statement isn't used in the compiled template.
+	     * var compiled = _.template('hi <%= data.user %>!', { 'variable': 'data' });
+	     * compiled.source;
+	     * // => function(data) {
+	     * //   var __t, __p = '';
+	     * //   __p += 'hi ' + ((__t = ( data.user )) == null ? '' : __t) + '!';
+	     * //   return __p;
+	     * // }
+	     *
+	     * // Use custom template delimiters.
+	     * _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+	     * var compiled = _.template('hello {{ user }}!');
+	     * compiled({ 'user': 'mustache' });
+	     * // => 'hello mustache!'
+	     *
+	     * // Use the `source` property to inline compiled templates for meaningful
+	     * // line numbers in error messages and stack traces.
+	     * fs.writeFileSync(path.join(process.cwd(), 'jst.js'), '\
+	     *   var JST = {\
+	     *     "main": ' + _.template(mainText).source + '\
+	     *   };\
+	     * ');
+	     */
+	    function template(string, options, guard) {
+	      // Based on John Resig's `tmpl` implementation
+	      // (http://ejohn.org/blog/javascript-micro-templating/)
+	      // and Laura Doktorova's doT.js (https://github.com/olado/doT).
+	      var settings = lodash.templateSettings;
+
+	      if (guard && isIterateeCall(string, options, guard)) {
+	        options = undefined;
+	      }
+	      string = toString(string);
+	      options = assignInWith({}, options, settings, assignInDefaults);
+
+	      var imports = assignInWith({}, options.imports, settings.imports, assignInDefaults),
+	          importsKeys = keys(imports),
+	          importsValues = baseValues(imports, importsKeys);
+
+	      var isEscaping,
+	          isEvaluating,
+	          index = 0,
+	          interpolate = options.interpolate || reNoMatch,
+	          source = "__p += '";
+
+	      // Compile the regexp to match each delimiter.
+	      var reDelimiters = RegExp(
+	        (options.escape || reNoMatch).source + '|' +
+	        interpolate.source + '|' +
+	        (interpolate === reInterpolate ? reEsTemplate : reNoMatch).source + '|' +
+	        (options.evaluate || reNoMatch).source + '|$'
+	      , 'g');
+
+	      // Use a sourceURL for easier debugging.
+	      var sourceURL = '//# sourceURL=' +
+	        ('sourceURL' in options
+	          ? options.sourceURL
+	          : ('lodash.templateSources[' + (++templateCounter) + ']')
+	        ) + '\n';
+
+	      string.replace(reDelimiters, function(match, escapeValue, interpolateValue, esTemplateValue, evaluateValue, offset) {
+	        interpolateValue || (interpolateValue = esTemplateValue);
+
+	        // Escape characters that can't be included in string literals.
+	        source += string.slice(index, offset).replace(reUnescapedString, escapeStringChar);
+
+	        // Replace delimiters with snippets.
+	        if (escapeValue) {
+	          isEscaping = true;
+	          source += "' +\n__e(" + escapeValue + ") +\n'";
+	        }
+	        if (evaluateValue) {
+	          isEvaluating = true;
+	          source += "';\n" + evaluateValue + ";\n__p += '";
+	        }
+	        if (interpolateValue) {
+	          source += "' +\n((__t = (" + interpolateValue + ")) == null ? '' : __t) +\n'";
+	        }
+	        index = offset + match.length;
+
+	        // The JS engine embedded in Adobe products needs `match` returned in
+	        // order to produce the correct `offset` value.
+	        return match;
+	      });
+
+	      source += "';\n";
+
+	      // If `variable` is not specified wrap a with-statement around the generated
+	      // code to add the data object to the top of the scope chain.
+	      var variable = options.variable;
+	      if (!variable) {
+	        source = 'with (obj) {\n' + source + '\n}\n';
+	      }
+	      // Cleanup code by stripping empty strings.
+	      source = (isEvaluating ? source.replace(reEmptyStringLeading, '') : source)
+	        .replace(reEmptyStringMiddle, '$1')
+	        .replace(reEmptyStringTrailing, '$1;');
+
+	      // Frame code as the function body.
+	      source = 'function(' + (variable || 'obj') + ') {\n' +
+	        (variable
+	          ? ''
+	          : 'obj || (obj = {});\n'
+	        ) +
+	        "var __t, __p = ''" +
+	        (isEscaping
+	           ? ', __e = _.escape'
+	           : ''
+	        ) +
+	        (isEvaluating
+	          ? ', __j = Array.prototype.join;\n' +
+	            "function print() { __p += __j.call(arguments, '') }\n"
+	          : ';\n'
+	        ) +
+	        source +
+	        'return __p\n}';
+
+	      var result = attempt(function() {
+	        return Function(importsKeys, sourceURL + 'return ' + source)
+	          .apply(undefined, importsValues);
+	      });
+
+	      // Provide the compiled function's source by its `toString` method or
+	      // the `source` property as a convenience for inlining compiled templates.
+	      result.source = source;
+	      if (isError(result)) {
+	        throw result;
+	      }
+	      return result;
+	    }
+
+	    /**
+	     * Converts `string`, as a whole, to lower case just like
+	     * [String#toLowerCase](https://mdn.io/toLowerCase).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the lower cased string.
+	     * @example
+	     *
+	     * _.toLower('--Foo-Bar--');
+	     * // => '--foo-bar--'
+	     *
+	     * _.toLower('fooBar');
+	     * // => 'foobar'
+	     *
+	     * _.toLower('__FOO_BAR__');
+	     * // => '__foo_bar__'
+	     */
+	    function toLower(value) {
+	      return toString(value).toLowerCase();
+	    }
+
+	    /**
+	     * Converts `string`, as a whole, to upper case just like
+	     * [String#toUpperCase](https://mdn.io/toUpperCase).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the upper cased string.
+	     * @example
+	     *
+	     * _.toUpper('--foo-bar--');
+	     * // => '--FOO-BAR--'
+	     *
+	     * _.toUpper('fooBar');
+	     * // => 'FOOBAR'
+	     *
+	     * _.toUpper('__foo_bar__');
+	     * // => '__FOO_BAR__'
+	     */
+	    function toUpper(value) {
+	      return toString(value).toUpperCase();
+	    }
+
+	    /**
+	     * Removes leading and trailing whitespace or specified characters from `string`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {string} [string=''] The string to capitalize.
+	     * @returns {string} Returns the capitalized string.
+	     * @example
+	     *
+	     * _.capitalize('FRED');
+	     * // => 'Fred'
+	     */
+	    function capitalize(string) {
+	      return upperFirst(toString(string).toLowerCase());
+	    }
+
+	    /**
+	     * Deburrs `string` by converting
+	     * [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)#Character_table)
+	     * and [Latin Extended-A](https://en.wikipedia.org/wiki/Latin_Extended-A)
+	     * letters to basic Latin letters and removing
+	     * [combining diacritical marks](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to deburr.
+	     * @returns {string} Returns the deburred string.
+	     * @example
+	     *
+	     * _.deburr('déjà vu');
+	     * // => 'deja vu'
+	     */
+	    function deburr(string) {
+	      string = toString(string);
+	      return string && string.replace(reLatin, deburrLetter).replace(reComboMark, '');
+	    }
+
+	    /**
+	     * Checks if `string` ends with the given target string.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to inspect.
+	     * @param {string} [target] The string to search for.
+	     * @param {number} [position=string.length] The position to search up to.
+	     * @returns {boolean} Returns `true` if `string` ends with `target`,
+	     *  else `false`.
+	     * @example
+	     *
+	     * _.endsWith('abc', 'c');
+	     * // => true
+	     *
+	     * _.endsWith('abc', 'b');
+	     * // => false
+	     *
+	     * _.endsWith('abc', 'b', 2);
+	     * // => true
+	     */
+	    function endsWith(string, target, position) {
+	      string = toString(string);
+	      target = baseToString(target);
+
+	      var length = string.length;
+	      position = position === undefined
+	        ? length
+	        : baseClamp(toInteger(position), 0, length);
+
+	      var end = position;
+	      position -= target.length;
+	      return position >= 0 && string.slice(position, end) == target;
+	    }
+
+	    /**
+	     * Converts the characters "&", "<", ">", '"', and "'" in `string` to their
+	     * corresponding HTML entities.
+	     *
+	     * **Note:** No other characters are escaped. To escape additional
+	     * characters use a third-party library like [_he_](https://mths.be/he).
+	     *
+	     * Though the ">" character is escaped for symmetry, characters like
+	     * ">" and "/" don't need escaping in HTML and have no special meaning
+	     * unless they're part of a tag or unquoted attribute value. See
+	     * [Mathias Bynens's article](https://mathiasbynens.be/notes/ambiguous-ampersands)
+	     * (under "semi-related fun fact") for more details.
+	     *
+	     * When working with HTML you should always
+	     * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
+	     * XSS vectors.
+=======
+	     * @param {string} [string=''] The string to trim.
+	     * @param {string} [chars=whitespace] The characters to trim.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {string} Returns the trimmed string.
+	     * @example
+	     *
+	     * _.trim('  abc  ');
+	     * // => 'abc'
+	     *
+	     * _.trim('-_-abc-_-', '_-');
+	     * // => 'abc'
+	     *
+	     * _.map(['  foo  ', '  bar  '], _.trim);
+	     * // => ['foo', 'bar']
+	     */
+	    function trim(string, chars, guard) {
+	      string = toString(string);
+	      if (string && (guard || chars === undefined)) {
+	        return string.replace(reTrim, '');
+	      }
+	      if (!string || !(chars = baseToString(chars))) {
+	        return string;
+	      }
+	      var strSymbols = stringToArray(string),
+	          chrSymbols = stringToArray(chars),
+	          start = charsStartIndex(strSymbols, chrSymbols),
+	          end = charsEndIndex(strSymbols, chrSymbols) + 1;
+
+	      return castSlice(strSymbols, start, end).join('');
+	    }
+
+	    /**
+	     * Removes trailing whitespace or specified characters from `string`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to trim.
+	     * @param {string} [chars=whitespace] The characters to trim.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {string} Returns the trimmed string.
+	     * @example
+	     *
+	     * _.trimEnd('  abc  ');
+	     * // => '  abc'
+	     *
+	     * _.trimEnd('-_-abc-_-', '_-');
+	     * // => '-_-abc'
+	     */
+	    function trimEnd(string, chars, guard) {
+	      string = toString(string);
+	      if (string && (guard || chars === undefined)) {
+	        return string.replace(reTrimEnd, '');
+	      }
+	      if (!string || !(chars = baseToString(chars))) {
+	        return string;
+	      }
+	      var strSymbols = stringToArray(string),
+	          end = charsEndIndex(strSymbols, stringToArray(chars)) + 1;
+
+	      return castSlice(strSymbols, 0, end).join('');
+	    }
+
+	    /**
+	     * Removes leading whitespace or specified characters from `string`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category String
+	     * @param {string} [string=''] The string to escape.
+	     * @returns {string} Returns the escaped string.
+	     * @example
+	     *
+	     * _.escape('fred, barney, & pebbles');
+	     * // => 'fred, barney, &amp; pebbles'
+	     */
+	    function escape(string) {
+	      string = toString(string);
+	      return (string && reHasUnescapedHtml.test(string))
+	        ? string.replace(reUnescapedHtml, escapeHtmlChar)
+	        : string;
+	    }
+
+	    /**
+	     * Escapes the `RegExp` special characters "^", "$", "\", ".", "*", "+",
+	     * "?", "(", ")", "[", "]", "{", "}", and "|" in `string`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to escape.
+	     * @returns {string} Returns the escaped string.
+	     * @example
+	     *
+	     * _.escapeRegExp('[lodash](https://lodash.com/)');
+	     * // => '\[lodash\]\(https://lodash\.com/\)'
+	     */
+	    function escapeRegExp(string) {
+	      string = toString(string);
+	      return (string && reHasRegExpChar.test(string))
+	        ? string.replace(reRegExpChar, '\\$&')
+	        : string;
+	    }
+
+	    /**
+	     * Converts `string` to
+	     * [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles).
 	     *
 	     * @static
 	     * @memberOf _
@@ -15326,12 +21308,164 @@ webpackJsonp([2],{
 
 	    /**
 	     * Converts `string`, as space separated words, to lower case.
+=======
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to trim.
+	     * @param {string} [chars=whitespace] The characters to trim.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {string} Returns the trimmed string.
+	     * @example
+	     *
+	     * _.trimStart('  abc  ');
+	     * // => 'abc  '
+	     *
+	     * _.trimStart('-_-abc-_-', '_-');
+	     * // => 'abc-_-'
+	     */
+	    function trimStart(string, chars, guard) {
+	      string = toString(string);
+	      if (string && (guard || chars === undefined)) {
+	        return string.replace(reTrimStart, '');
+	      }
+	      if (!string || !(chars = baseToString(chars))) {
+	        return string;
+	      }
+	      var strSymbols = stringToArray(string),
+	          start = charsStartIndex(strSymbols, stringToArray(chars));
+
+	      return castSlice(strSymbols, start).join('');
+	    }
+
+	    /**
+	     * Truncates `string` if it's longer than the given maximum string length.
+	     * The last characters of the truncated string are replaced with the omission
+	     * string which defaults to "...".
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to truncate.
+	     * @param {Object} [options={}] The options object.
+	     * @param {number} [options.length=30] The maximum string length.
+	     * @param {string} [options.omission='...'] The string to indicate text is omitted.
+	     * @param {RegExp|string} [options.separator] The separator pattern to truncate to.
+	     * @returns {string} Returns the truncated string.
+	     * @example
+	     *
+	     * _.truncate('hi-diddly-ho there, neighborino');
+	     * // => 'hi-diddly-ho there, neighbo...'
+	     *
+	     * _.truncate('hi-diddly-ho there, neighborino', {
+	     *   'length': 24,
+	     *   'separator': ' '
+	     * });
+	     * // => 'hi-diddly-ho there,...'
+	     *
+	     * _.truncate('hi-diddly-ho there, neighborino', {
+	     *   'length': 24,
+	     *   'separator': /,? +/
+	     * });
+	     * // => 'hi-diddly-ho there...'
+	     *
+	     * _.truncate('hi-diddly-ho there, neighborino', {
+	     *   'omission': ' [...]'
+	     * });
+	     * // => 'hi-diddly-ho there, neig [...]'
+	     */
+	    function truncate(string, options) {
+	      var length = DEFAULT_TRUNC_LENGTH,
+	          omission = DEFAULT_TRUNC_OMISSION;
+
+	      if (isObject(options)) {
+	        var separator = 'separator' in options ? options.separator : separator;
+	        length = 'length' in options ? toInteger(options.length) : length;
+	        omission = 'omission' in options ? baseToString(options.omission) : omission;
+	      }
+	      string = toString(string);
+
+	      var strLength = string.length;
+	      if (hasUnicode(string)) {
+	        var strSymbols = stringToArray(string);
+	        strLength = strSymbols.length;
+	      }
+	      if (length >= strLength) {
+	        return string;
+	      }
+	      var end = length - stringSize(omission);
+	      if (end < 1) {
+	        return omission;
+	      }
+	      var result = strSymbols
+	        ? castSlice(strSymbols, 0, end).join('')
+	        : string.slice(0, end);
+
+	      if (separator === undefined) {
+	        return result + omission;
+	      }
+	      if (strSymbols) {
+	        end += (result.length - end);
+	      }
+	      if (isRegExp(separator)) {
+	        if (string.slice(end).search(separator)) {
+	          var match,
+	              substring = result;
+
+	          if (!separator.global) {
+	            separator = RegExp(separator.source, toString(reFlags.exec(separator)) + 'g');
+	          }
+	          separator.lastIndex = 0;
+	          while ((match = separator.exec(substring))) {
+	            var newEnd = match.index;
+	          }
+	          result = result.slice(0, newEnd === undefined ? end : newEnd);
+	        }
+	      } else if (string.indexOf(baseToString(separator), end) != end) {
+	        var index = result.lastIndexOf(separator);
+	        if (index > -1) {
+	          result = result.slice(0, index);
+	        }
+	      }
+	      return result + omission;
+	    }
+
+	    /**
+	     * The inverse of `_.escape`; this method converts the HTML entities
+	     * `&amp;`, `&lt;`, `&gt;`, `&quot;`, and `&#39;` in `string` to
+	     * their corresponding characters.
+	     *
+	     * **Note:** No other HTML entities are unescaped. To unescape additional
+	     * HTML entities use a third-party library like [_he_](https://mths.be/he).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 0.6.0
+	     * @category String
+	     * @param {string} [string=''] The string to unescape.
+	     * @returns {string} Returns the unescaped string.
+	     * @example
+	     *
+	     * _.unescape('fred, barney, &amp; pebbles');
+	     * // => 'fred, barney, & pebbles'
+	     */
+	    function unescape(string) {
+	      string = toString(string);
+	      return (string && reHasEscapedHtml.test(string))
+	        ? string.replace(reEscapedHtml, unescapeHtmlChar)
+	        : string;
+	    }
+
+	    /**
+	     * Converts `string`, as space separated words, to upper case.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 4.0.0
 	     * @category String
 	     * @param {string} [string=''] The string to convert.
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @returns {string} Returns the lower cased string.
 	     * @example
 	     *
@@ -15350,6 +21484,26 @@ webpackJsonp([2],{
 
 	    /**
 	     * Converts the first character of `string` to lower case.
+=======
+	     * @returns {string} Returns the upper cased string.
+	     * @example
+	     *
+	     * _.upperCase('--foo-bar');
+	     * // => 'FOO BAR'
+	     *
+	     * _.upperCase('fooBar');
+	     * // => 'FOO BAR'
+	     *
+	     * _.upperCase('__foo_bar__');
+	     * // => 'FOO BAR'
+	     */
+	    var upperCase = createCompounder(function(result, word, index) {
+	      return result + (index ? ' ' : '') + word.toUpperCase();
+	    });
+
+	    /**
+	     * Converts the first character of `string` to upper case.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
@@ -15359,6 +21513,7 @@ webpackJsonp([2],{
 	     * @returns {string} Returns the converted string.
 	     * @example
 	     *
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * _.lowerFirst('Fred');
 	     * // => 'fred'
 	     *
@@ -15370,11 +21525,24 @@ webpackJsonp([2],{
 	    /**
 	     * Pads `string` on the left and right sides if it's shorter than `length`.
 	     * Padding characters are truncated if they can't be evenly divided by `length`.
+=======
+	     * _.upperFirst('fred');
+	     * // => 'Fred'
+	     *
+	     * _.upperFirst('FRED');
+	     * // => 'FRED'
+	     */
+	    var upperFirst = createCaseFirst('toUpperCase');
+
+	    /**
+	     * Splits `string` into an array of its words.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 3.0.0
 	     * @category String
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @param {string} [string=''] The string to pad.
 	     * @param {number} [length=0] The padding length.
 	     * @param {string} [chars=' '] The string used as padding.
@@ -15442,9 +21610,72 @@ webpackJsonp([2],{
 	    /**
 	     * Pads `string` on the left side if it's shorter than `length`. Padding
 	     * characters are truncated if they exceed `length`.
+=======
+	     * @param {string} [string=''] The string to inspect.
+	     * @param {RegExp|string} [pattern] The pattern to match words.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {Array} Returns the words of `string`.
+	     * @example
+	     *
+	     * _.words('fred, barney, & pebbles');
+	     * // => ['fred', 'barney', 'pebbles']
+	     *
+	     * _.words('fred, barney, & pebbles', /[^, ]+/g);
+	     * // => ['fred', 'barney', '&', 'pebbles']
+	     */
+	    function words(string, pattern, guard) {
+	      string = toString(string);
+	      pattern = guard ? undefined : pattern;
+
+	      if (pattern === undefined) {
+	        return hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string);
+	      }
+	      return string.match(pattern) || [];
+	    }
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+	     * Attempts to invoke `func`, returning either the result or the caught error
+	     * object. Any additional arguments are provided to `func` when it's invoked.
 	     *
 	     * @static
 	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Util
+	     * @param {Function} func The function to attempt.
+	     * @param {...*} [args] The arguments to invoke `func` with.
+	     * @returns {*} Returns the `func` result or error object.
+	     * @example
+	     *
+	     * // Avoid throwing errors for invalid selectors.
+	     * var elements = _.attempt(function(selector) {
+	     *   return document.querySelectorAll(selector);
+	     * }, '>_>');
+	     *
+	     * if (_.isError(elements)) {
+	     *   elements = [];
+	     * }
+	     */
+	    var attempt = baseRest(function(func, args) {
+	      try {
+	        return apply(func, undefined, args);
+	      } catch (e) {
+	        return isError(e) ? e : new Error(e);
+	      }
+	    });
+
+	    /**
+	     * Binds methods of an object to the object itself, overwriting the existing
+	     * method.
+	     *
+	     * **Note:** This method doesn't set the "length" property of bound functions.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @since 4.0.0
 	     * @category String
 	     * @param {string} [string=''] The string to pad.
@@ -15565,10 +21796,170 @@ webpackJsonp([2],{
 	    /**
 	     * Converts `string` to
 	     * [snake case](https://en.wikipedia.org/wiki/Snake_case).
+=======
+	     * @category Util
+	     * @param {Object} object The object to bind and assign the bound methods to.
+	     * @param {...(string|string[])} methodNames The object method names to bind.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var view = {
+	     *   'label': 'docs',
+	     *   'click': function() {
+	     *     console.log('clicked ' + this.label);
+	     *   }
+	     * };
+	     *
+	     * _.bindAll(view, ['click']);
+	     * jQuery(element).on('click', view.click);
+	     * // => Logs 'clicked docs' when clicked.
+	     */
+	    var bindAll = flatRest(function(object, methodNames) {
+	      arrayEach(methodNames, function(key) {
+	        key = toKey(key);
+	        baseAssignValue(object, key, bind(object[key], object));
+	      });
+	      return object;
+	    });
+
+	    /**
+	     * Creates a function that iterates over `pairs` and invokes the corresponding
+	     * function of the first predicate to return truthy. The predicate-function
+	     * pairs are invoked with the `this` binding and arguments of the created
+	     * function.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Util
+	     * @param {Array} pairs The predicate-function pairs.
+	     * @returns {Function} Returns the new composite function.
+	     * @example
+	     *
+	     * var func = _.cond([
+	     *   [_.matches({ 'a': 1 }),           _.constant('matches A')],
+	     *   [_.conforms({ 'b': _.isNumber }), _.constant('matches B')],
+	     *   [_.stubTrue,                      _.constant('no match')]
+	     * ]);
+	     *
+	     * func({ 'a': 1, 'b': 2 });
+	     * // => 'matches A'
+	     *
+	     * func({ 'a': 0, 'b': 1 });
+	     * // => 'matches B'
+	     *
+	     * func({ 'a': '1', 'b': '2' });
+	     * // => 'no match'
+	     */
+	    function cond(pairs) {
+	      var length = pairs ? pairs.length : 0,
+	          toIteratee = getIteratee();
+
+	      pairs = !length ? [] : arrayMap(pairs, function(pair) {
+	        if (typeof pair[1] != 'function') {
+	          throw new TypeError(FUNC_ERROR_TEXT);
+	        }
+	        return [toIteratee(pair[0]), pair[1]];
+	      });
+
+	      return baseRest(function(args) {
+	        var index = -1;
+	        while (++index < length) {
+	          var pair = pairs[index];
+	          if (apply(pair[0], this, args)) {
+	            return apply(pair[1], this, args);
+	          }
+	        }
+	      });
+	    }
+
+	    /**
+	     * Creates a function that invokes the predicate properties of `source` with
+	     * the corresponding property values of a given object, returning `true` if
+	     * all predicates return truthy, else `false`.
+	     *
+	     * **Note:** The created function is equivalent to `_.conformsTo` with
+	     * `source` partially applied.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Util
+	     * @param {Object} source The object of property predicates to conform to.
+	     * @returns {Function} Returns the new spec function.
+	     * @example
+	     *
+	     * var objects = [
+	     *   { 'a': 2, 'b': 1 },
+	     *   { 'a': 1, 'b': 2 }
+	     * ];
+	     *
+	     * _.filter(objects, _.conforms({ 'b': function(n) { return n > 1; } }));
+	     * // => [{ 'a': 1, 'b': 2 }]
+	     */
+	    function conforms(source) {
+	      return baseConforms(baseClone(source, true));
+	    }
+
+	    /**
+	     * Creates a function that returns `value`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.4.0
+	     * @category Util
+	     * @param {*} value The value to return from the new function.
+	     * @returns {Function} Returns the new constant function.
+	     * @example
+	     *
+	     * var objects = _.times(2, _.constant({ 'a': 1 }));
+	     *
+	     * console.log(objects);
+	     * // => [{ 'a': 1 }, { 'a': 1 }]
+	     *
+	     * console.log(objects[0] === objects[1]);
+	     * // => true
+	     */
+	    function constant(value) {
+	      return function() {
+	        return value;
+	      };
+	    }
+
+	    /**
+	     * Checks `value` to determine whether a default value should be returned in
+	     * its place. The `defaultValue` is returned if `value` is `NaN`, `null`,
+	     * or `undefined`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.14.0
+	     * @category Util
+	     * @param {*} value The value to check.
+	     * @param {*} defaultValue The default value.
+	     * @returns {*} Returns the resolved value.
+	     * @example
+	     *
+	     * _.defaultTo(1, 10);
+	     * // => 1
+	     *
+	     * _.defaultTo(undefined, 10);
+	     * // => 10
+	     */
+	    function defaultTo(value, defaultValue) {
+	      return (value == null || value !== value) ? defaultValue : value;
+	    }
+
+	    /**
+	     * Creates a function that returns the result of invoking the given functions
+	     * with the `this` binding of the created function, where each successive
+	     * invocation is supplied the return value of the previous.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 3.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @category String
 	     * @param {string} [string=''] The string to convert.
 	     * @returns {string} Returns the snake cased string.
@@ -15592,9 +21983,32 @@ webpackJsonp([2],{
 	     *
 	     * **Note:** This method is based on
 	     * [`String#split`](https://mdn.io/String/split).
+=======
+	     * @category Util
+	     * @param {...(Function|Function[])} [funcs] The functions to invoke.
+	     * @returns {Function} Returns the new composite function.
+	     * @see _.flowRight
+	     * @example
+	     *
+	     * function square(n) {
+	     *   return n * n;
+	     * }
+	     *
+	     * var addSquare = _.flow([_.add, square]);
+	     * addSquare(1, 2);
+	     * // => 9
+	     */
+	    var flow = createFlow();
+
+	    /**
+	     * This method is like `_.flow` except that it creates a function that
+	     * invokes the given functions from right to left.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
+	     * @since 3.0.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @since 4.0.0
 	     * @category String
 	     * @param {string} [string=''] The string to split.
@@ -15630,9 +22044,31 @@ webpackJsonp([2],{
 	    /**
 	     * Converts `string` to
 	     * [start case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage).
+=======
+	     * @category Util
+	     * @param {...(Function|Function[])} [funcs] The functions to invoke.
+	     * @returns {Function} Returns the new composite function.
+	     * @see _.flow
+	     * @example
+	     *
+	     * function square(n) {
+	     *   return n * n;
+	     * }
+	     *
+	     * var addSquare = _.flowRight([square, _.add]);
+	     * addSquare(1, 2);
+	     * // => 9
+	     */
+	    var flowRight = createFlow(true);
+
+	    /**
+	     * This method returns the first argument it receives.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
+	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @since 3.1.0
 	     * @category String
 	     * @param {string} [string=''] The string to convert.
@@ -16017,475 +22453,7 @@ webpackJsonp([2],{
 
 	    /**
 	     * Removes leading whitespace or specified characters from `string`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category String
-	     * @param {string} [string=''] The string to trim.
-	     * @param {string} [chars=whitespace] The characters to trim.
-	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-	     * @returns {string} Returns the trimmed string.
-	     * @example
-	     *
-	     * _.trimStart('  abc  ');
-	     * // => 'abc  '
-	     *
-	     * _.trimStart('-_-abc-_-', '_-');
-	     * // => 'abc-_-'
-	     */
-	    function trimStart(string, chars, guard) {
-	      string = toString(string);
-	      if (string && (guard || chars === undefined)) {
-	        return string.replace(reTrimStart, '');
-	      }
-	      if (!string || !(chars = baseToString(chars))) {
-	        return string;
-	      }
-	      var strSymbols = stringToArray(string),
-	          start = charsStartIndex(strSymbols, stringToArray(chars));
-
-	      return castSlice(strSymbols, start).join('');
-	    }
-
-	    /**
-	     * Truncates `string` if it's longer than the given maximum string length.
-	     * The last characters of the truncated string are replaced with the omission
-	     * string which defaults to "...".
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category String
-	     * @param {string} [string=''] The string to truncate.
-	     * @param {Object} [options={}] The options object.
-	     * @param {number} [options.length=30] The maximum string length.
-	     * @param {string} [options.omission='...'] The string to indicate text is omitted.
-	     * @param {RegExp|string} [options.separator] The separator pattern to truncate to.
-	     * @returns {string} Returns the truncated string.
-	     * @example
-	     *
-	     * _.truncate('hi-diddly-ho there, neighborino');
-	     * // => 'hi-diddly-ho there, neighbo...'
-	     *
-	     * _.truncate('hi-diddly-ho there, neighborino', {
-	     *   'length': 24,
-	     *   'separator': ' '
-	     * });
-	     * // => 'hi-diddly-ho there,...'
-	     *
-	     * _.truncate('hi-diddly-ho there, neighborino', {
-	     *   'length': 24,
-	     *   'separator': /,? +/
-	     * });
-	     * // => 'hi-diddly-ho there...'
-	     *
-	     * _.truncate('hi-diddly-ho there, neighborino', {
-	     *   'omission': ' [...]'
-	     * });
-	     * // => 'hi-diddly-ho there, neig [...]'
-	     */
-	    function truncate(string, options) {
-	      var length = DEFAULT_TRUNC_LENGTH,
-	          omission = DEFAULT_TRUNC_OMISSION;
-
-	      if (isObject(options)) {
-	        var separator = 'separator' in options ? options.separator : separator;
-	        length = 'length' in options ? toInteger(options.length) : length;
-	        omission = 'omission' in options ? baseToString(options.omission) : omission;
-	      }
-	      string = toString(string);
-
-	      var strLength = string.length;
-	      if (hasUnicode(string)) {
-	        var strSymbols = stringToArray(string);
-	        strLength = strSymbols.length;
-	      }
-	      if (length >= strLength) {
-	        return string;
-	      }
-	      var end = length - stringSize(omission);
-	      if (end < 1) {
-	        return omission;
-	      }
-	      var result = strSymbols
-	        ? castSlice(strSymbols, 0, end).join('')
-	        : string.slice(0, end);
-
-	      if (separator === undefined) {
-	        return result + omission;
-	      }
-	      if (strSymbols) {
-	        end += (result.length - end);
-	      }
-	      if (isRegExp(separator)) {
-	        if (string.slice(end).search(separator)) {
-	          var match,
-	              substring = result;
-
-	          if (!separator.global) {
-	            separator = RegExp(separator.source, toString(reFlags.exec(separator)) + 'g');
-	          }
-	          separator.lastIndex = 0;
-	          while ((match = separator.exec(substring))) {
-	            var newEnd = match.index;
-	          }
-	          result = result.slice(0, newEnd === undefined ? end : newEnd);
-	        }
-	      } else if (string.indexOf(baseToString(separator), end) != end) {
-	        var index = result.lastIndexOf(separator);
-	        if (index > -1) {
-	          result = result.slice(0, index);
-	        }
-	      }
-	      return result + omission;
-	    }
-
-	    /**
-	     * The inverse of `_.escape`; this method converts the HTML entities
-	     * `&amp;`, `&lt;`, `&gt;`, `&quot;`, and `&#39;` in `string` to
-	     * their corresponding characters.
-	     *
-	     * **Note:** No other HTML entities are unescaped. To unescape additional
-	     * HTML entities use a third-party library like [_he_](https://mths.be/he).
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 0.6.0
-	     * @category String
-	     * @param {string} [string=''] The string to unescape.
-	     * @returns {string} Returns the unescaped string.
-	     * @example
-	     *
-	     * _.unescape('fred, barney, &amp; pebbles');
-	     * // => 'fred, barney, & pebbles'
-	     */
-	    function unescape(string) {
-	      string = toString(string);
-	      return (string && reHasEscapedHtml.test(string))
-	        ? string.replace(reEscapedHtml, unescapeHtmlChar)
-	        : string;
-	    }
-
-	    /**
-	     * Converts `string`, as space separated words, to upper case.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category String
-	     * @param {string} [string=''] The string to convert.
-	     * @returns {string} Returns the upper cased string.
-	     * @example
-	     *
-	     * _.upperCase('--foo-bar');
-	     * // => 'FOO BAR'
-	     *
-	     * _.upperCase('fooBar');
-	     * // => 'FOO BAR'
-	     *
-	     * _.upperCase('__foo_bar__');
-	     * // => 'FOO BAR'
-	     */
-	    var upperCase = createCompounder(function(result, word, index) {
-	      return result + (index ? ' ' : '') + word.toUpperCase();
-	    });
-
-	    /**
-	     * Converts the first character of `string` to upper case.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category String
-	     * @param {string} [string=''] The string to convert.
-	     * @returns {string} Returns the converted string.
-	     * @example
-	     *
-	     * _.upperFirst('fred');
-	     * // => 'Fred'
-	     *
-	     * _.upperFirst('FRED');
-	     * // => 'FRED'
-	     */
-	    var upperFirst = createCaseFirst('toUpperCase');
-
-	    /**
-	     * Splits `string` into an array of its words.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 3.0.0
-	     * @category String
-	     * @param {string} [string=''] The string to inspect.
-	     * @param {RegExp|string} [pattern] The pattern to match words.
-	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-	     * @returns {Array} Returns the words of `string`.
-	     * @example
-	     *
-	     * _.words('fred, barney, & pebbles');
-	     * // => ['fred', 'barney', 'pebbles']
-	     *
-	     * _.words('fred, barney, & pebbles', /[^, ]+/g);
-	     * // => ['fred', 'barney', '&', 'pebbles']
-	     */
-	    function words(string, pattern, guard) {
-	      string = toString(string);
-	      pattern = guard ? undefined : pattern;
-
-	      if (pattern === undefined) {
-	        return hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string);
-	      }
-	      return string.match(pattern) || [];
-	    }
-
-	    /*------------------------------------------------------------------------*/
-
-	    /**
-	     * Attempts to invoke `func`, returning either the result or the caught error
-	     * object. Any additional arguments are provided to `func` when it's invoked.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 3.0.0
-	     * @category Util
-	     * @param {Function} func The function to attempt.
-	     * @param {...*} [args] The arguments to invoke `func` with.
-	     * @returns {*} Returns the `func` result or error object.
-	     * @example
-	     *
-	     * // Avoid throwing errors for invalid selectors.
-	     * var elements = _.attempt(function(selector) {
-	     *   return document.querySelectorAll(selector);
-	     * }, '>_>');
-	     *
-	     * if (_.isError(elements)) {
-	     *   elements = [];
-	     * }
-	     */
-	    var attempt = baseRest(function(func, args) {
-	      try {
-	        return apply(func, undefined, args);
-	      } catch (e) {
-	        return isError(e) ? e : new Error(e);
-	      }
-	    });
-
-	    /**
-	     * Binds methods of an object to the object itself, overwriting the existing
-	     * method.
-	     *
-	     * **Note:** This method doesn't set the "length" property of bound functions.
-	     *
-	     * @static
-	     * @since 0.1.0
-	     * @memberOf _
-	     * @category Util
-	     * @param {Object} object The object to bind and assign the bound methods to.
-	     * @param {...(string|string[])} methodNames The object method names to bind.
-	     * @returns {Object} Returns `object`.
-	     * @example
-	     *
-	     * var view = {
-	     *   'label': 'docs',
-	     *   'click': function() {
-	     *     console.log('clicked ' + this.label);
-	     *   }
-	     * };
-	     *
-	     * _.bindAll(view, ['click']);
-	     * jQuery(element).on('click', view.click);
-	     * // => Logs 'clicked docs' when clicked.
-	     */
-	    var bindAll = flatRest(function(object, methodNames) {
-	      arrayEach(methodNames, function(key) {
-	        key = toKey(key);
-	        baseAssignValue(object, key, bind(object[key], object));
-	      });
-	      return object;
-	    });
-
-	    /**
-	     * Creates a function that iterates over `pairs` and invokes the corresponding
-	     * function of the first predicate to return truthy. The predicate-function
-	     * pairs are invoked with the `this` binding and arguments of the created
-	     * function.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Util
-	     * @param {Array} pairs The predicate-function pairs.
-	     * @returns {Function} Returns the new composite function.
-	     * @example
-	     *
-	     * var func = _.cond([
-	     *   [_.matches({ 'a': 1 }),           _.constant('matches A')],
-	     *   [_.conforms({ 'b': _.isNumber }), _.constant('matches B')],
-	     *   [_.stubTrue,                      _.constant('no match')]
-	     * ]);
-	     *
-	     * func({ 'a': 1, 'b': 2 });
-	     * // => 'matches A'
-	     *
-	     * func({ 'a': 0, 'b': 1 });
-	     * // => 'matches B'
-	     *
-	     * func({ 'a': '1', 'b': '2' });
-	     * // => 'no match'
-	     */
-	    function cond(pairs) {
-	      var length = pairs ? pairs.length : 0,
-	          toIteratee = getIteratee();
-
-	      pairs = !length ? [] : arrayMap(pairs, function(pair) {
-	        if (typeof pair[1] != 'function') {
-	          throw new TypeError(FUNC_ERROR_TEXT);
-	        }
-	        return [toIteratee(pair[0]), pair[1]];
-	      });
-
-	      return baseRest(function(args) {
-	        var index = -1;
-	        while (++index < length) {
-	          var pair = pairs[index];
-	          if (apply(pair[0], this, args)) {
-	            return apply(pair[1], this, args);
-	          }
-	        }
-	      });
-	    }
-
-	    /**
-	     * Creates a function that invokes the predicate properties of `source` with
-	     * the corresponding property values of a given object, returning `true` if
-	     * all predicates return truthy, else `false`.
-	     *
-	     * **Note:** The created function is equivalent to `_.conformsTo` with
-	     * `source` partially applied.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.0.0
-	     * @category Util
-	     * @param {Object} source The object of property predicates to conform to.
-	     * @returns {Function} Returns the new spec function.
-	     * @example
-	     *
-	     * var objects = [
-	     *   { 'a': 2, 'b': 1 },
-	     *   { 'a': 1, 'b': 2 }
-	     * ];
-	     *
-	     * _.filter(objects, _.conforms({ 'b': function(n) { return n > 1; } }));
-	     * // => [{ 'a': 1, 'b': 2 }]
-	     */
-	    function conforms(source) {
-	      return baseConforms(baseClone(source, true));
-	    }
-
-	    /**
-	     * Creates a function that returns `value`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 2.4.0
-	     * @category Util
-	     * @param {*} value The value to return from the new function.
-	     * @returns {Function} Returns the new constant function.
-	     * @example
-	     *
-	     * var objects = _.times(2, _.constant({ 'a': 1 }));
-	     *
-	     * console.log(objects);
-	     * // => [{ 'a': 1 }, { 'a': 1 }]
-	     *
-	     * console.log(objects[0] === objects[1]);
-	     * // => true
-	     */
-	    function constant(value) {
-	      return function() {
-	        return value;
-	      };
-	    }
-
-	    /**
-	     * Checks `value` to determine whether a default value should be returned in
-	     * its place. The `defaultValue` is returned if `value` is `NaN`, `null`,
-	     * or `undefined`.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 4.14.0
-	     * @category Util
-	     * @param {*} value The value to check.
-	     * @param {*} defaultValue The default value.
-	     * @returns {*} Returns the resolved value.
-	     * @example
-	     *
-	     * _.defaultTo(1, 10);
-	     * // => 1
-	     *
-	     * _.defaultTo(undefined, 10);
-	     * // => 10
-	     */
-	    function defaultTo(value, defaultValue) {
-	      return (value == null || value !== value) ? defaultValue : value;
-	    }
-
-	    /**
-	     * Creates a function that returns the result of invoking the given functions
-	     * with the `this` binding of the created function, where each successive
-	     * invocation is supplied the return value of the previous.
-	     *
-	     * @static
-	     * @memberOf _
-	     * @since 3.0.0
-	     * @category Util
-	     * @param {...(Function|Function[])} [funcs] The functions to invoke.
-	     * @returns {Function} Returns the new composite function.
-	     * @see _.flowRight
-	     * @example
-	     *
-	     * function square(n) {
-	     *   return n * n;
-	     * }
-	     *
-	     * var addSquare = _.flow([_.add, square]);
-	     * addSquare(1, 2);
-	     * // => 9
-	     */
-	    var flow = createFlow();
-
-	    /**
-	     * This method is like `_.flow` except that it creates a function that
-	     * invokes the given functions from right to left.
-	     *
-	     * @static
-	     * @since 3.0.0
-	     * @memberOf _
-	     * @category Util
-	     * @param {...(Function|Function[])} [funcs] The functions to invoke.
-	     * @returns {Function} Returns the new composite function.
-	     * @see _.flow
-	     * @example
-	     *
-	     * function square(n) {
-	     *   return n * n;
-	     * }
-	     *
-	     * var addSquare = _.flowRight([square, _.add]);
-	     * addSquare(1, 2);
-	     * // => 9
-	     */
-	    var flowRight = createFlow(true);
-
-	    /**
-	     * This method returns the first argument it receives.
-	     *
-	     * @static
-	     * @since 0.1.0
-	     * @memberOf _
+=======
 	     * @category Util
 	     * @param {*} value Any value.
 	     * @returns {*} Returns `value`.
@@ -16674,10 +22642,140 @@ webpackJsonp([2],{
 	     *
 	     * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
 	     * avoid conflicts caused by modifying the original.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
-	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to trim.
+	     * @param {string} [chars=whitespace] The characters to trim.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {string} Returns the trimmed string.
+	     * @example
+	     *
+	     * _.trimStart('  abc  ');
+	     * // => 'abc  '
+	     *
+	     * _.trimStart('-_-abc-_-', '_-');
+	     * // => 'abc-_-'
+	     */
+	    function trimStart(string, chars, guard) {
+	      string = toString(string);
+	      if (string && (guard || chars === undefined)) {
+	        return string.replace(reTrimStart, '');
+	      }
+	      if (!string || !(chars = baseToString(chars))) {
+	        return string;
+	      }
+	      var strSymbols = stringToArray(string),
+	          start = charsStartIndex(strSymbols, stringToArray(chars));
+
+	      return castSlice(strSymbols, start).join('');
+	    }
+
+	    /**
+	     * Truncates `string` if it's longer than the given maximum string length.
+	     * The last characters of the truncated string are replaced with the omission
+	     * string which defaults to "...".
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to truncate.
+	     * @param {Object} [options={}] The options object.
+	     * @param {number} [options.length=30] The maximum string length.
+	     * @param {string} [options.omission='...'] The string to indicate text is omitted.
+	     * @param {RegExp|string} [options.separator] The separator pattern to truncate to.
+	     * @returns {string} Returns the truncated string.
+	     * @example
+	     *
+	     * _.truncate('hi-diddly-ho there, neighborino');
+	     * // => 'hi-diddly-ho there, neighbo...'
+	     *
+	     * _.truncate('hi-diddly-ho there, neighborino', {
+	     *   'length': 24,
+	     *   'separator': ' '
+	     * });
+	     * // => 'hi-diddly-ho there,...'
+	     *
+	     * _.truncate('hi-diddly-ho there, neighborino', {
+	     *   'length': 24,
+	     *   'separator': /,? +/
+	     * });
+	     * // => 'hi-diddly-ho there...'
+	     *
+	     * _.truncate('hi-diddly-ho there, neighborino', {
+	     *   'omission': ' [...]'
+	     * });
+	     * // => 'hi-diddly-ho there, neig [...]'
+	     */
+	    function truncate(string, options) {
+	      var length = DEFAULT_TRUNC_LENGTH,
+	          omission = DEFAULT_TRUNC_OMISSION;
+
+	      if (isObject(options)) {
+	        var separator = 'separator' in options ? options.separator : separator;
+	        length = 'length' in options ? toInteger(options.length) : length;
+	        omission = 'omission' in options ? baseToString(options.omission) : omission;
+	      }
+	      string = toString(string);
+
+	      var strLength = string.length;
+	      if (hasUnicode(string)) {
+	        var strSymbols = stringToArray(string);
+	        strLength = strSymbols.length;
+	      }
+	      if (length >= strLength) {
+	        return string;
+	      }
+	      var end = length - stringSize(omission);
+	      if (end < 1) {
+	        return omission;
+	      }
+	      var result = strSymbols
+	        ? castSlice(strSymbols, 0, end).join('')
+	        : string.slice(0, end);
+
+	      if (separator === undefined) {
+	        return result + omission;
+	      }
+	      if (strSymbols) {
+	        end += (result.length - end);
+	      }
+	      if (isRegExp(separator)) {
+	        if (string.slice(end).search(separator)) {
+	          var match,
+	              substring = result;
+
+	          if (!separator.global) {
+	            separator = RegExp(separator.source, toString(reFlags.exec(separator)) + 'g');
+	          }
+	          separator.lastIndex = 0;
+	          while ((match = separator.exec(substring))) {
+	            var newEnd = match.index;
+	          }
+	          result = result.slice(0, newEnd === undefined ? end : newEnd);
+	        }
+	      } else if (string.indexOf(baseToString(separator), end) != end) {
+	        var index = result.lastIndexOf(separator);
+	        if (index > -1) {
+	          result = result.slice(0, index);
+	        }
+	      }
+	      return result + omission;
+	    }
+
+	    /**
+	     * The inverse of `_.escape`; this method converts the HTML entities
+	     * `&amp;`, `&lt;`, `&gt;`, `&quot;`, and `&#39;` in `string` to
+	     * their corresponding characters.
+	     *
+	     * **Note:** No other HTML entities are unescaped. To unescape additional
+	     * HTML entities use a third-party library like [_he_](https://mths.be/he).
+=======
 	     * @category Util
 	     * @param {Function|Object} [object=lodash] The destination object.
 	     * @param {Object} source The object of functions to add.
@@ -16742,10 +22840,55 @@ webpackJsonp([2],{
 	    /**
 	     * Reverts the `_` variable to its previous value and returns a reference to
 	     * the `lodash` function.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @since 0.1.0
 	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 0.6.0
+	     * @category String
+	     * @param {string} [string=''] The string to unescape.
+	     * @returns {string} Returns the unescaped string.
+	     * @example
+	     *
+	     * _.unescape('fred, barney, &amp; pebbles');
+	     * // => 'fred, barney, & pebbles'
+	     */
+	    function unescape(string) {
+	      string = toString(string);
+	      return (string && reHasEscapedHtml.test(string))
+	        ? string.replace(reEscapedHtml, unescapeHtmlChar)
+	        : string;
+	    }
+
+	    /**
+	     * Converts `string`, as space separated words, to upper case.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to convert.
+	     * @returns {string} Returns the upper cased string.
+	     * @example
+	     *
+	     * _.upperCase('--foo-bar');
+	     * // => 'FOO BAR'
+	     *
+	     * _.upperCase('fooBar');
+	     * // => 'FOO BAR'
+	     *
+	     * _.upperCase('__foo_bar__');
+	     * // => 'FOO BAR'
+	     */
+	    var upperCase = createCompounder(function(result, word, index) {
+	      return result + (index ? ' ' : '') + word.toUpperCase();
+	    });
+
+	    /**
+	     * Converts the first character of `string` to upper case.
+=======
 	     * @category Util
 	     * @returns {Function} Returns the `lodash` function.
 	     * @example
@@ -16778,6 +22921,7 @@ webpackJsonp([2],{
 	    /**
 	     * Creates a function that gets the argument at index `n`. If `n` is negative,
 	     * the nth argument from the end is returned.
+>>>>>>> CCN Directives (#200)
 	     *
 	     * @static
 	     * @memberOf _
@@ -16787,6 +22931,44 @@ webpackJsonp([2],{
 	     * @returns {Function} Returns the new pass-thru function.
 	     * @example
 	     *
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * _.upperFirst('fred');
+	     * // => 'Fred'
+	     *
+	     * _.upperFirst('FRED');
+	     * // => 'FRED'
+	     */
+	    var upperFirst = createCaseFirst('toUpperCase');
+
+	    /**
+	     * Splits `string` into an array of its words.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category String
+	     * @param {string} [string=''] The string to inspect.
+	     * @param {RegExp|string} [pattern] The pattern to match words.
+	     * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
+	     * @returns {Array} Returns the words of `string`.
+	     * @example
+	     *
+	     * _.words('fred, barney, & pebbles');
+	     * // => ['fred', 'barney', 'pebbles']
+	     *
+	     * _.words('fred, barney, & pebbles', /[^, ]+/g);
+	     * // => ['fred', 'barney', '&', 'pebbles']
+	     */
+	    function words(string, pattern, guard) {
+	      string = toString(string);
+	      pattern = guard ? undefined : pattern;
+
+	      if (pattern === undefined) {
+	        return hasUnicodeWord(string) ? unicodeWords(string) : asciiWords(string);
+	      }
+	      return string.match(pattern) || [];
+	    }
+=======
 	     * var func = _.nthArg(1);
 	     * func('a', 'b', 'c', 'd');
 	     * // => 'b'
@@ -16821,14 +23003,1174 @@ webpackJsonp([2],{
 	     * // => [4, 1]
 	     */
 	    var over = createOver(arrayMap);
+>>>>>>> CCN Directives (#200)
+
+	    /*------------------------------------------------------------------------*/
 
 	    /**
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * Attempts to invoke `func`, returning either the result or the caught error
+	     * object. Any additional arguments are provided to `func` when it's invoked.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Util
+	     * @param {Function} func The function to attempt.
+	     * @param {...*} [args] The arguments to invoke `func` with.
+	     * @returns {*} Returns the `func` result or error object.
+	     * @example
+	     *
+	     * // Avoid throwing errors for invalid selectors.
+	     * var elements = _.attempt(function(selector) {
+	     *   return document.querySelectorAll(selector);
+	     * }, '>_>');
+	     *
+	     * if (_.isError(elements)) {
+	     *   elements = [];
+	     * }
+	     */
+	    var attempt = baseRest(function(func, args) {
+	      try {
+	        return apply(func, undefined, args);
+	      } catch (e) {
+	        return isError(e) ? e : new Error(e);
+	      }
+	    });
+
+	    /**
+	     * Binds methods of an object to the object itself, overwriting the existing
+	     * method.
+	     *
+	     * **Note:** This method doesn't set the "length" property of bound functions.
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+	     * @category Util
+	     * @param {Object} object The object to bind and assign the bound methods to.
+	     * @param {...(string|string[])} methodNames The object method names to bind.
+	     * @returns {Object} Returns `object`.
+	     * @example
+	     *
+	     * var view = {
+	     *   'label': 'docs',
+	     *   'click': function() {
+	     *     console.log('clicked ' + this.label);
+	     *   }
+	     * };
+	     *
+	     * _.bindAll(view, ['click']);
+	     * jQuery(element).on('click', view.click);
+	     * // => Logs 'clicked docs' when clicked.
+	     */
+	    var bindAll = flatRest(function(object, methodNames) {
+	      arrayEach(methodNames, function(key) {
+	        key = toKey(key);
+	        baseAssignValue(object, key, bind(object[key], object));
+	      });
+	      return object;
+	    });
+
+	    /**
+	     * Creates a function that iterates over `pairs` and invokes the corresponding
+	     * function of the first predicate to return truthy. The predicate-function
+	     * pairs are invoked with the `this` binding and arguments of the created
+	     * function.
+=======
 	     * Creates a function that checks if **all** of the `predicates` return
 	     * truthy when invoked with the arguments it receives.
 	     *
 	     * @static
 	     * @memberOf _
 	     * @since 4.0.0
+	     * @category Util
+	     * @param {...(Function|Function[])} [predicates=[_.identity]]
+	     *  The predicates to check.
+	     * @returns {Function} Returns the new function.
+	     * @example
+	     *
+	     * var func = _.overEvery([Boolean, isFinite]);
+	     *
+	     * func('1');
+	     * // => true
+	     *
+	     * func(null);
+	     * // => false
+	     *
+	     * func(NaN);
+	     * // => false
+	     */
+	    var overEvery = createOver(arrayEvery);
+
+	    /**
+	     * Creates a function that checks if **any** of the `predicates` return
+	     * truthy when invoked with the arguments it receives.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Util
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @param {Array} pairs The predicate-function pairs.
+	     * @returns {Function} Returns the new composite function.
+	     * @example
+	     *
+	     * var func = _.cond([
+	     *   [_.matches({ 'a': 1 }),           _.constant('matches A')],
+	     *   [_.conforms({ 'b': _.isNumber }), _.constant('matches B')],
+	     *   [_.stubTrue,                      _.constant('no match')]
+	     * ]);
+	     *
+	     * func({ 'a': 1, 'b': 2 });
+	     * // => 'matches A'
+	     *
+	     * func({ 'a': 0, 'b': 1 });
+	     * // => 'matches B'
+	     *
+	     * func({ 'a': '1', 'b': '2' });
+	     * // => 'no match'
+	     */
+	    function cond(pairs) {
+	      var length = pairs ? pairs.length : 0,
+	          toIteratee = getIteratee();
+
+	      pairs = !length ? [] : arrayMap(pairs, function(pair) {
+	        if (typeof pair[1] != 'function') {
+	          throw new TypeError(FUNC_ERROR_TEXT);
+	        }
+	        return [toIteratee(pair[0]), pair[1]];
+	      });
+
+	      return baseRest(function(args) {
+	        var index = -1;
+	        while (++index < length) {
+	          var pair = pairs[index];
+	          if (apply(pair[0], this, args)) {
+	            return apply(pair[1], this, args);
+	          }
+	        }
+	      });
+	    }
+
+	    /**
+	     * Creates a function that invokes the predicate properties of `source` with
+	     * the corresponding property values of a given object, returning `true` if
+	     * all predicates return truthy, else `false`.
+	     *
+	     * **Note:** The created function is equivalent to `_.conformsTo` with
+	     * `source` partially applied.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Util
+	     * @param {Object} source The object of property predicates to conform to.
+	     * @returns {Function} Returns the new spec function.
+	     * @example
+	     *
+	     * var objects = [
+	     *   { 'a': 2, 'b': 1 },
+	     *   { 'a': 1, 'b': 2 }
+	     * ];
+	     *
+	     * _.filter(objects, _.conforms({ 'b': function(n) { return n > 1; } }));
+	     * // => [{ 'a': 1, 'b': 2 }]
+	     */
+	    function conforms(source) {
+	      return baseConforms(baseClone(source, true));
+	    }
+
+	    /**
+	     * Creates a function that returns `value`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.4.0
+	     * @category Util
+	     * @param {*} value The value to return from the new function.
+	     * @returns {Function} Returns the new constant function.
+	     * @example
+	     *
+	     * var objects = _.times(2, _.constant({ 'a': 1 }));
+	     *
+	     * console.log(objects);
+	     * // => [{ 'a': 1 }, { 'a': 1 }]
+	     *
+	     * console.log(objects[0] === objects[1]);
+	     * // => true
+	     */
+	    function constant(value) {
+	      return function() {
+	        return value;
+=======
+	     * @param {...(Function|Function[])} [predicates=[_.identity]]
+	     *  The predicates to check.
+	     * @returns {Function} Returns the new function.
+	     * @example
+	     *
+	     * var func = _.overSome([Boolean, isFinite]);
+	     *
+	     * func('1');
+	     * // => true
+	     *
+	     * func(null);
+	     * // => true
+	     *
+	     * func(NaN);
+	     * // => false
+	     */
+	    var overSome = createOver(arraySome);
+
+	    /**
+	     * Creates a function that returns the value at `path` of a given object.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.4.0
+	     * @category Util
+	     * @param {Array|string} path The path of the property to get.
+	     * @returns {Function} Returns the new accessor function.
+	     * @example
+	     *
+	     * var objects = [
+	     *   { 'a': { 'b': 2 } },
+	     *   { 'a': { 'b': 1 } }
+	     * ];
+	     *
+	     * _.map(objects, _.property('a.b'));
+	     * // => [2, 1]
+	     *
+	     * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
+	     * // => [1, 2]
+	     */
+	    function property(path) {
+	      return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+	    }
+
+	    /**
+	     * The opposite of `_.property`; this method creates a function that returns
+	     * the value at a given path of `object`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Util
+	     * @param {Object} object The object to query.
+	     * @returns {Function} Returns the new accessor function.
+	     * @example
+	     *
+	     * var array = [0, 1, 2],
+	     *     object = { 'a': array, 'b': array, 'c': array };
+	     *
+	     * _.map(['a[2]', 'c[0]'], _.propertyOf(object));
+	     * // => [2, 0]
+	     *
+	     * _.map([['a', '2'], ['c', '0']], _.propertyOf(object));
+	     * // => [2, 0]
+	     */
+	    function propertyOf(object) {
+	      return function(path) {
+	        return object == null ? undefined : baseGet(object, path);
+>>>>>>> CCN Directives (#200)
+	      };
+	    }
+
+	    /**
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * Checks `value` to determine whether a default value should be returned in
+	     * its place. The `defaultValue` is returned if `value` is `NaN`, `null`,
+	     * or `undefined`.
+=======
+	     * Creates an array of numbers (positive and/or negative) progressing from
+	     * `start` up to, but not including, `end`. A step of `-1` is used if a negative
+	     * `start` is specified without an `end` or `step`. If `end` is not specified,
+	     * it's set to `start` with `start` then set to `0`.
+	     *
+	     * **Note:** JavaScript follows the IEEE-754 standard for resolving
+	     * floating-point values which can produce unexpected results.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 4.14.0
+	     * @category Util
+	     * @param {*} value The value to check.
+	     * @param {*} defaultValue The default value.
+	     * @returns {*} Returns the resolved value.
+	     * @example
+	     *
+	     * _.defaultTo(1, 10);
+	     * // => 1
+	     *
+	     * _.defaultTo(undefined, 10);
+	     * // => 10
+	     */
+	    function defaultTo(value, defaultValue) {
+	      return (value == null || value !== value) ? defaultValue : value;
+	    }
+
+	    /**
+	     * Creates a function that returns the result of invoking the given functions
+	     * with the `this` binding of the created function, where each successive
+	     * invocation is supplied the return value of the previous.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Util
+	     * @param {...(Function|Function[])} [funcs] The functions to invoke.
+	     * @returns {Function} Returns the new composite function.
+	     * @see _.flowRight
+	     * @example
+	     *
+	     * function square(n) {
+	     *   return n * n;
+	     * }
+	     *
+	     * var addSquare = _.flow([_.add, square]);
+	     * addSquare(1, 2);
+	     * // => 9
+	     */
+	    var flow = createFlow();
+
+	    /**
+	     * This method is like `_.flow` except that it creates a function that
+	     * invokes the given functions from right to left.
+=======
+	     * @category Util
+	     * @param {number} [start=0] The start of the range.
+	     * @param {number} end The end of the range.
+	     * @param {number} [step=1] The value to increment or decrement by.
+	     * @returns {Array} Returns the range of numbers.
+	     * @see _.inRange, _.rangeRight
+	     * @example
+	     *
+	     * _.range(4);
+	     * // => [0, 1, 2, 3]
+	     *
+	     * _.range(-4);
+	     * // => [0, -1, -2, -3]
+	     *
+	     * _.range(1, 5);
+	     * // => [1, 2, 3, 4]
+	     *
+	     * _.range(0, 20, 5);
+	     * // => [0, 5, 10, 15]
+	     *
+	     * _.range(0, -4, -1);
+	     * // => [0, -1, -2, -3]
+	     *
+	     * _.range(1, 4, 0);
+	     * // => [1, 1, 1]
+	     *
+	     * _.range(0);
+	     * // => []
+	     */
+	    var range = createRange();
+
+	    /**
+	     * This method is like `_.range` except that it populates values in
+	     * descending order.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Util
+	     * @param {number} [start=0] The start of the range.
+	     * @param {number} end The end of the range.
+	     * @param {number} [step=1] The value to increment or decrement by.
+	     * @returns {Array} Returns the range of numbers.
+	     * @see _.inRange, _.range
+	     * @example
+	     *
+	     * _.rangeRight(4);
+	     * // => [3, 2, 1, 0]
+	     *
+	     * _.rangeRight(-4);
+	     * // => [-3, -2, -1, 0]
+	     *
+	     * _.rangeRight(1, 5);
+	     * // => [4, 3, 2, 1]
+	     *
+	     * _.rangeRight(0, 20, 5);
+	     * // => [15, 10, 5, 0]
+	     *
+	     * _.rangeRight(0, -4, -1);
+	     * // => [-3, -2, -1, 0]
+	     *
+	     * _.rangeRight(1, 4, 0);
+	     * // => [1, 1, 1]
+	     *
+	     * _.rangeRight(0);
+	     * // => []
+	     */
+	    var rangeRight = createRange(true);
+
+	    /**
+	     * This method returns a new empty array.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 3.0.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Util
+	     * @param {...(Function|Function[])} [funcs] The functions to invoke.
+	     * @returns {Function} Returns the new composite function.
+	     * @see _.flow
+	     * @example
+	     *
+	     * function square(n) {
+	     *   return n * n;
+	     * }
+	     *
+	     * var addSquare = _.flowRight([square, _.add]);
+	     * addSquare(1, 2);
+	     * // => 9
+	     */
+	    var flowRight = createFlow(true);
+
+	    /**
+	     * This method returns the first argument it receives.
+=======
+	     * @since 4.13.0
+	     * @category Util
+	     * @returns {Array} Returns the new empty array.
+	     * @example
+	     *
+	     * var arrays = _.times(2, _.stubArray);
+	     *
+	     * console.log(arrays);
+	     * // => [[], []]
+	     *
+	     * console.log(arrays[0] === arrays[1]);
+	     * // => false
+	     */
+	    function stubArray() {
+	      return [];
+	    }
+
+	    /**
+	     * This method returns `false`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Util
+	     * @param {*} value Any value.
+	     * @returns {*} Returns `value`.
+	     * @example
+	     *
+	     * var object = { 'a': 1 };
+	     *
+	     * console.log(_.identity(object) === object);
+	     * // => true
+	     */
+	    function identity(value) {
+	      return value;
+	    }
+
+	    /**
+	     * Creates a function that invokes `func` with the arguments of the created
+	     * function. If `func` is a property name, the created function returns the
+	     * property value for a given element. If `func` is an array or object, the
+	     * created function returns `true` for elements that contain the equivalent
+	     * source properties, otherwise it returns `false`.
+=======
+	     * @since 4.13.0
+	     * @category Util
+	     * @returns {boolean} Returns `false`.
+	     * @example
+	     *
+	     * _.times(2, _.stubFalse);
+	     * // => [false, false]
+	     */
+	    function stubFalse() {
+	      return false;
+	    }
+
+	    /**
+	     * This method returns a new empty object.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 4.0.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Util
+	     * @param {*} [func=_.identity] The value to convert to a callback.
+	     * @returns {Function} Returns the callback.
+	     * @example
+	     *
+	     * var users = [
+	     *   { 'user': 'barney', 'age': 36, 'active': true },
+	     *   { 'user': 'fred',   'age': 40, 'active': false }
+	     * ];
+	     *
+	     * // The `_.matches` iteratee shorthand.
+	     * _.filter(users, _.iteratee({ 'user': 'barney', 'active': true }));
+	     * // => [{ 'user': 'barney', 'age': 36, 'active': true }]
+	     *
+	     * // The `_.matchesProperty` iteratee shorthand.
+	     * _.filter(users, _.iteratee(['user', 'fred']));
+	     * // => [{ 'user': 'fred', 'age': 40 }]
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.map(users, _.iteratee('user'));
+	     * // => ['barney', 'fred']
+	     *
+	     * // Create custom iteratee shorthands.
+	     * _.iteratee = _.wrap(_.iteratee, function(iteratee, func) {
+	     *   return !_.isRegExp(func) ? iteratee(func) : function(string) {
+	     *     return func.test(string);
+	     *   };
+	     * });
+	     *
+	     * _.filter(['abc', 'def'], /ef/);
+	     * // => ['def']
+	     */
+	    function iteratee(func) {
+	      return baseIteratee(typeof func == 'function' ? func : baseClone(func, true));
+	    }
+
+	    /**
+	     * Creates a function that performs a partial deep comparison between a given
+	     * object and `source`, returning `true` if the given object has equivalent
+	     * property values, else `false`.
+	     *
+	     * **Note:** The created function is equivalent to `_.isMatch` with `source`
+	     * partially applied.
+	     *
+	     * Partial comparisons will match empty array and empty object `source`
+	     * values against any array or object value, respectively. See `_.isEqual`
+	     * for a list of supported value comparisons.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.0.0
+	     * @category Util
+	     * @param {Object} source The object of property values to match.
+	     * @returns {Function} Returns the new spec function.
+	     * @example
+	     *
+	     * var objects = [
+	     *   { 'a': 1, 'b': 2, 'c': 3 },
+	     *   { 'a': 4, 'b': 5, 'c': 6 }
+	     * ];
+	     *
+	     * _.filter(objects, _.matches({ 'a': 4, 'c': 6 }));
+	     * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
+	     */
+	    function matches(source) {
+	      return baseMatches(baseClone(source, true));
+	    }
+
+	    /**
+	     * Creates a function that performs a partial deep comparison between the
+	     * value at `path` of a given object to `srcValue`, returning `true` if the
+	     * object value is equivalent, else `false`.
+	     *
+	     * **Note:** Partial comparisons will match empty array and empty object
+	     * `srcValue` values against any array or object value, respectively. See
+	     * `_.isEqual` for a list of supported value comparisons.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.2.0
+	     * @category Util
+	     * @param {Array|string} path The path of the property to get.
+	     * @param {*} srcValue The value to match.
+	     * @returns {Function} Returns the new spec function.
+	     * @example
+	     *
+	     * var objects = [
+	     *   { 'a': 1, 'b': 2, 'c': 3 },
+	     *   { 'a': 4, 'b': 5, 'c': 6 }
+	     * ];
+	     *
+	     * _.find(objects, _.matchesProperty('a', 4));
+	     * // => { 'a': 4, 'b': 5, 'c': 6 }
+	     */
+	    function matchesProperty(path, srcValue) {
+	      return baseMatchesProperty(path, baseClone(srcValue, true));
+	    }
+
+	    /**
+	     * Creates a function that invokes the method at `path` of a given object.
+	     * Any additional arguments are provided to the invoked method.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.7.0
+	     * @category Util
+	     * @param {Array|string} path The path of the method to invoke.
+	     * @param {...*} [args] The arguments to invoke the method with.
+	     * @returns {Function} Returns the new invoker function.
+	     * @example
+	     *
+	     * var objects = [
+	     *   { 'a': { 'b': _.constant(2) } },
+	     *   { 'a': { 'b': _.constant(1) } }
+	     * ];
+	     *
+	     * _.map(objects, _.method('a.b'));
+	     * // => [2, 1]
+	     *
+	     * _.map(objects, _.method(['a', 'b']));
+	     * // => [2, 1]
+	     */
+	    var method = baseRest(function(path, args) {
+	      return function(object) {
+	        return baseInvoke(object, path, args);
+	      };
+	    });
+
+	    /**
+	     * The opposite of `_.method`; this method creates a function that invokes
+	     * the method at a given path of `object`. Any additional arguments are
+	     * provided to the invoked method.
+=======
+	     * @since 4.13.0
+	     * @category Util
+	     * @returns {Object} Returns the new empty object.
+	     * @example
+	     *
+	     * var objects = _.times(2, _.stubObject);
+	     *
+	     * console.log(objects);
+	     * // => [{}, {}]
+	     *
+	     * console.log(objects[0] === objects[1]);
+	     * // => false
+	     */
+	    function stubObject() {
+	      return {};
+	    }
+
+	    /**
+	     * This method returns an empty string.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.13.0
+	     * @category Util
+	     * @returns {string} Returns the empty string.
+	     * @example
+	     *
+	     * _.times(2, _.stubString);
+	     * // => ['', '']
+	     */
+	    function stubString() {
+	      return '';
+	    }
+
+	    /**
+	     * This method returns `true`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.13.0
+	     * @category Util
+	     * @returns {boolean} Returns `true`.
+	     * @example
+	     *
+	     * _.times(2, _.stubTrue);
+	     * // => [true, true]
+	     */
+	    function stubTrue() {
+	      return true;
+	    }
+
+	    /**
+	     * Invokes the iteratee `n` times, returning an array of the results of
+	     * each invocation. The iteratee is invoked with one argument; (index).
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+	     * @category Util
+	     * @param {number} n The number of times to invoke `iteratee`.
+	     * @param {Function} [iteratee=_.identity] The function invoked per iteration.
+	     * @returns {Array} Returns the array of results.
+	     * @example
+	     *
+	     * _.times(3, String);
+	     * // => ['0', '1', '2']
+	     *
+	     *  _.times(4, _.constant(0));
+	     * // => [0, 0, 0, 0]
+	     */
+	    function times(n, iteratee) {
+	      n = toInteger(n);
+	      if (n < 1 || n > MAX_SAFE_INTEGER) {
+	        return [];
+	      }
+	      var index = MAX_ARRAY_LENGTH,
+	          length = nativeMin(n, MAX_ARRAY_LENGTH);
+
+	      iteratee = getIteratee(iteratee);
+	      n -= MAX_ARRAY_LENGTH;
+
+	      var result = baseTimes(length, iteratee);
+	      while (++index < n) {
+	        iteratee(index);
+	      }
+	      return result;
+	    }
+
+	    /**
+	     * Converts `value` to a property path array.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Util
+	     * @param {*} value The value to convert.
+	     * @returns {Array} Returns the new property path array.
+	     * @example
+	     *
+	     * _.toPath('a.b.c');
+	     * // => ['a', 'b', 'c']
+	     *
+	     * _.toPath('a[0].b.c');
+	     * // => ['a', '0', 'b', 'c']
+	     */
+	    function toPath(value) {
+	      if (isArray(value)) {
+	        return arrayMap(value, toKey);
+	      }
+	      return isSymbol(value) ? [value] : copyArray(stringToPath(value));
+	    }
+
+	    /**
+	     * Generates a unique ID. If `prefix` is given, the ID is appended to it.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 3.7.0
+	     * @category Util
+	     * @param {Object} object The object to query.
+	     * @param {...*} [args] The arguments to invoke the method with.
+	     * @returns {Function} Returns the new invoker function.
+	     * @example
+	     *
+	     * var array = _.times(3, _.constant),
+	     *     object = { 'a': array, 'b': array, 'c': array };
+	     *
+	     * _.map(['a[2]', 'c[0]'], _.methodOf(object));
+	     * // => [2, 0]
+	     *
+	     * _.map([['a', '2'], ['c', '0']], _.methodOf(object));
+	     * // => [2, 0]
+	     */
+	    var methodOf = baseRest(function(object, args) {
+	      return function(path) {
+	        return baseInvoke(object, path, args);
+	      };
+	    });
+=======
+	     * @category Util
+	     * @param {string} [prefix=''] The value to prefix the ID with.
+	     * @returns {string} Returns the unique ID.
+	     * @example
+	     *
+	     * _.uniqueId('contact_');
+	     * // => 'contact_104'
+	     *
+	     * _.uniqueId();
+	     * // => '105'
+	     */
+	    function uniqueId(prefix) {
+	      var id = ++idCounter;
+	      return toString(prefix) + id;
+	    }
+>>>>>>> CCN Directives (#200)
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * Adds all own enumerable string keyed function properties of a source
+	     * object to the destination object. If `object` is a function, then methods
+	     * are added to its prototype as well.
+	     *
+	     * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
+	     * avoid conflicts caused by modifying the original.
+=======
+	     * Adds two numbers.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Util
+	     * @param {Function|Object} [object=lodash] The destination object.
+	     * @param {Object} source The object of functions to add.
+	     * @param {Object} [options={}] The options object.
+	     * @param {boolean} [options.chain=true] Specify whether mixins are chainable.
+	     * @returns {Function|Object} Returns `object`.
+	     * @example
+	     *
+	     * function vowels(string) {
+	     *   return _.filter(string, function(v) {
+	     *     return /[aeiou]/i.test(v);
+	     *   });
+	     * }
+	     *
+	     * _.mixin({ 'vowels': vowels });
+	     * _.vowels('fred');
+	     * // => ['e']
+	     *
+	     * _('fred').vowels().value();
+	     * // => ['e']
+	     *
+	     * _.mixin({ 'vowels': vowels }, { 'chain': false });
+	     * _('fred').vowels();
+	     * // => ['e']
+	     */
+	    function mixin(object, source, options) {
+	      var props = keys(source),
+	          methodNames = baseFunctions(source, props);
+
+	      if (options == null &&
+	          !(isObject(source) && (methodNames.length || !props.length))) {
+	        options = source;
+	        source = object;
+	        object = this;
+	        methodNames = baseFunctions(source, keys(source));
+	      }
+	      var chain = !(isObject(options) && 'chain' in options) || !!options.chain,
+	          isFunc = isFunction(object);
+
+	      arrayEach(methodNames, function(methodName) {
+	        var func = source[methodName];
+	        object[methodName] = func;
+	        if (isFunc) {
+	          object.prototype[methodName] = function() {
+	            var chainAll = this.__chain__;
+	            if (chain || chainAll) {
+	              var result = object(this.__wrapped__),
+	                  actions = result.__actions__ = copyArray(this.__actions__);
+
+	              actions.push({ 'func': func, 'args': arguments, 'thisArg': object });
+	              result.__chain__ = chainAll;
+	              return result;
+	            }
+	            return func.apply(object, arrayPush([this.value()], arguments));
+	          };
+	        }
+	      });
+
+	      return object;
+	    }
+
+	    /**
+	     * Reverts the `_` variable to its previous value and returns a reference to
+	     * the `lodash` function.
+=======
+	     * @since 3.4.0
+	     * @category Math
+	     * @param {number} augend The first number in an addition.
+	     * @param {number} addend The second number in an addition.
+	     * @returns {number} Returns the total.
+	     * @example
+	     *
+	     * _.add(6, 4);
+	     * // => 10
+	     */
+	    var add = createMathOperation(function(augend, addend) {
+	      return augend + addend;
+	    }, 0);
+
+	    /**
+	     * Computes `number` rounded up to `precision`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.10.0
+	     * @category Math
+	     * @param {number} number The number to round up.
+	     * @param {number} [precision=0] The precision to round up to.
+	     * @returns {number} Returns the rounded up number.
+	     * @example
+	     *
+	     * _.ceil(4.006);
+	     * // => 5
+	     *
+	     * _.ceil(6.004, 2);
+	     * // => 6.01
+	     *
+	     * _.ceil(6040, -2);
+	     * // => 6100
+	     */
+	    var ceil = createRound('ceil');
+
+	    /**
+	     * Divide two numbers.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.7.0
+	     * @category Math
+	     * @param {number} dividend The first number in a division.
+	     * @param {number} divisor The second number in a division.
+	     * @returns {number} Returns the quotient.
+	     * @example
+	     *
+	     * _.divide(6, 4);
+	     * // => 1.5
+	     */
+	    var divide = createMathOperation(function(dividend, divisor) {
+	      return dividend / divisor;
+	    }, 1);
+
+	    /**
+	     * Computes `number` rounded down to `precision`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Util
+	     * @returns {Function} Returns the `lodash` function.
+	     * @example
+	     *
+	     * var lodash = _.noConflict();
+	     */
+	    function noConflict() {
+	      if (root._ === this) {
+	        root._ = oldDash;
+	      }
+	      return this;
+	    }
+
+	    /**
+	     * This method returns `undefined`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 2.3.0
+	     * @category Util
+	     * @example
+	     *
+	     * _.times(2, _.noop);
+	     * // => [undefined, undefined]
+	     */
+	    function noop() {
+	      // No operation performed.
+	    }
+
+	    /**
+	     * Creates a function that gets the argument at index `n`. If `n` is negative,
+	     * the nth argument from the end is returned.
+=======
+	     * @since 3.10.0
+	     * @category Math
+	     * @param {number} number The number to round down.
+	     * @param {number} [precision=0] The precision to round down to.
+	     * @returns {number} Returns the rounded down number.
+	     * @example
+	     *
+	     * _.floor(4.006);
+	     * // => 4
+	     *
+	     * _.floor(0.046, 2);
+	     * // => 0.04
+	     *
+	     * _.floor(4060, -2);
+	     * // => 4000
+	     */
+	    var floor = createRound('floor');
+
+	    /**
+	     * Computes the maximum value of `array`. If `array` is empty or falsey,
+	     * `undefined` is returned.
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+	     * @category Math
+	     * @param {Array} array The array to iterate over.
+	     * @returns {*} Returns the maximum value.
+	     * @example
+	     *
+	     * _.max([4, 2, 8, 6]);
+	     * // => 8
+	     *
+	     * _.max([]);
+	     * // => undefined
+	     */
+	    function max(array) {
+	      return (array && array.length)
+	        ? baseExtremum(array, identity, baseGt)
+	        : undefined;
+	    }
+
+	    /**
+	     * This method is like `_.max` except that it accepts `iteratee` which is
+	     * invoked for each element in `array` to generate the criterion by which
+	     * the value is ranked. The iteratee is invoked with one argument: (value).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Math
+	     * @param {Array} array The array to iterate over.
+	     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+	     * @returns {*} Returns the maximum value.
+	     * @example
+	     *
+	     * var objects = [{ 'n': 1 }, { 'n': 2 }];
+	     *
+	     * _.maxBy(objects, function(o) { return o.n; });
+	     * // => { 'n': 2 }
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.maxBy(objects, 'n');
+	     * // => { 'n': 2 }
+	     */
+	    function maxBy(array, iteratee) {
+	      return (array && array.length)
+	        ? baseExtremum(array, getIteratee(iteratee, 2), baseGt)
+	        : undefined;
+	    }
+
+	    /**
+	     * Computes the mean of the values in `array`.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @category Util
+	     * @param {number} [n=0] The index of the argument to return.
+	     * @returns {Function} Returns the new pass-thru function.
+	     * @example
+	     *
+	     * var func = _.nthArg(1);
+	     * func('a', 'b', 'c', 'd');
+	     * // => 'b'
+	     *
+	     * var func = _.nthArg(-2);
+	     * func('a', 'b', 'c', 'd');
+	     * // => 'c'
+	     */
+	    function nthArg(n) {
+	      n = toInteger(n);
+	      return baseRest(function(args) {
+	        return baseNth(args, n);
+	      });
+	    }
+
+	    /**
+	     * Creates a function that invokes `iteratees` with the arguments it receives
+	     * and returns their results.
+=======
+	     * @category Math
+	     * @param {Array} array The array to iterate over.
+	     * @returns {number} Returns the mean.
+	     * @example
+	     *
+	     * _.mean([4, 2, 8, 6]);
+	     * // => 5
+	     */
+	    function mean(array) {
+	      return baseMean(array, identity);
+	    }
+
+	    /**
+	     * This method is like `_.mean` except that it accepts `iteratee` which is
+	     * invoked for each element in `array` to generate the value to be averaged.
+	     * The iteratee is invoked with one argument: (value).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.7.0
+	     * @category Math
+	     * @param {Array} array The array to iterate over.
+	     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+	     * @returns {number} Returns the mean.
+	     * @example
+	     *
+	     * var objects = [{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }];
+	     *
+	     * _.meanBy(objects, function(o) { return o.n; });
+	     * // => 5
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.meanBy(objects, 'n');
+	     * // => 5
+	     */
+	    function meanBy(array, iteratee) {
+	      return baseMean(array, getIteratee(iteratee, 2));
+	    }
+
+	    /**
+	     * Computes the minimum value of `array`. If `array` is empty or falsey,
+	     * `undefined` is returned.
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @since 0.1.0
+	     * @memberOf _
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	     * @since 4.0.0
+	     * @category Util
+	     * @param {...(Function|Function[])} [iteratees=[_.identity]]
+	     *  The iteratees to invoke.
+	     * @returns {Function} Returns the new function.
+	     * @example
+	     *
+	     * var func = _.over([Math.max, Math.min]);
+	     *
+	     * func(1, 2, 3, 4);
+	     * // => [4, 1]
+	     */
+	    var over = createOver(arrayMap);
+
+	    /**
+	     * Creates a function that checks if **all** of the `predicates` return
+	     * truthy when invoked with the arguments it receives.
+=======
+	     * @category Math
+	     * @param {Array} array The array to iterate over.
+	     * @returns {*} Returns the minimum value.
+	     * @example
+	     *
+	     * _.min([4, 2, 8, 6]);
+	     * // => 2
+	     *
+	     * _.min([]);
+	     * // => undefined
+	     */
+	    function min(array) {
+	      return (array && array.length)
+	        ? baseExtremum(array, identity, baseLt)
+	        : undefined;
+	    }
+
+	    /**
+	     * This method is like `_.min` except that it accepts `iteratee` which is
+	     * invoked for each element in `array` to generate the criterion by which
+	     * the value is ranked. The iteratee is invoked with one argument: (value).
+>>>>>>> CCN Directives (#200)
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	     * @category Util
 	     * @param {...(Function|Function[])} [predicates=[_.identity]]
 	     *  The predicates to check.
@@ -17421,8 +24763,700 @@ webpackJsonp([2],{
 	      return (array && array.length)
 	        ? baseExtremum(array, getIteratee(iteratee, 2), baseLt)
 	        : undefined;
+=======
+	     * @category Math
+	     * @param {Array} array The array to iterate over.
+	     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+	     * @returns {*} Returns the minimum value.
+	     * @example
+	     *
+	     * var objects = [{ 'n': 1 }, { 'n': 2 }];
+	     *
+	     * _.minBy(objects, function(o) { return o.n; });
+	     * // => { 'n': 1 }
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.minBy(objects, 'n');
+	     * // => { 'n': 1 }
+	     */
+	    function minBy(array, iteratee) {
+	      return (array && array.length)
+	        ? baseExtremum(array, getIteratee(iteratee, 2), baseLt)
+	        : undefined;
 	    }
 
+	    /**
+	     * Multiply two numbers.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.7.0
+	     * @category Math
+	     * @param {number} multiplier The first number in a multiplication.
+	     * @param {number} multiplicand The second number in a multiplication.
+	     * @returns {number} Returns the product.
+	     * @example
+	     *
+	     * _.multiply(6, 4);
+	     * // => 24
+	     */
+	    var multiply = createMathOperation(function(multiplier, multiplicand) {
+	      return multiplier * multiplicand;
+	    }, 1);
+
+	    /**
+	     * Computes `number` rounded to `precision`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.10.0
+	     * @category Math
+	     * @param {number} number The number to round.
+	     * @param {number} [precision=0] The precision to round to.
+	     * @returns {number} Returns the rounded number.
+	     * @example
+	     *
+	     * _.round(4.006);
+	     * // => 4
+	     *
+	     * _.round(4.006, 2);
+	     * // => 4.01
+	     *
+	     * _.round(4060, -2);
+	     * // => 4100
+	     */
+	    var round = createRound('round');
+
+	    /**
+	     * Subtract two numbers.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Math
+	     * @param {number} minuend The first number in a subtraction.
+	     * @param {number} subtrahend The second number in a subtraction.
+	     * @returns {number} Returns the difference.
+	     * @example
+	     *
+	     * _.subtract(6, 4);
+	     * // => 2
+	     */
+	    var subtract = createMathOperation(function(minuend, subtrahend) {
+	      return minuend - subtrahend;
+	    }, 0);
+
+	    /**
+	     * Computes the sum of the values in `array`.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 3.4.0
+	     * @category Math
+	     * @param {Array} array The array to iterate over.
+	     * @returns {number} Returns the sum.
+	     * @example
+	     *
+	     * _.sum([4, 2, 8, 6]);
+	     * // => 20
+	     */
+	    function sum(array) {
+	      return (array && array.length)
+	        ? baseSum(array, identity)
+	        : 0;
+	    }
+
+	    /**
+	     * This method is like `_.sum` except that it accepts `iteratee` which is
+	     * invoked for each element in `array` to generate the value to be summed.
+	     * The iteratee is invoked with one argument: (value).
+	     *
+	     * @static
+	     * @memberOf _
+	     * @since 4.0.0
+	     * @category Math
+	     * @param {Array} array The array to iterate over.
+	     * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+	     * @returns {number} Returns the sum.
+	     * @example
+	     *
+	     * var objects = [{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }];
+	     *
+	     * _.sumBy(objects, function(o) { return o.n; });
+	     * // => 20
+	     *
+	     * // The `_.property` iteratee shorthand.
+	     * _.sumBy(objects, 'n');
+	     * // => 20
+	     */
+	    function sumBy(array, iteratee) {
+	      return (array && array.length)
+	        ? baseSum(array, getIteratee(iteratee, 2))
+	        : 0;
+	    }
+
+	    /*------------------------------------------------------------------------*/
+
+	    // Add methods that return wrapped values in chain sequences.
+	    lodash.after = after;
+	    lodash.ary = ary;
+	    lodash.assign = assign;
+	    lodash.assignIn = assignIn;
+	    lodash.assignInWith = assignInWith;
+	    lodash.assignWith = assignWith;
+	    lodash.at = at;
+	    lodash.before = before;
+	    lodash.bind = bind;
+	    lodash.bindAll = bindAll;
+	    lodash.bindKey = bindKey;
+	    lodash.castArray = castArray;
+	    lodash.chain = chain;
+	    lodash.chunk = chunk;
+	    lodash.compact = compact;
+	    lodash.concat = concat;
+	    lodash.cond = cond;
+	    lodash.conforms = conforms;
+	    lodash.constant = constant;
+	    lodash.countBy = countBy;
+	    lodash.create = create;
+	    lodash.curry = curry;
+	    lodash.curryRight = curryRight;
+	    lodash.debounce = debounce;
+	    lodash.defaults = defaults;
+	    lodash.defaultsDeep = defaultsDeep;
+	    lodash.defer = defer;
+	    lodash.delay = delay;
+	    lodash.difference = difference;
+	    lodash.differenceBy = differenceBy;
+	    lodash.differenceWith = differenceWith;
+	    lodash.drop = drop;
+	    lodash.dropRight = dropRight;
+	    lodash.dropRightWhile = dropRightWhile;
+	    lodash.dropWhile = dropWhile;
+	    lodash.fill = fill;
+	    lodash.filter = filter;
+	    lodash.flatMap = flatMap;
+	    lodash.flatMapDeep = flatMapDeep;
+	    lodash.flatMapDepth = flatMapDepth;
+	    lodash.flatten = flatten;
+	    lodash.flattenDeep = flattenDeep;
+	    lodash.flattenDepth = flattenDepth;
+	    lodash.flip = flip;
+	    lodash.flow = flow;
+	    lodash.flowRight = flowRight;
+	    lodash.fromPairs = fromPairs;
+	    lodash.functions = functions;
+	    lodash.functionsIn = functionsIn;
+	    lodash.groupBy = groupBy;
+	    lodash.initial = initial;
+	    lodash.intersection = intersection;
+	    lodash.intersectionBy = intersectionBy;
+	    lodash.intersectionWith = intersectionWith;
+	    lodash.invert = invert;
+	    lodash.invertBy = invertBy;
+	    lodash.invokeMap = invokeMap;
+	    lodash.iteratee = iteratee;
+	    lodash.keyBy = keyBy;
+	    lodash.keys = keys;
+	    lodash.keysIn = keysIn;
+	    lodash.map = map;
+	    lodash.mapKeys = mapKeys;
+	    lodash.mapValues = mapValues;
+	    lodash.matches = matches;
+	    lodash.matchesProperty = matchesProperty;
+	    lodash.memoize = memoize;
+	    lodash.merge = merge;
+	    lodash.mergeWith = mergeWith;
+	    lodash.method = method;
+	    lodash.methodOf = methodOf;
+	    lodash.mixin = mixin;
+	    lodash.negate = negate;
+	    lodash.nthArg = nthArg;
+	    lodash.omit = omit;
+	    lodash.omitBy = omitBy;
+	    lodash.once = once;
+	    lodash.orderBy = orderBy;
+	    lodash.over = over;
+	    lodash.overArgs = overArgs;
+	    lodash.overEvery = overEvery;
+	    lodash.overSome = overSome;
+	    lodash.partial = partial;
+	    lodash.partialRight = partialRight;
+	    lodash.partition = partition;
+	    lodash.pick = pick;
+	    lodash.pickBy = pickBy;
+	    lodash.property = property;
+	    lodash.propertyOf = propertyOf;
+	    lodash.pull = pull;
+	    lodash.pullAll = pullAll;
+	    lodash.pullAllBy = pullAllBy;
+	    lodash.pullAllWith = pullAllWith;
+	    lodash.pullAt = pullAt;
+	    lodash.range = range;
+	    lodash.rangeRight = rangeRight;
+	    lodash.rearg = rearg;
+	    lodash.reject = reject;
+	    lodash.remove = remove;
+	    lodash.rest = rest;
+	    lodash.reverse = reverse;
+	    lodash.sampleSize = sampleSize;
+	    lodash.set = set;
+	    lodash.setWith = setWith;
+	    lodash.shuffle = shuffle;
+	    lodash.slice = slice;
+	    lodash.sortBy = sortBy;
+	    lodash.sortedUniq = sortedUniq;
+	    lodash.sortedUniqBy = sortedUniqBy;
+	    lodash.split = split;
+	    lodash.spread = spread;
+	    lodash.tail = tail;
+	    lodash.take = take;
+	    lodash.takeRight = takeRight;
+	    lodash.takeRightWhile = takeRightWhile;
+	    lodash.takeWhile = takeWhile;
+	    lodash.tap = tap;
+	    lodash.throttle = throttle;
+	    lodash.thru = thru;
+	    lodash.toArray = toArray;
+	    lodash.toPairs = toPairs;
+	    lodash.toPairsIn = toPairsIn;
+	    lodash.toPath = toPath;
+	    lodash.toPlainObject = toPlainObject;
+	    lodash.transform = transform;
+	    lodash.unary = unary;
+	    lodash.union = union;
+	    lodash.unionBy = unionBy;
+	    lodash.unionWith = unionWith;
+	    lodash.uniq = uniq;
+	    lodash.uniqBy = uniqBy;
+	    lodash.uniqWith = uniqWith;
+	    lodash.unset = unset;
+	    lodash.unzip = unzip;
+	    lodash.unzipWith = unzipWith;
+	    lodash.update = update;
+	    lodash.updateWith = updateWith;
+	    lodash.values = values;
+	    lodash.valuesIn = valuesIn;
+	    lodash.without = without;
+	    lodash.words = words;
+	    lodash.wrap = wrap;
+	    lodash.xor = xor;
+	    lodash.xorBy = xorBy;
+	    lodash.xorWith = xorWith;
+	    lodash.zip = zip;
+	    lodash.zipObject = zipObject;
+	    lodash.zipObjectDeep = zipObjectDeep;
+	    lodash.zipWith = zipWith;
+
+	    // Add aliases.
+	    lodash.entries = toPairs;
+	    lodash.entriesIn = toPairsIn;
+	    lodash.extend = assignIn;
+	    lodash.extendWith = assignInWith;
+
+	    // Add methods to `lodash.prototype`.
+	    mixin(lodash, lodash);
+
+	    /*------------------------------------------------------------------------*/
+
+	    // Add methods that return unwrapped values in chain sequences.
+	    lodash.add = add;
+	    lodash.attempt = attempt;
+	    lodash.camelCase = camelCase;
+	    lodash.capitalize = capitalize;
+	    lodash.ceil = ceil;
+	    lodash.clamp = clamp;
+	    lodash.clone = clone;
+	    lodash.cloneDeep = cloneDeep;
+	    lodash.cloneDeepWith = cloneDeepWith;
+	    lodash.cloneWith = cloneWith;
+	    lodash.conformsTo = conformsTo;
+	    lodash.deburr = deburr;
+	    lodash.defaultTo = defaultTo;
+	    lodash.divide = divide;
+	    lodash.endsWith = endsWith;
+	    lodash.eq = eq;
+	    lodash.escape = escape;
+	    lodash.escapeRegExp = escapeRegExp;
+	    lodash.every = every;
+	    lodash.find = find;
+	    lodash.findIndex = findIndex;
+	    lodash.findKey = findKey;
+	    lodash.findLast = findLast;
+	    lodash.findLastIndex = findLastIndex;
+	    lodash.findLastKey = findLastKey;
+	    lodash.floor = floor;
+	    lodash.forEach = forEach;
+	    lodash.forEachRight = forEachRight;
+	    lodash.forIn = forIn;
+	    lodash.forInRight = forInRight;
+	    lodash.forOwn = forOwn;
+	    lodash.forOwnRight = forOwnRight;
+	    lodash.get = get;
+	    lodash.gt = gt;
+	    lodash.gte = gte;
+	    lodash.has = has;
+	    lodash.hasIn = hasIn;
+	    lodash.head = head;
+	    lodash.identity = identity;
+	    lodash.includes = includes;
+	    lodash.indexOf = indexOf;
+	    lodash.inRange = inRange;
+	    lodash.invoke = invoke;
+	    lodash.isArguments = isArguments;
+	    lodash.isArray = isArray;
+	    lodash.isArrayBuffer = isArrayBuffer;
+	    lodash.isArrayLike = isArrayLike;
+	    lodash.isArrayLikeObject = isArrayLikeObject;
+	    lodash.isBoolean = isBoolean;
+	    lodash.isBuffer = isBuffer;
+	    lodash.isDate = isDate;
+	    lodash.isElement = isElement;
+	    lodash.isEmpty = isEmpty;
+	    lodash.isEqual = isEqual;
+	    lodash.isEqualWith = isEqualWith;
+	    lodash.isError = isError;
+	    lodash.isFinite = isFinite;
+	    lodash.isFunction = isFunction;
+	    lodash.isInteger = isInteger;
+	    lodash.isLength = isLength;
+	    lodash.isMap = isMap;
+	    lodash.isMatch = isMatch;
+	    lodash.isMatchWith = isMatchWith;
+	    lodash.isNaN = isNaN;
+	    lodash.isNative = isNative;
+	    lodash.isNil = isNil;
+	    lodash.isNull = isNull;
+	    lodash.isNumber = isNumber;
+	    lodash.isObject = isObject;
+	    lodash.isObjectLike = isObjectLike;
+	    lodash.isPlainObject = isPlainObject;
+	    lodash.isRegExp = isRegExp;
+	    lodash.isSafeInteger = isSafeInteger;
+	    lodash.isSet = isSet;
+	    lodash.isString = isString;
+	    lodash.isSymbol = isSymbol;
+	    lodash.isTypedArray = isTypedArray;
+	    lodash.isUndefined = isUndefined;
+	    lodash.isWeakMap = isWeakMap;
+	    lodash.isWeakSet = isWeakSet;
+	    lodash.join = join;
+	    lodash.kebabCase = kebabCase;
+	    lodash.last = last;
+	    lodash.lastIndexOf = lastIndexOf;
+	    lodash.lowerCase = lowerCase;
+	    lodash.lowerFirst = lowerFirst;
+	    lodash.lt = lt;
+	    lodash.lte = lte;
+	    lodash.max = max;
+	    lodash.maxBy = maxBy;
+	    lodash.mean = mean;
+	    lodash.meanBy = meanBy;
+	    lodash.min = min;
+	    lodash.minBy = minBy;
+	    lodash.stubArray = stubArray;
+	    lodash.stubFalse = stubFalse;
+	    lodash.stubObject = stubObject;
+	    lodash.stubString = stubString;
+	    lodash.stubTrue = stubTrue;
+	    lodash.multiply = multiply;
+	    lodash.nth = nth;
+	    lodash.noConflict = noConflict;
+	    lodash.noop = noop;
+	    lodash.now = now;
+	    lodash.pad = pad;
+	    lodash.padEnd = padEnd;
+	    lodash.padStart = padStart;
+	    lodash.parseInt = parseInt;
+	    lodash.random = random;
+	    lodash.reduce = reduce;
+	    lodash.reduceRight = reduceRight;
+	    lodash.repeat = repeat;
+	    lodash.replace = replace;
+	    lodash.result = result;
+	    lodash.round = round;
+	    lodash.runInContext = runInContext;
+	    lodash.sample = sample;
+	    lodash.size = size;
+	    lodash.snakeCase = snakeCase;
+	    lodash.some = some;
+	    lodash.sortedIndex = sortedIndex;
+	    lodash.sortedIndexBy = sortedIndexBy;
+	    lodash.sortedIndexOf = sortedIndexOf;
+	    lodash.sortedLastIndex = sortedLastIndex;
+	    lodash.sortedLastIndexBy = sortedLastIndexBy;
+	    lodash.sortedLastIndexOf = sortedLastIndexOf;
+	    lodash.startCase = startCase;
+	    lodash.startsWith = startsWith;
+	    lodash.subtract = subtract;
+	    lodash.sum = sum;
+	    lodash.sumBy = sumBy;
+	    lodash.template = template;
+	    lodash.times = times;
+	    lodash.toFinite = toFinite;
+	    lodash.toInteger = toInteger;
+	    lodash.toLength = toLength;
+	    lodash.toLower = toLower;
+	    lodash.toNumber = toNumber;
+	    lodash.toSafeInteger = toSafeInteger;
+	    lodash.toString = toString;
+	    lodash.toUpper = toUpper;
+	    lodash.trim = trim;
+	    lodash.trimEnd = trimEnd;
+	    lodash.trimStart = trimStart;
+	    lodash.truncate = truncate;
+	    lodash.unescape = unescape;
+	    lodash.uniqueId = uniqueId;
+	    lodash.upperCase = upperCase;
+	    lodash.upperFirst = upperFirst;
+
+	    // Add aliases.
+	    lodash.each = forEach;
+	    lodash.eachRight = forEachRight;
+	    lodash.first = head;
+
+	    mixin(lodash, (function() {
+	      var source = {};
+	      baseForOwn(lodash, function(func, methodName) {
+	        if (!hasOwnProperty.call(lodash.prototype, methodName)) {
+	          source[methodName] = func;
+	        }
+	      });
+	      return source;
+	    }()), { 'chain': false });
+
+	    /*------------------------------------------------------------------------*/
+
+	    /**
+	     * The semantic version number.
+	     *
+	     * @static
+	     * @memberOf _
+	     * @type {string}
+	     */
+	    lodash.VERSION = VERSION;
+
+	    // Assign default placeholders.
+	    arrayEach(['bind', 'bindKey', 'curry', 'curryRight', 'partial', 'partialRight'], function(methodName) {
+	      lodash[methodName].placeholder = lodash;
+	    });
+
+	    // Add `LazyWrapper` methods for `_.drop` and `_.take` variants.
+	    arrayEach(['drop', 'take'], function(methodName, index) {
+	      LazyWrapper.prototype[methodName] = function(n) {
+	        var filtered = this.__filtered__;
+	        if (filtered && !index) {
+	          return new LazyWrapper(this);
+	        }
+	        n = n === undefined ? 1 : nativeMax(toInteger(n), 0);
+
+	        var result = this.clone();
+	        if (filtered) {
+	          result.__takeCount__ = nativeMin(n, result.__takeCount__);
+	        } else {
+	          result.__views__.push({
+	            'size': nativeMin(n, MAX_ARRAY_LENGTH),
+	            'type': methodName + (result.__dir__ < 0 ? 'Right' : '')
+	          });
+	        }
+	        return result;
+	      };
+
+	      LazyWrapper.prototype[methodName + 'Right'] = function(n) {
+	        return this.reverse()[methodName](n).reverse();
+	      };
+	    });
+
+	    // Add `LazyWrapper` methods that accept an `iteratee` value.
+	    arrayEach(['filter', 'map', 'takeWhile'], function(methodName, index) {
+	      var type = index + 1,
+	          isFilter = type == LAZY_FILTER_FLAG || type == LAZY_WHILE_FLAG;
+
+	      LazyWrapper.prototype[methodName] = function(iteratee) {
+	        var result = this.clone();
+	        result.__iteratees__.push({
+	          'iteratee': getIteratee(iteratee, 3),
+	          'type': type
+	        });
+	        result.__filtered__ = result.__filtered__ || isFilter;
+	        return result;
+	      };
+	    });
+
+	    // Add `LazyWrapper` methods for `_.head` and `_.last`.
+	    arrayEach(['head', 'last'], function(methodName, index) {
+	      var takeName = 'take' + (index ? 'Right' : '');
+
+	      LazyWrapper.prototype[methodName] = function() {
+	        return this[takeName](1).value()[0];
+	      };
+	    });
+
+	    // Add `LazyWrapper` methods for `_.initial` and `_.tail`.
+	    arrayEach(['initial', 'tail'], function(methodName, index) {
+	      var dropName = 'drop' + (index ? '' : 'Right');
+
+	      LazyWrapper.prototype[methodName] = function() {
+	        return this.__filtered__ ? new LazyWrapper(this) : this[dropName](1);
+	      };
+	    });
+
+	    LazyWrapper.prototype.compact = function() {
+	      return this.filter(identity);
+	    };
+
+	    LazyWrapper.prototype.find = function(predicate) {
+	      return this.filter(predicate).head();
+	    };
+
+	    LazyWrapper.prototype.findLast = function(predicate) {
+	      return this.reverse().find(predicate);
+	    };
+
+	    LazyWrapper.prototype.invokeMap = baseRest(function(path, args) {
+	      if (typeof path == 'function') {
+	        return new LazyWrapper(this);
+	      }
+	      return this.map(function(value) {
+	        return baseInvoke(value, path, args);
+	      });
+	    });
+
+	    LazyWrapper.prototype.reject = function(predicate) {
+	      return this.filter(negate(getIteratee(predicate)));
+	    };
+
+	    LazyWrapper.prototype.slice = function(start, end) {
+	      start = toInteger(start);
+
+	      var result = this;
+	      if (result.__filtered__ && (start > 0 || end < 0)) {
+	        return new LazyWrapper(result);
+	      }
+	      if (start < 0) {
+	        result = result.takeRight(-start);
+	      } else if (start) {
+	        result = result.drop(start);
+	      }
+	      if (end !== undefined) {
+	        end = toInteger(end);
+	        result = end < 0 ? result.dropRight(-end) : result.take(end - start);
+	      }
+	      return result;
+	    };
+
+	    LazyWrapper.prototype.takeRightWhile = function(predicate) {
+	      return this.reverse().takeWhile(predicate).reverse();
+	    };
+
+	    LazyWrapper.prototype.toArray = function() {
+	      return this.take(MAX_ARRAY_LENGTH);
+	    };
+
+	    // Add `LazyWrapper` methods to `lodash.prototype`.
+	    baseForOwn(LazyWrapper.prototype, function(func, methodName) {
+	      var checkIteratee = /^(?:filter|find|map|reject)|While$/.test(methodName),
+	          isTaker = /^(?:head|last)$/.test(methodName),
+	          lodashFunc = lodash[isTaker ? ('take' + (methodName == 'last' ? 'Right' : '')) : methodName],
+	          retUnwrapped = isTaker || /^find/.test(methodName);
+
+	      if (!lodashFunc) {
+	        return;
+	      }
+	      lodash.prototype[methodName] = function() {
+	        var value = this.__wrapped__,
+	            args = isTaker ? [1] : arguments,
+	            isLazy = value instanceof LazyWrapper,
+	            iteratee = args[0],
+	            useLazy = isLazy || isArray(value);
+
+	        var interceptor = function(value) {
+	          var result = lodashFunc.apply(lodash, arrayPush([value], args));
+	          return (isTaker && chainAll) ? result[0] : result;
+	        };
+
+	        if (useLazy && checkIteratee && typeof iteratee == 'function' && iteratee.length != 1) {
+	          // Avoid lazy use if the iteratee has a "length" value other than `1`.
+	          isLazy = useLazy = false;
+	        }
+	        var chainAll = this.__chain__,
+	            isHybrid = !!this.__actions__.length,
+	            isUnwrapped = retUnwrapped && !chainAll,
+	            onlyLazy = isLazy && !isHybrid;
+
+	        if (!retUnwrapped && useLazy) {
+	          value = onlyLazy ? value : new LazyWrapper(this);
+	          var result = func.apply(value, args);
+	          result.__actions__.push({ 'func': thru, 'args': [interceptor], 'thisArg': undefined });
+	          return new LodashWrapper(result, chainAll);
+	        }
+	        if (isUnwrapped && onlyLazy) {
+	          return func.apply(this, args);
+	        }
+	        result = this.thru(interceptor);
+	        return isUnwrapped ? (isTaker ? result.value()[0] : result.value()) : result;
+	      };
+	    });
+
+	    // Add `Array` methods to `lodash.prototype`.
+	    arrayEach(['pop', 'push', 'shift', 'sort', 'splice', 'unshift'], function(methodName) {
+	      var func = arrayProto[methodName],
+	          chainName = /^(?:push|sort|unshift)$/.test(methodName) ? 'tap' : 'thru',
+	          retUnwrapped = /^(?:pop|shift)$/.test(methodName);
+
+	      lodash.prototype[methodName] = function() {
+	        var args = arguments;
+	        if (retUnwrapped && !this.__chain__) {
+	          var value = this.value();
+	          return func.apply(isArray(value) ? value : [], args);
+	        }
+	        return this[chainName](function(value) {
+	          return func.apply(isArray(value) ? value : [], args);
+	        });
+	      };
+	    });
+
+	    // Map minified method names to their real names.
+	    baseForOwn(LazyWrapper.prototype, function(func, methodName) {
+	      var lodashFunc = lodash[methodName];
+	      if (lodashFunc) {
+	        var key = (lodashFunc.name + ''),
+	            names = realNames[key] || (realNames[key] = []);
+
+	        names.push({ 'name': methodName, 'func': lodashFunc });
+	      }
+	    });
+
+	    realNames[createHybrid(undefined, BIND_KEY_FLAG).name] = [{
+	      'name': 'wrapper',
+	      'func': undefined
+	    }];
+
+	    // Add methods to `LazyWrapper`.
+	    LazyWrapper.prototype.clone = lazyClone;
+	    LazyWrapper.prototype.reverse = lazyReverse;
+	    LazyWrapper.prototype.value = lazyValue;
+
+	    // Add chain sequence methods to the `lodash` wrapper.
+	    lodash.prototype.at = wrapperAt;
+	    lodash.prototype.chain = wrapperChain;
+	    lodash.prototype.commit = wrapperCommit;
+	    lodash.prototype.next = wrapperNext;
+	    lodash.prototype.plant = wrapperPlant;
+	    lodash.prototype.reverse = wrapperReverse;
+	    lodash.prototype.toJSON = lodash.prototype.valueOf = lodash.prototype.value = wrapperValue;
+
+	    // Add lazy aliases.
+	    lodash.prototype.first = lodash.prototype.head;
+
+	    if (iteratorSymbol) {
+	      lodash.prototype[iteratorSymbol] = wrapperToIterator;
+>>>>>>> CCN Directives (#200)
+	    }
+	    return lodash;
+	  });
+
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	    /**
 	     * Multiply two numbers.
 	     *
@@ -18876,6 +26910,847 @@ webpackJsonp([2],{
 	        return params.filter(function (param) { return !param.type.equals(values1[param.id], values2[param.id]); });
 	    };
 	    /**
+=======
+	  /*--------------------------------------------------------------------------*/
+
+	  // Export lodash.
+	  var _ = runInContext();
+
+	  // Some AMD build optimizers, like r.js, check for condition patterns like:
+	  if (true) {
+	    // Expose Lodash on the global object to prevent errors when Lodash is
+	    // loaded by a script tag in the presence of an AMD loader.
+	    // See http://requirejs.org/docs/errors.html#mismatch for more details.
+	    // Use `_.noConflict` to remove Lodash from the global object.
+	    root._ = _;
+
+	    // Define as an anonymous module so, through path mapping, it can be
+	    // referenced as the "underscore" module.
+	    !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	      return _;
+	    }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  }
+	  // Check for `exports` after `define` in case a build optimizer adds it.
+	  else if (freeModule) {
+	    // Export for Node.js.
+	    (freeModule.exports = _)._ = _;
+	    // Export for CommonJS support.
+	    freeExports._ = _;
+	  }
+	  else {
+	    // Export to the global object.
+	    root._ = _;
+	  }
+	}.call(this));
+
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(759)(module)))
+
+/***/ },
+
+/***/ 45:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/**
+	 * UI-Router Transition Tracing
+	 *
+	 * Enable transition tracing to print transition information to the console, in order to help debug your application.
+	 * Tracing logs detailed information about each Transition to your console.
+	 *
+	 * To enable tracing, import the [[trace]] singleton and enable one or more categories.
+	 *
+	 * ES6
+	 * ```
+	 *
+	 * import {trace} from "ui-router-ng2"; // or "angular-ui-router"
+	 * trace.enable(1, 5); // TRANSITION and VIEWCONFIG
+	 * ```
+	 *
+	 * CJS
+	 * ```
+	 *
+	 * let trace = require("angular-ui-router").trace; // or "ui-router-ng2"
+	 * trace.enable("TRANSITION", "VIEWCONFIG");
+	 * ```
+	 *
+	 * Globals
+	 * ```
+	 *
+	 * let trace = window["angular-ui-router"].trace; // or "ui-router-ng2"
+	 * trace.enable(); // Trace everything (very verbose)
+	 * ```
+	 *
+	 * @module trace
+	 */ /** for typedoc */
+	var hof_1 = __webpack_require__(16);
+	var predicates_1 = __webpack_require__(9);
+	var strings_1 = __webpack_require__(39);
+	/** @hidden */
+	function uiViewString(viewData) {
+	    if (!viewData)
+	        return 'ui-view (defunct)';
+	    return ("[ui-view#" + viewData.id + " tag ") +
+	        ("in template from '" + (viewData.creationContext && viewData.creationContext.name || '(root)') + "' state]: ") +
+	        ("fqn: '" + viewData.fqn + "', ") +
+	        ("name: '" + viewData.name + "@" + viewData.creationContext + "')");
+	}
+	/** @hidden */
+	var viewConfigString = function (viewConfig) {
+	    return ("[ViewConfig#" + viewConfig.$id + " from '" + (viewConfig.viewDecl.$context.name || '(root)') + "' state]: target ui-view: '" + viewConfig.viewDecl.$uiViewName + "@" + viewConfig.viewDecl.$uiViewContextAnchor + "'");
+	};
+	/** @hidden */
+	function normalizedCat(input) {
+	    return predicates_1.isNumber(input) ? Category[input] : Category[Category[input]];
+	}
+	/**
+	 * Trace categories
+	 *
+	 * [[Trace.enable]] or [[Trace.disable]] a category
+	 *
+	 * `trace.enable(Category.TRANSITION)`
+	 *
+	 * These can also be provided using a matching string, or position ordinal
+	 *
+	 * `trace.enable("TRANSITION")`
+	 *
+	 * `trace.enable(1)`
+	 */
+	(function (Category) {
+	    Category[Category["RESOLVE"] = 0] = "RESOLVE";
+	    Category[Category["TRANSITION"] = 1] = "TRANSITION";
+	    Category[Category["HOOK"] = 2] = "HOOK";
+	    Category[Category["UIVIEW"] = 3] = "UIVIEW";
+	    Category[Category["VIEWCONFIG"] = 4] = "VIEWCONFIG";
+	})(exports.Category || (exports.Category = {}));
+	var Category = exports.Category;
+	/**
+	 * Prints UI-Router Transition trace information to the console.
+	 */
+	var Trace = (function () {
+	    function Trace() {
+	        /** @hidden */
+	        this._enabled = {};
+	        this.approximateDigests = 0;
+	    }
+	    /** @hidden */
+	    Trace.prototype._set = function (enabled, categories) {
+	        var _this = this;
+	        if (!categories.length) {
+	            categories = Object.keys(Category)
+	                .map(function (k) { return parseInt(k, 10); })
+	                .filter(function (k) { return !isNaN(k); })
+	                .map(function (key) { return Category[key]; });
+	        }
+	        categories.map(normalizedCat).forEach(function (category) { return _this._enabled[category] = enabled; });
+	    };
+	    /**
+	     * Enables a trace [[Category]]
+	     *
+	     * ```
+	     * trace.enable("TRANSITION");
+	     * ```
+	     *
+	     * @param categories categories to enable. If `categories` is omitted, all categories are enabled.
+	     *        Also takes strings (category name) or ordinal (category position)
+	     */
+	    Trace.prototype.enable = function () {
+	        var categories = [];
+	        for (var _i = 0; _i < arguments.length; _i++) {
+	            categories[_i - 0] = arguments[_i];
+	        }
+	        this._set(true, categories);
+	    };
+	    /**
+	     * Disables a trace [[Category]]
+	     *
+	     * ```
+	     * trace.disable("VIEWCONFIG");
+	     * ```
+	     *
+	     * @param categories categories to disable. If `categories` is omitted, all categories are disabled.
+	     *        Also takes strings (category name) or ordinal (category position)
+	     */
+	    Trace.prototype.disable = function () {
+	        var categories = [];
+	        for (var _i = 0; _i < arguments.length; _i++) {
+	            categories[_i - 0] = arguments[_i];
+	        }
+	        this._set(false, categories);
+	    };
+	    /**
+	     * Retrieves the enabled stateus of a [[Category]]
+	     *
+	     * ```
+	     * trace.enabled("VIEWCONFIG"); // true or false
+	     * ```
+	     *
+	     * @returns boolean true if the category is enabled
+	     */
+	    Trace.prototype.enabled = function (category) {
+	        return !!this._enabled[normalizedCat(category)];
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceTransitionStart = function (transition) {
+	        if (!this.enabled(Category.TRANSITION))
+	            return;
+	        var tid = transition.$id, digest = this.approximateDigests, transitionStr = strings_1.stringify(transition);
+	        console.log("Transition #" + tid + " Digest #" + digest + ": Started  -> " + transitionStr);
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceTransitionIgnored = function (trans) {
+	        if (!this.enabled(Category.TRANSITION))
+	            return;
+	        var tid = trans && trans.$id, digest = this.approximateDigests, transitionStr = strings_1.stringify(trans);
+	        console.log("Transition #" + tid + " Digest #" + digest + ": Ignored  <> " + transitionStr);
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceHookInvocation = function (step, options) {
+	        if (!this.enabled(Category.HOOK))
+	            return;
+	        var tid = hof_1.parse("transition.$id")(options), digest = this.approximateDigests, event = hof_1.parse("traceData.hookType")(options) || "internal", context = hof_1.parse("traceData.context.state.name")(options) || hof_1.parse("traceData.context")(options) || "unknown", name = strings_1.functionToString(step.eventHook.callback);
+	        console.log("Transition #" + tid + " Digest #" + digest + ":   Hook -> " + event + " context: " + context + ", " + strings_1.maxLength(200, name));
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceHookResult = function (hookResult, transitionOptions) {
+	        if (!this.enabled(Category.HOOK))
+	            return;
+	        var tid = hof_1.parse("transition.$id")(transitionOptions), digest = this.approximateDigests, hookResultStr = strings_1.stringify(hookResult);
+	        console.log("Transition #" + tid + " Digest #" + digest + ":   <- Hook returned: " + strings_1.maxLength(200, hookResultStr));
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceResolvePath = function (path, when, trans) {
+	        if (!this.enabled(Category.RESOLVE))
+	            return;
+	        var tid = trans && trans.$id, digest = this.approximateDigests, pathStr = path && path.toString();
+	        console.log("Transition #" + tid + " Digest #" + digest + ":         Resolving " + pathStr + " (" + when + ")");
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceResolvableResolved = function (resolvable, trans) {
+	        if (!this.enabled(Category.RESOLVE))
+	            return;
+	        var tid = trans && trans.$id, digest = this.approximateDigests, resolvableStr = resolvable && resolvable.toString(), result = strings_1.stringify(resolvable.data);
+	        console.log("Transition #" + tid + " Digest #" + digest + ":               <- Resolved  " + resolvableStr + " to: " + strings_1.maxLength(200, result));
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceError = function (reason, trans) {
+	        if (!this.enabled(Category.TRANSITION))
+	            return;
+	        var tid = trans && trans.$id, digest = this.approximateDigests, transitionStr = strings_1.stringify(trans);
+	        console.log("Transition #" + tid + " Digest #" + digest + ": <- Rejected " + transitionStr + ", reason: " + reason);
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceSuccess = function (finalState, trans) {
+	        if (!this.enabled(Category.TRANSITION))
+	            return;
+	        var tid = trans && trans.$id, digest = this.approximateDigests, state = finalState.name, transitionStr = strings_1.stringify(trans);
+	        console.log("Transition #" + tid + " Digest #" + digest + ": <- Success  " + transitionStr + ", final state: " + state);
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceUIViewEvent = function (event, viewData, extra) {
+	        if (extra === void 0) { extra = ""; }
+	        if (!this.enabled(Category.UIVIEW))
+	            return;
+	        console.log("ui-view: " + strings_1.padString(30, event) + " " + uiViewString(viewData) + extra);
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceUIViewConfigUpdated = function (viewData, context) {
+	        if (!this.enabled(Category.UIVIEW))
+	            return;
+	        this.traceUIViewEvent("Updating", viewData, " with ViewConfig from context='" + context + "'");
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceUIViewFill = function (viewData, html) {
+	        if (!this.enabled(Category.UIVIEW))
+	            return;
+	        this.traceUIViewEvent("Fill", viewData, " with: " + strings_1.maxLength(200, html));
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceViewServiceEvent = function (event, viewConfig) {
+	        if (!this.enabled(Category.VIEWCONFIG))
+	            return;
+	        console.log("VIEWCONFIG: " + event + " " + viewConfigString(viewConfig));
+	    };
+	    /** called by ui-router code */
+	    Trace.prototype.traceViewServiceUIViewEvent = function (event, viewData) {
+	        if (!this.enabled(Category.VIEWCONFIG))
+	            return;
+	        console.log("VIEWCONFIG: " + event + " " + uiViewString(viewData));
+	    };
+	    return Trace;
+	}());
+	exports.Trace = Trace;
+	/**
+	 * The [[Trace]] singleton
+	 *
+	 * @example
+	 * ```js
+	 *
+	 * import {trace} from "angular-ui-router";
+	 * trace.enable(1, 5);
+	 * ```
+	 */
+	var trace = new Trace();
+	exports.trace = trace;
+	//# sourceMappingURL=trace.js.map
+
+/***/ },
+
+/***/ 46:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module resolve */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var hof_1 = __webpack_require__(16);
+	var trace_1 = __webpack_require__(45);
+	var coreservices_1 = __webpack_require__(19);
+	var interface_1 = __webpack_require__(182);
+	var resolvable_1 = __webpack_require__(64);
+	var pathFactory_1 = __webpack_require__(99);
+	var strings_1 = __webpack_require__(39);
+	var when = interface_1.resolvePolicies.when;
+	var ALL_WHENS = [when.EAGER, when.LAZY];
+	var EAGER_WHENS = [when.EAGER];
+	exports.NATIVE_INJECTOR_TOKEN = "Native Injector";
+	/**
+	 * Encapsulates Depenency Injection for a path of nodes
+	 *
+	 * UI-Router states are organized as a tree.
+	 * A nested state has a path of ancestors to the root of the tree.
+	 * When a state is being activated, each element in the path is wrapped as a [[PathNode]].
+	 * A `PathNode` is a stateful object that holds things like parameters and resolvables for the state being activated.
+	 *
+	 * The ResolveContext closes over the [[PathNode]]s, and provides DI for the last node in the path.
+	 */
+	var ResolveContext = (function () {
+	    function ResolveContext(_path) {
+	        this._path = _path;
+	    }
+	    /** Gets all the tokens found in the resolve context, de-duplicated */
+	    ResolveContext.prototype.getTokens = function () {
+	        return this._path.reduce(function (acc, node) { return acc.concat(node.resolvables.map(function (r) { return r.token; })); }, []).reduce(common_1.uniqR, []);
+	    };
+	    /**
+	     * Gets the Resolvable that matches the token
+	     *
+	     * Gets the last Resolvable that matches the token in this context, or undefined.
+	     * Throws an error if it doesn't exist in the ResolveContext
+	     */
+	    ResolveContext.prototype.getResolvable = function (token) {
+	        var matching = this._path.map(function (node) { return node.resolvables; })
+	            .reduce(common_1.unnestR, [])
+	            .filter(function (r) { return r.token === token; });
+	        return common_1.tail(matching);
+	    };
+	    /**
+	     * Returns a ResolveContext that includes a portion of this one
+	     *
+	     * Given a state, this method creates a new ResolveContext from this one.
+	     * The new context starts at the first node (root) and stops at the node for the `state` parameter.
+	     *
+	     * #### Why
+	     *
+	     * When a transition is created, the nodes in the "To Path" are injected from a ResolveContext.
+	     * A ResolveContext closes over a path of [[PathNode]]s and processes the resolvables.
+	     * The "To State" can inject values from its own resolvables, as well as those from all its ancestor state's (node's).
+	     * This method is used to create a narrower context when injecting ancestor nodes.
+	     *
+	     * @example
+	     * `let ABCD = new ResolveContext([A, B, C, D]);`
+	     *
+	     * Given a path `[A, B, C, D]`, where `A`, `B`, `C` and `D` are nodes for states `a`, `b`, `c`, `d`:
+	     * When injecting `D`, `D` should have access to all resolvables from `A`, `B`, `C`, `D`.
+	     * However, `B` should only be able to access resolvables from `A`, `B`.
+	     *
+	     * When resolving for the `B` node, first take the full "To Path" Context `[A,B,C,D]` and limit to the subpath `[A,B]`.
+	     * `let AB = ABCD.subcontext(a)`
+	     */
+	    ResolveContext.prototype.subContext = function (state) {
+	        return new ResolveContext(pathFactory_1.PathFactory.subPath(this._path, function (node) { return node.state === state; }));
+	    };
+	    /**
+	     * Adds Resolvables to the node that matches the state
+	     *
+	     * This adds a [[Resolvable]] (generally one created on the fly; not declared on a [[StateDeclaration.resolve]] block).
+	     * The resolvable is added to the node matching the `state` parameter.
+	     *
+	     * These new resolvables are not automatically fetched.
+	     * The calling code should either fetch them, fetch something that depends on them,
+	     * or rely on [[resolvePath]] being called when some state is being entered.
+	     *
+	     * Note: each resolvable's [[ResolvePolicy]] is merged with the state's policy, and the global default.
+	     *
+	     * @param newResolvables the new Resolvables
+	     * @param state Used to find the node to put the resolvable on
+	     */
+	    ResolveContext.prototype.addResolvables = function (newResolvables, state) {
+	        var node = common_1.find(this._path, hof_1.propEq('state', state));
+	        var keys = newResolvables.map(function (r) { return r.token; });
+	        node.resolvables = node.resolvables.filter(function (r) { return keys.indexOf(r.token) === -1; }).concat(newResolvables);
+	    };
+	    /**
+	     * Returns a promise for an array of resolved path Element promises
+	     *
+	     * @param when
+	     * @param trans
+	     * @returns {Promise<any>|any}
+	     */
+	    ResolveContext.prototype.resolvePath = function (when, trans) {
+	        var _this = this;
+	        if (when === void 0) { when = "LAZY"; }
+	        // This option determines which 'when' policy Resolvables we are about to fetch.
+	        var whenOption = common_1.inArray(ALL_WHENS, when) ? when : "LAZY";
+	        // If the caller specified EAGER, only the EAGER Resolvables are fetched.
+	        // if the caller specified LAZY, both EAGER and LAZY Resolvables are fetched.`
+	        var matchedWhens = whenOption === interface_1.resolvePolicies.when.EAGER ? EAGER_WHENS : ALL_WHENS;
+	        // get the subpath to the state argument, if provided
+	        trace_1.trace.traceResolvePath(this._path, when, trans);
+	        var promises = this._path.reduce(function (acc, node) {
+	            var matchesRequestedPolicy = function (resolvable) {
+	                return common_1.inArray(matchedWhens, resolvable.getPolicy(node.state).when);
+	            };
+	            var nodeResolvables = node.resolvables.filter(matchesRequestedPolicy);
+	            var subContext = _this.subContext(node.state);
+	            // For the matching Resolvables, start their async fetch process.
+	            var getResult = function (r) { return r.get(subContext, trans)
+	                .then(function (value) { return ({ token: r.token, value: value }); }); };
+	            return acc.concat(nodeResolvables.map(getResult));
+	        }, []);
+	        return coreservices_1.services.$q.all(promises);
+	    };
+	    ResolveContext.prototype.injector = function () {
+	        return this._injector || (this._injector = new UIInjectorImpl(this));
+	    };
+	    ResolveContext.prototype.findNode = function (resolvable) {
+	        return common_1.find(this._path, function (node) { return common_1.inArray(node.resolvables, resolvable); });
+	    };
+	    /**
+	     * Gets the async dependencies of a Resolvable
+	     *
+	     * Given a Resolvable, returns its dependencies as a Resolvable[]
+	     */
+	    ResolveContext.prototype.getDependencies = function (resolvable) {
+	        var _this = this;
+	        var node = this.findNode(resolvable);
+	        // Find which other resolvables are "visible" to the `resolvable` argument
+	        // subpath stopping at resolvable's node, or the whole path (if the resolvable isn't in the path)
+	        var subPath = pathFactory_1.PathFactory.subPath(this._path, function (x) { return x === node; }) || this._path;
+	        var availableResolvables = subPath
+	            .reduce(function (acc, node) { return acc.concat(node.resolvables); }, []) //all of subpath's resolvables
+	            .filter(function (res) { return res !== resolvable; }); // filter out the `resolvable` argument
+	        var getDependency = function (token) {
+	            var matching = availableResolvables.filter(function (r) { return r.token === token; });
+	            if (matching.length)
+	                return common_1.tail(matching);
+	            var fromInjector = _this.injector().getNative(token);
+	            if (!fromInjector) {
+	                throw new Error("Could not find Dependency Injection token: " + strings_1.stringify(token));
+	            }
+	            return new resolvable_1.Resolvable(token, function () { return fromInjector; }, [], fromInjector);
+	        };
+	        return resolvable.deps.map(getDependency);
+	    };
+	    return ResolveContext;
+	}());
+	exports.ResolveContext = ResolveContext;
+	var UIInjectorImpl = (function () {
+	    function UIInjectorImpl(context) {
+	        this.context = context;
+	        this.native = this.get(exports.NATIVE_INJECTOR_TOKEN) || coreservices_1.services.$injector;
+	    }
+	    UIInjectorImpl.prototype.get = function (token) {
+	        var resolvable = this.context.getResolvable(token);
+	        if (resolvable) {
+	            if (!resolvable.resolved) {
+	                throw new Error("Resolvable async .get() not complete:" + strings_1.stringify(resolvable.token));
+	            }
+	            return resolvable.data;
+	        }
+	        return this.native && this.native.get(token);
+	    };
+	    UIInjectorImpl.prototype.getAsync = function (token) {
+	        var resolvable = this.context.getResolvable(token);
+	        if (resolvable)
+	            return resolvable.get(this.context);
+	        return coreservices_1.services.$q.when(this.native.get(token));
+	    };
+	    UIInjectorImpl.prototype.getNative = function (token) {
+	        return this.native.get(token);
+	    };
+	    return UIInjectorImpl;
+	}());
+	//# sourceMappingURL=resolveContext.js.map
+
+/***/ },
+
+/***/ 47:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var basecollection_1 = __webpack_require__(198);
+	var _ = __webpack_require__(43);
+	var Collection = (function (_super) {
+	    __extends(Collection, _super);
+	    /**
+	     * Extends BaseCollection class to do create, update and delete using POST, PUT and DELETE verbs.
+	     * @param $http
+	     * @param $q
+	     * @param url Used for doing HTTP GET and fetch objects from server
+	     * @constructor
+	     */
+	    function Collection(http, url) {
+	        _super.call(this, http, url);
+	        this.inspectStats = {};
+	    }
+	    /**
+	     *
+	     * @param model
+	     * @param url Optional if not passed it is constructed using key and url passed in constructor
+	     * @returns {*}
+	     */
+	    Collection.prototype.create = function (model, url) {
+	        var collection = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            if (url === undefined)
+	                url = collection.url + model.key + '/';
+	            collection.http.post(url, model).map(function (res) { return res.json(); }).toPromise()
+	                .then(function successCallback(response) {
+	                var responseData = response;
+	                //For rest endpoints that do not return created json object in response
+	                if ((responseData === undefined) || (responseData === '')) {
+	                    responseData = model;
+	                }
+	                collection.models.push(responseData);
+	                resolve(responseData);
+	            }, function errorCallback(response) {
+	                reject(response);
+	            });
+	        });
+	        return promise;
+	    };
+	    ;
+	    /**
+	     * This is for netmaster specific endpoints and used by netmaster objects only.
+	     * TODO: Generalize
+	     * @param model
+	     * @param url Optional
+	     * @returns {*}
+	     */
+	    Collection.prototype.save = function (model) {
+	        var collection = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            var url = collection.url + model.key + '/';
+	            collection.http.put(url, model).map(function (res) { return res.json(); }).toPromise()
+	                .then(function successCallback(response) {
+	                _.remove(collection.models, function (n) {
+	                    return n.key == model.key;
+	                });
+	                collection.models.push(response);
+	                resolve(response);
+	            }, function errorCallback(response) {
+	                reject(response);
+	            });
+	        });
+	        return promise;
+	    };
+	    ;
+	    /**
+	     * This is for netmaster specific endpoints and used by netmaster objects only.
+	     * TODO: Generalize
+	     * @param model
+	     * @returns {*}
+	     */
+	    Collection.prototype.delete = function (model) {
+	        var collection = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            var url = collection.url + model.key + '/';
+	            collection.http.delete(url).map(function (res) { return res.json(); }).toPromise()
+	                .then(function successCallback(response) {
+	                _.remove(collection.models, function (n) {
+	                    return n.key == model.key;
+	                });
+	                resolve(response);
+	            }, function errorCallback(response) {
+	                reject(response);
+	            });
+	        });
+	        return promise;
+	    };
+	    ;
+	    /**
+	     *
+	     * @param key
+	     * @param keyname
+	     * @param url Optional if not passed it is constructed using key and url passed in constructor
+	     * @returns {*}
+	     */
+	    Collection.prototype.deleteUsingKey = function (key, keyname, url) {
+	        var collection = this;
+	        if (keyname === undefined)
+	            keyname = 'key';
+	        var promise = new Promise(function (resolve, reject) {
+	            if (url === undefined)
+	                url = collection.url + key + '/';
+	            collection.http.delete(url).map(function (res) { return res.json(); }).toPromise()
+	                .then(function successCallback(response) {
+	                _.remove(collection.models, function (n) {
+	                    return n[keyname] == key;
+	                });
+	                resolve(response);
+	            }, function errorCallback(response) {
+	                reject(response);
+	            });
+	        });
+	        return promise;
+	    };
+	    ;
+	    Collection.prototype.getInspectByKey = function (key, url, refresh) {
+	        var collection = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            if (key in collection.inspectStats && refresh == false) {
+	                resolve(collection.inspectStats[key]);
+	            }
+	            else {
+	                collection.http.get(url + key + '/').map(function (res) { return res.json(); }).toPromise()
+	                    .then(function successCallback(response) {
+	                    var responseStats = response;
+	                    collection.inspectStats[key] = responseStats;
+	                    resolve(responseStats);
+	                }, function errorCallback(error) {
+	                    reject(error);
+	                });
+	            }
+	        });
+	        return promise;
+	    };
+	    ;
+	    return Collection;
+	}(basecollection_1.BaseCollection));
+	exports.Collection = Collection;
+	
+
+/***/ },
+
+/***/ 48:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(20);
+	var collection_1 = __webpack_require__(47);
+	var util_1 = __webpack_require__(74);
+	var NetworksModel = (function (_super) {
+	    __extends(NetworksModel, _super);
+	    function NetworksModel(http) {
+	        _super.call(this, http, ContivGlobals.NETWORKS_ENDPOINT);
+	    }
+	    NetworksModel.prototype.getInspectByKey = function (key, url, reload) {
+	        return _super.prototype.getInspectByKey.call(this, key, url, reload)
+	            .then(function (result) {
+	            if (!util_1.isUndefined(result['Oper'].endpoints)) {
+	                var processedEndpoints = [];
+	                var endpoints = result['Oper'].endpoints;
+	                for (var i = 0; i < endpoints.length; i++) {
+	                    if (util_1.isUndefined(endpoints[i].containerID)) {
+	                        endpoints[i]['containerID'] = endpoints[i]['endpointID'];
+	                        endpoints[i]['containerName'] = endpoints[i]['endpointID'].toString().substr(0, 6);
+	                    }
+	                }
+	                result['Oper'].endpoints = endpoints;
+	            }
+	            return result;
+	        });
+	    };
+	    NetworksModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], NetworksModel);
+	    return NetworksModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.NetworksModel = NetworksModel;
+	
+
+/***/ },
+
+/***/ 54:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module params */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var hof_1 = __webpack_require__(16);
+	var predicates_1 = __webpack_require__(9);
+	var coreservices_1 = __webpack_require__(19);
+	var urlMatcherConfig_1 = __webpack_require__(134);
+	var type_1 = __webpack_require__(126);
+	var hasOwn = Object.prototype.hasOwnProperty;
+	var isShorthand = function (cfg) {
+	    return ["value", "type", "squash", "array", "dynamic"].filter(hasOwn.bind(cfg || {})).length === 0;
+	};
+	(function (DefType) {
+	    DefType[DefType["PATH"] = 0] = "PATH";
+	    DefType[DefType["SEARCH"] = 1] = "SEARCH";
+	    DefType[DefType["CONFIG"] = 2] = "CONFIG";
+	})(exports.DefType || (exports.DefType = {}));
+	var DefType = exports.DefType;
+	function unwrapShorthand(cfg) {
+	    cfg = isShorthand(cfg) && { value: cfg } || cfg;
+	    return common_1.extend(cfg, {
+	        $$fn: predicates_1.isInjectable(cfg.value) ? cfg.value : function () { return cfg.value; }
+	    });
+	}
+	function getType(cfg, urlType, location, id, paramTypes) {
+	    if (cfg.type && urlType && urlType.name !== 'string')
+	        throw new Error("Param '" + id + "' has two type configurations.");
+	    if (cfg.type && urlType && urlType.name === 'string' && paramTypes.type(cfg.type))
+	        return paramTypes.type(cfg.type);
+	    if (urlType)
+	        return urlType;
+	    if (!cfg.type)
+	        return (location === DefType.CONFIG ? paramTypes.type("any") : paramTypes.type("string"));
+	    return cfg.type instanceof type_1.ParamType ? cfg.type : paramTypes.type(cfg.type);
+	}
+	/**
+	 * returns false, true, or the squash value to indicate the "default parameter url squash policy".
+	 */
+	function getSquashPolicy(config, isOptional) {
+	    var squash = config.squash;
+	    if (!isOptional || squash === false)
+	        return false;
+	    if (!predicates_1.isDefined(squash) || squash == null)
+	        return urlMatcherConfig_1.matcherConfig.defaultSquashPolicy();
+	    if (squash === true || predicates_1.isString(squash))
+	        return squash;
+	    throw new Error("Invalid squash policy: '" + squash + "'. Valid policies: false, true, or arbitrary string");
+	}
+	function getReplace(config, arrayMode, isOptional, squash) {
+	    var replace, configuredKeys, defaultPolicy = [
+	        { from: "", to: (isOptional || arrayMode ? undefined : "") },
+	        { from: null, to: (isOptional || arrayMode ? undefined : "") }
+	    ];
+	    replace = predicates_1.isArray(config.replace) ? config.replace : [];
+	    if (predicates_1.isString(squash))
+	        replace.push({ from: squash, to: undefined });
+	    configuredKeys = common_1.map(replace, hof_1.prop("from"));
+	    return common_1.filter(defaultPolicy, function (item) { return configuredKeys.indexOf(item.from) === -1; }).concat(replace);
+	}
+	var Param = (function () {
+	    function Param(id, type, config, location, paramTypes) {
+	        config = unwrapShorthand(config);
+	        type = getType(config, type, location, id, paramTypes);
+	        var arrayMode = getArrayMode();
+	        type = arrayMode ? type.$asArray(arrayMode, location === DefType.SEARCH) : type;
+	        var isOptional = config.value !== undefined;
+	        var dynamic = predicates_1.isDefined(config.dynamic) ? !!config.dynamic : !!type.dynamic;
+	        var squash = getSquashPolicy(config, isOptional);
+	        var replace = getReplace(config, arrayMode, isOptional, squash);
+	        // array config: param name (param[]) overrides default settings.  explicit config overrides param name.
+	        function getArrayMode() {
+	            var arrayDefaults = { array: (location === DefType.SEARCH ? "auto" : false) };
+	            var arrayParamNomenclature = id.match(/\[\]$/) ? { array: true } : {};
+	            return common_1.extend(arrayDefaults, arrayParamNomenclature, config).array;
+	        }
+	        common_1.extend(this, { id: id, type: type, location: location, squash: squash, replace: replace, isOptional: isOptional, dynamic: dynamic, config: config, array: arrayMode });
+	    }
+	    Param.prototype.isDefaultValue = function (value) {
+	        return this.isOptional && this.type.equals(this.value(), value);
+	    };
+	    /**
+	     * [Internal] Gets the decoded representation of a value if the value is defined, otherwise, returns the
+	     * default value, which may be the result of an injectable function.
+	     */
+	    Param.prototype.value = function (value) {
+	        var _this = this;
+	        /**
+	         * [Internal] Get the default value of a parameter, which may be an injectable function.
+	         */
+	        var $$getDefaultValue = function () {
+	            if (!coreservices_1.services.$injector)
+	                throw new Error("Injectable functions cannot be called at configuration time");
+	            var defaultValue = coreservices_1.services.$injector.invoke(_this.config.$$fn);
+	            if (defaultValue !== null && defaultValue !== undefined && !_this.type.is(defaultValue))
+	                throw new Error("Default value (" + defaultValue + ") for parameter '" + _this.id + "' is not an instance of ParamType (" + _this.type.name + ")");
+	            return defaultValue;
+	        };
+	        var $replace = function (val) {
+	            var replacement = common_1.map(common_1.filter(_this.replace, hof_1.propEq('from', val)), hof_1.prop("to"));
+	            return replacement.length ? replacement[0] : val;
+	        };
+	        value = $replace(value);
+	        return !predicates_1.isDefined(value) ? $$getDefaultValue() : this.type.$normalize(value);
+	    };
+	    Param.prototype.isSearch = function () {
+	        return this.location === DefType.SEARCH;
+	    };
+	    Param.prototype.validates = function (value) {
+	        // There was no parameter value, but the param is optional
+	        if ((!predicates_1.isDefined(value) || value === null) && this.isOptional)
+	            return true;
+	        // The value was not of the correct ParamType, and could not be decoded to the correct ParamType
+	        var normalized = this.type.$normalize(value);
+	        if (!this.type.is(normalized))
+	            return false;
+	        // The value was of the correct type, but when encoded, did not match the ParamType's regexp
+	        var encoded = this.type.encode(normalized);
+	        return !(predicates_1.isString(encoded) && !this.type.pattern.exec(encoded));
+	    };
+	    Param.prototype.toString = function () {
+	        return "{Param:" + this.id + " " + this.type + " squash: '" + this.squash + "' optional: " + this.isOptional + "}";
+	    };
+	    /** Creates a new [[Param]] from a CONFIG block */
+	    Param.fromConfig = function (id, type, config, paramTypes) {
+	        return new Param(id, type, config, DefType.CONFIG, paramTypes);
+	    };
+	    /** Creates a new [[Param]] from a url PATH */
+	    Param.fromPath = function (id, type, config, paramTypes) {
+	        return new Param(id, type, config, DefType.PATH, paramTypes);
+	    };
+	    /** Creates a new [[Param]] from a url SEARCH */
+	    Param.fromSearch = function (id, type, config, paramTypes) {
+	        return new Param(id, type, config, DefType.SEARCH, paramTypes);
+	    };
+	    Param.values = function (params, values) {
+	        if (values === void 0) { values = {}; }
+	        return params.map(function (param) { return [param.id, param.value(values[param.id])]; }).reduce(common_1.applyPairs, {});
+	    };
+	    /**
+	     * Finds [[Param]] objects which have different param values
+	     *
+	     * Filters a list of [[Param]] objects to only those whose parameter values differ in two param value objects
+	     *
+	     * @param params: The list of Param objects to filter
+	     * @param values1: The first set of parameter values
+	     * @param values2: the second set of parameter values
+	     *
+	     * @returns any Param objects whose values were different between values1 and values2
+	     */
+	    Param.changed = function (params, values1, values2) {
+	        if (values1 === void 0) { values1 = {}; }
+	        if (values2 === void 0) { values2 = {}; }
+	        return params.filter(function (param) { return !param.type.equals(values1[param.id], values2[param.id]); });
+	    };
+	    /**
+>>>>>>> CCN Directives (#200)
 	     * Checks if two param value objects are equal (for a set of [[Param]] objects)
 	     *
 	     * @param params The list of [[Param]] objects to check
@@ -18898,6 +27773,7 @@ webpackJsonp([2],{
 	}());
 	exports.Param = Param;
 	//# sourceMappingURL=param.js.map
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 
 /***/ },
 
@@ -18960,10 +27836,126 @@ webpackJsonp([2],{
 	}());
 	exports.DirectivesModule = DirectivesModule;
 	
+=======
+>>>>>>> CCN Directives (#200)
 
 /***/ },
 
 /***/ 55:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+=======
+>>>>>>> CCN Directives (#200)
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(20);
+	var collection_1 = __webpack_require__(47);
+	var ApplicationGroupsModel = (function (_super) {
+	    __extends(ApplicationGroupsModel, _super);
+	    function ApplicationGroupsModel(http) {
+	        _super.call(this, http, ContivGlobals.APPLICATIONGROUPS_ENDPOINT);
+	    }
+	    /**
+	     * Generate key for application group
+	     * @param group
+	     */
+	    ApplicationGroupsModel.prototype.generateKey = function (group) {
+	        return group.tenantName + ':' + group.groupName;
+	    };
+	    ApplicationGroupsModel.prototype.get = function (reload) {
+	        return _super.prototype.get.call(this, reload)
+	            .then(function (result) {
+	            //add logic for result processing
+	            var items = [];
+	            for (var _i = 0, result_1 = result; _i < result_1.length; _i++) {
+	                var item = result_1[_i];
+	                if (typeof item.policies === 'undefined')
+	                    item['policies'] = [];
+	                if (typeof item.networkName === 'undefined')
+	                    item['networkName'] = '';
+	                items.push(item);
+	            }
+	            return items;
+	        });
+	    };
+	    ApplicationGroupsModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], ApplicationGroupsModel);
+	    return ApplicationGroupsModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.ApplicationGroupsModel = ApplicationGroupsModel;
+=======
+	 * Created by vjain3 on 10/17/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var common_1 = __webpack_require__(31);
+	var errormessagedirective_1 = __webpack_require__(195);
+	var tabledirective_1 = __webpack_require__(197);
+	var forms_1 = __webpack_require__(36);
+	var accordiondirective_1 = __webpack_require__(193);
+	var collapsibledirective_1 = __webpack_require__(194);
+	var namevaluedirective_1 = __webpack_require__(196);
+	var DirectivesModule = (function () {
+	    function DirectivesModule() {
+	    }
+	    DirectivesModule = __decorate([
+	        core_1.NgModule({
+	            imports: [
+	                common_1.CommonModule, forms_1.FormsModule
+	            ],
+	            declarations: [
+	                errormessagedirective_1.ErrorMessageComponent,
+	                tabledirective_1.CtvTableComponent,
+	                tabledirective_1.CtvThComponent,
+	                tabledirective_1.CtvSearchComponent,
+	                tabledirective_1.CtvTpaginationComponent,
+	                accordiondirective_1.CtvAccordionComponent,
+	                collapsibledirective_1.CtvCollapsibleComponent,
+	                namevaluedirective_1.CtvNamevalueComponent
+	            ],
+	            exports: [
+	                errormessagedirective_1.ErrorMessageComponent,
+	                tabledirective_1.CtvTableComponent,
+	                tabledirective_1.CtvThComponent,
+	                tabledirective_1.CtvSearchComponent,
+	                tabledirective_1.CtvTpaginationComponent,
+	                accordiondirective_1.CtvAccordionComponent,
+	                collapsibledirective_1.CtvCollapsibleComponent,
+	                namevaluedirective_1.CtvNamevalueComponent
+	            ]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], DirectivesModule);
+	    return DirectivesModule;
+	}());
+	exports.DirectivesModule = DirectivesModule;
+>>>>>>> CCN Directives (#200)
+	
+
+/***/ },
+
+/***/ 56:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18981,6 +27973,42 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(20);
+	var collection_1 = __webpack_require__(47);
+	var util_1 = __webpack_require__(74);
+	var NetworksModel = (function (_super) {
+	    __extends(NetworksModel, _super);
+	    function NetworksModel(http) {
+	        _super.call(this, http, ContivGlobals.NETWORKS_ENDPOINT);
+	    }
+	    NetworksModel.prototype.getInspectByKey = function (key, url, reload) {
+	        return _super.prototype.getInspectByKey.call(this, key, url, reload)
+	            .then(function (result) {
+	            if (!util_1.isUndefined(result['Oper'].endpoints)) {
+	                var processedEndpoints = [];
+	                var endpoints = result['Oper'].endpoints;
+	                for (var i = 0; i < endpoints.length; i++) {
+	                    if (util_1.isUndefined(endpoints[i].containerID)) {
+	                        endpoints[i]['containerID'] = endpoints[i]['endpointID'];
+	                        endpoints[i]['containerName'] = endpoints[i]['endpointID'].toString().substr(0, 6);
+	                    }
+	                }
+	                result['Oper'].endpoints = endpoints;
+	            }
+	            return result;
+	        });
+	    };
+	    NetworksModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], NetworksModel);
+	    return NetworksModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.NetworksModel = NetworksModel;
+=======
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
@@ -19023,62 +28051,7 @@ webpackJsonp([2],{
 	    var _a;
 	}(collection_1.Collection));
 	exports.ApplicationGroupsModel = ApplicationGroupsModel;
-	
-
-/***/ },
-
-/***/ 56:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(20);
-	var collection_1 = __webpack_require__(47);
-	var util_1 = __webpack_require__(74);
-	var NetworksModel = (function (_super) {
-	    __extends(NetworksModel, _super);
-	    function NetworksModel(http) {
-	        _super.call(this, http, ContivGlobals.NETWORKS_ENDPOINT);
-	    }
-	    NetworksModel.prototype.getInspectByKey = function (key, url, reload) {
-	        return _super.prototype.getInspectByKey.call(this, key, url, reload)
-	            .then(function (result) {
-	            if (!util_1.isUndefined(result['Oper'].endpoints)) {
-	                var processedEndpoints = [];
-	                var endpoints = result['Oper'].endpoints;
-	                for (var i = 0; i < endpoints.length; i++) {
-	                    if (util_1.isUndefined(endpoints[i].containerID)) {
-	                        endpoints[i]['containerID'] = endpoints[i]['endpointID'];
-	                        endpoints[i]['containerName'] = endpoints[i]['endpointID'].toString().substr(0, 6);
-	                    }
-	                }
-	                result['Oper'].endpoints = endpoints;
-	            }
-	            return result;
-	        });
-	    };
-	    NetworksModel = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], NetworksModel);
-	    return NetworksModel;
-	    var _a;
-	}(collection_1.Collection));
-	exports.NetworksModel = NetworksModel;
+>>>>>>> CCN Directives (#200)
 	
 
 /***/ },
@@ -19792,7 +28765,11 @@ webpackJsonp([2],{
 	}
 	exports.isPrimitive = isPrimitive;
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	exports.isBuffer = __webpack_require__(757);
+=======
+	exports.isBuffer = __webpack_require__(758);
+>>>>>>> CCN Directives (#200)
 
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -19836,7 +28813,11 @@ webpackJsonp([2],{
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	exports.inherits = __webpack_require__(756);
+=======
+	exports.inherits = __webpack_require__(757);
+>>>>>>> CCN Directives (#200)
 
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -19854,7 +28835,11 @@ webpackJsonp([2],{
 	  return Object.prototype.hasOwnProperty.call(obj, prop);
 	}
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(254)))
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(255)))
+>>>>>>> CCN Directives (#200)
 
 /***/ },
 
@@ -19935,7 +28920,11 @@ webpackJsonp([2],{
 /***/ 76:
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	__webpack_require__(310);
+=======
+	__webpack_require__(311);
+>>>>>>> CCN Directives (#200)
 	module.exports = angular;
 
 
@@ -19997,7 +28986,11 @@ webpackJsonp([2],{
 	/** @module path */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(16);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var param_1 = __webpack_require__(53);
+=======
+	var param_1 = __webpack_require__(54);
+>>>>>>> CCN Directives (#200)
 	/**
 	 * A node in a [[TreeChanges]] path
 	 *
@@ -20656,6 +29649,7 @@ webpackJsonp([2],{
 	    var _a;
 	}(collection_1.Collection));
 	exports.StoragePoliciesModel = StoragePoliciesModel;
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	
 
 /***/ },
@@ -20743,10 +29737,102 @@ webpackJsonp([2],{
 	    return InspectService;
 	}());
 	exports.InspectService = InspectService;
+=======
+>>>>>>> CCN Directives (#200)
 	
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+=======
+/***/ 103:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by cshampur on 7/17/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var util_1 = __webpack_require__(74);
+	var InspectService = (function () {
+	    function InspectService() {
+	    }
+	    /* This function would build the containerDetails object.
+	     eg :
+	     containerDetails={
+	     ContainerId1 : [{name: "homingHost", value: "cluster-node1", type: "string", format: "none"},
+	     {name: macAddress, value: "02:02", type:"string", format:"none"}
+	     ],
+	     ContainerId2 : [{name: "homingHost", value: "cluster-node1" type: "string", format: "none"},
+	     {name: macAddress, value: "02:04", type: "string", format: "none"}
+	     ]
+	     }
+	     --Used in displaying the container detail inside an accordion.
+	     */
+	    InspectService.prototype.buildEndPoints = function (endpoints) {
+	        var containerDetails = {};
+	        for (var i in endpoints) {
+	            var containerAttributes = [];
+	            for (var key in endpoints[i]) {
+	                var endpointAttribute = {};
+	                endpointAttribute['name'] = key;
+	                endpointAttribute['format'] = 'none';
+	                endpointAttribute['type'] = 'string';
+	                switch (key) {
+	                    case "ipAddress":
+	                        endpointAttribute['value'] = endpoints[i][key].filter(function (ipAddress) { return ipAddress.length > 0; }).join();
+	                        break;
+	                    case "labels":
+	                        endpointAttribute['value'] = endpoints[i][key].replace(/(map\[|\])/gi, '').replace(/(:)/gi, '=').split(' ')
+	                            .filter(function (v) { return v.length > 0; });
+	                        endpointAttribute['format'] = 'label';
+	                        endpointAttribute['type'] = 'array';
+	                        break;
+	                    default: endpointAttribute['value'] = endpoints[i][key];
+	                }
+	                containerAttributes.push(endpointAttribute);
+	            }
+	            containerDetails[endpoints[i].containerID] = containerAttributes;
+	        }
+	        return containerDetails;
+	    };
+	    /*  This function checks whether any new containers were added or not
+	     View is updated only when there is a change in container configuration
+	     */
+	    InspectService.prototype.checkContainerChanged = function (contDetailsA, contDetailsB) {
+	        if (util_1.isUndefined(contDetailsA))
+	            return true;
+	        else {
+	            if (Object.keys(contDetailsA).length != Object.keys(contDetailsB).length)
+	                return true;
+	            for (var key in contDetailsB) {
+	                if (!(key in contDetailsA))
+	                    return true;
+	            }
+	            return false;
+	        }
+	    };
+	    InspectService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [])
+	    ], InspectService);
+	    return InspectService;
+	}());
+	exports.InspectService = InspectService;
+	
+
+/***/ },
+
+>>>>>>> CCN Directives (#200)
 /***/ 123:
 /***/ function(module, exports) {
 
@@ -20816,12 +29902,20 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(16);
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var resolveService_1 = __webpack_require__(299);
+=======
+	var resolveService_1 = __webpack_require__(300);
+>>>>>>> CCN Directives (#200)
 	var trace_1 = __webpack_require__(45);
 	var views_1 = __webpack_require__(125);
 	var templateFactory_1 = __webpack_require__(179);
 	var stateProvider_1 = __webpack_require__(178);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var onEnterExitRetain_1 = __webpack_require__(301);
+=======
+	var onEnterExitRetain_1 = __webpack_require__(302);
+>>>>>>> CCN Directives (#200)
 	var angular = __webpack_require__(76);
 	/** @hidden */
 	var app = angular.module("ui.router.angular1", []);
@@ -21489,7 +30583,11 @@ webpackJsonp([2],{
 	var predicates_1 = __webpack_require__(9);
 	var strings_1 = __webpack_require__(39);
 	var hof_1 = __webpack_require__(16);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var param_1 = __webpack_require__(53);
+=======
+	var param_1 = __webpack_require__(54);
+>>>>>>> CCN Directives (#200)
 	var resolvable_1 = __webpack_require__(64);
 	var coreservices_1 = __webpack_require__(19);
 	var parseUrl = function (url) {
@@ -22002,7 +31100,11 @@ webpackJsonp([2],{
 	var node_1 = __webpack_require__(81);
 	var pathFactory_1 = __webpack_require__(99);
 	var targetState_1 = __webpack_require__(75);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var param_1 = __webpack_require__(53);
+=======
+	var param_1 = __webpack_require__(54);
+>>>>>>> CCN Directives (#200)
 	var resolvable_1 = __webpack_require__(64);
 	var rejectFactory_1 = __webpack_require__(82);
 	var resolveContext_1 = __webpack_require__(46);
@@ -22616,12 +31718,21 @@ webpackJsonp([2],{
 	"use strict";
 	var transition_1 = __webpack_require__(131);
 	var hookRegistry_1 = __webpack_require__(130);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var resolve_1 = __webpack_require__(294);
 	var views_1 = __webpack_require__(296);
 	var url_1 = __webpack_require__(295);
 	var redirectTo_1 = __webpack_require__(293);
 	var onEnterExitRetain_1 = __webpack_require__(292);
 	var lazyLoadStates_1 = __webpack_require__(291);
+=======
+	var resolve_1 = __webpack_require__(295);
+	var views_1 = __webpack_require__(297);
+	var url_1 = __webpack_require__(296);
+	var redirectTo_1 = __webpack_require__(294);
+	var onEnterExitRetain_1 = __webpack_require__(293);
+	var lazyLoadStates_1 = __webpack_require__(292);
+>>>>>>> CCN Directives (#200)
 	/**
 	 * The default [[Transition]] options.
 	 *
@@ -24489,7 +33600,11 @@ webpackJsonp([2],{
 	var transitionService_1 = __webpack_require__(133);
 	var rejectFactory_1 = __webpack_require__(82);
 	var targetState_1 = __webpack_require__(75);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var param_1 = __webpack_require__(53);
+=======
+	var param_1 = __webpack_require__(54);
+>>>>>>> CCN Directives (#200)
 	var glob_1 = __webpack_require__(98);
 	var common_2 = __webpack_require__(5);
 	var common_3 = __webpack_require__(5);
@@ -25184,9 +34299,15 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(16);
 	var predicates_1 = __webpack_require__(9);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var param_1 = __webpack_require__(53);
 	var predicates_2 = __webpack_require__(9);
 	var param_2 = __webpack_require__(53);
+=======
+	var param_1 = __webpack_require__(54);
+	var predicates_2 = __webpack_require__(9);
+	var param_2 = __webpack_require__(54);
+>>>>>>> CCN Directives (#200)
 	var common_2 = __webpack_require__(5);
 	var common_3 = __webpack_require__(5);
 	/** @hidden */
@@ -25621,7 +34742,11 @@ webpackJsonp([2],{
 	var predicates_1 = __webpack_require__(9);
 	var urlMatcher_1 = __webpack_require__(188);
 	var urlMatcherConfig_1 = __webpack_require__(134);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var param_1 = __webpack_require__(53);
+=======
+	var param_1 = __webpack_require__(54);
+>>>>>>> CCN Directives (#200)
 	var paramTypes_1 = __webpack_require__(180);
 	/** @hidden */
 	function getDefaultConfig() {
@@ -25763,10 +34888,17 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 3/10/16.
 	 */
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var ng1_1 = __webpack_require__(25);
 	var networksmodel_1 = __webpack_require__(56);
 	var applicationgroupsmodel_1 = __webpack_require__(55);
 	var crudhelperservice_1 = __webpack_require__(13);
+=======
+	var ng1_1 = __webpack_require__(24);
+	var networksmodel_1 = __webpack_require__(48);
+	var applicationgroupsmodel_1 = __webpack_require__(56);
+	var crudhelperservice_1 = __webpack_require__(12);
+>>>>>>> CCN Directives (#200)
 	var ApplicationGroupCreateComponent = (function () {
 	    function ApplicationGroupCreateComponent($state, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.$state = $state;
@@ -25867,9 +34999,15 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 3/15/16.
 	 */
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var ng1_1 = __webpack_require__(25);
 	var applicationgroupsmodel_1 = __webpack_require__(55);
 	var crudhelperservice_1 = __webpack_require__(13);
+=======
+	var ng1_1 = __webpack_require__(24);
+	var applicationgroupsmodel_1 = __webpack_require__(56);
+	var crudhelperservice_1 = __webpack_require__(12);
+>>>>>>> CCN Directives (#200)
 	var ApplicationGroupDetailsComponent = (function () {
 	    function ApplicationGroupDetailsComponent($state, $stateParams, applicationGroupsModel, crudHelperService) {
 	        this.$state = $state;
@@ -25971,10 +35109,17 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var applicationgroupsmodel_1 = __webpack_require__(55);
 	var crudhelperservice_1 = __webpack_require__(13);
 	var rxjs_1 = __webpack_require__(29);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var applicationgroupsmodel_1 = __webpack_require__(56);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var AppGrouplistComponent = (function () {
 	    function AppGrouplistComponent($state, appGroupModel, crudHelperService) {
 	        var _this = this;
@@ -26010,7 +35155,11 @@ webpackJsonp([2],{
 	    AppGrouplistComponent = __decorate([
 	        core_1.Component({
 	            selector: 'app-group',
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	            template: __webpack_require__(486)
+=======
+	            template: __webpack_require__(487)
+>>>>>>> CCN Directives (#200)
 	        }),
 	        __param(0, core_1.Inject('$state')), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
@@ -26846,11 +35995,19 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var applicationgroupsmodel_1 = __webpack_require__(55);
 	var policiesmodel_1 = __webpack_require__(65);
 	var storagepoliciesmodel_1 = __webpack_require__(102);
 	var nodesmodel_1 = __webpack_require__(137);
 	var networksmodel_1 = __webpack_require__(56);
+=======
+	var applicationgroupsmodel_1 = __webpack_require__(56);
+	var policiesmodel_1 = __webpack_require__(65);
+	var storagepoliciesmodel_1 = __webpack_require__(102);
+	var nodesmodel_1 = __webpack_require__(137);
+	var networksmodel_1 = __webpack_require__(48);
+>>>>>>> CCN Directives (#200)
 	var volumesmodel_1 = __webpack_require__(83);
 	var DashboardComponent = (function () {
 	    function DashboardComponent(nodesModel, networksModel, volumesModel, applicationGroupsModel, policiesModel, storagePoliciesModel) {
@@ -26946,9 +36103,15 @@ webpackJsonp([2],{
 	 * Created by hardik gandhi on 6/14/16.
 	 */
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var ng1_1 = __webpack_require__(25);
 	var netprofilesmodel_1 = __webpack_require__(77);
 	var crudhelperservice_1 = __webpack_require__(13);
+=======
+	var ng1_1 = __webpack_require__(24);
+	var netprofilesmodel_1 = __webpack_require__(77);
+	var crudhelperservice_1 = __webpack_require__(12);
+>>>>>>> CCN Directives (#200)
 	var BandwidthPolicyCreateComponent = (function () {
 	    function BandwidthPolicyCreateComponent($state, netprofilesModel, crudHelperService) {
 	        this.$state = $state;
@@ -27028,8 +36191,13 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var netprofilesmodel_1 = __webpack_require__(77);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var BandwidthPolicyDetailsComponent = (function () {
 	    function BandwidthPolicyDetailsComponent($state, $stateParams, netprofilesModel, crudHelperService) {
 	        this.$state = $state;
@@ -27133,7 +36301,11 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+>>>>>>> CCN Directives (#200)
 	var rxjs_1 = __webpack_require__(29);
 	var netprofilesmodel_1 = __webpack_require__(77);
 	var BandwidthListComponent = (function () {
@@ -27200,8 +36372,13 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var policiesmodel_1 = __webpack_require__(65);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var IsolationPolicyCreateComponent = (function () {
 	    function IsolationPolicyCreateComponent($state, policiesModel, crudHelperService) {
 	        this.$state = $state;
@@ -27278,10 +36455,17 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var policiesmodel_1 = __webpack_require__(65);
 	var rulesmodel_1 = __webpack_require__(100);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var networksmodel_1 = __webpack_require__(56);
 	var applicationgroupsmodel_1 = __webpack_require__(55);
 	var crudhelperservice_1 = __webpack_require__(13);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var networksmodel_1 = __webpack_require__(48);
+	var applicationgroupsmodel_1 = __webpack_require__(56);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var IsolationPolicyDetailsComponent = (function () {
 	    function IsolationPolicyDetailsComponent($state, $stateParams, policiesModel, rulesModel, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.$state = $state;
@@ -27651,6 +36835,7 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 206:
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28035,6 +37220,77 @@ webpackJsonp([2],{
 
 	/**
 	 * Created by cshampur on 10/14/16.
+=======
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/19/16.
+>>>>>>> CCN Directives (#200)
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+=======
+	var core_1 = __webpack_require__(3);
+	var policiesmodel_1 = __webpack_require__(65);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var IsolationListComponent = (function () {
+	    function IsolationListComponent(policiesModel, crudHelperService) {
+	        var _this = this;
+	        this.crudHelperService = crudHelperService;
+	        this.policiesModel = policiesModel;
+	        this.isolationPolicyListCtrl = this;
+	        this['showloader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getPolicies(true);
+	        });
+	    }
+	    IsolationListComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.getPolicies(false);
+	    };
+	    IsolationListComponent.prototype.getPolicies = function (reload) {
+	        var isolationPolicyListCtrl = this;
+	        this.policiesModel.get(reload)
+	            .then(function (result) {
+	            isolationPolicyListCtrl['policies'] = result;
+	            isolationPolicyListCtrl.crudHelperService.stopLoader(isolationPolicyListCtrl);
+	        }, function (error) {
+	            isolationPolicyListCtrl.crudHelperService.stopLoader(isolationPolicyListCtrl);
+	        });
+	    };
+	    IsolationListComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    IsolationListComponent = __decorate([
+	        core_1.Component({
+	            selector: 'isolationpolicylist',
+	            templateUrl: 'network_policies/isolationpolicylist.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _a) || Object, (typeof (_b = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _b) || Object])
+	    ], IsolationListComponent);
+	    return IsolationListComponent;
+	    var _a, _b;
+	}());
+	exports.IsolationListComponent = IsolationListComponent;
+	
+
+/***/ },
+
+/***/ 207:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
 	 */
 	"use strict";
 	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -28050,9 +37306,407 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
+	var networksmodel_1 = __webpack_require__(48);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ng1_1 = __webpack_require__(24);
+	var NetworkCreateComponent = (function () {
+	    function NetworkCreateComponent($state, networksModel, crudHelperService) {
+	        this.$state = $state;
+	        this.networksModel = networksModel;
+	        this.crudHelperService = crudHelperService;
+	        this['showLoader'] = false;
+	        this['showServerError'] = false;
+	        this['serverErrorMessage'] = '';
+	        this['cidrPattern'] = ContivGlobals.CIDR_REGEX;
+	        this.newNetwork = { networkName: '', encap: 'vxlan', subnet: '', gateway: '', tenantName: 'default', key: '' };
+	        this.networkCreateCtrl = this;
+	    }
+	    NetworkCreateComponent.prototype.returnToNetworks = function () {
+	        this.$state.go("contiv.menu.networks.list");
+	    };
+	    NetworkCreateComponent.prototype.cancelCreating = function () {
+	        this.returnToNetworks();
+	    };
+	    NetworkCreateComponent.prototype.createNetwork = function (formvalid) {
+	        debugger;
+	        var networkCreateCtrl = this;
+	        if (formvalid) {
+	            this.crudHelperService.hideServerError(this);
+	            this.crudHelperService.startLoader(this);
+	            this.newNetwork.key = this.newNetwork.tenantName + ':' + this.newNetwork.networkName;
+	            this.networksModel.create(this.newNetwork, undefined)
+	                .then(function (result) {
+	                networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
+	                networkCreateCtrl.returnToNetworks();
+	            }, function (error) {
+	                networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
+	                networkCreateCtrl.crudHelperService.showServerError(networkCreateCtrl, error);
+	            });
+	        }
+	    };
+	    NetworkCreateComponent = __decorate([
+	        core_1.Component({
+	            selector: 'networkcreate',
+	            templateUrl: 'networks/networkcreate.html'
+	        }),
+	        __param(0, core_1.Inject('$state')), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
+	    ], NetworkCreateComponent);
+	    return NetworkCreateComponent;
+	    var _a, _b, _c;
+	}());
+	exports.NetworkCreateComponent = NetworkCreateComponent;
+	
+
+/***/ },
+
+/***/ 208:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var __param = (this && this.__param) || function (paramIndex, decorator) {
+	    return function (target, key) { decorator(target, key, paramIndex); }
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+	var applicationgroupsmodel_1 = __webpack_require__(56);
+	var networksmodel_1 = __webpack_require__(48);
+	var util_1 = __webpack_require__(74);
+	var _ = __webpack_require__(43);
+	var NetworkdetailsComponent = (function () {
+	    function NetworkdetailsComponent($state, applicationGroupsModel, networksModel, crudHelperService) {
+	        var _this = this;
+	        this.$state = $state;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.networksModel = networksModel;
+	        this.crudHelperService = crudHelperService;
+	        this.infoselected = true;
+	        this.statskey = '';
+	        this['showLoader'] = true;
+	        this['showServerError'] = false;
+	        this['serverErrorMessage'] = '';
+	        this.network = { networkName: '', encap: '', subnet: '', gateway: '' };
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getApplicationGroups(true);
+	        });
+	        this.networkDetailsCtrl = this;
+	    }
+	    NetworkdetailsComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.statskey = this.$state.params['key'];
+	        this.getNetworksModel(false);
+	    };
+	    NetworkdetailsComponent.prototype.getApplicationGroups = function (reload) {
+	        var networkDetailsCtrl = this;
+	        if (!util_1.isUndefined(networkDetailsCtrl['network'])) {
+	            this.applicationGroupsModel.get(reload)
+	                .then(function successCallback(result) {
+	                networkDetailsCtrl['applicationGroups'] = _.filter(result, { 'networkName': networkDetailsCtrl['network'].networkName });
+	                networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
+	            }, function errorCallback(result) {
+	                networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
+	            });
+	        }
+	    };
+	    NetworkdetailsComponent.prototype.getNetworksModel = function (reload) {
+	        var networkDetailsCtrl = this;
+	        this.networksModel.getModelByKey(this.$state.params['key'], reload, 'key')
+	            .then(function (result) {
+	            networkDetailsCtrl['network'] = result;
+	            networkDetailsCtrl.getApplicationGroups(false);
+	        }, function (error) {
+	            networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
+	        });
+	    };
+	    NetworkdetailsComponent.prototype.deleteNetwork = function () {
+	        var networkDetailsCtrl = this;
+	        this.crudHelperService.hideServerError(networkDetailsCtrl);
+	        this.crudHelperService.startLoader(networkDetailsCtrl);
+	        if (!util_1.isUndefined(networkDetailsCtrl['network'])) {
+	            this.networksModel.delete(networkDetailsCtrl['network'])
+	                .then(function (result) {
+	                networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
+	                networkDetailsCtrl.returnToNetworks();
+	            }, function (error) {
+	                networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
+	                networkDetailsCtrl.crudHelperService.showServerError(networkDetailsCtrl, error);
+	            });
+	        }
+	    };
+	    NetworkdetailsComponent.prototype.returnToNetworks = function () {
+	        this.$state.go('contiv.menu.networks.list');
+	    };
+	    NetworkdetailsComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    NetworkdetailsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'networkdetails',
+	            templateUrl: "networks/networkdetails.html"
+	        }),
+	        __param(0, core_1.Inject('$state')), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
+	    ], NetworkdetailsComponent);
+	    return NetworkdetailsComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.NetworkdetailsComponent = NetworkdetailsComponent;
+	
+
+/***/ },
+
+/***/ 209:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/25/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var NetworkInfoComponent = (function () {
+	    function NetworkInfoComponent() {
+	        this.networkDetailsCtrl = { network: { networkName: '', encap: '', subnet: '', gateway: '' },
+	            showLoader: false,
+	            applicationGroups: []
+	        };
+	    }
+	    __decorate([
+	        core_1.Input('networkDetailsCtrl'), 
+	        __metadata('design:type', Object)
+	    ], NetworkInfoComponent.prototype, "networkDetailsCtrl", void 0);
+	    NetworkInfoComponent = __decorate([
+	        core_1.Component({
+	            selector: 'network-info',
+	            templateUrl: 'networks/networkinfo.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], NetworkInfoComponent);
+	    return NetworkInfoComponent;
+	}());
+	exports.NetworkInfoComponent = NetworkInfoComponent;
+	
+
+/***/ },
+
+/***/ 210:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+>>>>>>> CCN Directives (#200)
+	var __param = (this && this.__param) || function (paramIndex, decorator) {
+	    return function (target, key) { decorator(target, key, paramIndex); }
+	};
+	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
 	var rxjs_1 = __webpack_require__(29);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var networksmodel_1 = __webpack_require__(48);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+	var NetworkListComponent = (function () {
+	    function NetworkListComponent($state, networksModel, crudHelperService) {
+	        var _this = this;
+	        this.$state = $state;
+	        this.networksModel = networksModel;
+	        this.crudHelperService = crudHelperService;
+	        this.networkListComp = this;
+	        this['showLoader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getNetworks(true);
+	        });
+	    }
+	    NetworkListComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.getNetworks(false);
+	    };
+	    NetworkListComponent.prototype.getNetworks = function (reload) {
+	        var networkListComp = this;
+	        this.networksModel.get(reload)
+	            .then(function successCallback(result) {
+	            networkListComp['networks'] = result;
+	            networkListComp.crudHelperService.stopLoader(networkListComp);
+	        }, function errorCallback(result) {
+	            networkListComp.crudHelperService.stopLoader(networkListComp);
+	        });
+	    };
+	    NetworkListComponent.prototype.create = function () {
+	        this.$state.go('contiv.menu.networks.create');
+	    };
+	    NetworkListComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    NetworkListComponent = __decorate([
+	        core_1.Component({
+	            selector: 'networkList',
+	            template: __webpack_require__(488)
+	        }),
+	        __param(0, core_1.Inject('$state')), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
+	    ], NetworkListComponent);
+	    return NetworkListComponent;
+	    var _a, _b, _c;
+	}());
+	exports.NetworkListComponent = NetworkListComponent;
+	
+
+/***/ },
+
+/***/ 211:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var networksmodel_1 = __webpack_require__(48);
+	var inspectservice_1 = __webpack_require__(103);
+	var util_1 = __webpack_require__(74);
+	var NetworkStatComponent = (function () {
+	    function NetworkStatComponent(networksModel, crudHelperService, inspectSerrvice) {
+	        var _this = this;
+	        this.crudHelperService = crudHelperService;
+	        this.networksModel = networksModel;
+	        this.inspectSerrvice = inspectSerrvice;
+	        this.statKey = '';
+	        this['showloader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            if (_this.statKey != '')
+	                _this.getNetworkInspect(true);
+	        });
+	        this.networkInspectStats = {
+	            allocatedAddressesCount: '',
+	            allocatedIPAddresses: '',
+	            dnsServerIP: '',
+	            externalPktTag: '',
+	            numEndpoints: '',
+	            pktTag: ''
+	        };
+	        this.config = { networkName: '', };
+	        this.endpoints = [];
+	        this.filteredendpoints = [];
+	        this.containerDetails = {};
+	        this.networkStatsCtrl = this;
+	    }
+	    NetworkStatComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        if (this.statKey != '')
+	            this.getNetworkInspect(false);
+	    };
+	    NetworkStatComponent.prototype.getNetworkInspect = function (reload) {
+	        var networkStatsCtrl = this;
+	        this.networksModel.getInspectByKey(this.statKey, ContivGlobals.NETWORKS_INSPECT_ENDPOINT, reload)
+	            .then(function (result) {
+	            networkStatsCtrl['networkInspectStats'] = result['Oper'];
+	            networkStatsCtrl['config'] = result['Config'];
+	            if (!util_1.isUndefined(result['Oper'].endpoints)) {
+	                var containerDetails = networkStatsCtrl.inspectSerrvice.buildEndPoints(result['Oper'].endpoints);
+	                if (networkStatsCtrl.inspectSerrvice.checkContainerChanged(networkStatsCtrl['containerDetails'], containerDetails)) {
+	                    networkStatsCtrl['endpoints'] = result['Oper'].endpoints;
+	                    networkStatsCtrl['containerDetails'] = containerDetails;
+	                }
+	            }
+	            else {
+	                networkStatsCtrl['endpoints'] = [];
+	                networkStatsCtrl['containerDetails'] = {};
+	            }
+	            networkStatsCtrl.crudHelperService.stopLoader(networkStatsCtrl);
+	        }, function (error) {
+	            networkStatsCtrl.crudHelperService.stopLoader(networkStatsCtrl);
+	        });
+	    };
+	    NetworkStatComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    __decorate([
+	        core_1.Input('statKey'), 
+	        __metadata('design:type', String)
+	    ], NetworkStatComponent.prototype, "statKey", void 0);
+	    NetworkStatComponent = __decorate([
+	        core_1.Component({
+	            selector: 'network-stat',
+	            templateUrl: 'networks/networkstats.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _a) || Object, (typeof (_b = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _b) || Object, (typeof (_c = typeof inspectservice_1.InspectService !== 'undefined' && inspectservice_1.InspectService) === 'function' && _c) || Object])
+	    ], NetworkStatComponent);
+	    return NetworkStatComponent;
+	    var _a, _b, _c;
+	}());
+	exports.NetworkStatComponent = NetworkStatComponent;
+	
+
+/***/ },
+
+/***/ 212:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var __param = (this && this.__param) || function (paramIndex, decorator) {
+	    return function (target, key) { decorator(target, key, paramIndex); }
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var organizationsmodel_1 = __webpack_require__(138);
 	var OrganizationListComponent = (function () {
 	    function OrganizationListComponent($state, organizationsModel, crudHelperService) {
@@ -28102,7 +37756,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 212:
+=======
+/***/ 213:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28122,9 +37780,15 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
 	var rxjs_1 = __webpack_require__(29);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var servicelbsmodel_1 = __webpack_require__(101);
 	var ServicelbListComponent = (function () {
 	    function ServicelbListComponent($state, servicelbsModel, crudHelperService) {
@@ -28174,7 +37838,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 213:
+=======
+/***/ 214:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28191,9 +37859,15 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
 	var rxjs_1 = __webpack_require__(29);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var inspectservice_1 = __webpack_require__(103);
 	var util_1 = __webpack_require__(74);
 	var servicelbsmodel_1 = __webpack_require__(101);
@@ -28267,7 +37941,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 214:
+=======
+/***/ 215:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28281,7 +37959,11 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+>>>>>>> CCN Directives (#200)
 	var networkservice_1 = __webpack_require__(139);
 	var NetworkSettingsComponent = (function () {
 	    function NetworkSettingsComponent(crudHelperService, networkService) {
@@ -28329,7 +38011,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 215:
+=======
+/***/ 216:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28343,7 +38029,11 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+>>>>>>> CCN Directives (#200)
 	var volumesettingservice_1 = __webpack_require__(140);
 	var VolumeSettingsComponent = (function () {
 	    function VolumeSettingsComponent(crudHelperService, volumeSettingService) {
@@ -28389,7 +38079,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 216:
+=======
+/***/ 217:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28409,9 +38103,15 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
 	var rxjs_1 = __webpack_require__(29);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var storagepoliciesmodel_1 = __webpack_require__(102);
 	var StoragepolicyListComponent = (function () {
 	    function StoragepolicyListComponent($state, storagePoliciesModel, crudHelperService) {
@@ -28461,7 +38161,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 217:
+=======
+/***/ 218:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28481,9 +38185,15 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
 	var rxjs_1 = __webpack_require__(29);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var volumesmodel_1 = __webpack_require__(83);
 	var volumeservice_1 = __webpack_require__(141);
 	var util_1 = __webpack_require__(74);
@@ -28504,6 +38214,10 @@ webpackJsonp([2],{
 	            backends: { crud: '', mount: '', snapshot: '' }
 	        };
 	        this['showLoader'] = true;
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+=======
+	        this['showServerError'] = false;
+>>>>>>> CCN Directives (#200)
 	        this['serverErrorMessage'] = '';
 	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
 	            _this.getVolumesInfo(true);
@@ -28598,7 +38312,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 218:
+=======
+/***/ 219:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -28618,9 +38336,15 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
 	var rxjs_1 = __webpack_require__(29);
 	var ng1_1 = __webpack_require__(25);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(29);
+	var ng1_1 = __webpack_require__(24);
+>>>>>>> CCN Directives (#200)
 	var volumesmodel_1 = __webpack_require__(83);
 	var VolumeListComponent = (function () {
 	    function VolumeListComponent($state, volumesModel, crudHelperService) {
@@ -28670,7 +38394,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 289:
+=======
+/***/ 290:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28690,7 +38418,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 290:
+=======
+/***/ 291:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module common */ /** */
@@ -28698,14 +38430,22 @@ webpackJsonp([2],{
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	__export(__webpack_require__(289));
 	__export(__webpack_require__(303));
+=======
+	__export(__webpack_require__(290));
+>>>>>>> CCN Directives (#200)
 	__export(__webpack_require__(304));
 	__export(__webpack_require__(305));
 	__export(__webpack_require__(306));
 	__export(__webpack_require__(307));
 	__export(__webpack_require__(308));
 	__export(__webpack_require__(309));
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
+=======
+	__export(__webpack_require__(310));
+>>>>>>> CCN Directives (#200)
 	__export(__webpack_require__(177));
 	var router_1 = __webpack_require__(127);
 	exports.UIRouter = router_1.UIRouter;
@@ -28713,7 +38453,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 291:
+=======
+/***/ 292:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28781,7 +38525,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 292:
+=======
+/***/ 293:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports) {
 
 	"use strict";
@@ -28842,7 +38590,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 293:
+=======
+/***/ 294:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28882,7 +38634,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 294:
+=======
+/***/ 295:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28929,7 +38685,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 295:
+=======
+/***/ 296:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports) {
 
 	"use strict";
@@ -28959,7 +38719,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 296:
+=======
+/***/ 297:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29010,7 +38774,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 297:
+=======
+/***/ 298:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29425,7 +39193,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 298:
+=======
+/***/ 299:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module ng1_directives */ /** for typedoc */
@@ -29809,7 +39581,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 299:
+=======
+/***/ 300:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29877,7 +39653,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 300:
+=======
+/***/ 301:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module state */ /** for typedoc */
@@ -29926,7 +39706,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 301:
+=======
+/***/ 302:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29955,7 +39739,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 302:
+=======
+/***/ 303:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30012,7 +39800,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 303:
+=======
+/***/ 304:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30027,7 +39819,11 @@ webpackJsonp([2],{
 	 * @preferred doc
 	 */
 	/** for typedoc */
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	__export(__webpack_require__(53));
+=======
+	__export(__webpack_require__(54));
+>>>>>>> CCN Directives (#200)
 	__export(__webpack_require__(180));
 	__export(__webpack_require__(181));
 	__export(__webpack_require__(126));
@@ -30035,7 +39831,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 304:
+=======
+/***/ 305:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30049,7 +39849,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 305:
+=======
+/***/ 306:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30064,7 +39868,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 306:
+=======
+/***/ 307:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30083,7 +39891,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 307:
+=======
+/***/ 308:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30109,7 +39921,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 308:
+=======
+/***/ 309:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30125,7 +39941,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 309:
+=======
+/***/ 310:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30138,7 +39958,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 310:
+=======
+/***/ 311:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports) {
 
 	/**
@@ -61912,7 +71736,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 311:
+=======
+/***/ 312:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61931,12 +71759,21 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var platform_browser_1 = __webpack_require__(97);
 	var http_1 = __webpack_require__(20);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var networkpolicies_module_1 = __webpack_require__(317);
 	var applicationgroups_module_ts_1 = __webpack_require__(312);
 	var settings_module_1 = __webpack_require__(321);
 	var netprofilesmodel_1 = __webpack_require__(77);
 	var applicationgroupsmodel_1 = __webpack_require__(55);
 	var networksmodel_1 = __webpack_require__(56);
+=======
+	var networkpolicies_module_1 = __webpack_require__(318);
+	var applicationgroups_module_ts_1 = __webpack_require__(313);
+	var settings_module_1 = __webpack_require__(322);
+	var netprofilesmodel_1 = __webpack_require__(77);
+	var applicationgroupsmodel_1 = __webpack_require__(56);
+	var networksmodel_1 = __webpack_require__(48);
+>>>>>>> CCN Directives (#200)
 	var nodesmodel_1 = __webpack_require__(137);
 	var organizationsmodel_1 = __webpack_require__(138);
 	var policiesmodel_1 = __webpack_require__(65);
@@ -61944,17 +71781,29 @@ webpackJsonp([2],{
 	var servicelbsmodel_1 = __webpack_require__(101);
 	var storagepoliciesmodel_1 = __webpack_require__(102);
 	var volumesmodel_1 = __webpack_require__(83);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var crudhelperservice_1 = __webpack_require__(13);
+=======
+	var crudhelperservice_1 = __webpack_require__(12);
+>>>>>>> CCN Directives (#200)
 	var inspectservice_1 = __webpack_require__(103);
 	var networkservice_1 = __webpack_require__(139);
 	var volumesettingservice_1 = __webpack_require__(140);
 	var nodesservice_1 = __webpack_require__(199);
 	var dashboardctrl_1 = __webpack_require__(200);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var network_module_1 = __webpack_require__(318);
 	var servicelb_module_1 = __webpack_require__(320);
 	var volume_module_1 = __webpack_require__(324);
 	var storagepolicy_module_1 = __webpack_require__(322);
 	var organization_module_1 = __webpack_require__(319);
+=======
+	var network_module_1 = __webpack_require__(319);
+	var servicelb_module_1 = __webpack_require__(321);
+	var volume_module_1 = __webpack_require__(325);
+	var storagepolicy_module_1 = __webpack_require__(323);
+	var organization_module_1 = __webpack_require__(320);
+>>>>>>> CCN Directives (#200)
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -62002,7 +71851,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 312:
+=======
+/***/ 313:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62021,12 +71874,21 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var directives_module_1 = __webpack_require__(54);
 	var pipes_module_1 = __webpack_require__(316);
 	var applicationgroupcreatectrl_1 = __webpack_require__(190);
 	var applicationgroupdetailsctrl_1 = __webpack_require__(191);
 	var isolationpolicydirective_1 = __webpack_require__(314);
 	var bandwidthpolicydirective_1 = __webpack_require__(313);
+=======
+	var directives_module_1 = __webpack_require__(55);
+	var pipes_module_1 = __webpack_require__(317);
+	var applicationgroupcreatectrl_1 = __webpack_require__(190);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(191);
+	var isolationpolicydirective_1 = __webpack_require__(315);
+	var bandwidthpolicydirective_1 = __webpack_require__(314);
+>>>>>>> CCN Directives (#200)
 	var applicationgrouplistctrl_1 = __webpack_require__(192);
 	var ApplicationGroupsModule = (function () {
 	    function ApplicationGroupsModule() {
@@ -62067,7 +71929,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 313:
+=======
+/***/ 314:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62198,7 +72064,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 314:
+=======
+/***/ 315:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62334,7 +72204,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 315:
+=======
+/***/ 316:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62385,7 +72259,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 316:
+=======
+/***/ 317:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62404,7 +72282,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var filterpipe_1 = __webpack_require__(315);
+=======
+	var filterpipe_1 = __webpack_require__(316);
+>>>>>>> CCN Directives (#200)
 	var PipesModule = (function () {
 	    function PipesModule() {
 	    }
@@ -62433,7 +72315,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 317:
+=======
+/***/ 318:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62452,7 +72338,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var directives_module_1 = __webpack_require__(54);
+=======
+	var directives_module_1 = __webpack_require__(55);
+>>>>>>> CCN Directives (#200)
 	var isolationpolicycreatectrl_1 = __webpack_require__(204);
 	var isolationpolicydetailsctrl_1 = __webpack_require__(205);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(201);
@@ -62499,7 +72389,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 318:
+=======
+/***/ 319:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62518,11 +72412,20 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var directives_module_1 = __webpack_require__(54);
 	var networklistctrl_1 = __webpack_require__(209);
 	var networkstatsctrl_1 = __webpack_require__(210);
 	var networkdetailsctrl_1 = __webpack_require__(207);
 	var networkinfoctrl_1 = __webpack_require__(208);
+=======
+	var directives_module_1 = __webpack_require__(55);
+	var networklistctrl_1 = __webpack_require__(210);
+	var networkstatsctrl_1 = __webpack_require__(211);
+	var networkdetailsctrl_1 = __webpack_require__(208);
+	var networkinfoctrl_1 = __webpack_require__(209);
+	var networkcreatectrl_1 = __webpack_require__(207);
+>>>>>>> CCN Directives (#200)
 	var NetworkModule = (function () {
 	    function NetworkModule() {
 	    }
@@ -62537,13 +72440,23 @@ webpackJsonp([2],{
 	                networklistctrl_1.NetworkListComponent,
 	                networkstatsctrl_1.NetworkStatComponent,
 	                networkinfoctrl_1.NetworkInfoComponent,
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	                networkdetailsctrl_1.NetworkdetailsComponent
+=======
+	                networkdetailsctrl_1.NetworkdetailsComponent,
+	                networkcreatectrl_1.NetworkCreateComponent
+>>>>>>> CCN Directives (#200)
 	            ],
 	            exports: [
 	                networklistctrl_1.NetworkListComponent,
 	                networkstatsctrl_1.NetworkStatComponent,
 	                networkinfoctrl_1.NetworkInfoComponent,
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	                networkstatsctrl_1.NetworkStatComponent
+=======
+	                networkstatsctrl_1.NetworkStatComponent,
+	                networkcreatectrl_1.NetworkCreateComponent
+>>>>>>> CCN Directives (#200)
 	            ]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -62555,7 +72468,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 319:
+=======
+/***/ 320:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62574,8 +72491,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var directives_module_1 = __webpack_require__(54);
 	var organizationlistctrl_1 = __webpack_require__(211);
+=======
+	var directives_module_1 = __webpack_require__(55);
+	var organizationlistctrl_1 = __webpack_require__(212);
+>>>>>>> CCN Directives (#200)
 	var OrganizationModule = (function () {
 	    function OrganizationModule() {
 	    }
@@ -62602,7 +72524,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 320:
+=======
+/***/ 321:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -62621,9 +72547,15 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var directives_module_1 = __webpack_require__(54);
 	var servicelblistctrl_1 = __webpack_require__(212);
 	var servicelbstatsctrl_1 = __webpack_require__(213);
+=======
+	var directives_module_1 = __webpack_require__(55);
+	var servicelblistctrl_1 = __webpack_require__(213);
+	var servicelbstatsctrl_1 = __webpack_require__(214);
+>>>>>>> CCN Directives (#200)
 	var ServicelbModule = (function () {
 	    function ServicelbModule() {
 	    }
@@ -62652,7 +72584,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 321:
+=======
+/***/ 322:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62671,9 +72607,15 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var directives_module_1 = __webpack_require__(54);
 	var networksettingctrl_1 = __webpack_require__(214);
 	var volumesettingctrl_1 = __webpack_require__(215);
+=======
+	var directives_module_1 = __webpack_require__(55);
+	var networksettingctrl_1 = __webpack_require__(215);
+	var volumesettingctrl_1 = __webpack_require__(216);
+>>>>>>> CCN Directives (#200)
 	var SettingsModule = (function () {
 	    function SettingsModule() {
 	    }
@@ -62705,7 +72647,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 322:
+=======
+/***/ 323:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62724,8 +72670,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var directives_module_1 = __webpack_require__(54);
 	var storagepolicylistctrl_1 = __webpack_require__(216);
+=======
+	var directives_module_1 = __webpack_require__(55);
+	var storagepolicylistctrl_1 = __webpack_require__(217);
+>>>>>>> CCN Directives (#200)
 	var StoragepolicyModule = (function () {
 	    function StoragepolicyModule() {
 	    }
@@ -62752,7 +72703,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 323:
+=======
+/***/ 324:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62760,13 +72715,21 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/14/16.
 	 */
 	var upgrade_1 = __webpack_require__(176);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var app_module_1 = __webpack_require__(311);
+=======
+	var app_module_1 = __webpack_require__(312);
+>>>>>>> CCN Directives (#200)
 	exports.upgradeAdapter = new upgrade_1.UpgradeAdapter(app_module_1.AppModule);
 	
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 324:
+=======
+/***/ 325:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62785,10 +72748,17 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(31);
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 	var directives_module_1 = __webpack_require__(54);
 	var volumelistctrl_1 = __webpack_require__(218);
 	var volumeservice_1 = __webpack_require__(141);
 	var volumedetailsctrl_1 = __webpack_require__(217);
+=======
+	var directives_module_1 = __webpack_require__(55);
+	var volumelistctrl_1 = __webpack_require__(219);
+	var volumeservice_1 = __webpack_require__(141);
+	var volumedetailsctrl_1 = __webpack_require__(218);
+>>>>>>> CCN Directives (#200)
 	var VolumeModule = (function () {
 	    function VolumeModule() {
 	    }
@@ -62818,21 +72788,33 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 486:
+=======
+/***/ 487:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned twelve wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Application Groups</div>\n    </div>\n\n    <div class=\"center aligned four wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Application Group\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n    <div class=\"ui active inverted dimmer\" *ngIf=\"applicationGroupListCtrl.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n    <ctv-table #tableRef [defaultSortColumn]=\"'groupName'\"\n               [items]=\"applicationGroupListCtrl['groups']\"\n               (filtereditems)=\"applicationGroupListCtrl['filteredgroups']=$event;\"\n               [size]=\"12\">\n        <thead>\n            <tr>\n                <th><ctv-th [sortfield]=\"'groupName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Network</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'policies'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Policies</ctv-th></th>\n                <th class=\"right floated three wide column\">\n                    <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search application groups...'\"></ctv-search>\n                </th>\n            </tr>\n        </thead>\n\n        <tbody>\n            <tr *ngFor=\"let group of applicationGroupListCtrl['filteredgroups']\">\n                <td><a href=\"/#/m/applicationgroups/details/{{group.key}}\">{{group.groupName}}</a></td>\n                <td>{{group.networkName}}</td>\n                <td>{{group.policies.join(\", \")}}</td>\n                <td></td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n            <tr>\n                <td colspan=\"4\">\n                    <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                     (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                     (prevChunk)=\"tableRef.showPrevChunk()\"\n                                     (nextChunk)=\"tableRef.showNextChunk()\">\n\n                    </ctv-tpagination>\n                </td>\n            </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 487:
+=======
+/***/ 488:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned thirteen wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <div class=\"center aligned three wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n            <th class=\"right floated three wide column\">\n                <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search networks...'\"></ctv-search>\n            </th>\n        </tr>\n        </thead>\n\n        <tbody>\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a href=\"/#/m/networks/details/{{network.key}}\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n            <td></td>\n        </tr>\n        </tbody>\n        <tfoot>\n        <tr>\n            <td colspan=\"5\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 756:
+=======
+/***/ 757:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports) {
 
 	if (typeof Object.create === 'function') {
@@ -62862,7 +72844,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 757:
+=======
+/***/ 758:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports) {
 
 	module.exports = function isBuffer(arg) {
@@ -62874,7 +72860,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 837f091471366f7efbb7484b242858220bdeaed0
 /***/ 758:
+=======
+/***/ 759:
+>>>>>>> CCN Directives (#200)
 /***/ function(module, exports) {
 
 	module.exports = function(module) {

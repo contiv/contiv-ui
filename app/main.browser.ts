@@ -50,6 +50,7 @@ import {CtvCollapsibleComponent} from "./components/directives/collapsibledirect
 import {VolumeDetailsComponent} from "./volumes/volumedetailsctrl";
 import {VolumeService} from "./volumes/volumeservice";
 import {CtvNamevalueComponent} from "./components/directives/namevaluedirective";
+import {NetworkCreateComponent} from "./networks/networkcreatectrl";
 
 upgradeAdapter.upgradeNg1Provider('$state');
 upgradeAdapter.upgradeNg1Provider('$stateParams');
@@ -96,14 +97,15 @@ angular.module("contiv.directives")
     .directive('ctvTpagination', upgradeAdapter.downgradeNg2Component(CtvTpaginationComponent) as angular.IDirectiveFactory)
     .directive('ctvAccordion', upgradeAdapter.downgradeNg2Component(CtvAccordionComponent) as angular.IDirectiveFactory)
     .directive('ctvCollapsible', upgradeAdapter.downgradeNg2Component(CtvCollapsibleComponent) as angular.IDirectiveFactory)
-    .directive('ctvNamevalue', upgradeAdapter.downgradeNg2Component(CtvNamevalueComponent) as angular.IDirectiveFactory)
+    .directive('ctvNamevalue', upgradeAdapter.downgradeNg2Component(CtvNamevalueComponent) as angular.IDirectiveFactory);
 
 
 angular.module('contiv.networks')
     .directive('networkList', upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory)
     .directive('networkStat', upgradeAdapter.downgradeNg2Component(NetworkStatComponent) as angular.IDirectiveFactory)
     .directive('networkInfo', upgradeAdapter.downgradeNg2Component(NetworkInfoComponent) as angular.IDirectiveFactory)
-    .directive('networkdetails', upgradeAdapter.downgradeNg2Component(NetworkdetailsComponent) as angular.IDirectiveFactory);
+    .directive('networkdetails', upgradeAdapter.downgradeNg2Component(NetworkdetailsComponent) as angular.IDirectiveFactory)
+    .directive('networkcreate', upgradeAdapter.downgradeNg2Component(NetworkCreateComponent) as angular.IDirectiveFactory);
 
 angular.module('contiv.applicationgroups')
     .directive('applicationGrouplist', upgradeAdapter.downgradeNg2Component(AppGrouplistComponent) as angular.IDirectiveFactory)
@@ -123,6 +125,6 @@ angular.module('contiv.storagepolicies')
     .directive('storagepolicylist', upgradeAdapter.downgradeNg2Component(StoragepolicyListComponent) as angular.IDirectiveFactory);
 
 angular.module('contiv.organizations')
-    .directive('organizationlist', upgradeAdapter.downgradeNg2Component(OrganizationListComponent) as angular.IDirectiveFactory)
+    .directive('organizationlist', upgradeAdapter.downgradeNg2Component(OrganizationListComponent) as angular.IDirectiveFactory);
 
 upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);
