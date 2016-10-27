@@ -11,7 +11,6 @@ import {Component, Input} from "@angular/core";
 export class NetworkInfoComponent {
     @Input('networkDetailsCtrl') networkDetailsCtrl: any;
     constructor(){
-        debugger;
         this.networkDetailsCtrl = { network:
         {networkName: '', encap: '', subnet: '', gateway: ''},
             showLoader: false,

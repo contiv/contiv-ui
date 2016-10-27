@@ -103,129 +103,31 @@
 	 */
 	// Polyfills
 	"use strict";
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(463); // Internet Explorer 9 support
+	__webpack_require__(485); // Internet Explorer 9 support
 	// import 'core-js/es6';
 	// Added parts of es6 which are necessary for your project or your browser support requirements.
-	__webpack_require__(316);
-	__webpack_require__(309);
-	__webpack_require__(305);
-	__webpack_require__(311);
-	__webpack_require__(310);
-	__webpack_require__(308);
-	__webpack_require__(307);
-	__webpack_require__(315);
-	__webpack_require__(304);
-	__webpack_require__(303);
-	__webpack_require__(313);
-	__webpack_require__(306);
-	__webpack_require__(314);
-	__webpack_require__(318);
-	__webpack_require__(319);
-	__webpack_require__(317);
-	__webpack_require__(312);
-	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
-	// import 'core-js/es6/promise';
-	__webpack_require__(320);
-	__webpack_require__(736);
-	__webpack_require__(735);
-=======
-	__webpack_require__(457); // Internet Explorer 9 support
-=======
-	__webpack_require__(467); // Internet Explorer 9 support
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(469); // Internet Explorer 9 support
->>>>>>> adding storage policy list - angular 2
-=======
-	__webpack_require__(471); // Internet Explorer 9 support
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(470); // Internet Explorer 9 support
->>>>>>> network details to angular 2
-=======
-	__webpack_require__(471); // Internet Explorer 9 support
->>>>>>> added collapsible directive to angular 2
-=======
-	__webpack_require__(473); // Internet Explorer 9 support
->>>>>>> volumes details to angular 2
-=======
-	__webpack_require__(474); // Internet Explorer 9 support
->>>>>>> added ctvNamevalaue directive to angular 2
-	// import 'core-js/es6';
-	// Added parts of es6 which are necessary for your project or your browser support requirements.
-	__webpack_require__(327);
-	__webpack_require__(320);
-	__webpack_require__(316);
-	__webpack_require__(322);
-	__webpack_require__(321);
-	__webpack_require__(319);
-	__webpack_require__(318);
-	__webpack_require__(326);
-	__webpack_require__(315);
-	__webpack_require__(314);
-	__webpack_require__(324);
-	__webpack_require__(317);
-	__webpack_require__(325);
-	__webpack_require__(329);
-	__webpack_require__(330);
-	__webpack_require__(328);
-	__webpack_require__(323);
-	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
-	// import 'core-js/es6/promise';
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	__webpack_require__(314);
-	__webpack_require__(733);
-	__webpack_require__(732);
->>>>>>> Table directive to angular 2
-=======
-	__webpack_require__(324);
-	__webpack_require__(743);
-	__webpack_require__(742);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(326);
-	__webpack_require__(745);
-	__webpack_require__(744);
->>>>>>> adding storage policy list - angular 2
-=======
-	__webpack_require__(328);
-	__webpack_require__(746);
-	__webpack_require__(745);
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(327);
-	__webpack_require__(745);
-	__webpack_require__(744);
->>>>>>> network details to angular 2
-=======
-	__webpack_require__(328);
-	__webpack_require__(746);
-	__webpack_require__(745);
->>>>>>> added collapsible directive to angular 2
-=======
-	__webpack_require__(330);
-	__webpack_require__(748);
-	__webpack_require__(747);
->>>>>>> volumes details to angular 2
-=======
+	__webpack_require__(338);
 	__webpack_require__(331);
-	__webpack_require__(749);
-	__webpack_require__(748);
->>>>>>> added ctvNamevalaue directive to angular 2
+	__webpack_require__(327);
+	__webpack_require__(333);
+	__webpack_require__(332);
+	__webpack_require__(330);
+	__webpack_require__(329);
+	__webpack_require__(337);
+	__webpack_require__(326);
+	__webpack_require__(325);
+	__webpack_require__(335);
+	__webpack_require__(328);
+	__webpack_require__(336);
+	__webpack_require__(340);
+	__webpack_require__(341);
+	__webpack_require__(339);
+	__webpack_require__(334);
+	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
+	// import 'core-js/es6/promise';
+	__webpack_require__(342);
+	__webpack_require__(760);
+	__webpack_require__(759);
 	
 
 /***/ },
@@ -234,35 +136,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var global    = __webpack_require__(12)
-	  , core      = __webpack_require__(13)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , hide      = __webpack_require__(31)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , redefine  = __webpack_require__(28)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , ctx       = __webpack_require__(59)
-=======
-	  , ctx       = __webpack_require__(58)
->>>>>>> Table directive to angular 2
-=======
-=======
-	  , redefine  = __webpack_require__(29)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
->>>>>>> adding storage policy list - angular 2
-	  , ctx       = __webpack_require__(62)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , hide      = __webpack_require__(32)
-	  , redefine  = __webpack_require__(30)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
->>>>>>> volumes details to angular 2
-	  , ctx       = __webpack_require__(63)
->>>>>>> organizationlist to angular 2
-=======
-	  , ctx       = __webpack_require__(64)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , core      = __webpack_require__(14)
+	  , hide      = __webpack_require__(34)
+	  , redefine  = __webpack_require__(32)
+	  , ctx       = __webpack_require__(67)
 	  , PROTOTYPE = 'prototype';
 
 	var $export = function(type, name, source){
@@ -348,40 +225,19 @@
 	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 
 /***/ },
-/* 13 */
+/* 13 */,
+/* 14 */
 /***/ function(module, exports) {
 
 	var core = module.exports = {version: '2.4.0'};
 	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var store      = __webpack_require__(102)('wks')
-	  , uid        = __webpack_require__(63)
-=======
-	var store      = __webpack_require__(100)('wks')
-	  , uid        = __webpack_require__(62)
->>>>>>> Table directive to angular 2
-=======
-	var store      = __webpack_require__(107)('wks')
-=======
-	var store      = __webpack_require__(108)('wks')
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
->>>>>>> adding storage policy list - angular 2
-	  , uid        = __webpack_require__(66)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , uid        = __webpack_require__(67)
->>>>>>> organizationlist to angular 2
-=======
-	  , uid        = __webpack_require__(68)
->>>>>>> added ctvNamevalaue directive to angular 2
+	var store      = __webpack_require__(109)('wks')
+	  , uid        = __webpack_require__(71)
 	  , Symbol     = __webpack_require__(12).Symbol
 	  , USE_SYMBOL = typeof Symbol == 'function';
 
@@ -393,48 +249,17 @@
 	$exports.store = store;
 
 /***/ },
-/* 15 */,
 /* 16 */,
-/* 17 */
+/* 17 */,
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject       = __webpack_require__(8)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , IE8_DOM_DEFINE = __webpack_require__(211)
-	  , toPrimitive    = __webpack_require__(54)
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(208)
-	  , toPrimitive    = __webpack_require__(52)
->>>>>>> Table directive to angular 2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(216)
-	  , toPrimitive    = __webpack_require__(56)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(217)
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(218)
->>>>>>> organizationlist to angular 2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(219)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(221)
->>>>>>> volumes details to angular 2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(222)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , toPrimitive    = __webpack_require__(57)
->>>>>>> adding storage policy list - angular 2
+	  , IE8_DOM_DEFINE = __webpack_require__(228)
+	  , toPrimitive    = __webpack_require__(61)
 	  , dP             = Object.defineProperty;
 
-	exports.f = __webpack_require__(20) ? Object.defineProperty : function defineProperty(O, P, Attributes){
+	exports.f = __webpack_require__(21) ? Object.defineProperty : function defineProperty(O, P, Attributes){
 	  anObject(O);
 	  P = toPrimitive(P, true);
 	  anObject(Attributes);
@@ -447,9 +272,9 @@
 	};
 
 /***/ },
-/* 18 */,
 /* 19 */,
-/* 20 */
+/* 20 */,
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Thank's IE8 for his funny defineProperty
@@ -458,31 +283,23 @@
 	});
 
 /***/ },
-/* 21 */,
 /* 22 */,
 /* 23 */,
 /* 24 */,
-/* 25 */
+/* 25 */,
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.15 ToLength
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	var toInteger = __webpack_require__(53)
-=======
-	var toInteger = __webpack_require__(55)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var toInteger = __webpack_require__(56)
->>>>>>> adding storage policy list - angular 2
+	var toInteger = __webpack_require__(60)
 	  , min       = Math.min;
 	module.exports = function(it){
 	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
 	};
 
 /***/ },
-/* 26 */,
-/* 27 */
+/* 27 */,
+/* 28 */
 /***/ function(module, exports) {
 
 	var hasOwnProperty = {}.hasOwnProperty;
@@ -491,41 +308,21 @@
 	};
 
 /***/ },
-/* 28 */,
 /* 29 */,
-/* 30 */
+/* 30 */,
+/* 31 */,
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var global    = __webpack_require__(12)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , hide      = __webpack_require__(31)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , has       = __webpack_require__(26)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , SRC       = __webpack_require__(63)('src')
-=======
-	  , SRC       = __webpack_require__(62)('src')
->>>>>>> Table directive to angular 2
-=======
-	  , SRC       = __webpack_require__(66)('src')
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , hide      = __webpack_require__(32)
->>>>>>> volumes details to angular 2
-	  , has       = __webpack_require__(27)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	  , SRC       = __webpack_require__(67)('src')
->>>>>>> organizationlist to angular 2
-=======
-	  , SRC       = __webpack_require__(68)('src')
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , hide      = __webpack_require__(34)
+	  , has       = __webpack_require__(28)
+	  , SRC       = __webpack_require__(71)('src')
 	  , TO_STRING = 'toString'
 	  , $toString = Function[TO_STRING]
 	  , TPL       = ('' + $toString).split(TO_STRING);
 
-	__webpack_require__(13).inspectSource = function(it){
+	__webpack_require__(14).inspectSource = function(it){
 	  return $toString.call(it);
 	};
 
@@ -551,24 +348,12 @@
 	});
 
 /***/ },
-/* 31 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
 	  , fails   = __webpack_require__(10)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , defined = __webpack_require__(43)
-=======
-	  , defined = __webpack_require__(44)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , defined = __webpack_require__(46)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , defined = __webpack_require__(47)
->>>>>>> organizationlist to angular 2
+	  , defined = __webpack_require__(48)
 	  , quot    = /"/g;
 	// B.2.3.2.1 CreateHTML(string, tag, attribute, value)
 	var createHTML = function(string, tag, attribute, value) {
@@ -587,28 +372,12 @@
 	};
 
 /***/ },
-/* 32 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP         = __webpack_require__(17)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , createDesc = __webpack_require__(52);
-=======
-	  , createDesc = __webpack_require__(54);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , createDesc = __webpack_require__(55);
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> adding storage policy list - angular 2
-	module.exports = __webpack_require__(20) ? function(object, key, value){
-=======
-	module.exports = __webpack_require__(19) ? function(object, key, value){
->>>>>>> network details to angular 2
-=======
-	module.exports = __webpack_require__(20) ? function(object, key, value){
->>>>>>> volumes details to angular 2
+	var dP         = __webpack_require__(18)
+	  , createDesc = __webpack_require__(59);
+	module.exports = __webpack_require__(21) ? function(object, key, value){
 	  return dP.f(object, key, createDesc(1, value));
 	} : function(object, key, value){
 	  object[key] = value;
@@ -616,31 +385,18 @@
 	};
 
 /***/ },
-/* 33 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	var defined = __webpack_require__(43);
-=======
-	var defined = __webpack_require__(44);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var defined = __webpack_require__(46);
->>>>>>> adding storage policy list - angular 2
-=======
-	var defined = __webpack_require__(47);
->>>>>>> organizationlist to angular 2
+	var defined = __webpack_require__(48);
 	module.exports = function(it){
 	  return Object(defined(it));
 	};
 
 /***/ },
-/* 34 */,
-/* 35 */,
-/* 36 */
+/* 36 */,
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var fails = __webpack_require__(10);
@@ -652,61 +408,19 @@
 	};
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var IObject = __webpack_require__(82)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , defined = __webpack_require__(43);
-=======
-	var IObject = __webpack_require__(77)
-	  , defined = __webpack_require__(42);
->>>>>>> Table directive to angular 2
-=======
-	var IObject = __webpack_require__(82)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , defined = __webpack_require__(44);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , defined = __webpack_require__(46);
->>>>>>> adding storage policy list - angular 2
-=======
-=======
-	var IObject = __webpack_require__(84)
->>>>>>> network details to angular 2
-=======
-	var IObject = __webpack_require__(85)
->>>>>>> volumes details to angular 2
-	  , defined = __webpack_require__(47);
->>>>>>> organizationlist to angular 2
+	var IObject = __webpack_require__(86)
+	  , defined = __webpack_require__(48);
 	module.exports = function(it){
 	  return IObject(defined(it));
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 34 */,
-=======
->>>>>>> converting volumelist, servicelist ctrl to ang2
-/* 35 */,
-=======
->>>>>>> organizationlist to angular 2
-/* 36 */,
-=======
->>>>>>> network details to angular 2
-/* 37 */,
-=======
->>>>>>> volumes details to angular 2
-/* 38 */,
-/* 39 */
+/* 39 */,
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 0 -> Array#forEach
@@ -716,63 +430,11 @@
 	// 4 -> Array#every
 	// 5 -> Array#find
 	// 6 -> Array#findIndex
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var ctx      = __webpack_require__(59)
-	  , IObject  = __webpack_require__(82)
-	  , toObject = __webpack_require__(31)
-	  , toLength = __webpack_require__(24)
-	  , asc      = __webpack_require__(323);
-=======
-	var ctx      = __webpack_require__(58)
-	  , IObject  = __webpack_require__(77)
-	  , toObject = __webpack_require__(31)
-	  , toLength = __webpack_require__(24)
-	  , asc      = __webpack_require__(317);
->>>>>>> Table directive to angular 2
-=======
-	var ctx      = __webpack_require__(62)
-	  , IObject  = __webpack_require__(82)
-	  , toObject = __webpack_require__(32)
-	  , toLength = __webpack_require__(24)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , asc      = __webpack_require__(327);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , asc      = __webpack_require__(329);
->>>>>>> adding storage policy list - angular 2
-=======
-	var ctx      = __webpack_require__(63)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , IObject  = __webpack_require__(84)
-	  , toObject = __webpack_require__(32)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , toLength = __webpack_require__(24)
-	  , asc      = __webpack_require__(331);
->>>>>>> organizationlist to angular 2
-=======
-	  , toLength = __webpack_require__(25)
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-	  , asc      = __webpack_require__(330);
->>>>>>> network details to angular 2
-=======
-	  , asc      = __webpack_require__(331);
->>>>>>> added collapsible directive to angular 2
-=======
-	  , IObject  = __webpack_require__(85)
-	  , toObject = __webpack_require__(33)
-	  , toLength = __webpack_require__(25)
-	  , asc      = __webpack_require__(333);
->>>>>>> volumes details to angular 2
-=======
-	var ctx      = __webpack_require__(64)
-	  , IObject  = __webpack_require__(85)
-	  , toObject = __webpack_require__(33)
-	  , toLength = __webpack_require__(25)
-	  , asc      = __webpack_require__(334);
->>>>>>> added ctvNamevalaue directive to angular 2
+	var ctx      = __webpack_require__(67)
+	  , IObject  = __webpack_require__(86)
+	  , toObject = __webpack_require__(35)
+	  , toLength = __webpack_require__(26)
+	  , asc      = __webpack_require__(345);
 	module.exports = function(TYPE, $create){
 	  var IS_MAP        = TYPE == 1
 	    , IS_FILTER     = TYPE == 2
@@ -807,33 +469,13 @@
 	};
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	var has         = __webpack_require__(26)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , toObject    = __webpack_require__(31)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , IE_PROTO    = __webpack_require__(149)('IE_PROTO')
-=======
-	  , IE_PROTO    = __webpack_require__(148)('IE_PROTO')
->>>>>>> Table directive to angular 2
-=======
-	  , toObject    = __webpack_require__(32)
-	  , IE_PROTO    = __webpack_require__(152)('IE_PROTO')
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var has         = __webpack_require__(27)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , toObject    = __webpack_require__(32)
-	  , IE_PROTO    = __webpack_require__(153)('IE_PROTO')
->>>>>>> organizationlist to angular 2
-=======
-	  , toObject    = __webpack_require__(33)
-	  , IE_PROTO    = __webpack_require__(154)('IE_PROTO')
->>>>>>> volumes details to angular 2
+	var has         = __webpack_require__(28)
+	  , toObject    = __webpack_require__(35)
+	  , IE_PROTO    = __webpack_require__(157)('IE_PROTO')
 	  , ObjectProto = Object.prototype;
 
 	module.exports = Object.getPrototypeOf || function(O){
@@ -845,12 +487,12 @@
 	};
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// most Object methods by ES6 should accept primitives
 	var $export = __webpack_require__(2)
-	  , core    = __webpack_require__(13)
+	  , core    = __webpack_require__(14)
 	  , fails   = __webpack_require__(10);
 	module.exports = function(KEY, exec){
 	  var fn  = (core.Object || {})[KEY] || Object[KEY]
@@ -860,24 +502,12 @@
 	};
 
 /***/ },
-/* 42 */,
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 43 */
-=======
 /* 43 */,
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 44 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
 /* 44 */,
 /* 45 */,
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-/* 46 */
->>>>>>> adding storage policy list - angular 2
-=======
 /* 46 */,
-/* 47 */
->>>>>>> organizationlist to angular 2
+/* 47 */,
+/* 48 */
 /***/ function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -887,59 +517,13 @@
 	};
 
 /***/ },
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 44 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var Map     = __webpack_require__(228)
+	var Map     = __webpack_require__(245)
 	  , $export = __webpack_require__(2)
-	  , shared  = __webpack_require__(102)('metadata')
-	  , store   = shared.store || (shared.store = new (__webpack_require__(236)));
-=======
-	var Map     = __webpack_require__(225)
-	  , $export = __webpack_require__(2)
-	  , shared  = __webpack_require__(100)('metadata')
-	  , store   = shared.store || (shared.store = new (__webpack_require__(233)));
->>>>>>> Table directive to angular 2
-=======
-/* 45 */
-=======
-/* 47 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 48 */
->>>>>>> organizationlist to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var Map     = __webpack_require__(239)
-	  , $export = __webpack_require__(2)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , shared  = __webpack_require__(107)('metadata')
-	  , store   = shared.store || (shared.store = new (__webpack_require__(241)));
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , shared  = __webpack_require__(108)('metadata')
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , store   = shared.store || (shared.store = new (__webpack_require__(242)));
->>>>>>> adding storage policy list - angular 2
-=======
-	  , store   = shared.store || (shared.store = new (__webpack_require__(243)));
->>>>>>> organizationlist to angular 2
-=======
-	  , store   = shared.store || (shared.store = new (__webpack_require__(244)));
->>>>>>> added collapsible directive to angular 2
-=======
-	  , store   = shared.store || (shared.store = new (__webpack_require__(246)));
->>>>>>> volumes details to angular 2
-=======
-	  , store   = shared.store || (shared.store = new (__webpack_require__(247)));
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , shared  = __webpack_require__(109)('metadata')
+	  , store   = shared.store || (shared.store = new (__webpack_require__(253)));
 
 	var getOrCreateMetadataMap = function(target, targetKey, create){
 	  var targetMetadata = store.get(target);
@@ -989,68 +573,18 @@
 	};
 
 /***/ },
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 45 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var pIE            = __webpack_require__(101)
-	  , createDesc     = __webpack_require__(52)
-=======
-	var pIE            = __webpack_require__(99)
-	  , createDesc     = __webpack_require__(50)
->>>>>>> Table directive to angular 2
-	  , toIObject      = __webpack_require__(33)
-	  , toPrimitive    = __webpack_require__(54)
-	  , has            = __webpack_require__(26)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , IE8_DOM_DEFINE = __webpack_require__(211)
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(208)
->>>>>>> Table directive to angular 2
-=======
-/* 46 */
-=======
-/* 48 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 49 */
->>>>>>> organizationlist to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var pIE            = __webpack_require__(107)
-	  , createDesc     = __webpack_require__(55)
-	  , toIObject      = __webpack_require__(37)
-	  , toPrimitive    = __webpack_require__(57)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , has            = __webpack_require__(26)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , IE8_DOM_DEFINE = __webpack_require__(216)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(217)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , has            = __webpack_require__(27)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-	  , IE8_DOM_DEFINE = __webpack_require__(218)
->>>>>>> organizationlist to angular 2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(219)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(221)
->>>>>>> volumes details to angular 2
-=======
-	  , IE8_DOM_DEFINE = __webpack_require__(222)
->>>>>>> added ctvNamevalaue directive to angular 2
+	var pIE            = __webpack_require__(108)
+	  , createDesc     = __webpack_require__(59)
+	  , toIObject      = __webpack_require__(38)
+	  , toPrimitive    = __webpack_require__(61)
+	  , has            = __webpack_require__(28)
+	  , IE8_DOM_DEFINE = __webpack_require__(228)
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
-	exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
+	exports.f = __webpack_require__(21) ? gOPD : function getOwnPropertyDescriptor(O, P){
 	  O = toIObject(O);
 	  P = toPrimitive(P, true);
 	  if(IE8_DOM_DEFINE)try {
@@ -1060,159 +594,49 @@
 	};
 
 /***/ },
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 46 */
-=======
-/* 47 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 49 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 50 */
->>>>>>> organizationlist to angular 2
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	if(__webpack_require__(20)){
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  var LIBRARY             = __webpack_require__(83)
+	if(__webpack_require__(21)){
+	  var LIBRARY             = __webpack_require__(87)
 	    , global              = __webpack_require__(12)
 	    , fails               = __webpack_require__(10)
 	    , $export             = __webpack_require__(2)
-	    , $typed              = __webpack_require__(104)
-	    , $buffer             = __webpack_require__(152)
-	    , ctx                 = __webpack_require__(59)
-	    , anInstance          = __webpack_require__(81)
-	    , propertyDesc        = __webpack_require__(52)
-	    , hide                = __webpack_require__(30)
-	    , redefineAll         = __webpack_require__(84)
-	    , toInteger           = __webpack_require__(53)
-	    , toLength            = __webpack_require__(24)
-	    , toIndex             = __webpack_require__(62)
-	    , toPrimitive         = __webpack_require__(54)
-	    , has                 = __webpack_require__(26)
-	    , same                = __webpack_require__(223)
-	    , classof             = __webpack_require__(136)
+	    , $typed              = __webpack_require__(111)
+	    , $buffer             = __webpack_require__(160)
+	    , ctx                 = __webpack_require__(67)
+	    , anInstance          = __webpack_require__(85)
+	    , propertyDesc        = __webpack_require__(59)
+	    , hide                = __webpack_require__(34)
+	    , redefineAll         = __webpack_require__(88)
+	    , toInteger           = __webpack_require__(60)
+	    , toLength            = __webpack_require__(26)
+	    , toIndex             = __webpack_require__(70)
+	    , toPrimitive         = __webpack_require__(61)
+	    , has                 = __webpack_require__(28)
+	    , same                = __webpack_require__(240)
+	    , classof             = __webpack_require__(144)
 	    , isObject            = __webpack_require__(11)
-	    , toObject            = __webpack_require__(31)
-	    , isArrayIter         = __webpack_require__(141)
-	    , create              = __webpack_require__(60)
-	    , getPrototypeOf      = __webpack_require__(37)
-	    , gOPN                = __webpack_require__(61).f
-	    , getIterFn           = __webpack_require__(153)
-	    , uid                 = __webpack_require__(63)
-	    , wks                 = __webpack_require__(14)
-	    , createArrayMethod   = __webpack_require__(36)
-	    , createArrayIncludes = __webpack_require__(135)
-	    , speciesConstructor  = __webpack_require__(224)
-	    , ArrayIterators      = __webpack_require__(105)
-	    , Iterators           = __webpack_require__(72)
-	    , $iterDetect         = __webpack_require__(145)
-	    , setSpecies          = __webpack_require__(85)
-	    , arrayFill           = __webpack_require__(134)
-	    , arrayCopyWithin     = __webpack_require__(203)
-=======
-	  var LIBRARY             = __webpack_require__(78)
-=======
-	  var LIBRARY             = __webpack_require__(83)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	if(__webpack_require__(19)){
-	  var LIBRARY             = __webpack_require__(85)
->>>>>>> network details to angular 2
-=======
-	if(__webpack_require__(20)){
-	  var LIBRARY             = __webpack_require__(86)
->>>>>>> volumes details to angular 2
-	    , global              = __webpack_require__(12)
-	    , fails               = __webpack_require__(10)
-	    , $export             = __webpack_require__(2)
-	    , $typed              = __webpack_require__(110)
-	    , $buffer             = __webpack_require__(157)
-	    , ctx                 = __webpack_require__(64)
-	    , anInstance          = __webpack_require__(84)
-	    , propertyDesc        = __webpack_require__(55)
-	    , hide                = __webpack_require__(32)
-	    , redefineAll         = __webpack_require__(87)
-	    , toInteger           = __webpack_require__(56)
-	    , toLength            = __webpack_require__(25)
-	    , toIndex             = __webpack_require__(67)
-	    , toPrimitive         = __webpack_require__(57)
-	    , has                 = __webpack_require__(27)
-	    , same                = __webpack_require__(234)
-	    , classof             = __webpack_require__(141)
-	    , isObject            = __webpack_require__(11)
-	    , toObject            = __webpack_require__(33)
-	    , isArrayIter         = __webpack_require__(146)
-	    , create              = __webpack_require__(65)
-	    , getPrototypeOf      = __webpack_require__(40)
-	    , gOPN                = __webpack_require__(66).f
-	    , getIterFn           = __webpack_require__(158)
-	    , uid                 = __webpack_require__(68)
-	    , wks                 = __webpack_require__(14)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	    , createArrayMethod   = __webpack_require__(35)
-	    , createArrayIncludes = __webpack_require__(134)
-	    , speciesConstructor  = __webpack_require__(221)
-	    , ArrayIterators      = __webpack_require__(103)
-	    , Iterators           = __webpack_require__(68)
-	    , $iterDetect         = __webpack_require__(144)
-	    , setSpecies          = __webpack_require__(80)
-	    , arrayFill           = __webpack_require__(133)
-	    , arrayCopyWithin     = __webpack_require__(200)
->>>>>>> Table directive to angular 2
-	    , $DP                 = __webpack_require__(17)
-	    , $GOPD               = __webpack_require__(45)
-=======
-	    , createArrayMethod   = __webpack_require__(36)
-=======
-	    , createArrayMethod   = __webpack_require__(37)
->>>>>>> adding storage policy list - angular 2
-	    , createArrayIncludes = __webpack_require__(138)
-	    , speciesConstructor  = __webpack_require__(230)
-=======
-	    , createArrayMethod   = __webpack_require__(39)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	    , createArrayIncludes = __webpack_require__(139)
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-	    , speciesConstructor  = __webpack_require__(231)
->>>>>>> organizationlist to angular 2
-=======
-	    , speciesConstructor  = __webpack_require__(232)
->>>>>>> added collapsible directive to angular 2
-=======
-	    , createArrayIncludes = __webpack_require__(140)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	    , speciesConstructor  = __webpack_require__(234)
->>>>>>> volumes details to angular 2
-=======
-	    , speciesConstructor  = __webpack_require__(235)
->>>>>>> added ctvNamevalaue directive to angular 2
-	    , ArrayIterators      = __webpack_require__(111)
-	    , Iterators           = __webpack_require__(75)
-	    , $iterDetect         = __webpack_require__(150)
-	    , setSpecies          = __webpack_require__(88)
-	    , arrayFill           = __webpack_require__(139)
-	    , arrayCopyWithin     = __webpack_require__(214)
-	    , $DP                 = __webpack_require__(17)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	    , $GOPD               = __webpack_require__(46)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	    , $GOPD               = __webpack_require__(48)
->>>>>>> adding storage policy list - angular 2
-=======
-	    , $GOPD               = __webpack_require__(49)
->>>>>>> organizationlist to angular 2
+	    , toObject            = __webpack_require__(35)
+	    , isArrayIter         = __webpack_require__(149)
+	    , create              = __webpack_require__(68)
+	    , getPrototypeOf      = __webpack_require__(41)
+	    , gOPN                = __webpack_require__(69).f
+	    , getIterFn           = __webpack_require__(161)
+	    , uid                 = __webpack_require__(71)
+	    , wks                 = __webpack_require__(15)
+	    , createArrayMethod   = __webpack_require__(40)
+	    , createArrayIncludes = __webpack_require__(143)
+	    , speciesConstructor  = __webpack_require__(241)
+	    , ArrayIterators      = __webpack_require__(112)
+	    , Iterators           = __webpack_require__(78)
+	    , $iterDetect         = __webpack_require__(153)
+	    , setSpecies          = __webpack_require__(89)
+	    , arrayFill           = __webpack_require__(142)
+	    , arrayCopyWithin     = __webpack_require__(220)
+	    , $DP                 = __webpack_require__(18)
+	    , $GOPD               = __webpack_require__(50)
 	    , dP                  = $DP.f
 	    , gOPD                = $GOPD.f
 	    , RangeError          = global.RangeError
@@ -1654,28 +1078,12 @@
 	} else module.exports = function(){ /* empty */ };
 
 /***/ },
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */
-=======
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 50 */,
-=======
->>>>>>> organizationlist to angular 2
-/* 51 */,
 /* 52 */,
-/* 53 */
->>>>>>> adding storage policy list - angular 2
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -1684,36 +1092,13 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 51 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var META     = __webpack_require__(63)('meta')
-=======
-	var META     = __webpack_require__(62)('meta')
->>>>>>> Table directive to angular 2
-=======
-/* 53 */
-=======
-/* 54 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	var META     = __webpack_require__(66)('meta')
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var META     = __webpack_require__(67)('meta')
->>>>>>> organizationlist to angular 2
-=======
-	var META     = __webpack_require__(68)('meta')
->>>>>>> added ctvNamevalaue directive to angular 2
+	var META     = __webpack_require__(71)('meta')
 	  , isObject = __webpack_require__(11)
-	  , has      = __webpack_require__(27)
-	  , setDesc  = __webpack_require__(17).f
+	  , has      = __webpack_require__(28)
+	  , setDesc  = __webpack_require__(18).f
 	  , id       = 0;
 	var isExtensible = Object.isExtensible || function(){
 	  return true;
@@ -1765,15 +1150,7 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 52 */
-=======
-/* 54 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 55 */
->>>>>>> adding storage policy list - angular 2
+/* 59 */
 /***/ function(module, exports) {
 
 	module.exports = function(bitmap, value){
@@ -1786,15 +1163,7 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 53 */
-=======
-/* 55 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 56 */
->>>>>>> adding storage policy list - angular 2
+/* 60 */
 /***/ function(module, exports) {
 
 	// 7.1.4 ToInteger
@@ -1805,15 +1174,7 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 54 */
-=======
-/* 56 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 57 */
->>>>>>> adding storage policy list - angular 2
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.1 ToPrimitive(input [, PreferredType])
@@ -1830,35 +1191,11 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 55 */,
-/* 56 */,
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 57 */,
-/* 58 */
-=======
-/* 57 */
->>>>>>> Table directive to angular 2
-=======
-/* 57 */,
-=======
->>>>>>> adding storage policy list - angular 2
-/* 58 */,
-/* 59 */,
-/* 60 */,
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-/* 61 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 61 */,
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-/* 62 */
->>>>>>> organizationlist to angular 2
-=======
 /* 62 */,
-/* 63 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -1868,35 +1205,11 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 59 */
-=======
-/* 58 */
->>>>>>> Table directive to angular 2
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
-	var aFunction = __webpack_require__(50);
-=======
-/* 62 */
-=======
-/* 63 */
->>>>>>> organizationlist to angular 2
-=======
-/* 64 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// optional / simple context binding
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	var aFunction = __webpack_require__(52);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var aFunction = __webpack_require__(53);
->>>>>>> adding storage policy list - angular 2
+	var aFunction = __webpack_require__(57);
 	module.exports = function(fn, that, length){
 	  aFunction(fn);
 	  if(that === undefined)return fn;
@@ -1917,135 +1230,27 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 60 */
-=======
-/* 59 */
->>>>>>> Table directive to angular 2
-=======
-/* 63 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 64 */
->>>>>>> organizationlist to angular 2
-=======
-/* 65 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	var anObject    = __webpack_require__(8)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , dPs         = __webpack_require__(218)
-	  , enumBugKeys = __webpack_require__(137)
-	  , IE_PROTO    = __webpack_require__(149)('IE_PROTO')
-=======
-	  , dPs         = __webpack_require__(215)
-	  , enumBugKeys = __webpack_require__(136)
-	  , IE_PROTO    = __webpack_require__(148)('IE_PROTO')
->>>>>>> Table directive to angular 2
-=======
-	  , dPs         = __webpack_require__(223)
-=======
-	  , dPs         = __webpack_require__(224)
->>>>>>> adding storage policy list - angular 2
-	  , enumBugKeys = __webpack_require__(140)
-	  , IE_PROTO    = __webpack_require__(152)('IE_PROTO')
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , dPs         = __webpack_require__(225)
-=======
-	  , dPs         = __webpack_require__(226)
->>>>>>> added collapsible directive to angular 2
-	  , enumBugKeys = __webpack_require__(141)
-	  , IE_PROTO    = __webpack_require__(153)('IE_PROTO')
->>>>>>> organizationlist to angular 2
-=======
-	  , dPs         = __webpack_require__(228)
-=======
-	  , dPs         = __webpack_require__(229)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , enumBugKeys = __webpack_require__(142)
-	  , IE_PROTO    = __webpack_require__(154)('IE_PROTO')
->>>>>>> volumes details to angular 2
+	  , dPs         = __webpack_require__(235)
+	  , enumBugKeys = __webpack_require__(145)
+	  , IE_PROTO    = __webpack_require__(157)('IE_PROTO')
 	  , Empty       = function(){ /* empty */ }
 	  , PROTOTYPE   = 'prototype';
 
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  var iframe = __webpack_require__(209)('iframe')
-=======
-	  var iframe = __webpack_require__(206)('iframe')
->>>>>>> Table directive to angular 2
-=======
-	  var iframe = __webpack_require__(214)('iframe')
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  var iframe = __webpack_require__(215)('iframe')
->>>>>>> adding storage policy list - angular 2
-=======
-	  var iframe = __webpack_require__(216)('iframe')
->>>>>>> organizationlist to angular 2
-=======
-	  var iframe = __webpack_require__(217)('iframe')
->>>>>>> added collapsible directive to angular 2
-=======
-	  var iframe = __webpack_require__(219)('iframe')
->>>>>>> volumes details to angular 2
-=======
-	  var iframe = __webpack_require__(220)('iframe')
->>>>>>> added ctvNamevalaue directive to angular 2
+	  var iframe = __webpack_require__(226)('iframe')
 	    , i      = enumBugKeys.length
 	    , lt     = '<'
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  __webpack_require__(210).appendChild(iframe);
-=======
-	  __webpack_require__(207).appendChild(iframe);
->>>>>>> Table directive to angular 2
-=======
-	  __webpack_require__(215).appendChild(iframe);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  __webpack_require__(216).appendChild(iframe);
->>>>>>> adding storage policy list - angular 2
-=======
-	  __webpack_require__(217).appendChild(iframe);
->>>>>>> organizationlist to angular 2
-=======
-	  __webpack_require__(218).appendChild(iframe);
->>>>>>> added collapsible directive to angular 2
-=======
-	  __webpack_require__(220).appendChild(iframe);
->>>>>>> volumes details to angular 2
-=======
-	  __webpack_require__(221).appendChild(iframe);
->>>>>>> added ctvNamevalaue directive to angular 2
+	  __webpack_require__(227).appendChild(iframe);
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -2072,85 +1277,22 @@
 
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 61 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-	var $keys      = __webpack_require__(220)
-	  , hiddenKeys = __webpack_require__(137).concat('length', 'prototype');
-=======
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-	var $keys      = __webpack_require__(217)
-	  , hiddenKeys = __webpack_require__(136).concat('length', 'prototype');
->>>>>>> Table directive to angular 2
-=======
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-	var $keys      = __webpack_require__(226)
-	  , hiddenKeys = __webpack_require__(140).concat('length', 'prototype');
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	var $keys      = __webpack_require__(228)
-	  , hiddenKeys = __webpack_require__(141).concat('length', 'prototype');
->>>>>>> organizationlist to angular 2
-=======
-	var $keys      = __webpack_require__(230)
-=======
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-	var $keys      = __webpack_require__(231)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , hiddenKeys = __webpack_require__(142).concat('length', 'prototype');
->>>>>>> volumes details to angular 2
+	var $keys      = __webpack_require__(237)
+	  , hiddenKeys = __webpack_require__(145).concat('length', 'prototype');
 
 	exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
 	  return $keys(O, hiddenKeys);
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 62 */
-=======
-/* 61 */
->>>>>>> Table directive to angular 2
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toInteger = __webpack_require__(53)
-=======
-/* 65 */
-=======
-/* 66 */
->>>>>>> organizationlist to angular 2
-=======
-/* 67 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	var toInteger = __webpack_require__(55)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var toInteger = __webpack_require__(56)
->>>>>>> adding storage policy list - angular 2
+	var toInteger = __webpack_require__(60)
 	  , max       = Math.max
 	  , min       = Math.min;
 	module.exports = function(index, length){
@@ -2159,23 +1301,7 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 63 */
-=======
-/* 62 */
->>>>>>> Table directive to angular 2
-=======
-/* 66 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 67 */
->>>>>>> organizationlist to angular 2
-=======
-/* 68 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 71 */
 /***/ function(module, exports) {
 
 	var id = 0
@@ -2185,234 +1311,61 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 64 */
-=======
-/* 63 */
->>>>>>> Table directive to angular 2
-=======
-/* 67 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 68 */
->>>>>>> organizationlist to angular 2
-=======
-/* 69 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 19.1.3.6 Object.prototype.toString()
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var classof = __webpack_require__(136)
-=======
-	var classof = __webpack_require__(135)
->>>>>>> Table directive to angular 2
-=======
-	var classof = __webpack_require__(139)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var classof = __webpack_require__(140)
->>>>>>> organizationlist to angular 2
-=======
-	var classof = __webpack_require__(141)
->>>>>>> volumes details to angular 2
+	var classof = __webpack_require__(144)
 	  , test    = {};
-	test[__webpack_require__(14)('toStringTag')] = 'z';
+	test[__webpack_require__(15)('toStringTag')] = 'z';
 	if(test + '' != '[object z]'){
-	  __webpack_require__(30)(Object.prototype, 'toString', function toString(){
+	  __webpack_require__(32)(Object.prototype, 'toString', function toString(){
 	    return '[object ' + classof(this) + ']';
 	  }, true);
 	}
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */
-=======
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */
->>>>>>> Table directive to angular 2
-=======
-/* 68 */,
-=======
->>>>>>> organizationlist to angular 2
-/* 69 */,
-=======
->>>>>>> added ctvNamevalaue directive to angular 2
-/* 70 */,
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 71 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 71 */,
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 72 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 72 */,
 /* 73 */,
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-/* 74 */
->>>>>>> network details to angular 2
-=======
 /* 74 */,
-/* 75 */
->>>>>>> volumes details to angular 2
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */
 /***/ function(module, exports) {
 
 	module.exports = {};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 73 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-	var $keys       = __webpack_require__(220)
-	  , enumBugKeys = __webpack_require__(137);
-=======
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-	var $keys       = __webpack_require__(217)
-	  , enumBugKeys = __webpack_require__(136);
->>>>>>> Table directive to angular 2
-=======
-/* 72 */
-=======
-/* 73 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 75 */
->>>>>>> network details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	var $keys       = __webpack_require__(226)
-	  , enumBugKeys = __webpack_require__(140);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var $keys       = __webpack_require__(227)
-=======
-	var $keys       = __webpack_require__(228)
->>>>>>> added collapsible directive to angular 2
-	  , enumBugKeys = __webpack_require__(141);
->>>>>>> organizationlist to angular 2
-=======
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-	var $keys       = __webpack_require__(231)
-	  , enumBugKeys = __webpack_require__(142);
->>>>>>> volumes details to angular 2
+	var $keys       = __webpack_require__(237)
+	  , enumBugKeys = __webpack_require__(145);
 
 	module.exports = Object.keys || function keys(O){
 	  return $keys(O, enumBugKeys);
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */
-=======
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */
->>>>>>> Table directive to angular 2
-=======
-/* 73 */,
-=======
->>>>>>> adding storage policy list - angular 2
-/* 74 */,
-/* 75 */,
-=======
->>>>>>> network details to angular 2
-/* 76 */,
-=======
->>>>>>> volumes details to angular 2
-/* 77 */,
-/* 78 */,
-/* 79 */,
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 80 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
 /* 80 */,
 /* 81 */,
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-/* 82 */
->>>>>>> network details to angular 2
-=======
 /* 82 */,
-/* 83 */
->>>>>>> volumes details to angular 2
+/* 83 */,
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.31 Array.prototype[@@unscopables]
-	var UNSCOPABLES = __webpack_require__(14)('unscopables')
+	var UNSCOPABLES = __webpack_require__(15)('unscopables')
 	  , ArrayProto  = Array.prototype;
-	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(32)(ArrayProto, UNSCOPABLES, {});
+	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(34)(ArrayProto, UNSCOPABLES, {});
 	module.exports = function(key){
 	  ArrayProto[UNSCOPABLES][key] = true;
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 81 */
-=======
-/* 76 */
->>>>>>> Table directive to angular 2
-=======
-/* 81 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 83 */
->>>>>>> network details to angular 2
-=======
-/* 84 */
->>>>>>> volumes details to angular 2
+/* 85 */
 /***/ function(module, exports) {
 
 	module.exports = function(it, Constructor, name, forbiddenField){
@@ -2422,120 +1375,40 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 82 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-	var cof = __webpack_require__(58);
-=======
-/* 77 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-	var cof = __webpack_require__(57);
->>>>>>> Table directive to angular 2
-=======
-/* 82 */
-=======
-/* 84 */
->>>>>>> network details to angular 2
-=======
-/* 85 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	var cof = __webpack_require__(61);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var cof = __webpack_require__(62);
->>>>>>> organizationlist to angular 2
-=======
-	var cof = __webpack_require__(63);
->>>>>>> added ctvNamevalaue directive to angular 2
+	var cof = __webpack_require__(66);
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 83 */
-=======
-/* 78 */
->>>>>>> Table directive to angular 2
-=======
-/* 83 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 85 */
->>>>>>> network details to angular 2
-=======
-/* 86 */
->>>>>>> volumes details to angular 2
+/* 87 */
 /***/ function(module, exports) {
 
 	module.exports = false;
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 84 */
-=======
-/* 79 */
->>>>>>> Table directive to angular 2
-=======
-/* 84 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 86 */
->>>>>>> network details to angular 2
-=======
-/* 87 */
->>>>>>> volumes details to angular 2
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var redefine = __webpack_require__(30);
+	var redefine = __webpack_require__(32);
 	module.exports = function(target, src, safe){
 	  for(var key in src)redefine(target, key, src[key], safe);
 	  return target;
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 85 */
-=======
-/* 80 */
->>>>>>> Table directive to angular 2
-=======
-/* 85 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 87 */
->>>>>>> network details to angular 2
-=======
-/* 88 */
->>>>>>> volumes details to angular 2
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var global      = __webpack_require__(12)
-	  , dP          = __webpack_require__(17)
-	  , DESCRIPTORS = __webpack_require__(20)
-	  , SPECIES     = __webpack_require__(14)('species');
+	  , dP          = __webpack_require__(18)
+	  , DESCRIPTORS = __webpack_require__(21)
+	  , SPECIES     = __webpack_require__(15)('species');
 
 	module.exports = function(KEY){
 	  var C = global[KEY];
@@ -2546,68 +1419,22 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 86 */
-=======
-/* 81 */
->>>>>>> Table directive to angular 2
-=======
-/* 86 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 88 */
->>>>>>> network details to angular 2
-=======
-/* 89 */
->>>>>>> volumes details to angular 2
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var def = __webpack_require__(17).f
-	  , has = __webpack_require__(27)
-	  , TAG = __webpack_require__(14)('toStringTag');
+	var def = __webpack_require__(18).f
+	  , has = __webpack_require__(28)
+	  , TAG = __webpack_require__(15)('toStringTag');
 
 	module.exports = function(it, tag, stat){
 	  if(it && !has(it = stat ? it : it.prototype, TAG))def(it, TAG, {configurable: true, value: tag});
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-=======
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
->>>>>>> Table directive to angular 2
-=======
->>>>>>> converting volumelist, servicelist ctrl to ang2
-/* 87 */,
-/* 88 */,
-=======
->>>>>>> network details to angular 2
-/* 89 */,
-=======
->>>>>>> volumes details to angular 2
-/* 90 */,
 /* 91 */,
 /* 92 */,
 /* 93 */,
 /* 94 */,
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 95 */,
-/* 96 */,
-/* 97 */
-=======
-/* 95 */
->>>>>>> Table directive to angular 2
-=======
 /* 95 */,
 /* 96 */,
 /* 97 */,
@@ -2615,79 +1442,24 @@
 /* 99 */,
 /* 100 */,
 /* 101 */,
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 102 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
 /* 102 */,
-/* 103 */
->>>>>>> adding storage policy list - angular 2
+/* 103 */,
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var global            = __webpack_require__(12)
 	  , $export           = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , redefine          = __webpack_require__(28)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , redefineAll       = __webpack_require__(84)
-	  , meta              = __webpack_require__(51)
-	  , forOf             = __webpack_require__(99)
-	  , anInstance        = __webpack_require__(81)
+	  , redefine          = __webpack_require__(32)
+	  , redefineAll       = __webpack_require__(88)
+	  , meta              = __webpack_require__(58)
+	  , forOf             = __webpack_require__(106)
+	  , anInstance        = __webpack_require__(85)
 	  , isObject          = __webpack_require__(11)
 	  , fails             = __webpack_require__(10)
-	  , $iterDetect       = __webpack_require__(145)
-	  , setToStringTag    = __webpack_require__(86)
-	  , inheritIfRequired = __webpack_require__(140);
-=======
-	  , redefineAll       = __webpack_require__(79)
-	  , meta              = __webpack_require__(49)
-	  , forOf             = __webpack_require__(97)
-	  , anInstance        = __webpack_require__(76)
-	  , isObject          = __webpack_require__(11)
-	  , fails             = __webpack_require__(10)
-	  , $iterDetect       = __webpack_require__(144)
-	  , setToStringTag    = __webpack_require__(81)
-	  , inheritIfRequired = __webpack_require__(139);
->>>>>>> Table directive to angular 2
-=======
-=======
-	  , redefine          = __webpack_require__(29)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> adding storage policy list - angular 2
-	  , redefineAll       = __webpack_require__(84)
-=======
-	  , redefineAll       = __webpack_require__(86)
->>>>>>> network details to angular 2
-=======
-	  , redefine          = __webpack_require__(30)
-	  , redefineAll       = __webpack_require__(87)
->>>>>>> volumes details to angular 2
-	  , meta              = __webpack_require__(54)
-	  , forOf             = __webpack_require__(105)
-	  , anInstance        = __webpack_require__(84)
-	  , isObject          = __webpack_require__(11)
-	  , fails             = __webpack_require__(10)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , $iterDetect       = __webpack_require__(149)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , setToStringTag    = __webpack_require__(86)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , inheritIfRequired = __webpack_require__(143);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , setToStringTag    = __webpack_require__(88)
->>>>>>> network details to angular 2
-	  , inheritIfRequired = __webpack_require__(144);
->>>>>>> organizationlist to angular 2
-=======
-	  , $iterDetect       = __webpack_require__(150)
-	  , setToStringTag    = __webpack_require__(89)
-	  , inheritIfRequired = __webpack_require__(145);
->>>>>>> volumes details to angular 2
+	  , $iterDetect       = __webpack_require__(153)
+	  , setToStringTag    = __webpack_require__(90)
+	  , inheritIfRequired = __webpack_require__(148);
 
 	module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK){
 	  var Base  = global[NAME]
@@ -2762,39 +1534,15 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 98 */
-=======
-/* 96 */
->>>>>>> Table directive to angular 2
-=======
-/* 103 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 104 */
->>>>>>> adding storage policy list - angular 2
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var hide     = __webpack_require__(32)
-	  , redefine = __webpack_require__(30)
+	var hide     = __webpack_require__(34)
+	  , redefine = __webpack_require__(32)
 	  , fails    = __webpack_require__(10)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , defined  = __webpack_require__(43)
-=======
-	  , defined  = __webpack_require__(44)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , defined  = __webpack_require__(46)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , defined  = __webpack_require__(47)
->>>>>>> organizationlist to angular 2
-	  , wks      = __webpack_require__(14);
+	  , defined  = __webpack_require__(48)
+	  , wks      = __webpack_require__(15);
 
 	module.exports = function(KEY, length, exec){
 	  var SYMBOL   = wks(KEY)
@@ -2819,51 +1567,15 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 99 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ctx         = __webpack_require__(59)
-	  , call        = __webpack_require__(213)
-	  , isArrayIter = __webpack_require__(141)
+	var ctx         = __webpack_require__(67)
+	  , call        = __webpack_require__(230)
+	  , isArrayIter = __webpack_require__(149)
 	  , anObject    = __webpack_require__(8)
-	  , toLength    = __webpack_require__(24)
-	  , getIterFn   = __webpack_require__(153)
-=======
-/* 97 */
-=======
-/* 104 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 105 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var ctx         = __webpack_require__(64)
-	  , call        = __webpack_require__(224)
-	  , isArrayIter = __webpack_require__(146)
-	  , anObject    = __webpack_require__(8)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , toLength    = __webpack_require__(24)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , getIterFn   = __webpack_require__(152)
->>>>>>> Table directive to angular 2
-=======
-	  , getIterFn   = __webpack_require__(156)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , toLength    = __webpack_require__(25)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
->>>>>>> network details to angular 2
-	  , getIterFn   = __webpack_require__(157)
->>>>>>> organizationlist to angular 2
-=======
-	  , getIterFn   = __webpack_require__(158)
->>>>>>> volumes details to angular 2
+	  , toLength    = __webpack_require__(26)
+	  , getIterFn   = __webpack_require__(161)
 	  , BREAK       = {}
 	  , RETURN      = {};
 	var exports = module.exports = function(iterable, entries, fn, that, ITERATOR){
@@ -2885,55 +1597,19 @@
 	exports.RETURN = RETURN;
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 100 */
-=======
-/* 98 */
->>>>>>> Table directive to angular 2
-=======
-/* 105 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 106 */
->>>>>>> adding storage policy list - angular 2
+/* 107 */
 /***/ function(module, exports) {
 
 	exports.f = Object.getOwnPropertySymbols;
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 101 */
-=======
-/* 99 */
->>>>>>> Table directive to angular 2
-=======
-/* 106 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 107 */
->>>>>>> adding storage policy list - angular 2
+/* 108 */
 /***/ function(module, exports) {
 
 	exports.f = {}.propertyIsEnumerable;
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 102 */
-=======
-/* 100 */
->>>>>>> Table directive to angular 2
-=======
-/* 107 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 108 */
->>>>>>> adding storage policy list - angular 2
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var global = __webpack_require__(12)
@@ -2944,43 +1620,13 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 103 */
-=======
-/* 101 */
->>>>>>> Table directive to angular 2
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
-	  , defined = __webpack_require__(43)
+	  , defined = __webpack_require__(48)
 	  , fails   = __webpack_require__(10)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , spaces  = __webpack_require__(151)
-=======
-	  , spaces  = __webpack_require__(150)
->>>>>>> Table directive to angular 2
-=======
-/* 108 */
-=======
-/* 109 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export = __webpack_require__(2)
-	  , defined = __webpack_require__(47)
-	  , fails   = __webpack_require__(10)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , spaces  = __webpack_require__(154)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , spaces  = __webpack_require__(155)
->>>>>>> organizationlist to angular 2
-=======
-	  , spaces  = __webpack_require__(156)
->>>>>>> volumes details to angular 2
+	  , spaces  = __webpack_require__(159)
 	  , space   = '[' + spaces + ']'
 	  , non     = '\u200b\u0085'
 	  , ltrim   = RegExp('^' + space + space + '*')
@@ -3009,45 +1655,12 @@
 	module.exports = exporter;
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 104 */
-=======
-/* 102 */
->>>>>>> Table directive to angular 2
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var global = __webpack_require__(12)
-	  , hide   = __webpack_require__(30)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , uid    = __webpack_require__(63)
-=======
-	  , uid    = __webpack_require__(62)
->>>>>>> Table directive to angular 2
-=======
-/* 109 */
-=======
-/* 110 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var global = __webpack_require__(12)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , hide   = __webpack_require__(31)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , uid    = __webpack_require__(66)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , hide   = __webpack_require__(32)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
->>>>>>> volumes details to angular 2
-	  , uid    = __webpack_require__(67)
->>>>>>> organizationlist to angular 2
-=======
-	  , uid    = __webpack_require__(68)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , hide   = __webpack_require__(34)
+	  , uid    = __webpack_require__(71)
 	  , TYPED  = uid('typed_array')
 	  , VIEW   = uid('view')
 	  , ABV    = !!(global.ArrayBuffer && global.DataView)
@@ -3073,81 +1686,20 @@
 	};
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 105 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var addToUnscopables = __webpack_require__(80)
-	  , step             = __webpack_require__(215)
-	  , Iterators        = __webpack_require__(72)
-=======
-/* 103 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var addToUnscopables = __webpack_require__(75)
-	  , step             = __webpack_require__(212)
-	  , Iterators        = __webpack_require__(68)
->>>>>>> Table directive to angular 2
-	  , toIObject        = __webpack_require__(33);
-=======
-/* 110 */
-=======
-/* 111 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	var addToUnscopables = __webpack_require__(82)
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-	  , step             = __webpack_require__(222)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , Iterators        = __webpack_require__(72)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , toIObject        = __webpack_require__(34);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , toIObject        = __webpack_require__(35);
->>>>>>> organizationlist to angular 2
-=======
-=======
-	  , step             = __webpack_require__(223)
->>>>>>> added collapsible directive to angular 2
-	  , Iterators        = __webpack_require__(74)
-	  , toIObject        = __webpack_require__(36);
->>>>>>> network details to angular 2
-=======
-	var addToUnscopables = __webpack_require__(83)
-	  , step             = __webpack_require__(226)
-	  , Iterators        = __webpack_require__(75)
-	  , toIObject        = __webpack_require__(37);
->>>>>>> volumes details to angular 2
+	var addToUnscopables = __webpack_require__(84)
+	  , step             = __webpack_require__(232)
+	  , Iterators        = __webpack_require__(78)
+	  , toIObject        = __webpack_require__(38);
 
 	// 22.1.3.4 Array.prototype.entries()
 	// 22.1.3.13 Array.prototype.keys()
 	// 22.1.3.29 Array.prototype.values()
 	// 22.1.3.30 Array.prototype[@@iterator]()
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	module.exports = __webpack_require__(144)(Array, 'Array', function(iterated, kind){
-=======
-	module.exports = __webpack_require__(143)(Array, 'Array', function(iterated, kind){
->>>>>>> Table directive to angular 2
-=======
-	module.exports = __webpack_require__(147)(Array, 'Array', function(iterated, kind){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	module.exports = __webpack_require__(148)(Array, 'Array', function(iterated, kind){
->>>>>>> organizationlist to angular 2
-=======
-	module.exports = __webpack_require__(149)(Array, 'Array', function(iterated, kind){
->>>>>>> volumes details to angular 2
+	module.exports = __webpack_require__(152)(Array, 'Array', function(iterated, kind){
 	  this._t = toIObject(iterated); // target
 	  this._i = 0;                   // next index
 	  this._k = kind;                // kind
@@ -3173,45 +1725,14 @@
 	addToUnscopables('entries');
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 106 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $at  = __webpack_require__(225)(true);
+	var $at  = __webpack_require__(242)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
-	__webpack_require__(144)(String, 'String', function(iterated){
-=======
-/* 104 */
-=======
-/* 111 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 112 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var $at  = __webpack_require__(236)(true);
-
-	// 21.1.3.27 String.prototype[@@iterator]()
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	__webpack_require__(143)(String, 'String', function(iterated){
->>>>>>> Table directive to angular 2
-=======
-	__webpack_require__(147)(String, 'String', function(iterated){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(148)(String, 'String', function(iterated){
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(149)(String, 'String', function(iterated){
->>>>>>> volumes details to angular 2
+	__webpack_require__(152)(String, 'String', function(iterated){
 	  this._t = String(iterated); // target
 	  this._i = 0;                // next index
 	// 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -3226,24 +1747,6 @@
 	});
 
 /***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-=======
-/* 105 */,
-/* 106 */,
->>>>>>> Table directive to angular 2
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-=======
->>>>>>> converting volumelist, servicelist ctrl to ang2
-/* 112 */,
-=======
->>>>>>> adding storage policy list - angular 2
-/* 113 */,
 /* 114 */,
 /* 115 */,
 /* 116 */,
@@ -3263,62 +1766,23 @@
 /* 130 */,
 /* 131 */,
 /* 132 */,
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 133 */,
-/* 134 */
-=======
-/* 133 */
->>>>>>> Table directive to angular 2
-=======
 /* 133 */,
 /* 134 */,
 /* 135 */,
 /* 136 */,
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-/* 137 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
 /* 137 */,
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-/* 138 */
->>>>>>> organizationlist to angular 2
-=======
 /* 138 */,
-/* 139 */
->>>>>>> volumes details to angular 2
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	'use strict';
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	var toObject = __webpack_require__(31)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , toIndex  = __webpack_require__(62)
-=======
-	  , toIndex  = __webpack_require__(61)
->>>>>>> Table directive to angular 2
-=======
-	var toObject = __webpack_require__(32)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , toIndex  = __webpack_require__(65)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	var toObject = __webpack_require__(33)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
->>>>>>> volumes details to angular 2
-	  , toIndex  = __webpack_require__(66)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> organizationlist to angular 2
-	  , toLength = __webpack_require__(24);
-=======
-=======
-	  , toIndex  = __webpack_require__(67)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , toLength = __webpack_require__(25);
->>>>>>> network details to angular 2
+	var toObject = __webpack_require__(35)
+	  , toIndex  = __webpack_require__(70)
+	  , toLength = __webpack_require__(26);
 	module.exports = function fill(value /*, start = 0, end = @length */){
 	  var O      = toObject(this)
 	    , length = toLength(O.length)
@@ -3331,55 +1795,14 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 135 */
-=======
-/* 134 */
->>>>>>> Table directive to angular 2
-=======
-/* 138 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 139 */
->>>>>>> organizationlist to angular 2
-=======
-/* 140 */
->>>>>>> volumes details to angular 2
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	var toIObject = __webpack_require__(35)
-	  , toLength  = __webpack_require__(24)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , toIndex   = __webpack_require__(62);
-=======
-	  , toIndex   = __webpack_require__(61);
->>>>>>> Table directive to angular 2
-=======
-	  , toIndex   = __webpack_require__(65);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	var toIObject = __webpack_require__(36)
-=======
-	var toIObject = __webpack_require__(37)
->>>>>>> volumes details to angular 2
-	  , toLength  = __webpack_require__(25)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
->>>>>>> network details to angular 2
-	  , toIndex   = __webpack_require__(66);
->>>>>>> organizationlist to angular 2
-=======
-	  , toIndex   = __webpack_require__(67);
->>>>>>> added ctvNamevalaue directive to angular 2
+	var toIObject = __webpack_require__(38)
+	  , toLength  = __webpack_require__(26)
+	  , toIndex   = __webpack_require__(70);
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -3398,44 +1821,12 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 136 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// getting tag from 19.1.3.6 Object.prototype.toString()
-	var cof = __webpack_require__(58)
-=======
-/* 135 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// getting tag from 19.1.3.6 Object.prototype.toString()
-	var cof = __webpack_require__(57)
->>>>>>> Table directive to angular 2
-=======
-/* 139 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// getting tag from 19.1.3.6 Object.prototype.toString()
-	var cof = __webpack_require__(61)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 140 */
-=======
-/* 141 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// getting tag from 19.1.3.6 Object.prototype.toString()
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	var cof = __webpack_require__(62)
->>>>>>> organizationlist to angular 2
-=======
-	var cof = __webpack_require__(63)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , TAG = __webpack_require__(14)('toStringTag')
+	var cof = __webpack_require__(66)
+	  , TAG = __webpack_require__(15)('toStringTag')
 	  // ES3 wrong here
 	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
 
@@ -3458,23 +1849,7 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 137 */
-=======
-/* 136 */
->>>>>>> Table directive to angular 2
-=======
-/* 140 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 141 */
->>>>>>> organizationlist to angular 2
-=======
-/* 142 */
->>>>>>> volumes details to angular 2
+/* 145 */
 /***/ function(module, exports) {
 
 	// IE 8- don't enum bug keys
@@ -3483,26 +1858,10 @@
 	).split(',');
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 138 */
-=======
-/* 137 */
->>>>>>> Table directive to angular 2
-=======
-/* 141 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 142 */
->>>>>>> organizationlist to angular 2
-=======
-/* 143 */
->>>>>>> volumes details to angular 2
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var MATCH = __webpack_require__(14)('match');
+	var MATCH = __webpack_require__(15)('match');
 	module.exports = function(KEY){
 	  var re = /./;
 	  try {
@@ -3516,23 +1875,7 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 139 */
-=======
-/* 138 */
->>>>>>> Table directive to angular 2
-=======
-/* 142 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 143 */
->>>>>>> organizationlist to angular 2
-=======
-/* 144 */
->>>>>>> volumes details to angular 2
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3550,43 +1893,11 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 140 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject       = __webpack_require__(11)
-	  , setPrototypeOf = __webpack_require__(148).set;
-=======
-/* 139 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject       = __webpack_require__(11)
-	  , setPrototypeOf = __webpack_require__(147).set;
->>>>>>> Table directive to angular 2
-=======
-/* 143 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject       = __webpack_require__(11)
-	  , setPrototypeOf = __webpack_require__(151).set;
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 144 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject       = __webpack_require__(11)
-	  , setPrototypeOf = __webpack_require__(152).set;
->>>>>>> organizationlist to angular 2
-=======
-/* 145 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject       = __webpack_require__(11)
-	  , setPrototypeOf = __webpack_require__(153).set;
->>>>>>> volumes details to angular 2
+	  , setPrototypeOf = __webpack_require__(156).set;
 	module.exports = function(that, target, C){
 	  var P, S = target.constructor;
 	  if(S !== C && typeof S == 'function' && (P = S.prototype) !== C.prototype && isObject(P) && setPrototypeOf){
@@ -3595,48 +1906,12 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 141 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// check on default Array iterator
-	var Iterators  = __webpack_require__(72)
-=======
-/* 140 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// check on default Array iterator
-	var Iterators  = __webpack_require__(68)
->>>>>>> Table directive to angular 2
-=======
-/* 144 */
-=======
-/* 145 */
->>>>>>> organizationlist to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// check on default Array iterator
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	var Iterators  = __webpack_require__(71)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var Iterators  = __webpack_require__(72)
->>>>>>> adding storage policy list - angular 2
-=======
-	var Iterators  = __webpack_require__(74)
->>>>>>> network details to angular 2
-=======
-/* 146 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// check on default Array iterator
-	var Iterators  = __webpack_require__(75)
->>>>>>> volumes details to angular 2
-	  , ITERATOR   = __webpack_require__(14)('iterator')
+	var Iterators  = __webpack_require__(78)
+	  , ITERATOR   = __webpack_require__(15)('iterator')
 	  , ArrayProto = Array.prototype;
 
 	module.exports = function(it){
@@ -3644,181 +1919,43 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 142 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.2 IsArray(argument)
-	var cof = __webpack_require__(58);
-=======
-/* 141 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.2.2 IsArray(argument)
-	var cof = __webpack_require__(57);
->>>>>>> Table directive to angular 2
-=======
-/* 145 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.2.2 IsArray(argument)
-	var cof = __webpack_require__(61);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 146 */
-=======
-/* 147 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.2.2 IsArray(argument)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	var cof = __webpack_require__(62);
->>>>>>> organizationlist to angular 2
-=======
-	var cof = __webpack_require__(63);
->>>>>>> added ctvNamevalaue directive to angular 2
+	var cof = __webpack_require__(66);
 	module.exports = Array.isArray || function isArray(arg){
 	  return cof(arg) == 'Array';
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 143 */
-=======
-/* 142 */
->>>>>>> Table directive to angular 2
-=======
-/* 146 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 147 */
->>>>>>> organizationlist to angular 2
-=======
-/* 148 */
->>>>>>> volumes details to angular 2
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.8 IsRegExp(argument)
 	var isObject = __webpack_require__(11)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , cof      = __webpack_require__(58)
-=======
-	  , cof      = __webpack_require__(57)
->>>>>>> Table directive to angular 2
-=======
-	  , cof      = __webpack_require__(61)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , cof      = __webpack_require__(62)
->>>>>>> organizationlist to angular 2
-=======
-	  , cof      = __webpack_require__(63)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , MATCH    = __webpack_require__(14)('match');
+	  , cof      = __webpack_require__(66)
+	  , MATCH    = __webpack_require__(15)('match');
 	module.exports = function(it){
 	  var isRegExp;
 	  return isObject(it) && ((isRegExp = it[MATCH]) !== undefined ? !!isRegExp : cof(it) == 'RegExp');
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 144 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var LIBRARY        = __webpack_require__(83)
-=======
-/* 143 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var LIBRARY        = __webpack_require__(78)
->>>>>>> Table directive to angular 2
-=======
-/* 147 */
-=======
-/* 148 */
->>>>>>> organizationlist to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	var LIBRARY        = __webpack_require__(83)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var LIBRARY        = __webpack_require__(85)
->>>>>>> network details to angular 2
+	var LIBRARY        = __webpack_require__(87)
 	  , $export        = __webpack_require__(2)
-	  , redefine       = __webpack_require__(29)
-	  , hide           = __webpack_require__(31)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , has            = __webpack_require__(26)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , Iterators      = __webpack_require__(72)
-	  , $iterCreate    = __webpack_require__(214)
-	  , setToStringTag = __webpack_require__(86)
-	  , getPrototypeOf = __webpack_require__(37)
-=======
-	  , Iterators      = __webpack_require__(68)
-	  , $iterCreate    = __webpack_require__(211)
-	  , setToStringTag = __webpack_require__(81)
-	  , getPrototypeOf = __webpack_require__(36)
->>>>>>> Table directive to angular 2
-=======
-	  , Iterators      = __webpack_require__(71)
-	  , $iterCreate    = __webpack_require__(219)
-	  , setToStringTag = __webpack_require__(86)
-	  , getPrototypeOf = __webpack_require__(37)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , has            = __webpack_require__(27)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> organizationlist to angular 2
-	  , Iterators      = __webpack_require__(72)
-	  , $iterCreate    = __webpack_require__(221)
-	  , setToStringTag = __webpack_require__(86)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , getPrototypeOf = __webpack_require__(38)
->>>>>>> adding storage policy list - angular 2
-=======
-=======
-	  , Iterators      = __webpack_require__(74)
-	  , $iterCreate    = __webpack_require__(222)
-	  , setToStringTag = __webpack_require__(88)
->>>>>>> network details to angular 2
-=======
-/* 149 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var LIBRARY        = __webpack_require__(86)
-	  , $export        = __webpack_require__(2)
-	  , redefine       = __webpack_require__(30)
-	  , hide           = __webpack_require__(32)
-	  , has            = __webpack_require__(27)
-	  , Iterators      = __webpack_require__(75)
-	  , $iterCreate    = __webpack_require__(225)
-	  , setToStringTag = __webpack_require__(89)
->>>>>>> volumes details to angular 2
-	  , getPrototypeOf = __webpack_require__(40)
->>>>>>> organizationlist to angular 2
-	  , ITERATOR       = __webpack_require__(14)('iterator')
+	  , redefine       = __webpack_require__(32)
+	  , hide           = __webpack_require__(34)
+	  , has            = __webpack_require__(28)
+	  , Iterators      = __webpack_require__(78)
+	  , $iterCreate    = __webpack_require__(231)
+	  , setToStringTag = __webpack_require__(90)
+	  , getPrototypeOf = __webpack_require__(41)
+	  , ITERATOR       = __webpack_require__(15)('iterator')
 	  , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
 	  , FF_ITERATOR    = '@@iterator'
 	  , KEYS           = 'keys'
@@ -3880,26 +2017,10 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 145 */
-=======
-/* 144 */
->>>>>>> Table directive to angular 2
-=======
-/* 148 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 149 */
->>>>>>> organizationlist to angular 2
-=======
-/* 150 */
->>>>>>> volumes details to angular 2
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ITERATOR     = __webpack_require__(14)('iterator')
+	var ITERATOR     = __webpack_require__(15)('iterator')
 	  , SAFE_CLOSING = false;
 
 	try {
@@ -3922,23 +2043,7 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 146 */
-=======
-/* 145 */
->>>>>>> Table directive to angular 2
-=======
-/* 149 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 150 */
->>>>>>> organizationlist to angular 2
-=======
-/* 151 */
->>>>>>> volumes details to angular 2
+/* 154 */
 /***/ function(module, exports) {
 
 	// 20.2.2.14 Math.expm1(x)
@@ -3953,23 +2058,7 @@
 	} : $expm1;
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 147 */
-=======
-/* 146 */
->>>>>>> Table directive to angular 2
-=======
-/* 150 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 151 */
->>>>>>> organizationlist to angular 2
-=======
-/* 152 */
->>>>>>> volumes details to angular 2
+/* 155 */
 /***/ function(module, exports) {
 
 	// 20.2.2.28 Math.sign(x)
@@ -3978,23 +2067,7 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 148 */
-=======
-/* 147 */
->>>>>>> Table directive to angular 2
-=======
-/* 151 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 152 */
->>>>>>> organizationlist to angular 2
-=======
-/* 153 */
->>>>>>> volumes details to angular 2
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -4009,27 +2082,7 @@
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function(test, buggy, set){
 	      try {
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	        set = __webpack_require__(59)(Function.call, __webpack_require__(45).f(Object.prototype, '__proto__').set, 2);
-=======
-	        set = __webpack_require__(58)(Function.call, __webpack_require__(44).f(Object.prototype, '__proto__').set, 2);
->>>>>>> Table directive to angular 2
-=======
-	        set = __webpack_require__(62)(Function.call, __webpack_require__(46).f(Object.prototype, '__proto__').set, 2);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	        set = __webpack_require__(62)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
->>>>>>> adding storage policy list - angular 2
-=======
-	        set = __webpack_require__(63)(Function.call, __webpack_require__(49).f(Object.prototype, '__proto__').set, 2);
->>>>>>> organizationlist to angular 2
-=======
-	        set = __webpack_require__(64)(Function.call, __webpack_require__(49).f(Object.prototype, '__proto__').set, 2);
->>>>>>> added ctvNamevalaue directive to angular 2
+	        set = __webpack_require__(67)(Function.call, __webpack_require__(50).f(Object.prototype, '__proto__').set, 2);
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch(e){ buggy = true; }
@@ -4044,89 +2097,22 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 149 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var shared = __webpack_require__(102)('keys')
-	  , uid    = __webpack_require__(63);
-=======
-/* 148 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var shared = __webpack_require__(100)('keys')
-	  , uid    = __webpack_require__(62);
->>>>>>> Table directive to angular 2
-=======
-/* 152 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var shared = __webpack_require__(108)('keys')
-	  , uid    = __webpack_require__(66);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 153 */
-=======
-/* 154 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var shared = __webpack_require__(108)('keys')
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	  , uid    = __webpack_require__(67);
->>>>>>> organizationlist to angular 2
-=======
-	  , uid    = __webpack_require__(68);
->>>>>>> added ctvNamevalaue directive to angular 2
+	var shared = __webpack_require__(109)('keys')
+	  , uid    = __webpack_require__(71);
 	module.exports = function(key){
 	  return shared[key] || (shared[key] = uid(key));
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 150 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// helper for String#{startsWith, endsWith, includes}
-	var isRegExp = __webpack_require__(143)
-	  , defined  = __webpack_require__(43);
-=======
-/* 149 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// helper for String#{startsWith, endsWith, includes}
-	var isRegExp = __webpack_require__(142)
-	  , defined  = __webpack_require__(42);
->>>>>>> Table directive to angular 2
-=======
-/* 153 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// helper for String#{startsWith, endsWith, includes}
-	var isRegExp = __webpack_require__(146)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , defined  = __webpack_require__(44);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , defined  = __webpack_require__(46);
->>>>>>> adding storage policy list - angular 2
-=======
-/* 154 */
-=======
-/* 155 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// helper for String#{startsWith, endsWith, includes}
-	var isRegExp = __webpack_require__(148)
-	  , defined  = __webpack_require__(47);
->>>>>>> organizationlist to angular 2
+	var isRegExp = __webpack_require__(151)
+	  , defined  = __webpack_require__(48);
 
 	module.exports = function(that, searchString, NAME){
 	  if(isRegExp(searchString))throw TypeError('String#' + NAME + " doesn't accept regex!");
@@ -4134,119 +2120,31 @@
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 151 */
-=======
-/* 150 */
->>>>>>> Table directive to angular 2
-=======
-/* 154 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 155 */
->>>>>>> organizationlist to angular 2
-=======
-/* 156 */
->>>>>>> volumes details to angular 2
+/* 159 */
 /***/ function(module, exports) {
 
 	module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
 	  '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 152 */
-=======
-/* 151 */
->>>>>>> Table directive to angular 2
-=======
-/* 155 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 156 */
->>>>>>> organizationlist to angular 2
-=======
-/* 157 */
->>>>>>> volumes details to angular 2
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var global         = __webpack_require__(12)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , DESCRIPTORS    = __webpack_require__(20)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , LIBRARY        = __webpack_require__(83)
-	  , $typed         = __webpack_require__(104)
-	  , hide           = __webpack_require__(30)
-	  , redefineAll    = __webpack_require__(84)
+	  , DESCRIPTORS    = __webpack_require__(21)
+	  , LIBRARY        = __webpack_require__(87)
+	  , $typed         = __webpack_require__(111)
+	  , hide           = __webpack_require__(34)
+	  , redefineAll    = __webpack_require__(88)
 	  , fails          = __webpack_require__(10)
-	  , anInstance     = __webpack_require__(81)
-	  , toInteger      = __webpack_require__(53)
-	  , toLength       = __webpack_require__(24)
-	  , gOPN           = __webpack_require__(61).f
-	  , dP             = __webpack_require__(17).f
-	  , arrayFill      = __webpack_require__(134)
-	  , setToStringTag = __webpack_require__(86)
-=======
-	  , LIBRARY        = __webpack_require__(78)
-	  , $typed         = __webpack_require__(102)
-	  , hide           = __webpack_require__(30)
-	  , redefineAll    = __webpack_require__(79)
-=======
-	  , LIBRARY        = __webpack_require__(83)
-	  , $typed         = __webpack_require__(110)
-	  , hide           = __webpack_require__(31)
-	  , redefineAll    = __webpack_require__(84)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , DESCRIPTORS    = __webpack_require__(19)
-	  , LIBRARY        = __webpack_require__(85)
-	  , $typed         = __webpack_require__(110)
-	  , hide           = __webpack_require__(31)
-	  , redefineAll    = __webpack_require__(86)
->>>>>>> network details to angular 2
-=======
-	  , DESCRIPTORS    = __webpack_require__(20)
-	  , LIBRARY        = __webpack_require__(86)
-	  , $typed         = __webpack_require__(110)
-	  , hide           = __webpack_require__(32)
-	  , redefineAll    = __webpack_require__(87)
->>>>>>> volumes details to angular 2
-	  , fails          = __webpack_require__(10)
-	  , anInstance     = __webpack_require__(84)
-	  , toInteger      = __webpack_require__(56)
-	  , toLength       = __webpack_require__(25)
-	  , gOPN           = __webpack_require__(66).f
-	  , dP             = __webpack_require__(17).f
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , arrayFill      = __webpack_require__(133)
-	  , setToStringTag = __webpack_require__(81)
->>>>>>> Table directive to angular 2
-=======
-	  , arrayFill      = __webpack_require__(137)
-=======
-	  , arrayFill      = __webpack_require__(138)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> organizationlist to angular 2
-	  , setToStringTag = __webpack_require__(86)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , setToStringTag = __webpack_require__(88)
->>>>>>> network details to angular 2
-=======
-	  , arrayFill      = __webpack_require__(139)
-	  , setToStringTag = __webpack_require__(89)
->>>>>>> volumes details to angular 2
+	  , anInstance     = __webpack_require__(85)
+	  , toInteger      = __webpack_require__(60)
+	  , toLength       = __webpack_require__(26)
+	  , gOPN           = __webpack_require__(69).f
+	  , dP             = __webpack_require__(18).f
+	  , arrayFill      = __webpack_require__(142)
+	  , setToStringTag = __webpack_require__(90)
 	  , ARRAY_BUFFER   = 'ArrayBuffer'
 	  , DATA_VIEW      = 'DataView'
 	  , PROTOTYPE      = 'prototype'
@@ -4507,106 +2405,28 @@
 	exports[DATA_VIEW] = $DataView;
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 153 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var classof   = __webpack_require__(136)
-	  , ITERATOR  = __webpack_require__(14)('iterator')
-	  , Iterators = __webpack_require__(72);
-=======
-/* 152 */
-=======
-/* 156 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 157 */
->>>>>>> organizationlist to angular 2
-=======
-/* 158 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var classof   = __webpack_require__(141)
-	  , ITERATOR  = __webpack_require__(14)('iterator')
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , Iterators = __webpack_require__(68);
->>>>>>> Table directive to angular 2
-=======
-	  , Iterators = __webpack_require__(71);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , Iterators = __webpack_require__(72);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , Iterators = __webpack_require__(74);
->>>>>>> network details to angular 2
-=======
-	  , Iterators = __webpack_require__(75);
->>>>>>> volumes details to angular 2
-	module.exports = __webpack_require__(13).getIteratorMethod = function(it){
+	var classof   = __webpack_require__(144)
+	  , ITERATOR  = __webpack_require__(15)('iterator')
+	  , Iterators = __webpack_require__(78);
+	module.exports = __webpack_require__(14).getIteratorMethod = function(it){
 	  if(it != undefined)return it[ITERATOR]
 	    || it['@@iterator']
 	    || Iterators[classof(it)];
 	};
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 154 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $iterators    = __webpack_require__(105)
-	  , redefine      = __webpack_require__(28)
+	var $iterators    = __webpack_require__(112)
+	  , redefine      = __webpack_require__(32)
 	  , global        = __webpack_require__(12)
-	  , hide          = __webpack_require__(30)
-	  , Iterators     = __webpack_require__(72)
-=======
-/* 153 */
-=======
-/* 157 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 158 */
->>>>>>> organizationlist to angular 2
-=======
-/* 159 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $iterators    = __webpack_require__(111)
-	  , redefine      = __webpack_require__(30)
-	  , global        = __webpack_require__(12)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , hide          = __webpack_require__(30)
-	  , Iterators     = __webpack_require__(68)
->>>>>>> Table directive to angular 2
-=======
-	  , hide          = __webpack_require__(31)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , Iterators     = __webpack_require__(71)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , Iterators     = __webpack_require__(72)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , Iterators     = __webpack_require__(74)
->>>>>>> network details to angular 2
-=======
-	  , hide          = __webpack_require__(32)
-	  , Iterators     = __webpack_require__(75)
->>>>>>> volumes details to angular 2
-	  , wks           = __webpack_require__(14)
+	  , hide          = __webpack_require__(34)
+	  , Iterators     = __webpack_require__(78)
+	  , wks           = __webpack_require__(15)
 	  , ITERATOR      = wks('iterator')
 	  , TO_STRING_TAG = wks('toStringTag')
 	  , ArrayValues   = Iterators.Array;
@@ -4625,27 +2445,6 @@
 	}
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-=======
-/* 154 */,
->>>>>>> Table directive to angular 2
-/* 155 */,
-/* 156 */,
-/* 157 */,
-=======
->>>>>>> converting volumelist, servicelist ctrl to ang2
-/* 158 */,
-=======
->>>>>>> organizationlist to angular 2
-/* 159 */,
-=======
->>>>>>> volumes details to angular 2
-/* 160 */,
-/* 161 */,
-/* 162 */,
 /* 163 */,
 /* 164 */,
 /* 165 */,
@@ -4682,22 +2481,6 @@
 /* 196 */,
 /* 197 */,
 /* 198 */,
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var cof = __webpack_require__(58);
-=======
-/* 199 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var cof = __webpack_require__(57);
->>>>>>> Table directive to angular 2
-=======
 /* 199 */,
 /* 200 */,
 /* 201 */,
@@ -4712,86 +2495,30 @@
 /* 210 */,
 /* 211 */,
 /* 212 */,
-/* 213 */
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	var cof = __webpack_require__(61);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var cof = __webpack_require__(62);
->>>>>>> organizationlist to angular 2
-=======
-	var cof = __webpack_require__(63);
->>>>>>> added ctvNamevalaue directive to angular 2
+	var cof = __webpack_require__(66);
 	module.exports = function(it, msg){
 	  if(typeof it != 'number' && cof(it) != 'Number')throw TypeError(msg);
 	  return +it;
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 203 */
-=======
-/* 200 */
->>>>>>> Table directive to angular 2
-=======
-/* 208 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 209 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 210 */
->>>>>>> organizationlist to angular 2
-=======
-/* 211 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 213 */
->>>>>>> volumes details to angular 2
-=======
-/* 214 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	'use strict';
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	var toObject = __webpack_require__(31)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , toIndex  = __webpack_require__(62)
-=======
-	  , toIndex  = __webpack_require__(61)
->>>>>>> Table directive to angular 2
-=======
-	var toObject = __webpack_require__(32)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , toIndex  = __webpack_require__(65)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	var toObject = __webpack_require__(33)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
->>>>>>> volumes details to angular 2
-	  , toIndex  = __webpack_require__(66)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> organizationlist to angular 2
-	  , toLength = __webpack_require__(24);
-=======
-=======
-	  , toIndex  = __webpack_require__(67)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , toLength = __webpack_require__(25);
->>>>>>> network details to angular 2
+	var toObject = __webpack_require__(35)
+	  , toIndex  = __webpack_require__(70)
+	  , toLength = __webpack_require__(26);
 
 	module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0, end = @length*/){
 	  var O     = toObject(this)
@@ -4815,60 +2542,13 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 204 */
-=======
-/* 201 */
->>>>>>> Table directive to angular 2
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var aFunction = __webpack_require__(50)
-	  , toObject  = __webpack_require__(31)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , IObject   = __webpack_require__(82)
-=======
-	  , IObject   = __webpack_require__(77)
->>>>>>> Table directive to angular 2
-=======
-/* 209 */
-=======
-/* 210 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 211 */
->>>>>>> organizationlist to angular 2
-=======
-/* 212 */
->>>>>>> added collapsible directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var aFunction = __webpack_require__(53)
-	  , toObject  = __webpack_require__(32)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , IObject   = __webpack_require__(82)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-	  , toLength  = __webpack_require__(24);
-=======
-	  , IObject   = __webpack_require__(84)
-=======
-/* 214 */
-=======
-/* 215 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var aFunction = __webpack_require__(53)
-	  , toObject  = __webpack_require__(33)
-	  , IObject   = __webpack_require__(85)
->>>>>>> volumes details to angular 2
-	  , toLength  = __webpack_require__(25);
->>>>>>> network details to angular 2
+	var aFunction = __webpack_require__(57)
+	  , toObject  = __webpack_require__(35)
+	  , IObject   = __webpack_require__(86)
+	  , toLength  = __webpack_require__(26);
 
 	module.exports = function(that, callbackfn, aLen, memo, isRight){
 	  aFunction(callbackfn);
@@ -4895,75 +2575,13 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 205 */
-=======
-/* 202 */
->>>>>>> Table directive to angular 2
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var aFunction  = __webpack_require__(50)
+	var aFunction  = __webpack_require__(57)
 	  , isObject   = __webpack_require__(11)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , invoke     = __webpack_require__(326)
-=======
-	  , invoke     = __webpack_require__(320)
->>>>>>> Table directive to angular 2
-=======
-/* 210 */
-=======
-/* 211 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 212 */
->>>>>>> organizationlist to angular 2
-=======
-/* 213 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 215 */
->>>>>>> volumes details to angular 2
-=======
-/* 216 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var aFunction  = __webpack_require__(53)
-	  , isObject   = __webpack_require__(11)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , invoke     = __webpack_require__(330)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , invoke     = __webpack_require__(332)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , invoke     = __webpack_require__(334)
->>>>>>> organizationlist to angular 2
-=======
-	  , invoke     = __webpack_require__(333)
->>>>>>> network details to angular 2
-=======
-	  , invoke     = __webpack_require__(334)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , invoke     = __webpack_require__(336)
->>>>>>> volumes details to angular 2
-=======
-	  , invoke     = __webpack_require__(337)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , invoke     = __webpack_require__(348)
 	  , arraySlice = [].slice
 	  , factories  = {};
 
@@ -4986,114 +2604,22 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 206 */
-=======
-/* 203 */
->>>>>>> Table directive to angular 2
-=======
-/* 211 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 212 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 213 */
->>>>>>> organizationlist to angular 2
-=======
-/* 214 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 216 */
->>>>>>> volumes details to angular 2
-=======
-/* 217 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var dP          = __webpack_require__(17).f
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , create      = __webpack_require__(60)
-	  , redefineAll = __webpack_require__(84)
-	  , ctx         = __webpack_require__(59)
-	  , anInstance  = __webpack_require__(81)
-	  , defined     = __webpack_require__(43)
-	  , forOf       = __webpack_require__(99)
-	  , $iterDefine = __webpack_require__(144)
-	  , step        = __webpack_require__(215)
-	  , setSpecies  = __webpack_require__(85)
-=======
-	  , create      = __webpack_require__(59)
-	  , redefineAll = __webpack_require__(79)
-	  , ctx         = __webpack_require__(58)
-	  , anInstance  = __webpack_require__(76)
-	  , defined     = __webpack_require__(42)
-	  , forOf       = __webpack_require__(97)
-	  , $iterDefine = __webpack_require__(143)
-	  , step        = __webpack_require__(212)
-	  , setSpecies  = __webpack_require__(80)
->>>>>>> Table directive to angular 2
-	  , DESCRIPTORS = __webpack_require__(20)
-	  , fastKey     = __webpack_require__(51).fastKey
-=======
-	  , create      = __webpack_require__(63)
-=======
-	  , create      = __webpack_require__(64)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> organizationlist to angular 2
-	  , redefineAll = __webpack_require__(84)
-=======
-	  , redefineAll = __webpack_require__(86)
->>>>>>> network details to angular 2
-=======
-	  , redefineAll = __webpack_require__(87)
->>>>>>> volumes details to angular 2
-	  , ctx         = __webpack_require__(63)
-=======
-	  , create      = __webpack_require__(65)
-	  , redefineAll = __webpack_require__(87)
-	  , ctx         = __webpack_require__(64)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , anInstance  = __webpack_require__(84)
-	  , defined     = __webpack_require__(47)
-	  , forOf       = __webpack_require__(105)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , $iterDefine = __webpack_require__(148)
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-	  , step        = __webpack_require__(222)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , setSpecies  = __webpack_require__(85)
-	  , DESCRIPTORS = __webpack_require__(20)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , fastKey     = __webpack_require__(53).fastKey
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-=======
-	  , step        = __webpack_require__(223)
->>>>>>> added collapsible directive to angular 2
-	  , setSpecies  = __webpack_require__(87)
-	  , DESCRIPTORS = __webpack_require__(19)
->>>>>>> network details to angular 2
-=======
-	  , $iterDefine = __webpack_require__(149)
-	  , step        = __webpack_require__(226)
-	  , setSpecies  = __webpack_require__(88)
-	  , DESCRIPTORS = __webpack_require__(20)
->>>>>>> volumes details to angular 2
-	  , fastKey     = __webpack_require__(54).fastKey
->>>>>>> adding storage policy list - angular 2
+	var dP          = __webpack_require__(18).f
+	  , create      = __webpack_require__(68)
+	  , redefineAll = __webpack_require__(88)
+	  , ctx         = __webpack_require__(67)
+	  , anInstance  = __webpack_require__(85)
+	  , defined     = __webpack_require__(48)
+	  , forOf       = __webpack_require__(106)
+	  , $iterDefine = __webpack_require__(152)
+	  , step        = __webpack_require__(232)
+	  , setSpecies  = __webpack_require__(89)
+	  , DESCRIPTORS = __webpack_require__(21)
+	  , fastKey     = __webpack_require__(58).fastKey
 	  , SIZE        = DESCRIPTORS ? '_s' : 'size';
 
 	var getEntry = function(that, key){
@@ -5225,80 +2751,18 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 207 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var redefineAll       = __webpack_require__(84)
-	  , getWeak           = __webpack_require__(51).getWeak
+	var redefineAll       = __webpack_require__(88)
+	  , getWeak           = __webpack_require__(58).getWeak
 	  , anObject          = __webpack_require__(8)
 	  , isObject          = __webpack_require__(11)
-	  , anInstance        = __webpack_require__(81)
-	  , forOf             = __webpack_require__(99)
-	  , createArrayMethod = __webpack_require__(36)
-=======
-/* 204 */
-=======
-/* 212 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 213 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 214 */
->>>>>>> organizationlist to angular 2
-=======
-/* 215 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 217 */
->>>>>>> volumes details to angular 2
-=======
-/* 218 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var redefineAll       = __webpack_require__(87)
-	  , getWeak           = __webpack_require__(54).getWeak
-	  , anObject          = __webpack_require__(8)
-	  , isObject          = __webpack_require__(11)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , anInstance        = __webpack_require__(76)
-	  , forOf             = __webpack_require__(97)
-	  , createArrayMethod = __webpack_require__(35)
->>>>>>> Table directive to angular 2
-=======
-	  , anInstance        = __webpack_require__(81)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , forOf             = __webpack_require__(104)
-	  , createArrayMethod = __webpack_require__(36)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , anInstance        = __webpack_require__(83)
->>>>>>> network details to angular 2
-=======
-	  , anInstance        = __webpack_require__(84)
->>>>>>> volumes details to angular 2
-	  , forOf             = __webpack_require__(105)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , createArrayMethod = __webpack_require__(37)
->>>>>>> adding storage policy list - angular 2
-	  , $has              = __webpack_require__(26)
-=======
-	  , createArrayMethod = __webpack_require__(39)
-	  , $has              = __webpack_require__(27)
->>>>>>> organizationlist to angular 2
+	  , anInstance        = __webpack_require__(85)
+	  , forOf             = __webpack_require__(106)
+	  , createArrayMethod = __webpack_require__(40)
+	  , $has              = __webpack_require__(28)
 	  , arrayFind         = createArrayMethod(5)
 	  , arrayFindIndex    = createArrayMethod(6)
 	  , id                = 0;
@@ -5375,48 +2839,12 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 208 */
-=======
-/* 205 */
->>>>>>> Table directive to angular 2
-=======
-/* 213 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 214 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 215 */
->>>>>>> organizationlist to angular 2
-=======
-/* 216 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 218 */
->>>>>>> volumes details to angular 2
-=======
-/* 219 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $defineProperty = __webpack_require__(17)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , createDesc      = __webpack_require__(52);
-=======
-	  , createDesc      = __webpack_require__(54);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , createDesc      = __webpack_require__(55);
->>>>>>> adding storage policy list - angular 2
+	var $defineProperty = __webpack_require__(18)
+	  , createDesc      = __webpack_require__(59);
 
 	module.exports = function(object, index, value){
 	  if(index in object)$defineProperty.f(object, index, createDesc(0, value));
@@ -5424,35 +2852,7 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 209 */
-=======
-/* 206 */
->>>>>>> Table directive to angular 2
-=======
-/* 214 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 215 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 216 */
->>>>>>> organizationlist to angular 2
-=======
-/* 217 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 219 */
->>>>>>> volumes details to angular 2
-=======
-/* 220 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -5464,109 +2864,21 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 210 */
-=======
-/* 207 */
->>>>>>> Table directive to angular 2
-=======
-/* 215 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 216 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 217 */
->>>>>>> organizationlist to angular 2
-=======
-/* 218 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 220 */
->>>>>>> volumes details to angular 2
-=======
-/* 221 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(12).document && document.documentElement;
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 211 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = !__webpack_require__(20) && !__webpack_require__(10)(function(){
-	  return Object.defineProperty(__webpack_require__(209)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	module.exports = !__webpack_require__(21) && !__webpack_require__(10)(function(){
+	  return Object.defineProperty(__webpack_require__(226)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
-/* 212 */
-=======
-/* 208 */
-=======
-/* 216 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 217 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 218 */
->>>>>>> organizationlist to angular 2
-=======
-/* 219 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 221 */
->>>>>>> volumes details to angular 2
-=======
-/* 222 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = !__webpack_require__(20) && !__webpack_require__(10)(function(){
-	  return Object.defineProperty(__webpack_require__(220)('div'), 'a', {get: function(){ return 7; }}).a != 7;
-	});
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 209 */
->>>>>>> Table directive to angular 2
-=======
-/* 217 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 218 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 219 */
->>>>>>> organizationlist to angular 2
-=======
-/* 220 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 222 */
->>>>>>> volumes details to angular 2
-=======
-/* 223 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
@@ -5577,35 +2889,7 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 213 */
-=======
-/* 210 */
->>>>>>> Table directive to angular 2
-=======
-/* 218 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 219 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 220 */
->>>>>>> organizationlist to angular 2
-=======
-/* 221 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 223 */
->>>>>>> volumes details to angular 2
-=======
-/* 224 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
@@ -5622,65 +2906,17 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 214 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var create         = __webpack_require__(60)
-	  , descriptor     = __webpack_require__(52)
-	  , setToStringTag = __webpack_require__(86)
-=======
-/* 211 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var create         = __webpack_require__(59)
-	  , descriptor     = __webpack_require__(50)
-	  , setToStringTag = __webpack_require__(81)
->>>>>>> Table directive to angular 2
-=======
-/* 219 */
-=======
-/* 220 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 221 */
->>>>>>> organizationlist to angular 2
-=======
-/* 222 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 224 */
->>>>>>> volumes details to angular 2
-=======
-/* 225 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var create         = __webpack_require__(65)
-	  , descriptor     = __webpack_require__(55)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , setToStringTag = __webpack_require__(86)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , setToStringTag = __webpack_require__(88)
->>>>>>> network details to angular 2
-=======
-	  , setToStringTag = __webpack_require__(89)
->>>>>>> volumes details to angular 2
+	var create         = __webpack_require__(68)
+	  , descriptor     = __webpack_require__(59)
+	  , setToStringTag = __webpack_require__(90)
 	  , IteratorPrototype = {};
 
 	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-	__webpack_require__(32)(IteratorPrototype, __webpack_require__(14)('iterator'), function(){ return this; });
+	__webpack_require__(34)(IteratorPrototype, __webpack_require__(15)('iterator'), function(){ return this; });
 
 	module.exports = function(Constructor, NAME, next){
 	  Constructor.prototype = create(IteratorPrototype, {next: descriptor(1, next)});
@@ -5688,35 +2924,7 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 215 */
-=======
-/* 212 */
->>>>>>> Table directive to angular 2
-=======
-/* 220 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 221 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 222 */
->>>>>>> organizationlist to angular 2
-=======
-/* 223 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 225 */
->>>>>>> volumes details to angular 2
-=======
-/* 226 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 232 */
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -5724,35 +2932,7 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 216 */
-=======
-/* 213 */
->>>>>>> Table directive to angular 2
-=======
-/* 221 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 222 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 223 */
->>>>>>> organizationlist to angular 2
-=======
-/* 224 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 226 */
->>>>>>> volumes details to angular 2
-=======
-/* 227 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 233 */
 /***/ function(module, exports) {
 
 	// 20.2.2.20 Math.log1p(x)
@@ -5761,82 +2941,16 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 217 */
-=======
-/* 214 */
->>>>>>> Table directive to angular 2
-=======
-/* 222 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 223 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 224 */
->>>>>>> organizationlist to angular 2
-=======
-/* 225 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 227 */
->>>>>>> volumes details to angular 2
-=======
-/* 228 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 19.1.2.1 Object.assign(target, source, ...)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var getKeys  = __webpack_require__(73)
-	  , gOPS     = __webpack_require__(100)
-	  , pIE      = __webpack_require__(101)
-	  , toObject = __webpack_require__(31)
-	  , IObject  = __webpack_require__(82)
-=======
-	var getKeys  = __webpack_require__(69)
-	  , gOPS     = __webpack_require__(98)
-	  , pIE      = __webpack_require__(99)
-	  , toObject = __webpack_require__(31)
-	  , IObject  = __webpack_require__(77)
->>>>>>> Table directive to angular 2
-=======
-	var getKeys  = __webpack_require__(72)
-	  , gOPS     = __webpack_require__(105)
-	  , pIE      = __webpack_require__(106)
-=======
-	var getKeys  = __webpack_require__(73)
-=======
-	var getKeys  = __webpack_require__(75)
->>>>>>> network details to angular 2
-	  , gOPS     = __webpack_require__(106)
-	  , pIE      = __webpack_require__(107)
->>>>>>> adding storage policy list - angular 2
-	  , toObject = __webpack_require__(32)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , IObject  = __webpack_require__(82)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , IObject  = __webpack_require__(84)
->>>>>>> network details to angular 2
-=======
-	var getKeys  = __webpack_require__(76)
-	  , gOPS     = __webpack_require__(106)
-	  , pIE      = __webpack_require__(107)
-	  , toObject = __webpack_require__(33)
-	  , IObject  = __webpack_require__(85)
->>>>>>> volumes details to angular 2
+	var getKeys  = __webpack_require__(79)
+	  , gOPS     = __webpack_require__(107)
+	  , pIE      = __webpack_require__(108)
+	  , toObject = __webpack_require__(35)
+	  , IObject  = __webpack_require__(86)
 	  , $assign  = Object.assign;
 
 	// should work with symbols and should have deterministic property order (V8 bug)
@@ -5865,62 +2979,14 @@
 	} : $assign;
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 218 */
-=======
-/* 215 */
->>>>>>> Table directive to angular 2
-=======
-/* 223 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 224 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 225 */
->>>>>>> organizationlist to angular 2
-=======
-/* 226 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 228 */
->>>>>>> volumes details to angular 2
-=======
-/* 229 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP       = __webpack_require__(17)
+	var dP       = __webpack_require__(18)
 	  , anObject = __webpack_require__(8)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , getKeys  = __webpack_require__(73);
-=======
-	  , getKeys  = __webpack_require__(69);
->>>>>>> Table directive to angular 2
-=======
-	  , getKeys  = __webpack_require__(72);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , getKeys  = __webpack_require__(73);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , getKeys  = __webpack_require__(75);
->>>>>>> network details to angular 2
-=======
-	  , getKeys  = __webpack_require__(76);
->>>>>>> volumes details to angular 2
+	  , getKeys  = __webpack_require__(79);
 
-	module.exports = __webpack_require__(20) ? Object.defineProperties : function defineProperties(O, Properties){
+	module.exports = __webpack_require__(21) ? Object.defineProperties : function defineProperties(O, Properties){
 	  anObject(O);
 	  var keys   = getKeys(Properties)
 	    , length = keys.length
@@ -5931,58 +2997,12 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 219 */
-=======
-/* 216 */
->>>>>>> Table directive to angular 2
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
-	var toIObject = __webpack_require__(33)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , gOPN      = __webpack_require__(61).f
-=======
-	  , gOPN      = __webpack_require__(60).f
->>>>>>> Table directive to angular 2
-=======
-/* 224 */
-=======
-/* 225 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
-	var toIObject = __webpack_require__(34)
-	  , gOPN      = __webpack_require__(64).f
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 226 */
-=======
-/* 227 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 229 */
->>>>>>> volumes details to angular 2
-=======
-/* 230 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
-	var toIObject = __webpack_require__(37)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	  , gOPN      = __webpack_require__(65).f
->>>>>>> organizationlist to angular 2
-=======
-	  , gOPN      = __webpack_require__(66).f
->>>>>>> added ctvNamevalaue directive to angular 2
+	var toIObject = __webpack_require__(38)
+	  , gOPN      = __webpack_require__(69).f
 	  , toString  = {}.toString;
 
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -6002,64 +3022,13 @@
 
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 220 */
-=======
-/* 217 */
->>>>>>> Table directive to angular 2
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var has          = __webpack_require__(26)
-	  , toIObject    = __webpack_require__(33)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , arrayIndexOf = __webpack_require__(135)(false)
-	  , IE_PROTO     = __webpack_require__(149)('IE_PROTO');
-=======
-	  , arrayIndexOf = __webpack_require__(134)(false)
-	  , IE_PROTO     = __webpack_require__(148)('IE_PROTO');
->>>>>>> Table directive to angular 2
-=======
-/* 225 */
-=======
-/* 226 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var has          = __webpack_require__(26)
-	  , toIObject    = __webpack_require__(34)
-	  , arrayIndexOf = __webpack_require__(138)(false)
-	  , IE_PROTO     = __webpack_require__(152)('IE_PROTO');
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 227 */
-=======
-/* 228 */
->>>>>>> added collapsible directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var has          = __webpack_require__(27)
-	  , toIObject    = __webpack_require__(36)
-	  , arrayIndexOf = __webpack_require__(139)(false)
-	  , IE_PROTO     = __webpack_require__(153)('IE_PROTO');
->>>>>>> organizationlist to angular 2
-=======
-/* 230 */
-=======
-/* 231 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var has          = __webpack_require__(27)
-	  , toIObject    = __webpack_require__(37)
-	  , arrayIndexOf = __webpack_require__(140)(false)
-	  , IE_PROTO     = __webpack_require__(154)('IE_PROTO');
->>>>>>> volumes details to angular 2
+	var has          = __webpack_require__(28)
+	  , toIObject    = __webpack_require__(38)
+	  , arrayIndexOf = __webpack_require__(143)(false)
+	  , IE_PROTO     = __webpack_require__(157)('IE_PROTO');
 
 	module.exports = function(object, names){
 	  var O      = toIObject(object)
@@ -6075,117 +3044,25 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 221 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseFloat = __webpack_require__(12).parseFloat
-	  , $trim       = __webpack_require__(103).trim;
+	  , $trim       = __webpack_require__(110).trim;
 
-	module.exports = 1 / $parseFloat(__webpack_require__(151) + '-0') !== -Infinity ? function parseFloat(str){
-=======
-/* 218 */
-=======
-/* 226 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 227 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 228 */
->>>>>>> organizationlist to angular 2
-=======
-/* 229 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 231 */
->>>>>>> volumes details to angular 2
-=======
-/* 232 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $parseFloat = __webpack_require__(12).parseFloat
-	  , $trim       = __webpack_require__(109).trim;
-
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	module.exports = 1 / $parseFloat(__webpack_require__(150) + '-0') !== -Infinity ? function parseFloat(str){
->>>>>>> Table directive to angular 2
-=======
-	module.exports = 1 / $parseFloat(__webpack_require__(154) + '-0') !== -Infinity ? function parseFloat(str){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	module.exports = 1 / $parseFloat(__webpack_require__(155) + '-0') !== -Infinity ? function parseFloat(str){
->>>>>>> organizationlist to angular 2
-=======
-	module.exports = 1 / $parseFloat(__webpack_require__(156) + '-0') !== -Infinity ? function parseFloat(str){
->>>>>>> volumes details to angular 2
+	module.exports = 1 / $parseFloat(__webpack_require__(159) + '-0') !== -Infinity ? function parseFloat(str){
 	  var string = $trim(String(str), 3)
 	    , result = $parseFloat(string);
 	  return result === 0 && string.charAt(0) == '-' ? -0 : result;
 	} : $parseFloat;
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 222 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseInt = __webpack_require__(12).parseInt
-	  , $trim     = __webpack_require__(103).trim
-	  , ws        = __webpack_require__(151)
-=======
-/* 219 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $parseInt = __webpack_require__(12).parseInt
-	  , $trim     = __webpack_require__(101).trim
-	  , ws        = __webpack_require__(150)
->>>>>>> Table directive to angular 2
-=======
-/* 227 */
-=======
-/* 228 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 229 */
->>>>>>> organizationlist to angular 2
-=======
-/* 230 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 232 */
->>>>>>> volumes details to angular 2
-=======
-/* 233 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $parseInt = __webpack_require__(12).parseInt
-	  , $trim     = __webpack_require__(109).trim
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , ws        = __webpack_require__(154)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , ws        = __webpack_require__(155)
->>>>>>> organizationlist to angular 2
-=======
-	  , ws        = __webpack_require__(156)
->>>>>>> volumes details to angular 2
+	  , $trim     = __webpack_require__(110).trim
+	  , ws        = __webpack_require__(159)
 	  , hex       = /^[\-+]?0[xX]/;
 
 	module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix){
@@ -6194,35 +3071,7 @@
 	} : $parseInt;
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 223 */
-=======
-/* 220 */
->>>>>>> Table directive to angular 2
-=======
-/* 228 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 229 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 230 */
->>>>>>> organizationlist to angular 2
-=======
-/* 231 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 233 */
->>>>>>> volumes details to angular 2
-=======
-/* 234 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 240 */
 /***/ function(module, exports) {
 
 	// 7.2.9 SameValue(x, y)
@@ -6231,104 +3080,24 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 224 */
-=======
-/* 221 */
->>>>>>> Table directive to angular 2
-=======
-/* 229 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 230 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 231 */
->>>>>>> organizationlist to angular 2
-=======
-/* 232 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 234 */
->>>>>>> volumes details to angular 2
-=======
-/* 235 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
 	var anObject  = __webpack_require__(8)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , aFunction = __webpack_require__(50)
-=======
-	  , aFunction = __webpack_require__(48)
->>>>>>> Table directive to angular 2
-=======
-	  , aFunction = __webpack_require__(52)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , aFunction = __webpack_require__(53)
->>>>>>> adding storage policy list - angular 2
-	  , SPECIES   = __webpack_require__(14)('species');
+	  , aFunction = __webpack_require__(57)
+	  , SPECIES   = __webpack_require__(15)('species');
 	module.exports = function(O, D){
 	  var C = anObject(O).constructor, S;
 	  return C === undefined || (S = anObject(C)[SPECIES]) == undefined ? D : aFunction(S);
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 225 */
-=======
-/* 222 */
->>>>>>> Table directive to angular 2
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toInteger = __webpack_require__(53)
-	  , defined   = __webpack_require__(43);
-=======
-/* 230 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var toInteger = __webpack_require__(55)
-	  , defined   = __webpack_require__(44);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 231 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var toInteger = __webpack_require__(56)
-	  , defined   = __webpack_require__(46);
->>>>>>> adding storage policy list - angular 2
-=======
-/* 232 */
-=======
-/* 233 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 235 */
->>>>>>> volumes details to angular 2
-=======
-/* 236 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var toInteger = __webpack_require__(56)
-	  , defined   = __webpack_require__(47);
->>>>>>> organizationlist to angular 2
+	var toInteger = __webpack_require__(60)
+	  , defined   = __webpack_require__(48);
 	// true  -> String#at
 	// false -> String#codePointAt
 	module.exports = function(TO_STRING){
@@ -6346,54 +3115,12 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 226 */
-=======
-/* 223 */
->>>>>>> Table directive to angular 2
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var toInteger = __webpack_require__(53)
-	  , defined   = __webpack_require__(43);
-=======
-/* 231 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var toInteger = __webpack_require__(55)
-	  , defined   = __webpack_require__(44);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 232 */
-=======
-/* 233 */
->>>>>>> organizationlist to angular 2
-=======
-/* 234 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 236 */
->>>>>>> volumes details to angular 2
-=======
-/* 237 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var toInteger = __webpack_require__(56)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , defined   = __webpack_require__(46);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , defined   = __webpack_require__(47);
->>>>>>> organizationlist to angular 2
+	var toInteger = __webpack_require__(60)
+	  , defined   = __webpack_require__(48);
 
 	module.exports = function repeat(count){
 	  var str = String(defined(this))
@@ -6405,95 +3132,20 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 227 */
-=======
-/* 224 */
->>>>>>> Table directive to angular 2
-=======
-/* 232 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 233 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 234 */
->>>>>>> organizationlist to angular 2
-=======
-/* 235 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 237 */
->>>>>>> volumes details to angular 2
-=======
-/* 238 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports.f = __webpack_require__(14);
+	exports.f = __webpack_require__(15);
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 228 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(206);
-=======
-/* 239 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var strong = __webpack_require__(217);
->>>>>>> added ctvNamevalaue directive to angular 2
+	var strong = __webpack_require__(223);
 
 	// 23.1 Map Objects
-	module.exports = __webpack_require__(97)('Map', function(get){
-=======
-/* 225 */
-=======
-/* 233 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 234 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 235 */
->>>>>>> organizationlist to angular 2
-=======
-/* 236 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 238 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var strong = __webpack_require__(216);
-
-	// 23.1 Map Objects
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	module.exports = __webpack_require__(95)('Map', function(get){
->>>>>>> Table directive to angular 2
-=======
-	module.exports = __webpack_require__(102)('Map', function(get){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	module.exports = __webpack_require__(103)('Map', function(get){
->>>>>>> adding storage policy list - angular 2
+	module.exports = __webpack_require__(104)('Map', function(get){
 	  return function Map(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.1.3.6 Map.prototype.get(key)
@@ -6508,81 +3160,21 @@
 	}, strong, true);
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 229 */
-=======
-/* 226 */
->>>>>>> Table directive to angular 2
-=======
-/* 234 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 235 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 236 */
->>>>>>> organizationlist to angular 2
-=======
-/* 237 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 239 */
->>>>>>> volumes details to angular 2
-=======
-/* 240 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
-	if(__webpack_require__(20) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
+	if(__webpack_require__(21) && /./g.flags != 'g')__webpack_require__(18).f(RegExp.prototype, 'flags', {
 	  configurable: true,
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  get: __webpack_require__(139)
+	  get: __webpack_require__(147)
 	});
 
 /***/ },
-/* 230 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@match logic
-	__webpack_require__(98)('match', 1, function(defined, MATCH, $match){
-=======
-	  get: __webpack_require__(138)
-=======
-	  get: __webpack_require__(142)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  get: __webpack_require__(143)
->>>>>>> organizationlist to angular 2
-=======
-	  get: __webpack_require__(144)
->>>>>>> volumes details to angular 2
-	});
-
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// @@match logic
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	__webpack_require__(96)('match', 1, function(defined, MATCH, $match){
->>>>>>> Table directive to angular 2
-=======
-	__webpack_require__(103)('match', 1, function(defined, MATCH, $match){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(104)('match', 1, function(defined, MATCH, $match){
->>>>>>> adding storage policy list - angular 2
+	__webpack_require__(105)('match', 1, function(defined, MATCH, $match){
 	  // 21.1.3.11 String.prototype.match(regexp)
 	  return [function match(regexp){
 	    'use strict';
@@ -6593,51 +3185,11 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 231 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@replace logic
-	__webpack_require__(98)('replace', 2, function(defined, REPLACE, $replace){
-=======
-/* 228 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// @@replace logic
-	__webpack_require__(96)('replace', 2, function(defined, REPLACE, $replace){
->>>>>>> Table directive to angular 2
-=======
-/* 236 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// @@replace logic
-	__webpack_require__(103)('replace', 2, function(defined, REPLACE, $replace){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 237 */
-=======
-/* 238 */
->>>>>>> organizationlist to angular 2
-=======
-/* 239 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 241 */
->>>>>>> volumes details to angular 2
-=======
-/* 242 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// @@replace logic
-	__webpack_require__(104)('replace', 2, function(defined, REPLACE, $replace){
->>>>>>> adding storage policy list - angular 2
+	__webpack_require__(105)('replace', 2, function(defined, REPLACE, $replace){
 	  // 21.1.3.14 String.prototype.replace(searchValue, replaceValue)
 	  return [function replace(searchValue, replaceValue){
 	    'use strict';
@@ -6650,51 +3202,11 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 232 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@search logic
-	__webpack_require__(98)('search', 1, function(defined, SEARCH, $search){
-=======
-/* 229 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// @@search logic
-	__webpack_require__(96)('search', 1, function(defined, SEARCH, $search){
->>>>>>> Table directive to angular 2
-=======
-/* 237 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// @@search logic
-	__webpack_require__(103)('search', 1, function(defined, SEARCH, $search){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 238 */
-=======
-/* 239 */
->>>>>>> organizationlist to angular 2
-=======
-/* 240 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 242 */
->>>>>>> volumes details to angular 2
-=======
-/* 243 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// @@search logic
-	__webpack_require__(104)('search', 1, function(defined, SEARCH, $search){
->>>>>>> adding storage policy list - angular 2
+	__webpack_require__(105)('search', 1, function(defined, SEARCH, $search){
 	  // 21.1.3.15 String.prototype.search(regexp)
 	  return [function search(regexp){
 	    'use strict';
@@ -6705,59 +3217,13 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 233 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@split logic
-	__webpack_require__(98)('split', 2, function(defined, SPLIT, $split){
+	__webpack_require__(105)('split', 2, function(defined, SPLIT, $split){
 	  'use strict';
-	  var isRegExp   = __webpack_require__(143)
-=======
-/* 230 */
-=======
-/* 238 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 239 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 240 */
->>>>>>> organizationlist to angular 2
-=======
-/* 241 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 243 */
->>>>>>> volumes details to angular 2
-=======
-/* 244 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// @@split logic
-	__webpack_require__(104)('split', 2, function(defined, SPLIT, $split){
-	  'use strict';
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  var isRegExp   = __webpack_require__(142)
->>>>>>> Table directive to angular 2
-=======
-	  var isRegExp   = __webpack_require__(146)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  var isRegExp   = __webpack_require__(147)
->>>>>>> organizationlist to angular 2
-=======
-	  var isRegExp   = __webpack_require__(148)
->>>>>>> volumes details to angular 2
+	  var isRegExp   = __webpack_require__(151)
 	    , _split     = $split
 	    , $push      = [].push
 	    , $SPLIT     = 'split'
@@ -6826,65 +3292,14 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 234 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(206);
-=======
-/* 244 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var strong = __webpack_require__(216);
->>>>>>> volumes details to angular 2
+	var strong = __webpack_require__(223);
 
 	// 23.2 Set Objects
-	module.exports = __webpack_require__(97)('Set', function(get){
-=======
-/* 231 */
-=======
-/* 239 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 240 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 241 */
->>>>>>> organizationlist to angular 2
-=======
-/* 242 */
->>>>>>> added collapsible directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var strong = __webpack_require__(214);
-=======
-/* 245 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var strong = __webpack_require__(217);
->>>>>>> added ctvNamevalaue directive to angular 2
-
-	// 23.2 Set Objects
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	module.exports = __webpack_require__(95)('Set', function(get){
->>>>>>> Table directive to angular 2
-=======
-	module.exports = __webpack_require__(102)('Set', function(get){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	module.exports = __webpack_require__(103)('Set', function(get){
->>>>>>> adding storage policy list - angular 2
+	module.exports = __webpack_require__(104)('Set', function(get){
 	  return function Set(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.2.3.1 Set.prototype.add(value)
@@ -6894,134 +3309,36 @@
 	}, strong);
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 235 */
-=======
-/* 232 */
->>>>>>> Table directive to angular 2
-=======
-/* 240 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 241 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 242 */
->>>>>>> organizationlist to angular 2
-=======
-/* 243 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 245 */
->>>>>>> volumes details to angular 2
-=======
-/* 246 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// ECMAScript 6 symbols shim
 	var global         = __webpack_require__(12)
-	  , has            = __webpack_require__(27)
-	  , DESCRIPTORS    = __webpack_require__(20)
+	  , has            = __webpack_require__(28)
+	  , DESCRIPTORS    = __webpack_require__(21)
 	  , $export        = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , redefine       = __webpack_require__(28)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , META           = __webpack_require__(51).KEY
+	  , redefine       = __webpack_require__(32)
+	  , META           = __webpack_require__(58).KEY
 	  , $fails         = __webpack_require__(10)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , shared         = __webpack_require__(102)
-	  , setToStringTag = __webpack_require__(86)
-	  , uid            = __webpack_require__(63)
-	  , wks            = __webpack_require__(14)
-	  , wksExt         = __webpack_require__(227)
-	  , wksDefine      = __webpack_require__(329)
-	  , keyOf          = __webpack_require__(327)
-	  , enumKeys       = __webpack_require__(325)
-	  , isArray        = __webpack_require__(142)
+	  , shared         = __webpack_require__(109)
+	  , setToStringTag = __webpack_require__(90)
+	  , uid            = __webpack_require__(71)
+	  , wks            = __webpack_require__(15)
+	  , wksExt         = __webpack_require__(244)
+	  , wksDefine      = __webpack_require__(351)
+	  , keyOf          = __webpack_require__(349)
+	  , enumKeys       = __webpack_require__(347)
+	  , isArray        = __webpack_require__(150)
 	  , anObject       = __webpack_require__(8)
-	  , toIObject      = __webpack_require__(33)
-	  , toPrimitive    = __webpack_require__(54)
-	  , createDesc     = __webpack_require__(52)
-	  , _create        = __webpack_require__(60)
-	  , gOPNExt        = __webpack_require__(219)
-	  , $GOPD          = __webpack_require__(45)
-	  , $DP            = __webpack_require__(17)
-	  , $keys          = __webpack_require__(73)
-=======
-	  , shared         = __webpack_require__(100)
-	  , setToStringTag = __webpack_require__(81)
-	  , uid            = __webpack_require__(62)
-=======
-	  , META           = __webpack_require__(53).KEY
-=======
-	  , redefine       = __webpack_require__(29)
-=======
-	  , redefine       = __webpack_require__(30)
->>>>>>> volumes details to angular 2
-	  , META           = __webpack_require__(54).KEY
->>>>>>> adding storage policy list - angular 2
-	  , $fails         = __webpack_require__(10)
-	  , shared         = __webpack_require__(108)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , setToStringTag = __webpack_require__(86)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , uid            = __webpack_require__(66)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , setToStringTag = __webpack_require__(88)
->>>>>>> network details to angular 2
-=======
-	  , setToStringTag = __webpack_require__(89)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
->>>>>>> volumes details to angular 2
-	  , uid            = __webpack_require__(67)
->>>>>>> organizationlist to angular 2
-=======
-	  , uid            = __webpack_require__(68)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , wks            = __webpack_require__(14)
-	  , wksExt         = __webpack_require__(238)
-	  , wksDefine      = __webpack_require__(340)
-	  , keyOf          = __webpack_require__(338)
-	  , enumKeys       = __webpack_require__(336)
-	  , isArray        = __webpack_require__(147)
-	  , anObject       = __webpack_require__(8)
-	  , toIObject      = __webpack_require__(37)
-	  , toPrimitive    = __webpack_require__(57)
-	  , createDesc     = __webpack_require__(55)
-	  , _create        = __webpack_require__(65)
-	  , gOPNExt        = __webpack_require__(230)
-	  , $GOPD          = __webpack_require__(49)
-	  , $DP            = __webpack_require__(17)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , $keys          = __webpack_require__(69)
->>>>>>> Table directive to angular 2
-=======
-	  , $keys          = __webpack_require__(72)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $keys          = __webpack_require__(73)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , $keys          = __webpack_require__(75)
->>>>>>> network details to angular 2
-=======
-	  , $keys          = __webpack_require__(76)
->>>>>>> volumes details to angular 2
+	  , toIObject      = __webpack_require__(38)
+	  , toPrimitive    = __webpack_require__(61)
+	  , createDesc     = __webpack_require__(59)
+	  , _create        = __webpack_require__(68)
+	  , gOPNExt        = __webpack_require__(236)
+	  , $GOPD          = __webpack_require__(50)
+	  , $DP            = __webpack_require__(18)
+	  , $keys          = __webpack_require__(79)
 	  , gOPD           = $GOPD.f
 	  , dP             = $DP.f
 	  , gOPN           = gOPNExt.f
@@ -7144,43 +3461,11 @@
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  __webpack_require__(61).f = gOPNExt.f = $getOwnPropertyNames;
-	  __webpack_require__(101).f  = $propertyIsEnumerable;
-	  __webpack_require__(100).f = $getOwnPropertySymbols;
+	  __webpack_require__(69).f = gOPNExt.f = $getOwnPropertyNames;
+	  __webpack_require__(108).f  = $propertyIsEnumerable;
+	  __webpack_require__(107).f = $getOwnPropertySymbols;
 
-	  if(DESCRIPTORS && !__webpack_require__(83)){
-=======
-	  __webpack_require__(60).f = gOPNExt.f = $getOwnPropertyNames;
-	  __webpack_require__(99).f  = $propertyIsEnumerable;
-	  __webpack_require__(98).f = $getOwnPropertySymbols;
-
-	  if(DESCRIPTORS && !__webpack_require__(78)){
->>>>>>> Table directive to angular 2
-=======
-	  __webpack_require__(64).f = gOPNExt.f = $getOwnPropertyNames;
-=======
-	  __webpack_require__(65).f = gOPNExt.f = $getOwnPropertyNames;
->>>>>>> organizationlist to angular 2
-=======
-	  __webpack_require__(66).f = gOPNExt.f = $getOwnPropertyNames;
->>>>>>> added ctvNamevalaue directive to angular 2
-	  __webpack_require__(107).f  = $propertyIsEnumerable;
-	  __webpack_require__(106).f = $getOwnPropertySymbols;
-
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  if(DESCRIPTORS && !__webpack_require__(83)){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  if(DESCRIPTORS && !__webpack_require__(85)){
->>>>>>> network details to angular 2
-=======
-	  if(DESCRIPTORS && !__webpack_require__(86)){
->>>>>>> volumes details to angular 2
+	  if(DESCRIPTORS && !__webpack_require__(87)){
 	    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
 	  }
 
@@ -7255,7 +3540,7 @@
 	});
 
 	// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
-	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(32)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(34)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
 	// 19.4.3.5 Symbol.prototype[@@toStringTag]
 	setToStringTag($Symbol, 'Symbol');
 	// 20.2.1.9 Math[@@toStringTag]
@@ -7264,83 +3549,15 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 236 */
-=======
-/* 233 */
->>>>>>> Table directive to angular 2
-=======
-/* 241 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var each         = __webpack_require__(36)(0)
-	  , redefine     = __webpack_require__(28)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , meta         = __webpack_require__(51)
-	  , assign       = __webpack_require__(217)
-	  , weak         = __webpack_require__(207)
-=======
-	  , meta         = __webpack_require__(49)
-	  , assign       = __webpack_require__(214)
-	  , weak         = __webpack_require__(204)
->>>>>>> Table directive to angular 2
-=======
-	  , meta         = __webpack_require__(53)
-	  , assign       = __webpack_require__(222)
-	  , weak         = __webpack_require__(212)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 242 */
-=======
-/* 243 */
->>>>>>> organizationlist to angular 2
-=======
-/* 244 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 246 */
->>>>>>> volumes details to angular 2
-=======
-/* 247 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var each         = __webpack_require__(39)(0)
-	  , redefine     = __webpack_require__(30)
-	  , meta         = __webpack_require__(54)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , assign       = __webpack_require__(223)
-	  , weak         = __webpack_require__(213)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , assign       = __webpack_require__(224)
-	  , weak         = __webpack_require__(214)
->>>>>>> organizationlist to angular 2
-=======
-	  , assign       = __webpack_require__(225)
-	  , weak         = __webpack_require__(215)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , assign       = __webpack_require__(227)
-	  , weak         = __webpack_require__(217)
->>>>>>> volumes details to angular 2
-=======
-	  , assign       = __webpack_require__(228)
-	  , weak         = __webpack_require__(218)
->>>>>>> added ctvNamevalaue directive to angular 2
+	var each         = __webpack_require__(40)(0)
+	  , redefine     = __webpack_require__(32)
+	  , meta         = __webpack_require__(58)
+	  , assign       = __webpack_require__(234)
+	  , weak         = __webpack_require__(224)
 	  , isObject     = __webpack_require__(11)
 	  , getWeak      = meta.getWeak
 	  , isExtensible = Object.isExtensible
@@ -7370,19 +3587,7 @@
 	};
 
 	// 23.3 WeakMap Objects
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	var $WeakMap = module.exports = __webpack_require__(97)('WeakMap', wrapper, methods, weak, true, true);
-=======
-	var $WeakMap = module.exports = __webpack_require__(95)('WeakMap', wrapper, methods, weak, true, true);
->>>>>>> Table directive to angular 2
-=======
-	var $WeakMap = module.exports = __webpack_require__(102)('WeakMap', wrapper, methods, weak, true, true);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	var $WeakMap = module.exports = __webpack_require__(103)('WeakMap', wrapper, methods, weak, true, true);
->>>>>>> adding storage policy list - angular 2
+	var $WeakMap = module.exports = __webpack_require__(104)('WeakMap', wrapper, methods, weak, true, true);
 
 	// IE11 WeakMap frozen keys fix
 	if(new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7){
@@ -7405,160 +3610,7 @@
 	}
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(106);
-	__webpack_require__(339);
-	__webpack_require__(337);
-	__webpack_require__(343);
-	__webpack_require__(340);
-	__webpack_require__(346);
-	__webpack_require__(348);
-	__webpack_require__(336);
-	__webpack_require__(342);
-	__webpack_require__(333);
-	__webpack_require__(347);
-	__webpack_require__(331);
-	__webpack_require__(345);
-	__webpack_require__(344);
-	__webpack_require__(338);
-	__webpack_require__(341);
-	__webpack_require__(330);
-	__webpack_require__(332);
-	__webpack_require__(335);
-	__webpack_require__(334);
-	__webpack_require__(349);
-	__webpack_require__(105);
-	module.exports = __webpack_require__(13).Array;
-
-/***/ },
-/* 304 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(350);
-	__webpack_require__(352);
-	__webpack_require__(351);
-	__webpack_require__(354);
-	__webpack_require__(353);
-	module.exports = Date;
-
-/***/ },
-/* 305 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(355);
-	__webpack_require__(357);
-	__webpack_require__(356);
-	module.exports = __webpack_require__(13).Function;
-
-/***/ },
-/* 306 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(64);
-	__webpack_require__(106);
-	__webpack_require__(154);
-	__webpack_require__(228);
-	module.exports = __webpack_require__(13).Map;
-
-/***/ },
-/* 307 */
-/***/ function(module, exports, __webpack_require__) {
-
-=======
-/* 234 */
-=======
-/* 242 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 243 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 244 */
->>>>>>> organizationlist to angular 2
-=======
-/* 245 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 247 */
->>>>>>> volumes details to angular 2
-=======
-/* 248 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 254 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -7744,12 +3796,6 @@
 
 
 /***/ },
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
 /* 255 */,
 /* 256 */,
 /* 257 */,
@@ -7809,945 +3855,294 @@
 /* 311 */,
 /* 312 */,
 /* 313 */,
-/* 314 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(112);
-	__webpack_require__(350);
-	__webpack_require__(348);
-	__webpack_require__(354);
-	__webpack_require__(351);
-	__webpack_require__(357);
-	__webpack_require__(359);
-	__webpack_require__(347);
-	__webpack_require__(353);
-	__webpack_require__(344);
-	__webpack_require__(358);
-	__webpack_require__(342);
-	__webpack_require__(356);
-	__webpack_require__(355);
-	__webpack_require__(349);
-	__webpack_require__(352);
-	__webpack_require__(341);
-	__webpack_require__(343);
-	__webpack_require__(346);
-	__webpack_require__(345);
-	__webpack_require__(360);
-	__webpack_require__(111);
-	module.exports = __webpack_require__(13).Array;
-
-/***/ },
-/* 315 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(361);
-	__webpack_require__(363);
-	__webpack_require__(362);
-	__webpack_require__(365);
-	__webpack_require__(364);
-	module.exports = Date;
-
-/***/ },
-/* 316 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(366);
-	__webpack_require__(368);
-	__webpack_require__(367);
-	module.exports = __webpack_require__(13).Function;
-
-/***/ },
-/* 317 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(69);
-	__webpack_require__(112);
-	__webpack_require__(159);
-	__webpack_require__(239);
-	module.exports = __webpack_require__(13).Map;
-
-/***/ },
-/* 318 */
-/***/ function(module, exports, __webpack_require__) {
-
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	__webpack_require__(352);
-	__webpack_require__(353);
-	__webpack_require__(354);
-	__webpack_require__(355);
-	__webpack_require__(356);
-	__webpack_require__(357);
->>>>>>> Table directive to angular 2
-	__webpack_require__(358);
-	__webpack_require__(359);
-	__webpack_require__(360);
-	__webpack_require__(361);
-=======
->>>>>>> converting volumelist, servicelist ctrl to ang2
-	__webpack_require__(362);
-	__webpack_require__(363);
-=======
->>>>>>> adding storage policy list - angular 2
-	__webpack_require__(364);
-	__webpack_require__(365);
-=======
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(365);
->>>>>>> network details to angular 2
-=======
->>>>>>> added collapsible directive to angular 2
-	__webpack_require__(366);
-	__webpack_require__(367);
-=======
->>>>>>> volumes details to angular 2
-	__webpack_require__(368);
-=======
->>>>>>> added ctvNamevalaue directive to angular 2
-	__webpack_require__(369);
-	__webpack_require__(370);
-	__webpack_require__(371);
-	__webpack_require__(372);
-	__webpack_require__(373);
-	__webpack_require__(374);
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	module.exports = __webpack_require__(13).Math;
-
-/***/ },
-/* 308 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(375);
-	__webpack_require__(385);
-	__webpack_require__(386);
-	__webpack_require__(376);
-	__webpack_require__(377);
-	__webpack_require__(378);
-	__webpack_require__(379);
-	__webpack_require__(380);
-	__webpack_require__(381);
-	__webpack_require__(382);
-	__webpack_require__(383);
-	__webpack_require__(384);
-	module.exports = __webpack_require__(13).Number;
-
-/***/ },
-/* 309 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(235);
-	__webpack_require__(388);
-	__webpack_require__(390);
-	__webpack_require__(389);
-	__webpack_require__(392);
-	__webpack_require__(394);
-	__webpack_require__(399);
-	__webpack_require__(393);
-	__webpack_require__(391);
-=======
-	__webpack_require__(375);
-	__webpack_require__(376);
-	__webpack_require__(377);
-	__webpack_require__(378);
-	__webpack_require__(379);
-	__webpack_require__(380);
-	__webpack_require__(381);
-	__webpack_require__(382);
-	__webpack_require__(383);
-	__webpack_require__(384);
-	__webpack_require__(385);
-	module.exports = __webpack_require__(13).Math;
-
-/***/ },
-/* 319 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(386);
-	__webpack_require__(396);
-	__webpack_require__(397);
-	__webpack_require__(387);
-	__webpack_require__(388);
-	__webpack_require__(389);
-	__webpack_require__(390);
-	__webpack_require__(391);
-	__webpack_require__(392);
-	__webpack_require__(393);
-	__webpack_require__(394);
-	__webpack_require__(395);
-	module.exports = __webpack_require__(13).Number;
-
-/***/ },
-/* 320 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(246);
-	__webpack_require__(399);
-	__webpack_require__(401);
-	__webpack_require__(400);
-	__webpack_require__(403);
-	__webpack_require__(405);
-	__webpack_require__(410);
-	__webpack_require__(404);
-	__webpack_require__(402);
-	__webpack_require__(412);
-	__webpack_require__(411);
-	__webpack_require__(407);
-	__webpack_require__(408);
-	__webpack_require__(406);
-	__webpack_require__(398);
-	__webpack_require__(409);
-	__webpack_require__(413);
-	__webpack_require__(69);
-
-	module.exports = __webpack_require__(13).Object;
-
-/***/ },
-/* 321 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(414);
-	module.exports = __webpack_require__(13).parseFloat;
-
-/***/ },
-/* 322 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(415);
-	module.exports = __webpack_require__(13).parseInt;
-
-/***/ },
-/* 323 */
-/***/ function(module, exports, __webpack_require__) {
-
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	__webpack_require__(399);
-	__webpack_require__(400);
->>>>>>> Table directive to angular 2
-	__webpack_require__(401);
-	__webpack_require__(400);
-	__webpack_require__(396);
-	__webpack_require__(397);
-	__webpack_require__(395);
-	__webpack_require__(387);
-	__webpack_require__(398);
-	__webpack_require__(402);
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(64);
-
-	module.exports = __webpack_require__(13).Object;
-
-/***/ },
-/* 310 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(403);
-	module.exports = __webpack_require__(13).parseFloat;
-
-/***/ },
-/* 311 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(404);
-	module.exports = __webpack_require__(13).parseInt;
-
-/***/ },
-/* 312 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(405);
-	__webpack_require__(406);
-	__webpack_require__(407);
-	__webpack_require__(408);
-	__webpack_require__(409);
-	__webpack_require__(412);
-	__webpack_require__(410);
-	__webpack_require__(411);
-=======
-	__webpack_require__(412);
->>>>>>> network details to angular 2
-=======
->>>>>>> added collapsible directive to angular 2
-	__webpack_require__(413);
-	__webpack_require__(414);
-=======
->>>>>>> volumes details to angular 2
-	__webpack_require__(415);
-	__webpack_require__(416);
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	__webpack_require__(418);
-	__webpack_require__(417);
-	module.exports = __webpack_require__(13).Reflect;
-
-/***/ },
-/* 313 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(419);
-	__webpack_require__(420);
-	__webpack_require__(229);
-	__webpack_require__(230);
-	__webpack_require__(231);
-	__webpack_require__(232);
-	__webpack_require__(233);
-	module.exports = __webpack_require__(13).RegExp;
-
-/***/ },
-/* 314 */
-=======
-	__webpack_require__(419);
-=======
->>>>>>> added collapsible directive to angular 2
-	__webpack_require__(417);
-	__webpack_require__(418);
-	__webpack_require__(419);
-	__webpack_require__(422);
-	__webpack_require__(420);
-	__webpack_require__(421);
-	__webpack_require__(423);
-=======
-	__webpack_require__(416);
-	__webpack_require__(417);
-	__webpack_require__(418);
-	__webpack_require__(419);
-	__webpack_require__(420);
-	__webpack_require__(423);
-	__webpack_require__(421);
-	__webpack_require__(422);
->>>>>>> added ctvNamevalaue directive to angular 2
-	__webpack_require__(424);
-	__webpack_require__(425);
-	__webpack_require__(426);
-	__webpack_require__(427);
-	__webpack_require__(429);
-	__webpack_require__(428);
-	module.exports = __webpack_require__(13).Reflect;
-
-/***/ },
-/* 324 */
-/***/ function(module, exports, __webpack_require__) {
-
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	__webpack_require__(429);
-	__webpack_require__(430);
-	__webpack_require__(239);
-	__webpack_require__(240);
-	__webpack_require__(241);
-	__webpack_require__(242);
-	__webpack_require__(243);
-	module.exports = __webpack_require__(13).RegExp;
-
-/***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-/* 321 */
->>>>>>> network details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(64);
-	__webpack_require__(106);
-	__webpack_require__(154);
-	__webpack_require__(234);
-	module.exports = __webpack_require__(13).Set;
-
-/***/ },
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 315 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(430);
-	__webpack_require__(434);
-	__webpack_require__(441);
-	__webpack_require__(106);
-=======
-	__webpack_require__(403);
-	__webpack_require__(406);
-	__webpack_require__(404);
-	__webpack_require__(405);
-	__webpack_require__(407);
-	__webpack_require__(408);
-=======
->>>>>>> converting volumelist, servicelist ctrl to ang2
-	__webpack_require__(409);
-	__webpack_require__(410);
-=======
->>>>>>> adding storage policy list - angular 2
-	__webpack_require__(411);
-	__webpack_require__(412);
-=======
->>>>>>> organizationlist to angular 2
-	__webpack_require__(413);
-	__webpack_require__(414);
-	__webpack_require__(415);
-	__webpack_require__(416);
-	__webpack_require__(417);
-	__webpack_require__(420);
-	__webpack_require__(418);
-	__webpack_require__(419);
-	__webpack_require__(421);
-	__webpack_require__(422);
-	__webpack_require__(423);
-	__webpack_require__(424);
-	__webpack_require__(426);
-	__webpack_require__(425);
-	module.exports = __webpack_require__(13).Reflect;
-
-/***/ },
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-/* 319 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(425);
-	__webpack_require__(426);
-	__webpack_require__(235);
-	__webpack_require__(236);
-	__webpack_require__(237);
-	__webpack_require__(238);
-	__webpack_require__(239);
-	module.exports = __webpack_require__(13).RegExp;
-
-/***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 308 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(63);
-	__webpack_require__(104);
-	__webpack_require__(153);
-	__webpack_require__(231);
-	module.exports = __webpack_require__(13).Set;
-
-/***/ },
-/* 309 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(424);
-	__webpack_require__(428);
-	__webpack_require__(435);
-	__webpack_require__(104);
-	__webpack_require__(419);
-	__webpack_require__(420);
->>>>>>> Table directive to angular 2
-	__webpack_require__(425);
-	__webpack_require__(429);
-	__webpack_require__(431);
-	__webpack_require__(415);
-	__webpack_require__(416);
-	__webpack_require__(417);
-	__webpack_require__(418);
-	__webpack_require__(421);
-	__webpack_require__(422);
-	__webpack_require__(423);
-	__webpack_require__(426);
-	__webpack_require__(431);
-	__webpack_require__(435);
-	__webpack_require__(437);
-	__webpack_require__(421);
-	__webpack_require__(422);
-	__webpack_require__(423);
-	__webpack_require__(424);
-	__webpack_require__(427);
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(428);
-	__webpack_require__(429);
-	__webpack_require__(432);
-	__webpack_require__(433);
-	__webpack_require__(436);
-	__webpack_require__(438);
-	__webpack_require__(439);
-	__webpack_require__(440);
-	__webpack_require__(230);
-	__webpack_require__(231);
-	__webpack_require__(232);
-	__webpack_require__(233);
-	module.exports = __webpack_require__(13).String;
-
-/***/ },
-/* 316 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(235);
-	__webpack_require__(64);
-	module.exports = __webpack_require__(13).Symbol;
-
-/***/ },
-/* 317 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(442);
-	__webpack_require__(443);
-	__webpack_require__(448);
-	__webpack_require__(451);
-	__webpack_require__(452);
-	__webpack_require__(446);
-	__webpack_require__(449);
-	__webpack_require__(447);
-	__webpack_require__(450);
-	__webpack_require__(444);
-	__webpack_require__(445);
-	__webpack_require__(64);
-	module.exports = __webpack_require__(13);
-
-/***/ },
-/* 318 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(64);
-	__webpack_require__(105);
-	__webpack_require__(236);
-	module.exports = __webpack_require__(13).WeakMap;
-=======
-/* 318 */
-=======
-/* 320 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 321 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(427);
-	__webpack_require__(428);
-	__webpack_require__(236);
-	__webpack_require__(237);
-	__webpack_require__(238);
-	__webpack_require__(239);
-	__webpack_require__(240);
-	module.exports = __webpack_require__(13).RegExp;
-
-/***/ },
-/* 322 */
->>>>>>> organizationlist to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(68);
-	__webpack_require__(112);
-	__webpack_require__(158);
-	__webpack_require__(241);
-	module.exports = __webpack_require__(13).Set;
->>>>>>> converting volumelist, servicelist ctrl to ang2
-
-/***/ },
-/* 323 */
-/***/ function(module, exports, __webpack_require__) {
-
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	__webpack_require__(64);
-	__webpack_require__(154);
-	__webpack_require__(453);
-	module.exports = __webpack_require__(13).WeakSet;
-
-/***/ },
-/* 320 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(454);
-	__webpack_require__(455);
-	__webpack_require__(457);
-	__webpack_require__(456);
-	__webpack_require__(459);
-	__webpack_require__(458);
-	__webpack_require__(460);
-	__webpack_require__(461);
-	__webpack_require__(462);
-=======
-	__webpack_require__(430);
-=======
-	__webpack_require__(434);
-	__webpack_require__(438);
-	__webpack_require__(445);
-	__webpack_require__(111);
-=======
-/* 322 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(437);
-	__webpack_require__(441);
-	__webpack_require__(448);
-	__webpack_require__(112);
-	__webpack_require__(432);
-	__webpack_require__(433);
-	__webpack_require__(438);
-	__webpack_require__(442);
-	__webpack_require__(444);
-	__webpack_require__(428);
->>>>>>> network details to angular 2
-	__webpack_require__(429);
-	__webpack_require__(430);
-	__webpack_require__(435);
-	__webpack_require__(439);
-=======
-	__webpack_require__(436);
-	__webpack_require__(440);
-	__webpack_require__(447);
-	__webpack_require__(112);
-	__webpack_require__(431);
-	__webpack_require__(432);
-	__webpack_require__(437);
->>>>>>> adding storage policy list - angular 2
-	__webpack_require__(441);
-	__webpack_require__(443);
-	__webpack_require__(427);
-	__webpack_require__(428);
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	__webpack_require__(431);
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> converting volumelist, servicelist ctrl to ang2
-	__webpack_require__(432);
-=======
-	__webpack_require__(429);
-	__webpack_require__(430);
->>>>>>> adding storage policy list - angular 2
-	__webpack_require__(433);
-	__webpack_require__(434);
-=======
-	__webpack_require__(438);
-	__webpack_require__(442);
-	__webpack_require__(449);
-	__webpack_require__(112);
-	__webpack_require__(433);
-	__webpack_require__(434);
-	__webpack_require__(439);
-	__webpack_require__(443);
-	__webpack_require__(445);
-	__webpack_require__(429);
-	__webpack_require__(430);
-	__webpack_require__(431);
-	__webpack_require__(432);
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(434);
->>>>>>> network details to angular 2
-	__webpack_require__(435);
-	__webpack_require__(436);
-	__webpack_require__(439);
-	__webpack_require__(440);
-	__webpack_require__(443);
-	__webpack_require__(445);
-	__webpack_require__(446);
-	__webpack_require__(447);
-	__webpack_require__(237);
-	__webpack_require__(238);
-	__webpack_require__(239);
-	__webpack_require__(240);
-	module.exports = __webpack_require__(13).String;
-
-/***/ },
-/* 323 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(242);
-=======
-/* 322 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(68);
-	__webpack_require__(112);
-	__webpack_require__(158);
-	__webpack_require__(242);
-	module.exports = __webpack_require__(13).Set;
-
-/***/ },
-/* 323 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(438);
-	__webpack_require__(442);
-	__webpack_require__(449);
-	__webpack_require__(112);
-	__webpack_require__(433);
-	__webpack_require__(434);
-	__webpack_require__(439);
-	__webpack_require__(443);
-	__webpack_require__(445);
-	__webpack_require__(429);
-	__webpack_require__(430);
-	__webpack_require__(431);
-	__webpack_require__(432);
-	__webpack_require__(435);
-	__webpack_require__(436);
-	__webpack_require__(437);
-	__webpack_require__(440);
-	__webpack_require__(441);
-	__webpack_require__(444);
-=======
-/* 324 */
-=======
-	__webpack_require__(430);
-	__webpack_require__(431);
-	__webpack_require__(240);
-	__webpack_require__(241);
-	__webpack_require__(242);
-	__webpack_require__(243);
-	__webpack_require__(244);
-	module.exports = __webpack_require__(13).RegExp;
-
-/***/ },
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
 /* 325 */
->>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(69);
+	__webpack_require__(113);
+	__webpack_require__(361);
+	__webpack_require__(359);
+	__webpack_require__(365);
+	__webpack_require__(362);
+	__webpack_require__(368);
+	__webpack_require__(370);
+	__webpack_require__(358);
+	__webpack_require__(364);
+	__webpack_require__(355);
+	__webpack_require__(369);
+	__webpack_require__(353);
+	__webpack_require__(367);
+	__webpack_require__(366);
+	__webpack_require__(360);
+	__webpack_require__(363);
+	__webpack_require__(352);
+	__webpack_require__(354);
+	__webpack_require__(357);
+	__webpack_require__(356);
+	__webpack_require__(371);
 	__webpack_require__(112);
-	__webpack_require__(159);
-	__webpack_require__(245);
-	module.exports = __webpack_require__(13).Set;
+	module.exports = __webpack_require__(14).Array;
 
 /***/ },
 /* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(441);
-	__webpack_require__(445);
-	__webpack_require__(452);
-	__webpack_require__(112);
-	__webpack_require__(436);
-	__webpack_require__(437);
-	__webpack_require__(442);
-	__webpack_require__(446);
-	__webpack_require__(448);
-	__webpack_require__(432);
-	__webpack_require__(433);
-	__webpack_require__(434);
-	__webpack_require__(435);
-	__webpack_require__(438);
-	__webpack_require__(439);
-	__webpack_require__(440);
-	__webpack_require__(443);
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
->>>>>>> volumes details to angular 2
-	__webpack_require__(446);
-	__webpack_require__(448);
-=======
-	__webpack_require__(444);
-	__webpack_require__(447);
->>>>>>> added ctvNamevalaue directive to angular 2
-	__webpack_require__(449);
-	__webpack_require__(450);
-	__webpack_require__(451);
-	__webpack_require__(241);
-	__webpack_require__(242);
-	__webpack_require__(243);
-	__webpack_require__(244);
-	module.exports = __webpack_require__(13).String;
+	__webpack_require__(372);
+	__webpack_require__(374);
+	__webpack_require__(373);
+	__webpack_require__(376);
+	__webpack_require__(375);
+	module.exports = Date;
 
 /***/ },
 /* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	__webpack_require__(243);
->>>>>>> added collapsible directive to angular 2
-=======
-	__webpack_require__(245);
->>>>>>> volumes details to angular 2
-	__webpack_require__(68);
-	module.exports = __webpack_require__(13).Symbol;
-
-/***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-/* 324 */
-=======
-/* 325 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 327 */
->>>>>>> volumes details to angular 2
-=======
-	__webpack_require__(246);
-	__webpack_require__(69);
-	module.exports = __webpack_require__(13).Symbol;
+	__webpack_require__(377);
+	__webpack_require__(379);
+	__webpack_require__(378);
+	module.exports = __webpack_require__(14).Function;
 
 /***/ },
 /* 328 */
->>>>>>> added ctvNamevalaue directive to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(453);
-	__webpack_require__(454);
-	__webpack_require__(459);
-	__webpack_require__(462);
-	__webpack_require__(463);
-	__webpack_require__(457);
-	__webpack_require__(460);
-	__webpack_require__(458);
-	__webpack_require__(461);
-	__webpack_require__(455);
-	__webpack_require__(456);
-	__webpack_require__(69);
-	module.exports = __webpack_require__(13);
+	__webpack_require__(72);
+	__webpack_require__(113);
+	__webpack_require__(162);
+	__webpack_require__(245);
+	module.exports = __webpack_require__(14).Map;
 
 /***/ },
 /* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(69);
-	__webpack_require__(111);
-	__webpack_require__(247);
-	module.exports = __webpack_require__(13).WeakMap;
+	__webpack_require__(380);
+	__webpack_require__(381);
+	__webpack_require__(382);
+	__webpack_require__(383);
+	__webpack_require__(384);
+	__webpack_require__(385);
+	__webpack_require__(386);
+	__webpack_require__(387);
+	__webpack_require__(388);
+	__webpack_require__(389);
+	__webpack_require__(390);
+	__webpack_require__(391);
+	__webpack_require__(392);
+	__webpack_require__(393);
+	__webpack_require__(394);
+	__webpack_require__(395);
+	__webpack_require__(396);
+	module.exports = __webpack_require__(14).Math;
 
 /***/ },
 /* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(69);
-	__webpack_require__(159);
-	__webpack_require__(464);
-	module.exports = __webpack_require__(13).WeakSet;
+	__webpack_require__(397);
+	__webpack_require__(407);
+	__webpack_require__(408);
+	__webpack_require__(398);
+	__webpack_require__(399);
+	__webpack_require__(400);
+	__webpack_require__(401);
+	__webpack_require__(402);
+	__webpack_require__(403);
+	__webpack_require__(404);
+	__webpack_require__(405);
+	__webpack_require__(406);
+	module.exports = __webpack_require__(14).Number;
 
 /***/ },
 /* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	__webpack_require__(448);
-	__webpack_require__(449);
-	__webpack_require__(451);
-	__webpack_require__(450);
-	__webpack_require__(453);
+	__webpack_require__(252);
+	__webpack_require__(410);
+	__webpack_require__(412);
+	__webpack_require__(411);
+	__webpack_require__(414);
+	__webpack_require__(416);
+	__webpack_require__(421);
+	__webpack_require__(415);
+	__webpack_require__(413);
+	__webpack_require__(423);
+	__webpack_require__(422);
+	__webpack_require__(418);
+	__webpack_require__(419);
+	__webpack_require__(417);
+	__webpack_require__(409);
+	__webpack_require__(420);
+	__webpack_require__(424);
+	__webpack_require__(72);
+
+	module.exports = __webpack_require__(14).Object;
+
+/***/ },
+/* 332 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(425);
+	module.exports = __webpack_require__(14).parseFloat;
+
+/***/ },
+/* 333 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(426);
+	module.exports = __webpack_require__(14).parseInt;
+
+/***/ },
+/* 334 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(427);
+	__webpack_require__(428);
+	__webpack_require__(429);
+	__webpack_require__(430);
+	__webpack_require__(431);
+	__webpack_require__(434);
+	__webpack_require__(432);
+	__webpack_require__(433);
+	__webpack_require__(435);
+	__webpack_require__(436);
+	__webpack_require__(437);
+	__webpack_require__(438);
+	__webpack_require__(440);
+	__webpack_require__(439);
+	module.exports = __webpack_require__(14).Reflect;
+
+/***/ },
+/* 335 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(441);
+	__webpack_require__(442);
+	__webpack_require__(246);
+	__webpack_require__(247);
+	__webpack_require__(248);
+	__webpack_require__(249);
+	__webpack_require__(250);
+	module.exports = __webpack_require__(14).RegExp;
+
+/***/ },
+/* 336 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(72);
+	__webpack_require__(113);
+	__webpack_require__(162);
+	__webpack_require__(251);
+	module.exports = __webpack_require__(14).Set;
+
+/***/ },
+/* 337 */
+/***/ function(module, exports, __webpack_require__) {
+
 	__webpack_require__(452);
+	__webpack_require__(456);
+	__webpack_require__(463);
+	__webpack_require__(113);
+	__webpack_require__(447);
+	__webpack_require__(448);
+	__webpack_require__(453);
+	__webpack_require__(457);
+	__webpack_require__(459);
+	__webpack_require__(443);
+	__webpack_require__(444);
+	__webpack_require__(445);
+	__webpack_require__(446);
+	__webpack_require__(449);
+	__webpack_require__(450);
+	__webpack_require__(451);
 	__webpack_require__(454);
 	__webpack_require__(455);
-	__webpack_require__(456);
->>>>>>> Table directive to angular 2
-=======
 	__webpack_require__(458);
-	__webpack_require__(459);
-	__webpack_require__(461);
-=======
->>>>>>> adding storage policy list - angular 2
 	__webpack_require__(460);
 	__webpack_require__(461);
-	__webpack_require__(463);
-=======
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(461);
->>>>>>> network details to angular 2
-=======
->>>>>>> added collapsible directive to angular 2
 	__webpack_require__(462);
-	__webpack_require__(463);
+	__webpack_require__(247);
+	__webpack_require__(248);
+	__webpack_require__(249);
+	__webpack_require__(250);
+	module.exports = __webpack_require__(14).String;
+
+/***/ },
+/* 338 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(252);
+	__webpack_require__(72);
+	module.exports = __webpack_require__(14).Symbol;
+
+/***/ },
+/* 339 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(464);
 	__webpack_require__(465);
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	__webpack_require__(464);
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	__webpack_require__(466);
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
->>>>>>> organizationlist to angular 2
-=======
->>>>>>> network details to angular 2
-=======
-	__webpack_require__(464);
->>>>>>> added collapsible directive to angular 2
-	__webpack_require__(467);
-	__webpack_require__(466);
-	__webpack_require__(468);
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
->>>>>>> adding storage policy list - angular 2
-=======
-	__webpack_require__(469);
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
 	__webpack_require__(470);
->>>>>>> organizationlist to angular 2
-=======
->>>>>>> network details to angular 2
-=======
-	__webpack_require__(470);
->>>>>>> added collapsible directive to angular 2
-=======
-	__webpack_require__(464);
-=======
->>>>>>> added ctvNamevalaue directive to angular 2
-	__webpack_require__(465);
-	__webpack_require__(466);
-	__webpack_require__(468);
-	__webpack_require__(467);
-	__webpack_require__(470);
-	__webpack_require__(469);
-	__webpack_require__(471);
-	__webpack_require__(472);
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
->>>>>>> volumes details to angular 2
-=======
 	__webpack_require__(473);
->>>>>>> added ctvNamevalaue directive to angular 2
-	module.exports = __webpack_require__(13).Reflect;
+	__webpack_require__(474);
+	__webpack_require__(468);
+	__webpack_require__(471);
+	__webpack_require__(469);
+	__webpack_require__(472);
+	__webpack_require__(466);
+	__webpack_require__(467);
+	__webpack_require__(72);
+	module.exports = __webpack_require__(14);
+
+/***/ },
+/* 340 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(72);
+	__webpack_require__(112);
+	__webpack_require__(253);
+	module.exports = __webpack_require__(14).WeakMap;
+
+/***/ },
+/* 341 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(72);
+	__webpack_require__(162);
+	__webpack_require__(475);
+	module.exports = __webpack_require__(14).WeakSet;
+
+/***/ },
+/* 342 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(476);
+	__webpack_require__(477);
+	__webpack_require__(479);
+	__webpack_require__(478);
+	__webpack_require__(481);
+	__webpack_require__(480);
+	__webpack_require__(482);
+	__webpack_require__(483);
+	__webpack_require__(484);
+	module.exports = __webpack_require__(14).Reflect;
 
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 321 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var forOf = __webpack_require__(99);
-=======
-/* 315 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var forOf = __webpack_require__(97);
->>>>>>> Table directive to angular 2
-=======
-/* 325 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var forOf = __webpack_require__(104);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 327 */
-=======
-/* 329 */
->>>>>>> organizationlist to angular 2
-=======
-/* 328 */
->>>>>>> network details to angular 2
-=======
-/* 329 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 331 */
->>>>>>> volumes details to angular 2
-=======
-/* 332 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var forOf = __webpack_require__(105);
->>>>>>> adding storage policy list - angular 2
+	var forOf = __webpack_require__(106);
 
 	module.exports = function(iter, ITERATOR){
 	  var result = [];
@@ -8757,60 +4152,12 @@
 
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 322 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
-	  , isArray  = __webpack_require__(142)
-=======
-/* 316 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(11)
-	  , isArray  = __webpack_require__(141)
->>>>>>> Table directive to angular 2
-=======
-/* 326 */
-=======
-/* 328 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(11)
-	  , isArray  = __webpack_require__(145)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 330 */
-=======
-/* 329 */
->>>>>>> network details to angular 2
-=======
-/* 330 */
->>>>>>> added collapsible directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(11)
-	  , isArray  = __webpack_require__(146)
->>>>>>> organizationlist to angular 2
-=======
-/* 332 */
-=======
-/* 333 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(11)
-	  , isArray  = __webpack_require__(147)
->>>>>>> volumes details to angular 2
-	  , SPECIES  = __webpack_require__(14)('species');
+	  , isArray  = __webpack_require__(150)
+	  , SPECIES  = __webpack_require__(15)('species');
 
 	module.exports = function(original){
 	  var C;
@@ -8826,131 +4173,23 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 323 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(322);
-=======
-/* 317 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(316);
->>>>>>> Table directive to angular 2
-=======
-/* 327 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(326);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 329 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(328);
->>>>>>> adding storage policy list - angular 2
-=======
-/* 331 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(330);
->>>>>>> organizationlist to angular 2
-=======
-/* 330 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(329);
->>>>>>> network details to angular 2
-=======
-/* 331 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(330);
->>>>>>> added collapsible directive to angular 2
-=======
-/* 333 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(332);
->>>>>>> volumes details to angular 2
-=======
-/* 334 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-	var speciesConstructor = __webpack_require__(333);
->>>>>>> added ctvNamevalaue directive to angular 2
+	var speciesConstructor = __webpack_require__(344);
 
 	module.exports = function(original, length){
 	  return new (speciesConstructor(original))(length);
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 324 */
-=======
-/* 318 */
->>>>>>> Table directive to angular 2
-=======
-/* 328 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 330 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 332 */
->>>>>>> organizationlist to angular 2
-=======
-/* 331 */
->>>>>>> network details to angular 2
-=======
-/* 332 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 334 */
->>>>>>> volumes details to angular 2
-=======
-/* 335 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var anObject    = __webpack_require__(8)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , toPrimitive = __webpack_require__(54)
-=======
-	  , toPrimitive = __webpack_require__(52)
->>>>>>> Table directive to angular 2
-=======
-	  , toPrimitive = __webpack_require__(56)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , toPrimitive = __webpack_require__(57)
->>>>>>> adding storage policy list - angular 2
+	  , toPrimitive = __webpack_require__(61)
 	  , NUMBER      = 'number';
 
 	module.exports = function(hint){
@@ -8959,63 +4198,13 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 325 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
-	var getKeys = __webpack_require__(73)
-	  , gOPS    = __webpack_require__(100)
-	  , pIE     = __webpack_require__(101);
-=======
-/* 319 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// all enumerable object keys, includes symbols
-	var getKeys = __webpack_require__(69)
-	  , gOPS    = __webpack_require__(98)
-	  , pIE     = __webpack_require__(99);
->>>>>>> Table directive to angular 2
-=======
-/* 329 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// all enumerable object keys, includes symbols
-	var getKeys = __webpack_require__(72)
-	  , gOPS    = __webpack_require__(105)
-	  , pIE     = __webpack_require__(106);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 331 */
-=======
-/* 333 */
->>>>>>> organizationlist to angular 2
-=======
-/* 332 */
->>>>>>> network details to angular 2
-=======
-/* 333 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 335 */
->>>>>>> volumes details to angular 2
-=======
-/* 336 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// all enumerable object keys, includes symbols
-	var getKeys = __webpack_require__(76)
-	  , gOPS    = __webpack_require__(106)
-	  , pIE     = __webpack_require__(107);
->>>>>>> adding storage policy list - angular 2
+	var getKeys = __webpack_require__(79)
+	  , gOPS    = __webpack_require__(107)
+	  , pIE     = __webpack_require__(108);
 	module.exports = function(it){
 	  var result     = getKeys(it)
 	    , getSymbols = gOPS.f;
@@ -9029,39 +4218,7 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 326 */
-=======
-/* 320 */
->>>>>>> Table directive to angular 2
-=======
-/* 330 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 332 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 334 */
->>>>>>> organizationlist to angular 2
-=======
-/* 333 */
->>>>>>> network details to angular 2
-=======
-/* 334 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 336 */
->>>>>>> volumes details to angular 2
-=======
-/* 337 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 348 */
 /***/ function(module, exports) {
 
 	// fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -9082,62 +4239,11 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 327 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getKeys   = __webpack_require__(73)
-=======
-/* 321 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var getKeys   = __webpack_require__(69)
->>>>>>> Table directive to angular 2
-	  , toIObject = __webpack_require__(33);
-=======
-/* 331 */
-=======
-/* 333 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var getKeys   = __webpack_require__(73)
-	  , toIObject = __webpack_require__(34);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 335 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var getKeys   = __webpack_require__(73)
-	  , toIObject = __webpack_require__(35);
->>>>>>> organizationlist to angular 2
-=======
-/* 334 */
-=======
-/* 335 */
->>>>>>> added collapsible directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var getKeys   = __webpack_require__(75)
-	  , toIObject = __webpack_require__(36);
->>>>>>> network details to angular 2
-=======
-/* 337 */
-=======
-/* 338 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var getKeys   = __webpack_require__(76)
-	  , toIObject = __webpack_require__(37);
->>>>>>> volumes details to angular 2
+	var getKeys   = __webpack_require__(79)
+	  , toIObject = __webpack_require__(38);
 	module.exports = function(object, el){
 	  var O      = toIObject(object)
 	    , keys   = getKeys(O)
@@ -9148,66 +4254,12 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 328 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// all object keys, includes non-enumerable and symbols
-	var gOPN     = __webpack_require__(61)
-	  , gOPS     = __webpack_require__(100)
-=======
-/* 322 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// all object keys, includes non-enumerable and symbols
-	var gOPN     = __webpack_require__(60)
-	  , gOPS     = __webpack_require__(98)
->>>>>>> Table directive to angular 2
-=======
-/* 332 */
-=======
-/* 334 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// all object keys, includes non-enumerable and symbols
-	var gOPN     = __webpack_require__(64)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , gOPS     = __webpack_require__(105)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-/* 336 */
-=======
-/* 335 */
->>>>>>> network details to angular 2
-=======
-/* 336 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 338 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// all object keys, includes non-enumerable and symbols
-	var gOPN     = __webpack_require__(65)
->>>>>>> organizationlist to angular 2
-=======
-/* 339 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// all object keys, includes non-enumerable and symbols
-	var gOPN     = __webpack_require__(66)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , gOPS     = __webpack_require__(106)
->>>>>>> adding storage policy list - angular 2
+	var gOPN     = __webpack_require__(69)
+	  , gOPS     = __webpack_require__(107)
 	  , anObject = __webpack_require__(8)
 	  , Reflect  = __webpack_require__(12).Reflect;
 	module.exports = Reflect && Reflect.ownKeys || function ownKeys(it){
@@ -9217,199 +4269,39 @@
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 329 */
-=======
-/* 323 */
->>>>>>> Table directive to angular 2
-=======
-/* 333 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 335 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 337 */
->>>>>>> organizationlist to angular 2
-=======
-/* 336 */
->>>>>>> network details to angular 2
-=======
-/* 337 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 339 */
->>>>>>> volumes details to angular 2
-=======
-/* 340 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var global         = __webpack_require__(12)
-	  , core           = __webpack_require__(13)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , LIBRARY        = __webpack_require__(83)
-	  , wksExt         = __webpack_require__(227)
-=======
-	  , LIBRARY        = __webpack_require__(78)
-	  , wksExt         = __webpack_require__(224)
->>>>>>> Table directive to angular 2
-=======
-	  , LIBRARY        = __webpack_require__(83)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , wksExt         = __webpack_require__(232)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , wksExt         = __webpack_require__(233)
->>>>>>> adding storage policy list - angular 2
-=======
-=======
-	  , LIBRARY        = __webpack_require__(85)
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
->>>>>>> network details to angular 2
-	  , wksExt         = __webpack_require__(234)
->>>>>>> organizationlist to angular 2
-=======
-	  , wksExt         = __webpack_require__(235)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , LIBRARY        = __webpack_require__(86)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	  , wksExt         = __webpack_require__(237)
->>>>>>> volumes details to angular 2
-=======
-	  , wksExt         = __webpack_require__(238)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , defineProperty = __webpack_require__(17).f;
+	  , core           = __webpack_require__(14)
+	  , LIBRARY        = __webpack_require__(87)
+	  , wksExt         = __webpack_require__(244)
+	  , defineProperty = __webpack_require__(18).f;
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
 	  if(name.charAt(0) != '_' && !(name in $Symbol))defineProperty($Symbol, name, {value: wksExt.f(name)});
 	};
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 330 */
-=======
-/* 324 */
->>>>>>> Table directive to angular 2
-=======
-/* 334 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 336 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 338 */
->>>>>>> organizationlist to angular 2
-=======
-/* 337 */
->>>>>>> network details to angular 2
-=======
-/* 338 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 340 */
->>>>>>> volumes details to angular 2
-=======
-/* 341 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	var $export = __webpack_require__(2);
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.P, 'Array', {copyWithin: __webpack_require__(203)});
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(220)});
 
-	__webpack_require__(80)('copyWithin');
+	__webpack_require__(84)('copyWithin');
 
 /***/ },
-/* 331 */
-=======
-	$export($export.P, 'Array', {copyWithin: __webpack_require__(200)});
-=======
-	$export($export.P, 'Array', {copyWithin: __webpack_require__(208)});
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.P, 'Array', {copyWithin: __webpack_require__(209)});
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.P, 'Array', {copyWithin: __webpack_require__(210)});
->>>>>>> organizationlist to angular 2
-=======
-	$export($export.P, 'Array', {copyWithin: __webpack_require__(211)});
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.P, 'Array', {copyWithin: __webpack_require__(213)});
->>>>>>> volumes details to angular 2
-=======
-	$export($export.P, 'Array', {copyWithin: __webpack_require__(214)});
->>>>>>> added ctvNamevalaue directive to angular 2
-
-	__webpack_require__(83)('copyWithin');
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 325 */
->>>>>>> Table directive to angular 2
-=======
-/* 335 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 337 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 339 */
->>>>>>> organizationlist to angular 2
-=======
-/* 338 */
->>>>>>> network details to angular 2
-=======
-/* 339 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 341 */
->>>>>>> volumes details to angular 2
-=======
-/* 342 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-	  , $every  = __webpack_require__(39)(4);
+	  , $every  = __webpack_require__(40)(4);
 
-	$export($export.P + $export.F * !__webpack_require__(36)([].every, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(37)([].every, true), 'Array', {
 	  // 22.1.3.5 / 15.4.4.16 Array.prototype.every(callbackfn [, thisArg])
 	  every: function every(callbackfn /* , thisArg */){
 	    return $every(this, callbackfn, arguments[1]);
@@ -9417,106 +4309,25 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 332 */
-=======
-/* 326 */
->>>>>>> Table directive to angular 2
-=======
-/* 336 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 338 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 340 */
->>>>>>> organizationlist to angular 2
-=======
-/* 339 */
->>>>>>> network details to angular 2
-=======
-/* 340 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 342 */
->>>>>>> volumes details to angular 2
-=======
-/* 343 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	var $export = __webpack_require__(2);
 
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.P, 'Array', {fill: __webpack_require__(134)});
+	$export($export.P, 'Array', {fill: __webpack_require__(142)});
 
-	__webpack_require__(80)('fill');
+	__webpack_require__(84)('fill');
 
 /***/ },
-/* 333 */
-=======
-	$export($export.P, 'Array', {fill: __webpack_require__(133)});
-=======
-	$export($export.P, 'Array', {fill: __webpack_require__(137)});
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.P, 'Array', {fill: __webpack_require__(138)});
->>>>>>> organizationlist to angular 2
-=======
-	$export($export.P, 'Array', {fill: __webpack_require__(139)});
->>>>>>> volumes details to angular 2
-
-	__webpack_require__(83)('fill');
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 327 */
->>>>>>> Table directive to angular 2
-=======
-/* 337 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 339 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 341 */
->>>>>>> organizationlist to angular 2
-=======
-/* 340 */
->>>>>>> network details to angular 2
-=======
-/* 341 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 343 */
->>>>>>> volumes details to angular 2
-=======
-/* 344 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-	  , $filter = __webpack_require__(39)(2);
+	  , $filter = __webpack_require__(40)(2);
 
-	$export($export.P + $export.F * !__webpack_require__(36)([].filter, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(37)([].filter, true), 'Array', {
 	  // 22.1.3.7 / 15.4.4.20 Array.prototype.filter(callbackfn [, thisArg])
 	  filter: function filter(callbackfn /* , thisArg */){
 	    return $filter(this, callbackfn, arguments[1]);
@@ -9524,45 +4335,13 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 334 */
-=======
-/* 328 */
->>>>>>> Table directive to angular 2
-=======
-/* 338 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 340 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 342 */
->>>>>>> organizationlist to angular 2
-=======
-/* 341 */
->>>>>>> network details to angular 2
-=======
-/* 342 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 344 */
->>>>>>> volumes details to angular 2
-=======
-/* 345 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.9 Array.prototype.findIndex(predicate, thisArg = undefined)
 	var $export = __webpack_require__(2)
-	  , $find   = __webpack_require__(39)(6)
+	  , $find   = __webpack_require__(40)(6)
 	  , KEY     = 'findIndex'
 	  , forced  = true;
 	// Shouldn't skip holes
@@ -9572,60 +4351,16 @@
 	    return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
 	  }
 	});
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(80)(KEY);
+	__webpack_require__(84)(KEY);
 
 /***/ },
-/* 335 */
-=======
-	__webpack_require__(75)(KEY);
-
-/***/ },
-/* 329 */
->>>>>>> Table directive to angular 2
-=======
-	__webpack_require__(80)(KEY);
-
-/***/ },
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 339 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 341 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 343 */
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(82)(KEY);
-
-/***/ },
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-/* 342 */
->>>>>>> network details to angular 2
-=======
-/* 343 */
->>>>>>> added collapsible directive to angular 2
-=======
-	__webpack_require__(83)(KEY);
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-/* 345 */
->>>>>>> volumes details to angular 2
-=======
-/* 346 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
 	var $export = __webpack_require__(2)
-	  , $find   = __webpack_require__(39)(5)
+	  , $find   = __webpack_require__(40)(5)
 	  , KEY     = 'find'
 	  , forced  = true;
 	// Shouldn't skip holes
@@ -9635,81 +4370,16 @@
 	    return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
 	  }
 	});
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(80)(KEY);
+	__webpack_require__(84)(KEY);
 
 /***/ },
-/* 336 */
-=======
-	__webpack_require__(75)(KEY);
-
-/***/ },
-/* 330 */
->>>>>>> Table directive to angular 2
-=======
-	__webpack_require__(80)(KEY);
-
-/***/ },
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 340 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 342 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 344 */
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(82)(KEY);
-
-/***/ },
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-/* 343 */
->>>>>>> network details to angular 2
-=======
-/* 344 */
->>>>>>> added collapsible directive to angular 2
-=======
-	__webpack_require__(83)(KEY);
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-/* 346 */
->>>>>>> volumes details to angular 2
-=======
-/* 347 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export  = __webpack_require__(2)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , $forEach = __webpack_require__(36)(0)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , STRICT   = __webpack_require__(32)([].forEach, true);
-=======
-=======
-	  , $forEach = __webpack_require__(37)(0)
->>>>>>> adding storage policy list - angular 2
-	  , STRICT   = __webpack_require__(33)([].forEach, true);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $forEach = __webpack_require__(39)(0)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , STRICT   = __webpack_require__(34)([].forEach, true);
->>>>>>> organizationlist to angular 2
-=======
-	  , STRICT   = __webpack_require__(35)([].forEach, true);
->>>>>>> network details to angular 2
-=======
-	  , STRICT   = __webpack_require__(36)([].forEach, true);
->>>>>>> volumes details to angular 2
+	  , $forEach = __webpack_require__(40)(0)
+	  , STRICT   = __webpack_require__(37)([].forEach, true);
 
 	$export($export.P + $export.F * !STRICT, 'Array', {
 	  // 22.1.3.10 / 15.4.4.18 Array.prototype.forEach(callbackfn [, thisArg])
@@ -9719,77 +4389,20 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 337 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var ctx            = __webpack_require__(59)
+	var ctx            = __webpack_require__(67)
 	  , $export        = __webpack_require__(2)
-	  , toObject       = __webpack_require__(31)
-	  , call           = __webpack_require__(213)
-	  , isArrayIter    = __webpack_require__(141)
-	  , toLength       = __webpack_require__(24)
-	  , createProperty = __webpack_require__(208)
-	  , getIterFn      = __webpack_require__(153);
+	  , toObject       = __webpack_require__(35)
+	  , call           = __webpack_require__(230)
+	  , isArrayIter    = __webpack_require__(149)
+	  , toLength       = __webpack_require__(26)
+	  , createProperty = __webpack_require__(225)
+	  , getIterFn      = __webpack_require__(161);
 
-	$export($export.S + $export.F * !__webpack_require__(145)(function(iter){ Array.from(iter); }), 'Array', {
-=======
-/* 331 */
-=======
-/* 341 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 343 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 345 */
->>>>>>> organizationlist to angular 2
-=======
-/* 344 */
->>>>>>> network details to angular 2
-=======
-/* 345 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 347 */
->>>>>>> volumes details to angular 2
-=======
-/* 348 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var ctx            = __webpack_require__(64)
-	  , $export        = __webpack_require__(2)
-	  , toObject       = __webpack_require__(33)
-	  , call           = __webpack_require__(224)
-	  , isArrayIter    = __webpack_require__(146)
-	  , toLength       = __webpack_require__(25)
-	  , createProperty = __webpack_require__(219)
-	  , getIterFn      = __webpack_require__(158);
-
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	$export($export.S + $export.F * !__webpack_require__(144)(function(iter){ Array.from(iter); }), 'Array', {
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S + $export.F * !__webpack_require__(148)(function(iter){ Array.from(iter); }), 'Array', {
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.S + $export.F * !__webpack_require__(149)(function(iter){ Array.from(iter); }), 'Array', {
->>>>>>> organizationlist to angular 2
-=======
-	$export($export.S + $export.F * !__webpack_require__(150)(function(iter){ Array.from(iter); }), 'Array', {
->>>>>>> volumes details to angular 2
+	$export($export.S + $export.F * !__webpack_require__(153)(function(iter){ Array.from(iter); }), 'Array', {
 	  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
 	  from: function from(arrayLike/*, mapfn = undefined, thisArg = undefined*/){
 	    var O       = toObject(arrayLike)
@@ -9819,64 +4432,16 @@
 
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 338 */
-=======
-/* 332 */
->>>>>>> Table directive to angular 2
-=======
-/* 342 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 344 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 346 */
->>>>>>> organizationlist to angular 2
-=======
-/* 345 */
->>>>>>> network details to angular 2
-=======
-/* 346 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 348 */
->>>>>>> volumes details to angular 2
-=======
-/* 349 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export       = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , $indexOf      = __webpack_require__(135)(false)
-=======
-	  , $indexOf      = __webpack_require__(134)(false)
->>>>>>> Table directive to angular 2
-=======
-	  , $indexOf      = __webpack_require__(138)(false)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $indexOf      = __webpack_require__(139)(false)
->>>>>>> organizationlist to angular 2
-=======
-	  , $indexOf      = __webpack_require__(140)(false)
->>>>>>> volumes details to angular 2
+	  , $indexOf      = __webpack_require__(143)(false)
 	  , $native       = [].indexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].indexOf(1, -0) < 0;
 
-	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(36)($native)), 'Array', {
+	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(37)($native)), 'Array', {
 	  // 22.1.3.11 / 15.4.4.14 Array.prototype.indexOf(searchElement [, fromIndex])
 	  indexOf: function indexOf(searchElement /*, fromIndex = 0 */){
 	    return NEGATIVE_ZERO
@@ -9887,195 +4452,44 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 339 */
-=======
-/* 333 */
->>>>>>> Table directive to angular 2
-=======
-/* 343 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 345 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 347 */
->>>>>>> organizationlist to angular 2
-=======
-/* 346 */
->>>>>>> network details to angular 2
-=======
-/* 347 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 349 */
->>>>>>> volumes details to angular 2
-=======
-/* 350 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
 	var $export = __webpack_require__(2);
 
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S, 'Array', {isArray: __webpack_require__(142)});
+	$export($export.S, 'Array', {isArray: __webpack_require__(150)});
 
 /***/ },
-/* 340 */
-=======
-	$export($export.S, 'Array', {isArray: __webpack_require__(141)});
-
-/***/ },
-/* 334 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S, 'Array', {isArray: __webpack_require__(145)});
-
-/***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 344 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 346 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S, 'Array', {isArray: __webpack_require__(146)});
-
-/***/ },
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 348 */
->>>>>>> organizationlist to angular 2
-=======
-/* 347 */
->>>>>>> network details to angular 2
-=======
-/* 348 */
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.S, 'Array', {isArray: __webpack_require__(147)});
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-/* 350 */
->>>>>>> volumes details to angular 2
-=======
-/* 351 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.13 Array.prototype.join(separator)
 	var $export   = __webpack_require__(2)
-	  , toIObject = __webpack_require__(37)
+	  , toIObject = __webpack_require__(38)
 	  , arrayJoin = [].join;
 
 	// fallback for not array-like strings
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.P + $export.F * (__webpack_require__(82) != Object || !__webpack_require__(32)(arrayJoin)), 'Array', {
-=======
-	$export($export.P + $export.F * (__webpack_require__(77) != Object || !__webpack_require__(32)(arrayJoin)), 'Array', {
->>>>>>> Table directive to angular 2
-=======
-	$export($export.P + $export.F * (__webpack_require__(82) != Object || !__webpack_require__(33)(arrayJoin)), 'Array', {
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.P + $export.F * (__webpack_require__(82) != Object || !__webpack_require__(34)(arrayJoin)), 'Array', {
->>>>>>> organizationlist to angular 2
-=======
-	$export($export.P + $export.F * (__webpack_require__(84) != Object || !__webpack_require__(35)(arrayJoin)), 'Array', {
->>>>>>> network details to angular 2
-=======
-	$export($export.P + $export.F * (__webpack_require__(85) != Object || !__webpack_require__(36)(arrayJoin)), 'Array', {
->>>>>>> volumes details to angular 2
+	$export($export.P + $export.F * (__webpack_require__(86) != Object || !__webpack_require__(37)(arrayJoin)), 'Array', {
 	  join: function join(separator){
 	    return arrayJoin.call(toIObject(this), separator === undefined ? ',' : separator);
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 341 */
-=======
-/* 335 */
->>>>>>> Table directive to angular 2
-=======
-/* 345 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 347 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 349 */
->>>>>>> organizationlist to angular 2
-=======
-/* 348 */
->>>>>>> network details to angular 2
-=======
-/* 349 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 351 */
->>>>>>> volumes details to angular 2
-=======
-/* 352 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export       = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , toIObject     = __webpack_require__(33)
-	  , toInteger     = __webpack_require__(53)
-=======
-	  , toIObject     = __webpack_require__(34)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , toInteger     = __webpack_require__(55)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , toIObject     = __webpack_require__(35)
->>>>>>> organizationlist to angular 2
-	  , toInteger     = __webpack_require__(56)
->>>>>>> adding storage policy list - angular 2
-	  , toLength      = __webpack_require__(24)
-=======
-	  , toIObject     = __webpack_require__(36)
-=======
-	  , toIObject     = __webpack_require__(37)
->>>>>>> volumes details to angular 2
-	  , toInteger     = __webpack_require__(56)
-	  , toLength      = __webpack_require__(25)
->>>>>>> network details to angular 2
+	  , toIObject     = __webpack_require__(38)
+	  , toInteger     = __webpack_require__(60)
+	  , toLength      = __webpack_require__(26)
 	  , $native       = [].lastIndexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].lastIndexOf(1, -0) < 0;
 
-	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(36)($native)), 'Array', {
+	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(37)($native)), 'Array', {
 	  // 22.1.3.14 / 15.4.4.15 Array.prototype.lastIndexOf(searchElement [, fromIndex])
 	  lastIndexOf: function lastIndexOf(searchElement /*, fromIndex = @[*-1] */){
 	    // convert -0 to +0
@@ -10091,46 +4505,14 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 342 */
-=======
-/* 336 */
->>>>>>> Table directive to angular 2
-=======
-/* 346 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 348 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 350 */
->>>>>>> organizationlist to angular 2
-=======
-/* 349 */
->>>>>>> network details to angular 2
-=======
-/* 350 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 352 */
->>>>>>> volumes details to angular 2
-=======
-/* 353 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-	  , $map    = __webpack_require__(39)(1);
+	  , $map    = __webpack_require__(40)(1);
 
-	$export($export.P + $export.F * !__webpack_require__(36)([].map, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(37)([].map, true), 'Array', {
 	  // 22.1.3.15 / 15.4.4.19 Array.prototype.map(callbackfn [, thisArg])
 	  map: function map(callbackfn /* , thisArg */){
 	    return $map(this, callbackfn, arguments[1]);
@@ -10138,72 +4520,12 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 343 */
-=======
-/* 337 */
->>>>>>> Table directive to angular 2
-=======
-/* 347 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 349 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 351 */
->>>>>>> organizationlist to angular 2
-=======
-/* 350 */
->>>>>>> network details to angular 2
-=======
-/* 351 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 353 */
->>>>>>> volumes details to angular 2
-=======
-/* 354 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export        = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , createProperty = __webpack_require__(208);
-=======
-	  , createProperty = __webpack_require__(205);
->>>>>>> Table directive to angular 2
-=======
-	  , createProperty = __webpack_require__(213);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , createProperty = __webpack_require__(214);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , createProperty = __webpack_require__(215);
->>>>>>> organizationlist to angular 2
-=======
-	  , createProperty = __webpack_require__(216);
->>>>>>> added collapsible directive to angular 2
-=======
-	  , createProperty = __webpack_require__(218);
->>>>>>> volumes details to angular 2
-=======
-	  , createProperty = __webpack_require__(219);
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , createProperty = __webpack_require__(225);
 
 	// WebKit Array.of isn't generic
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -10222,74 +4544,14 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 344 */
-=======
-/* 338 */
->>>>>>> Table directive to angular 2
-=======
-/* 348 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 350 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 352 */
->>>>>>> organizationlist to angular 2
-=======
-/* 351 */
->>>>>>> network details to angular 2
-=======
-/* 352 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 354 */
->>>>>>> volumes details to angular 2
-=======
-/* 355 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , $reduce = __webpack_require__(204);
-=======
-	  , $reduce = __webpack_require__(201);
->>>>>>> Table directive to angular 2
-=======
-	  , $reduce = __webpack_require__(209);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $reduce = __webpack_require__(210);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , $reduce = __webpack_require__(211);
->>>>>>> organizationlist to angular 2
-=======
-	  , $reduce = __webpack_require__(212);
->>>>>>> added collapsible directive to angular 2
-=======
-	  , $reduce = __webpack_require__(214);
->>>>>>> volumes details to angular 2
-=======
-	  , $reduce = __webpack_require__(215);
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , $reduce = __webpack_require__(221);
 
-	$export($export.P + $export.F * !__webpack_require__(36)([].reduceRight, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(37)([].reduceRight, true), 'Array', {
 	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
 	  reduceRight: function reduceRight(callbackfn /* , initialValue */){
 	    return $reduce(this, callbackfn, arguments.length, arguments[1], true);
@@ -10297,74 +4559,14 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 345 */
-=======
-/* 339 */
->>>>>>> Table directive to angular 2
-=======
-/* 349 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 351 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 353 */
->>>>>>> organizationlist to angular 2
-=======
-/* 352 */
->>>>>>> network details to angular 2
-=======
-/* 353 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 355 */
->>>>>>> volumes details to angular 2
-=======
-/* 356 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , $reduce = __webpack_require__(204);
-=======
-	  , $reduce = __webpack_require__(201);
->>>>>>> Table directive to angular 2
-=======
-	  , $reduce = __webpack_require__(209);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $reduce = __webpack_require__(210);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , $reduce = __webpack_require__(211);
->>>>>>> organizationlist to angular 2
-=======
-	  , $reduce = __webpack_require__(212);
->>>>>>> added collapsible directive to angular 2
-=======
-	  , $reduce = __webpack_require__(214);
->>>>>>> volumes details to angular 2
-=======
-	  , $reduce = __webpack_require__(215);
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , $reduce = __webpack_require__(221);
 
-	$export($export.P + $export.F * !__webpack_require__(36)([].reduce, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(37)([].reduce, true), 'Array', {
 	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
 	  reduce: function reduce(callbackfn /* , initialValue */){
 	    return $reduce(this, callbackfn, arguments.length, arguments[1], false);
@@ -10372,87 +4574,15 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 346 */
-=======
-/* 340 */
->>>>>>> Table directive to angular 2
-=======
-/* 350 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 352 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 354 */
->>>>>>> organizationlist to angular 2
-=======
-/* 353 */
->>>>>>> network details to angular 2
-=======
-/* 354 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 356 */
->>>>>>> volumes details to angular 2
-=======
-/* 357 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export    = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , html       = __webpack_require__(210)
-	  , cof        = __webpack_require__(58)
-	  , toIndex    = __webpack_require__(62)
-=======
-	  , html       = __webpack_require__(207)
-	  , cof        = __webpack_require__(57)
-	  , toIndex    = __webpack_require__(61)
->>>>>>> Table directive to angular 2
-=======
-	  , html       = __webpack_require__(215)
-=======
-	  , html       = __webpack_require__(216)
->>>>>>> adding storage policy list - angular 2
-	  , cof        = __webpack_require__(61)
-	  , toIndex    = __webpack_require__(65)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , html       = __webpack_require__(217)
-=======
-	  , html       = __webpack_require__(218)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , html       = __webpack_require__(220)
->>>>>>> volumes details to angular 2
-	  , cof        = __webpack_require__(62)
-	  , toIndex    = __webpack_require__(66)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> organizationlist to angular 2
-	  , toLength   = __webpack_require__(24)
-=======
-=======
-	  , html       = __webpack_require__(221)
-	  , cof        = __webpack_require__(63)
-	  , toIndex    = __webpack_require__(67)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , toLength   = __webpack_require__(25)
->>>>>>> network details to angular 2
+	  , html       = __webpack_require__(227)
+	  , cof        = __webpack_require__(66)
+	  , toIndex    = __webpack_require__(70)
+	  , toLength   = __webpack_require__(26)
 	  , arraySlice = [].slice;
 
 	// fallback for not array-like ES3 strings and DOM objects
@@ -10477,46 +4607,14 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 347 */
-=======
-/* 341 */
->>>>>>> Table directive to angular 2
-=======
-/* 351 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 353 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 355 */
->>>>>>> organizationlist to angular 2
-=======
-/* 354 */
->>>>>>> network details to angular 2
-=======
-/* 355 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 357 */
->>>>>>> volumes details to angular 2
-=======
-/* 358 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-	  , $some   = __webpack_require__(39)(3);
+	  , $some   = __webpack_require__(40)(3);
 
-	$export($export.P + $export.F * !__webpack_require__(36)([].some, true), 'Array', {
+	$export($export.P + $export.F * !__webpack_require__(37)([].some, true), 'Array', {
 	  // 22.1.3.23 / 15.4.4.17 Array.prototype.some(callbackfn [, thisArg])
 	  some: function some(callbackfn /* , thisArg */){
 	    return $some(this, callbackfn, arguments[1]);
@@ -10524,58 +4622,13 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 348 */
-=======
-/* 342 */
->>>>>>> Table directive to angular 2
-=======
-/* 352 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 354 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 356 */
->>>>>>> organizationlist to angular 2
-=======
-/* 355 */
->>>>>>> network details to angular 2
-=======
-/* 356 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 358 */
->>>>>>> volumes details to angular 2
-=======
-/* 359 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export   = __webpack_require__(2)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , aFunction = __webpack_require__(50)
-	  , toObject  = __webpack_require__(31)
-=======
-	  , aFunction = __webpack_require__(52)
-=======
-	  , aFunction = __webpack_require__(53)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
->>>>>>> adding storage policy list - angular 2
-	  , toObject  = __webpack_require__(32)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , toObject  = __webpack_require__(33)
->>>>>>> volumes details to angular 2
+	  , aFunction = __webpack_require__(57)
+	  , toObject  = __webpack_require__(35)
 	  , fails     = __webpack_require__(10)
 	  , $sort     = [].sort
 	  , test      = [1, 2, 3];
@@ -10587,7 +4640,7 @@
 	  // V8 bug
 	  test.sort(null);
 	  // Old WebKit
-	}) || !__webpack_require__(36)($sort)), 'Array', {
+	}) || !__webpack_require__(37)($sort)), 'Array', {
 	  // 22.1.3.25 Array.prototype.sort(comparefn)
 	  sort: function sort(comparefn){
 	    return comparefn === undefined
@@ -10597,79 +4650,13 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 349 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(85)('Array');
+	__webpack_require__(89)('Array');
 
 /***/ },
-/* 350 */
-=======
-/* 343 */
-=======
-/* 353 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 355 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 357 */
->>>>>>> organizationlist to angular 2
-=======
-/* 356 */
->>>>>>> network details to angular 2
-=======
-/* 357 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 359 */
->>>>>>> volumes details to angular 2
-=======
-/* 360 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(88)('Array');
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 344 */
->>>>>>> Table directive to angular 2
-=======
-/* 354 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 356 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 358 */
->>>>>>> organizationlist to angular 2
-=======
-/* 357 */
->>>>>>> network details to angular 2
-=======
-/* 358 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 360 */
->>>>>>> volumes details to angular 2
-=======
-/* 361 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.3.3.1 / 15.9.4.4 Date.now()
@@ -10678,39 +4665,7 @@
 	$export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 351 */
-=======
-/* 345 */
->>>>>>> Table directive to angular 2
-=======
-/* 355 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 357 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 359 */
->>>>>>> organizationlist to angular 2
-=======
-/* 358 */
->>>>>>> network details to angular 2
-=======
-/* 359 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 361 */
->>>>>>> volumes details to angular 2
-=======
-/* 362 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10743,58 +4698,13 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 352 */
-=======
-/* 346 */
->>>>>>> Table directive to angular 2
-=======
-/* 356 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 358 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 360 */
->>>>>>> organizationlist to angular 2
-=======
-/* 359 */
->>>>>>> network details to angular 2
-=======
-/* 360 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 362 */
->>>>>>> volumes details to angular 2
-=======
-/* 363 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export     = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , toObject    = __webpack_require__(31)
-	  , toPrimitive = __webpack_require__(54);
-=======
-	  , toObject    = __webpack_require__(32)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , toPrimitive = __webpack_require__(56);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , toObject    = __webpack_require__(33)
->>>>>>> volumes details to angular 2
-	  , toPrimitive = __webpack_require__(57);
->>>>>>> adding storage policy list - angular 2
+	  , toObject    = __webpack_require__(35)
+	  , toPrimitive = __webpack_require__(61);
 
 	$export($export.P + $export.F * __webpack_require__(10)(function(){
 	  return new Date(NaN).toJSON() !== null || Date.prototype.toJSON.call({toISOString: function(){ return 1; }}) !== 1;
@@ -10807,104 +4717,16 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 353 */
-=======
-/* 347 */
->>>>>>> Table directive to angular 2
-=======
-/* 357 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 359 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 361 */
->>>>>>> organizationlist to angular 2
-=======
-/* 360 */
->>>>>>> network details to angular 2
-=======
-/* 361 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 363 */
->>>>>>> volumes details to angular 2
-=======
-/* 364 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var TO_PRIMITIVE = __webpack_require__(14)('toPrimitive')
+	var TO_PRIMITIVE = __webpack_require__(15)('toPrimitive')
 	  , proto        = Date.prototype;
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(30)(proto, TO_PRIMITIVE, __webpack_require__(324));
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(34)(proto, TO_PRIMITIVE, __webpack_require__(346));
 
 /***/ },
-/* 354 */
-=======
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(30)(proto, TO_PRIMITIVE, __webpack_require__(318));
-
-/***/ },
-/* 348 */
->>>>>>> Table directive to angular 2
-=======
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(31)(proto, TO_PRIMITIVE, __webpack_require__(328));
-
-/***/ },
-/* 358 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(31)(proto, TO_PRIMITIVE, __webpack_require__(330));
-
-/***/ },
-/* 360 */
->>>>>>> adding storage policy list - angular 2
-=======
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(31)(proto, TO_PRIMITIVE, __webpack_require__(332));
-
-/***/ },
-/* 362 */
->>>>>>> organizationlist to angular 2
-=======
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(31)(proto, TO_PRIMITIVE, __webpack_require__(331));
-
-/***/ },
-/* 361 */
->>>>>>> network details to angular 2
-=======
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(31)(proto, TO_PRIMITIVE, __webpack_require__(332));
-
-/***/ },
-/* 362 */
->>>>>>> added collapsible directive to angular 2
-=======
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(32)(proto, TO_PRIMITIVE, __webpack_require__(334));
-
-/***/ },
-/* 364 */
->>>>>>> volumes details to angular 2
-=======
-	if(!(TO_PRIMITIVE in proto))__webpack_require__(32)(proto, TO_PRIMITIVE, __webpack_require__(335));
-
-/***/ },
-/* 365 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var DateProto    = Date.prototype
@@ -10913,117 +4735,32 @@
 	  , $toString    = DateProto[TO_STRING]
 	  , getTime      = DateProto.getTime;
 	if(new Date(NaN) + '' != INVALID_DATE){
-	  __webpack_require__(30)(DateProto, TO_STRING, function toString(){
+	  __webpack_require__(32)(DateProto, TO_STRING, function toString(){
 	    var value = getTime.call(this);
 	    return value === value ? $toString.call(this) : INVALID_DATE;
 	  });
 	}
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 355 */
-=======
-/* 349 */
->>>>>>> Table directive to angular 2
-=======
-/* 359 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 361 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 363 */
->>>>>>> organizationlist to angular 2
-=======
-/* 362 */
->>>>>>> network details to angular 2
-=======
-/* 363 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 365 */
->>>>>>> volumes details to angular 2
-=======
-/* 366 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 	var $export = __webpack_require__(2);
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.P, 'Function', {bind: __webpack_require__(205)});
+	$export($export.P, 'Function', {bind: __webpack_require__(222)});
 
 /***/ },
-/* 356 */
-=======
-	$export($export.P, 'Function', {bind: __webpack_require__(202)});
-
-/***/ },
-/* 350 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.P, 'Function', {bind: __webpack_require__(210)});
-
-/***/ },
-/* 360 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.P, 'Function', {bind: __webpack_require__(211)});
-
-/***/ },
-/* 362 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.P, 'Function', {bind: __webpack_require__(212)});
-
-/***/ },
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 364 */
->>>>>>> organizationlist to angular 2
-=======
-/* 363 */
->>>>>>> network details to angular 2
-=======
-	$export($export.P, 'Function', {bind: __webpack_require__(213)});
-
-/***/ },
-/* 364 */
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.P, 'Function', {bind: __webpack_require__(215)});
-
-/***/ },
-/* 366 */
->>>>>>> volumes details to angular 2
-=======
-	$export($export.P, 'Function', {bind: __webpack_require__(216)});
-
-/***/ },
-/* 367 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var isObject       = __webpack_require__(11)
-	  , getPrototypeOf = __webpack_require__(40)
-	  , HAS_INSTANCE   = __webpack_require__(14)('hasInstance')
+	  , getPrototypeOf = __webpack_require__(41)
+	  , HAS_INSTANCE   = __webpack_require__(15)('hasInstance')
 	  , FunctionProto  = Function.prototype;
 	// 19.2.3.6 Function.prototype[@@hasInstance](V)
-	if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(17).f(FunctionProto, HAS_INSTANCE, {value: function(O){
+	if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(18).f(FunctionProto, HAS_INSTANCE, {value: function(O){
 	  if(typeof this != 'function' || !isObject(O))return false;
 	  if(!isObject(this.prototype))return O instanceof this;
 	  // for environment w/o native `@@hasInstance` logic enough `instanceof`, but add this:
@@ -11032,56 +4769,12 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 357 */
-=======
-/* 351 */
->>>>>>> Table directive to angular 2
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var dP         = __webpack_require__(17).f
-	  , createDesc = __webpack_require__(52)
-=======
-/* 361 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var dP         = __webpack_require__(17).f
-	  , createDesc = __webpack_require__(54)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 363 */
-=======
-/* 365 */
->>>>>>> organizationlist to angular 2
-=======
-/* 364 */
->>>>>>> network details to angular 2
-=======
-/* 365 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 367 */
->>>>>>> volumes details to angular 2
-=======
-/* 368 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var dP         = __webpack_require__(17).f
-	  , createDesc = __webpack_require__(55)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
->>>>>>> adding storage policy list - angular 2
-	  , has        = __webpack_require__(26)
-=======
-	  , has        = __webpack_require__(27)
->>>>>>> organizationlist to angular 2
+	var dP         = __webpack_require__(18).f
+	  , createDesc = __webpack_require__(59)
+	  , has        = __webpack_require__(28)
 	  , FProto     = Function.prototype
 	  , nameRE     = /^\s*function ([^ (]*)/
 	  , NAME       = 'name';
@@ -11091,7 +4784,7 @@
 	};
 
 	// 19.2.4.2 name
-	NAME in FProto || __webpack_require__(20) && dP(FProto, NAME, {
+	NAME in FProto || __webpack_require__(21) && dP(FProto, NAME, {
 	  configurable: true,
 	  get: function(){
 	    try {
@@ -11106,72 +4799,12 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 358 */
-=======
-/* 352 */
->>>>>>> Table directive to angular 2
-=======
-/* 362 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 364 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 366 */
->>>>>>> organizationlist to angular 2
-=======
-/* 365 */
->>>>>>> network details to angular 2
-=======
-/* 366 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 368 */
->>>>>>> volumes details to angular 2
-=======
-/* 369 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.3 Math.acosh(x)
 	var $export = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , log1p   = __webpack_require__(216)
-=======
-	  , log1p   = __webpack_require__(213)
->>>>>>> Table directive to angular 2
-=======
-	  , log1p   = __webpack_require__(221)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , log1p   = __webpack_require__(222)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , log1p   = __webpack_require__(223)
->>>>>>> organizationlist to angular 2
-=======
-	  , log1p   = __webpack_require__(224)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , log1p   = __webpack_require__(226)
->>>>>>> volumes details to angular 2
-=======
-	  , log1p   = __webpack_require__(227)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , log1p   = __webpack_require__(233)
 	  , sqrt    = Math.sqrt
 	  , $acosh  = Math.acosh;
 
@@ -11189,39 +4822,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 359 */
-=======
-/* 353 */
->>>>>>> Table directive to angular 2
-=======
-/* 363 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 365 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 367 */
->>>>>>> organizationlist to angular 2
-=======
-/* 366 */
->>>>>>> network details to angular 2
-=======
-/* 367 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 369 */
->>>>>>> volumes details to angular 2
-=======
-/* 370 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.5 Math.asinh(x)
@@ -11236,39 +4837,7 @@
 	$export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 360 */
-=======
-/* 354 */
->>>>>>> Table directive to angular 2
-=======
-/* 364 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 366 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 368 */
->>>>>>> organizationlist to angular 2
-=======
-/* 367 */
->>>>>>> network details to angular 2
-=======
-/* 368 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 370 */
->>>>>>> volumes details to angular 2
-=======
-/* 371 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.7 Math.atanh(x)
@@ -11283,60 +4852,12 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 361 */
-=======
-/* 355 */
->>>>>>> Table directive to angular 2
-=======
-/* 365 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 367 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 369 */
->>>>>>> organizationlist to angular 2
-=======
-/* 368 */
->>>>>>> network details to angular 2
-=======
-/* 369 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 371 */
->>>>>>> volumes details to angular 2
-=======
-/* 372 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.9 Math.cbrt(x)
 	var $export = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , sign    = __webpack_require__(147);
-=======
-	  , sign    = __webpack_require__(146);
->>>>>>> Table directive to angular 2
-=======
-	  , sign    = __webpack_require__(150);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , sign    = __webpack_require__(151);
->>>>>>> organizationlist to angular 2
-=======
-	  , sign    = __webpack_require__(152);
->>>>>>> volumes details to angular 2
+	  , sign    = __webpack_require__(155);
 
 	$export($export.S, 'Math', {
 	  cbrt: function cbrt(x){
@@ -11345,39 +4866,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 362 */
-=======
-/* 356 */
->>>>>>> Table directive to angular 2
-=======
-/* 366 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 368 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 370 */
->>>>>>> organizationlist to angular 2
-=======
-/* 369 */
->>>>>>> network details to angular 2
-=======
-/* 370 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 372 */
->>>>>>> volumes details to angular 2
-=======
-/* 373 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.11 Math.clz32(x)
@@ -11390,39 +4879,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 363 */
-=======
-/* 357 */
->>>>>>> Table directive to angular 2
-=======
-/* 367 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 369 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 371 */
->>>>>>> organizationlist to angular 2
-=======
-/* 370 */
->>>>>>> network details to angular 2
-=======
-/* 371 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 373 */
->>>>>>> volumes details to angular 2
-=======
-/* 374 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.12 Math.cosh(x)
@@ -11436,118 +4893,22 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 364 */
-=======
-/* 358 */
->>>>>>> Table directive to angular 2
-=======
-/* 368 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 370 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 372 */
->>>>>>> organizationlist to angular 2
-=======
-/* 371 */
->>>>>>> network details to angular 2
-=======
-/* 372 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 374 */
->>>>>>> volumes details to angular 2
-=======
-/* 375 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.14 Math.expm1(x)
 	var $export = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , $expm1  = __webpack_require__(146);
-=======
-	  , $expm1  = __webpack_require__(145);
->>>>>>> Table directive to angular 2
-=======
-	  , $expm1  = __webpack_require__(149);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $expm1  = __webpack_require__(150);
->>>>>>> organizationlist to angular 2
-=======
-	  , $expm1  = __webpack_require__(151);
->>>>>>> volumes details to angular 2
+	  , $expm1  = __webpack_require__(154);
 
 	$export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 365 */
-=======
-/* 359 */
->>>>>>> Table directive to angular 2
-=======
-/* 369 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 371 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 373 */
->>>>>>> organizationlist to angular 2
-=======
-/* 372 */
->>>>>>> network details to angular 2
-=======
-/* 373 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 375 */
->>>>>>> volumes details to angular 2
-=======
-/* 376 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.16 Math.fround(x)
 	var $export   = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , sign      = __webpack_require__(147)
-=======
-	  , sign      = __webpack_require__(146)
->>>>>>> Table directive to angular 2
-=======
-	  , sign      = __webpack_require__(150)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , sign      = __webpack_require__(151)
->>>>>>> organizationlist to angular 2
-=======
-	  , sign      = __webpack_require__(152)
->>>>>>> volumes details to angular 2
+	  , sign      = __webpack_require__(155)
 	  , pow       = Math.pow
 	  , EPSILON   = pow(2, -52)
 	  , EPSILON32 = pow(2, -23)
@@ -11573,39 +4934,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 366 */
-=======
-/* 360 */
->>>>>>> Table directive to angular 2
-=======
-/* 370 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 372 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 374 */
->>>>>>> organizationlist to angular 2
-=======
-/* 373 */
->>>>>>> network details to angular 2
-=======
-/* 374 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 376 */
->>>>>>> volumes details to angular 2
-=======
-/* 377 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -11635,39 +4964,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 367 */
-=======
-/* 361 */
->>>>>>> Table directive to angular 2
-=======
-/* 371 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 373 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 375 */
->>>>>>> organizationlist to angular 2
-=======
-/* 374 */
->>>>>>> network details to angular 2
-=======
-/* 375 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 377 */
->>>>>>> volumes details to angular 2
-=======
-/* 378 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.18 Math.imul(x, y)
@@ -11689,39 +4986,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 368 */
-=======
-/* 362 */
->>>>>>> Table directive to angular 2
-=======
-/* 372 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 374 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 376 */
->>>>>>> organizationlist to angular 2
-=======
-/* 375 */
->>>>>>> network details to angular 2
-=======
-/* 376 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 378 */
->>>>>>> volumes details to angular 2
-=======
-/* 379 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.21 Math.log10(x)
@@ -11734,101 +4999,16 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 369 */
-=======
-/* 363 */
->>>>>>> Table directive to angular 2
-=======
-/* 373 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 375 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 377 */
->>>>>>> organizationlist to angular 2
-=======
-/* 376 */
->>>>>>> network details to angular 2
-=======
-/* 377 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 379 */
->>>>>>> volumes details to angular 2
-=======
-/* 380 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.20 Math.log1p(x)
 	var $export = __webpack_require__(2);
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S, 'Math', {log1p: __webpack_require__(216)});
+	$export($export.S, 'Math', {log1p: __webpack_require__(233)});
 
 /***/ },
-/* 370 */
-=======
-	$export($export.S, 'Math', {log1p: __webpack_require__(213)});
-
-/***/ },
-/* 364 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S, 'Math', {log1p: __webpack_require__(221)});
-
-/***/ },
-/* 374 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.S, 'Math', {log1p: __webpack_require__(222)});
-
-/***/ },
-/* 376 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S, 'Math', {log1p: __webpack_require__(223)});
-
-/***/ },
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 378 */
->>>>>>> organizationlist to angular 2
-=======
-/* 377 */
->>>>>>> network details to angular 2
-=======
-	$export($export.S, 'Math', {log1p: __webpack_require__(224)});
-
-/***/ },
-/* 378 */
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.S, 'Math', {log1p: __webpack_require__(226)});
-
-/***/ },
-/* 380 */
->>>>>>> volumes details to angular 2
-=======
-	$export($export.S, 'Math', {log1p: __webpack_require__(227)});
-
-/***/ },
-/* 381 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.22 Math.log2(x)
@@ -11841,113 +5021,21 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 371 */
-=======
-/* 365 */
->>>>>>> Table directive to angular 2
-=======
-/* 375 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 377 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 379 */
->>>>>>> organizationlist to angular 2
-=======
-/* 378 */
->>>>>>> network details to angular 2
-=======
-/* 379 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 381 */
->>>>>>> volumes details to angular 2
-=======
-/* 382 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.28 Math.sign(x)
 	var $export = __webpack_require__(2);
 
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S, 'Math', {sign: __webpack_require__(147)});
+	$export($export.S, 'Math', {sign: __webpack_require__(155)});
 
 /***/ },
-/* 372 */
-=======
-	$export($export.S, 'Math', {sign: __webpack_require__(146)});
-
-/***/ },
-/* 366 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S, 'Math', {sign: __webpack_require__(150)});
-
-/***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 376 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 378 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S, 'Math', {sign: __webpack_require__(151)});
-
-/***/ },
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 380 */
->>>>>>> organizationlist to angular 2
-=======
-/* 379 */
->>>>>>> network details to angular 2
-=======
-/* 380 */
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.S, 'Math', {sign: __webpack_require__(152)});
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-/* 382 */
->>>>>>> volumes details to angular 2
-=======
-/* 383 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.30 Math.sinh(x)
 	var $export = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , expm1   = __webpack_require__(146)
-=======
-	  , expm1   = __webpack_require__(145)
->>>>>>> Table directive to angular 2
-=======
-	  , expm1   = __webpack_require__(149)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , expm1   = __webpack_require__(150)
->>>>>>> organizationlist to angular 2
-=======
-	  , expm1   = __webpack_require__(151)
->>>>>>> volumes details to angular 2
+	  , expm1   = __webpack_require__(154)
 	  , exp     = Math.exp;
 
 	// V8 near Chromium 38 has a problem with very small numbers
@@ -11962,60 +5050,12 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 373 */
-=======
-/* 367 */
->>>>>>> Table directive to angular 2
-=======
-/* 377 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 379 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 381 */
->>>>>>> organizationlist to angular 2
-=======
-/* 380 */
->>>>>>> network details to angular 2
-=======
-/* 381 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 383 */
->>>>>>> volumes details to angular 2
-=======
-/* 384 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.33 Math.tanh(x)
 	var $export = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , expm1   = __webpack_require__(146)
-=======
-	  , expm1   = __webpack_require__(145)
->>>>>>> Table directive to angular 2
-=======
-	  , expm1   = __webpack_require__(149)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , expm1   = __webpack_require__(150)
->>>>>>> organizationlist to angular 2
-=======
-	  , expm1   = __webpack_require__(151)
->>>>>>> volumes details to angular 2
+	  , expm1   = __webpack_require__(154)
 	  , exp     = Math.exp;
 
 	$export($export.S, 'Math', {
@@ -12027,39 +5067,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 374 */
-=======
-/* 368 */
->>>>>>> Table directive to angular 2
-=======
-/* 378 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 380 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 382 */
->>>>>>> organizationlist to angular 2
-=======
-/* 381 */
->>>>>>> network details to angular 2
-=======
-/* 382 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 384 */
->>>>>>> volumes details to angular 2
-=======
-/* 385 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.34 Math.trunc(x)
@@ -12072,117 +5080,26 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 375 */
-=======
-/* 369 */
->>>>>>> Table directive to angular 2
-=======
-/* 379 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 381 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 383 */
->>>>>>> organizationlist to angular 2
-=======
-/* 382 */
->>>>>>> network details to angular 2
-=======
-/* 383 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 385 */
->>>>>>> volumes details to angular 2
-=======
-/* 386 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var global            = __webpack_require__(12)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , has               = __webpack_require__(26)
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , cof               = __webpack_require__(58)
-	  , inheritIfRequired = __webpack_require__(140)
-	  , toPrimitive       = __webpack_require__(54)
+	  , has               = __webpack_require__(28)
+	  , cof               = __webpack_require__(66)
+	  , inheritIfRequired = __webpack_require__(148)
+	  , toPrimitive       = __webpack_require__(61)
 	  , fails             = __webpack_require__(10)
-	  , gOPN              = __webpack_require__(61).f
-	  , gOPD              = __webpack_require__(45).f
-	  , dP                = __webpack_require__(17).f
-	  , $trim             = __webpack_require__(103).trim
-=======
-	  , cof               = __webpack_require__(57)
-	  , inheritIfRequired = __webpack_require__(139)
-	  , toPrimitive       = __webpack_require__(52)
-=======
-	  , cof               = __webpack_require__(61)
-	  , inheritIfRequired = __webpack_require__(143)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , toPrimitive       = __webpack_require__(56)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , has               = __webpack_require__(27)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	  , cof               = __webpack_require__(62)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , inheritIfRequired = __webpack_require__(144)
->>>>>>> organizationlist to angular 2
-=======
-=======
-	  , cof               = __webpack_require__(63)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , inheritIfRequired = __webpack_require__(145)
->>>>>>> volumes details to angular 2
-	  , toPrimitive       = __webpack_require__(57)
->>>>>>> adding storage policy list - angular 2
-	  , fails             = __webpack_require__(10)
-	  , gOPN              = __webpack_require__(66).f
-	  , gOPD              = __webpack_require__(49).f
-	  , dP                = __webpack_require__(17).f
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , $trim             = __webpack_require__(101).trim
->>>>>>> Table directive to angular 2
-=======
-	  , $trim             = __webpack_require__(108).trim
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $trim             = __webpack_require__(109).trim
->>>>>>> adding storage policy list - angular 2
+	  , gOPN              = __webpack_require__(69).f
+	  , gOPD              = __webpack_require__(50).f
+	  , dP                = __webpack_require__(18).f
+	  , $trim             = __webpack_require__(110).trim
 	  , NUMBER            = 'Number'
 	  , $Number           = global[NUMBER]
 	  , Base              = $Number
 	  , proto             = $Number.prototype
 	  // Opera ~12 has broken Object#toString
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , BROKEN_COF        = cof(__webpack_require__(60)(proto)) == NUMBER
-=======
-	  , BROKEN_COF        = cof(__webpack_require__(59)(proto)) == NUMBER
->>>>>>> Table directive to angular 2
-=======
-	  , BROKEN_COF        = cof(__webpack_require__(63)(proto)) == NUMBER
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , BROKEN_COF        = cof(__webpack_require__(64)(proto)) == NUMBER
->>>>>>> organizationlist to angular 2
-=======
-	  , BROKEN_COF        = cof(__webpack_require__(65)(proto)) == NUMBER
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , BROKEN_COF        = cof(__webpack_require__(68)(proto)) == NUMBER
 	  , TRIM              = 'trim' in String.prototype;
 
 	// 7.1.3 ToNumber(argument)
@@ -12220,7 +5137,7 @@
 	      && (BROKEN_COF ? fails(function(){ proto.valueOf.call(that); }) : cof(that) != NUMBER)
 	        ? inheritIfRequired(new Base(toNumber(it)), that, $Number) : toNumber(it);
 	  };
-	  for(var keys = __webpack_require__(20) ? gOPN(Base) : (
+	  for(var keys = __webpack_require__(21) ? gOPN(Base) : (
 	    // ES3:
 	    'MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,' +
 	    // ES6 (in case, if modules with ES6 Number statics required before):
@@ -12233,43 +5150,11 @@
 	  }
 	  $Number.prototype = proto;
 	  proto.constructor = $Number;
-	  __webpack_require__(30)(global, NUMBER, $Number);
+	  __webpack_require__(32)(global, NUMBER, $Number);
 	}
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 376 */
-=======
-/* 370 */
->>>>>>> Table directive to angular 2
-=======
-/* 380 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 382 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 384 */
->>>>>>> organizationlist to angular 2
-=======
-/* 383 */
->>>>>>> network details to angular 2
-=======
-/* 384 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 386 */
->>>>>>> volumes details to angular 2
-=======
-/* 387 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.1 Number.EPSILON
@@ -12278,39 +5163,7 @@
 	$export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 377 */
-=======
-/* 371 */
->>>>>>> Table directive to angular 2
-=======
-/* 381 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 383 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 385 */
->>>>>>> organizationlist to angular 2
-=======
-/* 384 */
->>>>>>> network details to angular 2
-=======
-/* 385 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 387 */
->>>>>>> volumes details to angular 2
-=======
-/* 388 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.2 Number.isFinite(number)
@@ -12324,101 +5177,16 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 378 */
-=======
-/* 372 */
->>>>>>> Table directive to angular 2
-=======
-/* 382 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 384 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 386 */
->>>>>>> organizationlist to angular 2
-=======
-/* 385 */
->>>>>>> network details to angular 2
-=======
-/* 386 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 388 */
->>>>>>> volumes details to angular 2
-=======
-/* 389 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
 	var $export = __webpack_require__(2);
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S, 'Number', {isInteger: __webpack_require__(212)});
+	$export($export.S, 'Number', {isInteger: __webpack_require__(229)});
 
 /***/ },
-/* 379 */
-=======
-	$export($export.S, 'Number', {isInteger: __webpack_require__(209)});
-
-/***/ },
-/* 373 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S, 'Number', {isInteger: __webpack_require__(217)});
-
-/***/ },
-/* 383 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.S, 'Number', {isInteger: __webpack_require__(218)});
-
-/***/ },
-/* 385 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S, 'Number', {isInteger: __webpack_require__(219)});
-
-/***/ },
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 387 */
->>>>>>> organizationlist to angular 2
-=======
-/* 386 */
->>>>>>> network details to angular 2
-=======
-	$export($export.S, 'Number', {isInteger: __webpack_require__(220)});
-
-/***/ },
-/* 387 */
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.S, 'Number', {isInteger: __webpack_require__(222)});
-
-/***/ },
-/* 389 */
->>>>>>> volumes details to angular 2
-=======
-	$export($export.S, 'Number', {isInteger: __webpack_require__(223)});
-
-/***/ },
-/* 390 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.4 Number.isNaN(number)
@@ -12431,72 +5199,12 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 380 */
-=======
-/* 374 */
->>>>>>> Table directive to angular 2
-=======
-/* 384 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 386 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 388 */
->>>>>>> organizationlist to angular 2
-=======
-/* 387 */
->>>>>>> network details to angular 2
-=======
-/* 388 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 390 */
->>>>>>> volumes details to angular 2
-=======
-/* 391 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , isInteger = __webpack_require__(212)
-=======
-	  , isInteger = __webpack_require__(209)
->>>>>>> Table directive to angular 2
-=======
-	  , isInteger = __webpack_require__(217)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , isInteger = __webpack_require__(218)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , isInteger = __webpack_require__(219)
->>>>>>> organizationlist to angular 2
-=======
-	  , isInteger = __webpack_require__(220)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , isInteger = __webpack_require__(222)
->>>>>>> volumes details to angular 2
-=======
-	  , isInteger = __webpack_require__(223)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , isInteger = __webpack_require__(229)
 	  , abs       = Math.abs;
 
 	$export($export.S, 'Number', {
@@ -12506,39 +5214,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 381 */
-=======
-/* 375 */
->>>>>>> Table directive to angular 2
-=======
-/* 385 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 387 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 389 */
->>>>>>> organizationlist to angular 2
-=======
-/* 388 */
->>>>>>> network details to angular 2
-=======
-/* 389 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 391 */
->>>>>>> volumes details to angular 2
-=======
-/* 392 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -12547,39 +5223,7 @@
 	$export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 382 */
-=======
-/* 376 */
->>>>>>> Table directive to angular 2
-=======
-/* 386 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 388 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 390 */
->>>>>>> organizationlist to angular 2
-=======
-/* 389 */
->>>>>>> network details to angular 2
-=======
-/* 390 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 392 */
->>>>>>> volumes details to angular 2
-=======
-/* 393 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -12588,222 +5232,32 @@
 	$export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 383 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(221);
-=======
-/* 377 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(218);
->>>>>>> Table directive to angular 2
-=======
-/* 387 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(226);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 389 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(227);
->>>>>>> adding storage policy list - angular 2
-=======
-/* 391 */
-=======
-/* 390 */
->>>>>>> network details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(228);
->>>>>>> organizationlist to angular 2
-=======
-/* 391 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(229);
->>>>>>> added collapsible directive to angular 2
-=======
-/* 393 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(231);
->>>>>>> volumes details to angular 2
-=======
-/* 394 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(232);
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , $parseFloat = __webpack_require__(238);
 	// 20.1.2.12 Number.parseFloat(string)
 	$export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 384 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(222);
-=======
-/* 378 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(219);
->>>>>>> Table directive to angular 2
-=======
-/* 388 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(227);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 390 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(228);
->>>>>>> adding storage policy list - angular 2
-=======
-/* 392 */
-=======
-/* 391 */
->>>>>>> network details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(229);
->>>>>>> organizationlist to angular 2
-=======
-/* 392 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(230);
->>>>>>> added collapsible directive to angular 2
-=======
-/* 394 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(232);
->>>>>>> volumes details to angular 2
-=======
-/* 395 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(233);
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , $parseInt = __webpack_require__(239);
 	// 20.1.2.13 Number.parseInt(string, radix)
 	$export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 385 */
-=======
-/* 379 */
->>>>>>> Table directive to angular 2
-=======
-/* 389 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 391 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 393 */
->>>>>>> organizationlist to angular 2
-=======
-/* 392 */
->>>>>>> network details to angular 2
-=======
-/* 393 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 395 */
->>>>>>> volumes details to angular 2
-=======
-/* 396 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , toInteger    = __webpack_require__(53)
-	  , aNumberValue = __webpack_require__(202)
-	  , repeat       = __webpack_require__(226)
-=======
-	  , toInteger    = __webpack_require__(51)
-	  , aNumberValue = __webpack_require__(199)
-	  , repeat       = __webpack_require__(223)
->>>>>>> Table directive to angular 2
-=======
-	  , toInteger    = __webpack_require__(55)
-	  , aNumberValue = __webpack_require__(207)
-	  , repeat       = __webpack_require__(231)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , toInteger    = __webpack_require__(56)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-	  , aNumberValue = __webpack_require__(208)
-	  , repeat       = __webpack_require__(232)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , aNumberValue = __webpack_require__(209)
-	  , repeat       = __webpack_require__(233)
->>>>>>> organizationlist to angular 2
-=======
-	  , aNumberValue = __webpack_require__(210)
-	  , repeat       = __webpack_require__(234)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , aNumberValue = __webpack_require__(212)
-	  , repeat       = __webpack_require__(236)
->>>>>>> volumes details to angular 2
-=======
-	  , aNumberValue = __webpack_require__(213)
-	  , repeat       = __webpack_require__(237)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , toInteger    = __webpack_require__(60)
+	  , aNumberValue = __webpack_require__(219)
+	  , repeat       = __webpack_require__(243)
 	  , $toFixed     = 1..toFixed
 	  , floor        = Math.floor
 	  , data         = [0, 0, 0, 0, 0, 0]
@@ -12914,73 +5368,13 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 386 */
-=======
-/* 380 */
->>>>>>> Table directive to angular 2
-=======
-/* 390 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 392 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 394 */
->>>>>>> organizationlist to angular 2
-=======
-/* 393 */
->>>>>>> network details to angular 2
-=======
-/* 394 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 396 */
->>>>>>> volumes details to angular 2
-=======
-/* 397 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
 	  , $fails       = __webpack_require__(10)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , aNumberValue = __webpack_require__(202)
-=======
-	  , aNumberValue = __webpack_require__(199)
->>>>>>> Table directive to angular 2
-=======
-	  , aNumberValue = __webpack_require__(207)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , aNumberValue = __webpack_require__(208)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , aNumberValue = __webpack_require__(209)
->>>>>>> organizationlist to angular 2
-=======
-	  , aNumberValue = __webpack_require__(210)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , aNumberValue = __webpack_require__(212)
->>>>>>> volumes details to angular 2
-=======
-	  , aNumberValue = __webpack_require__(213)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , aNumberValue = __webpack_require__(219)
 	  , $toPrecision = 1..toPrecision;
 
 	$export($export.P + $export.F * ($fails(function(){
@@ -12997,1012 +5391,211 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 387 */
-=======
-/* 381 */
->>>>>>> Table directive to angular 2
-=======
-/* 391 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 393 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 395 */
->>>>>>> organizationlist to angular 2
-=======
-/* 394 */
->>>>>>> network details to angular 2
-=======
-/* 395 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 397 */
->>>>>>> volumes details to angular 2
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(2);
 
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(217)});
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(234)});
 
 /***/ },
-/* 388 */
-=======
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(214)});
-
-/***/ },
-/* 382 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(222)});
-
-/***/ },
-/* 392 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(223)});
-=======
-/* 398 */
-/***/ function(module, exports, __webpack_require__) {
->>>>>>> added ctvNamevalaue directive to angular 2
-
-/***/ },
-/* 394 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(224)});
-
-/***/ },
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 396 */
->>>>>>> organizationlist to angular 2
-=======
-/* 395 */
->>>>>>> network details to angular 2
-=======
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(225)});
-
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-/***/ },
-/* 396 */
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(227)});
-
-/***/ },
-/* 398 */
->>>>>>> volumes details to angular 2
-=======
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(228)});
-
-/***/ },
-/* 399 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S, 'Object', {create: __webpack_require__(60)});
+	$export($export.S, 'Object', {create: __webpack_require__(68)});
 
 /***/ },
-/* 389 */
-=======
-	$export($export.S, 'Object', {create: __webpack_require__(59)});
-
-/***/ },
-/* 383 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S, 'Object', {create: __webpack_require__(63)});
-
-/***/ },
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 393 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 395 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S, 'Object', {create: __webpack_require__(64)});
-
-/***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 397 */
->>>>>>> organizationlist to angular 2
-=======
-/* 396 */
->>>>>>> network details to angular 2
-=======
-/* 397 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 399 */
->>>>>>> volumes details to angular 2
-=======
-	$export($export.S, 'Object', {create: __webpack_require__(65)});
-
-/***/ },
-/* 400 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(218)});
+	$export($export.S + $export.F * !__webpack_require__(21), 'Object', {defineProperties: __webpack_require__(235)});
 
 /***/ },
-/* 390 */
-=======
-	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(215)});
-
-/***/ },
-/* 384 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(223)});
-
-/***/ },
-/* 394 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(224)});
-
-/***/ },
-/* 396 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(225)});
-
-/***/ },
-/* 398 */
->>>>>>> organizationlist to angular 2
-=======
-	$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperties: __webpack_require__(225)});
-
-/***/ },
-/* 397 */
->>>>>>> network details to angular 2
-=======
-	$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperties: __webpack_require__(226)});
-
-/***/ },
-/* 398 */
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(228)});
-
-/***/ },
-/* 400 */
->>>>>>> volumes details to angular 2
-=======
-	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(229)});
-
-/***/ },
-/* 401 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(17).f});
+	$export($export.S + $export.F * !__webpack_require__(21), 'Object', {defineProperty: __webpack_require__(18).f});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 391 */
-=======
-/* 385 */
->>>>>>> Table directive to angular 2
-=======
-/* 395 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 397 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 399 */
->>>>>>> organizationlist to angular 2
-=======
-/* 398 */
->>>>>>> network details to angular 2
-=======
-/* 399 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 401 */
->>>>>>> volumes details to angular 2
-=======
-/* 402 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.5 Object.freeze(O)
 	var isObject = __webpack_require__(11)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , meta     = __webpack_require__(51).onFreeze;
-=======
-	  , meta     = __webpack_require__(53).onFreeze;
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , meta     = __webpack_require__(54).onFreeze;
->>>>>>> adding storage policy list - angular 2
+	  , meta     = __webpack_require__(58).onFreeze;
 
-	__webpack_require__(41)('freeze', function($freeze){
+	__webpack_require__(42)('freeze', function($freeze){
 	  return function freeze(it){
 	    return $freeze && isObject(it) ? $freeze(meta(it)) : it;
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 392 */
-=======
-/* 386 */
->>>>>>> Table directive to angular 2
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
-	var toIObject                 = __webpack_require__(33)
-	  , $getOwnPropertyDescriptor = __webpack_require__(45).f;
-=======
-/* 396 */
-=======
-/* 398 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
+	var toIObject                 = __webpack_require__(38)
+	  , $getOwnPropertyDescriptor = __webpack_require__(50).f;
 
-	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
-	var toIObject                 = __webpack_require__(34)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , $getOwnPropertyDescriptor = __webpack_require__(46).f;
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $getOwnPropertyDescriptor = __webpack_require__(48).f;
->>>>>>> adding storage policy list - angular 2
-=======
-/* 400 */
-=======
-/* 399 */
->>>>>>> network details to angular 2
-=======
-/* 400 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 402 */
->>>>>>> volumes details to angular 2
-=======
-/* 403 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
-	var toIObject                 = __webpack_require__(37)
-	  , $getOwnPropertyDescriptor = __webpack_require__(49).f;
->>>>>>> organizationlist to angular 2
-
-	__webpack_require__(41)('getOwnPropertyDescriptor', function(){
+	__webpack_require__(42)('getOwnPropertyDescriptor', function(){
 	  return function getOwnPropertyDescriptor(it, key){
 	    return $getOwnPropertyDescriptor(toIObject(it), key);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 393 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 Object.getOwnPropertyNames(O)
-	__webpack_require__(38)('getOwnPropertyNames', function(){
-	  return __webpack_require__(219).f;
+	__webpack_require__(42)('getOwnPropertyNames', function(){
+	  return __webpack_require__(236).f;
 	});
 
 /***/ },
-/* 394 */
-=======
-/* 387 */
-=======
-/* 397 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 399 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 401 */
->>>>>>> organizationlist to angular 2
-=======
-/* 400 */
->>>>>>> network details to angular 2
-=======
-/* 401 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 403 */
->>>>>>> volumes details to angular 2
-=======
-/* 404 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.7 Object.getOwnPropertyNames(O)
-	__webpack_require__(41)('getOwnPropertyNames', function(){
-	  return __webpack_require__(230).f;
-	});
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 388 */
->>>>>>> Table directive to angular 2
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
-	var toObject        = __webpack_require__(31)
-=======
-/* 398 */
-=======
-/* 400 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 402 */
->>>>>>> organizationlist to angular 2
-=======
-/* 401 */
->>>>>>> network details to angular 2
-=======
-/* 402 */
->>>>>>> added collapsible directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
+	var toObject        = __webpack_require__(35)
+	  , $getPrototypeOf = __webpack_require__(41);
 
-	// 19.1.2.9 Object.getPrototypeOf(O)
-	var toObject        = __webpack_require__(32)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
->>>>>>> converting volumelist, servicelist ctrl to ang2
-	  , $getPrototypeOf = __webpack_require__(37);
-=======
-	  , $getPrototypeOf = __webpack_require__(38);
->>>>>>> adding storage policy list - angular 2
-=======
-=======
-/* 404 */
-=======
-/* 405 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.9 Object.getPrototypeOf(O)
-	var toObject        = __webpack_require__(33)
->>>>>>> volumes details to angular 2
-	  , $getPrototypeOf = __webpack_require__(40);
->>>>>>> organizationlist to angular 2
-
-	__webpack_require__(41)('getPrototypeOf', function(){
+	__webpack_require__(42)('getPrototypeOf', function(){
 	  return function getPrototypeOf(it){
 	    return $getPrototypeOf(toObject(it));
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 395 */
-=======
-/* 389 */
->>>>>>> Table directive to angular 2
-=======
-/* 399 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 401 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 403 */
->>>>>>> organizationlist to angular 2
-=======
-/* 402 */
->>>>>>> network details to angular 2
-=======
-/* 403 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 405 */
->>>>>>> volumes details to angular 2
-=======
-/* 406 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.11 Object.isExtensible(O)
 	var isObject = __webpack_require__(11);
 
-	__webpack_require__(41)('isExtensible', function($isExtensible){
+	__webpack_require__(42)('isExtensible', function($isExtensible){
 	  return function isExtensible(it){
 	    return isObject(it) ? $isExtensible ? $isExtensible(it) : true : false;
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 396 */
-=======
-/* 390 */
->>>>>>> Table directive to angular 2
-=======
-/* 400 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 402 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 404 */
->>>>>>> organizationlist to angular 2
-=======
-/* 403 */
->>>>>>> network details to angular 2
-=======
-/* 404 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 406 */
->>>>>>> volumes details to angular 2
-=======
-/* 407 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.12 Object.isFrozen(O)
 	var isObject = __webpack_require__(11);
 
-	__webpack_require__(41)('isFrozen', function($isFrozen){
+	__webpack_require__(42)('isFrozen', function($isFrozen){
 	  return function isFrozen(it){
 	    return isObject(it) ? $isFrozen ? $isFrozen(it) : false : true;
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 397 */
-=======
-/* 391 */
->>>>>>> Table directive to angular 2
-=======
-/* 401 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 403 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 405 */
->>>>>>> organizationlist to angular 2
-=======
-/* 404 */
->>>>>>> network details to angular 2
-=======
-/* 405 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 407 */
->>>>>>> volumes details to angular 2
-=======
-/* 408 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.13 Object.isSealed(O)
 	var isObject = __webpack_require__(11);
 
-	__webpack_require__(41)('isSealed', function($isSealed){
+	__webpack_require__(42)('isSealed', function($isSealed){
 	  return function isSealed(it){
 	    return isObject(it) ? $isSealed ? $isSealed(it) : false : true;
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 398 */
-=======
-/* 392 */
->>>>>>> Table directive to angular 2
-=======
-/* 402 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 404 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 406 */
->>>>>>> organizationlist to angular 2
-=======
-/* 405 */
->>>>>>> network details to angular 2
-=======
-/* 406 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 408 */
->>>>>>> volumes details to angular 2
-=======
-/* 409 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.10 Object.is(value1, value2)
 	var $export = __webpack_require__(2);
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S, 'Object', {is: __webpack_require__(223)});
+	$export($export.S, 'Object', {is: __webpack_require__(240)});
 
 /***/ },
-/* 399 */
-=======
-	$export($export.S, 'Object', {is: __webpack_require__(220)});
-
-/***/ },
-/* 393 */
->>>>>>> Table directive to angular 2
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
-	var toObject = __webpack_require__(31)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , $keys    = __webpack_require__(73);
-=======
-	  , $keys    = __webpack_require__(69);
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S, 'Object', {is: __webpack_require__(228)});
-=======
-	$export($export.S, 'Object', {is: __webpack_require__(229)});
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S, 'Object', {is: __webpack_require__(230)});
->>>>>>> organizationlist to angular 2
-=======
-	$export($export.S, 'Object', {is: __webpack_require__(231)});
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.S, 'Object', {is: __webpack_require__(233)});
->>>>>>> volumes details to angular 2
-=======
-	$export($export.S, 'Object', {is: __webpack_require__(234)});
->>>>>>> added ctvNamevalaue directive to angular 2
+	var toObject = __webpack_require__(35)
+	  , $keys    = __webpack_require__(79);
 
-/***/ },
-/* 410 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.14 Object.keys(O)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	var toObject = __webpack_require__(32)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , $keys    = __webpack_require__(72);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $keys    = __webpack_require__(73);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , $keys    = __webpack_require__(75);
->>>>>>> network details to angular 2
-=======
-	var toObject = __webpack_require__(33)
-	  , $keys    = __webpack_require__(76);
->>>>>>> volumes details to angular 2
-
-	__webpack_require__(41)('keys', function(){
+	__webpack_require__(42)('keys', function(){
 	  return function keys(it){
 	    return $keys(toObject(it));
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 400 */
-=======
-/* 394 */
->>>>>>> Table directive to angular 2
-=======
-/* 404 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 406 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 408 */
->>>>>>> organizationlist to angular 2
-=======
-/* 407 */
->>>>>>> network details to angular 2
-=======
-/* 408 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 410 */
->>>>>>> volumes details to angular 2
-=======
-/* 411 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.15 Object.preventExtensions(O)
 	var isObject = __webpack_require__(11)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , meta     = __webpack_require__(51).onFreeze;
-=======
-	  , meta     = __webpack_require__(53).onFreeze;
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , meta     = __webpack_require__(54).onFreeze;
->>>>>>> adding storage policy list - angular 2
+	  , meta     = __webpack_require__(58).onFreeze;
 
-	__webpack_require__(41)('preventExtensions', function($preventExtensions){
+	__webpack_require__(42)('preventExtensions', function($preventExtensions){
 	  return function preventExtensions(it){
 	    return $preventExtensions && isObject(it) ? $preventExtensions(meta(it)) : it;
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 401 */
-=======
-/* 395 */
->>>>>>> Table directive to angular 2
-=======
-/* 405 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 407 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 409 */
->>>>>>> organizationlist to angular 2
-=======
-/* 408 */
->>>>>>> network details to angular 2
-=======
-/* 409 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 411 */
->>>>>>> volumes details to angular 2
-=======
-/* 412 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.17 Object.seal(O)
 	var isObject = __webpack_require__(11)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , meta     = __webpack_require__(51).onFreeze;
-=======
-	  , meta     = __webpack_require__(53).onFreeze;
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , meta     = __webpack_require__(54).onFreeze;
->>>>>>> adding storage policy list - angular 2
+	  , meta     = __webpack_require__(58).onFreeze;
 
-	__webpack_require__(41)('seal', function($seal){
+	__webpack_require__(42)('seal', function($seal){
 	  return function seal(it){
 	    return $seal && isObject(it) ? $seal(meta(it)) : it;
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 402 */
-=======
-/* 396 */
->>>>>>> Table directive to angular 2
-=======
-/* 406 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 408 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 410 */
->>>>>>> organizationlist to angular 2
-=======
-/* 409 */
->>>>>>> network details to angular 2
-=======
-/* 410 */
->>>>>>> added collapsible directive to angular 2
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
 	var $export = __webpack_require__(2);
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(148).set});
+	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(156).set});
 
 /***/ },
-/* 403 */
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(221);
-=======
-	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(147).set});
-=======
-	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(151).set});
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(152).set});
->>>>>>> organizationlist to angular 2
-
-/***/ },
-/* 411 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , $parseFloat = __webpack_require__(218);
->>>>>>> Table directive to angular 2
-=======
-	  , $parseFloat = __webpack_require__(226);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $parseFloat = __webpack_require__(227);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , $parseFloat = __webpack_require__(228);
->>>>>>> organizationlist to angular 2
-=======
-	  , $parseFloat = __webpack_require__(229);
->>>>>>> added collapsible directive to angular 2
+	  , $parseFloat = __webpack_require__(238);
 	// 18.2.4 parseFloat(string)
 	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 404 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(222);
-=======
-/* 398 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(219);
->>>>>>> Table directive to angular 2
-=======
-/* 408 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(227);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 410 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(228);
->>>>>>> adding storage policy list - angular 2
-=======
-/* 412 */
-=======
-/* 411 */
->>>>>>> network details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(229);
->>>>>>> organizationlist to angular 2
-=======
-/* 412 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-	  , $parseInt = __webpack_require__(230);
->>>>>>> added collapsible directive to angular 2
-=======
-/* 412 */
-=======
-/* 413 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.3.19 Object.setPrototypeOf(O, proto)
-	var $export = __webpack_require__(2);
-	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(153).set});
-
-/***/ },
-/* 414 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export     = __webpack_require__(2)
-	  , $parseFloat = __webpack_require__(232);
-	// 18.2.4 parseFloat(string)
-	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
-
-/***/ },
-/* 415 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export   = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	  , $parseInt = __webpack_require__(232);
->>>>>>> volumes details to angular 2
-=======
-	  , $parseInt = __webpack_require__(233);
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , $parseInt = __webpack_require__(239);
 	// 18.2.5 parseInt(string, radix)
 	$export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 405 */
-=======
-/* 399 */
->>>>>>> Table directive to angular 2
-=======
-/* 409 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 411 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 413 */
->>>>>>> organizationlist to angular 2
-=======
-/* 412 */
->>>>>>> network details to angular 2
-=======
-/* 413 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 415 */
->>>>>>> volumes details to angular 2
-=======
-/* 416 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
 	var $export   = __webpack_require__(2)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , aFunction = __webpack_require__(50)
-=======
-	  , aFunction = __webpack_require__(48)
->>>>>>> Table directive to angular 2
-=======
-	  , aFunction = __webpack_require__(52)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , aFunction = __webpack_require__(53)
->>>>>>> adding storage policy list - angular 2
+	  , aFunction = __webpack_require__(57)
 	  , anObject  = __webpack_require__(8)
 	  , rApply    = (__webpack_require__(12).Reflect || {}).apply
 	  , fApply    = Function.apply;
@@ -14018,95 +5611,17 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 406 */
-=======
-/* 400 */
->>>>>>> Table directive to angular 2
-=======
-/* 410 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 412 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 414 */
->>>>>>> organizationlist to angular 2
-=======
-/* 413 */
->>>>>>> network details to angular 2
-=======
-/* 414 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 416 */
->>>>>>> volumes details to angular 2
-=======
-/* 417 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 	var $export    = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , create     = __webpack_require__(60)
-	  , aFunction  = __webpack_require__(50)
+	  , create     = __webpack_require__(68)
+	  , aFunction  = __webpack_require__(57)
 	  , anObject   = __webpack_require__(8)
 	  , isObject   = __webpack_require__(11)
 	  , fails      = __webpack_require__(10)
-	  , bind       = __webpack_require__(205)
-=======
-	  , create     = __webpack_require__(59)
-	  , aFunction  = __webpack_require__(48)
-	  , anObject   = __webpack_require__(8)
-	  , isObject   = __webpack_require__(11)
-	  , fails      = __webpack_require__(10)
-	  , bind       = __webpack_require__(202)
->>>>>>> Table directive to angular 2
-=======
-	  , create     = __webpack_require__(63)
-=======
-	  , create     = __webpack_require__(64)
->>>>>>> organizationlist to angular 2
-=======
-	  , create     = __webpack_require__(65)
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , aFunction  = __webpack_require__(53)
-	  , anObject   = __webpack_require__(8)
-	  , isObject   = __webpack_require__(11)
-	  , fails      = __webpack_require__(10)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-	  , bind       = __webpack_require__(210)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , bind       = __webpack_require__(211)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , bind       = __webpack_require__(212)
->>>>>>> organizationlist to angular 2
-=======
-	  , bind       = __webpack_require__(213)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , bind       = __webpack_require__(215)
->>>>>>> volumes details to angular 2
-=======
-	  , bind       = __webpack_require__(216)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , bind       = __webpack_require__(222)
 	  , rConstruct = (__webpack_require__(12).Reflect || {}).construct;
 
 	// MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -14148,58 +5663,14 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 407 */
-=======
-/* 401 */
->>>>>>> Table directive to angular 2
-=======
-/* 411 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 413 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 415 */
->>>>>>> organizationlist to angular 2
-=======
-/* 414 */
->>>>>>> network details to angular 2
-=======
-/* 415 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 417 */
->>>>>>> volumes details to angular 2
-=======
-/* 418 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
-	var dP          = __webpack_require__(17)
+	var dP          = __webpack_require__(18)
 	  , $export     = __webpack_require__(2)
 	  , anObject    = __webpack_require__(8)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , toPrimitive = __webpack_require__(54);
-=======
-	  , toPrimitive = __webpack_require__(52);
->>>>>>> Table directive to angular 2
-=======
-	  , toPrimitive = __webpack_require__(56);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , toPrimitive = __webpack_require__(57);
->>>>>>> adding storage policy list - angular 2
+	  , toPrimitive = __webpack_require__(61);
 
 	// MS Edge has broken Reflect.defineProperty - throwing instead of returning false
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -14219,60 +5690,12 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 408 */
-=======
-/* 402 */
->>>>>>> Table directive to angular 2
-=======
-/* 412 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 414 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 416 */
->>>>>>> organizationlist to angular 2
-=======
-/* 415 */
->>>>>>> network details to angular 2
-=======
-/* 416 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 418 */
->>>>>>> volumes details to angular 2
-=======
-/* 419 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.4 Reflect.deleteProperty(target, propertyKey)
 	var $export  = __webpack_require__(2)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , gOPD     = __webpack_require__(45).f
-=======
-	  , gOPD     = __webpack_require__(44).f
->>>>>>> Table directive to angular 2
-=======
-	  , gOPD     = __webpack_require__(46).f
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , gOPD     = __webpack_require__(48).f
->>>>>>> adding storage policy list - angular 2
-=======
-	  , gOPD     = __webpack_require__(49).f
->>>>>>> organizationlist to angular 2
+	  , gOPD     = __webpack_require__(50).f
 	  , anObject = __webpack_require__(8);
 
 	$export($export.S, 'Reflect', {
@@ -14283,39 +5706,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 409 */
-=======
-/* 403 */
->>>>>>> Table directive to angular 2
-=======
-/* 413 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 415 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 417 */
->>>>>>> organizationlist to angular 2
-=======
-/* 416 */
->>>>>>> network details to angular 2
-=======
-/* 417 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 419 */
->>>>>>> volumes details to angular 2
-=======
-/* 420 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14329,35 +5720,7 @@
 	    , key;
 	  for(key in iterated)keys.push(key);
 	};
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(214)(Enumerate, 'Object', function(){
-=======
-	__webpack_require__(211)(Enumerate, 'Object', function(){
->>>>>>> Table directive to angular 2
-=======
-	__webpack_require__(219)(Enumerate, 'Object', function(){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(220)(Enumerate, 'Object', function(){
->>>>>>> adding storage policy list - angular 2
-=======
-	__webpack_require__(221)(Enumerate, 'Object', function(){
->>>>>>> organizationlist to angular 2
-=======
-	__webpack_require__(222)(Enumerate, 'Object', function(){
->>>>>>> added collapsible directive to angular 2
-=======
-	__webpack_require__(224)(Enumerate, 'Object', function(){
->>>>>>> volumes details to angular 2
-=======
-	__webpack_require__(225)(Enumerate, 'Object', function(){
->>>>>>> added ctvNamevalaue directive to angular 2
+	__webpack_require__(231)(Enumerate, 'Object', function(){
 	  var that = this
 	    , keys = that._k
 	    , key;
@@ -14374,55 +5737,11 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 410 */
-=======
-/* 404 */
->>>>>>> Table directive to angular 2
+/* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
-	var gOPD     = __webpack_require__(45)
-=======
-/* 414 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
-	var gOPD     = __webpack_require__(46)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 416 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
-	var gOPD     = __webpack_require__(48)
->>>>>>> adding storage policy list - angular 2
-=======
-/* 418 */
-=======
-/* 417 */
->>>>>>> network details to angular 2
-=======
-/* 418 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 420 */
->>>>>>> volumes details to angular 2
-=======
-/* 421 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
-	var gOPD     = __webpack_require__(49)
->>>>>>> organizationlist to angular 2
+	var gOPD     = __webpack_require__(50)
 	  , $export  = __webpack_require__(2)
 	  , anObject = __webpack_require__(8);
 
@@ -14433,60 +5752,12 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 411 */
-=======
-/* 405 */
->>>>>>> Table directive to angular 2
-=======
-/* 415 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 417 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 419 */
->>>>>>> organizationlist to angular 2
-=======
-/* 418 */
->>>>>>> network details to angular 2
-=======
-/* 419 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 421 */
->>>>>>> volumes details to angular 2
-=======
-/* 422 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.8 Reflect.getPrototypeOf(target)
 	var $export  = __webpack_require__(2)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , getProto = __webpack_require__(37)
-=======
-	  , getProto = __webpack_require__(36)
->>>>>>> Table directive to angular 2
-=======
-	  , getProto = __webpack_require__(37)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , getProto = __webpack_require__(38)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , getProto = __webpack_require__(40)
->>>>>>> organizationlist to angular 2
+	  , getProto = __webpack_require__(41)
 	  , anObject = __webpack_require__(8);
 
 	$export($export.S, 'Reflect', {
@@ -14496,60 +5767,13 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 412 */
-=======
-/* 406 */
->>>>>>> Table directive to angular 2
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
-	var gOPD           = __webpack_require__(45)
-=======
-/* 416 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
-	var gOPD           = __webpack_require__(46)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-	  , getPrototypeOf = __webpack_require__(37)
-=======
-/* 418 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
-	var gOPD           = __webpack_require__(48)
-	  , getPrototypeOf = __webpack_require__(38)
->>>>>>> adding storage policy list - angular 2
-	  , has            = __webpack_require__(26)
-=======
-/* 420 */
-=======
-/* 419 */
->>>>>>> network details to angular 2
-=======
-/* 420 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 422 */
->>>>>>> volumes details to angular 2
-=======
-/* 423 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
-	var gOPD           = __webpack_require__(49)
-	  , getPrototypeOf = __webpack_require__(40)
-	  , has            = __webpack_require__(27)
->>>>>>> organizationlist to angular 2
+	var gOPD           = __webpack_require__(50)
+	  , getPrototypeOf = __webpack_require__(41)
+	  , has            = __webpack_require__(28)
 	  , $export        = __webpack_require__(2)
 	  , isObject       = __webpack_require__(11)
 	  , anObject       = __webpack_require__(8);
@@ -14569,39 +5793,7 @@
 	$export($export.S, 'Reflect', {get: get});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 413 */
-=======
-/* 407 */
->>>>>>> Table directive to angular 2
-=======
-/* 417 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 419 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 421 */
->>>>>>> organizationlist to angular 2
-=======
-/* 420 */
->>>>>>> network details to angular 2
-=======
-/* 421 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 423 */
->>>>>>> volumes details to angular 2
-=======
-/* 424 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.9 Reflect.has(target, propertyKey)
@@ -14614,39 +5806,7 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 414 */
-=======
-/* 408 */
->>>>>>> Table directive to angular 2
-=======
-/* 418 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 420 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 422 */
->>>>>>> organizationlist to angular 2
-=======
-/* 421 */
->>>>>>> network details to angular 2
-=======
-/* 422 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 424 */
->>>>>>> volumes details to angular 2
-=======
-/* 425 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.10 Reflect.isExtensible(target)
@@ -14662,104 +5822,16 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 415 */
-=======
-/* 409 */
->>>>>>> Table directive to angular 2
-=======
-/* 419 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 421 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 423 */
->>>>>>> organizationlist to angular 2
-=======
-/* 422 */
->>>>>>> network details to angular 2
-=======
-/* 423 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 425 */
->>>>>>> volumes details to angular 2
-=======
-/* 426 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.11 Reflect.ownKeys(target)
 	var $export = __webpack_require__(2);
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(328)});
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(350)});
 
 /***/ },
-/* 416 */
-=======
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(322)});
-
-/***/ },
-/* 410 */
->>>>>>> Table directive to angular 2
-=======
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(332)});
-
-/***/ },
-/* 420 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(334)});
-
-/***/ },
-/* 422 */
->>>>>>> adding storage policy list - angular 2
-=======
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(336)});
-
-/***/ },
-/* 424 */
->>>>>>> organizationlist to angular 2
-=======
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(335)});
-
-/***/ },
-/* 423 */
->>>>>>> network details to angular 2
-=======
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(336)});
-
-/***/ },
-/* 424 */
->>>>>>> added collapsible directive to angular 2
-=======
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(338)});
-
-/***/ },
-/* 426 */
->>>>>>> volumes details to angular 2
-=======
-	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(339)});
-
-/***/ },
-/* 427 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.12 Reflect.preventExtensions(target)
@@ -14780,60 +5852,12 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 417 */
-=======
-/* 411 */
->>>>>>> Table directive to angular 2
-=======
-/* 421 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 423 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 425 */
->>>>>>> organizationlist to angular 2
-=======
-/* 424 */
->>>>>>> network details to angular 2
-=======
-/* 425 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 427 */
->>>>>>> volumes details to angular 2
-=======
-/* 428 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 439 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.14 Reflect.setPrototypeOf(target, proto)
 	var $export  = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , setProto = __webpack_require__(148);
-=======
-	  , setProto = __webpack_require__(147);
->>>>>>> Table directive to angular 2
-=======
-	  , setProto = __webpack_require__(151);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , setProto = __webpack_require__(152);
->>>>>>> organizationlist to angular 2
-=======
-	  , setProto = __webpack_require__(153);
->>>>>>> volumes details to angular 2
+	  , setProto = __webpack_require__(156);
 
 	if(setProto)$export($export.S, 'Reflect', {
 	  setPrototypeOf: function setPrototypeOf(target, proto){
@@ -14848,74 +5872,16 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 418 */
-=======
-/* 412 */
->>>>>>> Table directive to angular 2
-=======
-/* 422 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 424 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 426 */
->>>>>>> organizationlist to angular 2
-=======
-/* 425 */
->>>>>>> network details to angular 2
-=======
-/* 426 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 428 */
->>>>>>> volumes details to angular 2
-=======
-/* 429 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
-	var dP             = __webpack_require__(17)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , gOPD           = __webpack_require__(45)
-	  , getPrototypeOf = __webpack_require__(37)
-	  , has            = __webpack_require__(26)
+	var dP             = __webpack_require__(18)
+	  , gOPD           = __webpack_require__(50)
+	  , getPrototypeOf = __webpack_require__(41)
+	  , has            = __webpack_require__(28)
 	  , $export        = __webpack_require__(2)
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , createDesc     = __webpack_require__(52)
-=======
-	  , createDesc     = __webpack_require__(50)
->>>>>>> Table directive to angular 2
-=======
-	  , gOPD           = __webpack_require__(46)
-	  , getPrototypeOf = __webpack_require__(37)
-	  , has            = __webpack_require__(26)
-	  , $export        = __webpack_require__(2)
-	  , createDesc     = __webpack_require__(54)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , gOPD           = __webpack_require__(48)
-	  , getPrototypeOf = __webpack_require__(38)
-	  , has            = __webpack_require__(26)
-=======
-	  , gOPD           = __webpack_require__(49)
-	  , getPrototypeOf = __webpack_require__(40)
-	  , has            = __webpack_require__(27)
->>>>>>> organizationlist to angular 2
-	  , $export        = __webpack_require__(2)
-	  , createDesc     = __webpack_require__(55)
->>>>>>> adding storage policy list - angular 2
+	  , createDesc     = __webpack_require__(59)
 	  , anObject       = __webpack_require__(8)
 	  , isObject       = __webpack_require__(11);
 
@@ -14942,76 +5908,15 @@
 	$export($export.S, 'Reflect', {set: set});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 419 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var global            = __webpack_require__(12)
-	  , inheritIfRequired = __webpack_require__(140)
-	  , dP                = __webpack_require__(17).f
-	  , gOPN              = __webpack_require__(61).f
-	  , isRegExp          = __webpack_require__(143)
-	  , $flags            = __webpack_require__(139)
-=======
-/* 413 */
-=======
-/* 423 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 425 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 427 */
->>>>>>> organizationlist to angular 2
-=======
-/* 426 */
->>>>>>> network details to angular 2
-=======
-/* 427 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 429 */
->>>>>>> volumes details to angular 2
-=======
-/* 430 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var global            = __webpack_require__(12)
-	  , inheritIfRequired = __webpack_require__(145)
-	  , dP                = __webpack_require__(17).f
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , gOPN              = __webpack_require__(60).f
-	  , isRegExp          = __webpack_require__(142)
-	  , $flags            = __webpack_require__(138)
->>>>>>> Table directive to angular 2
-=======
-	  , gOPN              = __webpack_require__(64).f
-	  , isRegExp          = __webpack_require__(146)
-	  , $flags            = __webpack_require__(142)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , gOPN              = __webpack_require__(65).f
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-	  , isRegExp          = __webpack_require__(147)
-	  , $flags            = __webpack_require__(143)
->>>>>>> organizationlist to angular 2
-=======
-=======
-	  , gOPN              = __webpack_require__(66).f
->>>>>>> added ctvNamevalaue directive to angular 2
-	  , isRegExp          = __webpack_require__(148)
-	  , $flags            = __webpack_require__(144)
->>>>>>> volumes details to angular 2
+	  , inheritIfRequired = __webpack_require__(148)
+	  , dP                = __webpack_require__(18).f
+	  , gOPN              = __webpack_require__(69).f
+	  , isRegExp          = __webpack_require__(151)
+	  , $flags            = __webpack_require__(147)
 	  , $RegExp           = global.RegExp
 	  , Base              = $RegExp
 	  , proto             = $RegExp.prototype
@@ -15020,8 +5925,8 @@
 	  // "new" creates a new object, old webkit buggy here
 	  , CORRECT_NEW       = new $RegExp(re1) !== re1;
 
-	if(__webpack_require__(20) && (!CORRECT_NEW || __webpack_require__(10)(function(){
-	  re2[__webpack_require__(14)('match')] = false;
+	if(__webpack_require__(21) && (!CORRECT_NEW || __webpack_require__(10)(function(){
+	  re2[__webpack_require__(15)('match')] = false;
 	  // RegExp constructor can alter flags and IsRegExp works correct with @@match
 	  return $RegExp(re1) != re1 || $RegExp(re2) == re2 || $RegExp(re1, 'i') != '/a/i';
 	}))){
@@ -15045,67 +5950,25 @@
 	  for(var keys = gOPN(Base), i = 0; keys.length > i; )proxy(keys[i++]);
 	  proto.constructor = $RegExp;
 	  $RegExp.prototype = proto;
-	  __webpack_require__(30)(global, 'RegExp', $RegExp);
+	  __webpack_require__(32)(global, 'RegExp', $RegExp);
 	}
 
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(85)('RegExp');
+	__webpack_require__(89)('RegExp');
 
 /***/ },
-/* 420 */
+/* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	__webpack_require__(229);
+	__webpack_require__(246);
 	var anObject    = __webpack_require__(8)
-	  , $flags      = __webpack_require__(139)
-=======
-	__webpack_require__(80)('RegExp');
-=======
-	__webpack_require__(85)('RegExp');
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(87)('RegExp');
->>>>>>> network details to angular 2
-=======
-	__webpack_require__(88)('RegExp');
->>>>>>> volumes details to angular 2
-
-/***/ },
-/* 431 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	__webpack_require__(240);
-	var anObject    = __webpack_require__(8)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , $flags      = __webpack_require__(138)
->>>>>>> Table directive to angular 2
-=======
-	  , $flags      = __webpack_require__(142)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $flags      = __webpack_require__(143)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
->>>>>>> organizationlist to angular 2
-	  , DESCRIPTORS = __webpack_require__(20)
-=======
-	  , DESCRIPTORS = __webpack_require__(19)
->>>>>>> network details to angular 2
-=======
-	  , $flags      = __webpack_require__(144)
-	  , DESCRIPTORS = __webpack_require__(20)
->>>>>>> volumes details to angular 2
+	  , $flags      = __webpack_require__(147)
+	  , DESCRIPTORS = __webpack_require__(21)
 	  , TO_STRING   = 'toString'
 	  , $toString   = /./[TO_STRING];
 
 	var define = function(fn){
-	  __webpack_require__(30)(RegExp.prototype, TO_STRING, fn, true);
+	  __webpack_require__(32)(RegExp.prototype, TO_STRING, fn, true);
 	};
 
 	// 21.2.5.14 RegExp.prototype.toString()
@@ -15123,248 +5986,60 @@
 	}
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 421 */
-=======
-/* 415 */
->>>>>>> Table directive to angular 2
-=======
-/* 425 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 427 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 429 */
->>>>>>> organizationlist to angular 2
-=======
-/* 428 */
->>>>>>> network details to angular 2
-=======
-/* 429 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 431 */
->>>>>>> volumes details to angular 2
-=======
-/* 432 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.2 String.prototype.anchor(name)
-	__webpack_require__(31)('anchor', function(createHTML){
+	__webpack_require__(33)('anchor', function(createHTML){
 	  return function anchor(name){
 	    return createHTML(this, 'a', 'name', name);
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 422 */
-=======
-/* 416 */
->>>>>>> Table directive to angular 2
-=======
-/* 426 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 428 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 430 */
->>>>>>> organizationlist to angular 2
-=======
-/* 429 */
->>>>>>> network details to angular 2
-=======
-/* 430 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 432 */
->>>>>>> volumes details to angular 2
-=======
-/* 433 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.3 String.prototype.big()
-	__webpack_require__(31)('big', function(createHTML){
+	__webpack_require__(33)('big', function(createHTML){
 	  return function big(){
 	    return createHTML(this, 'big', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 423 */
-=======
-/* 417 */
->>>>>>> Table directive to angular 2
-=======
-/* 427 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 429 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 431 */
->>>>>>> organizationlist to angular 2
-=======
-/* 430 */
->>>>>>> network details to angular 2
-=======
-/* 431 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 433 */
->>>>>>> volumes details to angular 2
-=======
-/* 434 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.4 String.prototype.blink()
-	__webpack_require__(31)('blink', function(createHTML){
+	__webpack_require__(33)('blink', function(createHTML){
 	  return function blink(){
 	    return createHTML(this, 'blink', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 424 */
-=======
-/* 418 */
->>>>>>> Table directive to angular 2
-=======
-/* 428 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 430 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 432 */
->>>>>>> organizationlist to angular 2
-=======
-/* 431 */
->>>>>>> network details to angular 2
-=======
-/* 432 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 434 */
->>>>>>> volumes details to angular 2
-=======
-/* 435 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.5 String.prototype.bold()
-	__webpack_require__(31)('bold', function(createHTML){
+	__webpack_require__(33)('bold', function(createHTML){
 	  return function bold(){
 	    return createHTML(this, 'b', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 425 */
-=======
-/* 419 */
->>>>>>> Table directive to angular 2
-=======
-/* 429 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 431 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 433 */
->>>>>>> organizationlist to angular 2
-=======
-/* 432 */
->>>>>>> network details to angular 2
-=======
-/* 433 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 435 */
->>>>>>> volumes details to angular 2
-=======
-/* 436 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , $at     = __webpack_require__(225)(false);
-=======
-	  , $at     = __webpack_require__(222)(false);
->>>>>>> Table directive to angular 2
-=======
-	  , $at     = __webpack_require__(230)(false);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , $at     = __webpack_require__(231)(false);
->>>>>>> adding storage policy list - angular 2
-=======
-	  , $at     = __webpack_require__(232)(false);
->>>>>>> organizationlist to angular 2
-=======
-	  , $at     = __webpack_require__(233)(false);
->>>>>>> added collapsible directive to angular 2
-=======
-	  , $at     = __webpack_require__(235)(false);
->>>>>>> volumes details to angular 2
-=======
-	  , $at     = __webpack_require__(236)(false);
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , $at     = __webpack_require__(242)(false);
 	$export($export.P, 'String', {
 	  // 21.1.3.3 String.prototype.codePointAt(pos)
 	  codePointAt: function codePointAt(pos){
@@ -15373,86 +6048,18 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 426 */
-=======
-/* 420 */
->>>>>>> Table directive to angular 2
-=======
-/* 430 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 432 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 434 */
->>>>>>> organizationlist to angular 2
-=======
-/* 433 */
->>>>>>> network details to angular 2
-=======
-/* 434 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 436 */
->>>>>>> volumes details to angular 2
-=======
-/* 437 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
 	'use strict';
 	var $export   = __webpack_require__(2)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , toLength  = __webpack_require__(24)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , context   = __webpack_require__(150)
+	  , toLength  = __webpack_require__(26)
+	  , context   = __webpack_require__(158)
 	  , ENDS_WITH = 'endsWith'
 	  , $endsWith = ''[ENDS_WITH];
 
-	$export($export.P + $export.F * __webpack_require__(138)(ENDS_WITH), 'String', {
-=======
-	  , context   = __webpack_require__(149)
-	  , ENDS_WITH = 'endsWith'
-	  , $endsWith = ''[ENDS_WITH];
-
-	$export($export.P + $export.F * __webpack_require__(137)(ENDS_WITH), 'String', {
->>>>>>> Table directive to angular 2
-=======
-	  , context   = __webpack_require__(153)
-	  , ENDS_WITH = 'endsWith'
-	  , $endsWith = ''[ENDS_WITH];
-
-	$export($export.P + $export.F * __webpack_require__(141)(ENDS_WITH), 'String', {
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , toLength  = __webpack_require__(25)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
->>>>>>> network details to angular 2
-	  , context   = __webpack_require__(154)
-	  , ENDS_WITH = 'endsWith'
-	  , $endsWith = ''[ENDS_WITH];
-
-	$export($export.P + $export.F * __webpack_require__(142)(ENDS_WITH), 'String', {
->>>>>>> organizationlist to angular 2
-=======
-	  , context   = __webpack_require__(155)
-	  , ENDS_WITH = 'endsWith'
-	  , $endsWith = ''[ENDS_WITH];
-
-	$export($export.P + $export.F * __webpack_require__(143)(ENDS_WITH), 'String', {
->>>>>>> volumes details to angular 2
+	$export($export.P + $export.F * __webpack_require__(146)(ENDS_WITH), 'String', {
 	  endsWith: function endsWith(searchString /*, endPosition = @length */){
 	    var that = context(this, searchString, ENDS_WITH)
 	      , endPosition = arguments.length > 1 ? arguments[1] : undefined
@@ -15466,191 +6073,47 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 427 */
-=======
-/* 421 */
->>>>>>> Table directive to angular 2
-=======
-/* 431 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 433 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 435 */
->>>>>>> organizationlist to angular 2
-=======
-/* 434 */
->>>>>>> network details to angular 2
-=======
-/* 435 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 437 */
->>>>>>> volumes details to angular 2
-=======
-/* 438 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.6 String.prototype.fixed()
-	__webpack_require__(31)('fixed', function(createHTML){
+	__webpack_require__(33)('fixed', function(createHTML){
 	  return function fixed(){
 	    return createHTML(this, 'tt', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 428 */
-=======
-/* 422 */
->>>>>>> Table directive to angular 2
-=======
-/* 432 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 434 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 436 */
->>>>>>> organizationlist to angular 2
-=======
-/* 435 */
->>>>>>> network details to angular 2
-=======
-/* 436 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 438 */
->>>>>>> volumes details to angular 2
-=======
-/* 439 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.7 String.prototype.fontcolor(color)
-	__webpack_require__(31)('fontcolor', function(createHTML){
+	__webpack_require__(33)('fontcolor', function(createHTML){
 	  return function fontcolor(color){
 	    return createHTML(this, 'font', 'color', color);
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 429 */
-=======
-/* 423 */
->>>>>>> Table directive to angular 2
-=======
-/* 433 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 435 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 437 */
->>>>>>> organizationlist to angular 2
-=======
-/* 436 */
->>>>>>> network details to angular 2
-=======
-/* 437 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 439 */
->>>>>>> volumes details to angular 2
-=======
-/* 440 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.8 String.prototype.fontsize(size)
-	__webpack_require__(31)('fontsize', function(createHTML){
+	__webpack_require__(33)('fontsize', function(createHTML){
 	  return function fontsize(size){
 	    return createHTML(this, 'font', 'size', size);
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 430 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export        = __webpack_require__(2)
-	  , toIndex        = __webpack_require__(62)
-=======
-/* 424 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export        = __webpack_require__(2)
-	  , toIndex        = __webpack_require__(61)
->>>>>>> Table directive to angular 2
-=======
-/* 434 */
-=======
-/* 436 */
->>>>>>> adding storage policy list - angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export        = __webpack_require__(2)
-	  , toIndex        = __webpack_require__(65)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 438 */
-=======
-/* 437 */
->>>>>>> network details to angular 2
-=======
-/* 438 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 440 */
->>>>>>> volumes details to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export        = __webpack_require__(2)
-	  , toIndex        = __webpack_require__(66)
->>>>>>> organizationlist to angular 2
-=======
-/* 441 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $export        = __webpack_require__(2)
-	  , toIndex        = __webpack_require__(67)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , toIndex        = __webpack_require__(70)
 	  , fromCharCode   = String.fromCharCode
 	  , $fromCodePoint = String.fromCodePoint;
 
@@ -15674,76 +6137,16 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 431 */
-=======
-/* 425 */
->>>>>>> Table directive to angular 2
-=======
-/* 435 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 437 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 439 */
->>>>>>> organizationlist to angular 2
-=======
-/* 438 */
->>>>>>> network details to angular 2
-=======
-/* 439 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 441 */
->>>>>>> volumes details to angular 2
-=======
-/* 442 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.7 String.prototype.includes(searchString, position = 0)
 	'use strict';
 	var $export  = __webpack_require__(2)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , context  = __webpack_require__(150)
+	  , context  = __webpack_require__(158)
 	  , INCLUDES = 'includes';
 
-	$export($export.P + $export.F * __webpack_require__(138)(INCLUDES), 'String', {
-=======
-	  , context  = __webpack_require__(149)
-	  , INCLUDES = 'includes';
-
-	$export($export.P + $export.F * __webpack_require__(137)(INCLUDES), 'String', {
->>>>>>> Table directive to angular 2
-=======
-	  , context  = __webpack_require__(153)
-	  , INCLUDES = 'includes';
-
-	$export($export.P + $export.F * __webpack_require__(141)(INCLUDES), 'String', {
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , context  = __webpack_require__(154)
-	  , INCLUDES = 'includes';
-
-	$export($export.P + $export.F * __webpack_require__(142)(INCLUDES), 'String', {
->>>>>>> organizationlist to angular 2
-=======
-	  , context  = __webpack_require__(155)
-	  , INCLUDES = 'includes';
-
-	$export($export.P + $export.F * __webpack_require__(143)(INCLUDES), 'String', {
->>>>>>> volumes details to angular 2
+	$export($export.P + $export.F * __webpack_require__(146)(INCLUDES), 'String', {
 	  includes: function includes(searchString /*, position = 0 */){
 	    return !!~context(this, searchString, INCLUDES)
 	      .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
@@ -15751,132 +6154,36 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 432 */
-=======
-/* 426 */
->>>>>>> Table directive to angular 2
-=======
-/* 436 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 438 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 440 */
->>>>>>> organizationlist to angular 2
-=======
-/* 439 */
->>>>>>> network details to angular 2
-=======
-/* 440 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 442 */
->>>>>>> volumes details to angular 2
-=======
-/* 443 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.9 String.prototype.italics()
-	__webpack_require__(31)('italics', function(createHTML){
+	__webpack_require__(33)('italics', function(createHTML){
 	  return function italics(){
 	    return createHTML(this, 'i', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 433 */
-=======
-/* 427 */
->>>>>>> Table directive to angular 2
-=======
-/* 437 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 439 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 441 */
->>>>>>> organizationlist to angular 2
-=======
-/* 440 */
->>>>>>> network details to angular 2
-=======
-/* 441 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 443 */
->>>>>>> volumes details to angular 2
-=======
-/* 444 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.10 String.prototype.link(url)
-	__webpack_require__(31)('link', function(createHTML){
+	__webpack_require__(33)('link', function(createHTML){
 	  return function link(url){
 	    return createHTML(this, 'a', 'href', url);
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 434 */
-=======
-/* 428 */
->>>>>>> Table directive to angular 2
-=======
-/* 438 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 440 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 442 */
->>>>>>> organizationlist to angular 2
-=======
-/* 441 */
->>>>>>> network details to angular 2
-=======
-/* 442 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 444 */
->>>>>>> volumes details to angular 2
-=======
-/* 445 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 456 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
-	  , toIObject = __webpack_require__(37)
-	  , toLength  = __webpack_require__(25);
+	  , toIObject = __webpack_require__(38)
+	  , toLength  = __webpack_require__(26);
 
 	$export($export.S, 'String', {
 	  // 21.1.2.4 String.raw(callSite, ...substitutions)
@@ -15894,201 +6201,41 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 435 */
-=======
-/* 429 */
->>>>>>> Table directive to angular 2
-=======
-/* 439 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 441 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 443 */
->>>>>>> organizationlist to angular 2
-=======
-/* 442 */
->>>>>>> network details to angular 2
-=======
-/* 443 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 445 */
->>>>>>> volumes details to angular 2
-=======
-/* 446 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 
 	$export($export.P, 'String', {
 	  // 21.1.3.13 String.prototype.repeat(count)
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  repeat: __webpack_require__(226)
+	  repeat: __webpack_require__(243)
 	});
 
 /***/ },
-/* 436 */
-=======
-	  repeat: __webpack_require__(223)
-	});
-
-/***/ },
-/* 430 */
->>>>>>> Table directive to angular 2
-=======
-	  repeat: __webpack_require__(231)
-	});
-
-/***/ },
-/* 440 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  repeat: __webpack_require__(232)
-	});
-
-/***/ },
-/* 442 */
->>>>>>> adding storage policy list - angular 2
-=======
-	  repeat: __webpack_require__(233)
-	});
-
-/***/ },
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-/* 444 */
->>>>>>> organizationlist to angular 2
-=======
-/* 443 */
->>>>>>> network details to angular 2
-=======
-	  repeat: __webpack_require__(234)
-	});
-
-/***/ },
-/* 444 */
->>>>>>> added collapsible directive to angular 2
-=======
-	  repeat: __webpack_require__(236)
-	});
-
-/***/ },
-/* 446 */
->>>>>>> volumes details to angular 2
-=======
-	  repeat: __webpack_require__(237)
-	});
-
-/***/ },
-/* 447 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.11 String.prototype.small()
-	__webpack_require__(31)('small', function(createHTML){
+	__webpack_require__(33)('small', function(createHTML){
 	  return function small(){
 	    return createHTML(this, 'small', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 437 */
-=======
-/* 431 */
->>>>>>> Table directive to angular 2
-=======
-/* 441 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 443 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 445 */
->>>>>>> organizationlist to angular 2
-=======
-/* 444 */
->>>>>>> network details to angular 2
-=======
-/* 445 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 447 */
->>>>>>> volumes details to angular 2
-=======
-/* 448 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.18 String.prototype.startsWith(searchString [, position ])
 	'use strict';
 	var $export     = __webpack_require__(2)
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-	  , toLength    = __webpack_require__(24)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , context     = __webpack_require__(150)
+	  , toLength    = __webpack_require__(26)
+	  , context     = __webpack_require__(158)
 	  , STARTS_WITH = 'startsWith'
 	  , $startsWith = ''[STARTS_WITH];
 
-	$export($export.P + $export.F * __webpack_require__(138)(STARTS_WITH), 'String', {
-=======
-	  , context     = __webpack_require__(149)
-	  , STARTS_WITH = 'startsWith'
-	  , $startsWith = ''[STARTS_WITH];
-
-	$export($export.P + $export.F * __webpack_require__(137)(STARTS_WITH), 'String', {
->>>>>>> Table directive to angular 2
-=======
-	  , context     = __webpack_require__(153)
-	  , STARTS_WITH = 'startsWith'
-	  , $startsWith = ''[STARTS_WITH];
-
-	$export($export.P + $export.F * __webpack_require__(141)(STARTS_WITH), 'String', {
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-=======
-	  , toLength    = __webpack_require__(25)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
->>>>>>> network details to angular 2
-	  , context     = __webpack_require__(154)
-	  , STARTS_WITH = 'startsWith'
-	  , $startsWith = ''[STARTS_WITH];
-
-	$export($export.P + $export.F * __webpack_require__(142)(STARTS_WITH), 'String', {
->>>>>>> organizationlist to angular 2
-=======
-	  , context     = __webpack_require__(155)
-	  , STARTS_WITH = 'startsWith'
-	  , $startsWith = ''[STARTS_WITH];
-
-	$export($export.P + $export.F * __webpack_require__(143)(STARTS_WITH), 'String', {
->>>>>>> volumes details to angular 2
+	$export($export.P + $export.F * __webpack_require__(146)(STARTS_WITH), 'String', {
 	  startsWith: function startsWith(searchString /*, position = 0 */){
 	    var that   = context(this, searchString, STARTS_WITH)
 	      , index  = toLength(Math.min(arguments.length > 1 ? arguments[1] : undefined, that.length))
@@ -16100,291 +6247,67 @@
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 438 */
-=======
-/* 432 */
->>>>>>> Table directive to angular 2
-=======
-/* 442 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 444 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 446 */
->>>>>>> organizationlist to angular 2
-=======
-/* 445 */
->>>>>>> network details to angular 2
-=======
-/* 446 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 448 */
->>>>>>> volumes details to angular 2
-=======
-/* 449 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.12 String.prototype.strike()
-	__webpack_require__(31)('strike', function(createHTML){
+	__webpack_require__(33)('strike', function(createHTML){
 	  return function strike(){
 	    return createHTML(this, 'strike', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 439 */
-=======
-/* 433 */
->>>>>>> Table directive to angular 2
-=======
-/* 443 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 445 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 447 */
->>>>>>> organizationlist to angular 2
-=======
-/* 446 */
->>>>>>> network details to angular 2
-=======
-/* 447 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 449 */
->>>>>>> volumes details to angular 2
-=======
-/* 450 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.13 String.prototype.sub()
-	__webpack_require__(31)('sub', function(createHTML){
+	__webpack_require__(33)('sub', function(createHTML){
 	  return function sub(){
 	    return createHTML(this, 'sub', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 440 */
-=======
-/* 434 */
->>>>>>> Table directive to angular 2
-=======
-/* 444 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 446 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 448 */
->>>>>>> organizationlist to angular 2
-=======
-/* 447 */
->>>>>>> network details to angular 2
-=======
-/* 448 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 450 */
->>>>>>> volumes details to angular 2
-=======
-/* 451 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.14 String.prototype.sup()
-	__webpack_require__(31)('sup', function(createHTML){
+	__webpack_require__(33)('sup', function(createHTML){
 	  return function sup(){
 	    return createHTML(this, 'sup', '', '');
 	  }
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 441 */
-=======
-/* 435 */
->>>>>>> Table directive to angular 2
-=======
-/* 445 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 447 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 449 */
->>>>>>> organizationlist to angular 2
-=======
-/* 448 */
->>>>>>> network details to angular 2
-=======
-/* 449 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 451 */
->>>>>>> volumes details to angular 2
-=======
-/* 452 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 21.1.3.25 String.prototype.trim()
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(103)('trim', function($trim){
-=======
-	__webpack_require__(101)('trim', function($trim){
->>>>>>> Table directive to angular 2
-=======
-	__webpack_require__(108)('trim', function($trim){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(109)('trim', function($trim){
->>>>>>> adding storage policy list - angular 2
+	__webpack_require__(110)('trim', function($trim){
 	  return function trim(){
 	    return $trim(this, 3);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 442 */
-=======
-/* 436 */
->>>>>>> Table directive to angular 2
-=======
-/* 446 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 448 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 450 */
->>>>>>> organizationlist to angular 2
-=======
-/* 449 */
->>>>>>> network details to angular 2
-=======
-/* 450 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 452 */
->>>>>>> volumes details to angular 2
-=======
-/* 453 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	  , $typed       = __webpack_require__(104)
-	  , buffer       = __webpack_require__(152)
+	  , $typed       = __webpack_require__(111)
+	  , buffer       = __webpack_require__(160)
 	  , anObject     = __webpack_require__(8)
-	  , toIndex      = __webpack_require__(62)
-	  , toLength     = __webpack_require__(24)
+	  , toIndex      = __webpack_require__(70)
+	  , toLength     = __webpack_require__(26)
 	  , isObject     = __webpack_require__(11)
 	  , ArrayBuffer  = __webpack_require__(12).ArrayBuffer
-	  , speciesConstructor = __webpack_require__(224)
-=======
-	  , $typed       = __webpack_require__(102)
-	  , buffer       = __webpack_require__(151)
-=======
-	  , $typed       = __webpack_require__(109)
-=======
-	  , $typed       = __webpack_require__(110)
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
->>>>>>> adding storage policy list - angular 2
-	  , buffer       = __webpack_require__(155)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , buffer       = __webpack_require__(156)
->>>>>>> organizationlist to angular 2
-=======
-	  , buffer       = __webpack_require__(157)
->>>>>>> volumes details to angular 2
-	  , anObject     = __webpack_require__(8)
-	  , toIndex      = __webpack_require__(67)
-	  , toLength     = __webpack_require__(25)
-	  , isObject     = __webpack_require__(11)
-	  , ArrayBuffer  = __webpack_require__(12).ArrayBuffer
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , speciesConstructor = __webpack_require__(221)
->>>>>>> Table directive to angular 2
-=======
-	  , speciesConstructor = __webpack_require__(229)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , speciesConstructor = __webpack_require__(230)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , speciesConstructor = __webpack_require__(231)
->>>>>>> organizationlist to angular 2
-=======
-	  , speciesConstructor = __webpack_require__(232)
->>>>>>> added collapsible directive to angular 2
-=======
-	  , speciesConstructor = __webpack_require__(234)
->>>>>>> volumes details to angular 2
-=======
-	  , speciesConstructor = __webpack_require__(235)
->>>>>>> added ctvNamevalaue directive to angular 2
+	  , speciesConstructor = __webpack_require__(241)
 	  , $ArrayBuffer = buffer.ArrayBuffer
 	  , $DataView    = buffer.DataView
 	  , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -16420,556 +6343,116 @@
 	  }
 	});
 
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	__webpack_require__(85)(ARRAY_BUFFER);
+	__webpack_require__(89)(ARRAY_BUFFER);
 
 /***/ },
-/* 443 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
-	$export($export.G + $export.W + $export.F * !__webpack_require__(104).ABV, {
-	  DataView: __webpack_require__(152).DataView
+	$export($export.G + $export.W + $export.F * !__webpack_require__(111).ABV, {
+	  DataView: __webpack_require__(160).DataView
 	});
 
 /***/ },
-/* 444 */
-=======
-	__webpack_require__(80)(ARRAY_BUFFER);
-=======
-	__webpack_require__(85)(ARRAY_BUFFER);
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(87)(ARRAY_BUFFER);
->>>>>>> network details to angular 2
-=======
-	__webpack_require__(88)(ARRAY_BUFFER);
->>>>>>> volumes details to angular 2
-
-/***/ },
-/* 454 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $export = __webpack_require__(2);
-	$export($export.G + $export.W + $export.F * !__webpack_require__(110).ABV, {
-	  DataView: __webpack_require__(157).DataView
-	});
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-/* 438 */
->>>>>>> Table directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(46)('Float32', 4, function(init){
-=======
-/* 448 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Float32', 4, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 450 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Float32', 4, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 452 */
-=======
-/* 451 */
->>>>>>> network details to angular 2
-=======
-/* 452 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 454 */
->>>>>>> volumes details to angular 2
-=======
-/* 455 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Float32', 4, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Float32', 4, function(init){
 	  return function Float32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 445 */
-=======
-/* 439 */
->>>>>>> Table directive to angular 2
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(46)('Float64', 8, function(init){
-=======
-/* 449 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Float64', 8, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 451 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Float64', 8, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 453 */
-=======
-/* 452 */
->>>>>>> network details to angular 2
-=======
-/* 453 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 455 */
->>>>>>> volumes details to angular 2
-=======
-/* 456 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Float64', 8, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Float64', 8, function(init){
 	  return function Float64Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 446 */
-=======
-/* 440 */
->>>>>>> Table directive to angular 2
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(46)('Int16', 2, function(init){
-=======
-/* 450 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Int16', 2, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 452 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Int16', 2, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 454 */
-=======
-/* 453 */
->>>>>>> network details to angular 2
-=======
-/* 454 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 456 */
->>>>>>> volumes details to angular 2
-=======
-/* 457 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Int16', 2, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Int16', 2, function(init){
 	  return function Int16Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 447 */
-=======
-/* 441 */
->>>>>>> Table directive to angular 2
+/* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(46)('Int32', 4, function(init){
-=======
-/* 451 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Int32', 4, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 453 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Int32', 4, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 455 */
-=======
-/* 454 */
->>>>>>> network details to angular 2
-=======
-/* 455 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 457 */
->>>>>>> volumes details to angular 2
-=======
-/* 458 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Int32', 4, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Int32', 4, function(init){
 	  return function Int32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 448 */
-=======
-/* 442 */
->>>>>>> Table directive to angular 2
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(46)('Int8', 1, function(init){
-=======
-/* 452 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Int8', 1, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 454 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Int8', 1, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 456 */
-=======
-/* 455 */
->>>>>>> network details to angular 2
-=======
-/* 456 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 458 */
->>>>>>> volumes details to angular 2
-=======
-/* 459 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Int8', 1, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Int8', 1, function(init){
 	  return function Int8Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 449 */
-=======
-/* 443 */
->>>>>>> Table directive to angular 2
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(46)('Uint16', 2, function(init){
-=======
-/* 453 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Uint16', 2, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 455 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Uint16', 2, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 457 */
-=======
-/* 456 */
->>>>>>> network details to angular 2
-=======
-/* 457 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 459 */
->>>>>>> volumes details to angular 2
-=======
-/* 460 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Uint16', 2, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Uint16', 2, function(init){
 	  return function Uint16Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 450 */
-=======
-/* 444 */
->>>>>>> Table directive to angular 2
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(46)('Uint32', 4, function(init){
-=======
-/* 454 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Uint32', 4, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 456 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Uint32', 4, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 458 */
-=======
-/* 457 */
->>>>>>> network details to angular 2
-=======
-/* 458 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 460 */
->>>>>>> volumes details to angular 2
-=======
-/* 461 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Uint32', 4, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Uint32', 4, function(init){
 	  return function Uint32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 451 */
-=======
-/* 445 */
->>>>>>> Table directive to angular 2
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(46)('Uint8', 1, function(init){
-=======
-/* 455 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Uint8', 1, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 457 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Uint8', 1, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 459 */
-=======
-/* 458 */
->>>>>>> network details to angular 2
-=======
-/* 459 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 461 */
->>>>>>> volumes details to angular 2
-=======
-/* 462 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Uint8', 1, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Uint8', 1, function(init){
 	  return function Uint8Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 452 */
-=======
-/* 446 */
->>>>>>> Table directive to angular 2
+/* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(46)('Uint8', 1, function(init){
-=======
-/* 456 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(47)('Uint8', 1, function(init){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 458 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(49)('Uint8', 1, function(init){
->>>>>>> adding storage policy list - angular 2
-=======
-/* 460 */
-=======
-/* 459 */
->>>>>>> network details to angular 2
-=======
-/* 460 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 462 */
->>>>>>> volumes details to angular 2
-=======
-/* 463 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(50)('Uint8', 1, function(init){
->>>>>>> organizationlist to angular 2
+	__webpack_require__(51)('Uint8', 1, function(init){
 	  return function Uint8ClampedArray(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	}, true);
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 453 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var weak = __webpack_require__(207);
+	var weak = __webpack_require__(224);
 
 	// 23.4 WeakSet Objects
-	__webpack_require__(97)('WeakSet', function(get){
-=======
-/* 447 */
-=======
-/* 457 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 459 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 461 */
->>>>>>> organizationlist to angular 2
-=======
-/* 460 */
->>>>>>> network details to angular 2
-=======
-/* 461 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 463 */
->>>>>>> volumes details to angular 2
-=======
-/* 464 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var weak = __webpack_require__(218);
-
-	// 23.4 WeakSet Objects
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	__webpack_require__(95)('WeakSet', function(get){
->>>>>>> Table directive to angular 2
-=======
-	__webpack_require__(102)('WeakSet', function(get){
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	__webpack_require__(103)('WeakSet', function(get){
->>>>>>> adding storage policy list - angular 2
+	__webpack_require__(104)('WeakSet', function(get){
 	  return function WeakSet(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.4.3.1 WeakSet.prototype.add(value)
@@ -16979,54 +6462,10 @@
 	}, weak, false, true);
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 454 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata                  = __webpack_require__(44)
-=======
-/* 448 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata                  = __webpack_require__(43)
->>>>>>> Table directive to angular 2
-=======
-/* 458 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata                  = __webpack_require__(45)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 460 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata                  = __webpack_require__(47)
->>>>>>> adding storage policy list - angular 2
-=======
-/* 462 */
-=======
-/* 461 */
->>>>>>> network details to angular 2
-=======
-/* 462 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 464 */
->>>>>>> volumes details to angular 2
-=======
-/* 465 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata                  = __webpack_require__(48)
->>>>>>> organizationlist to angular 2
+	var metadata                  = __webpack_require__(49)
 	  , anObject                  = __webpack_require__(8)
 	  , toMetaKey                 = metadata.key
 	  , ordinaryDefineOwnMetadata = metadata.set;
@@ -17036,54 +6475,10 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 455 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(44)
-=======
-/* 449 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(43)
->>>>>>> Table directive to angular 2
-=======
-/* 459 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(45)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 461 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(47)
->>>>>>> adding storage policy list - angular 2
-=======
-/* 463 */
-=======
-/* 462 */
->>>>>>> network details to angular 2
-=======
-/* 463 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 465 */
->>>>>>> volumes details to angular 2
-=======
-/* 466 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(48)
->>>>>>> organizationlist to angular 2
+	var metadata               = __webpack_require__(49)
 	  , anObject               = __webpack_require__(8)
 	  , toMetaKey              = metadata.key
 	  , getOrCreateMetadataMap = metadata.map
@@ -17100,65 +6495,14 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 456 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Set                     = __webpack_require__(234)
-	  , from                    = __webpack_require__(321)
-	  , metadata                = __webpack_require__(44)
+	var Set                     = __webpack_require__(251)
+	  , from                    = __webpack_require__(343)
+	  , metadata                = __webpack_require__(49)
 	  , anObject                = __webpack_require__(8)
-	  , getPrototypeOf          = __webpack_require__(37)
-=======
-/* 450 */
-=======
-/* 460 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 462 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 464 */
->>>>>>> organizationlist to angular 2
-=======
-/* 463 */
->>>>>>> network details to angular 2
-=======
-/* 464 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 466 */
->>>>>>> volumes details to angular 2
-=======
-/* 467 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var Set                     = __webpack_require__(245)
-	  , from                    = __webpack_require__(332)
-	  , metadata                = __webpack_require__(48)
-	  , anObject                = __webpack_require__(8)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , getPrototypeOf          = __webpack_require__(36)
->>>>>>> Table directive to angular 2
-=======
-	  , getPrototypeOf          = __webpack_require__(37)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , getPrototypeOf          = __webpack_require__(38)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , getPrototypeOf          = __webpack_require__(40)
->>>>>>> organizationlist to angular 2
+	  , getPrototypeOf          = __webpack_require__(41)
 	  , ordinaryOwnMetadataKeys = metadata.keys
 	  , toMetaKey               = metadata.key;
 
@@ -17175,61 +6519,12 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 457 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(44)
+	var metadata               = __webpack_require__(49)
 	  , anObject               = __webpack_require__(8)
-	  , getPrototypeOf         = __webpack_require__(37)
-=======
-/* 451 */
-=======
-/* 461 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 463 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 465 */
->>>>>>> organizationlist to angular 2
-=======
-/* 464 */
->>>>>>> network details to angular 2
-=======
-/* 465 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 467 */
->>>>>>> volumes details to angular 2
-=======
-/* 468 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(48)
-	  , anObject               = __webpack_require__(8)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , getPrototypeOf         = __webpack_require__(36)
->>>>>>> Table directive to angular 2
-=======
-	  , getPrototypeOf         = __webpack_require__(37)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , getPrototypeOf         = __webpack_require__(38)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , getPrototypeOf         = __webpack_require__(40)
->>>>>>> organizationlist to angular 2
+	  , getPrototypeOf         = __webpack_require__(41)
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , ordinaryGetOwnMetadata = metadata.get
 	  , toMetaKey              = metadata.key;
@@ -17246,55 +6541,10 @@
 	}});
 
 /***/ },
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 458 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata                = __webpack_require__(44)
-=======
-/* 452 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata                = __webpack_require__(43)
->>>>>>> Table directive to angular 2
-=======
-/* 462 */
-/***/ function(module, exports, __webpack_require__) {
-
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-	var metadata                = __webpack_require__(45)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 464 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata                = __webpack_require__(47)
->>>>>>> adding storage policy list - angular 2
-=======
-/* 466 */
-=======
-/* 465 */
->>>>>>> network details to angular 2
-=======
-/* 466 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 468 */
->>>>>>> volumes details to angular 2
-=======
-/***/ },
-/* 469 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata                = __webpack_require__(48)
->>>>>>> organizationlist to angular 2
+	var metadata                = __webpack_require__(49)
 	  , anObject                = __webpack_require__(8)
 	  , ordinaryOwnMetadataKeys = metadata.keys
 	  , toMetaKey               = metadata.key;
@@ -17304,54 +6554,10 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 459 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(44)
-=======
-/* 453 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(43)
->>>>>>> Table directive to angular 2
-=======
-/* 463 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(45)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 465 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(47)
->>>>>>> adding storage policy list - angular 2
-=======
-/* 467 */
-=======
-/* 466 */
->>>>>>> network details to angular 2
-=======
-/* 467 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 469 */
->>>>>>> volumes details to angular 2
-=======
-/* 470 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(48)
->>>>>>> organizationlist to angular 2
+	var metadata               = __webpack_require__(49)
 	  , anObject               = __webpack_require__(8)
 	  , ordinaryGetOwnMetadata = metadata.get
 	  , toMetaKey              = metadata.key;
@@ -17362,61 +6568,12 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 460 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(44)
+	var metadata               = __webpack_require__(49)
 	  , anObject               = __webpack_require__(8)
-	  , getPrototypeOf         = __webpack_require__(37)
-=======
-/* 454 */
-=======
-/* 464 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 466 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 468 */
->>>>>>> organizationlist to angular 2
-=======
-/* 467 */
->>>>>>> network details to angular 2
-=======
-/* 468 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 470 */
->>>>>>> volumes details to angular 2
-=======
-/* 471 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(48)
-	  , anObject               = __webpack_require__(8)
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , getPrototypeOf         = __webpack_require__(36)
->>>>>>> Table directive to angular 2
-=======
-	  , getPrototypeOf         = __webpack_require__(37)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , getPrototypeOf         = __webpack_require__(38)
->>>>>>> adding storage policy list - angular 2
-=======
-	  , getPrototypeOf         = __webpack_require__(40)
->>>>>>> organizationlist to angular 2
+	  , getPrototypeOf         = __webpack_require__(41)
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , toMetaKey              = metadata.key;
 
@@ -17432,54 +6589,10 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 461 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata               = __webpack_require__(44)
-=======
-/* 455 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(43)
->>>>>>> Table directive to angular 2
-=======
-/* 465 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(45)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 467 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(47)
->>>>>>> adding storage policy list - angular 2
-=======
-/* 469 */
-=======
-/* 468 */
->>>>>>> network details to angular 2
-=======
-/* 469 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 471 */
->>>>>>> volumes details to angular 2
-=======
-/* 472 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata               = __webpack_require__(48)
->>>>>>> organizationlist to angular 2
+	var metadata               = __webpack_require__(49)
 	  , anObject               = __webpack_require__(8)
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , toMetaKey              = metadata.key;
@@ -17490,57 +6603,12 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 462 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metadata                  = __webpack_require__(44)
+	var metadata                  = __webpack_require__(49)
 	  , anObject                  = __webpack_require__(8)
-	  , aFunction                 = __webpack_require__(50)
-=======
-/* 456 */
-=======
-/* 466 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 468 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 470 */
->>>>>>> organizationlist to angular 2
-=======
-/* 469 */
->>>>>>> network details to angular 2
-=======
-/* 470 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 472 */
->>>>>>> volumes details to angular 2
-=======
-/* 473 */
->>>>>>> added ctvNamevalaue directive to angular 2
-/***/ function(module, exports, __webpack_require__) {
-
-	var metadata                  = __webpack_require__(48)
-	  , anObject                  = __webpack_require__(8)
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-	  , aFunction                 = __webpack_require__(48)
->>>>>>> Table directive to angular 2
-=======
-	  , aFunction                 = __webpack_require__(52)
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	  , aFunction                 = __webpack_require__(53)
->>>>>>> adding storage policy list - angular 2
+	  , aFunction                 = __webpack_require__(57)
 	  , toMetaKey                 = metadata.key
 	  , ordinaryDefineOwnMetadata = metadata.set;
 
@@ -17555,39 +6623,7 @@
 	}});
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 463 */
-=======
-/* 457 */
->>>>>>> Table directive to angular 2
-=======
-/* 467 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 469 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 471 */
->>>>>>> organizationlist to angular 2
-=======
-/* 470 */
->>>>>>> network details to angular 2
-=======
-/* 471 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 473 */
->>>>>>> volumes details to angular 2
-=======
-/* 474 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 485 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// function.name (all IE)
@@ -17678,7 +6714,6 @@
 	  }
 	global.URLPolyfill = URLPolyfill;
 	})(typeof self != 'undefined' ? self : global);
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
 
 	//classList (IE9)
 	/*! @license please refer to http://unlicense.org/ */
@@ -17725,242 +6760,6 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 464 */
-/***/ function(module, exports) {
-
-	// shim for using process in browser
-	var process = module.exports = {};
-
-	// cached from whatever global is present so that test runners that stub it
-	// don't break things.  But we need to wrap it in a try catch in case it is
-	// wrapped in strict mode code which doesn't define any globals.  It's inside a
-	// function because try/catches deoptimize in certain engines.
-
-	var cachedSetTimeout;
-	var cachedClearTimeout;
-
-	function defaultSetTimout() {
-	    throw new Error('setTimeout has not been defined');
-	}
-	function defaultClearTimeout () {
-	    throw new Error('clearTimeout has not been defined');
-	}
-	(function () {
-	    try {
-	        if (typeof setTimeout === 'function') {
-	            cachedSetTimeout = setTimeout;
-	        } else {
-	            cachedSetTimeout = defaultSetTimout;
-	        }
-	    } catch (e) {
-	        cachedSetTimeout = defaultSetTimout;
-	    }
-	    try {
-	        if (typeof clearTimeout === 'function') {
-	            cachedClearTimeout = clearTimeout;
-	        } else {
-	            cachedClearTimeout = defaultClearTimeout;
-	        }
-	    } catch (e) {
-	        cachedClearTimeout = defaultClearTimeout;
-	    }
-	} ())
-	function runTimeout(fun) {
-	    if (cachedSetTimeout === setTimeout) {
-	        //normal enviroments in sane situations
-	        return setTimeout(fun, 0);
-	    }
-	    // if setTimeout wasn't available but was latter defined
-	    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-	        cachedSetTimeout = setTimeout;
-	        return setTimeout(fun, 0);
-	    }
-	    try {
-	        // when when somebody has screwed with setTimeout but no I.E. maddness
-	        return cachedSetTimeout(fun, 0);
-	    } catch(e){
-	        try {
-	            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-	            return cachedSetTimeout.call(null, fun, 0);
-	        } catch(e){
-	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-	            return cachedSetTimeout.call(this, fun, 0);
-	        }
-	    }
-
-
-	}
-	function runClearTimeout(marker) {
-	    if (cachedClearTimeout === clearTimeout) {
-	        //normal enviroments in sane situations
-	        return clearTimeout(marker);
-	    }
-	    // if clearTimeout wasn't available but was latter defined
-	    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-	        cachedClearTimeout = clearTimeout;
-	        return clearTimeout(marker);
-	    }
-	    try {
-	        // when when somebody has screwed with setTimeout but no I.E. maddness
-	        return cachedClearTimeout(marker);
-	    } catch (e){
-	        try {
-	            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-	            return cachedClearTimeout.call(null, marker);
-	        } catch (e){
-	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-	            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-	            return cachedClearTimeout.call(this, marker);
-	        }
-	    }
-
-
-
-	}
-	var queue = [];
-	var draining = false;
-	var currentQueue;
-	var queueIndex = -1;
-
-	function cleanUpNextTick() {
-	    if (!draining || !currentQueue) {
-	        return;
-	    }
-	    draining = false;
-	    if (currentQueue.length) {
-	        queue = currentQueue.concat(queue);
-	    } else {
-	        queueIndex = -1;
-	    }
-	    if (queue.length) {
-	        drainQueue();
-	    }
-	}
-
-	function drainQueue() {
-	    if (draining) {
-	        return;
-	    }
-	    var timeout = runTimeout(cleanUpNextTick);
-	    draining = true;
-
-	    var len = queue.length;
-	    while(len) {
-	        currentQueue = queue;
-	        queue = [];
-	        while (++queueIndex < len) {
-	            if (currentQueue) {
-	                currentQueue[queueIndex].run();
-	            }
-	        }
-	        queueIndex = -1;
-	        len = queue.length;
-	    }
-	    currentQueue = null;
-	    draining = false;
-	    runClearTimeout(timeout);
-	}
-=======
->>>>>>> Table directive to angular 2
-
-	//classList (IE9)
-	/*! @license please refer to http://unlicense.org/ */
-	/*! @author Eli Grey */
-	/*! @source https://github.com/eligrey/classList.js */
-	;if("document" in self&&!("classList" in document.createElement("_"))){(function(j){"use strict";if(!("Element" in j)){return}var a="classList",f="prototype",m=j.Element[f],b=Object,k=String[f].trim||function(){return this.replace(/^\s+|\s+$/g,"")},c=Array[f].indexOf||function(q){var p=0,o=this.length;for(;p<o;p++){if(p in this&&this[p]===q){return p}}return -1},n=function(o,p){this.name=o;this.code=DOMException[o];this.message=p},g=function(p,o){if(o===""){throw new n("SYNTAX_ERR","An invalid or illegal string was specified")}if(/\s/.test(o)){throw new n("INVALID_CHARACTER_ERR","String contains an invalid character")}return c.call(p,o)},d=function(s){var r=k.call(s.getAttribute("class")||""),q=r?r.split(/\s+/):[],p=0,o=q.length;for(;p<o;p++){this.push(q[p])}this._updateClassName=function(){s.setAttribute("class",this.toString())}},e=d[f]=[],i=function(){return new d(this)};n[f]=Error[f];e.item=function(o){return this[o]||null};e.contains=function(o){o+="";return g(this,o)!==-1};e.add=function(){var s=arguments,r=0,p=s.length,q,o=false;do{q=s[r]+"";if(g(this,q)===-1){this.push(q);o=true}}while(++r<p);if(o){this._updateClassName()}};e.remove=function(){var t=arguments,s=0,p=t.length,r,o=false;do{r=t[s]+"";var q=g(this,r);if(q!==-1){this.splice(q,1);o=true}}while(++s<p);if(o){this._updateClassName()}};e.toggle=function(p,q){p+="";var o=this.contains(p),r=o?q!==true&&"remove":q!==false&&"add";if(r){this[r](p)}return !o};e.toString=function(){return this.join(" ")};if(b.defineProperty){var l={get:i,enumerable:true,configurable:true};try{b.defineProperty(m,a,l)}catch(h){if(h.number===-2146823252){l.enumerable=false;b.defineProperty(m,a,l)}}}else{if(b[f].__defineGetter__){m.__defineGetter__(a,i)}}}(self))};
-
-	//console mock (IE9)
-	if (!window.console) window.console = {};
-	if (!window.console.log) window.console.log = function () { };
-	if (!window.console.error) window.console.error = function () { };
-	if (!window.console.warn) window.console.warn = function () { };
-	if (!window.console.assert) window.console.assert = function () { };
-
-	//RequestAnimationFrame (IE9, Android 4.1, 4.2, 4.3)
-	/*! @author Paul Irish */
-	/*! @source https://gist.github.com/paulirish/1579671 */
-	// http://paulirish.com/2011/requestanimationframe-for-smart-animating/
-	// http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
-
-	// requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
-
-	// MIT license
-
-	(function() {
-	    var lastTime = 0;
-
-	    if (!window.requestAnimationFrame)
-	        window.requestAnimationFrame = function(callback, element) {
-	            var currTime = Date.now();
-	            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-	            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
-	              timeToCall);
-	            lastTime = currTime + timeToCall;
-	            return id;
-	        };
-
-	    if (!window.cancelAnimationFrame)
-	        window.cancelAnimationFrame = function(id) {
-	            clearTimeout(id);
-	        };
-	}());
-
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-=======
-/* 458 */,
-/* 459 */,
-/* 460 */,
-/* 461 */,
-/* 462 */,
-/* 463 */,
-/* 464 */,
->>>>>>> Table directive to angular 2
-/* 465 */,
-/* 466 */,
-/* 467 */,
-=======
->>>>>>> converting volumelist, servicelist ctrl to ang2
-/* 468 */,
-/* 469 */,
-=======
->>>>>>> adding storage policy list - angular 2
-/* 470 */,
-/* 471 */,
-=======
->>>>>>> organizationlist to angular 2
-=======
-/* 471 */,
->>>>>>> network details to angular 2
-=======
->>>>>>> added collapsible directive to angular 2
-/* 472 */,
-/* 473 */,
-=======
->>>>>>> volumes details to angular 2
-/* 474 */,
-=======
->>>>>>> added ctvNamevalaue directive to angular 2
-/* 475 */,
-/* 476 */,
-/* 477 */,
-/* 478 */,
-/* 479 */,
-/* 480 */,
-/* 481 */,
-/* 482 */,
-/* 483 */,
-/* 484 */,
-/* 485 */,
 /* 486 */,
 /* 487 */,
 /* 488 */,
@@ -18207,16 +7006,6 @@
 /* 729 */,
 /* 730 */,
 /* 731 */,
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 732 */,
-/* 733 */,
-/* 734 */,
-/* 735 */
-=======
-/* 732 */
->>>>>>> Table directive to angular 2
-=======
 /* 732 */,
 /* 733 */,
 /* 734 */,
@@ -18227,39 +7016,24 @@
 /* 739 */,
 /* 740 */,
 /* 741 */,
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-/* 742 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
 /* 742 */,
 /* 743 */,
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-/* 744 */
->>>>>>> adding storage policy list - angular 2
-=======
 /* 744 */,
-/* 745 */
->>>>>>> organizationlist to angular 2
-=======
-/* 744 */
->>>>>>> network details to angular 2
-=======
-/* 744 */,
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-/* 745 */
->>>>>>> added collapsible directive to angular 2
-=======
 /* 745 */,
 /* 746 */,
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-/* 747 */
->>>>>>> volumes details to angular 2
-=======
 /* 747 */,
-/* 748 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 748 */,
+/* 749 */,
+/* 750 */,
+/* 751 */,
+/* 752 */,
+/* 753 */,
+/* 754 */,
+/* 755 */,
+/* 756 */,
+/* 757 */,
+/* 758 */,
+/* 759 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -18422,39 +7196,7 @@
 
 
 /***/ },
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< a90f9a88e707e6c985f36a01f5d1091758bd3556
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-/* 736 */
-=======
-/* 733 */
->>>>>>> Table directive to angular 2
-=======
-/* 743 */
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-/* 745 */
->>>>>>> adding storage policy list - angular 2
-=======
-/* 746 */
->>>>>>> organizationlist to angular 2
-=======
-/* 745 */
->>>>>>> network details to angular 2
-=======
-/* 746 */
->>>>>>> added collapsible directive to angular 2
-=======
-/* 748 */
->>>>>>> volumes details to angular 2
-=======
-/* 749 */
->>>>>>> added ctvNamevalaue directive to angular 2
+/* 760 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -19884,35 +8626,7 @@
 
 	})));
 
-<<<<<<< f411ca57c3ff9533d2000dd72755fe522028e443
-<<<<<<< dcf7cd4da2db6182b58a967e0d48f3a8ac9e9bd8
-<<<<<<< c18c0203e202ca186b32cccd3e468ef78a71ca2a
-<<<<<<< f82eb548d8608d2f69b7337ad3ed28644a3fbd0e
-<<<<<<< cd3977d9f9009e2cdbfd5b833ada19d6ed1fee40
-<<<<<<< e835aaa173f4b1c8dc589209ad8e2f0097a61830
-<<<<<<< 145a88c49ed1fc3a982d61cd09a96d3bf9f4a929
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(464)))
-=======
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(234)))
->>>>>>> Table directive to angular 2
-=======
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(242)))
->>>>>>> converting volumelist, servicelist ctrl to ang2
-=======
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(243)))
->>>>>>> adding storage policy list - angular 2
-=======
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(244)))
->>>>>>> organizationlist to angular 2
-=======
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(245)))
->>>>>>> added collapsible directive to angular 2
-=======
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(247)))
->>>>>>> volumes details to angular 2
-=======
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(248)))
->>>>>>> added ctvNamevalaue directive to angular 2
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(254)))
 
 /***/ }
 /******/ ]);

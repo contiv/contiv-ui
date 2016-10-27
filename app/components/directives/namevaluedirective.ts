@@ -16,7 +16,7 @@ export interface Item{
     templateUrl:'components/directives/namevalue.html'
 })
 
-export class CtvNamevalueComponent implements OnInit{
+export class CtvNamevalueComponent{
     @Input('items') items: Item[];
     @Input('nameheader') nameheader: string;
     @Input('options') options:string[];
@@ -32,10 +32,6 @@ export class CtvNamevalueComponent implements OnInit{
         this.type = 'text';
         this.newItem = {name: '', value: ''};
         this.options=[];
-    }
-
-    ngOnInit(){
-        debugger;
     }
 
     public resetItem(): void{

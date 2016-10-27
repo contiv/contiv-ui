@@ -31,7 +31,6 @@ export class NetworkdetailsComponent implements OnInit, OnDestroy{
                 applicationGroupsModel: ApplicationGroupsModel,
                 networksModel: NetworksModel,
                 crudHelperService: CRUDHelperService){
-        debugger;
         this.applicationGroupsModel = applicationGroupsModel;
         this.networksModel = networksModel;
         this.crudHelperService = crudHelperService;
@@ -48,7 +47,6 @@ export class NetworkdetailsComponent implements OnInit, OnDestroy{
     }
 
     ngOnInit(){
-        debugger;
         this.crudHelperService.startLoader(this);
         this.statskey = this.$state.params['key'];
         this.getNetworksModel(false);

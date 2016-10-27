@@ -51,13 +51,11 @@ export class VolumeDetailsComponent implements OnInit, OnDestroy{
     }
 
     ngOnInit(){
-        debugger;
         this.crudHelperService.startLoader(this);
         this.getVolumesInfo(false);
     }
 
     getVolumesInfo(reload: boolean){
-        debugger;
         var tokens = this.$state.params['key'].toString().split('/');
         var volumeDetailsCtrl = this;
         var model={policy: tokens[0], name: tokens[1]};
@@ -88,7 +86,6 @@ export class VolumeDetailsComponent implements OnInit, OnDestroy{
                     volumeDetailsCtrl['snapshots'] = result;
                 volumeDetailsCtrl.crudHelperService.stopLoader(volumeDetailsCtrl);
             }, (error) => {
-                console.log("Error with volume snapshot"+ error);
                 volumeDetailsCtrl.crudHelperService.stopLoader(volumeDetailsCtrl);
             });
     }
@@ -120,6 +117,8 @@ export class VolumeDetailsComponent implements OnInit, OnDestroy{
             .then((result) => {
                 volumeDetailsCtrl.crudHelperService.stopLoader(volumeDetailsCtrl);
                 this.returnToVolumes();
+            }, (error) => {
+                volumeDetailsCtrl.crudHelperService.showServerError(volumeDetailsCtrl,error);
             })
     }
 
