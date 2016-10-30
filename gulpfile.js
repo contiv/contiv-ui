@@ -68,7 +68,11 @@ gulp.task('build', function () {
             '!app/volumes/volumedetailsctrl.js',
             '!app/volumes/volumeservice.js',
             '!app/components/directives/namevaluedirective.js',
-            '!app/networks/networkcreatectrl.js'
+            '!app/networks/networkcreatectrl.js',
+            '!app/service_lbs/servicelbportsdirective.js',
+            '!app/service_lbs/servicelbcreatectrl.js',
+            '!app/service_lbs/servicelbdetailsctrl.js',
+            '!app/service_lbs/servicelbinfoctrl.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
@@ -150,7 +154,11 @@ gulp.task('dev-build', function () {
             '!app/volumes/volumedetailsctrl.js',
             '!app/volumes/volumeservice.js',
             '!app/components/directives/namevaluedirective.js',
-            '!app/networks/networkcreatectrl.js'
+            '!app/networks/networkcreatectrl.js',
+            '!app/service_lbs/servicelbportsdirective.js',
+            '!app/service_lbs/servicelbcreatectrl.js',
+            '!app/service_lbs/servicelbdetailsctrl.js',
+            '!app/service_lbs/servicelbinfoctrl.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
