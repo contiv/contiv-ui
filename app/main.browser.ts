@@ -18,6 +18,7 @@ import { InspectService } from "./components/utils/inspectservice";
 import { NodesService } from "./components/utils/nodesservice";
 import { ErrorMessageComponent } from "./components/directives/errormessagedirective";
 import { DashboardComponent } from "./dashboard/dashboardctrl";
+import { NetworkPoliciesTabsComponent } from "./network_policies/networkpoliciestabsctrl";
 import { IsolationPolicyCreateComponent } from "./network_policies/isolationpolicycreatectrl";
 import { IsolationPolicyDetailsComponent } from "./network_policies/isolationpolicydetailsctrl";
 import { BandwidthPolicyCreateComponent } from "./network_policies/bandwidthpolicycreatectrl";
@@ -86,6 +87,7 @@ angular.module('contiv.dashboard')
     .directive('dashboard', upgradeAdapter.downgradeNg2Component(DashboardComponent) as angular.IDirectiveFactory);
 
 angular.module('contiv.networkpolicies')
+    .directive('networkpoliciestabs', upgradeAdapter.downgradeNg2Component(NetworkPoliciesTabsComponent) as angular.IDirectiveFactory)
     .directive('isolationpolicycreate', upgradeAdapter.downgradeNg2Component(IsolationPolicyCreateComponent) as angular.IDirectiveFactory)
     .directive('bandwidthpolicycreate', upgradeAdapter.downgradeNg2Component(BandwidthPolicyCreateComponent) as angular.IDirectiveFactory)
     .directive('isolationpolicylist', upgradeAdapter.downgradeNg2Component(IsolationListComponent) as angular.IDirectiveFactory)
