@@ -25,10 +25,10 @@ export class NetworkPoliciesTabsComponent {
     }
 
     createNetworkPolicy() {
-        if (this.$state.$current.includes['contiv.menu.networkpolicies.list.isolation']) {
+        if (this.isolationPolicySelected) {
             this.$state.go('contiv.menu.networkpolicies.isolation.create');
         }
-        if (this.$state.$current.includes['contiv.menu.networkpolicies.list.bandwidth']) {
+        if (this.bandwidthPolicySelected) {
             this.$state.go('contiv.menu.networkpolicies.bandwidth.create');
         }
     }
