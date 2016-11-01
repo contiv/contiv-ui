@@ -36,25 +36,20 @@ import {NetworkListComponent} from "./networks/networklistctrl";
 import {AppGrouplistComponent} from "./applicationgroups/applicationgrouplistctrl";
 import {IsolationListComponent} from "./network_policies/isolationpolicylistctrl";
 import {BandwidthListComponent} from "./network_policies/bandwidthpolicylistctrl";
-import {NetworkStatComponent} from "./networks/networkstatsctrl";
 import {CtvAccordionComponent} from "./components/directives/accordiondirective";
 import {ServicelbListComponent} from "./service_lbs/servicelblistctrl";
-import {ServicelbStatComponent} from "./service_lbs/servicelbstatsctrl";
 import {VolumeListComponent} from "./volumes/volumelistctrl";
 import {VolumeSettingService} from "./components/utils/volumesettingservice";
 import {NetworkService} from "./components/utils/networkservice";
 import {StoragepolicyListComponent} from "./storage_policies/storagepolicylistctrl";
 import {OrganizationListComponent} from "./organizations/organizationlistctrl";
-import {NetworkInfoComponent} from "./networks/networkinfoctrl";
 import {NetworkdetailsComponent} from "./networks/networkdetailsctrl";
 import {CtvCollapsibleComponent} from "./components/directives/collapsibledirective";
 import {VolumeDetailsComponent} from "./volumes/volumedetailsctrl";
 import {VolumeService} from "./volumes/volumeservice";
 import {CtvNamevalueComponent} from "./components/directives/namevaluedirective";
 import {NetworkCreateComponent} from "./networks/networkcreatectrl";
-import {ServicelbPortsComponent} from "./service_lbs/servicelbportsdirective";
 import {ServicelbCreateComponent} from "./service_lbs/servicelbcreatectrl";
-import {ServicelbInfoComponent} from "./service_lbs/servicelbinfoctrl";
 import {ServicelbDetailsComponent} from "./service_lbs/servicelbdetailsctrl";
 
 upgradeAdapter.upgradeNg1Provider('$state');
@@ -90,8 +85,6 @@ angular.module('contiv.networkpolicies')
     .directive('networkpoliciestabs', upgradeAdapter.downgradeNg2Component(NetworkPoliciesTabsComponent) as angular.IDirectiveFactory)
     .directive('isolationpolicycreate', upgradeAdapter.downgradeNg2Component(IsolationPolicyCreateComponent) as angular.IDirectiveFactory)
     .directive('bandwidthpolicycreate', upgradeAdapter.downgradeNg2Component(BandwidthPolicyCreateComponent) as angular.IDirectiveFactory)
-    .directive('isolationpolicylist', upgradeAdapter.downgradeNg2Component(IsolationListComponent) as angular.IDirectiveFactory)
-    .directive('bandwidthpolicylist', upgradeAdapter.downgradeNg2Component(BandwidthListComponent) as angular.IDirectiveFactory)
     .directive('isolationpolicydetails', upgradeAdapter.downgradeNg2Component(IsolationPolicyDetailsComponent) as angular.IDirectiveFactory)
     .directive('bandwidthpolicydetails', upgradeAdapter.downgradeNg2Component(BandwidthPolicyDetailsComponent) as angular.IDirectiveFactory);
 
@@ -108,8 +101,6 @@ angular.module("contiv.directives")
 
 angular.module('contiv.networks')
     .directive('networkList', upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory)
-    .directive('networkStat', upgradeAdapter.downgradeNg2Component(NetworkStatComponent) as angular.IDirectiveFactory)
-    .directive('networkInfo', upgradeAdapter.downgradeNg2Component(NetworkInfoComponent) as angular.IDirectiveFactory)
     .directive('networkdetails', upgradeAdapter.downgradeNg2Component(NetworkdetailsComponent) as angular.IDirectiveFactory)
     .directive('networkcreate', upgradeAdapter.downgradeNg2Component(NetworkCreateComponent) as angular.IDirectiveFactory);
 
@@ -120,10 +111,7 @@ angular.module('contiv.applicationgroups')
 
 angular.module('contiv.servicelbs')
     .directive('servicelbList', upgradeAdapter.downgradeNg2Component(ServicelbListComponent) as angular.IDirectiveFactory)
-    .directive('servicelbStat', upgradeAdapter.downgradeNg2Component(ServicelbStatComponent) as angular.IDirectiveFactory)
-    .directive('ctvServicelbports', upgradeAdapter.downgradeNg2Component(ServicelbPortsComponent) as angular.IDirectiveFactory)
     .directive('servicelbCreate', upgradeAdapter.downgradeNg2Component(ServicelbCreateComponent) as angular.IDirectiveFactory)
-    .directive('servicelbInfo', upgradeAdapter.downgradeNg2Component(ServicelbInfoComponent) as angular.IDirectiveFactory)
     .directive('servicelbDetails', upgradeAdapter.downgradeNg2Component(ServicelbDetailsComponent) as angular.IDirectiveFactory);
 
 angular.module('contiv.volumes')

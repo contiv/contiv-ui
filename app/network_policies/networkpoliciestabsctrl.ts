@@ -21,14 +21,7 @@ export class NetworkPoliciesTabsComponent {
 
     constructor(@Inject('$state') private $state:StateService,
                 @Inject('$stateParams') private $stateParams:StateParams) {
-        if ($stateParams['policyTab'] === PolicyTab.isolation) {
-            this.isolationPolicySelected = true;
-            this.bandwidthPolicySelected = false;
-        }
-        else {
-            this.isolationPolicySelected = false;
-            this.bandwidthPolicySelected = true;
-        }
+        this.selectPolicyTab($stateParams['policyTab']);
     }
 
     createNetworkPolicy() {
