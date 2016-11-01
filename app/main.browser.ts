@@ -43,6 +43,7 @@ import {NetworkCreateComponent} from "./networks/networkcreatectrl";
 import {ServicelbCreateComponent} from "./service_lbs/servicelbcreatectrl";
 import {ServicelbDetailsComponent} from "./service_lbs/servicelbdetailsctrl";
 import {ClusterSettingsComponent} from "./settings/clustersettingctrl";
+import {LoginComponent} from "./login/loginctrl";
 
 upgradeAdapter.upgradeNg1Provider('$state');
 upgradeAdapter.upgradeNg1Provider('$stateParams');
@@ -104,5 +105,8 @@ angular.module('contiv.servicelbs')
 
 angular.module('contiv.organizations')
     .directive('organizationlist', upgradeAdapter.downgradeNg2Component(OrganizationListComponent) as angular.IDirectiveFactory);
+
+angular.module('contiv.login')
+    .directive('login', upgradeAdapter.downgradeNg2Component(LoginComponent) as angular.IDirectiveFactory);
 
 upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);

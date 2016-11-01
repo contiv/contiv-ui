@@ -103,6 +103,8 @@
 	 */
 	// Polyfills
 	"use strict";
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 	__webpack_require__(481); // Internet Explorer 9 support
 	// import 'core-js/es6';
 	// Added parts of es6 which are necessary for your project or your browser support requirements.
@@ -128,6 +130,41 @@
 	__webpack_require__(338);
 	__webpack_require__(756);
 	__webpack_require__(755);
+=======
+	__webpack_require__(494); // Internet Explorer 9 support
+=======
+	__webpack_require__(497); // Internet Explorer 9 support
+>>>>>>> Stashed changes
+	// import 'core-js/es6';
+	// Added parts of es6 which are necessary for your project or your browser support requirements.
+	__webpack_require__(347);
+	__webpack_require__(340);
+	__webpack_require__(336);
+	__webpack_require__(342);
+	__webpack_require__(341);
+	__webpack_require__(339);
+	__webpack_require__(338);
+	__webpack_require__(346);
+	__webpack_require__(335);
+	__webpack_require__(334);
+	__webpack_require__(344);
+	__webpack_require__(337);
+	__webpack_require__(345);
+	__webpack_require__(349);
+	__webpack_require__(350);
+	__webpack_require__(348);
+	__webpack_require__(343);
+	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
+	// import 'core-js/es6/promise';
+	__webpack_require__(351);
+<<<<<<< Updated upstream
+	__webpack_require__(769);
+	__webpack_require__(768);
+>>>>>>> 3d51c09... login ctrl to angular 2
+=======
+	__webpack_require__(773);
+	__webpack_require__(772);
+>>>>>>> Stashed changes
 	
 
 /***/ },
@@ -137,9 +174,15 @@
 
 	var global    = __webpack_require__(12)
 	  , core      = __webpack_require__(14)
+<<<<<<< HEAD
 	  , hide      = __webpack_require__(32)
 	  , redefine  = __webpack_require__(29)
 	  , ctx       = __webpack_require__(66)
+=======
+	  , hide      = __webpack_require__(35)
+	  , redefine  = __webpack_require__(33)
+	  , ctx       = __webpack_require__(68)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , PROTOTYPE = 'prototype';
 
 	var $export = function(type, name, source){
@@ -236,9 +279,15 @@
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var store      = __webpack_require__(107)('wks')
 	  , uid        = __webpack_require__(70)
 	  , Symbol     = __webpack_require__(12).Symbol
+=======
+	var store      = __webpack_require__(110)('wks')
+	  , uid        = __webpack_require__(72)
+	  , Symbol     = __webpack_require__(13).Symbol
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , USE_SYMBOL = typeof Symbol == 'function';
 
 	var $exports = module.exports = function(name){
@@ -255,8 +304,13 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject       = __webpack_require__(8)
+<<<<<<< HEAD
 	  , IE8_DOM_DEFINE = __webpack_require__(220)
 	  , toPrimitive    = __webpack_require__(59)
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(231)
+	  , toPrimitive    = __webpack_require__(61)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , dP             = Object.defineProperty;
 
 	exports.f = __webpack_require__(20) ? Object.defineProperty : function defineProperty(O, P, Attributes){
@@ -311,10 +365,17 @@
 /* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var global    = __webpack_require__(12)
 	  , hide      = __webpack_require__(32)
 	  , has       = __webpack_require__(27)
 	  , SRC       = __webpack_require__(70)('src')
+=======
+	var global    = __webpack_require__(13)
+	  , hide      = __webpack_require__(35)
+	  , has       = __webpack_require__(28)
+	  , SRC       = __webpack_require__(72)('src')
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , TO_STRING = 'toString'
 	  , $toString = Function[TO_STRING]
 	  , TPL       = ('' + $toString).split(TO_STRING);
@@ -430,11 +491,19 @@
 	// 4 -> Array#every
 	// 5 -> Array#find
 	// 6 -> Array#findIndex
+<<<<<<< HEAD
 	var ctx      = __webpack_require__(66)
 	  , IObject  = __webpack_require__(86)
 	  , toObject = __webpack_require__(33)
 	  , toLength = __webpack_require__(25)
 	  , asc      = __webpack_require__(341);
+=======
+	var ctx      = __webpack_require__(68)
+	  , IObject  = __webpack_require__(88)
+	  , toObject = __webpack_require__(36)
+	  , toLength = __webpack_require__(26)
+	  , asc      = __webpack_require__(354);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = function(TYPE, $create){
 	  var IS_MAP        = TYPE == 1
 	    , IS_FILTER     = TYPE == 2
@@ -520,10 +589,17 @@
 /* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var Map     = __webpack_require__(237)
 	  , $export = __webpack_require__(2)
 	  , shared  = __webpack_require__(107)('metadata')
 	  , store   = shared.store || (shared.store = new (__webpack_require__(245)));
+=======
+	var Map     = __webpack_require__(248)
+	  , $export = __webpack_require__(2)
+	  , shared  = __webpack_require__(110)('metadata')
+	  , store   = shared.store || (shared.store = new (__webpack_require__(256)));
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	var getOrCreateMetadataMap = function(target, targetKey, create){
 	  var targetMetadata = store.get(target);
@@ -576,12 +652,21 @@
 /* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var pIE            = __webpack_require__(106)
 	  , createDesc     = __webpack_require__(57)
 	  , toIObject      = __webpack_require__(37)
 	  , toPrimitive    = __webpack_require__(59)
 	  , has            = __webpack_require__(27)
 	  , IE8_DOM_DEFINE = __webpack_require__(220)
+=======
+	var pIE            = __webpack_require__(109)
+	  , createDesc     = __webpack_require__(59)
+	  , toIObject      = __webpack_require__(39)
+	  , toPrimitive    = __webpack_require__(61)
+	  , has            = __webpack_require__(28)
+	  , IE8_DOM_DEFINE = __webpack_require__(231)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
 	exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
@@ -603,6 +688,7 @@
 	    , global              = __webpack_require__(12)
 	    , fails               = __webpack_require__(10)
 	    , $export             = __webpack_require__(2)
+<<<<<<< HEAD
 	    , $typed              = __webpack_require__(109)
 	    , $buffer             = __webpack_require__(157)
 	    , ctx                 = __webpack_require__(66)
@@ -637,6 +723,42 @@
 	    , arrayCopyWithin     = __webpack_require__(212)
 	    , $DP                 = __webpack_require__(18)
 	    , $GOPD               = __webpack_require__(50)
+=======
+	    , $typed              = __webpack_require__(112)
+	    , $buffer             = __webpack_require__(162)
+	    , ctx                 = __webpack_require__(68)
+	    , anInstance          = __webpack_require__(87)
+	    , propertyDesc        = __webpack_require__(59)
+	    , hide                = __webpack_require__(35)
+	    , redefineAll         = __webpack_require__(90)
+	    , toInteger           = __webpack_require__(60)
+	    , toLength            = __webpack_require__(26)
+	    , toIndex             = __webpack_require__(71)
+	    , toPrimitive         = __webpack_require__(61)
+	    , has                 = __webpack_require__(28)
+	    , same                = __webpack_require__(243)
+	    , classof             = __webpack_require__(146)
+	    , isObject            = __webpack_require__(12)
+	    , toObject            = __webpack_require__(36)
+	    , isArrayIter         = __webpack_require__(151)
+	    , create              = __webpack_require__(69)
+	    , getPrototypeOf      = __webpack_require__(43)
+	    , gOPN                = __webpack_require__(70).f
+	    , getIterFn           = __webpack_require__(163)
+	    , uid                 = __webpack_require__(72)
+	    , wks                 = __webpack_require__(15)
+	    , createArrayMethod   = __webpack_require__(42)
+	    , createArrayIncludes = __webpack_require__(145)
+	    , speciesConstructor  = __webpack_require__(244)
+	    , ArrayIterators      = __webpack_require__(113)
+	    , Iterators           = __webpack_require__(80)
+	    , $iterDetect         = __webpack_require__(155)
+	    , setSpecies          = __webpack_require__(91)
+	    , arrayFill           = __webpack_require__(144)
+	    , arrayCopyWithin     = __webpack_require__(223)
+	    , $DP                 = __webpack_require__(19)
+	    , $GOPD               = __webpack_require__(51)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	    , dP                  = $DP.f
 	    , gOPD                = $GOPD.f
 	    , RangeError          = global.RangeError
@@ -1093,10 +1215,17 @@
 /* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var META     = __webpack_require__(70)('meta')
 	  , isObject = __webpack_require__(11)
 	  , has      = __webpack_require__(27)
 	  , setDesc  = __webpack_require__(18).f
+=======
+	var META     = __webpack_require__(72)('meta')
+	  , isObject = __webpack_require__(12)
+	  , has      = __webpack_require__(28)
+	  , setDesc  = __webpack_require__(19).f
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , id       = 0;
 	var isExtensible = Object.isExtensible || function(){
 	  return true;
@@ -1194,7 +1323,13 @@
 /* 62 */,
 /* 63 */,
 /* 64 */,
+<<<<<<< HEAD
 /* 65 */
+=======
+/* 65 */,
+/* 66 */,
+/* 67 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -1204,7 +1339,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 66 */
+=======
+/* 68 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
@@ -1229,27 +1368,45 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 67 */
+=======
+/* 69 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	var anObject    = __webpack_require__(8)
+<<<<<<< HEAD
 	  , dPs         = __webpack_require__(227)
 	  , enumBugKeys = __webpack_require__(142)
 	  , IE_PROTO    = __webpack_require__(154)('IE_PROTO')
+=======
+	  , dPs         = __webpack_require__(238)
+	  , enumBugKeys = __webpack_require__(147)
+	  , IE_PROTO    = __webpack_require__(159)('IE_PROTO')
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , Empty       = function(){ /* empty */ }
 	  , PROTOTYPE   = 'prototype';
 
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
+<<<<<<< HEAD
 	  var iframe = __webpack_require__(218)('iframe')
+=======
+	  var iframe = __webpack_require__(229)('iframe')
+>>>>>>> 3d51c09... login ctrl to angular 2
 	    , i      = enumBugKeys.length
 	    , lt     = '<'
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
+<<<<<<< HEAD
 	  __webpack_require__(219).appendChild(iframe);
+=======
+	  __webpack_require__(230).appendChild(iframe);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -1276,19 +1433,32 @@
 
 
 /***/ },
+<<<<<<< HEAD
 /* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
 	var $keys      = __webpack_require__(229)
 	  , hiddenKeys = __webpack_require__(142).concat('length', 'prototype');
+=======
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+	var $keys      = __webpack_require__(240)
+	  , hiddenKeys = __webpack_require__(147).concat('length', 'prototype');
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
 	  return $keys(O, hiddenKeys);
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 69 */
+=======
+/* 71 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(58)
@@ -1300,7 +1470,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 70 */
+=======
+/* 72 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports) {
 
 	var id = 0
@@ -1310,7 +1484,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 71 */
+=======
+/* 73 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1325,8 +1503,11 @@
 	}
 
 /***/ },
+<<<<<<< HEAD
 /* 72 */,
 /* 73 */,
+=======
+>>>>>>> 3d51c09... login ctrl to angular 2
 /* 74 */,
 /* 75 */,
 /* 76 */,
@@ -1341,8 +1522,13 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+<<<<<<< HEAD
 	var $keys       = __webpack_require__(229)
 	  , enumBugKeys = __webpack_require__(142);
+=======
+	var $keys       = __webpack_require__(240)
+	  , enumBugKeys = __webpack_require__(147);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	module.exports = Object.keys || function keys(O){
 	  return $keys(O, enumBugKeys);
@@ -1379,7 +1565,11 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
+<<<<<<< HEAD
 	var cof = __webpack_require__(65);
+=======
+	var cof = __webpack_require__(67);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
@@ -1568,9 +1758,15 @@
 /* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var ctx         = __webpack_require__(66)
 	  , call        = __webpack_require__(222)
 	  , isArrayIter = __webpack_require__(146)
+=======
+	var ctx         = __webpack_require__(68)
+	  , call        = __webpack_require__(233)
+	  , isArrayIter = __webpack_require__(151)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , anObject    = __webpack_require__(8)
 	  , toLength    = __webpack_require__(25)
 	  , getIterFn   = __webpack_require__(158)
@@ -1656,9 +1852,15 @@
 /* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var global = __webpack_require__(12)
 	  , hide   = __webpack_require__(32)
 	  , uid    = __webpack_require__(70)
+=======
+	var global = __webpack_require__(13)
+	  , hide   = __webpack_require__(35)
+	  , uid    = __webpack_require__(72)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , TYPED  = uid('typed_array')
 	  , VIEW   = uid('view')
 	  , ABV    = !!(global.ArrayBuffer && global.DataView)
@@ -1688,10 +1890,17 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+<<<<<<< HEAD
 	var addToUnscopables = __webpack_require__(84)
 	  , step             = __webpack_require__(224)
 	  , Iterators        = __webpack_require__(78)
 	  , toIObject        = __webpack_require__(37);
+=======
+	var addToUnscopables = __webpack_require__(86)
+	  , step             = __webpack_require__(235)
+	  , Iterators        = __webpack_require__(80)
+	  , toIObject        = __webpack_require__(39);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	// 22.1.3.4 Array.prototype.entries()
 	// 22.1.3.13 Array.prototype.keys()
@@ -1727,7 +1936,11 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+<<<<<<< HEAD
 	var $at  = __webpack_require__(234)(true);
+=======
+	var $at  = __webpack_require__(245)(true);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	// 21.1.3.27 String.prototype[@@iterator]()
 	__webpack_require__(149)(String, 'String', function(iterated){
@@ -1777,9 +1990,15 @@
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	'use strict';
+<<<<<<< HEAD
 	var toObject = __webpack_require__(33)
 	  , toIndex  = __webpack_require__(69)
 	  , toLength = __webpack_require__(25);
+=======
+	var toObject = __webpack_require__(36)
+	  , toIndex  = __webpack_require__(71)
+	  , toLength = __webpack_require__(26);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = function fill(value /*, start = 0, end = @length */){
 	  var O      = toObject(this)
 	    , length = toLength(O.length)
@@ -1797,9 +2016,15 @@
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
+<<<<<<< HEAD
 	var toIObject = __webpack_require__(37)
 	  , toLength  = __webpack_require__(25)
 	  , toIndex   = __webpack_require__(69);
+=======
+	var toIObject = __webpack_require__(39)
+	  , toLength  = __webpack_require__(26)
+	  , toIndex   = __webpack_require__(71);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -1822,7 +2047,11 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// getting tag from 19.1.3.6 Object.prototype.toString()
+<<<<<<< HEAD
 	var cof = __webpack_require__(65)
+=======
+	var cof = __webpack_require__(67)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , TAG = __webpack_require__(15)('toStringTag')
 	  // ES3 wrong here
 	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
@@ -1920,7 +2149,11 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.2 IsArray(argument)
+<<<<<<< HEAD
 	var cof = __webpack_require__(65);
+=======
+	var cof = __webpack_require__(67);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = Array.isArray || function isArray(arg){
 	  return cof(arg) == 'Array';
 	};
@@ -1930,8 +2163,13 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.8 IsRegExp(argument)
+<<<<<<< HEAD
 	var isObject = __webpack_require__(11)
 	  , cof      = __webpack_require__(65)
+=======
+	var isObject = __webpack_require__(12)
+	  , cof      = __webpack_require__(67)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , MATCH    = __webpack_require__(15)('match');
 	module.exports = function(it){
 	  var isRegExp;
@@ -1945,6 +2183,7 @@
 	'use strict';
 	var LIBRARY        = __webpack_require__(87)
 	  , $export        = __webpack_require__(2)
+<<<<<<< HEAD
 	  , redefine       = __webpack_require__(29)
 	  , hide           = __webpack_require__(32)
 	  , has            = __webpack_require__(27)
@@ -1952,6 +2191,15 @@
 	  , $iterCreate    = __webpack_require__(223)
 	  , setToStringTag = __webpack_require__(90)
 	  , getPrototypeOf = __webpack_require__(41)
+=======
+	  , redefine       = __webpack_require__(33)
+	  , hide           = __webpack_require__(35)
+	  , has            = __webpack_require__(28)
+	  , Iterators      = __webpack_require__(80)
+	  , $iterCreate    = __webpack_require__(234)
+	  , setToStringTag = __webpack_require__(92)
+	  , getPrototypeOf = __webpack_require__(43)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , ITERATOR       = __webpack_require__(15)('iterator')
 	  , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
 	  , FF_ITERATOR    = '@@iterator'
@@ -2079,7 +2327,11 @@
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function(test, buggy, set){
 	      try {
+<<<<<<< HEAD
 	        set = __webpack_require__(66)(Function.call, __webpack_require__(50).f(Object.prototype, '__proto__').set, 2);
+=======
+	        set = __webpack_require__(68)(Function.call, __webpack_require__(51).f(Object.prototype, '__proto__').set, 2);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch(e){ buggy = true; }
@@ -2097,8 +2349,13 @@
 /* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var shared = __webpack_require__(107)('keys')
 	  , uid    = __webpack_require__(70);
+=======
+	var shared = __webpack_require__(110)('keys')
+	  , uid    = __webpack_require__(72);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = function(key){
 	  return shared[key] || (shared[key] = uid(key));
 	};
@@ -2135,6 +2392,7 @@
 	  , hide           = __webpack_require__(32)
 	  , redefineAll    = __webpack_require__(88)
 	  , fails          = __webpack_require__(10)
+<<<<<<< HEAD
 	  , anInstance     = __webpack_require__(85)
 	  , toInteger      = __webpack_require__(58)
 	  , toLength       = __webpack_require__(25)
@@ -2142,6 +2400,15 @@
 	  , dP             = __webpack_require__(18).f
 	  , arrayFill      = __webpack_require__(139)
 	  , setToStringTag = __webpack_require__(90)
+=======
+	  , anInstance     = __webpack_require__(87)
+	  , toInteger      = __webpack_require__(60)
+	  , toLength       = __webpack_require__(26)
+	  , gOPN           = __webpack_require__(70).f
+	  , dP             = __webpack_require__(19).f
+	  , arrayFill      = __webpack_require__(144)
+	  , setToStringTag = __webpack_require__(92)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , ARRAY_BUFFER   = 'ArrayBuffer'
 	  , DATA_VIEW      = 'DataView'
 	  , PROTOTYPE      = 'prototype'
@@ -2493,24 +2760,52 @@
 /* 208 */,
 /* 209 */,
 /* 210 */,
+<<<<<<< HEAD
 /* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cof = __webpack_require__(65);
+=======
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var cof = __webpack_require__(67);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = function(it, msg){
 	  if(typeof it != 'number' && cof(it) != 'Number')throw TypeError(msg);
 	  return +it;
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 212 */
+=======
+/* 223 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	'use strict';
+<<<<<<< HEAD
 	var toObject = __webpack_require__(33)
 	  , toIndex  = __webpack_require__(69)
 	  , toLength = __webpack_require__(25);
+=======
+	var toObject = __webpack_require__(36)
+	  , toIndex  = __webpack_require__(71)
+	  , toLength = __webpack_require__(26);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0, end = @length*/){
 	  var O     = toObject(this)
@@ -2534,7 +2829,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 213 */
+=======
+/* 224 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var aFunction = __webpack_require__(55)
@@ -2567,6 +2866,7 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2574,6 +2874,15 @@
 	var aFunction  = __webpack_require__(55)
 	  , isObject   = __webpack_require__(11)
 	  , invoke     = __webpack_require__(344)
+=======
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var aFunction  = __webpack_require__(57)
+	  , isObject   = __webpack_require__(12)
+	  , invoke     = __webpack_require__(357)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , arraySlice = [].slice
 	  , factories  = {};
 
@@ -2596,6 +2905,7 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2612,6 +2922,24 @@
 	  , setSpecies  = __webpack_require__(89)
 	  , DESCRIPTORS = __webpack_require__(20)
 	  , fastKey     = __webpack_require__(56).fastKey
+=======
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var dP          = __webpack_require__(19).f
+	  , create      = __webpack_require__(69)
+	  , redefineAll = __webpack_require__(90)
+	  , ctx         = __webpack_require__(68)
+	  , anInstance  = __webpack_require__(87)
+	  , defined     = __webpack_require__(49)
+	  , forOf       = __webpack_require__(107)
+	  , $iterDefine = __webpack_require__(154)
+	  , step        = __webpack_require__(235)
+	  , setSpecies  = __webpack_require__(91)
+	  , DESCRIPTORS = __webpack_require__(22)
+	  , fastKey     = __webpack_require__(58).fastKey
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , SIZE        = DESCRIPTORS ? '_s' : 'size';
 
 	var getEntry = function(that, key){
@@ -2743,7 +3071,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 216 */
+=======
+/* 227 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2831,7 +3163,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 217 */
+=======
+/* 228 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2844,7 +3180,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 218 */
+=======
+/* 229 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -2856,12 +3196,17 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 219 */
+=======
+/* 230 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(12).document && document.documentElement;
 
 /***/ },
+<<<<<<< HEAD
 /* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2871,6 +3216,17 @@
 
 /***/ },
 /* 221 */
+=======
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = !__webpack_require__(22) && !__webpack_require__(10)(function(){
+	  return Object.defineProperty(__webpack_require__(229)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	});
+
+/***/ },
+/* 232 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
@@ -2881,7 +3237,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 222 */
+=======
+/* 233 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
@@ -2898,6 +3258,7 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2905,6 +3266,15 @@
 	var create         = __webpack_require__(67)
 	  , descriptor     = __webpack_require__(57)
 	  , setToStringTag = __webpack_require__(90)
+=======
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var create         = __webpack_require__(69)
+	  , descriptor     = __webpack_require__(59)
+	  , setToStringTag = __webpack_require__(92)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , IteratorPrototype = {};
 
 	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
@@ -2916,7 +3286,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 224 */
+=======
+/* 235 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -2924,7 +3298,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 225 */
+=======
+/* 236 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports) {
 
 	// 20.2.2.20 Math.log1p(x)
@@ -2933,7 +3311,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 226 */
+=======
+/* 237 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2971,7 +3353,11 @@
 	} : $assign;
 
 /***/ },
+<<<<<<< HEAD
 /* 227 */
+=======
+/* 238 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP       = __webpack_require__(18)
@@ -2989,12 +3375,21 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
 	var toIObject = __webpack_require__(37)
 	  , gOPN      = __webpack_require__(68).f
+=======
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
+	var toIObject = __webpack_require__(39)
+	  , gOPN      = __webpack_require__(70).f
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , toString  = {}.toString;
 
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -3014,7 +3409,11 @@
 
 
 /***/ },
+<<<<<<< HEAD
 /* 229 */
+=======
+/* 240 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var has          = __webpack_require__(27)
@@ -3036,7 +3435,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 230 */
+=======
+/* 241 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseFloat = __webpack_require__(12).parseFloat
@@ -3049,7 +3452,11 @@
 	} : $parseFloat;
 
 /***/ },
+<<<<<<< HEAD
 /* 231 */
+=======
+/* 242 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseInt = __webpack_require__(12).parseInt
@@ -3063,7 +3470,11 @@
 	} : $parseInt;
 
 /***/ },
+<<<<<<< HEAD
 /* 232 */
+=======
+/* 243 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports) {
 
 	// 7.2.9 SameValue(x, y)
@@ -3072,7 +3483,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 233 */
+=======
+/* 244 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
@@ -3085,7 +3500,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 234 */
+=======
+/* 245 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(58)
@@ -3107,7 +3526,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 235 */
+=======
+/* 246 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3124,17 +3547,29 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 236 */
+=======
+/* 247 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.f = __webpack_require__(15);
 
 /***/ },
+<<<<<<< HEAD
 /* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var strong = __webpack_require__(215);
+=======
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strong = __webpack_require__(226);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	// 23.1 Map Objects
 	module.exports = __webpack_require__(102)('Map', function(get){
@@ -3152,7 +3587,11 @@
 	}, strong, true);
 
 /***/ },
+<<<<<<< HEAD
 /* 238 */
+=======
+/* 249 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
@@ -3162,7 +3601,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 239 */
+=======
+/* 250 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@match logic
@@ -3177,7 +3620,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 240 */
+=======
+/* 251 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@replace logic
@@ -3194,7 +3641,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 241 */
+=======
+/* 252 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@search logic
@@ -3209,7 +3660,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 242 */
+=======
+/* 253 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@split logic
@@ -3284,11 +3739,19 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var strong = __webpack_require__(215);
+=======
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strong = __webpack_require__(226);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	// 23.2 Set Objects
 	module.exports = __webpack_require__(102)('Set', function(get){
@@ -3301,7 +3764,11 @@
 	}, strong);
 
 /***/ },
+<<<<<<< HEAD
 /* 244 */
+=======
+/* 255 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3313,6 +3780,7 @@
 	  , redefine       = __webpack_require__(29)
 	  , META           = __webpack_require__(56).KEY
 	  , $fails         = __webpack_require__(10)
+<<<<<<< HEAD
 	  , shared         = __webpack_require__(107)
 	  , setToStringTag = __webpack_require__(90)
 	  , uid            = __webpack_require__(70)
@@ -3331,6 +3799,26 @@
 	  , $GOPD          = __webpack_require__(50)
 	  , $DP            = __webpack_require__(18)
 	  , $keys          = __webpack_require__(79)
+=======
+	  , shared         = __webpack_require__(110)
+	  , setToStringTag = __webpack_require__(92)
+	  , uid            = __webpack_require__(72)
+	  , wks            = __webpack_require__(15)
+	  , wksExt         = __webpack_require__(247)
+	  , wksDefine      = __webpack_require__(360)
+	  , keyOf          = __webpack_require__(358)
+	  , enumKeys       = __webpack_require__(356)
+	  , isArray        = __webpack_require__(152)
+	  , anObject       = __webpack_require__(8)
+	  , toIObject      = __webpack_require__(39)
+	  , toPrimitive    = __webpack_require__(61)
+	  , createDesc     = __webpack_require__(59)
+	  , _create        = __webpack_require__(69)
+	  , gOPNExt        = __webpack_require__(239)
+	  , $GOPD          = __webpack_require__(51)
+	  , $DP            = __webpack_require__(19)
+	  , $keys          = __webpack_require__(81)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , gOPD           = $GOPD.f
 	  , dP             = $DP.f
 	  , gOPN           = gOPNExt.f
@@ -3453,9 +3941,15 @@
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
+<<<<<<< HEAD
 	  __webpack_require__(68).f = gOPNExt.f = $getOwnPropertyNames;
 	  __webpack_require__(106).f  = $propertyIsEnumerable;
 	  __webpack_require__(105).f = $getOwnPropertySymbols;
+=======
+	  __webpack_require__(70).f = gOPNExt.f = $getOwnPropertyNames;
+	  __webpack_require__(109).f  = $propertyIsEnumerable;
+	  __webpack_require__(108).f = $getOwnPropertySymbols;
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	  if(DESCRIPTORS && !__webpack_require__(87)){
 	    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
@@ -3541,6 +4035,7 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
+<<<<<<< HEAD
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -3551,6 +4046,18 @@
 	  , assign       = __webpack_require__(226)
 	  , weak         = __webpack_require__(216)
 	  , isObject     = __webpack_require__(11)
+=======
+/* 256 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var each         = __webpack_require__(42)(0)
+	  , redefine     = __webpack_require__(33)
+	  , meta         = __webpack_require__(58)
+	  , assign       = __webpack_require__(237)
+	  , weak         = __webpack_require__(227)
+	  , isObject     = __webpack_require__(12)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , getWeak      = meta.getWeak
 	  , isExtensible = Object.isExtensible
 	  , uncaughtFrozenStore = weak.ufstore
@@ -3602,7 +4109,11 @@
 	}
 
 /***/ },
+<<<<<<< HEAD
 /* 246 */
+=======
+/* 257 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -3788,6 +4299,7 @@
 
 
 /***/ },
+<<<<<<< HEAD
 /* 247 */,
 /* 248 */,
 /* 249 */,
@@ -3799,6 +4311,8 @@
 /* 255 */,
 /* 256 */,
 /* 257 */,
+=======
+>>>>>>> 3d51c09... login ctrl to angular 2
 /* 258 */,
 /* 259 */,
 /* 260 */,
@@ -3862,6 +4376,7 @@
 /* 318 */,
 /* 319 */,
 /* 320 */,
+<<<<<<< HEAD
 /* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -3936,6 +4451,82 @@
 	__webpack_require__(386);
 	__webpack_require__(387);
 	__webpack_require__(388);
+=======
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(114);
+	__webpack_require__(370);
+	__webpack_require__(368);
+	__webpack_require__(374);
+	__webpack_require__(371);
+	__webpack_require__(377);
+	__webpack_require__(379);
+	__webpack_require__(367);
+	__webpack_require__(373);
+	__webpack_require__(364);
+	__webpack_require__(378);
+	__webpack_require__(362);
+	__webpack_require__(376);
+	__webpack_require__(375);
+	__webpack_require__(369);
+	__webpack_require__(372);
+	__webpack_require__(361);
+	__webpack_require__(363);
+	__webpack_require__(366);
+	__webpack_require__(365);
+	__webpack_require__(380);
+	__webpack_require__(113);
+	module.exports = __webpack_require__(14).Array;
+
+/***/ },
+/* 335 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(381);
+	__webpack_require__(383);
+	__webpack_require__(382);
+	__webpack_require__(385);
+	__webpack_require__(384);
+	module.exports = Date;
+
+/***/ },
+/* 336 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(386);
+	__webpack_require__(388);
+	__webpack_require__(387);
+	module.exports = __webpack_require__(14).Function;
+
+/***/ },
+/* 337 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(73);
+	__webpack_require__(114);
+	__webpack_require__(164);
+	__webpack_require__(248);
+	module.exports = __webpack_require__(14).Map;
+
+/***/ },
+/* 338 */
+/***/ function(module, exports, __webpack_require__) {
+
+>>>>>>> 3d51c09... login ctrl to angular 2
 	__webpack_require__(389);
 	__webpack_require__(390);
 	__webpack_require__(391);
@@ -3958,6 +4549,7 @@
 	__webpack_require__(400);
 	__webpack_require__(401);
 	__webpack_require__(402);
+<<<<<<< HEAD
 	module.exports = __webpack_require__(14).Number;
 
 /***/ },
@@ -3966,10 +4558,26 @@
 
 	__webpack_require__(244);
 	__webpack_require__(406);
+=======
+	__webpack_require__(403);
+	__webpack_require__(404);
+	__webpack_require__(405);
+	module.exports = __webpack_require__(14).Math;
+
+/***/ },
+/* 339 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(406);
+	__webpack_require__(416);
+	__webpack_require__(417);
+	__webpack_require__(407);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	__webpack_require__(408);
 	__webpack_require__(407);
 	__webpack_require__(410);
 	__webpack_require__(412);
+<<<<<<< HEAD
 	__webpack_require__(417);
 	__webpack_require__(411);
 	__webpack_require__(409);
@@ -3982,10 +4590,40 @@
 	__webpack_require__(416);
 	__webpack_require__(420);
 	__webpack_require__(71);
+=======
+	__webpack_require__(413);
+	__webpack_require__(414);
+	__webpack_require__(415);
+	module.exports = __webpack_require__(14).Number;
+
+/***/ },
+/* 340 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(255);
+	__webpack_require__(419);
+	__webpack_require__(421);
+	__webpack_require__(420);
+	__webpack_require__(423);
+	__webpack_require__(425);
+	__webpack_require__(430);
+	__webpack_require__(424);
+	__webpack_require__(422);
+	__webpack_require__(432);
+	__webpack_require__(431);
+	__webpack_require__(427);
+	__webpack_require__(428);
+	__webpack_require__(426);
+	__webpack_require__(418);
+	__webpack_require__(429);
+	__webpack_require__(433);
+	__webpack_require__(73);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	module.exports = __webpack_require__(14).Object;
 
 /***/ },
+<<<<<<< HEAD
 /* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -4131,11 +4769,162 @@
 	__webpack_require__(478);
 	__webpack_require__(479);
 	__webpack_require__(480);
+=======
+/* 341 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(434);
+	module.exports = __webpack_require__(14).parseFloat;
+
+/***/ },
+/* 342 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(435);
+	module.exports = __webpack_require__(14).parseInt;
+
+/***/ },
+/* 343 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(436);
+	__webpack_require__(437);
+	__webpack_require__(438);
+	__webpack_require__(439);
+	__webpack_require__(440);
+	__webpack_require__(443);
+	__webpack_require__(441);
+	__webpack_require__(442);
+	__webpack_require__(444);
+	__webpack_require__(445);
+	__webpack_require__(446);
+	__webpack_require__(447);
+	__webpack_require__(449);
+	__webpack_require__(448);
+	module.exports = __webpack_require__(14).Reflect;
+
+/***/ },
+/* 344 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(450);
+	__webpack_require__(451);
+	__webpack_require__(249);
+	__webpack_require__(250);
+	__webpack_require__(251);
+	__webpack_require__(252);
+	__webpack_require__(253);
+	module.exports = __webpack_require__(14).RegExp;
+
+/***/ },
+/* 345 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(73);
+	__webpack_require__(114);
+	__webpack_require__(164);
+	__webpack_require__(254);
+	module.exports = __webpack_require__(14).Set;
+
+/***/ },
+/* 346 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(461);
+	__webpack_require__(465);
+	__webpack_require__(472);
+	__webpack_require__(114);
+	__webpack_require__(456);
+	__webpack_require__(457);
+	__webpack_require__(462);
+	__webpack_require__(466);
+	__webpack_require__(468);
+	__webpack_require__(452);
+	__webpack_require__(453);
+	__webpack_require__(454);
+	__webpack_require__(455);
+	__webpack_require__(458);
+	__webpack_require__(459);
+	__webpack_require__(460);
+	__webpack_require__(463);
+	__webpack_require__(464);
+	__webpack_require__(467);
+	__webpack_require__(469);
+	__webpack_require__(470);
+	__webpack_require__(471);
+	__webpack_require__(250);
+	__webpack_require__(251);
+	__webpack_require__(252);
+	__webpack_require__(253);
+	module.exports = __webpack_require__(14).String;
+
+/***/ },
+/* 347 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(255);
+	__webpack_require__(73);
+	module.exports = __webpack_require__(14).Symbol;
+
+/***/ },
+/* 348 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(473);
+	__webpack_require__(474);
+	__webpack_require__(479);
+	__webpack_require__(482);
+	__webpack_require__(483);
+	__webpack_require__(477);
+	__webpack_require__(480);
+	__webpack_require__(478);
+	__webpack_require__(481);
+	__webpack_require__(475);
+	__webpack_require__(476);
+	__webpack_require__(73);
+	module.exports = __webpack_require__(14);
+
+/***/ },
+/* 349 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(73);
+	__webpack_require__(113);
+	__webpack_require__(256);
+	module.exports = __webpack_require__(14).WeakMap;
+
+/***/ },
+/* 350 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(73);
+	__webpack_require__(164);
+	__webpack_require__(484);
+	module.exports = __webpack_require__(14).WeakSet;
+
+/***/ },
+/* 351 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(485);
+	__webpack_require__(486);
+	__webpack_require__(488);
+	__webpack_require__(487);
+	__webpack_require__(490);
+	__webpack_require__(489);
+	__webpack_require__(491);
+	__webpack_require__(492);
+	__webpack_require__(493);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = __webpack_require__(14).Reflect;
 
 
 /***/ },
+<<<<<<< HEAD
 /* 339 */
+=======
+/* 352 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var forOf = __webpack_require__(104);
@@ -4148,7 +4937,11 @@
 
 
 /***/ },
+<<<<<<< HEAD
 /* 340 */
+=======
+/* 353 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
@@ -4169,18 +4962,30 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 	var speciesConstructor = __webpack_require__(340);
+=======
+/* 354 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+	var speciesConstructor = __webpack_require__(353);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	module.exports = function(original, length){
 	  return new (speciesConstructor(original))(length);
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 342 */
+=======
+/* 355 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4194,7 +4999,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 343 */
+=======
+/* 356 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
@@ -4214,7 +5023,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 344 */
+=======
+/* 357 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports) {
 
 	// fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -4235,7 +5048,11 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 345 */
+=======
+/* 358 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var getKeys   = __webpack_require__(79)
@@ -4250,12 +5067,21 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// all object keys, includes non-enumerable and symbols
 	var gOPN     = __webpack_require__(68)
 	  , gOPS     = __webpack_require__(105)
+=======
+/* 359 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// all object keys, includes non-enumerable and symbols
+	var gOPN     = __webpack_require__(70)
+	  , gOPS     = __webpack_require__(108)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , anObject = __webpack_require__(8)
 	  , Reflect  = __webpack_require__(12).Reflect;
 	module.exports = Reflect && Reflect.ownKeys || function ownKeys(it){
@@ -4265,32 +5091,54 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 347 */
+=======
+/* 360 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var global         = __webpack_require__(12)
 	  , core           = __webpack_require__(14)
+<<<<<<< HEAD
 	  , LIBRARY        = __webpack_require__(87)
 	  , wksExt         = __webpack_require__(236)
 	  , defineProperty = __webpack_require__(18).f;
+=======
+	  , LIBRARY        = __webpack_require__(89)
+	  , wksExt         = __webpack_require__(247)
+	  , defineProperty = __webpack_require__(19).f;
+>>>>>>> 3d51c09... login ctrl to angular 2
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
 	  if(name.charAt(0) != '_' && !(name in $Symbol))defineProperty($Symbol, name, {value: wksExt.f(name)});
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 348 */
+=======
+/* 361 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	var $export = __webpack_require__(2);
 
+<<<<<<< HEAD
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(212)});
+=======
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(223)});
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	__webpack_require__(84)('copyWithin');
 
 /***/ },
+<<<<<<< HEAD
 /* 349 */
+=======
+/* 362 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4305,7 +5153,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 350 */
+=======
+/* 363 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
@@ -4316,7 +5168,11 @@
 	__webpack_require__(84)('fill');
 
 /***/ },
+<<<<<<< HEAD
 /* 351 */
+=======
+/* 364 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4331,7 +5187,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 352 */
+=======
+/* 365 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4350,7 +5210,11 @@
 	__webpack_require__(84)(KEY);
 
 /***/ },
+<<<<<<< HEAD
 /* 353 */
+=======
+/* 366 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4369,7 +5233,11 @@
 	__webpack_require__(84)(KEY);
 
 /***/ },
+<<<<<<< HEAD
 /* 354 */
+=======
+/* 367 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4385,6 +5253,7 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -4399,6 +5268,22 @@
 	  , getIterFn      = __webpack_require__(158);
 
 	$export($export.S + $export.F * !__webpack_require__(150)(function(iter){ Array.from(iter); }), 'Array', {
+=======
+/* 368 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var ctx            = __webpack_require__(68)
+	  , $export        = __webpack_require__(2)
+	  , toObject       = __webpack_require__(36)
+	  , call           = __webpack_require__(233)
+	  , isArrayIter    = __webpack_require__(151)
+	  , toLength       = __webpack_require__(26)
+	  , createProperty = __webpack_require__(228)
+	  , getIterFn      = __webpack_require__(163);
+
+	$export($export.S + $export.F * !__webpack_require__(155)(function(iter){ Array.from(iter); }), 'Array', {
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
 	  from: function from(arrayLike/*, mapfn = undefined, thisArg = undefined*/){
 	    var O       = toObject(arrayLike)
@@ -4428,7 +5313,11 @@
 
 
 /***/ },
+<<<<<<< HEAD
 /* 356 */
+=======
+/* 369 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4448,7 +5337,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 357 */
+=======
+/* 370 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
@@ -4457,7 +5350,11 @@
 	$export($export.S, 'Array', {isArray: __webpack_require__(147)});
 
 /***/ },
+<<<<<<< HEAD
 /* 358 */
+=======
+/* 371 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4474,7 +5371,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 359 */
+=======
+/* 372 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4501,7 +5402,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 360 */
+=======
+/* 373 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4516,12 +5421,20 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 361 */
+=======
+/* 374 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export        = __webpack_require__(2)
+<<<<<<< HEAD
 	  , createProperty = __webpack_require__(217);
+=======
+	  , createProperty = __webpack_require__(228);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	// WebKit Array.of isn't generic
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -4540,12 +5453,20 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 362 */
+=======
+/* 375 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< HEAD
 	  , $reduce = __webpack_require__(213);
+=======
+	  , $reduce = __webpack_require__(224);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].reduceRight, true), 'Array', {
 	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
@@ -4555,12 +5476,20 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 363 */
+=======
+/* 376 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< HEAD
 	  , $reduce = __webpack_require__(213);
+=======
+	  , $reduce = __webpack_require__(224);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].reduce, true), 'Array', {
 	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
@@ -4570,15 +5499,26 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 364 */
+=======
+/* 377 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export    = __webpack_require__(2)
+<<<<<<< HEAD
 	  , html       = __webpack_require__(219)
 	  , cof        = __webpack_require__(65)
 	  , toIndex    = __webpack_require__(69)
 	  , toLength   = __webpack_require__(25)
+=======
+	  , html       = __webpack_require__(230)
+	  , cof        = __webpack_require__(67)
+	  , toIndex    = __webpack_require__(71)
+	  , toLength   = __webpack_require__(26)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , arraySlice = [].slice;
 
 	// fallback for not array-like ES3 strings and DOM objects
@@ -4603,7 +5543,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 365 */
+=======
+/* 378 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4618,7 +5562,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 366 */
+=======
+/* 379 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4646,13 +5594,21 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 367 */
+=======
+/* 380 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(89)('Array');
 
 /***/ },
+<<<<<<< HEAD
 /* 368 */
+=======
+/* 381 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.3.3.1 / 15.9.4.4 Date.now()
@@ -4661,7 +5617,11 @@
 	$export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
+<<<<<<< HEAD
 /* 369 */
+=======
+/* 382 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4694,7 +5654,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 370 */
+=======
+/* 383 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4713,16 +5677,27 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 371 */
+=======
+/* 384 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var TO_PRIMITIVE = __webpack_require__(15)('toPrimitive')
 	  , proto        = Date.prototype;
 
+<<<<<<< HEAD
 	if(!(TO_PRIMITIVE in proto))__webpack_require__(32)(proto, TO_PRIMITIVE, __webpack_require__(342));
 
 /***/ },
 /* 372 */
+=======
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(35)(proto, TO_PRIMITIVE, __webpack_require__(355));
+
+/***/ },
+/* 385 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var DateProto    = Date.prototype
@@ -4738,16 +5713,27 @@
 	}
 
 /***/ },
+<<<<<<< HEAD
 /* 373 */
+=======
+/* 386 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 	var $export = __webpack_require__(2);
 
+<<<<<<< HEAD
 	$export($export.P, 'Function', {bind: __webpack_require__(214)});
 
 /***/ },
 /* 374 */
+=======
+	$export($export.P, 'Function', {bind: __webpack_require__(225)});
+
+/***/ },
+/* 387 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4765,7 +5751,11 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 375 */
+=======
+/* 388 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP         = __webpack_require__(18).f
@@ -4795,12 +5785,20 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 376 */
+=======
+/* 389 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.3 Math.acosh(x)
 	var $export = __webpack_require__(2)
+<<<<<<< HEAD
 	  , log1p   = __webpack_require__(225)
+=======
+	  , log1p   = __webpack_require__(236)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , sqrt    = Math.sqrt
 	  , $acosh  = Math.acosh;
 
@@ -4818,7 +5816,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 377 */
+=======
+/* 390 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.5 Math.asinh(x)
@@ -4833,7 +5835,11 @@
 	$export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
+<<<<<<< HEAD
 /* 378 */
+=======
+/* 391 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.7 Math.atanh(x)
@@ -4848,7 +5854,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 379 */
+=======
+/* 392 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.9 Math.cbrt(x)
@@ -4862,7 +5872,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 380 */
+=======
+/* 393 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.11 Math.clz32(x)
@@ -4875,7 +5889,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 381 */
+=======
+/* 394 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.12 Math.cosh(x)
@@ -4889,7 +5907,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 382 */
+=======
+/* 395 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.14 Math.expm1(x)
@@ -4899,7 +5921,11 @@
 	$export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
+<<<<<<< HEAD
 /* 383 */
+=======
+/* 396 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.16 Math.fround(x)
@@ -4930,7 +5956,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 384 */
+=======
+/* 397 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -4960,7 +5990,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 385 */
+=======
+/* 398 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.18 Math.imul(x, y)
@@ -4982,7 +6016,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 386 */
+=======
+/* 399 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.21 Math.log10(x)
@@ -4995,16 +6033,27 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 387 */
+=======
+/* 400 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.20 Math.log1p(x)
 	var $export = __webpack_require__(2);
 
+<<<<<<< HEAD
 	$export($export.S, 'Math', {log1p: __webpack_require__(225)});
 
 /***/ },
 /* 388 */
+=======
+	$export($export.S, 'Math', {log1p: __webpack_require__(236)});
+
+/***/ },
+/* 401 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.22 Math.log2(x)
@@ -5017,7 +6066,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 389 */
+=======
+/* 402 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.28 Math.sign(x)
@@ -5026,7 +6079,11 @@
 	$export($export.S, 'Math', {sign: __webpack_require__(152)});
 
 /***/ },
+<<<<<<< HEAD
 /* 390 */
+=======
+/* 403 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.30 Math.sinh(x)
@@ -5046,7 +6103,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 391 */
+=======
+/* 404 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.33 Math.tanh(x)
@@ -5063,7 +6124,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 392 */
+=======
+/* 405 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.34 Math.trunc(x)
@@ -5076,6 +6141,7 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -5090,12 +6156,32 @@
 	  , gOPD              = __webpack_require__(50).f
 	  , dP                = __webpack_require__(18).f
 	  , $trim             = __webpack_require__(108).trim
+=======
+/* 406 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var global            = __webpack_require__(13)
+	  , has               = __webpack_require__(28)
+	  , cof               = __webpack_require__(67)
+	  , inheritIfRequired = __webpack_require__(150)
+	  , toPrimitive       = __webpack_require__(61)
+	  , fails             = __webpack_require__(10)
+	  , gOPN              = __webpack_require__(70).f
+	  , gOPD              = __webpack_require__(51).f
+	  , dP                = __webpack_require__(19).f
+	  , $trim             = __webpack_require__(111).trim
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , NUMBER            = 'Number'
 	  , $Number           = global[NUMBER]
 	  , Base              = $Number
 	  , proto             = $Number.prototype
 	  // Opera ~12 has broken Object#toString
+<<<<<<< HEAD
 	  , BROKEN_COF        = cof(__webpack_require__(67)(proto)) == NUMBER
+=======
+	  , BROKEN_COF        = cof(__webpack_require__(69)(proto)) == NUMBER
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , TRIM              = 'trim' in String.prototype;
 
 	// 7.1.3 ToNumber(argument)
@@ -5150,7 +6236,11 @@
 	}
 
 /***/ },
+<<<<<<< HEAD
 /* 394 */
+=======
+/* 407 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.1 Number.EPSILON
@@ -5159,7 +6249,11 @@
 	$export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
+<<<<<<< HEAD
 /* 395 */
+=======
+/* 408 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.2 Number.isFinite(number)
@@ -5173,16 +6267,27 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 396 */
+=======
+/* 409 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
 	var $export = __webpack_require__(2);
 
+<<<<<<< HEAD
 	$export($export.S, 'Number', {isInteger: __webpack_require__(221)});
 
 /***/ },
 /* 397 */
+=======
+	$export($export.S, 'Number', {isInteger: __webpack_require__(232)});
+
+/***/ },
+/* 410 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.4 Number.isNaN(number)
@@ -5195,12 +6300,20 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 398 */
+=======
+/* 411 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(2)
+<<<<<<< HEAD
 	  , isInteger = __webpack_require__(221)
+=======
+	  , isInteger = __webpack_require__(232)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , abs       = Math.abs;
 
 	$export($export.S, 'Number', {
@@ -5210,7 +6323,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 399 */
+=======
+/* 412 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -5219,7 +6336,11 @@
 	$export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
+<<<<<<< HEAD
 /* 400 */
+=======
+/* 413 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -5228,32 +6349,58 @@
 	$export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
+<<<<<<< HEAD
 /* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(2)
 	  , $parseFloat = __webpack_require__(230);
+=======
+/* 414 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(2)
+	  , $parseFloat = __webpack_require__(241);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	// 20.1.2.12 Number.parseFloat(string)
 	$export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< HEAD
 /* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(231);
+=======
+/* 415 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(242);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	// 20.1.2.13 Number.parseInt(string, radix)
 	$export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< HEAD
 /* 403 */
+=======
+/* 416 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
+<<<<<<< HEAD
 	  , toInteger    = __webpack_require__(58)
 	  , aNumberValue = __webpack_require__(211)
 	  , repeat       = __webpack_require__(235)
+=======
+	  , toInteger    = __webpack_require__(60)
+	  , aNumberValue = __webpack_require__(222)
+	  , repeat       = __webpack_require__(246)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , $toFixed     = 1..toFixed
 	  , floor        = Math.floor
 	  , data         = [0, 0, 0, 0, 0, 0]
@@ -5364,13 +6511,21 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 404 */
+=======
+/* 417 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(2)
 	  , $fails       = __webpack_require__(10)
+<<<<<<< HEAD
 	  , aNumberValue = __webpack_require__(211)
+=======
+	  , aNumberValue = __webpack_require__(222)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , $toPrecision = 1..toPrecision;
 
 	$export($export.P + $export.F * ($fails(function(){
@@ -5387,32 +6542,57 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 405 */
+=======
+/* 418 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(2);
 
+<<<<<<< HEAD
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(226)});
 
 /***/ },
 /* 406 */
+=======
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(237)});
+
+/***/ },
+/* 419 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2)
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+<<<<<<< HEAD
 	$export($export.S, 'Object', {create: __webpack_require__(67)});
 
 /***/ },
 /* 407 */
+=======
+	$export($export.S, 'Object', {create: __webpack_require__(69)});
+
+/***/ },
+/* 420 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+<<<<<<< HEAD
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(227)});
 
 /***/ },
 /* 408 */
+=======
+	$export($export.S + $export.F * !__webpack_require__(22), 'Object', {defineProperties: __webpack_require__(238)});
+
+/***/ },
+/* 421 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
@@ -5420,7 +6600,11 @@
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(18).f});
 
 /***/ },
+<<<<<<< HEAD
 /* 409 */
+=======
+/* 422 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.5 Object.freeze(O)
@@ -5434,7 +6618,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 410 */
+=======
+/* 423 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
@@ -5448,6 +6636,7 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -5458,6 +6647,18 @@
 
 /***/ },
 /* 412 */
+=======
+/* 424 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.7 Object.getOwnPropertyNames(O)
+	__webpack_require__(44)('getOwnPropertyNames', function(){
+	  return __webpack_require__(239).f;
+	});
+
+/***/ },
+/* 425 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
@@ -5471,7 +6672,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 413 */
+=======
+/* 426 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.11 Object.isExtensible(O)
@@ -5484,7 +6689,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 414 */
+=======
+/* 427 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.12 Object.isFrozen(O)
@@ -5497,7 +6706,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 415 */
+=======
+/* 428 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.13 Object.isSealed(O)
@@ -5510,15 +6723,26 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 416 */
+=======
+/* 429 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.10 Object.is(value1, value2)
 	var $export = __webpack_require__(2);
+<<<<<<< HEAD
 	$export($export.S, 'Object', {is: __webpack_require__(232)});
 
 /***/ },
 /* 417 */
+=======
+	$export($export.S, 'Object', {is: __webpack_require__(243)});
+
+/***/ },
+/* 430 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
@@ -5532,7 +6756,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 418 */
+=======
+/* 431 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.15 Object.preventExtensions(O)
@@ -5546,7 +6774,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 419 */
+=======
+/* 432 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.17 Object.seal(O)
@@ -5560,7 +6792,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 420 */
+=======
+/* 433 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
@@ -5568,25 +6804,45 @@
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(153).set});
 
 /***/ },
+<<<<<<< HEAD
 /* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(2)
 	  , $parseFloat = __webpack_require__(230);
+=======
+/* 434 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(2)
+	  , $parseFloat = __webpack_require__(241);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	// 18.2.4 parseFloat(string)
 	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< HEAD
 /* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
 	  , $parseInt = __webpack_require__(231);
+=======
+/* 435 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(2)
+	  , $parseInt = __webpack_require__(242);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	// 18.2.5 parseInt(string, radix)
 	$export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< HEAD
 /* 423 */
+=======
+/* 436 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
@@ -5607,18 +6863,32 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 424 */
+=======
+/* 437 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 	var $export    = __webpack_require__(2)
+<<<<<<< HEAD
 	  , create     = __webpack_require__(67)
 	  , aFunction  = __webpack_require__(55)
+=======
+	  , create     = __webpack_require__(69)
+	  , aFunction  = __webpack_require__(57)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , anObject   = __webpack_require__(8)
 	  , isObject   = __webpack_require__(11)
 	  , fails      = __webpack_require__(10)
+<<<<<<< HEAD
 	  , bind       = __webpack_require__(214)
 	  , rConstruct = (__webpack_require__(12).Reflect || {}).construct;
+=======
+	  , bind       = __webpack_require__(225)
+	  , rConstruct = (__webpack_require__(13).Reflect || {}).construct;
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	// MS Edge supports only 2 arguments and argumentsList argument is optional
 	// FF Nightly sets third argument as `new.target`, but does not create `this` from it
@@ -5659,7 +6929,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 425 */
+=======
+/* 438 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
@@ -5686,7 +6960,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 426 */
+=======
+/* 439 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.4 Reflect.deleteProperty(target, propertyKey)
@@ -5702,7 +6980,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 427 */
+=======
+/* 440 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5716,7 +6998,11 @@
 	    , key;
 	  for(key in iterated)keys.push(key);
 	};
+<<<<<<< HEAD
 	__webpack_require__(223)(Enumerate, 'Object', function(){
+=======
+	__webpack_require__(234)(Enumerate, 'Object', function(){
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  var that = this
 	    , keys = that._k
 	    , key;
@@ -5733,7 +7019,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 428 */
+=======
+/* 441 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
@@ -5748,7 +7038,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 429 */
+=======
+/* 442 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.8 Reflect.getPrototypeOf(target)
@@ -5763,7 +7057,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 430 */
+=======
+/* 443 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
@@ -5789,7 +7087,11 @@
 	$export($export.S, 'Reflect', {get: get});
 
 /***/ },
+<<<<<<< HEAD
 /* 431 */
+=======
+/* 444 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.9 Reflect.has(target, propertyKey)
@@ -5802,7 +7104,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 432 */
+=======
+/* 445 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.10 Reflect.isExtensible(target)
@@ -5818,16 +7124,27 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 433 */
+=======
+/* 446 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.11 Reflect.ownKeys(target)
 	var $export = __webpack_require__(2);
 
+<<<<<<< HEAD
 	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(346)});
 
 /***/ },
 /* 434 */
+=======
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(359)});
+
+/***/ },
+/* 447 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.12 Reflect.preventExtensions(target)
@@ -5848,7 +7165,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 435 */
+=======
+/* 448 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.14 Reflect.setPrototypeOf(target, proto)
@@ -5868,7 +7189,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 436 */
+=======
+/* 449 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
@@ -5904,6 +7229,7 @@
 	$export($export.S, 'Reflect', {set: set});
 
 /***/ },
+<<<<<<< HEAD
 /* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -5913,6 +7239,17 @@
 	  , gOPN              = __webpack_require__(68).f
 	  , isRegExp          = __webpack_require__(148)
 	  , $flags            = __webpack_require__(144)
+=======
+/* 450 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global            = __webpack_require__(13)
+	  , inheritIfRequired = __webpack_require__(150)
+	  , dP                = __webpack_require__(19).f
+	  , gOPN              = __webpack_require__(70).f
+	  , isRegExp          = __webpack_require__(153)
+	  , $flags            = __webpack_require__(149)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , $RegExp           = global.RegExp
 	  , Base              = $RegExp
 	  , proto             = $RegExp.prototype
@@ -5952,11 +7289,19 @@
 	__webpack_require__(89)('RegExp');
 
 /***/ },
+<<<<<<< HEAD
 /* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	__webpack_require__(238);
+=======
+/* 451 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	__webpack_require__(249);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	var anObject    = __webpack_require__(8)
 	  , $flags      = __webpack_require__(144)
 	  , DESCRIPTORS = __webpack_require__(20)
@@ -5982,7 +7327,11 @@
 	}
 
 /***/ },
+<<<<<<< HEAD
 /* 439 */
+=======
+/* 452 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5994,7 +7343,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 440 */
+=======
+/* 453 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6006,7 +7359,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 441 */
+=======
+/* 454 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6018,7 +7375,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 442 */
+=======
+/* 455 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6030,12 +7391,20 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 443 */
+=======
+/* 456 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(2)
+<<<<<<< HEAD
 	  , $at     = __webpack_require__(234)(false);
+=======
+	  , $at     = __webpack_require__(245)(false);
+>>>>>>> 3d51c09... login ctrl to angular 2
 	$export($export.P, 'String', {
 	  // 21.1.3.3 String.prototype.codePointAt(pos)
 	  codePointAt: function codePointAt(pos){
@@ -6044,7 +7413,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 444 */
+=======
+/* 457 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
@@ -6069,7 +7442,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 445 */
+=======
+/* 458 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6081,7 +7458,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 446 */
+=======
+/* 459 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6093,7 +7474,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 447 */
+=======
+/* 460 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6105,11 +7490,19 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export        = __webpack_require__(2)
 	  , toIndex        = __webpack_require__(69)
+=======
+/* 461 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export        = __webpack_require__(2)
+	  , toIndex        = __webpack_require__(71)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , fromCharCode   = String.fromCharCode
 	  , $fromCodePoint = String.fromCodePoint;
 
@@ -6133,7 +7526,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 449 */
+=======
+/* 462 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.7 String.prototype.includes(searchString, position = 0)
@@ -6150,7 +7547,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 450 */
+=======
+/* 463 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6162,7 +7563,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 451 */
+=======
+/* 464 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6174,7 +7579,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 452 */
+=======
+/* 465 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(2)
@@ -6197,18 +7606,30 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 453 */
+=======
+/* 466 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
 
 	$export($export.P, 'String', {
 	  // 21.1.3.13 String.prototype.repeat(count)
+<<<<<<< HEAD
 	  repeat: __webpack_require__(235)
 	});
 
 /***/ },
 /* 454 */
+=======
+	  repeat: __webpack_require__(246)
+	});
+
+/***/ },
+/* 467 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6220,7 +7641,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 455 */
+=======
+/* 468 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.18 String.prototype.startsWith(searchString [, position ])
@@ -6243,7 +7668,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 456 */
+=======
+/* 469 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6255,7 +7684,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 457 */
+=======
+/* 470 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6267,7 +7700,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 458 */
+=======
+/* 471 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6279,7 +7716,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 459 */
+=======
+/* 472 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6291,7 +7732,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 460 */
+=======
+/* 473 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6299,11 +7744,19 @@
 	  , $typed       = __webpack_require__(109)
 	  , buffer       = __webpack_require__(157)
 	  , anObject     = __webpack_require__(8)
+<<<<<<< HEAD
 	  , toIndex      = __webpack_require__(69)
 	  , toLength     = __webpack_require__(25)
 	  , isObject     = __webpack_require__(11)
 	  , ArrayBuffer  = __webpack_require__(12).ArrayBuffer
 	  , speciesConstructor = __webpack_require__(233)
+=======
+	  , toIndex      = __webpack_require__(71)
+	  , toLength     = __webpack_require__(26)
+	  , isObject     = __webpack_require__(12)
+	  , ArrayBuffer  = __webpack_require__(13).ArrayBuffer
+	  , speciesConstructor = __webpack_require__(244)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , $ArrayBuffer = buffer.ArrayBuffer
 	  , $DataView    = buffer.DataView
 	  , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -6342,7 +7795,11 @@
 	__webpack_require__(89)(ARRAY_BUFFER);
 
 /***/ },
+<<<<<<< HEAD
 /* 461 */
+=======
+/* 474 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(2);
@@ -6351,7 +7808,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 462 */
+=======
+/* 475 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Float32', 4, function(init){
@@ -6361,7 +7822,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 463 */
+=======
+/* 476 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Float64', 8, function(init){
@@ -6371,7 +7836,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 464 */
+=======
+/* 477 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Int16', 2, function(init){
@@ -6381,7 +7850,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 465 */
+=======
+/* 478 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Int32', 4, function(init){
@@ -6391,7 +7864,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 466 */
+=======
+/* 479 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Int8', 1, function(init){
@@ -6401,7 +7878,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 467 */
+=======
+/* 480 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Uint16', 2, function(init){
@@ -6411,7 +7892,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 468 */
+=======
+/* 481 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Uint32', 4, function(init){
@@ -6421,7 +7906,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 469 */
+=======
+/* 482 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Uint8', 1, function(init){
@@ -6431,7 +7920,11 @@
 	});
 
 /***/ },
+<<<<<<< HEAD
 /* 470 */
+=======
+/* 483 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(51)('Uint8', 1, function(init){
@@ -6441,11 +7934,19 @@
 	}, true);
 
 /***/ },
+<<<<<<< HEAD
 /* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var weak = __webpack_require__(216);
+=======
+/* 484 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var weak = __webpack_require__(227);
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 	// 23.4 WeakSet Objects
 	__webpack_require__(102)('WeakSet', function(get){
@@ -6458,7 +7959,11 @@
 	}, weak, false, true);
 
 /***/ },
+<<<<<<< HEAD
 /* 472 */
+=======
+/* 485 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                  = __webpack_require__(49)
@@ -6471,7 +7976,11 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 473 */
+=======
+/* 486 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(49)
@@ -6491,12 +8000,21 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var Set                     = __webpack_require__(243)
 	  , from                    = __webpack_require__(339)
 	  , metadata                = __webpack_require__(49)
+=======
+/* 487 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Set                     = __webpack_require__(254)
+	  , from                    = __webpack_require__(352)
+	  , metadata                = __webpack_require__(50)
+>>>>>>> 3d51c09... login ctrl to angular 2
 	  , anObject                = __webpack_require__(8)
 	  , getPrototypeOf          = __webpack_require__(41)
 	  , ordinaryOwnMetadataKeys = metadata.keys
@@ -6515,7 +8033,11 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 475 */
+=======
+/* 488 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(49)
@@ -6537,7 +8059,11 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 476 */
+=======
+/* 489 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                = __webpack_require__(49)
@@ -6550,7 +8076,11 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 477 */
+=======
+/* 490 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(49)
@@ -6564,7 +8094,11 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 478 */
+=======
+/* 491 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(49)
@@ -6585,7 +8119,11 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 479 */
+=======
+/* 492 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(49)
@@ -6599,7 +8137,11 @@
 	}});
 
 /***/ },
+<<<<<<< HEAD
 /* 480 */
+=======
+/* 493 */
+>>>>>>> 3d51c09... login ctrl to angular 2
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                  = __webpack_require__(49)
@@ -6619,7 +8161,18 @@
 	}});
 
 /***/ },
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 /* 481 */
+=======
+/* 494 */
+>>>>>>> 3d51c09... login ctrl to angular 2
+=======
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */
+>>>>>>> Stashed changes
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// function.name (all IE)
@@ -6756,6 +8309,8 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 /* 482 */,
 /* 483 */,
 /* 484 */,
@@ -6769,9 +8324,13 @@
 /* 492 */,
 /* 493 */,
 /* 494 */,
+=======
+>>>>>>> 3d51c09... login ctrl to angular 2
 /* 495 */,
 /* 496 */,
 /* 497 */,
+=======
+>>>>>>> Stashed changes
 /* 498 */,
 /* 499 */,
 /* 500 */,
@@ -7029,7 +8588,32 @@
 /* 752 */,
 /* 753 */,
 /* 754 */,
+<<<<<<< HEAD
 /* 755 */
+=======
+/* 755 */,
+/* 756 */,
+/* 757 */,
+/* 758 */,
+/* 759 */,
+/* 760 */,
+/* 761 */,
+/* 762 */,
+/* 763 */,
+/* 764 */,
+/* 765 */,
+/* 766 */,
+/* 767 */,
+<<<<<<< Updated upstream
+/* 768 */
+>>>>>>> 3d51c09... login ctrl to angular 2
+=======
+/* 768 */,
+/* 769 */,
+/* 770 */,
+/* 771 */,
+/* 772 */
+>>>>>>> Stashed changes
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7192,7 +8776,15 @@
 
 
 /***/ },
+<<<<<<< Updated upstream
+<<<<<<< HEAD
 /* 756 */
+=======
+/* 769 */
+>>>>>>> 3d51c09... login ctrl to angular 2
+=======
+/* 773 */
+>>>>>>> Stashed changes
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -8622,7 +10214,11 @@
 
 	})));
 
+<<<<<<< HEAD
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(246)))
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(257)))
+>>>>>>> 3d51c09... login ctrl to angular 2
 
 /***/ }
 /******/ ]);
