@@ -48,7 +48,9 @@ export class ServicelbListComponent implements OnInit, OnDestroy{
                     })
                 },
                 function errorCallback(result){
-                    servicelbListCtrl.crudHelperService.stopLoader(servicelbListCtrl);
+                    servicelbListCtrl.ngZone.run(() => {
+                        servicelbListCtrl.crudHelperService.stopLoader(servicelbListCtrl);
+                    })
                 })
     }
 

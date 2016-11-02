@@ -68,7 +68,9 @@ gulp.task('build', function () {
             '!app/service_lbs/servicelbdetailsctrl.js',
             '!app/service_lbs/servicelbinfoctrl.js',
             '!app/settings/clustersettingctrl.js',
-            '!app/login/loginctrl.js'
+            '!app/login/loginctrl.js',
+            '!app/organizations/organizationcreatectrl.js',
+            '!app/organizations/organizationdetailsctrl.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
@@ -150,7 +152,9 @@ gulp.task('dev-build', function () {
             '!app/service_lbs/servicelbdetailsctrl.js',
             '!app/service_lbs/servicelbinfoctrl.js',
             '!app/settings/clustersettingctrl.js',
-            '!app/login/loginctrl.js'
+            '!app/login/loginctrl.js',
+            '!app/organizations/organizationcreatectrl.js',
+            '!app/organizations/organizationdetailsctrl.js'
             ])//Exclude vendor libraries
         .pipe(sourcemaps.init());
     //ES6 code
