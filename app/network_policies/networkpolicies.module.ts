@@ -13,15 +13,13 @@ import { BandwidthPolicyCreateComponent } from "./bandwidthpolicycreatectrl";
 import { BandwidthPolicyDetailsComponent } from "./bandwidthpolicydetailsctrl";
 import { IsolationListComponent } from "./isolationpolicylistctrl";
 import { BandwidthListComponent } from "./bandwidthpolicylistctrl";
-//import networkPoliciesRoutes from "./networkpolicies.routes.ts";
 
 @NgModule({
     imports: [
         FormsModule,
         CommonModule,
         RouterModule,
-        DirectivesModule,
-        //networkPoliciesRoutes
+        DirectivesModule
     ],
     declarations: [
         NetworkPoliciesTabsComponent,

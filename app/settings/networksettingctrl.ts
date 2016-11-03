@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CRUDHelperService } from "../components/utils/crudhelperservice";
 import { NetworkService } from "../components/utils/networkservice";
+import { ContivGlobals } from "../components/models/contivglobals";
 
 @Component({
     selector: 'networksetting',

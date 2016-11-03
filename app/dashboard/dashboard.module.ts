@@ -1,11 +1,11 @@
 /**
- * Created by vjain3 on 11/1/16.
+ * Created by vjain3 on 11/3/16.
  */
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import { MenuComponent } from "./menuCtrl";
+import { DashboardComponent } from "./dashboardctrl";
 
 @NgModule({
     imports: [
@@ -14,13 +14,13 @@ import { MenuComponent } from "./menuCtrl";
         RouterModule
     ],
     declarations: [
-        MenuComponent
+        DashboardComponent
     ],
     exports: [
-        MenuComponent,
+        DashboardComponent,
         FormsModule,
         CommonModule,
         RouterModule
     ]
 })
-export class MenuModule {}
+export class DashboardModule {}

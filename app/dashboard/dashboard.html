@@ -2,7 +2,7 @@
     <div class="content" style="font-size: 18px; margin-top: 30px">Resources</div>
     <div class="ui three column grid" style="margin-top: 15px">
         <div class="column">
-            <a class="ui fluid card" href="/#/m/networks/list">
+            <a class="ui fluid card" [routerLink]="['../networks/list']" >
                 <div class="content">
                     <div class="ui grey ribbon label">
                         <i class="small networks icon" style="margin-left: 0.75em"></i> Networks
@@ -15,7 +15,7 @@
             </a>
         </div>
         <div class="column">
-            <a class="ui fluid card" href="/#/m/applicationgroups/list">
+            <a class="ui fluid card" [routerLink]="['../applicationgroups/list']">
                 <div class="content">
                     <div class="ui grey ribbon label">
                         <i class="appgroup icon"></i> Application Groups
@@ -28,7 +28,7 @@
             </a>
         </div>
         <div class="column">
-            <a class="ui fluid card" href="/#/m/networkpolicies/list/isolation">
+            <a class="ui fluid card" [routerLink]="['../networkpolicies/list']">
                 <div class="content">
                     <div class="ui grey ribbon label">
                         <i class="networkpolicies icon"></i> Network Policies

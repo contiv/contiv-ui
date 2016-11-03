@@ -8,7 +8,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/6/16.
 	 */
 	var platform_browser_dynamic_1 = __webpack_require__(123);
-	var app_module_1 = __webpack_require__(289);
+	var app_module_1 = __webpack_require__(296);
 	/*
 	import { upgradeAdapter } from "./upgradeadapter";
 	import { NetworksModel } from "./components/models/networksmodel";
@@ -1015,7 +1015,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 34:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -18037,33 +18037,60 @@ webpackJsonp([2],{
 	  }
 	}.call(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(766)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(768)(module)))
 
 /***/ },
 
-/***/ 35:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 37:
+/***/ function(module, exports) {
 
-	/**
-	 * Main entry point for angular 1.x build
-	 * @module ng1
-	 */
-	/** for typedoc */
 	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	__export(__webpack_require__(267));
-	__export(__webpack_require__(125));
-	__export(__webpack_require__(126));
-	__export(__webpack_require__(175));
-	__webpack_require__(274);
-	__webpack_require__(277);
-	__webpack_require__(275);
-	__webpack_require__(279);
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = "ui.router";
-	//# sourceMappingURL=ng1.js.map
+	/**
+	 * Created by vjain3 on 11/2/16.
+	 */
+	exports.ContivGlobals = {
+	    //REST endpoints for NETMASTER
+	    'NETWORKS_ENDPOINT': '/netmaster/api/v1/networks/',
+	    'NETWORKS_INSPECT_ENDPOINT': '/netmaster/api/v1/inspect/networks/',
+	    'SERVICELBS_INSPECT_ENDPOINT': '/netmaster/api/v1/inspect/serviceLBs/',
+	    'POLICIES_ENDPOINT': '/netmaster/api/v1/policys/',
+	    'RULES_ENDPOINT': '/netmaster/api/v1/rules/',
+	    'APPLICATIONGROUPS_ENDPOINT': '/netmaster/api/v1/endpointGroups/',
+	    'SERVICELBS_ENDPOINT': '/netmaster/api/v1/serviceLBs/',
+	    'ORGANIZATIONS_ENDPOINT': '/netmaster/api/v1/tenants/',
+	    'NETWORK_SETTINGS_ENDPOINT': '/netmaster/api/v1/globals/',
+	    'NETPROFILES_ENDPOINT': '/netmaster/api/v1/netprofiles/',
+	    'BGPS_ENDPOINT': '/netmaster/api/v1/Bgps/',
+	    'BGPS_INSPECT_ENDPOINT': '/netmaster/api/v1/inspect/Bgps/',
+	    'VISUALIZATION_ENDPOINT': '/visualization/',
+	    //REST endpoints for VOLMASTER
+	    'VOLUMES_ENDPOINT': '/volmaster/volumes/',
+	    'VOLUMES_CREATE_ENDPOINT': '/volmaster/volumes/create/',
+	    'VOLUMES_DELETE_ENDPOINT': '/volmaster/volumes/remove/',
+	    'VOLUMES_COPYSNAPSHOTS_ENDPOINT': '/volmaster/volumes/copy',
+	    'VOLUMES_USES_ENDPOINT': '/volmaster/uses/mounts/',
+	    'VOLUMES_SNAPSHOTS_ENDPOINT': '/volmaster/snapshots/',
+	    'STORAGEPOLICIES_ENDPOINT': '/volmaster/policies/',
+	    'VOLUMES_GLOBAL_ENDPOINT': '/volmaster/global/',
+	    //REST endpoints for CLUSTER
+	    'NODES_LIST_ENDPOINT': '/info/nodes',
+	    'NODES_DISCOVER_ENDPOINT': '/discover/nodes',
+	    'NODES_COMMISSION_ENDPOINT': '/commission/nodes',
+	    'NODES_DECOMMISSION_ENDPOINT': '/decommission/nodes',
+	    'NODES_MAINTENANCE_ENDPOINT': '/maintenance/nodes',
+	    'NODES_LAST_JOB_ENDPOINT': '/info/job/last',
+	    'NODES_ACTIVE_JOB_ENDPOINT': '/info/job/active',
+	    'NODES_SETTINGS_SET_ENDPOINT': '/globals',
+	    'NODES_SETTINGS_GET_ENDPOINT': '/info/globals',
+	    //Refresh interval in milliseconds
+	    'REFRESH_INTERVAL': 5000,
+	    //RegEx for validation
+	    'CIDR_REGEX': '^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$',
+	    'VLAN_REGEX': '^([0-9]{1,4}?-[0-9]{1,4}?)$',
+	    'VXLAN_REGEX': '^([0-9]{1,8}?-[0-9]{1,8}?)$',
+	    'NUMBER_REGEX': '^[0-9]*$'
+	};
+	
 
 /***/ },
 
@@ -18636,10 +18663,10 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
+	var http_1 = __webpack_require__(32);
 	var collection_1 = __webpack_require__(66);
 	var util_1 = __webpack_require__(81);
-	var contivglobals_1 = __webpack_require__(55);
+	var contivglobals_1 = __webpack_require__(37);
 	var NetworksModel = (function (_super) {
 	    __extends(NetworksModel, _super);
 	    function NetworksModel(http) {
@@ -18675,6 +18702,32 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 54:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Main entry point for angular 1.x build
+	 * @module ng1
+	 */
+	/** for typedoc */
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	__export(__webpack_require__(274));
+	__export(__webpack_require__(125));
+	__export(__webpack_require__(126));
+	__export(__webpack_require__(175));
+	__webpack_require__(281);
+	__webpack_require__(284);
+	__webpack_require__(282);
+	__webpack_require__(286);
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = "ui.router";
+	//# sourceMappingURL=ng1.js.map
+
+/***/ },
+
+/***/ 55:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -18857,59 +18910,6 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 55:
-/***/ function(module, exports) {
-
-	"use strict";
-	/**
-	 * Created by vjain3 on 11/2/16.
-	 */
-	exports.ContivGlobals = {
-	    //REST endpoints for NETMASTER
-	    'NETWORKS_ENDPOINT': '/netmaster/api/v1/networks/',
-	    'NETWORKS_INSPECT_ENDPOINT': '/netmaster/api/v1/inspect/networks/',
-	    'SERVICELBS_INSPECT_ENDPOINT': '/netmaster/api/v1/inspect/serviceLBs/',
-	    'POLICIES_ENDPOINT': '/netmaster/api/v1/policys/',
-	    'RULES_ENDPOINT': '/netmaster/api/v1/rules/',
-	    'APPLICATIONGROUPS_ENDPOINT': '/netmaster/api/v1/endpointGroups/',
-	    'SERVICELBS_ENDPOINT': '/netmaster/api/v1/serviceLBs/',
-	    'ORGANIZATIONS_ENDPOINT': '/netmaster/api/v1/tenants/',
-	    'NETWORK_SETTINGS_ENDPOINT': '/netmaster/api/v1/globals/',
-	    'NETPROFILES_ENDPOINT': '/netmaster/api/v1/netprofiles/',
-	    'BGPS_ENDPOINT': '/netmaster/api/v1/Bgps/',
-	    'BGPS_INSPECT_ENDPOINT': '/netmaster/api/v1/inspect/Bgps/',
-	    'VISUALIZATION_ENDPOINT': '/visualization/',
-	    //REST endpoints for VOLMASTER
-	    'VOLUMES_ENDPOINT': '/volmaster/volumes/',
-	    'VOLUMES_CREATE_ENDPOINT': '/volmaster/volumes/create/',
-	    'VOLUMES_DELETE_ENDPOINT': '/volmaster/volumes/remove/',
-	    'VOLUMES_COPYSNAPSHOTS_ENDPOINT': '/volmaster/volumes/copy',
-	    'VOLUMES_USES_ENDPOINT': '/volmaster/uses/mounts/',
-	    'VOLUMES_SNAPSHOTS_ENDPOINT': '/volmaster/snapshots/',
-	    'STORAGEPOLICIES_ENDPOINT': '/volmaster/policies/',
-	    'VOLUMES_GLOBAL_ENDPOINT': '/volmaster/global/',
-	    //REST endpoints for CLUSTER
-	    'NODES_LIST_ENDPOINT': '/info/nodes',
-	    'NODES_DISCOVER_ENDPOINT': '/discover/nodes',
-	    'NODES_COMMISSION_ENDPOINT': '/commission/nodes',
-	    'NODES_DECOMMISSION_ENDPOINT': '/decommission/nodes',
-	    'NODES_MAINTENANCE_ENDPOINT': '/maintenance/nodes',
-	    'NODES_LAST_JOB_ENDPOINT': '/info/job/last',
-	    'NODES_ACTIVE_JOB_ENDPOINT': '/info/job/active',
-	    'NODES_SETTINGS_SET_ENDPOINT': '/globals',
-	    'NODES_SETTINGS_GET_ENDPOINT': '/info/globals',
-	    //Refresh interval in milliseconds
-	    'REFRESH_INTERVAL': 5000,
-	    //RegEx for validation
-	    'CIDR_REGEX': '^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$',
-	    'VLAN_REGEX': '^([0-9]{1,4}?-[0-9]{1,4}?)$',
-	    'VXLAN_REGEX': '^([0-9]{1,8}?-[0-9]{1,8}?)$',
-	    'NUMBER_REGEX': '^[0-9]*$'
-	};
-	
-
-/***/ },
-
 /***/ 63:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -19048,7 +19048,7 @@ webpackJsonp([2],{
 /***/ 64:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(287);
+	__webpack_require__(294);
 	module.exports = angular;
 
 
@@ -19076,9 +19076,9 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 3/11/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
+	var http_1 = __webpack_require__(32);
 	var collection_1 = __webpack_require__(66);
-	var contivglobals_1 = __webpack_require__(55);
+	var contivglobals_1 = __webpack_require__(37);
 	var ApplicationGroupsModel = (function (_super) {
 	    __extends(ApplicationGroupsModel, _super);
 	    function ApplicationGroupsModel(http) {
@@ -19128,8 +19128,8 @@ webpackJsonp([2],{
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var basecollection_1 = __webpack_require__(302);
-	var _ = __webpack_require__(34);
+	var basecollection_1 = __webpack_require__(306);
+	var _ = __webpack_require__(35);
 	var Collection = (function (_super) {
 	    __extends(Collection, _super);
 	    /**
@@ -19363,13 +19363,13 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/17/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var common_1 = __webpack_require__(28);
-	var errormessagedirective_1 = __webpack_require__(299);
-	var tabledirective_1 = __webpack_require__(301);
-	var forms_1 = __webpack_require__(38);
-	var accordiondirective_1 = __webpack_require__(297);
-	var collapsibledirective_1 = __webpack_require__(298);
-	var namevaluedirective_1 = __webpack_require__(300);
+	var common_1 = __webpack_require__(27);
+	var errormessagedirective_1 = __webpack_require__(303);
+	var tabledirective_1 = __webpack_require__(305);
+	var forms_1 = __webpack_require__(36);
+	var accordiondirective_1 = __webpack_require__(301);
+	var collapsibledirective_1 = __webpack_require__(302);
+	var namevaluedirective_1 = __webpack_require__(304);
 	var DirectivesModule = (function () {
 	    function DirectivesModule() {
 	    }
@@ -19427,9 +19427,9 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
+	var http_1 = __webpack_require__(32);
 	var collection_1 = __webpack_require__(66);
-	var contivglobals_1 = __webpack_require__(55);
+	var contivglobals_1 = __webpack_require__(37);
 	var PoliciesModel = (function (_super) {
 	    __extends(PoliciesModel, _super);
 	    function PoliciesModel(http) {
@@ -19472,7 +19472,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 3/9/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(39);
+	var router_1 = __webpack_require__(23);
 	(function (PolicyTab) {
 	    PolicyTab[PolicyTab["isolation"] = 0] = "isolation";
 	    PolicyTab[PolicyTab["bandwidth"] = 1] = "bandwidth";
@@ -20054,7 +20054,7 @@ webpackJsonp([2],{
 	}
 	exports.isPrimitive = isPrimitive;
 
-	exports.isBuffer = __webpack_require__(765);
+	exports.isBuffer = __webpack_require__(767);
 
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -20098,7 +20098,7 @@ webpackJsonp([2],{
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
-	exports.inherits = __webpack_require__(764);
+	exports.inherits = __webpack_require__(766);
 
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -20116,7 +20116,7 @@ webpackJsonp([2],{
 	  return Object.prototype.hasOwnProperty.call(obj, prop);
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(231)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(238)))
 
 /***/ },
 
@@ -20127,7 +20127,7 @@ webpackJsonp([2],{
 	/** @module path */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(16);
-	var param_1 = __webpack_require__(54);
+	var param_1 = __webpack_require__(55);
 	/**
 	 * A node in a [[TreeChanges]] path
 	 *
@@ -20310,9 +20310,9 @@ webpackJsonp([2],{
 	 * Created by hardik gandhi on 6/15/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
+	var http_1 = __webpack_require__(32);
 	var collection_1 = __webpack_require__(66);
-	var contivglobals_1 = __webpack_require__(55);
+	var contivglobals_1 = __webpack_require__(37);
 	var NetprofilesModel = (function (_super) {
 	    __extends(NetprofilesModel, _super);
 	    function NetprofilesModel(http) {
@@ -20360,9 +20360,9 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 5/11/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
+	var http_1 = __webpack_require__(32);
 	var collection_1 = __webpack_require__(66);
-	var contivglobals_1 = __webpack_require__(55);
+	var contivglobals_1 = __webpack_require__(37);
 	var ServicelbsModel = (function (_super) {
 	    __extends(ServicelbsModel, _super);
 	    function ServicelbsModel(http) {
@@ -20624,9 +20624,9 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
+	var http_1 = __webpack_require__(32);
 	var collection_1 = __webpack_require__(66);
-	var contivglobals_1 = __webpack_require__(55);
+	var contivglobals_1 = __webpack_require__(37);
 	var OrganizationsModel = (function (_super) {
 	    __extends(OrganizationsModel, _super);
 	    function OrganizationsModel(http) {
@@ -20713,12 +20713,12 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(16);
 	var predicates_1 = __webpack_require__(9);
-	var resolveService_1 = __webpack_require__(276);
+	var resolveService_1 = __webpack_require__(283);
 	var trace_1 = __webpack_require__(46);
 	var views_1 = __webpack_require__(126);
 	var templateFactory_1 = __webpack_require__(176);
 	var stateProvider_1 = __webpack_require__(175);
-	var onEnterExitRetain_1 = __webpack_require__(278);
+	var onEnterExitRetain_1 = __webpack_require__(285);
 	var angular = __webpack_require__(64);
 	/** @hidden */
 	var app = angular.module("ui.router.angular1", []);
@@ -21386,7 +21386,7 @@ webpackJsonp([2],{
 	var predicates_1 = __webpack_require__(9);
 	var strings_1 = __webpack_require__(40);
 	var hof_1 = __webpack_require__(16);
-	var param_1 = __webpack_require__(54);
+	var param_1 = __webpack_require__(55);
 	var resolvable_1 = __webpack_require__(63);
 	var coreservices_1 = __webpack_require__(19);
 	var parseUrl = function (url) {
@@ -21899,7 +21899,7 @@ webpackJsonp([2],{
 	var node_1 = __webpack_require__(82);
 	var pathFactory_1 = __webpack_require__(101);
 	var targetState_1 = __webpack_require__(74);
-	var param_1 = __webpack_require__(54);
+	var param_1 = __webpack_require__(55);
 	var resolvable_1 = __webpack_require__(63);
 	var rejectFactory_1 = __webpack_require__(83);
 	var resolveContext_1 = __webpack_require__(47);
@@ -22513,12 +22513,12 @@ webpackJsonp([2],{
 	"use strict";
 	var transition_1 = __webpack_require__(132);
 	var hookRegistry_1 = __webpack_require__(131);
-	var resolve_1 = __webpack_require__(271);
-	var views_1 = __webpack_require__(273);
-	var url_1 = __webpack_require__(272);
-	var redirectTo_1 = __webpack_require__(270);
-	var onEnterExitRetain_1 = __webpack_require__(269);
-	var lazyLoadStates_1 = __webpack_require__(268);
+	var resolve_1 = __webpack_require__(278);
+	var views_1 = __webpack_require__(280);
+	var url_1 = __webpack_require__(279);
+	var redirectTo_1 = __webpack_require__(277);
+	var onEnterExitRetain_1 = __webpack_require__(276);
+	var lazyLoadStates_1 = __webpack_require__(275);
 	/**
 	 * The default [[Transition]] options.
 	 *
@@ -31659,10 +31659,10 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 3/8/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
+	var http_1 = __webpack_require__(32);
 	var collection_1 = __webpack_require__(66);
-	var _ = __webpack_require__(34);
-	var contivglobals_1 = __webpack_require__(55);
+	var _ = __webpack_require__(35);
+	var contivglobals_1 = __webpack_require__(37);
 	var RulesModel = (function (_super) {
 	    __extends(RulesModel, _super);
 	    function RulesModel(http) {
@@ -32580,7 +32580,7 @@ webpackJsonp([2],{
 	var transitionService_1 = __webpack_require__(134);
 	var rejectFactory_1 = __webpack_require__(83);
 	var targetState_1 = __webpack_require__(74);
-	var param_1 = __webpack_require__(54);
+	var param_1 = __webpack_require__(55);
 	var glob_1 = __webpack_require__(100);
 	var common_2 = __webpack_require__(5);
 	var common_3 = __webpack_require__(5);
@@ -33275,9 +33275,9 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(5);
 	var hof_1 = __webpack_require__(16);
 	var predicates_1 = __webpack_require__(9);
-	var param_1 = __webpack_require__(54);
+	var param_1 = __webpack_require__(55);
 	var predicates_2 = __webpack_require__(9);
-	var param_2 = __webpack_require__(54);
+	var param_2 = __webpack_require__(55);
 	var common_2 = __webpack_require__(5);
 	var common_3 = __webpack_require__(5);
 	/** @hidden */
@@ -33712,7 +33712,7 @@ webpackJsonp([2],{
 	var predicates_1 = __webpack_require__(9);
 	var urlMatcher_1 = __webpack_require__(185);
 	var urlMatcherConfig_1 = __webpack_require__(135);
-	var param_1 = __webpack_require__(54);
+	var param_1 = __webpack_require__(55);
 	var paramTypes_1 = __webpack_require__(177);
 	/** @hidden */
 	function getDefaultConfig() {
@@ -33844,38 +33844,90 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
-	__webpack_require__(115);
-	var NetworkService = (function () {
-	    function NetworkService(http) {
-	        this.http = http;
-	    }
-	    NetworkService.prototype.getSettings = function () {
-	        var networkservice = this;
-	        var promise = new Promise(function (resolve, reject) {
-	            var url = ContivGlobals.NETWORK_SETTINGS_ENDPOINT;
-	            networkservice.http.get(url).map(function (res) { return res.json(); }).toPromise()
-	                .then(function successCallback(result) {
-	                resolve(result[0]);
-	            }, function errorCallback(result) {
-	                reject(result);
+	var router_1 = __webpack_require__(23);
+	var networksmodel_1 = __webpack_require__(48);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ApplicationGroupCreateComponent = (function () {
+	    function ApplicationGroupCreateComponent(activatedRoute, router, networksModel, applicationGroupsModel, crudHelperService) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.networksModel = networksModel;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.crudHelperService = crudHelperService;
+	        this.networks = [];
+	        this.applicationGroup = {};
+	        this.selectedNetwork = '';
+	        var applicationGroupCreateCtrl = this;
+	        /**
+	         * Get networks for the given tenant.
+	         */
+	        function getNetworks() {
+	            networksModel.get(false).then(function (result) {
+	                applicationGroupCreateCtrl.networks = _.filter(result, {
+	                    'tenantName': 'default' //TODO: Remove hardcoded tenant.
+	                });
 	            });
-	        });
-	        return promise;
+	        }
+	        function resetForm() {
+	            crudHelperService.stopLoader(applicationGroupCreateCtrl);
+	            crudHelperService.hideServerError(applicationGroupCreateCtrl);
+	            applicationGroupCreateCtrl.applicationGroup = {
+	                groupName: '',
+	                networkName: '',
+	                policies: [],
+	                netProfile: '',
+	                tenantName: 'default' //TODO: Remove hardcoded tenant.
+	            };
+	        }
+	        getNetworks();
+	        resetForm();
+	    }
+	    ApplicationGroupCreateComponent.prototype.returnToApplicationGroup = function () {
+	        this.router.navigate(['../list'], { relativeTo: this.activatedRoute });
 	    };
-	    NetworkService.prototype.updateSettings = function (setting) {
-	        return this.http.post(ContivGlobals.NETWORK_SETTINGS_ENDPOINT
-	            + 'global/', setting).map(function (res) { return res.json(); }).toPromise();
+	    ApplicationGroupCreateComponent.prototype.cancelCreating = function () {
+	        this.returnToApplicationGroup();
 	    };
-	    NetworkService = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], NetworkService);
-	    return NetworkService;
-	    var _a;
+	    ApplicationGroupCreateComponent.prototype.createApplicationGroup = function (validform) {
+	        var applicationGroupCreateCtrl = this;
+	        if (validform) {
+	            applicationGroupCreateCtrl.crudHelperService.hideServerError(applicationGroupCreateCtrl);
+	            applicationGroupCreateCtrl.crudHelperService.startLoader(applicationGroupCreateCtrl);
+	            applicationGroupCreateCtrl.applicationGroup.networkName =
+	                applicationGroupCreateCtrl.selectedNetwork;
+	            applicationGroupCreateCtrl.applicationGroup.key =
+	                applicationGroupCreateCtrl.applicationGroupsModel.generateKey(applicationGroupCreateCtrl.applicationGroup);
+	            /**
+	             * applicationGroup consist of Group Name, Network Name, Isolation Policies, Bandwidth Policy
+	             */
+	            applicationGroupCreateCtrl.applicationGroupsModel.create(applicationGroupCreateCtrl.applicationGroup, undefined).then(function successCallback(result) {
+	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
+	                applicationGroupCreateCtrl.returnToApplicationGroup();
+	            }, function errorCallback(result) {
+	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
+	                applicationGroupCreateCtrl.crudHelperService.showServerError(applicationGroupCreateCtrl, result);
+	            });
+	        }
+	    };
+	    ApplicationGroupCreateComponent.prototype.updateNetwork = function (networkName) {
+	        this.selectedNetwork = networkName;
+	    };
+	    ApplicationGroupCreateComponent = __decorate([
+	        core_1.Component({
+	            selector: 'applicationgroupcreate',
+	            templateUrl: 'applicationgroups/applicationgroupcreate.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _d) || Object, (typeof (_e = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _e) || Object])
+	    ], ApplicationGroupCreateComponent);
+	    return ApplicationGroupCreateComponent;
+	    var _a, _b, _c, _d, _e;
 	}());
-	exports.NetworkService = NetworkService;
+	exports.ApplicationGroupCreateComponent = ApplicationGroupCreateComponent;
 	
 
 /***/ },
@@ -33893,9 +33945,228 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+	/**
+	 * Created by vjain3 on 3/15/16.
+	 */
 	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(31);
+	var router_1 = __webpack_require__(23);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ApplicationGroupDetailsComponent = (function () {
+	    function ApplicationGroupDetailsComponent(activatedRoute, router, applicationGroupsModel, crudHelperService) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.crudHelperService = crudHelperService;
+	        this.applicationGroup = {};
+	        this.mode = 'details';
+	        var applicationGroupDetailsCtrl = this;
+	        /**
+	         * To show edit or details screen based on the route
+	         */
+	        function setMode() {
+	            if (activatedRoute.routeConfig.path.includes('edit')) {
+	                applicationGroupDetailsCtrl.mode = 'edit';
+	            }
+	            else {
+	                applicationGroupDetailsCtrl.mode = 'details';
+	            }
+	        }
+	        applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.applicationGroupsModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
+	            .then(function (group) {
+	            applicationGroupDetailsCtrl.applicationGroup = group;
+	        });
+	        setMode();
+	    }
+	    ApplicationGroupDetailsComponent.prototype.returnToApplicationGroup = function () {
+	        this.router.navigate(['../../list'], { relativeTo: this.activatedRoute });
+	    };
+	    ApplicationGroupDetailsComponent.prototype.returnToApplicationGroupDetails = function () {
+	        this.router.navigate(['../../details', this.applicationGroup.key], { relativeTo: this.activatedRoute });
+	    };
+	    ApplicationGroupDetailsComponent.prototype.editApplicationGroup = function () {
+	        this.router.navigate(['../../edit', this.applicationGroup.key], { relativeTo: this.activatedRoute });
+	    };
+	    ApplicationGroupDetailsComponent.prototype.cancelEditing = function () {
+	        this.returnToApplicationGroupDetails();
+	    };
+	    ApplicationGroupDetailsComponent.prototype.deleteApplicationGroup = function () {
+	        var applicationGroupDetailsCtrl = this;
+	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.applicationGroupsModel.delete(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
+	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	            applicationGroupDetailsCtrl.returnToApplicationGroup();
+	        }, function errorCallback(result) {
+	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
+	        });
+	    };
+	    ApplicationGroupDetailsComponent.prototype.saveApplicationGroup = function () {
+	        var applicationGroupDetailsCtrl = this;
+	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.applicationGroupsModel.save(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
+	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	            applicationGroupDetailsCtrl.returnToApplicationGroupDetails();
+	        }, function errorCallback(result) {
+	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
+	        });
+	    };
+	    ApplicationGroupDetailsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'applicationgroupdetails',
+	            templateUrl: 'applicationgroups/applicationgroupdetails.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
+	    ], ApplicationGroupDetailsComponent);
+	    return ApplicationGroupDetailsComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.ApplicationGroupDetailsComponent = ApplicationGroupDetailsComponent;
+	
+
+/***/ },
+
+/***/ 189:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(23);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(44);
+	var AppGrouplistComponent = (function () {
+	    function AppGrouplistComponent(activatedRoute, router, appGroupModel, crudHelperService) {
+	        var _this = this;
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.appGroupModel = appGroupModel;
+	        this.crudHelperService = crudHelperService;
+	        this.applicationGroupListCtrl = this;
+	        this['showLoader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getApplicationGroup(true);
+	        });
+	    }
+	    AppGrouplistComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.getApplicationGroup(false);
+	    };
+	    AppGrouplistComponent.prototype.getApplicationGroup = function (reload) {
+	        var applicationGroupListCtrl = this;
+	        this.appGroupModel.get(reload)
+	            .then(function (result) {
+	            applicationGroupListCtrl['groups'] = result;
+	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
+	        }, function (error) {
+	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
+	        });
+	    };
+	    AppGrouplistComponent.prototype.create = function () {
+	        this.router.navigate(['../create'], { relativeTo: this.activatedRoute });
+	    };
+	    AppGrouplistComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    AppGrouplistComponent = __decorate([
+	        core_1.Component({
+	            selector: 'app-group',
+	            template: __webpack_require__(495)
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
+	    ], AppGrouplistComponent);
+	    return AppGrouplistComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.AppGrouplistComponent = AppGrouplistComponent;
+	
+
+/***/ },
+
+/***/ 190:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(32);
 	__webpack_require__(115);
+	var contivglobals_1 = __webpack_require__(37);
+	var NetworkService = (function () {
+	    function NetworkService(http) {
+	        this.http = http;
+	    }
+	    NetworkService.prototype.getSettings = function () {
+	        var networkservice = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            var url = contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT;
+	            networkservice.http.get(url).map(function (res) { return res.json(); }).toPromise()
+	                .then(function successCallback(result) {
+	                resolve(result[0]);
+	            }, function errorCallback(result) {
+	                reject(result);
+	            });
+	        });
+	        return promise;
+	    };
+	    NetworkService.prototype.updateSettings = function (setting) {
+	        return this.http.post(contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT
+	            + 'global/', setting).map(function (res) { return res.json(); }).toPromise();
+	    };
+	    NetworkService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], NetworkService);
+	    return NetworkService;
+	    var _a;
+	}());
+	exports.NetworkService = NetworkService;
+	
+
+/***/ },
+
+/***/ 191:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(32);
+	__webpack_require__(115);
+	var contivglobals_1 = __webpack_require__(37);
 	var NodesService = (function () {
 	    function NodesService(http) {
 	        this.http = http;
@@ -33927,7 +34198,7 @@ webpackJsonp([2],{
 	    NodesService.prototype.getSettings = function (ctrl) {
 	        var nodeservice = this;
 	        var promise = new Promise(function (resolve, reject) {
-	            var url = ContivGlobals.NODES_SETTINGS_GET_ENDPOINT;
+	            var url = contivglobals_1.ContivGlobals.NODES_SETTINGS_GET_ENDPOINT;
 	            nodeservice.http.get(url).map(function (res) { return res.json(); }).toPromise().then(function successCallback(result) {
 	                resolve(result);
 	                ctrl.setting = result;
@@ -34012,7 +34283,7 @@ webpackJsonp([2],{
 	    NodesService.prototype.updateSettings = function (nodeOpsObj) {
 	        var headers = new http_1.Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
 	        var options = new http_1.RequestOptions({ headers: headers }); // Create a request option
-	        return this.http.post(ContivGlobals.NODES_SETTINGS_SET_ENDPOINT, nodeOpsObj, options)
+	        return this.http.post(contivglobals_1.ContivGlobals.NODES_SETTINGS_SET_ENDPOINT, nodeOpsObj, options)
 	            .map(function (res) { return res.json(); }).toPromise();
 	    };
 	    ;
@@ -34066,7 +34337,81 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 189:
+/***/ 192:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var Observable_1 = __webpack_require__(1);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var policiesmodel_1 = __webpack_require__(76);
+	var networksmodel_1 = __webpack_require__(48);
+	var DashboardComponent = (function () {
+	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, ngZone) {
+	        this.networksModel = networksModel;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.policiesModel = policiesModel;
+	        this.ngZone = ngZone;
+	        this.nodes = 0;
+	        this.networks = 0;
+	        this.volumes = 0;
+	        this.groups = 0;
+	        this.networkpolicies = 0;
+	        this.storagepolicies = 0;
+	        var dashboardComponent = this;
+	        function getDashboardInfo(reload) {
+	            ngZone.run(function () {
+	                networksModel.get(reload)
+	                    .then(function (result) {
+	                    dashboardComponent.networks = result.length;
+	                });
+	                applicationGroupsModel.get(reload)
+	                    .then(function (result) {
+	                    dashboardComponent.groups = result.length;
+	                });
+	                policiesModel.get(reload)
+	                    .then(function (result) {
+	                    dashboardComponent.networkpolicies = result.length;
+	                });
+	            });
+	        }
+	        //Load from cache for quick display initially
+	        getDashboardInfo(false);
+	        this.subscription = Observable_1.Observable.interval(5000).subscribe(function () {
+	            getDashboardInfo(true);
+	        });
+	    }
+	    DashboardComponent.prototype.ngOnDestroy = function () {
+	        this.subscription.unsubscribe();
+	    };
+	    DashboardComponent = __decorate([
+	        core_1.Component({
+	            selector: 'dashboard',
+	            templateUrl: 'dashboard/dashboard.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
+	    ], DashboardComponent);
+	    return DashboardComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.DashboardComponent = DashboardComponent;
+	
+
+/***/ },
+
+/***/ 193:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34083,7 +34428,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 5/19/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(39);
+	var router_1 = __webpack_require__(23);
 	/*
 	angular.module('contiv.menu')
 	    .config(['$stateProvider', function ($stateProvider) {
@@ -34130,7 +34475,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 190:
+/***/ 194:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34148,7 +34493,7 @@ webpackJsonp([2],{
 	 * Created by hardik gandhi on 6/14/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(39);
+	var router_1 = __webpack_require__(23);
 	var netprofilesmodel_1 = __webpack_require__(84);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var networkpoliciestabsctrl_1 = __webpack_require__(77);
@@ -34210,7 +34555,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 191:
+/***/ 195:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34227,7 +34572,7 @@ webpackJsonp([2],{
 	 * Created by hardik gandhi on 6/16/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(39);
+	var router_1 = __webpack_require__(23);
 	var netprofilesmodel_1 = __webpack_require__(84);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var networkpoliciestabsctrl_1 = __webpack_require__(77);
@@ -34315,7 +34660,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 192:
+/***/ 196:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34332,7 +34677,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 3/10/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(39);
+	var router_1 = __webpack_require__(23);
 	var policiesmodel_1 = __webpack_require__(76);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var networkpoliciestabsctrl_1 = __webpack_require__(77);
@@ -34391,7 +34736,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 193:
+/***/ 197:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34408,14 +34753,14 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 3/8/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(39);
+	var router_1 = __webpack_require__(23);
 	var policiesmodel_1 = __webpack_require__(76);
 	var rulesmodel_1 = __webpack_require__(139);
 	var networksmodel_1 = __webpack_require__(48);
 	var applicationgroupsmodel_1 = __webpack_require__(65);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var contivglobals_1 = __webpack_require__(55);
+	var contivglobals_1 = __webpack_require__(37);
 	var IsolationPolicyDetailsComponent = (function () {
 	    function IsolationPolicyDetailsComponent(activatedRoute, router, policiesModel, rulesModel, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -34782,7 +35127,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 194:
+/***/ 198:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34803,9 +35148,9 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(12);
-	var ng1_1 = __webpack_require__(35);
+	var ng1_1 = __webpack_require__(54);
 	var servicelbsmodel_1 = __webpack_require__(85);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	var ServicelbInfoComponent = (function () {
 	    function ServicelbInfoComponent($state, servicelbsModel, crudHelperService, ngZone) {
 	        this.$state = $state;
@@ -34939,7 +35284,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 195:
+/***/ 199:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35038,7 +35383,178 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 266:
+/***/ 200:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var nodesservice_1 = __webpack_require__(191);
+	var ClusterSettingsComponent = (function () {
+	    function ClusterSettingsComponent(crudHelperService, nodesService) {
+	        this.nodesService = nodesService;
+	        this.crudHelperService = crudHelperService;
+	        this.showLoader = true;
+	        this.extra_vars = { control_interface: '', netplugin_if: '', service_vip: '', scheduler_provider: '', ucp_bootstrap_node_name: '', cluster_name: '',
+	            contiv_network_mode: '', fwd_mode: '', apic_url: '', apic_username: '', apic_password: '', apic_leaf_nodes: '', apic_phys_domain: '',
+	            apic_epg_bridge_domain: '', apic_contracts_unrestricted_mode: '' };
+	        this.ansibleVariables = [];
+	        this.envVariables = [];
+	        this.showServerError = false;
+	        this.serverErrorMessage = '';
+	        this.nodeOpsObj = { nodes: [] };
+	        this.clusterSettingCtrl = this;
+	    }
+	    ClusterSettingsComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        var clusterSettingCtrl = this;
+	        this.nodesService.getSettings(clusterSettingCtrl)
+	            .then(function (result) {
+	            clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
+	            clusterSettingCtrl.crudHelperService.hideServerError(clusterSettingCtrl);
+	        }, function (error) {
+	            clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
+	            clusterSettingCtrl.crudHelperService.hideServerError(clusterSettingCtrl);
+	        });
+	    };
+	    ClusterSettingsComponent.prototype.updateClusterSettings = function (formvalid) {
+	        var clusterSettingCtrl = this;
+	        if (formvalid) {
+	            this.crudHelperService.hideServerError(this);
+	            this.crudHelperService.startLoader(this);
+	            this.nodesService.cleanupExtraVars(this);
+	            this.nodesService.createExtraVars(this);
+	            this.nodesService.updateSettings(this.nodeOpsObj)
+	                .then(function (result) {
+	                clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
+	            }, function (error) {
+	                clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
+	                clusterSettingCtrl.crudHelperService.showServerError(clusterSettingCtrl, error);
+	            });
+	        }
+	    };
+	    ClusterSettingsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'clustersettings',
+	            templateUrl: 'settings/clustersettings.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof nodesservice_1.NodesService !== 'undefined' && nodesservice_1.NodesService) === 'function' && _b) || Object])
+	    ], ClusterSettingsComponent);
+	    return ClusterSettingsComponent;
+	    var _a, _b;
+	}());
+	exports.ClusterSettingsComponent = ClusterSettingsComponent;
+	
+
+/***/ },
+
+/***/ 201:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var networkservice_1 = __webpack_require__(190);
+	var contivglobals_1 = __webpack_require__(37);
+	var NetworkSettingsComponent = (function () {
+	    function NetworkSettingsComponent(crudHelperService, networkService) {
+	        this.crudHelperService = crudHelperService;
+	        this.networkService = networkService;
+	        this.setting = {};
+	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
+	        this.vxlanPattern = contivglobals_1.ContivGlobals.VXLAN_REGEX;
+	        var networkSettingCtrl = this;
+	        function getNetworkSettings() {
+	            networkSettingCtrl.networkService.getSettings().then(function successCallback(result) {
+	                networkSettingCtrl.setting = result;
+	            }, function errorCallback(result) {
+	            });
+	        }
+	        getNetworkSettings();
+	        networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
+	    }
+	    NetworkSettingsComponent.prototype.updateNetworkSettings = function (validform) {
+	        var networkSettingCtrl = this;
+	        if (validform) {
+	            networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
+	            networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
+	            networkSettingCtrl.networkService.updateSettings(networkSettingCtrl.setting).then(function successCallback(result) {
+	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	            }, function errorCallback(result) {
+	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	                networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, result._body);
+	            });
+	        }
+	    };
+	    NetworkSettingsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'networksetting',
+	            templateUrl: 'settings/networksettings.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof networkservice_1.NetworkService !== 'undefined' && networkservice_1.NetworkService) === 'function' && _b) || Object])
+	    ], NetworkSettingsComponent);
+	    return NetworkSettingsComponent;
+	    var _a, _b;
+	}());
+	exports.NetworkSettingsComponent = NetworkSettingsComponent;
+	
+
+/***/ },
+
+/***/ 202:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 11/3/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var SettingsMenuComponent = (function () {
+	    function SettingsMenuComponent() {
+	    }
+	    SettingsMenuComponent = __decorate([
+	        core_1.Component({
+	            selector: 'settingsmenu',
+	            templateUrl: 'settings/settingsmenu.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], SettingsMenuComponent);
+	    return SettingsMenuComponent;
+	}());
+	exports.SettingsMenuComponent = SettingsMenuComponent;
+	
+
+/***/ },
+
+/***/ 273:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35058,7 +35574,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 267:
+/***/ 274:
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module common */ /** */
@@ -35066,14 +35582,14 @@ webpackJsonp([2],{
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(266));
-	__export(__webpack_require__(280));
-	__export(__webpack_require__(281));
-	__export(__webpack_require__(282));
-	__export(__webpack_require__(283));
-	__export(__webpack_require__(284));
-	__export(__webpack_require__(285));
-	__export(__webpack_require__(286));
+	__export(__webpack_require__(273));
+	__export(__webpack_require__(287));
+	__export(__webpack_require__(288));
+	__export(__webpack_require__(289));
+	__export(__webpack_require__(290));
+	__export(__webpack_require__(291));
+	__export(__webpack_require__(292));
+	__export(__webpack_require__(293));
 	__export(__webpack_require__(174));
 	var router_1 = __webpack_require__(128);
 	exports.UIRouter = router_1.UIRouter;
@@ -35081,7 +35597,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 268:
+/***/ 275:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35149,7 +35665,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 269:
+/***/ 276:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -35210,7 +35726,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 270:
+/***/ 277:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35250,7 +35766,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 271:
+/***/ 278:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35297,7 +35813,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 272:
+/***/ 279:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -35327,7 +35843,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 273:
+/***/ 280:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35378,7 +35894,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 274:
+/***/ 281:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35793,7 +36309,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 275:
+/***/ 282:
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module ng1_directives */ /** for typedoc */
@@ -36177,7 +36693,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 276:
+/***/ 283:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36245,7 +36761,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 277:
+/***/ 284:
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @module state */ /** for typedoc */
@@ -36294,7 +36810,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 278:
+/***/ 285:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36323,7 +36839,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 279:
+/***/ 286:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36380,7 +36896,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 280:
+/***/ 287:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36395,7 +36911,7 @@ webpackJsonp([2],{
 	 * @preferred doc
 	 */
 	/** for typedoc */
-	__export(__webpack_require__(54));
+	__export(__webpack_require__(55));
 	__export(__webpack_require__(177));
 	__export(__webpack_require__(178));
 	__export(__webpack_require__(127));
@@ -36403,7 +36919,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 281:
+/***/ 288:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36417,7 +36933,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 282:
+/***/ 289:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36432,7 +36948,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 283:
+/***/ 290:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36451,7 +36967,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 284:
+/***/ 291:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36477,7 +36993,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 285:
+/***/ 292:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36493,7 +37009,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 286:
+/***/ 293:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36506,7 +37022,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 287:
+/***/ 294:
 /***/ function(module, exports) {
 
 	/**
@@ -68280,7 +68796,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 288:
+/***/ 295:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68314,7 +68830,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 289:
+/***/ 296:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68332,11 +68848,16 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var platform_browser_1 = __webpack_require__(99);
-	var http_1 = __webpack_require__(31);
-	var common_1 = __webpack_require__(28);
-	var networkpolicies_module_1 = __webpack_require__(310);
-	var applicationgroups_module_ts_1 = __webpack_require__(294);
-	var settings_module_1 = __webpack_require__(328);
+	var http_1 = __webpack_require__(32);
+	var common_1 = __webpack_require__(27);
+	var menu_module_1 = __webpack_require__(311);
+	var dashboard_module_1 = __webpack_require__(309);
+	var networkpolicies_module_1 = __webpack_require__(314);
+	var applicationgroups_module_ts_1 = __webpack_require__(298);
+	var settings_module_1 = __webpack_require__(330);
+	var network_module_1 = __webpack_require__(315);
+	var servicelb_module_1 = __webpack_require__(325);
+	var organization_module_1 = __webpack_require__(321);
 	var netprofilesmodel_1 = __webpack_require__(84);
 	var applicationgroupsmodel_1 = __webpack_require__(65);
 	var networksmodel_1 = __webpack_require__(48);
@@ -68346,16 +68867,11 @@ webpackJsonp([2],{
 	var servicelbsmodel_1 = __webpack_require__(85);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var inspectservice_1 = __webpack_require__(140);
-	var networkservice_1 = __webpack_require__(187);
-	var dashboardctrl_1 = __webpack_require__(305);
-	var network_module_1 = __webpack_require__(311);
-	var servicelb_module_1 = __webpack_require__(321);
-	var organization_module_1 = __webpack_require__(317);
-	var nodesservice_1 = __webpack_require__(188);
-	var loginctrl_1 = __webpack_require__(306);
-	var app_component_1 = __webpack_require__(288);
-	var app_routes_ts_1 = __webpack_require__(290);
-	var menu_module_1 = __webpack_require__(307);
+	var networkservice_1 = __webpack_require__(190);
+	var nodesservice_1 = __webpack_require__(191);
+	var loginctrl_1 = __webpack_require__(310);
+	var app_component_1 = __webpack_require__(295);
+	var app_routes_ts_1 = __webpack_require__(297);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -68366,6 +68882,7 @@ webpackJsonp([2],{
 	                http_1.HttpModule,
 	                app_routes_ts_1.default,
 	                menu_module_1.MenuModule,
+	                dashboard_module_1.DashboardModule,
 	                networkpolicies_module_1.NetworkPoliciesModule,
 	                applicationgroups_module_ts_1.ApplicationGroupsModule,
 	                settings_module_1.SettingsModule,
@@ -68374,7 +68891,6 @@ webpackJsonp([2],{
 	                organization_module_1.OrganizationModule
 	            ],
 	            declarations: [
-	                dashboardctrl_1.DashboardComponent,
 	                loginctrl_1.LoginComponent,
 	                app_component_1.AppComponent
 	            ],
@@ -68404,46 +68920,58 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 290:
+/***/ 297:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/**
 	 * Created by vjain3 on 11/1/16.
 	 */
-	var router_1 = __webpack_require__(39);
-	var menuCtrl_1 = __webpack_require__(189);
+	var router_1 = __webpack_require__(23);
+	var menuCtrl_1 = __webpack_require__(193);
 	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var isolationpolicycreatectrl_1 = __webpack_require__(192);
-	var isolationpolicydetailsctrl_1 = __webpack_require__(193);
-	var bandwidthpolicycreatectrl_1 = __webpack_require__(190);
-	var bandwidthpolicydetailsctrl_1 = __webpack_require__(191);
+	var isolationpolicycreatectrl_1 = __webpack_require__(196);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(197);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(194);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(195);
+	var dashboardctrl_1 = __webpack_require__(192);
+	var applicationgrouplistctrl_1 = __webpack_require__(189);
+	var applicationgroupcreatectrl_1 = __webpack_require__(187);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(188);
+	var settingsmenu_component_1 = __webpack_require__(202);
+	var clustersettingctrl_1 = __webpack_require__(200);
+	var networksettingctrl_1 = __webpack_require__(201);
 	var routes = [
-	    /*
-	     {
-	     path: '',
-	     loadChildren: 'menu/menu.module'
-	     },
-	     {
-	     path: 'm',
-	     loadChildren: 'menu/menu.module'
-	     }
-	     */
 	    { path: '', redirectTo: 'm', pathMatch: 'full' },
 	    {
 	        path: 'm',
 	        component: menuCtrl_1.MenuComponent,
 	        children: [
-	            { path: '', redirectTo: 'networkpolicies/list', pathMatch: 'full' },
-	            //{path: '', redirectTo: 'dashboard', pathMatch:'full'},
-	            //{path: 'dashboard', component: DashboardComponent},
+	            { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+	            { path: 'dashboard', component: dashboardctrl_1.DashboardComponent },
+	            //Network Policies
 	            { path: 'networkpolicies/list', component: networkpoliciestabsctrl_1.NetworkPoliciesTabsComponent },
 	            { path: 'networkpolicies/isolation/create', component: isolationpolicycreatectrl_1.IsolationPolicyCreateComponent },
 	            { path: 'networkpolicies/isolation/details/:key', component: isolationpolicydetailsctrl_1.IsolationPolicyDetailsComponent },
 	            { path: 'networkpolicies/isolation/edit/:key', component: isolationpolicydetailsctrl_1.IsolationPolicyDetailsComponent },
 	            { path: 'networkpolicies/bandwidth/create', component: bandwidthpolicycreatectrl_1.BandwidthPolicyCreateComponent },
 	            { path: 'networkpolicies/bandwidth/details/:key', component: bandwidthpolicydetailsctrl_1.BandwidthPolicyDetailsComponent },
-	            { path: 'networkpolicies/bandwidth/edit/:key', component: bandwidthpolicydetailsctrl_1.BandwidthPolicyDetailsComponent }
+	            { path: 'networkpolicies/bandwidth/edit/:key', component: bandwidthpolicydetailsctrl_1.BandwidthPolicyDetailsComponent },
+	            //Application Groups
+	            { path: 'applicationgroups/list', component: applicationgrouplistctrl_1.AppGrouplistComponent },
+	            { path: 'applicationgroups/create', component: applicationgroupcreatectrl_1.ApplicationGroupCreateComponent },
+	            { path: 'applicationgroups/details/:key', component: applicationgroupdetailsctrl_1.ApplicationGroupDetailsComponent },
+	            { path: 'applicationgroups/edit/:key', component: applicationgroupdetailsctrl_1.ApplicationGroupDetailsComponent },
+	            //Settings
+	            {
+	                path: 'settings',
+	                component: settingsmenu_component_1.SettingsMenuComponent,
+	                children: [
+	                    { path: '', redirectTo: 'cluster', pathMatch: 'full' },
+	                    { path: 'cluster', component: clustersettingctrl_1.ClusterSettingsComponent },
+	                    { path: 'networks', component: networksettingctrl_1.NetworkSettingsComponent }
+	                ]
+	            }
 	        ]
 	    }
 	];
@@ -68453,290 +68981,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 291:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var __param = (this && this.__param) || function (paramIndex, decorator) {
-	    return function (target, key) { decorator(target, key, paramIndex); }
-	};
-	/**
-	 * Created by vjain3 on 3/11/16.
-	 */
-	/**
-	 * Created by vjain3 on 3/10/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var ng1_1 = __webpack_require__(35);
-	var networksmodel_1 = __webpack_require__(48);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var ApplicationGroupCreateComponent = (function () {
-	    function ApplicationGroupCreateComponent($state, networksModel, applicationGroupsModel, crudHelperService) {
-	        this.$state = $state;
-	        this.networksModel = networksModel;
-	        this.applicationGroupsModel = applicationGroupsModel;
-	        this.crudHelperService = crudHelperService;
-	        this.networks = [];
-	        this.applicationGroup = {};
-	        this.selectedNetwork = '';
-	        var applicationGroupCreateCtrl = this;
-	        /**
-	         * Get networks for the given tenant.
-	         */
-	        function getNetworks() {
-	            networksModel.get(false).then(function (result) {
-	                applicationGroupCreateCtrl.networks = _.filter(result, {
-	                    'tenantName': 'default' //TODO: Remove hardcoded tenant.
-	                });
-	            });
-	        }
-	        function resetForm() {
-	            crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	            crudHelperService.hideServerError(applicationGroupCreateCtrl);
-	            applicationGroupCreateCtrl.applicationGroup = {
-	                groupName: '',
-	                networkName: '',
-	                policies: [],
-	                netProfile: '',
-	                tenantName: 'default' //TODO: Remove hardcoded tenant.
-	            };
-	        }
-	        getNetworks();
-	        resetForm();
-	    }
-	    ApplicationGroupCreateComponent.prototype.returnToApplicationGroup = function () {
-	        this.$state.go('contiv.menu.applicationgroups.list');
-	    };
-	    ApplicationGroupCreateComponent.prototype.cancelCreating = function () {
-	        this.returnToApplicationGroup();
-	    };
-	    ApplicationGroupCreateComponent.prototype.createApplicationGroup = function (validform) {
-	        var applicationGroupCreateCtrl = this;
-	        if (validform) {
-	            applicationGroupCreateCtrl.crudHelperService.hideServerError(applicationGroupCreateCtrl);
-	            applicationGroupCreateCtrl.crudHelperService.startLoader(applicationGroupCreateCtrl);
-	            applicationGroupCreateCtrl.applicationGroup.networkName =
-	                applicationGroupCreateCtrl.selectedNetwork;
-	            applicationGroupCreateCtrl.applicationGroup.key =
-	                applicationGroupCreateCtrl.applicationGroupsModel.generateKey(applicationGroupCreateCtrl.applicationGroup);
-	            /**
-	             * applicationGroup consist of Group Name, Network Name, Isolation Policies, Bandwidth Policy
-	             */
-	            applicationGroupCreateCtrl.applicationGroupsModel.create(applicationGroupCreateCtrl.applicationGroup, undefined).then(function successCallback(result) {
-	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	                applicationGroupCreateCtrl.returnToApplicationGroup();
-	            }, function errorCallback(result) {
-	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	                applicationGroupCreateCtrl.crudHelperService.showServerError(applicationGroupCreateCtrl, result);
-	            });
-	        }
-	    };
-	    ApplicationGroupCreateComponent.prototype.updateNetwork = function (networkName) {
-	        this.selectedNetwork = networkName;
-	    };
-	    ApplicationGroupCreateComponent = __decorate([
-	        core_1.Component({
-	            selector: 'applicationgroupcreate',
-	            templateUrl: 'applicationgroups/applicationgroupcreate.html'
-	        }),
-	        __param(0, core_1.Inject('$state')), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
-	    ], ApplicationGroupCreateComponent);
-	    return ApplicationGroupCreateComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.ApplicationGroupCreateComponent = ApplicationGroupCreateComponent;
-	
-
-/***/ },
-
-/***/ 292:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var __param = (this && this.__param) || function (paramIndex, decorator) {
-	    return function (target, key) { decorator(target, key, paramIndex); }
-	};
-	/**
-	 * Created by vjain3 on 3/15/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var ng1_1 = __webpack_require__(35);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var ApplicationGroupDetailsComponent = (function () {
-	    function ApplicationGroupDetailsComponent($state, $stateParams, applicationGroupsModel, crudHelperService) {
-	        this.$state = $state;
-	        this.$stateParams = $stateParams;
-	        this.applicationGroupsModel = applicationGroupsModel;
-	        this.crudHelperService = crudHelperService;
-	        this.applicationGroup = {};
-	        this.mode = 'details';
-	        var applicationGroupDetailsCtrl = this;
-	        /**
-	         * To show edit or details screen based on the route
-	         */
-	        function setMode() {
-	            if ($state.is('contiv.menu.applicationgroups.edit')) {
-	                applicationGroupDetailsCtrl.mode = 'edit';
-	            }
-	            else {
-	                applicationGroupDetailsCtrl.mode = 'details';
-	            }
-	        }
-	        applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.applicationGroupsModel.getModelByKey($stateParams['key'], false, 'key')
-	            .then(function (group) {
-	            applicationGroupDetailsCtrl.applicationGroup = group;
-	        });
-	        setMode();
-	    }
-	    ApplicationGroupDetailsComponent.prototype.returnToApplicationGroup = function () {
-	        this.$state.go('contiv.menu.applicationgroups.list');
-	    };
-	    ApplicationGroupDetailsComponent.prototype.returnToApplicationGroupDetails = function () {
-	        this.$state.go('contiv.menu.applicationgroups.details', { 'key': this.applicationGroup.key });
-	    };
-	    ApplicationGroupDetailsComponent.prototype.editApplicationGroup = function () {
-	        this.$state.go('contiv.menu.applicationgroups.edit', { key: this.applicationGroup.key });
-	    };
-	    ApplicationGroupDetailsComponent.prototype.cancelEditing = function () {
-	        this.returnToApplicationGroupDetails();
-	    };
-	    ApplicationGroupDetailsComponent.prototype.deleteApplicationGroup = function () {
-	        var applicationGroupDetailsCtrl = this;
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.applicationGroupsModel.delete(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
-	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.returnToApplicationGroup();
-	        }, function errorCallback(result) {
-	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
-	        });
-	    };
-	    ApplicationGroupDetailsComponent.prototype.saveApplicationGroup = function () {
-	        var applicationGroupDetailsCtrl = this;
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.applicationGroupsModel.save(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
-	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.returnToApplicationGroupDetails();
-	        }, function errorCallback(result) {
-	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
-	        });
-	    };
-	    ApplicationGroupDetailsComponent = __decorate([
-	        core_1.Component({
-	            selector: 'applicationgroupdetails',
-	            templateUrl: 'applicationgroups/applicationgroupdetails.html'
-	        }),
-	        __param(0, core_1.Inject('$state')),
-	        __param(1, core_1.Inject('$stateParams')), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof ng1_1.StateParams !== 'undefined' && ng1_1.StateParams) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
-	    ], ApplicationGroupDetailsComponent);
-	    return ApplicationGroupDetailsComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.ApplicationGroupDetailsComponent = ApplicationGroupDetailsComponent;
-	
-
-/***/ },
-
-/***/ 293:
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Created by vjain3 on 3/11/16.
-	 */
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var __param = (this && this.__param) || function (paramIndex, decorator) {
-	    return function (target, key) { decorator(target, key, paramIndex); }
-	};
-	var core_1 = __webpack_require__(3);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(35);
-	var AppGrouplistComponent = (function () {
-	    function AppGrouplistComponent($state, appGroupModel, crudHelperService) {
-	        var _this = this;
-	        this.$state = $state;
-	        this.appGroupModel = appGroupModel;
-	        this.crudHelperService = crudHelperService;
-	        this.applicationGroupListCtrl = this;
-	        this['showLoader'] = true;
-	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
-	            _this.getApplicationGroup(true);
-	        });
-	    }
-	    AppGrouplistComponent.prototype.ngOnInit = function () {
-	        this.crudHelperService.startLoader(this);
-	        this.getApplicationGroup(false);
-	    };
-	    AppGrouplistComponent.prototype.getApplicationGroup = function (reload) {
-	        var applicationGroupListCtrl = this;
-	        this.appGroupModel.get(reload)
-	            .then(function (result) {
-	            applicationGroupListCtrl['groups'] = result;
-	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
-	        }, function (error) {
-	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
-	        });
-	    };
-	    AppGrouplistComponent.prototype.create = function () {
-	        this.$state.go('contiv.menu.applicationgroups.create');
-	    };
-	    AppGrouplistComponent.prototype.ngOnDestroy = function () {
-	        this.refresh.unsubscribe();
-	    };
-	    AppGrouplistComponent = __decorate([
-	        core_1.Component({
-	            selector: 'app-group',
-	            template: __webpack_require__(493)
-	        }),
-	        __param(0, core_1.Inject('$state')), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
-	    ], AppGrouplistComponent);
-	    return AppGrouplistComponent;
-	    var _a, _b, _c;
-	}());
-	exports.AppGrouplistComponent = AppGrouplistComponent;
-	
-
-/***/ },
-
-/***/ 294:
+/***/ 298:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68753,15 +68998,16 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/21/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(38);
-	var common_1 = __webpack_require__(28);
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
+	var router_1 = __webpack_require__(23);
 	var directives_module_1 = __webpack_require__(75);
-	var pipes_module_1 = __webpack_require__(304);
-	var applicationgroupcreatectrl_1 = __webpack_require__(291);
-	var applicationgroupdetailsctrl_1 = __webpack_require__(292);
-	var isolationpolicydirective_1 = __webpack_require__(296);
-	var bandwidthpolicydirective_1 = __webpack_require__(295);
-	var applicationgrouplistctrl_1 = __webpack_require__(293);
+	var pipes_module_1 = __webpack_require__(308);
+	var applicationgroupcreatectrl_1 = __webpack_require__(187);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(188);
+	var isolationpolicydirective_1 = __webpack_require__(300);
+	var bandwidthpolicydirective_1 = __webpack_require__(299);
+	var applicationgrouplistctrl_1 = __webpack_require__(189);
 	var ApplicationGroupsModule = (function () {
 	    function ApplicationGroupsModule() {
 	    }
@@ -68770,6 +69016,7 @@ webpackJsonp([2],{
 	            imports: [
 	                forms_1.FormsModule,
 	                common_1.CommonModule,
+	                router_1.RouterModule,
 	                directives_module_1.DirectivesModule,
 	                pipes_module_1.PipesModule
 	            ],
@@ -68781,15 +69028,16 @@ webpackJsonp([2],{
 	                applicationgrouplistctrl_1.AppGrouplistComponent
 	            ],
 	            exports: [
+	                applicationgrouplistctrl_1.AppGrouplistComponent,
 	                applicationgroupcreatectrl_1.ApplicationGroupCreateComponent,
 	                applicationgroupdetailsctrl_1.ApplicationGroupDetailsComponent,
 	                isolationpolicydirective_1.IsolationPolicySelectionComponent,
 	                bandwidthpolicydirective_1.BandwidthPolicySelectionComponent,
 	                forms_1.FormsModule,
 	                common_1.CommonModule,
+	                router_1.RouterModule,
 	                directives_module_1.DirectivesModule,
-	                pipes_module_1.PipesModule,
-	                applicationgrouplistctrl_1.AppGrouplistComponent
+	                pipes_module_1.PipesModule
 	            ]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -68801,7 +69049,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 295:
+/***/ 299:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68818,7 +69066,7 @@ webpackJsonp([2],{
 	 * Created by hardik gandhi on 6/28/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	var netprofilesmodel_1 = __webpack_require__(84);
 	/*
 	angular.module("contiv.applicationgroups")
@@ -68932,7 +69180,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 296:
+/***/ 300:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68949,7 +69197,7 @@ webpackJsonp([2],{
 	 * Created by hardik gandhi on 7/8/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	var policiesmodel_1 = __webpack_require__(76);
 	var rulesmodel_1 = __webpack_require__(139);
 	var IsolationPolicySelectionComponent = (function () {
@@ -69068,7 +69316,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 297:
+/***/ 301:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69110,7 +69358,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 298:
+/***/ 302:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69154,7 +69402,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 299:
+/***/ 303:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69203,7 +69451,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 300:
+/***/ 304:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69220,7 +69468,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	var CtvNamevalueComponent = (function () {
 	    function CtvNamevalueComponent() {
 	        this.itemsChange = new core_1.EventEmitter();
@@ -69290,7 +69538,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 301:
+/***/ 305:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69308,7 +69556,7 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var util_1 = __webpack_require__(81);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	var CtvTableComponent = (function () {
 	    function CtvTableComponent() {
 	        this.filteredinputitems = new core_1.EventEmitter();
@@ -69582,12 +69830,12 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 302:
+/***/ 306:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	__webpack_require__(115);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	/**
 	 * BaseCollection class that does just fetch of the objects.
 	 * @param $http
@@ -69687,7 +69935,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 303:
+/***/ 307:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69738,7 +69986,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 304:
+/***/ 308:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69755,9 +70003,9 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/21/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(38);
-	var common_1 = __webpack_require__(28);
-	var filterpipe_1 = __webpack_require__(303);
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
+	var filterpipe_1 = __webpack_require__(307);
 	var PipesModule = (function () {
 	    function PipesModule() {
 	    }
@@ -69786,7 +70034,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 305:
+/***/ 309:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69800,67 +70048,43 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	/**
-	 * Created by vjain3 on 3/11/16.
+	 * Created by vjain3 on 11/3/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var Observable_1 = __webpack_require__(1);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var policiesmodel_1 = __webpack_require__(76);
-	var networksmodel_1 = __webpack_require__(48);
-	var DashboardComponent = (function () {
-	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, ngZone) {
-	        this.networksModel = networksModel;
-	        this.applicationGroupsModel = applicationGroupsModel;
-	        this.policiesModel = policiesModel;
-	        this.ngZone = ngZone;
-	        this.nodes = 0;
-	        this.networks = 0;
-	        this.volumes = 0;
-	        this.groups = 0;
-	        this.networkpolicies = 0;
-	        this.storagepolicies = 0;
-	        var dashboardComponent = this;
-	        function getDashboardInfo(reload) {
-	            ngZone.run(function () {
-	                networksModel.get(reload)
-	                    .then(function (result) {
-	                    dashboardComponent.networks = result.length;
-	                });
-	                applicationGroupsModel.get(reload)
-	                    .then(function (result) {
-	                    dashboardComponent.groups = result.length;
-	                });
-	                policiesModel.get(reload)
-	                    .then(function (result) {
-	                    dashboardComponent.networkpolicies = result.length;
-	                });
-	            });
-	        }
-	        //Load from cache for quick display initially
-	        getDashboardInfo(false);
-	        this.subscription = Observable_1.Observable.interval(5000).subscribe(function () {
-	            getDashboardInfo(true);
-	        });
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
+	var router_1 = __webpack_require__(23);
+	var dashboardctrl_1 = __webpack_require__(192);
+	var DashboardModule = (function () {
+	    function DashboardModule() {
 	    }
-	    DashboardComponent.prototype.ngOnDestroy = function () {
-	        this.subscription.unsubscribe();
-	    };
-	    DashboardComponent = __decorate([
-	        core_1.Component({
-	            selector: 'dashboard',
-	            templateUrl: 'dashboard/dashboard.html'
+	    DashboardModule = __decorate([
+	        core_1.NgModule({
+	            imports: [
+	                forms_1.FormsModule,
+	                common_1.CommonModule,
+	                router_1.RouterModule
+	            ],
+	            declarations: [
+	                dashboardctrl_1.DashboardComponent
+	            ],
+	            exports: [
+	                dashboardctrl_1.DashboardComponent,
+	                forms_1.FormsModule,
+	                common_1.CommonModule,
+	                router_1.RouterModule
+	            ]
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
-	    ], DashboardComponent);
-	    return DashboardComponent;
-	    var _a, _b, _c, _d;
+	        __metadata('design:paramtypes', [])
+	    ], DashboardModule);
+	    return DashboardModule;
 	}());
-	exports.DashboardComponent = DashboardComponent;
+	exports.DashboardModule = DashboardModule;
 	
 
 /***/ },
 
-/***/ 306:
+/***/ 310:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69901,7 +70125,7 @@ webpackJsonp([2],{
 	        core_1.Component({
 	            selector: 'login',
 	            templateUrl: 'login/login.html',
-	            styles: [__webpack_require__(763)],
+	            styles: [__webpack_require__(765)],
 	            encapsulation: core_1.ViewEncapsulation.None
 	        }),
 	        __param(0, core_1.Inject('$state')), 
@@ -69915,7 +70139,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 307:
+/***/ 311:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69932,11 +70156,10 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 11/1/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(38);
-	var common_1 = __webpack_require__(28);
-	var router_1 = __webpack_require__(39);
-	var menuCtrl_1 = __webpack_require__(189);
-	//import menuRoutes from "./menu.routes.ts";
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
+	var router_1 = __webpack_require__(23);
+	var menuCtrl_1 = __webpack_require__(193);
 	var MenuModule = (function () {
 	    function MenuModule() {
 	    }
@@ -69966,7 +70189,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 308:
+/***/ 312:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70033,7 +70256,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 309:
+/***/ 313:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70100,7 +70323,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 310:
+/***/ 314:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70117,18 +70340,17 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/14/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(38);
-	var common_1 = __webpack_require__(28);
-	var router_1 = __webpack_require__(39);
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
+	var router_1 = __webpack_require__(23);
 	var directives_module_1 = __webpack_require__(75);
 	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var isolationpolicycreatectrl_1 = __webpack_require__(192);
-	var isolationpolicydetailsctrl_1 = __webpack_require__(193);
-	var bandwidthpolicycreatectrl_1 = __webpack_require__(190);
-	var bandwidthpolicydetailsctrl_1 = __webpack_require__(191);
-	var isolationpolicylistctrl_1 = __webpack_require__(309);
-	var bandwidthpolicylistctrl_1 = __webpack_require__(308);
-	//import networkPoliciesRoutes from "./networkpolicies.routes.ts";
+	var isolationpolicycreatectrl_1 = __webpack_require__(196);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(197);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(194);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(195);
+	var isolationpolicylistctrl_1 = __webpack_require__(313);
+	var bandwidthpolicylistctrl_1 = __webpack_require__(312);
 	var NetworkPoliciesModule = (function () {
 	    function NetworkPoliciesModule() {
 	    }
@@ -70138,7 +70360,7 @@ webpackJsonp([2],{
 	                forms_1.FormsModule,
 	                common_1.CommonModule,
 	                router_1.RouterModule,
-	                directives_module_1.DirectivesModule,
+	                directives_module_1.DirectivesModule
 	            ],
 	            declarations: [
 	                networkpoliciestabsctrl_1.NetworkPoliciesTabsComponent,
@@ -70173,7 +70395,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 311:
+/***/ 315:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70190,14 +70412,14 @@ webpackJsonp([2],{
 	 * Created by cshampur on 10/18/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(38);
-	var common_1 = __webpack_require__(28);
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
 	var directives_module_1 = __webpack_require__(75);
-	var networklistctrl_1 = __webpack_require__(315);
-	var networkstatsctrl_1 = __webpack_require__(316);
-	var networkdetailsctrl_1 = __webpack_require__(313);
-	var networkinfoctrl_1 = __webpack_require__(314);
-	var networkcreatectrl_1 = __webpack_require__(312);
+	var networklistctrl_1 = __webpack_require__(319);
+	var networkstatsctrl_1 = __webpack_require__(320);
+	var networkdetailsctrl_1 = __webpack_require__(317);
+	var networkinfoctrl_1 = __webpack_require__(318);
+	var networkcreatectrl_1 = __webpack_require__(316);
 	var NetworkModule = (function () {
 	    function NetworkModule() {
 	    }
@@ -70232,7 +70454,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 312:
+/***/ 316:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70254,7 +70476,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var networksmodel_1 = __webpack_require__(48);
 	var crudhelperservice_1 = __webpack_require__(12);
-	var ng1_1 = __webpack_require__(35);
+	var ng1_1 = __webpack_require__(54);
 	var NetworkCreateComponent = (function () {
 	    function NetworkCreateComponent($state, networksModel, crudHelperService) {
 	        this.$state = $state;
@@ -70306,7 +70528,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 313:
+/***/ 317:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70328,11 +70550,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(35);
+	var ng1_1 = __webpack_require__(54);
 	var applicationgroupsmodel_1 = __webpack_require__(65);
 	var networksmodel_1 = __webpack_require__(48);
 	var util_1 = __webpack_require__(81);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	var NetworkdetailsComponent = (function () {
 	    function NetworkdetailsComponent($state, applicationGroupsModel, networksModel, crudHelperService) {
 	        var _this = this;
@@ -70415,7 +70637,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 314:
+/***/ 318:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70457,7 +70679,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 315:
+/***/ 319:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70480,7 +70702,7 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(48);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(35);
+	var ng1_1 = __webpack_require__(54);
 	var NetworkListComponent = (function () {
 	    function NetworkListComponent($state, networksModel, crudHelperService) {
 	        var _this = this;
@@ -70516,7 +70738,7 @@ webpackJsonp([2],{
 	    NetworkListComponent = __decorate([
 	        core_1.Component({
 	            selector: 'networkList',
-	            template: __webpack_require__(494)
+	            template: __webpack_require__(496)
 	        }),
 	        __param(0, core_1.Inject('$state')), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
@@ -70529,7 +70751,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 316:
+/***/ 320:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70628,7 +70850,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 317:
+/***/ 321:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70645,12 +70867,12 @@ webpackJsonp([2],{
 	 * Created by cshampur on 10/18/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(38);
-	var common_1 = __webpack_require__(28);
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
 	var directives_module_1 = __webpack_require__(75);
-	var organizationlistctrl_1 = __webpack_require__(320);
-	var organizationcreatectrl_1 = __webpack_require__(318);
-	var organizationdetailsctrl_1 = __webpack_require__(319);
+	var organizationlistctrl_1 = __webpack_require__(324);
+	var organizationcreatectrl_1 = __webpack_require__(322);
+	var organizationdetailsctrl_1 = __webpack_require__(323);
 	var OrganizationModule = (function () {
 	    function OrganizationModule() {
 	    }
@@ -70681,7 +70903,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 318:
+/***/ 322:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70755,7 +70977,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 319:
+/***/ 323:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70834,7 +71056,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 320:
+/***/ 324:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70856,7 +71078,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(35);
+	var ng1_1 = __webpack_require__(54);
 	var organizationsmodel_1 = __webpack_require__(102);
 	var OrganizationListComponent = (function () {
 	    function OrganizationListComponent($state, organizationsModel, crudHelperService, ngZone) {
@@ -70911,7 +71133,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 321:
+/***/ 325:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70928,15 +71150,15 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(38);
-	var common_1 = __webpack_require__(28);
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
 	var directives_module_1 = __webpack_require__(75);
-	var servicelblistctrl_1 = __webpack_require__(324);
-	var servicelbstatsctrl_1 = __webpack_require__(195);
-	var servicelbportsdirective_1 = __webpack_require__(325);
-	var servicelbcreatectrl_1 = __webpack_require__(322);
-	var servicelbinfoctrl_1 = __webpack_require__(194);
-	var servicelbdetailsctrl_1 = __webpack_require__(323);
+	var servicelblistctrl_1 = __webpack_require__(328);
+	var servicelbstatsctrl_1 = __webpack_require__(199);
+	var servicelbportsdirective_1 = __webpack_require__(329);
+	var servicelbcreatectrl_1 = __webpack_require__(326);
+	var servicelbinfoctrl_1 = __webpack_require__(198);
+	var servicelbdetailsctrl_1 = __webpack_require__(327);
 	var ServicelbModule = (function () {
 	    function ServicelbModule() {
 	    }
@@ -70973,7 +71195,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 322:
+/***/ 326:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70994,10 +71216,10 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(12);
-	var ng1_1 = __webpack_require__(35);
+	var ng1_1 = __webpack_require__(54);
 	var servicelbsmodel_1 = __webpack_require__(85);
 	var networksmodel_1 = __webpack_require__(48);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	var ServicelbCreateComponent = (function () {
 	    function ServicelbCreateComponent($state, servicelbsModel, crudHelperService, networksModel) {
 	        this.$state = $state;
@@ -71071,7 +71293,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 323:
+/***/ 327:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -71091,10 +71313,10 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
-	var ng1_1 = __webpack_require__(35);
-	var servicelbinfoctrl_1 = __webpack_require__(194);
-	var servicelbstatsctrl_1 = __webpack_require__(195);
-	var _ = __webpack_require__(34);
+	var ng1_1 = __webpack_require__(54);
+	var servicelbinfoctrl_1 = __webpack_require__(198);
+	var servicelbstatsctrl_1 = __webpack_require__(199);
+	var _ = __webpack_require__(35);
 	var ServicelbDetailsComponent = (function () {
 	    function ServicelbDetailsComponent($state) {
 	        this.$state = $state;
@@ -71143,7 +71365,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 324:
+/***/ 328:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -71165,7 +71387,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(35);
+	var ng1_1 = __webpack_require__(54);
 	var servicelbsmodel_1 = __webpack_require__(85);
 	var ServicelbListComponent = (function () {
 	    function ServicelbListComponent($state, servicelbsModel, crudHelperService, ngZone) {
@@ -71220,7 +71442,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 325:
+/***/ 329:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -71237,7 +71459,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var _ = __webpack_require__(34);
+	var _ = __webpack_require__(35);
 	var ServicelbPortsComponent = (function () {
 	    function ServicelbPortsComponent() {
 	        this.itemsChange = new core_1.EventEmitter();
@@ -71288,143 +71510,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 326:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var nodesservice_1 = __webpack_require__(188);
-	var ClusterSettingsComponent = (function () {
-	    function ClusterSettingsComponent(crudHelperService, nodesService) {
-	        this.nodesService = nodesService;
-	        this.crudHelperService = crudHelperService;
-	        this.showLoader = true;
-	        this.extra_vars = { control_interface: '', netplugin_if: '', service_vip: '', scheduler_provider: '', ucp_bootstrap_node_name: '', cluster_name: '',
-	            contiv_network_mode: '', fwd_mode: '', apic_url: '', apic_username: '', apic_password: '', apic_leaf_nodes: '', apic_phys_domain: '',
-	            apic_epg_bridge_domain: '', apic_contracts_unrestricted_mode: '' };
-	        this.ansibleVariables = [];
-	        this.envVariables = [];
-	        this.showServerError = false;
-	        this.serverErrorMessage = '';
-	        this.nodeOpsObj = { nodes: [] };
-	        this.clusterSettingCtrl = this;
-	    }
-	    ClusterSettingsComponent.prototype.ngOnInit = function () {
-	        this.crudHelperService.startLoader(this);
-	        var clusterSettingCtrl = this;
-	        this.nodesService.getSettings(clusterSettingCtrl)
-	            .then(function (result) {
-	            clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
-	            clusterSettingCtrl.crudHelperService.hideServerError(clusterSettingCtrl);
-	        }, function (error) {
-	            clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
-	            clusterSettingCtrl.crudHelperService.hideServerError(clusterSettingCtrl);
-	        });
-	    };
-	    ClusterSettingsComponent.prototype.updateClusterSettings = function (formvalid) {
-	        var clusterSettingCtrl = this;
-	        if (formvalid) {
-	            this.crudHelperService.hideServerError(this);
-	            this.crudHelperService.startLoader(this);
-	            this.nodesService.cleanupExtraVars(this);
-	            this.nodesService.createExtraVars(this);
-	            this.nodesService.updateSettings(this.nodeOpsObj)
-	                .then(function (result) {
-	                clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
-	            }, function (error) {
-	                clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
-	                clusterSettingCtrl.crudHelperService.showServerError(clusterSettingCtrl, error);
-	            });
-	        }
-	    };
-	    ClusterSettingsComponent = __decorate([
-	        core_1.Component({
-	            selector: 'clustersettings',
-	            templateUrl: 'settings/clustersettings.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof nodesservice_1.NodesService !== 'undefined' && nodesservice_1.NodesService) === 'function' && _b) || Object])
-	    ], ClusterSettingsComponent);
-	    return ClusterSettingsComponent;
-	    var _a, _b;
-	}());
-	exports.ClusterSettingsComponent = ClusterSettingsComponent;
-	
-
-/***/ },
-
-/***/ 327:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var networkservice_1 = __webpack_require__(187);
-	var NetworkSettingsComponent = (function () {
-	    function NetworkSettingsComponent(crudHelperService, networkService) {
-	        this.crudHelperService = crudHelperService;
-	        this.networkService = networkService;
-	        this.setting = {};
-	        this.vlanPattern = ContivGlobals.VLAN_REGEX;
-	        this.vxlanPattern = ContivGlobals.VXLAN_REGEX;
-	        var networkSettingCtrl = this;
-	        function getNetworkSettings() {
-	            networkSettingCtrl.networkService.getSettings().then(function successCallback(result) {
-	                networkSettingCtrl.setting = result;
-	            }, function errorCallback(result) {
-	            });
-	        }
-	        getNetworkSettings();
-	        networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
-	    }
-	    NetworkSettingsComponent.prototype.updateNetworkSettings = function (validform) {
-	        var networkSettingCtrl = this;
-	        if (validform) {
-	            networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
-	            networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
-	            networkSettingCtrl.networkService.updateSettings(networkSettingCtrl.setting).then(function successCallback(result) {
-	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	            }, function errorCallback(result) {
-	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	                networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, result._body);
-	            });
-	        }
-	    };
-	    NetworkSettingsComponent = __decorate([
-	        core_1.Component({
-	            selector: 'networksetting',
-	            templateUrl: 'settings/networksettings.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof networkservice_1.NetworkService !== 'undefined' && networkservice_1.NetworkService) === 'function' && _b) || Object])
-	    ], NetworkSettingsComponent);
-	    return NetworkSettingsComponent;
-	    var _a, _b;
-	}());
-	exports.NetworkSettingsComponent = NetworkSettingsComponent;
-	
-
-/***/ },
-
-/***/ 328:
+/***/ 330:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -71441,11 +71527,13 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/25/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(38);
-	var common_1 = __webpack_require__(28);
+	var forms_1 = __webpack_require__(36);
+	var common_1 = __webpack_require__(27);
+	var router_1 = __webpack_require__(23);
 	var directives_module_1 = __webpack_require__(75);
-	var networksettingctrl_1 = __webpack_require__(327);
-	var clustersettingctrl_1 = __webpack_require__(326);
+	var networksettingctrl_1 = __webpack_require__(201);
+	var clustersettingctrl_1 = __webpack_require__(200);
+	var settingsmenu_component_1 = __webpack_require__(202);
 	var SettingsModule = (function () {
 	    function SettingsModule() {
 	    }
@@ -71454,17 +71542,21 @@ webpackJsonp([2],{
 	            imports: [
 	                forms_1.FormsModule,
 	                common_1.CommonModule,
+	                router_1.RouterModule,
 	                directives_module_1.DirectivesModule
 	            ],
 	            declarations: [
+	                settingsmenu_component_1.SettingsMenuComponent,
 	                networksettingctrl_1.NetworkSettingsComponent,
 	                clustersettingctrl_1.ClusterSettingsComponent
 	            ],
 	            exports: [
+	                settingsmenu_component_1.SettingsMenuComponent,
 	                networksettingctrl_1.NetworkSettingsComponent,
 	                clustersettingctrl_1.ClusterSettingsComponent,
 	                forms_1.FormsModule,
 	                common_1.CommonModule,
+	                router_1.RouterModule,
 	                directives_module_1.DirectivesModule
 	            ]
 	        }), 
@@ -71477,22 +71569,22 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 489:
+/***/ 491:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(490)();
+	exports = module.exports = __webpack_require__(492)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body{\n    /* This image will be displayed fullscreen */\n    background: url(" + __webpack_require__(491) + ") no-repeat center center;\n\n    /* Workaround for some mobile browsers */\n    min-height: 100%;\n\n    background-size: cover;\n}\n\n.copyright {\n    max-width: 450px;\n}\n\n.login-seg {\n    margin-top: 600px;\n}", ""]);
+	exports.push([module.id, "body{\n    /* This image will be displayed fullscreen */\n    background: url(" + __webpack_require__(493) + ") no-repeat center center;\n\n    /* Workaround for some mobile browsers */\n    min-height: 100%;\n\n    background-size: cover;\n}\n\n.copyright {\n    max-width: 450px;\n}\n\n.login-seg {\n    margin-top: 600px;\n}", ""]);
 
 	// exports
 
 
 /***/ },
 
-/***/ 490:
+/***/ 492:
 /***/ function(module, exports) {
 
 	/*
@@ -71549,32 +71641,32 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 491:
+/***/ 493:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "assets/loginbackground.c98641bacd18c5b681536932dc001214.jpeg";
 
 /***/ },
 
-/***/ 493:
+/***/ 495:
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned twelve wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Application Groups</div>\n    </div>\n\n    <div class=\"center aligned four wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Application Group\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n    <div class=\"ui active inverted dimmer\" *ngIf=\"applicationGroupListCtrl.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n    <ctv-table #tableRef [defaultSortColumn]=\"'groupName'\"\n               [items]=\"applicationGroupListCtrl['groups']\"\n               (filtereditems)=\"applicationGroupListCtrl['filteredgroups']=$event;\"\n               [size]=\"12\">\n        <thead>\n            <tr>\n                <th><ctv-th [sortfield]=\"'groupName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Network</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'policies'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Policies</ctv-th></th>\n                <th class=\"right floated three wide column\">\n                    <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search application groups...'\"></ctv-search>\n                </th>\n            </tr>\n        </thead>\n\n        <tbody>\n            <tr *ngFor=\"let group of applicationGroupListCtrl['filteredgroups']\">\n                <td><a href=\"/#/m/applicationgroups/details/{{group.key}}\">{{group.groupName}}</a></td>\n                <td>{{group.networkName}}</td>\n                <td>{{group.policies.join(\", \")}}</td>\n                <td></td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n            <tr>\n                <td colspan=\"4\">\n                    <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                     (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                     (prevChunk)=\"tableRef.showPrevChunk()\"\n                                     (nextChunk)=\"tableRef.showNextChunk()\">\n\n                    </ctv-tpagination>\n                </td>\n            </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
+	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned twelve wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Application Groups</div>\n    </div>\n\n    <div class=\"center aligned four wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Application Group\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n    <div class=\"ui active inverted dimmer\" *ngIf=\"applicationGroupListCtrl.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n    <ctv-table #tableRef [defaultSortColumn]=\"'groupName'\"\n               [items]=\"applicationGroupListCtrl['groups']\"\n               (filtereditems)=\"applicationGroupListCtrl['filteredgroups']=$event;\"\n               [size]=\"12\">\n        <thead>\n            <tr>\n                <th><ctv-th [sortfield]=\"'groupName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Network</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'policies'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Policies</ctv-th></th>\n                <th class=\"right floated three wide column\">\n                    <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search application groups...'\"></ctv-search>\n                </th>\n            </tr>\n        </thead>\n\n        <tbody>\n            <tr *ngFor=\"let group of applicationGroupListCtrl['filteredgroups']\">\n                <td><a [routerLink]=\"['../details', group.key]\">{{group.groupName}}</a></td>\n                <td>{{group.networkName}}</td>\n                <td>{{group.policies.join(\", \")}}</td>\n                <td></td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n            <tr>\n                <td colspan=\"4\">\n                    <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                     (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                     (prevChunk)=\"tableRef.showPrevChunk()\"\n                                     (nextChunk)=\"tableRef.showNextChunk()\">\n\n                    </ctv-tpagination>\n                </td>\n            </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 
-/***/ 494:
+/***/ 496:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned thirteen wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <div class=\"center aligned three wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n            <th class=\"right floated three wide column\">\n                <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search networks...'\"></ctv-search>\n            </th>\n        </tr>\n        </thead>\n\n        <tbody>\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a href=\"/#/m/networks/details/{{network.key}}\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n            <td></td>\n        </tr>\n        </tbody>\n        <tfoot>\n        <tr>\n            <td colspan=\"5\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 
-/***/ 763:
+/***/ 765:
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	        var result = __webpack_require__(489);
+	        var result = __webpack_require__(491);
 
 	        if (typeof result === "string") {
 	            module.exports = result;
@@ -71585,7 +71677,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 764:
+/***/ 766:
 /***/ function(module, exports) {
 
 	if (typeof Object.create === 'function') {
@@ -71615,7 +71707,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 765:
+/***/ 767:
 /***/ function(module, exports) {
 
 	module.exports = function isBuffer(arg) {
@@ -71627,7 +71719,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 766:
+/***/ 768:
 /***/ function(module, exports) {
 
 	module.exports = function(module) {

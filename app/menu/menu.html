@@ -4,17 +4,14 @@
     }
 </style>
 <div id="sidebar" class="ui visible left vertical sidebar icon labeled menu">
-    <!--
-    <a class="white item" ui-sref="contiv.menu.dashboard()" ui-sref-active="{'active':'contiv.menu.dashboard'}">
+    <a class="white item" [routerLink]="['dashboard']" routerLinkActive="active">
         <i class="dashboard icon"></i>
         Dashboard
     </a>
-    <a class="white item" ui-sref="contiv.menu.applicationgroups.list()" ui-sref-active="{'active':'contiv.menu.applicationgroups'}">
+    <a class="white item" [routerLink]="['applicationgroups/list']" routerLinkActive="active">
         <i class="appgroup icon"></i>
         Application Groups
     </a>
-    -->
-    <!--<a class="white item" routerLink="/m/networkpolicies/list" ui-sref="contiv.menu.networkpolicies.list()" ui-sref-active="{'active':'contiv.menu.networkpolicies'}">-->
     <a class="white item" [routerLink]="['networkpolicies/list']" routerLinkActive="active">
         <i class="networkpolicies icon"></i>
         Network Policies
@@ -32,11 +29,12 @@
         <i class="organizations icon"></i> 
         Organizations
     </a>
-    <a class="white item" ui-sref="contiv.menu.settings.details.cluster()" ui-sref-active="{'active':'contiv.menu.settings'}">
+    -->
+    <a class="white item" [routerLink]="['settings']" routerLinkActive="active">
         <i class="global_settings icon"></i> 
         Settings
     </a>
-    -->
+
     <!-- <a class="white item" ui-sref="contiv.menu.visualization.list()" ui-sref-active="{'active':'contiv.menu.visualization'}">
         <i class="loadbalancer icon"></i>
         App Connectivity Graph
@@ -72,7 +70,7 @@
     </div>
 
     <!--<div ui-view style="margin-left:180px;margin-top:30px"></div>-->
-    <div style="margin-left:180px;margin-top:30px">
+    <div class="ui container" style="margin-left:180px;margin-top:30px">
         <router-outlet></router-outlet>
     </div>
 </div>
