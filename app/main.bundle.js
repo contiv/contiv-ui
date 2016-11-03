@@ -8,7 +8,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/6/16.
 	 */
 	var platform_browser_dynamic_1 = __webpack_require__(123);
-	var app_module_1 = __webpack_require__(296);
+	var app_module_1 = __webpack_require__(299);
 	/*
 	import { upgradeAdapter } from "./upgradeadapter";
 	import { NetworksModel } from "./components/models/networksmodel";
@@ -139,8 +139,8 @@ webpackJsonp([2],{
 	 */ /** for typedoc */
 	"use strict";
 	var predicates_1 = __webpack_require__(9);
-	var hof_1 = __webpack_require__(16);
-	var coreservices_1 = __webpack_require__(19);
+	var hof_1 = __webpack_require__(17);
+	var coreservices_1 = __webpack_require__(20);
 	var w = typeof window === 'undefined' ? {} : window;
 	var angular = w.angular || {};
 	exports.fromJson = angular.fromJson || JSON.parse.bind(JSON);
@@ -665,7 +665,7 @@ webpackJsonp([2],{
 
 	"use strict";
 	/** Predicates @module common_predicates */ /** */
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var toStr = Object.prototype.toString;
 	var tis = function (t) { return function (x) { return typeof (x) === t; }; };
 	exports.isUndefined = tis('undefined');
@@ -746,7 +746,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports) {
 
 	/**
@@ -992,7 +992,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 19:
+/***/ 20:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -18102,7 +18102,7 @@ webpackJsonp([2],{
 	var predicates_1 = __webpack_require__(9);
 	var rejectFactory_1 = __webpack_require__(83);
 	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var transition_1 = __webpack_require__(132);
 	var resolvable_1 = __webpack_require__(63);
 	/**
@@ -18243,7 +18243,7 @@ webpackJsonp([2],{
 	 *
 	 * @module trace
 	 */ /** for typedoc */
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var predicates_1 = __webpack_require__(9);
 	var strings_1 = __webpack_require__(40);
 	/** @hidden */
@@ -18462,10 +18462,10 @@ webpackJsonp([2],{
 	"use strict";
 	/** @module resolve */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var trace_1 = __webpack_require__(46);
-	var coreservices_1 = __webpack_require__(19);
-	var interface_1 = __webpack_require__(179);
+	var coreservices_1 = __webpack_require__(20);
+	var interface_1 = __webpack_require__(178);
 	var resolvable_1 = __webpack_require__(63);
 	var pathFactory_1 = __webpack_require__(101);
 	var strings_1 = __webpack_require__(40);
@@ -18704,38 +18704,12 @@ webpackJsonp([2],{
 /***/ 54:
 /***/ function(module, exports, __webpack_require__) {
 
-	/**
-	 * Main entry point for angular 1.x build
-	 * @module ng1
-	 */
-	/** for typedoc */
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	__export(__webpack_require__(274));
-	__export(__webpack_require__(125));
-	__export(__webpack_require__(126));
-	__export(__webpack_require__(175));
-	__webpack_require__(281);
-	__webpack_require__(284);
-	__webpack_require__(282);
-	__webpack_require__(286);
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = "ui.router";
-	//# sourceMappingURL=ng1.js.map
-
-/***/ },
-
-/***/ 55:
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 	/** @module params */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var predicates_1 = __webpack_require__(9);
-	var coreservices_1 = __webpack_require__(19);
+	var coreservices_1 = __webpack_require__(20);
 	var urlMatcherConfig_1 = __webpack_require__(135);
 	var type_1 = __webpack_require__(127);
 	var hasOwn = Object.prototype.hasOwnProperty;
@@ -18910,13 +18884,39 @@ webpackJsonp([2],{
 
 /***/ },
 
+/***/ 62:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Main entry point for angular 1.x build
+	 * @module ng1
+	 */
+	/** for typedoc */
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	__export(__webpack_require__(276));
+	__export(__webpack_require__(125));
+	__export(__webpack_require__(126));
+	__export(__webpack_require__(174));
+	__webpack_require__(283);
+	__webpack_require__(286);
+	__webpack_require__(284);
+	__webpack_require__(288);
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = "ui.router";
+	//# sourceMappingURL=ng1.js.map
+
+/***/ },
+
 /***/ 63:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/** @module resolve */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
-	var coreservices_1 = __webpack_require__(19);
+	var coreservices_1 = __webpack_require__(20);
 	var trace_1 = __webpack_require__(46);
 	var strings_1 = __webpack_require__(40);
 	var predicates_1 = __webpack_require__(9);
@@ -19048,7 +19048,7 @@ webpackJsonp([2],{
 /***/ 64:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(294);
+	__webpack_require__(297);
 	module.exports = angular;
 
 
@@ -19128,7 +19128,7 @@ webpackJsonp([2],{
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var basecollection_1 = __webpack_require__(306);
+	var basecollection_1 = __webpack_require__(309);
 	var _ = __webpack_require__(35);
 	var Collection = (function (_super) {
 	    __extends(Collection, _super);
@@ -19364,12 +19364,12 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var common_1 = __webpack_require__(27);
-	var errormessagedirective_1 = __webpack_require__(303);
-	var tabledirective_1 = __webpack_require__(305);
+	var errormessagedirective_1 = __webpack_require__(306);
+	var tabledirective_1 = __webpack_require__(308);
 	var forms_1 = __webpack_require__(36);
-	var accordiondirective_1 = __webpack_require__(301);
-	var collapsibledirective_1 = __webpack_require__(302);
-	var namevaluedirective_1 = __webpack_require__(304);
+	var accordiondirective_1 = __webpack_require__(304);
+	var collapsibledirective_1 = __webpack_require__(305);
+	var namevaluedirective_1 = __webpack_require__(307);
 	var DirectivesModule = (function () {
 	    function DirectivesModule() {
 	    }
@@ -19472,7 +19472,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 3/9/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
+	var router_1 = __webpack_require__(16);
 	(function (PolicyTab) {
 	    PolicyTab[PolicyTab["isolation"] = 0] = "isolation";
 	    PolicyTab[PolicyTab["bandwidth"] = 1] = "bandwidth";
@@ -20116,7 +20116,7 @@ webpackJsonp([2],{
 	  return Object.prototype.hasOwnProperty.call(obj, prop);
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(238)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(240)))
 
 /***/ },
 
@@ -20126,8 +20126,8 @@ webpackJsonp([2],{
 	"use strict";
 	/** @module path */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
-	var param_1 = __webpack_require__(55);
+	var hof_1 = __webpack_require__(17);
+	var param_1 = __webpack_require__(54);
 	/**
 	 * A node in a [[TreeChanges]] path
 	 *
@@ -20476,7 +20476,7 @@ webpackJsonp([2],{
 	/** @module path */ /** for typedoc */
 	"use strict";
 	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var targetState_1 = __webpack_require__(74);
 	var node_1 = __webpack_require__(82);
 	/**
@@ -20709,16 +20709,16 @@ webpackJsonp([2],{
 	"use strict";
 	/** for typedoc */
 	var router_1 = __webpack_require__(128);
-	var coreservices_1 = __webpack_require__(19);
+	var coreservices_1 = __webpack_require__(20);
 	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var predicates_1 = __webpack_require__(9);
-	var resolveService_1 = __webpack_require__(283);
+	var resolveService_1 = __webpack_require__(285);
 	var trace_1 = __webpack_require__(46);
 	var views_1 = __webpack_require__(126);
-	var templateFactory_1 = __webpack_require__(176);
-	var stateProvider_1 = __webpack_require__(175);
-	var onEnterExitRetain_1 = __webpack_require__(285);
+	var templateFactory_1 = __webpack_require__(175);
+	var stateProvider_1 = __webpack_require__(174);
+	var onEnterExitRetain_1 = __webpack_require__(287);
 	var angular = __webpack_require__(64);
 	/** @hidden */
 	var app = angular.module("ui.router.angular1", []);
@@ -21057,9 +21057,9 @@ webpackJsonp([2],{
 	var strings_1 = __webpack_require__(40);
 	var view_1 = __webpack_require__(137);
 	var predicates_1 = __webpack_require__(9);
-	var coreservices_1 = __webpack_require__(19);
+	var coreservices_1 = __webpack_require__(20);
 	var trace_1 = __webpack_require__(46);
-	var templateFactory_1 = __webpack_require__(176);
+	var templateFactory_1 = __webpack_require__(175);
 	var resolveContext_1 = __webpack_require__(47);
 	var resolvable_1 = __webpack_require__(63);
 	var angular = __webpack_require__(64);
@@ -21339,14 +21339,14 @@ webpackJsonp([2],{
 
 	"use strict";
 	/** @module core */ /** */
-	var urlMatcherFactory_1 = __webpack_require__(186);
+	var urlMatcherFactory_1 = __webpack_require__(185);
 	var urlRouter_1 = __webpack_require__(136);
 	var urlRouter_2 = __webpack_require__(136);
 	var transitionService_1 = __webpack_require__(134);
 	var view_1 = __webpack_require__(137);
-	var stateRegistry_1 = __webpack_require__(182);
-	var stateService_1 = __webpack_require__(183);
-	var globals_1 = __webpack_require__(174);
+	var stateRegistry_1 = __webpack_require__(181);
+	var stateService_1 = __webpack_require__(182);
+	var globals_1 = __webpack_require__(173);
 	/**
 	 * The master class used to instantiate an instance of UI-Router.
 	 *
@@ -21385,10 +21385,10 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
 	var strings_1 = __webpack_require__(40);
-	var hof_1 = __webpack_require__(16);
-	var param_1 = __webpack_require__(55);
+	var hof_1 = __webpack_require__(17);
+	var param_1 = __webpack_require__(54);
 	var resolvable_1 = __webpack_require__(63);
-	var coreservices_1 = __webpack_require__(19);
+	var coreservices_1 = __webpack_require__(20);
 	var parseUrl = function (url) {
 	    if (!predicates_1.isString(url))
 	        return false;
@@ -21659,7 +21659,7 @@ webpackJsonp([2],{
 	/** @module state */ /** for typedoc */
 	"use strict";
 	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	/**
 	 * @ngdoc object
 	 * @name ui.router.state.type:State
@@ -21889,17 +21889,17 @@ webpackJsonp([2],{
 	/** @module transition */ /** for typedoc */
 	var strings_1 = __webpack_require__(40);
 	var trace_1 = __webpack_require__(46);
-	var coreservices_1 = __webpack_require__(19);
+	var coreservices_1 = __webpack_require__(20);
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var transitionHook_1 = __webpack_require__(133);
 	var hookRegistry_1 = __webpack_require__(131);
-	var hookBuilder_1 = __webpack_require__(184);
+	var hookBuilder_1 = __webpack_require__(183);
 	var node_1 = __webpack_require__(82);
 	var pathFactory_1 = __webpack_require__(101);
 	var targetState_1 = __webpack_require__(74);
-	var param_1 = __webpack_require__(55);
+	var param_1 = __webpack_require__(54);
 	var resolvable_1 = __webpack_require__(63);
 	var rejectFactory_1 = __webpack_require__(83);
 	var resolveContext_1 = __webpack_require__(47);
@@ -22396,9 +22396,9 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(5);
 	var strings_1 = __webpack_require__(40);
 	var predicates_1 = __webpack_require__(9);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var trace_1 = __webpack_require__(46);
-	var coreservices_1 = __webpack_require__(19);
+	var coreservices_1 = __webpack_require__(20);
 	var rejectFactory_1 = __webpack_require__(83);
 	var targetState_1 = __webpack_require__(74);
 	var defaultOptions = {
@@ -22513,12 +22513,12 @@ webpackJsonp([2],{
 	"use strict";
 	var transition_1 = __webpack_require__(132);
 	var hookRegistry_1 = __webpack_require__(131);
-	var resolve_1 = __webpack_require__(278);
-	var views_1 = __webpack_require__(280);
-	var url_1 = __webpack_require__(279);
-	var redirectTo_1 = __webpack_require__(277);
-	var onEnterExitRetain_1 = __webpack_require__(276);
-	var lazyLoadStates_1 = __webpack_require__(275);
+	var resolve_1 = __webpack_require__(280);
+	var views_1 = __webpack_require__(282);
+	var url_1 = __webpack_require__(281);
+	var redirectTo_1 = __webpack_require__(279);
+	var onEnterExitRetain_1 = __webpack_require__(278);
+	var lazyLoadStates_1 = __webpack_require__(277);
 	/**
 	 * The default [[Transition]] options.
 	 *
@@ -22656,7 +22656,7 @@ webpackJsonp([2],{
 	/** @module url */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
 	var predicates_1 = __webpack_require__(9);
-	var coreservices_1 = __webpack_require__(19);
+	var coreservices_1 = __webpack_require__(20);
 	/** @hidden */
 	var $location = coreservices_1.services.location;
 	/** @hidden Returns a string that is a prefix of all strings matching the RegExp */
@@ -23054,7 +23054,7 @@ webpackJsonp([2],{
 	"use strict";
 	/** @module view */ /** for typedoc */
 	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
+	var hof_1 = __webpack_require__(17);
 	var predicates_1 = __webpack_require__(9);
 	var trace_1 = __webpack_require__(46);
 	/**
@@ -23288,6 +23288,5612 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 138:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/8/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(32);
+	var collection_1 = __webpack_require__(66);
+	var _ = __webpack_require__(35);
+	var contivglobals_1 = __webpack_require__(37);
+	var RulesModel = (function (_super) {
+	    __extends(RulesModel, _super);
+	    function RulesModel(http) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.RULES_ENDPOINT);
+	    }
+	    /**
+	     * Get incoming rules for a given policy and a tenant
+	     * @param policyName
+	     * @param tenantName
+	     * @returns {*|webdriver.promise.Promise}
+	     */
+	    RulesModel.prototype.getIncomingRules = function (policyName, tenantName) {
+	        var rulesmodel = this;
+	        return rulesmodel.get(false).then(function (result) {
+	            return _.filter(result, {
+	                'policyName': policyName,
+	                'direction': 'in',
+	                'tenantName': tenantName
+	            });
+	        });
+	    };
+	    /**
+	     * Get outgoing rules for a given policy and a tenant
+	     * @param policyName
+	     * @param tenantName
+	     * @returns {*|webdriver.promise.Promise}
+	     */
+	    RulesModel.prototype.getOutgoingRules = function (policyName, tenantName) {
+	        var rulesmodel = this;
+	        return rulesmodel.get(false).then(function (result) {
+	            return _.filter(result, {
+	                'policyName': policyName,
+	                'direction': 'out',
+	                'tenantName': tenantName
+	            });
+	        });
+	    };
+	    /**
+	     * Generate rule key to save rule on server
+	     * @param rule
+	     * @returns {string}
+	     */
+	    RulesModel.prototype.generateKey = function (rule) {
+	        return rule.tenantName + ':' + rule.policyName + ':' + rule.ruleId;
+	    };
+	    RulesModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], RulesModel);
+	    return RulesModel;
+	    var _a;
+	}(collection_1.Collection));
+	exports.RulesModel = RulesModel;
+	
+
+/***/ },
+
+/***/ 139:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by cshampur on 7/17/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var util_1 = __webpack_require__(81);
+	var InspectService = (function () {
+	    function InspectService() {
+	    }
+	    /* This function would build the containerDetails object.
+	     eg :
+	     containerDetails={
+	     ContainerId1 : [{name: "homingHost", value: "cluster-node1", type: "string", format: "none"},
+	     {name: macAddress, value: "02:02", type:"string", format:"none"}
+	     ],
+	     ContainerId2 : [{name: "homingHost", value: "cluster-node1" type: "string", format: "none"},
+	     {name: macAddress, value: "02:04", type: "string", format: "none"}
+	     ]
+	     }
+	     --Used in displaying the container detail inside an accordion.
+	     */
+	    InspectService.prototype.buildEndPoints = function (endpoints) {
+	        var containerDetails = {};
+	        for (var i in endpoints) {
+	            var containerAttributes = [];
+	            for (var key in endpoints[i]) {
+	                var endpointAttribute = {};
+	                endpointAttribute['name'] = key;
+	                endpointAttribute['format'] = 'none';
+	                endpointAttribute['type'] = 'string';
+	                switch (key) {
+	                    case "ipAddress":
+	                        endpointAttribute['value'] = endpoints[i][key].filter(function (ipAddress) { return ipAddress.length > 0; }).join();
+	                        break;
+	                    case "labels":
+	                        endpointAttribute['value'] = endpoints[i][key].replace(/(map\[|\])/gi, '').replace(/(:)/gi, '=').split(' ')
+	                            .filter(function (v) { return v.length > 0; });
+	                        endpointAttribute['format'] = 'label';
+	                        endpointAttribute['type'] = 'array';
+	                        break;
+	                    default: endpointAttribute['value'] = endpoints[i][key];
+	                }
+	                containerAttributes.push(endpointAttribute);
+	            }
+	            containerDetails[endpoints[i].containerID] = containerAttributes;
+	        }
+	        return containerDetails;
+	    };
+	    /*  This function checks whether any new containers were added or not
+	     View is updated only when there is a change in container configuration
+	     */
+	    InspectService.prototype.checkContainerChanged = function (contDetailsA, contDetailsB) {
+	        if (util_1.isUndefined(contDetailsA))
+	            return true;
+	        else {
+	            if (Object.keys(contDetailsA).length != Object.keys(contDetailsB).length)
+	                return true;
+	            for (var key in contDetailsB) {
+	                if (!(key in contDetailsA))
+	                    return true;
+	            }
+	            return false;
+	        }
+	    };
+	    InspectService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [])
+	    ], InspectService);
+	    return InspectService;
+	}());
+	exports.InspectService = InspectService;
+	
+
+/***/ },
+
+/***/ 173:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module core */ /** */
+	var stateParams_1 = __webpack_require__(177);
+	var queue_1 = __webpack_require__(124);
+	var common_1 = __webpack_require__(5);
+	/**
+	 * Global mutable state
+	 */
+	var Globals = (function () {
+	    function Globals(transitionService) {
+	        var _this = this;
+	        this.params = new stateParams_1.StateParams();
+	        this.transitionHistory = new queue_1.Queue([], 1);
+	        this.successfulTransitions = new queue_1.Queue([], 1);
+	        var beforeNewTransition = function ($transition$) {
+	            _this.transition = $transition$;
+	            _this.transitionHistory.enqueue($transition$);
+	            var updateGlobalState = function () {
+	                _this.successfulTransitions.enqueue($transition$);
+	                _this.$current = $transition$.$to();
+	                _this.current = _this.$current.self;
+	                common_1.copy($transition$.params(), _this.params);
+	            };
+	            $transition$.onSuccess({}, updateGlobalState, { priority: 10000 });
+	            var clearCurrentTransition = function () { if (_this.transition === $transition$)
+	                _this.transition = null; };
+	            $transition$.promise.then(clearCurrentTransition, clearCurrentTransition);
+	        };
+	        transitionService.onBefore({}, beforeNewTransition);
+	    }
+	    return Globals;
+	}());
+	exports.Globals = Globals;
+	//# sourceMappingURL=globals.js.map
+
+/***/ },
+
+/***/ 174:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module ng1 */ /** for typedoc */
+	var predicates_1 = __webpack_require__(9);
+	var common_1 = __webpack_require__(5);
+	/**
+	 * @ngdoc object
+	 * @name ui.router.state.$stateProvider
+	 *
+	 * @requires ui.router.router.$urlRouterProvider
+	 * @requires ui.router.util.$urlMatcherFactoryProvider
+	 *
+	 * @description
+	 * The new `$stateProvider` works similar to Angular's v1 router, but it focuses purely
+	 * on state.
+	 *
+	 * A state corresponds to a "place" in the application in terms of the overall UI and
+	 * navigation. A state describes (via the controller / template / view properties) what
+	 * the UI looks like and does at that place.
+	 *
+	 * States often have things in common, and the primary way of factoring out these
+	 * commonalities in this model is via the state hierarchy, i.e. parent/child states aka
+	 * nested states.
+	 *
+	 * The `$stateProvider` provides interfaces to declare these states for your app.
+	 */
+	var StateProvider = (function () {
+	    function StateProvider(stateRegistry, stateService) {
+	        this.stateRegistry = stateRegistry;
+	        this.stateService = stateService;
+	        common_1.bindFunctions(StateProvider.prototype, this, this);
+	    }
+	    /**
+	     * @ngdoc function
+	     * @name ui.router.state.$stateProvider#decorator
+	     * @methodOf ui.router.state.$stateProvider
+	     *
+	     * @description
+	     * Allows you to extend (carefully) or override (at your own peril) the
+	     * `stateBuilder` object used internally by `$stateProvider`. This can be used
+	     * to add custom functionality to ui-router, for example inferring templateUrl
+	     * based on the state name.
+	     *
+	     * When passing only a name, it returns the current (original or decorated) builder
+	     * function that matches `name`.
+	     *
+	     * The builder functions that can be decorated are listed below. Though not all
+	     * necessarily have a good use case for decoration, that is up to you to decide.
+	     *
+	     * In addition, users can attach custom decorators, which will generate new
+	     * properties within the state's internal definition. There is currently no clear
+	     * use-case for this beyond accessing internal states (i.e. $state.$current),
+	     * however, expect this to become increasingly relevant as we introduce additional
+	     * meta-programming features.
+	     *
+	     * **Warning**: Decorators should not be interdependent because the order of
+	     * execution of the builder functions in non-deterministic. Builder functions
+	     * should only be dependent on the state definition object and super function.
+	     *
+	     *
+	     * Existing builder functions and current return values:
+	     *
+	     * - **parent** `{object}` - returns the parent state object.
+	     * - **data** `{object}` - returns state data, including any inherited data that is not
+	     *   overridden by own values (if any).
+	     * - **url** `{object}` - returns a {@link ui.router.util.type:UrlMatcher UrlMatcher}
+	     *   or `null`.
+	     * - **navigable** `{object}` - returns closest ancestor state that has a URL (aka is
+	     *   navigable).
+	     * - **params** `{object}` - returns an array of state params that are ensured to
+	     *   be a super-set of parent's params.
+	     * - **views** `{object}` - returns a views object where each key is an absolute view
+	     *   name (i.e. "viewName@stateName") and each value is the config object
+	     *   (template, controller) for the view. Even when you don't use the views object
+	     *   explicitly on a state config, one is still created for you internally.
+	     *   So by decorating this builder function you have access to decorating template
+	     *   and controller properties.
+	     * - **ownParams** `{object}` - returns an array of params that belong to the state,
+	     *   not including any params defined by ancestor states.
+	     * - **path** `{string}` - returns the full path from the root down to this state.
+	     *   Needed for state activation.
+	     * - **includes** `{object}` - returns an object that includes every state that
+	     *   would pass a `$state.includes()` test.
+	     *
+	     * @example
+	     * <pre>
+	     * // Override the internal 'views' builder with a function that takes the state
+	     * // definition, and a reference to the internal function being overridden:
+	     * $stateProvider.decorator('views', function (state, parent) {
+	     *   let result = {},
+	     *       views = parent(state);
+	     *
+	     *   angular.forEach(views, function (config, name) {
+	     *     let autoName = (state.name + '.' + name).replace('.', '/');
+	     *     config.templateUrl = config.templateUrl || '/partials/' + autoName + '.html';
+	     *     result[name] = config;
+	     *   });
+	     *   return result;
+	     * });
+	     *
+	     * $stateProvider.state('home', {
+	     *   views: {
+	     *     'contact.list': { controller: 'ListController' },
+	     *     'contact.item': { controller: 'ItemController' }
+	     *   }
+	     * });
+	     *
+	     * // ...
+	     *
+	     * $state.go('home');
+	     * // Auto-populates list and item views with /partials/home/contact/list.html,
+	     * // and /partials/home/contact/item.html, respectively.
+	     * </pre>
+	     *
+	     * @param {string} name The name of the builder function to decorate.
+	     * @param {object} func A function that is responsible for decorating the original
+	     * builder function. The function receives two parameters:
+	     *
+	     *   - `{object}` - state - The state config object.
+	     *   - `{object}` - super - The original builder function.
+	     *
+	     * @return {object} $stateProvider - $stateProvider instance
+	     */
+	    StateProvider.prototype.decorator = function (name, func) {
+	        return this.stateRegistry.decorator(name, func) || this;
+	    };
+	    StateProvider.prototype.state = function (name, definition) {
+	        if (predicates_1.isObject(name)) {
+	            definition = name;
+	        }
+	        else {
+	            definition.name = name;
+	        }
+	        this.stateRegistry.register(definition);
+	        return this;
+	    };
+	    /**
+	     * Registers an invalid state handler
+	     *
+	     * This is a passthrough to [[StateService.onInvalid]] for ng1.
+	     */
+	    StateProvider.prototype.onInvalid = function (callback) {
+	        return this.stateService.onInvalid(callback);
+	    };
+	    return StateProvider;
+	}());
+	exports.StateProvider = StateProvider;
+	//# sourceMappingURL=stateProvider.js.map
+
+/***/ },
+
+/***/ 175:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module view */ /** for typedoc */
+	var predicates_1 = __webpack_require__(9);
+	var coreservices_1 = __webpack_require__(20);
+	var common_1 = __webpack_require__(5);
+	var resolvable_1 = __webpack_require__(63);
+	/**
+	 * Service which manages loading of templates from a ViewConfig.
+	 */
+	var TemplateFactory = (function () {
+	    function TemplateFactory() {
+	    }
+	    /**
+	     * Creates a template from a configuration object.
+	     *
+	     * @param config Configuration object for which to load a template.
+	     * The following properties are search in the specified order, and the first one
+	     * that is defined is used to create the template:
+	     *
+	     * @param params  Parameters to pass to the template function.
+	     * @param context The resolve context associated with the template's view
+	     *
+	     * @return {string|object}  The template html as a string, or a promise for
+	     * that string,or `null` if no template is configured.
+	     */
+	    TemplateFactory.prototype.fromConfig = function (config, params, context) {
+	        return (predicates_1.isDefined(config.template) ? this.fromString(config.template, params) :
+	            predicates_1.isDefined(config.templateUrl) ? this.fromUrl(config.templateUrl, params) :
+	                predicates_1.isDefined(config.templateProvider) ? this.fromProvider(config.templateProvider, params, context) :
+	                    null);
+	    };
+	    ;
+	    /**
+	     * Creates a template from a string or a function returning a string.
+	     *
+	     * @param template html template as a string or function that returns an html template as a string.
+	     * @param params Parameters to pass to the template function.
+	     *
+	     * @return {string|object} The template html as a string, or a promise for that
+	     * string.
+	     */
+	    TemplateFactory.prototype.fromString = function (template, params) {
+	        return predicates_1.isFunction(template) ? template(params) : template;
+	    };
+	    ;
+	    /**
+	     * Loads a template from the a URL via `$http` and `$templateCache`.
+	     *
+	     * @param {string|Function} url url of the template to load, or a function
+	     * that returns a url.
+	     * @param {Object} params Parameters to pass to the url function.
+	     * @return {string|Promise.<string>} The template html as a string, or a promise
+	     * for that string.
+	     */
+	    TemplateFactory.prototype.fromUrl = function (url, params) {
+	        if (predicates_1.isFunction(url))
+	            url = url(params);
+	        if (url == null)
+	            return null;
+	        return coreservices_1.services.template.get(url);
+	    };
+	    ;
+	    /**
+	     * Creates a template by invoking an injectable provider function.
+	     *
+	     * @param provider Function to invoke via `locals`
+	     * @param {Function} injectFn a function used to invoke the template provider
+	     * @return {string|Promise.<string>} The template html as a string, or a promise
+	     * for that string.
+	     */
+	    TemplateFactory.prototype.fromProvider = function (provider, params, context) {
+	        var deps = coreservices_1.services.$injector.annotate(provider);
+	        var providerFn = predicates_1.isArray(provider) ? common_1.tail(provider) : provider;
+	        var resolvable = new resolvable_1.Resolvable("", providerFn, deps);
+	        return resolvable.get(context);
+	    };
+	    ;
+	    return TemplateFactory;
+	}());
+	exports.TemplateFactory = TemplateFactory;
+	//# sourceMappingURL=templateFactory.js.map
+
+/***/ },
+
+/***/ 176:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module params */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var predicates_1 = __webpack_require__(9);
+	var hof_1 = __webpack_require__(17);
+	var coreservices_1 = __webpack_require__(20);
+	var type_1 = __webpack_require__(127);
+	// Use tildes to pre-encode slashes.
+	// If the slashes are simply URLEncoded, the browser can choose to pre-decode them,
+	// and bidirectional encoding/decoding fails.
+	// Tilde was chosen because it's not a RFC 3986 section 2.2 Reserved Character
+	function valToString(val) { return val != null ? val.toString().replace(/(~|\/)/g, function (m) { return ({ '~': '~~', '/': '~2F' }[m]); }) : val; }
+	function valFromString(val) { return val != null ? val.toString().replace(/(~~|~2F)/g, function (m) { return ({ '~~': '~', '~2F': '/' }[m]); }) : val; }
+	var ParamTypes = (function () {
+	    function ParamTypes() {
+	        this.enqueue = true;
+	        this.typeQueue = [];
+	        this.defaultTypes = {
+	            "hash": {
+	                encode: valToString,
+	                decode: valFromString,
+	                is: hof_1.is(String),
+	                pattern: /.*/,
+	                equals: function (a, b) { return a == b; } // allow coersion for null/undefined/""
+	            },
+	            "string": {
+	                encode: valToString,
+	                decode: valFromString,
+	                is: hof_1.is(String),
+	                pattern: /[^/]*/
+	            },
+	            "int": {
+	                encode: valToString,
+	                decode: function (val) { return parseInt(val, 10); },
+	                is: function (val) { return predicates_1.isDefined(val) && this.decode(val.toString()) === val; },
+	                pattern: /-?\d+/
+	            },
+	            "bool": {
+	                encode: function (val) { return val && 1 || 0; },
+	                decode: function (val) { return parseInt(val, 10) !== 0; },
+	                is: hof_1.is(Boolean),
+	                pattern: /0|1/
+	            },
+	            "date": {
+	                encode: function (val) {
+	                    return !this.is(val) ? undefined : [
+	                        val.getFullYear(),
+	                        ('0' + (val.getMonth() + 1)).slice(-2),
+	                        ('0' + val.getDate()).slice(-2)
+	                    ].join("-");
+	                },
+	                decode: function (val) {
+	                    if (this.is(val))
+	                        return val;
+	                    var match = this.capture.exec(val);
+	                    return match ? new Date(match[1], match[2] - 1, match[3]) : undefined;
+	                },
+	                is: function (val) { return val instanceof Date && !isNaN(val.valueOf()); },
+	                equals: function (l, r) {
+	                    return ['getFullYear', 'getMonth', 'getDate']
+	                        .reduce(function (acc, fn) { return acc && l[fn]() === r[fn](); }, true);
+	                },
+	                pattern: /[0-9]{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[1-2][0-9]|3[0-1])/,
+	                capture: /([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])/
+	            },
+	            "json": {
+	                encode: common_1.toJson,
+	                decode: common_1.fromJson,
+	                is: hof_1.is(Object),
+	                equals: common_1.equals,
+	                pattern: /[^/]*/
+	            },
+	            "any": {
+	                encode: common_1.identity,
+	                decode: common_1.identity,
+	                equals: common_1.equals,
+	                pattern: /.*/
+	            }
+	        };
+	        // Register default types. Store them in the prototype of this.types.
+	        var makeType = function (definition, name) { return new type_1.ParamType(common_1.extend({ name: name }, definition)); };
+	        this.types = common_1.inherit(common_1.map(this.defaultTypes, makeType), {});
+	    }
+	    ParamTypes.prototype.type = function (name, definition, definitionFn) {
+	        if (!predicates_1.isDefined(definition))
+	            return this.types[name];
+	        if (this.types.hasOwnProperty(name))
+	            throw new Error("A type named '" + name + "' has already been defined.");
+	        this.types[name] = new type_1.ParamType(common_1.extend({ name: name }, definition));
+	        if (definitionFn) {
+	            this.typeQueue.push({ name: name, def: definitionFn });
+	            if (!this.enqueue)
+	                this._flushTypeQueue();
+	        }
+	        return this;
+	    };
+	    ParamTypes.prototype._flushTypeQueue = function () {
+	        while (this.typeQueue.length) {
+	            var type = this.typeQueue.shift();
+	            if (type.pattern)
+	                throw new Error("You cannot override a type's .pattern at runtime.");
+	            common_1.extend(this.types[type.name], coreservices_1.services.$injector.invoke(type.def));
+	        }
+	    };
+	    return ParamTypes;
+	}());
+	exports.ParamTypes = ParamTypes;
+	//# sourceMappingURL=paramTypes.js.map
+
+/***/ },
+
+/***/ 177:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module params */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var StateParams = (function () {
+	    function StateParams(params) {
+	        if (params === void 0) { params = {}; }
+	        common_1.extend(this, params);
+	    }
+	    /**
+	     * Merges a set of parameters with all parameters inherited between the common parents of the
+	     * current state and a given destination state.
+	     *
+	     * @param {Object} newParams The set of parameters which will be composited with inherited params.
+	     * @param {Object} $current Internal definition of object representing the current state.
+	     * @param {Object} $to Internal definition of object representing state to transition to.
+	     */
+	    StateParams.prototype.$inherit = function (newParams, $current, $to) {
+	        var parents = common_1.ancestors($current, $to), parentParams, inherited = {}, inheritList = [];
+	        for (var i in parents) {
+	            if (!parents[i] || !parents[i].params)
+	                continue;
+	            parentParams = Object.keys(parents[i].params);
+	            if (!parentParams.length)
+	                continue;
+	            for (var j in parentParams) {
+	                if (inheritList.indexOf(parentParams[j]) >= 0)
+	                    continue;
+	                inheritList.push(parentParams[j]);
+	                inherited[parentParams[j]] = this[parentParams[j]];
+	            }
+	        }
+	        return common_1.extend({}, inherited, newParams);
+	    };
+	    ;
+	    return StateParams;
+	}());
+	exports.StateParams = StateParams;
+	//# sourceMappingURL=stateParams.js.map
+
+/***/ },
+
+/***/ 178:
+/***/ function(module, exports) {
+
+	"use strict";
+	exports.resolvePolicies = {
+	    when: {
+	        LAZY: "LAZY",
+	        EAGER: "EAGER"
+	    },
+	    async: {
+	        WAIT: "WAIT",
+	        NOWAIT: "NOWAIT",
+	        RXWAIT: "RXWAIT"
+	    }
+	};
+	//# sourceMappingURL=interface.js.map
+
+/***/ },
+
+/***/ 179:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module state */ /** for typedoc */
+	var predicates_1 = __webpack_require__(9);
+	var glob_1 = __webpack_require__(100);
+	var common_1 = __webpack_require__(5);
+	var StateMatcher = (function () {
+	    function StateMatcher(_states) {
+	        this._states = _states;
+	    }
+	    StateMatcher.prototype.isRelative = function (stateName) {
+	        stateName = stateName || "";
+	        return stateName.indexOf(".") === 0 || stateName.indexOf("^") === 0;
+	    };
+	    StateMatcher.prototype.find = function (stateOrName, base) {
+	        if (!stateOrName && stateOrName !== "")
+	            return undefined;
+	        var isStr = predicates_1.isString(stateOrName);
+	        var name = isStr ? stateOrName : stateOrName.name;
+	        if (this.isRelative(name))
+	            name = this.resolvePath(name, base);
+	        var state = this._states[name];
+	        if (state && (isStr || (!isStr && (state === stateOrName || state.self === stateOrName)))) {
+	            return state;
+	        }
+	        else if (isStr) {
+	            var matches = common_1.values(this._states)
+	                .filter(function (state) { return new glob_1.Glob(state.name).matches(name); });
+	            if (matches.length > 1) {
+	                console.log("stateMatcher.find: Found multiple matches for " + name + " using glob: ", matches.map(function (match) { return match.name; }));
+	            }
+	            return matches[0];
+	        }
+	        return undefined;
+	    };
+	    StateMatcher.prototype.resolvePath = function (name, base) {
+	        if (!base)
+	            throw new Error("No reference point given for path '" + name + "'");
+	        var baseState = this.find(base);
+	        var splitName = name.split("."), i = 0, pathLength = splitName.length, current = baseState;
+	        for (; i < pathLength; i++) {
+	            if (splitName[i] === "" && i === 0) {
+	                current = baseState;
+	                continue;
+	            }
+	            if (splitName[i] === "^") {
+	                if (!current.parent)
+	                    throw new Error("Path '" + name + "' not valid for state '" + baseState.name + "'");
+	                current = current.parent;
+	                continue;
+	            }
+	            break;
+	        }
+	        var relName = splitName.slice(i).join(".");
+	        return current.name + (current.name && relName ? "." : "") + relName;
+	    };
+	    return StateMatcher;
+	}());
+	exports.StateMatcher = StateMatcher;
+	//# sourceMappingURL=stateMatcher.js.map
+
+/***/ },
+
+/***/ 180:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module state */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var predicates_1 = __webpack_require__(9);
+	var stateObject_1 = __webpack_require__(130);
+	var StateQueueManager = (function () {
+	    function StateQueueManager(states, builder, $urlRouterProvider, listeners) {
+	        this.states = states;
+	        this.builder = builder;
+	        this.$urlRouterProvider = $urlRouterProvider;
+	        this.listeners = listeners;
+	        this.queue = [];
+	    }
+	    StateQueueManager.prototype.register = function (config) {
+	        var _a = this, states = _a.states, queue = _a.queue, $state = _a.$state;
+	        // Wrap a new object around the state so we can store our private details easily.
+	        // @TODO: state = new State(extend({}, config, { ... }))
+	        var state = common_1.inherit(new stateObject_1.State(), common_1.extend({}, config, {
+	            self: config,
+	            resolve: config.resolve || [],
+	            toString: function () { return config.name; }
+	        }));
+	        if (!predicates_1.isString(state.name))
+	            throw new Error("State must have a valid name");
+	        if (states.hasOwnProperty(state.name) || common_1.pluck(queue, 'name').indexOf(state.name) !== -1)
+	            throw new Error("State '" + state.name + "' is already defined");
+	        queue.push(state);
+	        if (this.$state) {
+	            this.flush($state);
+	        }
+	        return state;
+	    };
+	    StateQueueManager.prototype.flush = function ($state) {
+	        var _a = this, queue = _a.queue, states = _a.states, builder = _a.builder;
+	        var registered = [], // states that got registered
+	        orphans = [], // states that dodn't yet have a parent registered
+	        previousQueueLength = {}; // keep track of how long the queue when an orphan was first encountered
+	        while (queue.length > 0) {
+	            var state = queue.shift();
+	            var result = builder.build(state);
+	            var orphanIdx = orphans.indexOf(state);
+	            if (result) {
+	                if (states.hasOwnProperty(state.name))
+	                    throw new Error("State '" + name + "' is already defined");
+	                states[state.name] = state;
+	                this.attachRoute($state, state);
+	                if (orphanIdx >= 0)
+	                    orphans.splice(orphanIdx, 1);
+	                registered.push(state);
+	                continue;
+	            }
+	            var prev = previousQueueLength[state.name];
+	            previousQueueLength[state.name] = queue.length;
+	            if (orphanIdx >= 0 && prev === queue.length) {
+	                // Wait until two consecutive iterations where no additional states were dequeued successfully.
+	                // throw new Error(`Cannot register orphaned state '${state.name}'`);
+	                queue.push(state);
+	                return states;
+	            }
+	            else if (orphanIdx < 0) {
+	                orphans.push(state);
+	            }
+	            queue.push(state);
+	        }
+	        if (registered.length) {
+	            this.listeners.forEach(function (listener) { return listener("registered", registered.map(function (s) { return s.self; })); });
+	        }
+	        return states;
+	    };
+	    StateQueueManager.prototype.autoFlush = function ($state) {
+	        this.$state = $state;
+	        this.flush($state);
+	    };
+	    StateQueueManager.prototype.attachRoute = function ($state, state) {
+	        var $urlRouterProvider = this.$urlRouterProvider;
+	        if (state.abstract || !state.url)
+	            return;
+	        $urlRouterProvider.when(state.url, ['$match', '$stateParams', function ($match, $stateParams) {
+	                if ($state.$current.navigable !== state || !common_1.equalForKeys($match, $stateParams)) {
+	                    $state.transitionTo(state, $match, { inherit: true, source: "url" });
+	                }
+	            }], function (rule) { return state._urlRule = rule; });
+	    };
+	    return StateQueueManager;
+	}());
+	exports.StateQueueManager = StateQueueManager;
+	//# sourceMappingURL=stateQueueManager.js.map
+
+/***/ },
+
+/***/ 181:
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @module state */ /** for typedoc */
+	"use strict";
+	var stateMatcher_1 = __webpack_require__(179);
+	var stateBuilder_1 = __webpack_require__(129);
+	var stateQueueManager_1 = __webpack_require__(180);
+	var common_1 = __webpack_require__(5);
+	var StateRegistry = (function () {
+	    function StateRegistry(urlMatcherFactory, urlRouterProvider) {
+	        this.urlRouterProvider = urlRouterProvider;
+	        this.states = {};
+	        this.listeners = [];
+	        this.matcher = new stateMatcher_1.StateMatcher(this.states);
+	        this.builder = new stateBuilder_1.StateBuilder(this.matcher, urlMatcherFactory);
+	        this.stateQueue = new stateQueueManager_1.StateQueueManager(this.states, this.builder, urlRouterProvider, this.listeners);
+	        var rootStateDef = {
+	            name: '',
+	            url: '^',
+	            views: null,
+	            params: {
+	                '#': { value: null, type: 'hash', dynamic: true }
+	            },
+	            abstract: true
+	        };
+	        var _root = this._root = this.stateQueue.register(rootStateDef);
+	        _root.navigable = null;
+	    }
+	    /**
+	     * Listen for a State Registry events
+	     *
+	     * Adds a callback that is invoked when states are registered or deregistered with the StateRegistry.
+	     *
+	     * @example
+	     * ```js
+	     *
+	     * let allStates = registry.get();
+	     *
+	     * // Later, invoke deregisterFn() to remove the listener
+	     * let deregisterFn = registry.onStatesChanged((event, states) => {
+	     *   switch(event) {
+	     *     case: 'registered':
+	     *       states.forEach(state => allStates.push(state));
+	     *       break;
+	     *     case: 'deregistered':
+	     *       states.forEach(state => {
+	     *         let idx = allStates.indexOf(state);
+	     *         if (idx !== -1) allStates.splice(idx, 1);
+	     *       });
+	     *       break;
+	     *   }
+	     * });
+	     * ```
+	     *
+	     * @param listener a callback function invoked when the registered states changes.
+	     *        The function receives two parameters, `event` and `state`.
+	     *        See [[StateRegistryListener]]
+	     * @return a function that deregisters the listener
+	     */
+	    StateRegistry.prototype.onStatesChanged = function (listener) {
+	        this.listeners.push(listener);
+	        return function deregisterListener() {
+	            common_1.removeFrom(this.listeners)(listener);
+	        }.bind(this);
+	    };
+	    /**
+	     * Gets the implicit root state
+	     *
+	     * Gets the root of the state tree.
+	     * The root state is implicitly created by UI-Router.
+	     * Note: this returns the internal [[State]] representation, not a [[StateDeclaration]]
+	     *
+	     * @return the root [[State]]
+	     */
+	    StateRegistry.prototype.root = function () {
+	        return this._root;
+	    };
+	    /**
+	     * Adds a state to the registry
+	     *
+	     * Registers a [[StateDefinition]] or queues it for registration.
+	     *
+	     * Note: a state will be queued if the state's parent isn't yet registered.
+	     * It will also be queued if the queue is not yet in [[StateQueueManager.autoFlush]] mode.
+	     *
+	     * @param stateDefinition the definition of the state to register.
+	     * @returns the internal [[State]] object.
+	     *          If the state was successfully registered, then the object is fully built (See: [[StateBuilder]]).
+	     *          If the state was only queued, then the object is not fully built.
+	     */
+	    StateRegistry.prototype.register = function (stateDefinition) {
+	        return this.stateQueue.register(stateDefinition);
+	    };
+	    /** @hidden */
+	    StateRegistry.prototype._deregisterTree = function (state) {
+	        var _this = this;
+	        var all = this.get().map(function (s) { return s.$$state(); });
+	        var getChildren = function (states) {
+	            var children = all.filter(function (s) { return states.indexOf(s.parent) !== -1; });
+	            return children.length === 0 ? children : children.concat(getChildren(children));
+	        };
+	        var children = getChildren([state]);
+	        var deregistered = [state].concat(children).reverse();
+	        deregistered.forEach(function (state) {
+	            _this.urlRouterProvider.removeRule(state._urlRule);
+	            delete _this.states[state.name];
+	        });
+	        return deregistered;
+	    };
+	    /**
+	     * Removes a state from the registry
+	     *
+	     * This removes a state from the registry.
+	     * If the state has children, they are are also removed from the registry.
+	     *
+	     * @param stateOrName the state's name or object representation
+	     * @returns {State[]} a list of removed states
+	     */
+	    StateRegistry.prototype.deregister = function (stateOrName) {
+	        var _state = this.get(stateOrName);
+	        if (!_state)
+	            throw new Error("Can't deregister state; not found: " + stateOrName);
+	        var deregisteredStates = this._deregisterTree(_state.$$state());
+	        this.listeners.forEach(function (listener) { return listener("deregistered", deregisteredStates.map(function (s) { return s.self; })); });
+	        return deregisteredStates;
+	    };
+	    StateRegistry.prototype.get = function (stateOrName, base) {
+	        var _this = this;
+	        if (arguments.length === 0)
+	            return Object.keys(this.states).map(function (name) { return _this.states[name].self; });
+	        var found = this.matcher.find(stateOrName, base);
+	        return found && found.self || null;
+	    };
+	    StateRegistry.prototype.decorator = function (name, func) {
+	        return this.builder.builder(name, func);
+	    };
+	    return StateRegistry;
+	}());
+	exports.StateRegistry = StateRegistry;
+	//# sourceMappingURL=stateRegistry.js.map
+
+/***/ },
+
+/***/ 182:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module state */ /** */
+	var common_1 = __webpack_require__(5);
+	var predicates_1 = __webpack_require__(9);
+	var queue_1 = __webpack_require__(124);
+	var coreservices_1 = __webpack_require__(20);
+	var pathFactory_1 = __webpack_require__(101);
+	var node_1 = __webpack_require__(82);
+	var transitionService_1 = __webpack_require__(134);
+	var rejectFactory_1 = __webpack_require__(83);
+	var targetState_1 = __webpack_require__(74);
+	var param_1 = __webpack_require__(54);
+	var glob_1 = __webpack_require__(100);
+	var common_2 = __webpack_require__(5);
+	var common_3 = __webpack_require__(5);
+	var resolveContext_1 = __webpack_require__(47);
+	var StateService = (function () {
+	    /** @hidden */
+	    function StateService(router) {
+	        this.router = router;
+	        this.invalidCallbacks = [];
+	        /** @hidden */
+	        this._defaultErrorHandler = function $defaultErrorHandler($error$) {
+	            if ($error$ instanceof Error && $error$.stack) {
+	                console.error($error$);
+	                console.error($error$.stack);
+	            }
+	            else if ($error$ instanceof rejectFactory_1.Rejection) {
+	                console.error($error$.toString());
+	                if ($error$.detail && $error$.detail.stack)
+	                    console.error($error$.detail.stack);
+	            }
+	            else {
+	                console.error($error$);
+	            }
+	        };
+	        var getters = ['current', '$current', 'params', 'transition'];
+	        var boundFns = Object.keys(StateService.prototype).filter(function (key) { return getters.indexOf(key) === -1; });
+	        common_3.bindFunctions(StateService.prototype, this, this, boundFns);
+	    }
+	    Object.defineProperty(StateService.prototype, "transition", {
+	        get: function () { return this.router.globals.transition; },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(StateService.prototype, "params", {
+	        get: function () { return this.router.globals.params; },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(StateService.prototype, "current", {
+	        get: function () { return this.router.globals.current; },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    Object.defineProperty(StateService.prototype, "$current", {
+	        get: function () { return this.router.globals.$current; },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    /**
+	     * Handler for when [[transitionTo]] is called with an invalid state.
+	     *
+	     * Invokes the [[onInvalid]] callbacks, in natural order.
+	     * Each callback's return value is checked in sequence until one of them returns an instance of TargetState.
+	     * The results of the callbacks are wrapped in $q.when(), so the callbacks may return promises.
+	     *
+	     * If a callback returns an TargetState, then it is used as arguments to $state.transitionTo() and the result returned.
+	     */
+	    StateService.prototype._handleInvalidTargetState = function (fromPath, toState) {
+	        var _this = this;
+	        var fromState = pathFactory_1.PathFactory.makeTargetState(fromPath);
+	        var globals = this.router.globals;
+	        var latestThing = function () { return globals.transitionHistory.peekTail(); };
+	        var latest = latestThing();
+	        var callbackQueue = new queue_1.Queue(this.invalidCallbacks.slice());
+	        var injector = new resolveContext_1.ResolveContext(fromPath).injector();
+	        var checkForRedirect = function (result) {
+	            if (!(result instanceof targetState_1.TargetState)) {
+	                return;
+	            }
+	            var target = result;
+	            // Recreate the TargetState, in case the state is now defined.
+	            target = _this.target(target.identifier(), target.params(), target.options());
+	            if (!target.valid())
+	                return rejectFactory_1.Rejection.invalid(target.error()).toPromise();
+	            if (latestThing() !== latest)
+	                return rejectFactory_1.Rejection.superseded().toPromise();
+	            return _this.transitionTo(target.identifier(), target.params(), target.options());
+	        };
+	        function invokeNextCallback() {
+	            var nextCallback = callbackQueue.dequeue();
+	            if (nextCallback === undefined)
+	                return rejectFactory_1.Rejection.invalid(toState.error()).toPromise();
+	            var callbackResult = coreservices_1.services.$q.when(nextCallback(toState, fromState, injector));
+	            return callbackResult.then(checkForRedirect).then(function (result) { return result || invokeNextCallback(); });
+	        }
+	        return invokeNextCallback();
+	    };
+	    /**
+	     * Registers an Invalid State handler
+	     *
+	     * Registers a [[OnInvalidCallback]] function to be invoked when [[StateService.transitionTo]]
+	     * has been called with an invalid state reference parameter
+	     *
+	     * Example:
+	     * ```js
+	     * stateService.onInvalid(function(to, from, injector) {
+	     *   if (to.name() === 'foo') {
+	     *     let lazyLoader = injector.get('LazyLoadService');
+	     *     return lazyLoader.load('foo')
+	     *         .then(() => stateService.target('foo'));
+	     *   }
+	     * });
+	     * ```
+	     *
+	     * @param {function} callback invoked when the toState is invalid
+	     *   This function receives the (invalid) toState, the fromState, and an injector.
+	     *   The function may optionally return a [[TargetState]] or a Promise for a TargetState.
+	     *   If one is returned, it is treated as a redirect.
+	     *
+	     * @returns a function which deregisters the callback
+	     */
+	    StateService.prototype.onInvalid = function (callback) {
+	        this.invalidCallbacks.push(callback);
+	        return function deregisterListener() {
+	            common_1.removeFrom(this.invalidCallbacks)(callback);
+	        }.bind(this);
+	    };
+	    /**
+	     * @ngdoc function
+	     * @name ui.router.state.$state#reload
+	     * @methodOf ui.router.state.$state
+	     *
+	     * @description
+	     * A method that force reloads the current state, or a partial state hierarchy. All resolves are re-resolved,
+	     * controllers reinstantiated, and events re-fired.
+	     *
+	     * @example
+	     * <pre>
+	     * let app angular.module('app', ['ui.router']);
+	     *
+	     * app.controller('ctrl', function ($scope, $state) {
+	     *   $scope.reload = function(){
+	     *     $state.reload();
+	     *   }
+	     * });
+	     * </pre>
+	     *
+	     * `reload()` is just an alias for:
+	     * <pre>
+	     * $state.transitionTo($state.current, $stateParams, {
+	     *   reload: true, inherit: false, notify: true
+	     * });
+	     * </pre>
+	     *
+	     * @param {string=|object=} reloadState - A state name or a state object, which is the root of the resolves to be re-resolved.
+	     * @example
+	     * <pre>
+	     * //assuming app application consists of 3 states: 'contacts', 'contacts.detail', 'contacts.detail.item'
+	     * //and current state is 'contacts.detail.item'
+	     * let app angular.module('app', ['ui.router']);
+	     *
+	     * app.controller('ctrl', function ($scope, $state) {
+	     *   $scope.reload = function(){
+	     *     //will reload 'contact.detail' and nested 'contact.detail.item' states
+	     *     $state.reload('contact.detail');
+	     *   }
+	     * });
+	     * </pre>
+	     *
+	     * @returns {promise} A promise representing the state of the new transition. See
+	     * {@link ui.router.state.$state#methods_go $state.go}.
+	     */
+	    StateService.prototype.reload = function (reloadState) {
+	        return this.transitionTo(this.current, this.params, {
+	            reload: predicates_1.isDefined(reloadState) ? reloadState : true,
+	            inherit: false,
+	            notify: false
+	        });
+	    };
+	    ;
+	    /**
+	     * @ngdoc function
+	     * @name ui.router.state.$state#go
+	     * @methodOf ui.router.state.$state
+	     *
+	     * @description
+	     * Convenience method for transitioning to a new state. `$state.go` calls
+	     * `$state.transitionTo` internally but automatically sets options to
+	     * `{ location: true, inherit: true, relative: $state.$current, notify: true }`.
+	     * This allows you to easily use an absolute or relative to path and specify
+	     * only the parameters you'd like to update (while letting unspecified parameters
+	     * inherit from the currently active ancestor states).
+	     *
+	     * @example
+	     * <pre>
+	     * let app = angular.module('app', ['ui.router']);
+	     *
+	     * app.controller('ctrl', function ($scope, $state) {
+	     *   $scope.changeState = function () {
+	     *     $state.go('contact.detail');
+	     *   };
+	     * });
+	     * </pre>
+	     * <img src='../ngdoc_assets/StateGoExamples.png'/>
+	     *
+	     * @param {string|object} to Absolute state name, state object, or relative state path. Some examples:
+	     *
+	     * - `$state.go('contact.detail')` - will go to the `contact.detail` state
+	     * - `$state.go('^')` - will go to a parent state
+	     * - `$state.go('^.sibling')` - will go to a sibling state
+	     * - `$state.go('.child.grandchild')` - will go to grandchild state
+	     *
+	     * @param {object=} params A map of the parameters that will be sent to the state,
+	     * will populate $stateParams. Any parameters that are not specified will be inherited from currently
+	     * defined parameters. This allows, for example, going to a sibling state that shares parameters
+	     * specified in a parent state. Parameter inheritance only works between common ancestor states, I.e.
+	     * transitioning to a sibling will get you the parameters for all parents, transitioning to a child
+	     * will get you all current parameters, etc.
+	     * @param {object=} options Options object. The options are:
+	     *
+	     * - **`location`** - {boolean=true|string=} - If `true` will update the url in the location bar, if `false`
+	     *    will not. If string, must be `"replace"`, which will update url and also replace last history record.
+	     * - **`inherit`** - {boolean=true}, If `true` will inherit url parameters from current url.
+	     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g '^'),
+	     *    defines which state to be relative from.
+	     * - **`notify`** - {boolean=true}, If `true` will broadcast $stateChangeStart and $stateChangeSuccess events.
+	     * - **`reload`** (v0.2.5) - {boolean=false}, If `true` will force transition even if the state or params
+	     *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you'd
+	     *    use this when you want to force a reload when *everything* is the same, including search params.
+	     *
+	     * @returns {promise} A promise representing the state of the new transition.
+	     *
+	     * Possible success values:
+	     *
+	     * - $state.current
+	     *
+	     * <br/>Possible rejection values:
+	     *
+	     * - 'transition superseded' - when a newer transition has been started after this one
+	     * - 'transition prevented' - when `event.preventDefault()` has been called in a `$stateChangeStart` listener
+	     * - 'transition aborted' - when `event.preventDefault()` has been called in a `$stateNotFound` listener or
+	     *   when a `$stateNotFound` `event.retry` promise errors.
+	     * - 'transition failed' - when a state has been unsuccessfully found after 2 tries.
+	     * - *resolve error* - when an error has occurred with a `resolve`
+	     *
+	     */
+	    StateService.prototype.go = function (to, params, options) {
+	        var defautGoOpts = { relative: this.$current, inherit: true };
+	        var transOpts = common_1.defaults(options, defautGoOpts, transitionService_1.defaultTransOpts);
+	        return this.transitionTo(to, params, transOpts);
+	    };
+	    ;
+	    /** Factory method for creating a TargetState */
+	    StateService.prototype.target = function (identifier, params, options) {
+	        if (options === void 0) { options = {}; }
+	        // If we're reloading, find the state object to reload from
+	        if (predicates_1.isObject(options.reload) && !options.reload.name)
+	            throw new Error('Invalid reload state object');
+	        var reg = this.router.stateRegistry;
+	        options.reloadState = options.reload === true ? reg.root() : reg.matcher.find(options.reload, options.relative);
+	        if (options.reload && !options.reloadState)
+	            throw new Error("No such reload state '" + (predicates_1.isString(options.reload) ? options.reload : options.reload.name) + "'");
+	        var stateDefinition = reg.matcher.find(identifier, options.relative);
+	        return new targetState_1.TargetState(identifier, stateDefinition, params, options);
+	    };
+	    ;
+	    /**
+	     * @ngdoc function
+	     * @name ui.router.state.$state#transitionTo
+	     * @methodOf ui.router.state.$state
+	     *
+	     * @description
+	     * Low-level method for transitioning to a new state. {@link ui.router.state.$state#methods_go $state.go}
+	     * uses `transitionTo` internally. `$state.go` is recommended in most situations.
+	     *
+	     * @example
+	     * <pre>
+	     * let app = angular.module('app', ['ui.router']);
+	     *
+	     * app.controller('ctrl', function ($scope, $state) {
+	     *   $scope.changeState = function () {
+	     *     $state.transitionTo('contact.detail');
+	     *   };
+	     * });
+	     * </pre>
+	     *
+	     * @param {string|object} to State name or state object.
+	     * @param {object=} toParams A map of the parameters that will be sent to the state,
+	     * will populate $stateParams.
+	     * @param {object=} options Options object. The options are:
+	     *
+	     * - **`location`** - {boolean=true|string=} - If `true` will update the url in the location bar, if `false`
+	     *    will not. If string, must be `"replace"`, which will update url and also replace last history record.
+	     * - **`inherit`** - {boolean=false}, If `true` will inherit url parameters from current url.
+	     * - **`relative`** - {object=}, When transitioning with relative path (e.g '^'),
+	     *    defines which state to be relative from.
+	     * - **`notify`** - {boolean=true}, If `true` will broadcast $stateChangeStart and $stateChangeSuccess events.
+	     * - **`reload`** (v0.2.5) - {boolean=false}, If `true` will force transition even if the state or params
+	     *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you'd
+	     *    use this when you want to force a reload when *everything* is the same, including search params.
+	     *
+	     * @returns {promise} A promise representing the state of the new transition. See
+	     * {@link ui.router.state.$state#methods_go $state.go}.
+	     */
+	    StateService.prototype.transitionTo = function (to, toParams, options) {
+	        var _this = this;
+	        if (toParams === void 0) { toParams = {}; }
+	        if (options === void 0) { options = {}; }
+	        var router = this.router;
+	        var globals = router.globals;
+	        var transHistory = globals.transitionHistory;
+	        options = common_1.defaults(options, transitionService_1.defaultTransOpts);
+	        options = common_1.extend(options, { current: transHistory.peekTail.bind(transHistory) });
+	        var ref = this.target(to, toParams, options);
+	        var latestSuccess = globals.successfulTransitions.peekTail();
+	        var rootPath = function () { return [new node_1.PathNode(_this.router.stateRegistry.root())]; };
+	        var currentPath = latestSuccess ? latestSuccess.treeChanges().to : rootPath();
+	        if (!ref.exists())
+	            return this._handleInvalidTargetState(currentPath, ref);
+	        if (!ref.valid())
+	            return common_1.silentRejection(ref.error());
+	        /**
+	         * Special handling for Ignored, Aborted, and Redirected transitions
+	         *
+	         * The semantics for the transition.run() promise and the StateService.transitionTo()
+	         * promise differ. For instance, the run() promise may be rejected because it was
+	         * IGNORED, but the transitionTo() promise is resolved because from the user perspective
+	         * no error occurred.  Likewise, the transition.run() promise may be rejected because of
+	         * a Redirect, but the transitionTo() promise is chained to the new Transition's promise.
+	         */
+	        var rejectedTransitionHandler = function (transition) { return function (error) {
+	            if (error instanceof rejectFactory_1.Rejection) {
+	                if (error.type === rejectFactory_1.RejectType.IGNORED) {
+	                    // Consider ignored `Transition.run()` as a successful `transitionTo`
+	                    router.urlRouter.update();
+	                    return coreservices_1.services.$q.when(globals.current);
+	                }
+	                var detail = error.detail;
+	                if (error.type === rejectFactory_1.RejectType.SUPERSEDED && error.redirected && detail instanceof targetState_1.TargetState) {
+	                    // If `Transition.run()` was redirected, allow the `transitionTo()` promise to resolve successfully
+	                    // by returning the promise for the new (redirect) `Transition.run()`.
+	                    var redirect = transition.redirect(detail);
+	                    return redirect.run().catch(rejectedTransitionHandler(redirect));
+	                }
+	                if (error.type === rejectFactory_1.RejectType.ABORTED) {
+	                    router.urlRouter.update();
+	                }
+	            }
+	            var errorHandler = _this.defaultErrorHandler();
+	            errorHandler(error);
+	            return coreservices_1.services.$q.reject(error);
+	        }; };
+	        var transition = this.router.transitionService.create(currentPath, ref);
+	        var transitionToPromise = transition.run().catch(rejectedTransitionHandler(transition));
+	        common_1.silenceUncaughtInPromise(transitionToPromise); // issue #2676
+	        // Return a promise for the transition, which also has the transition object on it.
+	        return common_1.extend(transitionToPromise, { transition: transition });
+	    };
+	    ;
+	    /**
+	     * @ngdoc function
+	     * @name ui.router.state.$state#is
+	     * @methodOf ui.router.state.$state
+	     *
+	     * @description
+	     * Similar to {@link ui.router.state.$state#methods_includes $state.includes},
+	     * but only checks for the full state name. If params is supplied then it will be
+	     * tested for strict equality against the current active params object, so all params
+	     * must match with none missing and no extras.
+	     *
+	     * @example
+	     * <pre>
+	     * $state.$current.name = 'contacts.details.item';
+	     *
+	     * // absolute name
+	     * $state.is('contact.details.item'); // returns true
+	     * $state.is(contactDetailItemStateObject); // returns true
+	     *
+	     * // relative name (. and ^), typically from a template
+	     * // E.g. from the 'contacts.details' template
+	     * <div ng-class="{highlighted: $state.is('.item')}">Item</div>
+	     * </pre>
+	     *
+	     * @param {string|object} stateOrName The state name (absolute or relative) or state object you'd like to check.
+	     * @param {object=} params A param object, e.g. `{sectionId: section.id}`, that you'd like
+	     * to test against the current active state.
+	     * @param {object=} options An options object.  The options are:
+	     *
+	     * - **`relative`** - {string|object} -  If `stateOrName` is a relative state name and `options.relative` is set, .is will
+	     * test relative to `options.relative` state (or name).
+	     *
+	     * @returns {boolean} Returns true if it is the state.
+	     */
+	    StateService.prototype.is = function (stateOrName, params, options) {
+	        options = common_1.defaults(options, { relative: this.$current });
+	        var state = this.router.stateRegistry.matcher.find(stateOrName, options.relative);
+	        if (!predicates_1.isDefined(state))
+	            return undefined;
+	        if (this.$current !== state)
+	            return false;
+	        return predicates_1.isDefined(params) && params !== null ? param_1.Param.equals(state.parameters(), this.params, params) : true;
+	    };
+	    ;
+	    /**
+	     * @ngdoc function
+	     * @name ui.router.state.$state#includes
+	     * @methodOf ui.router.state.$state
+	     *
+	     * @description
+	     * A method to determine if the current active state is equal to or is the child of the
+	     * state stateName. If any params are passed then they will be tested for a match as well.
+	     * Not all the parameters need to be passed, just the ones you'd like to test for equality.
+	     *
+	     * @example
+	     * Partial and relative names
+	     * <pre>
+	     * $state.$current.name = 'contacts.details.item';
+	     *
+	     * // Using partial names
+	     * $state.includes("contacts"); // returns true
+	     * $state.includes("contacts.details"); // returns true
+	     * $state.includes("contacts.details.item"); // returns true
+	     * $state.includes("contacts.list"); // returns false
+	     * $state.includes("about"); // returns false
+	     *
+	     * // Using relative names (. and ^), typically from a template
+	     * // E.g. from the 'contacts.details' template
+	     * <div ng-class="{highlighted: $state.includes('.item')}">Item</div>
+	     * </pre>
+	     *
+	     * Basic globbing patterns
+	     * <pre>
+	     * $state.$current.name = 'contacts.details.item.url';
+	     *
+	     * $state.includes("*.details.*.*"); // returns true
+	     * $state.includes("*.details.**"); // returns true
+	     * $state.includes("**.item.**"); // returns true
+	     * $state.includes("*.details.item.url"); // returns true
+	     * $state.includes("*.details.*.url"); // returns true
+	     * $state.includes("*.details.*"); // returns false
+	     * $state.includes("item.**"); // returns false
+	     * </pre>
+	     *
+	     * @param {string|object} stateOrName A partial name, relative name, glob pattern,
+	     * or state object to be searched for within the current state name.
+	     * @param {object=} params A param object, e.g. `{sectionId: section.id}`,
+	     * that you'd like to test against the current active state.
+	     * @param {object=} options An options object.  The options are:
+	     *
+	     * - **`relative`** - {string|object=} -  If `stateOrName` is a relative state reference and `options.relative` is set,
+	     * .includes will test relative to `options.relative` state (or name).
+	     *
+	     * @returns {boolean} Returns true if it does include the state
+	     */
+	    StateService.prototype.includes = function (stateOrName, params, options) {
+	        options = common_1.defaults(options, { relative: this.$current });
+	        var glob = predicates_1.isString(stateOrName) && glob_1.Glob.fromString(stateOrName);
+	        if (glob) {
+	            if (!glob.matches(this.$current.name))
+	                return false;
+	            stateOrName = this.$current.name;
+	        }
+	        var state = this.router.stateRegistry.matcher.find(stateOrName, options.relative), include = this.$current.includes;
+	        if (!predicates_1.isDefined(state))
+	            return undefined;
+	        if (!predicates_1.isDefined(include[state.name]))
+	            return false;
+	        // @TODO Replace with Param.equals() ?
+	        return params ? common_2.equalForKeys(param_1.Param.values(state.parameters(), params), this.params, Object.keys(params)) : true;
+	    };
+	    ;
+	    /**
+	     * @ngdoc function
+	     * @name ui.router.state.$state#href
+	     * @methodOf ui.router.state.$state
+	     *
+	     * @description
+	     * A url generation method that returns the compiled url for the given state populated with the given params.
+	     *
+	     * @example
+	     * <pre>
+	     * expect($state.href("about.person", { person: "bob" })).toEqual("/about/bob");
+	     * </pre>
+	     *
+	     * @param {string|object} stateOrName The state name or state object you'd like to generate a url from.
+	     * @param {object=} params An object of parameter values to fill the state's required parameters.
+	     * @param {object=} options Options object. The options are:
+	     *
+	     * - **`lossy`** - {boolean=true} -  If true, and if there is no url associated with the state provided in the
+	     *    first parameter, then the constructed href url will be built from the first navigable ancestor (aka
+	     *    ancestor with a valid url).
+	     * - **`inherit`** - {boolean=true}, If `true` will inherit url parameters from current url.
+	     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g '^'),
+	     *    defines which state to be relative from.
+	     * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
+	     *
+	     * @returns {string} compiled state url
+	     */
+	    StateService.prototype.href = function (stateOrName, params, options) {
+	        var defaultHrefOpts = {
+	            lossy: true,
+	            inherit: true,
+	            absolute: false,
+	            relative: this.$current
+	        };
+	        options = common_1.defaults(options, defaultHrefOpts);
+	        params = params || {};
+	        var state = this.router.stateRegistry.matcher.find(stateOrName, options.relative);
+	        if (!predicates_1.isDefined(state))
+	            return null;
+	        if (options.inherit)
+	            params = this.params.$inherit(params, this.$current, state);
+	        var nav = (state && options.lossy) ? state.navigable : state;
+	        if (!nav || nav.url === undefined || nav.url === null) {
+	            return null;
+	        }
+	        return this.router.urlRouter.href(nav.url, param_1.Param.values(state.parameters(), params), {
+	            absolute: options.absolute
+	        });
+	    };
+	    ;
+	    /**
+	     * Sets or gets the default [[transitionTo]] error handler.
+	     *
+	     * The error handler is called when a [[Transition]] is rejected or when any error occurred during the Transition.
+	     * This includes errors caused by resolves and transition hooks.
+	     *
+	     * Note:
+	     * This handler does not receive certain Transition rejections.
+	     * Redirected and Ignored Transitions are not considered to be errors by [[StateService.transitionTo]].
+	     *
+	     * The built-in default error handler logs the error to the console.
+	     *
+	     * You can provide your own custom handler.
+	     *
+	     * @example
+	     * ```js
+	     *
+	     * stateService.defaultErrorHandler(function() {
+	     *   // Do not log transitionTo errors
+	     * });
+	     * ```
+	     *
+	     * @param handler a global error handler function
+	     * @returns the current global error handler
+	     */
+	    StateService.prototype.defaultErrorHandler = function (handler) {
+	        return this._defaultErrorHandler = handler || this._defaultErrorHandler;
+	    };
+	    StateService.prototype.get = function (stateOrName, base) {
+	        var reg = this.router.stateRegistry;
+	        if (arguments.length === 0)
+	            return reg.get();
+	        return reg.get(stateOrName, base || this.$current);
+	    };
+	    return StateService;
+	}());
+	exports.StateService = StateService;
+	//# sourceMappingURL=stateService.js.map
+
+/***/ },
+
+/***/ 183:
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @module transition */ /** for typedoc */
+	"use strict";
+	var common_1 = __webpack_require__(5);
+	var predicates_1 = __webpack_require__(9);
+	var transitionHook_1 = __webpack_require__(133);
+	var resolveContext_1 = __webpack_require__(47);
+	/**
+	 * This class returns applicable TransitionHooks for a specific Transition instance.
+	 *
+	 * Hooks (IEventHook) may be registered globally, e.g., $transitions.onEnter(...), or locally, e.g.
+	 * myTransition.onEnter(...).  The HookBuilder finds matching IEventHooks (where the match criteria is
+	 * determined by the type of hook)
+	 *
+	 * The HookBuilder also converts IEventHooks objects to TransitionHook objects, which are used to run a Transition.
+	 *
+	 * The HookBuilder constructor is given the $transitions service and a Transition instance.  Thus, a HookBuilder
+	 * instance may only be used for one specific Transition object. (side note: the _treeChanges accessor is private
+	 * in the Transition class, so we must also provide the Transition's _treeChanges)
+	 *
+	 */
+	var HookBuilder = (function () {
+	    function HookBuilder($transitions, transition, baseHookOptions) {
+	        var _this = this;
+	        this.$transitions = $transitions;
+	        this.transition = transition;
+	        this.baseHookOptions = baseHookOptions;
+	        this.getOnBeforeHooks = function () { return _this._buildNodeHooks("onBefore", "to", tupleSort(), { async: false }); };
+	        this.getOnStartHooks = function () { return _this._buildNodeHooks("onStart", "to", tupleSort()); };
+	        this.getOnExitHooks = function () { return _this._buildNodeHooks("onExit", "exiting", tupleSort(true), { stateHook: true }); };
+	        this.getOnRetainHooks = function () { return _this._buildNodeHooks("onRetain", "retained", tupleSort(false), { stateHook: true }); };
+	        this.getOnEnterHooks = function () { return _this._buildNodeHooks("onEnter", "entering", tupleSort(false), { stateHook: true }); };
+	        this.getOnFinishHooks = function () { return _this._buildNodeHooks("onFinish", "to", tupleSort()); };
+	        this.getOnSuccessHooks = function () { return _this._buildNodeHooks("onSuccess", "to", tupleSort(), { async: false, rejectIfSuperseded: false }); };
+	        this.getOnErrorHooks = function () { return _this._buildNodeHooks("onError", "to", tupleSort(), { async: false, rejectIfSuperseded: false }); };
+	        this.treeChanges = transition.treeChanges();
+	        this.toState = common_1.tail(this.treeChanges.to).state;
+	        this.fromState = common_1.tail(this.treeChanges.from).state;
+	        this.transitionOptions = transition.options();
+	    }
+	    HookBuilder.prototype.asyncHooks = function () {
+	        var onStartHooks = this.getOnStartHooks();
+	        var onExitHooks = this.getOnExitHooks();
+	        var onRetainHooks = this.getOnRetainHooks();
+	        var onEnterHooks = this.getOnEnterHooks();
+	        var onFinishHooks = this.getOnFinishHooks();
+	        var asyncHooks = [onStartHooks, onExitHooks, onRetainHooks, onEnterHooks, onFinishHooks];
+	        return asyncHooks.reduce(common_1.unnestR, []).filter(common_1.identity);
+	    };
+	    /**
+	     * Returns an array of newly built TransitionHook objects.
+	     *
+	     * - Finds all IEventHooks registered for the given `hookType` which matched the transition's [[TreeChanges]].
+	     * - Finds [[PathNode]] (or `PathNode[]`) to use as the TransitionHook context(s)
+	     * - For each of the [[PathNode]]s, creates a TransitionHook
+	     *
+	     * @param hookType the name of the hook registration function, e.g., 'onEnter', 'onFinish'.
+	     * @param matchingNodesProp selects which [[PathNode]]s from the [[IMatchingNodes]] object to create hooks for.
+	     * @param getLocals a function which accepts a [[PathNode]] and returns additional locals to provide to the hook as injectables
+	     * @param sortHooksFn a function which compares two HookTuple and returns <1, 0, or >1
+	     * @param options any specific Transition Hook Options
+	     */
+	    HookBuilder.prototype._buildNodeHooks = function (hookType, matchingNodesProp, sortHooksFn, options) {
+	        var _this = this;
+	        // Find all the matching registered hooks for a given hook type
+	        var matchingHooks = this._matchingHooks(hookType, this.treeChanges);
+	        if (!matchingHooks)
+	            return [];
+	        var makeTransitionHooks = function (hook) {
+	            // Fetch the Nodes that caused this hook to match.
+	            var matches = hook.matches(_this.treeChanges);
+	            // Select the PathNode[] that will be used as TransitionHook context objects
+	            var matchingNodes = matches[matchingNodesProp];
+	            // When invoking 'exiting' hooks, give them the "from path" for resolve data.
+	            // Everything else gets the "to path"
+	            var resolvePath = matchingNodesProp === 'exiting' ? _this.treeChanges.from : _this.treeChanges.to;
+	            var resolveContext = new resolveContext_1.ResolveContext(resolvePath);
+	            // Return an array of HookTuples
+	            return matchingNodes.map(function (node) {
+	                var _options = common_1.extend({ bind: hook.bind, traceData: { hookType: hookType, context: node } }, _this.baseHookOptions, options);
+	                var state = _options.stateHook ? node.state : null;
+	                var transitionHook = new transitionHook_1.TransitionHook(_this.transition, state, hook, _options);
+	                return { hook: hook, node: node, transitionHook: transitionHook };
+	            });
+	        };
+	        return matchingHooks.map(makeTransitionHooks)
+	            .reduce(common_1.unnestR, [])
+	            .sort(sortHooksFn)
+	            .map(function (tuple) { return tuple.transitionHook; });
+	    };
+	    /**
+	     * Finds all IEventHooks from:
+	     * - The Transition object instance hook registry
+	     * - The TransitionService ($transitions) global hook registry
+	     *
+	     * which matched:
+	     * - the eventType
+	     * - the matchCriteria (to, from, exiting, retained, entering)
+	     *
+	     * @returns an array of matched [[IEventHook]]s
+	     */
+	    HookBuilder.prototype._matchingHooks = function (hookName, treeChanges) {
+	        return [this.transition, this.$transitions] // Instance and Global hook registries
+	            .map(function (reg) { return reg.getHooks(hookName); }) // Get named hooks from registries
+	            .filter(common_1.assertPredicate(predicates_1.isArray, "broken event named: " + hookName)) // Sanity check
+	            .reduce(common_1.unnestR, []) // Un-nest IEventHook[][] to IEventHook[] array
+	            .filter(function (hook) { return hook.matches(treeChanges); }); // Only those satisfying matchCriteria
+	    };
+	    return HookBuilder;
+	}());
+	exports.HookBuilder = HookBuilder;
+	/**
+	 * A factory for a sort function for HookTuples.
+	 *
+	 * The sort function first compares the PathNode depth (how deep in the state tree a node is), then compares
+	 * the EventHook priority.
+	 *
+	 * @param reverseDepthSort a boolean, when true, reverses the sort order for the node depth
+	 * @returns a tuple sort function
+	 */
+	function tupleSort(reverseDepthSort) {
+	    if (reverseDepthSort === void 0) { reverseDepthSort = false; }
+	    return function nodeDepthThenPriority(l, r) {
+	        var factor = reverseDepthSort ? -1 : 1;
+	        var depthDelta = (l.node.state.path.length - r.node.state.path.length) * factor;
+	        return depthDelta !== 0 ? depthDelta : r.hook.priority - l.hook.priority;
+	    };
+	}
+	//# sourceMappingURL=hookBuilder.js.map
+
+/***/ },
+
+/***/ 184:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module url */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var hof_1 = __webpack_require__(17);
+	var predicates_1 = __webpack_require__(9);
+	var param_1 = __webpack_require__(54);
+	var predicates_2 = __webpack_require__(9);
+	var param_2 = __webpack_require__(54);
+	var common_2 = __webpack_require__(5);
+	var common_3 = __webpack_require__(5);
+	/** @hidden */
+	function quoteRegExp(string, param) {
+	    var surroundPattern = ['', ''], result = string.replace(/[\\\[\]\^$*+?.()|{}]/g, "\\$&");
+	    if (!param)
+	        return result;
+	    switch (param.squash) {
+	        case false:
+	            surroundPattern = ['(', ')' + (param.isOptional ? '?' : '')];
+	            break;
+	        case true:
+	            result = result.replace(/\/$/, '');
+	            surroundPattern = ['(?:\/(', ')|\/)?'];
+	            break;
+	        default:
+	            surroundPattern = [("(" + param.squash + "|"), ')?'];
+	            break;
+	    }
+	    return result + surroundPattern[0] + param.type.pattern.source + surroundPattern[1];
+	}
+	/** @hidden */
+	var memoizeTo = function (obj, prop, fn) {
+	    return obj[prop] = obj[prop] || fn();
+	};
+	/**
+	 * Matches URLs against patterns.
+	 *
+	 * Matches URLs against patterns and extracts named parameters from the path or the search
+	 * part of the URL.
+	 *
+	 * A URL pattern consists of a path pattern, optionally followed by '?' and a list of search (query)
+	 * parameters. Multiple search parameter names are separated by '&'. Search parameters
+	 * do not influence whether or not a URL is matched, but their values are passed through into
+	 * the matched parameters returned by [[UrlMatcher.exec]].
+	 *
+	 * - *Path parameters* are defined using curly brace placeholders (`/somepath/{param}`)
+	 * or colon placeholders (`/somePath/:param`).
+	 *
+	 * - *A parameter RegExp* may be defined for a param after a colon
+	 * (`/somePath/{param:[a-zA-Z0-9]+}`) in a curly brace placeholder.
+	 * The regexp must match for the url to be matched.
+	 * Should the regexp itself contain curly braces, they must be in matched pairs or escaped with a backslash.
+	 *
+	 * - *Custom parameter types* may also be specified after a colon (`/somePath/{param:int}`)
+	 * in curly brace parameters.  See [[UrlMatcherFactory.type]] for more information.
+	 *
+	 * - *Catch-all parameters* are defined using an asterisk placeholder (`/somepath/*catchallparam`).  A catch-all
+	 * parameter value will contain the remainder of the URL.
+	 *
+	 * ---
+	 *
+	 * Parameter names may contain only word characters (latin letters, digits, and underscore) and
+	 * must be unique within the pattern (across both path and search parameters).
+	 * A path parameter matches any number of characters other than '/'. For catch-all
+	 * placeholders the path parameter matches any number of characters.
+	 *
+	 * Examples:
+	 *
+	 * * `'/hello/'` - Matches only if the path is exactly '/hello/'. There is no special treatment for
+	 *   trailing slashes, and patterns have to match the entire path, not just a prefix.
+	 * * `'/user/:id'` - Matches '/user/bob' or '/user/1234!!!' or even '/user/' but not '/user' or
+	 *   '/user/bob/details'. The second path segment will be captured as the parameter 'id'.
+	 * * `'/user/{id}'` - Same as the previous example, but using curly brace syntax.
+	 * * `'/user/{id:[^/]*}'` - Same as the previous example.
+	 * * `'/user/{id:[0-9a-fA-F]{1,8}}'` - Similar to the previous example, but only matches if the id
+	 *   parameter consists of 1 to 8 hex digits.
+	 * * `'/files/{path:.*}'` - Matches any URL starting with '/files/' and captures the rest of the
+	 *   path into the parameter 'path'.
+	 * * `'/files/*path'` - ditto.
+	 * * `'/calendar/{start:date}'` - Matches "/calendar/2014-11-12" (because the pattern defined
+	 *   in the built-in  `date` ParamType matches `2014-11-12`) and provides a Date object in $stateParams.start
+	 *
+	 */
+	var UrlMatcher = (function () {
+	    /**
+	     * @param pattern The pattern to compile into a matcher.
+	     * @param paramTypes The [[ParamTypes]] registry
+	     * @param config  A configuration object
+	     * - `caseInsensitive` - `true` if URL matching should be case insensitive, otherwise `false`, the default value (for backward compatibility) is `false`.
+	     * - `strict` - `false` if matching against a URL with a trailing slash should be treated as equivalent to a URL without a trailing slash, the default value is `true`.
+	     */
+	    function UrlMatcher(pattern, paramTypes, config) {
+	        var _this = this;
+	        this.config = config;
+	        /** @hidden */
+	        this._cache = { path: [], pattern: null };
+	        /** @hidden */
+	        this._children = [];
+	        /** @hidden */
+	        this._params = [];
+	        /** @hidden */
+	        this._segments = [];
+	        /** @hidden */
+	        this._compiled = [];
+	        this.pattern = pattern;
+	        this.config = common_1.defaults(this.config, {
+	            params: {},
+	            strict: true,
+	            caseInsensitive: false,
+	            paramMap: common_1.identity
+	        });
+	        // Find all placeholders and create a compiled pattern, using either classic or curly syntax:
+	        //   '*' name
+	        //   ':' name
+	        //   '{' name '}'
+	        //   '{' name ':' regexp '}'
+	        // The regular expression is somewhat complicated due to the need to allow curly braces
+	        // inside the regular expression. The placeholder regexp breaks down as follows:
+	        //    ([:*])([\w\[\]]+)              - classic placeholder ($1 / $2) (search version has - for snake-case)
+	        //    \{([\w\[\]]+)(?:\:\s*( ... ))?\}  - curly brace placeholder ($3) with optional regexp/type ... ($4) (search version has - for snake-case
+	        //    (?: ... | ... | ... )+         - the regexp consists of any number of atoms, an atom being either
+	        //    [^{}\\]+                       - anything other than curly braces or backslash
+	        //    \\.                            - a backslash escape
+	        //    \{(?:[^{}\\]+|\\.)*\}          - a matched set of curly braces containing other atoms
+	        var placeholder = /([:*])([\w\[\]]+)|\{([\w\[\]]+)(?:\:\s*((?:[^{}\\]+|\\.|\{(?:[^{}\\]+|\\.)*\})+))?\}/g, searchPlaceholder = /([:]?)([\w\[\].-]+)|\{([\w\[\].-]+)(?:\:\s*((?:[^{}\\]+|\\.|\{(?:[^{}\\]+|\\.)*\})+))?\}/g, last = 0, m, patterns = [];
+	        var checkParamErrors = function (id) {
+	            if (!UrlMatcher.nameValidator.test(id))
+	                throw new Error("Invalid parameter name '" + id + "' in pattern '" + pattern + "'");
+	            if (common_1.find(_this._params, hof_1.propEq('id', id)))
+	                throw new Error("Duplicate parameter name '" + id + "' in pattern '" + pattern + "'");
+	        };
+	        // Split into static segments separated by path parameter placeholders.
+	        // The number of segments is always 1 more than the number of parameters.
+	        var matchDetails = function (m, isSearch) {
+	            // IE[78] returns '' for unmatched groups instead of null
+	            var id = m[2] || m[3], regexp = isSearch ? m[4] : m[4] || (m[1] === '*' ? '.*' : null);
+	            return {
+	                id: id,
+	                regexp: regexp,
+	                cfg: _this.config.params[id],
+	                segment: pattern.substring(last, m.index),
+	                type: !regexp ? null : paramTypes.type(regexp || "string") || common_1.inherit(paramTypes.type("string"), {
+	                    pattern: new RegExp(regexp, _this.config.caseInsensitive ? 'i' : undefined)
+	                })
+	            };
+	        };
+	        var p, segment;
+	        while ((m = placeholder.exec(pattern))) {
+	            p = matchDetails(m, false);
+	            if (p.segment.indexOf('?') >= 0)
+	                break; // we're into the search part
+	            checkParamErrors(p.id);
+	            this._params.push(param_1.Param.fromPath(p.id, p.type, this.config.paramMap(p.cfg, false), paramTypes));
+	            this._segments.push(p.segment);
+	            patterns.push([p.segment, common_1.tail(this._params)]);
+	            last = placeholder.lastIndex;
+	        }
+	        segment = pattern.substring(last);
+	        // Find any search parameter names and remove them from the last segment
+	        var i = segment.indexOf('?');
+	        if (i >= 0) {
+	            var search = segment.substring(i);
+	            segment = segment.substring(0, i);
+	            if (search.length > 0) {
+	                last = 0;
+	                while ((m = searchPlaceholder.exec(search))) {
+	                    p = matchDetails(m, true);
+	                    checkParamErrors(p.id);
+	                    this._params.push(param_1.Param.fromSearch(p.id, p.type, this.config.paramMap(p.cfg, true), paramTypes));
+	                    last = placeholder.lastIndex;
+	                }
+	            }
+	        }
+	        this._segments.push(segment);
+	        common_1.extend(this, {
+	            _compiled: patterns.map(function (pattern) { return quoteRegExp.apply(null, pattern); }).concat(quoteRegExp(segment)),
+	            prefix: this._segments[0]
+	        });
+	        Object.freeze(this);
+	    }
+	    /**
+	     * Creates a new concatenated UrlMatcher
+	     *
+	     * Builds a new UrlMatcher by appending another UrlMatcher to this one.
+	     *
+	     * @param url A `UrlMatcher` instance to append as a child of the current `UrlMatcher`.
+	     */
+	    UrlMatcher.prototype.append = function (url) {
+	        this._children.push(url);
+	        common_1.forEach(url._cache, function (val, key) { return url._cache[key] = predicates_1.isArray(val) ? [] : null; });
+	        url._cache.path = this._cache.path.concat(this);
+	        return url;
+	    };
+	    /** @hidden */
+	    UrlMatcher.prototype.isRoot = function () {
+	        return this._cache.path.length === 0;
+	    };
+	    /** Returns the input pattern string */
+	    UrlMatcher.prototype.toString = function () {
+	        return this.pattern;
+	    };
+	    /**
+	     * Tests the specified url/path against this matcher.
+	     *
+	     * Tests if the given url matches this matcher's pattern, and returns an object containing the captured
+	     * parameter values.  Returns null if the path does not match.
+	     *
+	     * The returned object contains the values
+	     * of any search parameters that are mentioned in the pattern, but their value may be null if
+	     * they are not present in `search`. This means that search parameters are always treated
+	     * as optional.
+	     *
+	     * @example
+	     * ```js
+	     *
+	     * new UrlMatcher('/user/{id}?q&r').exec('/user/bob', {
+	     *   x: '1', q: 'hello'
+	     * });
+	     * // returns { id: 'bob', q: 'hello', r: null }
+	     * ```
+	     *
+	     * @param path    The URL path to match, e.g. `$location.path()`.
+	     * @param search  URL search parameters, e.g. `$location.search()`.
+	     * @param hash    URL hash e.g. `$location.hash()`.
+	     * @param options
+	     *
+	     * @returns The captured parameter values.
+	     */
+	    UrlMatcher.prototype.exec = function (path, search, hash, options) {
+	        var _this = this;
+	        if (search === void 0) { search = {}; }
+	        if (options === void 0) { options = {}; }
+	        var match = memoizeTo(this._cache, 'pattern', function () {
+	            return new RegExp([
+	                '^',
+	                common_1.unnest(_this._cache.path.concat(_this).map(hof_1.prop('_compiled'))).join(''),
+	                _this.config.strict === false ? '\/?' : '',
+	                '$'
+	            ].join(''), _this.config.caseInsensitive ? 'i' : undefined);
+	        }).exec(path);
+	        if (!match)
+	            return null;
+	        //options = defaults(options, { isolate: false });
+	        var allParams = this.parameters(), pathParams = allParams.filter(function (param) { return !param.isSearch(); }), searchParams = allParams.filter(function (param) { return param.isSearch(); }), nPathSegments = this._cache.path.concat(this).map(function (urlm) { return urlm._segments.length - 1; }).reduce(function (a, x) { return a + x; }), values = {};
+	        if (nPathSegments !== match.length - 1)
+	            throw new Error("Unbalanced capture group in route '" + this.pattern + "'");
+	        function decodePathArray(string) {
+	            var reverseString = function (str) { return str.split("").reverse().join(""); };
+	            var unquoteDashes = function (str) { return str.replace(/\\-/g, "-"); };
+	            var split = reverseString(string).split(/-(?!\\)/);
+	            var allReversed = common_1.map(split, reverseString);
+	            return common_1.map(allReversed, unquoteDashes).reverse();
+	        }
+	        for (var i = 0; i < nPathSegments; i++) {
+	            var param = pathParams[i];
+	            var value = match[i + 1];
+	            // if the param value matches a pre-replace pair, replace the value before decoding.
+	            for (var j = 0; j < param.replace.length; j++) {
+	                if (param.replace[j].from === value)
+	                    value = param.replace[j].to;
+	            }
+	            if (value && param.array === true)
+	                value = decodePathArray(value);
+	            if (predicates_2.isDefined(value))
+	                value = param.type.decode(value);
+	            values[param.id] = param.value(value);
+	        }
+	        searchParams.forEach(function (param) {
+	            var value = search[param.id];
+	            for (var j = 0; j < param.replace.length; j++) {
+	                if (param.replace[j].from === value)
+	                    value = param.replace[j].to;
+	            }
+	            if (predicates_2.isDefined(value))
+	                value = param.type.decode(value);
+	            values[param.id] = param.value(value);
+	        });
+	        if (hash)
+	            values["#"] = hash;
+	        return values;
+	    };
+	    /**
+	     * @hidden
+	     * Returns all the [[Param]] objects of all path and search parameters of this pattern in order of appearance.
+	     *
+	     * @returns {Array.<Param>}  An array of [[Param]] objects. Must be treated as read-only. If the
+	     *    pattern has no parameters, an empty array is returned.
+	     */
+	    UrlMatcher.prototype.parameters = function (opts) {
+	        if (opts === void 0) { opts = {}; }
+	        if (opts.inherit === false)
+	            return this._params;
+	        return common_1.unnest(this._cache.path.concat(this).map(hof_1.prop('_params')));
+	    };
+	    /**
+	     * @hidden
+	     * Returns a single parameter from this UrlMatcher by id
+	     *
+	     * @param id
+	     * @param opts
+	     * @returns {T|Param|any|boolean|UrlMatcher|null}
+	     */
+	    UrlMatcher.prototype.parameter = function (id, opts) {
+	        if (opts === void 0) { opts = {}; }
+	        var parent = common_1.tail(this._cache.path);
+	        return (common_1.find(this._params, hof_1.propEq('id', id)) ||
+	            (opts.inherit !== false && parent && parent.parameter(id)) ||
+	            null);
+	    };
+	    /**
+	     * Validates the input parameter values against this UrlMatcher
+	     *
+	     * Checks an object hash of parameters to validate their correctness according to the parameter
+	     * types of this `UrlMatcher`.
+	     *
+	     * @param params The object hash of parameters to validate.
+	     * @returns Returns `true` if `params` validates, otherwise `false`.
+	     */
+	    UrlMatcher.prototype.validates = function (params) {
+	        var _this = this;
+	        var validParamVal = function (param, val) {
+	            return !param || param.validates(val);
+	        };
+	        return common_1.pairs(params || {}).map(function (_a) {
+	            var key = _a[0], val = _a[1];
+	            return validParamVal(_this.parameter(key), val);
+	        }).reduce(common_1.allTrueR, true);
+	    };
+	    /**
+	     * Given a set of parameter values, creates a URL from this UrlMatcher.
+	     *
+	     * Creates a URL that matches this pattern by substituting the specified values
+	     * for the path and search parameters.
+	     *
+	     * @example
+	     * ```js
+	     *
+	     * new UrlMatcher('/user/{id}?q').format({ id:'bob', q:'yes' });
+	     * // returns '/user/bob?q=yes'
+	     * ```
+	     *
+	     * @param values  the values to substitute for the parameters in this pattern.
+	     * @returns the formatted URL (path and optionally search part).
+	     */
+	    UrlMatcher.prototype.format = function (values) {
+	        if (values === void 0) { values = {}; }
+	        if (!this.validates(values))
+	            return null;
+	        // Build the full path of UrlMatchers (including all parent UrlMatchers)
+	        var urlMatchers = this._cache.path.slice().concat(this);
+	        // Extract all the static segments and Params into an ordered array
+	        var pathSegmentsAndParams = urlMatchers.map(UrlMatcher.pathSegmentsAndParams).reduce(common_2.unnestR, []);
+	        // Extract the query params into a separate array
+	        var queryParams = urlMatchers.map(UrlMatcher.queryParams).reduce(common_2.unnestR, []);
+	        /**
+	         * Given a Param,
+	         * Applies the parameter value, then returns details about it
+	         */
+	        function getDetails(param) {
+	            // Normalize to typed value
+	            var value = param.value(values[param.id]);
+	            var isDefaultValue = param.isDefaultValue(value);
+	            // Check if we're in squash mode for the parameter
+	            var squash = isDefaultValue ? param.squash : false;
+	            // Allow the Parameter's Type to encode the value
+	            var encoded = param.type.encode(value);
+	            return { param: param, value: value, isDefaultValue: isDefaultValue, squash: squash, encoded: encoded };
+	        }
+	        // Build up the path-portion from the list of static segments and parameters
+	        var pathString = pathSegmentsAndParams.reduce(function (acc, x) {
+	            // The element is a static segment (a raw string); just append it
+	            if (predicates_1.isString(x))
+	                return acc + x;
+	            // Otherwise, it's a Param.  Fetch details about the parameter value
+	            var _a = getDetails(x), squash = _a.squash, encoded = _a.encoded, param = _a.param;
+	            // If squash is === true, try to remove a slash from the path
+	            if (squash === true)
+	                return (acc.match(/\/$/)) ? acc.slice(0, -1) : acc;
+	            // If squash is a string, use the string for the param value
+	            if (predicates_1.isString(squash))
+	                return acc + squash;
+	            if (squash !== false)
+	                return acc; // ?
+	            if (encoded == null)
+	                return acc;
+	            // If this parameter value is an array, encode the value using encodeDashes
+	            if (predicates_1.isArray(encoded))
+	                return acc + common_1.map(encoded, UrlMatcher.encodeDashes).join("-");
+	            // If the parameter type is "raw", then do not encodeURIComponent
+	            if (param.type.raw)
+	                return acc + encoded;
+	            // Encode the value
+	            return acc + encodeURIComponent(encoded);
+	        }, "");
+	        // Build the query string by applying parameter values (array or regular)
+	        // then mapping to key=value, then flattening and joining using "&"
+	        var queryString = queryParams.map(function (param) {
+	            var _a = getDetails(param), squash = _a.squash, encoded = _a.encoded, isDefaultValue = _a.isDefaultValue;
+	            if (encoded == null || (isDefaultValue && squash !== false))
+	                return;
+	            if (!predicates_1.isArray(encoded))
+	                encoded = [encoded];
+	            if (encoded.length === 0)
+	                return;
+	            if (!param.type.raw)
+	                encoded = common_1.map(encoded, encodeURIComponent);
+	            return encoded.map(function (val) { return (param.id + "=" + val); });
+	        }).filter(common_1.identity).reduce(common_2.unnestR, []).join("&");
+	        // Concat the pathstring with the queryString (if exists) and the hashString (if exists)
+	        return pathString + (queryString ? "?" + queryString : "") + (values["#"] ? "#" + values["#"] : "");
+	    };
+	    /** @hidden */
+	    UrlMatcher.encodeDashes = function (str) {
+	        return encodeURIComponent(str).replace(/-/g, function (c) { return ("%5C%" + c.charCodeAt(0).toString(16).toUpperCase()); });
+	    };
+	    /** @hidden Given a matcher, return an array with the matcher's path segments and path params, in order */
+	    UrlMatcher.pathSegmentsAndParams = function (matcher) {
+	        var staticSegments = matcher._segments;
+	        var pathParams = matcher._params.filter(function (p) { return p.location === param_2.DefType.PATH; });
+	        return common_3.arrayTuples(staticSegments, pathParams.concat(undefined)).reduce(common_2.unnestR, []).filter(function (x) { return x !== "" && predicates_2.isDefined(x); });
+	    };
+	    /** @hidden Given a matcher, return an array with the matcher's query params */
+	    UrlMatcher.queryParams = function (matcher) {
+	        return matcher._params.filter(function (p) { return p.location === param_2.DefType.SEARCH; });
+	    };
+	    /** @hidden */
+	    UrlMatcher.nameValidator = /^\w+([-.]+\w+)*(?:\[\])?$/;
+	    return UrlMatcher;
+	}());
+	exports.UrlMatcher = UrlMatcher;
+	//# sourceMappingURL=urlMatcher.js.map
+
+/***/ },
+
+/***/ 185:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module url */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var predicates_1 = __webpack_require__(9);
+	var urlMatcher_1 = __webpack_require__(184);
+	var urlMatcherConfig_1 = __webpack_require__(135);
+	var param_1 = __webpack_require__(54);
+	var paramTypes_1 = __webpack_require__(176);
+	/** @hidden */
+	function getDefaultConfig() {
+	    return {
+	        strict: urlMatcherConfig_1.matcherConfig.strictMode(),
+	        caseInsensitive: urlMatcherConfig_1.matcherConfig.caseInsensitive()
+	    };
+	}
+	/**
+	 * Factory for [[UrlMatcher]] instances.
+	 *
+	 * The factory is available to ng1 services as
+	 * `$urlMatcherFactor` or ng1 providers as `$urlMatcherFactoryProvider`.
+	 */
+	var UrlMatcherFactory = (function () {
+	    function UrlMatcherFactory() {
+	        this.paramTypes = new paramTypes_1.ParamTypes();
+	        common_1.extend(this, { UrlMatcher: urlMatcher_1.UrlMatcher, Param: param_1.Param });
+	    }
+	    /**
+	     * Defines whether URL matching should be case sensitive (the default behavior), or not.
+	     *
+	     * @param value `false` to match URL in a case sensitive manner; otherwise `true`;
+	     * @returns the current value of caseInsensitive
+	     */
+	    UrlMatcherFactory.prototype.caseInsensitive = function (value) {
+	        return urlMatcherConfig_1.matcherConfig.caseInsensitive(value);
+	    };
+	    /**
+	     * Defines whether URLs should match trailing slashes, or not (the default behavior).
+	     *
+	     * @param value `false` to match trailing slashes in URLs, otherwise `true`.
+	     * @returns the current value of strictMode
+	     */
+	    UrlMatcherFactory.prototype.strictMode = function (value) {
+	        return urlMatcherConfig_1.matcherConfig.strictMode(value);
+	    };
+	    /**
+	     * Sets the default behavior when generating or matching URLs with default parameter values.
+	     *
+	     * @param value A string that defines the default parameter URL squashing behavior.
+	     *    - `nosquash`: When generating an href with a default parameter value, do not squash the parameter value from the URL
+	     *    - `slash`: When generating an href with a default parameter value, squash (remove) the parameter value, and, if the
+	     *             parameter is surrounded by slashes, squash (remove) one slash from the URL
+	     *    - any other string, e.g. "~": When generating an href with a default parameter value, squash (remove)
+	     *             the parameter value from the URL and replace it with this string.
+	     * @returns the current value of defaultSquashPolicy
+	     */
+	    UrlMatcherFactory.prototype.defaultSquashPolicy = function (value) {
+	        return urlMatcherConfig_1.matcherConfig.defaultSquashPolicy(value);
+	    };
+	    /**
+	     * Creates a [[UrlMatcher]] for the specified pattern.
+	     *
+	     * @param pattern  The URL pattern.
+	     * @param config  The config object hash.
+	     * @returns The UrlMatcher.
+	     */
+	    UrlMatcherFactory.prototype.compile = function (pattern, config) {
+	        return new urlMatcher_1.UrlMatcher(pattern, this.paramTypes, common_1.extend(getDefaultConfig(), config));
+	    };
+	    /**
+	     * Returns true if the specified object is a [[UrlMatcher]], or false otherwise.
+	     *
+	     * @param object  The object to perform the type check against.
+	     * @returns `true` if the object matches the `UrlMatcher` interface, by
+	     *          implementing all the same methods.
+	     */
+	    UrlMatcherFactory.prototype.isMatcher = function (object) {
+	        // TODO: typeof?
+	        if (!predicates_1.isObject(object))
+	            return false;
+	        var result = true;
+	        common_1.forEach(urlMatcher_1.UrlMatcher.prototype, function (val, name) {
+	            if (predicates_1.isFunction(val))
+	                result = result && (predicates_1.isDefined(object[name]) && predicates_1.isFunction(object[name]));
+	        });
+	        return result;
+	    };
+	    ;
+	    /**
+	     * Creates and registers a custom [[ParamType]] object
+	     *
+	     * A [[ParamType]] can be used to generate URLs with typed parameters.
+	     *
+	     * @param name  The type name.
+	     * @param definition The type definition. See [[ParamTypeDefinition]] for information on the values accepted.
+	     * @param definitionFn A function that is injected before the app runtime starts.
+	     *        The result of this function should be a [[ParamTypeDefinition]].
+	     *        The result is merged into the existing `definition`.
+	     *        See [[ParamType]] for information on the values accepted.
+	     *
+	     * @returns - if a type was registered: the [[UrlMatcherFactory]]
+	     *   - if only the `name` parameter was specified: the currently registered [[ParamType]] object, or undefined
+	     *
+	     * Note: Register custom types *before using them* in a state definition.
+	     *
+	     * See [[ParamTypeDefinition]] for examples
+	     */
+	    UrlMatcherFactory.prototype.type = function (name, definition, definitionFn) {
+	        var type = this.paramTypes.type(name, definition, definitionFn);
+	        return !predicates_1.isDefined(definition) ? type : this;
+	    };
+	    ;
+	    /** @hidden */
+	    UrlMatcherFactory.prototype.$get = function () {
+	        this.paramTypes.enqueue = false;
+	        this.paramTypes._flushTypeQueue();
+	        return this;
+	    };
+	    ;
+	    return UrlMatcherFactory;
+	}());
+	exports.UrlMatcherFactory = UrlMatcherFactory;
+	//# sourceMappingURL=urlMatcherFactory.js.map
+
+/***/ },
+
+/***/ 186:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var networksmodel_1 = __webpack_require__(48);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ApplicationGroupCreateComponent = (function () {
+	    function ApplicationGroupCreateComponent(activatedRoute, router, networksModel, applicationGroupsModel, crudHelperService) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.networksModel = networksModel;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.crudHelperService = crudHelperService;
+	        this.networks = [];
+	        this.applicationGroup = {};
+	        this.selectedNetwork = '';
+	        var applicationGroupCreateCtrl = this;
+	        /**
+	         * Get networks for the given tenant.
+	         */
+	        function getNetworks() {
+	            networksModel.get(false).then(function (result) {
+	                applicationGroupCreateCtrl.networks = _.filter(result, {
+	                    'tenantName': 'default' //TODO: Remove hardcoded tenant.
+	                });
+	            });
+	        }
+	        function resetForm() {
+	            crudHelperService.stopLoader(applicationGroupCreateCtrl);
+	            crudHelperService.hideServerError(applicationGroupCreateCtrl);
+	            applicationGroupCreateCtrl.applicationGroup = {
+	                groupName: '',
+	                networkName: '',
+	                policies: [],
+	                netProfile: '',
+	                tenantName: 'default' //TODO: Remove hardcoded tenant.
+	            };
+	        }
+	        getNetworks();
+	        resetForm();
+	    }
+	    ApplicationGroupCreateComponent.prototype.returnToApplicationGroup = function () {
+	        this.router.navigate(['../list'], { relativeTo: this.activatedRoute });
+	    };
+	    ApplicationGroupCreateComponent.prototype.cancelCreating = function () {
+	        this.returnToApplicationGroup();
+	    };
+	    ApplicationGroupCreateComponent.prototype.createApplicationGroup = function (validform) {
+	        var applicationGroupCreateCtrl = this;
+	        if (validform) {
+	            applicationGroupCreateCtrl.crudHelperService.hideServerError(applicationGroupCreateCtrl);
+	            applicationGroupCreateCtrl.crudHelperService.startLoader(applicationGroupCreateCtrl);
+	            applicationGroupCreateCtrl.applicationGroup.networkName =
+	                applicationGroupCreateCtrl.selectedNetwork;
+	            applicationGroupCreateCtrl.applicationGroup.key =
+	                applicationGroupCreateCtrl.applicationGroupsModel.generateKey(applicationGroupCreateCtrl.applicationGroup);
+	            /**
+	             * applicationGroup consist of Group Name, Network Name, Isolation Policies, Bandwidth Policy
+	             */
+	            applicationGroupCreateCtrl.applicationGroupsModel.create(applicationGroupCreateCtrl.applicationGroup, undefined).then(function successCallback(result) {
+	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
+	                applicationGroupCreateCtrl.returnToApplicationGroup();
+	            }, function errorCallback(result) {
+	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
+	                applicationGroupCreateCtrl.crudHelperService.showServerError(applicationGroupCreateCtrl, result);
+	            });
+	        }
+	    };
+	    ApplicationGroupCreateComponent.prototype.updateNetwork = function (networkName) {
+	        this.selectedNetwork = networkName;
+	    };
+	    ApplicationGroupCreateComponent = __decorate([
+	        core_1.Component({
+	            selector: 'applicationgroupcreate',
+	            templateUrl: 'applicationgroups/applicationgroupcreate.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _d) || Object, (typeof (_e = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _e) || Object])
+	    ], ApplicationGroupCreateComponent);
+	    return ApplicationGroupCreateComponent;
+	    var _a, _b, _c, _d, _e;
+	}());
+	exports.ApplicationGroupCreateComponent = ApplicationGroupCreateComponent;
+	
+
+/***/ },
+
+/***/ 187:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/15/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ApplicationGroupDetailsComponent = (function () {
+	    function ApplicationGroupDetailsComponent(activatedRoute, router, applicationGroupsModel, crudHelperService) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.crudHelperService = crudHelperService;
+	        this.applicationGroup = {};
+	        this.mode = 'details';
+	        var applicationGroupDetailsCtrl = this;
+	        /**
+	         * To show edit or details screen based on the route
+	         */
+	        function setMode() {
+	            if (activatedRoute.routeConfig.path.includes('edit')) {
+	                applicationGroupDetailsCtrl.mode = 'edit';
+	            }
+	            else {
+	                applicationGroupDetailsCtrl.mode = 'details';
+	            }
+	        }
+	        applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.applicationGroupsModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
+	            .then(function (group) {
+	            applicationGroupDetailsCtrl.applicationGroup = group;
+	        });
+	        setMode();
+	    }
+	    ApplicationGroupDetailsComponent.prototype.returnToApplicationGroup = function () {
+	        this.router.navigate(['../../list'], { relativeTo: this.activatedRoute });
+	    };
+	    ApplicationGroupDetailsComponent.prototype.returnToApplicationGroupDetails = function () {
+	        this.router.navigate(['../../details', this.applicationGroup.key], { relativeTo: this.activatedRoute });
+	    };
+	    ApplicationGroupDetailsComponent.prototype.editApplicationGroup = function () {
+	        this.router.navigate(['../../edit', this.applicationGroup.key], { relativeTo: this.activatedRoute });
+	    };
+	    ApplicationGroupDetailsComponent.prototype.cancelEditing = function () {
+	        this.returnToApplicationGroupDetails();
+	    };
+	    ApplicationGroupDetailsComponent.prototype.deleteApplicationGroup = function () {
+	        var applicationGroupDetailsCtrl = this;
+	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.applicationGroupsModel.delete(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
+	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	            applicationGroupDetailsCtrl.returnToApplicationGroup();
+	        }, function errorCallback(result) {
+	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
+	        });
+	    };
+	    ApplicationGroupDetailsComponent.prototype.saveApplicationGroup = function () {
+	        var applicationGroupDetailsCtrl = this;
+	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
+	        applicationGroupDetailsCtrl.applicationGroupsModel.save(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
+	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	            applicationGroupDetailsCtrl.returnToApplicationGroupDetails();
+	        }, function errorCallback(result) {
+	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
+	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
+	        });
+	    };
+	    ApplicationGroupDetailsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'applicationgroupdetails',
+	            templateUrl: 'applicationgroups/applicationgroupdetails.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
+	    ], ApplicationGroupDetailsComponent);
+	    return ApplicationGroupDetailsComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.ApplicationGroupDetailsComponent = ApplicationGroupDetailsComponent;
+	
+
+/***/ },
+
+/***/ 188:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(44);
+	var AppGrouplistComponent = (function () {
+	    function AppGrouplistComponent(activatedRoute, router, appGroupModel, crudHelperService) {
+	        var _this = this;
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.appGroupModel = appGroupModel;
+	        this.crudHelperService = crudHelperService;
+	        this.applicationGroupListCtrl = this;
+	        this['showLoader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getApplicationGroup(true);
+	        });
+	    }
+	    AppGrouplistComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.getApplicationGroup(false);
+	    };
+	    AppGrouplistComponent.prototype.getApplicationGroup = function (reload) {
+	        var applicationGroupListCtrl = this;
+	        this.appGroupModel.get(reload)
+	            .then(function (result) {
+	            applicationGroupListCtrl['groups'] = result;
+	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
+	        }, function (error) {
+	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
+	        });
+	    };
+	    AppGrouplistComponent.prototype.create = function () {
+	        this.router.navigate(['../create'], { relativeTo: this.activatedRoute });
+	    };
+	    AppGrouplistComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    AppGrouplistComponent = __decorate([
+	        core_1.Component({
+	            selector: 'app-group',
+	            template: __webpack_require__(495)
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
+	    ], AppGrouplistComponent);
+	    return AppGrouplistComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.AppGrouplistComponent = AppGrouplistComponent;
+	
+
+/***/ },
+
+/***/ 189:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(32);
+	__webpack_require__(115);
+	var contivglobals_1 = __webpack_require__(37);
+	var NetworkService = (function () {
+	    function NetworkService(http) {
+	        this.http = http;
+	    }
+	    NetworkService.prototype.getSettings = function () {
+	        var networkservice = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            var url = contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT;
+	            networkservice.http.get(url).map(function (res) { return res.json(); }).toPromise()
+	                .then(function successCallback(result) {
+	                resolve(result[0]);
+	            }, function errorCallback(result) {
+	                reject(result);
+	            });
+	        });
+	        return promise;
+	    };
+	    NetworkService.prototype.updateSettings = function (setting) {
+	        return this.http.post(contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT
+	            + 'global/', setting).map(function (res) { return res.json(); }).toPromise();
+	    };
+	    NetworkService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], NetworkService);
+	    return NetworkService;
+	    var _a;
+	}());
+	exports.NetworkService = NetworkService;
+	
+
+/***/ },
+
+/***/ 190:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(32);
+	__webpack_require__(115);
+	var contivglobals_1 = __webpack_require__(37);
+	var NodesService = (function () {
+	    function NodesService(http) {
+	        this.http = http;
+	    }
+	    Object.defineProperty(NodesService, "node_constants", {
+	        get: function () {
+	            return {
+	                APIC_CONTR_UNRESTRICT_MODE: 'apic_contracts_unrestricted_mode',
+	                APIC_EPG_BRIDGE_DOMAIN: 'apic_epg_bridge_domain',
+	                APIC_LEAF_NODES: 'apic_leaf_nodes',
+	                APIC_PASSWORD: 'apic_password',
+	                APIC_PHYS_DOMAIN: 'apic_phys_domain',
+	                APIC_URL: 'apic_url',
+	                APIC_USERNAME: 'apic_username',
+	                CONTIV_NET_MODE: 'contiv_network_mode',
+	                CONTROL_INTERFACE: 'control_interface',
+	                ENV: 'env',
+	                FWD_MODE: 'fwd_mode',
+	                DATA_INTERFACE: 'netplugin_if',
+	                SCHED_PROVIDER: 'scheduler_provider',
+	                VIP_ADDR: 'service_vip',
+	                UCP_BOOTSTRAP_NODE: 'ucp_bootstrap_node_name',
+	                CLUSTER_NAME: 'cluster_name'
+	            };
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    NodesService.prototype.getSettings = function (ctrl) {
+	        var nodeservice = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            var url = contivglobals_1.ContivGlobals.NODES_SETTINGS_GET_ENDPOINT;
+	            nodeservice.http.get(url).map(function (res) { return res.json(); }).toPromise().then(function successCallback(result) {
+	                resolve(result);
+	                ctrl.setting = result;
+	                var extraVars = ctrl.setting.extra_vars;
+	                var sched_provider = extraVars[NodesService.node_constants.SCHED_PROVIDER];
+	                var network_mode = extraVars[NodesService.node_constants.CONTIV_NET_MODE];
+	                if (extraVars[NodesService.node_constants.CONTROL_INTERFACE]) {
+	                    ctrl.extra_vars[NodesService.node_constants.CONTROL_INTERFACE] =
+	                        extraVars[NodesService.node_constants.CONTROL_INTERFACE];
+	                }
+	                if (extraVars[NodesService.node_constants.DATA_INTERFACE]) {
+	                    ctrl.extra_vars[NodesService.node_constants.DATA_INTERFACE] =
+	                        extraVars[NodesService.node_constants.DATA_INTERFACE];
+	                }
+	                if (extraVars[NodesService.node_constants.VIP_ADDR]) {
+	                    ctrl.extra_vars[NodesService.node_constants.VIP_ADDR] = extraVars[NodesService.node_constants.VIP_ADDR];
+	                }
+	                if (sched_provider) {
+	                    ctrl.extra_vars[NodesService.node_constants.SCHED_PROVIDER] = sched_provider;
+	                    if (sched_provider === 'ucp-swarm') {
+	                        ctrl.extra_vars[NodesService.node_constants.UCP_BOOTSTRAP_NODE] =
+	                            extraVars[NodesService.node_constants.UCP_BOOTSTRAP_NODE];
+	                    }
+	                }
+	                if (network_mode) {
+	                    ctrl.extra_vars[NodesService.node_constants.CONTIV_NET_MODE] = network_mode;
+	                    if (network_mode === 'standalone') {
+	                        ctrl.extra_vars[NodesService.node_constants.FWD_MODE] = extraVars[NodesService.node_constants.FWD_MODE];
+	                    }
+	                    else if (network_mode === 'aci') {
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE] =
+	                            extraVars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN] =
+	                            extraVars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_LEAF_NODES] =
+	                            extraVars[NodesService.node_constants.APIC_LEAF_NODES];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_PASSWORD] =
+	                            extraVars[NodesService.node_constants.APIC_PASSWORD];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_PHYS_DOMAIN] =
+	                            extraVars[NodesService.node_constants.APIC_PHYS_DOMAIN];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_URL] =
+	                            extraVars[NodesService.node_constants.APIC_URL];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_USERNAME] =
+	                            extraVars[NodesService.node_constants.APIC_USERNAME];
+	                    }
+	                }
+	                if (extraVars[NodesService.node_constants.CLUSTER_NAME]) {
+	                    ctrl.extra_vars[NodesService.node_constants.CLUSTER_NAME] =
+	                        extraVars[NodesService.node_constants.CLUSTER_NAME];
+	                }
+	                nodeservice.createEnvVariables(extraVars[NodesService.node_constants.ENV], ctrl.envVariables);
+	                nodeservice.createAnsibleVariables(extraVars, ctrl.ansibleVariables);
+	            }, function errorCallback(result) {
+	                reject(result);
+	            });
+	        });
+	        return promise;
+	    };
+	    NodesService.prototype.createEnvVariables = function (envVars, envVariables) {
+	        var i;
+	        for (i in envVars) {
+	            envVariables.push({ 'name': i, 'value': envVars[i] });
+	        }
+	    };
+	    NodesService.prototype.createAnsibleVariables = function (extraVars, ansibleVariables) {
+	        var setting_filter = [NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE,
+	            NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN, NodesService.node_constants.APIC_LEAF_NODES,
+	            NodesService.node_constants.APIC_PASSWORD, NodesService.node_constants.APIC_PHYS_DOMAIN,
+	            NodesService.node_constants.APIC_URL, NodesService.node_constants.APIC_USERNAME,
+	            NodesService.node_constants.CONTIV_NET_MODE, NodesService.node_constants.CONTROL_INTERFACE,
+	            NodesService.node_constants.ENV, NodesService.node_constants.FWD_MODE, NodesService.node_constants.DATA_INTERFACE,
+	            NodesService.node_constants.SCHED_PROVIDER, NodesService.node_constants.VIP_ADDR,
+	            NodesService.node_constants.UCP_BOOTSTRAP_NODE, NodesService.node_constants.CLUSTER_NAME];
+	        var i;
+	        for (i in extraVars) {
+	            if (setting_filter.indexOf(i) === -1) {
+	                ansibleVariables.push({ 'name': i, 'value': extraVars[i] });
+	            }
+	        }
+	    };
+	    ;
+	    NodesService.prototype.updateSettings = function (nodeOpsObj) {
+	        var headers = new http_1.Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
+	        var options = new http_1.RequestOptions({ headers: headers }); // Create a request option
+	        return this.http.post(contivglobals_1.ContivGlobals.NODES_SETTINGS_SET_ENDPOINT, nodeOpsObj, options)
+	            .map(function (res) { return res.json(); }).toPromise();
+	    };
+	    ;
+	    NodesService.prototype.createExtraVars = function (ctrl) {
+	        //Add ansible variables to extra_vars
+	        ctrl.ansibleVariables.forEach(function (item) {
+	            ctrl.extra_vars[item.name] = item.value;
+	        });
+	        //Add environment variables to extra_vars
+	        var envVars = {};
+	        ctrl.envVariables.forEach(function (item) {
+	            envVars[item.name] = item.value;
+	        });
+	        ctrl.extra_vars[NodesService.node_constants.ENV] = envVars;
+	        ctrl.nodeOpsObj.extra_vars = JSON.stringify(ctrl.extra_vars);
+	    };
+	    ;
+	    /**
+	     * Cleanup ansible variables for network mode and scheduler. ng-if removes it from the view (DOM) but not from
+	     * the model.
+	     */
+	    NodesService.prototype.cleanupExtraVars = function (ctrl) {
+	        //Cleanup for network mode
+	        if (ctrl.extra_vars[NodesService.node_constants.CONTIV_NET_MODE] == 'aci') {
+	            delete ctrl.extra_vars[NodesService.node_constants.FWD_MODE];
+	        }
+	        else {
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_URL];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_USERNAME];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_PASSWORD];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_LEAF_NODES];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_PHYS_DOMAIN];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE];
+	        }
+	        //Cleanup for scheduler
+	        if (ctrl.extra_vars[NodesService.node_constants.SCHED_PROVIDER] == 'native-swarm') {
+	            delete ctrl.extra_vars[NodesService.node_constants.UCP_BOOTSTRAP_NODE];
+	        }
+	    };
+	    ;
+	    NodesService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
+	    ], NodesService);
+	    return NodesService;
+	    var _a;
+	}());
+	exports.NodesService = NodesService;
+	
+
+/***/ },
+
+/***/ 191:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var Observable_1 = __webpack_require__(1);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var policiesmodel_1 = __webpack_require__(76);
+	var networksmodel_1 = __webpack_require__(48);
+	var DashboardComponent = (function () {
+	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, ngZone) {
+	        this.networksModel = networksModel;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.policiesModel = policiesModel;
+	        this.ngZone = ngZone;
+	        this.nodes = 0;
+	        this.networks = 0;
+	        this.volumes = 0;
+	        this.groups = 0;
+	        this.networkpolicies = 0;
+	        this.storagepolicies = 0;
+	        var dashboardComponent = this;
+	        function getDashboardInfo(reload) {
+	            ngZone.run(function () {
+	                networksModel.get(reload)
+	                    .then(function (result) {
+	                    dashboardComponent.networks = result.length;
+	                });
+	                applicationGroupsModel.get(reload)
+	                    .then(function (result) {
+	                    dashboardComponent.groups = result.length;
+	                });
+	                policiesModel.get(reload)
+	                    .then(function (result) {
+	                    dashboardComponent.networkpolicies = result.length;
+	                });
+	            });
+	        }
+	        //Load from cache for quick display initially
+	        getDashboardInfo(false);
+	        this.subscription = Observable_1.Observable.interval(5000).subscribe(function () {
+	            getDashboardInfo(true);
+	        });
+	    }
+	    DashboardComponent.prototype.ngOnDestroy = function () {
+	        this.subscription.unsubscribe();
+	    };
+	    DashboardComponent = __decorate([
+	        core_1.Component({
+	            selector: 'dashboard',
+	            templateUrl: 'dashboard/dashboard.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
+	    ], DashboardComponent);
+	    return DashboardComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.DashboardComponent = DashboardComponent;
+	
+
+/***/ },
+
+/***/ 192:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 5/19/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	/*
+	angular.module('contiv.menu')
+	    .config(['$stateProvider', function ($stateProvider) {
+	        $stateProvider
+	            .state('contiv.menu', {
+	                url: '/m',
+	                templateUrl: 'menu/menu.html',
+	                controller: 'MenuCtrl as menuCtrl',
+	                params: {username: null}
+	            })
+	        ;
+	    }])
+	    .controller('MenuCtrl', ['$state', '$stateParams', function ($state, $stateParams) {
+	        var menuCtrl = this;
+
+	        function logout() {
+	            $state.go('contiv.login');
+	        }
+
+	        menuCtrl.username = $stateParams.username;
+	        menuCtrl.logout = logout;
+
+	    }]);*/
+	var MenuComponent = (function () {
+	    function MenuComponent(activatedRoute, router) {
+	        this.router = router;
+	        this.username = activatedRoute.snapshot.params['username'];
+	    }
+	    MenuComponent.prototype.logout = function () {
+	        this.router.navigate(['/login']);
+	    };
+	    MenuComponent = __decorate([
+	        core_1.Component({
+	            selector: 'menu',
+	            templateUrl: 'menu/menu.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object])
+	    ], MenuComponent);
+	    return MenuComponent;
+	    var _a, _b;
+	}());
+	exports.MenuComponent = MenuComponent;
+	
+
+/***/ },
+
+/***/ 193:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/*
+	/**
+	 * Created by hardik gandhi on 6/14/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var netprofilesmodel_1 = __webpack_require__(84);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var networkpoliciestabsctrl_1 = __webpack_require__(77);
+	var BandwidthPolicyCreateComponent = (function () {
+	    function BandwidthPolicyCreateComponent(activatedRoute, router, netprofilesModel, crudHelperService) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.netprofilesModel = netprofilesModel;
+	        this.crudHelperService = crudHelperService;
+	        var bandwidthPolicyCreateCtrl = this;
+	        function resetForm() {
+	            crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
+	            crudHelperService.hideServerError(bandwidthPolicyCreateCtrl);
+	            bandwidthPolicyCreateCtrl.newPolicy = {
+	                profileName: '',
+	                tenantName: 'default',
+	                bandwidth: '',
+	                DSCP: ''
+	            };
+	        }
+	        resetForm();
+	    }
+	    BandwidthPolicyCreateComponent.prototype.returnToPolicies = function () {
+	        this.router.navigate(['../../list', { policyTab: networkpoliciestabsctrl_1.PolicyTab.bandwidth }], { relativeTo: this.activatedRoute });
+	    };
+	    BandwidthPolicyCreateComponent.prototype.cancelCreating = function () {
+	        this.returnToPolicies();
+	    };
+	    BandwidthPolicyCreateComponent.prototype.createPolicy = function (validform) {
+	        var bandwidthPolicyCreateCtrl = this;
+	        if (validform) {
+	            bandwidthPolicyCreateCtrl.crudHelperService.hideServerError(bandwidthPolicyCreateCtrl);
+	            bandwidthPolicyCreateCtrl.crudHelperService.startLoader(bandwidthPolicyCreateCtrl);
+	            bandwidthPolicyCreateCtrl.newPolicy.key =
+	                bandwidthPolicyCreateCtrl.netprofilesModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
+	            bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.newPolicy.bandwidthNumber
+	                + " " + bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
+	            bandwidthPolicyCreateCtrl.netprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+	                bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
+	                this.returnToPolicies();
+	            }, function errorCallback(result) {
+	                bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
+	                bandwidthPolicyCreateCtrl.crudHelperService.showServerError(bandwidthPolicyCreateCtrl, result);
+	            });
+	        }
+	    };
+	    BandwidthPolicyCreateComponent = __decorate([
+	        core_1.Component({
+	            selector: 'bandwidthpolicycreate',
+	            templateUrl: 'network_policies/bandwidthpolicycreate.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof netprofilesmodel_1.NetprofilesModel !== 'undefined' && netprofilesmodel_1.NetprofilesModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
+	    ], BandwidthPolicyCreateComponent);
+	    return BandwidthPolicyCreateComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.BandwidthPolicyCreateComponent = BandwidthPolicyCreateComponent;
+	
+
+/***/ },
+
+/***/ 194:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by hardik gandhi on 6/16/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var netprofilesmodel_1 = __webpack_require__(84);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var networkpoliciestabsctrl_1 = __webpack_require__(77);
+	var BandwidthPolicyDetailsComponent = (function () {
+	    function BandwidthPolicyDetailsComponent(activatedRoute, router, netprofilesModel, crudHelperService) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.netprofilesModel = netprofilesModel;
+	        this.crudHelperService = crudHelperService;
+	        this.bandwidthProfiles = [];
+	        this.policy = {};
+	        this.mode = 'details';
+	        var bandwidthPolicyDetailsCtrl = this;
+	        /**
+	         * To show edit or details screen based on the route
+	         */
+	        function setMode() {
+	            if (activatedRoute.routeConfig.path.includes('edit')) {
+	                bandwidthPolicyDetailsCtrl.mode = 'edit';
+	            }
+	            else {
+	                bandwidthPolicyDetailsCtrl.mode = 'details';
+	            }
+	        }
+	        /* Get particular Profile for based on key*/
+	        bandwidthPolicyDetailsCtrl.netprofilesModel.getModelByKey(activatedRoute.snapshot.params['key'])
+	            .then(function (policy) {
+	            bandwidthPolicyDetailsCtrl.policy = policy;
+	        });
+	        bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
+	        bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
+	        setMode();
+	    }
+	    BandwidthPolicyDetailsComponent.prototype.deletePolicy = function () {
+	        var bandwidthPolicyDetailsCtrl = this;
+	        bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
+	        bandwidthPolicyDetailsCtrl.crudHelperService.startLoader(bandwidthPolicyDetailsCtrl);
+	        bandwidthPolicyDetailsCtrl.netprofilesModel.deleteUsingKey(bandwidthPolicyDetailsCtrl.policy.key, 'name').then(function successCallback(result) {
+	            bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
+	            bandwidthPolicyDetailsCtrl.returnToPolicies();
+	        }, function errorCallback(result) {
+	            bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
+	            bandwidthPolicyDetailsCtrl.crudHelperService.showServerError(bandwidthPolicyDetailsCtrl, result);
+	        });
+	    };
+	    BandwidthPolicyDetailsComponent.prototype.returnToPolicies = function () {
+	        this.router.navigate(['../../../list', { policyTab: networkpoliciestabsctrl_1.PolicyTab.bandwidth }], { relativeTo: this.activatedRoute });
+	    };
+	    BandwidthPolicyDetailsComponent.prototype.returnToPolicyDetails = function () {
+	        this.router.navigate(['../../details', this.policy.key], { relativeTo: this.activatedRoute });
+	    };
+	    BandwidthPolicyDetailsComponent.prototype.editPolicy = function () {
+	        this.router.navigate(['../../edit', this.policy.key], { relativeTo: this.activatedRoute });
+	    };
+	    BandwidthPolicyDetailsComponent.prototype.cancelEditing = function () {
+	        this.returnToPolicyDetails();
+	    };
+	    BandwidthPolicyDetailsComponent.prototype.savePolicy = function (validform) {
+	        var bandwidthPolicyDetailsCtrl = this;
+	        if (validform) {
+	            bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
+	            bandwidthPolicyDetailsCtrl.crudHelperService.startLoader(bandwidthPolicyDetailsCtrl);
+	            bandwidthPolicyDetailsCtrl.policy.bandwidth = bandwidthPolicyDetailsCtrl.policy.bandwidthNumber + " " + bandwidthPolicyDetailsCtrl.policy.bandwidthUnit;
+	            bandwidthPolicyDetailsCtrl.netprofilesModel.save(bandwidthPolicyDetailsCtrl.policy).then(function successCallback(result) {
+	                bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
+	                bandwidthPolicyDetailsCtrl.returnToPolicyDetails();
+	            }, function errorCallback(result) {
+	                bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
+	                bandwidthPolicyDetailsCtrl.crudHelperService.showServerError(bandwidthPolicyDetailsCtrl, result);
+	            });
+	        }
+	    };
+	    BandwidthPolicyDetailsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'bandwidthpolicydetails',
+	            templateUrl: 'network_policies/bandwidthpolicydetails.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof netprofilesmodel_1.NetprofilesModel !== 'undefined' && netprofilesmodel_1.NetprofilesModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
+	    ], BandwidthPolicyDetailsComponent);
+	    return BandwidthPolicyDetailsComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.BandwidthPolicyDetailsComponent = BandwidthPolicyDetailsComponent;
+	
+
+/***/ },
+
+/***/ 195:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/10/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var policiesmodel_1 = __webpack_require__(76);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var networkpoliciestabsctrl_1 = __webpack_require__(77);
+	var IsolationPolicyCreateComponent = (function () {
+	    function IsolationPolicyCreateComponent(activatedRoute, router, policiesModel, crudHelperService) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.policiesModel = policiesModel;
+	        this.crudHelperService = crudHelperService;
+	        var isolationPolicyCreateCtrl = this;
+	        function resetForm() {
+	            crudHelperService.stopLoader(isolationPolicyCreateCtrl);
+	            crudHelperService.hideServerError(isolationPolicyCreateCtrl);
+	            isolationPolicyCreateCtrl.newPolicy = {
+	                policyName: '',
+	                tenantName: 'default' //TODO: Remove hardcoded tenant.
+	            };
+	        }
+	        resetForm();
+	    }
+	    IsolationPolicyCreateComponent.prototype.returnToPolicies = function () {
+	        //this.router.navigate('contiv.menu.networkpolicies.list', {policyTab: PolicyTab.isolation});
+	        this.router.navigate(['../../list', { policyTab: networkpoliciestabsctrl_1.PolicyTab.isolation }], { relativeTo: this.activatedRoute });
+	    };
+	    IsolationPolicyCreateComponent.prototype.cancelCreating = function () {
+	        this.returnToPolicies();
+	    };
+	    IsolationPolicyCreateComponent.prototype.createPolicy = function (validform) {
+	        var isolationPolicyCreateCtrl = this;
+	        if (validform) {
+	            isolationPolicyCreateCtrl.crudHelperService.hideServerError(isolationPolicyCreateCtrl);
+	            isolationPolicyCreateCtrl.crudHelperService.startLoader(isolationPolicyCreateCtrl);
+	            isolationPolicyCreateCtrl.newPolicy.key =
+	                isolationPolicyCreateCtrl.policiesModel.generateKey(isolationPolicyCreateCtrl.newPolicy);
+	            isolationPolicyCreateCtrl.policiesModel.create(isolationPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+	                isolationPolicyCreateCtrl.crudHelperService.stopLoader(isolationPolicyCreateCtrl);
+	                isolationPolicyCreateCtrl.returnToPolicies();
+	            }, function errorCallback(result) {
+	                isolationPolicyCreateCtrl.crudHelperService.stopLoader(isolationPolicyCreateCtrl);
+	                isolationPolicyCreateCtrl.crudHelperService.showServerError(isolationPolicyCreateCtrl, result);
+	            });
+	        }
+	    };
+	    IsolationPolicyCreateComponent = __decorate([
+	        core_1.Component({
+	            selector: 'isolationpolicycreate',
+	            templateUrl: 'network_policies/isolationpolicycreate.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
+	    ], IsolationPolicyCreateComponent);
+	    return IsolationPolicyCreateComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.IsolationPolicyCreateComponent = IsolationPolicyCreateComponent;
+	
+
+/***/ },
+
+/***/ 196:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/8/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var policiesmodel_1 = __webpack_require__(76);
+	var rulesmodel_1 = __webpack_require__(138);
+	var networksmodel_1 = __webpack_require__(48);
+	var applicationgroupsmodel_1 = __webpack_require__(65);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var networkpoliciestabsctrl_1 = __webpack_require__(77);
+	var contivglobals_1 = __webpack_require__(37);
+	var IsolationPolicyDetailsComponent = (function () {
+	    function IsolationPolicyDetailsComponent(activatedRoute, router, policiesModel, rulesModel, networksModel, applicationGroupsModel, crudHelperService) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.policiesModel = policiesModel;
+	        this.rulesModel = rulesModel;
+	        this.networksModel = networksModel;
+	        this.applicationGroupsModel = applicationGroupsModel;
+	        this.crudHelperService = crudHelperService;
+	        this.policy = {};
+	        this.incomingRules = [];
+	        this.outgoingRules = [];
+	        this.mode = 'details';
+	        this.newIncomingRule = {};
+	        this.newOutgoingRule = {};
+	        this.networks = [];
+	        this.applicationGroups = [];
+	        this.disableOutgoingNetworkSelection = false;
+	        this.disableIncomingNetworkSelection = false;
+	        this.disableOutgoingApplicationGroupSelection = false;
+	        this.disableIncomingApplicationGroupSelection = false;
+	        this.disableIncomingIPAddressSelection = false;
+	        this.disableOutgoingIPAddressSelection = false;
+	        this.newIncomingSelectedApplicationGroup = '';
+	        this.newOutgoingSelectedApplicationGroup = '';
+	        this.newIncomingSelectedNetwork = '';
+	        this.newOutgoingSelectedNetwork = '';
+	        this.incorrectCIDR = false;
+	        this.validateCIDRFlag = false;
+	        var isolationPolicyDetailsCtrl = this;
+	        /**
+	         * To show edit or details screen based on the route
+	         */
+	        function setMode() {
+	            if (activatedRoute.routeConfig.path.includes('edit')) {
+	                isolationPolicyDetailsCtrl.mode = 'edit';
+	            }
+	            else {
+	                isolationPolicyDetailsCtrl.mode = 'details';
+	            }
+	        }
+	        /**
+	         * Get network names for the given tenant.
+	         */
+	        function getNetworks() {
+	            isolationPolicyDetailsCtrl.networksModel.get(false).then(function (result) {
+	                //_.filter() returns a new array
+	                isolationPolicyDetailsCtrl.networks = _.filter(result, {
+	                    'tenantName': 'default' //TODO: Remove hardcoded tenant.
+	                });
+	            });
+	        }
+	        /**
+	         * Get application group names for the given tenant.
+	         */
+	        function getApplicationGroups() {
+	            isolationPolicyDetailsCtrl.applicationGroupsModel.get(false)
+	                .then(function (result) {
+	                //_.filter() returns a new array
+	                isolationPolicyDetailsCtrl.applicationGroups = _.filter(result, {
+	                    'tenantName': 'default' //TODO: Remove hardcoded tenant.
+	                });
+	            });
+	        }
+	        isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
+	        isolationPolicyDetailsCtrl.policiesModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
+	            .then(function (policy) {
+	            isolationPolicyDetailsCtrl.policy = policy;
+	            isolationPolicyDetailsCtrl.rulesModel.getIncomingRules(policy.policyName, 'default').then(function (result) {
+	                isolationPolicyDetailsCtrl.incomingRules = result;
+	                isolationPolicyDetailsCtrl.resetNewIncomingRule();
+	            });
+	            isolationPolicyDetailsCtrl.rulesModel.getOutgoingRules(policy.policyName, 'default').then(function (result) {
+	                isolationPolicyDetailsCtrl.outgoingRules = result;
+	                isolationPolicyDetailsCtrl.resetNewOutgoingRule();
+	            });
+	        });
+	        getNetworks();
+	        getApplicationGroups();
+	        setMode();
+	    }
+	    IsolationPolicyDetailsComponent.prototype.returnToPolicies = function () {
+	        this.router.navigate(['../../../list', { policyTab: networkpoliciestabsctrl_1.PolicyTab.isolation }], { relativeTo: this.activatedRoute });
+	    };
+	    IsolationPolicyDetailsComponent.prototype.returnToPolicyDetails = function () {
+	        this.router.navigate(['../../details', this.policy.key], { relativeTo: this.activatedRoute });
+	    };
+	    IsolationPolicyDetailsComponent.prototype.editPolicy = function () {
+	        this.router.navigate(['../../edit', this.policy.key], { relativeTo: this.activatedRoute });
+	    };
+	    IsolationPolicyDetailsComponent.prototype.cancelEditing = function () {
+	        this.returnToPolicyDetails();
+	    };
+	    /**
+	     * Go back to policy details after done editing
+	     */
+	    IsolationPolicyDetailsComponent.prototype.doneEditing = function () {
+	        this.returnToPolicyDetails();
+	    };
+	    IsolationPolicyDetailsComponent.prototype.deletePolicy = function () {
+	        var isolationPolicyDetailsCtrl = this;
+	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
+	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
+	        isolationPolicyDetailsCtrl.policiesModel.delete(isolationPolicyDetailsCtrl.policy).then(function successCallback(result) {
+	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	            isolationPolicyDetailsCtrl.returnToPolicies();
+	        }, function errorCallback(result) {
+	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	        });
+	    };
+	    IsolationPolicyDetailsComponent.prototype.validateCIDR = function (ipaddress) {
+	        var cidrPattern = new RegExp(contivglobals_1.ContivGlobals.CIDR_REGEX);
+	        if (ipaddress == '') {
+	            return true;
+	        }
+	        if (cidrPattern.test(ipaddress)) {
+	            this.incorrectCIDR = false;
+	            return true;
+	        }
+	        this.incorrectCIDR = true;
+	        this.validateCIDRFlag = true;
+	        return false;
+	    };
+	    IsolationPolicyDetailsComponent.prototype.resetNewIncomingRule = function () {
+	        //Rule object to be created on server
+	        this.newIncomingRule = {
+	            ruleId: '',
+	            priority: 1,
+	            action: 'allow',
+	            fromEndpointGroup: '',
+	            fromNetwork: '',
+	            fromIpAddress: '',
+	            protocol: 'tcp',
+	            port: 0,
+	            direction: 'in',
+	            tenantName: 'default',
+	            policyName: this.policy.policyName
+	        };
+	        this.newIncomingSelectedApplicationGroup = '';
+	        this.newIncomingSelectedNetwork = '';
+	        this.disableIncomingNetworkSelection = false;
+	        this.disableIncomingApplicationGroupSelection = false;
+	        this.disableIncomingIPAddressSelection = false;
+	        this.incorrectCIDR = false;
+	        this.validateCIDRFlag = false;
+	    };
+	    IsolationPolicyDetailsComponent.prototype.resetNewOutgoingRule = function () {
+	        //Rule object to be created on server
+	        this.newOutgoingRule = {
+	            ruleId: '',
+	            priority: 1,
+	            action: 'allow',
+	            toEndpointGroup: '',
+	            toNetwork: '',
+	            toIpAddress: '',
+	            protocol: 'tcp',
+	            port: 0,
+	            direction: 'out',
+	            tenantName: 'default',
+	            policyName: this.policy.policyName
+	        };
+	        this.newOutgoingSelectedApplicationGroup = '';
+	        this.newOutgoingSelectedNetwork = '';
+	        this.disableOutgoingNetworkSelection = false;
+	        this.disableOutgoingApplicationGroupSelection = false;
+	        this.disableOutgoingIPAddressSelection = false;
+	        this.incorrectCIDR = false;
+	        this.validateCIDRFlag = false;
+	    };
+	    /**
+	     * Event handler to disable network selection box once application group is selected while creating a new
+	     * rule.
+	     */
+	    IsolationPolicyDetailsComponent.prototype.onChangeOutgoingApplicationGroupSelection = function (group) {
+	        if (group) {
+	            //If application group has been selected
+	            this.newOutgoingRule.toEndpointGroup = group;
+	            this.newOutgoingRule.toNetwork = '';
+	            this.disableOutgoingNetworkSelection = true;
+	        }
+	        else {
+	            //When 'none' is selected
+	            this.newOutgoingRule.toEndpointGroup = '';
+	            this.disableOutgoingNetworkSelection = false;
+	        }
+	    };
+	    /**
+	     * Event handler to disable network selection box once application group is selected while creating a new
+	     * rule.
+	     */
+	    IsolationPolicyDetailsComponent.prototype.onChangeIncomingApplicationGroupSelection = function (group) {
+	        if (group) {
+	            //If application group has been selected
+	            this.newIncomingRule.fromEndpointGroup = group;
+	            this.newIncomingRule.fromNetwork = '';
+	            this.disableIncomingNetworkSelection = true;
+	        }
+	        else {
+	            //When 'none' is selected
+	            this.newIncomingRule.fromEndpointGroup = '';
+	            this.disableOutgoingApplicationGroupSelection = false;
+	            this.disableIncomingNetworkSelection = false;
+	        }
+	    };
+	    /**
+	     * Event handler to disable application group selection box once network is selected while creating a new
+	     * rule.
+	     */
+	    IsolationPolicyDetailsComponent.prototype.onChangeOutgoingNetworkSelection = function (network) {
+	        if (network) {
+	            //If network has been selected
+	            this.newOutgoingRule.toNetwork = network;
+	            this.newOutgoingRule.ToEndpointGroup = '';
+	            this.disableOutgoingApplicationGroupSelection = true;
+	            this.disableOutgoingIPAddressSelection = true;
+	        }
+	        else {
+	            this.newOutgoingRule.toIpAddress = '';
+	            this.disableOutgoingApplicationGroupSelection = false;
+	            this.disableOutgoingIPAddressSelection = false;
+	        }
+	    };
+	    /**
+	     * Event handler to disable application group selection box once network is selected while creating a new
+	     * rule.
+	     */
+	    IsolationPolicyDetailsComponent.prototype.onChangeIncomingNetworkSelection = function (network) {
+	        if (network) {
+	            //If network has been selected
+	            this.newIncomingRule.fromNetwork = network;
+	            this.newIncomingRule.fromEndpointGroup = '';
+	            this.disableIncomingApplicationGroupSelection = true;
+	            this.disableIncomingIPAddressSelection = true;
+	        }
+	        else {
+	            this.newIncomingRule.fromNetwork = '';
+	            this.disableIncomingApplicationGroupSelection = false;
+	            this.disableIncomingIPAddressSelection = false;
+	        }
+	    };
+	    IsolationPolicyDetailsComponent.prototype.onChangeIncomingIPAddress = function () {
+	        if (this.newIncomingRule.fromIpAddress == '') {
+	            this.incorrectCIDR = false;
+	            this.disableIncomingNetworkSelection = false;
+	        }
+	        else {
+	            this.disableIncomingNetworkSelection = true;
+	        }
+	        if (this.validateCIDRFlag &&
+	            this.incorrectCIDR) {
+	            this.validateCIDR(this.newIncomingRule.fromIpAddress);
+	        }
+	    };
+	    IsolationPolicyDetailsComponent.prototype.onChangeOutgoingIPAddress = function () {
+	        if (this.newOutgoingRule.toIpAddress == '') {
+	            this.incorrectCIDR = false;
+	            this.disableOutgoingNetworkSelection = false;
+	        }
+	        else {
+	            this.disableOutgoingNetworkSelection = true;
+	        }
+	        if (this.validateCIDRFlag &&
+	            this.incorrectCIDR) {
+	            this.validateCIDR(this.newOutgoingRule.toIpAddress);
+	        }
+	    };
+	    /**
+	     * Generates rule id
+	     * TODO Make it cryptographically stronger once we have multiple users updating same policy
+	     */
+	    IsolationPolicyDetailsComponent.prototype.generateRuleId = function (rule) {
+	        rule.ruleId =
+	            (this.incomingRules.length + this.outgoingRules.length + 1).toString() + '-' +
+	                Date.now().toString();
+	    };
+	    /**
+	     * Rule is saved to server
+	     */
+	    IsolationPolicyDetailsComponent.prototype.addIncomingRule = function () {
+	        var isolationPolicyDetailsCtrl = this;
+	        if (isolationPolicyDetailsCtrl.validateCIDR(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress)) {
+	            isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
+	            isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
+	            isolationPolicyDetailsCtrl.generateRuleId(isolationPolicyDetailsCtrl.newIncomingRule);
+	            isolationPolicyDetailsCtrl.newIncomingRule.key = isolationPolicyDetailsCtrl.rulesModel.generateKey(isolationPolicyDetailsCtrl.newIncomingRule);
+	            isolationPolicyDetailsCtrl.rulesModel.create(isolationPolicyDetailsCtrl.newIncomingRule, undefined).then(function successCallback(result) {
+	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	                isolationPolicyDetailsCtrl.incomingRules.push(result);
+	                isolationPolicyDetailsCtrl.resetNewIncomingRule();
+	            }, function errorCallback(result) {
+	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	                isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	            });
+	        }
+	    };
+	    /**
+	     * Rule is saved to server
+	     */
+	    IsolationPolicyDetailsComponent.prototype.addOutgoingRule = function () {
+	        var isolationPolicyDetailsCtrl = this;
+	        if (isolationPolicyDetailsCtrl.validateCIDR(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress)) {
+	            isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
+	            isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
+	            isolationPolicyDetailsCtrl.generateRuleId(isolationPolicyDetailsCtrl.newOutgoingRule);
+	            isolationPolicyDetailsCtrl.newOutgoingRule.key = isolationPolicyDetailsCtrl.rulesModel.generateKey(isolationPolicyDetailsCtrl.newOutgoingRule);
+	            isolationPolicyDetailsCtrl.rulesModel.create(isolationPolicyDetailsCtrl.newOutgoingRule, undefined).then(function successCallback(result) {
+	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	                isolationPolicyDetailsCtrl.outgoingRules.push(result);
+	                isolationPolicyDetailsCtrl.resetNewOutgoingRule();
+	            }, function errorCallback(result) {
+	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	                isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	            });
+	        }
+	    };
+	    /**
+	     * Delete incoming rule from server
+	     */
+	    IsolationPolicyDetailsComponent.prototype.deleteIncomingRule = function (key) {
+	        var isolationPolicyDetailsCtrl = this;
+	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
+	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
+	        isolationPolicyDetailsCtrl.rulesModel.deleteUsingKey(key, 'key', undefined).then(function successCallback(result) {
+	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	            _.remove(isolationPolicyDetailsCtrl.incomingRules, function (n) {
+	                return n.key == key;
+	            });
+	        }, function errorCallback(result) {
+	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	        });
+	    };
+	    /**
+	     * Delete outgoing rule from server
+	     */
+	    IsolationPolicyDetailsComponent.prototype.deleteOutgoingRule = function (key) {
+	        var isolationPolicyDetailsCtrl = this;
+	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
+	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
+	        isolationPolicyDetailsCtrl.rulesModel.deleteUsingKey(key, 'key', undefined).then(function successCallback(result) {
+	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	            _.remove(isolationPolicyDetailsCtrl.outgoingRules, function (n) {
+	                return n.key == key;
+	            });
+	        }, function errorCallback(result) {
+	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
+	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	        });
+	    };
+	    IsolationPolicyDetailsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'isolationpolicydetails',
+	            templateUrl: 'network_policies/isolationpolicydetails.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof rulesmodel_1.RulesModel !== 'undefined' && rulesmodel_1.RulesModel) === 'function' && _d) || Object, (typeof (_e = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _e) || Object, (typeof (_f = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _f) || Object, (typeof (_g = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _g) || Object])
+	    ], IsolationPolicyDetailsComponent);
+	    return IsolationPolicyDetailsComponent;
+	    var _a, _b, _c, _d, _e, _f, _g;
+	}());
+	exports.IsolationPolicyDetailsComponent = IsolationPolicyDetailsComponent;
+	
+
+/***/ },
+
+/***/ 197:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var organizationsmodel_1 = __webpack_require__(102);
+	var OrganizationCreateComponent = (function () {
+	    function OrganizationCreateComponent(activatedRoute, router, crudHelperService, organizationsModel, ngZone) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.crudHelperService = crudHelperService;
+	        this.organizationsModel = organizationsModel;
+	        this.ngZone = ngZone;
+	        this.newOrganization = { key: '', tenantName: '' };
+	        this.showServerError = false;
+	        this.serverErrorMessage = '';
+	        this.showLoader = false;
+	        this.organizationCreateCtrl = this;
+	    }
+	    OrganizationCreateComponent.prototype.returnToOrganizations = function () {
+	        this.router.navigate(['../list'], { relativeTo: this.activatedRoute });
+	    };
+	    OrganizationCreateComponent.prototype.cancelCreating = function () {
+	        this.returnToOrganizations();
+	    };
+	    OrganizationCreateComponent.prototype.createOrganization = function (formvalid) {
+	        var organizationCreateCtrl = this;
+	        if (formvalid) {
+	            this.crudHelperService.startLoader(this);
+	            this.crudHelperService.hideServerError(this);
+	            organizationCreateCtrl.newOrganization.key = organizationCreateCtrl.newOrganization.tenantName;
+	            this.organizationsModel.create(organizationCreateCtrl.newOrganization, undefined)
+	                .then(function (result) {
+	                organizationCreateCtrl.ngZone.run(function () {
+	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
+	                });
+	                organizationCreateCtrl.returnToOrganizations();
+	            }, function (error) {
+	                organizationCreateCtrl.ngZone.run(function () {
+	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
+	                });
+	                organizationCreateCtrl.crudHelperService.showServerError(organizationCreateCtrl, error);
+	            });
+	        }
+	    };
+	    OrganizationCreateComponent = __decorate([
+	        core_1.Component({
+	            selector: 'organizationcreate',
+	            templateUrl: 'organizations/organizationcreate.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object, (typeof (_d = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _d) || Object, (typeof (_e = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _e) || Object])
+	    ], OrganizationCreateComponent);
+	    return OrganizationCreateComponent;
+	    var _a, _b, _c, _d, _e;
+	}());
+	exports.OrganizationCreateComponent = OrganizationCreateComponent;
+	
+
+/***/ },
+
+/***/ 198:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var organizationsmodel_1 = __webpack_require__(102);
+	var OrganizationDetailsComponent = (function () {
+	    function OrganizationDetailsComponent(activatedRoute, router, crudHelperService, organizationsModel, ngZone) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.crudHelperService = crudHelperService;
+	        this.organizationsModel = organizationsModel;
+	        this.ngZone = ngZone;
+	        this.showServerError = false;
+	        this.serverErrorMessage = '';
+	        this.showLoader = false;
+	        this.organization = { tenantName: '' };
+	        this.organizationDetailsCtrl = this;
+	    }
+	    OrganizationDetailsComponent.prototype.ngOnInit = function () {
+	        this.showLoader = true;
+	        var organizationDetailsCtrl = this;
+	        this.organizationsModel.getModelByKey(this.activatedRoute.snapshot.params['key'], false, 'key')
+	            .then(function (result) {
+	            organizationDetailsCtrl.organization = result;
+	            organizationDetailsCtrl.ngZone.run(function () {
+	                organizationDetailsCtrl.showLoader = false;
+	            });
+	        }, function (error) {
+	            organizationDetailsCtrl.ngZone.run(function () {
+	                organizationDetailsCtrl.showLoader = false;
+	            });
+	        });
+	    };
+	    OrganizationDetailsComponent.prototype.returnToOrganization = function () {
+	        this.router.navigate(['../../list'], { relativeTo: this.activatedRoute });
+	    };
+	    OrganizationDetailsComponent.prototype.deleteOrganization = function () {
+	        var organizationDetailsCtrl = this;
+	        this.crudHelperService.hideServerError(this);
+	        this.showLoader = true;
+	        this.organizationsModel.delete(this.organization)
+	            .then(function (result) {
+	            organizationDetailsCtrl.showLoader = false;
+	            organizationDetailsCtrl.returnToOrganization();
+	        }, function (error) {
+	            organizationDetailsCtrl.showLoader = false;
+	            organizationDetailsCtrl.crudHelperService.showServerError(organizationDetailsCtrl, error);
+	        });
+	    };
+	    OrganizationDetailsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'organizationdetails',
+	            templateUrl: 'organizations/organizationdetails.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object, (typeof (_d = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _d) || Object, (typeof (_e = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _e) || Object])
+	    ], OrganizationDetailsComponent);
+	    return OrganizationDetailsComponent;
+	    var _a, _b, _c, _d, _e;
+	}());
+	exports.OrganizationDetailsComponent = OrganizationDetailsComponent;
+	
+
+/***/ },
+
+/***/ 199:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(16);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(44);
+	var organizationsmodel_1 = __webpack_require__(102);
+	var OrganizationListComponent = (function () {
+	    function OrganizationListComponent(activatedRoute, router, organizationsModel, crudHelperService, ngZone) {
+	        var _this = this;
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.ngZone = ngZone;
+	        this.organizationsModel = organizationsModel;
+	        this.crudHelperService = crudHelperService;
+	        this.organizationsListCtrl = this;
+	        this['showLoader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getOrganizations(true);
+	        });
+	    }
+	    OrganizationListComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.getOrganizations(false);
+	    };
+	    OrganizationListComponent.prototype.getOrganizations = function (reload) {
+	        var organizationsListCtrl = this;
+	        this.organizationsModel.get(reload)
+	            .then(function successCallback(result) {
+	            organizationsListCtrl['organizations'] = result;
+	            organizationsListCtrl.ngZone.run(function () {
+	                organizationsListCtrl.crudHelperService.stopLoader(organizationsListCtrl);
+	            });
+	        }, function errorCallback(result) {
+	            organizationsListCtrl.ngZone.run(function () {
+	                organizationsListCtrl.crudHelperService.stopLoader(organizationsListCtrl);
+	            });
+	        });
+	    };
+	    OrganizationListComponent.prototype.create = function () {
+	        this.router.navigate(['../create'], { relativeTo: this.activatedRoute });
+	    };
+	    OrganizationListComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    OrganizationListComponent = __decorate([
+	        core_1.Component({
+	            selector: 'organizationlist',
+	            templateUrl: 'organizations/organizationlist.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object, (typeof (_e = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _e) || Object])
+	    ], OrganizationListComponent);
+	    return OrganizationListComponent;
+	    var _a, _b, _c, _d, _e;
+	}());
+	exports.OrganizationListComponent = OrganizationListComponent;
+	
+
+/***/ },
+
+/***/ 200:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var __param = (this && this.__param) || function (paramIndex, decorator) {
+	    return function (target, key) { decorator(target, key, paramIndex); }
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var ng1_1 = __webpack_require__(62);
+	var servicelbsmodel_1 = __webpack_require__(85);
+	var _ = __webpack_require__(35);
+	var ServicelbInfoComponent = (function () {
+	    function ServicelbInfoComponent($state, servicelbsModel, crudHelperService, ngZone) {
+	        this.$state = $state;
+	        this.servicelbsModel = servicelbsModel;
+	        this.crudHelperService = crudHelperService;
+	        this.infoselected = true;
+	        this.statskey = '';
+	        this.showLoader = true;
+	        this['showServerError'] = false;
+	        this['serverErrorMessage'] = '';
+	        this.mode = 'details';
+	        this.servicelb = { serviceName: '', networkName: '', ipAddress: '', selectors: [], ports: [], tenantName: 'default', key: '' };
+	        this.labelSelectors = [];
+	        this.modeChange = new core_1.EventEmitter();
+	        this.serviceName = new core_1.EventEmitter();
+	        this.ngZone = ngZone;
+	        this.servicelbInfoCtrl = this;
+	    }
+	    ServicelbInfoComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.statskey = this.$state.params['key'];
+	        this.getServicelbs(false);
+	    };
+	    ServicelbInfoComponent.prototype.returnToServicelbDetails = function () {
+	        this.mode = "details";
+	        this.modeChange.emit(this.mode);
+	    };
+	    ServicelbInfoComponent.prototype.returnToServicelbs = function () {
+	        this.$state.go('contiv.menu.servicelbs.list');
+	    };
+	    ServicelbInfoComponent.prototype.getServicelbs = function (reload) {
+	        var servicelbInfoCtrl = this;
+	        this.servicelbsModel.getModelByKey(this.statskey, false, 'key')
+	            .then(function (result) {
+	            servicelbInfoCtrl['servicelb'] = result;
+	            servicelbInfoCtrl.createEditViewLabels();
+	            servicelbInfoCtrl.serviceName.emit(servicelbInfoCtrl.servicelb.serviceName);
+	            servicelbInfoCtrl.ngZone.run(function () {
+	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
+	            });
+	        }, function (error) {
+	            servicelbInfoCtrl.ngZone.run(function () {
+	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
+	            });
+	        });
+	    };
+	    ServicelbInfoComponent.prototype.createEditViewLabels = function () {
+	        var _this = this;
+	        this.servicelb.selectors.forEach(function (item) {
+	            var selector = {
+	                name: item.split('=')[0],
+	                value: item.split('=')[1]
+	            };
+	            _this.labelSelectors.push(selector);
+	        });
+	    };
+	    ServicelbInfoComponent.prototype.createLabelSelectorStrings = function () {
+	        var _this = this;
+	        var servicelbInfoCtrl = this;
+	        this.servicelb.selectors = [];
+	        this.labelSelectors.forEach(function (selector) {
+	            var selectorString = selector.name + "=" + selector.value;
+	            _this.servicelb.selectors.push(selectorString);
+	        });
+	    };
+	    ServicelbInfoComponent.prototype.saveServicelb = function () {
+	        this.crudHelperService.hideServerError(this);
+	        this.crudHelperService.startLoader(this);
+	        var existingLabelsView = this.servicelb.selectors.slice();
+	        this.createLabelSelectorStrings();
+	        var servicelbInfoCtrl = this;
+	        this.servicelbsModel.save(this.servicelb)
+	            .then(function (result) {
+	            servicelbInfoCtrl.ngZone.run(function () {
+	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
+	            });
+	            servicelbInfoCtrl.returnToServicelbDetails();
+	        }, function (error) {
+	            servicelbInfoCtrl.servicelb.selectors = existingLabelsView;
+	            servicelbInfoCtrl.ngZone.run(function () {
+	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
+	                servicelbInfoCtrl.crudHelperService.showServerError(servicelbInfoCtrl, error);
+	            });
+	        });
+	    };
+	    ServicelbInfoComponent.prototype.deleteServicelb = function () {
+	        this.crudHelperService.hideServerError(this);
+	        this.crudHelperService.startLoader(this);
+	        var servicelbInfoCtrl = this;
+	        this.servicelbsModel.delete(this.servicelb)
+	            .then(function (result) {
+	            servicelbInfoCtrl.ngZone.run(function () {
+	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
+	            });
+	            servicelbInfoCtrl.returnToServicelbs();
+	        }, function (error) {
+	            servicelbInfoCtrl.ngZone.run(function () {
+	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
+	                servicelbInfoCtrl.crudHelperService.showServerError(servicelbInfoCtrl, error);
+	            });
+	        });
+	    };
+	    ServicelbInfoComponent.prototype.cancelEditing = function () {
+	        this.returnToServicelbDetails();
+	    };
+	    __decorate([
+	        core_1.Input('mode'), 
+	        __metadata('design:type', String)
+	    ], ServicelbInfoComponent.prototype, "mode", void 0);
+	    __decorate([
+	        core_1.Output('modeChange'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], ServicelbInfoComponent.prototype, "modeChange", void 0);
+	    __decorate([
+	        core_1.Output('serviceName'), 
+	        __metadata('design:type', (typeof (_b = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _b) || Object)
+	    ], ServicelbInfoComponent.prototype, "serviceName", void 0);
+	    ServicelbInfoComponent = __decorate([
+	        core_1.Component({
+	            selector: 'servicelb-info',
+	            templateUrl: "service_lbs/servicelbinfo.html"
+	        }),
+	        __param(0, core_1.Inject('$state')), 
+	        __metadata('design:paramtypes', [(typeof (_c = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _c) || Object, (typeof (_d = typeof servicelbsmodel_1.ServicelbsModel !== 'undefined' && servicelbsmodel_1.ServicelbsModel) === 'function' && _d) || Object, (typeof (_e = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _e) || Object, (typeof (_f = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _f) || Object])
+	    ], ServicelbInfoComponent);
+	    return ServicelbInfoComponent;
+	    var _a, _b, _c, _d, _e, _f;
+	}());
+	exports.ServicelbInfoComponent = ServicelbInfoComponent;
+	
+
+/***/ },
+
+/***/ 201:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var rxjs_1 = __webpack_require__(44);
+	var inspectservice_1 = __webpack_require__(139);
+	var util_1 = __webpack_require__(81);
+	var servicelbsmodel_1 = __webpack_require__(85);
+	var ServicelbStatComponent = (function () {
+	    function ServicelbStatComponent(servicelbsModel, crudHelperService, inspectSerrvice, ngZone) {
+	        var _this = this;
+	        this.crudHelperService = crudHelperService;
+	        this.servicelbsModel = servicelbsModel;
+	        this.inspectSerrvice = inspectSerrvice;
+	        this.showLoader = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            if (_this.statkey != '')
+	                _this.getServicelbInspect(true);
+	        });
+	        this.servicelbInspectStats = {
+	            allocatedAddressesCount: '',
+	            allocatedIPAddresses: '',
+	            dnsServerIP: '',
+	            externalPktTag: '',
+	            numEndpoints: '',
+	            pktTag: ''
+	        };
+	        this.config = { serviceName: '', };
+	        this.providers = [];
+	        this.filteredproviders = [];
+	        this.providerDetails = {};
+	        this.ngZone = ngZone;
+	        this.servicelbStatsCtrl = this;
+	        this.statkey = '';
+	    }
+	    ServicelbStatComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        if (this.statkey != '')
+	            this.getServicelbInspect(false);
+	    };
+	    ServicelbStatComponent.prototype.getServicelbInspect = function (reload) {
+	        var servicelbStatsCtrl = this;
+	        this.servicelbsModel.getInspectByKey(this.statkey, ContivGlobals.SERVICELBS_INSPECT_ENDPOINT, reload)
+	            .then(function (result) {
+	            servicelbStatsCtrl['servicelbInspectStats'] = result['Oper'];
+	            servicelbStatsCtrl['config'] = result['Config'];
+	            if (!util_1.isUndefined(result['Oper'].providers)) {
+	                var providerDetails = servicelbStatsCtrl.inspectSerrvice.buildEndPoints(result['Oper'].providers);
+	                if (servicelbStatsCtrl.inspectSerrvice.checkContainerChanged(servicelbStatsCtrl['providerDetails'], providerDetails)) {
+	                    servicelbStatsCtrl['providers'] = result['Oper'].providers;
+	                    servicelbStatsCtrl['providerDetails'] = providerDetails;
+	                }
+	            }
+	            else {
+	                servicelbStatsCtrl['providers'] = [];
+	                servicelbStatsCtrl['providerDetails'] = {};
+	            }
+	            servicelbStatsCtrl.ngZone.run(function () {
+	                servicelbStatsCtrl.crudHelperService.stopLoader(servicelbStatsCtrl);
+	            });
+	        }, function (error) {
+	            servicelbStatsCtrl.ngZone.run(function () {
+	                servicelbStatsCtrl.crudHelperService.stopLoader(servicelbStatsCtrl);
+	            });
+	        });
+	    };
+	    ServicelbStatComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    __decorate([
+	        core_1.Input('statkey'), 
+	        __metadata('design:type', String)
+	    ], ServicelbStatComponent.prototype, "statkey", void 0);
+	    ServicelbStatComponent = __decorate([
+	        core_1.Component({
+	            selector: 'servicelb-stat',
+	            templateUrl: 'service_lbs/servicelbstats.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof servicelbsmodel_1.ServicelbsModel !== 'undefined' && servicelbsmodel_1.ServicelbsModel) === 'function' && _a) || Object, (typeof (_b = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _b) || Object, (typeof (_c = typeof inspectservice_1.InspectService !== 'undefined' && inspectservice_1.InspectService) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
+	    ], ServicelbStatComponent);
+	    return ServicelbStatComponent;
+	    var _a, _b, _c, _d;
+	}());
+	exports.ServicelbStatComponent = ServicelbStatComponent;
+	
+
+/***/ },
+
+/***/ 202:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var nodesservice_1 = __webpack_require__(190);
+	var ClusterSettingsComponent = (function () {
+	    function ClusterSettingsComponent(crudHelperService, nodesService) {
+	        this.nodesService = nodesService;
+	        this.crudHelperService = crudHelperService;
+	        this.showLoader = true;
+	        this.extra_vars = { control_interface: '', netplugin_if: '', service_vip: '', scheduler_provider: '', ucp_bootstrap_node_name: '', cluster_name: '',
+	            contiv_network_mode: '', fwd_mode: '', apic_url: '', apic_username: '', apic_password: '', apic_leaf_nodes: '', apic_phys_domain: '',
+	            apic_epg_bridge_domain: '', apic_contracts_unrestricted_mode: '' };
+	        this.ansibleVariables = [];
+	        this.envVariables = [];
+	        this.showServerError = false;
+	        this.serverErrorMessage = '';
+	        this.nodeOpsObj = { nodes: [] };
+	        this.clusterSettingCtrl = this;
+	    }
+	    ClusterSettingsComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        var clusterSettingCtrl = this;
+	        this.nodesService.getSettings(clusterSettingCtrl)
+	            .then(function (result) {
+	            clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
+	            clusterSettingCtrl.crudHelperService.hideServerError(clusterSettingCtrl);
+	        }, function (error) {
+	            clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
+	            clusterSettingCtrl.crudHelperService.hideServerError(clusterSettingCtrl);
+	        });
+	    };
+	    ClusterSettingsComponent.prototype.updateClusterSettings = function (formvalid) {
+	        var clusterSettingCtrl = this;
+	        if (formvalid) {
+	            this.crudHelperService.hideServerError(this);
+	            this.crudHelperService.startLoader(this);
+	            this.nodesService.cleanupExtraVars(this);
+	            this.nodesService.createExtraVars(this);
+	            this.nodesService.updateSettings(this.nodeOpsObj)
+	                .then(function (result) {
+	                clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
+	            }, function (error) {
+	                clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
+	                clusterSettingCtrl.crudHelperService.showServerError(clusterSettingCtrl, error);
+	            });
+	        }
+	    };
+	    ClusterSettingsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'clustersettings',
+	            templateUrl: 'settings/clustersettings.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof nodesservice_1.NodesService !== 'undefined' && nodesservice_1.NodesService) === 'function' && _b) || Object])
+	    ], ClusterSettingsComponent);
+	    return ClusterSettingsComponent;
+	    var _a, _b;
+	}());
+	exports.ClusterSettingsComponent = ClusterSettingsComponent;
+	
+
+/***/ },
+
+/***/ 203:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(12);
+	var networkservice_1 = __webpack_require__(189);
+	var contivglobals_1 = __webpack_require__(37);
+	var NetworkSettingsComponent = (function () {
+	    function NetworkSettingsComponent(crudHelperService, networkService) {
+	        this.crudHelperService = crudHelperService;
+	        this.networkService = networkService;
+	        this.setting = {};
+	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
+	        this.vxlanPattern = contivglobals_1.ContivGlobals.VXLAN_REGEX;
+	        var networkSettingCtrl = this;
+	        function getNetworkSettings() {
+	            networkSettingCtrl.networkService.getSettings().then(function successCallback(result) {
+	                networkSettingCtrl.setting = result;
+	            }, function errorCallback(result) {
+	            });
+	        }
+	        getNetworkSettings();
+	        networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
+	    }
+	    NetworkSettingsComponent.prototype.updateNetworkSettings = function (validform) {
+	        var networkSettingCtrl = this;
+	        if (validform) {
+	            networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
+	            networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
+	            networkSettingCtrl.networkService.updateSettings(networkSettingCtrl.setting).then(function successCallback(result) {
+	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	            }, function errorCallback(result) {
+	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	                networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, result._body);
+	            });
+	        }
+	    };
+	    NetworkSettingsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'networksetting',
+	            templateUrl: 'settings/networksettings.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof networkservice_1.NetworkService !== 'undefined' && networkservice_1.NetworkService) === 'function' && _b) || Object])
+	    ], NetworkSettingsComponent);
+	    return NetworkSettingsComponent;
+	    var _a, _b;
+	}());
+	exports.NetworkSettingsComponent = NetworkSettingsComponent;
+	
+
+/***/ },
+
+/***/ 204:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 11/3/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var SettingsMenuComponent = (function () {
+	    function SettingsMenuComponent() {
+	    }
+	    SettingsMenuComponent = __decorate([
+	        core_1.Component({
+	            selector: 'settingsmenu',
+	            templateUrl: 'settings/settingsmenu.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], SettingsMenuComponent);
+	    return SettingsMenuComponent;
+	}());
+	exports.SettingsMenuComponent = SettingsMenuComponent;
+	
+
+/***/ },
+
+/***/ 275:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	/** @module common */ /** for typedoc */
+	__export(__webpack_require__(5));
+	__export(__webpack_require__(20));
+	__export(__webpack_require__(100));
+	__export(__webpack_require__(17));
+	__export(__webpack_require__(9));
+	__export(__webpack_require__(124));
+	__export(__webpack_require__(40));
+	__export(__webpack_require__(46));
+	//# sourceMappingURL=module.js.map
+
+/***/ },
+
+/***/ 276:
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @module common */ /** */
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	__export(__webpack_require__(275));
+	__export(__webpack_require__(289));
+	__export(__webpack_require__(290));
+	__export(__webpack_require__(291));
+	__export(__webpack_require__(292));
+	__export(__webpack_require__(293));
+	__export(__webpack_require__(294));
+	__export(__webpack_require__(295));
+	__export(__webpack_require__(173));
+	var router_1 = __webpack_require__(128);
+	exports.UIRouter = router_1.UIRouter;
+	//# sourceMappingURL=core.js.map
+
+/***/ },
+
+/***/ 277:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var coreservices_1 = __webpack_require__(20);
+	/**
+	 * A [[TransitionHookFn]] that lazy loads a state tree.
+	 *
+	 * When transitioning to a state "abc" which has a `lazyLoad` function defined:
+	 * - Invoke the `lazyLoad` function
+	 *   - The function should return a promise for an array of lazy loaded [[StateDeclaration]]s
+	 * - Wait for the promise to resolve
+	 * - Deregister the original state "abc"
+	 *   - The original state definition is a placeholder for the lazy loaded states
+	 * - Register the new states
+	 * - Retry the transition
+	 *
+	 * See [[StateDeclaration.lazyLoad]]
+	 */
+	var lazyLoadHook = function (transition) {
+	    var toState = transition.to();
+	    var registry = transition.router.stateRegistry;
+	    function retryOriginalTransition() {
+	        if (transition.options().source === 'url') {
+	            var loc = coreservices_1.services.location, path_1 = loc.path(), search_1 = loc.search(), hash_1 = loc.hash();
+	            var matchState = function (state) { return [state, state.url && state.url.exec(path_1, search_1, hash_1)]; };
+	            var matches = registry.get().map(function (s) { return s.$$state(); }).map(matchState).filter(function (_a) {
+	                var state = _a[0], params = _a[1];
+	                return !!params;
+	            });
+	            if (matches.length) {
+	                var _a = matches[0], state = _a[0], params = _a[1];
+	                return transition.router.stateService.target(state, params, transition.options());
+	            }
+	            transition.router.urlRouter.sync();
+	        }
+	        // The original transition was not triggered via url sync
+	        // The lazy state should be loaded now, so re-try the original transition
+	        var orig = transition.targetState();
+	        return transition.router.stateService.target(orig.identifier(), orig.params(), orig.options());
+	    }
+	    /**
+	     * Replace the placeholder state with the newly loaded states from the NgModule.
+	     */
+	    function updateStateRegistry(result) {
+	        // deregister placeholder state
+	        registry.deregister(transition.$to());
+	        if (result && Array.isArray(result.states)) {
+	            result.states.forEach(function (state) { return registry.register(state); });
+	        }
+	    }
+	    var hook = toState.lazyLoad;
+	    // Store/get the lazy load promise on/from the hookfn so it doesn't get re-invoked
+	    var promise = hook['_promise'];
+	    if (!promise) {
+	        promise = hook['_promise'] = hook(transition).then(updateStateRegistry);
+	        var cleanup = function () { return delete hook['_promise']; };
+	        promise.then(cleanup, cleanup);
+	    }
+	    return promise.then(retryOriginalTransition);
+	};
+	exports.registerLazyLoadHook = function (transitionService) {
+	    return transitionService.onBefore({ to: function (state) { return !!state.lazyLoad; } }, lazyLoadHook);
+	};
+	//# sourceMappingURL=lazyLoadStates.js.map
+
+/***/ },
+
+/***/ 278:
+/***/ function(module, exports) {
+
+	"use strict";
+	/**
+	 * A factory which creates an onEnter, onExit or onRetain transition hook function
+	 *
+	 * The returned function invokes the (for instance) state.onEnter hook when the
+	 * state is being entered.
+	 *
+	 * @hidden
+	 */
+	function makeEnterExitRetainHook(hookName) {
+	    return function (transition, state) {
+	        var hookFn = state[hookName];
+	        return hookFn(transition, state);
+	    };
+	}
+	/**
+	 * The [[TransitionStateHookFn]] for onExit
+	 *
+	 * When the state is being exited, the state's .onExit function is invoked.
+	 *
+	 * Registered using `transitionService.onExit({ exiting: (state) => !!state.onExit }, onExitHook);`
+	 *
+	 * See: [[IHookRegistry.onExit]]
+	 */
+	var onExitHook = makeEnterExitRetainHook('onExit');
+	exports.registerOnExitHook = function (transitionService) {
+	    return transitionService.onExit({ exiting: function (state) { return !!state.onExit; } }, onExitHook);
+	};
+	/**
+	 * The [[TransitionStateHookFn]] for onRetain
+	 *
+	 * When the state was already entered, and is not being exited or re-entered, the state's .onRetain function is invoked.
+	 *
+	 * Registered using `transitionService.onRetain({ retained: (state) => !!state.onRetain }, onRetainHook);`
+	 *
+	 * See: [[IHookRegistry.onRetain]]
+	 */
+	var onRetainHook = makeEnterExitRetainHook('onRetain');
+	exports.registerOnRetainHook = function (transitionService) {
+	    return transitionService.onRetain({ retained: function (state) { return !!state.onRetain; } }, onRetainHook);
+	};
+	/**
+	 * The [[TransitionStateHookFn]] for onEnter
+	 *
+	 * When the state is being entered, the state's .onEnter function is invoked.
+	 *
+	 * Registered using `transitionService.onEnter({ entering: (state) => !!state.onEnter }, onEnterHook);`
+	 *
+	 * See: [[IHookRegistry.onEnter]]
+	 */
+	var onEnterHook = makeEnterExitRetainHook('onEnter');
+	exports.registerOnEnterHook = function (transitionService) {
+	    return transitionService.onEnter({ entering: function (state) { return !!state.onEnter; } }, onEnterHook);
+	};
+	//# sourceMappingURL=onEnterExitRetain.js.map
+
+/***/ },
+
+/***/ 279:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module hooks */ /** */
+	var predicates_1 = __webpack_require__(9);
+	var coreservices_1 = __webpack_require__(20);
+	var targetState_1 = __webpack_require__(74);
+	/**
+	 * A [[TransitionHookFn]] that redirects to a different state or params
+	 *
+	 * Registered using `transitionService.onStart({ to: (state) => !!state.redirectTo }, redirectHook);`
+	 *
+	 * See [[StateDeclaration.redirectTo]]
+	 */
+	var redirectToHook = function (trans) {
+	    var redirect = trans.to().redirectTo;
+	    if (!redirect)
+	        return;
+	    function handleResult(result) {
+	        var $state = trans.router.stateService;
+	        if (result instanceof targetState_1.TargetState)
+	            return result;
+	        if (predicates_1.isString(result))
+	            return $state.target(result, trans.params(), trans.options());
+	        if (result['state'] || result['params'])
+	            return $state.target(result['state'] || trans.to(), result['params'] || trans.params(), trans.options());
+	    }
+	    if (predicates_1.isFunction(redirect)) {
+	        return coreservices_1.services.$q.when(redirect(trans)).then(handleResult);
+	    }
+	    return handleResult(redirect);
+	};
+	exports.registerRedirectToHook = function (transitionService) {
+	    return transitionService.onStart({ to: function (state) { return !!state.redirectTo; } }, redirectToHook);
+	};
+	//# sourceMappingURL=redirectTo.js.map
+
+/***/ },
+
+/***/ 280:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module hooks */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var resolveContext_1 = __webpack_require__(47);
+	var hof_1 = __webpack_require__(17);
+	/**
+	 * A [[TransitionHookFn]] which resolves all EAGER Resolvables in the To Path
+	 *
+	 * Registered using `transitionService.onStart({}, eagerResolvePath);`
+	 *
+	 * When a Transition starts, this hook resolves all the EAGER Resolvables, which the transition then waits for.
+	 *
+	 * See [[StateDeclaration.resolve]]
+	 */
+	var eagerResolvePath = function (trans) {
+	    return new resolveContext_1.ResolveContext(trans.treeChanges().to)
+	        .resolvePath("EAGER", trans)
+	        .then(common_1.noop);
+	};
+	exports.registerEagerResolvePath = function (transitionService) {
+	    return transitionService.onStart({}, eagerResolvePath, { priority: 1000 });
+	};
+	/**
+	 * A [[TransitionHookFn]] which resolves all LAZY Resolvables for the state (and all its ancestors) in the To Path
+	 *
+	 * Registered using `transitionService.onEnter({ entering: () => true }, lazyResolveState);`
+	 *
+	 * When a State is being entered, this hook resolves all the Resolvables for this state, which the transition then waits for.
+	 *
+	 * See [[StateDeclaration.resolve]]
+	 */
+	var lazyResolveState = function (trans, state) {
+	    return new resolveContext_1.ResolveContext(trans.treeChanges().to)
+	        .subContext(state)
+	        .resolvePath("LAZY", trans)
+	        .then(common_1.noop);
+	};
+	exports.registerLazyResolveState = function (transitionService) {
+	    return transitionService.onEnter({ entering: hof_1.val(true) }, lazyResolveState, { priority: 1000 });
+	};
+	//# sourceMappingURL=resolve.js.map
+
+/***/ },
+
+/***/ 281:
+/***/ function(module, exports) {
+
+	"use strict";
+	/**
+	 * A [[TransitionHookFn]] which updates the URL after a successful transition
+	 *
+	 * Registered using `transitionService.onSuccess({}, updateUrl);`
+	 */
+	var updateUrl = function (transition) {
+	    var options = transition.options();
+	    var $state = transition.router.stateService;
+	    var $urlRouter = transition.router.urlRouter;
+	    // Dont update the url in these situations:
+	    // The transition was triggered by a URL sync (options.source === 'url')
+	    // The user doesn't want the url to update (options.location === false)
+	    // The destination state, and all parents have no navigable url
+	    if (options.source !== 'url' && options.location && $state.$current.navigable) {
+	        var urlOptions = { replace: options.location === 'replace' };
+	        $urlRouter.push($state.$current.navigable.url, $state.params, urlOptions);
+	    }
+	    $urlRouter.update(true);
+	};
+	exports.registerUpdateUrl = function (transitionService) {
+	    return transitionService.onSuccess({}, updateUrl, { priority: 9999 });
+	};
+	//# sourceMappingURL=url.js.map
+
+/***/ },
+
+/***/ 282:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module hooks */ /** for typedoc */
+	var common_1 = __webpack_require__(5);
+	var coreservices_1 = __webpack_require__(20);
+	/**
+	 * A [[TransitionHookFn]] which waits for the views to load
+	 *
+	 * Registered using `transitionService.onStart({}, loadEnteringViews);`
+	 *
+	 * Allows the views to do async work in [[ViewConfig.load]] before the transition continues.
+	 * In angular 1, this includes loading the templates.
+	 */
+	var loadEnteringViews = function (transition) {
+	    var enteringViews = transition.views("entering");
+	    if (!enteringViews.length)
+	        return;
+	    return coreservices_1.services.$q.all(enteringViews.map(function (view) { return view.load(); })).then(common_1.noop);
+	};
+	exports.registerLoadEnteringViews = function (transitionService) {
+	    return transitionService.onStart({}, loadEnteringViews);
+	};
+	/**
+	 * A [[TransitionHookFn]] which activates the new views when a transition is successful.
+	 *
+	 * Registered using `transitionService.onSuccess({}, activateViews);`
+	 *
+	 * After a transition is complete, this hook deactivates the old views from the previous state,
+	 * and activates the new views from the destination state.
+	 *
+	 * See [[ViewService]]
+	 */
+	var activateViews = function (transition) {
+	    var enteringViews = transition.views("entering");
+	    var exitingViews = transition.views("exiting");
+	    if (!enteringViews.length && !exitingViews.length)
+	        return;
+	    var $view = transition.router.viewService;
+	    exitingViews.forEach(function (vc) { return $view.deactivateViewConfig(vc); });
+	    enteringViews.forEach(function (vc) { return $view.activateViewConfig(vc); });
+	    $view.sync();
+	};
+	exports.registerActivateViews = function (transitionService) {
+	    return transitionService.onSuccess({}, activateViews);
+	};
+	//# sourceMappingURL=views.js.map
+
+/***/ },
+
+/***/ 283:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/**
+	 * These are the UI-Router angular 1 directives.
+	 *
+	 * These directives are used in templates to create viewports and navigate to states
+	 *
+	 * @preferred @module ng1_directives
+	 */ /** for typedoc */
+	var angular = __webpack_require__(64);
+	var common_1 = __webpack_require__(5);
+	var predicates_1 = __webpack_require__(9);
+	var hof_1 = __webpack_require__(17);
+	/** @hidden */
+	function parseStateRef(ref, current) {
+	    var preparsed = ref.match(/^\s*({[^}]*})\s*$/), parsed;
+	    if (preparsed)
+	        ref = current + '(' + preparsed[1] + ')';
+	    parsed = ref.replace(/\n/g, " ").match(/^([^(]+?)\s*(\((.*)\))?$/);
+	    if (!parsed || parsed.length !== 4)
+	        throw new Error("Invalid state ref '" + ref + "'");
+	    return { state: parsed[1], paramExpr: parsed[3] || null };
+	}
+	/** @hidden */
+	function stateContext(el) {
+	    var $uiView = el.parent().inheritedData('$uiView');
+	    var path = hof_1.parse('$cfg.path')($uiView);
+	    return path ? common_1.tail(path).state.name : undefined;
+	}
+	/** @hidden */
+	function getTypeInfo(el) {
+	    // SVGAElement does not use the href attribute, but rather the 'xlinkHref' attribute.
+	    var isSvg = Object.prototype.toString.call(el.prop('href')) === '[object SVGAnimatedString]';
+	    var isForm = el[0].nodeName === "FORM";
+	    return {
+	        attr: isForm ? "action" : (isSvg ? 'xlink:href' : 'href'),
+	        isAnchor: el.prop("tagName").toUpperCase() === "A",
+	        clickable: !isForm
+	    };
+	}
+	/** @hidden */
+	function clickHook(el, $state, $timeout, type, current) {
+	    return function (e) {
+	        var button = e.which || e.button, target = current();
+	        if (!(button > 1 || e.ctrlKey || e.metaKey || e.shiftKey || el.attr('target'))) {
+	            // HACK: This is to allow ng-clicks to be processed before the transition is initiated:
+	            var transition = $timeout(function () {
+	                $state.go(target.state, target.params, target.options);
+	            });
+	            e.preventDefault();
+	            // if the state has no URL, ignore one preventDefault from the <a> directive.
+	            var ignorePreventDefaultCount = type.isAnchor && !target.href ? 1 : 0;
+	            e.preventDefault = function () {
+	                if (ignorePreventDefaultCount-- <= 0)
+	                    $timeout.cancel(transition);
+	            };
+	        }
+	    };
+	}
+	/** @hidden */
+	function defaultOpts(el, $state) {
+	    return {
+	        relative: stateContext(el) || $state.$current,
+	        inherit: true,
+	        source: "sref"
+	    };
+	}
+	/**
+	 * `ui-sref`: A directive for linking to a state
+	 *
+	 * A directive that binds a link (`<a>` tag) to a state.
+	 * If the state has an associated URL, the directive will automatically generate and
+	 * update the `href` attribute via the [[StateService.href]]  method.
+	 * Clicking the link will trigger a state transition with optional parameters.
+	 *
+	 * Also middle-clicking, right-clicking, and ctrl-clicking on the link will be
+	 * handled natively by the browser.
+	 *
+	 * You can also use relative state paths within ui-sref, just like the relative
+	 * paths passed to `$state.go()`.
+	 * You just need to be aware that the path is relative to the state that the link lives in.
+	 * In other words, the state that created the view containing the link.
+	 *
+	 * You can specify options to pass to [[StateService.go]] using the `ui-sref-opts` attribute.
+	 * Options are restricted to `location`, `inherit`, and `reload`.
+	 *
+	 * Here's an example of how you'd use ui-sref and how it would compile.
+	 * If you have the following template:
+	 *
+	 * @example
+	 * ```html
+	 *
+	 * <pre>
+	 * <a ui-sref="home">Home</a> | <a ui-sref="about">About</a> | <a ui-sref="{page: 2}">Next page</a>
+	 *
+	 * <ul>
+	 *     <li ng-repeat="contact in contacts">
+	 *         <a ui-sref="contacts.detail({ id: contact.id })">{{ contact.name }}</a>
+	 *     </li>
+	 * </ul>
+	 * </pre>
+	 * ```
+	 *
+	 * Then the compiled html would be (assuming Html5Mode is off and current state is contacts):
+	 *
+	 * ```html
+	 *
+	 * <pre>
+	 * <a href="#/home" ui-sref="home">Home</a> | <a href="#/about" ui-sref="about">About</a> | <a href="#/contacts?page=2" ui-sref="{page: 2}">Next page</a>
+	 *
+	 * <ul>
+	 *     <li ng-repeat="contact in contacts">
+	 *         <a href="#/contacts/1" ui-sref="contacts.detail({ id: contact.id })">Joe</a>
+	 *     </li>
+	 *     <li ng-repeat="contact in contacts">
+	 *         <a href="#/contacts/2" ui-sref="contacts.detail({ id: contact.id })">Alice</a>
+	 *     </li>
+	 *     <li ng-repeat="contact in contacts">
+	 *         <a href="#/contacts/3" ui-sref="contacts.detail({ id: contact.id })">Bob</a>
+	 *     </li>
+	 * </ul>
+	 *
+	 * <a ui-sref="home" ui-sref-opts="{reload: true}">Home</a>
+	 * </pre>
+	 * ```
+	 *
+	 * @param {string} ui-sref 'stateName' can be any valid absolute or relative state
+	 * @param {Object} ui-sref-opts options to pass to [[StateService.go]]
+	 */
+	var uiSref = ['$state', '$timeout',
+	    function $StateRefDirective($state, $timeout) {
+	        return {
+	            restrict: 'A',
+	            require: ['?^uiSrefActive', '?^uiSrefActiveEq'],
+	            link: function (scope, element, attrs, uiSrefActive) {
+	                var ref = parseStateRef(attrs.uiSref, $state.current.name);
+	                var def = { state: ref.state, href: null, params: null, options: null };
+	                var type = getTypeInfo(element);
+	                var active = uiSrefActive[1] || uiSrefActive[0];
+	                var unlinkInfoFn = null;
+	                var hookFn;
+	                def.options = common_1.extend(defaultOpts(element, $state), attrs.uiSrefOpts ? scope.$eval(attrs.uiSrefOpts) : {});
+	                var update = function (val) {
+	                    if (val)
+	                        def.params = angular.copy(val);
+	                    def.href = $state.href(ref.state, def.params, def.options);
+	                    if (unlinkInfoFn)
+	                        unlinkInfoFn();
+	                    if (active)
+	                        unlinkInfoFn = active.$$addStateInfo(ref.state, def.params);
+	                    if (def.href !== null)
+	                        attrs.$set(type.attr, def.href);
+	                };
+	                if (ref.paramExpr) {
+	                    scope.$watch(ref.paramExpr, function (val) { if (val !== def.params)
+	                        update(val); }, true);
+	                    def.params = angular.copy(scope.$eval(ref.paramExpr));
+	                }
+	                update();
+	                if (!type.clickable)
+	                    return;
+	                hookFn = clickHook(element, $state, $timeout, type, function () { return def; });
+	                element.on("click", hookFn);
+	                scope.$on('$destroy', function () {
+	                    element.off("click", hookFn);
+	                });
+	            }
+	        };
+	    }];
+	/**
+	 * `ui-state`: A dynamic version of `ui-sref`
+	 *
+	 * Much like ui-sref, but will accept named $scope properties to evaluate for a state definition,
+	 * params and override options.
+	 *
+	 * @example
+	 * ```html
+	 *
+	 * <li ng-repeat="nav in navlinks">
+	 *   <a ui-state="nav.statename">{{nav.description}}</a>
+	 * </li>
+	 *
+	 * @param {string} ui-state 'stateName' can be any valid absolute or relative state
+	 * @param {Object} ui-state-params params to pass to [[StateService.href]]
+	 * @param {Object} ui-state-opts options to pass to [[StateService.go]]
+	 */
+	var uiState = ['$state', '$timeout',
+	    function $StateRefDynamicDirective($state, $timeout) {
+	        return {
+	            restrict: 'A',
+	            require: ['?^uiSrefActive', '?^uiSrefActiveEq'],
+	            link: function (scope, element, attrs, uiSrefActive) {
+	                var type = getTypeInfo(element);
+	                var active = uiSrefActive[1] || uiSrefActive[0];
+	                var group = [attrs.uiState, attrs.uiStateParams || null, attrs.uiStateOpts || null];
+	                var watch = '[' + group.map(function (val) { return val || 'null'; }).join(', ') + ']';
+	                var def = { state: null, params: null, options: null, href: null };
+	                var unlinkInfoFn = null;
+	                var hookFn;
+	                function runStateRefLink(group) {
+	                    def.state = group[0];
+	                    def.params = group[1];
+	                    def.options = group[2];
+	                    def.href = $state.href(def.state, def.params, def.options);
+	                    if (unlinkInfoFn)
+	                        unlinkInfoFn();
+	                    if (active)
+	                        unlinkInfoFn = active.$$addStateInfo(def.state, def.params);
+	                    if (def.href)
+	                        attrs.$set(type.attr, def.href);
+	                }
+	                scope.$watch(watch, runStateRefLink, true);
+	                runStateRefLink(scope.$eval(watch));
+	                if (!type.clickable)
+	                    return;
+	                hookFn = clickHook(element, $state, $timeout, type, function () { return def; });
+	                element.on("click", hookFn);
+	                scope.$on('$destroy', function () {
+	                    element.off("click", hookFn);
+	                });
+	            }
+	        };
+	    }];
+	/**
+	 * `ui-sref-active` and `ui-sref-active-eq`: A directive that adds a CSS class when a `ui-sref` is active
+	 *
+	 * A directive working alongside ui-sref to add classes to an element when the
+	 * related ui-sref directive's state is active, and removing them when it is inactive.
+	 * The primary use-case is to simplify the special appearance of navigation menus
+	 * relying on `ui-sref`, by having the "active" state's menu button appear different,
+	 * distinguishing it from the inactive menu items.
+	 *
+	 * ui-sref-active can live on the same element as ui-sref or on a parent element. The first
+	 * ui-sref-active found at the same level or above the ui-sref will be used.
+	 *
+	 * Will activate when the ui-sref's target state or any child state is active. If you
+	 * need to activate only when the ui-sref target state is active and *not* any of
+	 * it's children, then you will use ui-sref-active-eq
+	 *
+	 * Given the following template:
+	 * @example
+	 * ```html
+	 *
+	 * <pre>
+	 * <ul>
+	 *   <li ui-sref-active="active" class="item">
+	 *     <a href ui-sref="app.user({user: 'bilbobaggins'})">@bilbobaggins</a>
+	 *   </li>
+	 * </ul>
+	 * </pre>
+	 * ```
+	 *
+	 *
+	 * When the app state is "app.user" (or any children states), and contains the state parameter "user" with value "bilbobaggins",
+	 * the resulting HTML will appear as (note the 'active' class):
+	 *
+	 * ```html
+	 *
+	 * <pre>
+	 * <ul>
+	 *   <li ui-sref-active="active" class="item active">
+	 *     <a ui-sref="app.user({user: 'bilbobaggins'})" href="/users/bilbobaggins">@bilbobaggins</a>
+	 *   </li>
+	 * </ul>
+	 * </pre>
+	 * ```
+	 *
+	 * The class name is interpolated **once** during the directives link time (any further changes to the
+	 * interpolated value are ignored).
+	 *
+	 * Multiple classes may be specified in a space-separated format:
+	 *
+	 * ```html
+	 * <pre>
+	 * <ul>
+	 *   <li ui-sref-active='class1 class2 class3'>
+	 *     <a ui-sref="app.user">link</a>
+	 *   </li>
+	 * </ul>
+	 * </pre>
+	 * ```
+	 *
+	 * It is also possible to pass ui-sref-active an expression that evaluates
+	 * to an object hash, whose keys represent active class names and whose
+	 * values represent the respective state names/globs.
+	 * ui-sref-active will match if the current active state **includes** any of
+	 * the specified state names/globs, even the abstract ones.
+	 *
+	 * Given the following template, with "admin" being an abstract state:
+	 * @example
+	 * ```html
+	 *
+	 * <pre>
+	 * <div ui-sref-active="{'active': 'admin.*'}">
+	 *   <a ui-sref-active="active" ui-sref="admin.roles">Roles</a>
+	 * </div>
+	 * </pre>
+	 * ```
+	 *
+	 * When the current state is "admin.roles" the "active" class will be applied
+	 * to both the <div> and <a> elements. It is important to note that the state
+	 * names/globs passed to ui-sref-active shadow the state provided by ui-sref.
+	 */
+	var uiSrefActive = ['$state', '$stateParams', '$interpolate', '$transitions', '$uiRouter',
+	    function $StateRefActiveDirective($state, $stateParams, $interpolate, $transitions, $uiRouter) {
+	        return {
+	            restrict: "A",
+	            controller: ['$scope', '$element', '$attrs', '$timeout',
+	                function ($scope, $element, $attrs, $timeout) {
+	                    var states = [], activeClasses = {}, activeEqClass, uiSrefActive;
+	                    // There probably isn't much point in $observing this
+	                    // uiSrefActive and uiSrefActiveEq share the same directive object with some
+	                    // slight difference in logic routing
+	                    activeEqClass = $interpolate($attrs.uiSrefActiveEq || '', false)($scope);
+	                    try {
+	                        uiSrefActive = $scope.$eval($attrs.uiSrefActive);
+	                    }
+	                    catch (e) {
+	                    }
+	                    uiSrefActive = uiSrefActive || $interpolate($attrs.uiSrefActive || '', false)($scope);
+	                    if (predicates_1.isObject(uiSrefActive)) {
+	                        common_1.forEach(uiSrefActive, function (stateOrName, activeClass) {
+	                            if (predicates_1.isString(stateOrName)) {
+	                                var ref = parseStateRef(stateOrName, $state.current.name);
+	                                addState(ref.state, $scope.$eval(ref.paramExpr), activeClass);
+	                            }
+	                        });
+	                    }
+	                    // Allow uiSref to communicate with uiSrefActive[Equals]
+	                    this.$$addStateInfo = function (newState, newParams) {
+	                        // we already got an explicit state provided by ui-sref-active, so we
+	                        // shadow the one that comes from ui-sref
+	                        if (predicates_1.isObject(uiSrefActive) && states.length > 0) {
+	                            return;
+	                        }
+	                        var deregister = addState(newState, newParams, uiSrefActive);
+	                        update();
+	                        return deregister;
+	                    };
+	                    function updateAfterTransition(trans) { trans.promise.then(update); }
+	                    $scope.$on('$stateChangeSuccess', update);
+	                    $scope.$on('$destroy', $transitions.onStart({}, updateAfterTransition));
+	                    if ($uiRouter.globals.transition) {
+	                        updateAfterTransition($uiRouter.globals.transition);
+	                    }
+	                    function addState(stateName, stateParams, activeClass) {
+	                        var state = $state.get(stateName, stateContext($element));
+	                        var stateHash = createStateHash(stateName, stateParams);
+	                        var stateInfo = {
+	                            state: state || { name: stateName },
+	                            params: stateParams,
+	                            hash: stateHash
+	                        };
+	                        states.push(stateInfo);
+	                        activeClasses[stateHash] = activeClass;
+	                        return function removeState() {
+	                            var idx = states.indexOf(stateInfo);
+	                            if (idx !== -1)
+	                                states.splice(idx, 1);
+	                        };
+	                    }
+	                    /**
+	                     * @param {string} state
+	                     * @param {Object|string} [params]
+	                     * @return {string}
+	                     */
+	                    function createStateHash(state, params) {
+	                        if (!predicates_1.isString(state)) {
+	                            throw new Error('state should be a string');
+	                        }
+	                        if (predicates_1.isObject(params)) {
+	                            return state + common_1.toJson(params);
+	                        }
+	                        params = $scope.$eval(params);
+	                        if (predicates_1.isObject(params)) {
+	                            return state + common_1.toJson(params);
+	                        }
+	                        return state;
+	                    }
+	                    // Update route state
+	                    function update() {
+	                        for (var i = 0; i < states.length; i++) {
+	                            if (anyMatch(states[i].state, states[i].params)) {
+	                                addClass($element, activeClasses[states[i].hash]);
+	                            }
+	                            else {
+	                                removeClass($element, activeClasses[states[i].hash]);
+	                            }
+	                            if (exactMatch(states[i].state, states[i].params)) {
+	                                addClass($element, activeEqClass);
+	                            }
+	                            else {
+	                                removeClass($element, activeEqClass);
+	                            }
+	                        }
+	                    }
+	                    function addClass(el, className) { $timeout(function () { el.addClass(className); }); }
+	                    function removeClass(el, className) { el.removeClass(className); }
+	                    function anyMatch(state, params) { return $state.includes(state.name, params); }
+	                    function exactMatch(state, params) { return $state.is(state.name, params); }
+	                    update();
+	                }]
+	        };
+	    }];
+	angular.module('ui.router.state')
+	    .directive('uiSref', uiSref)
+	    .directive('uiSrefActive', uiSrefActive)
+	    .directive('uiSrefActiveEq', uiSrefActive)
+	    .directive('uiState', uiState);
+	//# sourceMappingURL=stateDirectives.js.map
+
+/***/ },
+
+/***/ 284:
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @module ng1_directives */ /** for typedoc */
+	"use strict";
+	var common_1 = __webpack_require__(5);
+	var predicates_1 = __webpack_require__(9);
+	var trace_1 = __webpack_require__(46);
+	var views_1 = __webpack_require__(126);
+	var hof_1 = __webpack_require__(17);
+	var resolveContext_1 = __webpack_require__(47);
+	var strings_1 = __webpack_require__(40);
+	var services_1 = __webpack_require__(125);
+	var angular = __webpack_require__(64);
+	/**
+	 * `ui-view`: A viewport directive which is filled in by a view from the active state.
+	 *
+	 * @param {string=} name A view name. The name should be unique amongst the other views in the
+	 * same state. You can have views of the same name that live in different states.
+	 *
+	 * @param {string=} autoscroll It allows you to set the scroll behavior of the browser window
+	 * when a view is populated. By default, $anchorScroll is overridden by ui-router's custom scroll
+	 * service, {@link ui.router.state.$uiViewScroll}. This custom service let's you
+	 * scroll ui-view elements into view when they are populated during a state activation.
+	 *
+	 * *Note: To revert back to old [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll)
+	 * functionality, call `$uiViewScrollProvider.useAnchorScroll()`.*
+	 *
+	 * @param {string=} onload Expression to evaluate whenever the view updates.
+	 *
+	 * A view can be unnamed or named.
+	 * @example
+	 * ```html
+	 *
+	 * <!-- Unnamed -->
+	 * <div ui-view></div>
+	 *
+	 * <!-- Named -->
+	 * <div ui-view="viewName"></div>
+	 * ```
+	 *
+	 * You can only have one unnamed view within any template (or root html). If you are only using a
+	 * single view and it is unnamed then you can populate it like so:
+	 * ```
+	 *
+	 * <div ui-view></div>
+	 * $stateProvider.state("home", {
+	 *   template: "<h1>HELLO!</h1>"
+	 * })
+	 * ```
+	 *
+	 * The above is a convenient shortcut equivalent to specifying your view explicitly with the {@link ui.router.state.$stateProvider#views `views`}
+	 * config property, by name, in this case an empty name:
+	 * ```js
+	 *
+	 * $stateProvider.state("home", {
+	 *   views: {
+	 *     "": {
+	 *       template: "<h1>HELLO!</h1>"
+	 *     }
+	 *   }
+	 * })
+	 * ```
+	 *
+	 * But typically you'll only use the views property if you name your view or have more than one view
+	 * in the same template. There's not really a compelling reason to name a view if its the only one,
+	 * but you could if you wanted, like so:
+	 *
+	 * ```html
+	 *
+	 * <div ui-view="main"></div>
+	 * ```
+	 *
+	 * ```js
+	 *
+	 * $stateProvider.state("home", {
+	 *   views: {
+	 *     "main": {
+	 *       template: "<h1>HELLO!</h1>"
+	 *     }
+	 *   }
+	 * })
+	 * ```
+	 *
+	 * Really though, you'll use views to set up multiple views:
+	 * ```html
+	 *
+	 * <div ui-view></div>
+	 * <div ui-view="chart"></div>
+	 * <div ui-view="data"></div>
+	 * ```
+	 *
+	 * ```js
+	 * $stateProvider.state("home", {
+	 *   views: {
+	 *     "": {
+	 *       template: "<h1>HELLO!</h1>"
+	 *     },
+	 *     "chart": {
+	 *       template: "<chart_thing/>"
+	 *     },
+	 *     "data": {
+	 *       template: "<data_thing/>"
+	 *     }
+	 *   }
+	 * })
+	 * ```
+	 *
+	 * Examples for `autoscroll`:
+	 *
+	 * ```html
+	 *
+	 * <!-- If autoscroll present with no expression,
+	 *      then scroll ui-view into view -->
+	 * <ui-view autoscroll/>
+	 *
+	 * <!-- If autoscroll present with valid expression,
+	 *      then scroll ui-view into view if expression evaluates to true -->
+	 * <ui-view autoscroll='true'/>
+	 * <ui-view autoscroll='false'/>
+	 * <ui-view autoscroll='scopeVariable'/>
+	 * ```
+	 *
+	 * Resolve data:
+	 *
+	 * The resolved data from the state's `resolve` block is placed on the scope as `$resolve` (this
+	 * can be customized using [[ViewDeclaration.resolveAs]]).  This can be then accessed from the template.
+	 *
+	 * Note that when `controllerAs` is being used, `$resolve` is set on the controller instance *after* the
+	 * controller is instantiated.  The `$onInit()` hook can be used to perform initialization code which
+	 * depends on `$resolve` data.
+	 *
+	 * @example
+	 * ```js
+	 *
+	 * $stateProvider.state('home', {
+	 *   template: '<my-component user="$resolve.user"></my-component>',
+	 *   resolve: {
+	 *     user: function(UserService) { return UserService.fetchUser(); }
+	 *   }
+	 * });
+	 * ```
+	 */
+	var uiView = ['$view', '$animate', '$uiViewScroll', '$interpolate', '$q',
+	    function $ViewDirective($view, $animate, $uiViewScroll, $interpolate, $q) {
+	        function getRenderer(attrs, scope) {
+	            return {
+	                enter: function (element, target, cb) {
+	                    if (angular.version.minor > 2) {
+	                        $animate.enter(element, null, target).then(cb);
+	                    }
+	                    else {
+	                        $animate.enter(element, null, target, cb);
+	                    }
+	                },
+	                leave: function (element, cb) {
+	                    if (angular.version.minor > 2) {
+	                        $animate.leave(element).then(cb);
+	                    }
+	                    else {
+	                        $animate.leave(element, cb);
+	                    }
+	                }
+	            };
+	        }
+	        function configsEqual(config1, config2) {
+	            return config1 === config2;
+	        }
+	        var rootData = {
+	            $cfg: { viewDecl: { $context: $view.rootContext() } },
+	            $uiView: {}
+	        };
+	        var directive = {
+	            count: 0,
+	            restrict: 'ECA',
+	            terminal: true,
+	            priority: 400,
+	            transclude: 'element',
+	            compile: function (tElement, tAttrs, $transclude) {
+	                return function (scope, $element, attrs) {
+	                    var previousEl, currentEl, currentScope, unregister, onloadExp = attrs['onload'] || '', autoScrollExp = attrs['autoscroll'], renderer = getRenderer(attrs, scope), viewConfig = undefined, inherited = $element.inheritedData('$uiView') || rootData, name = $interpolate(attrs['uiView'] || attrs['name'] || '')(scope) || '$default';
+	                    var activeUIView = {
+	                        $type: 'ng1',
+	                        id: directive.count++,
+	                        name: name,
+	                        fqn: inherited.$uiView.fqn ? inherited.$uiView.fqn + "." + name : name,
+	                        config: null,
+	                        configUpdated: configUpdatedCallback,
+	                        get creationContext() {
+	                            return hof_1.parse('$cfg.viewDecl.$context')(inherited);
+	                        }
+	                    };
+	                    trace_1.trace.traceUIViewEvent("Linking", activeUIView);
+	                    function configUpdatedCallback(config) {
+	                        if (config && !(config instanceof views_1.Ng1ViewConfig))
+	                            return;
+	                        if (configsEqual(viewConfig, config))
+	                            return;
+	                        trace_1.trace.traceUIViewConfigUpdated(activeUIView, config && config.viewDecl && config.viewDecl.$context);
+	                        viewConfig = config;
+	                        updateView(config);
+	                    }
+	                    $element.data('$uiView', { $uiView: activeUIView });
+	                    updateView();
+	                    unregister = $view.registerUIView(activeUIView);
+	                    scope.$on("$destroy", function () {
+	                        trace_1.trace.traceUIViewEvent("Destroying/Unregistering", activeUIView);
+	                        unregister();
+	                    });
+	                    function cleanupLastView() {
+	                        if (previousEl) {
+	                            trace_1.trace.traceUIViewEvent("Removing (previous) el", previousEl.data('$uiView'));
+	                            previousEl.remove();
+	                            previousEl = null;
+	                        }
+	                        if (currentScope) {
+	                            trace_1.trace.traceUIViewEvent("Destroying scope", activeUIView);
+	                            currentScope.$destroy();
+	                            currentScope = null;
+	                        }
+	                        if (currentEl) {
+	                            var _viewData_1 = currentEl.data('$uiViewAnim');
+	                            trace_1.trace.traceUIViewEvent("Animate out", _viewData_1);
+	                            renderer.leave(currentEl, function () {
+	                                _viewData_1.$$animLeave.resolve();
+	                                previousEl = null;
+	                            });
+	                            previousEl = currentEl;
+	                            currentEl = null;
+	                        }
+	                    }
+	                    function updateView(config) {
+	                        var newScope = scope.$new();
+	                        var animEnter = $q.defer(), animLeave = $q.defer();
+	                        var $uiViewData = {
+	                            $cfg: config,
+	                            $uiView: activeUIView,
+	                        };
+	                        var $uiViewAnim = {
+	                            $animEnter: animEnter.promise,
+	                            $animLeave: animLeave.promise,
+	                            $$animLeave: animLeave
+	                        };
+	                        var cloned = $transclude(newScope, function (clone) {
+	                            clone.data('$uiViewAnim', $uiViewAnim);
+	                            clone.data('$uiView', $uiViewData);
+	                            renderer.enter(clone, $element, function onUIViewEnter() {
+	                                animEnter.resolve();
+	                                if (currentScope)
+	                                    currentScope.$emit('$viewContentAnimationEnded');
+	                                if (predicates_1.isDefined(autoScrollExp) && !autoScrollExp || scope.$eval(autoScrollExp)) {
+	                                    $uiViewScroll(clone);
+	                                }
+	                            });
+	                            cleanupLastView();
+	                        });
+	                        currentEl = cloned;
+	                        currentScope = newScope;
+	                        /**
+	                         * @ngdoc event
+	                         * @name ui.router.state.directive:ui-view#$viewContentLoaded
+	                         * @eventOf ui.router.state.directive:ui-view
+	                         * @eventType emits on ui-view directive scope
+	                         * @description           *
+	                         * Fired once the view is **loaded**, *after* the DOM is rendered.
+	                         *
+	                         * @param {Object} event Event object.
+	                         */
+	                        currentScope.$emit('$viewContentLoaded', config || viewConfig);
+	                        currentScope.$eval(onloadExp);
+	                    }
+	                };
+	            }
+	        };
+	        return directive;
+	    }];
+	$ViewDirectiveFill.$inject = ['$compile', '$controller', '$transitions', '$view', '$timeout'];
+	/** @hidden */
+	function $ViewDirectiveFill($compile, $controller, $transitions, $view, $timeout) {
+	    var getControllerAs = hof_1.parse('viewDecl.controllerAs');
+	    var getResolveAs = hof_1.parse('viewDecl.resolveAs');
+	    return {
+	        restrict: 'ECA',
+	        priority: -400,
+	        compile: function (tElement) {
+	            var initial = tElement.html();
+	            return function (scope, $element) {
+	                var data = $element.data('$uiView');
+	                if (!data)
+	                    return;
+	                var cfg = data.$cfg || { viewDecl: {} };
+	                $element.html(cfg.template || initial);
+	                trace_1.trace.traceUIViewFill(data.$uiView, $element.html());
+	                var link = $compile($element.contents());
+	                var controller = cfg.controller;
+	                var controllerAs = getControllerAs(cfg);
+	                var resolveAs = getResolveAs(cfg);
+	                var resolveCtx = cfg.path && new resolveContext_1.ResolveContext(cfg.path);
+	                var locals = resolveCtx && services_1.getLocals(resolveCtx);
+	                scope[resolveAs] = locals;
+	                if (controller) {
+	                    var controllerInstance = $controller(controller, common_1.extend({}, locals, { $scope: scope, $element: $element }));
+	                    if (controllerAs) {
+	                        scope[controllerAs] = controllerInstance;
+	                        scope[controllerAs][resolveAs] = locals;
+	                    }
+	                    // TODO: Use $view service as a central point for registering component-level hooks
+	                    // Then, when a component is created, tell the $view service, so it can invoke hooks
+	                    // $view.componentLoaded(controllerInstance, { $scope: scope, $element: $element });
+	                    // scope.$on('$destroy', () => $view.componentUnloaded(controllerInstance, { $scope: scope, $element: $element }));
+	                    $element.data('$ngControllerController', controllerInstance);
+	                    $element.children().data('$ngControllerController', controllerInstance);
+	                    registerControllerCallbacks($transitions, controllerInstance, scope, cfg);
+	                }
+	                // Wait for the component to appear in the DOM
+	                if (predicates_1.isString(cfg.viewDecl.component)) {
+	                    var cmp_1 = cfg.viewDecl.component;
+	                    var kebobName_1 = strings_1.kebobString(cmp_1);
+	                    var getComponentController = function () {
+	                        var directiveEl = [].slice.call($element[0].children)
+	                            .filter(function (el) { return el && el.tagName && el.tagName.toLowerCase() === kebobName_1; });
+	                        return directiveEl && angular.element(directiveEl).data("$" + cmp_1 + "Controller");
+	                    };
+	                    var deregisterWatch_1 = scope.$watch(getComponentController, function (ctrlInstance) {
+	                        if (!ctrlInstance)
+	                            return;
+	                        registerControllerCallbacks($transitions, ctrlInstance, scope, cfg);
+	                        deregisterWatch_1();
+	                    });
+	                }
+	                link(scope);
+	            };
+	        }
+	    };
+	}
+	/** @hidden */
+	var hasComponentImpl = typeof angular.module('ui.router')['component'] === 'function';
+	/** @hidden TODO: move these callbacks to $view and/or `/hooks/components.ts` or something */
+	function registerControllerCallbacks($transitions, controllerInstance, $scope, cfg) {
+	    // Call $onInit() ASAP
+	    if (predicates_1.isFunction(controllerInstance.$onInit) && !(cfg.viewDecl.component && hasComponentImpl))
+	        controllerInstance.$onInit();
+	    var viewState = common_1.tail(cfg.path).state.self;
+	    var hookOptions = { bind: controllerInstance };
+	    // Add component-level hook for onParamsChange
+	    if (predicates_1.isFunction(controllerInstance.uiOnParamsChanged)) {
+	        var resolveContext = new resolveContext_1.ResolveContext(cfg.path);
+	        var viewCreationTrans_1 = resolveContext.getResolvable('$transition$').data;
+	        // Fire callback on any successful transition
+	        var paramsUpdated = function ($transition$) {
+	            // Exit early if the $transition$ is the same as the view was created within.
+	            // Exit early if the $transition$ will exit the state the view is for.
+	            if ($transition$ === viewCreationTrans_1 || $transition$.exiting().indexOf(viewState) !== -1)
+	                return;
+	            var toParams = $transition$.params("to");
+	            var fromParams = $transition$.params("from");
+	            var toSchema = $transition$.treeChanges().to.map(function (node) { return node.paramSchema; }).reduce(common_1.unnestR, []);
+	            var fromSchema = $transition$.treeChanges().from.map(function (node) { return node.paramSchema; }).reduce(common_1.unnestR, []);
+	            // Find the to params that have different values than the from params
+	            var changedToParams = toSchema.filter(function (param) {
+	                var idx = fromSchema.indexOf(param);
+	                return idx === -1 || !fromSchema[idx].type.equals(toParams[param.id], fromParams[param.id]);
+	            });
+	            // Only trigger callback if a to param has changed or is new
+	            if (changedToParams.length) {
+	                var changedKeys_1 = changedToParams.map(function (x) { return x.id; });
+	                // Filter the params to only changed/new to params.  `$transition$.params()` may be used to get all params.
+	                controllerInstance.uiOnParamsChanged(common_1.filter(toParams, function (val, key) { return changedKeys_1.indexOf(key) !== -1; }), $transition$);
+	            }
+	        };
+	        $scope.$on('$destroy', $transitions.onSuccess({}, paramsUpdated, hookOptions));
+	    }
+	    // Add component-level hook for uiCanExit
+	    if (predicates_1.isFunction(controllerInstance.uiCanExit)) {
+	        var criteria = { exiting: viewState.name };
+	        $scope.$on('$destroy', $transitions.onBefore(criteria, controllerInstance.uiCanExit, hookOptions));
+	    }
+	}
+	angular.module('ui.router.state').directive('uiView', uiView);
+	angular.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
+	//# sourceMappingURL=viewDirective.js.map
+
+/***/ },
+
+/***/ 285:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module ng1 */ /** */
+	var stateObject_1 = __webpack_require__(130);
+	var node_1 = __webpack_require__(82);
+	var resolveContext_1 = __webpack_require__(47);
+	var common_1 = __webpack_require__(5);
+	var stateBuilder_1 = __webpack_require__(129);
+	/**
+	 * Implementation of the legacy `$resolve` service for angular 1.
+	 */
+	var $resolve = {
+	    /**
+	     * Asynchronously injects a resolve block.
+	     *
+	     * This emulates most of the behavior of the ui-router 0.2.x $resolve.resolve() service API.
+	     *
+	     * Given an object `invocables`, where keys are strings and values are injectable functions,
+	     * injects each function, and waits for the resulting promise to resolve.
+	     * When all resulting promises are resolved, returns the results as an object.
+	     *
+	     * @example
+	     * ```js
+	     *
+	     * let invocables = {
+	     *   foo: [ '$http', ($http) =>
+	     *            $http.get('/api/foo').then(resp => resp.data) ],
+	     *   bar: [ 'foo', '$http', (foo, $http) =>
+	     *            $http.get('/api/bar/' + foo.barId).then(resp => resp.data) ]
+	     * }
+	     * $resolve.resolve(invocables)
+	     *     .then(results => console.log(results.foo, results.bar))
+	     * // Logs foo and bar:
+	     * // { id: 123, barId: 456, fooData: 'foo data' }
+	     * // { id: 456, barData: 'bar data' }
+	     * ```
+	     *
+	     * @param invocables an object which looks like an [[StateDefinition.resolve]] object; keys are resolve names and values are injectable functions
+	     * @param locals key/value pre-resolved data (locals)
+	     * @param parent a promise for a "parent resolve"
+	     */
+	    resolve: function (invocables, locals, parent) {
+	        if (locals === void 0) { locals = {}; }
+	        var parentNode = new node_1.PathNode(new stateObject_1.State({ params: {}, resolvables: [] }));
+	        var node = new node_1.PathNode(new stateObject_1.State({ params: {}, resolvables: [] }));
+	        var context = new resolveContext_1.ResolveContext([parentNode, node]);
+	        context.addResolvables(stateBuilder_1.resolvablesBuilder({ resolve: invocables }), node.state);
+	        var resolveData = function (parentLocals) {
+	            var rewrap = function (_locals) { return stateBuilder_1.resolvablesBuilder({ resolve: common_1.mapObj(_locals, function (local) { return function () { return local; }; }) }); };
+	            context.addResolvables(rewrap(parentLocals), parentNode.state);
+	            context.addResolvables(rewrap(locals), node.state);
+	            var tuples2ObjR = function (acc, tuple) {
+	                acc[tuple.token] = tuple.value;
+	                return acc;
+	            };
+	            return context.resolvePath().then(function (results) { return results.reduce(tuples2ObjR, {}); });
+	        };
+	        return parent ? parent.then(resolveData) : resolveData({});
+	    }
+	};
+	/** @hidden */
+	exports.resolveFactory = function () { return $resolve; };
+	//# sourceMappingURL=resolveService.js.map
+
+/***/ },
+
+/***/ 286:
+/***/ function(module, exports, __webpack_require__) {
+
+	/** @module state */ /** for typedoc */
+	"use strict";
+	var angular = __webpack_require__(64);
+	/**
+	 * @ngdoc filter
+	 * @name ui.router.state.filter:isState
+	 *
+	 * @requires ui.router.state.$state
+	 *
+	 * @description
+	 * Translates to {@link ui.router.state.$state#methods_is $state.is("stateName")}.
+	 */
+	$IsStateFilter.$inject = ['$state'];
+	function $IsStateFilter($state) {
+	    var isFilter = function (state, params, options) {
+	        return $state.is(state, params, options);
+	    };
+	    isFilter.$stateful = true;
+	    return isFilter;
+	}
+	exports.$IsStateFilter = $IsStateFilter;
+	/**
+	 * @ngdoc filter
+	 * @name ui.router.state.filter:includedByState
+	 *
+	 * @requires ui.router.state.$state
+	 *
+	 * @description
+	 * Translates to {@link ui.router.state.$state#methods_includes $state.includes('fullOrPartialStateName')}.
+	 */
+	$IncludedByStateFilter.$inject = ['$state'];
+	function $IncludedByStateFilter($state) {
+	    var includesFilter = function (state, params, options) {
+	        return $state.includes(state, params, options);
+	    };
+	    includesFilter.$stateful = true;
+	    return includesFilter;
+	}
+	exports.$IncludedByStateFilter = $IncludedByStateFilter;
+	angular.module('ui.router.state')
+	    .filter('isState', $IsStateFilter)
+	    .filter('includedByState', $IncludedByStateFilter);
+	//# sourceMappingURL=stateFilters.js.map
+
+/***/ },
+
+/***/ 287:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var coreservices_1 = __webpack_require__(20);
+	var services_1 = __webpack_require__(125);
+	var resolveContext_1 = __webpack_require__(47);
+	var common_1 = __webpack_require__(5);
+	/**
+	 * This is a [[StateBuilder.builder]] function for angular1 `onEnter`, `onExit`,
+	 * `onRetain` callback hooks on a [[Ng1StateDeclaration]].
+	 *
+	 * When the [[StateBuilder]] builds a [[State]] object from a raw [[StateDeclaration]], this builder
+	 * ensures that those hooks are injectable for angular-ui-router (ng1).
+	 */
+	exports.getStateHookBuilder = function (hookName) {
+	    return function stateHookBuilder(state, parentFn) {
+	        var hook = state[hookName];
+	        function decoratedNg1Hook(trans, state) {
+	            var resolveContext = new resolveContext_1.ResolveContext(trans.treeChanges().to);
+	            return coreservices_1.services.$injector.invoke(hook, this, common_1.extend({ $state$: state }, services_1.getLocals(resolveContext)));
+	        }
+	        return hook ? decoratedNg1Hook : undefined;
+	    };
+	};
+	//# sourceMappingURL=onEnterExitRetain.js.map
+
+/***/ },
+
+/***/ 288:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	/** @module ng1 */ /** */
+	var angular = __webpack_require__(64);
+	/**
+	 * @ngdoc object
+	 * @name ui.router.state.$uiViewScrollProvider
+	 *
+	 * @description
+	 * Provider that returns the {@link ui.router.state.$uiViewScroll} service function.
+	 */
+	function $ViewScrollProvider() {
+	    var useAnchorScroll = false;
+	    /**
+	     * @ngdoc function
+	     * @name ui.router.state.$uiViewScrollProvider#useAnchorScroll
+	     * @methodOf ui.router.state.$uiViewScrollProvider
+	     *
+	     * @description
+	     * Reverts back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll) service for
+	     * scrolling based on the url anchor.
+	     */
+	    this.useAnchorScroll = function () {
+	        useAnchorScroll = true;
+	    };
+	    /**
+	     * @ngdoc object
+	     * @name ui.router.state.$uiViewScroll
+	     *
+	     * @requires $anchorScroll
+	     * @requires $timeout
+	     *
+	     * @description
+	     * When called with a jqLite element, it scrolls the element into view (after a
+	     * `$timeout` so the DOM has time to refresh).
+	     *
+	     * If you prefer to rely on `$anchorScroll` to scroll the view to the anchor,
+	     * this can be enabled by calling {@link ui.router.state.$uiViewScrollProvider#methods_useAnchorScroll `$uiViewScrollProvider.useAnchorScroll()`}.
+	     */
+	    this.$get = ['$anchorScroll', '$timeout', function ($anchorScroll, $timeout) {
+	            if (useAnchorScroll) {
+	                return $anchorScroll;
+	            }
+	            return function ($element) {
+	                return $timeout(function () {
+	                    $element[0].scrollIntoView();
+	                }, 0, false);
+	            };
+	        }];
+	}
+	angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider);
+	//# sourceMappingURL=viewScroll.js.map
+
+/***/ },
+
+/***/ 289:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	/**
+	 * This module contains code for State Parameters.
+	 *
+	 * See [[ParamDeclaration]]
+	 * @module params
+	 * @preferred doc
+	 */
+	/** for typedoc */
+	__export(__webpack_require__(54));
+	__export(__webpack_require__(176));
+	__export(__webpack_require__(177));
+	__export(__webpack_require__(127));
+	//# sourceMappingURL=module.js.map
+
+/***/ },
+
+/***/ 290:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	/** @module path */ /** for typedoc */
+	__export(__webpack_require__(82));
+	__export(__webpack_require__(101));
+	//# sourceMappingURL=module.js.map
+
+/***/ },
+
+/***/ 291:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	/** @module resolve */ /** for typedoc */
+	__export(__webpack_require__(178));
+	__export(__webpack_require__(63));
+	__export(__webpack_require__(47));
+	//# sourceMappingURL=module.js.map
+
+/***/ },
+
+/***/ 292:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	/** @module state */ /** for typedoc */
+	__export(__webpack_require__(129));
+	__export(__webpack_require__(130));
+	__export(__webpack_require__(179));
+	__export(__webpack_require__(180));
+	__export(__webpack_require__(181));
+	__export(__webpack_require__(182));
+	__export(__webpack_require__(74));
+	//# sourceMappingURL=module.js.map
+
+/***/ },
+
+/***/ 293:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	/**
+	 * This module contains APIs related to a Transition.
+	 *
+	 * See [[Transition]], [[$transitions]]
+	 *
+	 * @module transition
+	 * @preferred
+	 */
+	/** for typedoc */
+	__export(__webpack_require__(183));
+	__export(__webpack_require__(131));
+	__export(__webpack_require__(83));
+	__export(__webpack_require__(132));
+	__export(__webpack_require__(133));
+	__export(__webpack_require__(134));
+	//# sourceMappingURL=module.js.map
+
+/***/ },
+
+/***/ 294:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	/** @module url */ /** for typedoc */
+	__export(__webpack_require__(184));
+	__export(__webpack_require__(135));
+	__export(__webpack_require__(185));
+	__export(__webpack_require__(136));
+	//# sourceMappingURL=module.js.map
+
+/***/ },
+
+/***/ 295:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	/** @module view */ /** for typedoc */
+	__export(__webpack_require__(137));
+	//# sourceMappingURL=module.js.map
+
+/***/ },
+
+/***/ 296:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!
@@ -31637,5392 +37243,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 139:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __extends = (this && this.__extends) || function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-	    function __() { this.constructor = d; }
-	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	};
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 3/8/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(32);
-	var collection_1 = __webpack_require__(66);
-	var _ = __webpack_require__(35);
-	var contivglobals_1 = __webpack_require__(37);
-	var RulesModel = (function (_super) {
-	    __extends(RulesModel, _super);
-	    function RulesModel(http) {
-	        _super.call(this, http, contivglobals_1.ContivGlobals.RULES_ENDPOINT);
-	    }
-	    /**
-	     * Get incoming rules for a given policy and a tenant
-	     * @param policyName
-	     * @param tenantName
-	     * @returns {*|webdriver.promise.Promise}
-	     */
-	    RulesModel.prototype.getIncomingRules = function (policyName, tenantName) {
-	        var rulesmodel = this;
-	        return rulesmodel.get(false).then(function (result) {
-	            return _.filter(result, {
-	                'policyName': policyName,
-	                'direction': 'in',
-	                'tenantName': tenantName
-	            });
-	        });
-	    };
-	    /**
-	     * Get outgoing rules for a given policy and a tenant
-	     * @param policyName
-	     * @param tenantName
-	     * @returns {*|webdriver.promise.Promise}
-	     */
-	    RulesModel.prototype.getOutgoingRules = function (policyName, tenantName) {
-	        var rulesmodel = this;
-	        return rulesmodel.get(false).then(function (result) {
-	            return _.filter(result, {
-	                'policyName': policyName,
-	                'direction': 'out',
-	                'tenantName': tenantName
-	            });
-	        });
-	    };
-	    /**
-	     * Generate rule key to save rule on server
-	     * @param rule
-	     * @returns {string}
-	     */
-	    RulesModel.prototype.generateKey = function (rule) {
-	        return rule.tenantName + ':' + rule.policyName + ':' + rule.ruleId;
-	    };
-	    RulesModel = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], RulesModel);
-	    return RulesModel;
-	    var _a;
-	}(collection_1.Collection));
-	exports.RulesModel = RulesModel;
-	
-
-/***/ },
-
-/***/ 140:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by cshampur on 7/17/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var util_1 = __webpack_require__(81);
-	var InspectService = (function () {
-	    function InspectService() {
-	    }
-	    /* This function would build the containerDetails object.
-	     eg :
-	     containerDetails={
-	     ContainerId1 : [{name: "homingHost", value: "cluster-node1", type: "string", format: "none"},
-	     {name: macAddress, value: "02:02", type:"string", format:"none"}
-	     ],
-	     ContainerId2 : [{name: "homingHost", value: "cluster-node1" type: "string", format: "none"},
-	     {name: macAddress, value: "02:04", type: "string", format: "none"}
-	     ]
-	     }
-	     --Used in displaying the container detail inside an accordion.
-	     */
-	    InspectService.prototype.buildEndPoints = function (endpoints) {
-	        var containerDetails = {};
-	        for (var i in endpoints) {
-	            var containerAttributes = [];
-	            for (var key in endpoints[i]) {
-	                var endpointAttribute = {};
-	                endpointAttribute['name'] = key;
-	                endpointAttribute['format'] = 'none';
-	                endpointAttribute['type'] = 'string';
-	                switch (key) {
-	                    case "ipAddress":
-	                        endpointAttribute['value'] = endpoints[i][key].filter(function (ipAddress) { return ipAddress.length > 0; }).join();
-	                        break;
-	                    case "labels":
-	                        endpointAttribute['value'] = endpoints[i][key].replace(/(map\[|\])/gi, '').replace(/(:)/gi, '=').split(' ')
-	                            .filter(function (v) { return v.length > 0; });
-	                        endpointAttribute['format'] = 'label';
-	                        endpointAttribute['type'] = 'array';
-	                        break;
-	                    default: endpointAttribute['value'] = endpoints[i][key];
-	                }
-	                containerAttributes.push(endpointAttribute);
-	            }
-	            containerDetails[endpoints[i].containerID] = containerAttributes;
-	        }
-	        return containerDetails;
-	    };
-	    /*  This function checks whether any new containers were added or not
-	     View is updated only when there is a change in container configuration
-	     */
-	    InspectService.prototype.checkContainerChanged = function (contDetailsA, contDetailsB) {
-	        if (util_1.isUndefined(contDetailsA))
-	            return true;
-	        else {
-	            if (Object.keys(contDetailsA).length != Object.keys(contDetailsB).length)
-	                return true;
-	            for (var key in contDetailsB) {
-	                if (!(key in contDetailsA))
-	                    return true;
-	            }
-	            return false;
-	        }
-	    };
-	    InspectService = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [])
-	    ], InspectService);
-	    return InspectService;
-	}());
-	exports.InspectService = InspectService;
-	
-
-/***/ },
-
-/***/ 174:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module core */ /** */
-	var stateParams_1 = __webpack_require__(178);
-	var queue_1 = __webpack_require__(124);
-	var common_1 = __webpack_require__(5);
-	/**
-	 * Global mutable state
-	 */
-	var Globals = (function () {
-	    function Globals(transitionService) {
-	        var _this = this;
-	        this.params = new stateParams_1.StateParams();
-	        this.transitionHistory = new queue_1.Queue([], 1);
-	        this.successfulTransitions = new queue_1.Queue([], 1);
-	        var beforeNewTransition = function ($transition$) {
-	            _this.transition = $transition$;
-	            _this.transitionHistory.enqueue($transition$);
-	            var updateGlobalState = function () {
-	                _this.successfulTransitions.enqueue($transition$);
-	                _this.$current = $transition$.$to();
-	                _this.current = _this.$current.self;
-	                common_1.copy($transition$.params(), _this.params);
-	            };
-	            $transition$.onSuccess({}, updateGlobalState, { priority: 10000 });
-	            var clearCurrentTransition = function () { if (_this.transition === $transition$)
-	                _this.transition = null; };
-	            $transition$.promise.then(clearCurrentTransition, clearCurrentTransition);
-	        };
-	        transitionService.onBefore({}, beforeNewTransition);
-	    }
-	    return Globals;
-	}());
-	exports.Globals = Globals;
-	//# sourceMappingURL=globals.js.map
-
-/***/ },
-
-/***/ 175:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module ng1 */ /** for typedoc */
-	var predicates_1 = __webpack_require__(9);
-	var common_1 = __webpack_require__(5);
-	/**
-	 * @ngdoc object
-	 * @name ui.router.state.$stateProvider
-	 *
-	 * @requires ui.router.router.$urlRouterProvider
-	 * @requires ui.router.util.$urlMatcherFactoryProvider
-	 *
-	 * @description
-	 * The new `$stateProvider` works similar to Angular's v1 router, but it focuses purely
-	 * on state.
-	 *
-	 * A state corresponds to a "place" in the application in terms of the overall UI and
-	 * navigation. A state describes (via the controller / template / view properties) what
-	 * the UI looks like and does at that place.
-	 *
-	 * States often have things in common, and the primary way of factoring out these
-	 * commonalities in this model is via the state hierarchy, i.e. parent/child states aka
-	 * nested states.
-	 *
-	 * The `$stateProvider` provides interfaces to declare these states for your app.
-	 */
-	var StateProvider = (function () {
-	    function StateProvider(stateRegistry, stateService) {
-	        this.stateRegistry = stateRegistry;
-	        this.stateService = stateService;
-	        common_1.bindFunctions(StateProvider.prototype, this, this);
-	    }
-	    /**
-	     * @ngdoc function
-	     * @name ui.router.state.$stateProvider#decorator
-	     * @methodOf ui.router.state.$stateProvider
-	     *
-	     * @description
-	     * Allows you to extend (carefully) or override (at your own peril) the
-	     * `stateBuilder` object used internally by `$stateProvider`. This can be used
-	     * to add custom functionality to ui-router, for example inferring templateUrl
-	     * based on the state name.
-	     *
-	     * When passing only a name, it returns the current (original or decorated) builder
-	     * function that matches `name`.
-	     *
-	     * The builder functions that can be decorated are listed below. Though not all
-	     * necessarily have a good use case for decoration, that is up to you to decide.
-	     *
-	     * In addition, users can attach custom decorators, which will generate new
-	     * properties within the state's internal definition. There is currently no clear
-	     * use-case for this beyond accessing internal states (i.e. $state.$current),
-	     * however, expect this to become increasingly relevant as we introduce additional
-	     * meta-programming features.
-	     *
-	     * **Warning**: Decorators should not be interdependent because the order of
-	     * execution of the builder functions in non-deterministic. Builder functions
-	     * should only be dependent on the state definition object and super function.
-	     *
-	     *
-	     * Existing builder functions and current return values:
-	     *
-	     * - **parent** `{object}` - returns the parent state object.
-	     * - **data** `{object}` - returns state data, including any inherited data that is not
-	     *   overridden by own values (if any).
-	     * - **url** `{object}` - returns a {@link ui.router.util.type:UrlMatcher UrlMatcher}
-	     *   or `null`.
-	     * - **navigable** `{object}` - returns closest ancestor state that has a URL (aka is
-	     *   navigable).
-	     * - **params** `{object}` - returns an array of state params that are ensured to
-	     *   be a super-set of parent's params.
-	     * - **views** `{object}` - returns a views object where each key is an absolute view
-	     *   name (i.e. "viewName@stateName") and each value is the config object
-	     *   (template, controller) for the view. Even when you don't use the views object
-	     *   explicitly on a state config, one is still created for you internally.
-	     *   So by decorating this builder function you have access to decorating template
-	     *   and controller properties.
-	     * - **ownParams** `{object}` - returns an array of params that belong to the state,
-	     *   not including any params defined by ancestor states.
-	     * - **path** `{string}` - returns the full path from the root down to this state.
-	     *   Needed for state activation.
-	     * - **includes** `{object}` - returns an object that includes every state that
-	     *   would pass a `$state.includes()` test.
-	     *
-	     * @example
-	     * <pre>
-	     * // Override the internal 'views' builder with a function that takes the state
-	     * // definition, and a reference to the internal function being overridden:
-	     * $stateProvider.decorator('views', function (state, parent) {
-	     *   let result = {},
-	     *       views = parent(state);
-	     *
-	     *   angular.forEach(views, function (config, name) {
-	     *     let autoName = (state.name + '.' + name).replace('.', '/');
-	     *     config.templateUrl = config.templateUrl || '/partials/' + autoName + '.html';
-	     *     result[name] = config;
-	     *   });
-	     *   return result;
-	     * });
-	     *
-	     * $stateProvider.state('home', {
-	     *   views: {
-	     *     'contact.list': { controller: 'ListController' },
-	     *     'contact.item': { controller: 'ItemController' }
-	     *   }
-	     * });
-	     *
-	     * // ...
-	     *
-	     * $state.go('home');
-	     * // Auto-populates list and item views with /partials/home/contact/list.html,
-	     * // and /partials/home/contact/item.html, respectively.
-	     * </pre>
-	     *
-	     * @param {string} name The name of the builder function to decorate.
-	     * @param {object} func A function that is responsible for decorating the original
-	     * builder function. The function receives two parameters:
-	     *
-	     *   - `{object}` - state - The state config object.
-	     *   - `{object}` - super - The original builder function.
-	     *
-	     * @return {object} $stateProvider - $stateProvider instance
-	     */
-	    StateProvider.prototype.decorator = function (name, func) {
-	        return this.stateRegistry.decorator(name, func) || this;
-	    };
-	    StateProvider.prototype.state = function (name, definition) {
-	        if (predicates_1.isObject(name)) {
-	            definition = name;
-	        }
-	        else {
-	            definition.name = name;
-	        }
-	        this.stateRegistry.register(definition);
-	        return this;
-	    };
-	    /**
-	     * Registers an invalid state handler
-	     *
-	     * This is a passthrough to [[StateService.onInvalid]] for ng1.
-	     */
-	    StateProvider.prototype.onInvalid = function (callback) {
-	        return this.stateService.onInvalid(callback);
-	    };
-	    return StateProvider;
-	}());
-	exports.StateProvider = StateProvider;
-	//# sourceMappingURL=stateProvider.js.map
-
-/***/ },
-
-/***/ 176:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module view */ /** for typedoc */
-	var predicates_1 = __webpack_require__(9);
-	var coreservices_1 = __webpack_require__(19);
-	var common_1 = __webpack_require__(5);
-	var resolvable_1 = __webpack_require__(63);
-	/**
-	 * Service which manages loading of templates from a ViewConfig.
-	 */
-	var TemplateFactory = (function () {
-	    function TemplateFactory() {
-	    }
-	    /**
-	     * Creates a template from a configuration object.
-	     *
-	     * @param config Configuration object for which to load a template.
-	     * The following properties are search in the specified order, and the first one
-	     * that is defined is used to create the template:
-	     *
-	     * @param params  Parameters to pass to the template function.
-	     * @param context The resolve context associated with the template's view
-	     *
-	     * @return {string|object}  The template html as a string, or a promise for
-	     * that string,or `null` if no template is configured.
-	     */
-	    TemplateFactory.prototype.fromConfig = function (config, params, context) {
-	        return (predicates_1.isDefined(config.template) ? this.fromString(config.template, params) :
-	            predicates_1.isDefined(config.templateUrl) ? this.fromUrl(config.templateUrl, params) :
-	                predicates_1.isDefined(config.templateProvider) ? this.fromProvider(config.templateProvider, params, context) :
-	                    null);
-	    };
-	    ;
-	    /**
-	     * Creates a template from a string or a function returning a string.
-	     *
-	     * @param template html template as a string or function that returns an html template as a string.
-	     * @param params Parameters to pass to the template function.
-	     *
-	     * @return {string|object} The template html as a string, or a promise for that
-	     * string.
-	     */
-	    TemplateFactory.prototype.fromString = function (template, params) {
-	        return predicates_1.isFunction(template) ? template(params) : template;
-	    };
-	    ;
-	    /**
-	     * Loads a template from the a URL via `$http` and `$templateCache`.
-	     *
-	     * @param {string|Function} url url of the template to load, or a function
-	     * that returns a url.
-	     * @param {Object} params Parameters to pass to the url function.
-	     * @return {string|Promise.<string>} The template html as a string, or a promise
-	     * for that string.
-	     */
-	    TemplateFactory.prototype.fromUrl = function (url, params) {
-	        if (predicates_1.isFunction(url))
-	            url = url(params);
-	        if (url == null)
-	            return null;
-	        return coreservices_1.services.template.get(url);
-	    };
-	    ;
-	    /**
-	     * Creates a template by invoking an injectable provider function.
-	     *
-	     * @param provider Function to invoke via `locals`
-	     * @param {Function} injectFn a function used to invoke the template provider
-	     * @return {string|Promise.<string>} The template html as a string, or a promise
-	     * for that string.
-	     */
-	    TemplateFactory.prototype.fromProvider = function (provider, params, context) {
-	        var deps = coreservices_1.services.$injector.annotate(provider);
-	        var providerFn = predicates_1.isArray(provider) ? common_1.tail(provider) : provider;
-	        var resolvable = new resolvable_1.Resolvable("", providerFn, deps);
-	        return resolvable.get(context);
-	    };
-	    ;
-	    return TemplateFactory;
-	}());
-	exports.TemplateFactory = TemplateFactory;
-	//# sourceMappingURL=templateFactory.js.map
-
-/***/ },
-
-/***/ 177:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module params */ /** for typedoc */
-	var common_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(9);
-	var hof_1 = __webpack_require__(16);
-	var coreservices_1 = __webpack_require__(19);
-	var type_1 = __webpack_require__(127);
-	// Use tildes to pre-encode slashes.
-	// If the slashes are simply URLEncoded, the browser can choose to pre-decode them,
-	// and bidirectional encoding/decoding fails.
-	// Tilde was chosen because it's not a RFC 3986 section 2.2 Reserved Character
-	function valToString(val) { return val != null ? val.toString().replace(/(~|\/)/g, function (m) { return ({ '~': '~~', '/': '~2F' }[m]); }) : val; }
-	function valFromString(val) { return val != null ? val.toString().replace(/(~~|~2F)/g, function (m) { return ({ '~~': '~', '~2F': '/' }[m]); }) : val; }
-	var ParamTypes = (function () {
-	    function ParamTypes() {
-	        this.enqueue = true;
-	        this.typeQueue = [];
-	        this.defaultTypes = {
-	            "hash": {
-	                encode: valToString,
-	                decode: valFromString,
-	                is: hof_1.is(String),
-	                pattern: /.*/,
-	                equals: function (a, b) { return a == b; } // allow coersion for null/undefined/""
-	            },
-	            "string": {
-	                encode: valToString,
-	                decode: valFromString,
-	                is: hof_1.is(String),
-	                pattern: /[^/]*/
-	            },
-	            "int": {
-	                encode: valToString,
-	                decode: function (val) { return parseInt(val, 10); },
-	                is: function (val) { return predicates_1.isDefined(val) && this.decode(val.toString()) === val; },
-	                pattern: /-?\d+/
-	            },
-	            "bool": {
-	                encode: function (val) { return val && 1 || 0; },
-	                decode: function (val) { return parseInt(val, 10) !== 0; },
-	                is: hof_1.is(Boolean),
-	                pattern: /0|1/
-	            },
-	            "date": {
-	                encode: function (val) {
-	                    return !this.is(val) ? undefined : [
-	                        val.getFullYear(),
-	                        ('0' + (val.getMonth() + 1)).slice(-2),
-	                        ('0' + val.getDate()).slice(-2)
-	                    ].join("-");
-	                },
-	                decode: function (val) {
-	                    if (this.is(val))
-	                        return val;
-	                    var match = this.capture.exec(val);
-	                    return match ? new Date(match[1], match[2] - 1, match[3]) : undefined;
-	                },
-	                is: function (val) { return val instanceof Date && !isNaN(val.valueOf()); },
-	                equals: function (l, r) {
-	                    return ['getFullYear', 'getMonth', 'getDate']
-	                        .reduce(function (acc, fn) { return acc && l[fn]() === r[fn](); }, true);
-	                },
-	                pattern: /[0-9]{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[1-2][0-9]|3[0-1])/,
-	                capture: /([0-9]{4})-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])/
-	            },
-	            "json": {
-	                encode: common_1.toJson,
-	                decode: common_1.fromJson,
-	                is: hof_1.is(Object),
-	                equals: common_1.equals,
-	                pattern: /[^/]*/
-	            },
-	            "any": {
-	                encode: common_1.identity,
-	                decode: common_1.identity,
-	                equals: common_1.equals,
-	                pattern: /.*/
-	            }
-	        };
-	        // Register default types. Store them in the prototype of this.types.
-	        var makeType = function (definition, name) { return new type_1.ParamType(common_1.extend({ name: name }, definition)); };
-	        this.types = common_1.inherit(common_1.map(this.defaultTypes, makeType), {});
-	    }
-	    ParamTypes.prototype.type = function (name, definition, definitionFn) {
-	        if (!predicates_1.isDefined(definition))
-	            return this.types[name];
-	        if (this.types.hasOwnProperty(name))
-	            throw new Error("A type named '" + name + "' has already been defined.");
-	        this.types[name] = new type_1.ParamType(common_1.extend({ name: name }, definition));
-	        if (definitionFn) {
-	            this.typeQueue.push({ name: name, def: definitionFn });
-	            if (!this.enqueue)
-	                this._flushTypeQueue();
-	        }
-	        return this;
-	    };
-	    ParamTypes.prototype._flushTypeQueue = function () {
-	        while (this.typeQueue.length) {
-	            var type = this.typeQueue.shift();
-	            if (type.pattern)
-	                throw new Error("You cannot override a type's .pattern at runtime.");
-	            common_1.extend(this.types[type.name], coreservices_1.services.$injector.invoke(type.def));
-	        }
-	    };
-	    return ParamTypes;
-	}());
-	exports.ParamTypes = ParamTypes;
-	//# sourceMappingURL=paramTypes.js.map
-
-/***/ },
-
-/***/ 178:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module params */ /** for typedoc */
-	var common_1 = __webpack_require__(5);
-	var StateParams = (function () {
-	    function StateParams(params) {
-	        if (params === void 0) { params = {}; }
-	        common_1.extend(this, params);
-	    }
-	    /**
-	     * Merges a set of parameters with all parameters inherited between the common parents of the
-	     * current state and a given destination state.
-	     *
-	     * @param {Object} newParams The set of parameters which will be composited with inherited params.
-	     * @param {Object} $current Internal definition of object representing the current state.
-	     * @param {Object} $to Internal definition of object representing state to transition to.
-	     */
-	    StateParams.prototype.$inherit = function (newParams, $current, $to) {
-	        var parents = common_1.ancestors($current, $to), parentParams, inherited = {}, inheritList = [];
-	        for (var i in parents) {
-	            if (!parents[i] || !parents[i].params)
-	                continue;
-	            parentParams = Object.keys(parents[i].params);
-	            if (!parentParams.length)
-	                continue;
-	            for (var j in parentParams) {
-	                if (inheritList.indexOf(parentParams[j]) >= 0)
-	                    continue;
-	                inheritList.push(parentParams[j]);
-	                inherited[parentParams[j]] = this[parentParams[j]];
-	            }
-	        }
-	        return common_1.extend({}, inherited, newParams);
-	    };
-	    ;
-	    return StateParams;
-	}());
-	exports.StateParams = StateParams;
-	//# sourceMappingURL=stateParams.js.map
-
-/***/ },
-
-/***/ 179:
-/***/ function(module, exports) {
-
-	"use strict";
-	exports.resolvePolicies = {
-	    when: {
-	        LAZY: "LAZY",
-	        EAGER: "EAGER"
-	    },
-	    async: {
-	        WAIT: "WAIT",
-	        NOWAIT: "NOWAIT",
-	        RXWAIT: "RXWAIT"
-	    }
-	};
-	//# sourceMappingURL=interface.js.map
-
-/***/ },
-
-/***/ 180:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module state */ /** for typedoc */
-	var predicates_1 = __webpack_require__(9);
-	var glob_1 = __webpack_require__(100);
-	var common_1 = __webpack_require__(5);
-	var StateMatcher = (function () {
-	    function StateMatcher(_states) {
-	        this._states = _states;
-	    }
-	    StateMatcher.prototype.isRelative = function (stateName) {
-	        stateName = stateName || "";
-	        return stateName.indexOf(".") === 0 || stateName.indexOf("^") === 0;
-	    };
-	    StateMatcher.prototype.find = function (stateOrName, base) {
-	        if (!stateOrName && stateOrName !== "")
-	            return undefined;
-	        var isStr = predicates_1.isString(stateOrName);
-	        var name = isStr ? stateOrName : stateOrName.name;
-	        if (this.isRelative(name))
-	            name = this.resolvePath(name, base);
-	        var state = this._states[name];
-	        if (state && (isStr || (!isStr && (state === stateOrName || state.self === stateOrName)))) {
-	            return state;
-	        }
-	        else if (isStr) {
-	            var matches = common_1.values(this._states)
-	                .filter(function (state) { return new glob_1.Glob(state.name).matches(name); });
-	            if (matches.length > 1) {
-	                console.log("stateMatcher.find: Found multiple matches for " + name + " using glob: ", matches.map(function (match) { return match.name; }));
-	            }
-	            return matches[0];
-	        }
-	        return undefined;
-	    };
-	    StateMatcher.prototype.resolvePath = function (name, base) {
-	        if (!base)
-	            throw new Error("No reference point given for path '" + name + "'");
-	        var baseState = this.find(base);
-	        var splitName = name.split("."), i = 0, pathLength = splitName.length, current = baseState;
-	        for (; i < pathLength; i++) {
-	            if (splitName[i] === "" && i === 0) {
-	                current = baseState;
-	                continue;
-	            }
-	            if (splitName[i] === "^") {
-	                if (!current.parent)
-	                    throw new Error("Path '" + name + "' not valid for state '" + baseState.name + "'");
-	                current = current.parent;
-	                continue;
-	            }
-	            break;
-	        }
-	        var relName = splitName.slice(i).join(".");
-	        return current.name + (current.name && relName ? "." : "") + relName;
-	    };
-	    return StateMatcher;
-	}());
-	exports.StateMatcher = StateMatcher;
-	//# sourceMappingURL=stateMatcher.js.map
-
-/***/ },
-
-/***/ 181:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module state */ /** for typedoc */
-	var common_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(9);
-	var stateObject_1 = __webpack_require__(130);
-	var StateQueueManager = (function () {
-	    function StateQueueManager(states, builder, $urlRouterProvider, listeners) {
-	        this.states = states;
-	        this.builder = builder;
-	        this.$urlRouterProvider = $urlRouterProvider;
-	        this.listeners = listeners;
-	        this.queue = [];
-	    }
-	    StateQueueManager.prototype.register = function (config) {
-	        var _a = this, states = _a.states, queue = _a.queue, $state = _a.$state;
-	        // Wrap a new object around the state so we can store our private details easily.
-	        // @TODO: state = new State(extend({}, config, { ... }))
-	        var state = common_1.inherit(new stateObject_1.State(), common_1.extend({}, config, {
-	            self: config,
-	            resolve: config.resolve || [],
-	            toString: function () { return config.name; }
-	        }));
-	        if (!predicates_1.isString(state.name))
-	            throw new Error("State must have a valid name");
-	        if (states.hasOwnProperty(state.name) || common_1.pluck(queue, 'name').indexOf(state.name) !== -1)
-	            throw new Error("State '" + state.name + "' is already defined");
-	        queue.push(state);
-	        if (this.$state) {
-	            this.flush($state);
-	        }
-	        return state;
-	    };
-	    StateQueueManager.prototype.flush = function ($state) {
-	        var _a = this, queue = _a.queue, states = _a.states, builder = _a.builder;
-	        var registered = [], // states that got registered
-	        orphans = [], // states that dodn't yet have a parent registered
-	        previousQueueLength = {}; // keep track of how long the queue when an orphan was first encountered
-	        while (queue.length > 0) {
-	            var state = queue.shift();
-	            var result = builder.build(state);
-	            var orphanIdx = orphans.indexOf(state);
-	            if (result) {
-	                if (states.hasOwnProperty(state.name))
-	                    throw new Error("State '" + name + "' is already defined");
-	                states[state.name] = state;
-	                this.attachRoute($state, state);
-	                if (orphanIdx >= 0)
-	                    orphans.splice(orphanIdx, 1);
-	                registered.push(state);
-	                continue;
-	            }
-	            var prev = previousQueueLength[state.name];
-	            previousQueueLength[state.name] = queue.length;
-	            if (orphanIdx >= 0 && prev === queue.length) {
-	                // Wait until two consecutive iterations where no additional states were dequeued successfully.
-	                // throw new Error(`Cannot register orphaned state '${state.name}'`);
-	                queue.push(state);
-	                return states;
-	            }
-	            else if (orphanIdx < 0) {
-	                orphans.push(state);
-	            }
-	            queue.push(state);
-	        }
-	        if (registered.length) {
-	            this.listeners.forEach(function (listener) { return listener("registered", registered.map(function (s) { return s.self; })); });
-	        }
-	        return states;
-	    };
-	    StateQueueManager.prototype.autoFlush = function ($state) {
-	        this.$state = $state;
-	        this.flush($state);
-	    };
-	    StateQueueManager.prototype.attachRoute = function ($state, state) {
-	        var $urlRouterProvider = this.$urlRouterProvider;
-	        if (state.abstract || !state.url)
-	            return;
-	        $urlRouterProvider.when(state.url, ['$match', '$stateParams', function ($match, $stateParams) {
-	                if ($state.$current.navigable !== state || !common_1.equalForKeys($match, $stateParams)) {
-	                    $state.transitionTo(state, $match, { inherit: true, source: "url" });
-	                }
-	            }], function (rule) { return state._urlRule = rule; });
-	    };
-	    return StateQueueManager;
-	}());
-	exports.StateQueueManager = StateQueueManager;
-	//# sourceMappingURL=stateQueueManager.js.map
-
-/***/ },
-
-/***/ 182:
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @module state */ /** for typedoc */
-	"use strict";
-	var stateMatcher_1 = __webpack_require__(180);
-	var stateBuilder_1 = __webpack_require__(129);
-	var stateQueueManager_1 = __webpack_require__(181);
-	var common_1 = __webpack_require__(5);
-	var StateRegistry = (function () {
-	    function StateRegistry(urlMatcherFactory, urlRouterProvider) {
-	        this.urlRouterProvider = urlRouterProvider;
-	        this.states = {};
-	        this.listeners = [];
-	        this.matcher = new stateMatcher_1.StateMatcher(this.states);
-	        this.builder = new stateBuilder_1.StateBuilder(this.matcher, urlMatcherFactory);
-	        this.stateQueue = new stateQueueManager_1.StateQueueManager(this.states, this.builder, urlRouterProvider, this.listeners);
-	        var rootStateDef = {
-	            name: '',
-	            url: '^',
-	            views: null,
-	            params: {
-	                '#': { value: null, type: 'hash', dynamic: true }
-	            },
-	            abstract: true
-	        };
-	        var _root = this._root = this.stateQueue.register(rootStateDef);
-	        _root.navigable = null;
-	    }
-	    /**
-	     * Listen for a State Registry events
-	     *
-	     * Adds a callback that is invoked when states are registered or deregistered with the StateRegistry.
-	     *
-	     * @example
-	     * ```js
-	     *
-	     * let allStates = registry.get();
-	     *
-	     * // Later, invoke deregisterFn() to remove the listener
-	     * let deregisterFn = registry.onStatesChanged((event, states) => {
-	     *   switch(event) {
-	     *     case: 'registered':
-	     *       states.forEach(state => allStates.push(state));
-	     *       break;
-	     *     case: 'deregistered':
-	     *       states.forEach(state => {
-	     *         let idx = allStates.indexOf(state);
-	     *         if (idx !== -1) allStates.splice(idx, 1);
-	     *       });
-	     *       break;
-	     *   }
-	     * });
-	     * ```
-	     *
-	     * @param listener a callback function invoked when the registered states changes.
-	     *        The function receives two parameters, `event` and `state`.
-	     *        See [[StateRegistryListener]]
-	     * @return a function that deregisters the listener
-	     */
-	    StateRegistry.prototype.onStatesChanged = function (listener) {
-	        this.listeners.push(listener);
-	        return function deregisterListener() {
-	            common_1.removeFrom(this.listeners)(listener);
-	        }.bind(this);
-	    };
-	    /**
-	     * Gets the implicit root state
-	     *
-	     * Gets the root of the state tree.
-	     * The root state is implicitly created by UI-Router.
-	     * Note: this returns the internal [[State]] representation, not a [[StateDeclaration]]
-	     *
-	     * @return the root [[State]]
-	     */
-	    StateRegistry.prototype.root = function () {
-	        return this._root;
-	    };
-	    /**
-	     * Adds a state to the registry
-	     *
-	     * Registers a [[StateDefinition]] or queues it for registration.
-	     *
-	     * Note: a state will be queued if the state's parent isn't yet registered.
-	     * It will also be queued if the queue is not yet in [[StateQueueManager.autoFlush]] mode.
-	     *
-	     * @param stateDefinition the definition of the state to register.
-	     * @returns the internal [[State]] object.
-	     *          If the state was successfully registered, then the object is fully built (See: [[StateBuilder]]).
-	     *          If the state was only queued, then the object is not fully built.
-	     */
-	    StateRegistry.prototype.register = function (stateDefinition) {
-	        return this.stateQueue.register(stateDefinition);
-	    };
-	    /** @hidden */
-	    StateRegistry.prototype._deregisterTree = function (state) {
-	        var _this = this;
-	        var all = this.get().map(function (s) { return s.$$state(); });
-	        var getChildren = function (states) {
-	            var children = all.filter(function (s) { return states.indexOf(s.parent) !== -1; });
-	            return children.length === 0 ? children : children.concat(getChildren(children));
-	        };
-	        var children = getChildren([state]);
-	        var deregistered = [state].concat(children).reverse();
-	        deregistered.forEach(function (state) {
-	            _this.urlRouterProvider.removeRule(state._urlRule);
-	            delete _this.states[state.name];
-	        });
-	        return deregistered;
-	    };
-	    /**
-	     * Removes a state from the registry
-	     *
-	     * This removes a state from the registry.
-	     * If the state has children, they are are also removed from the registry.
-	     *
-	     * @param stateOrName the state's name or object representation
-	     * @returns {State[]} a list of removed states
-	     */
-	    StateRegistry.prototype.deregister = function (stateOrName) {
-	        var _state = this.get(stateOrName);
-	        if (!_state)
-	            throw new Error("Can't deregister state; not found: " + stateOrName);
-	        var deregisteredStates = this._deregisterTree(_state.$$state());
-	        this.listeners.forEach(function (listener) { return listener("deregistered", deregisteredStates.map(function (s) { return s.self; })); });
-	        return deregisteredStates;
-	    };
-	    StateRegistry.prototype.get = function (stateOrName, base) {
-	        var _this = this;
-	        if (arguments.length === 0)
-	            return Object.keys(this.states).map(function (name) { return _this.states[name].self; });
-	        var found = this.matcher.find(stateOrName, base);
-	        return found && found.self || null;
-	    };
-	    StateRegistry.prototype.decorator = function (name, func) {
-	        return this.builder.builder(name, func);
-	    };
-	    return StateRegistry;
-	}());
-	exports.StateRegistry = StateRegistry;
-	//# sourceMappingURL=stateRegistry.js.map
-
-/***/ },
-
-/***/ 183:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module state */ /** */
-	var common_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(9);
-	var queue_1 = __webpack_require__(124);
-	var coreservices_1 = __webpack_require__(19);
-	var pathFactory_1 = __webpack_require__(101);
-	var node_1 = __webpack_require__(82);
-	var transitionService_1 = __webpack_require__(134);
-	var rejectFactory_1 = __webpack_require__(83);
-	var targetState_1 = __webpack_require__(74);
-	var param_1 = __webpack_require__(55);
-	var glob_1 = __webpack_require__(100);
-	var common_2 = __webpack_require__(5);
-	var common_3 = __webpack_require__(5);
-	var resolveContext_1 = __webpack_require__(47);
-	var StateService = (function () {
-	    /** @hidden */
-	    function StateService(router) {
-	        this.router = router;
-	        this.invalidCallbacks = [];
-	        /** @hidden */
-	        this._defaultErrorHandler = function $defaultErrorHandler($error$) {
-	            if ($error$ instanceof Error && $error$.stack) {
-	                console.error($error$);
-	                console.error($error$.stack);
-	            }
-	            else if ($error$ instanceof rejectFactory_1.Rejection) {
-	                console.error($error$.toString());
-	                if ($error$.detail && $error$.detail.stack)
-	                    console.error($error$.detail.stack);
-	            }
-	            else {
-	                console.error($error$);
-	            }
-	        };
-	        var getters = ['current', '$current', 'params', 'transition'];
-	        var boundFns = Object.keys(StateService.prototype).filter(function (key) { return getters.indexOf(key) === -1; });
-	        common_3.bindFunctions(StateService.prototype, this, this, boundFns);
-	    }
-	    Object.defineProperty(StateService.prototype, "transition", {
-	        get: function () { return this.router.globals.transition; },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(StateService.prototype, "params", {
-	        get: function () { return this.router.globals.params; },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(StateService.prototype, "current", {
-	        get: function () { return this.router.globals.current; },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    Object.defineProperty(StateService.prototype, "$current", {
-	        get: function () { return this.router.globals.$current; },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    /**
-	     * Handler for when [[transitionTo]] is called with an invalid state.
-	     *
-	     * Invokes the [[onInvalid]] callbacks, in natural order.
-	     * Each callback's return value is checked in sequence until one of them returns an instance of TargetState.
-	     * The results of the callbacks are wrapped in $q.when(), so the callbacks may return promises.
-	     *
-	     * If a callback returns an TargetState, then it is used as arguments to $state.transitionTo() and the result returned.
-	     */
-	    StateService.prototype._handleInvalidTargetState = function (fromPath, toState) {
-	        var _this = this;
-	        var fromState = pathFactory_1.PathFactory.makeTargetState(fromPath);
-	        var globals = this.router.globals;
-	        var latestThing = function () { return globals.transitionHistory.peekTail(); };
-	        var latest = latestThing();
-	        var callbackQueue = new queue_1.Queue(this.invalidCallbacks.slice());
-	        var injector = new resolveContext_1.ResolveContext(fromPath).injector();
-	        var checkForRedirect = function (result) {
-	            if (!(result instanceof targetState_1.TargetState)) {
-	                return;
-	            }
-	            var target = result;
-	            // Recreate the TargetState, in case the state is now defined.
-	            target = _this.target(target.identifier(), target.params(), target.options());
-	            if (!target.valid())
-	                return rejectFactory_1.Rejection.invalid(target.error()).toPromise();
-	            if (latestThing() !== latest)
-	                return rejectFactory_1.Rejection.superseded().toPromise();
-	            return _this.transitionTo(target.identifier(), target.params(), target.options());
-	        };
-	        function invokeNextCallback() {
-	            var nextCallback = callbackQueue.dequeue();
-	            if (nextCallback === undefined)
-	                return rejectFactory_1.Rejection.invalid(toState.error()).toPromise();
-	            var callbackResult = coreservices_1.services.$q.when(nextCallback(toState, fromState, injector));
-	            return callbackResult.then(checkForRedirect).then(function (result) { return result || invokeNextCallback(); });
-	        }
-	        return invokeNextCallback();
-	    };
-	    /**
-	     * Registers an Invalid State handler
-	     *
-	     * Registers a [[OnInvalidCallback]] function to be invoked when [[StateService.transitionTo]]
-	     * has been called with an invalid state reference parameter
-	     *
-	     * Example:
-	     * ```js
-	     * stateService.onInvalid(function(to, from, injector) {
-	     *   if (to.name() === 'foo') {
-	     *     let lazyLoader = injector.get('LazyLoadService');
-	     *     return lazyLoader.load('foo')
-	     *         .then(() => stateService.target('foo'));
-	     *   }
-	     * });
-	     * ```
-	     *
-	     * @param {function} callback invoked when the toState is invalid
-	     *   This function receives the (invalid) toState, the fromState, and an injector.
-	     *   The function may optionally return a [[TargetState]] or a Promise for a TargetState.
-	     *   If one is returned, it is treated as a redirect.
-	     *
-	     * @returns a function which deregisters the callback
-	     */
-	    StateService.prototype.onInvalid = function (callback) {
-	        this.invalidCallbacks.push(callback);
-	        return function deregisterListener() {
-	            common_1.removeFrom(this.invalidCallbacks)(callback);
-	        }.bind(this);
-	    };
-	    /**
-	     * @ngdoc function
-	     * @name ui.router.state.$state#reload
-	     * @methodOf ui.router.state.$state
-	     *
-	     * @description
-	     * A method that force reloads the current state, or a partial state hierarchy. All resolves are re-resolved,
-	     * controllers reinstantiated, and events re-fired.
-	     *
-	     * @example
-	     * <pre>
-	     * let app angular.module('app', ['ui.router']);
-	     *
-	     * app.controller('ctrl', function ($scope, $state) {
-	     *   $scope.reload = function(){
-	     *     $state.reload();
-	     *   }
-	     * });
-	     * </pre>
-	     *
-	     * `reload()` is just an alias for:
-	     * <pre>
-	     * $state.transitionTo($state.current, $stateParams, {
-	     *   reload: true, inherit: false, notify: true
-	     * });
-	     * </pre>
-	     *
-	     * @param {string=|object=} reloadState - A state name or a state object, which is the root of the resolves to be re-resolved.
-	     * @example
-	     * <pre>
-	     * //assuming app application consists of 3 states: 'contacts', 'contacts.detail', 'contacts.detail.item'
-	     * //and current state is 'contacts.detail.item'
-	     * let app angular.module('app', ['ui.router']);
-	     *
-	     * app.controller('ctrl', function ($scope, $state) {
-	     *   $scope.reload = function(){
-	     *     //will reload 'contact.detail' and nested 'contact.detail.item' states
-	     *     $state.reload('contact.detail');
-	     *   }
-	     * });
-	     * </pre>
-	     *
-	     * @returns {promise} A promise representing the state of the new transition. See
-	     * {@link ui.router.state.$state#methods_go $state.go}.
-	     */
-	    StateService.prototype.reload = function (reloadState) {
-	        return this.transitionTo(this.current, this.params, {
-	            reload: predicates_1.isDefined(reloadState) ? reloadState : true,
-	            inherit: false,
-	            notify: false
-	        });
-	    };
-	    ;
-	    /**
-	     * @ngdoc function
-	     * @name ui.router.state.$state#go
-	     * @methodOf ui.router.state.$state
-	     *
-	     * @description
-	     * Convenience method for transitioning to a new state. `$state.go` calls
-	     * `$state.transitionTo` internally but automatically sets options to
-	     * `{ location: true, inherit: true, relative: $state.$current, notify: true }`.
-	     * This allows you to easily use an absolute or relative to path and specify
-	     * only the parameters you'd like to update (while letting unspecified parameters
-	     * inherit from the currently active ancestor states).
-	     *
-	     * @example
-	     * <pre>
-	     * let app = angular.module('app', ['ui.router']);
-	     *
-	     * app.controller('ctrl', function ($scope, $state) {
-	     *   $scope.changeState = function () {
-	     *     $state.go('contact.detail');
-	     *   };
-	     * });
-	     * </pre>
-	     * <img src='../ngdoc_assets/StateGoExamples.png'/>
-	     *
-	     * @param {string|object} to Absolute state name, state object, or relative state path. Some examples:
-	     *
-	     * - `$state.go('contact.detail')` - will go to the `contact.detail` state
-	     * - `$state.go('^')` - will go to a parent state
-	     * - `$state.go('^.sibling')` - will go to a sibling state
-	     * - `$state.go('.child.grandchild')` - will go to grandchild state
-	     *
-	     * @param {object=} params A map of the parameters that will be sent to the state,
-	     * will populate $stateParams. Any parameters that are not specified will be inherited from currently
-	     * defined parameters. This allows, for example, going to a sibling state that shares parameters
-	     * specified in a parent state. Parameter inheritance only works between common ancestor states, I.e.
-	     * transitioning to a sibling will get you the parameters for all parents, transitioning to a child
-	     * will get you all current parameters, etc.
-	     * @param {object=} options Options object. The options are:
-	     *
-	     * - **`location`** - {boolean=true|string=} - If `true` will update the url in the location bar, if `false`
-	     *    will not. If string, must be `"replace"`, which will update url and also replace last history record.
-	     * - **`inherit`** - {boolean=true}, If `true` will inherit url parameters from current url.
-	     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g '^'),
-	     *    defines which state to be relative from.
-	     * - **`notify`** - {boolean=true}, If `true` will broadcast $stateChangeStart and $stateChangeSuccess events.
-	     * - **`reload`** (v0.2.5) - {boolean=false}, If `true` will force transition even if the state or params
-	     *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you'd
-	     *    use this when you want to force a reload when *everything* is the same, including search params.
-	     *
-	     * @returns {promise} A promise representing the state of the new transition.
-	     *
-	     * Possible success values:
-	     *
-	     * - $state.current
-	     *
-	     * <br/>Possible rejection values:
-	     *
-	     * - 'transition superseded' - when a newer transition has been started after this one
-	     * - 'transition prevented' - when `event.preventDefault()` has been called in a `$stateChangeStart` listener
-	     * - 'transition aborted' - when `event.preventDefault()` has been called in a `$stateNotFound` listener or
-	     *   when a `$stateNotFound` `event.retry` promise errors.
-	     * - 'transition failed' - when a state has been unsuccessfully found after 2 tries.
-	     * - *resolve error* - when an error has occurred with a `resolve`
-	     *
-	     */
-	    StateService.prototype.go = function (to, params, options) {
-	        var defautGoOpts = { relative: this.$current, inherit: true };
-	        var transOpts = common_1.defaults(options, defautGoOpts, transitionService_1.defaultTransOpts);
-	        return this.transitionTo(to, params, transOpts);
-	    };
-	    ;
-	    /** Factory method for creating a TargetState */
-	    StateService.prototype.target = function (identifier, params, options) {
-	        if (options === void 0) { options = {}; }
-	        // If we're reloading, find the state object to reload from
-	        if (predicates_1.isObject(options.reload) && !options.reload.name)
-	            throw new Error('Invalid reload state object');
-	        var reg = this.router.stateRegistry;
-	        options.reloadState = options.reload === true ? reg.root() : reg.matcher.find(options.reload, options.relative);
-	        if (options.reload && !options.reloadState)
-	            throw new Error("No such reload state '" + (predicates_1.isString(options.reload) ? options.reload : options.reload.name) + "'");
-	        var stateDefinition = reg.matcher.find(identifier, options.relative);
-	        return new targetState_1.TargetState(identifier, stateDefinition, params, options);
-	    };
-	    ;
-	    /**
-	     * @ngdoc function
-	     * @name ui.router.state.$state#transitionTo
-	     * @methodOf ui.router.state.$state
-	     *
-	     * @description
-	     * Low-level method for transitioning to a new state. {@link ui.router.state.$state#methods_go $state.go}
-	     * uses `transitionTo` internally. `$state.go` is recommended in most situations.
-	     *
-	     * @example
-	     * <pre>
-	     * let app = angular.module('app', ['ui.router']);
-	     *
-	     * app.controller('ctrl', function ($scope, $state) {
-	     *   $scope.changeState = function () {
-	     *     $state.transitionTo('contact.detail');
-	     *   };
-	     * });
-	     * </pre>
-	     *
-	     * @param {string|object} to State name or state object.
-	     * @param {object=} toParams A map of the parameters that will be sent to the state,
-	     * will populate $stateParams.
-	     * @param {object=} options Options object. The options are:
-	     *
-	     * - **`location`** - {boolean=true|string=} - If `true` will update the url in the location bar, if `false`
-	     *    will not. If string, must be `"replace"`, which will update url and also replace last history record.
-	     * - **`inherit`** - {boolean=false}, If `true` will inherit url parameters from current url.
-	     * - **`relative`** - {object=}, When transitioning with relative path (e.g '^'),
-	     *    defines which state to be relative from.
-	     * - **`notify`** - {boolean=true}, If `true` will broadcast $stateChangeStart and $stateChangeSuccess events.
-	     * - **`reload`** (v0.2.5) - {boolean=false}, If `true` will force transition even if the state or params
-	     *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you'd
-	     *    use this when you want to force a reload when *everything* is the same, including search params.
-	     *
-	     * @returns {promise} A promise representing the state of the new transition. See
-	     * {@link ui.router.state.$state#methods_go $state.go}.
-	     */
-	    StateService.prototype.transitionTo = function (to, toParams, options) {
-	        var _this = this;
-	        if (toParams === void 0) { toParams = {}; }
-	        if (options === void 0) { options = {}; }
-	        var router = this.router;
-	        var globals = router.globals;
-	        var transHistory = globals.transitionHistory;
-	        options = common_1.defaults(options, transitionService_1.defaultTransOpts);
-	        options = common_1.extend(options, { current: transHistory.peekTail.bind(transHistory) });
-	        var ref = this.target(to, toParams, options);
-	        var latestSuccess = globals.successfulTransitions.peekTail();
-	        var rootPath = function () { return [new node_1.PathNode(_this.router.stateRegistry.root())]; };
-	        var currentPath = latestSuccess ? latestSuccess.treeChanges().to : rootPath();
-	        if (!ref.exists())
-	            return this._handleInvalidTargetState(currentPath, ref);
-	        if (!ref.valid())
-	            return common_1.silentRejection(ref.error());
-	        /**
-	         * Special handling for Ignored, Aborted, and Redirected transitions
-	         *
-	         * The semantics for the transition.run() promise and the StateService.transitionTo()
-	         * promise differ. For instance, the run() promise may be rejected because it was
-	         * IGNORED, but the transitionTo() promise is resolved because from the user perspective
-	         * no error occurred.  Likewise, the transition.run() promise may be rejected because of
-	         * a Redirect, but the transitionTo() promise is chained to the new Transition's promise.
-	         */
-	        var rejectedTransitionHandler = function (transition) { return function (error) {
-	            if (error instanceof rejectFactory_1.Rejection) {
-	                if (error.type === rejectFactory_1.RejectType.IGNORED) {
-	                    // Consider ignored `Transition.run()` as a successful `transitionTo`
-	                    router.urlRouter.update();
-	                    return coreservices_1.services.$q.when(globals.current);
-	                }
-	                var detail = error.detail;
-	                if (error.type === rejectFactory_1.RejectType.SUPERSEDED && error.redirected && detail instanceof targetState_1.TargetState) {
-	                    // If `Transition.run()` was redirected, allow the `transitionTo()` promise to resolve successfully
-	                    // by returning the promise for the new (redirect) `Transition.run()`.
-	                    var redirect = transition.redirect(detail);
-	                    return redirect.run().catch(rejectedTransitionHandler(redirect));
-	                }
-	                if (error.type === rejectFactory_1.RejectType.ABORTED) {
-	                    router.urlRouter.update();
-	                }
-	            }
-	            var errorHandler = _this.defaultErrorHandler();
-	            errorHandler(error);
-	            return coreservices_1.services.$q.reject(error);
-	        }; };
-	        var transition = this.router.transitionService.create(currentPath, ref);
-	        var transitionToPromise = transition.run().catch(rejectedTransitionHandler(transition));
-	        common_1.silenceUncaughtInPromise(transitionToPromise); // issue #2676
-	        // Return a promise for the transition, which also has the transition object on it.
-	        return common_1.extend(transitionToPromise, { transition: transition });
-	    };
-	    ;
-	    /**
-	     * @ngdoc function
-	     * @name ui.router.state.$state#is
-	     * @methodOf ui.router.state.$state
-	     *
-	     * @description
-	     * Similar to {@link ui.router.state.$state#methods_includes $state.includes},
-	     * but only checks for the full state name. If params is supplied then it will be
-	     * tested for strict equality against the current active params object, so all params
-	     * must match with none missing and no extras.
-	     *
-	     * @example
-	     * <pre>
-	     * $state.$current.name = 'contacts.details.item';
-	     *
-	     * // absolute name
-	     * $state.is('contact.details.item'); // returns true
-	     * $state.is(contactDetailItemStateObject); // returns true
-	     *
-	     * // relative name (. and ^), typically from a template
-	     * // E.g. from the 'contacts.details' template
-	     * <div ng-class="{highlighted: $state.is('.item')}">Item</div>
-	     * </pre>
-	     *
-	     * @param {string|object} stateOrName The state name (absolute or relative) or state object you'd like to check.
-	     * @param {object=} params A param object, e.g. `{sectionId: section.id}`, that you'd like
-	     * to test against the current active state.
-	     * @param {object=} options An options object.  The options are:
-	     *
-	     * - **`relative`** - {string|object} -  If `stateOrName` is a relative state name and `options.relative` is set, .is will
-	     * test relative to `options.relative` state (or name).
-	     *
-	     * @returns {boolean} Returns true if it is the state.
-	     */
-	    StateService.prototype.is = function (stateOrName, params, options) {
-	        options = common_1.defaults(options, { relative: this.$current });
-	        var state = this.router.stateRegistry.matcher.find(stateOrName, options.relative);
-	        if (!predicates_1.isDefined(state))
-	            return undefined;
-	        if (this.$current !== state)
-	            return false;
-	        return predicates_1.isDefined(params) && params !== null ? param_1.Param.equals(state.parameters(), this.params, params) : true;
-	    };
-	    ;
-	    /**
-	     * @ngdoc function
-	     * @name ui.router.state.$state#includes
-	     * @methodOf ui.router.state.$state
-	     *
-	     * @description
-	     * A method to determine if the current active state is equal to or is the child of the
-	     * state stateName. If any params are passed then they will be tested for a match as well.
-	     * Not all the parameters need to be passed, just the ones you'd like to test for equality.
-	     *
-	     * @example
-	     * Partial and relative names
-	     * <pre>
-	     * $state.$current.name = 'contacts.details.item';
-	     *
-	     * // Using partial names
-	     * $state.includes("contacts"); // returns true
-	     * $state.includes("contacts.details"); // returns true
-	     * $state.includes("contacts.details.item"); // returns true
-	     * $state.includes("contacts.list"); // returns false
-	     * $state.includes("about"); // returns false
-	     *
-	     * // Using relative names (. and ^), typically from a template
-	     * // E.g. from the 'contacts.details' template
-	     * <div ng-class="{highlighted: $state.includes('.item')}">Item</div>
-	     * </pre>
-	     *
-	     * Basic globbing patterns
-	     * <pre>
-	     * $state.$current.name = 'contacts.details.item.url';
-	     *
-	     * $state.includes("*.details.*.*"); // returns true
-	     * $state.includes("*.details.**"); // returns true
-	     * $state.includes("**.item.**"); // returns true
-	     * $state.includes("*.details.item.url"); // returns true
-	     * $state.includes("*.details.*.url"); // returns true
-	     * $state.includes("*.details.*"); // returns false
-	     * $state.includes("item.**"); // returns false
-	     * </pre>
-	     *
-	     * @param {string|object} stateOrName A partial name, relative name, glob pattern,
-	     * or state object to be searched for within the current state name.
-	     * @param {object=} params A param object, e.g. `{sectionId: section.id}`,
-	     * that you'd like to test against the current active state.
-	     * @param {object=} options An options object.  The options are:
-	     *
-	     * - **`relative`** - {string|object=} -  If `stateOrName` is a relative state reference and `options.relative` is set,
-	     * .includes will test relative to `options.relative` state (or name).
-	     *
-	     * @returns {boolean} Returns true if it does include the state
-	     */
-	    StateService.prototype.includes = function (stateOrName, params, options) {
-	        options = common_1.defaults(options, { relative: this.$current });
-	        var glob = predicates_1.isString(stateOrName) && glob_1.Glob.fromString(stateOrName);
-	        if (glob) {
-	            if (!glob.matches(this.$current.name))
-	                return false;
-	            stateOrName = this.$current.name;
-	        }
-	        var state = this.router.stateRegistry.matcher.find(stateOrName, options.relative), include = this.$current.includes;
-	        if (!predicates_1.isDefined(state))
-	            return undefined;
-	        if (!predicates_1.isDefined(include[state.name]))
-	            return false;
-	        // @TODO Replace with Param.equals() ?
-	        return params ? common_2.equalForKeys(param_1.Param.values(state.parameters(), params), this.params, Object.keys(params)) : true;
-	    };
-	    ;
-	    /**
-	     * @ngdoc function
-	     * @name ui.router.state.$state#href
-	     * @methodOf ui.router.state.$state
-	     *
-	     * @description
-	     * A url generation method that returns the compiled url for the given state populated with the given params.
-	     *
-	     * @example
-	     * <pre>
-	     * expect($state.href("about.person", { person: "bob" })).toEqual("/about/bob");
-	     * </pre>
-	     *
-	     * @param {string|object} stateOrName The state name or state object you'd like to generate a url from.
-	     * @param {object=} params An object of parameter values to fill the state's required parameters.
-	     * @param {object=} options Options object. The options are:
-	     *
-	     * - **`lossy`** - {boolean=true} -  If true, and if there is no url associated with the state provided in the
-	     *    first parameter, then the constructed href url will be built from the first navigable ancestor (aka
-	     *    ancestor with a valid url).
-	     * - **`inherit`** - {boolean=true}, If `true` will inherit url parameters from current url.
-	     * - **`relative`** - {object=$state.$current}, When transitioning with relative path (e.g '^'),
-	     *    defines which state to be relative from.
-	     * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
-	     *
-	     * @returns {string} compiled state url
-	     */
-	    StateService.prototype.href = function (stateOrName, params, options) {
-	        var defaultHrefOpts = {
-	            lossy: true,
-	            inherit: true,
-	            absolute: false,
-	            relative: this.$current
-	        };
-	        options = common_1.defaults(options, defaultHrefOpts);
-	        params = params || {};
-	        var state = this.router.stateRegistry.matcher.find(stateOrName, options.relative);
-	        if (!predicates_1.isDefined(state))
-	            return null;
-	        if (options.inherit)
-	            params = this.params.$inherit(params, this.$current, state);
-	        var nav = (state && options.lossy) ? state.navigable : state;
-	        if (!nav || nav.url === undefined || nav.url === null) {
-	            return null;
-	        }
-	        return this.router.urlRouter.href(nav.url, param_1.Param.values(state.parameters(), params), {
-	            absolute: options.absolute
-	        });
-	    };
-	    ;
-	    /**
-	     * Sets or gets the default [[transitionTo]] error handler.
-	     *
-	     * The error handler is called when a [[Transition]] is rejected or when any error occurred during the Transition.
-	     * This includes errors caused by resolves and transition hooks.
-	     *
-	     * Note:
-	     * This handler does not receive certain Transition rejections.
-	     * Redirected and Ignored Transitions are not considered to be errors by [[StateService.transitionTo]].
-	     *
-	     * The built-in default error handler logs the error to the console.
-	     *
-	     * You can provide your own custom handler.
-	     *
-	     * @example
-	     * ```js
-	     *
-	     * stateService.defaultErrorHandler(function() {
-	     *   // Do not log transitionTo errors
-	     * });
-	     * ```
-	     *
-	     * @param handler a global error handler function
-	     * @returns the current global error handler
-	     */
-	    StateService.prototype.defaultErrorHandler = function (handler) {
-	        return this._defaultErrorHandler = handler || this._defaultErrorHandler;
-	    };
-	    StateService.prototype.get = function (stateOrName, base) {
-	        var reg = this.router.stateRegistry;
-	        if (arguments.length === 0)
-	            return reg.get();
-	        return reg.get(stateOrName, base || this.$current);
-	    };
-	    return StateService;
-	}());
-	exports.StateService = StateService;
-	//# sourceMappingURL=stateService.js.map
-
-/***/ },
-
-/***/ 184:
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @module transition */ /** for typedoc */
-	"use strict";
-	var common_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(9);
-	var transitionHook_1 = __webpack_require__(133);
-	var resolveContext_1 = __webpack_require__(47);
-	/**
-	 * This class returns applicable TransitionHooks for a specific Transition instance.
-	 *
-	 * Hooks (IEventHook) may be registered globally, e.g., $transitions.onEnter(...), or locally, e.g.
-	 * myTransition.onEnter(...).  The HookBuilder finds matching IEventHooks (where the match criteria is
-	 * determined by the type of hook)
-	 *
-	 * The HookBuilder also converts IEventHooks objects to TransitionHook objects, which are used to run a Transition.
-	 *
-	 * The HookBuilder constructor is given the $transitions service and a Transition instance.  Thus, a HookBuilder
-	 * instance may only be used for one specific Transition object. (side note: the _treeChanges accessor is private
-	 * in the Transition class, so we must also provide the Transition's _treeChanges)
-	 *
-	 */
-	var HookBuilder = (function () {
-	    function HookBuilder($transitions, transition, baseHookOptions) {
-	        var _this = this;
-	        this.$transitions = $transitions;
-	        this.transition = transition;
-	        this.baseHookOptions = baseHookOptions;
-	        this.getOnBeforeHooks = function () { return _this._buildNodeHooks("onBefore", "to", tupleSort(), { async: false }); };
-	        this.getOnStartHooks = function () { return _this._buildNodeHooks("onStart", "to", tupleSort()); };
-	        this.getOnExitHooks = function () { return _this._buildNodeHooks("onExit", "exiting", tupleSort(true), { stateHook: true }); };
-	        this.getOnRetainHooks = function () { return _this._buildNodeHooks("onRetain", "retained", tupleSort(false), { stateHook: true }); };
-	        this.getOnEnterHooks = function () { return _this._buildNodeHooks("onEnter", "entering", tupleSort(false), { stateHook: true }); };
-	        this.getOnFinishHooks = function () { return _this._buildNodeHooks("onFinish", "to", tupleSort()); };
-	        this.getOnSuccessHooks = function () { return _this._buildNodeHooks("onSuccess", "to", tupleSort(), { async: false, rejectIfSuperseded: false }); };
-	        this.getOnErrorHooks = function () { return _this._buildNodeHooks("onError", "to", tupleSort(), { async: false, rejectIfSuperseded: false }); };
-	        this.treeChanges = transition.treeChanges();
-	        this.toState = common_1.tail(this.treeChanges.to).state;
-	        this.fromState = common_1.tail(this.treeChanges.from).state;
-	        this.transitionOptions = transition.options();
-	    }
-	    HookBuilder.prototype.asyncHooks = function () {
-	        var onStartHooks = this.getOnStartHooks();
-	        var onExitHooks = this.getOnExitHooks();
-	        var onRetainHooks = this.getOnRetainHooks();
-	        var onEnterHooks = this.getOnEnterHooks();
-	        var onFinishHooks = this.getOnFinishHooks();
-	        var asyncHooks = [onStartHooks, onExitHooks, onRetainHooks, onEnterHooks, onFinishHooks];
-	        return asyncHooks.reduce(common_1.unnestR, []).filter(common_1.identity);
-	    };
-	    /**
-	     * Returns an array of newly built TransitionHook objects.
-	     *
-	     * - Finds all IEventHooks registered for the given `hookType` which matched the transition's [[TreeChanges]].
-	     * - Finds [[PathNode]] (or `PathNode[]`) to use as the TransitionHook context(s)
-	     * - For each of the [[PathNode]]s, creates a TransitionHook
-	     *
-	     * @param hookType the name of the hook registration function, e.g., 'onEnter', 'onFinish'.
-	     * @param matchingNodesProp selects which [[PathNode]]s from the [[IMatchingNodes]] object to create hooks for.
-	     * @param getLocals a function which accepts a [[PathNode]] and returns additional locals to provide to the hook as injectables
-	     * @param sortHooksFn a function which compares two HookTuple and returns <1, 0, or >1
-	     * @param options any specific Transition Hook Options
-	     */
-	    HookBuilder.prototype._buildNodeHooks = function (hookType, matchingNodesProp, sortHooksFn, options) {
-	        var _this = this;
-	        // Find all the matching registered hooks for a given hook type
-	        var matchingHooks = this._matchingHooks(hookType, this.treeChanges);
-	        if (!matchingHooks)
-	            return [];
-	        var makeTransitionHooks = function (hook) {
-	            // Fetch the Nodes that caused this hook to match.
-	            var matches = hook.matches(_this.treeChanges);
-	            // Select the PathNode[] that will be used as TransitionHook context objects
-	            var matchingNodes = matches[matchingNodesProp];
-	            // When invoking 'exiting' hooks, give them the "from path" for resolve data.
-	            // Everything else gets the "to path"
-	            var resolvePath = matchingNodesProp === 'exiting' ? _this.treeChanges.from : _this.treeChanges.to;
-	            var resolveContext = new resolveContext_1.ResolveContext(resolvePath);
-	            // Return an array of HookTuples
-	            return matchingNodes.map(function (node) {
-	                var _options = common_1.extend({ bind: hook.bind, traceData: { hookType: hookType, context: node } }, _this.baseHookOptions, options);
-	                var state = _options.stateHook ? node.state : null;
-	                var transitionHook = new transitionHook_1.TransitionHook(_this.transition, state, hook, _options);
-	                return { hook: hook, node: node, transitionHook: transitionHook };
-	            });
-	        };
-	        return matchingHooks.map(makeTransitionHooks)
-	            .reduce(common_1.unnestR, [])
-	            .sort(sortHooksFn)
-	            .map(function (tuple) { return tuple.transitionHook; });
-	    };
-	    /**
-	     * Finds all IEventHooks from:
-	     * - The Transition object instance hook registry
-	     * - The TransitionService ($transitions) global hook registry
-	     *
-	     * which matched:
-	     * - the eventType
-	     * - the matchCriteria (to, from, exiting, retained, entering)
-	     *
-	     * @returns an array of matched [[IEventHook]]s
-	     */
-	    HookBuilder.prototype._matchingHooks = function (hookName, treeChanges) {
-	        return [this.transition, this.$transitions] // Instance and Global hook registries
-	            .map(function (reg) { return reg.getHooks(hookName); }) // Get named hooks from registries
-	            .filter(common_1.assertPredicate(predicates_1.isArray, "broken event named: " + hookName)) // Sanity check
-	            .reduce(common_1.unnestR, []) // Un-nest IEventHook[][] to IEventHook[] array
-	            .filter(function (hook) { return hook.matches(treeChanges); }); // Only those satisfying matchCriteria
-	    };
-	    return HookBuilder;
-	}());
-	exports.HookBuilder = HookBuilder;
-	/**
-	 * A factory for a sort function for HookTuples.
-	 *
-	 * The sort function first compares the PathNode depth (how deep in the state tree a node is), then compares
-	 * the EventHook priority.
-	 *
-	 * @param reverseDepthSort a boolean, when true, reverses the sort order for the node depth
-	 * @returns a tuple sort function
-	 */
-	function tupleSort(reverseDepthSort) {
-	    if (reverseDepthSort === void 0) { reverseDepthSort = false; }
-	    return function nodeDepthThenPriority(l, r) {
-	        var factor = reverseDepthSort ? -1 : 1;
-	        var depthDelta = (l.node.state.path.length - r.node.state.path.length) * factor;
-	        return depthDelta !== 0 ? depthDelta : r.hook.priority - l.hook.priority;
-	    };
-	}
-	//# sourceMappingURL=hookBuilder.js.map
-
-/***/ },
-
-/***/ 185:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module url */ /** for typedoc */
-	var common_1 = __webpack_require__(5);
-	var hof_1 = __webpack_require__(16);
-	var predicates_1 = __webpack_require__(9);
-	var param_1 = __webpack_require__(55);
-	var predicates_2 = __webpack_require__(9);
-	var param_2 = __webpack_require__(55);
-	var common_2 = __webpack_require__(5);
-	var common_3 = __webpack_require__(5);
-	/** @hidden */
-	function quoteRegExp(string, param) {
-	    var surroundPattern = ['', ''], result = string.replace(/[\\\[\]\^$*+?.()|{}]/g, "\\$&");
-	    if (!param)
-	        return result;
-	    switch (param.squash) {
-	        case false:
-	            surroundPattern = ['(', ')' + (param.isOptional ? '?' : '')];
-	            break;
-	        case true:
-	            result = result.replace(/\/$/, '');
-	            surroundPattern = ['(?:\/(', ')|\/)?'];
-	            break;
-	        default:
-	            surroundPattern = [("(" + param.squash + "|"), ')?'];
-	            break;
-	    }
-	    return result + surroundPattern[0] + param.type.pattern.source + surroundPattern[1];
-	}
-	/** @hidden */
-	var memoizeTo = function (obj, prop, fn) {
-	    return obj[prop] = obj[prop] || fn();
-	};
-	/**
-	 * Matches URLs against patterns.
-	 *
-	 * Matches URLs against patterns and extracts named parameters from the path or the search
-	 * part of the URL.
-	 *
-	 * A URL pattern consists of a path pattern, optionally followed by '?' and a list of search (query)
-	 * parameters. Multiple search parameter names are separated by '&'. Search parameters
-	 * do not influence whether or not a URL is matched, but their values are passed through into
-	 * the matched parameters returned by [[UrlMatcher.exec]].
-	 *
-	 * - *Path parameters* are defined using curly brace placeholders (`/somepath/{param}`)
-	 * or colon placeholders (`/somePath/:param`).
-	 *
-	 * - *A parameter RegExp* may be defined for a param after a colon
-	 * (`/somePath/{param:[a-zA-Z0-9]+}`) in a curly brace placeholder.
-	 * The regexp must match for the url to be matched.
-	 * Should the regexp itself contain curly braces, they must be in matched pairs or escaped with a backslash.
-	 *
-	 * - *Custom parameter types* may also be specified after a colon (`/somePath/{param:int}`)
-	 * in curly brace parameters.  See [[UrlMatcherFactory.type]] for more information.
-	 *
-	 * - *Catch-all parameters* are defined using an asterisk placeholder (`/somepath/*catchallparam`).  A catch-all
-	 * parameter value will contain the remainder of the URL.
-	 *
-	 * ---
-	 *
-	 * Parameter names may contain only word characters (latin letters, digits, and underscore) and
-	 * must be unique within the pattern (across both path and search parameters).
-	 * A path parameter matches any number of characters other than '/'. For catch-all
-	 * placeholders the path parameter matches any number of characters.
-	 *
-	 * Examples:
-	 *
-	 * * `'/hello/'` - Matches only if the path is exactly '/hello/'. There is no special treatment for
-	 *   trailing slashes, and patterns have to match the entire path, not just a prefix.
-	 * * `'/user/:id'` - Matches '/user/bob' or '/user/1234!!!' or even '/user/' but not '/user' or
-	 *   '/user/bob/details'. The second path segment will be captured as the parameter 'id'.
-	 * * `'/user/{id}'` - Same as the previous example, but using curly brace syntax.
-	 * * `'/user/{id:[^/]*}'` - Same as the previous example.
-	 * * `'/user/{id:[0-9a-fA-F]{1,8}}'` - Similar to the previous example, but only matches if the id
-	 *   parameter consists of 1 to 8 hex digits.
-	 * * `'/files/{path:.*}'` - Matches any URL starting with '/files/' and captures the rest of the
-	 *   path into the parameter 'path'.
-	 * * `'/files/*path'` - ditto.
-	 * * `'/calendar/{start:date}'` - Matches "/calendar/2014-11-12" (because the pattern defined
-	 *   in the built-in  `date` ParamType matches `2014-11-12`) and provides a Date object in $stateParams.start
-	 *
-	 */
-	var UrlMatcher = (function () {
-	    /**
-	     * @param pattern The pattern to compile into a matcher.
-	     * @param paramTypes The [[ParamTypes]] registry
-	     * @param config  A configuration object
-	     * - `caseInsensitive` - `true` if URL matching should be case insensitive, otherwise `false`, the default value (for backward compatibility) is `false`.
-	     * - `strict` - `false` if matching against a URL with a trailing slash should be treated as equivalent to a URL without a trailing slash, the default value is `true`.
-	     */
-	    function UrlMatcher(pattern, paramTypes, config) {
-	        var _this = this;
-	        this.config = config;
-	        /** @hidden */
-	        this._cache = { path: [], pattern: null };
-	        /** @hidden */
-	        this._children = [];
-	        /** @hidden */
-	        this._params = [];
-	        /** @hidden */
-	        this._segments = [];
-	        /** @hidden */
-	        this._compiled = [];
-	        this.pattern = pattern;
-	        this.config = common_1.defaults(this.config, {
-	            params: {},
-	            strict: true,
-	            caseInsensitive: false,
-	            paramMap: common_1.identity
-	        });
-	        // Find all placeholders and create a compiled pattern, using either classic or curly syntax:
-	        //   '*' name
-	        //   ':' name
-	        //   '{' name '}'
-	        //   '{' name ':' regexp '}'
-	        // The regular expression is somewhat complicated due to the need to allow curly braces
-	        // inside the regular expression. The placeholder regexp breaks down as follows:
-	        //    ([:*])([\w\[\]]+)              - classic placeholder ($1 / $2) (search version has - for snake-case)
-	        //    \{([\w\[\]]+)(?:\:\s*( ... ))?\}  - curly brace placeholder ($3) with optional regexp/type ... ($4) (search version has - for snake-case
-	        //    (?: ... | ... | ... )+         - the regexp consists of any number of atoms, an atom being either
-	        //    [^{}\\]+                       - anything other than curly braces or backslash
-	        //    \\.                            - a backslash escape
-	        //    \{(?:[^{}\\]+|\\.)*\}          - a matched set of curly braces containing other atoms
-	        var placeholder = /([:*])([\w\[\]]+)|\{([\w\[\]]+)(?:\:\s*((?:[^{}\\]+|\\.|\{(?:[^{}\\]+|\\.)*\})+))?\}/g, searchPlaceholder = /([:]?)([\w\[\].-]+)|\{([\w\[\].-]+)(?:\:\s*((?:[^{}\\]+|\\.|\{(?:[^{}\\]+|\\.)*\})+))?\}/g, last = 0, m, patterns = [];
-	        var checkParamErrors = function (id) {
-	            if (!UrlMatcher.nameValidator.test(id))
-	                throw new Error("Invalid parameter name '" + id + "' in pattern '" + pattern + "'");
-	            if (common_1.find(_this._params, hof_1.propEq('id', id)))
-	                throw new Error("Duplicate parameter name '" + id + "' in pattern '" + pattern + "'");
-	        };
-	        // Split into static segments separated by path parameter placeholders.
-	        // The number of segments is always 1 more than the number of parameters.
-	        var matchDetails = function (m, isSearch) {
-	            // IE[78] returns '' for unmatched groups instead of null
-	            var id = m[2] || m[3], regexp = isSearch ? m[4] : m[4] || (m[1] === '*' ? '.*' : null);
-	            return {
-	                id: id,
-	                regexp: regexp,
-	                cfg: _this.config.params[id],
-	                segment: pattern.substring(last, m.index),
-	                type: !regexp ? null : paramTypes.type(regexp || "string") || common_1.inherit(paramTypes.type("string"), {
-	                    pattern: new RegExp(regexp, _this.config.caseInsensitive ? 'i' : undefined)
-	                })
-	            };
-	        };
-	        var p, segment;
-	        while ((m = placeholder.exec(pattern))) {
-	            p = matchDetails(m, false);
-	            if (p.segment.indexOf('?') >= 0)
-	                break; // we're into the search part
-	            checkParamErrors(p.id);
-	            this._params.push(param_1.Param.fromPath(p.id, p.type, this.config.paramMap(p.cfg, false), paramTypes));
-	            this._segments.push(p.segment);
-	            patterns.push([p.segment, common_1.tail(this._params)]);
-	            last = placeholder.lastIndex;
-	        }
-	        segment = pattern.substring(last);
-	        // Find any search parameter names and remove them from the last segment
-	        var i = segment.indexOf('?');
-	        if (i >= 0) {
-	            var search = segment.substring(i);
-	            segment = segment.substring(0, i);
-	            if (search.length > 0) {
-	                last = 0;
-	                while ((m = searchPlaceholder.exec(search))) {
-	                    p = matchDetails(m, true);
-	                    checkParamErrors(p.id);
-	                    this._params.push(param_1.Param.fromSearch(p.id, p.type, this.config.paramMap(p.cfg, true), paramTypes));
-	                    last = placeholder.lastIndex;
-	                }
-	            }
-	        }
-	        this._segments.push(segment);
-	        common_1.extend(this, {
-	            _compiled: patterns.map(function (pattern) { return quoteRegExp.apply(null, pattern); }).concat(quoteRegExp(segment)),
-	            prefix: this._segments[0]
-	        });
-	        Object.freeze(this);
-	    }
-	    /**
-	     * Creates a new concatenated UrlMatcher
-	     *
-	     * Builds a new UrlMatcher by appending another UrlMatcher to this one.
-	     *
-	     * @param url A `UrlMatcher` instance to append as a child of the current `UrlMatcher`.
-	     */
-	    UrlMatcher.prototype.append = function (url) {
-	        this._children.push(url);
-	        common_1.forEach(url._cache, function (val, key) { return url._cache[key] = predicates_1.isArray(val) ? [] : null; });
-	        url._cache.path = this._cache.path.concat(this);
-	        return url;
-	    };
-	    /** @hidden */
-	    UrlMatcher.prototype.isRoot = function () {
-	        return this._cache.path.length === 0;
-	    };
-	    /** Returns the input pattern string */
-	    UrlMatcher.prototype.toString = function () {
-	        return this.pattern;
-	    };
-	    /**
-	     * Tests the specified url/path against this matcher.
-	     *
-	     * Tests if the given url matches this matcher's pattern, and returns an object containing the captured
-	     * parameter values.  Returns null if the path does not match.
-	     *
-	     * The returned object contains the values
-	     * of any search parameters that are mentioned in the pattern, but their value may be null if
-	     * they are not present in `search`. This means that search parameters are always treated
-	     * as optional.
-	     *
-	     * @example
-	     * ```js
-	     *
-	     * new UrlMatcher('/user/{id}?q&r').exec('/user/bob', {
-	     *   x: '1', q: 'hello'
-	     * });
-	     * // returns { id: 'bob', q: 'hello', r: null }
-	     * ```
-	     *
-	     * @param path    The URL path to match, e.g. `$location.path()`.
-	     * @param search  URL search parameters, e.g. `$location.search()`.
-	     * @param hash    URL hash e.g. `$location.hash()`.
-	     * @param options
-	     *
-	     * @returns The captured parameter values.
-	     */
-	    UrlMatcher.prototype.exec = function (path, search, hash, options) {
-	        var _this = this;
-	        if (search === void 0) { search = {}; }
-	        if (options === void 0) { options = {}; }
-	        var match = memoizeTo(this._cache, 'pattern', function () {
-	            return new RegExp([
-	                '^',
-	                common_1.unnest(_this._cache.path.concat(_this).map(hof_1.prop('_compiled'))).join(''),
-	                _this.config.strict === false ? '\/?' : '',
-	                '$'
-	            ].join(''), _this.config.caseInsensitive ? 'i' : undefined);
-	        }).exec(path);
-	        if (!match)
-	            return null;
-	        //options = defaults(options, { isolate: false });
-	        var allParams = this.parameters(), pathParams = allParams.filter(function (param) { return !param.isSearch(); }), searchParams = allParams.filter(function (param) { return param.isSearch(); }), nPathSegments = this._cache.path.concat(this).map(function (urlm) { return urlm._segments.length - 1; }).reduce(function (a, x) { return a + x; }), values = {};
-	        if (nPathSegments !== match.length - 1)
-	            throw new Error("Unbalanced capture group in route '" + this.pattern + "'");
-	        function decodePathArray(string) {
-	            var reverseString = function (str) { return str.split("").reverse().join(""); };
-	            var unquoteDashes = function (str) { return str.replace(/\\-/g, "-"); };
-	            var split = reverseString(string).split(/-(?!\\)/);
-	            var allReversed = common_1.map(split, reverseString);
-	            return common_1.map(allReversed, unquoteDashes).reverse();
-	        }
-	        for (var i = 0; i < nPathSegments; i++) {
-	            var param = pathParams[i];
-	            var value = match[i + 1];
-	            // if the param value matches a pre-replace pair, replace the value before decoding.
-	            for (var j = 0; j < param.replace.length; j++) {
-	                if (param.replace[j].from === value)
-	                    value = param.replace[j].to;
-	            }
-	            if (value && param.array === true)
-	                value = decodePathArray(value);
-	            if (predicates_2.isDefined(value))
-	                value = param.type.decode(value);
-	            values[param.id] = param.value(value);
-	        }
-	        searchParams.forEach(function (param) {
-	            var value = search[param.id];
-	            for (var j = 0; j < param.replace.length; j++) {
-	                if (param.replace[j].from === value)
-	                    value = param.replace[j].to;
-	            }
-	            if (predicates_2.isDefined(value))
-	                value = param.type.decode(value);
-	            values[param.id] = param.value(value);
-	        });
-	        if (hash)
-	            values["#"] = hash;
-	        return values;
-	    };
-	    /**
-	     * @hidden
-	     * Returns all the [[Param]] objects of all path and search parameters of this pattern in order of appearance.
-	     *
-	     * @returns {Array.<Param>}  An array of [[Param]] objects. Must be treated as read-only. If the
-	     *    pattern has no parameters, an empty array is returned.
-	     */
-	    UrlMatcher.prototype.parameters = function (opts) {
-	        if (opts === void 0) { opts = {}; }
-	        if (opts.inherit === false)
-	            return this._params;
-	        return common_1.unnest(this._cache.path.concat(this).map(hof_1.prop('_params')));
-	    };
-	    /**
-	     * @hidden
-	     * Returns a single parameter from this UrlMatcher by id
-	     *
-	     * @param id
-	     * @param opts
-	     * @returns {T|Param|any|boolean|UrlMatcher|null}
-	     */
-	    UrlMatcher.prototype.parameter = function (id, opts) {
-	        if (opts === void 0) { opts = {}; }
-	        var parent = common_1.tail(this._cache.path);
-	        return (common_1.find(this._params, hof_1.propEq('id', id)) ||
-	            (opts.inherit !== false && parent && parent.parameter(id)) ||
-	            null);
-	    };
-	    /**
-	     * Validates the input parameter values against this UrlMatcher
-	     *
-	     * Checks an object hash of parameters to validate their correctness according to the parameter
-	     * types of this `UrlMatcher`.
-	     *
-	     * @param params The object hash of parameters to validate.
-	     * @returns Returns `true` if `params` validates, otherwise `false`.
-	     */
-	    UrlMatcher.prototype.validates = function (params) {
-	        var _this = this;
-	        var validParamVal = function (param, val) {
-	            return !param || param.validates(val);
-	        };
-	        return common_1.pairs(params || {}).map(function (_a) {
-	            var key = _a[0], val = _a[1];
-	            return validParamVal(_this.parameter(key), val);
-	        }).reduce(common_1.allTrueR, true);
-	    };
-	    /**
-	     * Given a set of parameter values, creates a URL from this UrlMatcher.
-	     *
-	     * Creates a URL that matches this pattern by substituting the specified values
-	     * for the path and search parameters.
-	     *
-	     * @example
-	     * ```js
-	     *
-	     * new UrlMatcher('/user/{id}?q').format({ id:'bob', q:'yes' });
-	     * // returns '/user/bob?q=yes'
-	     * ```
-	     *
-	     * @param values  the values to substitute for the parameters in this pattern.
-	     * @returns the formatted URL (path and optionally search part).
-	     */
-	    UrlMatcher.prototype.format = function (values) {
-	        if (values === void 0) { values = {}; }
-	        if (!this.validates(values))
-	            return null;
-	        // Build the full path of UrlMatchers (including all parent UrlMatchers)
-	        var urlMatchers = this._cache.path.slice().concat(this);
-	        // Extract all the static segments and Params into an ordered array
-	        var pathSegmentsAndParams = urlMatchers.map(UrlMatcher.pathSegmentsAndParams).reduce(common_2.unnestR, []);
-	        // Extract the query params into a separate array
-	        var queryParams = urlMatchers.map(UrlMatcher.queryParams).reduce(common_2.unnestR, []);
-	        /**
-	         * Given a Param,
-	         * Applies the parameter value, then returns details about it
-	         */
-	        function getDetails(param) {
-	            // Normalize to typed value
-	            var value = param.value(values[param.id]);
-	            var isDefaultValue = param.isDefaultValue(value);
-	            // Check if we're in squash mode for the parameter
-	            var squash = isDefaultValue ? param.squash : false;
-	            // Allow the Parameter's Type to encode the value
-	            var encoded = param.type.encode(value);
-	            return { param: param, value: value, isDefaultValue: isDefaultValue, squash: squash, encoded: encoded };
-	        }
-	        // Build up the path-portion from the list of static segments and parameters
-	        var pathString = pathSegmentsAndParams.reduce(function (acc, x) {
-	            // The element is a static segment (a raw string); just append it
-	            if (predicates_1.isString(x))
-	                return acc + x;
-	            // Otherwise, it's a Param.  Fetch details about the parameter value
-	            var _a = getDetails(x), squash = _a.squash, encoded = _a.encoded, param = _a.param;
-	            // If squash is === true, try to remove a slash from the path
-	            if (squash === true)
-	                return (acc.match(/\/$/)) ? acc.slice(0, -1) : acc;
-	            // If squash is a string, use the string for the param value
-	            if (predicates_1.isString(squash))
-	                return acc + squash;
-	            if (squash !== false)
-	                return acc; // ?
-	            if (encoded == null)
-	                return acc;
-	            // If this parameter value is an array, encode the value using encodeDashes
-	            if (predicates_1.isArray(encoded))
-	                return acc + common_1.map(encoded, UrlMatcher.encodeDashes).join("-");
-	            // If the parameter type is "raw", then do not encodeURIComponent
-	            if (param.type.raw)
-	                return acc + encoded;
-	            // Encode the value
-	            return acc + encodeURIComponent(encoded);
-	        }, "");
-	        // Build the query string by applying parameter values (array or regular)
-	        // then mapping to key=value, then flattening and joining using "&"
-	        var queryString = queryParams.map(function (param) {
-	            var _a = getDetails(param), squash = _a.squash, encoded = _a.encoded, isDefaultValue = _a.isDefaultValue;
-	            if (encoded == null || (isDefaultValue && squash !== false))
-	                return;
-	            if (!predicates_1.isArray(encoded))
-	                encoded = [encoded];
-	            if (encoded.length === 0)
-	                return;
-	            if (!param.type.raw)
-	                encoded = common_1.map(encoded, encodeURIComponent);
-	            return encoded.map(function (val) { return (param.id + "=" + val); });
-	        }).filter(common_1.identity).reduce(common_2.unnestR, []).join("&");
-	        // Concat the pathstring with the queryString (if exists) and the hashString (if exists)
-	        return pathString + (queryString ? "?" + queryString : "") + (values["#"] ? "#" + values["#"] : "");
-	    };
-	    /** @hidden */
-	    UrlMatcher.encodeDashes = function (str) {
-	        return encodeURIComponent(str).replace(/-/g, function (c) { return ("%5C%" + c.charCodeAt(0).toString(16).toUpperCase()); });
-	    };
-	    /** @hidden Given a matcher, return an array with the matcher's path segments and path params, in order */
-	    UrlMatcher.pathSegmentsAndParams = function (matcher) {
-	        var staticSegments = matcher._segments;
-	        var pathParams = matcher._params.filter(function (p) { return p.location === param_2.DefType.PATH; });
-	        return common_3.arrayTuples(staticSegments, pathParams.concat(undefined)).reduce(common_2.unnestR, []).filter(function (x) { return x !== "" && predicates_2.isDefined(x); });
-	    };
-	    /** @hidden Given a matcher, return an array with the matcher's query params */
-	    UrlMatcher.queryParams = function (matcher) {
-	        return matcher._params.filter(function (p) { return p.location === param_2.DefType.SEARCH; });
-	    };
-	    /** @hidden */
-	    UrlMatcher.nameValidator = /^\w+([-.]+\w+)*(?:\[\])?$/;
-	    return UrlMatcher;
-	}());
-	exports.UrlMatcher = UrlMatcher;
-	//# sourceMappingURL=urlMatcher.js.map
-
-/***/ },
-
-/***/ 186:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module url */ /** for typedoc */
-	var common_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(9);
-	var urlMatcher_1 = __webpack_require__(185);
-	var urlMatcherConfig_1 = __webpack_require__(135);
-	var param_1 = __webpack_require__(55);
-	var paramTypes_1 = __webpack_require__(177);
-	/** @hidden */
-	function getDefaultConfig() {
-	    return {
-	        strict: urlMatcherConfig_1.matcherConfig.strictMode(),
-	        caseInsensitive: urlMatcherConfig_1.matcherConfig.caseInsensitive()
-	    };
-	}
-	/**
-	 * Factory for [[UrlMatcher]] instances.
-	 *
-	 * The factory is available to ng1 services as
-	 * `$urlMatcherFactor` or ng1 providers as `$urlMatcherFactoryProvider`.
-	 */
-	var UrlMatcherFactory = (function () {
-	    function UrlMatcherFactory() {
-	        this.paramTypes = new paramTypes_1.ParamTypes();
-	        common_1.extend(this, { UrlMatcher: urlMatcher_1.UrlMatcher, Param: param_1.Param });
-	    }
-	    /**
-	     * Defines whether URL matching should be case sensitive (the default behavior), or not.
-	     *
-	     * @param value `false` to match URL in a case sensitive manner; otherwise `true`;
-	     * @returns the current value of caseInsensitive
-	     */
-	    UrlMatcherFactory.prototype.caseInsensitive = function (value) {
-	        return urlMatcherConfig_1.matcherConfig.caseInsensitive(value);
-	    };
-	    /**
-	     * Defines whether URLs should match trailing slashes, or not (the default behavior).
-	     *
-	     * @param value `false` to match trailing slashes in URLs, otherwise `true`.
-	     * @returns the current value of strictMode
-	     */
-	    UrlMatcherFactory.prototype.strictMode = function (value) {
-	        return urlMatcherConfig_1.matcherConfig.strictMode(value);
-	    };
-	    /**
-	     * Sets the default behavior when generating or matching URLs with default parameter values.
-	     *
-	     * @param value A string that defines the default parameter URL squashing behavior.
-	     *    - `nosquash`: When generating an href with a default parameter value, do not squash the parameter value from the URL
-	     *    - `slash`: When generating an href with a default parameter value, squash (remove) the parameter value, and, if the
-	     *             parameter is surrounded by slashes, squash (remove) one slash from the URL
-	     *    - any other string, e.g. "~": When generating an href with a default parameter value, squash (remove)
-	     *             the parameter value from the URL and replace it with this string.
-	     * @returns the current value of defaultSquashPolicy
-	     */
-	    UrlMatcherFactory.prototype.defaultSquashPolicy = function (value) {
-	        return urlMatcherConfig_1.matcherConfig.defaultSquashPolicy(value);
-	    };
-	    /**
-	     * Creates a [[UrlMatcher]] for the specified pattern.
-	     *
-	     * @param pattern  The URL pattern.
-	     * @param config  The config object hash.
-	     * @returns The UrlMatcher.
-	     */
-	    UrlMatcherFactory.prototype.compile = function (pattern, config) {
-	        return new urlMatcher_1.UrlMatcher(pattern, this.paramTypes, common_1.extend(getDefaultConfig(), config));
-	    };
-	    /**
-	     * Returns true if the specified object is a [[UrlMatcher]], or false otherwise.
-	     *
-	     * @param object  The object to perform the type check against.
-	     * @returns `true` if the object matches the `UrlMatcher` interface, by
-	     *          implementing all the same methods.
-	     */
-	    UrlMatcherFactory.prototype.isMatcher = function (object) {
-	        // TODO: typeof?
-	        if (!predicates_1.isObject(object))
-	            return false;
-	        var result = true;
-	        common_1.forEach(urlMatcher_1.UrlMatcher.prototype, function (val, name) {
-	            if (predicates_1.isFunction(val))
-	                result = result && (predicates_1.isDefined(object[name]) && predicates_1.isFunction(object[name]));
-	        });
-	        return result;
-	    };
-	    ;
-	    /**
-	     * Creates and registers a custom [[ParamType]] object
-	     *
-	     * A [[ParamType]] can be used to generate URLs with typed parameters.
-	     *
-	     * @param name  The type name.
-	     * @param definition The type definition. See [[ParamTypeDefinition]] for information on the values accepted.
-	     * @param definitionFn A function that is injected before the app runtime starts.
-	     *        The result of this function should be a [[ParamTypeDefinition]].
-	     *        The result is merged into the existing `definition`.
-	     *        See [[ParamType]] for information on the values accepted.
-	     *
-	     * @returns - if a type was registered: the [[UrlMatcherFactory]]
-	     *   - if only the `name` parameter was specified: the currently registered [[ParamType]] object, or undefined
-	     *
-	     * Note: Register custom types *before using them* in a state definition.
-	     *
-	     * See [[ParamTypeDefinition]] for examples
-	     */
-	    UrlMatcherFactory.prototype.type = function (name, definition, definitionFn) {
-	        var type = this.paramTypes.type(name, definition, definitionFn);
-	        return !predicates_1.isDefined(definition) ? type : this;
-	    };
-	    ;
-	    /** @hidden */
-	    UrlMatcherFactory.prototype.$get = function () {
-	        this.paramTypes.enqueue = false;
-	        this.paramTypes._flushTypeQueue();
-	        return this;
-	    };
-	    ;
-	    return UrlMatcherFactory;
-	}());
-	exports.UrlMatcherFactory = UrlMatcherFactory;
-	//# sourceMappingURL=urlMatcherFactory.js.map
-
-/***/ },
-
-/***/ 187:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 3/11/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
-	var networksmodel_1 = __webpack_require__(48);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var ApplicationGroupCreateComponent = (function () {
-	    function ApplicationGroupCreateComponent(activatedRoute, router, networksModel, applicationGroupsModel, crudHelperService) {
-	        this.activatedRoute = activatedRoute;
-	        this.router = router;
-	        this.networksModel = networksModel;
-	        this.applicationGroupsModel = applicationGroupsModel;
-	        this.crudHelperService = crudHelperService;
-	        this.networks = [];
-	        this.applicationGroup = {};
-	        this.selectedNetwork = '';
-	        var applicationGroupCreateCtrl = this;
-	        /**
-	         * Get networks for the given tenant.
-	         */
-	        function getNetworks() {
-	            networksModel.get(false).then(function (result) {
-	                applicationGroupCreateCtrl.networks = _.filter(result, {
-	                    'tenantName': 'default' //TODO: Remove hardcoded tenant.
-	                });
-	            });
-	        }
-	        function resetForm() {
-	            crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	            crudHelperService.hideServerError(applicationGroupCreateCtrl);
-	            applicationGroupCreateCtrl.applicationGroup = {
-	                groupName: '',
-	                networkName: '',
-	                policies: [],
-	                netProfile: '',
-	                tenantName: 'default' //TODO: Remove hardcoded tenant.
-	            };
-	        }
-	        getNetworks();
-	        resetForm();
-	    }
-	    ApplicationGroupCreateComponent.prototype.returnToApplicationGroup = function () {
-	        this.router.navigate(['../list'], { relativeTo: this.activatedRoute });
-	    };
-	    ApplicationGroupCreateComponent.prototype.cancelCreating = function () {
-	        this.returnToApplicationGroup();
-	    };
-	    ApplicationGroupCreateComponent.prototype.createApplicationGroup = function (validform) {
-	        var applicationGroupCreateCtrl = this;
-	        if (validform) {
-	            applicationGroupCreateCtrl.crudHelperService.hideServerError(applicationGroupCreateCtrl);
-	            applicationGroupCreateCtrl.crudHelperService.startLoader(applicationGroupCreateCtrl);
-	            applicationGroupCreateCtrl.applicationGroup.networkName =
-	                applicationGroupCreateCtrl.selectedNetwork;
-	            applicationGroupCreateCtrl.applicationGroup.key =
-	                applicationGroupCreateCtrl.applicationGroupsModel.generateKey(applicationGroupCreateCtrl.applicationGroup);
-	            /**
-	             * applicationGroup consist of Group Name, Network Name, Isolation Policies, Bandwidth Policy
-	             */
-	            applicationGroupCreateCtrl.applicationGroupsModel.create(applicationGroupCreateCtrl.applicationGroup, undefined).then(function successCallback(result) {
-	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	                applicationGroupCreateCtrl.returnToApplicationGroup();
-	            }, function errorCallback(result) {
-	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	                applicationGroupCreateCtrl.crudHelperService.showServerError(applicationGroupCreateCtrl, result);
-	            });
-	        }
-	    };
-	    ApplicationGroupCreateComponent.prototype.updateNetwork = function (networkName) {
-	        this.selectedNetwork = networkName;
-	    };
-	    ApplicationGroupCreateComponent = __decorate([
-	        core_1.Component({
-	            selector: 'applicationgroupcreate',
-	            templateUrl: 'applicationgroups/applicationgroupcreate.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _d) || Object, (typeof (_e = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _e) || Object])
-	    ], ApplicationGroupCreateComponent);
-	    return ApplicationGroupCreateComponent;
-	    var _a, _b, _c, _d, _e;
-	}());
-	exports.ApplicationGroupCreateComponent = ApplicationGroupCreateComponent;
-	
-
-/***/ },
-
-/***/ 188:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 3/15/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var ApplicationGroupDetailsComponent = (function () {
-	    function ApplicationGroupDetailsComponent(activatedRoute, router, applicationGroupsModel, crudHelperService) {
-	        this.activatedRoute = activatedRoute;
-	        this.router = router;
-	        this.applicationGroupsModel = applicationGroupsModel;
-	        this.crudHelperService = crudHelperService;
-	        this.applicationGroup = {};
-	        this.mode = 'details';
-	        var applicationGroupDetailsCtrl = this;
-	        /**
-	         * To show edit or details screen based on the route
-	         */
-	        function setMode() {
-	            if (activatedRoute.routeConfig.path.includes('edit')) {
-	                applicationGroupDetailsCtrl.mode = 'edit';
-	            }
-	            else {
-	                applicationGroupDetailsCtrl.mode = 'details';
-	            }
-	        }
-	        applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.applicationGroupsModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
-	            .then(function (group) {
-	            applicationGroupDetailsCtrl.applicationGroup = group;
-	        });
-	        setMode();
-	    }
-	    ApplicationGroupDetailsComponent.prototype.returnToApplicationGroup = function () {
-	        this.router.navigate(['../../list'], { relativeTo: this.activatedRoute });
-	    };
-	    ApplicationGroupDetailsComponent.prototype.returnToApplicationGroupDetails = function () {
-	        this.router.navigate(['../../details', this.applicationGroup.key], { relativeTo: this.activatedRoute });
-	    };
-	    ApplicationGroupDetailsComponent.prototype.editApplicationGroup = function () {
-	        this.router.navigate(['../../edit', this.applicationGroup.key], { relativeTo: this.activatedRoute });
-	    };
-	    ApplicationGroupDetailsComponent.prototype.cancelEditing = function () {
-	        this.returnToApplicationGroupDetails();
-	    };
-	    ApplicationGroupDetailsComponent.prototype.deleteApplicationGroup = function () {
-	        var applicationGroupDetailsCtrl = this;
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.applicationGroupsModel.delete(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
-	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.returnToApplicationGroup();
-	        }, function errorCallback(result) {
-	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
-	        });
-	    };
-	    ApplicationGroupDetailsComponent.prototype.saveApplicationGroup = function () {
-	        var applicationGroupDetailsCtrl = this;
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.applicationGroupsModel.save(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
-	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.returnToApplicationGroupDetails();
-	        }, function errorCallback(result) {
-	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
-	        });
-	    };
-	    ApplicationGroupDetailsComponent = __decorate([
-	        core_1.Component({
-	            selector: 'applicationgroupdetails',
-	            templateUrl: 'applicationgroups/applicationgroupdetails.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
-	    ], ApplicationGroupDetailsComponent);
-	    return ApplicationGroupDetailsComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.ApplicationGroupDetailsComponent = ApplicationGroupDetailsComponent;
-	
-
-/***/ },
-
-/***/ 189:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 3/11/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var rxjs_1 = __webpack_require__(44);
-	var AppGrouplistComponent = (function () {
-	    function AppGrouplistComponent(activatedRoute, router, appGroupModel, crudHelperService) {
-	        var _this = this;
-	        this.activatedRoute = activatedRoute;
-	        this.router = router;
-	        this.appGroupModel = appGroupModel;
-	        this.crudHelperService = crudHelperService;
-	        this.applicationGroupListCtrl = this;
-	        this['showLoader'] = true;
-	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
-	            _this.getApplicationGroup(true);
-	        });
-	    }
-	    AppGrouplistComponent.prototype.ngOnInit = function () {
-	        this.crudHelperService.startLoader(this);
-	        this.getApplicationGroup(false);
-	    };
-	    AppGrouplistComponent.prototype.getApplicationGroup = function (reload) {
-	        var applicationGroupListCtrl = this;
-	        this.appGroupModel.get(reload)
-	            .then(function (result) {
-	            applicationGroupListCtrl['groups'] = result;
-	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
-	        }, function (error) {
-	            applicationGroupListCtrl.crudHelperService.stopLoader(applicationGroupListCtrl);
-	        });
-	    };
-	    AppGrouplistComponent.prototype.create = function () {
-	        this.router.navigate(['../create'], { relativeTo: this.activatedRoute });
-	    };
-	    AppGrouplistComponent.prototype.ngOnDestroy = function () {
-	        this.refresh.unsubscribe();
-	    };
-	    AppGrouplistComponent = __decorate([
-	        core_1.Component({
-	            selector: 'app-group',
-	            template: __webpack_require__(495)
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
-	    ], AppGrouplistComponent);
-	    return AppGrouplistComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.AppGrouplistComponent = AppGrouplistComponent;
-	
-
-/***/ },
-
-/***/ 190:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(32);
-	__webpack_require__(115);
-	var contivglobals_1 = __webpack_require__(37);
-	var NetworkService = (function () {
-	    function NetworkService(http) {
-	        this.http = http;
-	    }
-	    NetworkService.prototype.getSettings = function () {
-	        var networkservice = this;
-	        var promise = new Promise(function (resolve, reject) {
-	            var url = contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT;
-	            networkservice.http.get(url).map(function (res) { return res.json(); }).toPromise()
-	                .then(function successCallback(result) {
-	                resolve(result[0]);
-	            }, function errorCallback(result) {
-	                reject(result);
-	            });
-	        });
-	        return promise;
-	    };
-	    NetworkService.prototype.updateSettings = function (setting) {
-	        return this.http.post(contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT
-	            + 'global/', setting).map(function (res) { return res.json(); }).toPromise();
-	    };
-	    NetworkService = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], NetworkService);
-	    return NetworkService;
-	    var _a;
-	}());
-	exports.NetworkService = NetworkService;
-	
-
-/***/ },
-
-/***/ 191:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(32);
-	__webpack_require__(115);
-	var contivglobals_1 = __webpack_require__(37);
-	var NodesService = (function () {
-	    function NodesService(http) {
-	        this.http = http;
-	    }
-	    Object.defineProperty(NodesService, "node_constants", {
-	        get: function () {
-	            return {
-	                APIC_CONTR_UNRESTRICT_MODE: 'apic_contracts_unrestricted_mode',
-	                APIC_EPG_BRIDGE_DOMAIN: 'apic_epg_bridge_domain',
-	                APIC_LEAF_NODES: 'apic_leaf_nodes',
-	                APIC_PASSWORD: 'apic_password',
-	                APIC_PHYS_DOMAIN: 'apic_phys_domain',
-	                APIC_URL: 'apic_url',
-	                APIC_USERNAME: 'apic_username',
-	                CONTIV_NET_MODE: 'contiv_network_mode',
-	                CONTROL_INTERFACE: 'control_interface',
-	                ENV: 'env',
-	                FWD_MODE: 'fwd_mode',
-	                DATA_INTERFACE: 'netplugin_if',
-	                SCHED_PROVIDER: 'scheduler_provider',
-	                VIP_ADDR: 'service_vip',
-	                UCP_BOOTSTRAP_NODE: 'ucp_bootstrap_node_name',
-	                CLUSTER_NAME: 'cluster_name'
-	            };
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    NodesService.prototype.getSettings = function (ctrl) {
-	        var nodeservice = this;
-	        var promise = new Promise(function (resolve, reject) {
-	            var url = contivglobals_1.ContivGlobals.NODES_SETTINGS_GET_ENDPOINT;
-	            nodeservice.http.get(url).map(function (res) { return res.json(); }).toPromise().then(function successCallback(result) {
-	                resolve(result);
-	                ctrl.setting = result;
-	                var extraVars = ctrl.setting.extra_vars;
-	                var sched_provider = extraVars[NodesService.node_constants.SCHED_PROVIDER];
-	                var network_mode = extraVars[NodesService.node_constants.CONTIV_NET_MODE];
-	                if (extraVars[NodesService.node_constants.CONTROL_INTERFACE]) {
-	                    ctrl.extra_vars[NodesService.node_constants.CONTROL_INTERFACE] =
-	                        extraVars[NodesService.node_constants.CONTROL_INTERFACE];
-	                }
-	                if (extraVars[NodesService.node_constants.DATA_INTERFACE]) {
-	                    ctrl.extra_vars[NodesService.node_constants.DATA_INTERFACE] =
-	                        extraVars[NodesService.node_constants.DATA_INTERFACE];
-	                }
-	                if (extraVars[NodesService.node_constants.VIP_ADDR]) {
-	                    ctrl.extra_vars[NodesService.node_constants.VIP_ADDR] = extraVars[NodesService.node_constants.VIP_ADDR];
-	                }
-	                if (sched_provider) {
-	                    ctrl.extra_vars[NodesService.node_constants.SCHED_PROVIDER] = sched_provider;
-	                    if (sched_provider === 'ucp-swarm') {
-	                        ctrl.extra_vars[NodesService.node_constants.UCP_BOOTSTRAP_NODE] =
-	                            extraVars[NodesService.node_constants.UCP_BOOTSTRAP_NODE];
-	                    }
-	                }
-	                if (network_mode) {
-	                    ctrl.extra_vars[NodesService.node_constants.CONTIV_NET_MODE] = network_mode;
-	                    if (network_mode === 'standalone') {
-	                        ctrl.extra_vars[NodesService.node_constants.FWD_MODE] = extraVars[NodesService.node_constants.FWD_MODE];
-	                    }
-	                    else if (network_mode === 'aci') {
-	                        ctrl.extra_vars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE] =
-	                            extraVars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE];
-	                        ctrl.extra_vars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN] =
-	                            extraVars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN];
-	                        ctrl.extra_vars[NodesService.node_constants.APIC_LEAF_NODES] =
-	                            extraVars[NodesService.node_constants.APIC_LEAF_NODES];
-	                        ctrl.extra_vars[NodesService.node_constants.APIC_PASSWORD] =
-	                            extraVars[NodesService.node_constants.APIC_PASSWORD];
-	                        ctrl.extra_vars[NodesService.node_constants.APIC_PHYS_DOMAIN] =
-	                            extraVars[NodesService.node_constants.APIC_PHYS_DOMAIN];
-	                        ctrl.extra_vars[NodesService.node_constants.APIC_URL] =
-	                            extraVars[NodesService.node_constants.APIC_URL];
-	                        ctrl.extra_vars[NodesService.node_constants.APIC_USERNAME] =
-	                            extraVars[NodesService.node_constants.APIC_USERNAME];
-	                    }
-	                }
-	                if (extraVars[NodesService.node_constants.CLUSTER_NAME]) {
-	                    ctrl.extra_vars[NodesService.node_constants.CLUSTER_NAME] =
-	                        extraVars[NodesService.node_constants.CLUSTER_NAME];
-	                }
-	                nodeservice.createEnvVariables(extraVars[NodesService.node_constants.ENV], ctrl.envVariables);
-	                nodeservice.createAnsibleVariables(extraVars, ctrl.ansibleVariables);
-	            }, function errorCallback(result) {
-	                reject(result);
-	            });
-	        });
-	        return promise;
-	    };
-	    NodesService.prototype.createEnvVariables = function (envVars, envVariables) {
-	        var i;
-	        for (i in envVars) {
-	            envVariables.push({ 'name': i, 'value': envVars[i] });
-	        }
-	    };
-	    NodesService.prototype.createAnsibleVariables = function (extraVars, ansibleVariables) {
-	        var setting_filter = [NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE,
-	            NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN, NodesService.node_constants.APIC_LEAF_NODES,
-	            NodesService.node_constants.APIC_PASSWORD, NodesService.node_constants.APIC_PHYS_DOMAIN,
-	            NodesService.node_constants.APIC_URL, NodesService.node_constants.APIC_USERNAME,
-	            NodesService.node_constants.CONTIV_NET_MODE, NodesService.node_constants.CONTROL_INTERFACE,
-	            NodesService.node_constants.ENV, NodesService.node_constants.FWD_MODE, NodesService.node_constants.DATA_INTERFACE,
-	            NodesService.node_constants.SCHED_PROVIDER, NodesService.node_constants.VIP_ADDR,
-	            NodesService.node_constants.UCP_BOOTSTRAP_NODE, NodesService.node_constants.CLUSTER_NAME];
-	        var i;
-	        for (i in extraVars) {
-	            if (setting_filter.indexOf(i) === -1) {
-	                ansibleVariables.push({ 'name': i, 'value': extraVars[i] });
-	            }
-	        }
-	    };
-	    ;
-	    NodesService.prototype.updateSettings = function (nodeOpsObj) {
-	        var headers = new http_1.Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
-	        var options = new http_1.RequestOptions({ headers: headers }); // Create a request option
-	        return this.http.post(contivglobals_1.ContivGlobals.NODES_SETTINGS_SET_ENDPOINT, nodeOpsObj, options)
-	            .map(function (res) { return res.json(); }).toPromise();
-	    };
-	    ;
-	    NodesService.prototype.createExtraVars = function (ctrl) {
-	        //Add ansible variables to extra_vars
-	        ctrl.ansibleVariables.forEach(function (item) {
-	            ctrl.extra_vars[item.name] = item.value;
-	        });
-	        //Add environment variables to extra_vars
-	        var envVars = {};
-	        ctrl.envVariables.forEach(function (item) {
-	            envVars[item.name] = item.value;
-	        });
-	        ctrl.extra_vars[NodesService.node_constants.ENV] = envVars;
-	        ctrl.nodeOpsObj.extra_vars = JSON.stringify(ctrl.extra_vars);
-	    };
-	    ;
-	    /**
-	     * Cleanup ansible variables for network mode and scheduler. ng-if removes it from the view (DOM) but not from
-	     * the model.
-	     */
-	    NodesService.prototype.cleanupExtraVars = function (ctrl) {
-	        //Cleanup for network mode
-	        if (ctrl.extra_vars[NodesService.node_constants.CONTIV_NET_MODE] == 'aci') {
-	            delete ctrl.extra_vars[NodesService.node_constants.FWD_MODE];
-	        }
-	        else {
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_URL];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_USERNAME];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_PASSWORD];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_LEAF_NODES];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_PHYS_DOMAIN];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE];
-	        }
-	        //Cleanup for scheduler
-	        if (ctrl.extra_vars[NodesService.node_constants.SCHED_PROVIDER] == 'native-swarm') {
-	            delete ctrl.extra_vars[NodesService.node_constants.UCP_BOOTSTRAP_NODE];
-	        }
-	    };
-	    ;
-	    NodesService = __decorate([
-	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])
-	    ], NodesService);
-	    return NodesService;
-	    var _a;
-	}());
-	exports.NodesService = NodesService;
-	
-
-/***/ },
-
-/***/ 192:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 3/11/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var Observable_1 = __webpack_require__(1);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var policiesmodel_1 = __webpack_require__(76);
-	var networksmodel_1 = __webpack_require__(48);
-	var DashboardComponent = (function () {
-	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, ngZone) {
-	        this.networksModel = networksModel;
-	        this.applicationGroupsModel = applicationGroupsModel;
-	        this.policiesModel = policiesModel;
-	        this.ngZone = ngZone;
-	        this.nodes = 0;
-	        this.networks = 0;
-	        this.volumes = 0;
-	        this.groups = 0;
-	        this.networkpolicies = 0;
-	        this.storagepolicies = 0;
-	        var dashboardComponent = this;
-	        function getDashboardInfo(reload) {
-	            ngZone.run(function () {
-	                networksModel.get(reload)
-	                    .then(function (result) {
-	                    dashboardComponent.networks = result.length;
-	                });
-	                applicationGroupsModel.get(reload)
-	                    .then(function (result) {
-	                    dashboardComponent.groups = result.length;
-	                });
-	                policiesModel.get(reload)
-	                    .then(function (result) {
-	                    dashboardComponent.networkpolicies = result.length;
-	                });
-	            });
-	        }
-	        //Load from cache for quick display initially
-	        getDashboardInfo(false);
-	        this.subscription = Observable_1.Observable.interval(5000).subscribe(function () {
-	            getDashboardInfo(true);
-	        });
-	    }
-	    DashboardComponent.prototype.ngOnDestroy = function () {
-	        this.subscription.unsubscribe();
-	    };
-	    DashboardComponent = __decorate([
-	        core_1.Component({
-	            selector: 'dashboard',
-	            templateUrl: 'dashboard/dashboard.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
-	    ], DashboardComponent);
-	    return DashboardComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.DashboardComponent = DashboardComponent;
-	
-
-/***/ },
-
-/***/ 193:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 5/19/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
-	/*
-	angular.module('contiv.menu')
-	    .config(['$stateProvider', function ($stateProvider) {
-	        $stateProvider
-	            .state('contiv.menu', {
-	                url: '/m',
-	                templateUrl: 'menu/menu.html',
-	                controller: 'MenuCtrl as menuCtrl',
-	                params: {username: null}
-	            })
-	        ;
-	    }])
-	    .controller('MenuCtrl', ['$state', '$stateParams', function ($state, $stateParams) {
-	        var menuCtrl = this;
-
-	        function logout() {
-	            $state.go('contiv.login');
-	        }
-
-	        menuCtrl.username = $stateParams.username;
-	        menuCtrl.logout = logout;
-
-	    }]);*/
-	var MenuComponent = (function () {
-	    function MenuComponent(activatedRoute, router) {
-	        this.router = router;
-	        this.username = activatedRoute.snapshot.params['username'];
-	    }
-	    MenuComponent.prototype.logout = function () {
-	        this.router.navigate(['/login']);
-	    };
-	    MenuComponent = __decorate([
-	        core_1.Component({
-	            selector: 'menu',
-	            templateUrl: 'menu/menu.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object])
-	    ], MenuComponent);
-	    return MenuComponent;
-	    var _a, _b;
-	}());
-	exports.MenuComponent = MenuComponent;
-	
-
-/***/ },
-
-/***/ 194:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/*
-	/**
-	 * Created by hardik gandhi on 6/14/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
-	var netprofilesmodel_1 = __webpack_require__(84);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var BandwidthPolicyCreateComponent = (function () {
-	    function BandwidthPolicyCreateComponent(activatedRoute, router, netprofilesModel, crudHelperService) {
-	        this.activatedRoute = activatedRoute;
-	        this.router = router;
-	        this.netprofilesModel = netprofilesModel;
-	        this.crudHelperService = crudHelperService;
-	        var bandwidthPolicyCreateCtrl = this;
-	        function resetForm() {
-	            crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
-	            crudHelperService.hideServerError(bandwidthPolicyCreateCtrl);
-	            bandwidthPolicyCreateCtrl.newPolicy = {
-	                profileName: '',
-	                tenantName: 'default',
-	                bandwidth: '',
-	                DSCP: ''
-	            };
-	        }
-	        resetForm();
-	    }
-	    BandwidthPolicyCreateComponent.prototype.returnToPolicies = function () {
-	        this.router.navigate(['../../list', { policyTab: networkpoliciestabsctrl_1.PolicyTab.bandwidth }], { relativeTo: this.activatedRoute });
-	    };
-	    BandwidthPolicyCreateComponent.prototype.cancelCreating = function () {
-	        this.returnToPolicies();
-	    };
-	    BandwidthPolicyCreateComponent.prototype.createPolicy = function (validform) {
-	        var bandwidthPolicyCreateCtrl = this;
-	        if (validform) {
-	            bandwidthPolicyCreateCtrl.crudHelperService.hideServerError(bandwidthPolicyCreateCtrl);
-	            bandwidthPolicyCreateCtrl.crudHelperService.startLoader(bandwidthPolicyCreateCtrl);
-	            bandwidthPolicyCreateCtrl.newPolicy.key =
-	                bandwidthPolicyCreateCtrl.netprofilesModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
-	            bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.newPolicy.bandwidthNumber
-	                + " " + bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
-	            bandwidthPolicyCreateCtrl.netprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
-	                bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
-	                this.returnToPolicies();
-	            }, function errorCallback(result) {
-	                bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
-	                bandwidthPolicyCreateCtrl.crudHelperService.showServerError(bandwidthPolicyCreateCtrl, result);
-	            });
-	        }
-	    };
-	    BandwidthPolicyCreateComponent = __decorate([
-	        core_1.Component({
-	            selector: 'bandwidthpolicycreate',
-	            templateUrl: 'network_policies/bandwidthpolicycreate.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof netprofilesmodel_1.NetprofilesModel !== 'undefined' && netprofilesmodel_1.NetprofilesModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
-	    ], BandwidthPolicyCreateComponent);
-	    return BandwidthPolicyCreateComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.BandwidthPolicyCreateComponent = BandwidthPolicyCreateComponent;
-	
-
-/***/ },
-
-/***/ 195:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by hardik gandhi on 6/16/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
-	var netprofilesmodel_1 = __webpack_require__(84);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var BandwidthPolicyDetailsComponent = (function () {
-	    function BandwidthPolicyDetailsComponent(activatedRoute, router, netprofilesModel, crudHelperService) {
-	        this.activatedRoute = activatedRoute;
-	        this.router = router;
-	        this.netprofilesModel = netprofilesModel;
-	        this.crudHelperService = crudHelperService;
-	        this.bandwidthProfiles = [];
-	        this.policy = {};
-	        this.mode = 'details';
-	        var bandwidthPolicyDetailsCtrl = this;
-	        /**
-	         * To show edit or details screen based on the route
-	         */
-	        function setMode() {
-	            if (activatedRoute.routeConfig.path.includes('edit')) {
-	                bandwidthPolicyDetailsCtrl.mode = 'edit';
-	            }
-	            else {
-	                bandwidthPolicyDetailsCtrl.mode = 'details';
-	            }
-	        }
-	        /* Get particular Profile for based on key*/
-	        bandwidthPolicyDetailsCtrl.netprofilesModel.getModelByKey(activatedRoute.snapshot.params['key'])
-	            .then(function (policy) {
-	            bandwidthPolicyDetailsCtrl.policy = policy;
-	        });
-	        bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	        bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
-	        setMode();
-	    }
-	    BandwidthPolicyDetailsComponent.prototype.deletePolicy = function () {
-	        var bandwidthPolicyDetailsCtrl = this;
-	        bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
-	        bandwidthPolicyDetailsCtrl.crudHelperService.startLoader(bandwidthPolicyDetailsCtrl);
-	        bandwidthPolicyDetailsCtrl.netprofilesModel.deleteUsingKey(bandwidthPolicyDetailsCtrl.policy.key, 'name').then(function successCallback(result) {
-	            bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	            bandwidthPolicyDetailsCtrl.returnToPolicies();
-	        }, function errorCallback(result) {
-	            bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	            bandwidthPolicyDetailsCtrl.crudHelperService.showServerError(bandwidthPolicyDetailsCtrl, result);
-	        });
-	    };
-	    BandwidthPolicyDetailsComponent.prototype.returnToPolicies = function () {
-	        this.router.navigate(['../../../list', { policyTab: networkpoliciestabsctrl_1.PolicyTab.bandwidth }], { relativeTo: this.activatedRoute });
-	    };
-	    BandwidthPolicyDetailsComponent.prototype.returnToPolicyDetails = function () {
-	        this.router.navigate(['../../details', this.policy.key], { relativeTo: this.activatedRoute });
-	    };
-	    BandwidthPolicyDetailsComponent.prototype.editPolicy = function () {
-	        this.router.navigate(['../../edit', this.policy.key], { relativeTo: this.activatedRoute });
-	    };
-	    BandwidthPolicyDetailsComponent.prototype.cancelEditing = function () {
-	        this.returnToPolicyDetails();
-	    };
-	    BandwidthPolicyDetailsComponent.prototype.savePolicy = function (validform) {
-	        var bandwidthPolicyDetailsCtrl = this;
-	        if (validform) {
-	            bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
-	            bandwidthPolicyDetailsCtrl.crudHelperService.startLoader(bandwidthPolicyDetailsCtrl);
-	            bandwidthPolicyDetailsCtrl.policy.bandwidth = bandwidthPolicyDetailsCtrl.policy.bandwidthNumber + " " + bandwidthPolicyDetailsCtrl.policy.bandwidthUnit;
-	            bandwidthPolicyDetailsCtrl.netprofilesModel.save(bandwidthPolicyDetailsCtrl.policy).then(function successCallback(result) {
-	                bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	                bandwidthPolicyDetailsCtrl.returnToPolicyDetails();
-	            }, function errorCallback(result) {
-	                bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	                bandwidthPolicyDetailsCtrl.crudHelperService.showServerError(bandwidthPolicyDetailsCtrl, result);
-	            });
-	        }
-	    };
-	    BandwidthPolicyDetailsComponent = __decorate([
-	        core_1.Component({
-	            selector: 'bandwidthpolicydetails',
-	            templateUrl: 'network_policies/bandwidthpolicydetails.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof netprofilesmodel_1.NetprofilesModel !== 'undefined' && netprofilesmodel_1.NetprofilesModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
-	    ], BandwidthPolicyDetailsComponent);
-	    return BandwidthPolicyDetailsComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.BandwidthPolicyDetailsComponent = BandwidthPolicyDetailsComponent;
-	
-
-/***/ },
-
-/***/ 196:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 3/10/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
-	var policiesmodel_1 = __webpack_require__(76);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var IsolationPolicyCreateComponent = (function () {
-	    function IsolationPolicyCreateComponent(activatedRoute, router, policiesModel, crudHelperService) {
-	        this.activatedRoute = activatedRoute;
-	        this.router = router;
-	        this.policiesModel = policiesModel;
-	        this.crudHelperService = crudHelperService;
-	        var isolationPolicyCreateCtrl = this;
-	        function resetForm() {
-	            crudHelperService.stopLoader(isolationPolicyCreateCtrl);
-	            crudHelperService.hideServerError(isolationPolicyCreateCtrl);
-	            isolationPolicyCreateCtrl.newPolicy = {
-	                policyName: '',
-	                tenantName: 'default' //TODO: Remove hardcoded tenant.
-	            };
-	        }
-	        resetForm();
-	    }
-	    IsolationPolicyCreateComponent.prototype.returnToPolicies = function () {
-	        //this.router.navigate('contiv.menu.networkpolicies.list', {policyTab: PolicyTab.isolation});
-	        this.router.navigate(['../../list', { policyTab: networkpoliciestabsctrl_1.PolicyTab.isolation }], { relativeTo: this.activatedRoute });
-	    };
-	    IsolationPolicyCreateComponent.prototype.cancelCreating = function () {
-	        this.returnToPolicies();
-	    };
-	    IsolationPolicyCreateComponent.prototype.createPolicy = function (validform) {
-	        var isolationPolicyCreateCtrl = this;
-	        if (validform) {
-	            isolationPolicyCreateCtrl.crudHelperService.hideServerError(isolationPolicyCreateCtrl);
-	            isolationPolicyCreateCtrl.crudHelperService.startLoader(isolationPolicyCreateCtrl);
-	            isolationPolicyCreateCtrl.newPolicy.key =
-	                isolationPolicyCreateCtrl.policiesModel.generateKey(isolationPolicyCreateCtrl.newPolicy);
-	            isolationPolicyCreateCtrl.policiesModel.create(isolationPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
-	                isolationPolicyCreateCtrl.crudHelperService.stopLoader(isolationPolicyCreateCtrl);
-	                isolationPolicyCreateCtrl.returnToPolicies();
-	            }, function errorCallback(result) {
-	                isolationPolicyCreateCtrl.crudHelperService.stopLoader(isolationPolicyCreateCtrl);
-	                isolationPolicyCreateCtrl.crudHelperService.showServerError(isolationPolicyCreateCtrl, result);
-	            });
-	        }
-	    };
-	    IsolationPolicyCreateComponent = __decorate([
-	        core_1.Component({
-	            selector: 'isolationpolicycreate',
-	            templateUrl: 'network_policies/isolationpolicycreate.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
-	    ], IsolationPolicyCreateComponent);
-	    return IsolationPolicyCreateComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.IsolationPolicyCreateComponent = IsolationPolicyCreateComponent;
-	
-
-/***/ },
-
-/***/ 197:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 3/8/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var router_1 = __webpack_require__(23);
-	var policiesmodel_1 = __webpack_require__(76);
-	var rulesmodel_1 = __webpack_require__(139);
-	var networksmodel_1 = __webpack_require__(48);
-	var applicationgroupsmodel_1 = __webpack_require__(65);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var contivglobals_1 = __webpack_require__(37);
-	var IsolationPolicyDetailsComponent = (function () {
-	    function IsolationPolicyDetailsComponent(activatedRoute, router, policiesModel, rulesModel, networksModel, applicationGroupsModel, crudHelperService) {
-	        this.activatedRoute = activatedRoute;
-	        this.router = router;
-	        this.policiesModel = policiesModel;
-	        this.rulesModel = rulesModel;
-	        this.networksModel = networksModel;
-	        this.applicationGroupsModel = applicationGroupsModel;
-	        this.crudHelperService = crudHelperService;
-	        this.policy = {};
-	        this.incomingRules = [];
-	        this.outgoingRules = [];
-	        this.mode = 'details';
-	        this.newIncomingRule = {};
-	        this.newOutgoingRule = {};
-	        this.networks = [];
-	        this.applicationGroups = [];
-	        this.disableOutgoingNetworkSelection = false;
-	        this.disableIncomingNetworkSelection = false;
-	        this.disableOutgoingApplicationGroupSelection = false;
-	        this.disableIncomingApplicationGroupSelection = false;
-	        this.disableIncomingIPAddressSelection = false;
-	        this.disableOutgoingIPAddressSelection = false;
-	        this.newIncomingSelectedApplicationGroup = '';
-	        this.newOutgoingSelectedApplicationGroup = '';
-	        this.newIncomingSelectedNetwork = '';
-	        this.newOutgoingSelectedNetwork = '';
-	        this.incorrectCIDR = false;
-	        this.validateCIDRFlag = false;
-	        var isolationPolicyDetailsCtrl = this;
-	        /**
-	         * To show edit or details screen based on the route
-	         */
-	        function setMode() {
-	            if (activatedRoute.routeConfig.path.includes('edit')) {
-	                isolationPolicyDetailsCtrl.mode = 'edit';
-	            }
-	            else {
-	                isolationPolicyDetailsCtrl.mode = 'details';
-	            }
-	        }
-	        /**
-	         * Get network names for the given tenant.
-	         */
-	        function getNetworks() {
-	            isolationPolicyDetailsCtrl.networksModel.get(false).then(function (result) {
-	                //_.filter() returns a new array
-	                isolationPolicyDetailsCtrl.networks = _.filter(result, {
-	                    'tenantName': 'default' //TODO: Remove hardcoded tenant.
-	                });
-	            });
-	        }
-	        /**
-	         * Get application group names for the given tenant.
-	         */
-	        function getApplicationGroups() {
-	            isolationPolicyDetailsCtrl.applicationGroupsModel.get(false)
-	                .then(function (result) {
-	                //_.filter() returns a new array
-	                isolationPolicyDetailsCtrl.applicationGroups = _.filter(result, {
-	                    'tenantName': 'default' //TODO: Remove hardcoded tenant.
-	                });
-	            });
-	        }
-	        isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.policiesModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
-	            .then(function (policy) {
-	            isolationPolicyDetailsCtrl.policy = policy;
-	            isolationPolicyDetailsCtrl.rulesModel.getIncomingRules(policy.policyName, 'default').then(function (result) {
-	                isolationPolicyDetailsCtrl.incomingRules = result;
-	                isolationPolicyDetailsCtrl.resetNewIncomingRule();
-	            });
-	            isolationPolicyDetailsCtrl.rulesModel.getOutgoingRules(policy.policyName, 'default').then(function (result) {
-	                isolationPolicyDetailsCtrl.outgoingRules = result;
-	                isolationPolicyDetailsCtrl.resetNewOutgoingRule();
-	            });
-	        });
-	        getNetworks();
-	        getApplicationGroups();
-	        setMode();
-	    }
-	    IsolationPolicyDetailsComponent.prototype.returnToPolicies = function () {
-	        this.router.navigate(['../../../list', { policyTab: networkpoliciestabsctrl_1.PolicyTab.isolation }], { relativeTo: this.activatedRoute });
-	    };
-	    IsolationPolicyDetailsComponent.prototype.returnToPolicyDetails = function () {
-	        this.router.navigate(['../../details', this.policy.key], { relativeTo: this.activatedRoute });
-	    };
-	    IsolationPolicyDetailsComponent.prototype.editPolicy = function () {
-	        this.router.navigate(['../../edit', this.policy.key], { relativeTo: this.activatedRoute });
-	    };
-	    IsolationPolicyDetailsComponent.prototype.cancelEditing = function () {
-	        this.returnToPolicyDetails();
-	    };
-	    /**
-	     * Go back to policy details after done editing
-	     */
-	    IsolationPolicyDetailsComponent.prototype.doneEditing = function () {
-	        this.returnToPolicyDetails();
-	    };
-	    IsolationPolicyDetailsComponent.prototype.deletePolicy = function () {
-	        var isolationPolicyDetailsCtrl = this;
-	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.policiesModel.delete(isolationPolicyDetailsCtrl.policy).then(function successCallback(result) {
-	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.returnToPolicies();
-	        }, function errorCallback(result) {
-	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
-	        });
-	    };
-	    IsolationPolicyDetailsComponent.prototype.validateCIDR = function (ipaddress) {
-	        var cidrPattern = new RegExp(contivglobals_1.ContivGlobals.CIDR_REGEX);
-	        if (ipaddress == '') {
-	            return true;
-	        }
-	        if (cidrPattern.test(ipaddress)) {
-	            this.incorrectCIDR = false;
-	            return true;
-	        }
-	        this.incorrectCIDR = true;
-	        this.validateCIDRFlag = true;
-	        return false;
-	    };
-	    IsolationPolicyDetailsComponent.prototype.resetNewIncomingRule = function () {
-	        //Rule object to be created on server
-	        this.newIncomingRule = {
-	            ruleId: '',
-	            priority: 1,
-	            action: 'allow',
-	            fromEndpointGroup: '',
-	            fromNetwork: '',
-	            fromIpAddress: '',
-	            protocol: 'tcp',
-	            port: 0,
-	            direction: 'in',
-	            tenantName: 'default',
-	            policyName: this.policy.policyName
-	        };
-	        this.newIncomingSelectedApplicationGroup = '';
-	        this.newIncomingSelectedNetwork = '';
-	        this.disableIncomingNetworkSelection = false;
-	        this.disableIncomingApplicationGroupSelection = false;
-	        this.disableIncomingIPAddressSelection = false;
-	        this.incorrectCIDR = false;
-	        this.validateCIDRFlag = false;
-	    };
-	    IsolationPolicyDetailsComponent.prototype.resetNewOutgoingRule = function () {
-	        //Rule object to be created on server
-	        this.newOutgoingRule = {
-	            ruleId: '',
-	            priority: 1,
-	            action: 'allow',
-	            toEndpointGroup: '',
-	            toNetwork: '',
-	            toIpAddress: '',
-	            protocol: 'tcp',
-	            port: 0,
-	            direction: 'out',
-	            tenantName: 'default',
-	            policyName: this.policy.policyName
-	        };
-	        this.newOutgoingSelectedApplicationGroup = '';
-	        this.newOutgoingSelectedNetwork = '';
-	        this.disableOutgoingNetworkSelection = false;
-	        this.disableOutgoingApplicationGroupSelection = false;
-	        this.disableOutgoingIPAddressSelection = false;
-	        this.incorrectCIDR = false;
-	        this.validateCIDRFlag = false;
-	    };
-	    /**
-	     * Event handler to disable network selection box once application group is selected while creating a new
-	     * rule.
-	     */
-	    IsolationPolicyDetailsComponent.prototype.onChangeOutgoingApplicationGroupSelection = function (group) {
-	        if (group) {
-	            //If application group has been selected
-	            this.newOutgoingRule.toEndpointGroup = group;
-	            this.newOutgoingRule.toNetwork = '';
-	            this.disableOutgoingNetworkSelection = true;
-	        }
-	        else {
-	            //When 'none' is selected
-	            this.newOutgoingRule.toEndpointGroup = '';
-	            this.disableOutgoingNetworkSelection = false;
-	        }
-	    };
-	    /**
-	     * Event handler to disable network selection box once application group is selected while creating a new
-	     * rule.
-	     */
-	    IsolationPolicyDetailsComponent.prototype.onChangeIncomingApplicationGroupSelection = function (group) {
-	        if (group) {
-	            //If application group has been selected
-	            this.newIncomingRule.fromEndpointGroup = group;
-	            this.newIncomingRule.fromNetwork = '';
-	            this.disableIncomingNetworkSelection = true;
-	        }
-	        else {
-	            //When 'none' is selected
-	            this.newIncomingRule.fromEndpointGroup = '';
-	            this.disableOutgoingApplicationGroupSelection = false;
-	            this.disableIncomingNetworkSelection = false;
-	        }
-	    };
-	    /**
-	     * Event handler to disable application group selection box once network is selected while creating a new
-	     * rule.
-	     */
-	    IsolationPolicyDetailsComponent.prototype.onChangeOutgoingNetworkSelection = function (network) {
-	        if (network) {
-	            //If network has been selected
-	            this.newOutgoingRule.toNetwork = network;
-	            this.newOutgoingRule.ToEndpointGroup = '';
-	            this.disableOutgoingApplicationGroupSelection = true;
-	            this.disableOutgoingIPAddressSelection = true;
-	        }
-	        else {
-	            this.newOutgoingRule.toIpAddress = '';
-	            this.disableOutgoingApplicationGroupSelection = false;
-	            this.disableOutgoingIPAddressSelection = false;
-	        }
-	    };
-	    /**
-	     * Event handler to disable application group selection box once network is selected while creating a new
-	     * rule.
-	     */
-	    IsolationPolicyDetailsComponent.prototype.onChangeIncomingNetworkSelection = function (network) {
-	        if (network) {
-	            //If network has been selected
-	            this.newIncomingRule.fromNetwork = network;
-	            this.newIncomingRule.fromEndpointGroup = '';
-	            this.disableIncomingApplicationGroupSelection = true;
-	            this.disableIncomingIPAddressSelection = true;
-	        }
-	        else {
-	            this.newIncomingRule.fromNetwork = '';
-	            this.disableIncomingApplicationGroupSelection = false;
-	            this.disableIncomingIPAddressSelection = false;
-	        }
-	    };
-	    IsolationPolicyDetailsComponent.prototype.onChangeIncomingIPAddress = function () {
-	        if (this.newIncomingRule.fromIpAddress == '') {
-	            this.incorrectCIDR = false;
-	            this.disableIncomingNetworkSelection = false;
-	        }
-	        else {
-	            this.disableIncomingNetworkSelection = true;
-	        }
-	        if (this.validateCIDRFlag &&
-	            this.incorrectCIDR) {
-	            this.validateCIDR(this.newIncomingRule.fromIpAddress);
-	        }
-	    };
-	    IsolationPolicyDetailsComponent.prototype.onChangeOutgoingIPAddress = function () {
-	        if (this.newOutgoingRule.toIpAddress == '') {
-	            this.incorrectCIDR = false;
-	            this.disableOutgoingNetworkSelection = false;
-	        }
-	        else {
-	            this.disableOutgoingNetworkSelection = true;
-	        }
-	        if (this.validateCIDRFlag &&
-	            this.incorrectCIDR) {
-	            this.validateCIDR(this.newOutgoingRule.toIpAddress);
-	        }
-	    };
-	    /**
-	     * Generates rule id
-	     * TODO Make it cryptographically stronger once we have multiple users updating same policy
-	     */
-	    IsolationPolicyDetailsComponent.prototype.generateRuleId = function (rule) {
-	        rule.ruleId =
-	            (this.incomingRules.length + this.outgoingRules.length + 1).toString() + '-' +
-	                Date.now().toString();
-	    };
-	    /**
-	     * Rule is saved to server
-	     */
-	    IsolationPolicyDetailsComponent.prototype.addIncomingRule = function () {
-	        var isolationPolicyDetailsCtrl = this;
-	        if (isolationPolicyDetailsCtrl.validateCIDR(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress)) {
-	            isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.generateRuleId(isolationPolicyDetailsCtrl.newIncomingRule);
-	            isolationPolicyDetailsCtrl.newIncomingRule.key = isolationPolicyDetailsCtrl.rulesModel.generateKey(isolationPolicyDetailsCtrl.newIncomingRule);
-	            isolationPolicyDetailsCtrl.rulesModel.create(isolationPolicyDetailsCtrl.newIncomingRule, undefined).then(function successCallback(result) {
-	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	                isolationPolicyDetailsCtrl.incomingRules.push(result);
-	                isolationPolicyDetailsCtrl.resetNewIncomingRule();
-	            }, function errorCallback(result) {
-	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	                isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
-	            });
-	        }
-	    };
-	    /**
-	     * Rule is saved to server
-	     */
-	    IsolationPolicyDetailsComponent.prototype.addOutgoingRule = function () {
-	        var isolationPolicyDetailsCtrl = this;
-	        if (isolationPolicyDetailsCtrl.validateCIDR(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress)) {
-	            isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.generateRuleId(isolationPolicyDetailsCtrl.newOutgoingRule);
-	            isolationPolicyDetailsCtrl.newOutgoingRule.key = isolationPolicyDetailsCtrl.rulesModel.generateKey(isolationPolicyDetailsCtrl.newOutgoingRule);
-	            isolationPolicyDetailsCtrl.rulesModel.create(isolationPolicyDetailsCtrl.newOutgoingRule, undefined).then(function successCallback(result) {
-	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	                isolationPolicyDetailsCtrl.outgoingRules.push(result);
-	                isolationPolicyDetailsCtrl.resetNewOutgoingRule();
-	            }, function errorCallback(result) {
-	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	                isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
-	            });
-	        }
-	    };
-	    /**
-	     * Delete incoming rule from server
-	     */
-	    IsolationPolicyDetailsComponent.prototype.deleteIncomingRule = function (key) {
-	        var isolationPolicyDetailsCtrl = this;
-	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.rulesModel.deleteUsingKey(key, 'key', undefined).then(function successCallback(result) {
-	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            _.remove(isolationPolicyDetailsCtrl.incomingRules, function (n) {
-	                return n.key == key;
-	            });
-	        }, function errorCallback(result) {
-	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
-	        });
-	    };
-	    /**
-	     * Delete outgoing rule from server
-	     */
-	    IsolationPolicyDetailsComponent.prototype.deleteOutgoingRule = function (key) {
-	        var isolationPolicyDetailsCtrl = this;
-	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.rulesModel.deleteUsingKey(key, 'key', undefined).then(function successCallback(result) {
-	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            _.remove(isolationPolicyDetailsCtrl.outgoingRules, function (n) {
-	                return n.key == key;
-	            });
-	        }, function errorCallback(result) {
-	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
-	        });
-	    };
-	    IsolationPolicyDetailsComponent = __decorate([
-	        core_1.Component({
-	            selector: 'isolationpolicydetails',
-	            templateUrl: 'network_policies/isolationpolicydetails.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof rulesmodel_1.RulesModel !== 'undefined' && rulesmodel_1.RulesModel) === 'function' && _d) || Object, (typeof (_e = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _e) || Object, (typeof (_f = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _f) || Object, (typeof (_g = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _g) || Object])
-	    ], IsolationPolicyDetailsComponent);
-	    return IsolationPolicyDetailsComponent;
-	    var _a, _b, _c, _d, _e, _f, _g;
-	}());
-	exports.IsolationPolicyDetailsComponent = IsolationPolicyDetailsComponent;
-	
-
-/***/ },
-
-/***/ 198:
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Created by cshampur on 10/14/16.
-	 */
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var __param = (this && this.__param) || function (paramIndex, decorator) {
-	    return function (target, key) { decorator(target, key, paramIndex); }
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var ng1_1 = __webpack_require__(54);
-	var servicelbsmodel_1 = __webpack_require__(85);
-	var _ = __webpack_require__(35);
-	var ServicelbInfoComponent = (function () {
-	    function ServicelbInfoComponent($state, servicelbsModel, crudHelperService, ngZone) {
-	        this.$state = $state;
-	        this.servicelbsModel = servicelbsModel;
-	        this.crudHelperService = crudHelperService;
-	        this.infoselected = true;
-	        this.statskey = '';
-	        this.showLoader = true;
-	        this['showServerError'] = false;
-	        this['serverErrorMessage'] = '';
-	        this.mode = 'details';
-	        this.servicelb = { serviceName: '', networkName: '', ipAddress: '', selectors: [], ports: [], tenantName: 'default', key: '' };
-	        this.labelSelectors = [];
-	        this.modeChange = new core_1.EventEmitter();
-	        this.serviceName = new core_1.EventEmitter();
-	        this.ngZone = ngZone;
-	        this.servicelbInfoCtrl = this;
-	    }
-	    ServicelbInfoComponent.prototype.ngOnInit = function () {
-	        this.crudHelperService.startLoader(this);
-	        this.statskey = this.$state.params['key'];
-	        this.getServicelbs(false);
-	    };
-	    ServicelbInfoComponent.prototype.returnToServicelbDetails = function () {
-	        this.mode = "details";
-	        this.modeChange.emit(this.mode);
-	    };
-	    ServicelbInfoComponent.prototype.returnToServicelbs = function () {
-	        this.$state.go('contiv.menu.servicelbs.list');
-	    };
-	    ServicelbInfoComponent.prototype.getServicelbs = function (reload) {
-	        var servicelbInfoCtrl = this;
-	        this.servicelbsModel.getModelByKey(this.statskey, false, 'key')
-	            .then(function (result) {
-	            servicelbInfoCtrl['servicelb'] = result;
-	            servicelbInfoCtrl.createEditViewLabels();
-	            servicelbInfoCtrl.serviceName.emit(servicelbInfoCtrl.servicelb.serviceName);
-	            servicelbInfoCtrl.ngZone.run(function () {
-	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	            });
-	        }, function (error) {
-	            servicelbInfoCtrl.ngZone.run(function () {
-	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	            });
-	        });
-	    };
-	    ServicelbInfoComponent.prototype.createEditViewLabels = function () {
-	        var _this = this;
-	        this.servicelb.selectors.forEach(function (item) {
-	            var selector = {
-	                name: item.split('=')[0],
-	                value: item.split('=')[1]
-	            };
-	            _this.labelSelectors.push(selector);
-	        });
-	    };
-	    ServicelbInfoComponent.prototype.createLabelSelectorStrings = function () {
-	        var _this = this;
-	        var servicelbInfoCtrl = this;
-	        this.servicelb.selectors = [];
-	        this.labelSelectors.forEach(function (selector) {
-	            var selectorString = selector.name + "=" + selector.value;
-	            _this.servicelb.selectors.push(selectorString);
-	        });
-	    };
-	    ServicelbInfoComponent.prototype.saveServicelb = function () {
-	        this.crudHelperService.hideServerError(this);
-	        this.crudHelperService.startLoader(this);
-	        var existingLabelsView = this.servicelb.selectors.slice();
-	        this.createLabelSelectorStrings();
-	        var servicelbInfoCtrl = this;
-	        this.servicelbsModel.save(this.servicelb)
-	            .then(function (result) {
-	            servicelbInfoCtrl.ngZone.run(function () {
-	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	            });
-	            servicelbInfoCtrl.returnToServicelbDetails();
-	        }, function (error) {
-	            servicelbInfoCtrl.servicelb.selectors = existingLabelsView;
-	            servicelbInfoCtrl.ngZone.run(function () {
-	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	                servicelbInfoCtrl.crudHelperService.showServerError(servicelbInfoCtrl, error);
-	            });
-	        });
-	    };
-	    ServicelbInfoComponent.prototype.deleteServicelb = function () {
-	        this.crudHelperService.hideServerError(this);
-	        this.crudHelperService.startLoader(this);
-	        var servicelbInfoCtrl = this;
-	        this.servicelbsModel.delete(this.servicelb)
-	            .then(function (result) {
-	            servicelbInfoCtrl.ngZone.run(function () {
-	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	            });
-	            servicelbInfoCtrl.returnToServicelbs();
-	        }, function (error) {
-	            servicelbInfoCtrl.ngZone.run(function () {
-	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	                servicelbInfoCtrl.crudHelperService.showServerError(servicelbInfoCtrl, error);
-	            });
-	        });
-	    };
-	    ServicelbInfoComponent.prototype.cancelEditing = function () {
-	        this.returnToServicelbDetails();
-	    };
-	    __decorate([
-	        core_1.Input('mode'), 
-	        __metadata('design:type', String)
-	    ], ServicelbInfoComponent.prototype, "mode", void 0);
-	    __decorate([
-	        core_1.Output('modeChange'), 
-	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
-	    ], ServicelbInfoComponent.prototype, "modeChange", void 0);
-	    __decorate([
-	        core_1.Output('serviceName'), 
-	        __metadata('design:type', (typeof (_b = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _b) || Object)
-	    ], ServicelbInfoComponent.prototype, "serviceName", void 0);
-	    ServicelbInfoComponent = __decorate([
-	        core_1.Component({
-	            selector: 'servicelb-info',
-	            templateUrl: "service_lbs/servicelbinfo.html"
-	        }),
-	        __param(0, core_1.Inject('$state')), 
-	        __metadata('design:paramtypes', [(typeof (_c = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _c) || Object, (typeof (_d = typeof servicelbsmodel_1.ServicelbsModel !== 'undefined' && servicelbsmodel_1.ServicelbsModel) === 'function' && _d) || Object, (typeof (_e = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _e) || Object, (typeof (_f = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _f) || Object])
-	    ], ServicelbInfoComponent);
-	    return ServicelbInfoComponent;
-	    var _a, _b, _c, _d, _e, _f;
-	}());
-	exports.ServicelbInfoComponent = ServicelbInfoComponent;
-	
-
-/***/ },
-
-/***/ 199:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var rxjs_1 = __webpack_require__(44);
-	var inspectservice_1 = __webpack_require__(140);
-	var util_1 = __webpack_require__(81);
-	var servicelbsmodel_1 = __webpack_require__(85);
-	var ServicelbStatComponent = (function () {
-	    function ServicelbStatComponent(servicelbsModel, crudHelperService, inspectSerrvice, ngZone) {
-	        var _this = this;
-	        this.crudHelperService = crudHelperService;
-	        this.servicelbsModel = servicelbsModel;
-	        this.inspectSerrvice = inspectSerrvice;
-	        this.showLoader = true;
-	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
-	            if (_this.statkey != '')
-	                _this.getServicelbInspect(true);
-	        });
-	        this.servicelbInspectStats = {
-	            allocatedAddressesCount: '',
-	            allocatedIPAddresses: '',
-	            dnsServerIP: '',
-	            externalPktTag: '',
-	            numEndpoints: '',
-	            pktTag: ''
-	        };
-	        this.config = { serviceName: '', };
-	        this.providers = [];
-	        this.filteredproviders = [];
-	        this.providerDetails = {};
-	        this.ngZone = ngZone;
-	        this.servicelbStatsCtrl = this;
-	        this.statkey = '';
-	    }
-	    ServicelbStatComponent.prototype.ngOnInit = function () {
-	        this.crudHelperService.startLoader(this);
-	        if (this.statkey != '')
-	            this.getServicelbInspect(false);
-	    };
-	    ServicelbStatComponent.prototype.getServicelbInspect = function (reload) {
-	        var servicelbStatsCtrl = this;
-	        this.servicelbsModel.getInspectByKey(this.statkey, ContivGlobals.SERVICELBS_INSPECT_ENDPOINT, reload)
-	            .then(function (result) {
-	            servicelbStatsCtrl['servicelbInspectStats'] = result['Oper'];
-	            servicelbStatsCtrl['config'] = result['Config'];
-	            if (!util_1.isUndefined(result['Oper'].providers)) {
-	                var providerDetails = servicelbStatsCtrl.inspectSerrvice.buildEndPoints(result['Oper'].providers);
-	                if (servicelbStatsCtrl.inspectSerrvice.checkContainerChanged(servicelbStatsCtrl['providerDetails'], providerDetails)) {
-	                    servicelbStatsCtrl['providers'] = result['Oper'].providers;
-	                    servicelbStatsCtrl['providerDetails'] = providerDetails;
-	                }
-	            }
-	            else {
-	                servicelbStatsCtrl['providers'] = [];
-	                servicelbStatsCtrl['providerDetails'] = {};
-	            }
-	            servicelbStatsCtrl.ngZone.run(function () {
-	                servicelbStatsCtrl.crudHelperService.stopLoader(servicelbStatsCtrl);
-	            });
-	        }, function (error) {
-	            servicelbStatsCtrl.ngZone.run(function () {
-	                servicelbStatsCtrl.crudHelperService.stopLoader(servicelbStatsCtrl);
-	            });
-	        });
-	    };
-	    ServicelbStatComponent.prototype.ngOnDestroy = function () {
-	        this.refresh.unsubscribe();
-	    };
-	    __decorate([
-	        core_1.Input('statkey'), 
-	        __metadata('design:type', String)
-	    ], ServicelbStatComponent.prototype, "statkey", void 0);
-	    ServicelbStatComponent = __decorate([
-	        core_1.Component({
-	            selector: 'servicelb-stat',
-	            templateUrl: 'service_lbs/servicelbstats.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof servicelbsmodel_1.ServicelbsModel !== 'undefined' && servicelbsmodel_1.ServicelbsModel) === 'function' && _a) || Object, (typeof (_b = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _b) || Object, (typeof (_c = typeof inspectservice_1.InspectService !== 'undefined' && inspectservice_1.InspectService) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
-	    ], ServicelbStatComponent);
-	    return ServicelbStatComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.ServicelbStatComponent = ServicelbStatComponent;
-	
-
-/***/ },
-
-/***/ 200:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var nodesservice_1 = __webpack_require__(191);
-	var ClusterSettingsComponent = (function () {
-	    function ClusterSettingsComponent(crudHelperService, nodesService) {
-	        this.nodesService = nodesService;
-	        this.crudHelperService = crudHelperService;
-	        this.showLoader = true;
-	        this.extra_vars = { control_interface: '', netplugin_if: '', service_vip: '', scheduler_provider: '', ucp_bootstrap_node_name: '', cluster_name: '',
-	            contiv_network_mode: '', fwd_mode: '', apic_url: '', apic_username: '', apic_password: '', apic_leaf_nodes: '', apic_phys_domain: '',
-	            apic_epg_bridge_domain: '', apic_contracts_unrestricted_mode: '' };
-	        this.ansibleVariables = [];
-	        this.envVariables = [];
-	        this.showServerError = false;
-	        this.serverErrorMessage = '';
-	        this.nodeOpsObj = { nodes: [] };
-	        this.clusterSettingCtrl = this;
-	    }
-	    ClusterSettingsComponent.prototype.ngOnInit = function () {
-	        this.crudHelperService.startLoader(this);
-	        var clusterSettingCtrl = this;
-	        this.nodesService.getSettings(clusterSettingCtrl)
-	            .then(function (result) {
-	            clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
-	            clusterSettingCtrl.crudHelperService.hideServerError(clusterSettingCtrl);
-	        }, function (error) {
-	            clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
-	            clusterSettingCtrl.crudHelperService.hideServerError(clusterSettingCtrl);
-	        });
-	    };
-	    ClusterSettingsComponent.prototype.updateClusterSettings = function (formvalid) {
-	        var clusterSettingCtrl = this;
-	        if (formvalid) {
-	            this.crudHelperService.hideServerError(this);
-	            this.crudHelperService.startLoader(this);
-	            this.nodesService.cleanupExtraVars(this);
-	            this.nodesService.createExtraVars(this);
-	            this.nodesService.updateSettings(this.nodeOpsObj)
-	                .then(function (result) {
-	                clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
-	            }, function (error) {
-	                clusterSettingCtrl.crudHelperService.stopLoader(clusterSettingCtrl);
-	                clusterSettingCtrl.crudHelperService.showServerError(clusterSettingCtrl, error);
-	            });
-	        }
-	    };
-	    ClusterSettingsComponent = __decorate([
-	        core_1.Component({
-	            selector: 'clustersettings',
-	            templateUrl: 'settings/clustersettings.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof nodesservice_1.NodesService !== 'undefined' && nodesservice_1.NodesService) === 'function' && _b) || Object])
-	    ], ClusterSettingsComponent);
-	    return ClusterSettingsComponent;
-	    var _a, _b;
-	}());
-	exports.ClusterSettingsComponent = ClusterSettingsComponent;
-	
-
-/***/ },
-
-/***/ 201:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var networkservice_1 = __webpack_require__(190);
-	var contivglobals_1 = __webpack_require__(37);
-	var NetworkSettingsComponent = (function () {
-	    function NetworkSettingsComponent(crudHelperService, networkService) {
-	        this.crudHelperService = crudHelperService;
-	        this.networkService = networkService;
-	        this.setting = {};
-	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
-	        this.vxlanPattern = contivglobals_1.ContivGlobals.VXLAN_REGEX;
-	        var networkSettingCtrl = this;
-	        function getNetworkSettings() {
-	            networkSettingCtrl.networkService.getSettings().then(function successCallback(result) {
-	                networkSettingCtrl.setting = result;
-	            }, function errorCallback(result) {
-	            });
-	        }
-	        getNetworkSettings();
-	        networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
-	    }
-	    NetworkSettingsComponent.prototype.updateNetworkSettings = function (validform) {
-	        var networkSettingCtrl = this;
-	        if (validform) {
-	            networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
-	            networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
-	            networkSettingCtrl.networkService.updateSettings(networkSettingCtrl.setting).then(function successCallback(result) {
-	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	            }, function errorCallback(result) {
-	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	                networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, result._body);
-	            });
-	        }
-	    };
-	    NetworkSettingsComponent = __decorate([
-	        core_1.Component({
-	            selector: 'networksetting',
-	            templateUrl: 'settings/networksettings.html'
-	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof networkservice_1.NetworkService !== 'undefined' && networkservice_1.NetworkService) === 'function' && _b) || Object])
-	    ], NetworkSettingsComponent);
-	    return NetworkSettingsComponent;
-	    var _a, _b;
-	}());
-	exports.NetworkSettingsComponent = NetworkSettingsComponent;
-	
-
-/***/ },
-
-/***/ 202:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	/**
-	 * Created by vjain3 on 11/3/16.
-	 */
-	var core_1 = __webpack_require__(3);
-	var SettingsMenuComponent = (function () {
-	    function SettingsMenuComponent() {
-	    }
-	    SettingsMenuComponent = __decorate([
-	        core_1.Component({
-	            selector: 'settingsmenu',
-	            templateUrl: 'settings/settingsmenu.html'
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], SettingsMenuComponent);
-	    return SettingsMenuComponent;
-	}());
-	exports.SettingsMenuComponent = SettingsMenuComponent;
-	
-
-/***/ },
-
-/***/ 273:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module common */ /** for typedoc */
-	__export(__webpack_require__(5));
-	__export(__webpack_require__(19));
-	__export(__webpack_require__(100));
-	__export(__webpack_require__(16));
-	__export(__webpack_require__(9));
-	__export(__webpack_require__(124));
-	__export(__webpack_require__(40));
-	__export(__webpack_require__(46));
-	//# sourceMappingURL=module.js.map
-
-/***/ },
-
-/***/ 274:
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @module common */ /** */
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	__export(__webpack_require__(273));
-	__export(__webpack_require__(287));
-	__export(__webpack_require__(288));
-	__export(__webpack_require__(289));
-	__export(__webpack_require__(290));
-	__export(__webpack_require__(291));
-	__export(__webpack_require__(292));
-	__export(__webpack_require__(293));
-	__export(__webpack_require__(174));
-	var router_1 = __webpack_require__(128);
-	exports.UIRouter = router_1.UIRouter;
-	//# sourceMappingURL=core.js.map
-
-/***/ },
-
-/***/ 275:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var coreservices_1 = __webpack_require__(19);
-	/**
-	 * A [[TransitionHookFn]] that lazy loads a state tree.
-	 *
-	 * When transitioning to a state "abc" which has a `lazyLoad` function defined:
-	 * - Invoke the `lazyLoad` function
-	 *   - The function should return a promise for an array of lazy loaded [[StateDeclaration]]s
-	 * - Wait for the promise to resolve
-	 * - Deregister the original state "abc"
-	 *   - The original state definition is a placeholder for the lazy loaded states
-	 * - Register the new states
-	 * - Retry the transition
-	 *
-	 * See [[StateDeclaration.lazyLoad]]
-	 */
-	var lazyLoadHook = function (transition) {
-	    var toState = transition.to();
-	    var registry = transition.router.stateRegistry;
-	    function retryOriginalTransition() {
-	        if (transition.options().source === 'url') {
-	            var loc = coreservices_1.services.location, path_1 = loc.path(), search_1 = loc.search(), hash_1 = loc.hash();
-	            var matchState = function (state) { return [state, state.url && state.url.exec(path_1, search_1, hash_1)]; };
-	            var matches = registry.get().map(function (s) { return s.$$state(); }).map(matchState).filter(function (_a) {
-	                var state = _a[0], params = _a[1];
-	                return !!params;
-	            });
-	            if (matches.length) {
-	                var _a = matches[0], state = _a[0], params = _a[1];
-	                return transition.router.stateService.target(state, params, transition.options());
-	            }
-	            transition.router.urlRouter.sync();
-	        }
-	        // The original transition was not triggered via url sync
-	        // The lazy state should be loaded now, so re-try the original transition
-	        var orig = transition.targetState();
-	        return transition.router.stateService.target(orig.identifier(), orig.params(), orig.options());
-	    }
-	    /**
-	     * Replace the placeholder state with the newly loaded states from the NgModule.
-	     */
-	    function updateStateRegistry(result) {
-	        // deregister placeholder state
-	        registry.deregister(transition.$to());
-	        if (result && Array.isArray(result.states)) {
-	            result.states.forEach(function (state) { return registry.register(state); });
-	        }
-	    }
-	    var hook = toState.lazyLoad;
-	    // Store/get the lazy load promise on/from the hookfn so it doesn't get re-invoked
-	    var promise = hook['_promise'];
-	    if (!promise) {
-	        promise = hook['_promise'] = hook(transition).then(updateStateRegistry);
-	        var cleanup = function () { return delete hook['_promise']; };
-	        promise.then(cleanup, cleanup);
-	    }
-	    return promise.then(retryOriginalTransition);
-	};
-	exports.registerLazyLoadHook = function (transitionService) {
-	    return transitionService.onBefore({ to: function (state) { return !!state.lazyLoad; } }, lazyLoadHook);
-	};
-	//# sourceMappingURL=lazyLoadStates.js.map
-
-/***/ },
-
-/***/ 276:
-/***/ function(module, exports) {
-
-	"use strict";
-	/**
-	 * A factory which creates an onEnter, onExit or onRetain transition hook function
-	 *
-	 * The returned function invokes the (for instance) state.onEnter hook when the
-	 * state is being entered.
-	 *
-	 * @hidden
-	 */
-	function makeEnterExitRetainHook(hookName) {
-	    return function (transition, state) {
-	        var hookFn = state[hookName];
-	        return hookFn(transition, state);
-	    };
-	}
-	/**
-	 * The [[TransitionStateHookFn]] for onExit
-	 *
-	 * When the state is being exited, the state's .onExit function is invoked.
-	 *
-	 * Registered using `transitionService.onExit({ exiting: (state) => !!state.onExit }, onExitHook);`
-	 *
-	 * See: [[IHookRegistry.onExit]]
-	 */
-	var onExitHook = makeEnterExitRetainHook('onExit');
-	exports.registerOnExitHook = function (transitionService) {
-	    return transitionService.onExit({ exiting: function (state) { return !!state.onExit; } }, onExitHook);
-	};
-	/**
-	 * The [[TransitionStateHookFn]] for onRetain
-	 *
-	 * When the state was already entered, and is not being exited or re-entered, the state's .onRetain function is invoked.
-	 *
-	 * Registered using `transitionService.onRetain({ retained: (state) => !!state.onRetain }, onRetainHook);`
-	 *
-	 * See: [[IHookRegistry.onRetain]]
-	 */
-	var onRetainHook = makeEnterExitRetainHook('onRetain');
-	exports.registerOnRetainHook = function (transitionService) {
-	    return transitionService.onRetain({ retained: function (state) { return !!state.onRetain; } }, onRetainHook);
-	};
-	/**
-	 * The [[TransitionStateHookFn]] for onEnter
-	 *
-	 * When the state is being entered, the state's .onEnter function is invoked.
-	 *
-	 * Registered using `transitionService.onEnter({ entering: (state) => !!state.onEnter }, onEnterHook);`
-	 *
-	 * See: [[IHookRegistry.onEnter]]
-	 */
-	var onEnterHook = makeEnterExitRetainHook('onEnter');
-	exports.registerOnEnterHook = function (transitionService) {
-	    return transitionService.onEnter({ entering: function (state) { return !!state.onEnter; } }, onEnterHook);
-	};
-	//# sourceMappingURL=onEnterExitRetain.js.map
-
-/***/ },
-
-/***/ 277:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module hooks */ /** */
-	var predicates_1 = __webpack_require__(9);
-	var coreservices_1 = __webpack_require__(19);
-	var targetState_1 = __webpack_require__(74);
-	/**
-	 * A [[TransitionHookFn]] that redirects to a different state or params
-	 *
-	 * Registered using `transitionService.onStart({ to: (state) => !!state.redirectTo }, redirectHook);`
-	 *
-	 * See [[StateDeclaration.redirectTo]]
-	 */
-	var redirectToHook = function (trans) {
-	    var redirect = trans.to().redirectTo;
-	    if (!redirect)
-	        return;
-	    function handleResult(result) {
-	        var $state = trans.router.stateService;
-	        if (result instanceof targetState_1.TargetState)
-	            return result;
-	        if (predicates_1.isString(result))
-	            return $state.target(result, trans.params(), trans.options());
-	        if (result['state'] || result['params'])
-	            return $state.target(result['state'] || trans.to(), result['params'] || trans.params(), trans.options());
-	    }
-	    if (predicates_1.isFunction(redirect)) {
-	        return coreservices_1.services.$q.when(redirect(trans)).then(handleResult);
-	    }
-	    return handleResult(redirect);
-	};
-	exports.registerRedirectToHook = function (transitionService) {
-	    return transitionService.onStart({ to: function (state) { return !!state.redirectTo; } }, redirectToHook);
-	};
-	//# sourceMappingURL=redirectTo.js.map
-
-/***/ },
-
-/***/ 278:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module hooks */ /** for typedoc */
-	var common_1 = __webpack_require__(5);
-	var resolveContext_1 = __webpack_require__(47);
-	var hof_1 = __webpack_require__(16);
-	/**
-	 * A [[TransitionHookFn]] which resolves all EAGER Resolvables in the To Path
-	 *
-	 * Registered using `transitionService.onStart({}, eagerResolvePath);`
-	 *
-	 * When a Transition starts, this hook resolves all the EAGER Resolvables, which the transition then waits for.
-	 *
-	 * See [[StateDeclaration.resolve]]
-	 */
-	var eagerResolvePath = function (trans) {
-	    return new resolveContext_1.ResolveContext(trans.treeChanges().to)
-	        .resolvePath("EAGER", trans)
-	        .then(common_1.noop);
-	};
-	exports.registerEagerResolvePath = function (transitionService) {
-	    return transitionService.onStart({}, eagerResolvePath, { priority: 1000 });
-	};
-	/**
-	 * A [[TransitionHookFn]] which resolves all LAZY Resolvables for the state (and all its ancestors) in the To Path
-	 *
-	 * Registered using `transitionService.onEnter({ entering: () => true }, lazyResolveState);`
-	 *
-	 * When a State is being entered, this hook resolves all the Resolvables for this state, which the transition then waits for.
-	 *
-	 * See [[StateDeclaration.resolve]]
-	 */
-	var lazyResolveState = function (trans, state) {
-	    return new resolveContext_1.ResolveContext(trans.treeChanges().to)
-	        .subContext(state)
-	        .resolvePath("LAZY", trans)
-	        .then(common_1.noop);
-	};
-	exports.registerLazyResolveState = function (transitionService) {
-	    return transitionService.onEnter({ entering: hof_1.val(true) }, lazyResolveState, { priority: 1000 });
-	};
-	//# sourceMappingURL=resolve.js.map
-
-/***/ },
-
-/***/ 279:
-/***/ function(module, exports) {
-
-	"use strict";
-	/**
-	 * A [[TransitionHookFn]] which updates the URL after a successful transition
-	 *
-	 * Registered using `transitionService.onSuccess({}, updateUrl);`
-	 */
-	var updateUrl = function (transition) {
-	    var options = transition.options();
-	    var $state = transition.router.stateService;
-	    var $urlRouter = transition.router.urlRouter;
-	    // Dont update the url in these situations:
-	    // The transition was triggered by a URL sync (options.source === 'url')
-	    // The user doesn't want the url to update (options.location === false)
-	    // The destination state, and all parents have no navigable url
-	    if (options.source !== 'url' && options.location && $state.$current.navigable) {
-	        var urlOptions = { replace: options.location === 'replace' };
-	        $urlRouter.push($state.$current.navigable.url, $state.params, urlOptions);
-	    }
-	    $urlRouter.update(true);
-	};
-	exports.registerUpdateUrl = function (transitionService) {
-	    return transitionService.onSuccess({}, updateUrl, { priority: 9999 });
-	};
-	//# sourceMappingURL=url.js.map
-
-/***/ },
-
-/***/ 280:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module hooks */ /** for typedoc */
-	var common_1 = __webpack_require__(5);
-	var coreservices_1 = __webpack_require__(19);
-	/**
-	 * A [[TransitionHookFn]] which waits for the views to load
-	 *
-	 * Registered using `transitionService.onStart({}, loadEnteringViews);`
-	 *
-	 * Allows the views to do async work in [[ViewConfig.load]] before the transition continues.
-	 * In angular 1, this includes loading the templates.
-	 */
-	var loadEnteringViews = function (transition) {
-	    var enteringViews = transition.views("entering");
-	    if (!enteringViews.length)
-	        return;
-	    return coreservices_1.services.$q.all(enteringViews.map(function (view) { return view.load(); })).then(common_1.noop);
-	};
-	exports.registerLoadEnteringViews = function (transitionService) {
-	    return transitionService.onStart({}, loadEnteringViews);
-	};
-	/**
-	 * A [[TransitionHookFn]] which activates the new views when a transition is successful.
-	 *
-	 * Registered using `transitionService.onSuccess({}, activateViews);`
-	 *
-	 * After a transition is complete, this hook deactivates the old views from the previous state,
-	 * and activates the new views from the destination state.
-	 *
-	 * See [[ViewService]]
-	 */
-	var activateViews = function (transition) {
-	    var enteringViews = transition.views("entering");
-	    var exitingViews = transition.views("exiting");
-	    if (!enteringViews.length && !exitingViews.length)
-	        return;
-	    var $view = transition.router.viewService;
-	    exitingViews.forEach(function (vc) { return $view.deactivateViewConfig(vc); });
-	    enteringViews.forEach(function (vc) { return $view.activateViewConfig(vc); });
-	    $view.sync();
-	};
-	exports.registerActivateViews = function (transitionService) {
-	    return transitionService.onSuccess({}, activateViews);
-	};
-	//# sourceMappingURL=views.js.map
-
-/***/ },
-
-/***/ 281:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/**
-	 * These are the UI-Router angular 1 directives.
-	 *
-	 * These directives are used in templates to create viewports and navigate to states
-	 *
-	 * @preferred @module ng1_directives
-	 */ /** for typedoc */
-	var angular = __webpack_require__(64);
-	var common_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(9);
-	var hof_1 = __webpack_require__(16);
-	/** @hidden */
-	function parseStateRef(ref, current) {
-	    var preparsed = ref.match(/^\s*({[^}]*})\s*$/), parsed;
-	    if (preparsed)
-	        ref = current + '(' + preparsed[1] + ')';
-	    parsed = ref.replace(/\n/g, " ").match(/^([^(]+?)\s*(\((.*)\))?$/);
-	    if (!parsed || parsed.length !== 4)
-	        throw new Error("Invalid state ref '" + ref + "'");
-	    return { state: parsed[1], paramExpr: parsed[3] || null };
-	}
-	/** @hidden */
-	function stateContext(el) {
-	    var $uiView = el.parent().inheritedData('$uiView');
-	    var path = hof_1.parse('$cfg.path')($uiView);
-	    return path ? common_1.tail(path).state.name : undefined;
-	}
-	/** @hidden */
-	function getTypeInfo(el) {
-	    // SVGAElement does not use the href attribute, but rather the 'xlinkHref' attribute.
-	    var isSvg = Object.prototype.toString.call(el.prop('href')) === '[object SVGAnimatedString]';
-	    var isForm = el[0].nodeName === "FORM";
-	    return {
-	        attr: isForm ? "action" : (isSvg ? 'xlink:href' : 'href'),
-	        isAnchor: el.prop("tagName").toUpperCase() === "A",
-	        clickable: !isForm
-	    };
-	}
-	/** @hidden */
-	function clickHook(el, $state, $timeout, type, current) {
-	    return function (e) {
-	        var button = e.which || e.button, target = current();
-	        if (!(button > 1 || e.ctrlKey || e.metaKey || e.shiftKey || el.attr('target'))) {
-	            // HACK: This is to allow ng-clicks to be processed before the transition is initiated:
-	            var transition = $timeout(function () {
-	                $state.go(target.state, target.params, target.options);
-	            });
-	            e.preventDefault();
-	            // if the state has no URL, ignore one preventDefault from the <a> directive.
-	            var ignorePreventDefaultCount = type.isAnchor && !target.href ? 1 : 0;
-	            e.preventDefault = function () {
-	                if (ignorePreventDefaultCount-- <= 0)
-	                    $timeout.cancel(transition);
-	            };
-	        }
-	    };
-	}
-	/** @hidden */
-	function defaultOpts(el, $state) {
-	    return {
-	        relative: stateContext(el) || $state.$current,
-	        inherit: true,
-	        source: "sref"
-	    };
-	}
-	/**
-	 * `ui-sref`: A directive for linking to a state
-	 *
-	 * A directive that binds a link (`<a>` tag) to a state.
-	 * If the state has an associated URL, the directive will automatically generate and
-	 * update the `href` attribute via the [[StateService.href]]  method.
-	 * Clicking the link will trigger a state transition with optional parameters.
-	 *
-	 * Also middle-clicking, right-clicking, and ctrl-clicking on the link will be
-	 * handled natively by the browser.
-	 *
-	 * You can also use relative state paths within ui-sref, just like the relative
-	 * paths passed to `$state.go()`.
-	 * You just need to be aware that the path is relative to the state that the link lives in.
-	 * In other words, the state that created the view containing the link.
-	 *
-	 * You can specify options to pass to [[StateService.go]] using the `ui-sref-opts` attribute.
-	 * Options are restricted to `location`, `inherit`, and `reload`.
-	 *
-	 * Here's an example of how you'd use ui-sref and how it would compile.
-	 * If you have the following template:
-	 *
-	 * @example
-	 * ```html
-	 *
-	 * <pre>
-	 * <a ui-sref="home">Home</a> | <a ui-sref="about">About</a> | <a ui-sref="{page: 2}">Next page</a>
-	 *
-	 * <ul>
-	 *     <li ng-repeat="contact in contacts">
-	 *         <a ui-sref="contacts.detail({ id: contact.id })">{{ contact.name }}</a>
-	 *     </li>
-	 * </ul>
-	 * </pre>
-	 * ```
-	 *
-	 * Then the compiled html would be (assuming Html5Mode is off and current state is contacts):
-	 *
-	 * ```html
-	 *
-	 * <pre>
-	 * <a href="#/home" ui-sref="home">Home</a> | <a href="#/about" ui-sref="about">About</a> | <a href="#/contacts?page=2" ui-sref="{page: 2}">Next page</a>
-	 *
-	 * <ul>
-	 *     <li ng-repeat="contact in contacts">
-	 *         <a href="#/contacts/1" ui-sref="contacts.detail({ id: contact.id })">Joe</a>
-	 *     </li>
-	 *     <li ng-repeat="contact in contacts">
-	 *         <a href="#/contacts/2" ui-sref="contacts.detail({ id: contact.id })">Alice</a>
-	 *     </li>
-	 *     <li ng-repeat="contact in contacts">
-	 *         <a href="#/contacts/3" ui-sref="contacts.detail({ id: contact.id })">Bob</a>
-	 *     </li>
-	 * </ul>
-	 *
-	 * <a ui-sref="home" ui-sref-opts="{reload: true}">Home</a>
-	 * </pre>
-	 * ```
-	 *
-	 * @param {string} ui-sref 'stateName' can be any valid absolute or relative state
-	 * @param {Object} ui-sref-opts options to pass to [[StateService.go]]
-	 */
-	var uiSref = ['$state', '$timeout',
-	    function $StateRefDirective($state, $timeout) {
-	        return {
-	            restrict: 'A',
-	            require: ['?^uiSrefActive', '?^uiSrefActiveEq'],
-	            link: function (scope, element, attrs, uiSrefActive) {
-	                var ref = parseStateRef(attrs.uiSref, $state.current.name);
-	                var def = { state: ref.state, href: null, params: null, options: null };
-	                var type = getTypeInfo(element);
-	                var active = uiSrefActive[1] || uiSrefActive[0];
-	                var unlinkInfoFn = null;
-	                var hookFn;
-	                def.options = common_1.extend(defaultOpts(element, $state), attrs.uiSrefOpts ? scope.$eval(attrs.uiSrefOpts) : {});
-	                var update = function (val) {
-	                    if (val)
-	                        def.params = angular.copy(val);
-	                    def.href = $state.href(ref.state, def.params, def.options);
-	                    if (unlinkInfoFn)
-	                        unlinkInfoFn();
-	                    if (active)
-	                        unlinkInfoFn = active.$$addStateInfo(ref.state, def.params);
-	                    if (def.href !== null)
-	                        attrs.$set(type.attr, def.href);
-	                };
-	                if (ref.paramExpr) {
-	                    scope.$watch(ref.paramExpr, function (val) { if (val !== def.params)
-	                        update(val); }, true);
-	                    def.params = angular.copy(scope.$eval(ref.paramExpr));
-	                }
-	                update();
-	                if (!type.clickable)
-	                    return;
-	                hookFn = clickHook(element, $state, $timeout, type, function () { return def; });
-	                element.on("click", hookFn);
-	                scope.$on('$destroy', function () {
-	                    element.off("click", hookFn);
-	                });
-	            }
-	        };
-	    }];
-	/**
-	 * `ui-state`: A dynamic version of `ui-sref`
-	 *
-	 * Much like ui-sref, but will accept named $scope properties to evaluate for a state definition,
-	 * params and override options.
-	 *
-	 * @example
-	 * ```html
-	 *
-	 * <li ng-repeat="nav in navlinks">
-	 *   <a ui-state="nav.statename">{{nav.description}}</a>
-	 * </li>
-	 *
-	 * @param {string} ui-state 'stateName' can be any valid absolute or relative state
-	 * @param {Object} ui-state-params params to pass to [[StateService.href]]
-	 * @param {Object} ui-state-opts options to pass to [[StateService.go]]
-	 */
-	var uiState = ['$state', '$timeout',
-	    function $StateRefDynamicDirective($state, $timeout) {
-	        return {
-	            restrict: 'A',
-	            require: ['?^uiSrefActive', '?^uiSrefActiveEq'],
-	            link: function (scope, element, attrs, uiSrefActive) {
-	                var type = getTypeInfo(element);
-	                var active = uiSrefActive[1] || uiSrefActive[0];
-	                var group = [attrs.uiState, attrs.uiStateParams || null, attrs.uiStateOpts || null];
-	                var watch = '[' + group.map(function (val) { return val || 'null'; }).join(', ') + ']';
-	                var def = { state: null, params: null, options: null, href: null };
-	                var unlinkInfoFn = null;
-	                var hookFn;
-	                function runStateRefLink(group) {
-	                    def.state = group[0];
-	                    def.params = group[1];
-	                    def.options = group[2];
-	                    def.href = $state.href(def.state, def.params, def.options);
-	                    if (unlinkInfoFn)
-	                        unlinkInfoFn();
-	                    if (active)
-	                        unlinkInfoFn = active.$$addStateInfo(def.state, def.params);
-	                    if (def.href)
-	                        attrs.$set(type.attr, def.href);
-	                }
-	                scope.$watch(watch, runStateRefLink, true);
-	                runStateRefLink(scope.$eval(watch));
-	                if (!type.clickable)
-	                    return;
-	                hookFn = clickHook(element, $state, $timeout, type, function () { return def; });
-	                element.on("click", hookFn);
-	                scope.$on('$destroy', function () {
-	                    element.off("click", hookFn);
-	                });
-	            }
-	        };
-	    }];
-	/**
-	 * `ui-sref-active` and `ui-sref-active-eq`: A directive that adds a CSS class when a `ui-sref` is active
-	 *
-	 * A directive working alongside ui-sref to add classes to an element when the
-	 * related ui-sref directive's state is active, and removing them when it is inactive.
-	 * The primary use-case is to simplify the special appearance of navigation menus
-	 * relying on `ui-sref`, by having the "active" state's menu button appear different,
-	 * distinguishing it from the inactive menu items.
-	 *
-	 * ui-sref-active can live on the same element as ui-sref or on a parent element. The first
-	 * ui-sref-active found at the same level or above the ui-sref will be used.
-	 *
-	 * Will activate when the ui-sref's target state or any child state is active. If you
-	 * need to activate only when the ui-sref target state is active and *not* any of
-	 * it's children, then you will use ui-sref-active-eq
-	 *
-	 * Given the following template:
-	 * @example
-	 * ```html
-	 *
-	 * <pre>
-	 * <ul>
-	 *   <li ui-sref-active="active" class="item">
-	 *     <a href ui-sref="app.user({user: 'bilbobaggins'})">@bilbobaggins</a>
-	 *   </li>
-	 * </ul>
-	 * </pre>
-	 * ```
-	 *
-	 *
-	 * When the app state is "app.user" (or any children states), and contains the state parameter "user" with value "bilbobaggins",
-	 * the resulting HTML will appear as (note the 'active' class):
-	 *
-	 * ```html
-	 *
-	 * <pre>
-	 * <ul>
-	 *   <li ui-sref-active="active" class="item active">
-	 *     <a ui-sref="app.user({user: 'bilbobaggins'})" href="/users/bilbobaggins">@bilbobaggins</a>
-	 *   </li>
-	 * </ul>
-	 * </pre>
-	 * ```
-	 *
-	 * The class name is interpolated **once** during the directives link time (any further changes to the
-	 * interpolated value are ignored).
-	 *
-	 * Multiple classes may be specified in a space-separated format:
-	 *
-	 * ```html
-	 * <pre>
-	 * <ul>
-	 *   <li ui-sref-active='class1 class2 class3'>
-	 *     <a ui-sref="app.user">link</a>
-	 *   </li>
-	 * </ul>
-	 * </pre>
-	 * ```
-	 *
-	 * It is also possible to pass ui-sref-active an expression that evaluates
-	 * to an object hash, whose keys represent active class names and whose
-	 * values represent the respective state names/globs.
-	 * ui-sref-active will match if the current active state **includes** any of
-	 * the specified state names/globs, even the abstract ones.
-	 *
-	 * Given the following template, with "admin" being an abstract state:
-	 * @example
-	 * ```html
-	 *
-	 * <pre>
-	 * <div ui-sref-active="{'active': 'admin.*'}">
-	 *   <a ui-sref-active="active" ui-sref="admin.roles">Roles</a>
-	 * </div>
-	 * </pre>
-	 * ```
-	 *
-	 * When the current state is "admin.roles" the "active" class will be applied
-	 * to both the <div> and <a> elements. It is important to note that the state
-	 * names/globs passed to ui-sref-active shadow the state provided by ui-sref.
-	 */
-	var uiSrefActive = ['$state', '$stateParams', '$interpolate', '$transitions', '$uiRouter',
-	    function $StateRefActiveDirective($state, $stateParams, $interpolate, $transitions, $uiRouter) {
-	        return {
-	            restrict: "A",
-	            controller: ['$scope', '$element', '$attrs', '$timeout',
-	                function ($scope, $element, $attrs, $timeout) {
-	                    var states = [], activeClasses = {}, activeEqClass, uiSrefActive;
-	                    // There probably isn't much point in $observing this
-	                    // uiSrefActive and uiSrefActiveEq share the same directive object with some
-	                    // slight difference in logic routing
-	                    activeEqClass = $interpolate($attrs.uiSrefActiveEq || '', false)($scope);
-	                    try {
-	                        uiSrefActive = $scope.$eval($attrs.uiSrefActive);
-	                    }
-	                    catch (e) {
-	                    }
-	                    uiSrefActive = uiSrefActive || $interpolate($attrs.uiSrefActive || '', false)($scope);
-	                    if (predicates_1.isObject(uiSrefActive)) {
-	                        common_1.forEach(uiSrefActive, function (stateOrName, activeClass) {
-	                            if (predicates_1.isString(stateOrName)) {
-	                                var ref = parseStateRef(stateOrName, $state.current.name);
-	                                addState(ref.state, $scope.$eval(ref.paramExpr), activeClass);
-	                            }
-	                        });
-	                    }
-	                    // Allow uiSref to communicate with uiSrefActive[Equals]
-	                    this.$$addStateInfo = function (newState, newParams) {
-	                        // we already got an explicit state provided by ui-sref-active, so we
-	                        // shadow the one that comes from ui-sref
-	                        if (predicates_1.isObject(uiSrefActive) && states.length > 0) {
-	                            return;
-	                        }
-	                        var deregister = addState(newState, newParams, uiSrefActive);
-	                        update();
-	                        return deregister;
-	                    };
-	                    function updateAfterTransition(trans) { trans.promise.then(update); }
-	                    $scope.$on('$stateChangeSuccess', update);
-	                    $scope.$on('$destroy', $transitions.onStart({}, updateAfterTransition));
-	                    if ($uiRouter.globals.transition) {
-	                        updateAfterTransition($uiRouter.globals.transition);
-	                    }
-	                    function addState(stateName, stateParams, activeClass) {
-	                        var state = $state.get(stateName, stateContext($element));
-	                        var stateHash = createStateHash(stateName, stateParams);
-	                        var stateInfo = {
-	                            state: state || { name: stateName },
-	                            params: stateParams,
-	                            hash: stateHash
-	                        };
-	                        states.push(stateInfo);
-	                        activeClasses[stateHash] = activeClass;
-	                        return function removeState() {
-	                            var idx = states.indexOf(stateInfo);
-	                            if (idx !== -1)
-	                                states.splice(idx, 1);
-	                        };
-	                    }
-	                    /**
-	                     * @param {string} state
-	                     * @param {Object|string} [params]
-	                     * @return {string}
-	                     */
-	                    function createStateHash(state, params) {
-	                        if (!predicates_1.isString(state)) {
-	                            throw new Error('state should be a string');
-	                        }
-	                        if (predicates_1.isObject(params)) {
-	                            return state + common_1.toJson(params);
-	                        }
-	                        params = $scope.$eval(params);
-	                        if (predicates_1.isObject(params)) {
-	                            return state + common_1.toJson(params);
-	                        }
-	                        return state;
-	                    }
-	                    // Update route state
-	                    function update() {
-	                        for (var i = 0; i < states.length; i++) {
-	                            if (anyMatch(states[i].state, states[i].params)) {
-	                                addClass($element, activeClasses[states[i].hash]);
-	                            }
-	                            else {
-	                                removeClass($element, activeClasses[states[i].hash]);
-	                            }
-	                            if (exactMatch(states[i].state, states[i].params)) {
-	                                addClass($element, activeEqClass);
-	                            }
-	                            else {
-	                                removeClass($element, activeEqClass);
-	                            }
-	                        }
-	                    }
-	                    function addClass(el, className) { $timeout(function () { el.addClass(className); }); }
-	                    function removeClass(el, className) { el.removeClass(className); }
-	                    function anyMatch(state, params) { return $state.includes(state.name, params); }
-	                    function exactMatch(state, params) { return $state.is(state.name, params); }
-	                    update();
-	                }]
-	        };
-	    }];
-	angular.module('ui.router.state')
-	    .directive('uiSref', uiSref)
-	    .directive('uiSrefActive', uiSrefActive)
-	    .directive('uiSrefActiveEq', uiSrefActive)
-	    .directive('uiState', uiState);
-	//# sourceMappingURL=stateDirectives.js.map
-
-/***/ },
-
-/***/ 282:
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @module ng1_directives */ /** for typedoc */
-	"use strict";
-	var common_1 = __webpack_require__(5);
-	var predicates_1 = __webpack_require__(9);
-	var trace_1 = __webpack_require__(46);
-	var views_1 = __webpack_require__(126);
-	var hof_1 = __webpack_require__(16);
-	var resolveContext_1 = __webpack_require__(47);
-	var strings_1 = __webpack_require__(40);
-	var services_1 = __webpack_require__(125);
-	var angular = __webpack_require__(64);
-	/**
-	 * `ui-view`: A viewport directive which is filled in by a view from the active state.
-	 *
-	 * @param {string=} name A view name. The name should be unique amongst the other views in the
-	 * same state. You can have views of the same name that live in different states.
-	 *
-	 * @param {string=} autoscroll It allows you to set the scroll behavior of the browser window
-	 * when a view is populated. By default, $anchorScroll is overridden by ui-router's custom scroll
-	 * service, {@link ui.router.state.$uiViewScroll}. This custom service let's you
-	 * scroll ui-view elements into view when they are populated during a state activation.
-	 *
-	 * *Note: To revert back to old [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll)
-	 * functionality, call `$uiViewScrollProvider.useAnchorScroll()`.*
-	 *
-	 * @param {string=} onload Expression to evaluate whenever the view updates.
-	 *
-	 * A view can be unnamed or named.
-	 * @example
-	 * ```html
-	 *
-	 * <!-- Unnamed -->
-	 * <div ui-view></div>
-	 *
-	 * <!-- Named -->
-	 * <div ui-view="viewName"></div>
-	 * ```
-	 *
-	 * You can only have one unnamed view within any template (or root html). If you are only using a
-	 * single view and it is unnamed then you can populate it like so:
-	 * ```
-	 *
-	 * <div ui-view></div>
-	 * $stateProvider.state("home", {
-	 *   template: "<h1>HELLO!</h1>"
-	 * })
-	 * ```
-	 *
-	 * The above is a convenient shortcut equivalent to specifying your view explicitly with the {@link ui.router.state.$stateProvider#views `views`}
-	 * config property, by name, in this case an empty name:
-	 * ```js
-	 *
-	 * $stateProvider.state("home", {
-	 *   views: {
-	 *     "": {
-	 *       template: "<h1>HELLO!</h1>"
-	 *     }
-	 *   }
-	 * })
-	 * ```
-	 *
-	 * But typically you'll only use the views property if you name your view or have more than one view
-	 * in the same template. There's not really a compelling reason to name a view if its the only one,
-	 * but you could if you wanted, like so:
-	 *
-	 * ```html
-	 *
-	 * <div ui-view="main"></div>
-	 * ```
-	 *
-	 * ```js
-	 *
-	 * $stateProvider.state("home", {
-	 *   views: {
-	 *     "main": {
-	 *       template: "<h1>HELLO!</h1>"
-	 *     }
-	 *   }
-	 * })
-	 * ```
-	 *
-	 * Really though, you'll use views to set up multiple views:
-	 * ```html
-	 *
-	 * <div ui-view></div>
-	 * <div ui-view="chart"></div>
-	 * <div ui-view="data"></div>
-	 * ```
-	 *
-	 * ```js
-	 * $stateProvider.state("home", {
-	 *   views: {
-	 *     "": {
-	 *       template: "<h1>HELLO!</h1>"
-	 *     },
-	 *     "chart": {
-	 *       template: "<chart_thing/>"
-	 *     },
-	 *     "data": {
-	 *       template: "<data_thing/>"
-	 *     }
-	 *   }
-	 * })
-	 * ```
-	 *
-	 * Examples for `autoscroll`:
-	 *
-	 * ```html
-	 *
-	 * <!-- If autoscroll present with no expression,
-	 *      then scroll ui-view into view -->
-	 * <ui-view autoscroll/>
-	 *
-	 * <!-- If autoscroll present with valid expression,
-	 *      then scroll ui-view into view if expression evaluates to true -->
-	 * <ui-view autoscroll='true'/>
-	 * <ui-view autoscroll='false'/>
-	 * <ui-view autoscroll='scopeVariable'/>
-	 * ```
-	 *
-	 * Resolve data:
-	 *
-	 * The resolved data from the state's `resolve` block is placed on the scope as `$resolve` (this
-	 * can be customized using [[ViewDeclaration.resolveAs]]).  This can be then accessed from the template.
-	 *
-	 * Note that when `controllerAs` is being used, `$resolve` is set on the controller instance *after* the
-	 * controller is instantiated.  The `$onInit()` hook can be used to perform initialization code which
-	 * depends on `$resolve` data.
-	 *
-	 * @example
-	 * ```js
-	 *
-	 * $stateProvider.state('home', {
-	 *   template: '<my-component user="$resolve.user"></my-component>',
-	 *   resolve: {
-	 *     user: function(UserService) { return UserService.fetchUser(); }
-	 *   }
-	 * });
-	 * ```
-	 */
-	var uiView = ['$view', '$animate', '$uiViewScroll', '$interpolate', '$q',
-	    function $ViewDirective($view, $animate, $uiViewScroll, $interpolate, $q) {
-	        function getRenderer(attrs, scope) {
-	            return {
-	                enter: function (element, target, cb) {
-	                    if (angular.version.minor > 2) {
-	                        $animate.enter(element, null, target).then(cb);
-	                    }
-	                    else {
-	                        $animate.enter(element, null, target, cb);
-	                    }
-	                },
-	                leave: function (element, cb) {
-	                    if (angular.version.minor > 2) {
-	                        $animate.leave(element).then(cb);
-	                    }
-	                    else {
-	                        $animate.leave(element, cb);
-	                    }
-	                }
-	            };
-	        }
-	        function configsEqual(config1, config2) {
-	            return config1 === config2;
-	        }
-	        var rootData = {
-	            $cfg: { viewDecl: { $context: $view.rootContext() } },
-	            $uiView: {}
-	        };
-	        var directive = {
-	            count: 0,
-	            restrict: 'ECA',
-	            terminal: true,
-	            priority: 400,
-	            transclude: 'element',
-	            compile: function (tElement, tAttrs, $transclude) {
-	                return function (scope, $element, attrs) {
-	                    var previousEl, currentEl, currentScope, unregister, onloadExp = attrs['onload'] || '', autoScrollExp = attrs['autoscroll'], renderer = getRenderer(attrs, scope), viewConfig = undefined, inherited = $element.inheritedData('$uiView') || rootData, name = $interpolate(attrs['uiView'] || attrs['name'] || '')(scope) || '$default';
-	                    var activeUIView = {
-	                        $type: 'ng1',
-	                        id: directive.count++,
-	                        name: name,
-	                        fqn: inherited.$uiView.fqn ? inherited.$uiView.fqn + "." + name : name,
-	                        config: null,
-	                        configUpdated: configUpdatedCallback,
-	                        get creationContext() {
-	                            return hof_1.parse('$cfg.viewDecl.$context')(inherited);
-	                        }
-	                    };
-	                    trace_1.trace.traceUIViewEvent("Linking", activeUIView);
-	                    function configUpdatedCallback(config) {
-	                        if (config && !(config instanceof views_1.Ng1ViewConfig))
-	                            return;
-	                        if (configsEqual(viewConfig, config))
-	                            return;
-	                        trace_1.trace.traceUIViewConfigUpdated(activeUIView, config && config.viewDecl && config.viewDecl.$context);
-	                        viewConfig = config;
-	                        updateView(config);
-	                    }
-	                    $element.data('$uiView', { $uiView: activeUIView });
-	                    updateView();
-	                    unregister = $view.registerUIView(activeUIView);
-	                    scope.$on("$destroy", function () {
-	                        trace_1.trace.traceUIViewEvent("Destroying/Unregistering", activeUIView);
-	                        unregister();
-	                    });
-	                    function cleanupLastView() {
-	                        if (previousEl) {
-	                            trace_1.trace.traceUIViewEvent("Removing (previous) el", previousEl.data('$uiView'));
-	                            previousEl.remove();
-	                            previousEl = null;
-	                        }
-	                        if (currentScope) {
-	                            trace_1.trace.traceUIViewEvent("Destroying scope", activeUIView);
-	                            currentScope.$destroy();
-	                            currentScope = null;
-	                        }
-	                        if (currentEl) {
-	                            var _viewData_1 = currentEl.data('$uiViewAnim');
-	                            trace_1.trace.traceUIViewEvent("Animate out", _viewData_1);
-	                            renderer.leave(currentEl, function () {
-	                                _viewData_1.$$animLeave.resolve();
-	                                previousEl = null;
-	                            });
-	                            previousEl = currentEl;
-	                            currentEl = null;
-	                        }
-	                    }
-	                    function updateView(config) {
-	                        var newScope = scope.$new();
-	                        var animEnter = $q.defer(), animLeave = $q.defer();
-	                        var $uiViewData = {
-	                            $cfg: config,
-	                            $uiView: activeUIView,
-	                        };
-	                        var $uiViewAnim = {
-	                            $animEnter: animEnter.promise,
-	                            $animLeave: animLeave.promise,
-	                            $$animLeave: animLeave
-	                        };
-	                        var cloned = $transclude(newScope, function (clone) {
-	                            clone.data('$uiViewAnim', $uiViewAnim);
-	                            clone.data('$uiView', $uiViewData);
-	                            renderer.enter(clone, $element, function onUIViewEnter() {
-	                                animEnter.resolve();
-	                                if (currentScope)
-	                                    currentScope.$emit('$viewContentAnimationEnded');
-	                                if (predicates_1.isDefined(autoScrollExp) && !autoScrollExp || scope.$eval(autoScrollExp)) {
-	                                    $uiViewScroll(clone);
-	                                }
-	                            });
-	                            cleanupLastView();
-	                        });
-	                        currentEl = cloned;
-	                        currentScope = newScope;
-	                        /**
-	                         * @ngdoc event
-	                         * @name ui.router.state.directive:ui-view#$viewContentLoaded
-	                         * @eventOf ui.router.state.directive:ui-view
-	                         * @eventType emits on ui-view directive scope
-	                         * @description           *
-	                         * Fired once the view is **loaded**, *after* the DOM is rendered.
-	                         *
-	                         * @param {Object} event Event object.
-	                         */
-	                        currentScope.$emit('$viewContentLoaded', config || viewConfig);
-	                        currentScope.$eval(onloadExp);
-	                    }
-	                };
-	            }
-	        };
-	        return directive;
-	    }];
-	$ViewDirectiveFill.$inject = ['$compile', '$controller', '$transitions', '$view', '$timeout'];
-	/** @hidden */
-	function $ViewDirectiveFill($compile, $controller, $transitions, $view, $timeout) {
-	    var getControllerAs = hof_1.parse('viewDecl.controllerAs');
-	    var getResolveAs = hof_1.parse('viewDecl.resolveAs');
-	    return {
-	        restrict: 'ECA',
-	        priority: -400,
-	        compile: function (tElement) {
-	            var initial = tElement.html();
-	            return function (scope, $element) {
-	                var data = $element.data('$uiView');
-	                if (!data)
-	                    return;
-	                var cfg = data.$cfg || { viewDecl: {} };
-	                $element.html(cfg.template || initial);
-	                trace_1.trace.traceUIViewFill(data.$uiView, $element.html());
-	                var link = $compile($element.contents());
-	                var controller = cfg.controller;
-	                var controllerAs = getControllerAs(cfg);
-	                var resolveAs = getResolveAs(cfg);
-	                var resolveCtx = cfg.path && new resolveContext_1.ResolveContext(cfg.path);
-	                var locals = resolveCtx && services_1.getLocals(resolveCtx);
-	                scope[resolveAs] = locals;
-	                if (controller) {
-	                    var controllerInstance = $controller(controller, common_1.extend({}, locals, { $scope: scope, $element: $element }));
-	                    if (controllerAs) {
-	                        scope[controllerAs] = controllerInstance;
-	                        scope[controllerAs][resolveAs] = locals;
-	                    }
-	                    // TODO: Use $view service as a central point for registering component-level hooks
-	                    // Then, when a component is created, tell the $view service, so it can invoke hooks
-	                    // $view.componentLoaded(controllerInstance, { $scope: scope, $element: $element });
-	                    // scope.$on('$destroy', () => $view.componentUnloaded(controllerInstance, { $scope: scope, $element: $element }));
-	                    $element.data('$ngControllerController', controllerInstance);
-	                    $element.children().data('$ngControllerController', controllerInstance);
-	                    registerControllerCallbacks($transitions, controllerInstance, scope, cfg);
-	                }
-	                // Wait for the component to appear in the DOM
-	                if (predicates_1.isString(cfg.viewDecl.component)) {
-	                    var cmp_1 = cfg.viewDecl.component;
-	                    var kebobName_1 = strings_1.kebobString(cmp_1);
-	                    var getComponentController = function () {
-	                        var directiveEl = [].slice.call($element[0].children)
-	                            .filter(function (el) { return el && el.tagName && el.tagName.toLowerCase() === kebobName_1; });
-	                        return directiveEl && angular.element(directiveEl).data("$" + cmp_1 + "Controller");
-	                    };
-	                    var deregisterWatch_1 = scope.$watch(getComponentController, function (ctrlInstance) {
-	                        if (!ctrlInstance)
-	                            return;
-	                        registerControllerCallbacks($transitions, ctrlInstance, scope, cfg);
-	                        deregisterWatch_1();
-	                    });
-	                }
-	                link(scope);
-	            };
-	        }
-	    };
-	}
-	/** @hidden */
-	var hasComponentImpl = typeof angular.module('ui.router')['component'] === 'function';
-	/** @hidden TODO: move these callbacks to $view and/or `/hooks/components.ts` or something */
-	function registerControllerCallbacks($transitions, controllerInstance, $scope, cfg) {
-	    // Call $onInit() ASAP
-	    if (predicates_1.isFunction(controllerInstance.$onInit) && !(cfg.viewDecl.component && hasComponentImpl))
-	        controllerInstance.$onInit();
-	    var viewState = common_1.tail(cfg.path).state.self;
-	    var hookOptions = { bind: controllerInstance };
-	    // Add component-level hook for onParamsChange
-	    if (predicates_1.isFunction(controllerInstance.uiOnParamsChanged)) {
-	        var resolveContext = new resolveContext_1.ResolveContext(cfg.path);
-	        var viewCreationTrans_1 = resolveContext.getResolvable('$transition$').data;
-	        // Fire callback on any successful transition
-	        var paramsUpdated = function ($transition$) {
-	            // Exit early if the $transition$ is the same as the view was created within.
-	            // Exit early if the $transition$ will exit the state the view is for.
-	            if ($transition$ === viewCreationTrans_1 || $transition$.exiting().indexOf(viewState) !== -1)
-	                return;
-	            var toParams = $transition$.params("to");
-	            var fromParams = $transition$.params("from");
-	            var toSchema = $transition$.treeChanges().to.map(function (node) { return node.paramSchema; }).reduce(common_1.unnestR, []);
-	            var fromSchema = $transition$.treeChanges().from.map(function (node) { return node.paramSchema; }).reduce(common_1.unnestR, []);
-	            // Find the to params that have different values than the from params
-	            var changedToParams = toSchema.filter(function (param) {
-	                var idx = fromSchema.indexOf(param);
-	                return idx === -1 || !fromSchema[idx].type.equals(toParams[param.id], fromParams[param.id]);
-	            });
-	            // Only trigger callback if a to param has changed or is new
-	            if (changedToParams.length) {
-	                var changedKeys_1 = changedToParams.map(function (x) { return x.id; });
-	                // Filter the params to only changed/new to params.  `$transition$.params()` may be used to get all params.
-	                controllerInstance.uiOnParamsChanged(common_1.filter(toParams, function (val, key) { return changedKeys_1.indexOf(key) !== -1; }), $transition$);
-	            }
-	        };
-	        $scope.$on('$destroy', $transitions.onSuccess({}, paramsUpdated, hookOptions));
-	    }
-	    // Add component-level hook for uiCanExit
-	    if (predicates_1.isFunction(controllerInstance.uiCanExit)) {
-	        var criteria = { exiting: viewState.name };
-	        $scope.$on('$destroy', $transitions.onBefore(criteria, controllerInstance.uiCanExit, hookOptions));
-	    }
-	}
-	angular.module('ui.router.state').directive('uiView', uiView);
-	angular.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
-	//# sourceMappingURL=viewDirective.js.map
-
-/***/ },
-
-/***/ 283:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module ng1 */ /** */
-	var stateObject_1 = __webpack_require__(130);
-	var node_1 = __webpack_require__(82);
-	var resolveContext_1 = __webpack_require__(47);
-	var common_1 = __webpack_require__(5);
-	var stateBuilder_1 = __webpack_require__(129);
-	/**
-	 * Implementation of the legacy `$resolve` service for angular 1.
-	 */
-	var $resolve = {
-	    /**
-	     * Asynchronously injects a resolve block.
-	     *
-	     * This emulates most of the behavior of the ui-router 0.2.x $resolve.resolve() service API.
-	     *
-	     * Given an object `invocables`, where keys are strings and values are injectable functions,
-	     * injects each function, and waits for the resulting promise to resolve.
-	     * When all resulting promises are resolved, returns the results as an object.
-	     *
-	     * @example
-	     * ```js
-	     *
-	     * let invocables = {
-	     *   foo: [ '$http', ($http) =>
-	     *            $http.get('/api/foo').then(resp => resp.data) ],
-	     *   bar: [ 'foo', '$http', (foo, $http) =>
-	     *            $http.get('/api/bar/' + foo.barId).then(resp => resp.data) ]
-	     * }
-	     * $resolve.resolve(invocables)
-	     *     .then(results => console.log(results.foo, results.bar))
-	     * // Logs foo and bar:
-	     * // { id: 123, barId: 456, fooData: 'foo data' }
-	     * // { id: 456, barData: 'bar data' }
-	     * ```
-	     *
-	     * @param invocables an object which looks like an [[StateDefinition.resolve]] object; keys are resolve names and values are injectable functions
-	     * @param locals key/value pre-resolved data (locals)
-	     * @param parent a promise for a "parent resolve"
-	     */
-	    resolve: function (invocables, locals, parent) {
-	        if (locals === void 0) { locals = {}; }
-	        var parentNode = new node_1.PathNode(new stateObject_1.State({ params: {}, resolvables: [] }));
-	        var node = new node_1.PathNode(new stateObject_1.State({ params: {}, resolvables: [] }));
-	        var context = new resolveContext_1.ResolveContext([parentNode, node]);
-	        context.addResolvables(stateBuilder_1.resolvablesBuilder({ resolve: invocables }), node.state);
-	        var resolveData = function (parentLocals) {
-	            var rewrap = function (_locals) { return stateBuilder_1.resolvablesBuilder({ resolve: common_1.mapObj(_locals, function (local) { return function () { return local; }; }) }); };
-	            context.addResolvables(rewrap(parentLocals), parentNode.state);
-	            context.addResolvables(rewrap(locals), node.state);
-	            var tuples2ObjR = function (acc, tuple) {
-	                acc[tuple.token] = tuple.value;
-	                return acc;
-	            };
-	            return context.resolvePath().then(function (results) { return results.reduce(tuples2ObjR, {}); });
-	        };
-	        return parent ? parent.then(resolveData) : resolveData({});
-	    }
-	};
-	/** @hidden */
-	exports.resolveFactory = function () { return $resolve; };
-	//# sourceMappingURL=resolveService.js.map
-
-/***/ },
-
-/***/ 284:
-/***/ function(module, exports, __webpack_require__) {
-
-	/** @module state */ /** for typedoc */
-	"use strict";
-	var angular = __webpack_require__(64);
-	/**
-	 * @ngdoc filter
-	 * @name ui.router.state.filter:isState
-	 *
-	 * @requires ui.router.state.$state
-	 *
-	 * @description
-	 * Translates to {@link ui.router.state.$state#methods_is $state.is("stateName")}.
-	 */
-	$IsStateFilter.$inject = ['$state'];
-	function $IsStateFilter($state) {
-	    var isFilter = function (state, params, options) {
-	        return $state.is(state, params, options);
-	    };
-	    isFilter.$stateful = true;
-	    return isFilter;
-	}
-	exports.$IsStateFilter = $IsStateFilter;
-	/**
-	 * @ngdoc filter
-	 * @name ui.router.state.filter:includedByState
-	 *
-	 * @requires ui.router.state.$state
-	 *
-	 * @description
-	 * Translates to {@link ui.router.state.$state#methods_includes $state.includes('fullOrPartialStateName')}.
-	 */
-	$IncludedByStateFilter.$inject = ['$state'];
-	function $IncludedByStateFilter($state) {
-	    var includesFilter = function (state, params, options) {
-	        return $state.includes(state, params, options);
-	    };
-	    includesFilter.$stateful = true;
-	    return includesFilter;
-	}
-	exports.$IncludedByStateFilter = $IncludedByStateFilter;
-	angular.module('ui.router.state')
-	    .filter('isState', $IsStateFilter)
-	    .filter('includedByState', $IncludedByStateFilter);
-	//# sourceMappingURL=stateFilters.js.map
-
-/***/ },
-
-/***/ 285:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var coreservices_1 = __webpack_require__(19);
-	var services_1 = __webpack_require__(125);
-	var resolveContext_1 = __webpack_require__(47);
-	var common_1 = __webpack_require__(5);
-	/**
-	 * This is a [[StateBuilder.builder]] function for angular1 `onEnter`, `onExit`,
-	 * `onRetain` callback hooks on a [[Ng1StateDeclaration]].
-	 *
-	 * When the [[StateBuilder]] builds a [[State]] object from a raw [[StateDeclaration]], this builder
-	 * ensures that those hooks are injectable for angular-ui-router (ng1).
-	 */
-	exports.getStateHookBuilder = function (hookName) {
-	    return function stateHookBuilder(state, parentFn) {
-	        var hook = state[hookName];
-	        function decoratedNg1Hook(trans, state) {
-	            var resolveContext = new resolveContext_1.ResolveContext(trans.treeChanges().to);
-	            return coreservices_1.services.$injector.invoke(hook, this, common_1.extend({ $state$: state }, services_1.getLocals(resolveContext)));
-	        }
-	        return hook ? decoratedNg1Hook : undefined;
-	    };
-	};
-	//# sourceMappingURL=onEnterExitRetain.js.map
-
-/***/ },
-
-/***/ 286:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	/** @module ng1 */ /** */
-	var angular = __webpack_require__(64);
-	/**
-	 * @ngdoc object
-	 * @name ui.router.state.$uiViewScrollProvider
-	 *
-	 * @description
-	 * Provider that returns the {@link ui.router.state.$uiViewScroll} service function.
-	 */
-	function $ViewScrollProvider() {
-	    var useAnchorScroll = false;
-	    /**
-	     * @ngdoc function
-	     * @name ui.router.state.$uiViewScrollProvider#useAnchorScroll
-	     * @methodOf ui.router.state.$uiViewScrollProvider
-	     *
-	     * @description
-	     * Reverts back to using the core [`$anchorScroll`](http://docs.angularjs.org/api/ng.$anchorScroll) service for
-	     * scrolling based on the url anchor.
-	     */
-	    this.useAnchorScroll = function () {
-	        useAnchorScroll = true;
-	    };
-	    /**
-	     * @ngdoc object
-	     * @name ui.router.state.$uiViewScroll
-	     *
-	     * @requires $anchorScroll
-	     * @requires $timeout
-	     *
-	     * @description
-	     * When called with a jqLite element, it scrolls the element into view (after a
-	     * `$timeout` so the DOM has time to refresh).
-	     *
-	     * If you prefer to rely on `$anchorScroll` to scroll the view to the anchor,
-	     * this can be enabled by calling {@link ui.router.state.$uiViewScrollProvider#methods_useAnchorScroll `$uiViewScrollProvider.useAnchorScroll()`}.
-	     */
-	    this.$get = ['$anchorScroll', '$timeout', function ($anchorScroll, $timeout) {
-	            if (useAnchorScroll) {
-	                return $anchorScroll;
-	            }
-	            return function ($element) {
-	                return $timeout(function () {
-	                    $element[0].scrollIntoView();
-	                }, 0, false);
-	            };
-	        }];
-	}
-	angular.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProvider);
-	//# sourceMappingURL=viewScroll.js.map
-
-/***/ },
-
-/***/ 287:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/**
-	 * This module contains code for State Parameters.
-	 *
-	 * See [[ParamDeclaration]]
-	 * @module params
-	 * @preferred doc
-	 */
-	/** for typedoc */
-	__export(__webpack_require__(55));
-	__export(__webpack_require__(177));
-	__export(__webpack_require__(178));
-	__export(__webpack_require__(127));
-	//# sourceMappingURL=module.js.map
-
-/***/ },
-
-/***/ 288:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module path */ /** for typedoc */
-	__export(__webpack_require__(82));
-	__export(__webpack_require__(101));
-	//# sourceMappingURL=module.js.map
-
-/***/ },
-
-/***/ 289:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module resolve */ /** for typedoc */
-	__export(__webpack_require__(179));
-	__export(__webpack_require__(63));
-	__export(__webpack_require__(47));
-	//# sourceMappingURL=module.js.map
-
-/***/ },
-
-/***/ 290:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module state */ /** for typedoc */
-	__export(__webpack_require__(129));
-	__export(__webpack_require__(130));
-	__export(__webpack_require__(180));
-	__export(__webpack_require__(181));
-	__export(__webpack_require__(182));
-	__export(__webpack_require__(183));
-	__export(__webpack_require__(74));
-	//# sourceMappingURL=module.js.map
-
-/***/ },
-
-/***/ 291:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/**
-	 * This module contains APIs related to a Transition.
-	 *
-	 * See [[Transition]], [[$transitions]]
-	 *
-	 * @module transition
-	 * @preferred
-	 */
-	/** for typedoc */
-	__export(__webpack_require__(184));
-	__export(__webpack_require__(131));
-	__export(__webpack_require__(83));
-	__export(__webpack_require__(132));
-	__export(__webpack_require__(133));
-	__export(__webpack_require__(134));
-	//# sourceMappingURL=module.js.map
-
-/***/ },
-
-/***/ 292:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module url */ /** for typedoc */
-	__export(__webpack_require__(185));
-	__export(__webpack_require__(135));
-	__export(__webpack_require__(186));
-	__export(__webpack_require__(136));
-	//# sourceMappingURL=module.js.map
-
-/***/ },
-
-/***/ 293:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	/** @module view */ /** for typedoc */
-	__export(__webpack_require__(137));
-	//# sourceMappingURL=module.js.map
-
-/***/ },
-
-/***/ 294:
+/***/ 297:
 /***/ function(module, exports) {
 
 	/**
@@ -68796,7 +69017,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 295:
+/***/ 298:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68830,7 +69051,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 296:
+/***/ 299:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68850,28 +69071,28 @@ webpackJsonp([2],{
 	var platform_browser_1 = __webpack_require__(99);
 	var http_1 = __webpack_require__(32);
 	var common_1 = __webpack_require__(27);
-	var menu_module_1 = __webpack_require__(311);
-	var dashboard_module_1 = __webpack_require__(309);
-	var networkpolicies_module_1 = __webpack_require__(314);
-	var applicationgroups_module_ts_1 = __webpack_require__(298);
+	var menu_module_1 = __webpack_require__(314);
+	var dashboard_module_1 = __webpack_require__(312);
+	var networkpolicies_module_1 = __webpack_require__(317);
+	var applicationgroups_module_ts_1 = __webpack_require__(301);
 	var settings_module_1 = __webpack_require__(330);
-	var network_module_1 = __webpack_require__(315);
+	var network_module_1 = __webpack_require__(318);
 	var servicelb_module_1 = __webpack_require__(325);
-	var organization_module_1 = __webpack_require__(321);
+	var organization_module_1 = __webpack_require__(324);
 	var netprofilesmodel_1 = __webpack_require__(84);
 	var applicationgroupsmodel_1 = __webpack_require__(65);
 	var networksmodel_1 = __webpack_require__(48);
 	var organizationsmodel_1 = __webpack_require__(102);
 	var policiesmodel_1 = __webpack_require__(76);
-	var rulesmodel_1 = __webpack_require__(139);
+	var rulesmodel_1 = __webpack_require__(138);
 	var servicelbsmodel_1 = __webpack_require__(85);
 	var crudhelperservice_1 = __webpack_require__(12);
-	var inspectservice_1 = __webpack_require__(140);
-	var networkservice_1 = __webpack_require__(190);
-	var nodesservice_1 = __webpack_require__(191);
-	var loginctrl_1 = __webpack_require__(310);
-	var app_component_1 = __webpack_require__(295);
-	var app_routes_ts_1 = __webpack_require__(297);
+	var inspectservice_1 = __webpack_require__(139);
+	var networkservice_1 = __webpack_require__(189);
+	var nodesservice_1 = __webpack_require__(190);
+	var loginctrl_1 = __webpack_require__(313);
+	var app_component_1 = __webpack_require__(298);
+	var app_routes_ts_1 = __webpack_require__(300);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -68920,27 +69141,30 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 297:
+/***/ 300:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/**
 	 * Created by vjain3 on 11/1/16.
 	 */
-	var router_1 = __webpack_require__(23);
-	var menuCtrl_1 = __webpack_require__(193);
+	var router_1 = __webpack_require__(16);
+	var menuCtrl_1 = __webpack_require__(192);
 	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var isolationpolicycreatectrl_1 = __webpack_require__(196);
-	var isolationpolicydetailsctrl_1 = __webpack_require__(197);
-	var bandwidthpolicycreatectrl_1 = __webpack_require__(194);
-	var bandwidthpolicydetailsctrl_1 = __webpack_require__(195);
-	var dashboardctrl_1 = __webpack_require__(192);
-	var applicationgrouplistctrl_1 = __webpack_require__(189);
-	var applicationgroupcreatectrl_1 = __webpack_require__(187);
-	var applicationgroupdetailsctrl_1 = __webpack_require__(188);
-	var settingsmenu_component_1 = __webpack_require__(202);
-	var clustersettingctrl_1 = __webpack_require__(200);
-	var networksettingctrl_1 = __webpack_require__(201);
+	var isolationpolicycreatectrl_1 = __webpack_require__(195);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(196);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(193);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(194);
+	var dashboardctrl_1 = __webpack_require__(191);
+	var applicationgrouplistctrl_1 = __webpack_require__(188);
+	var applicationgroupcreatectrl_1 = __webpack_require__(186);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(187);
+	var settingsmenu_component_1 = __webpack_require__(204);
+	var clustersettingctrl_1 = __webpack_require__(202);
+	var networksettingctrl_1 = __webpack_require__(203);
+	var organizationlistctrl_1 = __webpack_require__(199);
+	var organizationcreatectrl_1 = __webpack_require__(197);
+	var organizationdetailsctrl_1 = __webpack_require__(198);
 	var routes = [
 	    { path: '', redirectTo: 'm', pathMatch: 'full' },
 	    {
@@ -68971,7 +69195,11 @@ webpackJsonp([2],{
 	                    { path: 'cluster', component: clustersettingctrl_1.ClusterSettingsComponent },
 	                    { path: 'networks', component: networksettingctrl_1.NetworkSettingsComponent }
 	                ]
-	            }
+	            },
+	            //Organizations
+	            { path: 'organizations/list', component: organizationlistctrl_1.OrganizationListComponent },
+	            { path: 'organizations/create', component: organizationcreatectrl_1.OrganizationCreateComponent },
+	            { path: 'organizations/details/:key', component: organizationdetailsctrl_1.OrganizationDetailsComponent }
 	        ]
 	    }
 	];
@@ -68981,7 +69209,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 298:
+/***/ 301:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69000,14 +69228,14 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(27);
-	var router_1 = __webpack_require__(23);
+	var router_1 = __webpack_require__(16);
 	var directives_module_1 = __webpack_require__(75);
-	var pipes_module_1 = __webpack_require__(308);
-	var applicationgroupcreatectrl_1 = __webpack_require__(187);
-	var applicationgroupdetailsctrl_1 = __webpack_require__(188);
-	var isolationpolicydirective_1 = __webpack_require__(300);
-	var bandwidthpolicydirective_1 = __webpack_require__(299);
-	var applicationgrouplistctrl_1 = __webpack_require__(189);
+	var pipes_module_1 = __webpack_require__(311);
+	var applicationgroupcreatectrl_1 = __webpack_require__(186);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(187);
+	var isolationpolicydirective_1 = __webpack_require__(303);
+	var bandwidthpolicydirective_1 = __webpack_require__(302);
+	var applicationgrouplistctrl_1 = __webpack_require__(188);
 	var ApplicationGroupsModule = (function () {
 	    function ApplicationGroupsModule() {
 	    }
@@ -69049,7 +69277,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 299:
+/***/ 302:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69180,7 +69408,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 300:
+/***/ 303:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69199,7 +69427,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var _ = __webpack_require__(35);
 	var policiesmodel_1 = __webpack_require__(76);
-	var rulesmodel_1 = __webpack_require__(139);
+	var rulesmodel_1 = __webpack_require__(138);
 	var IsolationPolicySelectionComponent = (function () {
 	    function IsolationPolicySelectionComponent(policiesModel, rulesModel) {
 	        this.policiesModel = policiesModel;
@@ -69316,7 +69544,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 301:
+/***/ 304:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69358,7 +69586,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 302:
+/***/ 305:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69402,7 +69630,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 303:
+/***/ 306:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69451,7 +69679,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 304:
+/***/ 307:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69538,7 +69766,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 305:
+/***/ 308:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69830,7 +70058,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 306:
+/***/ 309:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69935,7 +70163,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 307:
+/***/ 310:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -69986,7 +70214,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 308:
+/***/ 311:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70005,7 +70233,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(27);
-	var filterpipe_1 = __webpack_require__(307);
+	var filterpipe_1 = __webpack_require__(310);
 	var PipesModule = (function () {
 	    function PipesModule() {
 	    }
@@ -70034,7 +70262,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 309:
+/***/ 312:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70053,8 +70281,8 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(27);
-	var router_1 = __webpack_require__(23);
-	var dashboardctrl_1 = __webpack_require__(192);
+	var router_1 = __webpack_require__(16);
+	var dashboardctrl_1 = __webpack_require__(191);
 	var DashboardModule = (function () {
 	    function DashboardModule() {
 	    }
@@ -70084,7 +70312,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 310:
+/***/ 313:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70101,7 +70329,7 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
-	var angular_ui_router_1 = __webpack_require__(138);
+	var angular_ui_router_1 = __webpack_require__(296);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var LoginComponent = (function () {
 	    function LoginComponent($state, crudHelperService) {
@@ -70139,7 +70367,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 311:
+/***/ 314:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70158,8 +70386,8 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(27);
-	var router_1 = __webpack_require__(23);
-	var menuCtrl_1 = __webpack_require__(193);
+	var router_1 = __webpack_require__(16);
+	var menuCtrl_1 = __webpack_require__(192);
 	var MenuModule = (function () {
 	    function MenuModule() {
 	    }
@@ -70189,7 +70417,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 312:
+/***/ 315:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70256,7 +70484,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 313:
+/***/ 316:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70323,7 +70551,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 314:
+/***/ 317:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70342,15 +70570,15 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(27);
-	var router_1 = __webpack_require__(23);
+	var router_1 = __webpack_require__(16);
 	var directives_module_1 = __webpack_require__(75);
 	var networkpoliciestabsctrl_1 = __webpack_require__(77);
-	var isolationpolicycreatectrl_1 = __webpack_require__(196);
-	var isolationpolicydetailsctrl_1 = __webpack_require__(197);
-	var bandwidthpolicycreatectrl_1 = __webpack_require__(194);
-	var bandwidthpolicydetailsctrl_1 = __webpack_require__(195);
-	var isolationpolicylistctrl_1 = __webpack_require__(313);
-	var bandwidthpolicylistctrl_1 = __webpack_require__(312);
+	var isolationpolicycreatectrl_1 = __webpack_require__(195);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(196);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(193);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(194);
+	var isolationpolicylistctrl_1 = __webpack_require__(316);
+	var bandwidthpolicylistctrl_1 = __webpack_require__(315);
 	var NetworkPoliciesModule = (function () {
 	    function NetworkPoliciesModule() {
 	    }
@@ -70395,7 +70623,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 315:
+/***/ 318:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70415,11 +70643,11 @@ webpackJsonp([2],{
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(27);
 	var directives_module_1 = __webpack_require__(75);
-	var networklistctrl_1 = __webpack_require__(319);
-	var networkstatsctrl_1 = __webpack_require__(320);
-	var networkdetailsctrl_1 = __webpack_require__(317);
-	var networkinfoctrl_1 = __webpack_require__(318);
-	var networkcreatectrl_1 = __webpack_require__(316);
+	var networklistctrl_1 = __webpack_require__(322);
+	var networkstatsctrl_1 = __webpack_require__(323);
+	var networkdetailsctrl_1 = __webpack_require__(320);
+	var networkinfoctrl_1 = __webpack_require__(321);
+	var networkcreatectrl_1 = __webpack_require__(319);
 	var NetworkModule = (function () {
 	    function NetworkModule() {
 	    }
@@ -70454,7 +70682,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 316:
+/***/ 319:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70476,7 +70704,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var networksmodel_1 = __webpack_require__(48);
 	var crudhelperservice_1 = __webpack_require__(12);
-	var ng1_1 = __webpack_require__(54);
+	var ng1_1 = __webpack_require__(62);
 	var NetworkCreateComponent = (function () {
 	    function NetworkCreateComponent($state, networksModel, crudHelperService) {
 	        this.$state = $state;
@@ -70528,7 +70756,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 317:
+/***/ 320:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70550,7 +70778,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(54);
+	var ng1_1 = __webpack_require__(62);
 	var applicationgroupsmodel_1 = __webpack_require__(65);
 	var networksmodel_1 = __webpack_require__(48);
 	var util_1 = __webpack_require__(81);
@@ -70637,7 +70865,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 318:
+/***/ 321:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70679,7 +70907,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 319:
+/***/ 322:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70702,7 +70930,7 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(48);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(54);
+	var ng1_1 = __webpack_require__(62);
 	var NetworkListComponent = (function () {
 	    function NetworkListComponent($state, networksModel, crudHelperService) {
 	        var _this = this;
@@ -70751,7 +70979,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 320:
+/***/ 323:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70768,7 +70996,7 @@ webpackJsonp([2],{
 	var crudhelperservice_1 = __webpack_require__(12);
 	var rxjs_1 = __webpack_require__(44);
 	var networksmodel_1 = __webpack_require__(48);
-	var inspectservice_1 = __webpack_require__(140);
+	var inspectservice_1 = __webpack_require__(139);
 	var util_1 = __webpack_require__(81);
 	var NetworkStatComponent = (function () {
 	    function NetworkStatComponent(networksModel, crudHelperService, inspectSerrvice, ngZone) {
@@ -70850,7 +71078,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 321:
+/***/ 324:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -70869,10 +71097,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(27);
+	var router_1 = __webpack_require__(16);
 	var directives_module_1 = __webpack_require__(75);
-	var organizationlistctrl_1 = __webpack_require__(324);
-	var organizationcreatectrl_1 = __webpack_require__(322);
-	var organizationdetailsctrl_1 = __webpack_require__(323);
+	var organizationlistctrl_1 = __webpack_require__(199);
+	var organizationcreatectrl_1 = __webpack_require__(197);
+	var organizationdetailsctrl_1 = __webpack_require__(198);
 	var OrganizationModule = (function () {
 	    function OrganizationModule() {
 	    }
@@ -70881,17 +71110,22 @@ webpackJsonp([2],{
 	            imports: [
 	                forms_1.FormsModule,
 	                common_1.CommonModule,
+	                router_1.RouterModule,
 	                directives_module_1.DirectivesModule
 	            ],
 	            declarations: [
 	                organizationlistctrl_1.OrganizationListComponent,
 	                organizationcreatectrl_1.OrganizationCreateComponent,
-	                organizationdetailsctrl_1.OrganizationDetailComponent
+	                organizationdetailsctrl_1.OrganizationDetailsComponent
 	            ],
 	            exports: [
 	                organizationlistctrl_1.OrganizationListComponent,
 	                organizationcreatectrl_1.OrganizationCreateComponent,
-	                organizationdetailsctrl_1.OrganizationDetailComponent
+	                organizationdetailsctrl_1.OrganizationDetailsComponent,
+	                directives_module_1.DirectivesModule,
+	                forms_1.FormsModule,
+	                common_1.CommonModule,
+	                router_1.RouterModule
 	            ]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -70899,236 +71133,6 @@ webpackJsonp([2],{
 	    return OrganizationModule;
 	}());
 	exports.OrganizationModule = OrganizationModule;
-	
-
-/***/ },
-
-/***/ 322:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var __param = (this && this.__param) || function (paramIndex, decorator) {
-	    return function (target, key) { decorator(target, key, paramIndex); }
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var organizationsmodel_1 = __webpack_require__(102);
-	var angular_ui_router_1 = __webpack_require__(138);
-	var OrganizationCreateComponent = (function () {
-	    function OrganizationCreateComponent(crudHelperService, organizationsModel, $state, ngZone) {
-	        this.crudHelperService = crudHelperService;
-	        this.organizationsModel = organizationsModel;
-	        this.$state = $state;
-	        this.ngZone = ngZone;
-	        this.newOrganization = { key: '', tenantName: '' };
-	        this.showServerError = false;
-	        this.serverErrorMessage = '';
-	        this.showLoader = false;
-	        this.organizationCreateCtrl = this;
-	    }
-	    OrganizationCreateComponent.prototype.returnToOrganizations = function () {
-	        this.$state.go('contiv.menu.organizations.list');
-	    };
-	    OrganizationCreateComponent.prototype.cancelCreating = function () {
-	        this.returnToOrganizations();
-	    };
-	    OrganizationCreateComponent.prototype.createOrganization = function (formvalid) {
-	        var organizationCreateCtrl = this;
-	        if (formvalid) {
-	            this.crudHelperService.startLoader(this);
-	            this.crudHelperService.hideServerError(this);
-	            organizationCreateCtrl.newOrganization.key = organizationCreateCtrl.newOrganization.tenantName;
-	            this.organizationsModel.create(organizationCreateCtrl.newOrganization, undefined)
-	                .then(function (result) {
-	                organizationCreateCtrl.ngZone.run(function () {
-	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
-	                });
-	                organizationCreateCtrl.returnToOrganizations();
-	            }, function (error) {
-	                organizationCreateCtrl.ngZone.run(function () {
-	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
-	                });
-	                organizationCreateCtrl.crudHelperService.showServerError(organizationCreateCtrl, error);
-	            });
-	        }
-	    };
-	    OrganizationCreateComponent = __decorate([
-	        core_1.Component({
-	            selector: 'organizationcreate',
-	            templateUrl: 'organizations/organizationcreate.html'
-	        }),
-	        __param(2, core_1.Inject('$state')), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _b) || Object, (typeof (_c = typeof angular_ui_router_1.StateService !== 'undefined' && angular_ui_router_1.StateService) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
-	    ], OrganizationCreateComponent);
-	    return OrganizationCreateComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.OrganizationCreateComponent = OrganizationCreateComponent;
-	
-
-/***/ },
-
-/***/ 323:
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var __param = (this && this.__param) || function (paramIndex, decorator) {
-	    return function (target, key) { decorator(target, key, paramIndex); }
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var organizationsmodel_1 = __webpack_require__(102);
-	var angular_ui_router_1 = __webpack_require__(138);
-	var OrganizationDetailComponent = (function () {
-	    function OrganizationDetailComponent(crudHelperService, organizationsModel, $state, ngZone) {
-	        this.crudHelperService = crudHelperService;
-	        this.organizationsModel = organizationsModel;
-	        this.$state = $state;
-	        this.ngZone = ngZone;
-	        this.showServerError = false;
-	        this.serverErrorMessage = '';
-	        this.showLoader = false;
-	        this.organization = { tenantName: '' };
-	        this.organizationDetailsCtrl = this;
-	    }
-	    OrganizationDetailComponent.prototype.ngOnInit = function () {
-	        this.showLoader = true;
-	        var organizationDetailsCtrl = this;
-	        this.organizationsModel.getModelByKey(this.$state.params['key'], false, 'key')
-	            .then(function (result) {
-	            organizationDetailsCtrl.organization = result;
-	            organizationDetailsCtrl.ngZone.run(function () {
-	                organizationDetailsCtrl.showLoader = false;
-	            });
-	        }, function (error) {
-	            organizationDetailsCtrl.ngZone.run(function () {
-	                organizationDetailsCtrl.showLoader = false;
-	            });
-	        });
-	    };
-	    OrganizationDetailComponent.prototype.returnToOrganization = function () {
-	        this.$state.go('contiv.menu.organizations.list');
-	    };
-	    OrganizationDetailComponent.prototype.deleteOrganization = function () {
-	        var organizationDetailsCtrl = this;
-	        this.crudHelperService.hideServerError(this);
-	        this.showLoader = true;
-	        this.organizationsModel.delete(this.organization)
-	            .then(function (result) {
-	            organizationDetailsCtrl.showLoader = false;
-	            organizationDetailsCtrl.returnToOrganization();
-	        }, function (error) {
-	            organizationDetailsCtrl.showLoader = false;
-	            organizationDetailsCtrl.crudHelperService.showServerError(organizationDetailsCtrl, error);
-	        });
-	    };
-	    OrganizationDetailComponent = __decorate([
-	        core_1.Component({
-	            selector: 'organizationdetails',
-	            templateUrl: 'organizations/organizationdetails.html'
-	        }),
-	        __param(2, core_1.Inject('$state')), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _b) || Object, (typeof (_c = typeof angular_ui_router_1.StateService !== 'undefined' && angular_ui_router_1.StateService) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
-	    ], OrganizationDetailComponent);
-	    return OrganizationDetailComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.OrganizationDetailComponent = OrganizationDetailComponent;
-	
-
-/***/ },
-
-/***/ 324:
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Created by cshampur on 10/14/16.
-	 */
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var __param = (this && this.__param) || function (paramIndex, decorator) {
-	    return function (target, key) { decorator(target, key, paramIndex); }
-	};
-	var core_1 = __webpack_require__(3);
-	var crudhelperservice_1 = __webpack_require__(12);
-	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(54);
-	var organizationsmodel_1 = __webpack_require__(102);
-	var OrganizationListComponent = (function () {
-	    function OrganizationListComponent($state, organizationsModel, crudHelperService, ngZone) {
-	        var _this = this;
-	        this.$state = $state;
-	        this.ngZone = ngZone;
-	        this.organizationsModel = organizationsModel;
-	        this.crudHelperService = crudHelperService;
-	        this.organizationsListCtrl = this;
-	        this['showLoader'] = true;
-	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
-	            _this.getOrganizations(true);
-	        });
-	    }
-	    OrganizationListComponent.prototype.ngOnInit = function () {
-	        this.crudHelperService.startLoader(this);
-	        this.getOrganizations(false);
-	    };
-	    OrganizationListComponent.prototype.getOrganizations = function (reload) {
-	        var organizationsListCtrl = this;
-	        this.organizationsModel.get(reload)
-	            .then(function successCallback(result) {
-	            organizationsListCtrl['organizations'] = result;
-	            organizationsListCtrl.ngZone.run(function () {
-	                organizationsListCtrl.crudHelperService.stopLoader(organizationsListCtrl);
-	            });
-	        }, function errorCallback(result) {
-	            organizationsListCtrl.ngZone.run(function () {
-	                organizationsListCtrl.crudHelperService.stopLoader(organizationsListCtrl);
-	            });
-	        });
-	    };
-	    OrganizationListComponent.prototype.create = function () {
-	        this.$state.go('contiv.menu.organizations.create');
-	    };
-	    OrganizationListComponent.prototype.ngOnDestroy = function () {
-	        this.refresh.unsubscribe();
-	    };
-	    OrganizationListComponent = __decorate([
-	        core_1.Component({
-	            selector: 'organizationlist',
-	            templateUrl: 'organizations/organizationlist.html'
-	        }),
-	        __param(0, core_1.Inject('$state')), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof ng1_1.StateService !== 'undefined' && ng1_1.StateService) === 'function' && _a) || Object, (typeof (_b = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
-	    ], OrganizationListComponent);
-	    return OrganizationListComponent;
-	    var _a, _b, _c, _d;
-	}());
-	exports.OrganizationListComponent = OrganizationListComponent;
 	
 
 /***/ },
@@ -71154,10 +71158,10 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(27);
 	var directives_module_1 = __webpack_require__(75);
 	var servicelblistctrl_1 = __webpack_require__(328);
-	var servicelbstatsctrl_1 = __webpack_require__(199);
+	var servicelbstatsctrl_1 = __webpack_require__(201);
 	var servicelbportsdirective_1 = __webpack_require__(329);
 	var servicelbcreatectrl_1 = __webpack_require__(326);
-	var servicelbinfoctrl_1 = __webpack_require__(198);
+	var servicelbinfoctrl_1 = __webpack_require__(200);
 	var servicelbdetailsctrl_1 = __webpack_require__(327);
 	var ServicelbModule = (function () {
 	    function ServicelbModule() {
@@ -71216,7 +71220,7 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(12);
-	var ng1_1 = __webpack_require__(54);
+	var ng1_1 = __webpack_require__(62);
 	var servicelbsmodel_1 = __webpack_require__(85);
 	var networksmodel_1 = __webpack_require__(48);
 	var _ = __webpack_require__(35);
@@ -71313,9 +71317,9 @@ webpackJsonp([2],{
 	    return function (target, key) { decorator(target, key, paramIndex); }
 	};
 	var core_1 = __webpack_require__(3);
-	var ng1_1 = __webpack_require__(54);
-	var servicelbinfoctrl_1 = __webpack_require__(198);
-	var servicelbstatsctrl_1 = __webpack_require__(199);
+	var ng1_1 = __webpack_require__(62);
+	var servicelbinfoctrl_1 = __webpack_require__(200);
+	var servicelbstatsctrl_1 = __webpack_require__(201);
 	var _ = __webpack_require__(35);
 	var ServicelbDetailsComponent = (function () {
 	    function ServicelbDetailsComponent($state) {
@@ -71387,7 +71391,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(12);
 	var rxjs_1 = __webpack_require__(44);
-	var ng1_1 = __webpack_require__(54);
+	var ng1_1 = __webpack_require__(62);
 	var servicelbsmodel_1 = __webpack_require__(85);
 	var ServicelbListComponent = (function () {
 	    function ServicelbListComponent($state, servicelbsModel, crudHelperService, ngZone) {
@@ -71529,11 +71533,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var forms_1 = __webpack_require__(36);
 	var common_1 = __webpack_require__(27);
-	var router_1 = __webpack_require__(23);
+	var router_1 = __webpack_require__(16);
 	var directives_module_1 = __webpack_require__(75);
-	var networksettingctrl_1 = __webpack_require__(201);
-	var clustersettingctrl_1 = __webpack_require__(200);
-	var settingsmenu_component_1 = __webpack_require__(202);
+	var networksettingctrl_1 = __webpack_require__(203);
+	var clustersettingctrl_1 = __webpack_require__(202);
+	var settingsmenu_component_1 = __webpack_require__(204);
 	var SettingsModule = (function () {
 	    function SettingsModule() {
 	    }

@@ -25,11 +25,12 @@
         <i class="networks icon"></i>
         Networks
     </a>
-    <a class="white item" ui-sref="contiv.menu.organizations.list()" ui-sref-active="{'active':'contiv.menu.organizations'}">
+     -->
+    <a class="white item" [routerLink]="['organizations/list']" routerLinkActive="active">
         <i class="organizations icon"></i> 
         Organizations
     </a>
-    -->
+
     <a class="white item" [routerLink]="['settings']" routerLinkActive="active">
         <i class="global_settings icon"></i> 
         Settings

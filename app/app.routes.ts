@@ -15,6 +15,9 @@ import { ApplicationGroupDetailsComponent } from "./applicationgroups/applicatio
 import { SettingsMenuComponent } from "./settings/settingsmenu.component";
 import { ClusterSettingsComponent } from "./settings/clustersettingctrl";
 import { NetworkSettingsComponent } from "./settings/networksettingctrl";
+import { OrganizationListComponent } from "./organizations/organizationlistctrl";
+import { OrganizationCreateComponent } from "./organizations/organizationcreatectrl";
+import { OrganizationDetailsComponent } from "./organizations/organizationdetailsctrl";
 
 
 const routes = [
@@ -47,7 +50,11 @@ const routes = [
                     {path: 'cluster', component: ClusterSettingsComponent},
                     {path: 'networks', component: NetworkSettingsComponent}
                 ]
-            }
+            },
+            //Organizations
+            {path: 'organizations/list', component: OrganizationListComponent},
+            {path: 'organizations/create', component: OrganizationCreateComponent},
+            {path: 'organizations/details/:key', component: OrganizationDetailsComponent}
         ]
     }
 ];
