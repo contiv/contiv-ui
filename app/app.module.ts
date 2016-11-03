@@ -4,6 +4,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from "@angular/http";
+import { APP_BASE_HREF, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NetworkPoliciesModule } from "./network_policies/networkpolicies.module";
 import { ApplicationGroupsModule } from "./applicationgroups/applicationgroups.module.ts";
 import { SettingsModule } from "./settings/settings.module";
@@ -23,11 +24,16 @@ import { ServicelbModule } from "./service_lbs/servicelb.module";
 import { OrganizationModule } from "./organizations/organization.module";
 import { NodesService } from "./components/utils/nodesservice";
 import {LoginComponent} from "./login/loginctrl";
+import { AppComponent } from "./app.component";
+import appRoutes from "./app.routes.ts";
+import { MenuModule } from "./menu/menu.module";
 
 @NgModule({
     imports: [
         BrowserModule,
         HttpModule,
+        appRoutes,
+        MenuModule,
         NetworkPoliciesModule,
         ApplicationGroupsModule,
         SettingsModule,
@@ -37,7 +43,8 @@ import {LoginComponent} from "./login/loginctrl";
     ],
     declarations: [
         DashboardComponent,
-        LoginComponent
+        LoginComponent,
+        AppComponent
     ],
     providers: [
         ApplicationGroupsModel,
@@ -50,7 +57,10 @@ import {LoginComponent} from "./login/loginctrl";
         CRUDHelperService,
         InspectService,
         NetworkService,
-        NodesService
-    ]
+        NodesService,
+        { provide: APP_BASE_HREF, useValue: '' },
+        { provide: LocationStrategy, useClass: HashLocationStrategy }
+    ],
+    bootstrap: [ AppComponent ]
 })
 export class AppModule {}

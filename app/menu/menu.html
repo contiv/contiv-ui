@@ -4,6 +4,7 @@
     }
 </style>
 <div id="sidebar" class="ui visible left vertical sidebar icon labeled menu">
+    <!--
     <a class="white item" ui-sref="contiv.menu.dashboard()" ui-sref-active="{'active':'contiv.menu.dashboard'}">
         <i class="dashboard icon"></i>
         Dashboard
@@ -12,10 +13,13 @@
         <i class="appgroup icon"></i>
         Application Groups
     </a>
-    <a class="white item" ui-sref="contiv.menu.networkpolicies.list()" ui-sref-active="{'active':'contiv.menu.networkpolicies'}">
+    -->
+    <!--<a class="white item" routerLink="/m/networkpolicies/list" ui-sref="contiv.menu.networkpolicies.list()" ui-sref-active="{'active':'contiv.menu.networkpolicies'}">-->
+    <a class="white item" [routerLink]="['networkpolicies/list']" routerLinkActive="active">
         <i class="networkpolicies icon"></i>
         Network Policies
     </a>
+    <!--
     <a class="white item" ui-sref="contiv.menu.servicelbs.list()" ui-sref-active="{'active':'contiv.menu.servicelbs'}">
         <i class="loadbalancer icon"></i>
         Service Load Balancers
@@ -32,6 +36,7 @@
         <i class="global_settings icon"></i> 
         Settings
     </a>
+    -->
     <!-- <a class="white item" ui-sref="contiv.menu.visualization.list()" ui-sref-active="{'active':'contiv.menu.visualization'}">
         <i class="loadbalancer icon"></i>
         App Connectivity Graph
@@ -45,19 +50,19 @@
         </h1>
         <div class="right floated one wide column" style="margin-top: 12px; margin-right: 12px;">
             <button type="button" class="circular ui mini icon button"
-                    ng-click="menuCtrl.help()">
+                    (click)="help()">
                 <i class="large help icon"></i>
             </button>
             <button type="button" class="circular ui mini icon button"
-                    ng-click="menuCtrl.logout()">
+                    (click)="logout()">
                 <i class="large logout icon"></i>
             </button>
             <button type="button" class="circular ui mini icon button"
-                    ng-click="menuCtrl.account()">
+                    (click)="account()">
                 <i class="large user icon"></i>
             </button>
             <div class="ui dropdown">
-                <div class="text">{{menuCtrl.username}}</div>
+                <div class="text">{{username}}</div>
                 <i class="large dropdown icon"></i>
                 <div class="menu">
                 </div>
@@ -66,5 +71,8 @@
 
     </div>
 
-    <div ui-view style="margin-left:180px;margin-top:30px"></div>
+    <!--<div ui-view style="margin-left:180px;margin-top:30px"></div>-->
+    <div style="margin-left:180px;margin-top:30px">
+        <router-outlet></router-outlet>
+    </div>
 </div>

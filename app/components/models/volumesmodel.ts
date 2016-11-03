@@ -7,6 +7,7 @@ import { Collection } from "./collection";
 import 'rxjs/add/operator/map';
 import * as _ from 'lodash';
 import {isUndefined} from "util";
+import { ContivGlobals } from "./contivglobals";
 
 @Injectable()
 export class VolumesModel extends Collection {

@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Collection } from "./collection";
 import * as _ from 'lodash';
+import { ContivGlobals } from "./contivglobals";
 
 @Injectable()
 export class StoragePoliciesModel extends Collection {

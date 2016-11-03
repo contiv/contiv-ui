@@ -1,7 +1,9 @@
 /**
  * Created by vjain3 on 10/6/16.
  */
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
+/*
 import { upgradeAdapter } from "./upgradeadapter";
 import { NetworksModel } from "./components/models/networksmodel";
 import { OrganizationsModel } from "./components/models/organizationsmodel";
@@ -115,3 +117,5 @@ angular.module('contiv.login')
     .directive('login', upgradeAdapter.downgradeNg2Component(LoginComponent) as angular.IDirectiveFactory);
 
 upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);
+*/
+platformBrowserDynamic().bootstrapModule(AppModule);

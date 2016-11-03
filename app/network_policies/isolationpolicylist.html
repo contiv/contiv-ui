@@ -17,7 +17,7 @@
 
             <tbody>
                 <tr *ngFor="let policy of isolationPolicyListCtrl['filteredPolicies']">
-                    <td><a href="/#/m/networkpolicies/isolation/details/{{policy.key}}">{{policy.policyName}}</a></td>
+                    <td><a [routerLink]="['../isolation/details', policy.key]">{{policy.policyName}}</a></td>
                     <td>{{policy.updatedBy}}</td>
                     <td>{{policy.lastUpdate}}</td>
                     <td></td>

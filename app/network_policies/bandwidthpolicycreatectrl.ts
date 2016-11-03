@@ -3,7 +3,7 @@
  * Created by hardik gandhi on 6/14/16.
  */
 import { Component, Inject } from '@angular/core';
-import { StateService } from "angular-ui-router/commonjs/ng1";
+import { ActivatedRoute, Router } from "@angular/router";
 import { NetprofilesModel } from "../components/models/netprofilesmodel";
 import { CRUDHelperService } from "../components/utils/crudhelperservice";
 import { PolicyTab } from "./networkpoliciestabsctrl";
@@ -15,7 +15,8 @@ import { PolicyTab } from "./networkpoliciestabsctrl";
 export class BandwidthPolicyCreateComponent {
     newPolicy;
 
-    constructor(@Inject('$state') private $state: StateService,
+    constructor(private activatedRoute: ActivatedRoute,
+                private router: Router,
                 private netprofilesModel: NetprofilesModel,
                 private crudHelperService: CRUDHelperService){
         var bandwidthPolicyCreateCtrl = this;
@@ -34,7 +35,7 @@ export class BandwidthPolicyCreateComponent {
     }
 
     returnToPolicies() {
-        this.$state.go('contiv.menu.networkpolicies.list', {policyTab: PolicyTab.bandwidth});
+        this.router.navigate(['../../list', {policyTab: PolicyTab.bandwidth}], { relativeTo: this.activatedRoute });
     }
 
     cancelCreating() {

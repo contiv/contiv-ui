@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { BaseCollection } from "./basecollection";
 import 'rxjs/add/operator/map';
+import { ContivGlobals } from "./contivglobals";
 
 @Injectable()
 export class NodesModel extends BaseCollection {

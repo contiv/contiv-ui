@@ -2,6 +2,7 @@
  * Created by vjain3 on 3/10/16.
  */
 import { Component, Inject } from '@angular/core';
+import { ActivatedRoute, Router } from "@angular/router";
 import { PoliciesModel } from "../components/models/policiesmodel";
 import { CRUDHelperService } from "../components/utils/crudhelperservice";
 import { StateService } from "angular-ui-router/commonjs/ng1";
@@ -14,7 +15,8 @@ import { PolicyTab } from "./networkpoliciestabsctrl";
 export class IsolationPolicyCreateComponent {
     newPolicy;
 
-    constructor(@Inject('$state') private $state: StateService,
+    constructor(private activatedRoute: ActivatedRoute,
+                private router: Router,
                 private policiesModel: PoliciesModel,
                 private crudHelperService: CRUDHelperService) {
         var isolationPolicyCreateCtrl = this;
@@ -31,7 +33,8 @@ export class IsolationPolicyCreateComponent {
     }
 
     returnToPolicies() {
-        this.$state.go('contiv.menu.networkpolicies.list', {policyTab: PolicyTab.isolation});
+        //this.router.navigate('contiv.menu.networkpolicies.list', {policyTab: PolicyTab.isolation});
+        this.router.navigate(['../../list', {policyTab: PolicyTab.isolation}], { relativeTo: this.activatedRoute });
     }
 
     cancelCreating() {
