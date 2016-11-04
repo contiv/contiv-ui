@@ -7,6 +7,7 @@ import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { MenuComponent } from "./menuCtrl";
 
+
 @NgModule({
     imports: [
         FormsModule,

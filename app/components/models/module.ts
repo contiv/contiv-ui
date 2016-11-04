@@ -1,6 +1,7 @@
 /**
  * Created by vjain3 on 3/14/16.
  */
+/*
 angular.module('contiv.models', []);
 var ContivGlobals = (function () {
 
@@ -51,3 +52,4 @@ var ContivGlobals = (function () {
         'NUMBER_REGEX' : '^[0-9]*$'
     }
 })();
+*/

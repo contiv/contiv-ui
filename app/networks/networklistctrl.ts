@@ -7,6 +7,7 @@ import {NetworksModel} from "../components/models/networksmodel";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Observable, Subscription} from "rxjs";
 import { StateService } from "angular-ui-router/commonjs/ng1";
+import {Router, ActivatedRoute} from "@angular/router";
 
 
 @Component({
@@ -20,7 +21,8 @@ export class NetworkListComponent implements OnInit, OnDestroy{
     public networkListComp: any;
     private refresh: Subscription;
 
-    constructor(@Inject('$state') private $state: StateService,
+    constructor(private router: Router,
+                private activatedRoute: ActivatedRoute,
                 networksModel: NetworksModel,
                 crudHelperService: CRUDHelperService){
         this.networksModel = networksModel;
@@ -50,7 +52,7 @@ export class NetworkListComponent implements OnInit, OnDestroy{
     }
 
     create(){
-        this.$state.go('contiv.menu.networks.create');
+        this.router.navigate(['../create'], {relativeTo: this.activatedRoute});
     }
 
     ngOnDestroy(){

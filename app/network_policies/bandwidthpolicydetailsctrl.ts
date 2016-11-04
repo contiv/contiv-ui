@@ -34,7 +34,7 @@ export class BandwidthPolicyDetailsComponent {
         }
 
         /* Get particular Profile for based on key*/
-        bandwidthPolicyDetailsCtrl.netprofilesModel.getModelByKey(activatedRoute.snapshot.params['key'])
+        bandwidthPolicyDetailsCtrl.netprofilesModel.getModelByKey(activatedRoute.snapshot.params['key'],false,undefined)
             .then(function (policy) {
                 bandwidthPolicyDetailsCtrl.policy = policy;
             });
@@ -48,7 +48,7 @@ export class BandwidthPolicyDetailsComponent {
         var bandwidthPolicyDetailsCtrl = this;
         bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
         bandwidthPolicyDetailsCtrl.crudHelperService.startLoader(bandwidthPolicyDetailsCtrl);
-        bandwidthPolicyDetailsCtrl.netprofilesModel.deleteUsingKey(bandwidthPolicyDetailsCtrl.policy.key, 'name').then(
+        bandwidthPolicyDetailsCtrl.netprofilesModel.deleteUsingKey(bandwidthPolicyDetailsCtrl.policy.key, 'name', undefined).then(
             function successCallback(result) {
                 bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
                 bandwidthPolicyDetailsCtrl.returnToPolicies();

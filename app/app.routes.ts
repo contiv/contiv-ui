@@ -18,16 +18,24 @@ import { NetworkSettingsComponent } from "./settings/networksettingctrl";
 import { OrganizationListComponent } from "./organizations/organizationlistctrl";
 import { OrganizationCreateComponent } from "./organizations/organizationcreatectrl";
 import { OrganizationDetailsComponent } from "./organizations/organizationdetailsctrl";
-
+import {NetworkListComponent} from "./networks/networklistctrl";
+import {NetworkdetailsComponent} from "./networks/networkdetailsctrl";
+import {NetworkCreateComponent} from "./networks/networkcreatectrl";
+import {ServicelbListComponent} from "./service_lbs/servicelblistctrl";
+import {ServicelbCreateComponent} from "./service_lbs/servicelbcreatectrl";
+import {ServicelbDetailsComponent} from "./service_lbs/servicelbdetailsctrl";
+import {LoginComponent} from "./login/loginctrl";
 
 const routes = [
-    {path: '', redirectTo: 'm', pathMatch: 'full'},
+    {path: 'login', component: LoginComponent},
+    {path: '', redirectTo: 'login', pathMatch: 'full'},
     {
         path: 'm',
         component: MenuComponent,
         children: [
             {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
             {path: 'dashboard', component: DashboardComponent},
+
             //Network Policies
             {path: 'networkpolicies/list', component: NetworkPoliciesTabsComponent},
             {path: 'networkpolicies/isolation/create', component: IsolationPolicyCreateComponent},
@@ -36,11 +44,13 @@ const routes = [
             {path: 'networkpolicies/bandwidth/create', component: BandwidthPolicyCreateComponent},
             {path: 'networkpolicies/bandwidth/details/:key', component: BandwidthPolicyDetailsComponent},
             {path: 'networkpolicies/bandwidth/edit/:key', component: BandwidthPolicyDetailsComponent},
+
             //Application Groups
             {path: 'applicationgroups/list', component: AppGrouplistComponent},
             {path: 'applicationgroups/create', component: ApplicationGroupCreateComponent},
             {path: 'applicationgroups/details/:key', component: ApplicationGroupDetailsComponent},
             {path: 'applicationgroups/edit/:key', component: ApplicationGroupDetailsComponent},
+
             //Settings
             {
                 path: 'settings',
@@ -51,10 +61,22 @@ const routes = [
                     {path: 'networks', component: NetworkSettingsComponent}
                 ]
             },
+
             //Organizations
             {path: 'organizations/list', component: OrganizationListComponent},
             {path: 'organizations/create', component: OrganizationCreateComponent},
-            {path: 'organizations/details/:key', component: OrganizationDetailsComponent}
+            {path: 'organizations/details/:key', component: OrganizationDetailsComponent},
+
+            //Networks
+            {path: 'networks/list', component: NetworkListComponent},
+            {path: 'networks/create', component: NetworkCreateComponent},
+            {path: 'networks/details/:key', component: NetworkdetailsComponent},
+
+            //Servicelbs
+            {path: 'servicelbs/list', component: ServicelbListComponent},
+            {path: 'servicelbs/create', component: ServicelbCreateComponent},
+            {path: 'servicelbs/details/:key', component: ServicelbDetailsComponent}
+
         ]
     }
 ];

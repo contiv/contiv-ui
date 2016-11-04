@@ -7,6 +7,7 @@ import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Observable, Subscription} from "rxjs";
 import { StateService } from "angular-ui-router/commonjs/ng1";
 import {ServicelbsModel} from "../components/models/servicelbsmodel";
+import {Router, ActivatedRoute} from "@angular/router";
 
 
 @Component({
@@ -20,7 +21,8 @@ export class ServicelbListComponent implements OnInit, OnDestroy{
     public servicelbListCtrl: any;
     private refresh: Subscription;
 
-    constructor(@Inject('$state') private $state: StateService,
+    constructor(private router: Router,
+                private route: ActivatedRoute,
                 servicelbsModel: ServicelbsModel,
                 crudHelperService: CRUDHelperService,
                 private ngZone: NgZone){
@@ -55,7 +57,7 @@ export class ServicelbListComponent implements OnInit, OnDestroy{
     }
 
     create(){
-        this.$state.go('contiv.menu.servicelbs.create');
+        this.router.navigate(['../create'],{relativeTo: this.route});
     }
 
     ngOnDestroy(){

@@ -24,9 +24,11 @@ import { CRUDHelperService } from "./components/utils/crudhelperservice";
 import { InspectService } from "./components/utils/inspectservice";
 import { NetworkService } from "./components/utils/networkservice";
 import { NodesService } from "./components/utils/nodesservice";
+import { MenuModule } from "./menu/menu.module";
 import {LoginComponent} from "./login/loginctrl";
 import { AppComponent } from "./app.component";
 import appRoutes from "./app.routes.ts";
+import {LoginModule} from "./login/login.module";
 
 @NgModule({
     imports: [
@@ -40,10 +42,10 @@ import appRoutes from "./app.routes.ts";
         SettingsModule,
         NetworkModule,
         ServicelbModule,
-        OrganizationModule
+        OrganizationModule,
+        LoginModule
     ],
     declarations: [
-        LoginComponent,
         AppComponent
     ],
     providers: [
