@@ -54,7 +54,7 @@ export class BandwidthPolicyCreateComponent {
             bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.newPolicy.bandwidthNumber
                 + " "+ bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
 
-            bandwidthPolicyCreateCtrl.netprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+            bandwidthPolicyCreateCtrl.netprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy, undefined).then(function successCallback(result) {
                 bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
                 this.returnToPolicies();
             }, function errorCallback(result) {

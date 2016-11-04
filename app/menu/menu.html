@@ -1,8 +1,3 @@
-<style>
-    body{
-        background: none;
-    }
-</style>
 <div id="sidebar" class="ui visible left vertical sidebar icon labeled menu">
 
     <a class="white item" [routerLink]="['dashboard']" routerLinkActive="active">
@@ -73,7 +68,7 @@
 
     </div>
 
-    <div style="margin-left:180px;margin-top:30px">
+    <div [ngStyle]="{'margin-left.px':180,'margin-top.px':30, 'margin-right.px': 30}">
         <router-outlet></router-outlet>
     </div>
 </div>

@@ -2331,7 +2331,7 @@ webpackJsonp([2],{
 	                bandwidthPolicyCreateCtrl.netprofilesModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
 	            bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.newPolicy.bandwidthNumber
 	                + " " + bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
-	            bandwidthPolicyCreateCtrl.netprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+	            bandwidthPolicyCreateCtrl.netprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy, undefined).then(function successCallback(result) {
 	                bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
 	                this.returnToPolicies();
 	            }, function errorCallback(result) {
@@ -2512,7 +2512,7 @@ webpackJsonp([2],{
 	            isolationPolicyCreateCtrl.crudHelperService.startLoader(isolationPolicyCreateCtrl);
 	            isolationPolicyCreateCtrl.newPolicy.key =
 	                isolationPolicyCreateCtrl.policiesModel.generateKey(isolationPolicyCreateCtrl.newPolicy);
-	            isolationPolicyCreateCtrl.policiesModel.create(isolationPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+	            isolationPolicyCreateCtrl.policiesModel.create(isolationPolicyCreateCtrl.newPolicy, undefined).then(function successCallback(result) {
 	                isolationPolicyCreateCtrl.crudHelperService.stopLoader(isolationPolicyCreateCtrl);
 	                isolationPolicyCreateCtrl.returnToPolicies();
 	            }, function errorCallback(result) {
@@ -2949,8 +2949,9 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(8);
 	var contivglobals_1 = __webpack_require__(24);
 	var NetworkCreateComponent = (function () {
-	    function NetworkCreateComponent(router, networksModel, crudHelperService) {
+	    function NetworkCreateComponent(router, activatedRoute, networksModel, crudHelperService) {
 	        this.router = router;
+	        this.activatedRoute = activatedRoute;
 	        this.networksModel = networksModel;
 	        this.crudHelperService = crudHelperService;
 	        this['showLoader'] = false;
@@ -2961,7 +2962,7 @@ webpackJsonp([2],{
 	        this.networkCreateCtrl = this;
 	    }
 	    NetworkCreateComponent.prototype.returnToNetworks = function () {
-	        this.router.navigate(['/m/networks/list']);
+	        this.router.navigate(['../list'], { relativeTo: this.activatedRoute });
 	    };
 	    NetworkCreateComponent.prototype.cancelCreating = function () {
 	        this.returnToNetworks();
@@ -2988,10 +2989,10 @@ webpackJsonp([2],{
 	            selector: 'networkcreate',
 	            templateUrl: 'networks/networkcreate.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
 	    ], NetworkCreateComponent);
 	    return NetworkCreateComponent;
-	    var _a, _b, _c;
+	    var _a, _b, _c, _d;
 	}());
 	exports.NetworkCreateComponent = NetworkCreateComponent;
 	
@@ -3126,9 +3127,10 @@ webpackJsonp([2],{
 	var rxjs_1 = __webpack_require__(39);
 	var router_1 = __webpack_require__(8);
 	var NetworkListComponent = (function () {
-	    function NetworkListComponent(router, networksModel, crudHelperService) {
+	    function NetworkListComponent(router, activatedRoute, networksModel, crudHelperService) {
 	        var _this = this;
 	        this.router = router;
+	        this.activatedRoute = activatedRoute;
 	        this.networksModel = networksModel;
 	        this.crudHelperService = crudHelperService;
 	        this.networkListComp = this;
@@ -3152,7 +3154,7 @@ webpackJsonp([2],{
 	        });
 	    };
 	    NetworkListComponent.prototype.create = function () {
-	        this.router.navigate(['/m/networks/create']);
+	        this.router.navigate(['../create'], { relativeTo: this.activatedRoute });
 	    };
 	    NetworkListComponent.prototype.ngOnDestroy = function () {
 	        this.refresh.unsubscribe();
@@ -3162,10 +3164,10 @@ webpackJsonp([2],{
 	            selector: 'networkList',
 	            template: __webpack_require__(432)
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
 	    ], NetworkListComponent);
 	    return NetworkListComponent;
-	    var _a, _b, _c;
+	    var _a, _b, _c, _d;
 	}());
 	exports.NetworkListComponent = NetworkListComponent;
 	
@@ -3607,7 +3609,7 @@ webpackJsonp([2],{
 	        this.modeChange.emit(this.mode);
 	    };
 	    ServicelbInfoComponent.prototype.returnToServicelbs = function () {
-	        this.router.navigate(['../../list']);
+	        this.router.navigate(['../../list'], { relativeTo: this.activatedRoute });
 	    };
 	    ServicelbInfoComponent.prototype.getServicelbs = function (reload) {
 	        var servicelbInfoCtrl = this;
@@ -4110,6 +4112,7 @@ webpackJsonp([2],{
 	var platform_browser_1 = __webpack_require__(85);
 	var http_1 = __webpack_require__(31);
 	var common_1 = __webpack_require__(21);
+	var login_module_1 = __webpack_require__(255);
 	var menu_module_1 = __webpack_require__(256);
 	var dashboard_module_1 = __webpack_require__(254);
 	var networkpolicies_module_1 = __webpack_require__(259);
@@ -4131,7 +4134,6 @@ webpackJsonp([2],{
 	var nodesservice_1 = __webpack_require__(147);
 	var app_component_1 = __webpack_require__(240);
 	var app_routes_ts_1 = __webpack_require__(242);
-	var login_module_1 = __webpack_require__(255);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -5629,7 +5631,6 @@ webpackJsonp([2],{
 	var bandwidthpolicydetailsctrl_1 = __webpack_require__(152);
 	var isolationpolicylistctrl_1 = __webpack_require__(258);
 	var bandwidthpolicylistctrl_1 = __webpack_require__(257);
-	//import networkPoliciesRoutes from "./networkpolicies.routes.ts";
 	var NetworkPoliciesModule = (function () {
 	    function NetworkPoliciesModule() {
 	    }

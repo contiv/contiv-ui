@@ -48,7 +48,7 @@ export class IsolationPolicyCreateComponent {
             isolationPolicyCreateCtrl.crudHelperService.startLoader(isolationPolicyCreateCtrl);
             isolationPolicyCreateCtrl.newPolicy.key =
                 isolationPolicyCreateCtrl.policiesModel.generateKey(isolationPolicyCreateCtrl.newPolicy);
-            isolationPolicyCreateCtrl.policiesModel.create(isolationPolicyCreateCtrl.newPolicy).then(function successCallback(result) {
+            isolationPolicyCreateCtrl.policiesModel.create(isolationPolicyCreateCtrl.newPolicy, undefined).then(function successCallback(result) {
                 isolationPolicyCreateCtrl.crudHelperService.stopLoader(isolationPolicyCreateCtrl);
                 isolationPolicyCreateCtrl.returnToPolicies();
             }, function errorCallback(result) {
