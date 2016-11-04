@@ -1,5 +1,4 @@
 import {Component, Inject, OnInit, ViewEncapsulation} from "@angular/core";
-import {StateService} from "angular-ui-router";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Router, ActivatedRoute} from "@angular/router";
 declare var jQuery:any;

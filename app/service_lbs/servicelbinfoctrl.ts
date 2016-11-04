@@ -4,7 +4,6 @@
 
 import {Component, OnInit, Input, Inject, EventEmitter, Output, AfterViewChecked, NgZone} from "@angular/core";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
-import { StateService } from "angular-ui-router/commonjs/ng1";
 import {ServicelbsModel} from "../components/models/servicelbsmodel";
 import {Router, ActivatedRoute} from "@angular/router";
 var _ = require('lodash');

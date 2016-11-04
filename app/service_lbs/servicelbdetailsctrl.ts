@@ -4,7 +4,6 @@
 
 import {Component, OnInit, OnDestroy, Inject, ViewChild, AfterViewInit} from "@angular/core";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
-import { StateService } from "angular-ui-router/commonjs/ng1";
 import {ServicelbsModel} from "../components/models/servicelbsmodel";
 import {ServicelbInfoComponent} from "./servicelbinfoctrl";
 import {ServicelbStatComponent} from "./servicelbstatsctrl";

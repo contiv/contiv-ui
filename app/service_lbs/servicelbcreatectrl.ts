@@ -4,7 +4,6 @@
 
 import {Component, OnInit, OnDestroy, Inject} from "@angular/core";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
-import { StateService } from "angular-ui-router/commonjs/ng1";
 import {ServicelbsModel} from "../components/models/servicelbsmodel";
 import {NetworksModel} from "../components/models/networksmodel";
 import {Router, ActivatedRoute} from "@angular/router";

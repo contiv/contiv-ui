@@ -5,7 +5,6 @@ import { Component, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { PoliciesModel } from "../components/models/policiesmodel";
 import { CRUDHelperService } from "../components/utils/crudhelperservice";
-import { StateService } from "angular-ui-router/commonjs/ng1";
 import { PolicyTab } from "./networkpoliciestabsctrl";
 
 @Component({
@@ -33,7 +32,6 @@ export class IsolationPolicyCreateComponent {
     }
 
     returnToPolicies() {
-        //this.router.navigate('contiv.menu.networkpolicies.list', {policyTab: PolicyTab.isolation});
         this.router.navigate(['../../list', {policyTab: PolicyTab.isolation}], { relativeTo: this.activatedRoute });
     }
 

@@ -5,7 +5,6 @@
 import {Component, Inject, Directive} from "@angular/core";
 import {NetworksModel} from "../components/models/networksmodel";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
-import { StateService } from "angular-ui-router/commonjs/ng1";
 import {Router, ActivatedRoute} from "@angular/router";
 import {ContivGlobals} from "../components/models/contivglobals";
 

@@ -6,7 +6,6 @@ import {Component, OnInit, OnDestroy, Inject} from "@angular/core";
 import {NetworksModel} from "../components/models/networksmodel";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Observable, Subscription} from "rxjs";
-import { StateService } from "angular-ui-router/commonjs/ng1";
 import {Router, ActivatedRoute} from "@angular/router";
 
 

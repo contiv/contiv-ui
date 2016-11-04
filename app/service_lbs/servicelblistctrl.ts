@@ -5,7 +5,6 @@
 import {Component, OnInit, OnDestroy, Inject, NgZone} from "@angular/core";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Observable, Subscription} from "rxjs";
-import { StateService } from "angular-ui-router/commonjs/ng1";
 import {ServicelbsModel} from "../components/models/servicelbsmodel";
 import {Router, ActivatedRoute} from "@angular/router";
 
