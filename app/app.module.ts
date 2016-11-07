@@ -27,6 +27,9 @@ import { NetworkService } from "./components/utils/networkservice";
 import { NodesService } from "./components/utils/nodesservice";
 import { AppComponent } from "./app.component";
 import appRoutes from "./app.routes.ts";
+import {LoginModule} from "./login/login.module";
+import {AuthService} from "./components/utils/authservice";
+import {AuthGuard} from "./components/utils/authguard";
 
 @NgModule({
     imports: [
@@ -58,6 +61,8 @@ import appRoutes from "./app.routes.ts";
         InspectService,
         NetworkService,
         NodesService,
+        AuthService,
+        AuthGuard,
         { provide: APP_BASE_HREF, useValue: '' },
         { provide: LocationStrategy, useClass: HashLocationStrategy }
     ],
