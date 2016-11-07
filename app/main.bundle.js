@@ -2005,14 +2005,15 @@ webpackJsonp([2],{
 	    'organizations/remove': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'organizations/create': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'organizations/details': { 'DevOps': 'y', 'SysAdmin': 'y' },
-	    'networks/list': { 'DevOps': 'y', 'SysAdmin': 'n' },
+	    'networks/list': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'networks/remove': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'networks/create': { 'DevOps': 'y', 'SysAdmin': 'y' },
-	    'networks/details': { 'DevOps': 'y', 'SysAdmin': 'y' },
+	    'networks/details': { 'DevOps': 'y', 'SysAdmin': 'n' },
 	    'servicelbs/list': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'servicelbs/create': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'servicelbs/details/edit': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'servicelbs/details/view': { 'DevOps': 'y', 'SysAdmin': 'y' },
+	    'servicelbs/details': { 'DevOps': 'y', 'SysAdmin': 'y' }
 	};
 	
 
@@ -2471,8 +2472,10 @@ webpackJsonp([2],{
 	                jQuery('#login-failed').modal('show');
 	            }
 	        }, function (error) {
+	            if (error['status'] != '406') {
+	                _this.crudHelperService.showServerError(_this, error);
+	            }
 	            _this.crudHelperService.stopLoader(_this);
-	            _this.crudHelperService.showServerError(_this, error);
 	            jQuery('#login-failed').modal('show');
 	        });
 	    };
@@ -2557,6 +2560,9 @@ webpackJsonp([2],{
 	var UnauthorizedComponent = (function () {
 	    function UnauthorizedComponent() {
 	    }
+	    UnauthorizedComponent.prototype.ngOnInit = function () {
+	        jQuery("body").addClass("background");
+	    };
 	    UnauthorizedComponent = __decorate([
 	        core_1.Component({
 	            selector: 'unauthorized',

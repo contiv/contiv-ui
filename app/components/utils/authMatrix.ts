@@ -27,12 +27,13 @@ export const AuthMatrix = {
     'organizations/remove':                     {'DevOps':'y', 'SysAdmin':'y'},
     'organizations/create':                     {'DevOps':'y', 'SysAdmin':'y'},
     'organizations/details':                    {'DevOps':'y', 'SysAdmin':'y'},
-    'networks/list':                            {'DevOps':'y', 'SysAdmin':'n'},
+    'networks/list':                            {'DevOps':'y', 'SysAdmin':'y'},
     'networks/remove':                          {'DevOps':'y', 'SysAdmin':'y'},
     'networks/create':                          {'DevOps':'y', 'SysAdmin':'y'},
-    'networks/details':                         {'DevOps':'y', 'SysAdmin':'y'},
+    'networks/details':                         {'DevOps':'y', 'SysAdmin':'n'},
     'servicelbs/list':                          {'DevOps':'y', 'SysAdmin':'y'},
     'servicelbs/create':                        {'DevOps':'y', 'SysAdmin':'y'},
     'servicelbs/details/edit':                  {'DevOps':'y', 'SysAdmin':'y'},
     'servicelbs/details/view':                  {'DevOps':'y', 'SysAdmin':'y'},
+    'servicelbs/details':                       {'DevOps':'y', 'SysAdmin':'y'}
 }

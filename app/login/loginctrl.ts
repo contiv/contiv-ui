@@ -57,8 +57,10 @@ export class LoginComponent implements OnInit{
                     jQuery('#login-failed').modal('show');
                 }
             }, (error) => {
+                if (error['status'] != '406'){
+                    this.crudHelperService.showServerError(this,error);
+                }
                 this.crudHelperService.stopLoader(this);
-                this.crudHelperService.showServerError(this,error);
                 jQuery('#login-failed').modal('show');
             });
     }
