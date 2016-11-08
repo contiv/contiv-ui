@@ -12,27 +12,19 @@ import {AuthService} from "../utils/authservice";
 export class AuthDirective implements OnInit{
 
     @Input('auth') auth: string;
-    constructor(private el: ElementRef,
-                private renderer: Renderer,
-                private authService: AuthService,
+    constructor(private authService: AuthService,
                 private templateRef: TemplateRef<any>,
                 private viewContainer: ViewContainerRef){
         this.auth = '';
     }
 
     ngOnInit(){
-        /*
-        if (this.auth !== this.authService.authTokenPayload['role']){
-            this.renderer.setElementStyle(this.el.nativeElement, 'display', 'none');
-        }
-        */
         if (this.auth == this.authService.authTokenPayload['role']){
             this.viewContainer.createEmbeddedView(this.templateRef);
         }
         else{
             this.viewContainer.clear();
         }
-
     }
 }
 

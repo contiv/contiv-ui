@@ -5,8 +5,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from "@angular/http";
 import { APP_BASE_HREF, HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { LoginModule } from "./login/login.module";
-import { MenuModule } from "./menu/menu.module";
 import { DashboardModule } from "./dashboard/dashboard.module";
 import { NetworkPoliciesModule } from "./network_policies/networkpolicies.module";
 import { ApplicationGroupsModule } from "./applicationgroups/applicationgroups.module.ts";

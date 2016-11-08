@@ -55,29 +55,31 @@ export class AuthService {
 
         // This is just a mock
         return new Observable((observer) => {
-
-
-
             if (user.username != "devops" && user.username != "admin")
                 observer.next(false);
+            else{
+                var res = '';
 
-            var res = '';
+                if (user.username == "devops" && user.password == "devops")
+                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
 
-            if (user.username == "devops" && user.password == "devops")
-                var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+                if (user.username == "admin" && user.password == "admin")
+                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
 
-            if (user.username == "admin" && user.password == "admin")
-                var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
-
-            if (res == ''){
-                observer.next(false);
+                if (res == ''){
+                    observer.next(false);
+                }
+                else{
+                    this.isLoggedIn = true;
+                    localStorage.setItem("authToken", res);
+                    localStorage.setItem("loginTime", new Date().toLocaleString());
+                    localStorage.setItem("lastAccessTime", new Date().toLocaleString());
+                    this.extractBody();
+                    observer.next(true);
+                }
             }
 
-            localStorage.setItem("authToken", res);
-            localStorage.setItem("loginTime", new Date().toLocaleString());
-            localStorage.setItem("lastAccessTime", new Date().toLocaleString());
-            this.extractBody();
-            observer.next(true);
+
 
         });
 
@@ -101,6 +103,10 @@ export class AuthService {
     }
 
     logout(): void {
+        this.cleanuplocalstorage();
+    }
+
+    cleanuplocalstorage(): void{
         localStorage.removeItem("authToken");
         localStorage.removeItem("loginTime");
         localStorage.removeItem("lastAccessTime");

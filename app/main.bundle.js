@@ -7,128 +7,8 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/6/16.
 	 */
-<<<<<<< HEAD
-	var platform_browser_dynamic_1 = __webpack_require__(107);
-	var app_module_1 = __webpack_require__(241);
-=======
 	var platform_browser_dynamic_1 = __webpack_require__(108);
 	var app_module_1 = __webpack_require__(248);
-	/*
-	import { upgradeAdapter } from "./upgradeadapter";
-	import { NetworksModel } from "./components/models/networksmodel";
-	import { OrganizationsModel } from "./components/models/organizationsmodel";
-	import { ServicelbsModel } from "./components/models/servicelbsmodel";
-	import { PoliciesModel } from "./components/models/policiesmodel";
-	import { ApplicationGroupsModel } from "./components/models/applicationgroupsmodel";
-	import { RulesModel } from "./components/models/rulesmodel";
-	import { NetprofilesModel } from "./components/models/netprofilesmodel";
-	import { CRUDHelperService } from "./components/utils/crudhelperservice";
-	import { InspectService } from "./components/utils/inspectservice";
-	import { NodesService } from "./components/utils/nodesservice";
-	import { ErrorMessageComponent } from "./components/directives/errormessagedirective";
-	import { DashboardComponent } from "./dashboard/dashboardctrl";
-	import { NetworkPoliciesTabsComponent } from "./network_policies/networkpoliciestabsctrl";
-	import { IsolationPolicyCreateComponent } from "./network_policies/isolationpolicycreatectrl";
-	import { IsolationPolicyDetailsComponent } from "./network_policies/isolationpolicydetailsctrl";
-	import { BandwidthPolicyCreateComponent } from "./network_policies/bandwidthpolicycreatectrl";
-	import { BandwidthPolicyDetailsComponent } from "./network_policies/bandwidthpolicydetailsctrl";
-	import { ApplicationGroupCreateComponent } from "./applicationgroups/applicationgroupcreatectrl";
-	import { ApplicationGroupDetailsComponent } from "./applicationgroups/applicationgroupdetailsctrl";
-	import { NetworkSettingsComponent } from "./settings/networksettingctrl";
-
-	import {
-	    CtvTableComponent, CtvThComponent, CtvSearchComponent,
-	    CtvTpaginationComponent
-	} from "./components/directives/tabledirective";
-	import {NetworkListComponent} from "./networks/networklistctrl";
-	import {AppGrouplistComponent} from "./applicationgroups/applicationgrouplistctrl";
-	import {IsolationListComponent} from "./network_policies/isolationpolicylistctrl";
-	import {BandwidthListComponent} from "./network_policies/bandwidthpolicylistctrl";
-	import {CtvAccordionComponent} from "./components/directives/accordiondirective";
-	import {ServicelbListComponent} from "./service_lbs/servicelblistctrl";
-	import {NetworkService} from "./components/utils/networkservice";
-	import {OrganizationListComponent} from "./organizations/organizationlistctrl";
-	import {NetworkdetailsComponent} from "./networks/networkdetailsctrl";
-	import {CtvCollapsibleComponent} from "./components/directives/collapsibledirective";
-	import {CtvNamevalueComponent} from "./components/directives/namevaluedirective";
-	import {NetworkCreateComponent} from "./networks/networkcreatectrl";
-	import {ServicelbCreateComponent} from "./service_lbs/servicelbcreatectrl";
-	import {ServicelbDetailsComponent} from "./service_lbs/servicelbdetailsctrl";
-	import {ClusterSettingsComponent} from "./settings/clustersettingctrl";
-	import {LoginComponent} from "./login/loginctrl";
-	import {OrganizationCreateComponent} from "./organizations/organizationcreatectrl";
-	import {OrganizationDetailComponent} from "./organizations/organizationdetailsctrl";
-
-
-	upgradeAdapter.upgradeNg1Provider('$state');
-	upgradeAdapter.upgradeNg1Provider('$stateParams');
-
-	angular.module('contiv.models')
-	    .factory('NetworksModel', upgradeAdapter.downgradeNg2Provider(NetworksModel))
-	    .factory('OrganizationsModel', upgradeAdapter.downgradeNg2Provider(OrganizationsModel))
-	    .factory('ServicelbsModel', upgradeAdapter.downgradeNg2Provider(ServicelbsModel))
-	    .factory('PoliciesModel', upgradeAdapter.downgradeNg2Provider(PoliciesModel))
-	    .factory('ApplicationGroupsModel', upgradeAdapter.downgradeNg2Provider(ApplicationGroupsModel))
-	    .factory('RulesModel', upgradeAdapter.downgradeNg2Provider(RulesModel))
-	    .factory('NetprofilesModel', upgradeAdapter.downgradeNg2Provider(NetprofilesModel));
-
-	angular.module('contiv.settings')
-	    .directive('networksetting', upgradeAdapter.downgradeNg2Component(NetworkSettingsComponent) as angular.IDirectiveFactory)
-	    .directive('clustersettings', upgradeAdapter.downgradeNg2Component(ClusterSettingsComponent) as angular.IDirectiveFactory);
-
-	angular.module('contiv.utils')
-	    .factory('CRUDHelperService', upgradeAdapter.downgradeNg2Provider(CRUDHelperService))
-	    .factory("InspectService", upgradeAdapter.downgradeNg2Provider(InspectService))
-	    .factory('NetworkService', upgradeAdapter.downgradeNg2Provider(NetworkService))
-	    .factory('NodesService', upgradeAdapter.downgradeNg2Provider(NodesService));
-
-	angular.module('contiv.dashboard')
-	    .directive('dashboard', upgradeAdapter.downgradeNg2Component(DashboardComponent) as angular.IDirectiveFactory);
-
-	angular.module('contiv.networkpolicies')
-	    .directive('networkpoliciestabs', upgradeAdapter.downgradeNg2Component(NetworkPoliciesTabsComponent) as angular.IDirectiveFactory)
-	    .directive('isolationpolicycreate', upgradeAdapter.downgradeNg2Component(IsolationPolicyCreateComponent) as angular.IDirectiveFactory)
-	    .directive('bandwidthpolicycreate', upgradeAdapter.downgradeNg2Component(BandwidthPolicyCreateComponent) as angular.IDirectiveFactory)
-	    .directive('isolationpolicydetails', upgradeAdapter.downgradeNg2Component(IsolationPolicyDetailsComponent) as angular.IDirectiveFactory)
-	    .directive('bandwidthpolicydetails', upgradeAdapter.downgradeNg2Component(BandwidthPolicyDetailsComponent) as angular.IDirectiveFactory);
-
-	angular.module("contiv.directives")
-	    .directive("ctvError", upgradeAdapter.downgradeNg2Component(ErrorMessageComponent) as angular.IDirectiveFactory)
-	    .directive('ctvTable', upgradeAdapter.downgradeNg2Component(CtvTableComponent) as angular.IDirectiveFactory)
-	    .directive('ctvTh', upgradeAdapter.downgradeNg2Component(CtvThComponent) as angular.IDirectiveFactory)
-	    .directive('ctvSearch', upgradeAdapter.downgradeNg2Component(CtvSearchComponent) as angular.IDirectiveFactory)
-	    .directive('ctvTpagination', upgradeAdapter.downgradeNg2Component(CtvTpaginationComponent) as angular.IDirectiveFactory)
-	    .directive('ctvAccordion', upgradeAdapter.downgradeNg2Component(CtvAccordionComponent) as angular.IDirectiveFactory)
-	    .directive('ctvCollapsible', upgradeAdapter.downgradeNg2Component(CtvCollapsibleComponent) as angular.IDirectiveFactory)
-	    .directive('ctvNamevalue', upgradeAdapter.downgradeNg2Component(CtvNamevalueComponent) as angular.IDirectiveFactory);
-
-
-	angular.module('contiv.networks')
-	    .directive('networkList', upgradeAdapter.downgradeNg2Component(NetworkListComponent) as angular.IDirectiveFactory)
-	    .directive('networkdetails', upgradeAdapter.downgradeNg2Component(NetworkdetailsComponent) as angular.IDirectiveFactory)
-	    .directive('networkcreate', upgradeAdapter.downgradeNg2Component(NetworkCreateComponent) as angular.IDirectiveFactory);
-
-	angular.module('contiv.applicationgroups')
-	    .directive('applicationGrouplist', upgradeAdapter.downgradeNg2Component(AppGrouplistComponent) as angular.IDirectiveFactory)
-	    .directive('applicationgroupcreate', upgradeAdapter.downgradeNg2Component(ApplicationGroupCreateComponent) as angular.IDirectiveFactory)
-	    .directive('applicationgroupdetails', upgradeAdapter.downgradeNg2Component(ApplicationGroupDetailsComponent) as angular.IDirectiveFactory);
-
-	angular.module('contiv.servicelbs')
-	    .directive('servicelbList', upgradeAdapter.downgradeNg2Component(ServicelbListComponent) as angular.IDirectiveFactory)
-	    .directive('servicelbCreate', upgradeAdapter.downgradeNg2Component(ServicelbCreateComponent) as angular.IDirectiveFactory)
-	    .directive('servicelbDetails', upgradeAdapter.downgradeNg2Component(ServicelbDetailsComponent) as angular.IDirectiveFactory);
-
-	angular.module('contiv.organizations')
-	    .directive('organizationlist', upgradeAdapter.downgradeNg2Component(OrganizationListComponent) as angular.IDirectiveFactory)
-	    .directive('organizationcreate', upgradeAdapter.downgradeNg2Component(OrganizationCreateComponent) as angular.IDirectiveFactory)
-	    .directive('organizationdetails', upgradeAdapter.downgradeNg2Component(OrganizationDetailComponent) as angular.IDirectiveFactory);
-
-	angular.module('contiv.login')
-	    .directive('login', upgradeAdapter.downgradeNg2Component(LoginComponent) as angular.IDirectiveFactory);
-
-	upgradeAdapter.bootstrap(document.documentElement, ['contivApp']);
-	*/
->>>>>>> fa1f8f1... login/logout workflow
 	platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
 	
 
@@ -1077,7 +957,7 @@ webpackJsonp([2],{
 	            collection.http.put(url, model).map(function (res) { return res.json(); }).toPromise()
 	                .then(function successCallback(response) {
 	                _.remove(collection.models, function (n) {
-	                    return n.key == model.key;
+	                    return n['key'] == model['key'];
 	                });
 	                collection.models.push(response);
 	                resolve(response);
@@ -1101,7 +981,7 @@ webpackJsonp([2],{
 	            collection.http.delete(url).map(function (res) { return res.json(); }).toPromise()
 	                .then(function successCallback(response) {
 	                _.remove(collection.models, function (n) {
-	                    return n.key == model.key;
+	                    return n['key'] == model['key'];
 	                });
 	                resolve(response);
 	            }, function errorCallback(response) {
@@ -1430,19 +1310,24 @@ webpackJsonp([2],{
 	        return new Observable_1.Observable(function (observer) {
 	            if (user.username != "devops" && user.username != "admin")
 	                observer.next(false);
-	            var res = '';
-	            if (user.username == "devops" && user.password == "devops")
-	                var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
-	            if (user.username == "admin" && user.password == "admin")
-	                var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
-	            if (res == '') {
-	                observer.next(false);
+	            else {
+	                var res = '';
+	                if (user.username == "devops" && user.password == "devops")
+	                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+	                if (user.username == "admin" && user.password == "admin")
+	                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+	                if (res == '') {
+	                    observer.next(false);
+	                }
+	                else {
+	                    _this.isLoggedIn = true;
+	                    localStorage.setItem("authToken", res);
+	                    localStorage.setItem("loginTime", new Date().toLocaleString());
+	                    localStorage.setItem("lastAccessTime", new Date().toLocaleString());
+	                    _this.extractBody();
+	                    observer.next(true);
+	                }
 	            }
-	            localStorage.setItem("authToken", res);
-	            localStorage.setItem("loginTime", new Date().toLocaleString());
-	            localStorage.setItem("lastAccessTime", new Date().toLocaleString());
-	            _this.extractBody();
-	            observer.next(true);
 	        });
 	        // This Code will be active after CCN Proxy is live...
 	        /*
@@ -1462,6 +1347,9 @@ webpackJsonp([2],{
 	            */
 	    };
 	    AuthService.prototype.logout = function () {
+	        this.cleanuplocalstorage();
+	    };
+	    AuthService.prototype.cleanuplocalstorage = function () {
 	        localStorage.removeItem("authToken");
 	        localStorage.removeItem("loginTime");
 	        localStorage.removeItem("lastAccessTime");
@@ -2102,6 +1990,8 @@ webpackJsonp([2],{
 	        return false;
 	    };
 	    AuthGuard.prototype.loadLogin = function (url) {
+	        // Clean the local storage
+	        this.authService.cleanuplocalstorage();
 	        // Store the attempted URL for redirecting
 	        this.authService.redirectUrl = url;
 	        // Navigate to the login page
@@ -2609,14 +2499,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(8);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-	var authservice_1 = __webpack_require__(87);
->>>>>>> fa1f8f1... login/logout workflow
-=======
 	var authservice_1 = __webpack_require__(72);
->>>>>>> ec1a94f... auth
 	var MenuComponent = (function () {
 	    function MenuComponent(activatedRoute, router, authService) {
 	        this.activatedRoute = activatedRoute;
@@ -4482,29 +4365,6 @@ webpackJsonp([2],{
 	var platform_browser_1 = __webpack_require__(86);
 	var http_1 = __webpack_require__(27);
 	var common_1 = __webpack_require__(21);
-<<<<<<< HEAD
-<<<<<<< HEAD
-	var login_module_1 = __webpack_require__(255);
-	var menu_module_1 = __webpack_require__(256);
-	var dashboard_module_1 = __webpack_require__(254);
-	var networkpolicies_module_1 = __webpack_require__(259);
-	var applicationgroups_module_ts_1 = __webpack_require__(243);
-	var settings_module_1 = __webpack_require__(266);
-	var network_module_1 = __webpack_require__(260);
-	var servicelb_module_1 = __webpack_require__(264);
-	var organization_module_1 = __webpack_require__(263);
-=======
-	var menu_module_1 = __webpack_require__(263);
-	var dashboard_module_1 = __webpack_require__(261);
-	var networkpolicies_module_1 = __webpack_require__(266);
-	var applicationgroups_module_ts_1 = __webpack_require__(250);
-	var settings_module_1 = __webpack_require__(273);
-	var network_module_1 = __webpack_require__(267);
-	var servicelb_module_1 = __webpack_require__(271);
-	var organization_module_1 = __webpack_require__(270);
->>>>>>> fa1f8f1... login/logout workflow
-=======
-	var menu_module_1 = __webpack_require__(264);
 	var dashboard_module_1 = __webpack_require__(262);
 	var networkpolicies_module_1 = __webpack_require__(267);
 	var applicationgroups_module_ts_1 = __webpack_require__(250);
@@ -4512,7 +4372,6 @@ webpackJsonp([2],{
 	var network_module_1 = __webpack_require__(268);
 	var servicelb_module_1 = __webpack_require__(272);
 	var organization_module_1 = __webpack_require__(271);
->>>>>>> ec1a94f... auth
 	var netprofilesmodel_1 = __webpack_require__(70);
 	var applicationgroupsmodel_1 = __webpack_require__(56);
 	var networksmodel_1 = __webpack_require__(41);
@@ -4521,22 +4380,15 @@ webpackJsonp([2],{
 	var rulesmodel_1 = __webpack_require__(109);
 	var servicelbsmodel_1 = __webpack_require__(71);
 	var crudhelperservice_1 = __webpack_require__(11);
-<<<<<<< HEAD
-	var inspectservice_1 = __webpack_require__(109);
-	var networkservice_1 = __webpack_require__(146);
-	var nodesservice_1 = __webpack_require__(147);
-	var app_component_1 = __webpack_require__(240);
-	var app_routes_ts_1 = __webpack_require__(242);
-=======
 	var inspectservice_1 = __webpack_require__(110);
 	var networkservice_1 = __webpack_require__(150);
 	var nodesservice_1 = __webpack_require__(151);
+	var menu_module_1 = __webpack_require__(264);
 	var app_component_1 = __webpack_require__(247);
 	var app_routes_ts_1 = __webpack_require__(249);
 	var login_module_1 = __webpack_require__(263);
 	var authservice_1 = __webpack_require__(72);
 	var authguard_1 = __webpack_require__(149);
->>>>>>> fa1f8f1... login/logout workflow
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -5073,20 +4925,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var authservice_1 = __webpack_require__(72);
 	var AuthDirective = (function () {
-	    function AuthDirective(el, renderer, authService, templateRef, viewContainer) {
-	        this.el = el;
-	        this.renderer = renderer;
+	    function AuthDirective(authService, templateRef, viewContainer) {
 	        this.authService = authService;
 	        this.templateRef = templateRef;
 	        this.viewContainer = viewContainer;
 	        this.auth = '';
 	    }
 	    AuthDirective.prototype.ngOnInit = function () {
-	        /*
-	        if (this.auth !== this.authService.authTokenPayload['role']){
-	            this.renderer.setElementStyle(this.el.nativeElement, 'display', 'none');
-	        }
-	        */
 	        if (this.auth == this.authService.authTokenPayload['role']) {
 	            this.viewContainer.createEmbeddedView(this.templateRef);
 	        }
@@ -5102,10 +4947,10 @@ webpackJsonp([2],{
 	        core_1.Directive({
 	            selector: '[auth]'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object, (typeof (_c = typeof authservice_1.AuthService !== 'undefined' && authservice_1.AuthService) === 'function' && _c) || Object, (typeof (_d = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _d) || Object, (typeof (_e = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _e) || Object])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof authservice_1.AuthService !== 'undefined' && authservice_1.AuthService) === 'function' && _a) || Object, (typeof (_b = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _b) || Object, (typeof (_c = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _c) || Object])
 	    ], AuthDirective);
 	    return AuthDirective;
-	    var _a, _b, _c, _d, _e;
+	    var _a, _b, _c;
 	}());
 	exports.AuthDirective = AuthDirective;
 	
@@ -6101,34 +5946,14 @@ webpackJsonp([2],{
 	var forms_1 = __webpack_require__(31);
 	var common_1 = __webpack_require__(21);
 	var router_1 = __webpack_require__(8);
-<<<<<<< HEAD
-<<<<<<< HEAD
-	var directives_module_1 = __webpack_require__(63);
-	var networkpoliciestabsctrl_1 = __webpack_require__(65);
-	var isolationpolicycreatectrl_1 = __webpack_require__(153);
-	var isolationpolicydetailsctrl_1 = __webpack_require__(154);
-	var bandwidthpolicycreatectrl_1 = __webpack_require__(151);
-	var bandwidthpolicydetailsctrl_1 = __webpack_require__(152);
-	var isolationpolicylistctrl_1 = __webpack_require__(258);
-	var bandwidthpolicylistctrl_1 = __webpack_require__(257);
-=======
-	var directives_module_1 = __webpack_require__(64);
-=======
 	var directives_module_1 = __webpack_require__(55);
->>>>>>> ec1a94f... auth
 	var networkpoliciestabsctrl_1 = __webpack_require__(66);
 	var isolationpolicycreatectrl_1 = __webpack_require__(159);
 	var isolationpolicydetailsctrl_1 = __webpack_require__(160);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(157);
 	var bandwidthpolicydetailsctrl_1 = __webpack_require__(158);
-<<<<<<< HEAD
-	var isolationpolicylistctrl_1 = __webpack_require__(265);
-	var bandwidthpolicylistctrl_1 = __webpack_require__(264);
->>>>>>> fa1f8f1... login/logout workflow
-=======
 	var isolationpolicylistctrl_1 = __webpack_require__(266);
 	var bandwidthpolicylistctrl_1 = __webpack_require__(265);
->>>>>>> ec1a94f... auth
 	var NetworkPoliciesModule = (function () {
 	    function NetworkPoliciesModule() {
 	    }
@@ -6708,7 +6533,7 @@ webpackJsonp([2],{
 /***/ 440:
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned thirteen wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <!-- For Authentication\n    <div class=\"center aligned three wide column\" *auth=\"'DevOps'\">\n    -->\n    <div class=\"center aligned three wide column\" *auth=\"'SysAdmin'\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n            <th class=\"right floated three wide column\">\n                <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search networks...'\"></ctv-search>\n            </th>\n        </tr>\n        </thead>\n\n        <tbody>\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a [routerLink]=\"['../details',network.key]\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n            <td></td>\n        </tr>\n        </tbody>\n        <tfoot>\n        <tr>\n            <td colspan=\"5\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
+	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned thirteen wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <div class=\"center aligned three wide column\" *auth=\"'SysAdmin'\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n            <th class=\"right floated three wide column\">\n                <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search networks...'\"></ctv-search>\n            </th>\n        </tr>\n        </thead>\n\n        <tbody>\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a [routerLink]=\"['../details',network.key]\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n            <td></td>\n        </tr>\n        </tbody>\n        <tfoot>\n        <tr>\n            <td colspan=\"5\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 

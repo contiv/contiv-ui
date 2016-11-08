@@ -63,6 +63,8 @@ export class AuthGuard implements CanActivate, CanActivateChild {
     }
 
     loadLogin(url: string): void{
+        // Clean the local storage
+        this.authService.cleanuplocalstorage();
         // Store the attempted URL for redirecting
         this.authService.redirectUrl = url;
         // Navigate to the login page
