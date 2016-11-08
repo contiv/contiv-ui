@@ -38,6 +38,8 @@ export class AuthService {
         var searchUrl = url.replace('/m/', '');
         if(searchUrl.indexOf('details') > -1 || searchUrl.indexOf('edit') > -1)
             searchUrl = searchUrl.replace(/\/[^\/]*$/,'');
+        if(searchUrl.indexOf('policyTab') > -1)
+            searchUrl = searchUrl.replace(/;[^\/]*$/,'')
         var role = this.authTokenPayload['role'];
         if (this.accessMatrix[searchUrl][role]=='y')
             return true;
@@ -50,6 +52,38 @@ export class AuthService {
         this.headers = new Headers();
         this.headers.append('Content-Type', 'application/x-www-form-urlencoded');
         var options = new RequestOptions({headers: this.headers});
+
+        // This is just a mock
+        return new Observable((observer) => {
+
+
+
+            if (user.username != "devops" && user.username != "admin")
+                observer.next(false);
+
+            var res = '';
+
+            if (user.username == "devops" && user.password == "devops")
+                var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+
+            if (user.username == "admin" && user.password == "admin")
+                var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+
+            if (res == ''){
+                observer.next(false);
+            }
+
+            localStorage.setItem("authToken", res);
+            localStorage.setItem("loginTime", new Date().toLocaleString());
+            localStorage.setItem("lastAccessTime", new Date().toLocaleString());
+            this.extractBody();
+            observer.next(true);
+
+        });
+
+        // This Code will be active after CCN Proxy is live...
+
+        /*
         return this.http.post("/1/system/login", data, options)
             .map((res) => {
                 var s = this.extractToken(res);
@@ -63,6 +97,7 @@ export class AuthService {
                 }
             })
             .catch((error:any) => Observable.throw(error));
+            */
     }
 
     logout(): void {

@@ -49,6 +49,7 @@ export class AuthGuard implements CanActivate, CanActivateChild {
         if (!isNull(localStorage.getItem("authToken"))){
             this.authService.extractBody();
             if(this.authService.validateExpiry()){
+                this.authService.isLoggedIn = true;
                 if(this.checkAccess(url))
                     return true;
                 else{
