@@ -51,7 +51,7 @@
         <div [ngSwitch]="mode">
             <div *ngSwitchCase="'details'">
                 <tr>
-                    <td class="three wide column">Name</td>
+                    <td class="three wide column">Username</td>
                     <td>{{user.userName}}</td>
                 </tr>
                 <tr>
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="field">
-                <label for="userName">User name</label>
+                <label for="userName">Username</label>
                 <input type="text" id="userName" name="userName"
                        [(ngModel)]="user.userName"
                        placeholder="Enter name" required #userName="ngModel">

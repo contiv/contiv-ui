@@ -1580,6 +1580,17 @@ webpackJsonp([2],{
 	        });
 	        return promise;
 	    };
+	    UsersModel.prototype.delete = function (model) {
+	        var collection = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            _.remove(collection.models, function (n) {
+	                return n['key'] == model['key'];
+	            });
+	            resolve(model);
+	        });
+	        return promise;
+	    };
+	    ;
 	    UsersModel = __decorate([
 	        core_1.Injectable(), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
@@ -4509,6 +4520,7 @@ webpackJsonp([2],{
 	                firstName: '',
 	                lastName: '',
 	                role: 'DevOps',
+	                enabled: false,
 	                tenantName: 'default' //TODO: Remove hardcoded tenant.
 	            };
 	        }

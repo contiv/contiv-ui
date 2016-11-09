@@ -10,7 +10,7 @@ import * as _ from 'lodash';
 
 @Injectable()
 export class UsersModel extends Collection {
-    constructor(http: Http, apiService: ApiService) {
+    constructor(http:Http, apiService:ApiService) {
         super(http, ContivGlobals.USERS_ENDPOINT, apiService);
     }
 
@@ -46,4 +46,15 @@ export class UsersModel extends Collection {
         });
         return promise;
     }
+
+    delete(model):Promise<any> {
+        var collection = this;
+        var promise = new Promise(function (resolve, reject) {
+            _.remove(collection.models, function (n) {
+                return n['key'] == model['key'];
+            });
+            resolve(model);
+        });
+        return promise;
+    };
 }
