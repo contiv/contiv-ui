@@ -1,0 +1,71 @@
+<form class="ui form" role="form"
+      (submit)="createUser(formRef.valid)" novalidate #formRef="ngForm">
+    <div class="ui sixteen column grid">
+        <div class="one wide column">
+            <a [routerLink]="['../list']">
+                <i class="large arrow left icon"></i>
+            </a>
+        </div>
+        <div class="left floated twelve wide column">
+            <div class="content" style="font-size: 24px">
+                <span>Users</span>
+                <span class="headingfontcolor"> (Create User)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui active inverted dimmer" *ngIf="showLoader">
+        <div class="ui loader"></div>
+    </div>
+    <div class="ui basic segment">
+        <div class="field">
+            <div *ngIf="formRef.submitted">
+                <div [hidden]="formRef.valid" class="ui negative message">
+                    <ul class="list">
+                        <li *ngIf="newUserName.errors?.required">Please enter
+                            user name
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label for="newUserName">User name</label>
+            <input type="text" id="newUserName" name="newUserName"
+                   [(ngModel)]="newUser.userName"
+                   placeholder="Enter name" required #newUserName="ngModel">
+        </div>
+        <div class="field">
+            <label for="newFirstName">First name</label>
+            <input type="text" id="newFirstName" name="newFirstName"
+                   [(ngModel)]="newUser.firstName"
+                   placeholder="Enter first name" #newFirstName="ngModel">
+        </div>
+        <div class="field">
+            <label for="newLastName">Last name</label>
+            <input type="text" id="newLastName" name="newLastName"
+                   [(ngModel)]="newUser.lastName"
+                   placeholder="Enter last name"  #newLastName="ngModel">
+        </div>
+        <div class="field">
+            <label for="newRole">Role</label>
+            <select class="ui dropdown" id="newRole" name="role" [(ngModel)]="newUser.role">
+                <option value="Admin">Admin</option>
+                <option value="DevOps">DevOps</option>
+            </select>
+        </div>
+        <div class="ui grid">
+            <div class="right aligned sixteen wide column">
+                <div style="margin-top: 40px">
+                    <button type="button" class="ui basic button" (click)="cancelCreating()">
+                        Cancel
+                    </button>
+                    <button type="submit" class="ui blue button">Create</button>
+                </div>
+            </div>
+        </div>
+
+        <ctv-error *ngIf="showServerError" header="Error creating user" [error]="serverErrorMessage">
+        </ctv-error>
+    </div>
+</form>
