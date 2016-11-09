@@ -65,7 +65,7 @@ const routes = [
                 path: 'settings',
                 component: SettingsMenuComponent,
                 children: [
-                    {path: '', redirectTo: 'cluster', pathMatch: 'full'},
+                    {path: '', redirectTo: 'users/list', pathMatch: 'full'},
                     {path: 'cluster', component: ClusterSettingsComponent},
                     {path: 'networks', component: NetworkSettingsComponent},
                     {path: 'users/list', component: UserListComponent},

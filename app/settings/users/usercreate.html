@@ -1,15 +1,13 @@
 <form class="ui form" role="form"
       (submit)="createUser(formRef.valid)" novalidate #formRef="ngForm">
     <div class="ui sixteen column grid">
-        <div class="one wide column">
-            <a [routerLink]="['../list']">
-                <i class="large arrow left icon"></i>
-            </a>
-        </div>
-        <div class="left floated twelve wide column">
-            <div class="content" style="font-size: 24px">
-                <span>Users</span>
-                <span class="headingfontcolor"> (Create User)</span>
+        <div class="three wide column">
+            <div class="content">
+                <a [routerLink]="['../list']">
+                    <i class="large arrow left icon"></i>
+                </a>
+                <span style="font-size: 24px; margin-left: 6px">Users</span>
+                <span class="headingfontcolor" style="font-size: 24px"> (Create User)</span>
             </div>
         </div>
     </div>
@@ -24,6 +22,9 @@
                     <ul class="list">
                         <li *ngIf="newUserName.errors?.required">Please enter
                             user name
+                        </li>
+                        <li *ngIf="newUserOrganization.errors?.required">
+                            Please select organization
                         </li>
                     </ul>
                 </div>
@@ -48,11 +49,33 @@
                    placeholder="Enter last name"  #newLastName="ngModel">
         </div>
         <div class="field">
+            <label for="newUserOrganization">Organization</label>
+            <select id="newUserOrganization"
+                    class="ui dropdown"
+                    #newUserOrganization="ngModel"
+                    name="newUserOrganization"
+                    [(ngModel)]="newUser['tenantName']"
+                    required>
+                <option value="">-- Please select organization --</option>
+                <option *ngFor="let organization of organizations"
+                        [value]="organization.tenantName">
+                    {{organization.tenantName}}
+                </option>
+            </select>
+        </div>
+        <div class="field">
             <label for="newRole">Role</label>
             <select class="ui dropdown" id="newRole" name="role" [(ngModel)]="newUser.role">
                 <option value="Admin">Admin</option>
                 <option value="DevOps">DevOps</option>
             </select>
+        </div>
+        <div class="field">
+            <label>
+                <input type="checkbox" name="newUserEnabled" tabindex="0"
+                       [(ngModel)]="newUser.enabled">
+                Enabled
+            </label>
         </div>
         <div class="ui grid">
             <div class="right aligned sixteen wide column">

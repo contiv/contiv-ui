@@ -2,6 +2,7 @@ import { Component, Inject, OnInit, NgZone } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { CRUDHelperService } from "../../components/utils/crudhelperservice";
 import { UsersModel } from "../../components/models/usersmodel";
+import { OrganizationsModel } from "../../components/models/organizationsmodel";
 
 @Component({
     selector: 'usercreate',
@@ -9,14 +10,25 @@ import { UsersModel } from "../../components/models/usersmodel";
 })
 
 export class UserCreateComponent{
-    public newUser: any = {};
+    newUser: any = {};
+    organizations:any[] = [];
 
     constructor(private activatedRoute: ActivatedRoute,
                 private router: Router,
                 private crudHelperService: CRUDHelperService,
                 private usersModel: UsersModel,
+                private organizationsModel: OrganizationsModel,
                 private ngZone: NgZone){
         var component = this;
+
+        /**
+         * Get organizations.
+         */
+        function getOrganizations() {
+            organizationsModel.get(false).then(function (result) {
+                component.organizations = result;
+            });
+        }
 
         function resetForm() {
             crudHelperService.stopLoader(component);
@@ -30,6 +42,7 @@ export class UserCreateComponent{
             };
         }
 
+        getOrganizations();
         resetForm();
     }
 

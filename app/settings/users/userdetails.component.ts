@@ -2,6 +2,7 @@ import { Component, Inject, NgZone } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { UsersModel } from "../../components/models/usersmodel";
 import { CRUDHelperService } from "../../components/utils/crudhelperservice";
+import { OrganizationsModel } from "../../components/models/organizationsmodel";
 
 @Component({
     selector: 'userdetails',
@@ -9,12 +10,14 @@ import { CRUDHelperService } from "../../components/utils/crudhelperservice";
 })
 export class UserDetailsComponent {
     user:any = {};
+    organizations:any[] = [];
     mode:string = 'details';
 
     constructor(private activatedRoute: ActivatedRoute,
                 private router: Router,
                 private ngZone: NgZone,
                 private usersModel:UsersModel,
+                private organizationsModel: OrganizationsModel,
                 private crudHelperService:CRUDHelperService) {
         var component = this;
 
@@ -29,6 +32,15 @@ export class UserDetailsComponent {
             }
         }
 
+        /**
+         * Get organizations.
+         */
+        function getOrganizations() {
+            organizationsModel.get(false).then(function (result) {
+                component.organizations = result;
+            });
+        }
+
         component.crudHelperService.stopLoader(component);
         component.crudHelperService.hideServerError(component);
 
@@ -37,6 +49,7 @@ export class UserDetailsComponent {
                 component.user = user;
             });
 
+        getOrganizations();
         setMode();
     }
 
