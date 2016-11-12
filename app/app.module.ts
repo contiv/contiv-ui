@@ -30,10 +30,11 @@ import { NodesService } from "./components/utils/nodesservice";
 import { MenuModule } from "./menu/menu.module";
 import { AppComponent } from "./app.component";
 import appRoutes from "./app.routes.ts";
-import { LoginModule } from "./login/login.module";
-import { AuthService } from "./components/utils/authservice";
-import { AuthGuard } from "./components/utils/authguard";
-import { ApiService } from "./components/utils/apiservice";
+import {LoginModule} from "./login/login.module";
+import {AuthService} from "./components/utils/authservice";
+import {AuthGuard} from "./components/utils/authguard";
+import {ApiService} from "./components/utils/apiservice";
+import {WizardModule} from "./wizard/wizard.module";
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { ApiService } from "./components/utils/apiservice";
         AppProfilesModule,
         OrganizationModule,
         LoginModule,
-        UsersModule
+        UsersModule,
+        WizardModule
     ],
     declarations: [
         AppComponent

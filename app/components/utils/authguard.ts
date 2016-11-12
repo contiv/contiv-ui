@@ -31,6 +31,8 @@ export class AuthGuard implements CanActivate, CanActivateChild {
 
     checkLogin(url: string): boolean {
 
+        this.checkFirstRun();
+
         if (this.authService.isLoggedIn) {
             if (this.checkAccess(url))
                 if (this.authService.validateExpiry())
@@ -54,6 +56,7 @@ export class AuthGuard implements CanActivate, CanActivateChild {
                     return true;
                 else{
                     this.router.navigate(['/unauthorized']);
+                    return false;
                 }
             }
         }
@@ -73,6 +76,13 @@ export class AuthGuard implements CanActivate, CanActivateChild {
 
     checkAccess(url:string): boolean{
         return this.authService.checkAccess(url);
+    }
+
+    checkFirstRun(){
+        if(isNull(localStorage.getItem('firstRun')))
+            this.authService.firstRun = true;
+        else
+            this.authService.firstRun = false;
     }
 
 

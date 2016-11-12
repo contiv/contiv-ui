@@ -1,0 +1,59 @@
+<div class="ui grid">
+    <div class="left floated sixteen wide column">
+        <div class="content" style="font-size: 24px">
+            <span>Verify Details and click Confirm</span>
+        </div>
+    </div>
+</div>
+<h4 class="ui header">Server Details</h4>
+<table class="ui very basic selectable table">
+    <tbody>
+    <tr>
+        <td class="ctv-header three wide column">Management Host Name</td>
+        <td>{{wizardService.server.name}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">Ip Address</td>
+        <td>{{wizardService.server.ipaddress}}</td>
+    </tr>
+    </tbody>
+</table>
+<div class="ui section divider" style="margin-top: 30px"></div>
+<h4 class="ui header">Network Defaults</h4>
+<table class="ui very basic selectable table">
+    <tbody>
+    <tr>
+        <td class="ctv-header three wide column">Network infrastructure type</td>
+        <td>{{wizardService.settings.networkInfraType}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">Allowed vlan range</td>
+        <td>{{wizardService.settings.vlans}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">Allowed vxlan range</td>
+        <td>{{wizardService.settings.vxlans}}</td>
+    </tr>
+    <tr>
+        <td class="ctv-header three wide column">Forwarding mode</td>
+        <td>{{wizardService.settings.fwdMode}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="ui grid">
+    <div class="left floated left aligned eight wide column">
+        <div style="margin-top: 40px">
+            <button type="button" class="ui blue button" (click)="goBack()">
+                Back
+            </button>
+        </div>
+    </div>
+    <div class="right floated right aligned eight wide column">
+        <div style="margin-top: 40px">
+            <button type="button" class="ui blue button" (click)="process()">
+                Confirm
+            </button>
+        </div>
+    </div>
+</div>
