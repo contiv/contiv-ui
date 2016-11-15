@@ -12,10 +12,11 @@ import {CtvNamevalueComponent} from "./namevaluedirective";
 import {AuthDirective} from "./authdirective";
 import {NetworkSettingComponent} from "./settings/networksettingcomponent";
 import {AciSettingComponent} from "./settings/acisettingcomponent";
-
+import {LineGraphDirective} from "./linegraphdirective";
+import {ChartsModule} from "ng2-charts";
 @NgModule({
     imports: [
-        CommonModule, FormsModule
+        CommonModule, FormsModule, ChartsModule
     ],
     declarations: [
         ErrorMessageComponent,
@@ -28,7 +29,8 @@ import {AciSettingComponent} from "./settings/acisettingcomponent";
         CtvNamevalueComponent,
         AuthDirective,
         NetworkSettingComponent,
-        AciSettingComponent
+        AciSettingComponent,
+        LineGraphDirective
     ],
     exports: [
         ErrorMessageComponent,
@@ -41,7 +43,8 @@ import {AciSettingComponent} from "./settings/acisettingcomponent";
         CtvNamevalueComponent,
         AuthDirective,
         NetworkSettingComponent,
-        AciSettingComponent
+        AciSettingComponent,
+        LineGraphDirective
     ]
 })
 export class DirectivesModule {}

@@ -103,7 +103,16 @@
 	 */
 	// Polyfills
 	"use strict";
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(464); // Internet Explorer 9 support
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	__webpack_require__(461); // Internet Explorer 9 support
+=======
+<<<<<<< HEAD
+	__webpack_require__(459); // Internet Explorer 9 support
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 	// import 'core-js/es6';
 	// Added parts of es6 which are necessary for your project or your browser support requirements.
 	__webpack_require__(314);
@@ -125,9 +134,48 @@
 	__webpack_require__(310);
 	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
 	// import 'core-js/es6/promise';
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(318);
 	__webpack_require__(738);
 	__webpack_require__(737);
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	__webpack_require__(315);
+	__webpack_require__(735);
+	__webpack_require__(734);
+=======
+	__webpack_require__(313);
+	__webpack_require__(733);
+	__webpack_require__(732);
+=======
+	__webpack_require__(602); // Internet Explorer 9 support
+	// import 'core-js/es6';
+	// Added parts of es6 which are necessary for your project or your browser support requirements.
+	__webpack_require__(452);
+	__webpack_require__(445);
+	__webpack_require__(441);
+	__webpack_require__(447);
+	__webpack_require__(446);
+	__webpack_require__(444);
+	__webpack_require__(443);
+	__webpack_require__(451);
+	__webpack_require__(440);
+	__webpack_require__(439);
+	__webpack_require__(449);
+	__webpack_require__(442);
+	__webpack_require__(450);
+	__webpack_require__(454);
+	__webpack_require__(455);
+	__webpack_require__(453);
+	__webpack_require__(448);
+	// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
+	// import 'core-js/es6/promise';
+	__webpack_require__(456);
+	__webpack_require__(877);
+	__webpack_require__(876);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 	
 
 /***/ },
@@ -136,11 +184,19 @@
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var global    = __webpack_require__(12)
 	  , core      = __webpack_require__(13)
 	  , hide      = __webpack_require__(34)
 	  , redefine  = __webpack_require__(32)
 	  , ctx       = __webpack_require__(60)
+=======
+	var global    = __webpack_require__(13)
+	  , core      = __webpack_require__(14)
+	  , hide      = __webpack_require__(34)
+	  , redefine  = __webpack_require__(31)
+	  , ctx       = __webpack_require__(62)
+>>>>>>> 024b7b6... adding chart.js
 	  , PROTOTYPE = 'prototype';
 
 	var $export = function(type, name, source){
@@ -185,17 +241,21 @@
 /* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(11);
+	var isObject = __webpack_require__(12);
 	module.exports = function(it){
 	  if(!isObject(it))throw TypeError(it + ' is not an object!');
 	  return it;
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 9 */,
+=======
+>>>>>>> 024b7b6... adding chart.js
 /* 10 */
 /***/ function(module, exports) {
 
@@ -208,7 +268,12 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 11 */
+=======
+/* 11 */,
+/* 12 */
+>>>>>>> 024b7b6... adding chart.js
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -216,7 +281,7 @@
 	};
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports) {
 
 	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
@@ -225,19 +290,29 @@
 	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports) {
 
 	var core = module.exports = {version: '2.4.0'};
 	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var store      = __webpack_require__(99)('wks')
+=======
+<<<<<<< HEAD
+	var store      = __webpack_require__(98)('wks')
+>>>>>>> adding chart.js
 	  , uid        = __webpack_require__(64)
 	  , Symbol     = __webpack_require__(12).Symbol
+=======
+	var store      = __webpack_require__(96)('wks')
+	  , uid        = __webpack_require__(66)
+	  , Symbol     = __webpack_require__(13).Symbol
+>>>>>>> 024b7b6... adding chart.js
 	  , USE_SYMBOL = typeof Symbol == 'function';
 
 	var $exports = module.exports = function(name){
@@ -248,14 +323,31 @@
 	$exports.store = store;
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 15 */,
+=======
+>>>>>>> adding chart.js
 /* 16 */,
 /* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var anObject       = __webpack_require__(8)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , IE8_DOM_DEFINE = __webpack_require__(199)
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(196)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+>>>>>>> adding chart.js
 	  , toPrimitive    = __webpack_require__(56)
+=======
+	  , toPrimitive    = __webpack_require__(55)
+=======
+	var anObject       = __webpack_require__(9)
+	  , IE8_DOM_DEFINE = __webpack_require__(191)
+	  , toPrimitive    = __webpack_require__(56)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , dP             = Object.defineProperty;
 
 	exports.f = __webpack_require__(20) ? Object.defineProperty : function defineProperty(O, P, Attributes){
@@ -271,9 +363,21 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 18 */,
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 19 */,
 /* 20 */
+=======
+/* 19 */
+=======
+<<<<<<< HEAD
+/* 17 */,
+=======
+>>>>>>> 024b7b6... adding chart.js
+/* 18 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// Thank's IE8 for his funny defineProperty
@@ -290,7 +394,15 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.15 ToLength
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var toInteger = __webpack_require__(55)
+=======
+<<<<<<< HEAD
+	var toInteger = __webpack_require__(54)
+=======
+	var toInteger = __webpack_require__(55)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , min       = Math.min;
 	module.exports = function(it){
 	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -298,8 +410,12 @@
 
 /***/ },
 /* 26 */,
+<<<<<<< HEAD
 /* 27 */,
 /* 28 */
+=======
+/* 27 */
+>>>>>>> 024b7b6... adding chart.js
 /***/ function(module, exports) {
 
 	var hasOwnProperty = {}.hasOwnProperty;
@@ -308,21 +424,36 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
+=======
+/* 28 */,
+>>>>>>> 024b7b6... adding chart.js
 /* 29 */,
 /* 30 */,
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 31 */,
 /* 32 */
+=======
+/* 31 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 	var global    = __webpack_require__(12)
 	  , hide      = __webpack_require__(34)
 	  , has       = __webpack_require__(28)
 	  , SRC       = __webpack_require__(64)('src')
+=======
+	var global    = __webpack_require__(13)
+	  , hide      = __webpack_require__(34)
+	  , has       = __webpack_require__(27)
+	  , SRC       = __webpack_require__(66)('src')
+>>>>>>> 024b7b6... adding chart.js
 	  , TO_STRING = 'toString'
 	  , $toString = Function[TO_STRING]
 	  , TPL       = ('' + $toString).split(TO_STRING);
 
-	__webpack_require__(13).inspectSource = function(it){
+	__webpack_require__(14).inspectSource = function(it){
 	  return $toString.call(it);
 	};
 
@@ -348,12 +479,24 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 33 */
+=======
+/* 32 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(3)
 	  , fails   = __webpack_require__(10)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , defined = __webpack_require__(46)
+=======
+<<<<<<< HEAD
+	  , defined = __webpack_require__(45)
+=======
+	  , defined = __webpack_require__(46)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , quot    = /"/g;
 	// B.2.3.2.1 CreateHTML(string, tag, attribute, value)
 	var createHTML = function(string, tag, attribute, value) {
@@ -372,12 +515,36 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
+=======
+<<<<<<< HEAD
+/* 32 */,
+/* 33 */,
+>>>>>>> adding chart.js
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	var dP         = __webpack_require__(17)
+	  , createDesc = __webpack_require__(54);
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
+	module.exports = __webpack_require__(20) ? function(object, key, value){
+=======
+	module.exports = __webpack_require__(19) ? function(object, key, value){
+=======
+	var dP         = __webpack_require__(16)
+	  , createDesc = __webpack_require__(53);
+=======
+/* 33 */,
 /* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP         = __webpack_require__(17)
 	  , createDesc = __webpack_require__(54);
-	module.exports = __webpack_require__(20) ? function(object, key, value){
+>>>>>>> 024b7b6... adding chart.js
+	module.exports = __webpack_require__(18) ? function(object, key, value){
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 	  return dP.f(object, key, createDesc(1, value));
 	} : function(object, key, value){
 	  object[key] = value;
@@ -385,17 +552,42 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
 	var defined = __webpack_require__(46);
+=======
+<<<<<<< HEAD
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.1.13 ToObject(argument)
+	var defined = __webpack_require__(45);
+=======
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.1.13 ToObject(argument)
+	var defined = __webpack_require__(46);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	module.exports = function(it){
 	  return Object(defined(it));
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+=======
+<<<<<<< HEAD
+/* 35 */,
+>>>>>>> adding chart.js
 /* 36 */
+=======
+/* 36 */,
+/* 37 */
+>>>>>>> 024b7b6... adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var fails = __webpack_require__(10);
@@ -407,20 +599,41 @@
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 37 */
+=======
+/* 38 */
+>>>>>>> 024b7b6... adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
 	var IObject = __webpack_require__(78)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , defined = __webpack_require__(46);
+=======
+<<<<<<< HEAD
+	  , defined = __webpack_require__(45);
+=======
+	  , defined = __webpack_require__(46);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	module.exports = function(it){
 	  return IObject(defined(it));
 	};
 
 /***/ },
+<<<<<<< HEAD
 /* 38 */,
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 39 */,
 /* 40 */
+=======
+/* 39 */
+=======
+/* 39 */,
+/* 40 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 0 -> Array#forEach
@@ -430,11 +643,27 @@
 	// 4 -> Array#every
 	// 5 -> Array#find
 	// 6 -> Array#findIndex
+<<<<<<< HEAD
 	var ctx      = __webpack_require__(60)
 	  , IObject  = __webpack_require__(78)
 	  , toObject = __webpack_require__(35)
 	  , toLength = __webpack_require__(25)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , asc      = __webpack_require__(321);
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	  , asc      = __webpack_require__(318);
+=======
+	  , asc      = __webpack_require__(316);
+=======
+	var ctx      = __webpack_require__(62)
+	  , IObject  = __webpack_require__(78)
+	  , toObject = __webpack_require__(35)
+	  , toLength = __webpack_require__(25)
+	  , asc      = __webpack_require__(459);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 	module.exports = function(TYPE, $create){
 	  var IS_MAP        = TYPE == 1
 	    , IS_FILTER     = TYPE == 2
@@ -469,13 +698,31 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 41 */
+=======
+<<<<<<< HEAD
+/* 40 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 	var has         = __webpack_require__(28)
 	  , toObject    = __webpack_require__(35)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , IE_PROTO    = __webpack_require__(133)('IE_PROTO')
+=======
+	  , IE_PROTO    = __webpack_require__(132)('IE_PROTO')
+=======
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
+	var has         = __webpack_require__(27)
+	  , toObject    = __webpack_require__(35)
+	  , IE_PROTO    = __webpack_require__(129)('IE_PROTO')
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , ObjectProto = Object.prototype;
 
 	module.exports = Object.getPrototypeOf || function(O){
@@ -487,12 +734,24 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 42 */
+=======
+<<<<<<< HEAD
+/* 41 */
+=======
+/* 42 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// most Object methods by ES6 should accept primitives
 	var $export = __webpack_require__(3)
+<<<<<<< HEAD
 	  , core    = __webpack_require__(13)
+=======
+	  , core    = __webpack_require__(14)
+>>>>>>> 024b7b6... adding chart.js
 	  , fails   = __webpack_require__(10);
 	module.exports = function(KEY, exec){
 	  var fn  = (core.Object || {})[KEY] || Object[KEY]
@@ -502,10 +761,25 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
+=======
+<<<<<<< HEAD
+/* 42 */,
+>>>>>>> adding chart.js
+/* 43 */,
+/* 44 */,
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 45 */,
+/* 46 */
+=======
+/* 45 */
+=======
 /* 43 */,
 /* 44 */,
 /* 45 */,
 /* 46 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -515,13 +789,31 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 47 */
+=======
+<<<<<<< HEAD
+/* 46 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var Map     = __webpack_require__(216)
 	  , $export = __webpack_require__(3)
 	  , shared  = __webpack_require__(99)('metadata')
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , store   = shared.store || (shared.store = new (__webpack_require__(224)));
+=======
+	  , store   = shared.store || (shared.store = new (__webpack_require__(221)));
+=======
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Map     = __webpack_require__(208)
+	  , $export = __webpack_require__(3)
+	  , shared  = __webpack_require__(96)('metadata')
+	  , store   = shared.store || (shared.store = new (__webpack_require__(216)));
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	var getOrCreateMetadataMap = function(target, targetKey, create){
 	  var targetMetadata = store.get(target);
@@ -571,7 +863,12 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 48 */
+=======
+<<<<<<< HEAD
+/* 47 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var pIE            = __webpack_require__(98)
@@ -579,7 +876,22 @@
 	  , toIObject      = __webpack_require__(37)
 	  , toPrimitive    = __webpack_require__(56)
 	  , has            = __webpack_require__(28)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , IE8_DOM_DEFINE = __webpack_require__(199)
+=======
+	  , IE8_DOM_DEFINE = __webpack_require__(196)
+=======
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var pIE            = __webpack_require__(95)
+	  , createDesc     = __webpack_require__(54)
+	  , toIObject      = __webpack_require__(38)
+	  , toPrimitive    = __webpack_require__(56)
+	  , has            = __webpack_require__(27)
+	  , IE8_DOM_DEFINE = __webpack_require__(191)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
 	exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
@@ -592,12 +904,21 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 49 */
+=======
+<<<<<<< HEAD
+/* 48 */
+=======
+/* 49 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	if(__webpack_require__(20)){
 	  var LIBRARY             = __webpack_require__(79)
+<<<<<<< HEAD
 	    , global              = __webpack_require__(12)
 	    , fails               = __webpack_require__(10)
 	    , $export             = __webpack_require__(3)
@@ -631,10 +952,59 @@
 	    , Iterators           = __webpack_require__(70)
 	    , $iterDetect         = __webpack_require__(129)
 	    , setSpecies          = __webpack_require__(81)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	    , arrayFill           = __webpack_require__(118)
 	    , arrayCopyWithin     = __webpack_require__(191)
+=======
+	    , arrayFill           = __webpack_require__(117)
+	    , arrayCopyWithin     = __webpack_require__(188)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	    , $DP                 = __webpack_require__(17)
 	    , $GOPD               = __webpack_require__(48)
+=======
+	    , $DP                 = __webpack_require__(16)
+	    , $GOPD               = __webpack_require__(47)
+=======
+	    , global              = __webpack_require__(13)
+	    , fails               = __webpack_require__(10)
+	    , $export             = __webpack_require__(3)
+	    , $typed              = __webpack_require__(98)
+	    , $buffer             = __webpack_require__(132)
+	    , ctx                 = __webpack_require__(62)
+	    , anInstance          = __webpack_require__(77)
+	    , propertyDesc        = __webpack_require__(54)
+	    , hide                = __webpack_require__(34)
+	    , redefineAll         = __webpack_require__(80)
+	    , toInteger           = __webpack_require__(55)
+	    , toLength            = __webpack_require__(25)
+	    , toIndex             = __webpack_require__(65)
+	    , toPrimitive         = __webpack_require__(56)
+	    , has                 = __webpack_require__(27)
+	    , same                = __webpack_require__(203)
+	    , classof             = __webpack_require__(116)
+	    , isObject            = __webpack_require__(12)
+	    , toObject            = __webpack_require__(35)
+	    , isArrayIter         = __webpack_require__(121)
+	    , create              = __webpack_require__(63)
+	    , getPrototypeOf      = __webpack_require__(41)
+	    , gOPN                = __webpack_require__(64).f
+	    , getIterFn           = __webpack_require__(133)
+	    , uid                 = __webpack_require__(66)
+	    , wks                 = __webpack_require__(15)
+	    , createArrayMethod   = __webpack_require__(40)
+	    , createArrayIncludes = __webpack_require__(115)
+	    , speciesConstructor  = __webpack_require__(204)
+	    , ArrayIterators      = __webpack_require__(99)
+	    , Iterators           = __webpack_require__(71)
+	    , $iterDetect         = __webpack_require__(125)
+	    , setSpecies          = __webpack_require__(81)
+	    , arrayFill           = __webpack_require__(114)
+	    , arrayCopyWithin     = __webpack_require__(183)
+>>>>>>> adding chart.js
+	    , $DP                 = __webpack_require__(17)
+	    , $GOPD               = __webpack_require__(48)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	    , dP                  = $DP.f
 	    , gOPD                = $GOPD.f
 	    , RangeError          = global.RangeError
@@ -1076,9 +1446,21 @@
 	} else module.exports = function(){ /* empty */ };
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 50 */,
 /* 51 */,
 /* 52 */
+=======
+<<<<<<< HEAD
+/* 49 */,
+/* 50 */,
+/* 51 */
+=======
+/* 50 */,
+/* 51 */,
+/* 52 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	module.exports = function(it){
@@ -1087,13 +1469,31 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 53 */
+=======
+<<<<<<< HEAD
+/* 52 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var META     = __webpack_require__(64)('meta')
 	  , isObject = __webpack_require__(11)
 	  , has      = __webpack_require__(28)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , setDesc  = __webpack_require__(17).f
+=======
+	  , setDesc  = __webpack_require__(16).f
+=======
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var META     = __webpack_require__(66)('meta')
+	  , isObject = __webpack_require__(12)
+	  , has      = __webpack_require__(27)
+	  , setDesc  = __webpack_require__(17).f
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , id       = 0;
 	var isExtensible = Object.isExtensible || function(){
 	  return true;
@@ -1145,7 +1545,15 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 54 */
+=======
+<<<<<<< HEAD
+/* 53 */
+=======
+/* 54 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	module.exports = function(bitmap, value){
@@ -1158,7 +1566,15 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 55 */
+=======
+<<<<<<< HEAD
+/* 54 */
+=======
+/* 55 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// 7.1.4 ToInteger
@@ -1169,11 +1585,19 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 56 */
+=======
+<<<<<<< HEAD
+/* 55 */
+=======
+/* 56 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.1 ToPrimitive(input [, PreferredType])
-	var isObject = __webpack_require__(11);
+	var isObject = __webpack_require__(12);
 	// instead of the ES6 spec version, we didn't implement @@toPrimitive case
 	// and the second argument - flag - preferred type is a string
 	module.exports = function(it, S){
@@ -1186,9 +1610,18 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+=======
+<<<<<<< HEAD
+/* 56 */,
+=======
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /* 57 */,
 /* 58 */,
-/* 59 */
+/* 59 */,
+/* 60 */,
+/* 61 */
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -1198,11 +1631,19 @@
 	};
 
 /***/ },
-/* 60 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var aFunction = __webpack_require__(52);
+=======
+<<<<<<< HEAD
+	var aFunction = __webpack_require__(51);
+=======
+	var aFunction = __webpack_require__(52);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	module.exports = function(fn, that, length){
 	  aFunction(fn);
 	  if(that === undefined)return fn;
@@ -1223,27 +1664,56 @@
 	};
 
 /***/ },
-/* 61 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+<<<<<<< HEAD
 	var anObject    = __webpack_require__(8)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , dPs         = __webpack_require__(206)
 	  , enumBugKeys = __webpack_require__(121)
 	  , IE_PROTO    = __webpack_require__(133)('IE_PROTO')
+=======
+	  , dPs         = __webpack_require__(203)
+	  , enumBugKeys = __webpack_require__(120)
+	  , IE_PROTO    = __webpack_require__(132)('IE_PROTO')
+=======
+	var anObject    = __webpack_require__(9)
+	  , dPs         = __webpack_require__(198)
+	  , enumBugKeys = __webpack_require__(117)
+	  , IE_PROTO    = __webpack_require__(129)('IE_PROTO')
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , Empty       = function(){ /* empty */ }
 	  , PROTOTYPE   = 'prototype';
 
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  var iframe = __webpack_require__(197)('iframe')
+=======
+<<<<<<< HEAD
+	  var iframe = __webpack_require__(194)('iframe')
+=======
+	  var iframe = __webpack_require__(189)('iframe')
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	    , i      = enumBugKeys.length
 	    , lt     = '<'
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  __webpack_require__(198).appendChild(iframe);
+=======
+<<<<<<< HEAD
+	  __webpack_require__(195).appendChild(iframe);
+=======
+	  __webpack_require__(190).appendChild(iframe);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -1270,22 +1740,40 @@
 
 
 /***/ },
-/* 62 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	var $keys      = __webpack_require__(208)
 	  , hiddenKeys = __webpack_require__(121).concat('length', 'prototype');
+=======
+<<<<<<< HEAD
+	var $keys      = __webpack_require__(205)
+	  , hiddenKeys = __webpack_require__(120).concat('length', 'prototype');
+=======
+	var $keys      = __webpack_require__(200)
+	  , hiddenKeys = __webpack_require__(117).concat('length', 'prototype');
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
 	  return $keys(O, hiddenKeys);
 	};
 
 /***/ },
-/* 63 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var toInteger = __webpack_require__(55)
+=======
+<<<<<<< HEAD
+	var toInteger = __webpack_require__(54)
+=======
+	var toInteger = __webpack_require__(55)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , max       = Math.max
 	  , min       = Math.min;
 	module.exports = function(index, length){
@@ -1294,7 +1782,7 @@
 	};
 
 /***/ },
-/* 64 */
+/* 66 */
 /***/ function(module, exports) {
 
 	var id = 0
@@ -1304,44 +1792,64 @@
 	};
 
 /***/ },
-/* 65 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 19.1.3.6 Object.prototype.toString()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	var classof = __webpack_require__(120)
+=======
+<<<<<<< HEAD
+	var classof = __webpack_require__(119)
+=======
+	var classof = __webpack_require__(116)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , test    = {};
-	test[__webpack_require__(14)('toStringTag')] = 'z';
+	test[__webpack_require__(15)('toStringTag')] = 'z';
 	if(test + '' != '[object z]'){
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  __webpack_require__(32)(Object.prototype, 'toString', function toString(){
+=======
+	  __webpack_require__(31)(Object.prototype, 'toString', function toString(){
+>>>>>>> adding chart.js
 	    return '[object ' + classof(this) + ']';
 	  }, true);
 	}
 
 /***/ },
-/* 66 */,
-/* 67 */,
 /* 68 */,
 /* 69 */,
-/* 70 */
+/* 70 */,
+/* 71 */
 /***/ function(module, exports) {
 
 	module.exports = {};
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	var $keys       = __webpack_require__(208)
 	  , enumBugKeys = __webpack_require__(121);
+=======
+<<<<<<< HEAD
+	var $keys       = __webpack_require__(205)
+	  , enumBugKeys = __webpack_require__(120);
+=======
+	var $keys       = __webpack_require__(200)
+	  , enumBugKeys = __webpack_require__(117);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = Object.keys || function keys(O){
 	  return $keys(O, enumBugKeys);
 	};
 
 /***/ },
-/* 72 */,
 /* 73 */,
 /* 74 */,
 /* 75 */,
@@ -1349,9 +1857,17 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.31 Array.prototype[@@unscopables]
-	var UNSCOPABLES = __webpack_require__(14)('unscopables')
+	var UNSCOPABLES = __webpack_require__(15)('unscopables')
 	  , ArrayProto  = Array.prototype;
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(34)(ArrayProto, UNSCOPABLES, {});
+=======
+<<<<<<< HEAD
+	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(33)(ArrayProto, UNSCOPABLES, {});
+=======
+	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(34)(ArrayProto, UNSCOPABLES, {});
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	module.exports = function(key){
 	  ArrayProto[UNSCOPABLES][key] = true;
 	};
@@ -1371,7 +1887,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-	var cof = __webpack_require__(59);
+	var cof = __webpack_require__(61);
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
 	  return cof(it) == 'String' ? it.split('') : Object(it);
 	};
@@ -1386,7 +1902,11 @@
 /* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	var redefine = __webpack_require__(32);
+=======
+	var redefine = __webpack_require__(31);
+>>>>>>> adding chart.js
 	module.exports = function(target, src, safe){
 	  for(var key in src)redefine(target, key, src[key], safe);
 	  return target;
@@ -1397,10 +1917,17 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+<<<<<<< HEAD
 	var global      = __webpack_require__(12)
 	  , dP          = __webpack_require__(17)
 	  , DESCRIPTORS = __webpack_require__(20)
 	  , SPECIES     = __webpack_require__(14)('species');
+=======
+	var global      = __webpack_require__(13)
+	  , dP          = __webpack_require__(17)
+	  , DESCRIPTORS = __webpack_require__(18)
+	  , SPECIES     = __webpack_require__(15)('species');
+>>>>>>> 024b7b6... adding chart.js
 
 	module.exports = function(KEY){
 	  var C = global[KEY];
@@ -1414,9 +1941,19 @@
 /* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var def = __webpack_require__(17).f
+=======
+<<<<<<< HEAD
+	var def = __webpack_require__(16).f
+>>>>>>> adding chart.js
 	  , has = __webpack_require__(28)
 	  , TAG = __webpack_require__(14)('toStringTag');
+=======
+	var def = __webpack_require__(17).f
+	  , has = __webpack_require__(27)
+	  , TAG = __webpack_require__(15)('toStringTag');
+>>>>>>> 024b7b6... adding chart.js
 
 	module.exports = function(it, tag, stat){
 	  if(it && !has(it = stat ? it : it.prototype, TAG))def(it, TAG, {configurable: true, value: tag});
@@ -1431,6 +1968,7 @@
 /* 88 */,
 /* 89 */,
 /* 90 */,
+<<<<<<< HEAD
 /* 91 */,
 /* 92 */,
 /* 93 */,
@@ -1449,7 +1987,29 @@
 	  , fails             = __webpack_require__(10)
 	  , $iterDetect       = __webpack_require__(129)
 	  , setToStringTag    = __webpack_require__(82)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , inheritIfRequired = __webpack_require__(124);
+=======
+	  , inheritIfRequired = __webpack_require__(123);
+=======
+/* 91 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var global            = __webpack_require__(13)
+	  , $export           = __webpack_require__(3)
+	  , redefine          = __webpack_require__(31)
+	  , redefineAll       = __webpack_require__(80)
+	  , meta              = __webpack_require__(53)
+	  , forOf             = __webpack_require__(93)
+	  , anInstance        = __webpack_require__(77)
+	  , isObject          = __webpack_require__(12)
+	  , fails             = __webpack_require__(10)
+	  , $iterDetect       = __webpack_require__(125)
+	  , setToStringTag    = __webpack_require__(82)
+	  , inheritIfRequired = __webpack_require__(120);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK){
 	  var Base  = global[NAME]
@@ -1524,7 +2084,12 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 95 */
+=======
+<<<<<<< HEAD
+/* 94 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1533,6 +2098,17 @@
 	  , fails    = __webpack_require__(10)
 	  , defined  = __webpack_require__(46)
 	  , wks      = __webpack_require__(14);
+=======
+/* 92 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var hide     = __webpack_require__(34)
+	  , redefine = __webpack_require__(31)
+	  , fails    = __webpack_require__(10)
+	  , defined  = __webpack_require__(46)
+	  , wks      = __webpack_require__(15);
+>>>>>>> 024b7b6... adding chart.js
 
 	module.exports = function(KEY, length, exec){
 	  var SYMBOL   = wks(KEY)
@@ -1557,7 +2133,12 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 96 */
+=======
+<<<<<<< HEAD
+/* 95 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var ctx         = __webpack_require__(60)
@@ -1565,7 +2146,22 @@
 	  , isArrayIter = __webpack_require__(125)
 	  , anObject    = __webpack_require__(8)
 	  , toLength    = __webpack_require__(25)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , getIterFn   = __webpack_require__(137)
+=======
+	  , getIterFn   = __webpack_require__(136)
+=======
+/* 93 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var ctx         = __webpack_require__(62)
+	  , call        = __webpack_require__(193)
+	  , isArrayIter = __webpack_require__(121)
+	  , anObject    = __webpack_require__(9)
+	  , toLength    = __webpack_require__(25)
+	  , getIterFn   = __webpack_require__(133)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , BREAK       = {}
 	  , RETURN      = {};
 	var exports = module.exports = function(iterable, entries, fn, that, ITERATOR){
@@ -1587,22 +2183,46 @@
 	exports.RETURN = RETURN;
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 97 */
+=======
+<<<<<<< HEAD
+/* 96 */
+=======
+/* 94 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	exports.f = Object.getOwnPropertySymbols;
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 98 */
+=======
+<<<<<<< HEAD
+/* 97 */
+=======
+/* 95 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	exports.f = {}.propertyIsEnumerable;
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 99 */
+=======
+<<<<<<< HEAD
+/* 98 */
+=======
+/* 96 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
-	var global = __webpack_require__(12)
+	var global = __webpack_require__(13)
 	  , SHARED = '__core-js_shared__'
 	  , store  = global[SHARED] || (global[SHARED] = {});
 	module.exports = function(key){
@@ -1610,13 +2230,31 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 100 */
+=======
+<<<<<<< HEAD
+/* 99 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(3)
 	  , defined = __webpack_require__(46)
 	  , fails   = __webpack_require__(10)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , spaces  = __webpack_require__(135)
+=======
+	  , spaces  = __webpack_require__(134)
+=======
+/* 97 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export = __webpack_require__(3)
+	  , defined = __webpack_require__(46)
+	  , fails   = __webpack_require__(10)
+	  , spaces  = __webpack_require__(131)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , space   = '[' + spaces + ']'
 	  , non     = '\u200b\u0085'
 	  , ltrim   = RegExp('^' + space + space + '*')
@@ -1645,12 +2283,25 @@
 	module.exports = exporter;
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 101 */
+=======
+<<<<<<< HEAD
+/* 100 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var global = __webpack_require__(12)
 	  , hide   = __webpack_require__(34)
 	  , uid    = __webpack_require__(64)
+=======
+/* 98 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global = __webpack_require__(13)
+	  , hide   = __webpack_require__(34)
+	  , uid    = __webpack_require__(66)
+>>>>>>> 024b7b6... adding chart.js
 	  , TYPED  = uid('typed_array')
 	  , VIEW   = uid('view')
 	  , ABV    = !!(global.ArrayBuffer && global.DataView)
@@ -1676,20 +2327,46 @@
 	};
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 102 */
+=======
+<<<<<<< HEAD
+/* 101 */
+=======
+/* 99 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var addToUnscopables = __webpack_require__(76)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , step             = __webpack_require__(203)
+=======
+<<<<<<< HEAD
+	  , step             = __webpack_require__(200)
+>>>>>>> adding chart.js
 	  , Iterators        = __webpack_require__(70)
 	  , toIObject        = __webpack_require__(37);
+=======
+	  , step             = __webpack_require__(195)
+	  , Iterators        = __webpack_require__(71)
+	  , toIObject        = __webpack_require__(38);
+>>>>>>> 024b7b6... adding chart.js
 
 	// 22.1.3.4 Array.prototype.entries()
 	// 22.1.3.13 Array.prototype.keys()
 	// 22.1.3.29 Array.prototype.values()
 	// 22.1.3.30 Array.prototype[@@iterator]()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	module.exports = __webpack_require__(128)(Array, 'Array', function(iterated, kind){
+=======
+<<<<<<< HEAD
+	module.exports = __webpack_require__(127)(Array, 'Array', function(iterated, kind){
+=======
+	module.exports = __webpack_require__(124)(Array, 'Array', function(iterated, kind){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  this._t = toIObject(iterated); // target
 	  this._i = 0;                   // next index
 	  this._k = kind;                // kind
@@ -1715,14 +2392,33 @@
 	addToUnscopables('entries');
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /* 103 */
+=======
+<<<<<<< HEAD
+/* 102 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $at  = __webpack_require__(213)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(128)(String, 'String', function(iterated){
+=======
+	__webpack_require__(127)(String, 'String', function(iterated){
+=======
+/* 100 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $at  = __webpack_require__(205)(true);
+
+	// 21.1.3.27 String.prototype[@@iterator]()
+	__webpack_require__(124)(String, 'String', function(iterated){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  this._t = String(iterated); // target
 	  this._i = 0;                // next index
 	// 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -1737,6 +2433,15 @@
 	});
 
 /***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+=======
+<<<<<<< HEAD
+=======
+/* 101 */,
+/* 102 */,
+>>>>>>> 024b7b6... adding chart.js
+/* 103 */,
+>>>>>>> adding chart.js
 /* 104 */,
 /* 105 */,
 /* 106 */,
@@ -1747,17 +2452,34 @@
 /* 111 */,
 /* 112 */,
 /* 113 */,
+<<<<<<< HEAD
 /* 114 */,
 /* 115 */,
 /* 116 */,
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 117 */,
 /* 118 */
+=======
+/* 117 */
+=======
+/* 114 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	'use strict';
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var toObject = __webpack_require__(35)
+=======
+<<<<<<< HEAD
+	var toObject = __webpack_require__(34)
+>>>>>>> adding chart.js
 	  , toIndex  = __webpack_require__(63)
+=======
+	var toObject = __webpack_require__(35)
+	  , toIndex  = __webpack_require__(65)
+>>>>>>> 024b7b6... adding chart.js
 	  , toLength = __webpack_require__(25);
 	module.exports = function fill(value /*, start = 0, end = @length */){
 	  var O      = toObject(this)
@@ -1771,14 +2493,28 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 119 */
+=======
+<<<<<<< HEAD
+/* 118 */
+=======
+/* 115 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
+<<<<<<< HEAD
 	var toIObject = __webpack_require__(37)
 	  , toLength  = __webpack_require__(25)
 	  , toIndex   = __webpack_require__(63);
+=======
+	var toIObject = __webpack_require__(38)
+	  , toLength  = __webpack_require__(25)
+	  , toIndex   = __webpack_require__(65);
+>>>>>>> 024b7b6... adding chart.js
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
 	    var O      = toIObject($this)
@@ -1797,12 +2533,20 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 120 */
+=======
+<<<<<<< HEAD
+/* 119 */
+=======
+/* 116 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// getting tag from 19.1.3.6 Object.prototype.toString()
-	var cof = __webpack_require__(59)
-	  , TAG = __webpack_require__(14)('toStringTag')
+	var cof = __webpack_require__(61)
+	  , TAG = __webpack_require__(15)('toStringTag')
 	  // ES3 wrong here
 	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
 
@@ -1825,7 +2569,15 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 121 */
+=======
+<<<<<<< HEAD
+/* 120 */
+=======
+/* 117 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// IE 8- don't enum bug keys
@@ -1834,10 +2586,18 @@
 	).split(',');
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 122 */
+=======
+<<<<<<< HEAD
+/* 121 */
+=======
+/* 118 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
-	var MATCH = __webpack_require__(14)('match');
+	var MATCH = __webpack_require__(15)('match');
 	module.exports = function(KEY){
 	  var re = /./;
 	  try {
@@ -1851,12 +2611,20 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 123 */
+=======
+<<<<<<< HEAD
+/* 122 */
+=======
+/* 119 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 21.2.5.3 get RegExp.prototype.flags
-	var anObject = __webpack_require__(8);
+	var anObject = __webpack_require__(9);
 	module.exports = function(){
 	  var that   = anObject(this)
 	    , result = '';
@@ -1869,11 +2637,27 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject       = __webpack_require__(11)
 	  , setPrototypeOf = __webpack_require__(132).set;
+=======
+<<<<<<< HEAD
+/* 123 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject       = __webpack_require__(11)
+	  , setPrototypeOf = __webpack_require__(131).set;
+=======
+/* 120 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject       = __webpack_require__(12)
+	  , setPrototypeOf = __webpack_require__(128).set;
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	module.exports = function(that, target, C){
 	  var P, S = target.constructor;
 	  if(S !== C && typeof S == 'function' && (P = S.prototype) !== C.prototype && isObject(P) && setPrototypeOf){
@@ -1882,12 +2666,20 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 125 */
+=======
+<<<<<<< HEAD
+/* 124 */
+=======
+/* 121 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// check on default Array iterator
-	var Iterators  = __webpack_require__(70)
-	  , ITERATOR   = __webpack_require__(14)('iterator')
+	var Iterators  = __webpack_require__(71)
+	  , ITERATOR   = __webpack_require__(15)('iterator')
 	  , ArrayProto = Array.prototype;
 
 	module.exports = function(it){
@@ -1895,36 +2687,65 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 126 */
+=======
+<<<<<<< HEAD
+/* 125 */
+=======
+/* 122 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.2 IsArray(argument)
-	var cof = __webpack_require__(59);
+	var cof = __webpack_require__(61);
 	module.exports = Array.isArray || function isArray(arg){
 	  return cof(arg) == 'Array';
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 127 */
+=======
+<<<<<<< HEAD
+/* 126 */
+=======
+/* 123 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.2.8 IsRegExp(argument)
-	var isObject = __webpack_require__(11)
-	  , cof      = __webpack_require__(59)
-	  , MATCH    = __webpack_require__(14)('match');
+	var isObject = __webpack_require__(12)
+	  , cof      = __webpack_require__(61)
+	  , MATCH    = __webpack_require__(15)('match');
 	module.exports = function(it){
 	  var isRegExp;
 	  return isObject(it) && ((isRegExp = it[MATCH]) !== undefined ? !!isRegExp : cof(it) == 'RegExp');
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 128 */
+=======
+<<<<<<< HEAD
+/* 127 */
+=======
+/* 124 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var LIBRARY        = __webpack_require__(79)
 	  , $export        = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , redefine       = __webpack_require__(32)
+=======
+<<<<<<< HEAD
+	  , redefine       = __webpack_require__(30)
+>>>>>>> adding chart.js
 	  , hide           = __webpack_require__(34)
 	  , has            = __webpack_require__(28)
 	  , Iterators      = __webpack_require__(70)
@@ -1932,6 +2753,16 @@
 	  , setToStringTag = __webpack_require__(82)
 	  , getPrototypeOf = __webpack_require__(41)
 	  , ITERATOR       = __webpack_require__(14)('iterator')
+=======
+	  , redefine       = __webpack_require__(31)
+	  , hide           = __webpack_require__(34)
+	  , has            = __webpack_require__(27)
+	  , Iterators      = __webpack_require__(71)
+	  , $iterCreate    = __webpack_require__(194)
+	  , setToStringTag = __webpack_require__(82)
+	  , getPrototypeOf = __webpack_require__(41)
+	  , ITERATOR       = __webpack_require__(15)('iterator')
+>>>>>>> 024b7b6... adding chart.js
 	  , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
 	  , FF_ITERATOR    = '@@iterator'
 	  , KEYS           = 'keys'
@@ -1993,10 +2824,18 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 129 */
+=======
+<<<<<<< HEAD
+/* 128 */
+=======
+/* 125 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
-	var ITERATOR     = __webpack_require__(14)('iterator')
+	var ITERATOR     = __webpack_require__(15)('iterator')
 	  , SAFE_CLOSING = false;
 
 	try {
@@ -2019,7 +2858,15 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 130 */
+=======
+<<<<<<< HEAD
+/* 129 */
+=======
+/* 126 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// 20.2.2.14 Math.expm1(x)
@@ -2034,7 +2881,15 @@
 	} : $expm1;
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 131 */
+=======
+<<<<<<< HEAD
+/* 130 */
+=======
+/* 127 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// 20.2.2.28 Math.sign(x)
@@ -2043,13 +2898,21 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 132 */
+=======
+<<<<<<< HEAD
+/* 131 */
+=======
+/* 128 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
 	/* eslint-disable no-proto */
-	var isObject = __webpack_require__(11)
-	  , anObject = __webpack_require__(8);
+	var isObject = __webpack_require__(12)
+	  , anObject = __webpack_require__(9);
 	var check = function(O, proto){
 	  anObject(O);
 	  if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -2058,7 +2921,15 @@
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function(test, buggy, set){
 	      try {
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	        set = __webpack_require__(60)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
+=======
+<<<<<<< HEAD
+	        set = __webpack_require__(60)(Function.call, __webpack_require__(47).f(Object.prototype, '__proto__').set, 2);
+=======
+	        set = __webpack_require__(62)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch(e){ buggy = true; }
@@ -2073,22 +2944,55 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 133 */
+=======
+<<<<<<< HEAD
+/* 132 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var shared = __webpack_require__(99)('keys')
 	  , uid    = __webpack_require__(64);
+=======
+/* 129 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var shared = __webpack_require__(96)('keys')
+	  , uid    = __webpack_require__(66);
+>>>>>>> 024b7b6... adding chart.js
 	module.exports = function(key){
 	  return shared[key] || (shared[key] = uid(key));
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// helper for String#{startsWith, endsWith, includes}
 	var isRegExp = __webpack_require__(127)
+=======
+<<<<<<< HEAD
+/* 133 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// helper for String#{startsWith, endsWith, includes}
+	var isRegExp = __webpack_require__(126)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , defined  = __webpack_require__(46);
+=======
+	  , defined  = __webpack_require__(45);
+=======
+/* 130 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// helper for String#{startsWith, endsWith, includes}
+	var isRegExp = __webpack_require__(123)
+>>>>>>> adding chart.js
+	  , defined  = __webpack_require__(46);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = function(that, searchString, NAME){
 	  if(isRegExp(searchString))throw TypeError('String#' + NAME + " doesn't accept regex!");
@@ -2096,14 +3000,27 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 135 */
+=======
+<<<<<<< HEAD
+/* 134 */
+=======
+/* 131 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
 	  '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 136 */
+=======
+<<<<<<< HEAD
+/* 135 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2119,7 +3036,30 @@
 	  , toLength       = __webpack_require__(25)
 	  , gOPN           = __webpack_require__(62).f
 	  , dP             = __webpack_require__(17).f
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , arrayFill      = __webpack_require__(118)
+=======
+	  , arrayFill      = __webpack_require__(117)
+=======
+/* 132 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var global         = __webpack_require__(13)
+	  , DESCRIPTORS    = __webpack_require__(18)
+	  , LIBRARY        = __webpack_require__(79)
+	  , $typed         = __webpack_require__(98)
+	  , hide           = __webpack_require__(34)
+	  , redefineAll    = __webpack_require__(80)
+	  , fails          = __webpack_require__(10)
+	  , anInstance     = __webpack_require__(77)
+	  , toInteger      = __webpack_require__(55)
+	  , toLength       = __webpack_require__(25)
+	  , gOPN           = __webpack_require__(64).f
+	  , dP             = __webpack_require__(17).f
+	  , arrayFill      = __webpack_require__(114)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , setToStringTag = __webpack_require__(82)
 	  , ARRAY_BUFFER   = 'ArrayBuffer'
 	  , DATA_VIEW      = 'DataView'
@@ -2381,20 +3321,39 @@
 	exports[DATA_VIEW] = $DataView;
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 137 */
+=======
+<<<<<<< HEAD
+/* 136 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var classof   = __webpack_require__(120)
 	  , ITERATOR  = __webpack_require__(14)('iterator')
 	  , Iterators = __webpack_require__(70);
 	module.exports = __webpack_require__(13).getIteratorMethod = function(it){
+=======
+/* 133 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var classof   = __webpack_require__(116)
+	  , ITERATOR  = __webpack_require__(15)('iterator')
+	  , Iterators = __webpack_require__(71);
+	module.exports = __webpack_require__(14).getIteratorMethod = function(it){
+>>>>>>> 024b7b6... adding chart.js
 	  if(it != undefined)return it[ITERATOR]
 	    || it['@@iterator']
 	    || Iterators[classof(it)];
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 138 */
+=======
+<<<<<<< HEAD
+/* 137 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $iterators    = __webpack_require__(102)
@@ -2403,6 +3362,17 @@
 	  , hide          = __webpack_require__(34)
 	  , Iterators     = __webpack_require__(70)
 	  , wks           = __webpack_require__(14)
+=======
+/* 134 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $iterators    = __webpack_require__(99)
+	  , redefine      = __webpack_require__(31)
+	  , global        = __webpack_require__(13)
+	  , hide          = __webpack_require__(34)
+	  , Iterators     = __webpack_require__(71)
+	  , wks           = __webpack_require__(15)
+>>>>>>> 024b7b6... adding chart.js
 	  , ITERATOR      = wks('iterator')
 	  , TO_STRING_TAG = wks('toStringTag')
 	  , ArrayValues   = Iterators.Array;
@@ -2421,6 +3391,16 @@
 	}
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
+=======
+<<<<<<< HEAD
+=======
+/* 135 */,
+/* 136 */,
+/* 137 */,
+>>>>>>> 024b7b6... adding chart.js
+/* 138 */,
+>>>>>>> adding chart.js
 /* 139 */,
 /* 140 */,
 /* 141 */,
@@ -2464,31 +3444,56 @@
 /* 179 */,
 /* 180 */,
 /* 181 */,
+<<<<<<< HEAD
 /* 182 */,
 /* 183 */,
 /* 184 */,
 /* 185 */,
 /* 186 */,
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 187 */,
 /* 188 */,
 /* 189 */,
 /* 190 */
+=======
+/* 187 */
+=======
+/* 182 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
-	var cof = __webpack_require__(59);
+	var cof = __webpack_require__(61);
 	module.exports = function(it, msg){
 	  if(typeof it != 'number' && cof(it) != 'Number')throw TypeError(msg);
 	  return +it;
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 191 */
+=======
+<<<<<<< HEAD
+/* 188 */
+=======
+/* 183 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	'use strict';
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var toObject = __webpack_require__(35)
+=======
+<<<<<<< HEAD
+	var toObject = __webpack_require__(34)
+>>>>>>> adding chart.js
 	  , toIndex  = __webpack_require__(63)
+=======
+	var toObject = __webpack_require__(35)
+	  , toIndex  = __webpack_require__(65)
+>>>>>>> 024b7b6... adding chart.js
 	  , toLength = __webpack_require__(25);
 
 	module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0, end = @length*/){
@@ -2513,11 +3518,28 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 192 */
+=======
+<<<<<<< HEAD
+/* 189 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	var aFunction = __webpack_require__(52)
+	  , toObject  = __webpack_require__(35)
+=======
+	var aFunction = __webpack_require__(51)
+	  , toObject  = __webpack_require__(34)
+=======
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var aFunction = __webpack_require__(52)
 	  , toObject  = __webpack_require__(35)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , IObject   = __webpack_require__(78)
 	  , toLength  = __webpack_require__(25);
 
@@ -2546,13 +3568,35 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 193 */
+=======
+<<<<<<< HEAD
+/* 190 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var aFunction  = __webpack_require__(52)
 	  , isObject   = __webpack_require__(11)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , invoke     = __webpack_require__(324)
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	  , invoke     = __webpack_require__(321)
+=======
+	  , invoke     = __webpack_require__(319)
+=======
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var aFunction  = __webpack_require__(52)
+	  , isObject   = __webpack_require__(12)
+	  , invoke     = __webpack_require__(462)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 	  , arraySlice = [].slice
 	  , factories  = {};
 
@@ -2575,7 +3619,12 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 194 */
+=======
+<<<<<<< HEAD
+/* 191 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2589,8 +3638,35 @@
 	  , $iterDefine = __webpack_require__(128)
 	  , step        = __webpack_require__(203)
 	  , setSpecies  = __webpack_require__(81)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , DESCRIPTORS = __webpack_require__(20)
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	  , DESCRIPTORS = __webpack_require__(19)
+>>>>>>> adding chart.js
 	  , fastKey     = __webpack_require__(53).fastKey
+=======
+	  , DESCRIPTORS = __webpack_require__(18)
+	  , fastKey     = __webpack_require__(52).fastKey
+=======
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var dP          = __webpack_require__(17).f
+	  , create      = __webpack_require__(63)
+	  , redefineAll = __webpack_require__(80)
+	  , ctx         = __webpack_require__(62)
+	  , anInstance  = __webpack_require__(77)
+	  , defined     = __webpack_require__(46)
+	  , forOf       = __webpack_require__(93)
+	  , $iterDefine = __webpack_require__(124)
+	  , step        = __webpack_require__(195)
+	  , setSpecies  = __webpack_require__(81)
+	  , DESCRIPTORS = __webpack_require__(18)
+	  , fastKey     = __webpack_require__(53).fastKey
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , SIZE        = DESCRIPTORS ? '_s' : 'size';
 
 	var getEntry = function(that, key){
@@ -2722,18 +3798,40 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 195 */
+=======
+<<<<<<< HEAD
+/* 192 */
+=======
+/* 187 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var redefineAll       = __webpack_require__(80)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , getWeak           = __webpack_require__(53).getWeak
+=======
+<<<<<<< HEAD
+	  , getWeak           = __webpack_require__(52).getWeak
+>>>>>>> adding chart.js
 	  , anObject          = __webpack_require__(8)
 	  , isObject          = __webpack_require__(11)
 	  , anInstance        = __webpack_require__(77)
 	  , forOf             = __webpack_require__(96)
 	  , createArrayMethod = __webpack_require__(40)
 	  , $has              = __webpack_require__(28)
+=======
+	  , getWeak           = __webpack_require__(53).getWeak
+	  , anObject          = __webpack_require__(9)
+	  , isObject          = __webpack_require__(12)
+	  , anInstance        = __webpack_require__(77)
+	  , forOf             = __webpack_require__(93)
+	  , createArrayMethod = __webpack_require__(40)
+	  , $has              = __webpack_require__(27)
+>>>>>>> 024b7b6... adding chart.js
 	  , arrayFind         = createArrayMethod(5)
 	  , arrayFindIndex    = createArrayMethod(6)
 	  , id                = 0;
@@ -2810,12 +3908,30 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 196 */
+=======
+<<<<<<< HEAD
+/* 193 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	var $defineProperty = __webpack_require__(17)
+	  , createDesc      = __webpack_require__(54);
+=======
+	var $defineProperty = __webpack_require__(16)
+	  , createDesc      = __webpack_require__(53);
+=======
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $defineProperty = __webpack_require__(17)
 	  , createDesc      = __webpack_require__(54);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = function(object, index, value){
 	  if(index in object)$defineProperty.f(object, index, createDesc(0, value));
@@ -2823,11 +3939,19 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 197 */
+=======
+<<<<<<< HEAD
+/* 194 */
+=======
+/* 189 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(11)
-	  , document = __webpack_require__(12).document
+	var isObject = __webpack_require__(12)
+	  , document = __webpack_require__(13).document
 	  // in old IE typeof document.createElement is 'object'
 	  , is = isObject(document) && isObject(document.createElement);
 	module.exports = function(it){
@@ -2835,13 +3959,26 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 198 */
+=======
+<<<<<<< HEAD
+/* 195 */
+=======
+/* 190 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(12).document && document.documentElement;
+	module.exports = __webpack_require__(13).document && document.documentElement;
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 199 */
+=======
+<<<<<<< HEAD
+/* 196 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = !__webpack_require__(20) && !__webpack_require__(10)(function(){
@@ -2849,22 +3986,45 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 200 */
+=======
+/* 197 */
+=======
+/* 191 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = !__webpack_require__(18) && !__webpack_require__(10)(function(){
+	  return Object.defineProperty(__webpack_require__(189)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	});
+
+/***/ },
+/* 192 */
+>>>>>>> 024b7b6... adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
-	var isObject = __webpack_require__(11)
+	var isObject = __webpack_require__(12)
 	  , floor    = Math.floor;
 	module.exports = function isInteger(it){
 	  return !isObject(it) && isFinite(it) && floor(it) === it;
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 201 */
+=======
+<<<<<<< HEAD
+/* 198 */
+=======
+/* 193 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
-	var anObject = __webpack_require__(8);
+	var anObject = __webpack_require__(9);
 	module.exports = function(iterator, fn, value, entries){
 	  try {
 	    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
@@ -2877,17 +4037,42 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 202 */
+=======
+<<<<<<< HEAD
+/* 199 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var create         = __webpack_require__(61)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , descriptor     = __webpack_require__(54)
+=======
+	  , descriptor     = __webpack_require__(53)
+=======
+/* 194 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var create         = __webpack_require__(63)
+	  , descriptor     = __webpack_require__(54)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , setToStringTag = __webpack_require__(82)
 	  , IteratorPrototype = {};
 
 	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	__webpack_require__(34)(IteratorPrototype, __webpack_require__(14)('iterator'), function(){ return this; });
+=======
+<<<<<<< HEAD
+	__webpack_require__(33)(IteratorPrototype, __webpack_require__(14)('iterator'), function(){ return this; });
+=======
+	__webpack_require__(34)(IteratorPrototype, __webpack_require__(15)('iterator'), function(){ return this; });
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = function(Constructor, NAME, next){
 	  Constructor.prototype = create(IteratorPrototype, {next: descriptor(1, next)});
@@ -2895,7 +4080,15 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 203 */
+=======
+<<<<<<< HEAD
+/* 200 */
+=======
+/* 195 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -2903,7 +4096,15 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 204 */
+=======
+<<<<<<< HEAD
+/* 201 */
+=======
+/* 196 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// 20.2.2.20 Math.log1p(x)
@@ -2912,15 +4113,36 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 205 */
+=======
+<<<<<<< HEAD
+/* 202 */
+=======
+/* 197 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 19.1.2.1 Object.assign(target, source, ...)
+<<<<<<< HEAD
 	var getKeys  = __webpack_require__(71)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , gOPS     = __webpack_require__(97)
 	  , pIE      = __webpack_require__(98)
 	  , toObject = __webpack_require__(35)
+=======
+	  , gOPS     = __webpack_require__(96)
+	  , pIE      = __webpack_require__(97)
+	  , toObject = __webpack_require__(34)
+=======
+	var getKeys  = __webpack_require__(72)
+	  , gOPS     = __webpack_require__(94)
+	  , pIE      = __webpack_require__(95)
+	  , toObject = __webpack_require__(35)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , IObject  = __webpack_require__(78)
 	  , $assign  = Object.assign;
 
@@ -2950,12 +4172,25 @@
 	} : $assign;
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 206 */
+=======
+<<<<<<< HEAD
+/* 203 */
+=======
+/* 198 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP       = __webpack_require__(17)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , anObject = __webpack_require__(8)
 	  , getKeys  = __webpack_require__(71);
+=======
+	  , anObject = __webpack_require__(9)
+	  , getKeys  = __webpack_require__(72);
+>>>>>>> adding chart.js
 
 	module.exports = __webpack_require__(20) ? Object.defineProperties : function defineProperties(O, Properties){
 	  anObject(O);
@@ -2968,12 +4203,25 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 207 */
+=======
+<<<<<<< HEAD
+/* 204 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
 	var toIObject = __webpack_require__(37)
 	  , gOPN      = __webpack_require__(62).f
+=======
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
+	var toIObject = __webpack_require__(38)
+	  , gOPN      = __webpack_require__(64).f
+>>>>>>> 024b7b6... adding chart.js
 	  , toString  = {}.toString;
 
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -2993,13 +4241,32 @@
 
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 208 */
+=======
+<<<<<<< HEAD
+/* 205 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var has          = __webpack_require__(28)
 	  , toIObject    = __webpack_require__(37)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , arrayIndexOf = __webpack_require__(119)(false)
 	  , IE_PROTO     = __webpack_require__(133)('IE_PROTO');
+=======
+	  , arrayIndexOf = __webpack_require__(118)(false)
+	  , IE_PROTO     = __webpack_require__(132)('IE_PROTO');
+=======
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var has          = __webpack_require__(27)
+	  , toIObject    = __webpack_require__(38)
+	  , arrayIndexOf = __webpack_require__(115)(false)
+	  , IE_PROTO     = __webpack_require__(129)('IE_PROTO');
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = function(object, names){
 	  var O      = toIObject(object)
@@ -3015,25 +4282,60 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 209 */
+=======
+<<<<<<< HEAD
+/* 206 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseFloat = __webpack_require__(12).parseFloat
 	  , $trim       = __webpack_require__(100).trim;
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	module.exports = 1 / $parseFloat(__webpack_require__(135) + '-0') !== -Infinity ? function parseFloat(str){
+=======
+	module.exports = 1 / $parseFloat(__webpack_require__(134) + '-0') !== -Infinity ? function parseFloat(str){
+=======
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $parseFloat = __webpack_require__(13).parseFloat
+	  , $trim       = __webpack_require__(97).trim;
+
+	module.exports = 1 / $parseFloat(__webpack_require__(131) + '-0') !== -Infinity ? function parseFloat(str){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  var string = $trim(String(str), 3)
 	    , result = $parseFloat(string);
 	  return result === 0 && string.charAt(0) == '-' ? -0 : result;
 	} : $parseFloat;
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 210 */
+=======
+<<<<<<< HEAD
+/* 207 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseInt = __webpack_require__(12).parseInt
 	  , $trim     = __webpack_require__(100).trim
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , ws        = __webpack_require__(135)
+=======
+	  , ws        = __webpack_require__(134)
+=======
+/* 202 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $parseInt = __webpack_require__(13).parseInt
+	  , $trim     = __webpack_require__(97).trim
+	  , ws        = __webpack_require__(131)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , hex       = /^[\-+]?0[xX]/;
 
 	module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix){
@@ -3042,7 +4344,15 @@
 	} : $parseInt;
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 211 */
+=======
+<<<<<<< HEAD
+/* 208 */
+=======
+/* 203 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// 7.2.9 SameValue(x, y)
@@ -3051,24 +4361,55 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 212 */
+=======
+<<<<<<< HEAD
+/* 209 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
 	var anObject  = __webpack_require__(8)
 	  , aFunction = __webpack_require__(52)
 	  , SPECIES   = __webpack_require__(14)('species');
+=======
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
+	var anObject  = __webpack_require__(9)
+	  , aFunction = __webpack_require__(52)
+	  , SPECIES   = __webpack_require__(15)('species');
+>>>>>>> 024b7b6... adding chart.js
 	module.exports = function(O, D){
 	  var C = anObject(O).constructor, S;
 	  return C === undefined || (S = anObject(C)[SPECIES]) == undefined ? D : aFunction(S);
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 213 */
+=======
+<<<<<<< HEAD
+/* 210 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	var toInteger = __webpack_require__(55)
+	  , defined   = __webpack_require__(46);
+=======
+	var toInteger = __webpack_require__(54)
+	  , defined   = __webpack_require__(45);
+=======
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(55)
 	  , defined   = __webpack_require__(46);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	// true  -> String#at
 	// false -> String#codePointAt
 	module.exports = function(TO_STRING){
@@ -3086,12 +4427,30 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 214 */
+=======
+<<<<<<< HEAD
+/* 211 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	var toInteger = __webpack_require__(55)
+	  , defined   = __webpack_require__(46);
+=======
+	var toInteger = __webpack_require__(54)
+	  , defined   = __webpack_require__(45);
+=======
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var toInteger = __webpack_require__(55)
 	  , defined   = __webpack_require__(46);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = function repeat(count){
 	  var str = String(defined(this))
@@ -3103,20 +4462,47 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 215 */
+=======
+<<<<<<< HEAD
+/* 212 */
+=======
+/* 207 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
-	exports.f = __webpack_require__(14);
+	exports.f = __webpack_require__(15);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 216 */
+=======
+<<<<<<< HEAD
+/* 213 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var strong = __webpack_require__(194);
 
 	// 23.1 Map Objects
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	module.exports = __webpack_require__(94)('Map', function(get){
+=======
+	module.exports = __webpack_require__(93)('Map', function(get){
+=======
+/* 208 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strong = __webpack_require__(186);
+
+	// 23.1 Map Objects
+	module.exports = __webpack_require__(91)('Map', function(get){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Map(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.1.3.6 Map.prototype.get(key)
@@ -3131,7 +4517,12 @@
 	}, strong, true);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 217 */
+=======
+<<<<<<< HEAD
+/* 214 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
@@ -3145,7 +4536,28 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@match logic
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	__webpack_require__(95)('match', 1, function(defined, MATCH, $match){
+=======
+	__webpack_require__(94)('match', 1, function(defined, MATCH, $match){
+=======
+/* 209 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 21.2.5.3 get RegExp.prototype.flags()
+	if(__webpack_require__(18) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
+	  configurable: true,
+	  get: __webpack_require__(119)
+	});
+
+/***/ },
+/* 210 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// @@match logic
+	__webpack_require__(92)('match', 1, function(defined, MATCH, $match){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  // 21.1.3.11 String.prototype.match(regexp)
 	  return [function match(regexp){
 	    'use strict';
@@ -3156,11 +4568,27 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 219 */
+=======
+<<<<<<< HEAD
+/* 216 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@replace logic
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	__webpack_require__(95)('replace', 2, function(defined, REPLACE, $replace){
+=======
+	__webpack_require__(94)('replace', 2, function(defined, REPLACE, $replace){
+=======
+/* 211 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// @@replace logic
+	__webpack_require__(92)('replace', 2, function(defined, REPLACE, $replace){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  // 21.1.3.14 String.prototype.replace(searchValue, replaceValue)
 	  return [function replace(searchValue, replaceValue){
 	    'use strict';
@@ -3173,11 +4601,27 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 220 */
+=======
+<<<<<<< HEAD
+/* 217 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@search logic
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	__webpack_require__(95)('search', 1, function(defined, SEARCH, $search){
+=======
+	__webpack_require__(94)('search', 1, function(defined, SEARCH, $search){
+=======
+/* 212 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// @@search logic
+	__webpack_require__(92)('search', 1, function(defined, SEARCH, $search){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  // 21.1.3.15 String.prototype.search(regexp)
 	  return [function search(regexp){
 	    'use strict';
@@ -3188,13 +4632,31 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 221 */
+=======
+<<<<<<< HEAD
+/* 218 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@split logic
 	__webpack_require__(95)('split', 2, function(defined, SPLIT, $split){
 	  'use strict';
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  var isRegExp   = __webpack_require__(127)
+=======
+	  var isRegExp   = __webpack_require__(126)
+=======
+/* 213 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// @@split logic
+	__webpack_require__(92)('split', 2, function(defined, SPLIT, $split){
+	  'use strict';
+	  var isRegExp   = __webpack_require__(123)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	    , _split     = $split
 	    , $push      = [].push
 	    , $SPLIT     = 'split'
@@ -3263,14 +4725,33 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 222 */
+=======
+<<<<<<< HEAD
+/* 219 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var strong = __webpack_require__(194);
 
 	// 23.2 Set Objects
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	module.exports = __webpack_require__(94)('Set', function(get){
+=======
+	module.exports = __webpack_require__(93)('Set', function(get){
+=======
+/* 214 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var strong = __webpack_require__(186);
+
+	// 23.2 Set Objects
+	module.exports = __webpack_require__(91)('Set', function(get){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Set(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.2.3.1 Set.prototype.add(value)
@@ -3280,11 +4761,20 @@
 	}, strong);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 223 */
+=======
+<<<<<<< HEAD
+/* 220 */
+=======
+/* 215 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// ECMAScript 6 symbols shim
+<<<<<<< HEAD
 	var global         = __webpack_require__(12)
 	  , has            = __webpack_require__(28)
 	  , DESCRIPTORS    = __webpack_require__(20)
@@ -3310,6 +4800,33 @@
 	  , $GOPD          = __webpack_require__(48)
 	  , $DP            = __webpack_require__(17)
 	  , $keys          = __webpack_require__(71)
+=======
+	var global         = __webpack_require__(13)
+	  , has            = __webpack_require__(27)
+	  , DESCRIPTORS    = __webpack_require__(18)
+	  , $export        = __webpack_require__(3)
+	  , redefine       = __webpack_require__(31)
+	  , META           = __webpack_require__(53).KEY
+	  , $fails         = __webpack_require__(10)
+	  , shared         = __webpack_require__(96)
+	  , setToStringTag = __webpack_require__(82)
+	  , uid            = __webpack_require__(66)
+	  , wks            = __webpack_require__(15)
+	  , wksExt         = __webpack_require__(207)
+	  , wksDefine      = __webpack_require__(465)
+	  , keyOf          = __webpack_require__(463)
+	  , enumKeys       = __webpack_require__(461)
+	  , isArray        = __webpack_require__(122)
+	  , anObject       = __webpack_require__(9)
+	  , toIObject      = __webpack_require__(38)
+	  , toPrimitive    = __webpack_require__(56)
+	  , createDesc     = __webpack_require__(54)
+	  , _create        = __webpack_require__(63)
+	  , gOPNExt        = __webpack_require__(199)
+	  , $GOPD          = __webpack_require__(48)
+	  , $DP            = __webpack_require__(17)
+	  , $keys          = __webpack_require__(72)
+>>>>>>> 024b7b6... adding chart.js
 	  , gOPD           = $GOPD.f
 	  , dP             = $DP.f
 	  , gOPN           = gOPNExt.f
@@ -3432,9 +4949,20 @@
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
+<<<<<<< HEAD
 	  __webpack_require__(62).f = gOPNExt.f = $getOwnPropertyNames;
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  __webpack_require__(98).f  = $propertyIsEnumerable;
 	  __webpack_require__(97).f = $getOwnPropertySymbols;
+=======
+	  __webpack_require__(97).f  = $propertyIsEnumerable;
+	  __webpack_require__(96).f = $getOwnPropertySymbols;
+=======
+	  __webpack_require__(64).f = gOPNExt.f = $getOwnPropertyNames;
+	  __webpack_require__(95).f  = $propertyIsEnumerable;
+	  __webpack_require__(94).f = $getOwnPropertySymbols;
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	  if(DESCRIPTORS && !__webpack_require__(79)){
 	    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
@@ -3511,7 +5039,15 @@
 	});
 
 	// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(34)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+=======
+<<<<<<< HEAD
+	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(33)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+=======
+	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(34)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	// 19.4.3.5 Symbol.prototype[@@toStringTag]
 	setToStringTag($Symbol, 'Symbol');
 	// 20.2.1.9 Math[@@toStringTag]
@@ -3520,7 +5056,12 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 224 */
+=======
+<<<<<<< HEAD
+/* 221 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3530,6 +5071,18 @@
 	  , assign       = __webpack_require__(205)
 	  , weak         = __webpack_require__(195)
 	  , isObject     = __webpack_require__(11)
+=======
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var each         = __webpack_require__(40)(0)
+	  , redefine     = __webpack_require__(31)
+	  , meta         = __webpack_require__(53)
+	  , assign       = __webpack_require__(197)
+	  , weak         = __webpack_require__(187)
+	  , isObject     = __webpack_require__(12)
+>>>>>>> 024b7b6... adding chart.js
 	  , getWeak      = meta.getWeak
 	  , isExtensible = Object.isExtensible
 	  , uncaughtFrozenStore = weak.ufstore
@@ -3558,7 +5111,15 @@
 	};
 
 	// 23.3 WeakMap Objects
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var $WeakMap = module.exports = __webpack_require__(94)('WeakMap', wrapper, methods, weak, true, true);
+=======
+<<<<<<< HEAD
+	var $WeakMap = module.exports = __webpack_require__(93)('WeakMap', wrapper, methods, weak, true, true);
+=======
+	var $WeakMap = module.exports = __webpack_require__(91)('WeakMap', wrapper, methods, weak, true, true);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	// IE11 WeakMap frozen keys fix
 	if(new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7){
@@ -3581,7 +5142,124 @@
 	}
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 225 */
+=======
+<<<<<<< HEAD
+/* 222 */
+=======
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -3767,6 +5445,13 @@
 
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
+=======
+<<<<<<< HEAD
+/* 223 */,
+/* 224 */,
+/* 225 */,
+>>>>>>> adding chart.js
 /* 226 */,
 /* 227 */,
 /* 228 */,
@@ -4118,7 +5803,402 @@
 /* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var forOf = __webpack_require__(96);
+=======
+	var forOf = __webpack_require__(95);
+=======
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(100);
+	__webpack_require__(475);
+	__webpack_require__(473);
+	__webpack_require__(479);
+	__webpack_require__(476);
+	__webpack_require__(482);
+	__webpack_require__(484);
+	__webpack_require__(472);
+	__webpack_require__(478);
+	__webpack_require__(469);
+	__webpack_require__(483);
+	__webpack_require__(467);
+	__webpack_require__(481);
+	__webpack_require__(480);
+	__webpack_require__(474);
+	__webpack_require__(477);
+	__webpack_require__(466);
+	__webpack_require__(468);
+	__webpack_require__(471);
+	__webpack_require__(470);
+	__webpack_require__(485);
+	__webpack_require__(99);
+	module.exports = __webpack_require__(14).Array;
+
+/***/ },
+/* 440 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(486);
+	__webpack_require__(488);
+	__webpack_require__(487);
+	__webpack_require__(490);
+	__webpack_require__(489);
+	module.exports = Date;
+
+/***/ },
+/* 441 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(491);
+	__webpack_require__(493);
+	__webpack_require__(492);
+	module.exports = __webpack_require__(14).Function;
+
+/***/ },
+/* 442 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(67);
+	__webpack_require__(100);
+	__webpack_require__(134);
+	__webpack_require__(208);
+	module.exports = __webpack_require__(14).Map;
+
+/***/ },
+/* 443 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(494);
+	__webpack_require__(495);
+	__webpack_require__(496);
+	__webpack_require__(497);
+	__webpack_require__(498);
+	__webpack_require__(499);
+	__webpack_require__(500);
+	__webpack_require__(501);
+	__webpack_require__(502);
+	__webpack_require__(503);
+	__webpack_require__(504);
+	__webpack_require__(505);
+	__webpack_require__(506);
+	__webpack_require__(507);
+	__webpack_require__(508);
+	__webpack_require__(509);
+	__webpack_require__(510);
+	module.exports = __webpack_require__(14).Math;
+
+/***/ },
+/* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(511);
+	__webpack_require__(521);
+	__webpack_require__(522);
+	__webpack_require__(512);
+	__webpack_require__(513);
+	__webpack_require__(514);
+	__webpack_require__(515);
+	__webpack_require__(516);
+	__webpack_require__(517);
+	__webpack_require__(518);
+	__webpack_require__(519);
+	__webpack_require__(520);
+	module.exports = __webpack_require__(14).Number;
+
+/***/ },
+/* 445 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(215);
+	__webpack_require__(524);
+	__webpack_require__(526);
+	__webpack_require__(525);
+	__webpack_require__(528);
+	__webpack_require__(530);
+	__webpack_require__(535);
+	__webpack_require__(529);
+	__webpack_require__(527);
+	__webpack_require__(537);
+	__webpack_require__(536);
+	__webpack_require__(532);
+	__webpack_require__(533);
+	__webpack_require__(531);
+	__webpack_require__(523);
+	__webpack_require__(534);
+	__webpack_require__(538);
+	__webpack_require__(67);
+
+	module.exports = __webpack_require__(14).Object;
+
+/***/ },
+/* 446 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(539);
+	module.exports = __webpack_require__(14).parseFloat;
+
+/***/ },
+/* 447 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(540);
+	module.exports = __webpack_require__(14).parseInt;
+
+/***/ },
+/* 448 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(541);
+	__webpack_require__(542);
+	__webpack_require__(543);
+	__webpack_require__(544);
+	__webpack_require__(545);
+	__webpack_require__(548);
+	__webpack_require__(546);
+	__webpack_require__(547);
+	__webpack_require__(549);
+	__webpack_require__(550);
+	__webpack_require__(551);
+	__webpack_require__(552);
+	__webpack_require__(554);
+	__webpack_require__(553);
+	module.exports = __webpack_require__(14).Reflect;
+
+/***/ },
+/* 449 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(555);
+	__webpack_require__(556);
+	__webpack_require__(209);
+	__webpack_require__(210);
+	__webpack_require__(211);
+	__webpack_require__(212);
+	__webpack_require__(213);
+	module.exports = __webpack_require__(14).RegExp;
+
+/***/ },
+/* 450 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(67);
+	__webpack_require__(100);
+	__webpack_require__(134);
+	__webpack_require__(214);
+	module.exports = __webpack_require__(14).Set;
+
+/***/ },
+/* 451 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(566);
+	__webpack_require__(570);
+	__webpack_require__(577);
+	__webpack_require__(100);
+	__webpack_require__(561);
+	__webpack_require__(562);
+	__webpack_require__(567);
+	__webpack_require__(571);
+	__webpack_require__(573);
+	__webpack_require__(557);
+	__webpack_require__(558);
+	__webpack_require__(559);
+	__webpack_require__(560);
+	__webpack_require__(563);
+	__webpack_require__(564);
+	__webpack_require__(565);
+	__webpack_require__(568);
+	__webpack_require__(569);
+	__webpack_require__(572);
+	__webpack_require__(574);
+	__webpack_require__(575);
+	__webpack_require__(576);
+	__webpack_require__(210);
+	__webpack_require__(211);
+	__webpack_require__(212);
+	__webpack_require__(213);
+	module.exports = __webpack_require__(14).String;
+
+/***/ },
+/* 452 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(215);
+	__webpack_require__(67);
+	module.exports = __webpack_require__(14).Symbol;
+
+/***/ },
+/* 453 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(578);
+	__webpack_require__(579);
+	__webpack_require__(584);
+	__webpack_require__(587);
+	__webpack_require__(588);
+	__webpack_require__(582);
+	__webpack_require__(585);
+	__webpack_require__(583);
+	__webpack_require__(586);
+	__webpack_require__(580);
+	__webpack_require__(581);
+	__webpack_require__(67);
+	module.exports = __webpack_require__(14);
+
+/***/ },
+/* 454 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(67);
+	__webpack_require__(99);
+	__webpack_require__(216);
+	module.exports = __webpack_require__(14).WeakMap;
+
+/***/ },
+/* 455 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(67);
+	__webpack_require__(134);
+	__webpack_require__(589);
+	module.exports = __webpack_require__(14).WeakSet;
+
+/***/ },
+/* 456 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(590);
+	__webpack_require__(591);
+	__webpack_require__(593);
+	__webpack_require__(592);
+	__webpack_require__(595);
+	__webpack_require__(594);
+	__webpack_require__(596);
+	__webpack_require__(597);
+	__webpack_require__(598);
+	module.exports = __webpack_require__(14).Reflect;
+
+
+/***/ },
+/* 457 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var forOf = __webpack_require__(93);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = function(iter, ITERATOR){
 	  var result = [];
@@ -4128,12 +6208,29 @@
 
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 320 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 317 */
+=======
+<<<<<<< HEAD
+/* 315 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(11)
 	  , isArray  = __webpack_require__(126)
 	  , SPECIES  = __webpack_require__(14)('species');
+=======
+/* 458 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(12)
+	  , isArray  = __webpack_require__(122)
+	  , SPECIES  = __webpack_require__(15)('species');
+>>>>>>> 024b7b6... adding chart.js
 
 	module.exports = function(original){
 	  var C;
@@ -4149,23 +6246,68 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
 	var speciesConstructor = __webpack_require__(320);
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+	var speciesConstructor = __webpack_require__(317);
+=======
+<<<<<<< HEAD
+/* 316 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+	var speciesConstructor = __webpack_require__(315);
+=======
+/* 459 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
+	var speciesConstructor = __webpack_require__(458);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 
 	module.exports = function(original, length){
 	  return new (speciesConstructor(original))(length);
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 322 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 319 */
+=======
+<<<<<<< HEAD
+/* 317 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var anObject    = __webpack_require__(8)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , toPrimitive = __webpack_require__(56)
+=======
+	  , toPrimitive = __webpack_require__(55)
+=======
+/* 460 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var anObject    = __webpack_require__(9)
+	  , toPrimitive = __webpack_require__(56)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , NUMBER      = 'number';
 
 	module.exports = function(hint){
@@ -4174,13 +6316,36 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 323 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 320 */
+=======
+<<<<<<< HEAD
+/* 318 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
 	var getKeys = __webpack_require__(71)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , gOPS    = __webpack_require__(97)
 	  , pIE     = __webpack_require__(98);
+=======
+	  , gOPS    = __webpack_require__(96)
+	  , pIE     = __webpack_require__(97);
+=======
+/* 461 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// all enumerable object keys, includes symbols
+	var getKeys = __webpack_require__(72)
+	  , gOPS    = __webpack_require__(94)
+	  , pIE     = __webpack_require__(95);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	module.exports = function(it){
 	  var result     = getKeys(it)
 	    , getSymbols = gOPS.f;
@@ -4194,7 +6359,19 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 324 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 321 */
+=======
+<<<<<<< HEAD
+/* 319 */
+=======
+/* 462 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	// fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -4215,11 +6392,27 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 325 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 322 */
+=======
+<<<<<<< HEAD
+/* 320 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var getKeys   = __webpack_require__(71)
 	  , toIObject = __webpack_require__(37);
+=======
+/* 463 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var getKeys   = __webpack_require__(72)
+	  , toIObject = __webpack_require__(38);
+>>>>>>> 024b7b6... adding chart.js
 	module.exports = function(object, el){
 	  var O      = toIObject(object)
 	    , keys   = getKeys(O)
@@ -4230,7 +6423,16 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 326 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 323 */
+=======
+<<<<<<< HEAD
+/* 321 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// all object keys, includes non-enumerable and symbols
@@ -4238,6 +6440,16 @@
 	  , gOPS     = __webpack_require__(97)
 	  , anObject = __webpack_require__(8)
 	  , Reflect  = __webpack_require__(12).Reflect;
+=======
+/* 464 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// all object keys, includes non-enumerable and symbols
+	var gOPN     = __webpack_require__(64)
+	  , gOPS     = __webpack_require__(94)
+	  , anObject = __webpack_require__(9)
+	  , Reflect  = __webpack_require__(13).Reflect;
+>>>>>>> 024b7b6... adding chart.js
 	module.exports = Reflect && Reflect.ownKeys || function ownKeys(it){
 	  var keys       = gOPN.f(anObject(it))
 	    , getSymbols = gOPS.f;
@@ -4245,39 +6457,108 @@
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 327 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 324 */
+=======
+<<<<<<< HEAD
+/* 322 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var global         = __webpack_require__(12)
 	  , core           = __webpack_require__(13)
 	  , LIBRARY        = __webpack_require__(79)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , wksExt         = __webpack_require__(215)
+=======
+	  , wksExt         = __webpack_require__(212)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+>>>>>>> adding chart.js
 	  , defineProperty = __webpack_require__(17).f;
+=======
+	  , defineProperty = __webpack_require__(16).f;
+=======
+/* 465 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global         = __webpack_require__(13)
+	  , core           = __webpack_require__(14)
+	  , LIBRARY        = __webpack_require__(79)
+	  , wksExt         = __webpack_require__(207)
+	  , defineProperty = __webpack_require__(17).f;
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
 	  if(name.charAt(0) != '_' && !(name in $Symbol))defineProperty($Symbol, name, {value: wksExt.f(name)});
 	};
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 328 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 325 */
+=======
+<<<<<<< HEAD
+/* 323 */
+=======
+/* 466 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(191)});
+=======
+<<<<<<< HEAD
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(188)});
+=======
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(183)});
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	__webpack_require__(76)('copyWithin');
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 329 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 326 */
+=======
+<<<<<<< HEAD
+/* 324 */
+=======
+/* 467 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $every  = __webpack_require__(40)(4);
+=======
+<<<<<<< HEAD
+	  , $every  = __webpack_require__(39)(4);
+>>>>>>> adding chart.js
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].every, true), 'Array', {
+=======
+	  , $every  = __webpack_require__(40)(4);
+
+	$export($export.P + $export.F * !__webpack_require__(37)([].every, true), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.5 / 15.4.4.16 Array.prototype.every(callbackfn [, thisArg])
 	  every: function every(callbackfn /* , thisArg */){
 	    return $every(this, callbackfn, arguments[1]);
@@ -4285,25 +6566,67 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 330 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 327 */
+=======
+<<<<<<< HEAD
+/* 325 */
+=======
+/* 468 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.P, 'Array', {fill: __webpack_require__(118)});
+=======
+<<<<<<< HEAD
+	$export($export.P, 'Array', {fill: __webpack_require__(117)});
+=======
+	$export($export.P, 'Array', {fill: __webpack_require__(114)});
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	__webpack_require__(76)('fill');
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 331 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 328 */
+=======
+<<<<<<< HEAD
+/* 326 */
+=======
+/* 469 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $filter = __webpack_require__(40)(2);
+=======
+<<<<<<< HEAD
+	  , $filter = __webpack_require__(39)(2);
+>>>>>>> adding chart.js
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].filter, true), 'Array', {
+=======
+	  , $filter = __webpack_require__(40)(2);
+
+	$export($export.P + $export.F * !__webpack_require__(37)([].filter, true), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.7 / 15.4.4.20 Array.prototype.filter(callbackfn [, thisArg])
 	  filter: function filter(callbackfn /* , thisArg */){
 	    return $filter(this, callbackfn, arguments[1]);
@@ -4311,13 +6634,33 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 332 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 329 */
+=======
+<<<<<<< HEAD
+/* 327 */
+=======
+/* 470 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.9 Array.prototype.findIndex(predicate, thisArg = undefined)
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $find   = __webpack_require__(40)(6)
+=======
+<<<<<<< HEAD
+	  , $find   = __webpack_require__(39)(6)
+=======
+	  , $find   = __webpack_require__(40)(6)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , KEY     = 'findIndex'
 	  , forced  = true;
 	// Shouldn't skip holes
@@ -4330,13 +6673,33 @@
 	__webpack_require__(76)(KEY);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 333 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 330 */
+=======
+<<<<<<< HEAD
+/* 328 */
+=======
+/* 471 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $find   = __webpack_require__(40)(5)
+=======
+<<<<<<< HEAD
+	  , $find   = __webpack_require__(39)(5)
+=======
+	  , $find   = __webpack_require__(40)(5)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , KEY     = 'find'
 	  , forced  = true;
 	// Shouldn't skip holes
@@ -4349,13 +6712,34 @@
 	__webpack_require__(76)(KEY);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 334 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 331 */
+=======
+<<<<<<< HEAD
+/* 329 */
+=======
+/* 472 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export  = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $forEach = __webpack_require__(40)(0)
+=======
+<<<<<<< HEAD
+	  , $forEach = __webpack_require__(39)(0)
+>>>>>>> adding chart.js
 	  , STRICT   = __webpack_require__(36)([].forEach, true);
+=======
+	  , $forEach = __webpack_require__(40)(0)
+	  , STRICT   = __webpack_require__(37)([].forEach, true);
+>>>>>>> 024b7b6... adding chart.js
 
 	$export($export.P + $export.F * !STRICT, 'Array', {
 	  // 22.1.3.10 / 15.4.4.18 Array.prototype.forEach(callbackfn [, thisArg])
@@ -4365,7 +6749,16 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 335 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 332 */
+=======
+<<<<<<< HEAD
+/* 330 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4378,7 +6771,27 @@
 	  , createProperty = __webpack_require__(196)
 	  , getIterFn      = __webpack_require__(137);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S + $export.F * !__webpack_require__(129)(function(iter){ Array.from(iter); }), 'Array', {
+=======
+	$export($export.S + $export.F * !__webpack_require__(128)(function(iter){ Array.from(iter); }), 'Array', {
+=======
+/* 473 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var ctx            = __webpack_require__(62)
+	  , $export        = __webpack_require__(3)
+	  , toObject       = __webpack_require__(35)
+	  , call           = __webpack_require__(193)
+	  , isArrayIter    = __webpack_require__(121)
+	  , toLength       = __webpack_require__(25)
+	  , createProperty = __webpack_require__(188)
+	  , getIterFn      = __webpack_require__(133);
+
+	$export($export.S + $export.F * !__webpack_require__(125)(function(iter){ Array.from(iter); }), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
 	  from: function from(arrayLike/*, mapfn = undefined, thisArg = undefined*/){
 	    var O       = toObject(arrayLike)
@@ -4408,16 +6821,40 @@
 
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 336 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 333 */
+=======
+<<<<<<< HEAD
+/* 331 */
+=======
+/* 474 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export       = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $indexOf      = __webpack_require__(119)(false)
+=======
+<<<<<<< HEAD
+	  , $indexOf      = __webpack_require__(118)(false)
+>>>>>>> adding chart.js
 	  , $native       = [].indexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].indexOf(1, -0) < 0;
 
 	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(36)($native)), 'Array', {
+=======
+	  , $indexOf      = __webpack_require__(115)(false)
+	  , $native       = [].indexOf
+	  , NEGATIVE_ZERO = !!$native && 1 / [1].indexOf(1, -0) < 0;
+
+	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(37)($native)), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.11 / 15.4.4.14 Array.prototype.indexOf(searchElement [, fromIndex])
 	  indexOf: function indexOf(searchElement /*, fromIndex = 0 */){
 	    return NEGATIVE_ZERO
@@ -4428,44 +6865,107 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 337 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 334 */
+=======
+<<<<<<< HEAD
+/* 332 */
+=======
+/* 475 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S, 'Array', {isArray: __webpack_require__(126)});
 
 /***/ },
 /* 338 */
+=======
+<<<<<<< HEAD
+	$export($export.S, 'Array', {isArray: __webpack_require__(125)});
+
+/***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 335 */
+=======
+/* 333 */
+=======
+	$export($export.S, 'Array', {isArray: __webpack_require__(122)});
+
+/***/ },
+/* 476 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 22.1.3.13 Array.prototype.join(separator)
 	var $export   = __webpack_require__(3)
+<<<<<<< HEAD
 	  , toIObject = __webpack_require__(37)
 	  , arrayJoin = [].join;
 
 	// fallback for not array-like strings
 	$export($export.P + $export.F * (__webpack_require__(78) != Object || !__webpack_require__(36)(arrayJoin)), 'Array', {
+=======
+	  , toIObject = __webpack_require__(38)
+	  , arrayJoin = [].join;
+
+	// fallback for not array-like strings
+	$export($export.P + $export.F * (__webpack_require__(78) != Object || !__webpack_require__(37)(arrayJoin)), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  join: function join(separator){
 	    return arrayJoin.call(toIObject(this), separator === undefined ? ',' : separator);
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 339 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 336 */
+=======
+<<<<<<< HEAD
+/* 334 */
+=======
+/* 477 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export       = __webpack_require__(3)
+<<<<<<< HEAD
 	  , toIObject     = __webpack_require__(37)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , toInteger     = __webpack_require__(55)
+=======
+	  , toInteger     = __webpack_require__(54)
+=======
+	  , toIObject     = __webpack_require__(38)
+	  , toInteger     = __webpack_require__(55)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , toLength      = __webpack_require__(25)
 	  , $native       = [].lastIndexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].lastIndexOf(1, -0) < 0;
 
+<<<<<<< HEAD
 	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(36)($native)), 'Array', {
+=======
+	$export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(37)($native)), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.14 / 15.4.4.15 Array.prototype.lastIndexOf(searchElement [, fromIndex])
 	  lastIndexOf: function lastIndexOf(searchElement /*, fromIndex = @[*-1] */){
 	    // convert -0 to +0
@@ -4481,14 +6981,36 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 340 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 337 */
+=======
+<<<<<<< HEAD
+/* 335 */
+=======
+/* 478 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $map    = __webpack_require__(40)(1);
+=======
+<<<<<<< HEAD
+	  , $map    = __webpack_require__(39)(1);
+>>>>>>> adding chart.js
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].map, true), 'Array', {
+=======
+	  , $map    = __webpack_require__(40)(1);
+
+	$export($export.P + $export.F * !__webpack_require__(37)([].map, true), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.15 / 15.4.4.19 Array.prototype.map(callbackfn [, thisArg])
 	  map: function map(callbackfn /* , thisArg */){
 	    return $map(this, callbackfn, arguments[1]);
@@ -4496,12 +7018,32 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 341 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 338 */
+=======
+<<<<<<< HEAD
+/* 336 */
+=======
+/* 479 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export        = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , createProperty = __webpack_require__(196);
+=======
+<<<<<<< HEAD
+	  , createProperty = __webpack_require__(193);
+=======
+	  , createProperty = __webpack_require__(188);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	// WebKit Array.of isn't generic
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -4520,14 +7062,36 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 342 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 339 */
+=======
+<<<<<<< HEAD
+/* 337 */
+=======
+/* 480 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $reduce = __webpack_require__(192);
+=======
+<<<<<<< HEAD
+	  , $reduce = __webpack_require__(189);
+>>>>>>> adding chart.js
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].reduceRight, true), 'Array', {
+=======
+	  , $reduce = __webpack_require__(184);
+
+	$export($export.P + $export.F * !__webpack_require__(37)([].reduceRight, true), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
 	  reduceRight: function reduceRight(callbackfn /* , initialValue */){
 	    return $reduce(this, callbackfn, arguments.length, arguments[1], true);
@@ -4535,14 +7099,36 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 343 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 340 */
+=======
+<<<<<<< HEAD
+/* 338 */
+=======
+/* 481 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $reduce = __webpack_require__(192);
+=======
+<<<<<<< HEAD
+	  , $reduce = __webpack_require__(189);
+>>>>>>> adding chart.js
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].reduce, true), 'Array', {
+=======
+	  , $reduce = __webpack_require__(184);
+
+	$export($export.P + $export.F * !__webpack_require__(37)([].reduce, true), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
 	  reduce: function reduce(callbackfn /* , initialValue */){
 	    return $reduce(this, callbackfn, arguments.length, arguments[1], false);
@@ -4550,14 +7136,36 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 344 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 341 */
+=======
+<<<<<<< HEAD
+/* 339 */
+=======
+/* 482 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export    = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , html       = __webpack_require__(198)
+=======
+<<<<<<< HEAD
+	  , html       = __webpack_require__(195)
+>>>>>>> adding chart.js
 	  , cof        = __webpack_require__(59)
 	  , toIndex    = __webpack_require__(63)
+=======
+	  , html       = __webpack_require__(190)
+	  , cof        = __webpack_require__(61)
+	  , toIndex    = __webpack_require__(65)
+>>>>>>> 024b7b6... adding chart.js
 	  , toLength   = __webpack_require__(25)
 	  , arraySlice = [].slice;
 
@@ -4583,14 +7191,36 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 345 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 342 */
+=======
+<<<<<<< HEAD
+/* 340 */
+=======
+/* 483 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $some   = __webpack_require__(40)(3);
+=======
+<<<<<<< HEAD
+	  , $some   = __webpack_require__(39)(3);
+>>>>>>> adding chart.js
 
 	$export($export.P + $export.F * !__webpack_require__(36)([].some, true), 'Array', {
+=======
+	  , $some   = __webpack_require__(40)(3);
+
+	$export($export.P + $export.F * !__webpack_require__(37)([].some, true), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.23 / 15.4.4.17 Array.prototype.some(callbackfn [, thisArg])
 	  some: function some(callbackfn /* , thisArg */){
 	    return $some(this, callbackfn, arguments[1]);
@@ -4598,13 +7228,35 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 346 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 343 */
+=======
+<<<<<<< HEAD
+/* 341 */
+=======
+/* 484 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export   = __webpack_require__(3)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , aFunction = __webpack_require__(52)
 	  , toObject  = __webpack_require__(35)
+=======
+<<<<<<< HEAD
+	  , aFunction = __webpack_require__(51)
+	  , toObject  = __webpack_require__(34)
+=======
+	  , aFunction = __webpack_require__(52)
+	  , toObject  = __webpack_require__(35)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , fails     = __webpack_require__(10)
 	  , $sort     = [].sort
 	  , test      = [1, 2, 3];
@@ -4616,7 +7268,11 @@
 	  // V8 bug
 	  test.sort(null);
 	  // Old WebKit
+<<<<<<< HEAD
 	}) || !__webpack_require__(36)($sort)), 'Array', {
+=======
+	}) || !__webpack_require__(37)($sort)), 'Array', {
+>>>>>>> 024b7b6... adding chart.js
 	  // 22.1.3.25 Array.prototype.sort(comparefn)
 	  sort: function sort(comparefn){
 	    return comparefn === undefined
@@ -4626,13 +7282,37 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 347 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 344 */
+=======
+<<<<<<< HEAD
+/* 342 */
+=======
+/* 485 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(81)('Array');
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 348 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 345 */
+=======
+<<<<<<< HEAD
+/* 343 */
+=======
+/* 486 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.3.3.1 / 15.9.4.4 Date.now()
@@ -4641,7 +7321,19 @@
 	$export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 349 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 346 */
+=======
+<<<<<<< HEAD
+/* 344 */
+=======
+/* 487 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4674,13 +7366,35 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 350 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 347 */
+=======
+<<<<<<< HEAD
+/* 345 */
+=======
+/* 488 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export     = __webpack_require__(3)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , toObject    = __webpack_require__(35)
 	  , toPrimitive = __webpack_require__(56);
+=======
+<<<<<<< HEAD
+	  , toObject    = __webpack_require__(34)
+	  , toPrimitive = __webpack_require__(55);
+=======
+	  , toObject    = __webpack_require__(35)
+	  , toPrimitive = __webpack_require__(56);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	$export($export.P + $export.F * __webpack_require__(10)(function(){
 	  return new Date(NaN).toJSON() !== null || Date.prototype.toJSON.call({toISOString: function(){ return 1; }}) !== 1;
@@ -4693,16 +7407,49 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 351 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 348 */
+=======
+<<<<<<< HEAD
+/* 346 */
+=======
+/* 489 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
-	var TO_PRIMITIVE = __webpack_require__(14)('toPrimitive')
+	var TO_PRIMITIVE = __webpack_require__(15)('toPrimitive')
 	  , proto        = Date.prototype;
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	if(!(TO_PRIMITIVE in proto))__webpack_require__(34)(proto, TO_PRIMITIVE, __webpack_require__(322));
 
 /***/ },
 /* 352 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(34)(proto, TO_PRIMITIVE, __webpack_require__(319));
+
+/***/ },
+/* 349 */
+=======
+<<<<<<< HEAD
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(33)(proto, TO_PRIMITIVE, __webpack_require__(317));
+
+/***/ },
+/* 347 */
+=======
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(34)(proto, TO_PRIMITIVE, __webpack_require__(460));
+
+/***/ },
+/* 490 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var DateProto    = Date.prototype
@@ -4711,20 +7458,41 @@
 	  , $toString    = DateProto[TO_STRING]
 	  , getTime      = DateProto.getTime;
 	if(new Date(NaN) + '' != INVALID_DATE){
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  __webpack_require__(32)(DateProto, TO_STRING, function toString(){
+=======
+	  __webpack_require__(31)(DateProto, TO_STRING, function toString(){
+>>>>>>> adding chart.js
 	    var value = getTime.call(this);
 	    return value === value ? $toString.call(this) : INVALID_DATE;
 	  });
 	}
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 353 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 350 */
+=======
+<<<<<<< HEAD
+/* 348 */
+=======
+/* 491 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.P, 'Function', {bind: __webpack_require__(193)});
+=======
+<<<<<<< HEAD
+	$export($export.P, 'Function', {bind: __webpack_require__(190)});
+>>>>>>> adding chart.js
 
 /***/ },
 /* 354 */
@@ -4734,6 +7502,18 @@
 	var isObject       = __webpack_require__(11)
 	  , getPrototypeOf = __webpack_require__(41)
 	  , HAS_INSTANCE   = __webpack_require__(14)('hasInstance')
+=======
+	$export($export.P, 'Function', {bind: __webpack_require__(185)});
+
+/***/ },
+/* 492 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var isObject       = __webpack_require__(12)
+	  , getPrototypeOf = __webpack_require__(41)
+	  , HAS_INSTANCE   = __webpack_require__(15)('hasInstance')
+>>>>>>> 024b7b6... adding chart.js
 	  , FunctionProto  = Function.prototype;
 	// 19.2.3.6 Function.prototype[@@hasInstance](V)
 	if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(17).f(FunctionProto, HAS_INSTANCE, {value: function(O){
@@ -4745,12 +7525,29 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 355 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 352 */
+=======
+<<<<<<< HEAD
+/* 350 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP         = __webpack_require__(17).f
 	  , createDesc = __webpack_require__(54)
 	  , has        = __webpack_require__(28)
+=======
+/* 493 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var dP         = __webpack_require__(17).f
+	  , createDesc = __webpack_require__(54)
+	  , has        = __webpack_require__(27)
+>>>>>>> 024b7b6... adding chart.js
 	  , FProto     = Function.prototype
 	  , nameRE     = /^\s*function ([^ (]*)/
 	  , NAME       = 'name';
@@ -4775,12 +7572,32 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 356 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 353 */
+=======
+<<<<<<< HEAD
+/* 351 */
+=======
+/* 494 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.3 Math.acosh(x)
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , log1p   = __webpack_require__(204)
+=======
+<<<<<<< HEAD
+	  , log1p   = __webpack_require__(201)
+=======
+	  , log1p   = __webpack_require__(196)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , sqrt    = Math.sqrt
 	  , $acosh  = Math.acosh;
 
@@ -4798,7 +7615,19 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 357 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 354 */
+=======
+<<<<<<< HEAD
+/* 352 */
+=======
+/* 495 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.5 Math.asinh(x)
@@ -4813,7 +7642,19 @@
 	$export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 358 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 355 */
+=======
+<<<<<<< HEAD
+/* 353 */
+=======
+/* 496 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.7 Math.atanh(x)
@@ -4828,12 +7669,32 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 359 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 356 */
+=======
+<<<<<<< HEAD
+/* 354 */
+=======
+/* 497 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.9 Math.cbrt(x)
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , sign    = __webpack_require__(131);
+=======
+<<<<<<< HEAD
+	  , sign    = __webpack_require__(130);
+=======
+	  , sign    = __webpack_require__(127);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	$export($export.S, 'Math', {
 	  cbrt: function cbrt(x){
@@ -4842,7 +7703,19 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 360 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 357 */
+=======
+<<<<<<< HEAD
+/* 355 */
+=======
+/* 498 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.11 Math.clz32(x)
@@ -4855,7 +7728,19 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 361 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 358 */
+=======
+<<<<<<< HEAD
+/* 356 */
+=======
+/* 499 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.12 Math.cosh(x)
@@ -4869,22 +7754,62 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 362 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 359 */
+=======
+<<<<<<< HEAD
+/* 357 */
+=======
+/* 500 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.14 Math.expm1(x)
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $expm1  = __webpack_require__(130);
+=======
+<<<<<<< HEAD
+	  , $expm1  = __webpack_require__(129);
+=======
+	  , $expm1  = __webpack_require__(126);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	$export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 363 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 360 */
+=======
+<<<<<<< HEAD
+/* 358 */
+=======
+/* 501 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.16 Math.fround(x)
 	var $export   = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , sign      = __webpack_require__(131)
+=======
+<<<<<<< HEAD
+	  , sign      = __webpack_require__(130)
+=======
+	  , sign      = __webpack_require__(127)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , pow       = Math.pow
 	  , EPSILON   = pow(2, -52)
 	  , EPSILON32 = pow(2, -23)
@@ -4910,7 +7835,19 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 364 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 361 */
+=======
+<<<<<<< HEAD
+/* 359 */
+=======
+/* 502 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -4940,7 +7877,19 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 365 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 362 */
+=======
+<<<<<<< HEAD
+/* 360 */
+=======
+/* 503 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.18 Math.imul(x, y)
@@ -4962,7 +7911,19 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 366 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 363 */
+=======
+<<<<<<< HEAD
+/* 361 */
+=======
+/* 504 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.21 Math.log10(x)
@@ -4975,16 +7936,46 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 367 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 364 */
+=======
+<<<<<<< HEAD
+/* 362 */
+=======
+/* 505 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.20 Math.log1p(x)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S, 'Math', {log1p: __webpack_require__(204)});
 
 /***/ },
 /* 368 */
+=======
+<<<<<<< HEAD
+	$export($export.S, 'Math', {log1p: __webpack_require__(201)});
+
+/***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 365 */
+=======
+/* 363 */
+=======
+	$export($export.S, 'Math', {log1p: __webpack_require__(196)});
+
+/***/ },
+/* 506 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.22 Math.log2(x)
@@ -4997,21 +7988,59 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 369 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 366 */
+=======
+<<<<<<< HEAD
+/* 364 */
+=======
+/* 507 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.28 Math.sign(x)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S, 'Math', {sign: __webpack_require__(131)});
 
 /***/ },
 /* 370 */
+=======
+<<<<<<< HEAD
+	$export($export.S, 'Math', {sign: __webpack_require__(130)});
+
+/***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 367 */
+=======
+/* 365 */
+=======
+	$export($export.S, 'Math', {sign: __webpack_require__(127)});
+
+/***/ },
+/* 508 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.30 Math.sinh(x)
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , expm1   = __webpack_require__(130)
+=======
+<<<<<<< HEAD
+	  , expm1   = __webpack_require__(129)
+=======
+	  , expm1   = __webpack_require__(126)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , exp     = Math.exp;
 
 	// V8 near Chromium 38 has a problem with very small numbers
@@ -5026,12 +8055,32 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 371 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 368 */
+=======
+<<<<<<< HEAD
+/* 366 */
+=======
+/* 509 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.33 Math.tanh(x)
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , expm1   = __webpack_require__(130)
+=======
+<<<<<<< HEAD
+	  , expm1   = __webpack_require__(129)
+=======
+	  , expm1   = __webpack_require__(126)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , exp     = Math.exp;
 
 	$export($export.S, 'Math', {
@@ -5043,7 +8092,19 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 372 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 369 */
+=======
+<<<<<<< HEAD
+/* 367 */
+=======
+/* 510 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.2.2.34 Math.trunc(x)
@@ -5056,7 +8117,16 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 373 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 370 */
+=======
+<<<<<<< HEAD
+/* 368 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5067,15 +8137,37 @@
 	  , toPrimitive       = __webpack_require__(56)
 	  , fails             = __webpack_require__(10)
 	  , gOPN              = __webpack_require__(62).f
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , gOPD              = __webpack_require__(48).f
 	  , dP                = __webpack_require__(17).f
 	  , $trim             = __webpack_require__(100).trim
+=======
+	  , gOPD              = __webpack_require__(47).f
+	  , dP                = __webpack_require__(16).f
+	  , $trim             = __webpack_require__(99).trim
+=======
+/* 511 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var global            = __webpack_require__(13)
+	  , has               = __webpack_require__(27)
+	  , cof               = __webpack_require__(61)
+	  , inheritIfRequired = __webpack_require__(120)
+	  , toPrimitive       = __webpack_require__(56)
+	  , fails             = __webpack_require__(10)
+	  , gOPN              = __webpack_require__(64).f
+	  , gOPD              = __webpack_require__(48).f
+	  , dP                = __webpack_require__(17).f
+	  , $trim             = __webpack_require__(97).trim
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , NUMBER            = 'Number'
 	  , $Number           = global[NUMBER]
 	  , Base              = $Number
 	  , proto             = $Number.prototype
 	  // Opera ~12 has broken Object#toString
-	  , BROKEN_COF        = cof(__webpack_require__(61)(proto)) == NUMBER
+	  , BROKEN_COF        = cof(__webpack_require__(63)(proto)) == NUMBER
 	  , TRIM              = 'trim' in String.prototype;
 
 	// 7.1.3 ToNumber(argument)
@@ -5126,11 +8218,27 @@
 	  }
 	  $Number.prototype = proto;
 	  proto.constructor = $Number;
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  __webpack_require__(32)(global, NUMBER, $Number);
 	}
 
 /***/ },
 /* 374 */
+=======
+	  __webpack_require__(31)(global, NUMBER, $Number);
+	}
+
+/***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 371 */
+=======
+<<<<<<< HEAD
+/* 369 */
+=======
+/* 512 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.1 Number.EPSILON
@@ -5139,12 +8247,28 @@
 	$export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 375 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 372 */
+=======
+<<<<<<< HEAD
+/* 370 */
+=======
+/* 513 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.2 Number.isFinite(number)
 	var $export   = __webpack_require__(3)
+<<<<<<< HEAD
 	  , _isFinite = __webpack_require__(12).isFinite;
+=======
+	  , _isFinite = __webpack_require__(13).isFinite;
+>>>>>>> 024b7b6... adding chart.js
 
 	$export($export.S, 'Number', {
 	  isFinite: function isFinite(it){
@@ -5153,16 +8277,46 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 376 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 373 */
+=======
+<<<<<<< HEAD
+/* 371 */
+=======
+/* 514 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S, 'Number', {isInteger: __webpack_require__(200)});
 
 /***/ },
 /* 377 */
+=======
+<<<<<<< HEAD
+	$export($export.S, 'Number', {isInteger: __webpack_require__(197)});
+
+/***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 374 */
+=======
+/* 372 */
+=======
+	$export($export.S, 'Number', {isInteger: __webpack_require__(192)});
+
+/***/ },
+/* 515 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.4 Number.isNaN(number)
@@ -5175,12 +8329,32 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 378 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 375 */
+=======
+<<<<<<< HEAD
+/* 373 */
+=======
+/* 516 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , isInteger = __webpack_require__(200)
+=======
+<<<<<<< HEAD
+	  , isInteger = __webpack_require__(197)
+=======
+	  , isInteger = __webpack_require__(192)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , abs       = Math.abs;
 
 	$export($export.S, 'Number', {
@@ -5190,7 +8364,19 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 379 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 376 */
+=======
+<<<<<<< HEAD
+/* 374 */
+=======
+/* 517 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -5199,7 +8385,19 @@
 	$export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 380 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 377 */
+=======
+<<<<<<< HEAD
+/* 375 */
+=======
+/* 518 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -5208,32 +8406,99 @@
 	$export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(3)
 	  , $parseFloat = __webpack_require__(209);
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 378 */
+=======
+<<<<<<< HEAD
+/* 376 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(3)
+	  , $parseFloat = __webpack_require__(206);
+=======
+/* 519 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(3)
+	  , $parseFloat = __webpack_require__(201);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	// 20.1.2.12 Number.parseFloat(string)
 	$export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(3)
 	  , $parseInt = __webpack_require__(210);
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 379 */
+=======
+<<<<<<< HEAD
+/* 377 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(3)
+	  , $parseInt = __webpack_require__(207);
+=======
+/* 520 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(3)
+	  , $parseInt = __webpack_require__(202);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	// 20.1.2.13 Number.parseInt(string, radix)
 	$export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 383 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 380 */
+=======
+<<<<<<< HEAD
+/* 378 */
+=======
+/* 521 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(3)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , toInteger    = __webpack_require__(55)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , aNumberValue = __webpack_require__(190)
 	  , repeat       = __webpack_require__(214)
+=======
+=======
+<<<<<<< HEAD
+	  , toInteger    = __webpack_require__(54)
+>>>>>>> adding chart.js
+	  , aNumberValue = __webpack_require__(187)
+	  , repeat       = __webpack_require__(211)
+=======
+	  , toInteger    = __webpack_require__(55)
+	  , aNumberValue = __webpack_require__(182)
+	  , repeat       = __webpack_require__(206)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , $toFixed     = 1..toFixed
 	  , floor        = Math.floor
 	  , data         = [0, 0, 0, 0, 0, 0]
@@ -5344,13 +8609,33 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 384 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 381 */
+=======
+<<<<<<< HEAD
+/* 379 */
+=======
+/* 522 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(3)
 	  , $fails       = __webpack_require__(10)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , aNumberValue = __webpack_require__(190)
+=======
+<<<<<<< HEAD
+	  , aNumberValue = __webpack_require__(187)
+=======
+	  , aNumberValue = __webpack_require__(182)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , $toPrecision = 1..toPrecision;
 
 	$export($export.P + $export.F * ($fails(function(){
@@ -5367,68 +8652,191 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 385 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 382 */
+=======
+<<<<<<< HEAD
+/* 380 */
+=======
+/* 523 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(205)});
 
 /***/ },
 /* 386 */
+=======
+<<<<<<< HEAD
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(202)});
+
+/***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 383 */
+=======
+/* 381 */
+=======
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(197)});
+
+/***/ },
+/* 524 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(3)
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-	$export($export.S, 'Object', {create: __webpack_require__(61)});
+	$export($export.S, 'Object', {create: __webpack_require__(63)});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 387 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 384 */
+=======
+<<<<<<< HEAD
+/* 382 */
+=======
+/* 525 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(3);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(206)});
 
 /***/ },
 /* 388 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperties: __webpack_require__(203)});
+
+/***/ },
+/* 385 */
+=======
+<<<<<<< HEAD
+	$export($export.S + $export.F * !__webpack_require__(18), 'Object', {defineProperties: __webpack_require__(203)});
+
+/***/ },
+/* 383 */
+=======
+	$export($export.S + $export.F * !__webpack_require__(18), 'Object', {defineProperties: __webpack_require__(198)});
+
+/***/ },
+/* 526 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(3);
 	// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(17).f});
 
 /***/ },
 /* 389 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperty: __webpack_require__(17).f});
+=======
+<<<<<<< HEAD
+	$export($export.S + $export.F * !__webpack_require__(18), 'Object', {defineProperty: __webpack_require__(16).f});
+>>>>>>> adding chart.js
+
+/***/ },
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.5 Object.freeze(O)
 	var isObject = __webpack_require__(11)
 	  , meta     = __webpack_require__(53).onFreeze;
 
+	__webpack_require__(41)('freeze', function($freeze){
+=======
+	$export($export.S + $export.F * !__webpack_require__(18), 'Object', {defineProperty: __webpack_require__(17).f});
+
+/***/ },
+/* 527 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.5 Object.freeze(O)
+	var isObject = __webpack_require__(12)
+	  , meta     = __webpack_require__(53).onFreeze;
+
 	__webpack_require__(42)('freeze', function($freeze){
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
+=======
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function freeze(it){
 	    return $freeze && isObject(it) ? $freeze(meta(it)) : it;
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 390 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 387 */
+=======
+<<<<<<< HEAD
+/* 385 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
 	var toIObject                 = __webpack_require__(37)
 	  , $getOwnPropertyDescriptor = __webpack_require__(48).f;
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(42)('getOwnPropertyDescriptor', function(){
+=======
+	__webpack_require__(41)('getOwnPropertyDescriptor', function(){
+=======
+/* 528 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
+	var toIObject                 = __webpack_require__(38)
+	  , $getOwnPropertyDescriptor = __webpack_require__(48).f;
+
+	__webpack_require__(42)('getOwnPropertyDescriptor', function(){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function getOwnPropertyDescriptor(it, key){
 	    return $getOwnPropertyDescriptor(toIObject(it), key);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 391 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 388 */
+=======
+<<<<<<< HEAD
+/* 386 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 Object.getOwnPropertyNames(O)
@@ -5444,58 +8852,158 @@
 	var toObject        = __webpack_require__(35)
 	  , $getPrototypeOf = __webpack_require__(41);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(42)('getPrototypeOf', function(){
+=======
+	__webpack_require__(41)('getPrototypeOf', function(){
+=======
+/* 529 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.7 Object.getOwnPropertyNames(O)
+	__webpack_require__(42)('getOwnPropertyNames', function(){
+	  return __webpack_require__(199).f;
+	});
+
+/***/ },
+/* 530 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.9 Object.getPrototypeOf(O)
+	var toObject        = __webpack_require__(35)
+	  , $getPrototypeOf = __webpack_require__(41);
+
+	__webpack_require__(42)('getPrototypeOf', function(){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function getPrototypeOf(it){
 	    return $getPrototypeOf(toObject(it));
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 393 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 390 */
+=======
+<<<<<<< HEAD
+/* 388 */
+=======
+/* 531 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.11 Object.isExtensible(O)
-	var isObject = __webpack_require__(11);
+	var isObject = __webpack_require__(12);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(42)('isExtensible', function($isExtensible){
+=======
+<<<<<<< HEAD
+	__webpack_require__(41)('isExtensible', function($isExtensible){
+=======
+	__webpack_require__(42)('isExtensible', function($isExtensible){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function isExtensible(it){
 	    return isObject(it) ? $isExtensible ? $isExtensible(it) : true : false;
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 394 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 391 */
+=======
+<<<<<<< HEAD
+/* 389 */
+=======
+/* 532 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.12 Object.isFrozen(O)
-	var isObject = __webpack_require__(11);
+	var isObject = __webpack_require__(12);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(42)('isFrozen', function($isFrozen){
+=======
+<<<<<<< HEAD
+	__webpack_require__(41)('isFrozen', function($isFrozen){
+=======
+	__webpack_require__(42)('isFrozen', function($isFrozen){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function isFrozen(it){
 	    return isObject(it) ? $isFrozen ? $isFrozen(it) : false : true;
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 395 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 392 */
+=======
+<<<<<<< HEAD
+/* 390 */
+=======
+/* 533 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.13 Object.isSealed(O)
-	var isObject = __webpack_require__(11);
+	var isObject = __webpack_require__(12);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(42)('isSealed', function($isSealed){
+=======
+<<<<<<< HEAD
+	__webpack_require__(41)('isSealed', function($isSealed){
+=======
+	__webpack_require__(42)('isSealed', function($isSealed){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function isSealed(it){
 	    return isObject(it) ? $isSealed ? $isSealed(it) : false : true;
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 396 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 393 */
+=======
+<<<<<<< HEAD
+/* 391 */
+=======
+/* 534 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.10 Object.is(value1, value2)
 	var $export = __webpack_require__(3);
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S, 'Object', {is: __webpack_require__(211)});
+=======
+<<<<<<< HEAD
+	$export($export.S, 'Object', {is: __webpack_require__(208)});
+>>>>>>> adding chart.js
 
 /***/ },
 /* 397 */
@@ -5505,75 +9013,211 @@
 	var toObject = __webpack_require__(35)
 	  , $keys    = __webpack_require__(71);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(42)('keys', function(){
+=======
+	__webpack_require__(41)('keys', function(){
+=======
+	$export($export.S, 'Object', {is: __webpack_require__(203)});
+
+/***/ },
+/* 535 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.14 Object.keys(O)
+	var toObject = __webpack_require__(35)
+	  , $keys    = __webpack_require__(72);
+
+	__webpack_require__(42)('keys', function(){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function keys(it){
 	    return $keys(toObject(it));
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 398 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 395 */
+=======
+<<<<<<< HEAD
+/* 393 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.15 Object.preventExtensions(O)
 	var isObject = __webpack_require__(11)
 	  , meta     = __webpack_require__(53).onFreeze;
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(42)('preventExtensions', function($preventExtensions){
+=======
+	__webpack_require__(41)('preventExtensions', function($preventExtensions){
+=======
+/* 536 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.15 Object.preventExtensions(O)
+	var isObject = __webpack_require__(12)
+	  , meta     = __webpack_require__(53).onFreeze;
+
+	__webpack_require__(42)('preventExtensions', function($preventExtensions){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function preventExtensions(it){
 	    return $preventExtensions && isObject(it) ? $preventExtensions(meta(it)) : it;
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 399 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 396 */
+=======
+<<<<<<< HEAD
+/* 394 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.17 Object.seal(O)
 	var isObject = __webpack_require__(11)
 	  , meta     = __webpack_require__(53).onFreeze;
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(42)('seal', function($seal){
+=======
+	__webpack_require__(41)('seal', function($seal){
+=======
+/* 537 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.17 Object.seal(O)
+	var isObject = __webpack_require__(12)
+	  , meta     = __webpack_require__(53).onFreeze;
+
+	__webpack_require__(42)('seal', function($seal){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function seal(it){
 	    return $seal && isObject(it) ? $seal(meta(it)) : it;
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 400 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 397 */
+=======
+<<<<<<< HEAD
+/* 395 */
+=======
+/* 538 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
 	var $export = __webpack_require__(3);
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(132).set});
+=======
+<<<<<<< HEAD
+	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(131).set});
+>>>>>>> adding chart.js
 
 /***/ },
 /* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export     = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $parseFloat = __webpack_require__(209);
+=======
+	  , $parseFloat = __webpack_require__(206);
+=======
+	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(128).set});
+
+/***/ },
+/* 539 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export     = __webpack_require__(3)
+	  , $parseFloat = __webpack_require__(201);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	// 18.2.4 parseFloat(string)
 	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(3)
 	  , $parseInt = __webpack_require__(210);
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 399 */
+=======
+<<<<<<< HEAD
+/* 397 */
+>>>>>>> adding chart.js
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(3)
+	  , $parseInt = __webpack_require__(207);
+=======
+/* 540 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(3)
+	  , $parseInt = __webpack_require__(202);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	// 18.2.5 parseInt(string, radix)
 	$export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 403 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 400 */
+=======
+<<<<<<< HEAD
+/* 398 */
+=======
+/* 541 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
 	var $export   = __webpack_require__(3)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , aFunction = __webpack_require__(52)
+=======
+<<<<<<< HEAD
+	  , aFunction = __webpack_require__(51)
+>>>>>>> adding chart.js
 	  , anObject  = __webpack_require__(8)
 	  , rApply    = (__webpack_require__(12).Reflect || {}).apply
+=======
+	  , aFunction = __webpack_require__(52)
+	  , anObject  = __webpack_require__(9)
+	  , rApply    = (__webpack_require__(13).Reflect || {}).apply
+>>>>>>> 024b7b6... adding chart.js
 	  , fApply    = Function.apply;
 	// MS Edge argumentsList argument is optional
 	$export($export.S + $export.F * !__webpack_require__(10)(function(){
@@ -5587,11 +9231,24 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 404 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 401 */
+=======
+<<<<<<< HEAD
+/* 399 */
+=======
+/* 542 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 	var $export    = __webpack_require__(3)
+<<<<<<< HEAD
 	  , create     = __webpack_require__(61)
 	  , aFunction  = __webpack_require__(52)
 	  , anObject   = __webpack_require__(8)
@@ -5599,6 +9256,15 @@
 	  , fails      = __webpack_require__(10)
 	  , bind       = __webpack_require__(193)
 	  , rConstruct = (__webpack_require__(12).Reflect || {}).construct;
+=======
+	  , create     = __webpack_require__(63)
+	  , aFunction  = __webpack_require__(52)
+	  , anObject   = __webpack_require__(9)
+	  , isObject   = __webpack_require__(12)
+	  , fails      = __webpack_require__(10)
+	  , bind       = __webpack_require__(185)
+	  , rConstruct = (__webpack_require__(13).Reflect || {}).construct;
+>>>>>>> 024b7b6... adding chart.js
 
 	// MS Edge supports only 2 arguments and argumentsList argument is optional
 	// FF Nightly sets third argument as `new.target`, but does not create `this` from it
@@ -5639,14 +9305,37 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 405 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 402 */
+=======
+<<<<<<< HEAD
+/* 400 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
 	var dP          = __webpack_require__(17)
 	  , $export     = __webpack_require__(3)
 	  , anObject    = __webpack_require__(8)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , toPrimitive = __webpack_require__(56);
+=======
+	  , toPrimitive = __webpack_require__(55);
+=======
+/* 543 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
+	var dP          = __webpack_require__(17)
+	  , $export     = __webpack_require__(3)
+	  , anObject    = __webpack_require__(9)
+	  , toPrimitive = __webpack_require__(56);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	// MS Edge has broken Reflect.defineProperty - throwing instead of returning false
 	$export($export.S + $export.F * __webpack_require__(10)(function(){
@@ -5666,13 +9355,34 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 406 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 403 */
+=======
+<<<<<<< HEAD
+/* 401 */
+=======
+/* 544 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.4 Reflect.deleteProperty(target, propertyKey)
 	var $export  = __webpack_require__(3)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , gOPD     = __webpack_require__(48).f
+=======
+<<<<<<< HEAD
+	  , gOPD     = __webpack_require__(47).f
+>>>>>>> adding chart.js
 	  , anObject = __webpack_require__(8);
+=======
+	  , gOPD     = __webpack_require__(48).f
+	  , anObject = __webpack_require__(9);
+>>>>>>> 024b7b6... adding chart.js
 
 	$export($export.S, 'Reflect', {
 	  deleteProperty: function deleteProperty(target, propertyKey){
@@ -5682,13 +9392,29 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 407 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 404 */
+=======
+<<<<<<< HEAD
+/* 402 */
+=======
+/* 545 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 26.1.5 Reflect.enumerate(target)
 	var $export  = __webpack_require__(3)
+<<<<<<< HEAD
 	  , anObject = __webpack_require__(8);
+=======
+	  , anObject = __webpack_require__(9);
+>>>>>>> 024b7b6... adding chart.js
 	var Enumerate = function(iterated){
 	  this._t = anObject(iterated); // target
 	  this._i = 0;                  // next index
@@ -5696,7 +9422,15 @@
 	    , key;
 	  for(key in iterated)keys.push(key);
 	};
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(202)(Enumerate, 'Object', function(){
+=======
+<<<<<<< HEAD
+	__webpack_require__(199)(Enumerate, 'Object', function(){
+=======
+	__webpack_require__(194)(Enumerate, 'Object', function(){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  var that = this
 	    , keys = that._k
 	    , key;
@@ -5713,13 +9447,31 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 408 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 405 */
+=======
+<<<<<<< HEAD
+/* 403 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
 	var gOPD     = __webpack_require__(48)
 	  , $export  = __webpack_require__(3)
 	  , anObject = __webpack_require__(8);
+=======
+/* 546 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
+	var gOPD     = __webpack_require__(48)
+	  , $export  = __webpack_require__(3)
+	  , anObject = __webpack_require__(9);
+>>>>>>> 024b7b6... adding chart.js
 
 	$export($export.S, 'Reflect', {
 	  getOwnPropertyDescriptor: function getOwnPropertyDescriptor(target, propertyKey){
@@ -5728,13 +9480,34 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 409 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 406 */
+=======
+<<<<<<< HEAD
+/* 404 */
+=======
+/* 547 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.8 Reflect.getPrototypeOf(target)
 	var $export  = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , getProto = __webpack_require__(41)
+=======
+<<<<<<< HEAD
+	  , getProto = __webpack_require__(40)
+>>>>>>> adding chart.js
 	  , anObject = __webpack_require__(8);
+=======
+	  , getProto = __webpack_require__(41)
+	  , anObject = __webpack_require__(9);
+>>>>>>> 024b7b6... adding chart.js
 
 	$export($export.S, 'Reflect', {
 	  getPrototypeOf: function getPrototypeOf(target){
@@ -5743,7 +9516,16 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 410 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 407 */
+=======
+<<<<<<< HEAD
+/* 405 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
@@ -5753,6 +9535,18 @@
 	  , $export        = __webpack_require__(3)
 	  , isObject       = __webpack_require__(11)
 	  , anObject       = __webpack_require__(8);
+=======
+/* 548 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 26.1.6 Reflect.get(target, propertyKey [, receiver])
+	var gOPD           = __webpack_require__(48)
+	  , getPrototypeOf = __webpack_require__(41)
+	  , has            = __webpack_require__(27)
+	  , $export        = __webpack_require__(3)
+	  , isObject       = __webpack_require__(12)
+	  , anObject       = __webpack_require__(9);
+>>>>>>> 024b7b6... adding chart.js
 
 	function get(target, propertyKey/*, receiver*/){
 	  var receiver = arguments.length < 3 ? target : arguments[2]
@@ -5769,7 +9563,19 @@
 	$export($export.S, 'Reflect', {get: get});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 411 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 408 */
+=======
+<<<<<<< HEAD
+/* 406 */
+=======
+/* 549 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.9 Reflect.has(target, propertyKey)
@@ -5782,12 +9588,28 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 412 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 409 */
+=======
+<<<<<<< HEAD
+/* 407 */
+=======
+/* 550 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.10 Reflect.isExtensible(target)
 	var $export       = __webpack_require__(3)
+<<<<<<< HEAD
 	  , anObject      = __webpack_require__(8)
+=======
+	  , anObject      = __webpack_require__(9)
+>>>>>>> 024b7b6... adding chart.js
 	  , $isExtensible = Object.isExtensible;
 
 	$export($export.S, 'Reflect', {
@@ -5798,21 +9620,58 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 413 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 410 */
+=======
+<<<<<<< HEAD
+/* 408 */
+=======
+/* 551 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.11 Reflect.ownKeys(target)
 	var $export = __webpack_require__(3);
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(326)});
 
 /***/ },
 /* 414 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(323)});
+
+/***/ },
+/* 411 */
+=======
+<<<<<<< HEAD
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(321)});
+
+/***/ },
+/* 409 */
+=======
+	$export($export.S, 'Reflect', {ownKeys: __webpack_require__(464)});
+
+/***/ },
+/* 552 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.12 Reflect.preventExtensions(target)
 	var $export            = __webpack_require__(3)
+<<<<<<< HEAD
 	  , anObject           = __webpack_require__(8)
+=======
+	  , anObject           = __webpack_require__(9)
+>>>>>>> 024b7b6... adding chart.js
 	  , $preventExtensions = Object.preventExtensions;
 
 	$export($export.S, 'Reflect', {
@@ -5828,12 +9687,32 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 415 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 412 */
+=======
+<<<<<<< HEAD
+/* 410 */
+=======
+/* 553 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.14 Reflect.setPrototypeOf(target, proto)
 	var $export  = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , setProto = __webpack_require__(132);
+=======
+<<<<<<< HEAD
+	  , setProto = __webpack_require__(131);
+=======
+	  , setProto = __webpack_require__(128);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 	if(setProto)$export($export.S, 'Reflect', {
 	  setPrototypeOf: function setPrototypeOf(target, proto){
@@ -5848,7 +9727,16 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 416 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 413 */
+=======
+<<<<<<< HEAD
+/* 411 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
@@ -5860,6 +9748,20 @@
 	  , createDesc     = __webpack_require__(54)
 	  , anObject       = __webpack_require__(8)
 	  , isObject       = __webpack_require__(11);
+=======
+/* 554 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
+	var dP             = __webpack_require__(17)
+	  , gOPD           = __webpack_require__(48)
+	  , getPrototypeOf = __webpack_require__(41)
+	  , has            = __webpack_require__(27)
+	  , $export        = __webpack_require__(3)
+	  , createDesc     = __webpack_require__(54)
+	  , anObject       = __webpack_require__(9)
+	  , isObject       = __webpack_require__(12);
+>>>>>>> 024b7b6... adding chart.js
 
 	function set(target, propertyKey, V/*, receiver*/){
 	  var receiver = arguments.length < 4 ? target : arguments[3]
@@ -5884,15 +9786,40 @@
 	$export($export.S, 'Reflect', {set: set});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 417 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 414 */
+=======
+<<<<<<< HEAD
+/* 412 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var global            = __webpack_require__(12)
 	  , inheritIfRequired = __webpack_require__(124)
 	  , dP                = __webpack_require__(17).f
 	  , gOPN              = __webpack_require__(62).f
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , isRegExp          = __webpack_require__(127)
 	  , $flags            = __webpack_require__(123)
+=======
+	  , isRegExp          = __webpack_require__(126)
+	  , $flags            = __webpack_require__(122)
+=======
+/* 555 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global            = __webpack_require__(13)
+	  , inheritIfRequired = __webpack_require__(120)
+	  , dP                = __webpack_require__(17).f
+	  , gOPN              = __webpack_require__(64).f
+	  , isRegExp          = __webpack_require__(123)
+	  , $flags            = __webpack_require__(119)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , $RegExp           = global.RegExp
 	  , Base              = $RegExp
 	  , proto             = $RegExp.prototype
@@ -5901,8 +9828,20 @@
 	  // "new" creates a new object, old webkit buggy here
 	  , CORRECT_NEW       = new $RegExp(re1) !== re1;
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	if(__webpack_require__(20) && (!CORRECT_NEW || __webpack_require__(10)(function(){
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	if(__webpack_require__(19) && (!CORRECT_NEW || __webpack_require__(10)(function(){
+=======
+	if(__webpack_require__(18) && (!CORRECT_NEW || __webpack_require__(10)(function(){
+<<<<<<< HEAD
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 	  re2[__webpack_require__(14)('match')] = false;
+=======
+	  re2[__webpack_require__(15)('match')] = false;
+>>>>>>> 024b7b6... adding chart.js
 	  // RegExp constructor can alter flags and IsRegExp works correct with @@match
 	  return $RegExp(re1) != re1 || $RegExp(re2) == re2 || $RegExp(re1, 'i') != '/a/i';
 	}))){
@@ -5926,25 +9865,60 @@
 	  for(var keys = gOPN(Base), i = 0; keys.length > i; )proxy(keys[i++]);
 	  proto.constructor = $RegExp;
 	  $RegExp.prototype = proto;
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  __webpack_require__(32)(global, 'RegExp', $RegExp);
+=======
+	  __webpack_require__(31)(global, 'RegExp', $RegExp);
+>>>>>>> adding chart.js
 	}
 
 	__webpack_require__(81)('RegExp');
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 418 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 415 */
+=======
+<<<<<<< HEAD
+/* 413 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	__webpack_require__(217);
 	var anObject    = __webpack_require__(8)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $flags      = __webpack_require__(123)
 	  , DESCRIPTORS = __webpack_require__(20)
+=======
+	  , $flags      = __webpack_require__(122)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+	  , DESCRIPTORS = __webpack_require__(19)
+=======
+=======
+/* 556 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	__webpack_require__(209);
+	var anObject    = __webpack_require__(9)
+	  , $flags      = __webpack_require__(119)
+>>>>>>> 024b7b6... adding chart.js
+	  , DESCRIPTORS = __webpack_require__(18)
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 	  , TO_STRING   = 'toString'
 	  , $toString   = /./[TO_STRING];
 
 	var define = function(fn){
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  __webpack_require__(32)(RegExp.prototype, TO_STRING, fn, true);
+=======
+	  __webpack_require__(31)(RegExp.prototype, TO_STRING, fn, true);
+>>>>>>> adding chart.js
 	};
 
 	// 21.2.5.14 RegExp.prototype.toString()
@@ -5962,60 +9936,144 @@
 	}
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 419 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 416 */
+=======
+<<<<<<< HEAD
+/* 414 */
+=======
+/* 557 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.2 String.prototype.anchor(name)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('anchor', function(createHTML){
+=======
+	__webpack_require__(32)('anchor', function(createHTML){
+>>>>>>> adding chart.js
 	  return function anchor(name){
 	    return createHTML(this, 'a', 'name', name);
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 420 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 417 */
+=======
+<<<<<<< HEAD
+/* 415 */
+=======
+/* 558 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.3 String.prototype.big()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('big', function(createHTML){
+=======
+	__webpack_require__(32)('big', function(createHTML){
+>>>>>>> adding chart.js
 	  return function big(){
 	    return createHTML(this, 'big', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 421 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 418 */
+=======
+<<<<<<< HEAD
+/* 416 */
+=======
+/* 559 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.4 String.prototype.blink()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('blink', function(createHTML){
+=======
+	__webpack_require__(32)('blink', function(createHTML){
+>>>>>>> adding chart.js
 	  return function blink(){
 	    return createHTML(this, 'blink', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 422 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 419 */
+=======
+<<<<<<< HEAD
+/* 417 */
+=======
+/* 560 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.5 String.prototype.bold()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('bold', function(createHTML){
+=======
+	__webpack_require__(32)('bold', function(createHTML){
+>>>>>>> adding chart.js
 	  return function bold(){
 	    return createHTML(this, 'b', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 423 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 420 */
+=======
+<<<<<<< HEAD
+/* 418 */
+=======
+/* 561 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , $at     = __webpack_require__(213)(false);
+=======
+<<<<<<< HEAD
+	  , $at     = __webpack_require__(210)(false);
+=======
+	  , $at     = __webpack_require__(205)(false);
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	$export($export.P, 'String', {
 	  // 21.1.3.3 String.prototype.codePointAt(pos)
 	  codePointAt: function codePointAt(pos){
@@ -6024,18 +10082,46 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 424 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 421 */
+=======
+<<<<<<< HEAD
+/* 419 */
+=======
+/* 562 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.6 String.prototype.endsWith(searchString [, endPosition])
 	'use strict';
 	var $export   = __webpack_require__(3)
 	  , toLength  = __webpack_require__(25)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , context   = __webpack_require__(134)
 	  , ENDS_WITH = 'endsWith'
 	  , $endsWith = ''[ENDS_WITH];
 
 	$export($export.P + $export.F * __webpack_require__(122)(ENDS_WITH), 'String', {
+=======
+<<<<<<< HEAD
+	  , context   = __webpack_require__(133)
+	  , ENDS_WITH = 'endsWith'
+	  , $endsWith = ''[ENDS_WITH];
+
+	$export($export.P + $export.F * __webpack_require__(121)(ENDS_WITH), 'String', {
+=======
+	  , context   = __webpack_require__(130)
+	  , ENDS_WITH = 'endsWith'
+	  , $endsWith = ''[ENDS_WITH];
+
+	$export($export.P + $export.F * __webpack_require__(118)(ENDS_WITH), 'String', {
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  endsWith: function endsWith(searchString /*, endPosition = @length */){
 	    var that = context(this, searchString, ENDS_WITH)
 	      , endPosition = arguments.length > 1 ? arguments[1] : undefined
@@ -6049,47 +10135,111 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 425 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 422 */
+=======
+<<<<<<< HEAD
+/* 420 */
+=======
+/* 563 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.6 String.prototype.fixed()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('fixed', function(createHTML){
+=======
+	__webpack_require__(32)('fixed', function(createHTML){
+>>>>>>> adding chart.js
 	  return function fixed(){
 	    return createHTML(this, 'tt', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 426 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 423 */
+=======
+<<<<<<< HEAD
+/* 421 */
+=======
+/* 564 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.7 String.prototype.fontcolor(color)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('fontcolor', function(createHTML){
+=======
+	__webpack_require__(32)('fontcolor', function(createHTML){
+>>>>>>> adding chart.js
 	  return function fontcolor(color){
 	    return createHTML(this, 'font', 'color', color);
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 427 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 424 */
+=======
+<<<<<<< HEAD
+/* 422 */
+=======
+/* 565 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.8 String.prototype.fontsize(size)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('fontsize', function(createHTML){
+=======
+	__webpack_require__(32)('fontsize', function(createHTML){
+>>>>>>> adding chart.js
 	  return function fontsize(size){
 	    return createHTML(this, 'font', 'size', size);
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 428 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 425 */
+=======
+<<<<<<< HEAD
+/* 423 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export        = __webpack_require__(3)
 	  , toIndex        = __webpack_require__(63)
+=======
+/* 566 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export        = __webpack_require__(3)
+	  , toIndex        = __webpack_require__(65)
+>>>>>>> 024b7b6... adding chart.js
 	  , fromCharCode   = String.fromCharCode
 	  , $fromCodePoint = String.fromCodePoint;
 
@@ -6113,16 +10263,42 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 429 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 426 */
+=======
+<<<<<<< HEAD
+/* 424 */
+=======
+/* 567 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.7 String.prototype.includes(searchString, position = 0)
 	'use strict';
 	var $export  = __webpack_require__(3)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , context  = __webpack_require__(134)
 	  , INCLUDES = 'includes';
 
 	$export($export.P + $export.F * __webpack_require__(122)(INCLUDES), 'String', {
+=======
+<<<<<<< HEAD
+	  , context  = __webpack_require__(133)
+	  , INCLUDES = 'includes';
+
+	$export($export.P + $export.F * __webpack_require__(121)(INCLUDES), 'String', {
+=======
+	  , context  = __webpack_require__(130)
+	  , INCLUDES = 'includes';
+
+	$export($export.P + $export.F * __webpack_require__(118)(INCLUDES), 'String', {
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  includes: function includes(searchString /*, position = 0 */){
 	    return !!~context(this, searchString, INCLUDES)
 	      .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
@@ -6130,35 +10306,83 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 430 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 427 */
+=======
+<<<<<<< HEAD
+/* 425 */
+=======
+/* 568 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.9 String.prototype.italics()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('italics', function(createHTML){
+=======
+	__webpack_require__(32)('italics', function(createHTML){
+>>>>>>> adding chart.js
 	  return function italics(){
 	    return createHTML(this, 'i', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 431 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 428 */
+=======
+<<<<<<< HEAD
+/* 426 */
+=======
+/* 569 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.10 String.prototype.link(url)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('link', function(createHTML){
+=======
+	__webpack_require__(32)('link', function(createHTML){
+>>>>>>> adding chart.js
 	  return function link(url){
 	    return createHTML(this, 'a', 'href', url);
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 432 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 429 */
+=======
+<<<<<<< HEAD
+/* 427 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export   = __webpack_require__(3)
 	  , toIObject = __webpack_require__(37)
+=======
+/* 570 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export   = __webpack_require__(3)
+	  , toIObject = __webpack_require__(38)
+>>>>>>> 024b7b6... adding chart.js
 	  , toLength  = __webpack_require__(25);
 
 	$export($export.S, 'String', {
@@ -6177,41 +10401,105 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 433 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 430 */
+=======
+<<<<<<< HEAD
+/* 428 */
+=======
+/* 571 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(3);
 
 	$export($export.P, 'String', {
 	  // 21.1.3.13 String.prototype.repeat(count)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  repeat: __webpack_require__(214)
 	});
 
 /***/ },
 /* 434 */
+=======
+<<<<<<< HEAD
+	  repeat: __webpack_require__(211)
+	});
+
+/***/ },
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 431 */
+=======
+/* 429 */
+=======
+	  repeat: __webpack_require__(206)
+	});
+
+/***/ },
+/* 572 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.11 String.prototype.small()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('small', function(createHTML){
+=======
+	__webpack_require__(32)('small', function(createHTML){
+>>>>>>> adding chart.js
 	  return function small(){
 	    return createHTML(this, 'small', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 435 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 432 */
+=======
+<<<<<<< HEAD
+/* 430 */
+=======
+/* 573 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.1.3.18 String.prototype.startsWith(searchString [, position ])
 	'use strict';
 	var $export     = __webpack_require__(3)
 	  , toLength    = __webpack_require__(25)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , context     = __webpack_require__(134)
 	  , STARTS_WITH = 'startsWith'
 	  , $startsWith = ''[STARTS_WITH];
 
 	$export($export.P + $export.F * __webpack_require__(122)(STARTS_WITH), 'String', {
+=======
+<<<<<<< HEAD
+	  , context     = __webpack_require__(133)
+	  , STARTS_WITH = 'startsWith'
+	  , $startsWith = ''[STARTS_WITH];
+
+	$export($export.P + $export.F * __webpack_require__(121)(STARTS_WITH), 'String', {
+=======
+	  , context     = __webpack_require__(130)
+	  , STARTS_WITH = 'startsWith'
+	  , $startsWith = ''[STARTS_WITH];
+
+	$export($export.P + $export.F * __webpack_require__(118)(STARTS_WITH), 'String', {
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  startsWith: function startsWith(searchString /*, position = 0 */){
 	    var that   = context(this, searchString, STARTS_WITH)
 	      , index  = toLength(Math.min(arguments.length > 1 ? arguments[1] : undefined, that.length))
@@ -6223,67 +10511,170 @@
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 436 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 433 */
+=======
+<<<<<<< HEAD
+/* 431 */
+=======
+/* 574 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.12 String.prototype.strike()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('strike', function(createHTML){
+=======
+	__webpack_require__(32)('strike', function(createHTML){
+>>>>>>> adding chart.js
 	  return function strike(){
 	    return createHTML(this, 'strike', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 437 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 434 */
+=======
+<<<<<<< HEAD
+/* 432 */
+=======
+/* 575 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.13 String.prototype.sub()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('sub', function(createHTML){
+=======
+	__webpack_require__(32)('sub', function(createHTML){
+>>>>>>> adding chart.js
 	  return function sub(){
 	    return createHTML(this, 'sub', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 438 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 435 */
+=======
+<<<<<<< HEAD
+/* 433 */
+=======
+/* 576 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// B.2.3.14 String.prototype.sup()
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(33)('sup', function(createHTML){
+=======
+	__webpack_require__(32)('sup', function(createHTML){
+>>>>>>> adding chart.js
 	  return function sup(){
 	    return createHTML(this, 'sup', '', '');
 	  }
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 439 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 436 */
+=======
+<<<<<<< HEAD
+/* 434 */
+=======
+/* 577 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 21.1.3.25 String.prototype.trim()
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	__webpack_require__(100)('trim', function($trim){
+=======
+<<<<<<< HEAD
+	__webpack_require__(99)('trim', function($trim){
+=======
+	__webpack_require__(97)('trim', function($trim){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function trim(){
 	    return $trim(this, 3);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 440 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 437 */
+=======
+<<<<<<< HEAD
+/* 435 */
+=======
+/* 578 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var $export      = __webpack_require__(3)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , $typed       = __webpack_require__(101)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , buffer       = __webpack_require__(136)
+=======
+=======
+<<<<<<< HEAD
+	  , $typed       = __webpack_require__(100)
+>>>>>>> adding chart.js
+	  , buffer       = __webpack_require__(135)
+>>>>>>> adding chart.js
 	  , anObject     = __webpack_require__(8)
 	  , toIndex      = __webpack_require__(63)
 	  , toLength     = __webpack_require__(25)
 	  , isObject     = __webpack_require__(11)
 	  , ArrayBuffer  = __webpack_require__(12).ArrayBuffer
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , speciesConstructor = __webpack_require__(212)
+=======
+	  , speciesConstructor = __webpack_require__(209)
+=======
+	  , $typed       = __webpack_require__(98)
+	  , buffer       = __webpack_require__(132)
+	  , anObject     = __webpack_require__(9)
+	  , toIndex      = __webpack_require__(65)
+	  , toLength     = __webpack_require__(25)
+	  , isObject     = __webpack_require__(12)
+	  , ArrayBuffer  = __webpack_require__(13).ArrayBuffer
+	  , speciesConstructor = __webpack_require__(204)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , $ArrayBuffer = buffer.ArrayBuffer
 	  , $DataView    = buffer.DataView
 	  , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -6322,7 +10713,16 @@
 	__webpack_require__(81)(ARRAY_BUFFER);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 441 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 438 */
+=======
+<<<<<<< HEAD
+/* 436 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var $export = __webpack_require__(3);
@@ -6334,101 +10734,287 @@
 /* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	__webpack_require__(49)('Float32', 4, function(init){
+=======
+	__webpack_require__(48)('Float32', 4, function(init){
+=======
+/* 579 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $export = __webpack_require__(3);
+	$export($export.G + $export.W + $export.F * !__webpack_require__(98).ABV, {
+	  DataView: __webpack_require__(132).DataView
+	});
+
+/***/ },
+/* 580 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Float32', 4, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Float32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 443 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 440 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49)('Float64', 8, function(init){
+=======
+<<<<<<< HEAD
+/* 438 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(48)('Float64', 8, function(init){
+=======
+/* 581 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Float64', 8, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Float64Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 444 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 441 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49)('Int16', 2, function(init){
+=======
+<<<<<<< HEAD
+/* 439 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(48)('Int16', 2, function(init){
+=======
+/* 582 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Int16', 2, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Int16Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 445 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 442 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49)('Int32', 4, function(init){
+=======
+<<<<<<< HEAD
+/* 440 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(48)('Int32', 4, function(init){
+=======
+/* 583 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Int32', 4, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Int32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 446 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 443 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49)('Int8', 1, function(init){
+=======
+<<<<<<< HEAD
+/* 441 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(48)('Int8', 1, function(init){
+=======
+/* 584 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Int8', 1, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Int8Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 447 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 444 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49)('Uint16', 2, function(init){
+=======
+<<<<<<< HEAD
+/* 442 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(48)('Uint16', 2, function(init){
+=======
+/* 585 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Uint16', 2, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Uint16Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 448 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 445 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49)('Uint32', 4, function(init){
+=======
+<<<<<<< HEAD
+/* 443 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(48)('Uint32', 4, function(init){
+=======
+/* 586 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Uint32', 4, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Uint32Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 449 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 446 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49)('Uint8', 1, function(init){
+=======
+<<<<<<< HEAD
+/* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(48)('Uint8', 1, function(init){
+=======
+/* 587 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Uint8', 1, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Uint8Array(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 450 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 447 */
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49)('Uint8', 1, function(init){
+=======
+<<<<<<< HEAD
+/* 445 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(48)('Uint8', 1, function(init){
+=======
+/* 588 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(49)('Uint8', 1, function(init){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function Uint8ClampedArray(data, byteOffset, length){
 	    return init(this, data, byteOffset, length);
 	  };
 	}, true);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 451 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 448 */
+=======
+<<<<<<< HEAD
+/* 446 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var weak = __webpack_require__(195);
 
 	// 23.4 WeakSet Objects
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	__webpack_require__(94)('WeakSet', function(get){
+=======
+	__webpack_require__(93)('WeakSet', function(get){
+=======
+/* 589 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var weak = __webpack_require__(187);
+
+	// 23.4 WeakSet Objects
+	__webpack_require__(91)('WeakSet', function(get){
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  return function WeakSet(){ return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 	}, {
 	  // 23.4.3.1 WeakSet.prototype.add(value)
@@ -6438,11 +11024,27 @@
 	}, weak, false, true);
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 452 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 449 */
+=======
+<<<<<<< HEAD
+/* 447 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                  = __webpack_require__(47)
 	  , anObject                  = __webpack_require__(8)
+=======
+/* 590 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata                  = __webpack_require__(47)
+	  , anObject                  = __webpack_require__(9)
+>>>>>>> 024b7b6... adding chart.js
 	  , toMetaKey                 = metadata.key
 	  , ordinaryDefineOwnMetadata = metadata.set;
 
@@ -6451,11 +11053,27 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 453 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 450 */
+=======
+<<<<<<< HEAD
+/* 448 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(47)
 	  , anObject               = __webpack_require__(8)
+=======
+/* 591 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(47)
+	  , anObject               = __webpack_require__(9)
+>>>>>>> 024b7b6... adding chart.js
 	  , toMetaKey              = metadata.key
 	  , getOrCreateMetadataMap = metadata.map
 	  , store                  = metadata.store;
@@ -6471,14 +11089,37 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 454 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 451 */
+=======
+<<<<<<< HEAD
+/* 449 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var Set                     = __webpack_require__(222)
 	  , from                    = __webpack_require__(319)
 	  , metadata                = __webpack_require__(47)
 	  , anObject                = __webpack_require__(8)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , getPrototypeOf          = __webpack_require__(41)
+=======
+	  , getPrototypeOf          = __webpack_require__(40)
+=======
+/* 592 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Set                     = __webpack_require__(214)
+	  , from                    = __webpack_require__(457)
+	  , metadata                = __webpack_require__(47)
+	  , anObject                = __webpack_require__(9)
+	  , getPrototypeOf          = __webpack_require__(41)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , ordinaryOwnMetadataKeys = metadata.keys
 	  , toMetaKey               = metadata.key;
 
@@ -6495,12 +11136,33 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 455 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 452 */
+=======
+<<<<<<< HEAD
+/* 450 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(47)
 	  , anObject               = __webpack_require__(8)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , getPrototypeOf         = __webpack_require__(41)
+=======
+	  , getPrototypeOf         = __webpack_require__(40)
+=======
+/* 593 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(47)
+	  , anObject               = __webpack_require__(9)
+	  , getPrototypeOf         = __webpack_require__(41)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , ordinaryGetOwnMetadata = metadata.get
 	  , toMetaKey              = metadata.key;
@@ -6517,11 +11179,27 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 456 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 453 */
+=======
+<<<<<<< HEAD
+/* 451 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                = __webpack_require__(47)
 	  , anObject                = __webpack_require__(8)
+=======
+/* 594 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata                = __webpack_require__(47)
+	  , anObject                = __webpack_require__(9)
+>>>>>>> 024b7b6... adding chart.js
 	  , ordinaryOwnMetadataKeys = metadata.keys
 	  , toMetaKey               = metadata.key;
 
@@ -6530,11 +11208,27 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 457 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 454 */
+=======
+<<<<<<< HEAD
+/* 452 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(47)
 	  , anObject               = __webpack_require__(8)
+=======
+/* 595 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(47)
+	  , anObject               = __webpack_require__(9)
+>>>>>>> 024b7b6... adding chart.js
 	  , ordinaryGetOwnMetadata = metadata.get
 	  , toMetaKey              = metadata.key;
 
@@ -6544,12 +11238,33 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 458 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 455 */
+=======
+<<<<<<< HEAD
+/* 453 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(47)
 	  , anObject               = __webpack_require__(8)
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  , getPrototypeOf         = __webpack_require__(41)
+=======
+	  , getPrototypeOf         = __webpack_require__(40)
+=======
+/* 596 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(47)
+	  , anObject               = __webpack_require__(9)
+	  , getPrototypeOf         = __webpack_require__(41)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , toMetaKey              = metadata.key;
 
@@ -6565,11 +11280,27 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 459 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 456 */
+=======
+<<<<<<< HEAD
+/* 454 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata               = __webpack_require__(47)
 	  , anObject               = __webpack_require__(8)
+=======
+/* 597 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata               = __webpack_require__(47)
+	  , anObject               = __webpack_require__(9)
+>>>>>>> 024b7b6... adding chart.js
 	  , ordinaryHasOwnMetadata = metadata.has
 	  , toMetaKey              = metadata.key;
 
@@ -6579,12 +11310,33 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 460 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 457 */
+=======
+<<<<<<< HEAD
+/* 455 */
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	var metadata                  = __webpack_require__(47)
 	  , anObject                  = __webpack_require__(8)
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	  , aFunction                 = __webpack_require__(52)
+=======
+	  , aFunction                 = __webpack_require__(51)
+=======
+/* 598 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var metadata                  = __webpack_require__(47)
+	  , anObject                  = __webpack_require__(9)
+	  , aFunction                 = __webpack_require__(52)
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 	  , toMetaKey                 = metadata.key
 	  , ordinaryDefineOwnMetadata = metadata.set;
 
@@ -6599,10 +11351,31 @@
 	}});
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 461 */,
 /* 462 */,
 /* 463 */,
 /* 464 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */
+=======
+<<<<<<< HEAD
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */
+=======
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// function.name (all IE)
@@ -6739,6 +11512,18 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+=======
+<<<<<<< HEAD
+/* 460 */,
+/* 461 */,
+>>>>>>> adding chart.js
+/* 462 */,
+/* 463 */,
+/* 464 */,
+>>>>>>> adding chart.js
 /* 465 */,
 /* 466 */,
 /* 467 */,
@@ -6877,6 +11662,8 @@
 /* 600 */,
 /* 601 */,
 /* 602 */,
+=======
+>>>>>>> 024b7b6... adding chart.js
 /* 603 */,
 /* 604 */,
 /* 605 */,
@@ -7006,12 +11793,168 @@
 /* 729 */,
 /* 730 */,
 /* 731 */,
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 732 */,
+/* 733 */,
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
+/* 734 */,
+/* 735 */,
+/* 736 */,
+/* 737 */
+=======
+/* 734 */
+=======
+<<<<<<< HEAD
+/* 732 */
+=======
 /* 732 */,
 /* 733 */,
 /* 734 */,
 /* 735 */,
 /* 736 */,
-/* 737 */
+/* 737 */,
+/* 738 */,
+/* 739 */,
+/* 740 */,
+/* 741 */,
+/* 742 */,
+/* 743 */,
+/* 744 */,
+/* 745 */,
+/* 746 */,
+/* 747 */,
+/* 748 */,
+/* 749 */,
+/* 750 */,
+/* 751 */,
+/* 752 */,
+/* 753 */,
+/* 754 */,
+/* 755 */,
+/* 756 */,
+/* 757 */,
+/* 758 */,
+/* 759 */,
+/* 760 */,
+/* 761 */,
+/* 762 */,
+/* 763 */,
+/* 764 */,
+/* 765 */,
+/* 766 */,
+/* 767 */,
+/* 768 */,
+/* 769 */,
+/* 770 */,
+/* 771 */,
+/* 772 */,
+/* 773 */,
+/* 774 */,
+/* 775 */,
+/* 776 */,
+/* 777 */,
+/* 778 */,
+/* 779 */,
+/* 780 */,
+/* 781 */,
+/* 782 */,
+/* 783 */,
+/* 784 */,
+/* 785 */,
+/* 786 */,
+/* 787 */,
+/* 788 */,
+/* 789 */,
+/* 790 */,
+/* 791 */,
+/* 792 */,
+/* 793 */,
+/* 794 */,
+/* 795 */,
+/* 796 */,
+/* 797 */,
+/* 798 */,
+/* 799 */,
+/* 800 */,
+/* 801 */,
+/* 802 */,
+/* 803 */,
+/* 804 */,
+/* 805 */,
+/* 806 */,
+/* 807 */,
+/* 808 */,
+/* 809 */,
+/* 810 */,
+/* 811 */,
+/* 812 */,
+/* 813 */,
+/* 814 */,
+/* 815 */,
+/* 816 */,
+/* 817 */,
+/* 818 */,
+/* 819 */,
+/* 820 */,
+/* 821 */,
+/* 822 */,
+/* 823 */,
+/* 824 */,
+/* 825 */,
+/* 826 */,
+/* 827 */,
+/* 828 */,
+/* 829 */,
+/* 830 */,
+/* 831 */,
+/* 832 */,
+/* 833 */,
+/* 834 */,
+/* 835 */,
+/* 836 */,
+/* 837 */,
+/* 838 */,
+/* 839 */,
+/* 840 */,
+/* 841 */,
+/* 842 */,
+/* 843 */,
+/* 844 */,
+/* 845 */,
+/* 846 */,
+/* 847 */,
+/* 848 */,
+/* 849 */,
+/* 850 */,
+/* 851 */,
+/* 852 */,
+/* 853 */,
+/* 854 */,
+/* 855 */,
+/* 856 */,
+/* 857 */,
+/* 858 */,
+/* 859 */,
+/* 860 */,
+/* 861 */,
+/* 862 */,
+/* 863 */,
+/* 864 */,
+/* 865 */,
+/* 866 */,
+/* 867 */,
+/* 868 */,
+/* 869 */,
+/* 870 */,
+/* 871 */,
+/* 872 */,
+/* 873 */,
+/* 874 */,
+/* 875 */,
+/* 876 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7174,7 +12117,19 @@
 
 
 /***/ },
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 738 */
+=======
+<<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
+/* 735 */
+=======
+<<<<<<< HEAD
+/* 733 */
+=======
+/* 877 */
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+>>>>>>> adding chart.js
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -8604,7 +13559,15 @@
 
 	})));
 
+<<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(225)))
+=======
+<<<<<<< HEAD
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(222)))
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(326)))
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
 
 /***/ }
 /******/ ]);
