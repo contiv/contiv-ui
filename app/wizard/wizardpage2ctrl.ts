@@ -15,22 +15,19 @@ export class Wizardpage2Component implements OnInit{
     private wizardService: WizardService;
     public setting: NetworkDefaults;
     @Output('updatePage') updatePage: EventEmitter<any>;
-    vlanPattern:string = ContivGlobals.VLAN_REGEX;
-    vxlanPattern:string = ContivGlobals.VXLAN_REGEX;
 
     constructor(wizardService: WizardService){
         this.wizardService = wizardService;
-        this.setting = this.wizardService.settings;
+        this.setting = this.wizardService.setting;
         this.updatePage = new EventEmitter<any>()
     }
     ngOnInit(){
-        this.setting = this.wizardService.settings;
+        this.setting = this.wizardService.setting;
     }
 
-    updateNetworkSettings(formvalid: boolean){
-        if(formvalid){
-            this.updatePage.emit(2);
-        }
+    updateNetworkSettings(setting: any){
+        this.wizardService.setting = setting;
+        this.updatePage.emit(2);
     }
 
     goBack(){

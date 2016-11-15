@@ -3,7 +3,8 @@
  */
 
 
-import {Injectable} from "@angular/core";
+import {Injectable, OnInit} from "@angular/core";
+import {NetworkService} from "../components/utils/networkservice";
 
 export interface Server{
     name: string;
@@ -20,9 +21,18 @@ export interface NetworkDefaults{
 @Injectable()
 export class WizardService{
     public server:Server;
-    public settings: NetworkDefaults;
-    constructor(){
+    public setting: any;
+    constructor(private networkService: NetworkService){
         this.server = {name: '', ipaddress: ''};
-        this.settings = {networkInfraType: '', vlans: '', vxlans: '', fwdMode: ''};
+        this.setting = {networkInfraType: '', vlans: '', vxlans: '', fwdMode: ''};
     }
+
+    getNetworkSettings(){
+        this.networkService.getSettings()
+            .then((result) => {
+                this.setting = result;
+            }
+        )
+    }
+
 }

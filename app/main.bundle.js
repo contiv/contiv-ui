@@ -7,10 +7,14 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/6/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var platform_browser_dynamic_1 = __webpack_require__(111);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var app_module_1 = __webpack_require__(258);
 =======
+=======
+	var platform_browser_dynamic_1 = __webpack_require__(112);
+>>>>>>> Aci and network settings
 	var app_module_1 = __webpack_require__(255);
 >>>>>>> adding first run
 	platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
@@ -34,7 +38,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 4/29/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var CRUDHelperService = (function () {
 	    function CRUDHelperService() {
 	    }
@@ -62,11 +66,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 22:
 =======
 /***/ 21:
 >>>>>>> adding first run
+=======
+/***/ 23:
+>>>>>>> Aci and network settings
 /***/ function(module, exports) {
 
 	"use strict";
@@ -138,12 +146,17 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var http_1 = __webpack_require__(21);
 =======
 	var http_1 = __webpack_require__(23);
 >>>>>>> adding first run
+=======
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+>>>>>>> Aci and network settings
 	var authservice_1 = __webpack_require__(68);
 	var ApiService = (function () {
 	    function ApiService(http, authService) {
@@ -203,7 +216,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/17/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var common_1 = __webpack_require__(17);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var errormessagedirective_1 = __webpack_require__(268);
@@ -215,13 +228,18 @@ webpackJsonp([2],{
 	var authdirective_1 = __webpack_require__(266);
 =======
 	var errormessagedirective_1 = __webpack_require__(263);
-	var tabledirective_1 = __webpack_require__(265);
+	var tabledirective_1 = __webpack_require__(267);
 	var forms_1 = __webpack_require__(26);
 	var accordiondirective_1 = __webpack_require__(260);
 	var collapsibledirective_1 = __webpack_require__(262);
 	var namevaluedirective_1 = __webpack_require__(264);
 	var authdirective_1 = __webpack_require__(261);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 >>>>>>> adding first run
+=======
+	var networksettingdirective_1 = __webpack_require__(266);
+	var acisettingdirective_1 = __webpack_require__(265);
+>>>>>>> Aci and network settings
 	var DirectivesModule = (function () {
 	    function DirectivesModule() {
 	    }
@@ -239,7 +257,9 @@ webpackJsonp([2],{
 	                accordiondirective_1.CtvAccordionComponent,
 	                collapsibledirective_1.CtvCollapsibleComponent,
 	                namevaluedirective_1.CtvNamevalueComponent,
-	                authdirective_1.AuthDirective
+	                authdirective_1.AuthDirective,
+	                networksettingdirective_1.NetworkSettingDirective,
+	                acisettingdirective_1.AciSettingDirective
 	            ],
 	            exports: [
 	                errormessagedirective_1.ErrorMessageComponent,
@@ -250,7 +270,9 @@ webpackJsonp([2],{
 	                accordiondirective_1.CtvAccordionComponent,
 	                collapsibledirective_1.CtvCollapsibleComponent,
 	                namevaluedirective_1.CtvNamevalueComponent,
-	                authdirective_1.AuthDirective
+	                authdirective_1.AuthDirective,
+	                networksettingdirective_1.NetworkSettingDirective,
+	                acisettingdirective_1.AciSettingDirective
 	            ]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -282,11 +304,11 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(23);
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(49);
 	var util_1 = __webpack_require__(57);
-	var contivglobals_1 = __webpack_require__(21);
+	var contivglobals_1 = __webpack_require__(23);
 	var apiservice_1 = __webpack_require__(34);
 	var NetworksModel = (function (_super) {
 	    __extends(NetworksModel, _super);
@@ -332,11 +354,15 @@ webpackJsonp([2],{
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var basecollection_1 = __webpack_require__(271);
 	var _ = __webpack_require__(25);
 =======
 	var basecollection_1 = __webpack_require__(266);
+=======
+	var basecollection_1 = __webpack_require__(268);
+>>>>>>> Aci and network settings
 	var _ = __webpack_require__(28);
 >>>>>>> adding first run
 	var Collection = (function (_super) {
@@ -1136,7 +1162,7 @@ webpackJsonp([2],{
 	}
 	exports.isPrimitive = isPrimitive;
 
-	exports.isBuffer = __webpack_require__(721);
+	exports.isBuffer = __webpack_require__(723);
 
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -1180,7 +1206,7 @@ webpackJsonp([2],{
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
-	exports.inherits = __webpack_require__(720);
+	exports.inherits = __webpack_require__(722);
 
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -1226,10 +1252,10 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
-	var core_1 = __webpack_require__(3);
-	var http_1 = __webpack_require__(23);
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(49);
-	var contivglobals_1 = __webpack_require__(21);
+	var contivglobals_1 = __webpack_require__(23);
 	var apiservice_1 = __webpack_require__(34);
 	var ApplicationGroupsModel = (function (_super) {
 	    __extends(ApplicationGroupsModel, _super);
@@ -1290,6 +1316,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var http_1 = __webpack_require__(21);
@@ -1298,8 +1325,12 @@ webpackJsonp([2],{
 	var apiservice_1 = __webpack_require__(32);
 =======
 	var http_1 = __webpack_require__(23);
+=======
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+>>>>>>> Aci and network settings
 	var collection_1 = __webpack_require__(49);
-	var contivglobals_1 = __webpack_require__(21);
+	var contivglobals_1 = __webpack_require__(23);
 	var apiservice_1 = __webpack_require__(34);
 >>>>>>> adding first run
 	var OrganizationsModel = (function (_super) {
@@ -1337,6 +1368,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var http_1 = __webpack_require__(21);
@@ -1345,8 +1377,12 @@ webpackJsonp([2],{
 	var apiservice_1 = __webpack_require__(32);
 =======
 	var http_1 = __webpack_require__(23);
+=======
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+>>>>>>> Aci and network settings
 	var collection_1 = __webpack_require__(49);
-	var contivglobals_1 = __webpack_require__(21);
+	var contivglobals_1 = __webpack_require__(23);
 	var apiservice_1 = __webpack_require__(34);
 >>>>>>> adding first run
 	var PoliciesModel = (function (_super) {
@@ -1390,7 +1426,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var Observable_1 = __webpack_require__(1);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	__webpack_require__(221);
@@ -1402,9 +1438,9 @@ webpackJsonp([2],{
 =======
 	__webpack_require__(218);
 	__webpack_require__(219);
-	__webpack_require__(136);
-	var http_1 = __webpack_require__(23);
-	var authMatrix_1 = __webpack_require__(151);
+	__webpack_require__(138);
+	var http_1 = __webpack_require__(22);
+	var authMatrix_1 = __webpack_require__(153);
 	var util_1 = __webpack_require__(57);
 >>>>>>> adding first run
 	var AuthService = (function () {
@@ -1560,7 +1596,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/9/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	(function (PolicyTab) {
 	    PolicyTab[PolicyTab["isolation"] = 0] = "isolation";
@@ -1636,6 +1672,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/15/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var http_1 = __webpack_require__(21);
@@ -1644,8 +1681,12 @@ webpackJsonp([2],{
 	var apiservice_1 = __webpack_require__(32);
 =======
 	var http_1 = __webpack_require__(23);
+=======
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+>>>>>>> Aci and network settings
 	var collection_1 = __webpack_require__(49);
-	var contivglobals_1 = __webpack_require__(21);
+	var contivglobals_1 = __webpack_require__(23);
 	var apiservice_1 = __webpack_require__(34);
 >>>>>>> adding first run
 	var NetprofilesModel = (function (_super) {
@@ -1694,6 +1735,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 5/11/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var http_1 = __webpack_require__(21);
@@ -1702,8 +1744,12 @@ webpackJsonp([2],{
 	var apiservice_1 = __webpack_require__(32);
 =======
 	var http_1 = __webpack_require__(23);
+=======
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+>>>>>>> Aci and network settings
 	var collection_1 = __webpack_require__(49);
-	var contivglobals_1 = __webpack_require__(21);
+	var contivglobals_1 = __webpack_require__(23);
 	var apiservice_1 = __webpack_require__(34);
 >>>>>>> adding first run
 	var ServicelbsModel = (function (_super) {
@@ -1739,17 +1785,27 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
+	var networkservice_1 = __webpack_require__(91);
 	var WizardService = (function () {
-	    function WizardService() {
+	    function WizardService(networkService) {
+	        this.networkService = networkService;
 	        this.server = { name: '', ipaddress: '' };
-	        this.settings = { networkInfraType: '', vlans: '', vxlans: '', fwdMode: '' };
+	        this.setting = { networkInfraType: '', vlans: '', vxlans: '', fwdMode: '' };
 	    }
+	    WizardService.prototype.getNetworkSettings = function () {
+	        var _this = this;
+	        this.networkService.getSettings()
+	            .then(function (result) {
+	            _this.setting = result;
+	        });
+	    };
 	    WizardService = __decorate([
 	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof networkservice_1.NetworkService !== 'undefined' && networkservice_1.NetworkService) === 'function' && _a) || Object])
 	    ], WizardService);
 	    return WizardService;
+	    var _a;
 	}());
 	exports.WizardService = WizardService;
 	
@@ -1827,6 +1883,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/7/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var http_1 = __webpack_require__(21);
@@ -1836,8 +1893,12 @@ webpackJsonp([2],{
 	var _ = __webpack_require__(25);
 =======
 	var http_1 = __webpack_require__(23);
+=======
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+>>>>>>> Aci and network settings
 	var collection_1 = __webpack_require__(49);
-	var contivglobals_1 = __webpack_require__(21);
+	var contivglobals_1 = __webpack_require__(23);
 	var apiservice_1 = __webpack_require__(34);
 	var _ = __webpack_require__(28);
 >>>>>>> adding first run
@@ -1898,7 +1959,59 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 112:
+/***/ 91:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+	__webpack_require__(104);
+	var contivglobals_1 = __webpack_require__(23);
+	var apiservice_1 = __webpack_require__(34);
+	var NetworkService = (function () {
+	    function NetworkService(http, apiService) {
+	        this.http = http;
+	        this.apiService = apiService;
+	    }
+	    NetworkService.prototype.getSettings = function () {
+	        var networkservice = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            var url = contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT;
+	            networkservice.apiService.get(url).map(function (res) { return res.json(); }).toPromise()
+	                .then(function successCallback(result) {
+	                resolve(result[0]);
+	            }, function errorCallback(result) {
+	                reject(result);
+	            });
+	        });
+	        return promise;
+	    };
+	    NetworkService.prototype.updateSettings = function (setting) {
+	        return this.apiService.post(contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT
+	            + 'global/', setting).map(function (res) { return res.json(); }).toPromise();
+	    };
+	    NetworkService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], NetworkService);
+	    return NetworkService;
+	    var _a, _b;
+	}());
+	exports.NetworkService = NetworkService;
+	
+
+/***/ },
+
+/***/ 113:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1919,6 +2032,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/8/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var http_1 = __webpack_require__(21);
@@ -1928,9 +2042,13 @@ webpackJsonp([2],{
 	var apiservice_1 = __webpack_require__(32);
 =======
 	var http_1 = __webpack_require__(23);
+=======
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+>>>>>>> Aci and network settings
 	var collection_1 = __webpack_require__(49);
 	var _ = __webpack_require__(28);
-	var contivglobals_1 = __webpack_require__(21);
+	var contivglobals_1 = __webpack_require__(23);
 	var apiservice_1 = __webpack_require__(34);
 >>>>>>> adding first run
 	var RulesModel = (function (_super) {
@@ -1990,7 +2108,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 113:
+/***/ 114:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2006,8 +2124,13 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 7/17/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 	var util_1 = __webpack_require__(58);
+=======
+	var core_1 = __webpack_require__(2);
+	var util_1 = __webpack_require__(57);
+>>>>>>> Aci and network settings
 	var InspectService = (function () {
 	    function InspectService() {
 	    }
@@ -2077,7 +2200,196 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 148:
+/***/ 115:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+	__webpack_require__(104);
+	var contivglobals_1 = __webpack_require__(23);
+	var apiservice_1 = __webpack_require__(34);
+	var NodesService = (function () {
+	    function NodesService(http, apiService) {
+	        this.http = http;
+	        this.apiService = apiService;
+	    }
+	    Object.defineProperty(NodesService, "node_constants", {
+	        get: function () {
+	            return {
+	                APIC_CONTR_UNRESTRICT_MODE: 'apic_contracts_unrestricted_mode',
+	                APIC_EPG_BRIDGE_DOMAIN: 'apic_epg_bridge_domain',
+	                APIC_LEAF_NODES: 'apic_leaf_nodes',
+	                APIC_PASSWORD: 'apic_password',
+	                APIC_PHYS_DOMAIN: 'apic_phys_domain',
+	                APIC_URL: 'apic_url',
+	                APIC_USERNAME: 'apic_username',
+	                CONTIV_NET_MODE: 'contiv_network_mode',
+	                CONTROL_INTERFACE: 'control_interface',
+	                ENV: 'env',
+	                FWD_MODE: 'fwd_mode',
+	                DATA_INTERFACE: 'netplugin_if',
+	                SCHED_PROVIDER: 'scheduler_provider',
+	                VIP_ADDR: 'service_vip',
+	                UCP_BOOTSTRAP_NODE: 'ucp_bootstrap_node_name',
+	                CLUSTER_NAME: 'cluster_name'
+	            };
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    NodesService.prototype.getSettings = function (ctrl) {
+	        var nodeservice = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            var url = contivglobals_1.ContivGlobals.NODES_SETTINGS_GET_ENDPOINT;
+	            nodeservice.apiService.get(url).map(function (res) { return res.json(); }).toPromise().then(function successCallback(result) {
+	                resolve(result);
+	                //ctrl.setting = result;
+	                var extraVars = result.extra_vars;
+	                var sched_provider = extraVars[NodesService.node_constants.SCHED_PROVIDER];
+	                var network_mode = extraVars[NodesService.node_constants.CONTIV_NET_MODE];
+	                if (extraVars[NodesService.node_constants.CONTROL_INTERFACE]) {
+	                    ctrl.extra_vars[NodesService.node_constants.CONTROL_INTERFACE] =
+	                        extraVars[NodesService.node_constants.CONTROL_INTERFACE];
+	                }
+	                if (extraVars[NodesService.node_constants.DATA_INTERFACE]) {
+	                    ctrl.extra_vars[NodesService.node_constants.DATA_INTERFACE] =
+	                        extraVars[NodesService.node_constants.DATA_INTERFACE];
+	                }
+	                if (extraVars[NodesService.node_constants.VIP_ADDR]) {
+	                    ctrl.extra_vars[NodesService.node_constants.VIP_ADDR] = extraVars[NodesService.node_constants.VIP_ADDR];
+	                }
+	                if (sched_provider) {
+	                    ctrl.extra_vars[NodesService.node_constants.SCHED_PROVIDER] = sched_provider;
+	                    if (sched_provider === 'ucp-swarm') {
+	                        ctrl.extra_vars[NodesService.node_constants.UCP_BOOTSTRAP_NODE] =
+	                            extraVars[NodesService.node_constants.UCP_BOOTSTRAP_NODE];
+	                    }
+	                }
+	                if (network_mode) {
+	                    ctrl.extra_vars[NodesService.node_constants.CONTIV_NET_MODE] = network_mode;
+	                    if (network_mode === 'standalone') {
+	                        ctrl.extra_vars[NodesService.node_constants.FWD_MODE] = extraVars[NodesService.node_constants.FWD_MODE];
+	                    }
+	                    else if (network_mode === 'aci') {
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE] =
+	                            extraVars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN] =
+	                            extraVars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_LEAF_NODES] =
+	                            extraVars[NodesService.node_constants.APIC_LEAF_NODES];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_PASSWORD] =
+	                            extraVars[NodesService.node_constants.APIC_PASSWORD];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_PHYS_DOMAIN] =
+	                            extraVars[NodesService.node_constants.APIC_PHYS_DOMAIN];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_URL] =
+	                            extraVars[NodesService.node_constants.APIC_URL];
+	                        ctrl.extra_vars[NodesService.node_constants.APIC_USERNAME] =
+	                            extraVars[NodesService.node_constants.APIC_USERNAME];
+	                    }
+	                }
+	                if (extraVars[NodesService.node_constants.CLUSTER_NAME]) {
+	                    ctrl.extra_vars[NodesService.node_constants.CLUSTER_NAME] =
+	                        extraVars[NodesService.node_constants.CLUSTER_NAME];
+	                }
+	                nodeservice.createEnvVariables(extraVars[NodesService.node_constants.ENV], ctrl.envVariables);
+	                nodeservice.createAnsibleVariables(extraVars, ctrl.ansibleVariables);
+	            }, function errorCallback(result) {
+	                reject(result);
+	            });
+	        });
+	        return promise;
+	    };
+	    NodesService.prototype.createEnvVariables = function (envVars, envVariables) {
+	        var i;
+	        for (i in envVars) {
+	            envVariables.push({ 'name': i, 'value': envVars[i] });
+	        }
+	    };
+	    NodesService.prototype.createAnsibleVariables = function (extraVars, ansibleVariables) {
+	        var setting_filter = [NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE,
+	            NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN, NodesService.node_constants.APIC_LEAF_NODES,
+	            NodesService.node_constants.APIC_PASSWORD, NodesService.node_constants.APIC_PHYS_DOMAIN,
+	            NodesService.node_constants.APIC_URL, NodesService.node_constants.APIC_USERNAME,
+	            NodesService.node_constants.CONTIV_NET_MODE, NodesService.node_constants.CONTROL_INTERFACE,
+	            NodesService.node_constants.ENV, NodesService.node_constants.FWD_MODE, NodesService.node_constants.DATA_INTERFACE,
+	            NodesService.node_constants.SCHED_PROVIDER, NodesService.node_constants.VIP_ADDR,
+	            NodesService.node_constants.UCP_BOOTSTRAP_NODE, NodesService.node_constants.CLUSTER_NAME];
+	        var i;
+	        for (i in extraVars) {
+	            if (setting_filter.indexOf(i) === -1) {
+	                ansibleVariables.push({ 'name': i, 'value': extraVars[i] });
+	            }
+	        }
+	    };
+	    ;
+	    NodesService.prototype.updateSettings = function (nodeOpsObj) {
+	        //let headers = new Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
+	        //let options = new RequestOptions({ headers: headers }); // Create a request option
+	        return this.apiService.post(contivglobals_1.ContivGlobals.NODES_SETTINGS_SET_ENDPOINT, nodeOpsObj)
+	            .map(function (res) { return res.json(); }).toPromise();
+	    };
+	    ;
+	    NodesService.prototype.createExtraVars = function (ctrl) {
+	        //Add ansible variables to extra_vars
+	        ctrl.ansibleVariables.forEach(function (item) {
+	            ctrl.extra_vars[item.name] = item.value;
+	        });
+	        //Add environment variables to extra_vars
+	        var envVars = {};
+	        ctrl.envVariables.forEach(function (item) {
+	            envVars[item.name] = item.value;
+	        });
+	        ctrl.extra_vars[NodesService.node_constants.ENV] = envVars;
+	        ctrl.nodeOpsObj.extra_vars = JSON.stringify(ctrl.extra_vars);
+	    };
+	    ;
+	    /**
+	     * Cleanup ansible variables for network mode and scheduler. ng-if removes it from the view (DOM) but not from
+	     * the model.
+	     */
+	    NodesService.prototype.cleanupExtraVars = function (ctrl) {
+	        //Cleanup for network mode
+	        if (ctrl.extra_vars[NodesService.node_constants.CONTIV_NET_MODE] == 'aci') {
+	            delete ctrl.extra_vars[NodesService.node_constants.FWD_MODE];
+	        }
+	        else {
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_URL];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_USERNAME];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_PASSWORD];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_LEAF_NODES];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_PHYS_DOMAIN];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN];
+	            delete ctrl.extra_vars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE];
+	        }
+	        //Cleanup for scheduler
+	        if (ctrl.extra_vars[NodesService.node_constants.SCHED_PROVIDER] == 'native-swarm') {
+	            delete ctrl.extra_vars[NodesService.node_constants.UCP_BOOTSTRAP_NODE];
+	        }
+	    };
+	    ;
+	    NodesService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], NodesService);
+	    return NodesService;
+	    var _a, _b;
+	}());
+	exports.NodesService = NodesService;
+	
+
+/***/ },
+
+/***/ 150:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2093,7 +2405,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var networksmodel_1 = __webpack_require__(44);
@@ -2184,7 +2496,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 149:
+/***/ 151:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2200,7 +2512,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/15/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var applicationgroupsmodel_1 = __webpack_require__(50);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -2283,7 +2595,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 150:
+/***/ 152:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2299,7 +2611,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var applicationgroupsmodel_1 = __webpack_require__(50);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -2340,6 +2652,7 @@ webpackJsonp([2],{
 	    AppGrouplistComponent = __decorate([
 	        core_1.Component({
 	            selector: 'app-group',
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	            template: __webpack_require__(451)
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	        }), 
@@ -2647,6 +2960,9 @@ webpackJsonp([2],{
 	            ]
 =======
 >>>>>>> adding first run
+=======
+	            template: __webpack_require__(453)
+>>>>>>> Aci and network settings
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], PipesModule);
@@ -2658,11 +2974,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 155:
 =======
 /***/ 151:
 >>>>>>> adding first run
+=======
+/***/ 153:
+>>>>>>> Aci and network settings
 /***/ function(module, exports) {
 
 	/**
@@ -2707,11 +3027,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 156:
 =======
 /***/ 152:
 >>>>>>> adding first run
+=======
+/***/ 154:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2727,14 +3051,18 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 11/4/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var authservice_1 = __webpack_require__(68);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var authMatrix_1 = __webpack_require__(155);
 	var util_1 = __webpack_require__(58);
 =======
 	var authMatrix_1 = __webpack_require__(151);
+=======
+	var authMatrix_1 = __webpack_require__(153);
+>>>>>>> Aci and network settings
 	var util_1 = __webpack_require__(57);
 >>>>>>> adding first run
 	var AuthGuard = (function () {
@@ -2767,6 +3095,7 @@ webpackJsonp([2],{
 	                this.router.navigate(['/unauthorized']);
 	                return false;
 	            }
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	        }
 	        // Validate Token Expiration
 	        if (!util_1.isNull(localStorage.getItem("authToken"))) {
@@ -3000,78 +3329,50 @@ webpackJsonp([2],{
 	        var i;
 	        for (i in envVars) {
 	            envVariables.push({ 'name': i, 'value': envVars[i] });
+=======
+>>>>>>> Aci and network settings
 	        }
-	    };
-	    NodesService.prototype.createAnsibleVariables = function (extraVars, ansibleVariables) {
-	        var setting_filter = [NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE,
-	            NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN, NodesService.node_constants.APIC_LEAF_NODES,
-	            NodesService.node_constants.APIC_PASSWORD, NodesService.node_constants.APIC_PHYS_DOMAIN,
-	            NodesService.node_constants.APIC_URL, NodesService.node_constants.APIC_USERNAME,
-	            NodesService.node_constants.CONTIV_NET_MODE, NodesService.node_constants.CONTROL_INTERFACE,
-	            NodesService.node_constants.ENV, NodesService.node_constants.FWD_MODE, NodesService.node_constants.DATA_INTERFACE,
-	            NodesService.node_constants.SCHED_PROVIDER, NodesService.node_constants.VIP_ADDR,
-	            NodesService.node_constants.UCP_BOOTSTRAP_NODE, NodesService.node_constants.CLUSTER_NAME];
-	        var i;
-	        for (i in extraVars) {
-	            if (setting_filter.indexOf(i) === -1) {
-	                ansibleVariables.push({ 'name': i, 'value': extraVars[i] });
+	        // Validate Token Expiration
+	        if (!util_1.isNull(localStorage.getItem("authToken"))) {
+	            this.authService.extractBody();
+	            if (this.authService.validateExpiry()) {
+	                this.authService.isLoggedIn = true;
+	                if (this.checkAccess(url))
+	                    return true;
+	                else {
+	                    this.router.navigate(['/unauthorized']);
+	                    return false;
+	                }
 	            }
 	        }
+	        this.loadLogin(url);
+	        return false;
 	    };
-	    ;
-	    NodesService.prototype.updateSettings = function (nodeOpsObj) {
-	        //let headers = new Headers({ 'Content-Type': 'application/json' }); // ... Set content type to JSON
-	        //let options = new RequestOptions({ headers: headers }); // Create a request option
-	        return this.apiService.post(contivglobals_1.ContivGlobals.NODES_SETTINGS_SET_ENDPOINT, nodeOpsObj)
-	            .map(function (res) { return res.json(); }).toPromise();
+	    AuthGuard.prototype.loadLogin = function (url) {
+	        // Clean the local storage
+	        this.authService.cleanuplocalstorage();
+	        // Store the attempted URL for redirecting
+	        this.authService.redirectUrl = url;
+	        // Navigate to the login page
+	        this.router.navigate(['/login']);
 	    };
-	    ;
-	    NodesService.prototype.createExtraVars = function (ctrl) {
-	        //Add ansible variables to extra_vars
-	        ctrl.ansibleVariables.forEach(function (item) {
-	            ctrl.extra_vars[item.name] = item.value;
-	        });
-	        //Add environment variables to extra_vars
-	        var envVars = {};
-	        ctrl.envVariables.forEach(function (item) {
-	            envVars[item.name] = item.value;
-	        });
-	        ctrl.extra_vars[NodesService.node_constants.ENV] = envVars;
-	        ctrl.nodeOpsObj.extra_vars = JSON.stringify(ctrl.extra_vars);
+	    AuthGuard.prototype.checkAccess = function (url) {
+	        return this.authService.checkAccess(url);
 	    };
-	    ;
-	    /**
-	     * Cleanup ansible variables for network mode and scheduler. ng-if removes it from the view (DOM) but not from
-	     * the model.
-	     */
-	    NodesService.prototype.cleanupExtraVars = function (ctrl) {
-	        //Cleanup for network mode
-	        if (ctrl.extra_vars[NodesService.node_constants.CONTIV_NET_MODE] == 'aci') {
-	            delete ctrl.extra_vars[NodesService.node_constants.FWD_MODE];
-	        }
-	        else {
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_URL];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_USERNAME];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_PASSWORD];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_LEAF_NODES];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_PHYS_DOMAIN];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_EPG_BRIDGE_DOMAIN];
-	            delete ctrl.extra_vars[NodesService.node_constants.APIC_CONTR_UNRESTRICT_MODE];
-	        }
-	        //Cleanup for scheduler
-	        if (ctrl.extra_vars[NodesService.node_constants.SCHED_PROVIDER] == 'native-swarm') {
-	            delete ctrl.extra_vars[NodesService.node_constants.UCP_BOOTSTRAP_NODE];
-	        }
+	    AuthGuard.prototype.checkFirstRun = function () {
+	        if (util_1.isNull(localStorage.getItem('firstRun')))
+	            this.authService.firstRun = true;
+	        else
+	            this.authService.firstRun = false;
 	    };
-	    ;
-	    NodesService = __decorate([
+	    AuthGuard = __decorate([
 	        core_1.Injectable(), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
-	    ], NodesService);
-	    return NodesService;
+	        __metadata('design:paramtypes', [(typeof (_a = typeof authservice_1.AuthService !== 'undefined' && authservice_1.AuthService) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object])
+	    ], AuthGuard);
+	    return AuthGuard;
 	    var _a, _b;
 	}());
-	exports.NodesService = NodesService;
+	exports.AuthGuard = AuthGuard;
 	
 
 /***/ },
@@ -3096,7 +3397,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var Observable_1 = __webpack_require__(1);
 	var applicationgroupsmodel_1 = __webpack_require__(50);
 	var policiesmodel_1 = __webpack_require__(67);
@@ -3175,8 +3476,13 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+=======
+	var core_1 = __webpack_require__(2);
+	var crudhelperservice_1 = __webpack_require__(10);
+>>>>>>> Aci and network settings
 	var router_1 = __webpack_require__(5);
 	var authservice_1 = __webpack_require__(68);
 	var LoginComponent = (function () {
@@ -3231,7 +3537,7 @@ webpackJsonp([2],{
 	        core_1.Component({
 	            selector: 'login',
 	            templateUrl: 'login/login.html',
-	            styles: [__webpack_require__(719)]
+	            styles: [__webpack_require__(721)]
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object, (typeof (_d = typeof authservice_1.AuthService !== 'undefined' && authservice_1.AuthService) === 'function' && _d) || Object])
 	    ], LoginComponent);
@@ -3263,7 +3569,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var LogoutComponent = (function () {
 	    function LogoutComponent(router, activatedRoute) {
@@ -3312,7 +3618,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var UnauthorizedComponent = (function () {
 	    function UnauthorizedComponent() {
 	    }
@@ -3353,7 +3659,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 5/19/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var authservice_1 = __webpack_require__(68);
 	var MenuComponent = (function () {
@@ -3410,7 +3716,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/14/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var netprofilesmodel_1 = __webpack_require__(73);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -3493,7 +3799,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/16/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var netprofilesmodel_1 = __webpack_require__(73);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -3602,7 +3908,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/10/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var policiesmodel_1 = __webpack_require__(67);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -3681,9 +3987,10 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/8/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var policiesmodel_1 = __webpack_require__(67);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var rulesmodel_1 = __webpack_require__(112);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var networksmodel_1 = __webpack_require__(44);
@@ -3692,12 +3999,19 @@ webpackJsonp([2],{
 	var networkpoliciestabsctrl_1 = __webpack_require__(69);
 	var contivglobals_1 = __webpack_require__(22);
 =======
+=======
+	var rulesmodel_1 = __webpack_require__(113);
+>>>>>>> Aci and network settings
 	var networksmodel_1 = __webpack_require__(43);
 	var applicationgroupsmodel_1 = __webpack_require__(58);
 	var crudhelperservice_1 = __webpack_require__(10);
 	var networkpoliciestabsctrl_1 = __webpack_require__(69);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var contivglobals_1 = __webpack_require__(21);
 >>>>>>> adding first run
+=======
+	var contivglobals_1 = __webpack_require__(23);
+>>>>>>> Aci and network settings
 	var IsolationPolicyDetailsComponent = (function () {
 	    function IsolationPolicyDetailsComponent(activatedRoute, router, policiesModel, rulesModel, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -4084,6 +4398,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var networksmodel_1 = __webpack_require__(44);
@@ -4096,6 +4411,13 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var contivglobals_1 = __webpack_require__(21);
 >>>>>>> adding first run
+=======
+	var core_1 = __webpack_require__(2);
+	var networksmodel_1 = __webpack_require__(43);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var router_1 = __webpack_require__(5);
+	var contivglobals_1 = __webpack_require__(23);
+>>>>>>> Aci and network settings
 	var NetworkCreateComponent = (function () {
 	    function NetworkCreateComponent(router, activatedRoute, networksModel, crudHelperService) {
 	        this.router = router;
@@ -4167,6 +4489,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -4177,6 +4500,9 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var _ = __webpack_require__(25);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var crudhelperservice_1 = __webpack_require__(10);
 	var rxjs_1 = __webpack_require__(37);
 	var applicationgroupsmodel_1 = __webpack_require__(58);
@@ -4287,12 +4613,16 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var networksmodel_1 = __webpack_require__(44);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var rxjs_1 = __webpack_require__(35);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var networksmodel_1 = __webpack_require__(43);
 	var crudhelperservice_1 = __webpack_require__(10);
 	var rxjs_1 = __webpack_require__(37);
@@ -4334,7 +4664,7 @@ webpackJsonp([2],{
 	    NetworkListComponent = __decorate([
 	        core_1.Component({
 	            selector: 'networkList',
-	            template: __webpack_require__(452)
+	            template: __webpack_require__(454)
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
 	    ], NetworkListComponent);
@@ -4363,7 +4693,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var organizationsmodel_1 = __webpack_require__(66);
@@ -4438,7 +4768,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var organizationsmodel_1 = __webpack_require__(66);
@@ -4521,7 +4851,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var rxjs_1 = __webpack_require__(35);
@@ -4599,8 +4929,13 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+=======
+	var core_1 = __webpack_require__(2);
+	var crudhelperservice_1 = __webpack_require__(10);
+>>>>>>> Aci and network settings
 	var servicelbsmodel_1 = __webpack_require__(74);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var networksmodel_1 = __webpack_require__(44);
@@ -4704,6 +5039,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var servicelbinfoctrl_1 = __webpack_require__(176);
@@ -4711,6 +5047,9 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var _ = __webpack_require__(25);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var servicelbinfoctrl_1 = __webpack_require__(172);
 	var servicelbstatsctrl_1 = __webpack_require__(174);
 	var router_1 = __webpack_require__(5);
@@ -4784,8 +5123,13 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+=======
+	var core_1 = __webpack_require__(2);
+	var crudhelperservice_1 = __webpack_require__(10);
+>>>>>>> Aci and network settings
 	var servicelbsmodel_1 = __webpack_require__(74);
 	var router_1 = __webpack_require__(5);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
@@ -4946,9 +5290,15 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var rxjs_1 = __webpack_require__(35);
+=======
+	var core_1 = __webpack_require__(2);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(37);
+>>>>>>> Aci and network settings
 	var servicelbsmodel_1 = __webpack_require__(74);
 	var router_1 = __webpack_require__(5);
 	var ServicelbListComponent = (function () {
@@ -5021,6 +5371,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -5030,13 +5381,20 @@ webpackJsonp([2],{
 	var servicelbsmodel_1 = __webpack_require__(74);
 	var contivglobals_1 = __webpack_require__(22);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var crudhelperservice_1 = __webpack_require__(10);
 	var rxjs_1 = __webpack_require__(37);
-	var inspectservice_1 = __webpack_require__(113);
+	var inspectservice_1 = __webpack_require__(114);
 	var util_1 = __webpack_require__(57);
 	var servicelbsmodel_1 = __webpack_require__(74);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var contivglobals_1 = __webpack_require__(21);
 >>>>>>> adding first run
+=======
+	var contivglobals_1 = __webpack_require__(23);
+>>>>>>> Aci and network settings
 	var ServicelbStatComponent = (function () {
 	    function ServicelbStatComponent(servicelbsModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -5134,6 +5492,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -5142,6 +5501,11 @@ webpackJsonp([2],{
 	var crudhelperservice_1 = __webpack_require__(10);
 	var nodesservice_1 = __webpack_require__(154);
 >>>>>>> adding first run
+=======
+	var core_1 = __webpack_require__(2);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var nodesservice_1 = __webpack_require__(115);
+>>>>>>> Aci and network settings
 	var ClusterSettingsComponent = (function () {
 	    function ClusterSettingsComponent(crudHelperService, nodesService) {
 	        this.nodesService = nodesService;
@@ -5217,6 +5581,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -5227,46 +5592,72 @@ webpackJsonp([2],{
 	var networkservice_1 = __webpack_require__(153);
 	var contivglobals_1 = __webpack_require__(21);
 >>>>>>> adding first run
+=======
+	var core_1 = __webpack_require__(2);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var networkservice_1 = __webpack_require__(91);
+	var nodesservice_1 = __webpack_require__(115);
+>>>>>>> Aci and network settings
 	var NetworkSettingsComponent = (function () {
-	    function NetworkSettingsComponent(crudHelperService, networkService) {
+	    function NetworkSettingsComponent(crudHelperService, networkService, nodesService) {
 	        this.crudHelperService = crudHelperService;
 	        this.networkService = networkService;
+	        this.nodesService = nodesService;
 	        this.setting = {};
-	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
-	        this.vxlanPattern = contivglobals_1.ContivGlobals.VXLAN_REGEX;
+	        this['showLoader'] = true;
+	        this['showServerError'] = false;
+	        this['serverErrorMessage'] = '';
+	        this.extra_vars = {};
 	        var networkSettingCtrl = this;
 	        function getNetworkSettings() {
 	            networkSettingCtrl.networkService.getSettings().then(function successCallback(result) {
 	                networkSettingCtrl.setting = result;
+	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
 	            }, function errorCallback(result) {
+	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
 	            });
 	        }
 	        getNetworkSettings();
-	        networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
+	        nodesService.getSettings(networkSettingCtrl)
+	            .then(function (result) {
+	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	        });
+	        this.networkSettingCtrl = this;
 	    }
-	    NetworkSettingsComponent.prototype.updateNetworkSettings = function (validform) {
+	    NetworkSettingsComponent.prototype.updateNetworkSettings = function (settings) {
 	        var networkSettingCtrl = this;
-	        if (validform) {
-	            networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
-	            networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
-	            networkSettingCtrl.networkService.updateSettings(networkSettingCtrl.setting).then(function successCallback(result) {
-	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	            }, function errorCallback(result) {
-	                networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	                networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, result._body);
-	            });
-	        }
+	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
+	        networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
+	        networkSettingCtrl.networkService.updateSettings(networkSettingCtrl.setting).then(function successCallback(result) {
+	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	        }, function errorCallback(result) {
+	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	            networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, result._body);
+	        });
+	    };
+	    NetworkSettingsComponent.prototype.updateAciSetting = function (extra_vars) {
+	        var networkSettingCtrl = this;
+	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
+	        networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
+	        networkSettingCtrl.nodesService.cleanupExtraVars(networkSettingCtrl);
+	        networkSettingCtrl.nodesService.createExtraVars(networkSettingCtrl);
+	        networkSettingCtrl.nodesService.updateSettings(extra_vars)
+	            .then(function (result) {
+	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	        }, function (error) {
+	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	            networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, error._body);
+	        });
 	    };
 	    NetworkSettingsComponent = __decorate([
 	        core_1.Component({
 	            selector: 'networksetting',
 	            templateUrl: 'settings/networksettings.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof networkservice_1.NetworkService !== 'undefined' && networkservice_1.NetworkService) === 'function' && _b) || Object])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _a) || Object, (typeof (_b = typeof networkservice_1.NetworkService !== 'undefined' && networkservice_1.NetworkService) === 'function' && _b) || Object, (typeof (_c = typeof nodesservice_1.NodesService !== 'undefined' && nodesservice_1.NodesService) === 'function' && _c) || Object])
 	    ], NetworkSettingsComponent);
 	    return NetworkSettingsComponent;
-	    var _a, _b;
+	    var _a, _b, _c;
 	}());
 	exports.NetworkSettingsComponent = NetworkSettingsComponent;
 	
@@ -5293,7 +5684,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/3/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var SettingsMenuComponent = (function () {
 	    function SettingsMenuComponent() {
 	    }
@@ -5328,7 +5719,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -5429,7 +5820,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var usersmodel_1 = __webpack_require__(90);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
@@ -5556,7 +5947,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -5636,12 +6027,13 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var wizardservice_1 = __webpack_require__(75);
 	var WizardComponent = (function () {
 	    function WizardComponent(wizardService) {
 	        this.wizardService = wizardService;
 	        this.pageNo = 1;
+	        wizardService.getNetworkSettings();
 	    }
 	    WizardComponent.prototype.ngOnInit = function () {
 	    };
@@ -5681,7 +6073,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/1/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var AppComponent = (function () {
 	    function AppComponent() {
 	    }
@@ -5719,6 +6111,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/6/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var platform_browser_1 = __webpack_require__(88);
@@ -5737,24 +6130,27 @@ webpackJsonp([2],{
 	var applicationgroupsmodel_1 = __webpack_require__(50);
 	var networksmodel_1 = __webpack_require__(44);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var platform_browser_1 = __webpack_require__(89);
-	var http_1 = __webpack_require__(23);
+	var http_1 = __webpack_require__(22);
 	var common_1 = __webpack_require__(17);
-	var dashboard_module_1 = __webpack_require__(269);
-	var networkpolicies_module_1 = __webpack_require__(274);
+	var dashboard_module_1 = __webpack_require__(271);
+	var networkpolicies_module_1 = __webpack_require__(276);
 	var applicationgroups_module_ts_1 = __webpack_require__(257);
-	var settings_module_1 = __webpack_require__(281);
-	var network_module_1 = __webpack_require__(275);
-	var servicelb_module_1 = __webpack_require__(279);
-	var organization_module_1 = __webpack_require__(278);
-	var users_module_1 = __webpack_require__(282);
+	var settings_module_1 = __webpack_require__(283);
+	var network_module_1 = __webpack_require__(277);
+	var servicelb_module_1 = __webpack_require__(281);
+	var organization_module_1 = __webpack_require__(280);
+	var users_module_1 = __webpack_require__(284);
 	var netprofilesmodel_1 = __webpack_require__(73);
 	var applicationgroupsmodel_1 = __webpack_require__(58);
 	var networksmodel_1 = __webpack_require__(43);
 >>>>>>> adding first run
 	var organizationsmodel_1 = __webpack_require__(66);
 	var policiesmodel_1 = __webpack_require__(67);
-	var rulesmodel_1 = __webpack_require__(112);
+	var rulesmodel_1 = __webpack_require__(113);
 	var servicelbsmodel_1 = __webpack_require__(74);
 	var usersmodel_1 = __webpack_require__(90);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
@@ -5772,18 +6168,22 @@ webpackJsonp([2],{
 	var apiservice_1 = __webpack_require__(32);
 =======
 	var crudhelperservice_1 = __webpack_require__(10);
-	var inspectservice_1 = __webpack_require__(113);
-	var networkservice_1 = __webpack_require__(153);
-	var nodesservice_1 = __webpack_require__(154);
-	var menu_module_1 = __webpack_require__(271);
+	var inspectservice_1 = __webpack_require__(114);
+	var networkservice_1 = __webpack_require__(91);
+	var nodesservice_1 = __webpack_require__(115);
+	var menu_module_1 = __webpack_require__(273);
 	var app_component_1 = __webpack_require__(254);
 	var app_routes_ts_1 = __webpack_require__(256);
-	var login_module_1 = __webpack_require__(270);
+	var login_module_1 = __webpack_require__(272);
 	var authservice_1 = __webpack_require__(68);
-	var authguard_1 = __webpack_require__(152);
+	var authguard_1 = __webpack_require__(154);
 	var apiservice_1 = __webpack_require__(34);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var wizard_module_1 = __webpack_require__(283);
 >>>>>>> adding first run
+=======
+	var wizard_module_1 = __webpack_require__(285);
+>>>>>>> Aci and network settings
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -5893,9 +6293,9 @@ webpackJsonp([2],{
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(160);
 	var bandwidthpolicydetailsctrl_1 = __webpack_require__(161);
 	var dashboardctrl_1 = __webpack_require__(155);
-	var applicationgrouplistctrl_1 = __webpack_require__(150);
-	var applicationgroupcreatectrl_1 = __webpack_require__(148);
-	var applicationgroupdetailsctrl_1 = __webpack_require__(149);
+	var applicationgrouplistctrl_1 = __webpack_require__(152);
+	var applicationgroupcreatectrl_1 = __webpack_require__(150);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(151);
 	var settingsmenu_component_1 = __webpack_require__(177);
 	var clustersettingctrl_1 = __webpack_require__(175);
 	var networksettingctrl_1 = __webpack_require__(176);
@@ -5909,7 +6309,7 @@ webpackJsonp([2],{
 	var servicelbcreatectrl_1 = __webpack_require__(170);
 	var servicelbdetailsctrl_1 = __webpack_require__(171);
 	var loginctrl_1 = __webpack_require__(156);
-	var authguard_1 = __webpack_require__(152);
+	var authguard_1 = __webpack_require__(154);
 	var unauthorized_1 = __webpack_require__(158);
 	var logoutctrl_1 = __webpack_require__(157);
 	var userlist_component_1 = __webpack_require__(180);
@@ -6004,6 +6404,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/21/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -6016,17 +6417,24 @@ webpackJsonp([2],{
 	var isolationpolicydirective_1 = __webpack_require__(262);
 	var bandwidthpolicydirective_1 = __webpack_require__(261);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var router_1 = __webpack_require__(5);
 	var directives_module_1 = __webpack_require__(42);
-	var pipes_module_1 = __webpack_require__(268);
-	var applicationgroupcreatectrl_1 = __webpack_require__(148);
-	var applicationgroupdetailsctrl_1 = __webpack_require__(149);
+	var pipes_module_1 = __webpack_require__(270);
+	var applicationgroupcreatectrl_1 = __webpack_require__(150);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(151);
 	var isolationpolicydirective_1 = __webpack_require__(259);
 	var bandwidthpolicydirective_1 = __webpack_require__(258);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 >>>>>>> adding first run
 	var applicationgrouplistctrl_1 = __webpack_require__(150);
+=======
+	var applicationgrouplistctrl_1 = __webpack_require__(152);
+>>>>>>> Aci and network settings
 	var ApplicationGroupsModule = (function () {
 	    function ApplicationGroupsModule() {
 	    }
@@ -6088,10 +6496,14 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/28/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var _ = __webpack_require__(25);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var _ = __webpack_require__(28);
 >>>>>>> adding first run
 	var netprofilesmodel_1 = __webpack_require__(73);
@@ -6227,14 +6639,18 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 7/8/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var _ = __webpack_require__(25);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var _ = __webpack_require__(28);
 >>>>>>> adding first run
 	var policiesmodel_1 = __webpack_require__(67);
-	var rulesmodel_1 = __webpack_require__(112);
+	var rulesmodel_1 = __webpack_require__(113);
 	var IsolationPolicySelectionComponent = (function () {
 	    function IsolationPolicySelectionComponent(policiesModel, rulesModel) {
 	        this.policiesModel = policiesModel;
@@ -6532,7 +6948,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 7/1/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var CtvAccordionComponent = (function () {
 	    function CtvAccordionComponent(elem) {
 	    }
@@ -6578,7 +6994,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var authservice_1 = __webpack_require__(68);
 	var AuthDirective = (function () {
 	    function AuthDirective(authService, templateRef, viewContainer) {
@@ -6633,7 +7049,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var CtvCollapsibleComponent = (function () {
 	    function CtvCollapsibleComponent() {
 	        this.title = '';
@@ -6681,7 +7097,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 4/28/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var ErrorMessageComponent = (function () {
 	    function ErrorMessageComponent() {
 	        this.showError = true;
@@ -6734,10 +7150,14 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var _ = __webpack_require__(25);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var _ = __webpack_require__(28);
 >>>>>>> adding first run
 	var CtvNamevalueComponent = (function () {
@@ -6816,6 +7236,129 @@ webpackJsonp([2],{
 >>>>>>> adding first run
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(2);
+	var AciSettingDirective = (function () {
+	    function AciSettingDirective() {
+	        this.extra_vars = { control_interface: '', netplugin_if: '', service_vip: '', scheduler_provider: '', ucp_bootstrap_node_name: '', cluster_name: '',
+	            contiv_network_mode: '', fwd_mode: '', apic_url: '', apic_username: '', apic_password: '', apic_leaf_nodes: '', apic_phys_domain: '',
+	            apic_epg_bridge_domain: '', apic_contracts_unrestricted_mode: '' };
+	        this.updateAciDef = new core_1.EventEmitter();
+	        this.backTriggered = new core_1.EventEmitter();
+	    }
+	    AciSettingDirective.prototype.updateAciSetting = function (formvalid) {
+	        if (formvalid) {
+	            this.updateAciDef.emit(this.extra_vars);
+	        }
+	    };
+	    __decorate([
+	        core_1.Input('firstRunWiz'), 
+	        __metadata('design:type', Boolean)
+	    ], AciSettingDirective.prototype, "firstRunWiz", void 0);
+	    __decorate([
+	        core_1.Output('updateAciDef'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], AciSettingDirective.prototype, "updateAciDef", void 0);
+	    __decorate([
+	        core_1.Input('extra_vars'), 
+	        __metadata('design:type', Object)
+	    ], AciSettingDirective.prototype, "extra_vars", void 0);
+	    __decorate([
+	        core_1.Output('backTriggered'), 
+	        __metadata('design:type', (typeof (_b = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _b) || Object)
+	    ], AciSettingDirective.prototype, "backTriggered", void 0);
+	    AciSettingDirective = __decorate([
+	        core_1.Component({
+	            selector: 'acisettingdir',
+	            templateUrl: 'components/directives/settings/acisettingdir.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], AciSettingDirective);
+	    return AciSettingDirective;
+	    var _a, _b;
+	}());
+	exports.AciSettingDirective = AciSettingDirective;
+	
+
+/***/ },
+
+/***/ 266:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 11/14/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(2);
+	var contivglobals_1 = __webpack_require__(23);
+	var networkservice_1 = __webpack_require__(91);
+	var NetworkSettingDirective = (function () {
+	    function NetworkSettingDirective(networkService) {
+	        this.networkService = networkService;
+	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
+	        this.vxlanPattern = contivglobals_1.ContivGlobals.VXLAN_REGEX;
+	        this.updateNetDef = new core_1.EventEmitter();
+	        this.backTriggered = new core_1.EventEmitter();
+	        this.firstRunWiz = false;
+	        this.setting = { networkInfraType: '', vlans: '', vxlans: '', fwdMode: '' };
+	    }
+	    NetworkSettingDirective.prototype.updateNetworkSettings = function (formvalid) {
+	        if (formvalid) {
+	            this.updateNetDef.emit(this.setting);
+	        }
+	    };
+	    __decorate([
+	        core_1.Input('firstRunWiz'), 
+	        __metadata('design:type', Boolean)
+	    ], NetworkSettingDirective.prototype, "firstRunWiz", void 0);
+	    __decorate([
+	        core_1.Input('setting'), 
+	        __metadata('design:type', Object)
+	    ], NetworkSettingDirective.prototype, "setting", void 0);
+	    __decorate([
+	        core_1.Output('updateNetDef'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], NetworkSettingDirective.prototype, "updateNetDef", void 0);
+	    __decorate([
+	        core_1.Output('backTriggered'), 
+	        __metadata('design:type', (typeof (_b = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _b) || Object)
+	    ], NetworkSettingDirective.prototype, "backTriggered", void 0);
+	    NetworkSettingDirective = __decorate([
+	        core_1.Component({
+	            selector: 'networksettingdir',
+	            templateUrl: 'components/directives/settings/networksettingdir.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_c = typeof networkservice_1.NetworkService !== 'undefined' && networkservice_1.NetworkService) === 'function' && _c) || Object])
+	    ], NetworkSettingDirective);
+	    return NetworkSettingDirective;
+	    var _a, _b, _c;
+	}());
+	exports.NetworkSettingDirective = NetworkSettingDirective;
+	
+
+/***/ },
+
+/***/ 267:
+/***/ function(module, exports, __webpack_require__) {
+
 	/**
 	 * Created by cshampur on 10/10/16.
 	 */
@@ -6829,11 +7372,15 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var util_1 = __webpack_require__(58);
 	var _ = __webpack_require__(25);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var util_1 = __webpack_require__(57);
 	var _ = __webpack_require__(28);
 >>>>>>> adding first run
@@ -7110,6 +7657,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 271:
 =======
@@ -7122,6 +7670,13 @@ webpackJsonp([2],{
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var _ = __webpack_require__(25);
 =======
+=======
+/***/ 268:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	__webpack_require__(104);
+>>>>>>> Aci and network settings
 	var _ = __webpack_require__(28);
 >>>>>>> adding first run
 	/**
@@ -7224,11 +7779,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 272:
 =======
 /***/ 267:
 >>>>>>> adding first run
+=======
+/***/ 269:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7244,7 +7803,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/21/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var FilterPipe = (function () {
 	    function FilterPipe() {
 	    }
@@ -7279,10 +7838,14 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 273:
 =======
 /***/ 268:
+=======
+/***/ 270:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7298,10 +7861,10 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/21/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
-	var filterpipe_1 = __webpack_require__(267);
+	var filterpipe_1 = __webpack_require__(269);
 	var PipesModule = (function () {
 	    function PipesModule() {
 	    }
@@ -7330,8 +7893,12 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 /***/ 269:
 >>>>>>> adding first run
+=======
+/***/ 271:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7347,6 +7914,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/3/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -7354,6 +7922,9 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var dashboardctrl_1 = __webpack_require__(159);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var router_1 = __webpack_require__(5);
@@ -7388,11 +7959,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 274:
 =======
 /***/ 270:
 >>>>>>> adding first run
+=======
+/***/ 272:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7408,6 +7983,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -7417,6 +7993,9 @@ webpackJsonp([2],{
 	var unauthorized_1 = __webpack_require__(162);
 	var logoutctrl_1 = __webpack_require__(161);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var router_1 = __webpack_require__(5);
@@ -7457,11 +8036,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 275:
 =======
 /***/ 271:
 >>>>>>> adding first run
+=======
+/***/ 273:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7477,6 +8060,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/1/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -7484,6 +8068,9 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var menuCtrl_1 = __webpack_require__(163);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var router_1 = __webpack_require__(5);
@@ -7521,11 +8108,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 276:
 =======
 /***/ 272:
 >>>>>>> adding first run
+=======
+/***/ 274:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7541,9 +8132,15 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/19/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var rxjs_1 = __webpack_require__(35);
+=======
+	var core_1 = __webpack_require__(2);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(37);
+>>>>>>> Aci and network settings
 	var netprofilesmodel_1 = __webpack_require__(73);
 	var BandwidthListComponent = (function () {
 	    function BandwidthListComponent(netprofilesModel, crudHelperService, ngZone) {
@@ -7592,11 +8189,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 277:
 =======
 /***/ 273:
 >>>>>>> adding first run
+=======
+/***/ 275:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7612,7 +8213,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/19/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var policiesmodel_1 = __webpack_require__(67);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var rxjs_1 = __webpack_require__(35);
@@ -7663,11 +8264,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 278:
 =======
 /***/ 274:
 >>>>>>> adding first run
+=======
+/***/ 276:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7683,10 +8288,14 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/14/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 >>>>>>> adding first run
 	var common_1 = __webpack_require__(17);
@@ -7705,9 +8314,14 @@ webpackJsonp([2],{
 	var isolationpolicydetailsctrl_1 = __webpack_require__(163);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(160);
 	var bandwidthpolicydetailsctrl_1 = __webpack_require__(161);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var isolationpolicylistctrl_1 = __webpack_require__(273);
 	var bandwidthpolicylistctrl_1 = __webpack_require__(272);
 >>>>>>> adding first run
+=======
+	var isolationpolicylistctrl_1 = __webpack_require__(275);
+	var bandwidthpolicylistctrl_1 = __webpack_require__(274);
+>>>>>>> Aci and network settings
 	var NetworkPoliciesModule = (function () {
 	    function NetworkPoliciesModule() {
 	    }
@@ -7752,11 +8366,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 279:
 =======
 /***/ 275:
 >>>>>>> adding first run
+=======
+/***/ 277:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7772,6 +8390,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -7783,13 +8402,16 @@ webpackJsonp([2],{
 	var networkinfoctrl_1 = __webpack_require__(280);
 	var networkcreatectrl_1 = __webpack_require__(168);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var directives_module_1 = __webpack_require__(42);
 	var networklistctrl_1 = __webpack_require__(166);
-	var networkstatsctrl_1 = __webpack_require__(277);
+	var networkstatsctrl_1 = __webpack_require__(279);
 	var networkdetailsctrl_1 = __webpack_require__(165);
-	var networkinfoctrl_1 = __webpack_require__(276);
+	var networkinfoctrl_1 = __webpack_require__(278);
 	var networkcreatectrl_1 = __webpack_require__(164);
 >>>>>>> adding first run
 	var router_1 = __webpack_require__(5);
@@ -7828,11 +8450,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 280:
 =======
 /***/ 276:
 >>>>>>> adding first run
+=======
+/***/ 278:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7848,7 +8474,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var NetworkInfoComponent = (function () {
 	    function NetworkInfoComponent() {
 	        this.networkDetailsCtrl = { network: { networkName: '', encap: '', subnet: '', gateway: '' },
@@ -7874,11 +8500,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 281:
 =======
 /***/ 277:
 >>>>>>> adding first run
+=======
+/***/ 279:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7891,6 +8521,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -7900,13 +8531,20 @@ webpackJsonp([2],{
 	var util_1 = __webpack_require__(58);
 	var contivglobals_1 = __webpack_require__(22);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var crudhelperservice_1 = __webpack_require__(10);
 	var rxjs_1 = __webpack_require__(37);
 	var networksmodel_1 = __webpack_require__(43);
-	var inspectservice_1 = __webpack_require__(113);
+	var inspectservice_1 = __webpack_require__(114);
 	var util_1 = __webpack_require__(57);
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var contivglobals_1 = __webpack_require__(21);
 >>>>>>> adding first run
+=======
+	var contivglobals_1 = __webpack_require__(23);
+>>>>>>> Aci and network settings
 	var NetworkStatComponent = (function () {
 	    function NetworkStatComponent(networksModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -7987,11 +8625,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 282:
 =======
 /***/ 278:
 >>>>>>> adding first run
+=======
+/***/ 280:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8007,6 +8649,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -8017,6 +8660,9 @@ webpackJsonp([2],{
 	var organizationcreatectrl_1 = __webpack_require__(171);
 	var organizationdetailsctrl_1 = __webpack_require__(172);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var router_1 = __webpack_require__(5);
@@ -8060,11 +8706,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 283:
 =======
 /***/ 279:
 >>>>>>> adding first run
+=======
+/***/ 281:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8080,6 +8730,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -8092,12 +8743,15 @@ webpackJsonp([2],{
 	var servicelbinfoctrl_1 = __webpack_require__(176);
 	var servicelbdetailsctrl_1 = __webpack_require__(175);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var directives_module_1 = __webpack_require__(42);
 	var servicelblistctrl_1 = __webpack_require__(173);
 	var servicelbstatsctrl_1 = __webpack_require__(174);
-	var servicelbportsdirective_1 = __webpack_require__(280);
+	var servicelbportsdirective_1 = __webpack_require__(282);
 	var servicelbcreatectrl_1 = __webpack_require__(170);
 	var servicelbinfoctrl_1 = __webpack_require__(172);
 	var servicelbdetailsctrl_1 = __webpack_require__(171);
@@ -8140,11 +8794,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 284:
 =======
 /***/ 280:
 >>>>>>> adding first run
+=======
+/***/ 282:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8160,10 +8818,14 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var _ = __webpack_require__(25);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var _ = __webpack_require__(28);
 >>>>>>> adding first run
 	var ServicelbPortsComponent = (function () {
@@ -8216,11 +8878,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 285:
 =======
 /***/ 281:
 >>>>>>> adding first run
+=======
+/***/ 283:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8236,6 +8902,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/25/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -8246,6 +8913,9 @@ webpackJsonp([2],{
 	var clustersettingctrl_1 = __webpack_require__(179);
 	var settingsmenu_component_1 = __webpack_require__(181);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var router_1 = __webpack_require__(5);
@@ -8289,11 +8959,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 /***/ 286:
 =======
 /***/ 282:
 >>>>>>> adding first run
+=======
+/***/ 284:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8309,6 +8983,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 	var core_1 = __webpack_require__(3);
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 	var forms_1 = __webpack_require__(27);
@@ -8319,6 +8994,9 @@ webpackJsonp([2],{
 	var usercreate_component_1 = __webpack_require__(182);
 	var userdetails_component_1 = __webpack_require__(183);
 =======
+=======
+	var core_1 = __webpack_require__(2);
+>>>>>>> Aci and network settings
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var router_1 = __webpack_require__(5);
@@ -8362,9 +9040,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 <<<<<<< 67a595e8151a1957318efb081f22462fda2eb1dc
 =======
 /***/ 283:
+=======
+/***/ 285:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8383,15 +9065,15 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(17);
 	var directives_module_1 = __webpack_require__(42);
 	var wizardctrl_1 = __webpack_require__(181);
 	var wizardservice_1 = __webpack_require__(75);
-	var wizardpage1ctrl_1 = __webpack_require__(284);
-	var wizardpage2ctrl_1 = __webpack_require__(285);
-	var wizardpage3ctrl_1 = __webpack_require__(286);
+	var wizardpage1ctrl_1 = __webpack_require__(286);
+	var wizardpage2ctrl_1 = __webpack_require__(287);
+	var wizardpage3ctrl_1 = __webpack_require__(288);
 	var router_1 = __webpack_require__(5);
 	var WizardModule = (function () {
 	    function WizardModule() {
@@ -8427,7 +9109,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 284:
+/***/ 286:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8443,7 +9125,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var wizardservice_1 = __webpack_require__(75);
 	var Wizardpage1Component = (function () {
 	    function Wizardpage1Component(wizardservice) {
@@ -8478,7 +9160,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 285:
+/***/ 287:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8494,24 +9176,20 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var wizardservice_1 = __webpack_require__(75);
-	var contivglobals_1 = __webpack_require__(21);
 	var Wizardpage2Component = (function () {
 	    function Wizardpage2Component(wizardService) {
-	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
-	        this.vxlanPattern = contivglobals_1.ContivGlobals.VXLAN_REGEX;
 	        this.wizardService = wizardService;
-	        this.setting = this.wizardService.settings;
+	        this.setting = this.wizardService.setting;
 	        this.updatePage = new core_1.EventEmitter();
 	    }
 	    Wizardpage2Component.prototype.ngOnInit = function () {
-	        this.setting = this.wizardService.settings;
+	        this.setting = this.wizardService.setting;
 	    };
-	    Wizardpage2Component.prototype.updateNetworkSettings = function (formvalid) {
-	        if (formvalid) {
-	            this.updatePage.emit(2);
-	        }
+	    Wizardpage2Component.prototype.updateNetworkSettings = function (setting) {
+	        this.wizardService.setting = setting;
+	        this.updatePage.emit(2);
 	    };
 	    Wizardpage2Component.prototype.goBack = function () {
 	        this.updatePage.emit(0);
@@ -8535,7 +9213,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 286:
+/***/ 288:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8551,7 +9229,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(3);
+	var core_1 = __webpack_require__(2);
 	var wizardservice_1 = __webpack_require__(75);
 	var router_1 = __webpack_require__(5);
 	var Wizardpage3Component = (function () {
@@ -8591,11 +9269,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 87bdc58c1c520bc0d74b50e11ca0bc7f9477c1f4
 >>>>>>> adding first run
 /***/ 447:
+=======
+/***/ 449:
+>>>>>>> Aci and network settings
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(448)();
+	exports = module.exports = __webpack_require__(450)();
 	// imports
 
 
@@ -8607,7 +9289,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 448:
+/***/ 450:
 /***/ function(module, exports) {
 
 	/*
@@ -8664,25 +9346,25 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 451:
+/***/ 453:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned twelve wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Application Groups</div>\n    </div>\n\n    <div class=\"center aligned four wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Application Group\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n    <div class=\"ui active inverted dimmer\" *ngIf=\"applicationGroupListCtrl.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n    <ctv-table #tableRef [defaultSortColumn]=\"'groupName'\"\n               [items]=\"applicationGroupListCtrl['groups']\"\n               (filtereditems)=\"applicationGroupListCtrl['filteredgroups']=$event;\"\n               [size]=\"12\">\n        <thead>\n            <tr>\n                <th><ctv-th [sortfield]=\"'groupName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Network</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'policies'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Policies</ctv-th></th>\n                <th class=\"right floated three wide column\">\n                    <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search application groups...'\"></ctv-search>\n                </th>\n            </tr>\n        </thead>\n\n        <tbody>\n            <tr *ngFor=\"let group of applicationGroupListCtrl['filteredgroups']\">\n                <td><a [routerLink]=\"['../details', group.key]\">{{group.groupName}}</a></td>\n                <td>{{group.networkName}}</td>\n                <td>{{group.policies.join(\", \")}}</td>\n                <td></td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n            <tr>\n                <td colspan=\"4\">\n                    <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                     (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                     (prevChunk)=\"tableRef.showPrevChunk()\"\n                                     (nextChunk)=\"tableRef.showNextChunk()\">\n\n                    </ctv-tpagination>\n                </td>\n            </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 
-/***/ 452:
+/***/ 454:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned thirteen wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <div class=\"center aligned three wide column\" *auth=\"'SysAdmin'\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n            <th class=\"right floated three wide column\">\n                <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search networks...'\"></ctv-search>\n            </th>\n        </tr>\n        </thead>\n\n        <tbody>\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a [routerLink]=\"['../details',network.key]\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n            <td></td>\n        </tr>\n        </tbody>\n        <tfoot>\n        <tr>\n            <td colspan=\"5\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 
-/***/ 719:
+/***/ 721:
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	        var result = __webpack_require__(447);
+	        var result = __webpack_require__(449);
 
 	        if (typeof result === "string") {
 	            module.exports = result;
@@ -8693,7 +9375,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 720:
+/***/ 722:
 /***/ function(module, exports) {
 
 	if (typeof Object.create === 'function') {
@@ -8723,7 +9405,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 721:
+/***/ 723:
 /***/ function(module, exports) {
 
 	module.exports = function isBuffer(arg) {

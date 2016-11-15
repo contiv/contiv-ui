@@ -20,10 +20,10 @@ export class WizardComponent implements OnInit{
     constructor(wizardService: WizardService){
         this.wizardService = wizardService;
         this.pageNo = 1;
+        wizardService.getNetworkSettings();
     }
 
     ngOnInit(){
-
     }
 
     public updatePage(pageno: number){
