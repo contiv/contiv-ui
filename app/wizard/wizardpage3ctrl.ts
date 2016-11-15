@@ -3,12 +3,9 @@
  */
 
 
-import {Component, OnInit, Output, EventEmitter, Inject} from "@angular/core";
+import {Component, OnInit, EventEmitter, Output} from "@angular/core";
 import {WizardService} from "./wizardservice";
-import {Router, ActivatedRoute} from "@angular/router";
-import {AuthService} from "../components/utils/authservice";
-declare var jQuery:any;
-
+import {ContivGlobals} from "../components/models/contivglobals";
 @Component({
     selector: 'wizardpage3',
     templateUrl: 'wizard/wizardpage3.html'
@@ -16,22 +13,21 @@ declare var jQuery:any;
 
 export class Wizardpage3Component implements OnInit{
     private wizardService: WizardService;
+    public extra_vars: any;
     @Output('updatePage') updatePage: EventEmitter<any>;
-    constructor(wizardservice: WizardService,
-                private router: Router,
-                private activatedRoute: ActivatedRoute){
-        this.wizardService = wizardservice;
-        this.updatePage = new EventEmitter<any>();
-    }
 
+    constructor(wizardService: WizardService){
+        this.wizardService = wizardService;
+        this.extra_vars = this.wizardService.extra_vars;
+        this.updatePage = new EventEmitter<any>()
+    }
     ngOnInit(){
+        this.extra_vars = this.wizardService.extra_vars;
     }
 
-    process(){
+    updateAciSettings(extra_vars: any){
+        this.wizardService.extra_vars = extra_vars;
         this.updatePage.emit(3);
-        jQuery(".ui.large.modal").modal('hide');
-        localStorage.setItem('firstRun', '');
-        this.router.navigate(['/m/dashboard']);
     }
 
     goBack(){

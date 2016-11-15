@@ -31,7 +31,10 @@ export class AuthGuard implements CanActivate, CanActivateChild {
 
     checkLogin(url: string): boolean {
 
-        this.checkFirstRun();
+        if(this.checkFirstRun()){
+            this.router.navigate(['/unauthorized'])
+            return false;
+        }
 
         if (this.authService.isLoggedIn) {
             if (this.checkAccess(url))
@@ -78,11 +81,15 @@ export class AuthGuard implements CanActivate, CanActivateChild {
         return this.authService.checkAccess(url);
     }
 
-    checkFirstRun(){
+    checkFirstRun():boolean{
         if(isNull(localStorage.getItem('firstRun')))
             this.authService.firstRun = true;
         else
             this.authService.firstRun = false;
+        if(this.authService.firstRun && (this.authService.authTokenPayload['role'] == 'DevOps'))
+            return true;
+        else
+            return false;
     }
 
 

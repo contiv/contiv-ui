@@ -1,49 +1,19 @@
 <div class="ui grid">
     <div class="left floated sixteen wide column">
         <div class="content" style="font-size: 24px">
-            <span>Management Server Details</span>
+            <span>Welcome to CCN Setup Wizard(Temporary page BGP Settings will come here)</span>
+        </div>
+    </div>
+    <div class="left floated sixteen wide column">
+        <div class="content" style="font-size: 24px">
+            <span>In this wizard you will configure the Network Defaults, ACI and BGP Global Parameters. If you are not sure of these settings you can configure them later by clicking on global Settings Tab</span>
+        </div>
+    </div>
+    <div class="right floated right aligned eight wide column">
+        <div style="margin-top: 40px">
+            <button type="button" class="ui blue button" (click)="process()">
+                Next
+            </button>
         </div>
     </div>
 </div>
-<form #configServerForm="ngForm" name="configServerForm" class="ui form"
-        (submit)="process(configServerForm.valid)" novalidate>
-        <div class="ui basic segment">
-            <div class="field">
-                <label for="serverName">Server Name</label>
-                <input type="text" name="serverName" id="serverName" [(ngModel)]="server.name" #serverName="ngModel"
-                [placeholder]="'Enter Name'" required>
-            </div>
-
-            <div class="field">
-                <label for="serverIpAddress">Server IpAddress</label>
-                <input type="text" name="serverIpAddress" id="serverIpAddress" [(ngModel)]="server.ipaddress"
-                       #ipAddress="ngModel"
-                       [placeholder]="'Enter ipAddress'" required>
-            </div>
-
-            <div class="field">
-                <div *ngIf="configServerForm.submitted">
-                    <div *ngIf="!configServerForm.valid" class="ui negative message">
-                        <ul class="list">
-                            <li *ngIf="serverName.errors?.required">
-                                Please enter network server name
-                            </li>
-                            <li *ngIf="ipAddress.errors?.required">
-                                Please enter IP Address
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ui grid">
-                <div class="right floated right aligned eight wide column">
-                    <div style="margin-top: 40px">
-                        <button type="submit" class="ui blue button">
-                            Next
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-</form>

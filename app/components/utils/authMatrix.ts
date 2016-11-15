@@ -3,7 +3,7 @@
  */
 
 export const AuthMatrix = {
-    'wizard':                                   {'DevOps':'y', 'SysAdmin':'y'},
+    'wizard':                                   {'DevOps':'n', 'SysAdmin':'y'},
     'dashboard':                                {'DevOps':'y', 'SysAdmin':'y'},
     'networkpolicies/list':                     {'DevOps':'y', 'SysAdmin':'y'},
     'networkpolicies/isolation/create':         {'DevOps':'n', 'SysAdmin':'y'},

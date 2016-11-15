@@ -10,24 +10,14 @@ import {WizardService, Server} from "./wizardservice";
     templateUrl: 'wizard/wizardpage1.html'
 })
 
-export class Wizardpage1Component implements OnInit{
-    private wizardService: WizardService;
-    public server: Server;
+export class Wizardpage1Component{
     @Output('updatePage') updatePage: EventEmitter<any>;
-    constructor(wizardservice: WizardService){
-        this.wizardService = wizardservice;
-        this.server = wizardservice.server;
+    constructor(){
         this.updatePage = new EventEmitter<any>();
     }
 
-    ngOnInit(){
-        this.server = this.wizardService.server;
-    }
-
-    process(formvalid: boolean){
-        if(formvalid){
-            this.updatePage.emit(1);
-        }
+    process(){
+        this.updatePage.emit(1);
     }
 
 }

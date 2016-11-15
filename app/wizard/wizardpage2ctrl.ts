@@ -4,7 +4,7 @@
 
 
 import {Component, OnInit, EventEmitter, Output} from "@angular/core";
-import {WizardService, NetworkDefaults} from "./wizardservice";
+import {WizardService} from "./wizardservice";
 import {ContivGlobals} from "../components/models/contivglobals";
 @Component({
     selector: 'wizardpage2',
@@ -13,7 +13,7 @@ import {ContivGlobals} from "../components/models/contivglobals";
 
 export class Wizardpage2Component implements OnInit{
     private wizardService: WizardService;
-    public setting: NetworkDefaults;
+    public setting: any;
     @Output('updatePage') updatePage: EventEmitter<any>;
 
     constructor(wizardService: WizardService){

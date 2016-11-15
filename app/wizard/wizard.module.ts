@@ -15,6 +15,7 @@ import {Wizardpage1Component} from "./wizardpage1ctrl";
 import {Wizardpage2Component} from "./wizardpage2ctrl";
 import {Wizardpage3Component} from "./wizardpage3ctrl";
 import {RouterModule} from "@angular/router";
+import {WizardConfirmComponent} from "./wizardconfirmpage";
 
 
 @NgModule({
@@ -28,13 +29,15 @@ import {RouterModule} from "@angular/router";
         WizardComponent,
         Wizardpage1Component,
         Wizardpage2Component,
-        Wizardpage3Component
+        Wizardpage3Component,
+        WizardConfirmComponent
     ],
     exports: [
         WizardComponent,
         Wizardpage1Component,
         Wizardpage2Component,
-        Wizardpage3Component
+        Wizardpage3Component,
+        WizardConfirmComponent
     ],
     providers: [WizardService]
 })
