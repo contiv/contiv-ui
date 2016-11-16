@@ -19,28 +19,30 @@ export class ApplicationGroupSelectionComponent implements OnChanges {
 
     selectedApplicationGroups:any[] = [];
 
-    constructor(private applicationGroupsModel:ApplicationGroupsModel) {
+    constructor(private applicationGroupsModel:ApplicationGroupsModel) {}
+
+    ngOnChanges() {
         var component = this;
 
         /**
-         * Get application groups for the given tenant.
+         * Get application groups.
          */
         function getApplicationGroups() {
-            component.applicationGroupsModel.get(false).then(function (result) {
-                component.applicationGroups = _.filter(result, {
-                    'tenantName': 'default'//TODO: Remove hardcoded tenant.
+            //Refresh application groups as its links would be updated when a new application profile is created.
+            component.applicationGroupsModel.get(true).then(function (result) {
+                component.selectedApplicationGroups = _.filter(result, function(group) {
+                    return _.includes(component.appProfile.endpointGroups, group['groupName']);
+                });
+                //No two application profiles can share the same application groups
+                component.applicationGroups = _.filter(result, function(group) {
+                    return ((_.isEmpty(group['links'].AppProfile))
+                    || (group['links'].AppProfile.key === component.appProfile.key));
                 });
             });
         }
 
         getApplicationGroups();
-    }
 
-    ngOnChanges() {
-        var component = this;
-        component.selectedApplicationGroups = _.filter(component.applicationGroups, function(group) {
-            return _.includes(component.appProfile.endpointGroups, group['groupName']);
-        });
     }
 
     /**

@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from "@angular/router";
 import * as _ from 'lodash';
 import { CRUDHelperService } from "../components/utils/crudhelperservice";
 import { AppProfilesModel } from "../components/models/appprofilesmodel";
-import { ApplicationGroupsModel } from "../components/models/applicationgroupsmodel";
 
 @Component({
     selector: 'appprofilecreate',
@@ -12,26 +11,13 @@ import { ApplicationGroupsModel } from "../components/models/applicationgroupsmo
 
 export class AppProfileCreateComponent {
     newAppProfile:any = {};
-    applicationGroups:any[] = [];
 
     constructor(private activatedRoute:ActivatedRoute,
                 private router:Router,
                 private crudHelperService:CRUDHelperService,
                 private appProfilesModel:AppProfilesModel,
-                private applicationGroupsModel:ApplicationGroupsModel,
                 private ngZone:NgZone) {
         var component = this;
-
-        /**
-         * Get application groups.
-         */
-        function getApplicationGroups() {
-            applicationGroupsModel.get(false).then(function (result) {
-                component.applicationGroups = _.filter(result, function(group) {
-                    return _.isEmpty(group['links'].AppProfile); //TODO: Add tenant name as filter
-                });
-            });
-        }
 
         function resetForm() {
             crudHelperService.stopLoader(component);
@@ -44,7 +30,6 @@ export class AppProfileCreateComponent {
             };
         }
 
-        getApplicationGroups();
         resetForm();
     }
 
