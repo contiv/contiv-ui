@@ -34,7 +34,7 @@ import {LoginModule} from "./login/login.module";
 import {AuthService} from "./components/utils/authservice";
 import {AuthGuard} from "./components/utils/authguard";
 import {ApiService} from "./components/utils/apiservice";
-import {WizardModule} from "./wizard/wizard.module";
+import {FirstrunWizardModule} from "./firstrunwizard/firstrunwizard.module";
 
 
 @NgModule({
@@ -53,7 +53,7 @@ import {WizardModule} from "./wizard/wizard.module";
         OrganizationModule,
         LoginModule,
         UsersModule,
-        WizardModule
+        FirstrunWizardModule
     ],
     declarations: [
         AppComponent

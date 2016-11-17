@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit{
                 if(result){
                     this.crudHelperService.stopLoader(this);
                     if(this.authService.firstRun){
-                        this.router.navigate(['/m/wizard']);
+                        this.router.navigate(['/m/firstrun']);
                     }
                     else{
                         if (this.authService.redirectUrl.length > 0) {

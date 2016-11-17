@@ -34,7 +34,7 @@ import { UserDetailsComponent } from "./settings/users/userdetails.component";
 import { AppProfileListComponent } from "./appprofiles/appprofilelist.component";
 import { AppProfileCreateComponent } from "./appprofiles/appprofilecreate.component";
 import { AppProfileDetailsComponent } from "./appprofiles/appprofiledetails.component";
-import {WizardComponent} from "./wizard/wizardctrl";
+import {FirstrunWizardComponent} from "./firstrunwizard/firstrunwizardctrl";
 
 const routes = [
     {path: 'login', component: LoginComponent, canActivate: [AuthGuard]},
@@ -48,7 +48,7 @@ const routes = [
         children: [
             {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
             {path: 'dashboard', component: DashboardComponent},
-            {path: 'wizard', component: WizardComponent},
+            {path: 'firstrun', component: FirstrunWizardComponent},
 
             //Network Policies
             {path: 'networkpolicies/list', component: NetworkPoliciesTabsComponent},

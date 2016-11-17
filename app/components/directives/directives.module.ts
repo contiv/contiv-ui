@@ -10,8 +10,9 @@ import {CtvAccordionComponent} from "./accordiondirective";
 import {CtvCollapsibleComponent} from "./collapsibledirective";
 import {CtvNamevalueComponent} from "./namevaluedirective";
 import {AuthDirective} from "./authdirective";
-import {NetworkSettingDirective} from "./settings/networksettingdirective";
-import {AciSettingDirective} from "./settings/acisettingdirective";
+import {NetworkSettingComponent} from "./settings/networksettingcomponent";
+import {AciSettingComponent} from "./settings/acisettingcomponent";
+
 @NgModule({
     imports: [
         CommonModule, FormsModule
@@ -26,8 +27,8 @@ import {AciSettingDirective} from "./settings/acisettingdirective";
         CtvCollapsibleComponent,
         CtvNamevalueComponent,
         AuthDirective,
-        NetworkSettingDirective,
-        AciSettingDirective
+        NetworkSettingComponent,
+        AciSettingComponent
     ],
     exports: [
         ErrorMessageComponent,
@@ -39,8 +40,8 @@ import {AciSettingDirective} from "./settings/acisettingdirective";
         CtvCollapsibleComponent,
         CtvNamevalueComponent,
         AuthDirective,
-        NetworkSettingDirective,
-        AciSettingDirective
+        NetworkSettingComponent,
+        AciSettingComponent
     ]
 })
 export class DirectivesModule {}
