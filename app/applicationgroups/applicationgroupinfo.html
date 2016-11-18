@@ -1,0 +1,50 @@
+<div class="ui basic segment" [ngClass]="{loading: applicationInfoCtrl.showLoader}">
+    <div><h4 class="ui header">Basic Settings</h4></div>  <!-- Top Margin is less,When h4 is first child in div -->
+    <table class="ui very basic selectable table">
+        <tbody>
+        <tr>
+            <td class="three wide column">Name</td>
+            <td>{{applicationInfoCtrl.applicationGroup.groupName}}</td>
+        </tr>
+        <tr>
+            <td class="three wide column">Network</td>
+            <td>{{applicationInfoCtrl.applicationGroup.networkName}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="ui section divider" style="margin-top: 30px"></div>
+
+    <ctv-collapsible title="Isolation Policies">
+        <ctv-isolationpolicy [mode]="applicationInfoCtrl.mode" [applicationgroup]="applicationInfoCtrl.applicationGroup"></ctv-isolationpolicy>
+    </ctv-collapsible>
+
+    <div class="ui section divider"></div>
+
+    <ctv-collapsible title="Bandwidth Policies">
+        <ctv-bandwidthpolicy [mode]="applicationInfoCtrl.mode" [applicationgroup]="applicationInfoCtrl.applicationGroup"></ctv-bandwidthpolicy>
+    </ctv-collapsible>
+
+    <div [ngSwitch]="applicationInfoCtrl.mode" style="margin-top: 40px">
+        <div class="ui grid">
+            <div class="right aligned sixteen wide column">
+                <button *ngSwitchCase="'edit'" type="button" class="ui basic button"
+                        (click)="applicationInfoCtrl.cancelEditing()">Cancel
+                </button>
+                <button *ngSwitchCase="'edit'" type="button" class="ui blue button"
+                        (click)="applicationInfoCtrl.saveApplicationGroup()">
+                    Save
+                </button>
+            </div>
+        </div>
+        <ctv-error *ngIf="((applicationInfoCtrl.showServerError) && (applicationInfoCtrl.mode === 'edit'))"
+                   header="Error saving application group"
+                   [error]="applicationInfoCtrl.serverErrorMessage">
+        </ctv-error>
+        <ctv-error *ngIf="((applicationInfoCtrl.showServerError) && (applicationInfoCtrl.mode === 'details'))"
+                   header="Error deleting application group"
+                   [error]="applicationInfoCtrl.serverErrorMessage">
+        </ctv-error>
+    </div>
+
+</div>
