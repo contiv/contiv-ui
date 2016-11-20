@@ -7,6 +7,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/6/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	var platform_browser_dynamic_1 = __webpack_require__(114);
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -21,17 +22,20 @@ webpackJsonp([2],{
 	var platform_browser_dynamic_1 = __webpack_require__(111);
 	var app_module_1 = __webpack_require__(365);
 >>>>>>> 024b7b6... adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	var platform_browser_dynamic_1 = __webpack_require__(114);
+	var app_module_1 = __webpack_require__(372);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
 	
 
 /***/ },
 
-<<<<<<< HEAD
-/***/ 9:
-=======
-/***/ 11:
->>>>>>> 024b7b6... adding chart.js
+/***/ 10:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -47,11 +51,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 4/29/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-=======
-	var core_1 = __webpack_require__(4);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
 	var CRUDHelperService = (function () {
 	    function CRUDHelperService() {
 	    }
@@ -79,7 +79,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 /***/ 15:
+=======
+/***/ 19:
+>>>>>>> regenerating bundle
 /***/ function(module, exports) {
 
 	"use strict";
@@ -138,9 +142,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 31:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 33:
 =======
@@ -150,7 +158,13 @@ webpackJsonp([2],{
 /***/ 33:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 31:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -166,6 +180,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(19);
@@ -173,8 +188,11 @@ webpackJsonp([2],{
 =======
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(24);
+=======
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+>>>>>>> regenerating bundle
 	var authservice_1 = __webpack_require__(60);
->>>>>>> 024b7b6... adding chart.js
 	var ApiService = (function () {
 	    function ApiService(http, authService) {
 	        this.http = http;
@@ -217,8 +235,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-<<<<<<< HEAD
-/***/ 38:
+/***/ 37:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -234,24 +251,49 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/17/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var core_1 = __webpack_require__(2);
 	var common_1 = __webpack_require__(18);
 	var errormessagedirective_1 = __webpack_require__(275);
 	var tabledirective_1 = __webpack_require__(279);
 	var forms_1 = __webpack_require__(24);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var accordiondirective_1 = __webpack_require__(272);
 	var collapsibledirective_1 = __webpack_require__(274);
 	var namevaluedirective_1 = __webpack_require__(276);
 	var authdirective_1 = __webpack_require__(273);
 	var networksettingcomponent_1 = __webpack_require__(278);
 	var acisettingcomponent_1 = __webpack_require__(277);
+=======
+	var accordiondirective_1 = __webpack_require__(269);
+	var collapsibledirective_1 = __webpack_require__(271);
+	var namevaluedirective_1 = __webpack_require__(273);
+	var authdirective_1 = __webpack_require__(270);
+	var networksettingcomponent_1 = __webpack_require__(275);
+	var acisettingcomponent_1 = __webpack_require__(274);
+=======
+	var core_1 = __webpack_require__(3);
+	var common_1 = __webpack_require__(18);
+	var errormessagedirective_1 = __webpack_require__(382);
+	var tabledirective_1 = __webpack_require__(387);
+	var forms_1 = __webpack_require__(25);
+	var accordiondirective_1 = __webpack_require__(379);
+	var collapsibledirective_1 = __webpack_require__(381);
+	var namevaluedirective_1 = __webpack_require__(384);
+	var authdirective_1 = __webpack_require__(380);
+	var networksettingcomponent_1 = __webpack_require__(386);
+	var acisettingcomponent_1 = __webpack_require__(385);
+	var linegraphdirective_1 = __webpack_require__(383);
+	var ng2_charts_1 = __webpack_require__(332);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var DirectivesModule = (function () {
 	    function DirectivesModule() {
 	    }
 	    DirectivesModule = __decorate([
 	        core_1.NgModule({
 	            imports: [
-	                common_1.CommonModule, forms_1.FormsModule
+	                common_1.CommonModule, forms_1.FormsModule, ng2_charts_1.ChartsModule
 	            ],
 	            declarations: [
 	                errormessagedirective_1.ErrorMessageComponent,
@@ -264,7 +306,8 @@ webpackJsonp([2],{
 	                namevaluedirective_1.CtvNamevalueComponent,
 	                authdirective_1.AuthDirective,
 	                networksettingcomponent_1.NetworkSettingComponent,
-	                acisettingcomponent_1.AciSettingComponent
+	                acisettingcomponent_1.AciSettingComponent,
+	                linegraphdirective_1.LineGraphDirective
 	            ],
 	            exports: [
 	                errormessagedirective_1.ErrorMessageComponent,
@@ -277,7 +320,8 @@ webpackJsonp([2],{
 	                namevaluedirective_1.CtvNamevalueComponent,
 	                authdirective_1.AuthDirective,
 	                networksettingcomponent_1.NetworkSettingComponent,
-	                acisettingcomponent_1.AciSettingComponent
+	                acisettingcomponent_1.AciSettingComponent,
+	                linegraphdirective_1.LineGraphDirective
 	            ]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -289,7 +333,78 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 39:
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+/***/ 43:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/11/16.
+	 */
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+	var collection_1 = __webpack_require__(44);
+	var contivglobals_1 = __webpack_require__(15);
+	var apiservice_1 = __webpack_require__(33);
+	var ApplicationGroupsModel = (function (_super) {
+	    __extends(ApplicationGroupsModel, _super);
+	    function ApplicationGroupsModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.APPLICATIONGROUPS_ENDPOINT, apiService);
+	    }
+	    /**
+	     * Generate key for application group
+	     * @param group
+	     */
+	    ApplicationGroupsModel.prototype.generateKey = function (group) {
+	        return group.tenantName + ':' + group.groupName;
+	    };
+	    ApplicationGroupsModel.prototype.get = function (reload) {
+	        return _super.prototype.get.call(this, reload)
+	            .then(function (result) {
+	            //add logic for result processing
+	            var items = [];
+	            for (var _i = 0, result_1 = result; _i < result_1.length; _i++) {
+	                var item = result_1[_i];
+	                if (typeof item.policies === 'undefined')
+	                    item['policies'] = [];
+	                if (typeof item.networkName === 'undefined')
+	                    item['networkName'] = '';
+	                items.push(item);
+	            }
+	            return items;
+	        });
+	    };
+	    ApplicationGroupsModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], ApplicationGroupsModel);
+	    return ApplicationGroupsModel;
+	    var _a, _b;
+	}(collection_1.Collection));
+	exports.ApplicationGroupsModel = ApplicationGroupsModel;
+	
+
+/***/ },
+
+/***/ 44:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -643,6 +758,9 @@ webpackJsonp([2],{
 /***/ 39:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 40:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -1170,9 +1288,13 @@ webpackJsonp([2],{
 	}
 	exports.isPrimitive = isPrimitive;
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	exports.isBuffer = __webpack_require__(735);
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	exports.isBuffer = __webpack_require__(732);
 =======
@@ -1182,7 +1304,13 @@ webpackJsonp([2],{
 	exports.isBuffer = __webpack_require__(875);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	exports.isBuffer = __webpack_require__(890);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -1226,9 +1354,13 @@ webpackJsonp([2],{
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	exports.inherits = __webpack_require__(734);
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	exports.inherits = __webpack_require__(731);
 =======
@@ -1238,7 +1370,13 @@ webpackJsonp([2],{
 	exports.inherits = __webpack_require__(874);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	exports.inherits = __webpack_require__(889);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -1256,9 +1394,13 @@ webpackJsonp([2],{
 	  return Object.prototype.hasOwnProperty.call(obj, prop);
 	}
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(225)))
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< HEAD
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(222)))
 =======
@@ -1404,10 +1546,13 @@ webpackJsonp([2],{
 	}(collection_1.Collection));
 	exports.NetworksModel = NetworksModel;
 	
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(333)))
+>>>>>>> regenerating bundle
 
 /***/ },
 
-/***/ 51:
+/***/ 45:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1416,8 +1561,8 @@ webpackJsonp([2],{
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var basecollection_1 = __webpack_require__(377);
-	var _ = __webpack_require__(28);
+	var basecollection_1 = __webpack_require__(388);
+	var _ = __webpack_require__(27);
 	var Collection = (function (_super) {
 	    __extends(Collection, _super);
 	    /**
@@ -1449,6 +1594,9 @@ webpackJsonp([2],{
 	                if ((responseData === undefined) || (responseData === '')) {
 	                    responseData = model;
 	                }
+	                _.remove(collection.models, function (n) {
+	                    return n['key'] == model['key'];
+	                });
 	                collection.models.push(responseData);
 	                resolve(responseData);
 	            }, function errorCallback(response) {
@@ -1560,7 +1708,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 59:
+/***/ 46:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1578,6 +1726,65 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var util_1 = __webpack_require__(40);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+	var NetworksModel = (function (_super) {
+	    __extends(NetworksModel, _super);
+	    function NetworksModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.NETWORKS_ENDPOINT, apiService);
+	    }
+	    NetworksModel.prototype.getInspectByKey = function (key, url, reload) {
+	        return _super.prototype.getInspectByKey.call(this, key, url, reload)
+	            .then(function (result) {
+	            if (!util_1.isUndefined(result['Oper'].endpoints)) {
+	                var processedEndpoints = [];
+	                var endpoints = result['Oper'].endpoints;
+	                for (var i = 0; i < endpoints.length; i++) {
+	                    if (util_1.isUndefined(endpoints[i].containerID)) {
+	                        endpoints[i]['containerID'] = endpoints[i]['endpointID'];
+	                        endpoints[i]['containerName'] = endpoints[i]['endpointID'].toString().substr(0, 6);
+	                    }
+	                }
+	                result['Oper'].endpoints = endpoints;
+	            }
+	            return result;
+	        });
+	    };
+	    NetworksModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], NetworksModel);
+	    return NetworksModel;
+	    var _a, _b;
+	}(collection_1.Collection));
+	exports.NetworksModel = NetworksModel;
+	
+
+/***/ },
+
+/***/ 52:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(19);
@@ -1589,19 +1796,20 @@ webpackJsonp([2],{
 	    function PoliciesModel(http, apiService) {
 	        _super.call(this, http, contivglobals_1.ContivGlobals.POLICIES_ENDPOINT, apiService);
 =======
+=======
+>>>>>>> regenerating bundle
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
-	var core_1 = __webpack_require__(4);
-	var http_1 = __webpack_require__(24);
-	var collection_1 = __webpack_require__(51);
-	var contivglobals_1 = __webpack_require__(22);
-	var apiservice_1 = __webpack_require__(33);
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
 	var ApplicationGroupsModel = (function (_super) {
 	    __extends(ApplicationGroupsModel, _super);
 	    function ApplicationGroupsModel(http, apiService) {
 	        _super.call(this, http, contivglobals_1.ContivGlobals.APPLICATIONGROUPS_ENDPOINT, apiService);
->>>>>>> 024b7b6... adding chart.js
 	    }
 	    /**
 	     * Generate key for application group
@@ -1654,9 +1862,9 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
+	var core_1 = __webpack_require__(3);
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(226);
 	__webpack_require__(227);
@@ -1664,6 +1872,9 @@ webpackJsonp([2],{
 	var http_1 = __webpack_require__(19);
 	var authMatrix_1 = __webpack_require__(159);
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 	__webpack_require__(223);
 	__webpack_require__(224);
 	__webpack_require__(139);
@@ -1685,6 +1896,14 @@ webpackJsonp([2],{
 	var util_1 = __webpack_require__(39);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	__webpack_require__(334);
+	__webpack_require__(335);
+	__webpack_require__(140);
+	var http_1 = __webpack_require__(23);
+	var authMatrix_1 = __webpack_require__(159);
+	var util_1 = __webpack_require__(40);
+>>>>>>> regenerating bundle
 	var AuthService = (function () {
 	    function AuthService(http) {
 	        this.http = http;
@@ -1840,11 +2059,11 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var http_1 = __webpack_require__(24);
-	var collection_1 = __webpack_require__(51);
-	var contivglobals_1 = __webpack_require__(22);
-	var apiservice_1 = __webpack_require__(33);
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
 	var OrganizationsModel = (function (_super) {
 	    __extends(OrganizationsModel, _super);
 	    function OrganizationsModel(http, apiService) {
@@ -1880,11 +2099,11 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var http_1 = __webpack_require__(24);
-	var collection_1 = __webpack_require__(51);
-	var contivglobals_1 = __webpack_require__(22);
-	var apiservice_1 = __webpack_require__(33);
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
 	var PoliciesModel = (function (_super) {
 	    __extends(PoliciesModel, _super);
 	    function PoliciesModel(http, apiService) {
@@ -1926,13 +2145,8 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/9/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-=======
-	var core_1 = __webpack_require__(4);
+	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
->>>>>>> 024b7b6... adding chart.js
 	(function (PolicyTab) {
 	    PolicyTab[PolicyTab["isolation"] = 0] = "isolation";
 	    PolicyTab[PolicyTab["bandwidth"] = 1] = "bandwidth";
@@ -2007,6 +2221,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/15/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -2033,7 +2248,17 @@ webpackJsonp([2],{
 	var apiservice_1 = __webpack_require__(33);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var NetprofilesModel = (function (_super) {
 	    __extends(NetprofilesModel, _super);
 	    function NetprofilesModel(http, apiService) {
@@ -2080,6 +2305,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 5/11/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -2106,7 +2332,17 @@ webpackJsonp([2],{
 	var apiservice_1 = __webpack_require__(33);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var ServicelbsModel = (function (_super) {
 	    __extends(ServicelbsModel, _super);
 	    function ServicelbsModel(http, apiService) {
@@ -2124,11 +2360,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-<<<<<<< HEAD
-/***/ 75:
-=======
-/***/ 90:
->>>>>>> 024b7b6... adding chart.js
+/***/ 76:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -2144,10 +2376,19 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var networkservice_1 = __webpack_require__(116);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var nodesservice_1 = __webpack_require__(117);
+=======
+=======
+	var core_1 = __webpack_require__(3);
+	var networkservice_1 = __webpack_require__(117);
+>>>>>>> regenerating bundle
+	var nodesservice_1 = __webpack_require__(93);
+>>>>>>> regenerating bundle
 	var FirstRunWizardService = (function () {
 	    function FirstRunWizardService(networkService, nodesService) {
 	        this.networkService = networkService;
@@ -2156,21 +2397,6 @@ webpackJsonp([2],{
 	        this.extra_vars = { control_interface: '', netplugin_if: '', service_vip: '', scheduler_provider: '', ucp_bootstrap_node_name: '', cluster_name: '',
 	            contiv_network_mode: '', fwd_mode: '', apic_url: '', apic_username: '', apic_password: '', apic_leaf_nodes: '', apic_phys_domain: '',
 	            apic_epg_bridge_domain: '', apic_contracts_unrestricted_mode: '' };
-=======
-	/**
-	 * Created by vjain3 on 11/7/16.
-	 */
-	var core_1 = __webpack_require__(4);
-	var http_1 = __webpack_require__(24);
-	var collection_1 = __webpack_require__(51);
-	var contivglobals_1 = __webpack_require__(22);
-	var apiservice_1 = __webpack_require__(33);
-	var _ = __webpack_require__(28);
-	var UsersModel = (function (_super) {
-	    __extends(UsersModel, _super);
-	    function UsersModel(http, apiService) {
-	        _super.call(this, http, contivglobals_1.ContivGlobals.USERS_ENDPOINT, apiService);
->>>>>>> 024b7b6... adding chart.js
 	    }
 	    FirstRunWizardService.prototype.getNetworkSettings = function () {
 	        var _this = this;
@@ -2204,11 +2430,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-<<<<<<< HEAD
-/***/ 90:
-=======
-/***/ 112:
->>>>>>> 024b7b6... adding chart.js
+/***/ 91:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2229,28 +2451,28 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/11/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(19);
 	var collection_1 = __webpack_require__(39);
 	var contivglobals_1 = __webpack_require__(15);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var apiservice_1 = __webpack_require__(31);
+=======
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var AppProfilesModel = (function (_super) {
 	    __extends(AppProfilesModel, _super);
 	    function AppProfilesModel(http, apiService) {
 	        _super.call(this, http, contivglobals_1.ContivGlobals.APP_PROFILES_ENDPOINT, apiService);
-=======
-	var core_1 = __webpack_require__(4);
-	var http_1 = __webpack_require__(24);
-	var collection_1 = __webpack_require__(51);
-	var _ = __webpack_require__(28);
-	var contivglobals_1 = __webpack_require__(22);
-	var apiservice_1 = __webpack_require__(33);
-	var RulesModel = (function (_super) {
-	    __extends(RulesModel, _super);
-	    function RulesModel(http, apiService) {
-	        _super.call(this, http, contivglobals_1.ContivGlobals.RULES_ENDPOINT, apiService);
->>>>>>> 024b7b6... adding chart.js
 	    }
 	    /**
 	     * Generate key for application profile
@@ -2271,11 +2493,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-<<<<<<< HEAD
-/***/ 91:
-=======
-/***/ 113:
->>>>>>> 024b7b6... adding chart.js
+/***/ 92:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2339,6 +2557,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/7/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(19);
@@ -2346,16 +2565,18 @@ webpackJsonp([2],{
 	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(31);
 	var _ = __webpack_require__(26);
+=======
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+	var _ = __webpack_require__(27);
+>>>>>>> regenerating bundle
 	var UsersModel = (function (_super) {
 	    __extends(UsersModel, _super);
 	    function UsersModel(http, apiService) {
 	        _super.call(this, http, contivglobals_1.ContivGlobals.USERS_ENDPOINT, apiService);
-=======
-	var core_1 = __webpack_require__(4);
-	var util_1 = __webpack_require__(39);
-	var InspectService = (function () {
-	    function InspectService() {
->>>>>>> 024b7b6... adding chart.js
 	    }
 	    /**
 	     * Generate key for application group
@@ -2409,6 +2630,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 93:
 =======
@@ -2418,6 +2640,9 @@ webpackJsonp([2],{
 /***/ 148:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 93:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2430,6 +2655,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	/**
 	 * Created by cshampur on 7/17/16.
@@ -2526,6 +2752,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	/**
 	 * Created by vjain3 on 3/8/16.
 	 */
@@ -2662,10 +2889,25 @@ webpackJsonp([2],{
 	__webpack_require__(106);
 	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(31);
+=======
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+	__webpack_require__(106);
+	var contivglobals_1 = __webpack_require__(15);
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	__webpack_require__(106);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var NodesService = (function () {
 	    function NodesService(http, apiService) {
 	        this.http = http;
 	        this.apiService = apiService;
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 =======
 	/**
 	 * Created by vjain3 on 3/11/16.
@@ -2710,6 +2952,8 @@ webpackJsonp([2],{
 	        getNetworks();
 	        resetForm();
 >>>>>>> 024b7b6... adding chart.js
+=======
+>>>>>>> regenerating bundle
 	    }
 	    Object.defineProperty(NodesService, "node_constants", {
 	        get: function () {
@@ -2877,6 +3121,253 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
+=======
+/***/ 115:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 3/8/16.
+	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+	var collection_1 = __webpack_require__(44);
+	var _ = __webpack_require__(26);
+	var contivglobals_1 = __webpack_require__(15);
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var _ = __webpack_require__(27);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> regenerating bundle
+	var RulesModel = (function (_super) {
+	    __extends(RulesModel, _super);
+	    function RulesModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.RULES_ENDPOINT, apiService);
+	    }
+	    /**
+	     * Get incoming rules for a given policy and a tenant
+	     * @param policyName
+	     * @param tenantName
+	     * @returns {*|webdriver.promise.Promise}
+	     */
+	    RulesModel.prototype.getIncomingRules = function (policyName, tenantName) {
+	        var rulesmodel = this;
+	        return rulesmodel.get(false).then(function (result) {
+	            return _.filter(result, {
+	                'policyName': policyName,
+	                'direction': 'in',
+	                'tenantName': tenantName
+	            });
+	        });
+	    };
+	    /**
+	     * Get outgoing rules for a given policy and a tenant
+	     * @param policyName
+	     * @param tenantName
+	     * @returns {*|webdriver.promise.Promise}
+	     */
+	    RulesModel.prototype.getOutgoingRules = function (policyName, tenantName) {
+	        var rulesmodel = this;
+	        return rulesmodel.get(false).then(function (result) {
+	            return _.filter(result, {
+	                'policyName': policyName,
+	                'direction': 'out',
+	                'tenantName': tenantName
+	            });
+	        });
+	    };
+	    /**
+	     * Generate rule key to save rule on server
+	     * @param rule
+	     * @returns {string}
+	     */
+	    RulesModel.prototype.generateKey = function (rule) {
+	        return rule.tenantName + ':' + rule.policyName + ':' + rule.ruleId;
+	    };
+	    RulesModel = __decorate([
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+=======
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], RulesModel);
+	    return RulesModel;
+	    var _a, _b;
+	}(collection_1.Collection));
+	exports.RulesModel = RulesModel;
+	
+
+/***/ },
+
+/***/ 116:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by cshampur on 7/17/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var util_1 = __webpack_require__(40);
+	var InspectService = (function () {
+	    function InspectService() {
+	    }
+	    /* This function would build the containerDetails object.
+	     eg :
+	     containerDetails={
+	     ContainerId1 : [{name: "homingHost", value: "cluster-node1", type: "string", format: "none"},
+	     {name: macAddress, value: "02:02", type:"string", format:"none"}
+	     ],
+	     ContainerId2 : [{name: "homingHost", value: "cluster-node1" type: "string", format: "none"},
+	     {name: macAddress, value: "02:04", type: "string", format: "none"}
+	     ]
+	     }
+	     --Used in displaying the container detail inside an accordion.
+	     */
+	    InspectService.prototype.buildEndPoints = function (endpoints) {
+	        var containerDetails = {};
+	        for (var i in endpoints) {
+	            var containerAttributes = [];
+	            for (var key in endpoints[i]) {
+	                var endpointAttribute = {};
+	                endpointAttribute['name'] = key;
+	                endpointAttribute['format'] = 'none';
+	                endpointAttribute['type'] = 'string';
+	                switch (key) {
+	                    case "ipAddress":
+	                        endpointAttribute['value'] = endpoints[i][key].filter(function (ipAddress) { return ipAddress.length > 0; }).join();
+	                        break;
+	                    case "labels":
+	                        endpointAttribute['value'] = endpoints[i][key].replace(/(map\[|\])/gi, '').replace(/(:)/gi, '=').split(' ')
+	                            .filter(function (v) { return v.length > 0; });
+	                        endpointAttribute['format'] = 'label';
+	                        endpointAttribute['type'] = 'array';
+	                        break;
+	                    default: endpointAttribute['value'] = endpoints[i][key];
+	                }
+	                containerAttributes.push(endpointAttribute);
+	            }
+	            containerDetails[endpoints[i].containerID] = containerAttributes;
+	        }
+	        return containerDetails;
+	    };
+	    /*  This function checks whether any new containers were added or not
+	     View is updated only when there is a change in container configuration
+	     */
+	    InspectService.prototype.checkContainerChanged = function (contDetailsA, contDetailsB) {
+	        if (util_1.isUndefined(contDetailsA))
+	            return true;
+	        else {
+	            if (Object.keys(contDetailsA).length != Object.keys(contDetailsB).length)
+	                return true;
+	            for (var key in contDetailsB) {
+	                if (!(key in contDetailsA))
+	                    return true;
+	            }
+	            return false;
+	        }
+	    };
+	    InspectService = __decorate([
+>>>>>>> regenerating bundle
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], RulesModel);
+	    return RulesModel;
+	    var _a, _b;
+	}(collection_1.Collection));
+	exports.RulesModel = RulesModel;
+	
+
+/***/ },
+
+/***/ 117:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+	var core_1 = __webpack_require__(2);
+	var http_1 = __webpack_require__(22);
+	__webpack_require__(106);
+	var contivglobals_1 = __webpack_require__(15);
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	__webpack_require__(106);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> regenerating bundle
+	var NetworkService = (function () {
+	    function NetworkService(http, apiService) {
+	        this.http = http;
+	        this.apiService = apiService;
+	    }
+	    NetworkService.prototype.getSettings = function () {
+	        var networkservice = this;
+	        var promise = new Promise(function (resolve, reject) {
+	            var url = contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT;
+	            networkservice.apiService.get(url).map(function (res) { return res.json(); }).toPromise()
+	                .then(function successCallback(result) {
+	                resolve(result[0]);
+	            }, function errorCallback(result) {
+	                reject(result);
+	            });
+	        });
+	        return promise;
+	    };
+	    NetworkService.prototype.updateSettings = function (setting) {
+	        return this.apiService.post(contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT
+	            + 'global/', setting).map(function (res) { return res.json(); }).toPromise();
+	    };
+	    NetworkService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], NetworkService);
+	    return NetworkService;
+	    var _a, _b;
+	}());
+	exports.NetworkService = NetworkService;
+	
+
+/***/ },
+
+>>>>>>> regenerating bundle
 /***/ 152:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2893,11 +3384,19 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var networksmodel_1 = __webpack_require__(45);
 	var applicationgroupsmodel_1 = __webpack_require__(44);
 	var crudhelperservice_1 = __webpack_require__(9);
+=======
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+	var networksmodel_1 = __webpack_require__(46);
+	var applicationgroupsmodel_1 = __webpack_require__(52);
+	var crudhelperservice_1 = __webpack_require__(10);
+>>>>>>> regenerating bundle
 	var ApplicationGroupCreateComponent = (function () {
 	    function ApplicationGroupCreateComponent(activatedRoute, router, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -2978,6 +3477,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 153:
 =======
@@ -2987,6 +3487,9 @@ webpackJsonp([2],{
 /***/ 149:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 153:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3002,6 +3505,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/15/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -3009,10 +3513,12 @@ webpackJsonp([2],{
 	var crudhelperservice_1 = __webpack_require__(9);
 =======
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(3);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var applicationgroupsmodel_1 = __webpack_require__(59);
-	var crudhelperservice_1 = __webpack_require__(11);
->>>>>>> 024b7b6... adding chart.js
+	var applicationgroupsmodel_1 = __webpack_require__(52);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var ApplicationGroupDetailsComponent = (function () {
 	    function ApplicationGroupDetailsComponent(activatedRoute, router, ngZone, applicationGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -3107,6 +3613,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 154:
 =======
@@ -3116,6 +3623,9 @@ webpackJsonp([2],{
 /***/ 150:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 154:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3131,6 +3641,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -3151,7 +3662,17 @@ webpackJsonp([2],{
 	var rxjs_1 = __webpack_require__(36);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+	var applicationgroupsmodel_1 = __webpack_require__(52);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var AppGrouplistComponent = (function () {
 	    function AppGrouplistComponent(activatedRoute, router, appGroupModel, crudHelperService) {
 	        var _this = this;
@@ -3188,9 +3709,13 @@ webpackJsonp([2],{
 	    AppGrouplistComponent = __decorate([
 	        core_1.Component({
 	            selector: 'app-group',
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	            template: __webpack_require__(465)
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	            template: __webpack_require__(462)
 =======
@@ -3200,7 +3725,13 @@ webpackJsonp([2],{
 	            template: __webpack_require__(605)
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	            template: __webpack_require__(620)
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
 	    ], AppGrouplistComponent);
@@ -3212,17 +3743,17 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 155:
 =======
 <<<<<<< HEAD
 /***/ 154:
 >>>>>>> adding chart.js
-/***/ function(module, exports, __webpack_require__) {
 =======
-/***/ 151:
-/***/ function(module, exports) {
->>>>>>> 024b7b6... adding chart.js
+/***/ 155:
+>>>>>>> regenerating bundle
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3234,10 +3765,10 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-	var crudhelperservice_1 = __webpack_require__(9);
-	var appprofilesmodel_1 = __webpack_require__(90);
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var appprofilesmodel_1 = __webpack_require__(91);
 	var AppProfileCreateComponent = (function () {
 	    function AppProfileCreateComponent(activatedRoute, router, crudHelperService, appProfilesModel, ngZone) {
 	        this.activatedRoute = activatedRoute;
@@ -3313,10 +3844,10 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-	var appprofilesmodel_1 = __webpack_require__(90);
-	var crudhelperservice_1 = __webpack_require__(9);
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+	var appprofilesmodel_1 = __webpack_require__(91);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var AppProfileDetailsComponent = (function () {
 	    function AppProfileDetailsComponent(activatedRoute, router, ngZone, appProfilesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -3407,6 +3938,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 157:
 =======
@@ -3416,6 +3948,9 @@ webpackJsonp([2],{
 /***/ 152:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 157:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3428,29 +3963,24 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var rxjs_1 = __webpack_require__(29);
 	var appprofilesmodel_1 = __webpack_require__(90);
+=======
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+	var appprofilesmodel_1 = __webpack_require__(91);
+>>>>>>> regenerating bundle
 	var AppProfileListComponent = (function () {
 	    function AppProfileListComponent(activatedRoute, router, appProfilesModel, crudHelperService, ngZone) {
 	        var _this = this;
 	        this.activatedRoute = activatedRoute;
-=======
-	/**
-	 * Created by cshampur on 11/4/16.
-	 */
-	var core_1 = __webpack_require__(4);
-	var router_1 = __webpack_require__(6);
-	var authservice_1 = __webpack_require__(60);
-	var authMatrix_1 = __webpack_require__(151);
-	var util_1 = __webpack_require__(39);
-	var AuthGuard = (function () {
-	    function AuthGuard(authService, router) {
-	        this.authService = authService;
->>>>>>> 024b7b6... adding chart.js
 	        this.router = router;
 	        this.appProfilesModel = appProfilesModel;
 	        this.crudHelperService = crudHelperService;
@@ -3498,6 +4028,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 158:
 =======
@@ -3596,6 +4127,9 @@ webpackJsonp([2],{
 /***/ 154:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 158:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3608,27 +4142,26 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
 	/**
 	 * Created by vjain3 on 10/21/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
 	var common_1 = __webpack_require__(18);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var filterpipe_1 = __webpack_require__(281);
+=======
+	var filterpipe_1 = __webpack_require__(278);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+	var filterpipe_1 = __webpack_require__(389);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var PipesModule = (function () {
 	    function PipesModule() {
-=======
-	var core_1 = __webpack_require__(4);
-	var http_1 = __webpack_require__(24);
-	__webpack_require__(103);
-	var contivglobals_1 = __webpack_require__(22);
-	var apiservice_1 = __webpack_require__(33);
-	var NetworkService = (function () {
-	    function NetworkService(http, apiService) {
-	        this.http = http;
-	        this.apiService = apiService;
->>>>>>> 024b7b6... adding chart.js
 	    }
 	    PipesModule = __decorate([
 	        core_1.NgModule({
@@ -3655,12 +4188,16 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 159:
 =======
 <<<<<<< HEAD
 /***/ 158:
 >>>>>>> adding chart.js
+=======
+/***/ 159:
+>>>>>>> regenerating bundle
 /***/ function(module, exports) {
 
 	/**
@@ -3685,10 +4222,14 @@ webpackJsonp([2],{
 	    'settings/users/create': { 'DevOps': 'n', 'SysAdmin': 'y' },
 	    'settings/users/details': { 'DevOps': 'n', 'SysAdmin': 'y' },
 	    'settings/users/edit': { 'DevOps': 'n', 'SysAdmin': 'y' },
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	    'settings/nodes/list': { 'DevOps': 'n', 'SysAdmin': 'y' },
 	    'settings/nodes/create': { 'DevOps': 'n', 'SysAdmin': 'y' },
 	    'settings/nodes/details': { 'DevOps': 'n', 'SysAdmin': 'y' },
 	    'settings/nodes/edit': { 'DevOps': 'n', 'SysAdmin': 'y' },
+=======
+	    'settings/cluster': { 'DevOps': 'n', 'SysAdmin': 'y' },
+>>>>>>> regenerating bundle
 	    'settings/networks': { 'DevOps': 'n', 'SysAdmin': 'y' },
 	    'organizations/list': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'organizations/create': { 'DevOps': 'n', 'SysAdmin': 'y' },
@@ -3711,11 +4252,14 @@ webpackJsonp([2],{
 /***/ 160:
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 =======
 /***/ 155:
 /***/ function(module, exports, __webpack_require__) {
 
 >>>>>>> 024b7b6... adding chart.js
+=======
+>>>>>>> regenerating bundle
 	"use strict";
 	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
 	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3726,6 +4270,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< HEAD
 	/**
 	 * Created by cshampur on 11/4/16.
@@ -3735,6 +4280,24 @@ webpackJsonp([2],{
 	var authservice_1 = __webpack_require__(68);
 	var authMatrix_1 = __webpack_require__(159);
 	var util_1 = __webpack_require__(51);
+=======
+	/**
+	 * Created by cshampur on 11/4/16.
+	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(5);
+	var authservice_1 = __webpack_require__(68);
+	var authMatrix_1 = __webpack_require__(158);
+	var util_1 = __webpack_require__(51);
+=======
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+	var authservice_1 = __webpack_require__(60);
+	var authMatrix_1 = __webpack_require__(159);
+	var util_1 = __webpack_require__(40);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var AuthGuard = (function () {
 	    function AuthGuard(authService, router) {
 	        this.authService = authService;
@@ -3747,6 +4310,7 @@ webpackJsonp([2],{
 	        if (this.unguardedUrls.indexOf(url) > -1)
 	            return true;
 	        return this.checkLogin(url);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 =======
 	var core_1 = __webpack_require__(4);
 	var http_1 = __webpack_require__(24);
@@ -3844,6 +4408,8 @@ webpackJsonp([2],{
 	        });
 	        return promise;
 >>>>>>> 024b7b6... adding chart.js
+=======
+>>>>>>> regenerating bundle
 	    };
 	    AuthGuard.prototype.canActivateChild = function (route, state) {
 	        return this.canActivate(route, state);
@@ -3915,6 +4481,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 161:
 =======
@@ -3924,6 +4491,98 @@ webpackJsonp([2],{
 /***/ 156:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 161:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var rxjs_1 = __webpack_require__(34);
+	var authservice_1 = __webpack_require__(60);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+	var util_1 = __webpack_require__(40);
+	var ChartService = (function () {
+	    function ChartService(authService, apiService) {
+	        var _this = this;
+	        this.authService = authService;
+	        this.apiService = apiService;
+	        this.networks = [];
+	        this.netInspect = {};
+	        this.graphData = { Network: {}, ApplicationGroup: {} };
+	        this.source = new rxjs_1.Subject();
+	        this.stream = this.source.asObservable();
+	        rxjs_1.Observable.interval(5000).subscribe(function () {
+	            if (_this.authService.isLoggedIn) {
+	                _this.getInspectData(contivglobals_1.ContivGlobals.NETWORKS_ENDPOINT, contivglobals_1.ContivGlobals.NETWORKS_INSPECT_ENDPOINT);
+	                _this.getInspectData(contivglobals_1.ContivGlobals.APPLICATIONGROUPS_ENDPOINT, contivglobals_1.ContivGlobals.APPLICATIONGROUPS_INSPECT_ENDPOINT);
+	            }
+	        });
+	        if (this.authService.isLoggedIn) {
+	            this.getInspectData(contivglobals_1.ContivGlobals.NETWORKS_ENDPOINT, contivglobals_1.ContivGlobals.NETWORKS_INSPECT_ENDPOINT);
+	            this.getInspectData(contivglobals_1.ContivGlobals.APPLICATIONGROUPS_ENDPOINT, contivglobals_1.ContivGlobals.APPLICATIONGROUPS_INSPECT_ENDPOINT);
+	        }
+	    }
+	    ChartService.prototype.getInspectData = function (listEndPoint, inspectEndpoint) {
+	        var _this = this;
+	        this.apiService.get(listEndPoint)
+	            .map(function (res) { return res.json(); })
+	            .subscribe(function (result1) {
+	            for (var _i = 0, result1_1 = result1; _i < result1_1.length; _i++) {
+	                var x = result1_1[_i];
+	                var key = x['key'];
+	                _this.apiService.get(inspectEndpoint + key + '/')
+	                    .map(function (res) { return res.json(); })
+	                    .subscribe(function (result2) {
+	                    var inspectkey = result2['Config']['key'];
+	                    var type = 'Network';
+	                    if (!util_1.isUndefined(result2['Config']['groupName']))
+	                        type = 'ApplicationGroup';
+	                    if (!util_1.isUndefined(result2['Oper']['numEndpoints'])) {
+	                        _this.generateGraphData(inspectkey, result2['Oper']['numEndpoints'], type);
+	                    }
+	                    else {
+	                        _this.generateGraphData(inspectkey, 0, type);
+	                    }
+	                });
+	            }
+	        });
+	    };
+	    ChartService.prototype.generateGraphData = function (key, count, type) {
+	        if (util_1.isUndefined(this.graphData[type][key])) {
+	            this.graphData[type][key] = [];
+	            for (var i = 0; i < 15; i++) {
+	                this.graphData[type][key].push(count);
+	            }
+	        }
+	        else {
+	            this.graphData[type][key].push(count);
+	            this.source.next({ iKey: key, count: count, type: type });
+	        }
+	    };
+	    ChartService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof authservice_1.AuthService !== 'undefined' && authservice_1.AuthService) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], ChartService);
+	    return ChartService;
+	    var _a, _b;
+	}());
+	exports.ChartService = ChartService;
+	
+
+/***/ },
+
+/***/ 162:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3939,6 +4598,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var Observable_1 = __webpack_require__(1);
@@ -3950,13 +4610,19 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(44);
 =======
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(3);
+>>>>>>> regenerating bundle
 	var Observable_1 = __webpack_require__(1);
-	var applicationgroupsmodel_1 = __webpack_require__(59);
+	var applicationgroupsmodel_1 = __webpack_require__(52);
 	var policiesmodel_1 = __webpack_require__(69);
-	var networksmodel_1 = __webpack_require__(45);
+	var networksmodel_1 = __webpack_require__(46);
 	//var Chart = require('chart.js');
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+>>>>>>> regenerating bundle
 	var DashboardComponent = (function () {
 	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, ngZone) {
 	        this.networksModel = networksModel;
@@ -4035,12 +4701,16 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 162:
 =======
 <<<<<<< HEAD
 /***/ 161:
 >>>>>>> adding chart.js
+=======
+/***/ 163:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4056,8 +4726,8 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(2);
-	var firstrunwizardservice_1 = __webpack_require__(75);
+	var core_1 = __webpack_require__(3);
+	var firstrunwizardservice_1 = __webpack_require__(76);
 	var FirstrunWizardComponent = (function () {
 	    function FirstrunWizardComponent(wizardService) {
 	        this.wizardService = wizardService;
@@ -4089,6 +4759,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 163:
 =======
@@ -4097,6 +4768,9 @@ webpackJsonp([2],{
 /***/ 157:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 164:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4109,6 +4783,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -4124,6 +4799,12 @@ webpackJsonp([2],{
 	var authservice_1 = __webpack_require__(60);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var router_1 = __webpack_require__(6);
+	var authservice_1 = __webpack_require__(60);
+>>>>>>> regenerating bundle
 	var LoginComponent = (function () {
 	    function LoginComponent(router, activatedRoute, crudHelperService, authService) {
 	        this.router = router;
@@ -4177,9 +4858,13 @@ webpackJsonp([2],{
 	        core_1.Component({
 	            selector: 'login',
 	            templateUrl: 'login/login.html',
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	            styles: [__webpack_require__(733)]
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	            styles: [__webpack_require__(730)]
 =======
@@ -4189,7 +4874,13 @@ webpackJsonp([2],{
 	            styles: [__webpack_require__(873)]
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	            styles: [__webpack_require__(888)]
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object, (typeof (_d = typeof authservice_1.AuthService !== 'undefined' && authservice_1.AuthService) === 'function' && _d) || Object])
 	    ], LoginComponent);
@@ -4201,6 +4892,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 164:
 =======
@@ -4210,6 +4902,9 @@ webpackJsonp([2],{
 /***/ 158:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 165:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4225,6 +4920,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -4236,6 +4932,10 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(6);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+>>>>>>> regenerating bundle
 	var LogoutComponent = (function () {
 	    function LogoutComponent(router, activatedRoute) {
 	        this.router = router;
@@ -4264,6 +4964,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 165:
 =======
@@ -4273,6 +4974,9 @@ webpackJsonp([2],{
 /***/ 159:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 166:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4288,11 +4992,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-=======
-	var core_1 = __webpack_require__(4);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
 	var UnauthorizedComponent = (function () {
 	    function UnauthorizedComponent() {
 	    }
@@ -4313,6 +5013,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 166:
 =======
@@ -4322,6 +5023,9 @@ webpackJsonp([2],{
 /***/ 160:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 167:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4337,6 +5041,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 5/19/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -4350,6 +5055,11 @@ webpackJsonp([2],{
 	var authservice_1 = __webpack_require__(60);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+	var authservice_1 = __webpack_require__(60);
+>>>>>>> regenerating bundle
 	var MenuComponent = (function () {
 	    function MenuComponent(activatedRoute, router, authService) {
 	        this.activatedRoute = activatedRoute;
@@ -4384,6 +5094,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 167:
 =======
@@ -4393,6 +5104,9 @@ webpackJsonp([2],{
 /***/ 161:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 168:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4409,19 +5123,11 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/14/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-	var netprofilesmodel_1 = __webpack_require__(73);
-	var crudhelperservice_1 = __webpack_require__(9);
-	var networkpoliciestabsctrl_1 = __webpack_require__(69);
-=======
-	var core_1 = __webpack_require__(4);
+	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
 	var netprofilesmodel_1 = __webpack_require__(74);
-	var crudhelperservice_1 = __webpack_require__(11);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
->>>>>>> 024b7b6... adding chart.js
 	var BandwidthPolicyCreateComponent = (function () {
 	    function BandwidthPolicyCreateComponent(activatedRoute, router, netprofilesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -4480,6 +5186,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 168:
 =======
@@ -4489,6 +5196,9 @@ webpackJsonp([2],{
 /***/ 162:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 169:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4504,19 +5214,11 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/16/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-	var netprofilesmodel_1 = __webpack_require__(73);
-	var crudhelperservice_1 = __webpack_require__(9);
-	var networkpoliciestabsctrl_1 = __webpack_require__(69);
-=======
-	var core_1 = __webpack_require__(4);
+	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
 	var netprofilesmodel_1 = __webpack_require__(74);
-	var crudhelperservice_1 = __webpack_require__(11);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
->>>>>>> 024b7b6... adding chart.js
 	var BandwidthPolicyDetailsComponent = (function () {
 	    function BandwidthPolicyDetailsComponent(activatedRoute, router, netprofilesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -4601,6 +5303,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 169:
 =======
@@ -4610,6 +5313,9 @@ webpackJsonp([2],{
 /***/ 163:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 170:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4625,19 +5331,11 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/10/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-	var policiesmodel_1 = __webpack_require__(67);
-	var crudhelperservice_1 = __webpack_require__(9);
-	var networkpoliciestabsctrl_1 = __webpack_require__(69);
-=======
-	var core_1 = __webpack_require__(4);
+	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
 	var policiesmodel_1 = __webpack_require__(69);
-	var crudhelperservice_1 = __webpack_require__(11);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
->>>>>>> 024b7b6... adding chart.js
 	var IsolationPolicyCreateComponent = (function () {
 	    function IsolationPolicyCreateComponent(activatedRoute, router, policiesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -4692,6 +5390,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 170:
 =======
@@ -4701,6 +5400,9 @@ webpackJsonp([2],{
 /***/ 164:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 171:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4716,6 +5418,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/8/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -4730,16 +5433,23 @@ webpackJsonp([2],{
 =======
 =======
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(3);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
 	var policiesmodel_1 = __webpack_require__(69);
-	var rulesmodel_1 = __webpack_require__(112);
-	var networksmodel_1 = __webpack_require__(45);
-	var applicationgroupsmodel_1 = __webpack_require__(59);
-	var crudhelperservice_1 = __webpack_require__(11);
+	var rulesmodel_1 = __webpack_require__(115);
+	var networksmodel_1 = __webpack_require__(46);
+	var applicationgroupsmodel_1 = __webpack_require__(52);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 >>>>>>> 024b7b6... adding chart.js
 	var contivglobals_1 = __webpack_require__(22);
 >>>>>>> adding chart.js
+=======
+	var contivglobals_1 = __webpack_require__(19);
+>>>>>>> regenerating bundle
 	var IsolationPolicyDetailsComponent = (function () {
 	    function IsolationPolicyDetailsComponent(activatedRoute, router, policiesModel, rulesModel, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -5106,6 +5816,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 171:
 =======
@@ -5115,6 +5826,9 @@ webpackJsonp([2],{
 /***/ 165:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 172:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5130,6 +5844,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var networksmodel_1 = __webpack_require__(45);
@@ -5146,6 +5861,13 @@ webpackJsonp([2],{
 >>>>>>> 024b7b6... adding chart.js
 	var contivglobals_1 = __webpack_require__(22);
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var networksmodel_1 = __webpack_require__(46);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var router_1 = __webpack_require__(6);
+	var contivglobals_1 = __webpack_require__(19);
+>>>>>>> regenerating bundle
 	var NetworkCreateComponent = (function () {
 	    function NetworkCreateComponent(router, activatedRoute, networksModel, crudHelperService) {
 	        this.router = router;
@@ -5197,6 +5919,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 172:
 =======
@@ -5206,6 +5929,9 @@ webpackJsonp([2],{
 /***/ 166:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 173:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5221,6 +5947,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -5237,9 +5964,16 @@ webpackJsonp([2],{
 	var applicationgroupsmodel_1 = __webpack_require__(59);
 	var networksmodel_1 = __webpack_require__(45);
 	var util_1 = __webpack_require__(39);
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+	var applicationgroupsmodel_1 = __webpack_require__(52);
+	var networksmodel_1 = __webpack_require__(46);
+	var util_1 = __webpack_require__(40);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var _ = __webpack_require__(28);
->>>>>>> 024b7b6... adding chart.js
+	var _ = __webpack_require__(27);
 	var NetworkdetailsComponent = (function () {
 	    function NetworkdetailsComponent(route, router, applicationGroupsModel, networksModel, crudHelperService) {
 	        var _this = this;
@@ -5322,6 +6056,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 173:
 =======
@@ -5331,6 +6066,9 @@ webpackJsonp([2],{
 /***/ 167:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 174:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5346,6 +6084,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var networksmodel_1 = __webpack_require__(45);
@@ -5357,8 +6096,13 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(45);
 	var crudhelperservice_1 = __webpack_require__(11);
 	var rxjs_1 = __webpack_require__(36);
+=======
+	var core_1 = __webpack_require__(3);
+	var networksmodel_1 = __webpack_require__(46);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
->>>>>>> 024b7b6... adding chart.js
 	var NetworkListComponent = (function () {
 	    function NetworkListComponent(router, activatedRoute, networksModel, crudHelperService) {
 	        var _this = this;
@@ -5395,9 +6139,13 @@ webpackJsonp([2],{
 	    NetworkListComponent = __decorate([
 	        core_1.Component({
 	            selector: 'networkList',
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	            template: __webpack_require__(466)
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 	            template: __webpack_require__(463)
 =======
@@ -5407,7 +6155,13 @@ webpackJsonp([2],{
 	            template: __webpack_require__(606)
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	            template: __webpack_require__(621)
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
 	    ], NetworkListComponent);
@@ -5419,6 +6173,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 174:
 =======
@@ -5428,6 +6183,9 @@ webpackJsonp([2],{
 /***/ 168:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 175:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5440,17 +6198,10 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-	var crudhelperservice_1 = __webpack_require__(9);
-	var organizationsmodel_1 = __webpack_require__(66);
-=======
-	var core_1 = __webpack_require__(4);
+	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
-	var crudhelperservice_1 = __webpack_require__(11);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var organizationsmodel_1 = __webpack_require__(68);
->>>>>>> 024b7b6... adding chart.js
 	var OrganizationCreateComponent = (function () {
 	    function OrganizationCreateComponent(activatedRoute, router, crudHelperService, organizationsModel, ngZone) {
 	        this.activatedRoute = activatedRoute;
@@ -5505,6 +6256,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 175:
 =======
@@ -5514,6 +6266,9 @@ webpackJsonp([2],{
 /***/ 169:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 176:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5526,17 +6281,10 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-	var crudhelperservice_1 = __webpack_require__(9);
-	var organizationsmodel_1 = __webpack_require__(66);
-=======
-	var core_1 = __webpack_require__(4);
+	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
-	var crudhelperservice_1 = __webpack_require__(11);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var organizationsmodel_1 = __webpack_require__(68);
->>>>>>> 024b7b6... adding chart.js
 	var OrganizationDetailsComponent = (function () {
 	    function OrganizationDetailsComponent(activatedRoute, router, crudHelperService, organizationsModel, ngZone) {
 	        this.activatedRoute = activatedRoute;
@@ -5596,6 +6344,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 176:
 =======
@@ -5605,6 +6354,9 @@ webpackJsonp([2],{
 /***/ 170:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 177:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5620,6 +6372,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -5628,11 +6381,13 @@ webpackJsonp([2],{
 	var organizationsmodel_1 = __webpack_require__(66);
 =======
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(3);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var crudhelperservice_1 = __webpack_require__(11);
-	var rxjs_1 = __webpack_require__(36);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
 	var organizationsmodel_1 = __webpack_require__(68);
->>>>>>> 024b7b6... adding chart.js
 	var OrganizationListComponent = (function () {
 	    function OrganizationListComponent(activatedRoute, router, organizationsModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -5686,6 +6441,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 177:
 =======
@@ -5695,6 +6451,9 @@ webpackJsonp([2],{
 /***/ 171:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 178:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5710,6 +6469,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -5720,11 +6480,14 @@ webpackJsonp([2],{
 =======
 	var core_1 = __webpack_require__(4);
 	var crudhelperservice_1 = __webpack_require__(11);
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+>>>>>>> regenerating bundle
 	var servicelbsmodel_1 = __webpack_require__(75);
-	var networksmodel_1 = __webpack_require__(45);
+	var networksmodel_1 = __webpack_require__(46);
 	var router_1 = __webpack_require__(6);
-	var _ = __webpack_require__(28);
->>>>>>> 024b7b6... adding chart.js
+	var _ = __webpack_require__(27);
 	var ServicelbCreateComponent = (function () {
 	    function ServicelbCreateComponent(router, activatedRoute, servicelbsModel, crudHelperService, networksModel) {
 	        this.router = router;
@@ -5798,6 +6561,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 178:
 =======
@@ -5807,6 +6571,9 @@ webpackJsonp([2],{
 /***/ 172:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 179:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5822,6 +6589,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var servicelbinfoctrl_1 = __webpack_require__(179);
@@ -5832,9 +6600,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var servicelbinfoctrl_1 = __webpack_require__(173);
 	var servicelbstatsctrl_1 = __webpack_require__(175);
+=======
+	var core_1 = __webpack_require__(3);
+	var servicelbinfoctrl_1 = __webpack_require__(180);
+	var servicelbstatsctrl_1 = __webpack_require__(182);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var _ = __webpack_require__(28);
->>>>>>> 024b7b6... adding chart.js
+	var _ = __webpack_require__(27);
 	var ServicelbDetailsComponent = (function () {
 	    function ServicelbDetailsComponent(router, activatedRoute) {
 	        this.router = router;
@@ -5883,6 +6655,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 179:
 =======
@@ -5892,6 +6665,9 @@ webpackJsonp([2],{
 /***/ 173:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 180:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5907,19 +6683,11 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var crudhelperservice_1 = __webpack_require__(9);
-	var servicelbsmodel_1 = __webpack_require__(74);
-	var router_1 = __webpack_require__(5);
-	var _ = __webpack_require__(26);
-=======
-	var core_1 = __webpack_require__(4);
-	var crudhelperservice_1 = __webpack_require__(11);
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var servicelbsmodel_1 = __webpack_require__(75);
 	var router_1 = __webpack_require__(6);
-	var _ = __webpack_require__(28);
->>>>>>> 024b7b6... adding chart.js
+	var _ = __webpack_require__(27);
 	var ServicelbInfoComponent = (function () {
 	    function ServicelbInfoComponent(router, activatedRoute, servicelbsModel, crudHelperService, ngZone) {
 	        this.router = router;
@@ -6053,6 +6821,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 180:
 =======
@@ -6062,6 +6831,9 @@ webpackJsonp([2],{
 /***/ 174:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 181:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6077,6 +6849,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -6087,9 +6860,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var crudhelperservice_1 = __webpack_require__(11);
 	var rxjs_1 = __webpack_require__(36);
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+>>>>>>> regenerating bundle
 	var servicelbsmodel_1 = __webpack_require__(75);
 	var router_1 = __webpack_require__(6);
->>>>>>> 024b7b6... adding chart.js
 	var ServicelbListComponent = (function () {
 	    function ServicelbListComponent(router, route, servicelbsModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -6143,6 +6920,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 181:
 =======
@@ -6152,6 +6930,9 @@ webpackJsonp([2],{
 /***/ 175:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 182:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6164,6 +6945,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -6184,6 +6966,15 @@ webpackJsonp([2],{
 >>>>>>> 024b7b6... adding chart.js
 	var contivglobals_1 = __webpack_require__(22);
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+	var inspectservice_1 = __webpack_require__(116);
+	var util_1 = __webpack_require__(40);
+	var servicelbsmodel_1 = __webpack_require__(75);
+	var contivglobals_1 = __webpack_require__(19);
+>>>>>>> regenerating bundle
 	var ServicelbStatComponent = (function () {
 	    function ServicelbStatComponent(servicelbsModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -6264,6 +7055,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 182:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -6437,6 +7229,9 @@ webpackJsonp([2],{
 /***/ 176:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 183:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6449,6 +7244,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -6472,6 +7268,11 @@ webpackJsonp([2],{
 	var nodesservice_1 = __webpack_require__(155);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var nodesservice_1 = __webpack_require__(93);
+>>>>>>> regenerating bundle
 	var ClusterSettingsComponent = (function () {
 	    function ClusterSettingsComponent(crudHelperService, nodesService) {
 	        this.nodesService = nodesService;
@@ -6560,6 +7361,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 185:
 =======
@@ -6569,6 +7371,9 @@ webpackJsonp([2],{
 /***/ 177:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 184:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6581,6 +7386,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -6607,6 +7413,12 @@ webpackJsonp([2],{
 	var contivglobals_1 = __webpack_require__(22);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var networkservice_1 = __webpack_require__(117);
+	var nodesservice_1 = __webpack_require__(93);
+>>>>>>> regenerating bundle
 	var NetworkSettingsComponent = (function () {
 	    function NetworkSettingsComponent(crudHelperService, networkService, nodesService) {
 >>>>>>> adding chart.js
@@ -6655,6 +7467,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 186:
 =======
@@ -6664,6 +7477,9 @@ webpackJsonp([2],{
 /***/ 178:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 185:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6679,11 +7495,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/3/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-=======
-	var core_1 = __webpack_require__(4);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
 	var SettingsMenuComponent = (function () {
 	    function SettingsMenuComponent() {
 	    }
@@ -6701,6 +7513,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 187:
 =======
@@ -6710,6 +7523,9 @@ webpackJsonp([2],{
 /***/ 179:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 186:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6722,6 +7538,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -6730,11 +7547,13 @@ webpackJsonp([2],{
 	var organizationsmodel_1 = __webpack_require__(66);
 =======
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(3);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var crudhelperservice_1 = __webpack_require__(11);
-	var usersmodel_1 = __webpack_require__(90);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var usersmodel_1 = __webpack_require__(92);
 	var organizationsmodel_1 = __webpack_require__(68);
->>>>>>> 024b7b6... adding chart.js
 	var UserCreateComponent = (function () {
 	    function UserCreateComponent(activatedRoute, router, crudHelperService, usersModel, organizationsModel, ngZone) {
 	        this.activatedRoute = activatedRoute;
@@ -6810,6 +7629,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 188:
 =======
@@ -6819,6 +7639,9 @@ webpackJsonp([2],{
 /***/ 180:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 187:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6831,6 +7654,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -6839,11 +7663,13 @@ webpackJsonp([2],{
 	var organizationsmodel_1 = __webpack_require__(66);
 =======
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(3);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var usersmodel_1 = __webpack_require__(90);
-	var crudhelperservice_1 = __webpack_require__(11);
+	var usersmodel_1 = __webpack_require__(92);
+	var crudhelperservice_1 = __webpack_require__(10);
 	var organizationsmodel_1 = __webpack_require__(68);
->>>>>>> 024b7b6... adding chart.js
 	var UserDetailsComponent = (function () {
 	    function UserDetailsComponent(activatedRoute, router, ngZone, usersModel, organizationsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -6945,6 +7771,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 189:
 =======
@@ -6954,6 +7781,9 @@ webpackJsonp([2],{
 /***/ 181:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 188:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6966,6 +7796,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
@@ -6978,12 +7809,21 @@ webpackJsonp([2],{
 	var usersmodel_1 = __webpack_require__(91);
 =======
 	var core_1 = __webpack_require__(4);
+=======
+	var core_1 = __webpack_require__(3);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var crudhelperservice_1 = __webpack_require__(11);
 	var rxjs_1 = __webpack_require__(36);
 	var usersmodel_1 = __webpack_require__(90);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+	var usersmodel_1 = __webpack_require__(92);
+>>>>>>> regenerating bundle
 	var UserListComponent = (function () {
 	    function UserListComponent(activatedRoute, router, usersModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -7035,6 +7875,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 262:
 =======
@@ -7042,20 +7883,27 @@ webpackJsonp([2],{
 /***/ 259:
 =======
 /***/ 325:
+=======
+/***/ 332:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(604));
+	__export(__webpack_require__(619));
 
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 364:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 371:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7071,11 +7919,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/1/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-=======
-	var core_1 = __webpack_require__(4);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
 	var AppComponent = (function () {
 	    function AppComponent() {
 	    }
@@ -7093,6 +7937,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 263:
 =======
@@ -7102,6 +7947,9 @@ webpackJsonp([2],{
 /***/ 365:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 372:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7117,6 +7965,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/6/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var platform_browser_1 = __webpack_require__(89);
@@ -7175,29 +8024,55 @@ webpackJsonp([2],{
 	var servicelb_module_1 = __webpack_require__(390);
 	var organization_module_1 = __webpack_require__(389);
 	var users_module_1 = __webpack_require__(393);
+=======
+	var core_1 = __webpack_require__(3);
+	var platform_browser_1 = __webpack_require__(90);
+	var http_1 = __webpack_require__(23);
+	var common_1 = __webpack_require__(18);
+	var dashboard_module_1 = __webpack_require__(390);
+	var networkpolicies_module_1 = __webpack_require__(400);
+	var applicationgroups_module_ts_1 = __webpack_require__(374);
+	var settings_module_1 = __webpack_require__(407);
+	var network_module_1 = __webpack_require__(401);
+	var servicelb_module_1 = __webpack_require__(405);
+	var appprofile_module_1 = __webpack_require__(378);
+	var organization_module_1 = __webpack_require__(404);
+	var users_module_1 = __webpack_require__(408);
+>>>>>>> regenerating bundle
 	var netprofilesmodel_1 = __webpack_require__(74);
-	var applicationgroupsmodel_1 = __webpack_require__(59);
-	var networksmodel_1 = __webpack_require__(45);
+	var applicationgroupsmodel_1 = __webpack_require__(52);
+	var networksmodel_1 = __webpack_require__(46);
 	var organizationsmodel_1 = __webpack_require__(68);
 	var policiesmodel_1 = __webpack_require__(69);
-	var rulesmodel_1 = __webpack_require__(112);
+	var rulesmodel_1 = __webpack_require__(115);
 	var servicelbsmodel_1 = __webpack_require__(75);
-	var usersmodel_1 = __webpack_require__(90);
-	var crudhelperservice_1 = __webpack_require__(11);
-	var inspectservice_1 = __webpack_require__(113);
-	var networkservice_1 = __webpack_require__(154);
-	var nodesservice_1 = __webpack_require__(155);
-	var menu_module_1 = __webpack_require__(382);
-	var app_component_1 = __webpack_require__(364);
-	var app_routes_ts_1 = __webpack_require__(366);
-	var login_module_1 = __webpack_require__(381);
+	var usersmodel_1 = __webpack_require__(92);
+	var appprofilesmodel_1 = __webpack_require__(91);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var inspectservice_1 = __webpack_require__(116);
+	var networkservice_1 = __webpack_require__(117);
+	var nodesservice_1 = __webpack_require__(93);
+	var menu_module_1 = __webpack_require__(397);
+	var app_component_1 = __webpack_require__(371);
+	var app_routes_ts_1 = __webpack_require__(373);
+	var login_module_1 = __webpack_require__(396);
 	var authservice_1 = __webpack_require__(60);
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var authguard_1 = __webpack_require__(152);
 	var apiservice_1 = __webpack_require__(33);
 	var chartservice_1 = __webpack_require__(153);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	var authguard_1 = __webpack_require__(160);
+	var apiservice_1 = __webpack_require__(31);
+	var firstrunwizard_module_1 = __webpack_require__(393);
+	var chartservice_1 = __webpack_require__(161);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -7256,6 +8131,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 264:
 =======
@@ -7265,12 +8141,16 @@ webpackJsonp([2],{
 /***/ 366:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 373:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/**
 	 * Created by vjain3 on 11/1/16.
 	 */
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< HEAD
 	var router_1 = __webpack_require__(5);
 	var menuCtrl_1 = __webpack_require__(166);
@@ -7331,9 +8211,12 @@ webpackJsonp([2],{
 	var appprofiledetails_component_1 = __webpack_require__(155);
 	var firstrunwizardctrl_1 = __webpack_require__(161);
 =======
+=======
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var menuCtrl_1 = __webpack_require__(160);
+	var menuCtrl_1 = __webpack_require__(167);
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var isolationpolicycreatectrl_1 = __webpack_require__(163);
 	var isolationpolicydetailsctrl_1 = __webpack_require__(164);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(161);
@@ -7363,6 +8246,39 @@ webpackJsonp([2],{
 	var userdetails_component_1 = __webpack_require__(180);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var isolationpolicycreatectrl_1 = __webpack_require__(170);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(171);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(168);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(169);
+	var dashboardctrl_1 = __webpack_require__(162);
+	var applicationgrouplistctrl_1 = __webpack_require__(154);
+	var applicationgroupcreatectrl_1 = __webpack_require__(152);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(153);
+	var settingsmenu_component_1 = __webpack_require__(185);
+	var clustersettingctrl_1 = __webpack_require__(183);
+	var networksettingctrl_1 = __webpack_require__(184);
+	var organizationlistctrl_1 = __webpack_require__(177);
+	var organizationcreatectrl_1 = __webpack_require__(175);
+	var organizationdetailsctrl_1 = __webpack_require__(176);
+	var networklistctrl_1 = __webpack_require__(174);
+	var networkdetailsctrl_1 = __webpack_require__(173);
+	var networkcreatectrl_1 = __webpack_require__(172);
+	var servicelblistctrl_1 = __webpack_require__(181);
+	var servicelbcreatectrl_1 = __webpack_require__(178);
+	var servicelbdetailsctrl_1 = __webpack_require__(179);
+	var loginctrl_1 = __webpack_require__(164);
+	var authguard_1 = __webpack_require__(160);
+	var unauthorized_1 = __webpack_require__(166);
+	var logoutctrl_1 = __webpack_require__(165);
+	var userlist_component_1 = __webpack_require__(188);
+	var usercreate_component_1 = __webpack_require__(186);
+	var userdetails_component_1 = __webpack_require__(187);
+	var appprofilelist_component_1 = __webpack_require__(157);
+	var appprofilecreate_component_1 = __webpack_require__(155);
+	var appprofiledetails_component_1 = __webpack_require__(156);
+	var firstrunwizardctrl_1 = __webpack_require__(163);
+>>>>>>> regenerating bundle
 	var routes = [
 	    { path: 'login', component: loginctrl_1.LoginComponent, canActivate: [authguard_1.AuthGuard] },
 	    { path: 'logout', component: logoutctrl_1.LogoutComponent, canActivate: [authguard_1.AuthGuard] },
@@ -7433,6 +8349,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 265:
 =======
@@ -7442,6 +8359,9 @@ webpackJsonp([2],{
 /***/ 367:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 374:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7508,6 +8428,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/21/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -7548,7 +8469,23 @@ webpackJsonp([2],{
 	var applicationgrouplistctrl_1 = __webpack_require__(150);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+	var router_1 = __webpack_require__(6);
+	var directives_module_1 = __webpack_require__(37);
+	var pipes_module_1 = __webpack_require__(158);
+	var applicationgroupcreatectrl_1 = __webpack_require__(152);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(153);
+	var isolationpolicydirective_1 = __webpack_require__(376);
+	var bandwidthpolicydirective_1 = __webpack_require__(375);
+	var applicationgrouplistctrl_1 = __webpack_require__(154);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var ApplicationGroupsModule = (function () {
 	    function ApplicationGroupsModule() {
 	    }
@@ -7594,9 +8531,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 267:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 264:
 >>>>>>> adding chart.js
@@ -7708,7 +8649,13 @@ webpackJsonp([2],{
 /***/ 368:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 375:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7724,15 +8671,9 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/28/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var _ = __webpack_require__(26);
-	var netprofilesmodel_1 = __webpack_require__(73);
-=======
-	var core_1 = __webpack_require__(4);
-	var _ = __webpack_require__(28);
+	var core_1 = __webpack_require__(3);
+	var _ = __webpack_require__(27);
 	var netprofilesmodel_1 = __webpack_require__(74);
->>>>>>> 024b7b6... adding chart.js
 	/*
 	angular.module("contiv.applicationgroups")
 	    .directive("ctvBandwidthpolicy", function () {
@@ -7845,9 +8786,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 269:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 266:
 =======
@@ -7857,7 +8802,13 @@ webpackJsonp([2],{
 /***/ 369:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 376:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7873,6 +8824,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 7/8/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var _ = __webpack_require__(26);
@@ -7888,6 +8840,12 @@ webpackJsonp([2],{
 	var rulesmodel_1 = __webpack_require__(112);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var _ = __webpack_require__(27);
+	var policiesmodel_1 = __webpack_require__(69);
+	var rulesmodel_1 = __webpack_require__(115);
+>>>>>>> regenerating bundle
 	var IsolationPolicySelectionComponent = (function () {
 	    function IsolationPolicySelectionComponent(policiesModel, rulesModel) {
 	        this.policiesModel = policiesModel;
@@ -8004,16 +8962,26 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 270:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 267:
 =======
 <<<<<<< HEAD
 /***/ 265:
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 377:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8029,9 +8997,19 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/11/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var core_1 = __webpack_require__(2);
 	var _ = __webpack_require__(26);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var applicationgroupsmodel_1 = __webpack_require__(44);
+=======
+	var applicationgroupsmodel_1 = __webpack_require__(43);
+=======
+	var core_1 = __webpack_require__(3);
+	var _ = __webpack_require__(27);
+	var applicationgroupsmodel_1 = __webpack_require__(52);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var ApplicationGroupSelectionComponent = (function () {
 	    function ApplicationGroupSelectionComponent(applicationGroupsModel) {
 	        this.applicationGroupsModel = applicationGroupsModel;
@@ -8112,7 +9090,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 271:
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+/***/ 268:
+=======
+/***/ 378:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8125,16 +9111,37 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
 	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var directives_module_1 = __webpack_require__(38);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var appprofilelist_component_1 = __webpack_require__(157);
 	var appprofilecreate_component_1 = __webpack_require__(155);
 	var appprofiledetails_component_1 = __webpack_require__(156);
 	var appgroupselection_component_1 = __webpack_require__(270);
 	var pipes_module_1 = __webpack_require__(158);
+=======
+	var appprofilelist_component_1 = __webpack_require__(156);
+	var appprofilecreate_component_1 = __webpack_require__(154);
+	var appprofiledetails_component_1 = __webpack_require__(155);
+	var appgroupselection_component_1 = __webpack_require__(267);
+	var pipes_module_1 = __webpack_require__(157);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+	var router_1 = __webpack_require__(6);
+	var directives_module_1 = __webpack_require__(37);
+	var appprofilelist_component_1 = __webpack_require__(157);
+	var appprofilecreate_component_1 = __webpack_require__(155);
+	var appprofiledetails_component_1 = __webpack_require__(156);
+	var appgroupselection_component_1 = __webpack_require__(377);
+	var pipes_module_1 = __webpack_require__(158);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var AppProfilesModule = (function () {
 	    function AppProfilesModule() {
 	    }
@@ -8174,9 +9181,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 272:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 269:
 =======
@@ -8185,7 +9196,13 @@ webpackJsonp([2],{
 /***/ 370:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 379:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8201,11 +9218,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 7/1/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-=======
-	var core_1 = __webpack_require__(4);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
 	var CtvAccordionComponent = (function () {
 	    function CtvAccordionComponent(elem) {
 	    }
@@ -8231,9 +9244,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 273:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 270:
 =======
@@ -8243,7 +9260,13 @@ webpackJsonp([2],{
 /***/ 371:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 380:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8259,13 +9282,8 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var authservice_1 = __webpack_require__(68);
-=======
-	var core_1 = __webpack_require__(4);
+	var core_1 = __webpack_require__(3);
 	var authservice_1 = __webpack_require__(60);
->>>>>>> 024b7b6... adding chart.js
 	var AuthDirective = (function () {
 	    function AuthDirective(authService, templateRef, viewContainer) {
 	        this.authService = authService;
@@ -8299,9 +9317,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 274:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 271:
 =======
@@ -8311,7 +9333,13 @@ webpackJsonp([2],{
 /***/ 372:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 381:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8327,11 +9355,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-=======
-	var core_1 = __webpack_require__(4);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
 	var CtvCollapsibleComponent = (function () {
 	    function CtvCollapsibleComponent() {
 	        this.title = '';
@@ -8359,9 +9383,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 275:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 272:
 =======
@@ -8511,7 +9539,14 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 277:
+=======
+/***/ 274:
+=======
+/***/ 382:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8524,54 +9559,49 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(2);
-	var AciSettingComponent = (function () {
-	    function AciSettingComponent() {
-	        this.extra_vars = { control_interface: '', netplugin_if: '', service_vip: '', scheduler_provider: '', ucp_bootstrap_node_name: '', cluster_name: '',
-	            contiv_network_mode: '', fwd_mode: '', apic_url: '', apic_username: '', apic_password: '', apic_leaf_nodes: '', apic_phys_domain: '',
-	            apic_epg_bridge_domain: '', apic_contracts_unrestricted_mode: '' };
-	        this.updateAciDef = new core_1.EventEmitter();
-	        this.backTriggered = new core_1.EventEmitter();
+	/**
+	 * Created by vjain3 on 4/28/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var ErrorMessageComponent = (function () {
+	    function ErrorMessageComponent() {
+	        this.showError = true;
 	    }
-	    AciSettingComponent.prototype.updateAciSetting = function (formvalid) {
-	        if (formvalid) {
-	            this.updateAciDef.emit(this.extra_vars);
-	        }
+	    ErrorMessageComponent.prototype.ngOnChanges = function () {
+	        this.showError = true;
+	    };
+	    ErrorMessageComponent.prototype.close = function () {
+	        this.showError = false;
 	    };
 	    __decorate([
-	        core_1.Input('firstRunWiz'), 
-	        __metadata('design:type', Boolean)
-	    ], AciSettingComponent.prototype, "firstRunWiz", void 0);
+	        core_1.Input(), 
+	        __metadata('design:type', String)
+	    ], ErrorMessageComponent.prototype, "header", void 0);
 	    __decorate([
-	        core_1.Output('updateAciDef'), 
-	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
-	    ], AciSettingComponent.prototype, "updateAciDef", void 0);
-	    __decorate([
-	        core_1.Input('extra_vars'), 
-	        __metadata('design:type', Object)
-	    ], AciSettingComponent.prototype, "extra_vars", void 0);
-	    __decorate([
-	        core_1.Output('backTriggered'), 
-	        __metadata('design:type', (typeof (_b = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _b) || Object)
-	    ], AciSettingComponent.prototype, "backTriggered", void 0);
-	    AciSettingComponent = __decorate([
+	        core_1.Input(), 
+	        __metadata('design:type', String)
+	    ], ErrorMessageComponent.prototype, "error", void 0);
+	    ErrorMessageComponent = __decorate([
 	        core_1.Component({
-	            selector: 'acisettingcomp',
-	            templateUrl: 'components/directives/settings/acisetting.html'
+	            selector: 'ctv-error',
+	            templateUrl: 'components/directives/errormessage.html'
 	        }), 
 	        __metadata('design:paramtypes', [])
-	    ], AciSettingComponent);
-	    return AciSettingComponent;
-	    var _a, _b;
+	    ], ErrorMessageComponent);
+	    return ErrorMessageComponent;
 	}());
-	exports.AciSettingComponent = AciSettingComponent;
+	exports.ErrorMessageComponent = ErrorMessageComponent;
 	
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 278:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 275:
 =======
@@ -8579,6 +9609,9 @@ webpackJsonp([2],{
 /***/ 273:
 =======
 /***/ 374:
+=======
+/***/ 383:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8594,10 +9627,10 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(4);
-	var chartservice_1 = __webpack_require__(153);
-	var util_1 = __webpack_require__(39);
-	var util_2 = __webpack_require__(39);
+	var core_1 = __webpack_require__(3);
+	var chartservice_1 = __webpack_require__(161);
+	var util_1 = __webpack_require__(40);
+	var util_2 = __webpack_require__(40);
 	var LineGraphDirective = (function () {
 	    function LineGraphDirective(chartService) {
 	        this.chartService = chartService;
@@ -8739,10 +9772,182 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+/***/ 375:
+>>>>>>> 024b7b6... adding chart.js
+>>>>>>> adding chart.js
+=======
+/***/ 384:
+>>>>>>> regenerating bundle
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/17/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+<<<<<<< HEAD
+	var core_1 = __webpack_require__(2);
+	var contivglobals_1 = __webpack_require__(15);
+	var NetworkSettingComponent = (function () {
+	    function NetworkSettingComponent() {
+	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
+	        this.vxlanPattern = contivglobals_1.ContivGlobals.VXLAN_REGEX;
+	        this.updateNetDef = new core_1.EventEmitter();
+	        this.backTriggered = new core_1.EventEmitter();
+	        this.firstRunWiz = false;
+	        this.setting = { networkInfraType: '', vlans: '', vxlans: '', fwdMode: '' };
+=======
+	var core_1 = __webpack_require__(4);
+	var _ = __webpack_require__(28);
+=======
+	var core_1 = __webpack_require__(3);
+	var _ = __webpack_require__(27);
+>>>>>>> regenerating bundle
+	var CtvNamevalueComponent = (function () {
+	    function CtvNamevalueComponent() {
+	        this.itemsChange = new core_1.EventEmitter();
+	        this.items = [];
+	        this.nameheader = 'Name';
+	        this.valueheader = 'Value';
+	        this.type = 'text';
+	        this.newItem = { name: '', value: '' };
+	        this.options = [];
+	    }
+	    CtvNamevalueComponent.prototype.resetItem = function () {
+	        this.newItem = { name: '', value: '' };
+	    };
+	    CtvNamevalueComponent.prototype.add = function () {
+	        function compare(val1, val2) {
+	            return val1.name == val2.name;
+	        }
+	        if (this.newItem.name == '' && this.newItem.value == '') {
+	            return;
+	        }
+	        _.pullAllWith(this.items, [this.newItem], compare);
+	        this.items.push(this.newItem);
+	        this.itemsChange.emit(this.items);
+	        this.resetItem();
+	    };
+	    CtvNamevalueComponent.prototype.remove = function (passedItem) {
+	        _.remove(this.items, function (item) {
+	            return item.name == passedItem.name;
+	        });
+	    };
+	    __decorate([
+	        core_1.Input('items'), 
+	        __metadata('design:type', Array)
+	    ], CtvNamevalueComponent.prototype, "items", void 0);
+	    __decorate([
+	        core_1.Input('nameheader'), 
+	        __metadata('design:type', String)
+	    ], CtvNamevalueComponent.prototype, "nameheader", void 0);
+	    __decorate([
+	        core_1.Input('options'), 
+	        __metadata('design:type', Array)
+	    ], CtvNamevalueComponent.prototype, "options", void 0);
+	    __decorate([
+	        core_1.Input('valueheader'), 
+	        __metadata('design:type', String)
+	    ], CtvNamevalueComponent.prototype, "valueheader", void 0);
+	    __decorate([
+	        core_1.Output('itemsChange'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], CtvNamevalueComponent.prototype, "itemsChange", void 0);
+	    __decorate([
+	        core_1.Input('type'), 
+	        __metadata('design:type', String)
+	    ], CtvNamevalueComponent.prototype, "type", void 0);
+	    CtvNamevalueComponent = __decorate([
+	        core_1.Component({
+	            selector: 'ctv-namevalue',
+	            templateUrl: 'components/directives/namevalue.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], CtvNamevalueComponent);
+	    return CtvNamevalueComponent;
+	    var _a;
+	}());
+	exports.CtvNamevalueComponent = CtvNamevalueComponent;
+	
+
+/***/ },
+
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 375:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
 >>>>>>> adding chart.js
+=======
+/***/ 385:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var AciSettingComponent = (function () {
+	    function AciSettingComponent() {
+	        this.extra_vars = { control_interface: '', netplugin_if: '', service_vip: '', scheduler_provider: '', ucp_bootstrap_node_name: '', cluster_name: '',
+	            contiv_network_mode: '', fwd_mode: '', apic_url: '', apic_username: '', apic_password: '', apic_leaf_nodes: '', apic_phys_domain: '',
+	            apic_epg_bridge_domain: '', apic_contracts_unrestricted_mode: '' };
+	        this.updateAciDef = new core_1.EventEmitter();
+	        this.backTriggered = new core_1.EventEmitter();
+	    }
+	    AciSettingComponent.prototype.updateAciSetting = function (formvalid) {
+	        if (formvalid) {
+	            this.updateAciDef.emit(this.extra_vars);
+	        }
+	    };
+	    __decorate([
+	        core_1.Input('firstRunWiz'), 
+	        __metadata('design:type', Boolean)
+	    ], AciSettingComponent.prototype, "firstRunWiz", void 0);
+	    __decorate([
+	        core_1.Output('updateAciDef'), 
+	        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
+	    ], AciSettingComponent.prototype, "updateAciDef", void 0);
+	    __decorate([
+	        core_1.Input('extra_vars'), 
+	        __metadata('design:type', Object)
+	    ], AciSettingComponent.prototype, "extra_vars", void 0);
+	    __decorate([
+	        core_1.Output('backTriggered'), 
+	        __metadata('design:type', (typeof (_b = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _b) || Object)
+	    ], AciSettingComponent.prototype, "backTriggered", void 0);
+	    AciSettingComponent = __decorate([
+	        core_1.Component({
+	            selector: 'acisettingcomp',
+	            templateUrl: 'components/directives/settings/acisetting.html'
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], AciSettingComponent);
+	    return AciSettingComponent;
+	    var _a, _b;
+	}());
+	exports.AciSettingComponent = AciSettingComponent;
+	
+
+/***/ },
+
+/***/ 386:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8758,9 +9963,8 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var contivglobals_1 = __webpack_require__(15);
+	var core_1 = __webpack_require__(3);
+	var contivglobals_1 = __webpack_require__(19);
 	var NetworkSettingComponent = (function () {
 	    function NetworkSettingComponent() {
 	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
@@ -8769,19 +9973,6 @@ webpackJsonp([2],{
 	        this.backTriggered = new core_1.EventEmitter();
 	        this.firstRunWiz = false;
 	        this.setting = { networkInfraType: '', vlans: '', vxlans: '', fwdMode: '' };
-=======
-	var core_1 = __webpack_require__(4);
-	var _ = __webpack_require__(28);
-	var CtvNamevalueComponent = (function () {
-	    function CtvNamevalueComponent() {
-	        this.itemsChange = new core_1.EventEmitter();
-	        this.items = [];
-	        this.nameheader = 'Name';
-	        this.valueheader = 'Value';
-	        this.type = 'text';
-	        this.newItem = { name: '', value: '' };
-	        this.options = [];
->>>>>>> 024b7b6... adding chart.js
 	    }
 	    NetworkSettingComponent.prototype.updateNetworkSettings = function (formvalid) {
 	        if (formvalid) {
@@ -8819,9 +10010,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 279:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 276:
 =======
@@ -8831,7 +10026,13 @@ webpackJsonp([2],{
 /***/ 376:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 387:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8847,6 +10048,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var util_1 = __webpack_require__(51);
@@ -8856,6 +10058,11 @@ webpackJsonp([2],{
 	var util_1 = __webpack_require__(39);
 	var _ = __webpack_require__(28);
 >>>>>>> 024b7b6... adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var util_1 = __webpack_require__(40);
+	var _ = __webpack_require__(27);
+>>>>>>> regenerating bundle
 	var CtvTableComponent = (function () {
 	    function CtvTableComponent() {
 	        this.filteredinputitems = new core_1.EventEmitter();
@@ -9129,9 +10336,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 280:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 277:
 =======
@@ -9146,12 +10357,14 @@ webpackJsonp([2],{
 	var _ = __webpack_require__(26);
 =======
 /***/ 377:
+=======
+/***/ 388:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	__webpack_require__(103);
-	var _ = __webpack_require__(28);
->>>>>>> 024b7b6... adding chart.js
+	__webpack_require__(106);
+	var _ = __webpack_require__(27);
 	/**
 	 * BaseCollection class that does just fetch of the objects.
 	 * @param $http
@@ -9252,9 +10465,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 281:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 278:
 =======
@@ -9264,7 +10481,13 @@ webpackJsonp([2],{
 /***/ 378:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 389:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9280,11 +10503,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/21/16.
 	 */
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-=======
-	var core_1 = __webpack_require__(4);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
 	var FilterPipe = (function () {
 	    function FilterPipe() {
 	    }
@@ -9319,9 +10538,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 282:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 279:
 =======
@@ -9331,7 +10554,13 @@ webpackJsonp([2],{
 /***/ 379:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 390:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9347,29 +10576,37 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/3/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
 	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var dashboardctrl_1 = __webpack_require__(161);
+=======
+	var dashboardctrl_1 = __webpack_require__(160);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+	var router_1 = __webpack_require__(6);
+	var dashboardctrl_1 = __webpack_require__(162);
+	var ng2_charts_1 = __webpack_require__(332);
+	var directives_module_1 = __webpack_require__(37);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var DashboardModule = (function () {
 	    function DashboardModule() {
-=======
-	var core_1 = __webpack_require__(4);
-	var forms_1 = __webpack_require__(30);
-	var common_1 = __webpack_require__(21);
-	var filterpipe_1 = __webpack_require__(378);
-	var PipesModule = (function () {
-	    function PipesModule() {
->>>>>>> 024b7b6... adding chart.js
 	    }
 	    DashboardModule = __decorate([
 	        core_1.NgModule({
 	            imports: [
 	                forms_1.FormsModule,
 	                common_1.CommonModule,
-	                router_1.RouterModule
+	                router_1.RouterModule,
+	                directives_module_1.DirectivesModule,
+	                ng2_charts_1.ChartsModule
 	            ],
 	            declarations: [
 	                dashboardctrl_1.DashboardComponent
@@ -9390,9 +10627,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 283:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 280:
 =======
@@ -9402,7 +10643,13 @@ webpackJsonp([2],{
 /***/ 380:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 391:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9418,8 +10665,8 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(2);
-	var firstrunwizardservice_1 = __webpack_require__(75);
+	var core_1 = __webpack_require__(3);
+	var firstrunwizardservice_1 = __webpack_require__(76);
 	var FirstrunACISettingsComponent = (function () {
 	    function FirstrunACISettingsComponent(wizardService) {
 	        this.wizardService = wizardService;
@@ -9455,7 +10702,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 284:
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+/***/ 281:
+=======
+/***/ 392:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9471,8 +10726,8 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(2);
-	var firstrunwizardservice_1 = __webpack_require__(75);
+	var core_1 = __webpack_require__(3);
+	var firstrunwizardservice_1 = __webpack_require__(76);
 	var FirstrunNetworkDefaultComponent = (function () {
 	    function FirstrunNetworkDefaultComponent(wizardService) {
 	        this.wizardService = wizardService;
@@ -9508,7 +10763,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 285:
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+/***/ 282:
+=======
+/***/ 393:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9527,6 +10790,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -9534,6 +10798,7 @@ webpackJsonp([2],{
 	var directives_module_1 = __webpack_require__(38);
 	var router_1 = __webpack_require__(5);
 	var firstrunwizardservice_1 = __webpack_require__(75);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var firstrunwizardctrl_1 = __webpack_require__(162);
 	var firstrunwizardpage1ctrl_1 = __webpack_require__(287);
 	var firstrunnetworkdefaults_1 = __webpack_require__(284);
@@ -9542,30 +10807,35 @@ webpackJsonp([2],{
 	var FirstrunWizardModule = (function () {
 	    function FirstrunWizardModule() {
 =======
-	var core_1 = __webpack_require__(4);
-	var forms_1 = __webpack_require__(30);
-	var common_1 = __webpack_require__(21);
+	var firstrunwizardctrl_1 = __webpack_require__(161);
+	var firstrunwizardpage1ctrl_1 = __webpack_require__(284);
+	var firstrunnetworkdefaults_1 = __webpack_require__(281);
+	var firstrunacisettings_1 = __webpack_require__(280);
+	var firstrunwizardconfirmpage_1 = __webpack_require__(283);
+>>>>>>> regenerating bundle
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+	var directives_module_1 = __webpack_require__(37);
 	var router_1 = __webpack_require__(6);
-	var dashboardctrl_1 = __webpack_require__(156);
-	var ng2_charts_1 = __webpack_require__(325);
-	var directives_module_1 = __webpack_require__(44);
-	var DashboardModule = (function () {
-	    function DashboardModule() {
->>>>>>> 024b7b6... adding chart.js
+	var firstrunwizardservice_1 = __webpack_require__(76);
+	var firstrunwizardctrl_1 = __webpack_require__(163);
+	var firstrunwizardpage1ctrl_1 = __webpack_require__(395);
+	var firstrunnetworkdefaults_1 = __webpack_require__(392);
+	var firstrunacisettings_1 = __webpack_require__(391);
+	var firstrunwizardconfirmpage_1 = __webpack_require__(394);
+>>>>>>> regenerating bundle
+	var FirstrunWizardModule = (function () {
+	    function FirstrunWizardModule() {
 	    }
 	    FirstrunWizardModule = __decorate([
 	        core_1.NgModule({
 	            imports: [
 	                forms_1.FormsModule,
 	                common_1.CommonModule,
-<<<<<<< HEAD
 	                directives_module_1.DirectivesModule,
 	                router_1.RouterModule
-=======
-	                router_1.RouterModule,
-	                directives_module_1.DirectivesModule,
-	                ng2_charts_1.ChartsModule
->>>>>>> 024b7b6... adding chart.js
 	            ],
 	            declarations: [
 	                firstrunwizardctrl_1.FirstrunWizardComponent,
@@ -9592,16 +10862,26 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 286:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 283:
 =======
 <<<<<<< HEAD
 /***/ 281:
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 394:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9617,9 +10897,9 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(2);
-	var router_1 = __webpack_require__(5);
-	var firstrunwizardservice_1 = __webpack_require__(75);
+	var core_1 = __webpack_require__(3);
+	var router_1 = __webpack_require__(6);
+	var firstrunwizardservice_1 = __webpack_require__(76);
 	var FirstrunConfirmComponent = (function () {
 	    function FirstrunConfirmComponent(wizardservice, router, activatedRoute) {
 	        this.router = router;
@@ -9673,7 +10953,15 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 /***/ 287:
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+/***/ 284:
+=======
+/***/ 395:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9689,7 +10977,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-	var core_1 = __webpack_require__(2);
+	var core_1 = __webpack_require__(3);
 	var FirstrunWizardpage1Component = (function () {
 	    function FirstrunWizardpage1Component() {
 	        this.updatePage = new core_1.EventEmitter();
@@ -9716,9 +11004,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 288:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 285:
 =======
@@ -9727,7 +11019,13 @@ webpackJsonp([2],{
 /***/ 381:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 396:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9743,6 +11041,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -9760,12 +11059,23 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var forms_1 = __webpack_require__(30);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var loginctrl_1 = __webpack_require__(157);
 	var unauthorized_1 = __webpack_require__(159);
 	var logoutctrl_1 = __webpack_require__(158);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var loginctrl_1 = __webpack_require__(164);
+	var unauthorized_1 = __webpack_require__(166);
+	var logoutctrl_1 = __webpack_require__(165);
+>>>>>>> regenerating bundle
 	var LoginModule = (function () {
 	    function LoginModule() {
 	    }
@@ -9799,9 +11109,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 289:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 286:
 =======
@@ -9811,7 +11125,13 @@ webpackJsonp([2],{
 /***/ 382:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 397:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9827,6 +11147,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/1/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -9838,10 +11159,14 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var forms_1 = __webpack_require__(30);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var menuCtrl_1 = __webpack_require__(160);
-	var directives_module_1 = __webpack_require__(44);
->>>>>>> 024b7b6... adding chart.js
+	var menuCtrl_1 = __webpack_require__(167);
+	var directives_module_1 = __webpack_require__(37);
 	var MenuModule = (function () {
 	    function MenuModule() {
 	    }
@@ -9873,9 +11198,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 290:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 287:
 =======
@@ -9885,7 +11214,13 @@ webpackJsonp([2],{
 /***/ 383:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 398:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9901,6 +11236,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/19/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -9910,8 +11246,12 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var crudhelperservice_1 = __webpack_require__(11);
 	var rxjs_1 = __webpack_require__(36);
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+>>>>>>> regenerating bundle
 	var netprofilesmodel_1 = __webpack_require__(74);
->>>>>>> 024b7b6... adding chart.js
 	var BandwidthListComponent = (function () {
 	    function BandwidthListComponent(netprofilesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -9958,9 +11298,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 291:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 288:
 =======
@@ -9970,7 +11314,13 @@ webpackJsonp([2],{
 /***/ 384:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 399:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9986,6 +11336,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/19/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var policiesmodel_1 = __webpack_require__(67);
@@ -10004,7 +11355,16 @@ webpackJsonp([2],{
 	var rxjs_1 = __webpack_require__(36);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	var core_1 = __webpack_require__(3);
+	var policiesmodel_1 = __webpack_require__(69);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var IsolationListComponent = (function () {
 	    function IsolationListComponent(policiesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -10052,9 +11412,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 292:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 289:
 =======
@@ -10064,7 +11428,13 @@ webpackJsonp([2],{
 /***/ 385:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 400:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10080,6 +11450,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/14/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -10109,9 +11480,15 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var forms_1 = __webpack_require__(30);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
-	var directives_module_1 = __webpack_require__(44);
+	var directives_module_1 = __webpack_require__(37);
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var isolationpolicycreatectrl_1 = __webpack_require__(163);
 	var isolationpolicydetailsctrl_1 = __webpack_require__(164);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(161);
@@ -10120,7 +11497,18 @@ webpackJsonp([2],{
 	var bandwidthpolicylistctrl_1 = __webpack_require__(383);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+	var isolationpolicycreatectrl_1 = __webpack_require__(170);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(171);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(168);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(169);
+	var isolationpolicylistctrl_1 = __webpack_require__(399);
+	var bandwidthpolicylistctrl_1 = __webpack_require__(398);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	var NetworkPoliciesModule = (function () {
 	    function NetworkPoliciesModule() {
 	    }
@@ -10165,9 +11553,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 293:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 290:
 =======
@@ -10177,7 +11569,13 @@ webpackJsonp([2],{
 /***/ 386:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 401:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10193,6 +11591,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -10214,8 +11613,18 @@ webpackJsonp([2],{
 	var networkdetailsctrl_1 = __webpack_require__(166);
 	var networkinfoctrl_1 = __webpack_require__(387);
 	var networkcreatectrl_1 = __webpack_require__(165);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+	var directives_module_1 = __webpack_require__(37);
+	var networklistctrl_1 = __webpack_require__(174);
+	var networkstatsctrl_1 = __webpack_require__(403);
+	var networkdetailsctrl_1 = __webpack_require__(173);
+	var networkinfoctrl_1 = __webpack_require__(402);
+	var networkcreatectrl_1 = __webpack_require__(172);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
->>>>>>> 024b7b6... adding chart.js
 	var NetworkModule = (function () {
 	    function NetworkModule() {
 	    }
@@ -10251,9 +11660,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 294:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 291:
 =======
@@ -10263,7 +11676,13 @@ webpackJsonp([2],{
 /***/ 387:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 402:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10279,11 +11698,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-=======
-	var core_1 = __webpack_require__(4);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
 	var NetworkInfoComponent = (function () {
 	    function NetworkInfoComponent() {
 	        this.networkDetailsCtrl = { network: { networkName: '', encap: '', subnet: '', gateway: '' },
@@ -10309,9 +11724,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 295:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 292:
 =======
@@ -10321,7 +11740,13 @@ webpackJsonp([2],{
 /***/ 388:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 403:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10334,6 +11759,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(9);
@@ -10362,6 +11788,15 @@ webpackJsonp([2],{
 >>>>>>> 024b7b6... adding chart.js
 	var contivglobals_1 = __webpack_require__(22);
 >>>>>>> adding chart.js
+=======
+	var core_1 = __webpack_require__(3);
+	var crudhelperservice_1 = __webpack_require__(10);
+	var rxjs_1 = __webpack_require__(34);
+	var networksmodel_1 = __webpack_require__(46);
+	var inspectservice_1 = __webpack_require__(116);
+	var util_1 = __webpack_require__(40);
+	var contivglobals_1 = __webpack_require__(19);
+>>>>>>> regenerating bundle
 	var NetworkStatComponent = (function () {
 	    function NetworkStatComponent(networksModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -10442,9 +11877,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 296:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 293:
 =======
@@ -10454,7 +11893,13 @@ webpackJsonp([2],{
 /***/ 389:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 404:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10470,6 +11915,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -10488,13 +11934,25 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var forms_1 = __webpack_require__(30);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var directives_module_1 = __webpack_require__(44);
 	var organizationlistctrl_1 = __webpack_require__(170);
 	var organizationcreatectrl_1 = __webpack_require__(168);
 	var organizationdetailsctrl_1 = __webpack_require__(169);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var directives_module_1 = __webpack_require__(37);
+	var organizationlistctrl_1 = __webpack_require__(177);
+	var organizationcreatectrl_1 = __webpack_require__(175);
+	var organizationdetailsctrl_1 = __webpack_require__(176);
+>>>>>>> regenerating bundle
 	var OrganizationModule = (function () {
 	    function OrganizationModule() {
 	    }
@@ -10530,9 +11988,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 297:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 294:
 =======
@@ -10542,7 +12004,13 @@ webpackJsonp([2],{
 /***/ 390:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 405:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10558,6 +12026,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -10581,8 +12050,19 @@ webpackJsonp([2],{
 	var servicelbcreatectrl_1 = __webpack_require__(171);
 	var servicelbinfoctrl_1 = __webpack_require__(173);
 	var servicelbdetailsctrl_1 = __webpack_require__(172);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+	var directives_module_1 = __webpack_require__(37);
+	var servicelblistctrl_1 = __webpack_require__(181);
+	var servicelbstatsctrl_1 = __webpack_require__(182);
+	var servicelbportsdirective_1 = __webpack_require__(406);
+	var servicelbcreatectrl_1 = __webpack_require__(178);
+	var servicelbinfoctrl_1 = __webpack_require__(180);
+	var servicelbdetailsctrl_1 = __webpack_require__(179);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
->>>>>>> 024b7b6... adding chart.js
 	var ServicelbModule = (function () {
 	    function ServicelbModule() {
 	    }
@@ -10620,9 +12100,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 298:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 295:
 =======
@@ -10632,7 +12116,13 @@ webpackJsonp([2],{
 /***/ 391:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 406:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10648,13 +12138,8 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
-<<<<<<< HEAD
-	var core_1 = __webpack_require__(2);
-	var _ = __webpack_require__(26);
-=======
-	var core_1 = __webpack_require__(4);
-	var _ = __webpack_require__(28);
->>>>>>> 024b7b6... adding chart.js
+	var core_1 = __webpack_require__(3);
+	var _ = __webpack_require__(27);
 	var ServicelbPortsComponent = (function () {
 	    function ServicelbPortsComponent() {
 	        this.itemsChange = new core_1.EventEmitter();
@@ -10705,9 +12190,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 299:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 296:
 =======
@@ -10717,7 +12206,13 @@ webpackJsonp([2],{
 /***/ 392:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 407:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10733,6 +12228,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/25/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -10752,13 +12248,25 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var forms_1 = __webpack_require__(30);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var directives_module_1 = __webpack_require__(44);
 	var networksettingctrl_1 = __webpack_require__(177);
 	var clustersettingctrl_1 = __webpack_require__(176);
 	var settingsmenu_component_1 = __webpack_require__(178);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var directives_module_1 = __webpack_require__(37);
+	var networksettingctrl_1 = __webpack_require__(184);
+	var clustersettingctrl_1 = __webpack_require__(183);
+	var settingsmenu_component_1 = __webpack_require__(185);
+>>>>>>> regenerating bundle
 	var SettingsModule = (function () {
 	    function SettingsModule() {
 	    }
@@ -10798,9 +12306,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 300:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 297:
 =======
@@ -10810,7 +12322,13 @@ webpackJsonp([2],{
 /***/ 393:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 408:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10826,6 +12344,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
@@ -10844,13 +12363,25 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(4);
 	var forms_1 = __webpack_require__(30);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+	var forms_1 = __webpack_require__(25);
+	var common_1 = __webpack_require__(18);
+>>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var directives_module_1 = __webpack_require__(44);
 	var userlist_component_1 = __webpack_require__(181);
 	var usercreate_component_1 = __webpack_require__(179);
 	var userdetails_component_1 = __webpack_require__(180);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+=======
+	var directives_module_1 = __webpack_require__(37);
+	var userlist_component_1 = __webpack_require__(188);
+	var usercreate_component_1 = __webpack_require__(186);
+	var userdetails_component_1 = __webpack_require__(187);
+>>>>>>> regenerating bundle
 	var UsersModule = (function () {
 	    function UsersModule() {
 	    }
@@ -10886,12 +12417,16 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 461:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(462)();
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 458:
 /***/ function(module, exports, __webpack_require__) {
@@ -10910,7 +12445,16 @@ webpackJsonp([2],{
 	exports = module.exports = __webpack_require__(600)();
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 614:
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(615)();
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 	// imports
 
 
@@ -10922,9 +12466,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 462:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 459:
 =======
@@ -10934,7 +12482,13 @@ webpackJsonp([2],{
 /***/ 600:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 615:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports) {
 
 	/*
@@ -10991,9 +12545,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 465:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 462:
 =======
@@ -11001,10 +12559,13 @@ webpackJsonp([2],{
 /***/ 460:
 =======
 /***/ 604:
+=======
+/***/ 619:
+>>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var core_1 = __webpack_require__(4);
+	var core_1 = __webpack_require__(3);
 	/* tslint:disable-next-line */
 	var BaseChartDirective = (function () {
 	    function BaseChartDirective(element) {
@@ -11265,19 +12826,30 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 /***/ 605:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 620:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned twelve wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Application Groups</div>\n    </div>\n\n    <div class=\"center aligned four wide column\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Application Group\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n    <div class=\"ui active inverted dimmer\" *ngIf=\"applicationGroupListCtrl.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n    <ctv-table #tableRef [defaultSortColumn]=\"'groupName'\"\n               [items]=\"applicationGroupListCtrl['groups']\"\n               (filtereditems)=\"applicationGroupListCtrl['filteredgroups']=$event;\"\n               [size]=\"12\">\n        <thead>\n            <tr>\n                <th><ctv-th [sortfield]=\"'groupName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Network</ctv-th></th>\n                <th><ctv-th [sortfield]=\"'policies'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Policies</ctv-th></th>\n                <th class=\"right floated three wide column\">\n                    <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search application groups...'\"></ctv-search>\n                </th>\n            </tr>\n        </thead>\n\n        <tbody>\n            <tr *ngFor=\"let group of applicationGroupListCtrl['filteredgroups']\">\n                <td><a [routerLink]=\"['../details', group.key]\">{{group.groupName}}</a></td>\n                <td>{{group.networkName}}</td>\n                <td>{{group.policies.join(\", \")}}</td>\n                <td></td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n            <tr>\n                <td colspan=\"4\">\n                    <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                     (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                     (prevChunk)=\"tableRef.showPrevChunk()\"\n                                     (nextChunk)=\"tableRef.showNextChunk()\">\n\n                    </ctv-tpagination>\n                </td>\n            </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 466:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 463:
 =======
@@ -11287,13 +12859,20 @@ webpackJsonp([2],{
 /***/ 606:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 621:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned thirteen wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <div class=\"center aligned three wide column\" *auth=\"'SysAdmin'\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<div class=\"ui basic segment\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n            <th class=\"right floated three wide column\">\n                <ctv-search (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [placeholder]=\"'Search networks...'\"></ctv-search>\n            </th>\n        </tr>\n        </thead>\n\n        <tbody>\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a [routerLink]=\"['../details',network.key]\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n            <td></td>\n        </tr>\n        </tbody>\n        <tfoot>\n        <tr>\n            <td colspan=\"5\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 733:
 /***/ function(module, exports, __webpack_require__) {
@@ -11301,6 +12880,9 @@ webpackJsonp([2],{
 	
 	        var result = __webpack_require__(461);
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 730:
 /***/ function(module, exports, __webpack_require__) {
@@ -11322,7 +12904,17 @@ webpackJsonp([2],{
 	        var result = __webpack_require__(599);
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 888:
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	        var result = __webpack_require__(614);
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 
 	        if (typeof result === "string") {
 	            module.exports = result;
@@ -11333,9 +12925,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 734:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 731:
 =======
@@ -11345,7 +12941,13 @@ webpackJsonp([2],{
 /***/ 874:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 889:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports) {
 
 	if (typeof Object.create === 'function') {
@@ -11375,9 +12977,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 735:
 =======
+=======
+<<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
+>>>>>>> regenerating bundle
 <<<<<<< e67539b00b2b5dc2c00d554c909268ae2ddc14ca
 /***/ 732:
 =======
@@ -11387,7 +12993,13 @@ webpackJsonp([2],{
 /***/ 875:
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
+<<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 >>>>>>> adding chart.js
+=======
+=======
+/***/ 890:
+>>>>>>> regenerating bundle
+>>>>>>> regenerating bundle
 /***/ function(module, exports) {
 
 	module.exports = function isBuffer(arg) {
