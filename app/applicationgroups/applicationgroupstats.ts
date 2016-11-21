@@ -25,7 +25,6 @@ export class ApplicationGroupStatsComponent implements OnInit, OnDestroy{
                 private crudHelperService: CRUDHelperService,
                 private inspectService: InspectService,
                 private ngZone: NgZone){
-        this.showLoader = true;
         this.statkey = '';
         this.applicationInspectStats = {
             externalPktTag: '',

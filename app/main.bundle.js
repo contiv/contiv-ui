@@ -58,7 +58,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 18:
+/***/ 15:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -109,7 +109,10 @@ webpackJsonp([2],{
 	    'CIDR_REGEX': '^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$',
 	    'VLAN_REGEX': '^([0-9]{1,4}?-[0-9]{1,4}?)$',
 	    'VXLAN_REGEX': '^([0-9]{1,8}?-[0-9]{1,8}?)$',
-	    'NUMBER_REGEX': '^[0-9]*$'
+	    'NUMBER_REGEX': '^[0-9]*$',
+	    // System strings
+	    'PRODUCT_NAME': 'Cisco Container Networking',
+	    'PRODUCT_VERSION': 'TP1.0'
 	};
 	
 
@@ -193,7 +196,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/17/16.
 	 */
 	var core_1 = __webpack_require__(2);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var errormessagedirective_1 = __webpack_require__(272);
 	var tabledirective_1 = __webpack_require__(276);
 	var forms_1 = __webpack_require__(24);
@@ -271,7 +274,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var ApplicationGroupsModel = (function (_super) {
 	    __extends(ApplicationGroupsModel, _super);
@@ -491,7 +494,7 @@ webpackJsonp([2],{
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
 	var util_1 = __webpack_require__(51);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var NetworksModel = (function (_super) {
 	    __extends(NetworksModel, _super);
@@ -1142,7 +1145,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var OrganizationsModel = (function (_super) {
 	    __extends(OrganizationsModel, _super);
@@ -1182,7 +1185,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var PoliciesModel = (function (_super) {
 	    __extends(PoliciesModel, _super);
@@ -1465,7 +1468,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var NetprofilesModel = (function (_super) {
 	    __extends(NetprofilesModel, _super);
@@ -1516,7 +1519,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var ServicelbsModel = (function (_super) {
 	    __extends(ServicelbsModel, _super);
@@ -1619,7 +1622,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var AppProfilesModel = (function (_super) {
 	    __extends(AppProfilesModel, _super);
@@ -1669,7 +1672,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var _ = __webpack_require__(26);
 	var UsersModel = (function (_super) {
@@ -1832,7 +1835,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	__webpack_require__(106);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var NodesService = (function () {
 	    function NodesService(http, apiService) {
@@ -2030,7 +2033,7 @@ webpackJsonp([2],{
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(44);
 	var _ = __webpack_require__(26);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var RulesModel = (function (_super) {
 	    __extends(RulesModel, _super);
@@ -2105,7 +2108,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	__webpack_require__(106);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var apiservice_1 = __webpack_require__(33);
 	var NetworkService = (function () {
 	    function NetworkService(http, apiService) {
@@ -2297,6 +2300,8 @@ webpackJsonp([2],{
 	            });
 	        });
 	        setMode();
+	        this.applicationGroup = { groupName: '', networkName: '' };
+	        this.serverErrorMessage = '';
 	        this.statskey = '';
 	        this.infoselected = true;
 	        this.applicationGroupDetailsCtrl = this;
@@ -2697,7 +2702,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var filterpipe_1 = __webpack_require__(278);
 	var PipesModule = (function () {
 	    function PipesModule() {
@@ -3016,11 +3021,13 @@ webpackJsonp([2],{
 	var crudhelperservice_1 = __webpack_require__(9);
 	var router_1 = __webpack_require__(5);
 	var authservice_1 = __webpack_require__(68);
+	var contivglobals_1 = __webpack_require__(15);
 	var LoginComponent = (function () {
 	    function LoginComponent(router, activatedRoute, crudHelperService, authService) {
 	        this.router = router;
 	        this.activatedRoute = activatedRoute;
 	        this.authService = authService;
+	        this.product_name = contivglobals_1.ContivGlobals.PRODUCT_NAME;
 	        this.showLoader = true;
 	        this.showServerError = false;
 	        this.serverErrorMessage = '';
@@ -3098,10 +3105,12 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
+	var contivglobals_1 = __webpack_require__(15);
 	var LogoutComponent = (function () {
 	    function LogoutComponent(router, activatedRoute) {
 	        this.router = router;
 	        this.activatedRoute = activatedRoute;
+	        this.product_name = contivglobals_1.ContivGlobals.PRODUCT_NAME;
 	    }
 	    LogoutComponent.prototype.ngOnInit = function () {
 	        jQuery("body").addClass("background");
@@ -3181,11 +3190,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var authservice_1 = __webpack_require__(68);
+	var contivglobals_1 = __webpack_require__(15);
 	var MenuComponent = (function () {
 	    function MenuComponent(activatedRoute, router, authService) {
 	        this.activatedRoute = activatedRoute;
 	        this.router = router;
 	        this.authService = authService;
+	        this.product_name = contivglobals_1.ContivGlobals.PRODUCT_NAME;
 	        this.username = authService.authTokenPayload['role'];
 	    }
 	    MenuComponent.prototype.ngOnInit = function () {
@@ -3498,7 +3509,7 @@ webpackJsonp([2],{
 	var applicationgroupsmodel_1 = __webpack_require__(43);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var networkpoliciestabsctrl_1 = __webpack_require__(69);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var IsolationPolicyDetailsComponent = (function () {
 	    function IsolationPolicyDetailsComponent(activatedRoute, router, policiesModel, rulesModel, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -3885,7 +3896,7 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(45);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var router_1 = __webpack_require__(5);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var NetworkCreateComponent = (function () {
 	    function NetworkCreateComponent(router, activatedRoute, networksModel, crudHelperService) {
 	        this.router = router;
@@ -4744,7 +4755,7 @@ webpackJsonp([2],{
 	var inspectservice_1 = __webpack_require__(92);
 	var util_1 = __webpack_require__(51);
 	var servicelbsmodel_1 = __webpack_require__(74);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var ServicelbStatComponent = (function () {
 	    function ServicelbStatComponent(servicelbsModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -5350,7 +5361,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var platform_browser_1 = __webpack_require__(89);
 	var http_1 = __webpack_require__(22);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var dashboard_module_1 = __webpack_require__(279);
 	var networkpolicies_module_1 = __webpack_require__(289);
 	var applicationgroups_module_ts_1 = __webpack_require__(263);
@@ -5564,21 +5575,25 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var ApplicationGroupInfoComponent = (function () {
 	    function ApplicationGroupInfoComponent() {
-	        this.applicationInfoCtrl = {
-	            applicationGroup: {
-	                groupName: '',
-	                networkName: ''
-	            },
-	            showLoader: true,
-	            showServerError: false,
-	            mode: 'details',
-	            serverErrorMessage: ''
+	        this.applicationGroup = {
+	            groupName: '',
+	            networkName: ''
 	        };
+	        this.mode = 'details';
+	        this.applicationInfoCtrl = this;
 	    }
 	    __decorate([
-	        core_1.Input('applicationInfoCtrl'), 
+	        core_1.Input('applicationGroup'), 
 	        __metadata('design:type', Object)
-	    ], ApplicationGroupInfoComponent.prototype, "applicationInfoCtrl", void 0);
+	    ], ApplicationGroupInfoComponent.prototype, "applicationGroup", void 0);
+	    __decorate([
+	        core_1.Input('mode'), 
+	        __metadata('design:type', String)
+	    ], ApplicationGroupInfoComponent.prototype, "mode", void 0);
+	    __decorate([
+	        core_1.Input('showLoader'), 
+	        __metadata('design:type', Boolean)
+	    ], ApplicationGroupInfoComponent.prototype, "showLoader", void 0);
 	    ApplicationGroupInfoComponent = __decorate([
 	        core_1.Component({
 	            selector: 'applicationgroupinfo',
@@ -5611,7 +5626,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var directives_module_1 = __webpack_require__(38);
 	var pipes_module_1 = __webpack_require__(157);
@@ -5688,7 +5703,7 @@ webpackJsonp([2],{
 	var crudhelperservice_1 = __webpack_require__(9);
 	var inspectservice_1 = __webpack_require__(92);
 	var rxjs_1 = __webpack_require__(32);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var util_1 = __webpack_require__(51);
 	var ApplicationGroupStatsComponent = (function () {
 	    function ApplicationGroupStatsComponent(applicationGroupsModel, crudHelperService, inspectService, ngZone) {
@@ -5697,7 +5712,6 @@ webpackJsonp([2],{
 	        this.crudHelperService = crudHelperService;
 	        this.inspectService = inspectService;
 	        this.ngZone = ngZone;
-	        this.showLoader = true;
 	        this.statkey = '';
 	        this.applicationInspectStats = {
 	            externalPktTag: '',
@@ -6148,7 +6162,7 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var directives_module_1 = __webpack_require__(38);
 	var appprofilelist_component_1 = __webpack_require__(156);
@@ -6543,7 +6557,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(2);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var NetworkSettingComponent = (function () {
 	    function NetworkSettingComponent() {
 	        this.vlanPattern = contivglobals_1.ContivGlobals.VLAN_REGEX;
@@ -7056,7 +7070,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var dashboardctrl_1 = __webpack_require__(160);
 	var DashboardModule = (function () {
@@ -7215,7 +7229,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var directives_module_1 = __webpack_require__(38);
 	var router_1 = __webpack_require__(5);
 	var firstrunwizardservice_1 = __webpack_require__(75);
@@ -7393,7 +7407,7 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var loginctrl_1 = __webpack_require__(162);
 	var unauthorized_1 = __webpack_require__(164);
@@ -7449,7 +7463,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var menuCtrl_1 = __webpack_require__(165);
 	var directives_module_1 = __webpack_require__(38);
@@ -7636,7 +7650,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var directives_module_1 = __webpack_require__(38);
 	var networkpoliciestabsctrl_1 = __webpack_require__(69);
@@ -7708,7 +7722,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var directives_module_1 = __webpack_require__(38);
 	var networklistctrl_1 = __webpack_require__(172);
 	var networkstatsctrl_1 = __webpack_require__(292);
@@ -7812,7 +7826,7 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(45);
 	var inspectservice_1 = __webpack_require__(92);
 	var util_1 = __webpack_require__(51);
-	var contivglobals_1 = __webpack_require__(18);
+	var contivglobals_1 = __webpack_require__(15);
 	var NetworkStatComponent = (function () {
 	    function NetworkStatComponent(networksModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -7911,7 +7925,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var directives_module_1 = __webpack_require__(38);
 	var organizationlistctrl_1 = __webpack_require__(175);
@@ -7970,7 +7984,7 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var directives_module_1 = __webpack_require__(38);
 	var servicelblistctrl_1 = __webpack_require__(179);
 	var servicelbstatsctrl_1 = __webpack_require__(180);
@@ -8102,7 +8116,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var directives_module_1 = __webpack_require__(38);
 	var networksettingctrl_1 = __webpack_require__(182);
@@ -8161,7 +8175,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(24);
-	var common_1 = __webpack_require__(17);
+	var common_1 = __webpack_require__(18);
 	var router_1 = __webpack_require__(5);
 	var directives_module_1 = __webpack_require__(38);
 	var userlist_component_1 = __webpack_require__(186);

@@ -16,6 +16,9 @@ export class ApplicationGroupDetailsComponent implements OnInit{
     public applicationGroupDetailsCtrl: any;
     public infoselected: boolean;
     public statskey: string;
+    public showLoader: boolean;
+    public showServerError: boolean;
+    public serverErrorMessage: string;
 
     constructor(private activatedRoute: ActivatedRoute,
                 private router: Router,
@@ -52,6 +55,8 @@ export class ApplicationGroupDetailsComponent implements OnInit{
             });
 
         setMode();
+        this.applicationGroup = {groupName: '', networkName: ''};
+        this.serverErrorMessage = '';
         this.statskey = '';
         this.infoselected = true;
         this.applicationGroupDetailsCtrl = this;

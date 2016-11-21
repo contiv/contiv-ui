@@ -51,8 +51,32 @@
     </a>
 </div>
 
-<applicationgroupinfo *ngIf="infoselected || applicationGroupDetailsCtrl.mode == 'edit'"
-    [applicationInfoCtrl]="applicationGroupDetailsCtrl"></applicationgroupinfo>
+<div *ngIf="infoselected || applicationGroupDetailsCtrl.mode == 'edit'">
+    <applicationgroupinfo [applicationGroup]="applicationGroupDetailsCtrl.applicationGroup"
+                          [mode]="applicationGroupDetailsCtrl.mode" [showLoader]="applicationGroupDetailsCtrl.showLoader"></applicationgroupinfo>
+    <div [ngSwitch]="applicationGroupDetailsCtrl.mode" style="margin-top: 40px">
+        <div class="ui grid">
+            <div class="right aligned sixteen wide column">
+                <button *ngSwitchCase="'edit'" type="button" class="ui basic button"
+                        (click)="applicationGroupDetailsCtrl.cancelEditing()">Cancel
+                </button>
+                <button *ngSwitchCase="'edit'" type="button" class="ui blue button"
+                        (click)="applicationGroupDetailsCtrl.saveApplicationGroup()">
+                    Save
+                </button>
+            </div>
+        </div>
+        <ctv-error *ngIf="((applicationGroupDetailsCtrl.showServerError) && (applicationGroupDetailsCtrl.mode === 'edit'))"
+                   header="Error saving application group"
+                   [error]="applicationGroupDetailsCtrl.serverErrorMessage">
+        </ctv-error>
+        <ctv-error *ngIf="((applicationGroupDetailsCtrl.showServerError) && (applicationGroupDetailsCtrl.mode === 'details'))"
+                   header="Error deleting application group"
+                   [error]="applicationGroupDetailsCtrl.serverErrorMessage">
+        </ctv-error>
+    </div>
+</div>
+
 <applicationgroupstats [statkey]="applicationGroupDetailsCtrl.statskey"
     *ngIf="!infoselected && applicationGroupDetailsCtrl.mode != 'edit'"></applicationgroupstats>
 
