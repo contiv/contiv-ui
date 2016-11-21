@@ -28,6 +28,14 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
     public lineChartOptions:any = {
         animation: false,
         responsive: true,
+        scales: {
+            yAxes: [{
+                type: 'linear',
+                ticks: {
+                    beginAtZero: true,
+                }
+            }]
+        }
     };
     public lineChartColors:Array<any> = [
         { // dark grey
@@ -44,7 +52,7 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
     constructor(private chartService: ChartService){
         this.lineChartData = [{
             label: '# of Endpoints',
-            data: [2, 2, 2, 2]
+            data: [2, 2, 2, 2],
         }];
         this.lineChartLabels = ['0T', '1T', '2T', '3T'];
         this.inspectActivated = false;

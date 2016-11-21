@@ -9719,6 +9719,14 @@ webpackJsonp([2],{
 	        this.lineChartOptions = {
 	            animation: false,
 	            responsive: true,
+	            scales: {
+	                yAxes: [{
+	                        type: 'linear',
+	                        ticks: {
+	                            beginAtZero: true,
+	                        }
+	                    }]
+	            }
 	        };
 	        this.lineChartColors = [
 	            {
@@ -9734,7 +9742,7 @@ webpackJsonp([2],{
 	        this.lineChartType = 'line';
 	        this.lineChartData = [{
 	                label: '# of Endpoints',
-	                data: [2, 2, 2, 2]
+	                data: [2, 2, 2, 2],
 	            }];
 	        this.lineChartLabels = ['0T', '1T', '2T', '3T'];
 	        this.inspectActivated = false;
