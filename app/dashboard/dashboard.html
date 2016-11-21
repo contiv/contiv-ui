@@ -28,7 +28,7 @@
                         </thead>
 
                         <tbody>
-                        <tr *ngFor="let network of filterednetworks" [ngClass]="{positive: key==network.key}" style="background: none" (click)="key=network.key">
+                        <tr class="selectable" *ngFor="let network of filterednetworks" [ngClass]="{selected: key==network.key, notSelected: key!=network.key}" (click)="key=network.key">
                             <td>{{network.networkName}}</td>
                             <td>{{network.encap}}</td>
                             <td>{{network.subnet}}</td>
@@ -49,20 +49,20 @@
                     </ctv-table>
                 </div>
                 <div class="row" style="margin-top: 30px;" *ngIf="endpointType=='ApplicationGroup'">
-                    <ctv-table #tableRef [defaultSortColumn]="'networkName'"
+                    <ctv-table #tableRef [defaultSortColumn]="'groupName'"
                                [items]="applicationGroupList"
                                (filtereditems)="filteredgroups=$event;"
                                [size]="4">
                         <thead>
                         <tr>
-                            <th><ctv-th [sortfield]="'networkName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Name</ctv-th></th>
-                            <th><ctv-th [sortfield]="'encap'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Network</ctv-th></th>
-                            <th><ctv-th [sortfield]="'subnet'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Policies</ctv-th></th>
+                            <th><ctv-th [sortfield]="'groupName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Name</ctv-th></th>
+                            <th><ctv-th [sortfield]="'networkName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Network</ctv-th></th>
+                            <th><ctv-th [sortfield]="'policies'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Policies</ctv-th></th>
                         </tr>
                         </thead>
 
                         <tbody>
-                        <tr *ngFor="let group of filteredgroups" [ngClass]="{positive: key==group.key}" style="background: none" (click)="key=group.key">
+                        <tr *ngFor="let group of filteredgroups" [ngClass]="{selected: key==group.key, notSelected: key!=group.key}" (click)="key=group.key">
                             <td>{{group.groupName}}</td>
                             <td>{{group.networkName}}</td>
                             <td>{{group.policies.join(", ")}}</td>
@@ -92,6 +92,17 @@
                     </div>
                     <div class="description">
                         <p class="center aligned" style="font-size: 5rem">{{networks}}</p>
+                    </div>
+
+                </div>
+            </a>
+            <a class="ui fluid card" [routerLink]="['../servicelbs/list']">
+                <div class="content">
+                    <div class="ui grey ribbon label">
+                        <i class="small networks icon" style="margin-left: 0.75em"></i> Service Load Balancers
+                    </div>
+                    <div class="description">
+                        <p class="center aligned" style="font-size: 5rem">{{servicelbs}}</p>
                     </div>
 
                 </div>

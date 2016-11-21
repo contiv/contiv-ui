@@ -2133,6 +2133,49 @@ webpackJsonp([2],{
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by vjain3 on 5/11/16.
+	 */
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(23);
+	var collection_1 = __webpack_require__(45);
+	var contivglobals_1 = __webpack_require__(19);
+	var apiservice_1 = __webpack_require__(31);
+	var ServicelbsModel = (function (_super) {
+	    __extends(ServicelbsModel, _super);
+	    function ServicelbsModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.SERVICELBS_ENDPOINT, apiService);
+	    }
+	    ServicelbsModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], ServicelbsModel);
+	    return ServicelbsModel;
+	    var _a, _b;
+	}(collection_1.Collection));
+	exports.ServicelbsModel = ServicelbsModel;
+	
+
+/***/ },
+
+/***/ 71:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
 	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
 	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
 	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2200,7 +2243,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 74:
+/***/ 75:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2284,6 +2327,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 /***/ 75:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2360,6 +2404,8 @@ webpackJsonp([2],{
 
 /***/ },
 
+=======
+>>>>>>> Adding Service lbs to dashboard
 /***/ 76:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -4617,6 +4663,7 @@ webpackJsonp([2],{
 	var applicationgroupsmodel_1 = __webpack_require__(52);
 	var policiesmodel_1 = __webpack_require__(69);
 	var networksmodel_1 = __webpack_require__(46);
+	var servicelbsmodel_1 = __webpack_require__(70);
 	//var Chart = require('chart.js');
 <<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 >>>>>>> 024b7b6... adding chart.js
@@ -4624,17 +4671,27 @@ webpackJsonp([2],{
 =======
 >>>>>>> regenerating bundle
 	var DashboardComponent = (function () {
-	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, ngZone) {
+	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, servicelbsModel, ngZone) {
 	        this.networksModel = networksModel;
 	        this.applicationGroupsModel = applicationGroupsModel;
 	        this.policiesModel = policiesModel;
+	        this.servicelbsModel = servicelbsModel;
 	        this.ngZone = ngZone;
 	        this.nodes = 0;
 	        this.networks = 0;
-	        this.volumes = 0;
 	        this.groups = 0;
 	        this.networkpolicies = 0;
-	        this.storagepolicies = 0;
+	        this.servicelbs = 0;
+	        this.lineChartColors = [
+	            {
+	                backgroundColor: 'rgba(77,83,96,0.2)',
+	                borderColor: 'rgba(77,83,96,1)',
+	                pointBackgroundColor: 'rgba(77,83,96,1)',
+	                pointBorderColor: '#fff',
+	                pointHoverBackgroundColor: '#fff',
+	                pointHoverBorderColor: 'rgba(77,83,96,1)'
+	            }
+	        ];
 	        var dashboardComponent = this;
 	        this.networkList = [];
 	        this.applicationGroupList = [];
@@ -4659,11 +4716,15 @@ webpackJsonp([2],{
 	                    .then(function (result) {
 	                    dashboardComponent.networkpolicies = result.length;
 	                });
+	                servicelbsModel.get(reload)
+	                    .then(function (result) {
+	                    dashboardComponent.servicelbs = result.length;
+	                });
 	            });
 	        }
 	        //Load from cache for quick display initially
 	        getDashboardInfo(false);
-	        this.subscription = Observable_1.Observable.interval(5000000).subscribe(function () {
+	        this.subscription = Observable_1.Observable.interval(7000).subscribe(function () {
 	            getDashboardInfo(true);
 	        });
 	    }
@@ -4689,12 +4750,13 @@ webpackJsonp([2],{
 	    DashboardComponent = __decorate([
 	        core_1.Component({
 	            selector: 'dashboard',
-	            templateUrl: 'dashboard/dashboard.html'
+	            templateUrl: 'dashboard/dashboard.html',
+	            styleUrls: ['dashboard/dashboard.css']
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _a) || Object, (typeof (_b = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _b) || Object, (typeof (_c = typeof policiesmodel_1.PoliciesModel !== 'undefined' && policiesmodel_1.PoliciesModel) === 'function' && _c) || Object, (typeof (_d = typeof servicelbsmodel_1.ServicelbsModel !== 'undefined' && servicelbsmodel_1.ServicelbsModel) === 'function' && _d) || Object, (typeof (_e = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _e) || Object])
 	    ], DashboardComponent);
 	    return DashboardComponent;
-	    var _a, _b, _c, _d;
+	    var _a, _b, _c, _d, _e;
 	}());
 	exports.DashboardComponent = DashboardComponent;
 	
@@ -5125,9 +5187,9 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
-	var netprofilesmodel_1 = __webpack_require__(74);
+	var netprofilesmodel_1 = __webpack_require__(75);
 	var crudhelperservice_1 = __webpack_require__(10);
-	var networkpoliciestabsctrl_1 = __webpack_require__(70);
+	var networkpoliciestabsctrl_1 = __webpack_require__(71);
 	var BandwidthPolicyCreateComponent = (function () {
 	    function BandwidthPolicyCreateComponent(activatedRoute, router, netprofilesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -5216,9 +5278,9 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
-	var netprofilesmodel_1 = __webpack_require__(74);
+	var netprofilesmodel_1 = __webpack_require__(75);
 	var crudhelperservice_1 = __webpack_require__(10);
-	var networkpoliciestabsctrl_1 = __webpack_require__(70);
+	var networkpoliciestabsctrl_1 = __webpack_require__(71);
 	var BandwidthPolicyDetailsComponent = (function () {
 	    function BandwidthPolicyDetailsComponent(activatedRoute, router, netprofilesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -5335,7 +5397,7 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(6);
 	var policiesmodel_1 = __webpack_require__(69);
 	var crudhelperservice_1 = __webpack_require__(10);
-	var networkpoliciestabsctrl_1 = __webpack_require__(70);
+	var networkpoliciestabsctrl_1 = __webpack_require__(71);
 	var IsolationPolicyCreateComponent = (function () {
 	    function IsolationPolicyCreateComponent(activatedRoute, router, policiesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -5442,12 +5504,16 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(46);
 	var applicationgroupsmodel_1 = __webpack_require__(52);
 	var crudhelperservice_1 = __webpack_require__(10);
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
 <<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 >>>>>>> 024b7b6... adding chart.js
 	var contivglobals_1 = __webpack_require__(22);
 >>>>>>> adding chart.js
 =======
+=======
+	var networkpoliciestabsctrl_1 = __webpack_require__(71);
+>>>>>>> Adding Service lbs to dashboard
 	var contivglobals_1 = __webpack_require__(19);
 >>>>>>> regenerating bundle
 	var IsolationPolicyDetailsComponent = (function () {
@@ -6483,8 +6549,12 @@ webpackJsonp([2],{
 =======
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(10);
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 >>>>>>> regenerating bundle
 	var servicelbsmodel_1 = __webpack_require__(75);
+=======
+	var servicelbsmodel_1 = __webpack_require__(70);
+>>>>>>> Adding Service lbs to dashboard
 	var networksmodel_1 = __webpack_require__(46);
 	var router_1 = __webpack_require__(6);
 	var _ = __webpack_require__(27);
@@ -6685,7 +6755,7 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(10);
-	var servicelbsmodel_1 = __webpack_require__(75);
+	var servicelbsmodel_1 = __webpack_require__(70);
 	var router_1 = __webpack_require__(6);
 	var _ = __webpack_require__(27);
 	var ServicelbInfoComponent = (function () {
@@ -6864,8 +6934,12 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(10);
 	var rxjs_1 = __webpack_require__(34);
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 >>>>>>> regenerating bundle
 	var servicelbsmodel_1 = __webpack_require__(75);
+=======
+	var servicelbsmodel_1 = __webpack_require__(70);
+>>>>>>> Adding Service lbs to dashboard
 	var router_1 = __webpack_require__(6);
 	var ServicelbListComponent = (function () {
 	    function ServicelbListComponent(router, route, servicelbsModel, crudHelperService, ngZone) {
@@ -6972,7 +7046,7 @@ webpackJsonp([2],{
 	var rxjs_1 = __webpack_require__(34);
 	var inspectservice_1 = __webpack_require__(116);
 	var util_1 = __webpack_require__(40);
-	var servicelbsmodel_1 = __webpack_require__(75);
+	var servicelbsmodel_1 = __webpack_require__(70);
 	var contivglobals_1 = __webpack_require__(19);
 >>>>>>> regenerating bundle
 	var ServicelbStatComponent = (function () {
@@ -8038,14 +8112,18 @@ webpackJsonp([2],{
 	var appprofile_module_1 = __webpack_require__(378);
 	var organization_module_1 = __webpack_require__(404);
 	var users_module_1 = __webpack_require__(408);
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 >>>>>>> regenerating bundle
 	var netprofilesmodel_1 = __webpack_require__(74);
+=======
+	var netprofilesmodel_1 = __webpack_require__(75);
+>>>>>>> Adding Service lbs to dashboard
 	var applicationgroupsmodel_1 = __webpack_require__(52);
 	var networksmodel_1 = __webpack_require__(46);
 	var organizationsmodel_1 = __webpack_require__(68);
 	var policiesmodel_1 = __webpack_require__(69);
 	var rulesmodel_1 = __webpack_require__(115);
-	var servicelbsmodel_1 = __webpack_require__(75);
+	var servicelbsmodel_1 = __webpack_require__(70);
 	var usersmodel_1 = __webpack_require__(92);
 	var appprofilesmodel_1 = __webpack_require__(91);
 	var crudhelperservice_1 = __webpack_require__(10);
@@ -8215,6 +8293,7 @@ webpackJsonp([2],{
 >>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
 	var menuCtrl_1 = __webpack_require__(167);
+<<<<<<< ca1977b2e739cc91a22b0074fa2a1a7d21e59b60
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var isolationpolicycreatectrl_1 = __webpack_require__(163);
@@ -8247,6 +8326,9 @@ webpackJsonp([2],{
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
 =======
+=======
+	var networkpoliciestabsctrl_1 = __webpack_require__(71);
+>>>>>>> Adding Service lbs to dashboard
 	var isolationpolicycreatectrl_1 = __webpack_require__(170);
 	var isolationpolicydetailsctrl_1 = __webpack_require__(171);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(168);
@@ -8673,7 +8755,7 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var _ = __webpack_require__(27);
-	var netprofilesmodel_1 = __webpack_require__(74);
+	var netprofilesmodel_1 = __webpack_require__(75);
 	/*
 	angular.module("contiv.applicationgroups")
 	    .directive("ctvBandwidthpolicy", function () {
@@ -11250,8 +11332,12 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(10);
 	var rxjs_1 = __webpack_require__(34);
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 >>>>>>> regenerating bundle
 	var netprofilesmodel_1 = __webpack_require__(74);
+=======
+	var netprofilesmodel_1 = __webpack_require__(75);
+>>>>>>> Adding Service lbs to dashboard
 	var BandwidthListComponent = (function () {
 	    function BandwidthListComponent(netprofilesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -11487,6 +11573,7 @@ webpackJsonp([2],{
 >>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(37);
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
 <<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var isolationpolicycreatectrl_1 = __webpack_require__(163);
@@ -11501,6 +11588,9 @@ webpackJsonp([2],{
 >>>>>>> adding chart.js
 =======
 =======
+=======
+	var networkpoliciestabsctrl_1 = __webpack_require__(71);
+>>>>>>> Adding Service lbs to dashboard
 	var isolationpolicycreatectrl_1 = __webpack_require__(170);
 	var isolationpolicydetailsctrl_1 = __webpack_require__(171);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(168);

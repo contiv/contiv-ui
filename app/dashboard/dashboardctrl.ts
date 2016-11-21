@@ -7,30 +7,42 @@ import { Subscription } from 'rxjs/Subscription';
 import { ApplicationGroupsModel } from "../components/models/applicationgroupsmodel";
 import { PoliciesModel } from "../components/models/policiesmodel";
 import { NetworksModel } from "../components/models/networksmodel";
+import {ServicelbsModel} from "../components/models/servicelbsmodel";
 
 //var Chart = require('chart.js');
 
 @Component({
     selector: 'dashboard',
-    templateUrl: 'dashboard/dashboard.html'
+    templateUrl: 'dashboard/dashboard.html',
+    styleUrls: ['dashboard/dashboard.css']
 
 })
 export class DashboardComponent implements OnDestroy {
     nodes: number = 0;
     networks: number = 0;
-    volumes: number = 0;
     groups: number = 0;
     networkList: any;
     applicationGroupList: any;
     networkpolicies: number = 0;
-    storagepolicies: number = 0;
+    servicelbs: number = 0;
     subscription: Subscription;
     endpointType: string;
     public key: string;
+    public lineChartColors:Array<any> = [
+        { // dark grey
+            backgroundColor: 'rgba(77,83,96,0.2)',
+            borderColor: 'rgba(77,83,96,1)',
+            pointBackgroundColor: 'rgba(77,83,96,1)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(77,83,96,1)'
+        }
+    ];
 
     constructor(private networksModel:NetworksModel,
                 private applicationGroupsModel:ApplicationGroupsModel,
                 private policiesModel:PoliciesModel,
+                private servicelbsModel: ServicelbsModel,
                 private ngZone:NgZone) {
         var dashboardComponent = this;
         this.networkList = [];
@@ -57,13 +69,17 @@ export class DashboardComponent implements OnDestroy {
                     .then(function (result) {
                         dashboardComponent.networkpolicies = result.length;
                     });
+                servicelbsModel.get(reload)
+                    .then( function (result) {
+                        dashboardComponent.servicelbs = result.length;
+                    })
             })
         }
 
         //Load from cache for quick display initially
         getDashboardInfo(false);
 
-        this.subscription = Observable.interval(5000000).subscribe(() => {
+        this.subscription = Observable.interval(7000).subscribe(() => {
             getDashboardInfo(true);
         })
     }

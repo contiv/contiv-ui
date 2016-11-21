@@ -1175,6 +1175,7 @@
 	    , createArrayIncludes = __webpack_require__(119)
 	    , speciesConstructor  = __webpack_require__(211)
 	    , ArrayIterators      = __webpack_require__(102)
+<<<<<<< ca1977b2e739cc91a22b0074fa2a1a7d21e59b60
 	    , Iterators           = __webpack_require__(71)
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	    , $iterDetect         = __webpack_require__(125)
@@ -1183,6 +1184,9 @@
 	    , arrayCopyWithin     = __webpack_require__(183)
 >>>>>>> adding chart.js
 =======
+=======
+	    , Iterators           = __webpack_require__(72)
+>>>>>>> Adding Service lbs to dashboard
 	    , $iterDetect         = __webpack_require__(129)
 	    , setSpecies          = __webpack_require__(82)
 	    , arrayFill           = __webpack_require__(118)
@@ -2077,13 +2081,14 @@
 /* 68 */,
 /* 69 */,
 /* 70 */,
-/* 71 */
+/* 71 */,
+/* 72 */
 /***/ function(module, exports) {
 
 	module.exports = {};
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
@@ -2110,7 +2115,6 @@
 	};
 
 /***/ },
-/* 73 */,
 /* 74 */,
 /* 75 */,
 /* 76 */,
@@ -2677,8 +2681,12 @@
 =======
 	var addToUnscopables = __webpack_require__(77)
 	  , step             = __webpack_require__(202)
+<<<<<<< ca1977b2e739cc91a22b0074fa2a1a7d21e59b60
 >>>>>>> regenerating bundle
 	  , Iterators        = __webpack_require__(71)
+=======
+	  , Iterators        = __webpack_require__(72)
+>>>>>>> Adding Service lbs to dashboard
 	  , toIObject        = __webpack_require__(39);
 
 	// 22.1.3.4 Array.prototype.entries()
@@ -3053,7 +3061,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// check on default Array iterator
-	var Iterators  = __webpack_require__(71)
+	var Iterators  = __webpack_require__(72)
 	  , ITERATOR   = __webpack_require__(15)('iterator')
 	  , ArrayProto = Array.prototype;
 
@@ -3151,8 +3159,12 @@
 	  , redefine       = __webpack_require__(32)
 	  , hide           = __webpack_require__(35)
 	  , has            = __webpack_require__(29)
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 >>>>>>> regenerating bundle
 	  , Iterators      = __webpack_require__(71)
+=======
+	  , Iterators      = __webpack_require__(72)
+>>>>>>> Adding Service lbs to dashboard
 	  , $iterCreate    = __webpack_require__(201)
 	  , setToStringTag = __webpack_require__(83)
 	  , getPrototypeOf = __webpack_require__(42)
@@ -3791,7 +3803,7 @@
 
 	var classof   = __webpack_require__(120)
 	  , ITERATOR  = __webpack_require__(15)('iterator')
-	  , Iterators = __webpack_require__(71);
+	  , Iterators = __webpack_require__(72);
 	module.exports = __webpack_require__(14).getIteratorMethod = function(it){
 	  if(it != undefined)return it[ITERATOR]
 	    || it['@@iterator']
@@ -3828,7 +3840,7 @@
 	  , redefine      = __webpack_require__(32)
 	  , global        = __webpack_require__(13)
 	  , hide          = __webpack_require__(35)
-	  , Iterators     = __webpack_require__(71)
+	  , Iterators     = __webpack_require__(72)
 	  , wks           = __webpack_require__(15)
 	  , ITERATOR      = wks('iterator')
 	  , TO_STRING_TAG = wks('toStringTag')
@@ -4711,6 +4723,7 @@
 
 	'use strict';
 	// 19.1.2.1 Object.assign(target, source, ...)
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 <<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 <<<<<<< HEAD
 	var getKeys  = __webpack_require__(71)
@@ -4732,6 +4745,9 @@
 	  , IObject  = __webpack_require__(78)
 =======
 	var getKeys  = __webpack_require__(72)
+=======
+	var getKeys  = __webpack_require__(73)
+>>>>>>> Adding Service lbs to dashboard
 	  , gOPS     = __webpack_require__(97)
 	  , pIE      = __webpack_require__(98)
 	  , toObject = __webpack_require__(36)
@@ -4786,8 +4802,12 @@
 	  , getKeys  = __webpack_require__(71);
 =======
 	  , anObject = __webpack_require__(9)
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 	  , getKeys  = __webpack_require__(72);
 >>>>>>> adding chart.js
+=======
+	  , getKeys  = __webpack_require__(73);
+>>>>>>> Adding Service lbs to dashboard
 
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	module.exports = __webpack_require__(20) ? Object.defineProperties : function defineProperties(O, Properties){
@@ -5576,7 +5596,7 @@
 	  , gOPNExt        = __webpack_require__(206)
 	  , $GOPD          = __webpack_require__(49)
 	  , $DP            = __webpack_require__(17)
-	  , $keys          = __webpack_require__(72)
+	  , $keys          = __webpack_require__(73)
 	  , gOPD           = $GOPD.f
 	  , dP             = $DP.f
 	  , gOPN           = gOPNExt.f
@@ -7188,6 +7208,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
+<<<<<<< 9cc5add699776d06c032baa0b51a6c0eb5c6b9fd
 	var getKeys = __webpack_require__(72)
 <<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	  , gOPS    = __webpack_require__(94)
@@ -7195,6 +7216,9 @@
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
 =======
+=======
+	var getKeys = __webpack_require__(73)
+>>>>>>> Adding Service lbs to dashboard
 	  , gOPS    = __webpack_require__(97)
 	  , pIE     = __webpack_require__(98);
 >>>>>>> regenerating bundle
@@ -7279,7 +7303,7 @@
 >>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
-	var getKeys   = __webpack_require__(72)
+	var getKeys   = __webpack_require__(73)
 	  , toIObject = __webpack_require__(39);
 	module.exports = function(object, el){
 	  var O      = toIObject(object)
@@ -10739,7 +10763,7 @@
 
 	// 19.1.2.14 Object.keys(O)
 	var toObject = __webpack_require__(36)
-	  , $keys    = __webpack_require__(72);
+	  , $keys    = __webpack_require__(73);
 
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	__webpack_require__(42)('keys', function(){
