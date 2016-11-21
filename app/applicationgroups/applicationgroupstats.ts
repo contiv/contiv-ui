@@ -16,7 +16,6 @@ import {isUndefined} from "util";
 
 export class ApplicationGroupStatsComponent implements OnInit, OnDestroy{
     @Input('statkey') statkey: string;
-    public applicationStatsCtrl: any;
     public applicationInspectStats: any;
     private refresh: Subscription;
     public showLoader: boolean;
@@ -35,7 +34,6 @@ export class ApplicationGroupStatsComponent implements OnInit, OnDestroy{
         this.endpoints = [];
         this.filteredendpoints = [];
         this.containerDetails= {};
-        this.applicationStatsCtrl = this;
         this.refresh = Observable.interval(5000).subscribe(() => {
             if(this.statkey!='')
                 this.getApplicationgroupInspect(true);

@@ -2304,7 +2304,6 @@ webpackJsonp([2],{
 	        this.serverErrorMessage = '';
 	        this.statskey = '';
 	        this.infoselected = true;
-	        this.applicationGroupDetailsCtrl = this;
 	    }
 	    ApplicationGroupDetailsComponent.prototype.ngOnInit = function () {
 	        this.statskey = this.activatedRoute.snapshot.params['key'];
@@ -5580,7 +5579,6 @@ webpackJsonp([2],{
 	            networkName: ''
 	        };
 	        this.mode = 'details';
-	        this.applicationInfoCtrl = this;
 	    }
 	    __decorate([
 	        core_1.Input('applicationGroup'), 
@@ -5722,7 +5720,6 @@ webpackJsonp([2],{
 	        this.endpoints = [];
 	        this.filteredendpoints = [];
 	        this.containerDetails = {};
-	        this.applicationStatsCtrl = this;
 	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
 	            if (_this.statkey != '')
 	                _this.getApplicationgroupInspect(true);

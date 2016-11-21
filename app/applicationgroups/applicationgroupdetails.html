@@ -40,7 +40,7 @@
         </button>
     </div>
 </div>
-<div class="ui secondary pointing menu" *ngIf="applicationGroupDetailsCtrl.mode=='details'">
+<div class="ui secondary pointing menu" *ngIf="mode=='details'">
     <a class="blue item" [ngClass]="{active: infoselected}" (click)="infoselected=true">
         <i class="details icon"></i>
         DETAILS
@@ -51,34 +51,34 @@
     </a>
 </div>
 
-<div *ngIf="infoselected || applicationGroupDetailsCtrl.mode == 'edit'">
-    <applicationgroupinfo [applicationGroup]="applicationGroupDetailsCtrl.applicationGroup"
-                          [mode]="applicationGroupDetailsCtrl.mode" [showLoader]="applicationGroupDetailsCtrl.showLoader"></applicationgroupinfo>
-    <div [ngSwitch]="applicationGroupDetailsCtrl.mode" style="margin-top: 40px">
+<div *ngIf="infoselected || mode == 'edit'">
+    <applicationgroupinfo [applicationGroup]="applicationGroup"
+                          [mode]="mode" [showLoader]="showLoader"></applicationgroupinfo>
+    <div [ngSwitch]="mode" style="margin-top: 40px">
         <div class="ui grid">
             <div class="right aligned sixteen wide column">
                 <button *ngSwitchCase="'edit'" type="button" class="ui basic button"
-                        (click)="applicationGroupDetailsCtrl.cancelEditing()">Cancel
+                        (click)="cancelEditing()">Cancel
                 </button>
                 <button *ngSwitchCase="'edit'" type="button" class="ui blue button"
-                        (click)="applicationGroupDetailsCtrl.saveApplicationGroup()">
+                        (click)="saveApplicationGroup()">
                     Save
                 </button>
             </div>
         </div>
-        <ctv-error *ngIf="((applicationGroupDetailsCtrl.showServerError) && (applicationGroupDetailsCtrl.mode === 'edit'))"
+        <ctv-error *ngIf="((showServerError) && (mode === 'edit'))"
                    header="Error saving application group"
-                   [error]="applicationGroupDetailsCtrl.serverErrorMessage">
+                   [error]="serverErrorMessage">
         </ctv-error>
-        <ctv-error *ngIf="((applicationGroupDetailsCtrl.showServerError) && (applicationGroupDetailsCtrl.mode === 'details'))"
+        <ctv-error *ngIf="((showServerError) && (mode === 'details'))"
                    header="Error deleting application group"
-                   [error]="applicationGroupDetailsCtrl.serverErrorMessage">
+                   [error]="serverErrorMessage">
         </ctv-error>
     </div>
 </div>
 
-<applicationgroupstats [statkey]="applicationGroupDetailsCtrl.statskey"
-    *ngIf="!infoselected && applicationGroupDetailsCtrl.mode != 'edit'"></applicationgroupstats>
+<applicationgroupstats [statkey]="statskey"
+    *ngIf="!infoselected && mode != 'edit'"></applicationgroupstats>
 
 
 

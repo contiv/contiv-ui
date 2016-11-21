@@ -13,7 +13,6 @@ import { CRUDHelperService } from "../components/utils/crudhelperservice";
 export class ApplicationGroupDetailsComponent implements OnInit{
     applicationGroup:any = {};
     mode:string = 'details';
-    public applicationGroupDetailsCtrl: any;
     public infoselected: boolean;
     public statskey: string;
     public showLoader: boolean;
@@ -59,7 +58,6 @@ export class ApplicationGroupDetailsComponent implements OnInit{
         this.serverErrorMessage = '';
         this.statskey = '';
         this.infoselected = true;
-        this.applicationGroupDetailsCtrl = this;
     }
 
     ngOnInit(){

@@ -1,25 +1,25 @@
-<div class="ui basic segment" [ngClass]="{loading: applicationStatsCtrl.showLoader}">
+<div class="ui basic segment" [ngClass]="{loading: showLoader}">
     <table class="ui very basic selectable table">
         <tbody>
         <tr>
             <td class="ctv-header three wide column">Name</td>
-            <td>{{applicationStatsCtrl['config']['groupName']}}</td>
+            <td>{{config['groupName']}}</td>
         </tr>
         <tr>
             <td class="ctv-header three wide column">Network Name</td>
-            <td>{{applicationStatsCtrl['config']['networkName']}}</td>
+            <td>{{config['networkName']}}</td>
         </tr>
         <tr>
             <td class="ctv-header three wide column">External Packet Tag</td>
-            <td>{{applicationStatsCtrl.applicationInspectStats.externalPktTag}}</td>
+            <td>{{applicationInspectStats.externalPktTag}}</td>
         </tr>
         <tr>
             <td class="ctv-header three wide column">Number of Endpoints</td>
-            <td>{{applicationStatsCtrl.applicationInspectStats.numEndpoints}}</td>
+            <td>{{applicationInspectStats.numEndpoints}}</td>
         </tr>
         <tr>
             <td class="ctv-header three wide column">Packet Tag</td>
-            <td>{{applicationStatsCtrl.applicationInspectStats.pktTag}}</td>
+            <td>{{applicationInspectStats.pktTag}}</td>
         </tr>
         </tbody>
     </table>
@@ -27,8 +27,8 @@
     <div class="ui section divider"></div>
     <ctv-collapsible title="End Points">
         <ctv-table #tableRef [defaultSortColumn]="'containerName'"
-                   [items]="applicationStatsCtrl['endpoints']"
-                   (filtereditems)="applicationStatsCtrl['filteredendpoints']=$event;"
+                   [items]="endpoints"
+                   (filtereditems)="filteredendpoints=$event"
                    [size]="12">
             <thead>
             <tr>
@@ -44,9 +44,9 @@
             </thead>
 
             <tbody>
-            <tr *ngFor="let endpoint of applicationStatsCtrl['filteredendpoints']">
+            <tr *ngFor="let endpoint of filteredendpoints">
                 <td>
-                    <ctv-accordion [items]="applicationStatsCtrl['containerDetails'][endpoint.containerID]">
+                    <ctv-accordion [items]="containerDetails[endpoint.containerID]">
                         <div class="ui grid" style="margin-top: -33px; margin-left: 30px;">
                             <div class="five wide column">{{endpoint.containerName.substr(1)}}</div>
                             <div class="four wide column">{{endpoint.ipAddress.join(' ')}}</div>

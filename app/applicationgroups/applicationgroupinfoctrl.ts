@@ -13,13 +13,11 @@ export class ApplicationGroupInfoComponent{
     @Input('applicationGroup') applicationGroup: any;
     @Input('mode') mode: string;
     @Input('showLoader') showLoader: boolean
-    applicationInfoCtrl: any;
     constructor(){
         this.applicationGroup= {
             groupName: '',
             networkName: ''
         }
         this.mode = 'details';
-        this.applicationInfoCtrl = this;
     }
 }
