@@ -36,7 +36,7 @@ import { AppProfileDetailsComponent } from "./appprofiles/appprofiledetails.comp
 import { FirstrunWizardComponent } from "./firstrunwizard/firstrunwizardctrl";
 import { NodeListComponent } from "./settings/nodes/nodelist.component";
 import { NodeCreateComponent } from "./settings/nodes/nodecreate.component";
-import {NodeDetailsComponent} from "./settings/nodes/nodedetails.component";
+import { NodeDetailsComponent } from "./settings/nodes/nodedetails.component";
 
 const routes = [
     {path: 'login', component: LoginComponent, canActivate: [AuthGuard]},
