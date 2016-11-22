@@ -1,13 +1,15 @@
 /**
  * Created by vjain3 on 3/11/16.
  */
-import {Component, OnDestroy, NgZone} from '@angular/core';
+import {Component, OnDestroy, NgZone, DoCheck} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import { ApplicationGroupsModel } from "../components/models/applicationgroupsmodel";
 import { PoliciesModel } from "../components/models/policiesmodel";
 import { NetworksModel } from "../components/models/networksmodel";
 import {ServicelbsModel} from "../components/models/servicelbsmodel";
+import {isUndefined} from "util";
+var _ = require('lodash');
 
 //var Chart = require('chart.js');
 
@@ -28,6 +30,7 @@ export class DashboardComponent implements OnDestroy {
     subscription: Subscription;
     endpointType: string;
     public key: string;
+    private setkeyflag: boolean
     public lineChartColors:Array<any> = [
         { // dark grey
             backgroundColor: 'rgba(77,83,96,0.2)',
@@ -49,6 +52,7 @@ export class DashboardComponent implements OnDestroy {
         this.applicationGroupList = []
         this.endpointType = 'Network';
         this.key = '';
+        this.setkeyflag = true;
         function getDashboardInfo(reload) {
             ngZone.run(() => {
                 networksModel.get(reload)
@@ -56,7 +60,8 @@ export class DashboardComponent implements OnDestroy {
                         dashboardComponent.networks = result.length;
                         dashboardComponent.networkList = result;
                         if (result.length > 0 && dashboardComponent.key === '' && dashboardComponent.endpointType === 'Network'){
-                            dashboardComponent.key = result[0]['key'];
+                            //dashboardComponent.key = result[0]['key'];
+                            //var tempArr = _.sortBy(dashboardComponent.networkList, ['networkName']);
                         }
 
                     });
@@ -79,10 +84,11 @@ export class DashboardComponent implements OnDestroy {
         //Load from cache for quick display initially
         getDashboardInfo(false);
 
-        this.subscription = Observable.interval(7000).subscribe(() => {
+        this.subscription = Observable.interval(7000000).subscribe(() => {
             getDashboardInfo(true);
         })
     }
+
 
     ngOnDestroy() {
         this.subscription.unsubscribe();
@@ -92,15 +98,25 @@ export class DashboardComponent implements OnDestroy {
         if(endpointType == 'Network'){
             if(this.endpointType !== 'Network'){
                 this.endpointType = 'Network';
-                if(this.networkList.length > 0)
-                    this.key = this.networkList[0]['key'];
+                this.setkeyflag = true;
             }
         }
         else {
             if(this.endpointType !== 'ApplicationGroup'){
                 this.endpointType = 'ApplicationGroup';
-                if(this.applicationGroupList.length > 0)
-                    this.key = this.applicationGroupList[0]['key'];
+                this.setkeyflag = true;
+            }
+        }
+    }
+
+    setKey(tempArr: any){
+        if(!isUndefined(tempArr)){
+            var temp = tempArr;
+            if(tempArr.length > 0 && this.setkeyflag){
+                Observable.timer(1).subscribe(() => {
+                    this.key = temp[0]['key'];
+                })
+                this.setkeyflag = false;
             }
         }
     }

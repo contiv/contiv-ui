@@ -25,18 +25,7 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
     private graphData: any;
     public lineChartData:Array<any>;
     public lineChartLabels:Array<any>;
-    public lineChartOptions:any = {
-        animation: false,
-        responsive: true,
-        scales: {
-            yAxes: [{
-                type: 'linear',
-                ticks: {
-                    beginAtZero: true,
-                }
-            }]
-        }
-    };
+    public lineChartOptions:any = {};
     public lineChartColors:Array<any> = [
         { // dark grey
             backgroundColor: 'rgba(77,83,96,0.2)',
@@ -54,6 +43,7 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
             label: '# of Endpoints',
             data: [2, 2, 2, 2],
         }];
+        this.adjustScale(100);
         this.lineChartLabels = ['0T', '1T', '2T', '3T'];
         this.inspectActivated = false;
         this.prevKey = '';
@@ -69,31 +59,53 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
     ngOnInit(){
         this.prevKey = this.key;
         this.prevEndpointType = this.endpointType;
-        var self = this;
         this.subscription = this.chartService.stream.subscribe((result) => {
             var resultKey = result['iKey'];
             var resultEndpointType = result['type'];
-            var currKey = self.key;
-            var currEndpointType = self.endpointType;
+            var currKey = this.key
+            var currEndpointType = this.endpointType
             if(resultKey===currKey && resultEndpointType === currEndpointType){
-                self.graphData[currEndpointType].data.push(result['count']);
-                self.graphData[currEndpointType].label.push(self.graphData[currEndpointType].label.length + 'T');
-                if (!self.inspectActivated){
-                    self.start++;
-                    self.end++;
-                    self.lineChartData[0]['data'].shift();
-                    self.lineChartData[0]['data'].push(result['count']);
-                    var tempdata = self.lineChartData[0]['data'].slice();
-                    self.lineChartData[0]['data']=[];
-                    self.lineChartData[0]['data']=tempdata;
-                    self.lineChartLabels.shift();
-                    self.lineChartLabels.push(self.graphData[currEndpointType].label.length - 1 + 'T' );
-                    var  templabel = self.lineChartLabels.slice();
-                    self.lineChartLabels = [];
-                    self.lineChartLabels = templabel;
+                this.graphData[currEndpointType].data.push(result['count']);
+                this.graphData[currEndpointType].label.push(this.graphData[currEndpointType].label.length + 'T');
+                if (!this.inspectActivated){
+                    this.start++;
+                    this.end++;
+                    this.loadGraphData();
                 }
             }
         });
+    }
+
+    loadGraphData(){
+        this.lineChartData[0]['data']=[];
+        this.lineChartLabels = [];
+        var max=0;
+        for(var i= this.start; i<=this.end; i++){
+            var endpointcount = this.graphData[this.endpointType].data[i];
+            this.lineChartData[0]['data'].push(endpointcount);
+            this.lineChartLabels.push(this.graphData[this.endpointType].label[i]);
+            if(endpointcount > max){
+                max = endpointcount;
+            }
+        }
+        this.adjustScale(max);
+    }
+
+    adjustScale(max: number){
+        this.lineChartOptions = {};
+        this.lineChartOptions = {
+            animation: false,
+            responsive: true,
+            scales: {
+                yAxes: [{
+                    type: 'linear',
+                    ticks: {
+                        beginAtZero: true,
+                        suggestedMax: max * 2
+                    }
+                }]
+            }
+        }
     }
 
     ngDoCheck(){
@@ -112,12 +124,7 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
         });
         this.end = this.graphData[this.endpointType].data.length - 1;
         this.start = this.end - 14 ;
-        this.lineChartData[0]['data'] = [];
-        this.lineChartLabels = [];
-        for(var i= this.start; i<=this.end; i++){
-            this.lineChartData[0]['data'].push(this.graphData[this.endpointType].data[i]);
-            this.lineChartLabels.push(this.graphData[this.endpointType].label[i]);
-        }
+        this.loadGraphData();
         this.prevKey = this.key;
         this.prevEndpointType = this.endpointType;
     }
@@ -127,12 +134,7 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
             this.inspectActivated = true;
             this.start--;
             this.end--;
-            this.lineChartData[0]['data'] = [];
-            this.lineChartLabels = [];
-            for(var i=this.start; i<=this.end; i++){
-                this.lineChartData[0]['data'].push(this.graphData[this.endpointType].data[i]);
-                this.lineChartLabels.push(this.graphData[this.endpointType].label[i]);
-            }
+            this.loadGraphData();
         }
     }
 
@@ -140,14 +142,10 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
         if(this.end < (this.graphData[this.endpointType].data.length - 1)){
             this.end++;
             this.start++;
-            this.lineChartData[0]['data'] = [];
-            this.lineChartLabels = [];
-            for(var i=this.start; i<=this.end; i++){
-                this.lineChartData[0]['data'].push(this.graphData[this.endpointType].data[i]);
-                this.lineChartLabels.push(this.graphData[this.endpointType].label[i]);
-            }
+            this.loadGraphData();
             if(this.end == (this.graphData[this.endpointType].data.length - 1))
                 this.inspectActivated = false;
+
         }
     }
 

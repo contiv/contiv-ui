@@ -246,7 +246,7 @@
 >>>>>>> regenerating bundle
 	var global    = __webpack_require__(13)
 	  , core      = __webpack_require__(14)
-	  , hide      = __webpack_require__(35)
+	  , hide      = __webpack_require__(36)
 	  , redefine  = __webpack_require__(33)
 	  , ctx       = __webpack_require__(62)
 	  , PROTOTYPE = 'prototype';
@@ -467,7 +467,8 @@
 /* 23 */,
 /* 24 */,
 /* 25 */,
-/* 26 */
+/* 26 */,
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.15 ToLength
@@ -478,7 +479,6 @@
 	};
 
 /***/ },
-/* 27 */,
 /* 28 */,
 /* 29 */
 /***/ function(module, exports) {
@@ -520,7 +520,7 @@
 
 >>>>>>> regenerating bundle
 	var global    = __webpack_require__(13)
-	  , hide      = __webpack_require__(35)
+	  , hide      = __webpack_require__(36)
 	  , has       = __webpack_require__(29)
 	  , SRC       = __webpack_require__(66)('src')
 	  , TO_STRING = 'toString'
@@ -589,6 +589,7 @@
 	};
 
 /***/ },
+<<<<<<< 05b83dd590abd6dca82ef2f98caafa7746f9a398
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -631,6 +632,10 @@
 =======
 >>>>>>> regenerating bundle
 /* 35 */
+=======
+/* 35 */,
+/* 36 */
+>>>>>>> scale fix
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP         = __webpack_require__(18)
@@ -648,7 +653,7 @@
 	};
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
@@ -658,7 +663,6 @@
 	};
 
 /***/ },
-/* 37 */,
 /* 38 */,
 /* 39 */
 /***/ function(module, exports, __webpack_require__) {
@@ -742,6 +746,7 @@
 >>>>>>> regenerating bundle
 	var ctx      = __webpack_require__(62)
 	  , IObject  = __webpack_require__(79)
+<<<<<<< 05b83dd590abd6dca82ef2f98caafa7746f9a398
 	  , toObject = __webpack_require__(36)
 	  , toLength = __webpack_require__(26)
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
@@ -749,6 +754,10 @@
 >>>>>>> regenerating bundle
 >>>>>>> regenerating bundle
 =======
+=======
+	  , toObject = __webpack_require__(37)
+	  , toLength = __webpack_require__(27)
+>>>>>>> scale fix
 	  , asc      = __webpack_require__(476);
 >>>>>>> regenerating bundle
 	module.exports = function(TYPE, $create){
@@ -822,7 +831,7 @@
 >>>>>>> adding chart.js
 =======
 	var has         = __webpack_require__(29)
-	  , toObject    = __webpack_require__(36)
+	  , toObject    = __webpack_require__(37)
 	  , IE_PROTO    = __webpack_require__(133)('IE_PROTO')
 >>>>>>> regenerating bundle
 	  , ObjectProto = Object.prototype;
@@ -1142,17 +1151,17 @@
 	    , ctx                 = __webpack_require__(62)
 	    , anInstance          = __webpack_require__(78)
 	    , propertyDesc        = __webpack_require__(55)
-	    , hide                = __webpack_require__(35)
+	    , hide                = __webpack_require__(36)
 	    , redefineAll         = __webpack_require__(81)
 	    , toInteger           = __webpack_require__(56)
-	    , toLength            = __webpack_require__(26)
+	    , toLength            = __webpack_require__(27)
 	    , toIndex             = __webpack_require__(65)
 	    , toPrimitive         = __webpack_require__(57)
 	    , has                 = __webpack_require__(29)
 	    , same                = __webpack_require__(210)
 	    , classof             = __webpack_require__(120)
 	    , isObject            = __webpack_require__(12)
-	    , toObject            = __webpack_require__(36)
+	    , toObject            = __webpack_require__(37)
 	    , isArrayIter         = __webpack_require__(125)
 	    , create              = __webpack_require__(63)
 	    , getPrototypeOf      = __webpack_require__(42)
@@ -2011,7 +2020,7 @@
 	// 22.1.3.31 Array.prototype[@@unscopables]
 	var UNSCOPABLES = __webpack_require__(15)('unscopables')
 	  , ArrayProto  = Array.prototype;
-	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(35)(ArrayProto, UNSCOPABLES, {});
+	if(ArrayProto[UNSCOPABLES] == undefined)__webpack_require__(36)(ArrayProto, UNSCOPABLES, {});
 	module.exports = function(key){
 	  ArrayProto[UNSCOPABLES][key] = true;
 	};
@@ -2271,7 +2280,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var hide     = __webpack_require__(35)
+	var hide     = __webpack_require__(36)
 	  , redefine = __webpack_require__(33)
 	  , fails    = __webpack_require__(11)
 	  , defined  = __webpack_require__(48)
@@ -2333,6 +2342,7 @@
 	  , call        = __webpack_require__(200)
 	  , isArrayIter = __webpack_require__(125)
 	  , anObject    = __webpack_require__(9)
+<<<<<<< 05b83dd590abd6dca82ef2f98caafa7746f9a398
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	  , toLength    = __webpack_require__(25)
 	  , getIterFn   = __webpack_require__(133)
@@ -2340,6 +2350,9 @@
 >>>>>>> adding chart.js
 =======
 	  , toLength    = __webpack_require__(26)
+=======
+	  , toLength    = __webpack_require__(27)
+>>>>>>> scale fix
 	  , getIterFn   = __webpack_require__(137)
 >>>>>>> regenerating bundle
 	  , BREAK       = {}
@@ -2458,7 +2471,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var global = __webpack_require__(13)
-	  , hide   = __webpack_require__(35)
+	  , hide   = __webpack_require__(36)
 	  , uid    = __webpack_require__(66)
 	  , TYPED  = uid('typed_array')
 	  , VIEW   = uid('view')
@@ -2641,9 +2654,9 @@
 
 	// 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 	'use strict';
-	var toObject = __webpack_require__(36)
+	var toObject = __webpack_require__(37)
 	  , toIndex  = __webpack_require__(65)
-	  , toLength = __webpack_require__(26);
+	  , toLength = __webpack_require__(27);
 	module.exports = function fill(value /*, start = 0, end = @length */){
 	  var O      = toObject(this)
 	    , length = toLength(O.length)
@@ -2674,7 +2687,7 @@
 	// false -> Array#indexOf
 	// true  -> Array#includes
 	var toIObject = __webpack_require__(40)
-	  , toLength  = __webpack_require__(26)
+	  , toLength  = __webpack_require__(27)
 	  , toIndex   = __webpack_require__(65);
 	module.exports = function(IS_INCLUDES){
 	  return function($this, el, fromIndex){
@@ -2966,7 +2979,7 @@
 	var LIBRARY        = __webpack_require__(80)
 	  , $export        = __webpack_require__(4)
 	  , redefine       = __webpack_require__(33)
-	  , hide           = __webpack_require__(35)
+	  , hide           = __webpack_require__(36)
 	  , has            = __webpack_require__(29)
 	  , Iterators      = __webpack_require__(72)
 	  , $iterCreate    = __webpack_require__(201)
@@ -3302,12 +3315,12 @@
 	  , DESCRIPTORS    = __webpack_require__(20)
 	  , LIBRARY        = __webpack_require__(80)
 	  , $typed         = __webpack_require__(102)
-	  , hide           = __webpack_require__(35)
+	  , hide           = __webpack_require__(36)
 	  , redefineAll    = __webpack_require__(81)
 	  , fails          = __webpack_require__(11)
 	  , anInstance     = __webpack_require__(78)
 	  , toInteger      = __webpack_require__(56)
-	  , toLength       = __webpack_require__(26)
+	  , toLength       = __webpack_require__(27)
 	  , gOPN           = __webpack_require__(64).f
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 	  , dP             = __webpack_require__(17).f
@@ -3643,7 +3656,7 @@
 	var $iterators    = __webpack_require__(103)
 	  , redefine      = __webpack_require__(33)
 	  , global        = __webpack_require__(13)
-	  , hide          = __webpack_require__(35)
+	  , hide          = __webpack_require__(36)
 	  , Iterators     = __webpack_require__(72)
 	  , wks           = __webpack_require__(15)
 	  , ITERATOR      = wks('iterator')
@@ -3768,9 +3781,9 @@
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	'use strict';
-	var toObject = __webpack_require__(36)
+	var toObject = __webpack_require__(37)
 	  , toIndex  = __webpack_require__(65)
-	  , toLength = __webpack_require__(26);
+	  , toLength = __webpack_require__(27);
 
 	module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0, end = @length*/){
 	  var O     = toObject(this)
@@ -3830,9 +3843,9 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var aFunction = __webpack_require__(53)
-	  , toObject  = __webpack_require__(36)
+	  , toObject  = __webpack_require__(37)
 	  , IObject   = __webpack_require__(79)
-	  , toLength  = __webpack_require__(26);
+	  , toLength  = __webpack_require__(27);
 
 	module.exports = function(that, callbackfn, aLen, memo, isRight){
 	  aFunction(callbackfn);
@@ -4431,7 +4444,7 @@
 	  , IteratorPrototype = {};
 
 	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-	__webpack_require__(35)(IteratorPrototype, __webpack_require__(15)('iterator'), function(){ return this; });
+	__webpack_require__(36)(IteratorPrototype, __webpack_require__(15)('iterator'), function(){ return this; });
 
 	module.exports = function(Constructor, NAME, next){
 	  Constructor.prototype = create(IteratorPrototype, {next: descriptor(1, next)});
@@ -4500,7 +4513,7 @@
 	var getKeys  = __webpack_require__(73)
 	  , gOPS     = __webpack_require__(98)
 	  , pIE      = __webpack_require__(99)
-	  , toObject = __webpack_require__(36)
+	  , toObject = __webpack_require__(37)
 	  , IObject  = __webpack_require__(79)
 	  , $assign  = Object.assign;
 
@@ -5541,7 +5554,7 @@
 	});
 
 	// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
-	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(35)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(36)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
 	// 19.4.3.5 Symbol.prototype[@@toStringTag]
 	setToStringTag($Symbol, 'Symbol');
 	// 20.2.1.9 Math[@@toStringTag]
@@ -7561,10 +7574,10 @@
 >>>>>>> adding chart.js
 =======
 	  , $export        = __webpack_require__(4)
-	  , toObject       = __webpack_require__(36)
+	  , toObject       = __webpack_require__(37)
 	  , call           = __webpack_require__(200)
 	  , isArrayIter    = __webpack_require__(125)
-	  , toLength       = __webpack_require__(26)
+	  , toLength       = __webpack_require__(27)
 	  , createProperty = __webpack_require__(195)
 	  , getIterFn      = __webpack_require__(137);
 
@@ -7790,7 +7803,7 @@
 	var $export       = __webpack_require__(4)
 	  , toIObject     = __webpack_require__(40)
 	  , toInteger     = __webpack_require__(56)
-	  , toLength      = __webpack_require__(26)
+	  , toLength      = __webpack_require__(27)
 	  , $native       = [].lastIndexOf
 	  , NEGATIVE_ZERO = !!$native && 1 / [1].lastIndexOf(1, -0) < 0;
 
@@ -8082,7 +8095,7 @@
 >>>>>>> regenerating bundle
 	  , cof        = __webpack_require__(61)
 	  , toIndex    = __webpack_require__(65)
-	  , toLength   = __webpack_require__(26)
+	  , toLength   = __webpack_require__(27)
 	  , arraySlice = [].slice;
 
 	// fallback for not array-like ES3 strings and DOM objects
@@ -8203,7 +8216,7 @@
 	'use strict';
 	var $export   = __webpack_require__(4)
 	  , aFunction = __webpack_require__(53)
-	  , toObject  = __webpack_require__(36)
+	  , toObject  = __webpack_require__(37)
 	  , fails     = __webpack_require__(11)
 	  , $sort     = [].sort
 	  , test      = [1, 2, 3];
@@ -8396,7 +8409,7 @@
 
 	'use strict';
 	var $export     = __webpack_require__(4)
-	  , toObject    = __webpack_require__(36)
+	  , toObject    = __webpack_require__(37)
 	  , toPrimitive = __webpack_require__(57);
 
 	$export($export.P + $export.F * __webpack_require__(11)(function(){
@@ -8442,6 +8455,7 @@
 	var TO_PRIMITIVE = __webpack_require__(15)('toPrimitive')
 	  , proto        = Date.prototype;
 
+<<<<<<< 05b83dd590abd6dca82ef2f98caafa7746f9a398
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -8483,6 +8497,9 @@
 >>>>>>> regenerating bundle
 =======
 	if(!(TO_PRIMITIVE in proto))__webpack_require__(35)(proto, TO_PRIMITIVE, __webpack_require__(477));
+=======
+	if(!(TO_PRIMITIVE in proto))__webpack_require__(36)(proto, TO_PRIMITIVE, __webpack_require__(477));
+>>>>>>> scale fix
 
 /***/ },
 /* 507 */
@@ -10551,7 +10568,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
-	var toObject        = __webpack_require__(36)
+	var toObject        = __webpack_require__(37)
 	  , $getPrototypeOf = __webpack_require__(42);
 
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
@@ -10779,7 +10796,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 Object.keys(O)
-	var toObject = __webpack_require__(36)
+	var toObject = __webpack_require__(37)
 	  , $keys    = __webpack_require__(73);
 
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
@@ -12318,7 +12335,7 @@
 >>>>>>> adding chart.js
 =======
 	var $export   = __webpack_require__(4)
-	  , toLength  = __webpack_require__(26)
+	  , toLength  = __webpack_require__(27)
 	  , context   = __webpack_require__(134)
 	  , ENDS_WITH = 'endsWith'
 	  , $endsWith = ''[ENDS_WITH];
@@ -12738,7 +12755,7 @@
 
 	var $export   = __webpack_require__(4)
 	  , toIObject = __webpack_require__(40)
-	  , toLength  = __webpack_require__(26);
+	  , toLength  = __webpack_require__(27);
 
 	$export($export.S, 'String', {
 	  // 21.1.2.4 String.raw(callSite, ...substitutions)
@@ -12915,7 +12932,7 @@
 >>>>>>> adding chart.js
 =======
 	var $export     = __webpack_require__(4)
-	  , toLength    = __webpack_require__(26)
+	  , toLength    = __webpack_require__(27)
 	  , context     = __webpack_require__(134)
 	  , STARTS_WITH = 'startsWith'
 	  , $startsWith = ''[STARTS_WITH];
@@ -13179,7 +13196,7 @@
 	  , buffer       = __webpack_require__(136)
 	  , anObject     = __webpack_require__(9)
 	  , toIndex      = __webpack_require__(65)
-	  , toLength     = __webpack_require__(26)
+	  , toLength     = __webpack_require__(27)
 	  , isObject     = __webpack_require__(12)
 	  , ArrayBuffer  = __webpack_require__(13).ArrayBuffer
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
