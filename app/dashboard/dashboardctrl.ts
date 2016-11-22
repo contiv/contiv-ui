@@ -97,14 +97,14 @@ export class DashboardComponent implements OnDestroy {
     switch(endpointType: string){
         if(endpointType == 'Network'){
             if(this.endpointType !== 'Network'){
-                this.endpointType = 'Network';
                 this.setkeyflag = true;
+                this.endpointType = 'Network';
             }
         }
         else {
             if(this.endpointType !== 'ApplicationGroup'){
-                this.endpointType = 'ApplicationGroup';
                 this.setkeyflag = true;
+                this.endpointType = 'ApplicationGroup';
             }
         }
     }

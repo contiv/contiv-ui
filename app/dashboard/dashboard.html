@@ -49,15 +49,15 @@
                     </ctv-table>
                 </div>
                 <div class="row" style="margin-top: 30px;" *ngIf="endpointType=='ApplicationGroup'">
-                    <ctv-table #tableRef [defaultSortColumn]="'groupName'"
+                    <ctv-table #tableRef1 [defaultSortColumn]="'groupName'"
                                [items]="applicationGroupList"
                                (filtereditems)="filteredgroups=$event; setKey($event)"
                                [size]="4">
                         <thead>
                         <tr>
-                            <th><ctv-th [sortfield]="'groupName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Name</ctv-th></th>
-                            <th><ctv-th [sortfield]="'networkName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Network</ctv-th></th>
-                            <th><ctv-th [sortfield]="'policies'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Policies</ctv-th></th>
+                            <th><ctv-th [sortfield]="'groupName'" (sortdata)="tableRef1.applysort($event)" [sortobject]="tableRef1.sortObj">Name</ctv-th></th>
+                            <th><ctv-th [sortfield]="'networkName'" (sortdata)="tableRef1.applysort($event)" [sortobject]="tableRef1.sortObj">Network</ctv-th></th>
+                            <th><ctv-th [sortfield]="'policies'" (sortdata)="tableRef1.applysort($event)" [sortobject]="tableRef1.sortObj">Policies</ctv-th></th>
                         </tr>
                         </thead>
 
@@ -72,10 +72,10 @@
                         <tfoot>
                         <tr>
                             <td colspan="4">
-                                <ctv-tpagination [chunks]="tableRef.pageChunks"
-                                                 (showPage)="tableRef.showChunk($event, tableRef.table.searchText)"
-                                                 (prevChunk)="tableRef.showPrevChunk()"
-                                                 (nextChunk)="tableRef.showNextChunk()">
+                                <ctv-tpagination [chunks]="tableRef1.pageChunks"
+                                                 (showPage)="tableRef1.showChunk($event, tableRef1.table.searchText)"
+                                                 (prevChunk)="tableRef1.showPrevChunk()"
+                                                 (nextChunk)="tableRef1.showNextChunk()">
                                 </ctv-tpagination>
                             </td>
                         </tr>
