@@ -1462,8 +1462,8 @@ webpackJsonp([2],{
 	var authdirective_1 = __webpack_require__(382);
 	var networksettingcomponent_1 = __webpack_require__(388);
 	var acisettingcomponent_1 = __webpack_require__(387);
-	var linegraphdirective_1 = __webpack_require__(385);
-	var ng2_charts_1 = __webpack_require__(332);
+	var linegraphcomponent_1 = __webpack_require__(385);
+	var ng2_charts_1 = __webpack_require__(139);
 	var DirectivesModule = (function () {
 	    function DirectivesModule() {
 	    }
@@ -1484,7 +1484,7 @@ webpackJsonp([2],{
 	                authdirective_1.AuthDirective,
 	                networksettingcomponent_1.NetworkSettingComponent,
 	                acisettingcomponent_1.AciSettingComponent,
-	                linegraphdirective_1.LineGraphDirective
+	                linegraphcomponent_1.LineGraphComponent
 	            ],
 	            exports: [
 	                errormessagedirective_1.ErrorMessageComponent,
@@ -1498,7 +1498,7 @@ webpackJsonp([2],{
 	                authdirective_1.AuthDirective,
 	                networksettingcomponent_1.NetworkSettingComponent,
 	                acisettingcomponent_1.AciSettingComponent,
-	                linegraphdirective_1.LineGraphDirective
+	                linegraphcomponent_1.LineGraphComponent
 	            ]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -1961,9 +1961,9 @@ webpackJsonp([2],{
 >>>>>>> regenerating bundle
 	__webpack_require__(334);
 	__webpack_require__(335);
-	__webpack_require__(140);
+	__webpack_require__(141);
 	var http_1 = __webpack_require__(23);
-	var authMatrix_1 = __webpack_require__(159);
+	var authMatrix_1 = __webpack_require__(160);
 	var util_1 = __webpack_require__(35);
 	var AuthService = (function () {
 	    function AuthService(http) {
@@ -3408,8 +3408,12 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 >>>>>>> regenerating bundle
 /***/ 152:
+=======
+/***/ 153:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3520,6 +3524,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 153:
@@ -3533,6 +3538,9 @@ webpackJsonp([2],{
 =======
 /***/ 153:
 >>>>>>> regenerating bundle
+=======
+/***/ 154:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3658,6 +3666,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 154:
@@ -3671,6 +3680,9 @@ webpackJsonp([2],{
 =======
 /***/ 154:
 >>>>>>> regenerating bundle
+=======
+/***/ 155:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3799,6 +3811,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 155:
@@ -3809,6 +3822,9 @@ webpackJsonp([2],{
 =======
 /***/ 155:
 >>>>>>> regenerating bundle
+=======
+/***/ 156:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3887,7 +3903,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 156:
+/***/ 157:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3994,6 +4010,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 157:
@@ -4007,6 +4024,9 @@ webpackJsonp([2],{
 =======
 /***/ 157:
 >>>>>>> regenerating bundle
+=======
+/***/ 158:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4086,6 +4106,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 158:
@@ -4188,6 +4209,9 @@ webpackJsonp([2],{
 =======
 /***/ 158:
 >>>>>>> regenerating bundle
+=======
+/***/ 159:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4253,6 +4277,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 159:
@@ -4263,6 +4288,9 @@ webpackJsonp([2],{
 =======
 /***/ 159:
 >>>>>>> regenerating bundle
+=======
+/***/ 160:
+>>>>>>> removing slice and map
 /***/ function(module, exports) {
 
 	/**
@@ -4314,7 +4342,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 160:
+/***/ 161:
 /***/ function(module, exports, __webpack_require__) {
 
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
@@ -4352,6 +4380,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
 	var authservice_1 = __webpack_require__(60);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	var authMatrix_1 = __webpack_require__(159);
 <<<<<<< 05b83dd590abd6dca82ef2f98caafa7746f9a398
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
@@ -4362,6 +4391,9 @@ webpackJsonp([2],{
 	var util_1 = __webpack_require__(37);
 >>>>>>> regenerating bundle
 =======
+=======
+	var authMatrix_1 = __webpack_require__(160);
+>>>>>>> removing slice and map
 	var util_1 = __webpack_require__(35);
 >>>>>>> scale fix
 	var AuthGuard = (function () {
@@ -4547,6 +4579,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 161:
@@ -4559,6 +4592,9 @@ webpackJsonp([2],{
 >>>>>>> adding chart.js
 =======
 /***/ 161:
+=======
+/***/ 162:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4647,8 +4683,12 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 /***/ 162:
 >>>>>>> regenerating bundle
+=======
+/***/ 163:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4792,6 +4832,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 162:
@@ -4802,6 +4843,9 @@ webpackJsonp([2],{
 =======
 /***/ 163:
 >>>>>>> regenerating bundle
+=======
+/***/ 164:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -4850,6 +4894,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 163:
@@ -4862,6 +4907,9 @@ webpackJsonp([2],{
 =======
 /***/ 164:
 >>>>>>> regenerating bundle
+=======
+/***/ 165:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4970,6 +5018,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 164:
@@ -4983,6 +5032,9 @@ webpackJsonp([2],{
 =======
 /***/ 165:
 >>>>>>> regenerating bundle
+=======
+/***/ 166:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5029,6 +5081,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 165:
@@ -5042,6 +5095,9 @@ webpackJsonp([2],{
 =======
 /***/ 166:
 >>>>>>> regenerating bundle
+=======
+/***/ 167:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5078,6 +5134,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 166:
@@ -5091,6 +5148,9 @@ webpackJsonp([2],{
 =======
 /***/ 167:
 >>>>>>> regenerating bundle
+=======
+/***/ 168:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5144,6 +5204,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 167:
@@ -5157,6 +5218,9 @@ webpackJsonp([2],{
 =======
 /***/ 168:
 >>>>>>> regenerating bundle
+=======
+/***/ 169:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5236,6 +5300,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 168:
@@ -5249,6 +5314,9 @@ webpackJsonp([2],{
 =======
 /***/ 169:
 >>>>>>> regenerating bundle
+=======
+/***/ 170:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5353,6 +5421,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 169:
@@ -5366,6 +5435,9 @@ webpackJsonp([2],{
 =======
 /***/ 170:
 >>>>>>> regenerating bundle
+=======
+/***/ 171:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5440,6 +5512,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 170:
@@ -5453,6 +5526,9 @@ webpackJsonp([2],{
 =======
 /***/ 171:
 >>>>>>> regenerating bundle
+=======
+/***/ 172:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5862,6 +5938,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 171:
@@ -5875,6 +5952,9 @@ webpackJsonp([2],{
 =======
 /***/ 172:
 >>>>>>> regenerating bundle
+=======
+/***/ 173:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -5946,6 +6026,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 172:
@@ -5959,6 +6040,9 @@ webpackJsonp([2],{
 =======
 /***/ 173:
 >>>>>>> regenerating bundle
+=======
+/***/ 174:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6085,6 +6169,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 173:
@@ -6098,6 +6183,9 @@ webpackJsonp([2],{
 =======
 /***/ 174:
 >>>>>>> regenerating bundle
+=======
+/***/ 175:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6208,6 +6296,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 174:
@@ -6221,6 +6310,9 @@ webpackJsonp([2],{
 =======
 /***/ 175:
 >>>>>>> regenerating bundle
+=======
+/***/ 176:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6291,6 +6383,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 175:
@@ -6304,6 +6397,9 @@ webpackJsonp([2],{
 =======
 /***/ 176:
 >>>>>>> regenerating bundle
+=======
+/***/ 177:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6379,6 +6475,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 176:
@@ -6392,6 +6489,9 @@ webpackJsonp([2],{
 =======
 /***/ 177:
 >>>>>>> regenerating bundle
+=======
+/***/ 178:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6478,6 +6578,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 177:
@@ -6491,6 +6592,9 @@ webpackJsonp([2],{
 =======
 /***/ 178:
 >>>>>>> regenerating bundle
+=======
+/***/ 179:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6585,6 +6689,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 178:
@@ -6598,6 +6703,9 @@ webpackJsonp([2],{
 =======
 /***/ 179:
 >>>>>>> regenerating bundle
+=======
+/***/ 180:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6626,9 +6734,14 @@ webpackJsonp([2],{
 	var servicelbstatsctrl_1 = __webpack_require__(175);
 =======
 	var core_1 = __webpack_require__(3);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	var servicelbinfoctrl_1 = __webpack_require__(180);
 	var servicelbstatsctrl_1 = __webpack_require__(182);
 >>>>>>> regenerating bundle
+=======
+	var servicelbinfoctrl_1 = __webpack_require__(181);
+	var servicelbstatsctrl_1 = __webpack_require__(183);
+>>>>>>> removing slice and map
 	var router_1 = __webpack_require__(6);
 	var _ = __webpack_require__(24);
 	var ServicelbDetailsComponent = (function () {
@@ -6679,6 +6792,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 179:
@@ -6692,6 +6806,9 @@ webpackJsonp([2],{
 =======
 /***/ 180:
 >>>>>>> regenerating bundle
+=======
+/***/ 181:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -6845,6 +6962,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 180:
@@ -6858,6 +6976,9 @@ webpackJsonp([2],{
 =======
 /***/ 181:
 >>>>>>> regenerating bundle
+=======
+/***/ 182:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7270,6 +7391,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 184:
 =======
@@ -7282,6 +7404,9 @@ webpackJsonp([2],{
 =======
 /***/ 183:
 >>>>>>> regenerating bundle
+=======
+/***/ 184:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7411,6 +7536,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 185:
@@ -7424,6 +7550,9 @@ webpackJsonp([2],{
 =======
 /***/ 184:
 >>>>>>> regenerating bundle
+=======
+/***/ 185:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7519,6 +7648,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 186:
@@ -7532,6 +7662,9 @@ webpackJsonp([2],{
 =======
 /***/ 185:
 >>>>>>> regenerating bundle
+=======
+/***/ 186:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7565,6 +7698,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 187:
@@ -7578,6 +7712,9 @@ webpackJsonp([2],{
 =======
 /***/ 186:
 >>>>>>> regenerating bundle
+=======
+/***/ 187:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7681,6 +7818,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 188:
@@ -7694,6 +7832,9 @@ webpackJsonp([2],{
 =======
 /***/ 187:
 >>>>>>> regenerating bundle
+=======
+/***/ 188:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7823,6 +7964,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 189:
@@ -7836,6 +7978,9 @@ webpackJsonp([2],{
 =======
 /***/ 188:
 >>>>>>> regenerating bundle
+=======
+/***/ 189:
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7929,6 +8074,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /***/ 262:
@@ -7956,6 +8102,8 @@ webpackJsonp([2],{
 >>>>>>> 024b7b6... adding chart.js
 >>>>>>> adding chart.js
 =======
+=======
+>>>>>>> removing slice and map
 /***/ 371:
 >>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
@@ -8113,6 +8261,7 @@ webpackJsonp([2],{
 	var app_routes_ts_1 = __webpack_require__(373);
 	var login_module_1 = __webpack_require__(398);
 	var authservice_1 = __webpack_require__(60);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
 	var authguard_1 = __webpack_require__(152);
@@ -8135,6 +8284,12 @@ webpackJsonp([2],{
 >>>>>>> regenerating bundle
 =======
 >>>>>>> regenerating bundle
+=======
+	var authguard_1 = __webpack_require__(161);
+	var apiservice_1 = __webpack_require__(32);
+	var firstrunwizard_module_1 = __webpack_require__(395);
+	var chartservice_1 = __webpack_require__(162);
+>>>>>>> removing slice and map
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -8276,6 +8431,7 @@ webpackJsonp([2],{
 =======
 >>>>>>> regenerating bundle
 	var router_1 = __webpack_require__(6);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	var menuCtrl_1 = __webpack_require__(167);
 <<<<<<< ca1977b2e739cc91a22b0074fa2a1a7d21e59b60
 	var networkpoliciestabsctrl_1 = __webpack_require__(70);
@@ -8345,6 +8501,41 @@ webpackJsonp([2],{
 	var appprofiledetails_component_1 = __webpack_require__(156);
 	var firstrunwizardctrl_1 = __webpack_require__(163);
 >>>>>>> regenerating bundle
+=======
+	var menuCtrl_1 = __webpack_require__(168);
+	var networkpoliciestabsctrl_1 = __webpack_require__(71);
+	var isolationpolicycreatectrl_1 = __webpack_require__(171);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(172);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(169);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(170);
+	var dashboardctrl_1 = __webpack_require__(163);
+	var applicationgrouplistctrl_1 = __webpack_require__(155);
+	var applicationgroupcreatectrl_1 = __webpack_require__(153);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(154);
+	var settingsmenu_component_1 = __webpack_require__(186);
+	var clustersettingctrl_1 = __webpack_require__(184);
+	var networksettingctrl_1 = __webpack_require__(185);
+	var organizationlistctrl_1 = __webpack_require__(178);
+	var organizationcreatectrl_1 = __webpack_require__(176);
+	var organizationdetailsctrl_1 = __webpack_require__(177);
+	var networklistctrl_1 = __webpack_require__(175);
+	var networkdetailsctrl_1 = __webpack_require__(174);
+	var networkcreatectrl_1 = __webpack_require__(173);
+	var servicelblistctrl_1 = __webpack_require__(182);
+	var servicelbcreatectrl_1 = __webpack_require__(179);
+	var servicelbdetailsctrl_1 = __webpack_require__(180);
+	var loginctrl_1 = __webpack_require__(165);
+	var authguard_1 = __webpack_require__(161);
+	var unauthorized_1 = __webpack_require__(167);
+	var logoutctrl_1 = __webpack_require__(166);
+	var userlist_component_1 = __webpack_require__(189);
+	var usercreate_component_1 = __webpack_require__(187);
+	var userdetails_component_1 = __webpack_require__(188);
+	var appprofilelist_component_1 = __webpack_require__(158);
+	var appprofilecreate_component_1 = __webpack_require__(156);
+	var appprofiledetails_component_1 = __webpack_require__(157);
+	var firstrunwizardctrl_1 = __webpack_require__(164);
+>>>>>>> removing slice and map
 	var routes = [
 	    { path: 'login', component: loginctrl_1.LoginComponent, canActivate: [authguard_1.AuthGuard] },
 	    { path: 'logout', component: logoutctrl_1.LogoutComponent, canActivate: [authguard_1.AuthGuard] },
@@ -8551,16 +8742,20 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(19);
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(38);
-	var pipes_module_1 = __webpack_require__(158);
-	var applicationgroupcreatectrl_1 = __webpack_require__(152);
-	var applicationgroupdetailsctrl_1 = __webpack_require__(153);
+	var pipes_module_1 = __webpack_require__(159);
+	var applicationgroupcreatectrl_1 = __webpack_require__(153);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(154);
 	var isolationpolicydirective_1 = __webpack_require__(378);
 	var bandwidthpolicydirective_1 = __webpack_require__(377);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	var applicationgrouplistctrl_1 = __webpack_require__(154);
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 >>>>>>> regenerating bundle
 >>>>>>> regenerating bundle
 =======
+=======
+	var applicationgrouplistctrl_1 = __webpack_require__(155);
+>>>>>>> removing slice and map
 	var applicationgroupstats_1 = __webpack_require__(376);
 	var applicationgroupinfoctrl_1 = __webpack_require__(374);
 >>>>>>> regenerating bundle
@@ -9238,16 +9433,20 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(19);
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(38);
-	var appprofilelist_component_1 = __webpack_require__(157);
-	var appprofilecreate_component_1 = __webpack_require__(155);
-	var appprofiledetails_component_1 = __webpack_require__(156);
+	var appprofilelist_component_1 = __webpack_require__(158);
+	var appprofilecreate_component_1 = __webpack_require__(156);
+	var appprofiledetails_component_1 = __webpack_require__(157);
 	var appgroupselection_component_1 = __webpack_require__(379);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	var pipes_module_1 = __webpack_require__(158);
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 >>>>>>> regenerating bundle
 >>>>>>> regenerating bundle
 =======
 >>>>>>> regenerating bundle
+=======
+	var pipes_module_1 = __webpack_require__(159);
+>>>>>>> removing slice and map
 	var AppProfilesModule = (function () {
 	    function AppProfilesModule() {
 	    }
@@ -9754,11 +9953,11 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
-	var chartservice_1 = __webpack_require__(161);
+	var chartservice_1 = __webpack_require__(162);
 	var util_1 = __webpack_require__(35);
 	var util_2 = __webpack_require__(35);
-	var LineGraphDirective = (function () {
-	    function LineGraphDirective(chartService) {
+	var LineGraphComponent = (function () {
+	    function LineGraphComponent(chartService) {
 	        this.chartService = chartService;
 	        this.lineChartOptions = {};
 	        this.lineChartColors = [
@@ -9784,12 +9983,8 @@ webpackJsonp([2],{
 	        this.key = '';
 	        this.endpointType = 'Network';
 	        this.prevEndpointType = '';
-	        this.graphData = {
-	            Network: { data: [], label: [] },
-	            ApplicationGroup: { data: [], label: [] }
-	        };
 	    }
-	    LineGraphDirective.prototype.ngOnInit = function () {
+	    LineGraphComponent.prototype.ngOnInit = function () {
 	        var _this = this;
 	        this.prevKey = this.key;
 	        this.prevEndpointType = this.endpointType;
@@ -9799,8 +9994,6 @@ webpackJsonp([2],{
 	            var currKey = _this.key;
 	            var currEndpointType = _this.endpointType;
 	            if (resultKey === currKey && resultEndpointType === currEndpointType) {
-	                _this.graphData[currEndpointType].data.push(result['count']);
-	                _this.graphData[currEndpointType].label.push(_this.graphData[currEndpointType].label.length + 'T');
 	                if (!_this.inspectActivated) {
 	                    _this.start++;
 	                    _this.end++;
@@ -9809,21 +10002,29 @@ webpackJsonp([2],{
 	            }
 	        });
 	    };
-	    LineGraphDirective.prototype.loadGraphData = function () {
+	    LineGraphComponent.prototype.loadGraphData = function () {
 	        this.lineChartData[0]['data'] = [];
 	        this.lineChartLabels = [];
 	        var max = 0;
 	        for (var i = this.start; i <= this.end; i++) {
-	            var endpointcount = this.graphData[this.endpointType].data[i];
+	            var endpointcount = this.chartService.graphData[this.endpointType][this.key][i];
 	            this.lineChartData[0]['data'].push(endpointcount);
-	            this.lineChartLabels.push(this.graphData[this.endpointType].label[i]);
+	            this.lineChartLabels.push(i + 'T');
 	            if (endpointcount > max) {
 	                max = endpointcount;
 	            }
 	        }
-	        this.adjustScale(max);
+	        if (!util_1.isUndefined(this.lineChartOptions.scales)) {
+	            var scaleMax = this.lineChartOptions.scales.yAxes[0].ticks.suggestedMax;
+	            if (max > scaleMax) {
+	                this.adjustScale(max);
+	            }
+	        }
+	        else {
+	            this.adjustScale(max);
+	        }
 	    };
-	    LineGraphDirective.prototype.adjustScale = function (max) {
+	    LineGraphComponent.prototype.adjustScale = function (max) {
 	        this.lineChartOptions = {};
 	        this.lineChartOptions = {
 	            animation: false,
@@ -9833,32 +10034,35 @@ webpackJsonp([2],{
 	                        type: 'linear',
 	                        ticks: {
 	                            beginAtZero: true,
-	                            suggestedMax: max * 2
+	                            suggestedMax: max * 1.5
 	                        }
 	                    }]
 	            }
 	        };
 	    };
-	    LineGraphDirective.prototype.ngDoCheck = function () {
+	    LineGraphComponent.prototype.ngDoCheck = function () {
 	        if ((this.key != '') && (!util_1.isUndefined(this.key)) && (!util_2.isNull(this.key)))
 	            if (this.key !== this.prevKey) {
 	                if (!util_1.isUndefined(this.chartService.graphData[this.endpointType][this.key]))
 	                    this.prepareChartData();
 	            }
 	    };
-	    LineGraphDirective.prototype.prepareChartData = function () {
+	    LineGraphComponent.prototype.prepareChartData = function () {
 	        this.inspectActivated = false;
+	        /*
 	        this.graphData[this.endpointType].data = this.chartService.graphData[this.endpointType][this.key].slice();
-	        this.graphData[this.endpointType].label = this.chartService.graphData[this.endpointType][this.key].map(function (curr, index) {
+	        this.graphData[this.endpointType].label = this.chartService.graphData[this.endpointType][this.key].map((curr,index) => {
 	            return index + 'T';
 	        });
-	        this.end = this.graphData[this.endpointType].data.length - 1;
+	        */
+	        this.end = this.chartService.graphData[this.endpointType][this.key].length - 1;
 	        this.start = this.end - 14;
+	        this.lineChartOptions = {};
 	        this.loadGraphData();
 	        this.prevKey = this.key;
 	        this.prevEndpointType = this.endpointType;
 	    };
-	    LineGraphDirective.prototype.leftpress = function () {
+	    LineGraphComponent.prototype.leftpress = function () {
 	        if (this.start > 0) {
 	            this.inspectActivated = true;
 	            this.start--;
@@ -9866,38 +10070,38 @@ webpackJsonp([2],{
 	            this.loadGraphData();
 	        }
 	    };
-	    LineGraphDirective.prototype.rightpress = function () {
-	        if (this.end < (this.graphData[this.endpointType].data.length - 1)) {
+	    LineGraphComponent.prototype.rightpress = function () {
+	        if (this.end < (this.chartService.graphData[this.endpointType][this.key].length - 1)) {
 	            this.end++;
 	            this.start++;
 	            this.loadGraphData();
-	            if (this.end == (this.graphData[this.endpointType].data.length - 1))
+	            if (this.end == (this.chartService.graphData[this.endpointType][this.key].length - 1))
 	                this.inspectActivated = false;
 	        }
 	    };
-	    LineGraphDirective.prototype.ngOnDestroy = function () {
+	    LineGraphComponent.prototype.ngOnDestroy = function () {
 	        this.subscription.unsubscribe();
 	    };
 	    __decorate([
 	        core_1.Input('key'), 
 	        __metadata('design:type', String)
-	    ], LineGraphDirective.prototype, "key", void 0);
+	    ], LineGraphComponent.prototype, "key", void 0);
 	    __decorate([
 	        core_1.Input('endpointType'), 
 	        __metadata('design:type', String)
-	    ], LineGraphDirective.prototype, "endpointType", void 0);
-	    LineGraphDirective = __decorate([
+	    ], LineGraphComponent.prototype, "endpointType", void 0);
+	    LineGraphComponent = __decorate([
 	        core_1.Component({
 	            selector: 'linegraph',
 	            templateUrl: 'components/directives/linegraph.html',
 	            styleUrls: ['components/directives/linegraph.css']
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof chartservice_1.ChartService !== 'undefined' && chartservice_1.ChartService) === 'function' && _a) || Object])
-	    ], LineGraphDirective);
-	    return LineGraphDirective;
+	    ], LineGraphComponent);
+	    return LineGraphComponent;
 	    var _a;
 	}());
-	exports.LineGraphDirective = LineGraphDirective;
+	exports.LineGraphComponent = LineGraphComponent;
 	
 
 /***/ },
@@ -10192,6 +10396,9 @@ webpackJsonp([2],{
 	    };
 	    CtvTableComponent.prototype.showChunk = function (pageNo, searchText) {
 	        this.table.searchText = searchText;
+	        if (this.sortObj.field.length == 0) {
+	            this.sortObj = this.initializeSort(this.defaultSortColumn);
+	        }
 	        if (util_1.isUndefined(pageNo) || pageNo < 0) {
 	            pageNo = 0;
 	        }
@@ -10713,6 +10920,7 @@ webpackJsonp([2],{
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(19);
 	var router_1 = __webpack_require__(6);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	var dashboardctrl_1 = __webpack_require__(162);
 	var ng2_charts_1 = __webpack_require__(332);
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
@@ -10720,6 +10928,10 @@ webpackJsonp([2],{
 >>>>>>> regenerating bundle
 >>>>>>> regenerating bundle
 =======
+=======
+	var dashboardctrl_1 = __webpack_require__(163);
+	var ng2_charts_1 = __webpack_require__(139);
+>>>>>>> removing slice and map
 	var directives_module_1 = __webpack_require__(38);
 >>>>>>> regenerating bundle
 	var DashboardModule = (function () {
@@ -10961,7 +11173,7 @@ webpackJsonp([2],{
 	var directives_module_1 = __webpack_require__(38);
 	var router_1 = __webpack_require__(6);
 	var firstrunwizardservice_1 = __webpack_require__(76);
-	var firstrunwizardctrl_1 = __webpack_require__(163);
+	var firstrunwizardctrl_1 = __webpack_require__(164);
 	var firstrunwizardpage1ctrl_1 = __webpack_require__(397);
 	var firstrunnetworkdefaults_1 = __webpack_require__(394);
 	var firstrunacisettings_1 = __webpack_require__(393);
@@ -11219,6 +11431,7 @@ webpackJsonp([2],{
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(19);
 	var router_1 = __webpack_require__(6);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var loginctrl_1 = __webpack_require__(157);
 	var unauthorized_1 = __webpack_require__(159);
@@ -11230,6 +11443,11 @@ webpackJsonp([2],{
 	var unauthorized_1 = __webpack_require__(166);
 	var logoutctrl_1 = __webpack_require__(165);
 >>>>>>> regenerating bundle
+=======
+	var loginctrl_1 = __webpack_require__(165);
+	var unauthorized_1 = __webpack_require__(167);
+	var logoutctrl_1 = __webpack_require__(166);
+>>>>>>> removing slice and map
 	var LoginModule = (function () {
 	    function LoginModule() {
 	    }
@@ -11325,7 +11543,7 @@ webpackJsonp([2],{
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(19);
 	var router_1 = __webpack_require__(6);
-	var menuCtrl_1 = __webpack_require__(167);
+	var menuCtrl_1 = __webpack_require__(168);
 	var directives_module_1 = __webpack_require__(38);
 	var MenuModule = (function () {
 	    function MenuModule() {
@@ -11691,6 +11909,7 @@ webpackJsonp([2],{
 	var directives_module_1 = __webpack_require__(38);
 >>>>>>> regenerating bundle
 	var networkpoliciestabsctrl_1 = __webpack_require__(71);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	var isolationpolicycreatectrl_1 = __webpack_require__(170);
 	var isolationpolicydetailsctrl_1 = __webpack_require__(171);
 	var bandwidthpolicycreatectrl_1 = __webpack_require__(168);
@@ -11701,6 +11920,12 @@ webpackJsonp([2],{
 >>>>>>> regenerating bundle
 >>>>>>> regenerating bundle
 =======
+=======
+	var isolationpolicycreatectrl_1 = __webpack_require__(171);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(172);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(169);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(170);
+>>>>>>> removing slice and map
 	var isolationpolicylistctrl_1 = __webpack_require__(401);
 	var bandwidthpolicylistctrl_1 = __webpack_require__(400);
 >>>>>>> regenerating bundle
@@ -11820,11 +12045,11 @@ webpackJsonp([2],{
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(19);
 	var directives_module_1 = __webpack_require__(38);
-	var networklistctrl_1 = __webpack_require__(174);
+	var networklistctrl_1 = __webpack_require__(175);
 	var networkstatsctrl_1 = __webpack_require__(405);
-	var networkdetailsctrl_1 = __webpack_require__(173);
+	var networkdetailsctrl_1 = __webpack_require__(174);
 	var networkinfoctrl_1 = __webpack_require__(404);
-	var networkcreatectrl_1 = __webpack_require__(172);
+	var networkcreatectrl_1 = __webpack_require__(173);
 	var router_1 = __webpack_require__(6);
 	var NetworkModule = (function () {
 	    function NetworkModule() {
@@ -12169,11 +12394,17 @@ webpackJsonp([2],{
 	var directives_module_1 = __webpack_require__(37);
 =======
 	var directives_module_1 = __webpack_require__(38);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 >>>>>>> regenerating bundle
 	var organizationlistctrl_1 = __webpack_require__(177);
 	var organizationcreatectrl_1 = __webpack_require__(175);
 	var organizationdetailsctrl_1 = __webpack_require__(176);
 >>>>>>> regenerating bundle
+=======
+	var organizationlistctrl_1 = __webpack_require__(178);
+	var organizationcreatectrl_1 = __webpack_require__(176);
+	var organizationdetailsctrl_1 = __webpack_require__(177);
+>>>>>>> removing slice and map
 	var OrganizationModule = (function () {
 	    function OrganizationModule() {
 	    }
@@ -12283,12 +12514,12 @@ webpackJsonp([2],{
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(19);
 	var directives_module_1 = __webpack_require__(38);
-	var servicelblistctrl_1 = __webpack_require__(181);
-	var servicelbstatsctrl_1 = __webpack_require__(182);
+	var servicelblistctrl_1 = __webpack_require__(182);
+	var servicelbstatsctrl_1 = __webpack_require__(183);
 	var servicelbportsdirective_1 = __webpack_require__(408);
-	var servicelbcreatectrl_1 = __webpack_require__(178);
-	var servicelbinfoctrl_1 = __webpack_require__(180);
-	var servicelbdetailsctrl_1 = __webpack_require__(179);
+	var servicelbcreatectrl_1 = __webpack_require__(179);
+	var servicelbinfoctrl_1 = __webpack_require__(181);
+	var servicelbdetailsctrl_1 = __webpack_require__(180);
 	var router_1 = __webpack_require__(6);
 	var ServicelbModule = (function () {
 	    function ServicelbModule() {
@@ -12503,11 +12734,17 @@ webpackJsonp([2],{
 	var directives_module_1 = __webpack_require__(37);
 =======
 	var directives_module_1 = __webpack_require__(38);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 >>>>>>> regenerating bundle
 	var networksettingctrl_1 = __webpack_require__(184);
 	var clustersettingctrl_1 = __webpack_require__(183);
 	var settingsmenu_component_1 = __webpack_require__(185);
 >>>>>>> regenerating bundle
+=======
+	var networksettingctrl_1 = __webpack_require__(185);
+	var clustersettingctrl_1 = __webpack_require__(184);
+	var settingsmenu_component_1 = __webpack_require__(186);
+>>>>>>> removing slice and map
 	var SettingsModule = (function () {
 	    function SettingsModule() {
 	    }
@@ -12628,11 +12865,17 @@ webpackJsonp([2],{
 	var directives_module_1 = __webpack_require__(37);
 =======
 	var directives_module_1 = __webpack_require__(38);
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 >>>>>>> regenerating bundle
 	var userlist_component_1 = __webpack_require__(188);
 	var usercreate_component_1 = __webpack_require__(186);
 	var userdetails_component_1 = __webpack_require__(187);
 >>>>>>> regenerating bundle
+=======
+	var userlist_component_1 = __webpack_require__(189);
+	var usercreate_component_1 = __webpack_require__(187);
+	var userdetails_component_1 = __webpack_require__(188);
+>>>>>>> removing slice and map
 	var UsersModule = (function () {
 	    function UsersModule() {
 	    }
@@ -12807,6 +13050,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -13105,6 +13349,8 @@ webpackJsonp([2],{
 >>>>>>> regenerating bundle
 >>>>>>> regenerating bundle
 =======
+=======
+>>>>>>> removing slice and map
 /***/ 622:
 >>>>>>> regenerating bundle
 /***/ function(module, exports) {

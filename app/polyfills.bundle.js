@@ -393,7 +393,7 @@
 
 >>>>>>> regenerating bundle
 	var anObject       = __webpack_require__(9)
-	  , IE8_DOM_DEFINE = __webpack_require__(198)
+	  , IE8_DOM_DEFINE = __webpack_require__(199)
 	  , toPrimitive    = __webpack_require__(57)
 	  , dP             = Object.defineProperty;
 
@@ -940,6 +940,7 @@
 >>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	var Map     = __webpack_require__(208)
 	  , $export = __webpack_require__(3)
@@ -953,6 +954,12 @@
 	  , shared  = __webpack_require__(100)('metadata')
 	  , store   = shared.store || (shared.store = new (__webpack_require__(223)));
 >>>>>>> regenerating bundle
+=======
+	var Map     = __webpack_require__(216)
+	  , $export = __webpack_require__(4)
+	  , shared  = __webpack_require__(100)('metadata')
+	  , store   = shared.store || (shared.store = new (__webpack_require__(224)));
+>>>>>>> removing slice and map
 
 	var getOrCreateMetadataMap = function(target, targetKey, create){
 	  var targetMetadata = store.get(target);
@@ -1052,7 +1059,7 @@
 	  , toIObject      = __webpack_require__(40)
 	  , toPrimitive    = __webpack_require__(57)
 	  , has            = __webpack_require__(29)
-	  , IE8_DOM_DEFINE = __webpack_require__(198)
+	  , IE8_DOM_DEFINE = __webpack_require__(199)
 	  , gOPD           = Object.getOwnPropertyDescriptor;
 
 	exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
@@ -1158,7 +1165,7 @@
 	    , toIndex             = __webpack_require__(65)
 	    , toPrimitive         = __webpack_require__(57)
 	    , has                 = __webpack_require__(29)
-	    , same                = __webpack_require__(210)
+	    , same                = __webpack_require__(211)
 	    , classof             = __webpack_require__(120)
 	    , isObject            = __webpack_require__(12)
 	    , toObject            = __webpack_require__(37)
@@ -1171,6 +1178,7 @@
 	    , wks                 = __webpack_require__(15)
 	    , createArrayMethod   = __webpack_require__(41)
 	    , createArrayIncludes = __webpack_require__(119)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	    , speciesConstructor  = __webpack_require__(211)
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 	    , ArrayIterators      = __webpack_require__(102)
@@ -1185,6 +1193,9 @@
 =======
 =======
 =======
+=======
+	    , speciesConstructor  = __webpack_require__(212)
+>>>>>>> removing slice and map
 	    , ArrayIterators      = __webpack_require__(103)
 >>>>>>> regenerating bundle
 	    , Iterators           = __webpack_require__(72)
@@ -1192,6 +1203,7 @@
 	    , $iterDetect         = __webpack_require__(129)
 	    , setSpecies          = __webpack_require__(82)
 	    , arrayFill           = __webpack_require__(118)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	    , arrayCopyWithin     = __webpack_require__(190)
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 >>>>>>> regenerating bundle
@@ -1204,6 +1216,9 @@
 	    , $GOPD               = __webpack_require__(49)
 >>>>>>> regenerating bundle
 =======
+=======
+	    , arrayCopyWithin     = __webpack_require__(191)
+>>>>>>> removing slice and map
 	    , $DP                 = __webpack_require__(18)
 	    , $GOPD               = __webpack_require__(50)
 >>>>>>> regenerating bundle
@@ -1819,7 +1834,7 @@
 >>>>>>> adding chart.js
 =======
 	var anObject    = __webpack_require__(9)
-	  , dPs         = __webpack_require__(205)
+	  , dPs         = __webpack_require__(206)
 	  , enumBugKeys = __webpack_require__(121)
 	  , IE_PROTO    = __webpack_require__(133)('IE_PROTO')
 >>>>>>> regenerating bundle
@@ -1829,6 +1844,7 @@
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function(){
 	  // Thrash, waste and sodomy: IE GC bug
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  var iframe = __webpack_require__(197)('iframe')
@@ -1842,11 +1858,15 @@
 =======
 	  var iframe = __webpack_require__(196)('iframe')
 >>>>>>> regenerating bundle
+=======
+	  var iframe = __webpack_require__(197)('iframe')
+>>>>>>> removing slice and map
 	    , i      = enumBugKeys.length
 	    , lt     = '<'
 	    , gt     = '>'
 	    , iframeDocument;
 	  iframe.style.display = 'none';
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	  __webpack_require__(198).appendChild(iframe);
@@ -1860,6 +1880,9 @@
 =======
 	  __webpack_require__(197).appendChild(iframe);
 >>>>>>> regenerating bundle
+=======
+	  __webpack_require__(198).appendChild(iframe);
+>>>>>>> removing slice and map
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -1890,6 +1913,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	var $keys      = __webpack_require__(208)
@@ -1905,6 +1929,9 @@
 >>>>>>> adding chart.js
 =======
 	var $keys      = __webpack_require__(207)
+=======
+	var $keys      = __webpack_require__(208)
+>>>>>>> removing slice and map
 	  , hiddenKeys = __webpack_require__(121).concat('length', 'prototype');
 >>>>>>> regenerating bundle
 
@@ -1988,6 +2015,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	var $keys       = __webpack_require__(208)
@@ -2003,6 +2031,9 @@
 >>>>>>> adding chart.js
 =======
 	var $keys       = __webpack_require__(207)
+=======
+	var $keys       = __webpack_require__(208)
+>>>>>>> removing slice and map
 	  , enumBugKeys = __webpack_require__(121);
 >>>>>>> regenerating bundle
 
@@ -2339,7 +2370,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var ctx         = __webpack_require__(62)
-	  , call        = __webpack_require__(200)
+	  , call        = __webpack_require__(201)
 	  , isArrayIter = __webpack_require__(125)
 	  , anObject    = __webpack_require__(9)
 <<<<<<< 05b83dd590abd6dca82ef2f98caafa7746f9a398
@@ -2516,11 +2547,15 @@
 	  , step             = __webpack_require__(195)
 =======
 	var addToUnscopables = __webpack_require__(77)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , step             = __webpack_require__(202)
 <<<<<<< ca1977b2e739cc91a22b0074fa2a1a7d21e59b60
 >>>>>>> regenerating bundle
 	  , Iterators        = __webpack_require__(71)
 =======
+=======
+	  , step             = __webpack_require__(203)
+>>>>>>> removing slice and map
 	  , Iterators        = __webpack_require__(72)
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 >>>>>>> Adding Service lbs to dashboard
@@ -2600,7 +2635,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var $at  = __webpack_require__(212)(true);
+	var $at  = __webpack_require__(213)(true);
 
 	// 21.1.3.27 String.prototype[@@iterator]()
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
@@ -2982,7 +3017,7 @@
 	  , hide           = __webpack_require__(36)
 	  , has            = __webpack_require__(29)
 	  , Iterators      = __webpack_require__(72)
-	  , $iterCreate    = __webpack_require__(201)
+	  , $iterCreate    = __webpack_require__(202)
 	  , setToStringTag = __webpack_require__(83)
 	  , getPrototypeOf = __webpack_require__(42)
 	  , ITERATOR       = __webpack_require__(15)('iterator')
@@ -3753,8 +3788,13 @@
 =======
 /* 187 */,
 /* 188 */,
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 /* 189 */
 >>>>>>> regenerating bundle
+=======
+/* 189 */,
+/* 190 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	var cof = __webpack_require__(61);
@@ -3764,6 +3804,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 191 */
@@ -3777,6 +3818,9 @@
 =======
 /* 190 */
 >>>>>>> regenerating bundle
+=======
+/* 191 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
@@ -3807,6 +3851,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -3840,6 +3885,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 191 */
+=======
+/* 192 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	var aFunction = __webpack_require__(53)
@@ -3872,6 +3920,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -3901,6 +3950,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 192 */
+=======
+/* 193 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3943,6 +3995,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -3983,6 +4036,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 193 */
+=======
+/* 194 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3994,7 +4050,7 @@
 	  , defined     = __webpack_require__(48)
 	  , forOf       = __webpack_require__(97)
 	  , $iterDefine = __webpack_require__(128)
-	  , step        = __webpack_require__(202)
+	  , step        = __webpack_require__(203)
 	  , setSpecies  = __webpack_require__(82)
 	  , DESCRIPTORS = __webpack_require__(20)
 	  , fastKey     = __webpack_require__(54).fastKey
@@ -4129,6 +4185,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 195 */
@@ -4142,6 +4199,9 @@
 =======
 /* 194 */
 >>>>>>> regenerating bundle
+=======
+/* 195 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4249,6 +4309,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4275,6 +4336,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 195 */
+=======
+/* 196 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4287,6 +4351,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 197 */
@@ -4300,6 +4365,9 @@
 =======
 /* 196 */
 >>>>>>> regenerating bundle
+=======
+/* 197 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	var isObject = __webpack_require__(12)
@@ -4311,6 +4379,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 198 */
@@ -4324,11 +4393,15 @@
 =======
 /* 197 */
 >>>>>>> regenerating bundle
+=======
+/* 198 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(13).document && document.documentElement;
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4363,14 +4436,17 @@
 =======
 /* 198 */
 >>>>>>> regenerating bundle
+=======
+/* 199 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = !__webpack_require__(20) && !__webpack_require__(11)(function(){
-	  return Object.defineProperty(__webpack_require__(196)('div'), 'a', {get: function(){ return 7; }}).a != 7;
+	  return Object.defineProperty(__webpack_require__(197)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 	});
 
 /***/ },
-/* 199 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 20.1.2.3 Number.isInteger(number)
@@ -4381,6 +4457,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 201 */
@@ -4394,6 +4471,9 @@
 =======
 /* 200 */
 >>>>>>> regenerating bundle
+=======
+/* 201 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// call something on iterator step with safe closing on error
@@ -4410,6 +4490,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4435,6 +4516,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 201 */
+=======
+/* 202 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4452,6 +4536,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 203 */
@@ -4465,6 +4550,9 @@
 =======
 /* 202 */
 >>>>>>> regenerating bundle
+=======
+/* 203 */
+>>>>>>> removing slice and map
 /***/ function(module, exports) {
 
 	module.exports = function(done, value){
@@ -4472,6 +4560,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 204 */
@@ -4485,6 +4574,9 @@
 =======
 /* 203 */
 >>>>>>> regenerating bundle
+=======
+/* 204 */
+>>>>>>> removing slice and map
 /***/ function(module, exports) {
 
 	// 20.2.2.20 Math.log1p(x)
@@ -4493,6 +4585,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 205 */
@@ -4506,6 +4599,9 @@
 =======
 /* 204 */
 >>>>>>> regenerating bundle
+=======
+/* 205 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4543,6 +4639,7 @@
 	} : $assign;
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 206 */
@@ -4556,6 +4653,9 @@
 =======
 /* 205 */
 >>>>>>> regenerating bundle
+=======
+/* 206 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	var dP       = __webpack_require__(18)
@@ -4585,6 +4685,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 207 */
@@ -4602,6 +4703,9 @@
 =======
 /* 206 */
 >>>>>>> regenerating bundle
+=======
+/* 207 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -4626,6 +4730,7 @@
 
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 208 */
@@ -4655,6 +4760,9 @@
 >>>>>>> adding chart.js
 =======
 /* 207 */
+=======
+/* 208 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	var has          = __webpack_require__(29)
@@ -4677,6 +4785,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4703,6 +4812,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 208 */
+=======
+/* 209 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseFloat = __webpack_require__(13).parseFloat
@@ -4721,6 +4833,7 @@
 	} : $parseFloat;
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4746,6 +4859,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 209 */
+=======
+/* 210 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	var $parseInt = __webpack_require__(13).parseInt
@@ -4770,6 +4886,7 @@
 	} : $parseInt;
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 211 */
@@ -4783,6 +4900,9 @@
 =======
 /* 210 */
 >>>>>>> regenerating bundle
+=======
+/* 211 */
+>>>>>>> removing slice and map
 /***/ function(module, exports) {
 
 	// 7.2.9 SameValue(x, y)
@@ -4791,6 +4911,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4814,6 +4935,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 211 */
+=======
+/* 212 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
@@ -4826,6 +4950,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4857,6 +4982,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 212 */
+=======
+/* 213 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	var toInteger = __webpack_require__(56)
@@ -4878,6 +5006,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4911,6 +5040,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 213 */
+=======
+/* 214 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4927,6 +5059,7 @@
 	};
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 215 */
@@ -4940,11 +5073,15 @@
 =======
 /* 214 */
 >>>>>>> regenerating bundle
+=======
+/* 215 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	exports.f = __webpack_require__(15);
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -4972,10 +5109,13 @@
 =======
 >>>>>>> regenerating bundle
 /* 215 */
+=======
+/* 216 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(193);
+	var strong = __webpack_require__(194);
 
 	// 23.1 Map Objects
 	module.exports = __webpack_require__(95)('Map', function(get){
@@ -4993,6 +5133,7 @@
 	}, strong, true);
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -5010,6 +5151,9 @@
 	if(__webpack_require__(20) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
 =======
 /* 216 */
+=======
+/* 217 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// 21.2.5.3 get RegExp.prototype.flags()
@@ -5020,11 +5164,15 @@
 	});
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 /* 218 */
 =======
 /* 217 */
 >>>>>>> regenerating bundle
+=======
+/* 218 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@match logic
@@ -5039,6 +5187,7 @@
 	});
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -5069,6 +5218,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 218 */
+=======
+/* 219 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@replace logic
@@ -5085,6 +5237,7 @@
 	});
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -5115,6 +5268,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 219 */
+=======
+/* 220 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@search logic
@@ -5129,6 +5285,7 @@
 	});
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -5155,6 +5312,9 @@
 =======
 >>>>>>> regenerating bundle
 /* 220 */
+=======
+/* 221 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	// @@split logic
@@ -5235,6 +5395,7 @@
 	});
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -5262,10 +5423,13 @@
 =======
 >>>>>>> regenerating bundle
 /* 221 */
+=======
+/* 222 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var strong = __webpack_require__(193);
+	var strong = __webpack_require__(194);
 
 	// 23.2 Set Objects
 	module.exports = __webpack_require__(95)('Set', function(get){
@@ -5278,6 +5442,7 @@
 	}, strong);
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 223 */
@@ -5291,6 +5456,9 @@
 =======
 /* 222 */
 >>>>>>> regenerating bundle
+=======
+/* 223 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5339,7 +5507,7 @@
 	  , setToStringTag = __webpack_require__(83)
 	  , uid            = __webpack_require__(66)
 	  , wks            = __webpack_require__(15)
-	  , wksExt         = __webpack_require__(214)
+	  , wksExt         = __webpack_require__(215)
 	  , wksDefine      = __webpack_require__(482)
 	  , keyOf          = __webpack_require__(480)
 	  , enumKeys       = __webpack_require__(478)
@@ -5349,7 +5517,7 @@
 	  , toPrimitive    = __webpack_require__(57)
 	  , createDesc     = __webpack_require__(55)
 	  , _create        = __webpack_require__(63)
-	  , gOPNExt        = __webpack_require__(206)
+	  , gOPNExt        = __webpack_require__(207)
 	  , $GOPD          = __webpack_require__(50)
 	  , $DP            = __webpack_require__(18)
 	  , $keys          = __webpack_require__(73)
@@ -5563,6 +5731,7 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -5589,14 +5758,17 @@
 =======
 >>>>>>> regenerating bundle
 /* 223 */
+=======
+/* 224 */
+>>>>>>> removing slice and map
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	var each         = __webpack_require__(41)(0)
 	  , redefine     = __webpack_require__(33)
 	  , meta         = __webpack_require__(54)
-	  , assign       = __webpack_require__(204)
-	  , weak         = __webpack_require__(194)
+	  , assign       = __webpack_require__(205)
+	  , weak         = __webpack_require__(195)
 	  , isObject     = __webpack_require__(12)
 	  , getWeak      = meta.getWeak
 	  , isExtensible = Object.isExtensible
@@ -5649,6 +5821,7 @@
 	}
 
 /***/ },
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 /* 225 */
@@ -5666,6 +5839,8 @@
 =======
 >>>>>>> regenerating bundle
 /* 224 */,
+=======
+>>>>>>> removing slice and map
 /* 225 */,
 /* 226 */,
 /* 227 */,
@@ -6521,7 +6696,7 @@
 	__webpack_require__(67);
 	__webpack_require__(104);
 	__webpack_require__(138);
-	__webpack_require__(215);
+	__webpack_require__(216);
 	module.exports = __webpack_require__(14).Map;
 
 /***/ },
@@ -6569,7 +6744,7 @@
 /* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(222);
+	__webpack_require__(223);
 	__webpack_require__(541);
 	__webpack_require__(543);
 	__webpack_require__(542);
@@ -6630,11 +6805,11 @@
 
 	__webpack_require__(572);
 	__webpack_require__(573);
-	__webpack_require__(216);
 	__webpack_require__(217);
 	__webpack_require__(218);
 	__webpack_require__(219);
 	__webpack_require__(220);
+	__webpack_require__(221);
 	module.exports = __webpack_require__(14).RegExp;
 
 /***/ },
@@ -6644,7 +6819,7 @@
 	__webpack_require__(67);
 	__webpack_require__(104);
 	__webpack_require__(138);
-	__webpack_require__(221);
+	__webpack_require__(222);
 	module.exports = __webpack_require__(14).Set;
 
 /***/ },
@@ -6673,17 +6848,17 @@
 	__webpack_require__(591);
 	__webpack_require__(592);
 	__webpack_require__(593);
-	__webpack_require__(217);
 	__webpack_require__(218);
 	__webpack_require__(219);
 	__webpack_require__(220);
+	__webpack_require__(221);
 	module.exports = __webpack_require__(14).String;
 
 /***/ },
 /* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(222);
+	__webpack_require__(223);
 	__webpack_require__(67);
 	module.exports = __webpack_require__(14).Symbol;
 
@@ -6711,7 +6886,7 @@
 
 	__webpack_require__(67);
 	__webpack_require__(103);
-	__webpack_require__(223);
+	__webpack_require__(224);
 	module.exports = __webpack_require__(14).WeakMap;
 
 /***/ },
@@ -7128,7 +7303,7 @@
 	var global         = __webpack_require__(13)
 	  , core           = __webpack_require__(14)
 	  , LIBRARY        = __webpack_require__(80)
-	  , wksExt         = __webpack_require__(214)
+	  , wksExt         = __webpack_require__(215)
 	  , defineProperty = __webpack_require__(18).f;
 	module.exports = function(name){
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
@@ -7168,6 +7343,7 @@
 	// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 	var $export = __webpack_require__(4);
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(191)});
@@ -7181,6 +7357,9 @@
 =======
 	$export($export.P, 'Array', {copyWithin: __webpack_require__(190)});
 >>>>>>> regenerating bundle
+=======
+	$export($export.P, 'Array', {copyWithin: __webpack_require__(191)});
+>>>>>>> removing slice and map
 
 	__webpack_require__(77)('copyWithin');
 
@@ -7575,10 +7754,10 @@
 =======
 	  , $export        = __webpack_require__(4)
 	  , toObject       = __webpack_require__(37)
-	  , call           = __webpack_require__(200)
+	  , call           = __webpack_require__(201)
 	  , isArrayIter    = __webpack_require__(125)
 	  , toLength       = __webpack_require__(27)
-	  , createProperty = __webpack_require__(195)
+	  , createProperty = __webpack_require__(196)
 	  , getIterFn      = __webpack_require__(137);
 
 	$export($export.S + $export.F * !__webpack_require__(129)(function(iter){ Array.from(iter); }), 'Array', {
@@ -7917,8 +8096,12 @@
 
 	'use strict';
 	var $export        = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , createProperty = __webpack_require__(195);
 >>>>>>> regenerating bundle
+=======
+	  , createProperty = __webpack_require__(196);
+>>>>>>> removing slice and map
 
 	// WebKit Array.of isn't generic
 	$export($export.S + $export.F * __webpack_require__(11)(function(){
@@ -7981,8 +8164,12 @@
 
 	'use strict';
 	var $export = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , $reduce = __webpack_require__(191);
 >>>>>>> regenerating bundle
+=======
+	  , $reduce = __webpack_require__(192);
+>>>>>>> removing slice and map
 
 	$export($export.P + $export.F * !__webpack_require__(39)([].reduceRight, true), 'Array', {
 	  // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
@@ -8036,8 +8223,12 @@
 
 	'use strict';
 	var $export = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , $reduce = __webpack_require__(191);
 >>>>>>> regenerating bundle
+=======
+	  , $reduce = __webpack_require__(192);
+>>>>>>> removing slice and map
 
 	$export($export.P + $export.F * !__webpack_require__(39)([].reduce, true), 'Array', {
 	  // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
@@ -8091,8 +8282,12 @@
 
 	'use strict';
 	var $export    = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , html       = __webpack_require__(197)
 >>>>>>> regenerating bundle
+=======
+	  , html       = __webpack_require__(198)
+>>>>>>> removing slice and map
 	  , cof        = __webpack_require__(61)
 	  , toIndex    = __webpack_require__(65)
 	  , toLength   = __webpack_require__(27)
@@ -8580,6 +8775,7 @@
 /* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	'use strict';
 	var isObject       = __webpack_require__(11)
 	  , getPrototypeOf = __webpack_require__(41)
@@ -8590,6 +8786,9 @@
 =======
 >>>>>>> regenerating bundle
 	$export($export.P, 'Function', {bind: __webpack_require__(192)});
+=======
+	$export($export.P, 'Function', {bind: __webpack_require__(193)});
+>>>>>>> removing slice and map
 
 /***/ },
 /* 509 */
@@ -8722,8 +8921,12 @@
 
 	// 20.2.2.3 Math.acosh(x)
 	var $export = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , log1p   = __webpack_require__(203)
 >>>>>>> regenerating bundle
+=======
+	  , log1p   = __webpack_require__(204)
+>>>>>>> removing slice and map
 	  , sqrt    = Math.sqrt
 	  , $acosh  = Math.acosh;
 
@@ -9281,12 +9484,16 @@
 =======
 	$export($export.S, 'Math', {log1p: __webpack_require__(203)});
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 /***/ },
 /* 521 */
 >>>>>>> regenerating bundle
 >>>>>>> regenerating bundle
 =======
 	$export($export.S, 'Math', {log1p: __webpack_require__(203)});
+=======
+	$export($export.S, 'Math', {log1p: __webpack_require__(204)});
+>>>>>>> removing slice and map
 
 /***/ },
 /* 523 */
@@ -9764,6 +9971,7 @@
 =======
 	$export($export.S, 'Number', {isInteger: __webpack_require__(192)});
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 /***/ },
 /* 515 */
 >>>>>>> 024b7b6... adding chart.js
@@ -9780,6 +9988,9 @@
 >>>>>>> regenerating bundle
 =======
 	$export($export.S, 'Number', {isInteger: __webpack_require__(199)});
+=======
+	$export($export.S, 'Number', {isInteger: __webpack_require__(200)});
+>>>>>>> removing slice and map
 
 /***/ },
 /* 532 */
@@ -9839,8 +10050,12 @@
 
 	// 20.1.2.5 Number.isSafeInteger(number)
 	var $export   = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , isInteger = __webpack_require__(199)
 >>>>>>> regenerating bundle
+=======
+	  , isInteger = __webpack_require__(200)
+>>>>>>> removing slice and map
 	  , abs       = Math.abs;
 
 	$export($export.S, 'Number', {
@@ -9959,8 +10174,12 @@
 >>>>>>> adding chart.js
 =======
 	var $export     = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , $parseFloat = __webpack_require__(208);
 >>>>>>> regenerating bundle
+=======
+	  , $parseFloat = __webpack_require__(209);
+>>>>>>> removing slice and map
 	// 20.1.2.12 Number.parseFloat(string)
 	$export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
@@ -10004,8 +10223,12 @@
 >>>>>>> adding chart.js
 =======
 	var $export   = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , $parseInt = __webpack_require__(209);
 >>>>>>> regenerating bundle
+=======
+	  , $parseInt = __webpack_require__(210);
+>>>>>>> removing slice and map
 	// 20.1.2.13 Number.parseInt(string, radix)
 	$export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
@@ -10062,6 +10285,7 @@
 	'use strict';
 	var $export      = __webpack_require__(4)
 	  , toInteger    = __webpack_require__(56)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , aNumberValue = __webpack_require__(189)
 	  , repeat       = __webpack_require__(213)
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
@@ -10069,6 +10293,10 @@
 >>>>>>> regenerating bundle
 =======
 >>>>>>> regenerating bundle
+=======
+	  , aNumberValue = __webpack_require__(190)
+	  , repeat       = __webpack_require__(214)
+>>>>>>> removing slice and map
 	  , $toFixed     = 1..toFixed
 	  , floor        = Math.floor
 	  , data         = [0, 0, 0, 0, 0, 0]
@@ -10224,8 +10452,12 @@
 	'use strict';
 	var $export      = __webpack_require__(4)
 	  , $fails       = __webpack_require__(11)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , aNumberValue = __webpack_require__(189)
 >>>>>>> regenerating bundle
+=======
+	  , aNumberValue = __webpack_require__(190)
+>>>>>>> removing slice and map
 	  , $toPrecision = 1..toPrecision;
 
 	$export($export.P + $export.F * ($fails(function(){
@@ -10307,12 +10539,16 @@
 =======
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(204)});
 
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 /***/ },
 /* 539 */
 >>>>>>> regenerating bundle
 >>>>>>> regenerating bundle
 =======
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(204)});
+=======
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(205)});
+>>>>>>> removing slice and map
 
 /***/ },
 /* 541 */
@@ -10355,6 +10591,7 @@
 
 	var $export = __webpack_require__(4);
 	// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -10424,6 +10661,9 @@
 /* 541 */
 =======
 	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(205)});
+=======
+	$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(206)});
+>>>>>>> removing slice and map
 
 /***/ },
 /* 543 */
@@ -10560,7 +10800,7 @@
 
 	// 19.1.2.7 Object.getOwnPropertyNames(O)
 	__webpack_require__(43)('getOwnPropertyNames', function(){
-	  return __webpack_require__(206).f;
+	  return __webpack_require__(207).f;
 	});
 
 /***/ },
@@ -10789,7 +11029,7 @@
 
 	// 19.1.3.10 Object.is(value1, value2)
 	var $export = __webpack_require__(4);
-	$export($export.S, 'Object', {is: __webpack_require__(210)});
+	$export($export.S, 'Object', {is: __webpack_require__(211)});
 
 /***/ },
 /* 552 */
@@ -10978,8 +11218,12 @@
 >>>>>>> adding chart.js
 =======
 	var $export     = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , $parseFloat = __webpack_require__(208);
 >>>>>>> regenerating bundle
+=======
+	  , $parseFloat = __webpack_require__(209);
+>>>>>>> removing slice and map
 	// 18.2.4 parseFloat(string)
 	$export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
@@ -11023,8 +11267,12 @@
 >>>>>>> adding chart.js
 =======
 	var $export   = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , $parseInt = __webpack_require__(209);
 >>>>>>> regenerating bundle
+=======
+	  , $parseInt = __webpack_require__(210);
+>>>>>>> removing slice and map
 	// 18.2.5 parseInt(string, radix)
 	$export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
@@ -11131,7 +11379,7 @@
 	  , anObject   = __webpack_require__(9)
 	  , isObject   = __webpack_require__(12)
 	  , fails      = __webpack_require__(11)
-	  , bind       = __webpack_require__(192)
+	  , bind       = __webpack_require__(193)
 	  , rConstruct = (__webpack_require__(13).Reflect || {}).construct;
 
 	// MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -11323,6 +11571,7 @@
 	    , key;
 	  for(key in iterated)keys.push(key);
 	};
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
 	__webpack_require__(202)(Enumerate, 'Object', function(){
@@ -11336,6 +11585,9 @@
 =======
 	__webpack_require__(201)(Enumerate, 'Object', function(){
 >>>>>>> regenerating bundle
+=======
+	__webpack_require__(202)(Enumerate, 'Object', function(){
+>>>>>>> removing slice and map
 	  var that = this
 	    , keys = that._k
 	    , key;
@@ -11971,7 +12223,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	__webpack_require__(216);
+	__webpack_require__(217);
 	var anObject    = __webpack_require__(9)
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< ac1d271109bf3355decdc3e24fd2bc2d76be6891
@@ -12268,8 +12520,12 @@
 
 	'use strict';
 	var $export = __webpack_require__(4)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 	  , $at     = __webpack_require__(212)(false);
 >>>>>>> regenerating bundle
+=======
+	  , $at     = __webpack_require__(213)(false);
+>>>>>>> removing slice and map
 	$export($export.P, 'String', {
 	  // 21.1.3.3 String.prototype.codePointAt(pos)
 	  codePointAt: function codePointAt(pos){
@@ -12806,6 +13062,7 @@
 
 	$export($export.P, 'String', {
 	  // 21.1.3.13 String.prototype.repeat(count)
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< 7fd2dcb0413fd6b6b843664d5ce0a057099709f0
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 <<<<<<< 54bf91b361958b377ebc548abd7768f8b92260f5
@@ -12842,6 +13099,9 @@
 =======
 >>>>>>> regenerating bundle
 	  repeat: __webpack_require__(213)
+=======
+	  repeat: __webpack_require__(214)
+>>>>>>> removing slice and map
 	});
 
 /***/ },
@@ -13199,6 +13459,7 @@
 	  , toLength     = __webpack_require__(27)
 	  , isObject     = __webpack_require__(12)
 	  , ArrayBuffer  = __webpack_require__(13).ArrayBuffer
+<<<<<<< 29b1de42f5aa7086a967fd08aa8325dfeca7b299
 <<<<<<< c9aa4e6e4c93ef4fe3f8f39017c5f0320f609601
 	  , speciesConstructor = __webpack_require__(204)
 >>>>>>> 024b7b6... adding chart.js
@@ -13206,6 +13467,9 @@
 =======
 	  , speciesConstructor = __webpack_require__(211)
 >>>>>>> regenerating bundle
+=======
+	  , speciesConstructor = __webpack_require__(212)
+>>>>>>> removing slice and map
 	  , $ArrayBuffer = buffer.ArrayBuffer
 	  , $DataView    = buffer.DataView
 	  , $isView      = $typed.ABV && ArrayBuffer.isView
@@ -13662,7 +13926,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var weak = __webpack_require__(194);
+	var weak = __webpack_require__(195);
 
 	// 23.4 WeakSet Objects
 	__webpack_require__(95)('WeakSet', function(get){
@@ -13795,7 +14059,7 @@
 >>>>>>> regenerating bundle
 /***/ function(module, exports, __webpack_require__) {
 
-	var Set                     = __webpack_require__(221)
+	var Set                     = __webpack_require__(222)
 	  , from                    = __webpack_require__(474)
 	  , metadata                = __webpack_require__(49)
 	  , anObject                = __webpack_require__(9)

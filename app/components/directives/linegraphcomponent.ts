@@ -13,7 +13,7 @@ import {isNull} from "util";
     styleUrls: ['components/directives/linegraph.css']
 })
 
-export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
+export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
     private prevKey: string;
     @Input('key') key: string;
     @Input('endpointType') endpointType: string;
@@ -22,7 +22,7 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
     private subscription: Subscription;
     private start: number;
     private end: number;
-    private graphData: any;
+    //private graphData: any;
     public lineChartData:Array<any>;
     public lineChartLabels:Array<any>;
     public lineChartOptions:any = {};
@@ -50,10 +50,6 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
         this.key = '';
         this.endpointType = 'Network';
         this.prevEndpointType = ''
-        this.graphData = {
-                            Network: {data:[],label:[]},
-                            ApplicationGroup: {data:[],label:[]}
-                         };
     }
 
     ngOnInit(){
@@ -65,8 +61,6 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
             var currKey = this.key
             var currEndpointType = this.endpointType
             if(resultKey===currKey && resultEndpointType === currEndpointType){
-                this.graphData[currEndpointType].data.push(result['count']);
-                this.graphData[currEndpointType].label.push(this.graphData[currEndpointType].label.length + 'T');
                 if (!this.inspectActivated){
                     this.start++;
                     this.end++;
@@ -81,14 +75,23 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
         this.lineChartLabels = [];
         var max=0;
         for(var i= this.start; i<=this.end; i++){
-            var endpointcount = this.graphData[this.endpointType].data[i];
+            var endpointcount = this.chartService.graphData[this.endpointType][this.key][i];
             this.lineChartData[0]['data'].push(endpointcount);
-            this.lineChartLabels.push(this.graphData[this.endpointType].label[i]);
+            this.lineChartLabels.push(i + 'T');
             if(endpointcount > max){
                 max = endpointcount;
             }
         }
-        this.adjustScale(max);
+        if(!isUndefined(this.lineChartOptions.scales)){
+            var scaleMax = this.lineChartOptions.scales.yAxes[0].ticks.suggestedMax;
+            if(max > scaleMax){
+                this.adjustScale(max);
+            }
+        }
+        else{
+            this.adjustScale(max);
+        }
+
     }
 
     adjustScale(max: number){
@@ -101,7 +104,7 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
                     type: 'linear',
                     ticks: {
                         beginAtZero: true,
-                        suggestedMax: max * 2
+                        suggestedMax: max * 1.5
                     }
                 }]
             }
@@ -118,12 +121,15 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
 
     prepareChartData(){
         this.inspectActivated = false;
+        /*
         this.graphData[this.endpointType].data = this.chartService.graphData[this.endpointType][this.key].slice();
         this.graphData[this.endpointType].label = this.chartService.graphData[this.endpointType][this.key].map((curr,index) => {
             return index + 'T';
         });
-        this.end = this.graphData[this.endpointType].data.length - 1;
+        */
+        this.end = this.chartService.graphData[this.endpointType][this.key].length - 1;
         this.start = this.end - 14 ;
+        this.lineChartOptions = {};
         this.loadGraphData();
         this.prevKey = this.key;
         this.prevEndpointType = this.endpointType;
@@ -139,11 +145,11 @@ export class LineGraphDirective implements OnInit, DoCheck, OnDestroy{
     }
 
     rightpress(){
-        if(this.end < (this.graphData[this.endpointType].data.length - 1)){
+        if(this.end < (this.chartService.graphData[this.endpointType][this.key].length - 1)){
             this.end++;
             this.start++;
             this.loadGraphData();
-            if(this.end == (this.graphData[this.endpointType].data.length - 1))
+            if(this.end == (this.chartService.graphData[this.endpointType][this.key].length - 1))
                 this.inspectActivated = false;
 
         }

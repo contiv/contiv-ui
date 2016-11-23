@@ -33,7 +33,7 @@ export class ChartService {
         }
     }
 
-    getInspectData(listEndPoint:string, inspectEndpoint:string){
+    private getInspectData(listEndPoint:string, inspectEndpoint:string){
         this.apiService.get(listEndPoint)
             .map((res: Response) => res.json())
             .subscribe((result1) => {

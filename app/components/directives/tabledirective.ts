@@ -65,7 +65,9 @@ export class CtvTableComponent implements OnChanges, OnInit {
 
     public showChunk(pageNo: number, searchText: string): boolean{
         this.table.searchText = searchText;
-
+        if(this.sortObj.field.length == 0){
+            this.sortObj = this.initializeSort(this.defaultSortColumn);
+        }
         if(isUndefined(pageNo) || pageNo < 0){
             pageNo=0;
         }
