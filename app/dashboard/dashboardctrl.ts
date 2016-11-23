@@ -1,17 +1,15 @@
 /**
  * Created by vjain3 on 3/11/16.
  */
-import {Component, OnDestroy, NgZone, DoCheck} from '@angular/core';
+import { Component, OnDestroy, NgZone } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import { ApplicationGroupsModel } from "../components/models/applicationgroupsmodel";
 import { PoliciesModel } from "../components/models/policiesmodel";
 import { NetworksModel } from "../components/models/networksmodel";
-import {ServicelbsModel} from "../components/models/servicelbsmodel";
-import {isUndefined} from "util";
-var _ = require('lodash');
-
-//var Chart = require('chart.js');
+import { ServicelbsModel } from "../components/models/servicelbsmodel";
+import { isUndefined } from "util";
+import { EndpointType } from "../components/utils/chartservice";
 
 @Component({
     selector: 'dashboard',
@@ -20,6 +18,7 @@ var _ = require('lodash');
 
 })
 export class DashboardComponent implements OnDestroy {
+    public EndpointType = EndpointType;
     nodes: number = 0;
     networks: number = 0;
     groups: number = 0;
@@ -27,20 +26,10 @@ export class DashboardComponent implements OnDestroy {
     applicationGroupList: any;
     networkpolicies: number = 0;
     servicelbs: number = 0;
-    subscription: Subscription;
-    endpointType: string;
+    private subscription: Subscription;
+    endpointType: EndpointType;
     public key: string;
-    private setkeyflag: boolean
-    public lineChartColors:Array<any> = [
-        { // dark grey
-            backgroundColor: 'rgba(77,83,96,0.2)',
-            borderColor: 'rgba(77,83,96,1)',
-            pointBackgroundColor: 'rgba(77,83,96,1)',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: 'rgba(77,83,96,1)'
-        }
-    ];
+    private setkeyflag: boolean;
 
     constructor(private networksModel:NetworksModel,
                 private applicationGroupsModel:ApplicationGroupsModel,
@@ -49,8 +38,8 @@ export class DashboardComponent implements OnDestroy {
                 private ngZone:NgZone) {
         var dashboardComponent = this;
         this.networkList = [];
-        this.applicationGroupList = []
-        this.endpointType = 'Network';
+        this.applicationGroupList = [];
+        this.endpointType = EndpointType.Network;
         this.key = '';
         this.setkeyflag = true;
         function getDashboardInfo(reload) {
@@ -59,11 +48,6 @@ export class DashboardComponent implements OnDestroy {
                     .then(function (result) {
                         dashboardComponent.networks = result.length;
                         dashboardComponent.networkList = result;
-                        if (result.length > 0 && dashboardComponent.key === '' && dashboardComponent.endpointType === 'Network'){
-                            //dashboardComponent.key = result[0]['key'];
-                            //var tempArr = _.sortBy(dashboardComponent.networkList, ['networkName']);
-                        }
-
                     });
                 applicationGroupsModel.get(reload)
                     .then(function (result) {
@@ -84,7 +68,7 @@ export class DashboardComponent implements OnDestroy {
         //Load from cache for quick display initially
         getDashboardInfo(false);
 
-        this.subscription = Observable.interval(7000000).subscribe(() => {
+        this.subscription = Observable.interval(5000).subscribe(() => {
             getDashboardInfo(true);
         })
     }
@@ -94,17 +78,17 @@ export class DashboardComponent implements OnDestroy {
         this.subscription.unsubscribe();
     }
 
-    switch(endpointType: string){
-        if(endpointType == 'Network'){
-            if(this.endpointType !== 'Network'){
+    switch(endpointType: EndpointType){
+        if(endpointType == EndpointType.Network){
+            if(this.endpointType !== EndpointType.Network){
                 this.setkeyflag = true;
-                this.endpointType = 'Network';
+                this.endpointType = EndpointType.Network;
             }
         }
         else {
-            if(this.endpointType !== 'ApplicationGroup'){
+            if(this.endpointType !== EndpointType.ApplicationGroup){
                 this.setkeyflag = true;
-                this.endpointType = 'ApplicationGroup';
+                this.endpointType = EndpointType.ApplicationGroup;
             }
         }
     }

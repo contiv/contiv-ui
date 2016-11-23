@@ -7,14 +7,14 @@
             <div class="ui segment">
                 <div class="row">
                     <div class="ui buttons">
-                        <button class="ui blue button" [ngClass]="{basic: endpointType!='Network'}" (click)="switch('Network')">Networks</button>
-                        <button style="margin-left: 10px;"class="ui blue button" [ngClass]="{basic: endpointType!='ApplicationGroup'}" (click)="switch('ApplicationGroup')">Application Groups</button>
+                        <button class="ui blue button" [ngClass]="{basic: endpointType!==EndpointType.Network}" (click)="switch(EndpointType.Network)">Networks</button>
+                        <button style="margin-left: 10px;"class="ui blue button" [ngClass]="{basic: endpointType!==EndpointType.ApplicationGroup}" (click)="switch(EndpointType.ApplicationGroup)">Application Groups</button>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 20px;">
                     <linegraph [key]="key" [endpointType]="endpointType"></linegraph>
                 </div>
-                <div class="row" style="margin-top: 30px;" *ngIf="endpointType=='Network'">
+                <div class="row" style="margin-top: 30px;" *ngIf="endpointType===EndpointType.Network">
                     <ctv-table #tableRef [defaultSortColumn]="'networkName'"
                                [items]="networkList"
                                (filtereditems)="filterednetworks=$event; setKey($event)"
@@ -48,7 +48,7 @@
                         </tfoot>
                     </ctv-table>
                 </div>
-                <div class="row" style="margin-top: 30px;" *ngIf="endpointType=='ApplicationGroup'">
+                <div class="row" style="margin-top: 30px;" *ngIf="endpointType===EndpointType.ApplicationGroup">
                     <ctv-table #tableRef1 [defaultSortColumn]="'groupName'"
                                [items]="applicationGroupList"
                                (filtereditems)="filteredgroups=$event; setKey($event)"
@@ -85,17 +85,6 @@
             </div>
         </div>
         <div class="ui right floated four wide column">
-            <a class="ui fluid card" [routerLink]="['../networks/list']">
-                <div class="content">
-                    <div class="ui grey ribbon label">
-                        <i class="small networks icon" style="margin-left: 0.75em"></i> Networks
-                    </div>
-                    <div class="description">
-                        <p class="center aligned" style="font-size: 5rem">{{networks}}</p>
-                    </div>
-
-                </div>
-            </a>
             <a class="ui fluid card" [routerLink]="['../servicelbs/list']">
                 <div class="content">
                     <div class="ui grey ribbon label">
@@ -124,6 +113,16 @@
                     </div>
                     <div class="description">
                         <p class="center aligned" style="font-size: 5rem">{{networkpolicies}}</p>
+                    </div>
+                </div>
+            </a>
+            <a class="ui fluid card" [routerLink]="['../networks/list']">
+                <div class="content">
+                    <div class="ui grey ribbon label">
+                        <i class="small networks icon" style="margin-left: 0.75em"></i> Networks
+                    </div>
+                    <div class="description">
+                        <p class="center aligned" style="font-size: 5rem">{{networks}}</p>
                     </div>
                 </div>
             </a>

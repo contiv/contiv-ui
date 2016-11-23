@@ -3,7 +3,7 @@
  */
 
 import {Component, OnInit, DoCheck, Input, OnDestroy, NgZone} from "@angular/core";
-import {ChartService} from "../utils/chartservice";
+import {ChartService, EndpointType} from "../utils/chartservice";
 import {Subscription} from "rxjs";
 import {isUndefined} from "util";
 import {isNull} from "util";
@@ -14,10 +14,11 @@ import {isNull} from "util";
 })
 
 export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
+    public EndpointType = EndpointType;
     private prevKey: string;
     @Input('key') key: string;
-    @Input('endpointType') endpointType: string;
-    private prevEndpointType: string;
+    @Input('endpointType') endpointType: EndpointType;
+    private prevEndpointType: EndpointType;
     public inspectActivated: boolean;
     private subscription: Subscription;
     private start: number;
@@ -48,8 +49,8 @@ export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
         this.inspectActivated = false;
         this.prevKey = '';
         this.key = '';
-        this.endpointType = 'Network';
-        this.prevEndpointType = ''
+        this.endpointType = EndpointType.Network;
+        this.prevEndpointType = EndpointType.Network;
     }
 
     ngOnInit(){
@@ -58,8 +59,8 @@ export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
         this.subscription = this.chartService.stream.subscribe((result) => {
             var resultKey = result['iKey'];
             var resultEndpointType = result['type'];
-            var currKey = this.key
-            var currEndpointType = this.endpointType
+            var currKey = this.key;
+            var currEndpointType = this.endpointType;
             if(resultKey===currKey && resultEndpointType === currEndpointType){
                 if (!this.inspectActivated){
                     this.start++;
@@ -70,7 +71,22 @@ export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
         });
     }
 
-    loadGraphData(){
+    /*  This function is needed to redraw the chart after every update. The drawing is done
+        using last 15 array values from chartservice.graphdata.
+        eg:
+        chartservice.graphdata = { 0:
+                                        {   'contiv-net': [1,2,3,4,5...],
+                                            'super-net': [1,2,3,4,5...]
+                                        },
+                                   1:
+                                        {   'app-group1': [1,2,3,4,5...],
+                                            'app-group2': [1,2,3,4,5...]
+                                        }
+                                 }
+        In the above structure 0 represents enum EndpointType.Network;
+                               1 represents enum EndpointType.ApplicationGroup;
+     */
+    private loadGraphData(){
         this.lineChartData[0]['data']=[];
         this.lineChartLabels = [];
         var max=0;
@@ -94,7 +110,12 @@ export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
 
     }
 
-    adjustScale(max: number){
+    /*
+        This function is needed to update the Y-axes scale values so that the line
+        is always within the boundry and there is significant change in offset of line
+        when there is variation in the array values. This is needed since scale always begins at 0.
+     */
+    private adjustScale(max: number){
         this.lineChartOptions = {};
         this.lineChartOptions = {
             animation: false,
@@ -113,20 +134,15 @@ export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
 
     ngDoCheck(){
         if((this.key != '') && (!isUndefined(this.key)) && (!isNull(this.key)))
-            if(this.key!==this.prevKey){
+            if((this.key!==this.prevKey) || (this.endpointType !== this.prevEndpointType)){
                 if(!isUndefined(this.chartService.graphData[this.endpointType][this.key]))
                     this.prepareChartData();
             }
     }
 
-    prepareChartData(){
+    //  This function kind of resets the chart when different network or application group is selected.
+    private prepareChartData(){
         this.inspectActivated = false;
-        /*
-        this.graphData[this.endpointType].data = this.chartService.graphData[this.endpointType][this.key].slice();
-        this.graphData[this.endpointType].label = this.chartService.graphData[this.endpointType][this.key].map((curr,index) => {
-            return index + 'T';
-        });
-        */
         this.end = this.chartService.graphData[this.endpointType][this.key].length - 1;
         this.start = this.end - 14 ;
         this.lineChartOptions = {};
@@ -134,6 +150,7 @@ export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
         this.prevKey = this.key;
         this.prevEndpointType = this.endpointType;
     }
+
 
     leftpress(){
         if (this.start > 0){

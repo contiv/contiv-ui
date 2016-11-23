@@ -6,6 +6,11 @@ import {ContivGlobals} from "../models/contivglobals";
 import {ApiService} from "./apiservice";
 import {isUndefined} from "util";
 
+export enum EndpointType {
+    Network,
+    ApplicationGroup
+}
+
 @Injectable()
 export class ChartService {
     private refresh: Subscription;
@@ -18,22 +23,22 @@ export class ChartService {
                 private apiService: ApiService){
         this.networks = [];
         this.netInspect = {};
-        this.graphData = {Network: {}, ApplicationGroup: {}};
+        this.graphData = {0: {}, 1: {}};
         this.source = new Subject<any>();
         this.stream = this.source.asObservable();
         Observable.interval(5000).subscribe(() => {
             if (this.authService.isLoggedIn){
-                this.getInspectData(ContivGlobals.NETWORKS_ENDPOINT, ContivGlobals.NETWORKS_INSPECT_ENDPOINT);
-                this.getInspectData(ContivGlobals.APPLICATIONGROUPS_ENDPOINT, ContivGlobals.APPLICATIONGROUPS_INSPECT_ENDPOINT);
+                this.getInspectData(ContivGlobals.NETWORKS_ENDPOINT, ContivGlobals.NETWORKS_INSPECT_ENDPOINT, EndpointType.Network);
+                this.getInspectData(ContivGlobals.APPLICATIONGROUPS_ENDPOINT, ContivGlobals.APPLICATIONGROUPS_INSPECT_ENDPOINT, EndpointType.ApplicationGroup);
             }
         });
         if (this.authService.isLoggedIn){
-            this.getInspectData(ContivGlobals.NETWORKS_ENDPOINT, ContivGlobals.NETWORKS_INSPECT_ENDPOINT);
-            this.getInspectData(ContivGlobals.APPLICATIONGROUPS_ENDPOINT, ContivGlobals.APPLICATIONGROUPS_INSPECT_ENDPOINT);
+            this.getInspectData(ContivGlobals.NETWORKS_ENDPOINT, ContivGlobals.NETWORKS_INSPECT_ENDPOINT, EndpointType.Network);
+            this.getInspectData(ContivGlobals.APPLICATIONGROUPS_ENDPOINT, ContivGlobals.APPLICATIONGROUPS_INSPECT_ENDPOINT, EndpointType.ApplicationGroup);
         }
     }
 
-    private getInspectData(listEndPoint:string, inspectEndpoint:string){
+    private getInspectData(listEndPoint:string, inspectEndpoint:string, endpointtype:EndpointType){
         this.apiService.get(listEndPoint)
             .map((res: Response) => res.json())
             .subscribe((result1) => {
@@ -43,22 +48,19 @@ export class ChartService {
                         .map((res: Response) => res.json())
                         .subscribe((result2) => {
                             var inspectkey = result2['Config']['key'];
-                            var type = 'Network';
-                            if(!isUndefined(result2['Config']['groupName']))
-                                type = 'ApplicationGroup'
                             if(!isUndefined(result2['Oper']['numEndpoints'])){
-                                this.generateGraphData(inspectkey, result2['Oper']['numEndpoints'], type);
+                                this.generateGraphData(inspectkey, result2['Oper']['numEndpoints'], endpointtype);
                             }
                             else{
-                                this.generateGraphData(inspectkey, 0, type);
+                                this.generateGraphData(inspectkey, 0, endpointtype);
                             }
-                        })
+                        });
                 }
-            })
+            });
 
     }
 
-    generateGraphData(key: string, count: number, type: string){
+    private generateGraphData(key: string, count: number, type: EndpointType){
         if(isUndefined(this.graphData[type][key])){
             this.graphData[type][key]=[];
             for(var i=0; i<15; i++){
