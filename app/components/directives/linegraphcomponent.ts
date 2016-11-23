@@ -23,7 +23,6 @@ export class LineGraphComponent implements OnInit, DoCheck, OnDestroy{
     private subscription: Subscription;
     private start: number;
     private end: number;
-    //private graphData: any;
     public lineChartData:Array<any>;
     public lineChartLabels:Array<any>;
     public lineChartOptions:any = {};

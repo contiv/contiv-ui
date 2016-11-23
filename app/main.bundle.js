@@ -5896,6 +5896,7 @@ webpackJsonp([2],{
 	            { path: 'dashboard', component: dashboardctrl_1.DashboardComponent },
 	            { path: 'firstrun', component: firstrunwizardctrl_1.FirstrunWizardComponent },
 	            //Network Policies
+	            { path: 'networkpolicies', redirectTo: 'networkpolicies/list', pathMatch: 'full' },
 	            { path: 'networkpolicies/list', component: networkpoliciestabsctrl_1.NetworkPoliciesTabsComponent },
 	            { path: 'networkpolicies/isolation/create', component: isolationpolicycreatectrl_1.IsolationPolicyCreateComponent },
 	            { path: 'networkpolicies/isolation/details/:key', component: isolationpolicydetailsctrl_1.IsolationPolicyDetailsComponent },
@@ -5904,6 +5905,7 @@ webpackJsonp([2],{
 	            { path: 'networkpolicies/bandwidth/details/:key', component: bandwidthpolicydetailsctrl_1.BandwidthPolicyDetailsComponent },
 	            { path: 'networkpolicies/bandwidth/edit/:key', component: bandwidthpolicydetailsctrl_1.BandwidthPolicyDetailsComponent },
 	            //Application Groups
+	            { path: 'applicationgroups', redirectTo: 'applicationgroups/list', pathMatch: 'full' },
 	            { path: 'applicationgroups/list', component: applicationgrouplistctrl_1.AppGrouplistComponent },
 	            { path: 'applicationgroups/create', component: applicationgroupcreatectrl_1.ApplicationGroupCreateComponent },
 	            { path: 'applicationgroups/details/:key', component: applicationgroupdetailsctrl_1.ApplicationGroupDetailsComponent },
@@ -5926,18 +5928,22 @@ webpackJsonp([2],{
 	                ]
 	            },
 	            //Organizations
+	            { path: 'organizations', redirectTo: 'organizations/list', pathMatch: 'full' },
 	            { path: 'organizations/list', component: organizationlistctrl_1.OrganizationListComponent },
 	            { path: 'organizations/create', component: organizationcreatectrl_1.OrganizationCreateComponent },
 	            { path: 'organizations/details/:key', component: organizationdetailsctrl_1.OrganizationDetailsComponent },
 	            //Networks
+	            { path: 'networks', redirectTo: 'networks/list', pathMatch: 'full' },
 	            { path: 'networks/list', component: networklistctrl_1.NetworkListComponent },
 	            { path: 'networks/create', component: networkcreatectrl_1.NetworkCreateComponent },
 	            { path: 'networks/details/:key', component: networkdetailsctrl_1.NetworkdetailsComponent },
 	            //Servicelbs
+	            { path: 'servicelbs', redirectTo: 'servicelbs/list', pathMatch: 'full' },
 	            { path: 'servicelbs/list', component: servicelblistctrl_1.ServicelbListComponent },
 	            { path: 'servicelbs/create', component: servicelbcreatectrl_1.ServicelbCreateComponent },
 	            { path: 'servicelbs/details/:key', component: servicelbdetailsctrl_1.ServicelbDetailsComponent },
 	            //Application profiles
+	            { path: 'appprofiles', redirectTo: 'appprofiles/list', pathMatch: 'full' },
 	            { path: 'appprofiles/list', component: appprofilelist_component_1.AppProfileListComponent },
 	            { path: 'appprofiles/create', component: appprofilecreate_component_1.AppProfileCreateComponent },
 	            { path: 'appprofiles/details/:key', component: appprofiledetails_component_1.AppProfileDetailsComponent },
@@ -7224,6 +7230,11 @@ webpackJsonp([2],{
 	    };
 	    CtvTableComponent.prototype.showChunk = function (pageNo, searchText) {
 	        this.table.searchText = searchText;
+	        /*
+	            This check is needed when you are having two tables on the same page and when you
+	            are trying to switch table views using ng-if, like the toggle between Networks and
+	            Application groups on the dashboard page.
+	        */
 	        if (this.sortObj.field.length == 0) {
 	            this.sortObj = this.initializeSort(this.defaultSortColumn);
 	        }
