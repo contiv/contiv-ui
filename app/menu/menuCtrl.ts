@@ -20,7 +20,7 @@ export class MenuComponent implements DoCheck{
     constructor(private activatedRoute: ActivatedRoute,
                 private router: Router,
                 private authService: AuthService) {
-        this.username = authService.authTokenPayload['role'];
+        this.username = authService.authTokenPayload['username'];
     }
 
     ngOnInit(){

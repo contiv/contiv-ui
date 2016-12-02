@@ -11,6 +11,7 @@ import 'rxjs/add/operator/delay';
 import {Http, Headers, RequestOptions, Response} from "@angular/http";
 import {AuthMatrix} from "./authMatrix";
 import {isNull} from "util";
+import {ContivGlobals} from "../models/contivglobals";
 
 interface User{
     username: string;
@@ -52,45 +53,10 @@ export class AuthService {
     }
 
     login(user: User): Observable<any> {
-        var data = this.encodeUrlData(user);
         this.headers = new Headers();
-        this.headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.headers.append('Content-Type', 'application/json');
         var options = new RequestOptions({headers: this.headers});
-
-        // This is just a mock
-        return new Observable((observer) => {
-            if (user.username != "devops" && user.username != "admin")
-                observer.next(false);
-            else{
-                var res = '';
-
-                if (user.username == "devops" && user.password == "devops")
-                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
-
-                if (user.username == "admin" && user.password == "admin")
-                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
-
-                if (res == ''){
-                    observer.next(false);
-                }
-                else{
-                    this.isLoggedIn = true;
-                    localStorage.setItem("authToken", res);
-                    localStorage.setItem("loginTime", new Date().toLocaleString());
-                    localStorage.setItem("lastAccessTime", new Date().toLocaleString());
-                    this.extractBody();
-                    observer.next(true);
-                }
-            }
-
-
-
-        });
-
-        // This Code will be active after CCN Proxy is live...
-
-        /*
-        return this.http.post("/1/system/login", data, options)
+        return this.http.post(ContivGlobals.LOGIN_ENDPOINT, user, options)
             .map((res) => {
                 var s = this.extractToken(res);
                 if (s){
@@ -103,7 +69,6 @@ export class AuthService {
                 }
             })
             .catch((error:any) => Observable.throw(error));
-            */
     }
 
     logout(): void {
@@ -125,7 +90,10 @@ export class AuthService {
     }
 
     extractToken(res: Response): boolean {
-        var xAuthToken = res.headers.get("x-auth-token");
+        /* CCN_Proxy is now sending the token as part of the body */
+        //var xAuthToken = res.headers.get("x-auth-token");
+
+        var xAuthToken = res.json()['token'];
         if (xAuthToken.length > 0) {
             localStorage.setItem("authToken", xAuthToken);
             localStorage.setItem("loginTime", new Date().toLocaleString());

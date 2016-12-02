@@ -23,9 +23,14 @@
                         <li *ngIf="newUserName.errors?.required">Please enter
                             user name
                         </li>
+                        <li *ngIf="newUserPassword.errors?.required">Please enter
+                            user password
+                        </li>
+                        <!--
                         <li *ngIf="newUserOrganization.errors?.required">
                             Please select organization
                         </li>
+                        -->
                     </ul>
                 </div>
             </div>
@@ -33,9 +38,16 @@
         <div class="field">
             <label for="newUserName">Username</label>
             <input type="text" id="newUserName" name="newUserName"
-                   [(ngModel)]="newUser.userName"
+                   [(ngModel)]="newUser.username"
                    placeholder="Enter name" required #newUserName="ngModel">
         </div>
+        <div class="field">
+            <label for="newUserName">Password</label>
+            <input type="password" id="newUserPassword" name="newUserPassword"
+                   [(ngModel)]="newUser.password"
+                   placeholder="Enter password" required #newUserPassword="ngModel">
+        </div>
+        <!--
         <div class="field">
             <label for="newFirstName">First name</label>
             <input type="text" id="newFirstName" name="newFirstName"
@@ -63,18 +75,19 @@
                 </option>
             </select>
         </div>
+        -->
         <div class="field">
             <label for="newRole">Role</label>
             <select class="ui dropdown" id="newRole" name="role" [(ngModel)]="newUser.role">
-                <option value="Admin">Admin</option>
-                <option value="DevOps">DevOps</option>
+                <option value="admin">Admin</option>
+                <option value="ops">DevOps</option>
             </select>
         </div>
         <div class="field">
             <label>
-                <input type="checkbox" name="newUserEnabled" tabindex="0"
-                       [(ngModel)]="newUser.enabled">
-                Enabled
+                <input type="checkbox" name="newUserDisabled" tabindex="0"
+                       [(ngModel)]="newUser.disable">
+                Disabled
             </label>
         </div>
         <div class="ui grid">

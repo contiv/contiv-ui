@@ -44,8 +44,11 @@ export const ContivGlobals = {
     'NODES_SETTINGS_SET_ENDPOINT': '/globals',
     'NODES_SETTINGS_GET_ENDPOINT': '/info/globals',
 
+    //REST endpoint for Login
+    'LOGIN_ENDPOINT': '/ccn_proxy/login',
     //REST endpoints for USER
-    'USERS_ENDPOINT': '/components/models/users.json',
+    //'USERS_ENDPOINT': '/components/models/users.json',
+    'USERS_ENDPOINT': '/ccn_proxy/local_users',
 
     //Refresh interval in milliseconds
     'REFRESH_INTERVAL': 5000,

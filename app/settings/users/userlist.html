@@ -25,15 +25,15 @@
             <tr>
                 <th><ctv-th [sortfield]="'userName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Username</ctv-th></th>
                 <th><ctv-th [sortfield]="'role'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Role</ctv-th></th>
-                <th><ctv-th [sortfield]="'tenantName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Organization</ctv-th></th>
+                <!--<th><ctv-th [sortfield]="'tenantName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Organization</ctv-th></th>-->
             </tr>
         </thead>
 
         <tbody *ngIf="users">
             <tr *ngFor="let user of filteredusers">
-                <td><a [routerLink]="['../details', user.key]">{{user.userName}}</a></td>
+                <td><a [routerLink]="['../details', user.username]">{{user.username}}</a></td>
                 <td>{{user.role}}</td>
-                <td>{{user.tenantName}}</td>
+                <!--<td>{{user.tenantName}}</td>-->
             </tr>
         </tbody>
 
@@ -51,7 +51,8 @@
 
         <tfoot>
             <tr>
-                <td colspan="3">
+                <td colspan="2">
+                <!--<td colspan="3">-->
                     <ctv-tpagination [chunks]="tableRef.pageChunks"
                                      (showPage)="tableRef.showChunk($event, tableRef.table.searchText)"
                                      (prevChunk)="tableRef.showPrevChunk()"

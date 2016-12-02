@@ -33,16 +33,14 @@ export class UserCreateComponent{
         function resetForm() {
             crudHelperService.stopLoader(component);
             component.newUser = {
-                userName: '',
-                firstName: '',
-                lastName: '',
-                role: 'DevOps',
-                enabled: false,
-                tenantName: 'default'//TODO: Remove hardcoded tenant.
-            };
+                username: '',
+                password: '',
+                role: '',
+                disable: false
+            }
         }
 
-        getOrganizations();
+        //getOrganizations();
         resetForm();
     }
 
@@ -58,13 +56,13 @@ export class UserCreateComponent{
         var component = this;
         if(formvalid){
             this.crudHelperService.startLoader(this);
-            component.newUser.key = this.usersModel.generateKey(this.newUser);
             this.usersModel.create(component.newUser,undefined)
                 .then((result) => {
                     component.ngZone.run(() => {
                         component.crudHelperService.stopLoader(component);
                         component.crudHelperService.showNotification("User: Created", result.key.toString());
                     });
+                    component.crudHelperService.showNotification("User: Created",result.username);
                     component.returnToUsers();
                 }, (error) => {
                     component.ngZone.run(() => {

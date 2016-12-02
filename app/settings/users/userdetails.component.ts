@@ -43,12 +43,12 @@ export class UserDetailsComponent {
 
         component.crudHelperService.stopLoader(component);
 
-        component.usersModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
+        component.usersModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'username')
             .then(function (user) {
                 component.user = user;
             });
 
-        getOrganizations();
+        //getOrganizations();
         setMode();
     }
 
@@ -76,7 +76,7 @@ export class UserDetailsComponent {
                 component.ngZone.run(() => {
                     component.crudHelperService.stopLoader(component);
                 });
-                component.crudHelperService.showNotification("User: Deleted", result)
+                component.crudHelperService.showNotification("User: Deleted", component.user.username);
                 component.returnToUser();
             }, function errorCallback(result) {
                 component.ngZone.run(() => {

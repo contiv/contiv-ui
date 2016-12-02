@@ -119,8 +119,11 @@ webpackJsonp([2],{
 	    'NODES_ACTIVE_JOB_ENDPOINT': '/info/job/active',
 	    'NODES_SETTINGS_SET_ENDPOINT': '/globals',
 	    'NODES_SETTINGS_GET_ENDPOINT': '/info/globals',
+	    //REST endpoint for Login
+	    'LOGIN_ENDPOINT': '/ccn_proxy/login',
 	    //REST endpoints for USER
-	    'USERS_ENDPOINT': '/components/models/users.json',
+	    //'USERS_ENDPOINT': '/components/models/users.json',
+	    'USERS_ENDPOINT': '/ccn_proxy/local_users',
 	    //Refresh interval in milliseconds
 	    'REFRESH_INTERVAL': 5000,
 	    //RegEx for validation
@@ -136,7 +139,19 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 /***/ 20:
+=======
+<<<<<<< HEAD
+/***/ 19:
+=======
+<<<<<<< HEAD
+/***/ 23:
+=======
+/***/ 25:
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -770,12 +785,16 @@ webpackJsonp([2],{
 	        var options = this.prepareHeader('delete');
 	        return this.http.delete(url, options);
 	    };
+	    ApiService.prototype.patch = function (url, body) {
+	        var options = this.prepareHeader('patch');
+	        return this.http.patch(url, body, options);
+	    };
 	    ApiService.prototype.prepareHeader = function (method) {
 	        this.headers = new http_1.Headers();
 	        if (method != 'get' && method != 'delete')
 	            this.headers.append('Content-Type', 'application/json');
 	        if (this.authService.authToken.length > 0)
-	            this.headers.append('Authorization', "Bearer " + this.authService.authToken);
+	            this.headers.append('X-Auth-Token', this.authService.authToken);
 	        var options = new http_1.RequestOptions({ headers: this.headers });
 	        return options;
 	    };
@@ -847,6 +866,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/17/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var common_1 = __webpack_require__(21);
 	var errormessagedirective_1 = __webpack_require__(391);
@@ -861,6 +881,27 @@ webpackJsonp([2],{
 	var linegraphcomponent_1 = __webpack_require__(392);
 	var ng2_charts_1 = __webpack_require__(141);
 	var notification_1 = __webpack_require__(94);
+=======
+	var core_1 = __webpack_require__(3);
+	var common_1 = __webpack_require__(20);
+	var errormessagedirective_1 = __webpack_require__(387);
+<<<<<<< HEAD
+	var tabledirective_1 = __webpack_require__(392);
+	var forms_1 = __webpack_require__(27);
+=======
+	var tabledirective_1 = __webpack_require__(393);
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var accordiondirective_1 = __webpack_require__(384);
+	var collapsibledirective_1 = __webpack_require__(386);
+	var namevaluedirective_1 = __webpack_require__(389);
+	var authdirective_1 = __webpack_require__(385);
+	var networksettingcomponent_1 = __webpack_require__(391);
+	var acisettingcomponent_1 = __webpack_require__(390);
+	var linegraphcomponent_1 = __webpack_require__(388);
+	var ng2_charts_1 = __webpack_require__(140);
+	var notification_1 = __webpack_require__(93);
+>>>>>>> ccn_proxy_integration
 	var DirectivesModule = (function () {
 	    function DirectivesModule() {
 	    }
@@ -918,8 +959,19 @@ webpackJsonp([2],{
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var basecollection_1 = __webpack_require__(397);
 	var _ = __webpack_require__(26);
+=======
+<<<<<<< HEAD
+	var basecollection_1 = __webpack_require__(393);
+	var _ = __webpack_require__(29);
+=======
+	var basecollection_1 = __webpack_require__(394);
+	var _ = __webpack_require__(28);
+	var util_1 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var Collection = (function (_super) {
 	    __extends(Collection, _super);
 	    /**
@@ -940,12 +992,18 @@ webpackJsonp([2],{
 	     * @param url Optional if not passed it is constructed using key and url passed in constructor
 	     * @returns {*}
 	     */
-	    Collection.prototype.create = function (model, url) {
+	    Collection.prototype.create = function (model, url, key) {
 	        var collection = this;
+	        if (util_1.isUndefined(key))
+	            key = 'key';
 	        var promise = new Promise(function (resolve, reject) {
 	            if (url === undefined)
+<<<<<<< HEAD
 	                url = collection.url + model.key + '/';
 	            collection.cudOperationFlag = true;
+=======
+	                url = collection.url + model[key] + '/';
+>>>>>>> 1045896... ccn_proxy_integration
 	            collection.apiService.post(url, model).map(function (res) { return res.json(); }).toPromise()
 	                .then(function successCallback(response) {
 	                var responseData = response;
@@ -954,7 +1012,7 @@ webpackJsonp([2],{
 	                    responseData = model;
 	                }
 	                _.remove(collection.models, function (n) {
-	                    return n['key'] == model['key'];
+	                    return n[key] == model[key];
 	                });
 	                collection.models.push(responseData);
 	                collection.cudOperationFlag = false;
@@ -1099,12 +1157,34 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/11/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
 	var util_1 = __webpack_require__(20);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(42);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(33);
+	var util_1 = __webpack_require__(19);
+=======
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+	var contivglobals_1 = __webpack_require__(14);
+	var apiservice_1 = __webpack_require__(33);
+	var util_1 = __webpack_require__(23);
+=======
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var ApplicationGroupsModel = (function (_super) {
 	    __extends(ApplicationGroupsModel, _super);
 	    function ApplicationGroupsModel(http, apiService) {
@@ -1180,12 +1260,34 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
 	var util_1 = __webpack_require__(20);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(42);
+	var util_1 = __webpack_require__(19);
+	var contivglobals_1 = __webpack_require__(13);
+=======
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(23);
+	var contivglobals_1 = __webpack_require__(14);
+>>>>>>> 4768085... ccn_proxy_integration
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var util_1 = __webpack_require__(25);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var NetworksModel = (function (_super) {
 	    __extends(NetworksModel, _super);
 	    function NetworksModel(http, apiService) {
@@ -1249,12 +1351,30 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	__webpack_require__(340);
 	__webpack_require__(341);
 	__webpack_require__(143);
 	var http_1 = __webpack_require__(22);
 	var authMatrix_1 = __webpack_require__(163);
 	var util_1 = __webpack_require__(20);
+=======
+	__webpack_require__(337);
+	__webpack_require__(338);
+	__webpack_require__(142);
+	var http_1 = __webpack_require__(25);
+	var authMatrix_1 = __webpack_require__(162);
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(19);
+=======
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(23);
+=======
+	var util_1 = __webpack_require__(25);
+	var contivglobals_1 = __webpack_require__(13);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var AuthService = (function () {
 	    function AuthService(http) {
 	        this.http = http;
@@ -1280,49 +1400,22 @@ webpackJsonp([2],{
 	    };
 	    AuthService.prototype.login = function (user) {
 	        var _this = this;
-	        var data = this.encodeUrlData(user);
 	        this.headers = new http_1.Headers();
-	        this.headers.append('Content-Type', 'application/x-www-form-urlencoded');
+	        this.headers.append('Content-Type', 'application/json');
 	        var options = new http_1.RequestOptions({ headers: this.headers });
-	        // This is just a mock
-	        return new Observable_1.Observable(function (observer) {
-	            if (user.username != "devops" && user.username != "admin")
-	                observer.next(false);
-	            else {
-	                var res = '';
-	                if (user.username == "devops" && user.password == "devops")
-	                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
-	                if (user.username == "admin" && user.password == "admin")
-	                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
-	                if (res == '') {
-	                    observer.next(false);
-	                }
-	                else {
-	                    _this.isLoggedIn = true;
-	                    localStorage.setItem("authToken", res);
-	                    localStorage.setItem("loginTime", new Date().toLocaleString());
-	                    localStorage.setItem("lastAccessTime", new Date().toLocaleString());
-	                    _this.extractBody();
-	                    observer.next(true);
-	                }
+	        return this.http.post(contivglobals_1.ContivGlobals.LOGIN_ENDPOINT, user, options)
+	            .map(function (res) {
+	            var s = _this.extractToken(res);
+	            if (s) {
+	                _this.isLoggedIn = true;
+	                return true;
 	            }
-	        });
-	        // This Code will be active after CCN Proxy is live...
-	        /*
-	        return this.http.post("/1/system/login", data, options)
-	            .map((res) => {
-	                var s = this.extractToken(res);
-	                if (s){
-	                    this.isLoggedIn = true;
-	                    return true;
-	                }
-	                else{
-	                    this.isLoggedIn = false;
-	                    return false;
-	                }
-	            })
-	            .catch((error:any) => Observable.throw(error));
-	            */
+	            else {
+	                _this.isLoggedIn = false;
+	                return false;
+	            }
+	        })
+	            .catch(function (error) { return Observable_1.Observable.throw(error); });
 	    };
 	    AuthService.prototype.logout = function () {
 	        this.cleanuplocalstorage();
@@ -1340,7 +1433,9 @@ webpackJsonp([2],{
 	        return str;
 	    };
 	    AuthService.prototype.extractToken = function (res) {
-	        var xAuthToken = res.headers.get("x-auth-token");
+	        /* CCN_Proxy is now sending the token as part of the body */
+	        //var xAuthToken = res.headers.get("x-auth-token");
+	        var xAuthToken = res.json()['token'];
 	        if (xAuthToken.length > 0) {
 	            localStorage.setItem("authToken", xAuthToken);
 	            localStorage.setItem("loginTime", new Date().toLocaleString());
@@ -1498,12 +1593,69 @@ webpackJsonp([2],{
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
 	var contivglobals_1 = __webpack_require__(13);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var apiservice_1 = __webpack_require__(31);
 	var util_1 = __webpack_require__(20);
+=======
+	var apiservice_1 = __webpack_require__(33);
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(19);
+>>>>>>> ccn_proxy_integration
 	var PoliciesModel = (function (_super) {
 	    __extends(PoliciesModel, _super);
 	    function PoliciesModel(http, apiService) {
 	        _super.call(this, http, contivglobals_1.ContivGlobals.POLICIES_ENDPOINT, apiService);
+=======
+	var BgpsModel = (function (_super) {
+	    __extends(BgpsModel, _super);
+	    function BgpsModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.BGPS_ENDPOINT, apiService);
+	    }
+	    BgpsModel = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], BgpsModel);
+	    return BgpsModel;
+	    var _a, _b;
+	}(collection_1.Collection));
+	exports.BgpsModel = BgpsModel;
+	
+
+/***/ },
+
+/***/ 69:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+	var contivglobals_1 = __webpack_require__(14);
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> 1045896... ccn_proxy_integration
+	var OrganizationsModel = (function (_super) {
+	    __extends(OrganizationsModel, _super);
+	    function OrganizationsModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.ORGANIZATIONS_ENDPOINT, apiService);
+>>>>>>> 4768085... ccn_proxy_integration
 	    }
 	    /**
 	     * Generate policy key to save policy on server
@@ -1563,15 +1715,37 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/21/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(42);
+>>>>>>> ccn_proxy_integration
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
 	var BgpsModel = (function (_super) {
 	    __extends(BgpsModel, _super);
 	    function BgpsModel(http, apiService) {
 	        _super.call(this, http, contivglobals_1.ContivGlobals.BGPS_ENDPOINT, apiService);
+=======
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+	var contivglobals_1 = __webpack_require__(14);
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> 1045896... ccn_proxy_integration
+	var PoliciesModel = (function (_super) {
+	    __extends(PoliciesModel, _super);
+	    function PoliciesModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.POLICIES_ENDPOINT, apiService);
+>>>>>>> 4768085... ccn_proxy_integration
 	    }
 	    BgpsModel = __decorate([
 	        core_1.Injectable(), 
@@ -1606,11 +1780,30 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 5/11/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(42);
+	var contivglobals_1 = __webpack_require__(13);
+=======
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+	var contivglobals_1 = __webpack_require__(14);
+>>>>>>> 4768085... ccn_proxy_integration
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var ServicelbsModel = (function (_super) {
 	    __extends(ServicelbsModel, _super);
 	    function ServicelbsModel(http, apiService) {
@@ -1700,12 +1893,35 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/15/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
 	var util_1 = __webpack_require__(20);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(42);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(33);
+	var util_1 = __webpack_require__(19);
+=======
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+	var contivglobals_1 = __webpack_require__(14);
+	var apiservice_1 = __webpack_require__(33);
+	var util_1 = __webpack_require__(23);
+=======
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+	var util_1 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var NetprofilesModel = (function (_super) {
 	    __extends(NetprofilesModel, _super);
 	    function NetprofilesModel(http, apiService) {
@@ -1906,9 +2122,21 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var util_1 = __webpack_require__(20);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var crudhelperservice_1 = __webpack_require__(7);
+	var util_1 = __webpack_require__(19);
+=======
+<<<<<<< HEAD
+	var crudhelperservice_1 = __webpack_require__(9);
+	var util_1 = __webpack_require__(23);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	(function (NotificationType) {
 	    NotificationType[NotificationType["confirm"] = 0] = "confirm";
 	    NotificationType[NotificationType["alert"] = 1] = "alert";
@@ -1923,6 +2151,16 @@ webpackJsonp([2],{
 	        this.item = '';
 	        this.notifyId = 0;
 	        this.notifyCounter = 0;
+=======
+	var http_1 = __webpack_require__(20);
+	var collection_1 = __webpack_require__(41);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+	var AppProfilesModel = (function (_super) {
+	    __extends(AppProfilesModel, _super);
+	    function AppProfilesModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.APP_PROFILES_ENDPOINT, apiService);
+>>>>>>> 1045896... ccn_proxy_integration
 	    }
 	    NotificationComponent.prototype.ngOnInit = function () {
 	        jQuery('.notify').css({ right: 30 + 'px',
@@ -2037,15 +2275,38 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/11/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(42);
+	var contivglobals_1 = __webpack_require__(13);
+=======
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+	var contivglobals_1 = __webpack_require__(14);
+>>>>>>> 4768085... ccn_proxy_integration
+	var apiservice_1 = __webpack_require__(33);
+>>>>>>> ccn_proxy_integration
 	var AppProfilesModel = (function (_super) {
 	    __extends(AppProfilesModel, _super);
 	    function AppProfilesModel(http, apiService) {
 	        _super.call(this, http, contivglobals_1.ContivGlobals.APP_PROFILES_ENDPOINT, apiService);
+=======
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+	var BgpsModel = (function (_super) {
+	    __extends(BgpsModel, _super);
+	    function BgpsModel(http, apiService) {
+	        _super.call(this, http, contivglobals_1.ContivGlobals.BGPS_ENDPOINT, apiService);
+>>>>>>> 1045896... ccn_proxy_integration
 	    }
 	    /**
 	     * Generate key for application profile
@@ -2087,12 +2348,33 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/7/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
 	var _ = __webpack_require__(26);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(42);
+	var contivglobals_1 = __webpack_require__(13);
+=======
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+	var contivglobals_1 = __webpack_require__(14);
+>>>>>>> 4768085... ccn_proxy_integration
+	var apiservice_1 = __webpack_require__(33);
+	var _ = __webpack_require__(29);
+=======
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var UsersModel = (function (_super) {
 	    __extends(UsersModel, _super);
 	    function UsersModel(http, apiService) {
@@ -2105,19 +2387,26 @@ webpackJsonp([2],{
 	    UsersModel.prototype.generateKey = function (user) {
 	        return user.tenantName + ':' + user.username;
 	    };
-	    UsersModel.prototype.create = function (model, url) {
+	    /*
+	    create(model, url):Promise<any> {
 	        var collection = this;
 	        var promise = new Promise(function (resolve, reject) {
 	            collection.models.push(model);
 	            resolve(model);
 	        });
 	        return promise;
+	    }
+	    */
+	    UsersModel.prototype.create = function (model, url) {
+	        var url;
+	        url = contivglobals_1.ContivGlobals.USERS_ENDPOINT;
+	        return _super.prototype.create.call(this, model, url, 'username');
 	    };
 	    UsersModel.prototype.getModelByKey = function (key, reload, keyname) {
 	        return _super.prototype.getModelByKey.call(this, key, false, keyname);
 	    };
-	    UsersModel.prototype.save = function (model) {
-	        var collection = this;
+	    UsersModel.prototype.saveuser = function (model) {
+	        /*
 	        var promise = new Promise(function (resolve, reject) {
 	            _.remove(collection.models, function (n) {
 	                return n['key'] == model['key'];
@@ -2126,8 +2415,20 @@ webpackJsonp([2],{
 	            resolve(model);
 	        });
 	        return promise;
+	        */
+	        var collection = this;
+	        var url = contivglobals_1.ContivGlobals.USERS_ENDPOINT + '/' + model['username'];
+	        return this.apiService.patch(url, model).map(function (res) { return res.json(); }).toPromise()
+	            .then(function (result) {
+	            _.remove(collection.models, function (n) {
+	                return n['username'] == model['username'];
+	            });
+	            collection.models.push(result);
+	            return result;
+	        });
 	    };
-	    UsersModel.prototype.delete = function (model) {
+	    /*
+	    delete(model):Promise<any> {
 	        var collection = this;
 	        var promise = new Promise(function (resolve, reject) {
 	            _.remove(collection.models, function (n) {
@@ -2137,7 +2438,11 @@ webpackJsonp([2],{
 	        });
 	        return promise;
 	    };
-	    ;
+	    */
+	    UsersModel.prototype.delete = function (model) {
+	        var url = contivglobals_1.ContivGlobals + '/' + model['username'];
+	        return _super.prototype.deleteUsingKey.call(this, model.username, 'username', url);
+	    };
 	    UsersModel = __decorate([
 	        core_1.Injectable(), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
@@ -2150,7 +2455,105 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 /***/ 117:
+=======
+<<<<<<< HEAD
+=======
+/***/ 95:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by cshampur on 7/17/16.
+	 */
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(23);
+=======
+	var util_1 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+	var InspectService = (function () {
+	    function InspectService() {
+	    }
+	    /* This function would build the containerDetails object.
+	     eg :
+	     containerDetails={
+	     ContainerId1 : [{name: "homingHost", value: "cluster-node1", type: "string", format: "none"},
+	     {name: macAddress, value: "02:02", type:"string", format:"none"}
+	     ],
+	     ContainerId2 : [{name: "homingHost", value: "cluster-node1" type: "string", format: "none"},
+	     {name: macAddress, value: "02:04", type: "string", format: "none"}
+	     ]
+	     }
+	     --Used in displaying the container detail inside an accordion.
+	     */
+	    InspectService.prototype.buildEndPoints = function (endpoints) {
+	        var containerDetails = {};
+	        for (var i in endpoints) {
+	            var containerAttributes = [];
+	            for (var key in endpoints[i]) {
+	                var endpointAttribute = {};
+	                endpointAttribute['name'] = key;
+	                endpointAttribute['format'] = 'none';
+	                endpointAttribute['type'] = 'string';
+	                switch (key) {
+	                    case "ipAddress":
+	                        endpointAttribute['value'] = endpoints[i][key].filter(function (ipAddress) { return ipAddress.length > 0; }).join();
+	                        break;
+	                    case "labels":
+	                        endpointAttribute['value'] = endpoints[i][key].replace(/(map\[|\])/gi, '').replace(/(:)/gi, '=').split(' ')
+	                            .filter(function (v) { return v.length > 0; });
+	                        endpointAttribute['format'] = 'label';
+	                        endpointAttribute['type'] = 'array';
+	                        break;
+	                    default: endpointAttribute['value'] = endpoints[i][key];
+	                }
+	                containerAttributes.push(endpointAttribute);
+	            }
+	            containerDetails[endpoints[i].containerID] = containerAttributes;
+	        }
+	        return containerDetails;
+	    };
+	    /*  This function checks whether any new containers were added or not
+	     View is updated only when there is a change in container configuration
+	     */
+	    InspectService.prototype.checkContainerChanged = function (contDetailsA, contDetailsB) {
+	        if (util_1.isUndefined(contDetailsA))
+	            return true;
+	        else {
+	            if (Object.keys(contDetailsA).length != Object.keys(contDetailsB).length)
+	                return true;
+	            for (var key in contDetailsB) {
+	                if (!(key in contDetailsA))
+	                    return true;
+	            }
+	            return false;
+	        }
+	    };
+	    InspectService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [])
+	    ], InspectService);
+	    return InspectService;
+	}());
+	exports.InspectService = InspectService;
+	
+
+/***/ },
+
+>>>>>>> 4768085... ccn_proxy_integration
+/***/ 116:
+>>>>>>> ccn_proxy_integration
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2171,12 +2574,32 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 3/8/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	var collection_1 = __webpack_require__(40);
 	var _ = __webpack_require__(26);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+	var collection_1 = __webpack_require__(42);
+=======
+	var http_1 = __webpack_require__(24);
+	var collection_1 = __webpack_require__(41);
+<<<<<<< HEAD
+>>>>>>> 4768085... ccn_proxy_integration
+	var _ = __webpack_require__(29);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var _ = __webpack_require__(28);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var RulesModel = (function (_super) {
 	    __extends(RulesModel, _super);
 	    function RulesModel(http, apiService) {
@@ -2247,12 +2670,37 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var rxjs_1 = __webpack_require__(19);
 	var authservice_1 = __webpack_require__(54);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
 	var util_1 = __webpack_require__(20);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(21);
+	var authservice_1 = __webpack_require__(54);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(33);
+	var util_1 = __webpack_require__(19);
+=======
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+	var authservice_1 = __webpack_require__(53);
+	var contivglobals_1 = __webpack_require__(14);
+	var apiservice_1 = __webpack_require__(33);
+	var util_1 = __webpack_require__(23);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var authservice_1 = __webpack_require__(53);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+	var util_1 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	(function (EndpointType) {
 	    EndpointType[EndpointType["Network"] = 0] = "Network";
 	    EndpointType[EndpointType["ApplicationGroup"] = 1] = "ApplicationGroup";
@@ -2338,11 +2786,30 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var http_1 = __webpack_require__(22);
 	__webpack_require__(144);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(25);
+=======
+<<<<<<< HEAD
+	var http_1 = __webpack_require__(24);
+>>>>>>> 4768085... ccn_proxy_integration
+	__webpack_require__(143);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(33);
+=======
+	var http_1 = __webpack_require__(20);
+	__webpack_require__(107);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var NetworkService = (function () {
 	    function NetworkService(http, apiService) {
 	        this.http = http;
@@ -2367,8 +2834,72 @@ webpackJsonp([2],{
 	        return this.apiService.post(contivglobals_1.ContivGlobals.NETWORK_SETTINGS_ENDPOINT
 	            + 'global/', setting).map(function (res) { return res.json(); }).toPromise();
 	    };
+<<<<<<< HEAD
 	    NetworkService.prototype.getAciSettings = function () {
 	        var networkservice = this;
+=======
+	    NetworkService = __decorate([
+	        core_1.Injectable(), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object, (typeof (_b = typeof apiservice_1.ApiService !== 'undefined' && apiservice_1.ApiService) === 'function' && _b) || Object])
+	    ], NetworkService);
+	    return NetworkService;
+	    var _a, _b;
+	}());
+	exports.NetworkService = NetworkService;
+	
+
+/***/ },
+
+/***/ 119:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var http_1 = __webpack_require__(20);
+	__webpack_require__(107);
+	var contivglobals_1 = __webpack_require__(13);
+	var apiservice_1 = __webpack_require__(31);
+	var NodesService = (function () {
+	    function NodesService(http, apiService) {
+	        this.http = http;
+	        this.apiService = apiService;
+	    }
+	    Object.defineProperty(NodesService, "node_constants", {
+	        get: function () {
+	            return {
+	                APIC_CONTR_UNRESTRICT_MODE: 'apic_contracts_unrestricted_mode',
+	                APIC_EPG_BRIDGE_DOMAIN: 'apic_epg_bridge_domain',
+	                APIC_LEAF_NODES: 'apic_leaf_nodes',
+	                APIC_PASSWORD: 'apic_password',
+	                APIC_PHYS_DOMAIN: 'apic_phys_domain',
+	                APIC_URL: 'apic_url',
+	                APIC_USERNAME: 'apic_username',
+	                CONTIV_NET_MODE: 'contiv_network_mode',
+	                CONTROL_INTERFACE: 'control_interface',
+	                ENV: 'env',
+	                FWD_MODE: 'fwd_mode',
+	                DATA_INTERFACE: 'netplugin_if',
+	                SCHED_PROVIDER: 'scheduler_provider',
+	                VIP_ADDR: 'service_vip',
+	                UCP_BOOTSTRAP_NODE: 'ucp_bootstrap_node_name',
+	                CLUSTER_NAME: 'cluster_name'
+	            };
+	        },
+	        enumerable: true,
+	        configurable: true
+	    });
+	    NodesService.prototype.getSettings = function (ctrl) {
+	        var nodeservice = this;
+>>>>>>> 1045896... ccn_proxy_integration
 	        var promise = new Promise(function (resolve, reject) {
 	            var url = contivglobals_1.ContivGlobals.ACI_SETTINGS_ENDPOINT;
 	            networkservice.apiService.get(url).map(function (res) { return res.json(); }).toPromise()
@@ -2679,9 +3210,23 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(6);
+<<<<<<< HEAD
 	var applicationgroupsmodel_1 = __webpack_require__(47);
 	var crudhelperservice_1 = __webpack_require__(7);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var rxjs_1 = __webpack_require__(19);
+=======
+	var rxjs_1 = __webpack_require__(21);
+=======
+	var applicationgroupsmodel_1 = __webpack_require__(46);
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var AppGrouplistComponent = (function () {
 	    function AppGrouplistComponent(activatedRoute, router, appGroupModel, crudHelperService) {
 	        var _this = this;
@@ -2955,9 +3500,25 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(6);
+<<<<<<< HEAD
 	var crudhelperservice_1 = __webpack_require__(7);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var rxjs_1 = __webpack_require__(19);
 	var appprofilesmodel_1 = __webpack_require__(95);
+=======
+	var rxjs_1 = __webpack_require__(21);
+	var appprofilesmodel_1 = __webpack_require__(94);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+	var appprofilesmodel_1 = __webpack_require__(93);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var appprofilesmodel_1 = __webpack_require__(91);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var AppProfileListComponent = (function () {
 	    function AppProfileListComponent(activatedRoute, router, appProfilesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -3025,10 +3586,25 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/21/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
 	var filterpipe_1 = __webpack_require__(398);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+	var filterpipe_1 = __webpack_require__(394);
+>>>>>>> ccn_proxy_integration
 	var PipesModule = (function () {
 	    function PipesModule() {
 	    }
@@ -3065,6 +3641,7 @@ webpackJsonp([2],{
 	 */
 	"use strict";
 	exports.AuthMatrix = {
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	    'firstrun': { 'DevOps': 'n', 'SysAdmin': 'y' },
 	    'dashboard': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'networkpolicies/list': { 'DevOps': 'y', 'SysAdmin': 'y' },
@@ -3102,6 +3679,43 @@ webpackJsonp([2],{
 	    'appprofiles/create': { 'DevOps': 'n', 'SysAdmin': 'y' },
 	    'appprofiles/details': { 'DevOps': 'y', 'SysAdmin': 'y' },
 	    'appprofiles/edit': { 'DevOps': 'n', 'SysAdmin': 'y' }
+=======
+	    'firstrun': { 'ops': 'n', 'admin': 'y' },
+	    'dashboard': { 'ops': 'y', 'admin': 'y' },
+	    'networkpolicies/list': { 'ops': 'y', 'admin': 'y' },
+	    'networkpolicies/isolation/create': { 'ops': 'n', 'admin': 'y' },
+	    'networkpolicies/isolation/details': { 'ops': 'y', 'admin': 'y' },
+	    'networkpolicies/isolation/edit': { 'ops': 'n', 'admin': 'y' },
+	    'networkpolicies/bandwidth/create': { 'ops': 'y', 'admin': 'y' },
+	    'networkpolicies/bandwidth/details': { 'ops': 'y', 'admin': 'y' },
+	    'networkpolicies/bandwidth/edit': { 'ops': 'n', 'admin': 'y' },
+	    'applicationgroups/list': { 'ops': 'y', 'admin': 'y' },
+	    'applicationgroups/create': { 'ops': 'n', 'admin': 'y' },
+	    'applicationgroups/details': { 'ops': 'y', 'admin': 'y' },
+	    'applicationgroups/edit': { 'ops': 'n', 'admin': 'y' },
+	    'settings/users/list': { 'ops': 'n', 'admin': 'y' },
+	    'settings/users/create': { 'ops': 'n', 'admin': 'y' },
+	    'settings/users/details': { 'ops': 'n', 'admin': 'y' },
+	    'settings/users/edit': { 'ops': 'n', 'admin': 'y' },
+	    'settings/nodes/list': { 'ops': 'n', 'admin': 'y' },
+	    'settings/nodes/create': { 'ops': 'n', 'admin': 'y' },
+	    'settings/nodes/details': { 'ops': 'n', 'admin': 'y' },
+	    'settings/nodes/edit': { 'ops': 'n', 'admin': 'y' },
+	    'settings/networks': { 'ops': 'n', 'admin': 'y' },
+	    'organizations/list': { 'ops': 'y', 'admin': 'y' },
+	    'organizations/create': { 'ops': 'n', 'admin': 'y' },
+	    'organizations/details': { 'ops': 'y', 'admin': 'y' },
+	    'networks/list': { 'ops': 'y', 'admin': 'y' },
+	    'networks/create': { 'ops': 'n', 'admin': 'y' },
+	    'networks/details': { 'ops': 'y', 'admin': 'y' },
+	    'servicelbs/list': { 'ops': 'y', 'admin': 'y' },
+	    'servicelbs/create': { 'ops': 'n', 'admin': 'y' },
+	    'servicelbs/details': { 'ops': 'y', 'admin': 'y' },
+	    'appprofiles/list': { 'ops': 'y', 'admin': 'y' },
+	    'appprofiles/create': { 'ops': 'n', 'admin': 'y' },
+	    'appprofiles/details': { 'ops': 'y', 'admin': 'y' },
+	    'appprofiles/edit': { 'ops': 'n', 'admin': 'y' }
+>>>>>>> ccn_proxy_integration
 	};
 	
 
@@ -3126,8 +3740,21 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(6);
 	var authservice_1 = __webpack_require__(54);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var authMatrix_1 = __webpack_require__(163);
 	var util_1 = __webpack_require__(20);
+=======
+	var authMatrix_1 = __webpack_require__(162);
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(19);
+=======
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(23);
+=======
+	var util_1 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var AuthGuard = (function () {
 	    function AuthGuard(authService, router) {
 	        this.authService = authService;
@@ -3229,12 +3856,31 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var Observable_1 = __webpack_require__(1);
+<<<<<<< HEAD
 	var applicationgroupsmodel_1 = __webpack_require__(47);
 	var policiesmodel_1 = __webpack_require__(63);
 	var networksmodel_1 = __webpack_require__(48);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var servicelbsmodel_1 = __webpack_require__(72);
 	var util_1 = __webpack_require__(20);
 	var chartservice_1 = __webpack_require__(118);
+=======
+	var servicelbsmodel_1 = __webpack_require__(71);
+	var util_1 = __webpack_require__(19);
+=======
+	var applicationgroupsmodel_1 = __webpack_require__(46);
+	var policiesmodel_1 = __webpack_require__(70);
+	var networksmodel_1 = __webpack_require__(47);
+<<<<<<< HEAD
+	var servicelbsmodel_1 = __webpack_require__(71);
+	var util_1 = __webpack_require__(23);
+=======
+	var servicelbsmodel_1 = __webpack_require__(70);
+	var util_1 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+	var chartservice_1 = __webpack_require__(117);
+>>>>>>> ccn_proxy_integration
 	var DashboardComponent = (function () {
 	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, servicelbsModel, ngZone) {
 	        this.networksModel = networksModel;
@@ -3406,7 +4052,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var router_1 = __webpack_require__(6);
+<<<<<<< HEAD
 	var authservice_1 = __webpack_require__(54);
+=======
+	var authservice_1 = __webpack_require__(53);
+>>>>>>> 4768085... ccn_proxy_integration
 	var contivglobals_1 = __webpack_require__(13);
 	var LoginComponent = (function () {
 	    function LoginComponent(router, activatedRoute, crudHelperService, authService) {
@@ -3581,7 +4231,11 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(6);
+<<<<<<< HEAD
 	var authservice_1 = __webpack_require__(54);
+=======
+	var authservice_1 = __webpack_require__(53);
+>>>>>>> 4768085... ccn_proxy_integration
 	var contivglobals_1 = __webpack_require__(13);
 	var MenuComponent = (function () {
 	    function MenuComponent(activatedRoute, router, authService) {
@@ -3589,7 +4243,7 @@ webpackJsonp([2],{
 	        this.router = router;
 	        this.authService = authService;
 	        this.product_name = contivglobals_1.ContivGlobals.PRODUCT_NAME;
-	        this.username = authService.authTokenPayload['role'];
+	        this.username = authService.authTokenPayload['username'];
 	    }
 	    MenuComponent.prototype.ngOnInit = function () {
 	        this.firstRun = this.authService.firstRun;
@@ -4107,13 +4761,31 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(6);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var policiesmodel_1 = __webpack_require__(63);
 	var rulesmodel_1 = __webpack_require__(117);
+=======
+	var policiesmodel_1 = __webpack_require__(62);
+	var rulesmodel_1 = __webpack_require__(116);
+<<<<<<< HEAD
+>>>>>>> ccn_proxy_integration
 	var networksmodel_1 = __webpack_require__(48);
 	var applicationgroupsmodel_1 = __webpack_require__(47);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var networkpoliciestabsctrl_1 = __webpack_require__(55);
 	var contivglobals_1 = __webpack_require__(13);
+=======
+	var networksmodel_1 = __webpack_require__(47);
+	var applicationgroupsmodel_1 = __webpack_require__(46);
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var networkpoliciestabsctrl_1 = __webpack_require__(72);
+	var contivglobals_1 = __webpack_require__(14);
+=======
+	var networkpoliciestabsctrl_1 = __webpack_require__(71);
+	var contivglobals_1 = __webpack_require__(13);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
 	var IsolationPolicyDetailsComponent = (function () {
 	    function IsolationPolicyDetailsComponent(activatedRoute, router, policiesModel, rulesModel, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -4502,9 +5174,23 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(48);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var router_1 = __webpack_require__(6);
+<<<<<<< HEAD
 	var contivglobals_1 = __webpack_require__(13);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var notification_1 = __webpack_require__(94);
 	var organizationsmodel_1 = __webpack_require__(34);
+=======
+	var notification_1 = __webpack_require__(93);
+	var organizationsmodel_1 = __webpack_require__(36);
+=======
+<<<<<<< HEAD
+	var contivglobals_1 = __webpack_require__(14);
+	var notification_1 = __webpack_require__(92);
+=======
+	var contivglobals_1 = __webpack_require__(13);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var NetworkCreateComponent = (function () {
 	    function NetworkCreateComponent(router, activatedRoute, ngZone, networksModel, organizationsModel, crudHelperService) {
 	        this.router = router;
@@ -4597,15 +5283,43 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+>>>>>>> ccn_proxy_integration
 	var crudhelperservice_1 = __webpack_require__(7);
 	var rxjs_1 = __webpack_require__(19);
 	var applicationgroupsmodel_1 = __webpack_require__(47);
 	var networksmodel_1 = __webpack_require__(48);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var util_1 = __webpack_require__(20);
 	var router_1 = __webpack_require__(6);
 	var notification_1 = __webpack_require__(94);
 	var _ = __webpack_require__(26);
+=======
+	var util_1 = __webpack_require__(19);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+	var applicationgroupsmodel_1 = __webpack_require__(46);
+	var networksmodel_1 = __webpack_require__(47);
+	var util_1 = __webpack_require__(23);
+>>>>>>> 4768085... ccn_proxy_integration
+	var router_1 = __webpack_require__(6);
+	var notification_1 = __webpack_require__(93);
+	var _ = __webpack_require__(29);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var applicationgroupsmodel_1 = __webpack_require__(46);
+	var networksmodel_1 = __webpack_require__(47);
+	var util_1 = __webpack_require__(25);
+	var router_1 = __webpack_require__(6);
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var NetworkdetailsComponent = (function () {
 	    function NetworkdetailsComponent(route, router, applicationGroupsModel, networksModel, crudHelperService) {
 	        var _this = this;
@@ -4713,10 +5427,27 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var networksmodel_1 = __webpack_require__(48);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var rxjs_1 = __webpack_require__(19);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var networksmodel_1 = __webpack_require__(48);
+	var crudhelperservice_1 = __webpack_require__(7);
+	var rxjs_1 = __webpack_require__(21);
+=======
+	var networksmodel_1 = __webpack_require__(47);
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var NetworkListComponent = (function () {
 	    function NetworkListComponent(router, activatedRoute, networksModel, crudHelperService) {
@@ -4931,9 +5662,25 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(6);
+<<<<<<< HEAD
 	var crudhelperservice_1 = __webpack_require__(7);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var rxjs_1 = __webpack_require__(19);
 	var organizationsmodel_1 = __webpack_require__(34);
+=======
+	var rxjs_1 = __webpack_require__(21);
+	var organizationsmodel_1 = __webpack_require__(36);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+	var organizationsmodel_1 = __webpack_require__(69);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var organizationsmodel_1 = __webpack_require__(68);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var OrganizationListComponent = (function () {
 	    function OrganizationListComponent(activatedRoute, router, organizationsModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -5008,8 +5755,20 @@ webpackJsonp([2],{
 	var servicelbsmodel_1 = __webpack_require__(72);
 	var networksmodel_1 = __webpack_require__(48);
 	var router_1 = __webpack_require__(6);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var organizationsmodel_1 = __webpack_require__(34);
 	var _ = __webpack_require__(26);
+=======
+<<<<<<< HEAD
+	var organizationsmodel_1 = __webpack_require__(36);
+=======
+<<<<<<< HEAD
+>>>>>>> 4768085... ccn_proxy_integration
+	var _ = __webpack_require__(29);
+=======
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var ServicelbCreateComponent = (function () {
 	    function ServicelbCreateComponent(router, activatedRoute, ngZone, organizationsModel, servicelbsModel, crudHelperService, networksModel) {
 	        this.router = router;
@@ -5130,7 +5889,15 @@ webpackJsonp([2],{
 	var servicelbinfoctrl_1 = __webpack_require__(185);
 	var servicelbstatsctrl_1 = __webpack_require__(187);
 	var router_1 = __webpack_require__(6);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var _ = __webpack_require__(26);
+=======
+<<<<<<< HEAD
+	var _ = __webpack_require__(29);
+=======
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var ServicelbDetailsComponent = (function () {
 	    function ServicelbDetailsComponent(router, activatedRoute) {
 	        this.router = router;
@@ -5199,7 +5966,15 @@ webpackJsonp([2],{
 	var crudhelperservice_1 = __webpack_require__(7);
 	var servicelbsmodel_1 = __webpack_require__(72);
 	var router_1 = __webpack_require__(6);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var _ = __webpack_require__(26);
+=======
+<<<<<<< HEAD
+	var _ = __webpack_require__(29);
+=======
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var ServicelbInfoComponent = (function () {
 	    function ServicelbInfoComponent(router, activatedRoute, servicelbsModel, crudHelperService, ngZone) {
 	        this.router = router;
@@ -5347,10 +6122,27 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var rxjs_1 = __webpack_require__(19);
 	var servicelbsmodel_1 = __webpack_require__(72);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var crudhelperservice_1 = __webpack_require__(7);
+	var rxjs_1 = __webpack_require__(21);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+>>>>>>> 4768085... ccn_proxy_integration
+	var servicelbsmodel_1 = __webpack_require__(71);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var servicelbsmodel_1 = __webpack_require__(70);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var ServicelbListComponent = (function () {
 	    function ServicelbListComponent(router, route, servicelbsModel, crudHelperService, ngZone) {
@@ -5419,13 +6211,34 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+>>>>>>> ccn_proxy_integration
 	var crudhelperservice_1 = __webpack_require__(7);
 	var rxjs_1 = __webpack_require__(19);
 	var inspectservice_1 = __webpack_require__(78);
 	var util_1 = __webpack_require__(20);
 	var servicelbsmodel_1 = __webpack_require__(72);
 	var contivglobals_1 = __webpack_require__(13);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+	var inspectservice_1 = __webpack_require__(95);
+	var util_1 = __webpack_require__(23);
+	var servicelbsmodel_1 = __webpack_require__(71);
+	var contivglobals_1 = __webpack_require__(14);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var inspectservice_1 = __webpack_require__(94);
+	var util_1 = __webpack_require__(25);
+	var servicelbsmodel_1 = __webpack_require__(70);
+	var contivglobals_1 = __webpack_require__(13);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
 	var ServicelbStatComponent = (function () {
 	    function ServicelbStatComponent(servicelbsModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -5795,9 +6608,25 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(6);
+<<<<<<< HEAD
 	var crudhelperservice_1 = __webpack_require__(7);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var rxjs_1 = __webpack_require__(19);
 	var bgpsmodel_1 = __webpack_require__(71);
+=======
+	var rxjs_1 = __webpack_require__(21);
+	var bgpsmodel_1 = __webpack_require__(70);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+	var bgpsmodel_1 = __webpack_require__(68);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var bgpsmodel_1 = __webpack_require__(92);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var NodeListComponent = (function () {
 	    function NodeListComponent(activatedRoute, router, bgpsModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -5922,16 +6751,27 @@ webpackJsonp([2],{
 	        }
 	        function resetForm() {
 	            crudHelperService.stopLoader(component);
+<<<<<<< HEAD
+=======
+	            /*
+>>>>>>> 1045896... ccn_proxy_integration
 	            component.newUser = {
 	                userName: '',
 	                firstName: '',
 	                lastName: '',
 	                role: 'DevOps',
 	                enabled: false,
-	                tenantName: 'default' //TODO: Remove hardcoded tenant.
+	                tenantName: 'default'//TODO: Remove hardcoded tenant.
+	            };
+	            */
+	            component.newUser = {
+	                username: '',
+	                password: '',
+	                role: '',
+	                disable: false
 	            };
 	        }
-	        getOrganizations();
+	        //getOrganizations();
 	        resetForm();
 	    }
 	    UserCreateComponent.prototype.returnToUsers = function () {
@@ -5944,13 +6784,19 @@ webpackJsonp([2],{
 	        var component = this;
 	        if (formvalid) {
 	            this.crudHelperService.startLoader(this);
+<<<<<<< HEAD
 	            component.newUser.key = this.usersModel.generateKey(this.newUser);
+=======
+	            this.crudHelperService.hideServerError(this);
+	            //component.newUser.key = this.usersModel.generateKey(this.newUser);
+>>>>>>> 1045896... ccn_proxy_integration
 	            this.usersModel.create(component.newUser, undefined)
 	                .then(function (result) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
 	                    component.crudHelperService.showNotification("User: Created", result.key.toString());
 	                });
+	                component.crudHelperService.showNotification("User: Created", result.username);
 	                component.returnToUsers();
 	            }, function (error) {
 	                component.ngZone.run(function () {
@@ -6025,11 +6871,16 @@ webpackJsonp([2],{
 	            });
 	        }
 	        component.crudHelperService.stopLoader(component);
+<<<<<<< HEAD
 	        component.usersModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
+=======
+	        component.crudHelperService.hideServerError(component);
+	        component.usersModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'username')
+>>>>>>> 1045896... ccn_proxy_integration
 	            .then(function (user) {
 	            component.user = user;
 	        });
-	        getOrganizations();
+	        //getOrganizations();
 	        setMode();
 	    }
 	    UserDetailsComponent.prototype.returnToUser = function () {
@@ -6051,7 +6902,11 @@ webpackJsonp([2],{
 	            component.ngZone.run(function () {
 	                component.crudHelperService.stopLoader(component);
 	            });
+<<<<<<< HEAD
 	            component.crudHelperService.showNotification("User: Deleted", result);
+=======
+	            component.crudHelperService.showNotification("User: Deleted", component.user.username);
+>>>>>>> 1045896... ccn_proxy_integration
 	            component.returnToUser();
 	        }, function errorCallback(result) {
 	            component.ngZone.run(function () {
@@ -6108,9 +6963,25 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(6);
+<<<<<<< HEAD
 	var crudhelperservice_1 = __webpack_require__(7);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var rxjs_1 = __webpack_require__(19);
 	var usersmodel_1 = __webpack_require__(96);
+=======
+	var rxjs_1 = __webpack_require__(21);
+	var usersmodel_1 = __webpack_require__(95);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+	var usersmodel_1 = __webpack_require__(94);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var usersmodel_1 = __webpack_require__(93);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var UserListComponent = (function () {
 	    function UserListComponent(activatedRoute, router, usersModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -6498,9 +7369,23 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/21/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(39);
 	var pipes_module_1 = __webpack_require__(162);
@@ -6575,13 +7460,37 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+>>>>>>> ccn_proxy_integration
 	var applicationgroupsmodel_1 = __webpack_require__(47);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var inspectservice_1 = __webpack_require__(78);
 	var rxjs_1 = __webpack_require__(19);
 	var contivglobals_1 = __webpack_require__(13);
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var util_1 = __webpack_require__(20);
+=======
+	var util_1 = __webpack_require__(19);
+=======
+	var applicationgroupsmodel_1 = __webpack_require__(46);
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var inspectservice_1 = __webpack_require__(95);
+	var rxjs_1 = __webpack_require__(25);
+	var contivglobals_1 = __webpack_require__(14);
+	var util_1 = __webpack_require__(23);
+=======
+	var inspectservice_1 = __webpack_require__(94);
+	var rxjs_1 = __webpack_require__(29);
+	var contivglobals_1 = __webpack_require__(13);
+	var util_1 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var ApplicationGroupStatsComponent = (function () {
 	    function ApplicationGroupStatsComponent(applicationGroupsModel, crudHelperService, inspectService, ngZone) {
 	        var _this = this;
@@ -6673,10 +7582,80 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 6/28/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var _ = __webpack_require__(26);
 	var netprofilesmodel_1 = __webpack_require__(77);
 	var util_1 = __webpack_require__(20);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var _ = __webpack_require__(29);
+	var netprofilesmodel_1 = __webpack_require__(76);
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(19);
+=======
+	var util_1 = __webpack_require__(23);
+=======
+	var _ = __webpack_require__(28);
+	var netprofilesmodel_1 = __webpack_require__(75);
+	var util_1 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+	/*
+	angular.module("contiv.applicationgroups")
+	    .directive("ctvBandwidthpolicy", function () {
+	        return {
+	            restrict: 'E',
+	            scope: {
+	                mode: "=",
+	                applicationgroup: '='
+	            },
+
+	            controller: [
+	                '$scope',
+	                'NetprofilesModel',
+	                function ($scope,
+	                          NetprofilesModel) {
+	                    $scope.netProfiles = [];
+	                    $scope.selectedNetprofile = {
+	                        policy: {}
+	                    };
+
+	                    /**
+	                     * Get profiles for the given tenant.
+	                     */
+	/*function getNetprofiles() {
+	    NetprofilesModel.get().then(function (result) {
+	        $scope.netProfiles = _.filter(result, {
+	            'tenantName': 'default'        //TODO: Remove hardcoded tenant.
+	        });
+	        if ($scope.applicationgroup.netProfile !== '') {
+	            $scope.selectedNetprofile.policy = _.find($scope.netProfiles, function (policy) {
+	                return policy.profileName === $scope.applicationgroup.netProfile;
+	            });
+	        }
+	    });
+	}
+
+	/**
+	 * Assign profileName to applicationgroup whichever user has given
+	 */
+	/*$scope.updateApplicationgroup = function () {
+	    if ($scope.selectedNetprofile.policy === null) {
+	        $scope.applicationgroup.netProfile = '';
+	    } else {
+	        $scope.applicationgroup.netProfile = $scope.selectedNetprofile.policy.profileName;
+	    }
+	};
+
+	getNetprofiles();
+	}],
+
+	templateUrl: 'applicationgroups/bandwidthpolicy.html'
+	}
+	});*/
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var BandwidthPolicySelectionComponent = (function () {
 	    function BandwidthPolicySelectionComponent(netprofilesModel) {
 	        this.netprofilesModel = netprofilesModel;
@@ -6870,10 +7849,26 @@ webpackJsonp([2],{
 	/**
 	 * Created by hardik gandhi on 7/8/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var _ = __webpack_require__(26);
 	var policiesmodel_1 = __webpack_require__(63);
 	var rulesmodel_1 = __webpack_require__(117);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var _ = __webpack_require__(29);
+<<<<<<< HEAD
+	var policiesmodel_1 = __webpack_require__(62);
+=======
+	var policiesmodel_1 = __webpack_require__(70);
+=======
+	var _ = __webpack_require__(28);
+	var policiesmodel_1 = __webpack_require__(69);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+	var rulesmodel_1 = __webpack_require__(116);
+>>>>>>> ccn_proxy_integration
 	var IsolationPolicySelectionComponent = (function () {
 	    function IsolationPolicySelectionComponent(policiesModel, rulesModel) {
 	        this.policiesModel = policiesModel;
@@ -7006,9 +8001,22 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/11/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var _ = __webpack_require__(26);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var _ = __webpack_require__(29);
+<<<<<<< HEAD
+>>>>>>> ccn_proxy_integration
 	var applicationgroupsmodel_1 = __webpack_require__(47);
+=======
+=======
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+	var applicationgroupsmodel_1 = __webpack_require__(46);
+>>>>>>> 4768085... ccn_proxy_integration
 	var ApplicationGroupSelectionComponent = (function () {
 	    function ApplicationGroupSelectionComponent(applicationGroupsModel) {
 	        this.applicationGroupsModel = applicationGroupsModel;
@@ -7112,9 +8120,23 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(39);
 	var appprofilelist_component_1 = __webpack_require__(161);
@@ -7363,10 +8385,27 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var chartservice_1 = __webpack_require__(118);
 	var util_1 = __webpack_require__(20);
 	var util_2 = __webpack_require__(20);
+=======
+	var core_1 = __webpack_require__(3);
+	var chartservice_1 = __webpack_require__(117);
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(19);
+	var util_2 = __webpack_require__(19);
+=======
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(23);
+	var util_2 = __webpack_require__(23);
+=======
+	var util_1 = __webpack_require__(25);
+	var util_2 = __webpack_require__(25);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var LineGraphComponent = (function () {
 	    function LineGraphComponent(chartService) {
 	        this.chartService = chartService;
@@ -7553,8 +8592,17 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var _ = __webpack_require__(26);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var _ = __webpack_require__(29);
+=======
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var CtvNamevalueComponent = (function () {
 	    function CtvNamevalueComponent() {
 	        this.itemsChange = new core_1.EventEmitter();
@@ -7773,9 +8821,24 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var util_1 = __webpack_require__(20);
 	var _ = __webpack_require__(26);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(19);
+=======
+<<<<<<< HEAD
+	var util_1 = __webpack_require__(23);
+>>>>>>> 4768085... ccn_proxy_integration
+	var _ = __webpack_require__(29);
+=======
+	var util_1 = __webpack_require__(25);
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var CtvTableComponent = (function () {
 	    function CtvTableComponent() {
 	        this.filteredinputitems = new core_1.EventEmitter();
@@ -8066,8 +9129,18 @@ webpackJsonp([2],{
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	__webpack_require__(144);
 	var _ = __webpack_require__(26);
+=======
+<<<<<<< HEAD
+	__webpack_require__(143);
+	var _ = __webpack_require__(29);
+=======
+	__webpack_require__(107);
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	/**
 	 * BaseCollection class that does just fetch of the objects.
 	 * @param $http
@@ -8235,9 +9308,23 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/3/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var dashboardctrl_1 = __webpack_require__(165);
 	var ng2_charts_1 = __webpack_require__(141);
@@ -8417,10 +9504,25 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+>>>>>>> ccn_proxy_integration
 	var directives_module_1 = __webpack_require__(39);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+	var directives_module_1 = __webpack_require__(38);
+>>>>>>> 4768085... ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var firstrunwizardservice_1 = __webpack_require__(79);
 	var firstrunwizardctrl_1 = __webpack_require__(166);
@@ -8556,9 +9658,23 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var loginctrl_1 = __webpack_require__(167);
 	var unauthorized_1 = __webpack_require__(169);
@@ -8612,9 +9728,23 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 11/1/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var menuCtrl_1 = __webpack_require__(170);
 	var directives_module_1 = __webpack_require__(39);
@@ -8665,10 +9795,27 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/19/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var rxjs_1 = __webpack_require__(19);
 	var netprofilesmodel_1 = __webpack_require__(77);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var crudhelperservice_1 = __webpack_require__(7);
+	var rxjs_1 = __webpack_require__(21);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+>>>>>>> 4768085... ccn_proxy_integration
+	var netprofilesmodel_1 = __webpack_require__(76);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var netprofilesmodel_1 = __webpack_require__(75);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var BandwidthListComponent = (function () {
 	    function BandwidthListComponent(netprofilesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -8798,10 +9945,27 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/19/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var policiesmodel_1 = __webpack_require__(63);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var rxjs_1 = __webpack_require__(19);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var policiesmodel_1 = __webpack_require__(62);
+	var crudhelperservice_1 = __webpack_require__(7);
+	var rxjs_1 = __webpack_require__(21);
+=======
+	var policiesmodel_1 = __webpack_require__(70);
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var IsolationListComponent = (function () {
 	    function IsolationListComponent(policiesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -8963,9 +10127,23 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/14/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(39);
 	var networkpoliciestabsctrl_1 = __webpack_require__(55);
@@ -9047,6 +10225,7 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
@@ -9056,6 +10235,26 @@ webpackJsonp([2],{
 	var networkdetailsctrl_1 = __webpack_require__(178);
 	var networkinfoctrl_1 = __webpack_require__(412);
 	var networkcreatectrl_1 = __webpack_require__(177);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+	var directives_module_1 = __webpack_require__(39);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+	var directives_module_1 = __webpack_require__(38);
+>>>>>>> 4768085... ccn_proxy_integration
+	var networklistctrl_1 = __webpack_require__(176);
+	var networkstatsctrl_1 = __webpack_require__(408);
+	var networkdetailsctrl_1 = __webpack_require__(175);
+	var networkinfoctrl_1 = __webpack_require__(407);
+	var networkcreatectrl_1 = __webpack_require__(174);
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var NetworkModule = (function () {
 	    function NetworkModule() {
@@ -9147,13 +10346,34 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+>>>>>>> ccn_proxy_integration
 	var crudhelperservice_1 = __webpack_require__(7);
 	var rxjs_1 = __webpack_require__(19);
 	var networksmodel_1 = __webpack_require__(48);
 	var inspectservice_1 = __webpack_require__(78);
 	var util_1 = __webpack_require__(20);
 	var contivglobals_1 = __webpack_require__(13);
+=======
+	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< HEAD
+	var rxjs_1 = __webpack_require__(25);
+	var networksmodel_1 = __webpack_require__(47);
+	var inspectservice_1 = __webpack_require__(95);
+	var util_1 = __webpack_require__(23);
+	var contivglobals_1 = __webpack_require__(14);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var networksmodel_1 = __webpack_require__(47);
+	var inspectservice_1 = __webpack_require__(94);
+	var util_1 = __webpack_require__(25);
+	var contivglobals_1 = __webpack_require__(13);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
 	var NetworkStatComponent = (function () {
 	    function NetworkStatComponent(networksModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -9250,9 +10470,23 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(39);
 	var organizationlistctrl_1 = __webpack_require__(182);
@@ -9309,6 +10543,7 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
@@ -9319,6 +10554,27 @@ webpackJsonp([2],{
 	var servicelbcreatectrl_1 = __webpack_require__(183);
 	var servicelbinfoctrl_1 = __webpack_require__(185);
 	var servicelbdetailsctrl_1 = __webpack_require__(184);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+	var directives_module_1 = __webpack_require__(39);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+	var directives_module_1 = __webpack_require__(38);
+>>>>>>> 4768085... ccn_proxy_integration
+	var servicelblistctrl_1 = __webpack_require__(183);
+	var servicelbstatsctrl_1 = __webpack_require__(184);
+	var servicelbportsdirective_1 = __webpack_require__(411);
+	var servicelbcreatectrl_1 = __webpack_require__(180);
+	var servicelbinfoctrl_1 = __webpack_require__(182);
+	var servicelbdetailsctrl_1 = __webpack_require__(181);
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var ServicelbModule = (function () {
 	    function ServicelbModule() {
@@ -9373,8 +10629,17 @@ webpackJsonp([2],{
 	var __metadata = (this && this.__metadata) || function (k, v) {
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var _ = __webpack_require__(26);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var _ = __webpack_require__(29);
+=======
+	var _ = __webpack_require__(28);
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var ServicelbPortsComponent = (function () {
 	    function ServicelbPortsComponent() {
 	        this.itemsChange = new core_1.EventEmitter();
@@ -9630,9 +10895,23 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/25/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(39);
 	var networksettingctrl_1 = __webpack_require__(188);
@@ -9701,9 +10980,23 @@ webpackJsonp([2],{
 	/**
 	 * Created by cshampur on 10/18/16.
 	 */
+<<<<<<< 3e7194646fcd713e37d677418868d2183dd3ab7e
 	var core_1 = __webpack_require__(2);
 	var forms_1 = __webpack_require__(28);
 	var common_1 = __webpack_require__(21);
+=======
+	var core_1 = __webpack_require__(3);
+<<<<<<< HEAD
+	var forms_1 = __webpack_require__(27);
+<<<<<<< HEAD
+	var common_1 = __webpack_require__(20);
+=======
+=======
+	var forms_1 = __webpack_require__(26);
+>>>>>>> 1045896... ccn_proxy_integration
+	var common_1 = __webpack_require__(19);
+>>>>>>> 4768085... ccn_proxy_integration
+>>>>>>> ccn_proxy_integration
 	var router_1 = __webpack_require__(6);
 	var directives_module_1 = __webpack_require__(39);
 	var userlist_component_1 = __webpack_require__(195);
@@ -9826,7 +11119,15 @@ webpackJsonp([2],{
 /***/ 633:
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned eight wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <div class=\"right aligned eight wide column\" *auth=\"'SysAdmin'\">\n        <button class=\"ui blue large button primaryBtn\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<ctv-search *ngIf=\"networkListComp['networks']\" (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [count]=\"tableRef.count\"></ctv-search>\n\n<div class=\"ui basic segment ctvTable\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'tenantName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Tenant</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n        </tr>\n        </thead>\n\n        <tbody *ngIf=\"networkListComp['networks']\">\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a [routerLink]=\"['../details',network.key]\">{{network.networkName}}</a></td>\n            <td>{{network.tenantName}}</td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n        </tr>\n        </tbody>\n\n        <tbody *ngIf=\"!networkListComp['networks']\">\n            <tr>\n                <td colspan=\"2\">No networks found. Would you like to <a href=\"javascript: void(0);\" (click)=\"create()\">create one?</a></td>\n            </tr>\n        </tbody>\n\n        <tbody *ngIf=\"networkListComp['networks'] && !tableRef.count\">\n            <tr>\n                <td colspan=\"2\">No records matched your filter criteria.</td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n        <tr>\n            <td colspan=\"5\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
+=======
+<<<<<<< HEAD
+	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned eight wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n\n    <div class=\"right aligned eight wide column\" *auth=\"'SysAdmin'\">\n        <button class=\"ui blue large button primaryBtn\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<ctv-search *ngIf=\"networkListComp['networks']\" (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [count]=\"tableRef.count\"></ctv-search>\n\n<div class=\"ui basic segment ctvTable\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n        </tr>\n        </thead>\n\n        <tbody *ngIf=\"networkListComp['networks']\">\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a [routerLink]=\"['../details',network.key]\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n        </tr>\n        </tbody>\n\n        <tbody *ngIf=\"!networkListComp['networks']\">\n            <tr>\n                <td colspan=\"2\">No networks found. Would you like to <a href=\"javascript: void(0);\" (click)=\"create()\">create one?</a></td>\n            </tr>\n        </tbody>\n\n        <tbody *ngIf=\"networkListComp['networks'] && !tableRef.count\">\n            <tr>\n                <td colspan=\"2\">No records matched your filter criteria.</td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n        <tr>\n            <td colspan=\"4\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
+=======
+	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"left aligned eight wide column\">\n        <div class=\"content\" style=\"font-size: 24px\">Networks</div>\n    </div>\n    <div class=\"center aligned three wide column\" *auth=\"'admin'\">\n        <button class=\"ui blue button\" (click)=\"create()\">\n            <i class=\"add icon\"></i>\n            Create Network\n        </button>\n    </div>\n</div>\n\n<ctv-search *ngIf=\"networkListComp['networks']\" (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [count]=\"tableRef.count\"></ctv-search>\n\n<div class=\"ui basic segment ctvTable\">\n\n    <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n        <div class=\"ui loader\"></div>\n    </div>\n\n    <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n               [items]=\"networkListComp['networks']\"\n               (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n               [size]=\"12\">\n        <thead>\n        <tr>\n            <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n            <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n        </tr>\n        </thead>\n\n        <tbody *ngIf=\"networkListComp['networks']\">\n        <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n            <td><a [routerLink]=\"['../details',network.key]\">{{network.networkName}}</a></td>\n            <td>{{network.encap}}</td>\n            <td>{{network.subnet}}</td>\n            <td>{{network.gateway}}</td>\n        </tr>\n        </tbody>\n\n        <tbody *ngIf=\"!networkListComp['networks']\">\n            <tr>\n                <td colspan=\"2\">No networks found. Would you like to <a href=\"javascript: void(0);\" (click)=\"create()\">create one?</a></td>\n            </tr>\n        </tbody>\n\n        <tbody *ngIf=\"networkListComp['networks'] && !tableRef.count\">\n            <tr>\n                <td colspan=\"2\">No records matched your filter criteria.</td>\n            </tr>\n        </tbody>\n\n        <tfoot>\n        <tr>\n            <td colspan=\"4\">\n                <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                 (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                 (prevChunk)=\"tableRef.showPrevChunk()\"\n                                 (nextChunk)=\"tableRef.showNextChunk()\">\n                </ctv-tpagination>\n            </td>\n        </tr>\n        </tfoot>\n    </ctv-table>\n</div>"
+>>>>>>> 1045896... ccn_proxy_integration
+>>>>>>> 4768085... ccn_proxy_integration
 
 /***/ },
 

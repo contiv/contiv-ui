@@ -2,6 +2,7 @@ import { Http, Response } from '@angular/http';
 import { BaseCollection } from "./basecollection";
 import * as _ from 'lodash';
 import {ApiService} from "../utils/apiservice";
+import {isUndefined} from "util";
 
 export class Collection extends BaseCollection {
     inspectStats: any;
@@ -26,8 +27,10 @@ export class Collection extends BaseCollection {
      * @param url Optional if not passed it is constructed using key and url passed in constructor
      * @returns {*}
      */
-    create(model, url):Promise<any> {
+    create(model, url, key?:string):Promise<any> {
         var collection = this;
+        if(isUndefined(key))
+            key='key';
         var promise = new Promise(function (resolve, reject) {
             if (url === undefined) url = collection.url + model.key + '/';
             collection.cudOperationFlag = true;
@@ -39,7 +42,7 @@ export class Collection extends BaseCollection {
                         responseData = model;
                     }
                     _.remove(collection.models, function (n) {
-                        return n['key'] == model['key'];
+                        return n[key] == model[key];
                     });
                     collection.models.push(responseData);
                     collection.cudOperationFlag = false;
