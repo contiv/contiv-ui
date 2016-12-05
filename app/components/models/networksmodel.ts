@@ -7,6 +7,7 @@ import {ApiService} from "../utils/apiservice";
 
 @Injectable()
 export class NetworksModel extends Collection {
+    public networkCreateRunning: boolean = false;
     constructor(http: Http, apiService: ApiService) {
         super(http, ContivGlobals.NETWORKS_ENDPOINT, apiService);
     }

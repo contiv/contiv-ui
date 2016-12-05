@@ -436,7 +436,11 @@
 	  , IObject  = __webpack_require__(80)
 	  , toObject = __webpack_require__(37)
 	  , toLength = __webpack_require__(27)
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	  , asc      = __webpack_require__(481);
+=======
+	  , asc      = __webpack_require__(479);
+>>>>>>> styling notification
 	module.exports = function(TYPE, $create){
 	  var IS_MAP        = TYPE == 1
 	    , IS_FILTER     = TYPE == 2
@@ -2521,7 +2525,11 @@
 
 	var aFunction = __webpack_require__(54)
 	  , toObject  = __webpack_require__(37)
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	  , IObject   = __webpack_require__(80)
+=======
+	  , IObject   = __webpack_require__(79)
+>>>>>>> styling notification
 	  , toLength  = __webpack_require__(27);
 
 	module.exports = function(that, callbackfn, aLen, memo, isRight){

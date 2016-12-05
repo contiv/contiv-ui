@@ -4,6 +4,7 @@
 
 import {Component, DoCheck, OnInit} from "@angular/core";
 import {CRUDHelperService} from "../utils/crudhelperservice";
+import {isUndefined} from "util";
 declare var jQuery:any;
 
 @Component({
@@ -15,48 +16,82 @@ declare var jQuery:any;
 export class NotificationComponent implements DoCheck, OnInit{
     public message: string = '';
     public item: string = '';
-    private state: string = 'not-trigerred';
+    private notifyId: number = 0
+    public notifyType: string = 'alert';
+    private notifyCounter: number = 0;
     constructor(private crudHelperService: CRUDHelperService){
     }
 
     ngOnInit(){
-        jQuery('.notifi').css(
-            {   right:0+'px',
-                top: ((8/100)*window.innerHeight) + 'px'
+        jQuery('.notify').css(
+            {   right:30+'px',
+                top: ((80/100)*window.innerHeight) + 'px'
             });
-        jQuery('.notifi').css({visibility: 'hidden'});
+        jQuery('.notify').css({visibility: 'hidden'});
         window.onresize = function(){
-            jQuery('.notifi').css(
-                {   right:0+'px',
-                    top: ((8/100)*window.innerHeight) + 'px'
+            jQuery('.notify').css(
+                {   right:30+'px',
+                    top: ((80/100)*window.innerHeight) + 'px'
                 });
         }
+        this.notifyId = 0;
+    }
+
+    runAnimation(start: boolean){
+        var self = this;
+        var animation = {
+            animation: 'fly up',
+            onStart: function(){
+                if(start)
+                    self.displayMessage();
+            },
+            onComplete:function(){
+                if(!start)
+                    self.displayMessage();
+            }
+        }
+        jQuery('.notify').transition(animation);
+    }
+
+    displayMessage(){
+        this.message = this.crudHelperService.message;
+        this.item = this.crudHelperService.item;
+        this.notifyType = this.crudHelperService.notifyType;
+        if(isUndefined(this.notifyType))
+            this.notifyType = 'confirm';
     }
 
     ngDoCheck(){
+        var self = this;
         if (this.crudHelperService.displayNotifi){
-            this.message = this.crudHelperService.message;
-            this.item = this.crudHelperService.item;
-            this.crudHelperService.displayNotifi = false;
-            var self = this;
-            if (this.state !== 'not-trigerred' && this.state !== 'closed') {
-                jQuery('.notifi').transition('slide left');
+            if (this.notifyId !== 0) {
+                this.runAnimation(false);
+                this.notifyId = 0;
             }
-            jQuery('.notifi').transition('slide left');
-            this.state = 'running';
 
-            setTimeout(function () {
-                if(self.state==='running'){
-                    jQuery('.notifi').transition('slide left');
-                    self.state = 'closed';
+            this.crudHelperService.displayNotifi = false;
+            this.runAnimation(true);
+            var currentnotifyId = ++this.notifyCounter;
+            this.notifyId = currentnotifyId;
+            var newTimer = new notifyTimer(currentnotifyId);
+
+        }
+
+        function notifyTimer(timerId){
+            var timerId = timerId;
+            setTimeout(function(){
+                if(timerId == self.notifyId){
+                    self.runAnimation(false);
+                    self.notifyId = 0;
                 }
-            }, 10000);
-
+            },15000)
         }
     }
 
-    close(){
-        jQuery('.notifi').transition('slide left');
-        this.state = 'closed';
+
+    close() {
+        this.runAnimation(false);
+        this.notifyId = 0;
     }
 }
+

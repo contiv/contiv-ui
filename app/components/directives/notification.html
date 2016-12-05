@@ -1,7 +1,24 @@
-<div class="ui info message notifi">
+<div class="ui small message notify" id="Notify-Message"
+    [ngStyle]="{opacity: 0.95}"
+    [ngClass]="{ready: notifyType=='confirm', minor: notifyType=='alert', info: notifyType=='info'}">
     <i class="close icon" (click)="close()"></i>
-    <div class="header" id="header1">
-        {{message}}
+    <div class="ui grid">
+        <div class="ui right aligned two wide column">
+            <i id="notifyIcon" class="icon" [ngClass]="{ready: notifyType=='confirm', minor: notifyType=='alert', info: notifyType=='info'}">
+                <span class="path1"></span>
+                <span class="path2"></span>
+                <span class="path3"></span>
+            </i>
+        </div>
+        <div class="ui left aligned fourteen wide column">
+            <div class="header" id="header2">
+                <span *ngIf="notifyType=='confirm'">Confirmation: </span>
+                <span *ngIf="notifyType=='info'">Information: </span>
+                <span *ngIf="notifyType=='alert'">Alert: </span>
+                {{message}}
+            </div>
+            <p [ngClass]="{ready: notifyType=='confirm', minor: notifyType=='alert', info: notifyType=='info'}">{{item}}</p>
+            <span *ngIf="notifyType=='info'">Will notify you after complete</span>
+        </div>
     </div>
-    <p>Key : {{item}}</p>
 </div>

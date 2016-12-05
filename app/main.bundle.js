@@ -33,8 +33,9 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var CRUDHelperService = (function () {
 	    function CRUDHelperService() {
-	        this.message = 'Network Created';
-	        this.item = 'contiv-net1';
+	        this.message = '';
+	        this.item = '';
+	        this.notifyType = '';
 	    }
 	    CRUDHelperService.prototype.startLoader = function (controller) {
 	        controller.showLoader = true;
@@ -42,17 +43,23 @@ webpackJsonp([2],{
 	    CRUDHelperService.prototype.stopLoader = function (controller) {
 	        controller.showLoader = false;
 	    };
-	    CRUDHelperService.prototype.showServerError = function (controller, message) {
-	        controller.showServerError = true;
-	        controller.serverErrorMessage = message;
-	    };
-	    CRUDHelperService.prototype.hideServerError = function (controller) {
-	        controller.showServerError = false;
-	    };
-	    CRUDHelperService.prototype.showNotification = function (message, item) {
+	    CRUDHelperService.prototype.showNotification = function (message, item, notifyType) {
 	        this.message = message;
 	        this.item = item;
+	        this.notifyType = notifyType;
 	        this.displayNotifi = true;
+	    };
+	    CRUDHelperService.prototype.showServerError = function (message, error) {
+	        var status = error.status;
+	        var operationstate = '';
+	        if (status == '401' || status == '402') {
+	            operationstate = 'Unauthorized Operation';
+	        }
+	        if (error.text().length > 0)
+	            operationstate = error.text();
+	        else
+	            operationstate = error.toString();
+	        this.showNotification(message, operationstate, 'alert');
 	    };
 	    CRUDHelperService = __decorate([
 	        core_1.Injectable(), 
@@ -125,7 +132,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 30:
+/***/ 25:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -1101,13 +1108,19 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var http_1 = __webpack_require__(20);
 	var collection_1 = __webpack_require__(41);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var util_1 = __webpack_require__(30);
 	var contivglobals_1 = __webpack_require__(13);
+=======
+	var util_1 = __webpack_require__(25);
+	var contivglobals_1 = __webpack_require__(14);
+>>>>>>> styling notification
 	var apiservice_1 = __webpack_require__(31);
 	var NetworksModel = (function (_super) {
 	    __extends(NetworksModel, _super);
 	    function NetworksModel(http, apiService) {
 	        _super.call(this, http, contivglobals_1.ContivGlobals.NETWORKS_ENDPOINT, apiService);
+	        this.networkCreateRunning = false;
 	    }
 	    NetworksModel.prototype.getInspectByKey = function (key, url, reload) {
 	        return _super.prototype.getInspectByKey.call(this, key, url, reload)
@@ -1161,7 +1174,7 @@ webpackJsonp([2],{
 	__webpack_require__(143);
 	var http_1 = __webpack_require__(20);
 	var authMatrix_1 = __webpack_require__(162);
-	var util_1 = __webpack_require__(30);
+	var util_1 = __webpack_require__(25);
 	var AuthService = (function () {
 	    function AuthService(http) {
 	        this.http = http;
@@ -1570,7 +1583,7 @@ webpackJsonp([2],{
 	var collection_1 = __webpack_require__(41);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
-	var util_1 = __webpack_require__(30);
+	var util_1 = __webpack_require__(25);
 	var NetprofilesModel = (function (_super) {
 	    __extends(NetprofilesModel, _super);
 	    function NetprofilesModel(http, apiService) {
@@ -1815,7 +1828,7 @@ webpackJsonp([2],{
 	 * Created by cshampur on 7/17/16.
 	 */
 	var core_1 = __webpack_require__(3);
-	var util_1 = __webpack_require__(30);
+	var util_1 = __webpack_require__(25);
 	var InspectService = (function () {
 	    function InspectService() {
 	    }
@@ -1910,7 +1923,11 @@ webpackJsonp([2],{
 	var http_1 = __webpack_require__(20);
 	var collection_1 = __webpack_require__(41);
 	var _ = __webpack_require__(28);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var contivglobals_1 = __webpack_require__(13);
+=======
+	var contivglobals_1 = __webpack_require__(14);
+>>>>>>> styling notification
 	var apiservice_1 = __webpack_require__(31);
 	var RulesModel = (function (_super) {
 	    __extends(RulesModel, _super);
@@ -1983,11 +2000,15 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> styling notification
 	var authservice_1 = __webpack_require__(53);
 	var contivglobals_1 = __webpack_require__(13);
 	var apiservice_1 = __webpack_require__(31);
-	var util_1 = __webpack_require__(30);
+	var util_1 = __webpack_require__(25);
 	(function (EndpointType) {
 	    EndpointType[EndpointType["Network"] = 0] = "Network";
 	    EndpointType[EndpointType["ApplicationGroup"] = 1] = "ApplicationGroup";
@@ -2345,7 +2366,6 @@ webpackJsonp([2],{
 	        }
 	        function resetForm() {
 	            crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	            crudHelperService.hideServerError(applicationGroupCreateCtrl);
 	            applicationGroupCreateCtrl.applicationGroup = {
 	                groupName: '',
 	                networkName: '',
@@ -2366,7 +2386,6 @@ webpackJsonp([2],{
 	    ApplicationGroupCreateComponent.prototype.createApplicationGroup = function (validform) {
 	        var applicationGroupCreateCtrl = this;
 	        if (validform) {
-	            applicationGroupCreateCtrl.crudHelperService.hideServerError(applicationGroupCreateCtrl);
 	            applicationGroupCreateCtrl.crudHelperService.startLoader(applicationGroupCreateCtrl);
 	            applicationGroupCreateCtrl.applicationGroup.networkName =
 	                applicationGroupCreateCtrl.selectedNetwork;
@@ -2377,11 +2396,11 @@ webpackJsonp([2],{
 	             */
 	            applicationGroupCreateCtrl.applicationGroupsModel.create(applicationGroupCreateCtrl.applicationGroup, undefined).then(function successCallback(result) {
 	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	                applicationGroupCreateCtrl.crudHelperService.showNotification("Application Group Created", result.key.toString());
+	                applicationGroupCreateCtrl.crudHelperService.showNotification("Application group: Created", result.key.toString());
 	                applicationGroupCreateCtrl.returnToApplicationGroup();
 	            }, function errorCallback(result) {
 	                applicationGroupCreateCtrl.crudHelperService.stopLoader(applicationGroupCreateCtrl);
-	                applicationGroupCreateCtrl.crudHelperService.showServerError(applicationGroupCreateCtrl, result);
+	                applicationGroupCreateCtrl.crudHelperService.showServerError("Application group: Create failed", result);
 	            });
 	        }
 	    };
@@ -2445,7 +2464,6 @@ webpackJsonp([2],{
 	            }
 	        }
 	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
 	        applicationGroupDetailsCtrl.applicationGroupsModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
 	            .then(function (group) {
 	            applicationGroupDetailsCtrl.applicationGroup = group;
@@ -2480,28 +2498,26 @@ webpackJsonp([2],{
 	    };
 	    ApplicationGroupDetailsComponent.prototype.deleteApplicationGroup = function () {
 	        var applicationGroupDetailsCtrl = this;
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
 	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
 	        applicationGroupDetailsCtrl.applicationGroupsModel.delete(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
 	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.crudHelperService.showNotification("Application Group Deleted", result.toString());
+	            applicationGroupDetailsCtrl.crudHelperService.showNotification("Application group: Deleted", result.toString());
 	            applicationGroupDetailsCtrl.returnToApplicationGroup();
 	        }, function errorCallback(result) {
 	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
+	            applicationGroupDetailsCtrl.crudHelperService.showServerError("Application group: Delete failed", result);
 	        });
 	    };
 	    ApplicationGroupDetailsComponent.prototype.saveApplicationGroup = function () {
 	        var applicationGroupDetailsCtrl = this;
-	        applicationGroupDetailsCtrl.crudHelperService.hideServerError(applicationGroupDetailsCtrl);
 	        applicationGroupDetailsCtrl.crudHelperService.startLoader(applicationGroupDetailsCtrl);
 	        applicationGroupDetailsCtrl.applicationGroupsModel.save(applicationGroupDetailsCtrl.applicationGroup).then(function successCallback(result) {
 	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.crudHelperService.showNotification("Application Group Updated", result.key.toString());
+	            applicationGroupDetailsCtrl.crudHelperService.showNotification("Application group: Updated", result.key.toString());
 	            applicationGroupDetailsCtrl.returnToApplicationGroupDetails();
 	        }, function errorCallback(result) {
 	            applicationGroupDetailsCtrl.crudHelperService.stopLoader(applicationGroupDetailsCtrl);
-	            applicationGroupDetailsCtrl.crudHelperService.showServerError(applicationGroupDetailsCtrl, result);
+	            applicationGroupDetailsCtrl.crudHelperService.showServerError("Application group: Update failed", result);
 	        });
 	    };
 	    ApplicationGroupDetailsComponent = __decorate([
@@ -2539,7 +2555,11 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(6);
 	var applicationgroupsmodel_1 = __webpack_require__(46);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> styling notification
 	var AppGrouplistComponent = (function () {
 	    function AppGrouplistComponent(activatedRoute, router, appGroupModel, crudHelperService) {
 	        var _this = this;
@@ -2617,7 +2637,6 @@ webpackJsonp([2],{
 	        var component = this;
 	        function resetForm() {
 	            crudHelperService.stopLoader(component);
-	            crudHelperService.hideServerError(component);
 	            component.newAppProfile = {
 	                key: '',
 	                appProfileName: '',
@@ -2637,20 +2656,19 @@ webpackJsonp([2],{
 	        var component = this;
 	        if (formvalid) {
 	            this.crudHelperService.startLoader(this);
-	            this.crudHelperService.hideServerError(this);
 	            component.newAppProfile.key = this.appProfilesModel.generateKey(this.newAppProfile);
 	            this.appProfilesModel.create(component.newAppProfile, undefined)
 	                .then(function (result) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
-	                    component.crudHelperService.showNotification("Application Profile Created", result.key.toString());
+	                    component.crudHelperService.showNotification("Application profile: Created", result.key.toString());
 	                });
 	                component.returnToAppProfiles();
 	            }, function (error) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
 	                });
-	                component.crudHelperService.showServerError(component, error);
+	                component.crudHelperService.showServerError("Application profile: Create failed", error);
 	            });
 	        }
 	    };
@@ -2708,7 +2726,6 @@ webpackJsonp([2],{
 	            }
 	        }
 	        component.crudHelperService.stopLoader(component);
-	        component.crudHelperService.hideServerError(component);
 	        component.appProfilesModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
 	            .then(function (appProfile) {
 	            component.appProfile = appProfile;
@@ -2729,37 +2746,36 @@ webpackJsonp([2],{
 	    };
 	    AppProfileDetailsComponent.prototype.deleteAppProfile = function () {
 	        var component = this;
-	        component.crudHelperService.hideServerError(component);
 	        component.crudHelperService.startLoader(component);
 	        component.appProfilesModel.delete(component.appProfile).then(function successCallback(result) {
 	            component.ngZone.run(function () {
 	                component.crudHelperService.stopLoader(component);
-	                component.crudHelperService.showNotification("Application Profile Deleted", result);
+	                //component.crudHelperService.showNotification("Application Profile Deleted", result);
+	                component.crudHelperService.showNotification("Application profile: Deleted", result);
 	            });
 	            component.returnToAppProfile();
 	        }, function errorCallback(result) {
 	            component.ngZone.run(function () {
 	                component.crudHelperService.stopLoader(component);
 	            });
-	            component.crudHelperService.showServerError(component, result);
+	            component.crudHelperService.showServerError("Application profile: Delete failed", result);
 	        });
 	    };
 	    AppProfileDetailsComponent.prototype.saveAppProfile = function (formvalid) {
 	        var component = this;
 	        if (formvalid) {
-	            component.crudHelperService.hideServerError(component);
 	            component.crudHelperService.startLoader(component);
 	            component.appProfilesModel.save(component.appProfile).then(function successCallback(result) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
-	                    component.crudHelperService.showNotification("Application Profile Updated", result.key.toString());
+	                    component.crudHelperService.showNotification("Application profile: Updated", result.key.toString());
 	                });
 	                component.returnToAppProfileDetails();
 	            }, function errorCallback(result) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
 	                });
-	                component.crudHelperService.showServerError(component, result);
+	                component.crudHelperService.showServerError("Application profile: Update failed", result);
 	            });
 	        }
 	    };
@@ -2794,8 +2810,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
 	var appprofilesmodel_1 = __webpack_require__(92);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var appprofilesmodel_1 = __webpack_require__(91);
+>>>>>>> styling notification
 	var AppProfileListComponent = (function () {
 	    function AppProfileListComponent(activatedRoute, router, appProfilesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -2963,7 +2984,7 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(6);
 	var authservice_1 = __webpack_require__(53);
 	var authMatrix_1 = __webpack_require__(162);
-	var util_1 = __webpack_require__(30);
+	var util_1 = __webpack_require__(25);
 	var AuthGuard = (function () {
 	    function AuthGuard(authService, router) {
 	        this.authService = authService;
@@ -3068,8 +3089,13 @@ webpackJsonp([2],{
 	var applicationgroupsmodel_1 = __webpack_require__(46);
 	var policiesmodel_1 = __webpack_require__(70);
 	var networksmodel_1 = __webpack_require__(47);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var servicelbsmodel_1 = __webpack_require__(71);
 	var util_1 = __webpack_require__(30);
+=======
+	var servicelbsmodel_1 = __webpack_require__(70);
+	var util_1 = __webpack_require__(25);
+>>>>>>> styling notification
 	var chartservice_1 = __webpack_require__(117);
 	var DashboardComponent = (function () {
 	    function DashboardComponent(networksModel, applicationGroupsModel, policiesModel, servicelbsModel, ngZone) {
@@ -3251,8 +3277,6 @@ webpackJsonp([2],{
 	        this.authService = authService;
 	        this.product_name = contivglobals_1.ContivGlobals.PRODUCT_NAME;
 	        this.showLoader = true;
-	        this.showServerError = false;
-	        this.serverErrorMessage = '';
 	        this.crudHelperService = crudHelperService;
 	        this.username = '';
 	        this.password = '';
@@ -3260,7 +3284,6 @@ webpackJsonp([2],{
 	    }
 	    LoginComponent.prototype.ngOnInit = function () {
 	        this.crudHelperService.stopLoader(this);
-	        this.crudHelperService.hideServerError(this);
 	        jQuery("body").addClass("loginbackground");
 	    };
 	    LoginComponent.prototype.ngOnDestroy = function () {
@@ -3486,7 +3509,6 @@ webpackJsonp([2],{
 	        var bandwidthPolicyCreateCtrl = this;
 	        function resetForm() {
 	            crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
-	            crudHelperService.hideServerError(bandwidthPolicyCreateCtrl);
 	            bandwidthPolicyCreateCtrl.newPolicy = {
 	                profileName: '',
 	                tenantName: 'default',
@@ -3505,7 +3527,6 @@ webpackJsonp([2],{
 	    BandwidthPolicyCreateComponent.prototype.createPolicy = function (validform) {
 	        var bandwidthPolicyCreateCtrl = this;
 	        if (validform) {
-	            bandwidthPolicyCreateCtrl.crudHelperService.hideServerError(bandwidthPolicyCreateCtrl);
 	            bandwidthPolicyCreateCtrl.crudHelperService.startLoader(bandwidthPolicyCreateCtrl);
 	            bandwidthPolicyCreateCtrl.newPolicy.key =
 	                bandwidthPolicyCreateCtrl.netprofilesModel.generateKey(bandwidthPolicyCreateCtrl.newPolicy);
@@ -3513,11 +3534,11 @@ webpackJsonp([2],{
 	                + " " + bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
 	            bandwidthPolicyCreateCtrl.netprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy, undefined).then(function successCallback(result) {
 	                bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
-	                bandwidthPolicyCreateCtrl.crudHelperService.showNotification("Bandwidth Policy Created", result.key.toString());
+	                bandwidthPolicyCreateCtrl.crudHelperService.showNotification("Bandwidth policy: Created", result.key.toString());
 	                bandwidthPolicyCreateCtrl.returnToPolicies();
 	            }, function errorCallback(result) {
 	                bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
-	                bandwidthPolicyCreateCtrl.crudHelperService.showServerError(bandwidthPolicyCreateCtrl, result);
+	                bandwidthPolicyCreateCtrl.crudHelperService.showServerError("Bandwidth policy: Create failed", result);
 	            });
 	        }
 	    };
@@ -3584,20 +3605,18 @@ webpackJsonp([2],{
 	            bandwidthPolicyDetailsCtrl.policy = policy;
 	        });
 	        bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	        bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
 	        setMode();
 	    }
 	    BandwidthPolicyDetailsComponent.prototype.deletePolicy = function () {
 	        var bandwidthPolicyDetailsCtrl = this;
-	        bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
 	        bandwidthPolicyDetailsCtrl.crudHelperService.startLoader(bandwidthPolicyDetailsCtrl);
 	        bandwidthPolicyDetailsCtrl.netprofilesModel.deleteUsingKey(bandwidthPolicyDetailsCtrl.policy.key, 'key', undefined).then(function successCallback(result) {
 	            bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	            bandwidthPolicyDetailsCtrl.crudHelperService.showNotification("Bandwidth Policy Deleted", result);
+	            bandwidthPolicyDetailsCtrl.crudHelperService.showNotification("Bandwidth policy: Deleted", result);
 	            bandwidthPolicyDetailsCtrl.returnToPolicies();
 	        }, function errorCallback(result) {
 	            bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	            bandwidthPolicyDetailsCtrl.crudHelperService.showServerError(bandwidthPolicyDetailsCtrl, result);
+	            bandwidthPolicyDetailsCtrl.crudHelperService.showServerError("Bandwidth policy: Delete failed", result);
 	        });
 	    };
 	    BandwidthPolicyDetailsComponent.prototype.returnToPolicies = function () {
@@ -3615,16 +3634,15 @@ webpackJsonp([2],{
 	    BandwidthPolicyDetailsComponent.prototype.savePolicy = function (validform) {
 	        var bandwidthPolicyDetailsCtrl = this;
 	        if (validform) {
-	            bandwidthPolicyDetailsCtrl.crudHelperService.hideServerError(bandwidthPolicyDetailsCtrl);
 	            bandwidthPolicyDetailsCtrl.crudHelperService.startLoader(bandwidthPolicyDetailsCtrl);
 	            bandwidthPolicyDetailsCtrl.policy.bandwidth = bandwidthPolicyDetailsCtrl.policy.bandwidthNumber + " " + bandwidthPolicyDetailsCtrl.policy.bandwidthUnit;
 	            bandwidthPolicyDetailsCtrl.netprofilesModel.save(bandwidthPolicyDetailsCtrl.policy).then(function successCallback(result) {
 	                bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	                bandwidthPolicyDetailsCtrl.crudHelperService.showNotification("Bandwidth Policy Updated", result.key.toString());
+	                bandwidthPolicyDetailsCtrl.crudHelperService.showNotification("Bandwidth policy: Updated", result.key.toString());
 	                bandwidthPolicyDetailsCtrl.returnToPolicyDetails();
 	            }, function errorCallback(result) {
 	                bandwidthPolicyDetailsCtrl.crudHelperService.stopLoader(bandwidthPolicyDetailsCtrl);
-	                bandwidthPolicyDetailsCtrl.crudHelperService.showServerError(bandwidthPolicyDetailsCtrl, result);
+	                bandwidthPolicyDetailsCtrl.crudHelperService.showServerError("Bandwidth policy: Update failed", result);
 	            });
 	        }
 	    };
@@ -3673,7 +3691,6 @@ webpackJsonp([2],{
 	        var isolationPolicyCreateCtrl = this;
 	        function resetForm() {
 	            crudHelperService.stopLoader(isolationPolicyCreateCtrl);
-	            crudHelperService.hideServerError(isolationPolicyCreateCtrl);
 	            isolationPolicyCreateCtrl.newPolicy = {
 	                policyName: '',
 	                tenantName: 'default' //TODO: Remove hardcoded tenant.
@@ -3690,17 +3707,16 @@ webpackJsonp([2],{
 	    IsolationPolicyCreateComponent.prototype.createPolicy = function (validform) {
 	        var isolationPolicyCreateCtrl = this;
 	        if (validform) {
-	            isolationPolicyCreateCtrl.crudHelperService.hideServerError(isolationPolicyCreateCtrl);
 	            isolationPolicyCreateCtrl.crudHelperService.startLoader(isolationPolicyCreateCtrl);
 	            isolationPolicyCreateCtrl.newPolicy.key =
 	                isolationPolicyCreateCtrl.policiesModel.generateKey(isolationPolicyCreateCtrl.newPolicy);
 	            isolationPolicyCreateCtrl.policiesModel.create(isolationPolicyCreateCtrl.newPolicy, undefined).then(function successCallback(result) {
 	                isolationPolicyCreateCtrl.crudHelperService.stopLoader(isolationPolicyCreateCtrl);
-	                isolationPolicyCreateCtrl.crudHelperService.showNotification("Isolation Policy Created", result.key);
+	                isolationPolicyCreateCtrl.crudHelperService.showNotification("Isolation policy: Created", result.key);
 	                isolationPolicyCreateCtrl.returnToPolicies();
 	            }, function errorCallback(result) {
 	                isolationPolicyCreateCtrl.crudHelperService.stopLoader(isolationPolicyCreateCtrl);
-	                isolationPolicyCreateCtrl.crudHelperService.showServerError(isolationPolicyCreateCtrl, result);
+	                isolationPolicyCreateCtrl.crudHelperService.showServerError("Isolation policy: Create failed", result);
 	            });
 	        }
 	    };
@@ -3809,7 +3825,6 @@ webpackJsonp([2],{
 	            });
 	        }
 	        isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
 	        isolationPolicyDetailsCtrl.policiesModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
 	            .then(function (policy) {
 	            isolationPolicyDetailsCtrl.policy = policy;
@@ -3846,15 +3861,14 @@ webpackJsonp([2],{
 	    };
 	    IsolationPolicyDetailsComponent.prototype.deletePolicy = function () {
 	        var isolationPolicyDetailsCtrl = this;
-	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
 	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
 	        isolationPolicyDetailsCtrl.policiesModel.delete(isolationPolicyDetailsCtrl.policy).then(function successCallback(result) {
 	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation Policy Deleted", result);
+	            isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy: Deleted", result);
 	            isolationPolicyDetailsCtrl.returnToPolicies();
 	        }, function errorCallback(result) {
 	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	            isolationPolicyDetailsCtrl.crudHelperService.showServerError("Isolation policy: Delete failed", result);
 	        });
 	    };
 	    IsolationPolicyDetailsComponent.prototype.validateCIDR = function (ipaddress) {
@@ -4028,7 +4042,6 @@ webpackJsonp([2],{
 	    IsolationPolicyDetailsComponent.prototype.addIncomingRule = function () {
 	        var isolationPolicyDetailsCtrl = this;
 	        if (isolationPolicyDetailsCtrl.validateCIDR(isolationPolicyDetailsCtrl.newIncomingRule.fromIpAddress)) {
-	            isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
 	            isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
 	            isolationPolicyDetailsCtrl.generateRuleId(isolationPolicyDetailsCtrl.newIncomingRule);
 	            isolationPolicyDetailsCtrl.newIncomingRule.key = isolationPolicyDetailsCtrl.rulesModel.generateKey(isolationPolicyDetailsCtrl.newIncomingRule);
@@ -4036,10 +4049,10 @@ webpackJsonp([2],{
 	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
 	                isolationPolicyDetailsCtrl.incomingRules.push(result);
 	                isolationPolicyDetailsCtrl.resetNewIncomingRule();
-	                isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy incoming rules added", result.key.toString());
+	                isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy: Incoming rules added", result.key.toString());
 	            }, function errorCallback(result) {
 	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	                isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	                isolationPolicyDetailsCtrl.crudHelperService.showServerError("Isolation policy: Adding incoming rules failed", result);
 	            });
 	        }
 	    };
@@ -4049,7 +4062,6 @@ webpackJsonp([2],{
 	    IsolationPolicyDetailsComponent.prototype.addOutgoingRule = function () {
 	        var isolationPolicyDetailsCtrl = this;
 	        if (isolationPolicyDetailsCtrl.validateCIDR(isolationPolicyDetailsCtrl.newOutgoingRule.toIpAddress)) {
-	            isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
 	            isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
 	            isolationPolicyDetailsCtrl.generateRuleId(isolationPolicyDetailsCtrl.newOutgoingRule);
 	            isolationPolicyDetailsCtrl.newOutgoingRule.key = isolationPolicyDetailsCtrl.rulesModel.generateKey(isolationPolicyDetailsCtrl.newOutgoingRule);
@@ -4057,10 +4069,10 @@ webpackJsonp([2],{
 	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
 	                isolationPolicyDetailsCtrl.outgoingRules.push(result);
 	                isolationPolicyDetailsCtrl.resetNewOutgoingRule();
-	                isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy outgoing rules added", result.key.toString());
+	                isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy: Outgoing rules added", result.key.toString());
 	            }, function errorCallback(result) {
 	                isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	                isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	                isolationPolicyDetailsCtrl.crudHelperService.showServerError("Isolation policy: Adding outgoing rules failed", result);
 	            });
 	        }
 	    };
@@ -4069,17 +4081,16 @@ webpackJsonp([2],{
 	     */
 	    IsolationPolicyDetailsComponent.prototype.deleteIncomingRule = function (key) {
 	        var isolationPolicyDetailsCtrl = this;
-	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
 	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
 	        isolationPolicyDetailsCtrl.rulesModel.deleteUsingKey(key, 'key', undefined).then(function successCallback(result) {
 	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
 	            _.remove(isolationPolicyDetailsCtrl.incomingRules, function (n) {
 	                return n.key == key;
 	            });
-	            isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy incoming rules deleted", result);
+	            isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy: Incoming rules deleted", result);
 	        }, function errorCallback(result) {
 	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	            isolationPolicyDetailsCtrl.crudHelperService.showServerError("Isolation policy: Deleting incoming rules failed", result);
 	        });
 	    };
 	    /**
@@ -4087,17 +4098,16 @@ webpackJsonp([2],{
 	     */
 	    IsolationPolicyDetailsComponent.prototype.deleteOutgoingRule = function (key) {
 	        var isolationPolicyDetailsCtrl = this;
-	        isolationPolicyDetailsCtrl.crudHelperService.hideServerError(isolationPolicyDetailsCtrl);
 	        isolationPolicyDetailsCtrl.crudHelperService.startLoader(isolationPolicyDetailsCtrl);
 	        isolationPolicyDetailsCtrl.rulesModel.deleteUsingKey(key, 'key', undefined).then(function successCallback(result) {
 	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
 	            _.remove(isolationPolicyDetailsCtrl.outgoingRules, function (n) {
 	                return n.key == key;
 	            });
-	            isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy outgoing rules deleted", result);
+	            isolationPolicyDetailsCtrl.crudHelperService.showNotification("Isolation policy: Outgoing rules deleted", result);
 	        }, function errorCallback(result) {
 	            isolationPolicyDetailsCtrl.crudHelperService.stopLoader(isolationPolicyDetailsCtrl);
-	            isolationPolicyDetailsCtrl.crudHelperService.showServerError(isolationPolicyDetailsCtrl, result);
+	            isolationPolicyDetailsCtrl.crudHelperService.showServerError("Isolation policy: Deleting outgoing rules failed", result);
 	        });
 	    };
 	    IsolationPolicyDetailsComponent = __decorate([
@@ -4143,8 +4153,6 @@ webpackJsonp([2],{
 	        this.networksModel = networksModel;
 	        this.crudHelperService = crudHelperService;
 	        this['showLoader'] = false;
-	        this['showServerError'] = false;
-	        this['serverErrorMessage'] = '';
 	        this['cidrPattern'] = contivglobals_1.ContivGlobals.CIDR_REGEX;
 	        this.newNetwork = { networkName: '', encap: 'vxlan', subnet: '', gateway: '', tenantName: 'default', key: '' };
 	        this.networkCreateCtrl = this;
@@ -4158,18 +4166,25 @@ webpackJsonp([2],{
 	    NetworkCreateComponent.prototype.createNetwork = function (formvalid) {
 	        var networkCreateCtrl = this;
 	        if (formvalid) {
-	            this.crudHelperService.hideServerError(this);
-	            this.crudHelperService.startLoader(this);
+	            networkCreateCtrl.crudHelperService.startLoader(networkCreateCtrl);
 	            this.newNetwork.key = this.newNetwork.tenantName + ':' + this.newNetwork.networkName;
 	            this.networksModel.create(this.newNetwork, undefined)
 	                .then(function (result) {
-	                networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
-	                networkCreateCtrl.crudHelperService.showNotification("Network Created", result.key.toString());
-	                networkCreateCtrl.returnToNetworks();
+	                networkCreateCtrl.crudHelperService.showNotification("Network: Created", result.key.toString(), 'confirm');
+	                networkCreateCtrl.networksModel.networkCreateRunning = false;
 	            }, function (error) {
 	                networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
-	                networkCreateCtrl.crudHelperService.showServerError(networkCreateCtrl, error);
+	                networkCreateCtrl.networksModel.networkCreateRunning = false;
+	                networkCreateCtrl.crudHelperService.showServerError("Network: Create failed", error);
 	            });
+	            setTimeout(function () {
+	                if (networkCreateCtrl['showLoader'] == true) {
+	                    networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
+	                    networkCreateCtrl.networksModel.networkCreateRunning = true;
+	                    networkCreateCtrl.crudHelperService.showNotification("Network: Create task submitted", networkCreateCtrl.newNetwork.key, 'info');
+	                    networkCreateCtrl.returnToNetworks();
+	                }
+	            }, 1000);
 	        }
 	    };
 	    NetworkCreateComponent = __decorate([
@@ -4205,10 +4220,14 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> styling notification
 	var applicationgroupsmodel_1 = __webpack_require__(46);
 	var networksmodel_1 = __webpack_require__(47);
-	var util_1 = __webpack_require__(30);
+	var util_1 = __webpack_require__(25);
 	var router_1 = __webpack_require__(6);
 	var _ = __webpack_require__(28);
 	var NetworkdetailsComponent = (function () {
@@ -4222,8 +4241,6 @@ webpackJsonp([2],{
 	        this.infoselected = true;
 	        this.statskey = '';
 	        this['showLoader'] = true;
-	        this['showServerError'] = false;
-	        this['serverErrorMessage'] = '';
 	        this.network = { networkName: '', encap: '', subnet: '', gateway: '' };
 	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
 	            _this.getApplicationGroups(true);
@@ -4259,19 +4276,25 @@ webpackJsonp([2],{
 	    };
 	    NetworkdetailsComponent.prototype.deleteNetwork = function () {
 	        var networkDetailsCtrl = this;
-	        this.crudHelperService.hideServerError(networkDetailsCtrl);
 	        this.crudHelperService.startLoader(networkDetailsCtrl);
 	        if (!util_1.isUndefined(networkDetailsCtrl['network'])) {
 	            this.networksModel.delete(networkDetailsCtrl['network'])
 	                .then(function (result) {
 	                networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
-	                networkDetailsCtrl.crudHelperService.showNotification("Network Deleted", result.toString());
+	                networkDetailsCtrl.crudHelperService.showNotification("Network: Deleted", result.toString());
 	                networkDetailsCtrl.returnToNetworks();
 	            }, function (error) {
 	                networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
-	                networkDetailsCtrl.crudHelperService.showServerError(networkDetailsCtrl, error);
+	                networkDetailsCtrl.crudHelperService.showServerError("Network: Delete failed", error);
 	            });
 	        }
+	        setTimeout(function () {
+	            if (networkDetailsCtrl['showLoader'] == true) {
+	                networkDetailsCtrl.crudHelperService.showNotification("Network: Delete task submitted", networkDetailsCtrl.network.key, 'info');
+	                networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
+	            }
+	            networkDetailsCtrl.returnToNetworks();
+	        }, 500);
 	    };
 	    NetworkdetailsComponent.prototype.returnToNetworks = function () {
 	        this.router.navigate(['../../list'], { relativeTo: this.route });
@@ -4313,7 +4336,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var networksmodel_1 = __webpack_require__(47);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> styling notification
 	var router_1 = __webpack_require__(6);
 	var NetworkListComponent = (function () {
 	    function NetworkListComponent(router, activatedRoute, networksModel, crudHelperService) {
@@ -4325,7 +4352,8 @@ webpackJsonp([2],{
 	        this.networkListComp = this;
 	        this['showLoader'] = true;
 	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
-	            _this.getNetworks(true);
+	            if (!_this.networksModel.networkCreateRunning)
+	                _this.getNetworks(true);
 	        });
 	    }
 	    NetworkListComponent.prototype.ngOnInit = function () {
@@ -4403,20 +4431,19 @@ webpackJsonp([2],{
 	        var organizationCreateCtrl = this;
 	        if (formvalid) {
 	            this.crudHelperService.startLoader(this);
-	            this.crudHelperService.hideServerError(this);
 	            organizationCreateCtrl.newOrganization.key = organizationCreateCtrl.newOrganization.tenantName;
 	            this.organizationsModel.create(organizationCreateCtrl.newOrganization, undefined)
 	                .then(function (result) {
 	                organizationCreateCtrl.ngZone.run(function () {
 	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
-	                    organizationCreateCtrl.crudHelperService.showNotification("Organization Created", result.key);
+	                    organizationCreateCtrl.crudHelperService.showNotification("Organization: Created", result.key);
 	                });
 	                organizationCreateCtrl.returnToOrganizations();
 	            }, function (error) {
 	                organizationCreateCtrl.ngZone.run(function () {
 	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
 	                });
-	                organizationCreateCtrl.crudHelperService.showServerError(organizationCreateCtrl, error);
+	                organizationCreateCtrl.crudHelperService.showServerError("Organization: Create failed", error);
 	            });
 	        }
 	    };
@@ -4485,16 +4512,15 @@ webpackJsonp([2],{
 	    };
 	    OrganizationDetailsComponent.prototype.deleteOrganization = function () {
 	        var organizationDetailsCtrl = this;
-	        this.crudHelperService.hideServerError(this);
 	        this.showLoader = true;
 	        this.organizationsModel.delete(this.organization)
 	            .then(function (result) {
 	            organizationDetailsCtrl.showLoader = false;
-	            organizationDetailsCtrl.crudHelperService.showNotification("Organization Deleted", result);
+	            organizationDetailsCtrl.crudHelperService.showNotification("Organization: Deleted", result);
 	            organizationDetailsCtrl.returnToOrganization();
 	        }, function (error) {
 	            organizationDetailsCtrl.showLoader = false;
-	            organizationDetailsCtrl.crudHelperService.showServerError(organizationDetailsCtrl, error);
+	            organizationDetailsCtrl.crudHelperService.showServerError("Organization: Delete failed", error);
 	        });
 	    };
 	    OrganizationDetailsComponent = __decorate([
@@ -4531,8 +4557,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
 	var organizationsmodel_1 = __webpack_require__(69);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var organizationsmodel_1 = __webpack_require__(68);
+>>>>>>> styling notification
 	var OrganizationListComponent = (function () {
 	    function OrganizationListComponent(activatedRoute, router, organizationsModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -4640,16 +4671,15 @@ webpackJsonp([2],{
 	        var servicelbCreateCtrl = this;
 	        this.createLabelSelectorStrings();
 	        if (formvalid) {
-	            this.crudHelperService.hideServerError(this);
 	            this.crudHelperService.startLoader(this);
 	            this.servicelb.key = this.servicelb.tenantName + ':' + this.servicelb.serviceName;
 	            this.servicelbsModel.create(this.servicelb, undefined).then(function (result) {
 	                servicelbCreateCtrl.crudHelperService.stopLoader(servicelbCreateCtrl);
-	                servicelbCreateCtrl.crudHelperService.showNotification("Service Load Balancer Created", result.key.toString());
+	                servicelbCreateCtrl.crudHelperService.showNotification("Service load balancer: Created", result.key.toString());
 	                _this.returnToServicelbs();
 	            }, function (error) {
 	                servicelbCreateCtrl.crudHelperService.stopLoader(servicelbCreateCtrl);
-	                servicelbCreateCtrl.crudHelperService.showServerError(servicelbCreateCtrl, error);
+	                servicelbCreateCtrl.crudHelperService.showServerError("Service load balancer: Create failed", error);
 	            });
 	        }
 	    };
@@ -4780,8 +4810,6 @@ webpackJsonp([2],{
 	        this.infoselected = true;
 	        this.statskey = '';
 	        this.showLoader = true;
-	        this['showServerError'] = false;
-	        this['serverErrorMessage'] = '';
 	        this.mode = 'details';
 	        this.servicelb = { serviceName: '', networkName: '', ipAddress: '', selectors: [], ports: [], tenantName: 'default', key: '' };
 	        this.labelSelectors = [];
@@ -4838,7 +4866,6 @@ webpackJsonp([2],{
 	        });
 	    };
 	    ServicelbInfoComponent.prototype.saveServicelb = function () {
-	        this.crudHelperService.hideServerError(this);
 	        this.crudHelperService.startLoader(this);
 	        var existingLabelsView = this.servicelb.selectors.slice();
 	        this.createLabelSelectorStrings();
@@ -4847,32 +4874,31 @@ webpackJsonp([2],{
 	            .then(function (result) {
 	            servicelbInfoCtrl.ngZone.run(function () {
 	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	                servicelbInfoCtrl.crudHelperService.showNotification("Service Load Balancer Updated", result.key.toString());
+	                servicelbInfoCtrl.crudHelperService.showNotification("Service load balancer: Updated", result.key.toString());
 	            });
 	            servicelbInfoCtrl.returnToServicelbDetails();
 	        }, function (error) {
 	            servicelbInfoCtrl.servicelb.selectors = existingLabelsView;
 	            servicelbInfoCtrl.ngZone.run(function () {
 	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	                servicelbInfoCtrl.crudHelperService.showServerError(servicelbInfoCtrl, error);
+	                servicelbInfoCtrl.crudHelperService.showServerError("Service load balancer: Update failed", error);
 	            });
 	        });
 	    };
 	    ServicelbInfoComponent.prototype.deleteServicelb = function () {
-	        this.crudHelperService.hideServerError(this);
 	        this.crudHelperService.startLoader(this);
 	        var servicelbInfoCtrl = this;
 	        this.servicelbsModel.delete(this.servicelb)
 	            .then(function (result) {
 	            servicelbInfoCtrl.ngZone.run(function () {
 	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	                servicelbInfoCtrl.crudHelperService.showNotification("Service Load Balancer Deleted", result.toString());
+	                servicelbInfoCtrl.crudHelperService.showNotification("Service load balancer: Deleted", result.toString());
 	            });
 	            servicelbInfoCtrl.returnToServicelbs();
 	        }, function (error) {
 	            servicelbInfoCtrl.ngZone.run(function () {
 	                servicelbInfoCtrl.crudHelperService.stopLoader(servicelbInfoCtrl);
-	                servicelbInfoCtrl.crudHelperService.showServerError(servicelbInfoCtrl, error);
+	                servicelbInfoCtrl.crudHelperService.showNotification("Service load balancer: Delete failed", error);
 	            });
 	        });
 	    };
@@ -4924,8 +4950,13 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
 	var servicelbsmodel_1 = __webpack_require__(71);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var servicelbsmodel_1 = __webpack_require__(70);
+>>>>>>> styling notification
 	var router_1 = __webpack_require__(6);
 	var ServicelbListComponent = (function () {
 	    function ServicelbListComponent(router, route, servicelbsModel, crudHelperService, ngZone) {
@@ -4996,11 +5027,19 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
 	var inspectservice_1 = __webpack_require__(94);
 	var util_1 = __webpack_require__(30);
 	var servicelbsmodel_1 = __webpack_require__(71);
 	var contivglobals_1 = __webpack_require__(13);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var inspectservice_1 = __webpack_require__(94);
+	var util_1 = __webpack_require__(25);
+	var servicelbsmodel_1 = __webpack_require__(70);
+	var contivglobals_1 = __webpack_require__(14);
+>>>>>>> styling notification
 	var ServicelbStatComponent = (function () {
 	    function ServicelbStatComponent(servicelbsModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;
@@ -5126,27 +5165,27 @@ webpackJsonp([2],{
 	    }
 	    NetworkSettingsComponent.prototype.updateNetworkSettings = function (settings) {
 	        var networkSettingCtrl = this;
-	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
 	        networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
 	        networkSettingCtrl.networkService.updateSettings(networkSettingCtrl.setting).then(function successCallback(result) {
 	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	            networkSettingCtrl.crudHelperService.showNotification("Network settings: Updated", result.key.toString());
 	        }, function errorCallback(result) {
 	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	            networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, result._body);
+	            networkSettingCtrl.crudHelperService.showServerError("Network settings: Update failed", result);
 	        });
 	    };
 	    NetworkSettingsComponent.prototype.updateAciSetting = function (extra_vars) {
 	        var networkSettingCtrl = this;
-	        networkSettingCtrl.crudHelperService.hideServerError(networkSettingCtrl);
 	        networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
 	        networkSettingCtrl.nodesService.cleanupExtraVars(networkSettingCtrl);
 	        networkSettingCtrl.nodesService.createExtraVars(networkSettingCtrl);
 	        networkSettingCtrl.nodesService.updateSettings(extra_vars)
 	            .then(function (result) {
 	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
+	            networkSettingCtrl.crudHelperService.showNotification("ACI settings: Updated", result.key.toString());
 	        }, function (error) {
 	            networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-	            networkSettingCtrl.crudHelperService.showServerError(networkSettingCtrl, error._body);
+	            networkSettingCtrl.crudHelperService.showServerError("ACI settings: Update failed", error);
 	        });
 	    };
 	    NetworkSettingsComponent = __decorate([
@@ -5192,7 +5231,6 @@ webpackJsonp([2],{
 	        var component = this;
 	        function resetForm() {
 	            crudHelperService.stopLoader(component);
-	            crudHelperService.hideServerError(component);
 	            component.newNode = {
 	                "key": "",
 	                "hostname": "",
@@ -5214,19 +5252,19 @@ webpackJsonp([2],{
 	        var component = this;
 	        if (formvalid) {
 	            this.crudHelperService.startLoader(this);
-	            this.crudHelperService.hideServerError(this);
 	            component.newNode.key = component.newNode.hostname;
 	            this.bgpsModel.create(component.newNode, undefined)
 	                .then(function (result) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
+	                    component.crudHelperService.showNotification("Node: Created", result.key.toString());
 	                });
 	                component.returnToNodes();
 	            }, function (error) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
 	                });
-	                component.crudHelperService.showServerError(component, error);
+	                component.crudHelperService.showServerError("Node: Create failed", error);
 	            });
 	        }
 	    };
@@ -5290,8 +5328,12 @@ webpackJsonp([2],{
 	    NodeDetailsComponent.prototype.ngOnInit = function () {
 	        var component = this;
 	        component.crudHelperService.stopLoader(component);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	        component.crudHelperService.hideServerError(component);
 	        component.bgpsModel.getModelByKey(component.activatedRoute.snapshot.params['key'], false, 'key')
+=======
+	        component.bgpsModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
+>>>>>>> styling notification
 	            .then(function successCallBack(node) {
 	            component.node = node;
 	            component.ngZone.run(function () {
@@ -5311,20 +5353,41 @@ webpackJsonp([2],{
 	    };
 	    NodeDetailsComponent.prototype.deleteNode = function () {
 	        var component = this;
-	        component.crudHelperService.hideServerError(component);
 	        component.crudHelperService.startLoader(component);
 	        component.bgpsModel.delete(component.node).then(function successCallback(result) {
 	            component.ngZone.run(function () {
 	                component.crudHelperService.stopLoader(component);
 	            });
+	            component.crudHelperService.showNotification("Node: Deleted", result);
 	            component.returnToNode();
 	        }, function errorCallback(result) {
 	            component.ngZone.run(function () {
 	                component.crudHelperService.stopLoader(component);
 	            });
-	            component.crudHelperService.showServerError(component, result);
+	            component.crudHelperService.showServerError("Node: Delete failed", result);
 	        });
 	    };
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
+=======
+	    NodeDetailsComponent.prototype.saveNode = function (formvalid) {
+	        var component = this;
+	        if (formvalid) {
+	            component.crudHelperService.startLoader(component);
+	            component.bgpsModel.save(component.node).then(function successCallback(result) {
+	                component.ngZone.run(function () {
+	                    component.crudHelperService.stopLoader(component);
+	                });
+	                component.crudHelperService.showNotification("Node: Updated", result.key.toString());
+	                component.returnToNodeDetails();
+	            }, function errorCallback(result) {
+	                component.ngZone.run(function () {
+	                    component.crudHelperService.stopLoader(component);
+	                });
+	                component.crudHelperService.showServerError("Node: Update failed", result);
+	            });
+	        }
+	    };
+>>>>>>> styling notification
 	    NodeDetailsComponent = __decorate([
 	        core_1.Component({
 	            selector: 'nodedetails',
@@ -5356,8 +5419,13 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
 	var bgpsmodel_1 = __webpack_require__(68);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var bgpsmodel_1 = __webpack_require__(92);
+>>>>>>> styling notification
 	var NodeListComponent = (function () {
 	    function NodeListComponent(activatedRoute, router, bgpsModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -5482,7 +5550,6 @@ webpackJsonp([2],{
 	        }
 	        function resetForm() {
 	            crudHelperService.stopLoader(component);
-	            crudHelperService.hideServerError(component);
 	            component.newUser = {
 	                userName: '',
 	                firstName: '',
@@ -5505,19 +5572,19 @@ webpackJsonp([2],{
 	        var component = this;
 	        if (formvalid) {
 	            this.crudHelperService.startLoader(this);
-	            this.crudHelperService.hideServerError(this);
 	            component.newUser.key = this.usersModel.generateKey(this.newUser);
 	            this.usersModel.create(component.newUser, undefined)
 	                .then(function (result) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
+	                    component.crudHelperService.showNotification("User: Created", result.key.toString());
 	                });
 	                component.returnToUsers();
 	            }, function (error) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
 	                });
-	                component.crudHelperService.showServerError(component, error);
+	                component.crudHelperService.showServerError("User: Create failed", error);
 	            });
 	        }
 	    };
@@ -5586,7 +5653,6 @@ webpackJsonp([2],{
 	            });
 	        }
 	        component.crudHelperService.stopLoader(component);
-	        component.crudHelperService.hideServerError(component);
 	        component.usersModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'key')
 	            .then(function (user) {
 	            component.user = user;
@@ -5608,35 +5674,35 @@ webpackJsonp([2],{
 	    };
 	    UserDetailsComponent.prototype.deleteUser = function () {
 	        var component = this;
-	        component.crudHelperService.hideServerError(component);
 	        component.crudHelperService.startLoader(component);
 	        component.usersModel.delete(component.user).then(function successCallback(result) {
 	            component.ngZone.run(function () {
 	                component.crudHelperService.stopLoader(component);
 	            });
+	            component.crudHelperService.showNotification("User: Deleted", result);
 	            component.returnToUser();
 	        }, function errorCallback(result) {
 	            component.ngZone.run(function () {
 	                component.crudHelperService.stopLoader(component);
 	            });
-	            component.crudHelperService.showServerError(component, result);
+	            component.crudHelperService.showServerError("User: Delete failed", result);
 	        });
 	    };
 	    UserDetailsComponent.prototype.saveUser = function (formvalid) {
 	        var component = this;
 	        if (formvalid) {
-	            component.crudHelperService.hideServerError(component);
 	            component.crudHelperService.startLoader(component);
 	            component.usersModel.save(component.user).then(function successCallback(result) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
 	                });
+	                component.crudHelperService.showNotification("User: Updated", result.key.toString());
 	                component.returnToUserDetails();
 	            }, function errorCallback(result) {
 	                component.ngZone.run(function () {
 	                    component.crudHelperService.stopLoader(component);
 	                });
-	                component.crudHelperService.showServerError(component, result);
+	                component.crudHelperService.showServerError("User: Update failed", result);
 	            });
 	        }
 	    };
@@ -5671,7 +5737,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var router_1 = __webpack_require__(6);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> styling notification
 	var usersmodel_1 = __webpack_require__(93);
 	var UserListComponent = (function () {
 	    function UserListComponent(activatedRoute, router, usersModel, crudHelperService, ngZone) {
@@ -6134,9 +6204,15 @@ webpackJsonp([2],{
 	var applicationgroupsmodel_1 = __webpack_require__(46);
 	var crudhelperservice_1 = __webpack_require__(9);
 	var inspectservice_1 = __webpack_require__(94);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
 	var contivglobals_1 = __webpack_require__(13);
 	var util_1 = __webpack_require__(30);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var contivglobals_1 = __webpack_require__(14);
+	var util_1 = __webpack_require__(25);
+>>>>>>> styling notification
 	var ApplicationGroupStatsComponent = (function () {
 	    function ApplicationGroupStatsComponent(applicationGroupsModel, crudHelperService, inspectService, ngZone) {
 	        var _this = this;
@@ -6230,8 +6306,13 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var _ = __webpack_require__(28);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var netprofilesmodel_1 = __webpack_require__(76);
 	var util_1 = __webpack_require__(30);
+=======
+	var netprofilesmodel_1 = __webpack_require__(75);
+	var util_1 = __webpack_require__(25);
+>>>>>>> styling notification
 	/*
 	angular.module("contiv.applicationgroups")
 	    .directive("ctvBandwidthpolicy", function () {
@@ -6362,7 +6443,11 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var _ = __webpack_require__(28);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var policiesmodel_1 = __webpack_require__(70);
+=======
+	var policiesmodel_1 = __webpack_require__(69);
+>>>>>>> styling notification
 	var rulesmodel_1 = __webpack_require__(116);
 	var IsolationPolicySelectionComponent = (function () {
 	    function IsolationPolicySelectionComponent(policiesModel, rulesModel) {
@@ -6845,8 +6930,8 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var chartservice_1 = __webpack_require__(117);
-	var util_1 = __webpack_require__(30);
-	var util_2 = __webpack_require__(30);
+	var util_1 = __webpack_require__(25);
+	var util_2 = __webpack_require__(25);
 	var LineGraphComponent = (function () {
 	    function LineGraphComponent(chartService) {
 	        this.chartService = chartService;
@@ -7118,46 +7203,76 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+	var util_1 = __webpack_require__(25);
 	var NotificationComponent = (function () {
 	    function NotificationComponent(crudHelperService) {
 	        this.crudHelperService = crudHelperService;
 	        this.message = '';
 	        this.item = '';
-	        this.state = 'not-trigerred';
+	        this.notifyId = 0;
+	        this.notifyType = 'alert';
+	        this.notifyCounter = 0;
 	    }
 	    NotificationComponent.prototype.ngOnInit = function () {
-	        jQuery('.notifi').css({ right: 0 + 'px',
-	            top: ((8 / 100) * window.innerHeight) + 'px'
+	        jQuery('.notify').css({ right: 30 + 'px',
+	            top: ((80 / 100) * window.innerHeight) + 'px'
 	        });
-	        jQuery('.notifi').css({ visibility: 'hidden' });
+	        jQuery('.notify').css({ visibility: 'hidden' });
 	        window.onresize = function () {
-	            jQuery('.notifi').css({ right: 0 + 'px',
-	                top: ((8 / 100) * window.innerHeight) + 'px'
+	            jQuery('.notify').css({ right: 30 + 'px',
+	                top: ((80 / 100) * window.innerHeight) + 'px'
 	            });
 	        };
+	        this.notifyId = 0;
+	    };
+	    NotificationComponent.prototype.runAnimation = function (start) {
+	        var self = this;
+	        var animation = {
+	            animation: 'fly up',
+	            onStart: function () {
+	                if (start)
+	                    self.displayMessage();
+	            },
+	            onComplete: function () {
+	                if (!start)
+	                    self.displayMessage();
+	            }
+	        };
+	        jQuery('.notify').transition(animation);
+	    };
+	    NotificationComponent.prototype.displayMessage = function () {
+	        this.message = this.crudHelperService.message;
+	        this.item = this.crudHelperService.item;
+	        this.notifyType = this.crudHelperService.notifyType;
+	        if (util_1.isUndefined(this.notifyType))
+	            this.notifyType = 'confirm';
 	    };
 	    NotificationComponent.prototype.ngDoCheck = function () {
+	        var self = this;
 	        if (this.crudHelperService.displayNotifi) {
-	            this.message = this.crudHelperService.message;
-	            this.item = this.crudHelperService.item;
-	            this.crudHelperService.displayNotifi = false;
-	            var self = this;
-	            if (this.state !== 'not-trigerred' && this.state !== 'closed') {
-	                jQuery('.notifi').transition('slide left');
+	            if (this.notifyId !== 0) {
+	                this.runAnimation(false);
+	                this.notifyId = 0;
 	            }
-	            jQuery('.notifi').transition('slide left');
-	            this.state = 'running';
+	            this.crudHelperService.displayNotifi = false;
+	            this.runAnimation(true);
+	            var currentnotifyId = ++this.notifyCounter;
+	            this.notifyId = currentnotifyId;
+	            var newTimer = new notifyTimer(currentnotifyId);
+	        }
+	        function notifyTimer(timerId) {
+	            var timerId = timerId;
 	            setTimeout(function () {
-	                if (self.state === 'running') {
-	                    jQuery('.notifi').transition('slide left');
-	                    self.state = 'closed';
+	                if (timerId == self.notifyId) {
+	                    self.runAnimation(false);
+	                    self.notifyId = 0;
 	                }
-	            }, 10000);
+	            }, 15000);
 	        }
 	    };
 	    NotificationComponent.prototype.close = function () {
-	        jQuery('.notifi').transition('slide left');
-	        this.state = 'closed';
+	        this.runAnimation(false);
+	        this.notifyId = 0;
 	    };
 	    NotificationComponent = __decorate([
 	        core_1.Component({
@@ -7328,7 +7443,11 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(3);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var util_1 = __webpack_require__(30);
+=======
+	var util_1 = __webpack_require__(25);
+>>>>>>> styling notification
 	var _ = __webpack_require__(28);
 	var CtvTableComponent = (function () {
 	    function CtvTableComponent() {
@@ -8222,8 +8341,13 @@ webpackJsonp([2],{
 	 */
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
 	var netprofilesmodel_1 = __webpack_require__(76);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var netprofilesmodel_1 = __webpack_require__(75);
+>>>>>>> styling notification
 	var BandwidthListComponent = (function () {
 	    function BandwidthListComponent(netprofilesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -8290,7 +8414,11 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(3);
 	var policiesmodel_1 = __webpack_require__(70);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
+=======
+	var rxjs_1 = __webpack_require__(29);
+>>>>>>> styling notification
 	var IsolationListComponent = (function () {
 	    function IsolationListComponent(policiesModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -8528,11 +8656,19 @@ webpackJsonp([2],{
 	};
 	var core_1 = __webpack_require__(3);
 	var crudhelperservice_1 = __webpack_require__(9);
+<<<<<<< f64f0e843f5a4cf6209f0e495bad9e3272cf6c00
 	var rxjs_1 = __webpack_require__(24);
 	var networksmodel_1 = __webpack_require__(47);
 	var inspectservice_1 = __webpack_require__(94);
 	var util_1 = __webpack_require__(30);
 	var contivglobals_1 = __webpack_require__(13);
+=======
+	var rxjs_1 = __webpack_require__(29);
+	var networksmodel_1 = __webpack_require__(47);
+	var inspectservice_1 = __webpack_require__(94);
+	var util_1 = __webpack_require__(25);
+	var contivglobals_1 = __webpack_require__(14);
+>>>>>>> styling notification
 	var NetworkStatComponent = (function () {
 	    function NetworkStatComponent(networksModel, crudHelperService, inspectSerrvice, ngZone) {
 	        var _this = this;

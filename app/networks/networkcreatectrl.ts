@@ -26,8 +26,6 @@ export class NetworkCreateComponent{
         this.networksModel = networksModel;
         this.crudHelperService = crudHelperService;
         this['showLoader']=false;
-        this['showServerError'] = false;
-        this['serverErrorMessage'] = '';
         this['cidrPattern'] = ContivGlobals.CIDR_REGEX;
         this.newNetwork = {networkName: '', encap: 'vxlan', subnet:'', gateway:'', tenantName: 'default', key:''};
         this.networkCreateCtrl = this;
@@ -44,18 +42,26 @@ export class NetworkCreateComponent{
     createNetwork(formvalid: any){
         var networkCreateCtrl = this;
         if(formvalid){
-            this.crudHelperService.hideServerError(this);
-            this.crudHelperService.startLoader(this);
+            networkCreateCtrl.crudHelperService.startLoader(networkCreateCtrl);
             this.newNetwork.key = this.newNetwork.tenantName + ':' + this.newNetwork.networkName;
             this.networksModel.create(this.newNetwork,undefined)
                               .then((result) => {
-                                  networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
-                                  networkCreateCtrl.crudHelperService.showNotification("Network Created", result.key.toString());
-                                  networkCreateCtrl.returnToNetworks();
+                                  networkCreateCtrl.crudHelperService.showNotification("Network: Created", result.key.toString(), 'confirm');
+                                  networkCreateCtrl.networksModel.networkCreateRunning = false;
                               }, (error) => {
                                   networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
-                                  networkCreateCtrl.crudHelperService.showServerError(networkCreateCtrl, error);
+                                  networkCreateCtrl.networksModel.networkCreateRunning = false;
+                                  networkCreateCtrl.crudHelperService.showServerError("Network: Create failed", error);
                               });
+
+            setTimeout(() => {
+                if(networkCreateCtrl['showLoader']==true){
+                    networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
+                    networkCreateCtrl.networksModel.networkCreateRunning = true;
+                    networkCreateCtrl.crudHelperService.showNotification("Network: Create task submitted", networkCreateCtrl.newNetwork.key, 'info');
+                    networkCreateCtrl.returnToNetworks();
+                }
+            },1000)
         }
     }
 

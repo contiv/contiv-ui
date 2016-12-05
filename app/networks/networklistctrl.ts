@@ -29,7 +29,8 @@ export class NetworkListComponent implements OnInit, OnDestroy{
         this.networkListComp = this;
         this['showLoader']=true;
         this.refresh=Observable.interval(5000).subscribe(() => {
-            this.getNetworks(true);
+            if(!this.networksModel.networkCreateRunning)
+                this.getNetworks(true);
         })
     }
 

@@ -1,14 +1,64 @@
-.notifi{
+#Notify-Message{
     z-index: 4000;
-    position: absolute;
+    position: fixed;
     display: block;
+    padding-top: 25px;
+    background: #5d5d5d;
+    padding-left: 0px;
+    padding-right: 40px;
 }
 
-#header1{
-    margin-right: 40px;
+#Notify-Message.ready{
+    padding-left: 30px;
+    padding-right: 50px;
 }
 
-.notifi p{
+#Notify-Message.minor, #Notify-Message.info{
+    padding-left: 0px;
+    padding-right: 40px;
+}
+
+#header2{
+    color:white;
+}
+
+.close.icon{
+    color:white;
+    padding-right: 20px;
+}
+
+p{
     font-weight: bold;
-    margin-right: 40px;
+    color:white;
+}
+
+p.ready{
+    width:400px
+}
+
+p.minor, p.info{
+    width:650px;
+}
+
+#notifyIcon{
+    position: relative;
+    padding-top: 4px;
+    top:20%;
+    font-size: 3em;
+}
+
+.fourteen.wide.column span{
+    color: white;
+}
+
+#notifyIcon .path2{
+    position: absolute;
+    right: 4px;
+    top: 3px;
+}
+
+#notifyIcon .path3{
+    position: absolute;
+    top: 3px;
+    right: 4px;
 }
