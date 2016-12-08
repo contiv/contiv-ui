@@ -9,6 +9,7 @@ import {ApplicationGroupsModel} from "../components/models/applicationgroupsmode
 import {NetworksModel} from "../components/models/networksmodel";
 import {isUndefined} from "util";
 import {ActivatedRoute, Router} from "@angular/router";
+import {NotificationType} from "../components/directives/notification";
 var _ = require('lodash');
 
 
@@ -93,11 +94,11 @@ export class NetworkdetailsComponent implements OnInit, OnDestroy{
         }
         setTimeout(() => {
             if(networkDetailsCtrl['showLoader']==true){
-                networkDetailsCtrl.crudHelperService.showNotification("Network: Delete task submitted", networkDetailsCtrl.network.key, 'info');
+                networkDetailsCtrl.crudHelperService.showNotification("Network: Delete task submitted", networkDetailsCtrl.network.key, NotificationType.info);
                 networkDetailsCtrl.crudHelperService.stopLoader(networkDetailsCtrl);
             }
             networkDetailsCtrl.returnToNetworks();
-        },500)
+        },2000)
 
     }
 

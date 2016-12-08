@@ -2,6 +2,7 @@
  * Created by vjain3 on 4/29/16.
  */
 import { Injectable } from '@angular/core';
+import {NotificationType} from "../directives/notification";
 declare var jQuery:any;
 
 @Injectable()
@@ -9,8 +10,8 @@ export class CRUDHelperService {
 
     public message:string = '';
     public item:string = '';
-    public displayNotifi:boolean;
-    public notifyType: string = '';
+    public displayNotify:boolean;
+    public notificationType: NotificationType;
 
     constructor(){
     }
@@ -23,11 +24,11 @@ export class CRUDHelperService {
         controller.showLoader = false;
     }
 
-    showNotification(message: string, item: string, notifyType?: string){
+    showNotification(message: string, item: string, notifyType?: NotificationType){
         this.message = message;
         this.item = item;
-        this.notifyType = notifyType;
-        this.displayNotifi = true;
+        this.notificationType = notifyType;
+        this.displayNotify = true;
     }
 
     showServerError(message, error): void{
@@ -40,6 +41,6 @@ export class CRUDHelperService {
             operationstate = error.text();
         else
             operationstate = error.toString();
-        this.showNotification(message, operationstate, 'alert');
+        this.showNotification(message, operationstate, NotificationType.alert);
     }
 }

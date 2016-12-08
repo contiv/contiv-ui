@@ -14,6 +14,8 @@ import {Router, ActivatedRoute} from "@angular/router";
     template: require("./networklist.html")
 })
 
+
+
 export class NetworkListComponent implements OnInit, OnDestroy{
     private networksModel:NetworksModel;
     private crudHelperService: CRUDHelperService;
@@ -29,8 +31,7 @@ export class NetworkListComponent implements OnInit, OnDestroy{
         this.networkListComp = this;
         this['showLoader']=true;
         this.refresh=Observable.interval(5000).subscribe(() => {
-            if(!this.networksModel.networkCreateRunning)
-                this.getNetworks(true);
+            this.getNetworks(true);
         })
     }
 

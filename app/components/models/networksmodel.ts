@@ -7,7 +7,6 @@ import {ApiService} from "../utils/apiservice";
 
 @Injectable()
 export class NetworksModel extends Collection {
-    public networkCreateRunning: boolean = false;
     constructor(http: Http, apiService: ApiService) {
         super(http, ContivGlobals.NETWORKS_ENDPOINT, apiService);
     }
@@ -28,5 +27,17 @@ export class NetworksModel extends Collection {
                 }
                 return result;
             });
+    }
+
+    get(reload: boolean):Promise<any>{
+        var collection = this;
+        if(collection.cudOperationFlag){
+            return new Promise(function(resolve, reject){
+                resolve(collection.models)
+            })
+        }
+        else{
+            return super.get(reload);
+        }
     }
 }

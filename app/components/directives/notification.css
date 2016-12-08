@@ -1,4 +1,4 @@
-#Notify-Message{
+#notificationMessage{
     z-index: 4000;
     position: fixed;
     display: block;
@@ -8,12 +8,12 @@
     padding-right: 40px;
 }
 
-#Notify-Message.ready, #Notify-Message.info{
+#notificationMessage.ready, #notificationMessage.info{
     padding-left: 30px;
     padding-right: 50px;
 }
 
-#Notify-Message.minor{
+#notificationMessage.minor{
     padding-left: 0px;
     padding-right: 40px;
 }

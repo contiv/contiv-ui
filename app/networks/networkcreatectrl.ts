@@ -7,6 +7,7 @@ import {NetworksModel} from "../components/models/networksmodel";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Router, ActivatedRoute} from "@angular/router";
 import {ContivGlobals} from "../components/models/contivglobals";
+import {NotificationType} from "../components/directives/notification";
 
 @Component({
     selector: 'networkcreate',
@@ -46,22 +47,21 @@ export class NetworkCreateComponent{
             this.newNetwork.key = this.newNetwork.tenantName + ':' + this.newNetwork.networkName;
             this.networksModel.create(this.newNetwork,undefined)
                               .then((result) => {
-                                  networkCreateCtrl.crudHelperService.showNotification("Network: Created", result.key.toString(), 'confirm');
-                                  networkCreateCtrl.networksModel.networkCreateRunning = false;
+                                  networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
+                                  networkCreateCtrl.crudHelperService.showNotification("Network: Created", result.key.toString());
+                                  networkCreateCtrl.returnToNetworks();
                               }, (error) => {
                                   networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
-                                  networkCreateCtrl.networksModel.networkCreateRunning = false;
                                   networkCreateCtrl.crudHelperService.showServerError("Network: Create failed", error);
                               });
 
             setTimeout(() => {
                 if(networkCreateCtrl['showLoader']==true){
                     networkCreateCtrl.crudHelperService.stopLoader(networkCreateCtrl);
-                    networkCreateCtrl.networksModel.networkCreateRunning = true;
-                    networkCreateCtrl.crudHelperService.showNotification("Network: Create task submitted", networkCreateCtrl.newNetwork.key, 'info');
+                    networkCreateCtrl.crudHelperService.showNotification("Network: Create task submitted", networkCreateCtrl.newNetwork.key, NotificationType.info);
                     networkCreateCtrl.returnToNetworks();
                 }
-            },1000)
+            },2000)
         }
     }
 
