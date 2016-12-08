@@ -40,15 +40,15 @@
                         <label for="routerIP">Router IP</label>
                         <input type="text" id="routerIP" name="routerIP"
                                [(ngModel)]="node['routerip']"
-                               placeholder="Enter router IP" required>
+                               placeholder="Enter router IP" required #routerIP="ngModel">
                     </div>
 
                     <div class="field">
                         <label for="AS">Autonomous system</label>
-                        <input type="number" id="AS" name="AS"
+                        <input type="text" id="AS" name="AS"
                                [(ngModel)]="node['as']"
                                placeholder="Enter autonomous system"
-                               required>
+                               required #AS="ngModel">
                     </div>
 
                     <div class="field">
@@ -60,7 +60,7 @@
 
                     <div class="field">
                         <label for="neighborAS">Neighbor autonomous system</label>
-                        <input type="number" id="neighborAS" name="neighborAS"
+                        <input type="text" id="neighborAS" name="neighborAS"
                                [(ngModel)]="node['neighbor-as']"
                                placeholder="Enter neighbor autonomous system">
                     </div>
