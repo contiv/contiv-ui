@@ -8,18 +8,18 @@
     padding-right: 40px;
 }
 
-#Notify-Message.ready{
+#Notify-Message.ready, #Notify-Message.info{
     padding-left: 30px;
     padding-right: 50px;
 }
 
-#Notify-Message.minor, #Notify-Message.info{
+#Notify-Message.minor{
     padding-left: 0px;
     padding-right: 40px;
 }
 
-#header2{
-    color:white;
+#notificationText #header2, #notificationText p, #notificationText span{
+    color: white;
 }
 
 .close.icon{
@@ -29,14 +29,13 @@
 
 p{
     font-weight: bold;
-    color:white;
 }
 
-p.ready{
+p.ready, p.info{
     width:400px
 }
 
-p.minor, p.info{
+p.minor{
     width:650px;
 }
 
@@ -45,20 +44,4 @@ p.minor, p.info{
     padding-top: 4px;
     top:20%;
     font-size: 3em;
-}
-
-.fourteen.wide.column span{
-    color: white;
-}
-
-#notifyIcon .path2{
-    position: absolute;
-    right: 4px;
-    top: 3px;
-}
-
-#notifyIcon .path3{
-    position: absolute;
-    top: 3px;
-    right: 4px;
 }

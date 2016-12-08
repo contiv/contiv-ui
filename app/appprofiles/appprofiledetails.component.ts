@@ -62,7 +62,6 @@ export class AppProfileDetailsComponent {
             function successCallback(result) {
                 component.ngZone.run(() => {
                     component.crudHelperService.stopLoader(component);
-                    //component.crudHelperService.showNotification("Application Profile Deleted", result);
                     component.crudHelperService.showNotification("Application profile: Deleted", result);
                 });
                 component.returnToAppProfile();

@@ -1,6 +1,6 @@
 <div class="ui small message notify" id="Notify-Message"
-    [ngStyle]="{opacity: 0.95}"
-    [ngClass]="{ready: notifyType=='confirm', minor: notifyType=='alert', info: notifyType=='info'}">
+     [ngStyle]="{opacity: 0.95}"
+     [ngClass]="{ready: notifyType=='confirm', minor: notifyType=='alert', info: notifyType=='info'}">
     <i class="close icon" (click)="close()"></i>
     <div class="ui grid">
         <div class="ui right aligned two wide column">
@@ -10,7 +10,7 @@
                 <span class="path3"></span>
             </i>
         </div>
-        <div class="ui left aligned fourteen wide column">
+        <div class="ui left aligned fourteen wide column" id="notificationText">
             <div class="header" id="header2">
                 <span *ngIf="notifyType=='confirm'">Confirmation: </span>
                 <span *ngIf="notifyType=='info'">Information: </span>
