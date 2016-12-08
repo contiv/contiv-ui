@@ -35,10 +35,6 @@ export class NodeDetailsComponent implements OnInit {
         setMode();
         this.statskey = this.activatedRoute.snapshot.params['key'];
         this.infoselected = true;
-        //For testing
-        this.node = {
-            hostname: ''
-        };
     }
 
     ngOnInit() {

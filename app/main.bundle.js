@@ -5286,10 +5286,6 @@ webpackJsonp([2],{
 	        setMode();
 	        this.statskey = this.activatedRoute.snapshot.params['key'];
 	        this.infoselected = true;
-	        //For testing
-	        this.node = {
-	            hostname: ''
-	        };
 	    }
 	    NodeDetailsComponent.prototype.ngOnInit = function () {
 	        var component = this;
