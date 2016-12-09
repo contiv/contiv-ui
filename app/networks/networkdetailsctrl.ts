@@ -42,7 +42,8 @@ export class NetworkdetailsComponent implements OnInit, OnDestroy{
         this['showLoader'] = true;
         this.network = {networkName: '', encap: '', subnet: '', gateway: ''};
         this.refresh=Observable.interval(5000).subscribe(() => {
-            this.getApplicationGroups(true);
+            if(this['showloader']!=true)
+                this.getApplicationGroups(true);
         });
         this.networkDetailsCtrl = this;
     }

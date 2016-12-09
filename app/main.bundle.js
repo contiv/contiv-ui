@@ -4361,7 +4361,8 @@ webpackJsonp([2],{
 	        this['showLoader'] = true;
 	        this.network = { networkName: '', encap: '', subnet: '', gateway: '' };
 	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
-	            _this.getApplicationGroups(true);
+	            if (_this['showloader'] != true)
+	                _this.getApplicationGroups(true);
 	        });
 	        this.networkDetailsCtrl = this;
 	    }
