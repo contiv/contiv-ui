@@ -6831,10 +6831,10 @@ webpackJsonp([2],{
 	        this.lineChartOptions = {};
 	        this.lineChartColors = [
 	            {
-	                backgroundColor: 'rgba(77,83,96,0.2)',
-	                borderColor: 'rgba(77,83,96,1)',
-	                pointBackgroundColor: 'rgba(77,83,96,1)',
-	                pointBorderColor: '#fff',
+	                backgroundColor: 'rgba(255,255,255,0',
+	                borderColor: 'rgba(4,159,217,1)',
+	                pointBackgroundColor: 'rgba(0,117,180,1)',
+	                pointBorderColor: 'rgba(0,117,180,1)',
 	                pointHoverBackgroundColor: '#fff',
 	                pointHoverBorderColor: 'rgba(77,83,96,1)'
 	            }
@@ -6863,6 +6863,7 @@ webpackJsonp([2],{
 	            var currKey = _this.key;
 	            var currEndpointType = _this.endpointType;
 	            if (resultKey === currKey && resultEndpointType === currEndpointType) {
+	                _this.scaleEnd++;
 	                if (!_this.inspectActivated) {
 	                    _this.start++;
 	                    _this.end++;
@@ -6926,6 +6927,14 @@ webpackJsonp([2],{
 	                            suggestedMax: max * 1.5
 	                        }
 	                    }]
+	            },
+	            elements: {
+	                line: {
+	                    borderWidth: 2
+	                },
+	                point: {
+	                    radius: 4
+	                }
 	            }
 	        };
 	    };
@@ -6940,28 +6949,44 @@ webpackJsonp([2],{
 	    LineGraphComponent.prototype.prepareChartData = function () {
 	        this.inspectActivated = false;
 	        this.end = this.chartService.graphData[this.endpointType][this.key].length - 1;
+	        this.scaleEnd = this.end;
 	        this.start = this.end - 14;
 	        this.lineChartOptions = {};
 	        this.loadGraphData();
 	        this.prevKey = this.key;
 	        this.prevEndpointType = this.endpointType;
 	    };
-	    LineGraphComponent.prototype.leftpress = function () {
-	        if (this.start > 0) {
+	    /*
+	    leftpress(){
+	        if (this.start > 0){
 	            this.inspectActivated = true;
 	            this.start--;
 	            this.end--;
 	            this.loadGraphData();
 	        }
-	    };
-	    LineGraphComponent.prototype.rightpress = function () {
-	        if (this.end < (this.chartService.graphData[this.endpointType][this.key].length - 1)) {
+	    }
+
+	    rightpress(){
+	        if(this.end < (this.chartService.graphData[this.endpointType][this.key].length - 1)){
 	            this.end++;
 	            this.start++;
 	            this.loadGraphData();
-	            if (this.end == (this.chartService.graphData[this.endpointType][this.key].length - 1))
+	            if(this.end == (this.chartService.graphData[this.endpointType][this.key].length - 1))
 	                this.inspectActivated = false;
+
 	        }
+	    }
+	    */
+	    LineGraphComponent.prototype.slide = function (slideVal) {
+	        if (slideVal < this.scaleEnd) {
+	            this.inspectActivated = true;
+	        }
+	        if (slideVal == this.scaleEnd) {
+	            this.inspectActivated = false;
+	        }
+	        this.end = slideVal;
+	        this.start = slideVal - 14;
+	        this.loadGraphData();
 	    };
 	    LineGraphComponent.prototype.ngOnDestroy = function () {
 	        this.subscription.unsubscribe();
