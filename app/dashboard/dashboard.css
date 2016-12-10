@@ -27,3 +27,7 @@ tbody tr.notSelected:hover{
 .tabular.menu a.item.active{
     color:black;
 }
+
+.graphTable{
+    width:80%;
+}
