@@ -17,13 +17,13 @@
     <div class="ui active inverted dimmer" *ngIf="showLoader">
         <div class="ui loader"></div>
     </div>
-    <ctv-table #tableRef [defaultSortColumn]="'tenantName'"
+    <ctv-table #tableRef [defaultSortColumn]="'username'"
                [items]="users"
                (filtereditems)="filteredusers=$event"
                [size]="12">
         <thead>
             <tr>
-                <th><ctv-th [sortfield]="'userName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Username</ctv-th></th>
+                <th><ctv-th [sortfield]="'username'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Username</ctv-th></th>
                 <th><ctv-th [sortfield]="'role'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Role</ctv-th></th>
                 <!--<th><ctv-th [sortfield]="'tenantName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Organization</ctv-th></th>-->
             </tr>

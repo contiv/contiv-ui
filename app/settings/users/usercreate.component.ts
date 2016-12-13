@@ -60,7 +60,6 @@ export class UserCreateComponent{
                 .then((result) => {
                     component.ngZone.run(() => {
                         component.crudHelperService.stopLoader(component);
-                        component.crudHelperService.showNotification("User: Created", result.key.toString());
                     });
                     component.crudHelperService.showNotification("User: Created",result.username);
                     component.returnToUsers();

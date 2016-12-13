@@ -124,7 +124,12 @@ export class Collection extends BaseCollection {
         var promise = new Promise(function (resolve, reject) {
             if (url === undefined) url = collection.url + key + '/';
             collection.cudOperationFlag = true;
-            collection.apiService.delete(url).map((res: Response) => res.json()).toPromise()
+            collection.apiService.delete(url).map((res: Response) => {
+                if (res.statusText==='No Content')
+                    return key;
+                else
+                    return res.json();
+            }).toPromise()
                 .then(function successCallback(response) {
                     _.remove(collection.models, function (n) {
                         return n[keyname] == key;

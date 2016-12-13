@@ -23,17 +23,6 @@ export class UsersModel extends Collection {
         return user.tenantName + ':' + user.username;
     }
 
-    /*
-    create(model, url):Promise<any> {
-        var collection = this;
-        var promise = new Promise(function (resolve, reject) {
-            collection.models.push(model);
-            resolve(model);
-        });
-        return promise;
-    }
-    */
-
     create(model, url): Promise<any>{
         var url:any;
         url = ContivGlobals.USERS_ENDPOINT;
@@ -45,17 +34,6 @@ export class UsersModel extends Collection {
     }
 
     saveuser(model):Promise<any> {
-
-        /*
-        var promise = new Promise(function (resolve, reject) {
-            _.remove(collection.models, function (n) {
-                return n['key'] == model['key'];
-            });
-            collection.models.push(model);
-            resolve(model);
-        });
-        return promise;
-        */
         var collection = this;
         var url = ContivGlobals.USERS_ENDPOINT + '/' +model['username'];
         return this.apiService.patch(url, model).map((res:Response) => res.json()).toPromise()
@@ -68,21 +46,9 @@ export class UsersModel extends Collection {
             });
     }
 
-    /*
-    delete(model):Promise<any> {
-        var collection = this;
-        var promise = new Promise(function (resolve, reject) {
-            _.remove(collection.models, function (n) {
-                return n['key'] == model['key'];
-            });
-            resolve(model);
-        });
-        return promise;
-    };
-    */
 
     delete(model):Promise<any>{
-        var url = ContivGlobals + '/' + model['username'];
+        var url = ContivGlobals.USERS_ENDPOINT + '/' + model['username'];
         return super.deleteUsingKey(model.username,'username',url)
     }
 }

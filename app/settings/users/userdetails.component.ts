@@ -20,6 +20,7 @@ export class UserDetailsComponent {
                 private organizationsModel: OrganizationsModel,
                 private crudHelperService:CRUDHelperService) {
         var component = this;
+        this.user = {username: '', password: '', role: '', disable: ''};
 
         /**
          * To show edit or details screen based on the route
@@ -57,11 +58,11 @@ export class UserDetailsComponent {
     }
 
     returnToUserDetails() {
-        this.router.navigate(['../../details', this.user.key], { relativeTo: this.activatedRoute });
+        this.router.navigate(['../../details', this.user.username], { relativeTo: this.activatedRoute });
     }
 
     editUser() {
-        this.router.navigate(['../../edit', this.user.key], { relativeTo: this.activatedRoute });
+        this.router.navigate(['../../edit', this.user.username], { relativeTo: this.activatedRoute });
     }
 
     cancelEditing() {
@@ -76,7 +77,7 @@ export class UserDetailsComponent {
                 component.ngZone.run(() => {
                     component.crudHelperService.stopLoader(component);
                 });
-                component.crudHelperService.showNotification("User: Deleted", component.user.username);
+                component.crudHelperService.showNotification("User: Deleted", result);
                 component.returnToUser();
             }, function errorCallback(result) {
                 component.ngZone.run(() => {
@@ -91,12 +92,12 @@ export class UserDetailsComponent {
         if (formvalid) {
             component.crudHelperService.startLoader(component);
 
-            component.usersModel.save(component.user).then(
+            component.usersModel.saveuser(component.user).then(
                 function successCallback(result) {
                     component.ngZone.run(() => {
                         component.crudHelperService.stopLoader(component);
                     });
-                    component.crudHelperService.showNotification("User: Updated", result.key.toString());
+                    component.crudHelperService.showNotification("User: Updated", result.username.toString());
                     component.returnToUserDetails();
                 }, function errorCallback(result) {
                     component.ngZone.run(() => {

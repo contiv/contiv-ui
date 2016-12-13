@@ -39,6 +39,9 @@ import { NodeCreateComponent } from "./settings/nodes/nodecreate.component";
 import { NodeDetailsComponent } from "./settings/nodes/nodedetails.component";
 import { ContractGroupCreateComponent } from "./network_policies/contractgroupcreate.component";
 import { ContractGroupDetailsComponent } from "./network_policies/contractgroupdetails.component";
+import {AuthorizationListComponent} from "./settings/authorization/authorizationlist";
+import {AuthorizationDetailsComponent} from "./settings/authorization/authorizationdetails";
+import {AuthorizationCreateComponent} from "./settings/authorization/authorizationcreate";
 
 const routes = [
     {path: 'login', component: LoginComponent, canActivate: [AuthGuard]},
@@ -89,7 +92,12 @@ const routes = [
                     {path: 'nodes/list', component: NodeListComponent},
                     {path: 'nodes/create', component: NodeCreateComponent},
                     {path: 'nodes/details/:key', component: NodeDetailsComponent},
-                    {path: 'nodes/edit/:key', component: NodeDetailsComponent}
+                    {path: 'nodes/edit/:key', component: NodeDetailsComponent},
+                    {path: 'authorization', redirectTo: 'authorization/list', pathMatch: 'full'},
+                    {path: 'authorization/list', component: AuthorizationListComponent},
+                    {path: 'authorization/create', component: AuthorizationCreateComponent},
+                    {path: 'authorization/details/:key', component: AuthorizationDetailsComponent},
+                    {path: 'authorization/edit/:key', component: AuthorizationDetailsComponent},
                 ]
             },
 

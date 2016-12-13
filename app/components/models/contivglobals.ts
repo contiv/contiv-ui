@@ -22,6 +22,7 @@ export const ContivGlobals = {
     'APP_PROFILES_ENDPOINT': '/netmaster/api/v1/appProfiles/',
     'CONTRACTS_ENDPOINT': '/netmaster/api/v1/extContractsGroups/',
     'VISUALIZATION_ENDPOINT': '/visualization/',
+    'AUTHORIZATION_ENDPOINT': '/ccn_proxy/authorizations',
 
     //REST endpoints for VOLMASTER
     'VOLUMES_ENDPOINT': '/volmaster/volumes/',
