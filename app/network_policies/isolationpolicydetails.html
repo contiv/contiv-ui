@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<div class="ui tabular menu">
+<div class="ui tabular menu" *ngIf="mode == 'details'">
     <a class="item" [ngClass]="{active: infoselected}" (click)="infoselected=true">
         <i class="details icon"></i>
         DETAILS
