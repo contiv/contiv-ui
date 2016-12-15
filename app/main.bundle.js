@@ -1300,6 +1300,7 @@ webpackJsonp([2],{
 	        this.headers = new http_1.Headers();
 	        this.headers.append('Content-Type', 'application/json');
 	        var options = new http_1.RequestOptions({ headers: this.headers });
+	        /* Use the below code if you are calling netmaster apis through CCN_Proxy */
 	        return this.http.post(contivglobals_1.ContivGlobals.LOGIN_ENDPOINT, user, options)
 	            .map(function (res) {
 	            var s = _this.extractToken(res);
@@ -1313,6 +1314,36 @@ webpackJsonp([2],{
 	            }
 	        })
 	            .catch(function (error) { return Observable_1.Observable.throw(error); });
+	        /* This is just a mock. Use the below code if you are calling netmaster apis directly
+	        return new Observable((observer) => {
+	            if (user.username != "devops" && user.username != "admin")
+	                observer.next(false);
+	            else{
+	                var res = '';
+
+	                if (user.username == "devops" && user.password == "devops")
+	                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+
+	                if (user.username == "admin" && user.password == "admin")
+	                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+
+	                if (res == ''){
+	                    observer.next(false);
+	                }
+	                else{
+	                    this.isLoggedIn = true;
+	                    localStorage.setItem("authToken", res);
+	                    localStorage.setItem("loginTime", new Date().toLocaleString());
+	                    localStorage.setItem("lastAccessTime", new Date().toLocaleString());
+	                    this.extractBody();
+	                    observer.next(true);
+	                }
+	            }
+
+
+
+	        });
+	        */
 	    };
 	    AuthService.prototype.logout = function () {
 	        this.cleanuplocalstorage();

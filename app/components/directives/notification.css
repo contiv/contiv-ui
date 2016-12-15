@@ -45,3 +45,28 @@ p.minor{
     top:15%;
     font-size: 3em;
 }
+
+.toast_confirm.icon{
+    color: #00c905;
+}
+
+.toast_warning.icon{
+    color: #F4B400;
+}
+
+.toast_info.icon{
+    color: #008FCE;
+}
+
+
+#backgroundIcon{
+    position: absolute;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    z-index: -1;
+    display: block;
+    left: 3%;
+    top: -21%;
+    background-color: white;
+}

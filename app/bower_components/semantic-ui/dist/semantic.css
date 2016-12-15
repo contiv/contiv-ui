@@ -7962,6 +7962,18 @@ i.icons .inverted.corner.icon {
   content: "\e905";
 }
 
+.icon.toast_confirm:before {
+  content: "\ea82";
+}
+
+.icon.toast_info:before {
+  content: "\ea83";
+}
+
+.icon.toast_warning:before {
+  content: "\ea84";
+}
+
 /*******************************
          Site Overrides
 *******************************/
