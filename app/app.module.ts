@@ -11,7 +11,6 @@ import { SettingsModule } from "./settings/settings.module";
 import { NetworkModule } from "./networks/network.module";
 import { ServicelbModule } from "./service_lbs/servicelb.module";
 import { AppProfilesModule } from "./appprofiles/appprofile.module";
-import { OrganizationModule } from "./organizations/organization.module";
 import { UsersModule } from "./settings/users/users.module";
 import { NetprofilesModel } from "./components/models/netprofilesmodel";
 import { ApplicationGroupsModel } from "./components/models/applicationgroupsmodel";
@@ -39,6 +38,7 @@ import {AuthorizationModel} from "./components/models/authorizationmodel";
 import {ApplicationGroupsModule} from "./applicationgroups/applicationgroups.module";
 import appRoutes from "./app.routes";
 import {AuthorizationModule} from "./settings/authorization/authorization.module";
+import {OrganizationModule} from "./settings/tenants/organization.module";
 
 
 @NgModule({

@@ -4,13 +4,21 @@ import { CRUDHelperService } from "../../components/utils/crudhelperservice";
 import { UsersModel } from "../../components/models/usersmodel";
 import { OrganizationsModel } from "../../components/models/organizationsmodel";
 
+export interface User{
+    username: string;
+    password?: string;
+    first_name: string;
+    last_name: string;
+    disable: false;
+}
+
 @Component({
     selector: 'usercreate',
     templateUrl: 'settings/users/usercreate.html'
 })
 
 export class UserCreateComponent{
-    newUser: any = {};
+    newUser: User = {username: '', password: '', first_name: '', last_name: '', disable: false};
     organizations:any[] = [];
 
     constructor(private activatedRoute: ActivatedRoute,
@@ -35,7 +43,8 @@ export class UserCreateComponent{
             component.newUser = {
                 username: '',
                 password: '',
-                role: '',
+                first_name: '',
+                last_name: '',
                 disable: false
             }
         }

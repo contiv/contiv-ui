@@ -9,13 +9,14 @@ import {Subscription, Observable} from "rxjs";
 import {CRUDHelperService} from "../../components/utils/crudhelperservice";
 import {AuthorizationModel} from "../../components/models/authorizationmodel";
 import {Router, ActivatedRoute} from "@angular/router";
+import {Authorization} from "./authorizationcreate";
 @Component({
     selector: 'authorizationlist',
     templateUrl: 'settings/authorization/authorizationlist.html'
 })
 
 export class AuthorizationListComponent implements  OnInit{
-    public authorizations: any = [];
+    public authorizations: Array<Authorization> = [];
     public filteredauth: any = [];
     public showLoader: boolean = false
     private refresh: Subscription;

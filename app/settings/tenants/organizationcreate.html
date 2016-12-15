@@ -8,8 +8,8 @@
         </div>
         <div class="left floated twelve wide column">
             <div class="content" style="font-size: 24px">
-                <span>Organizations</span>
-                <span class="headingfontcolor"> (Create Organization)</span>
+                <span>Tenants</span>
+                <span class="headingfontcolor"> (Create Tenants)</span>
             </div>
         </div>
     </div>
@@ -23,14 +23,14 @@
                 <div [hidden]="organizationCreateFrom.valid" class="ui negative message">
                     <ul class="list">
                         <li *ngIf="newOrganizationName.errors?.required">Please enter
-                            organization name
+                            Tenant name
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="field">
-            <label for="newOrganizationName">Organization name</label>
+            <label for="newOrganizationName">Tenant name</label>
             <input type="text" id="newOrganizationName" name="newOrganizationName"
                    [(ngModel)]="organizationCreateCtrl.newOrganization.tenantName"
                    placeholder="Enter name" required #newOrganizationName="ngModel">

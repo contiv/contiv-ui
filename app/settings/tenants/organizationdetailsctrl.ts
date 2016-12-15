@@ -1,11 +1,11 @@
 import { Component, Inject, OnInit, NgZone } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import { CRUDHelperService } from "../components/utils/crudhelperservice";
-import { OrganizationsModel } from "../components/models/organizationsmodel";
+import {CRUDHelperService} from "../../components/utils/crudhelperservice";
+import {OrganizationsModel} from "../../components/models/organizationsmodel";
 
 @Component({
     selector: 'organizationdetails',
-    templateUrl: 'organizations/organizationdetails.html'
+    templateUrl: 'settings/tenants/organizationdetails.html'
 })
 
 

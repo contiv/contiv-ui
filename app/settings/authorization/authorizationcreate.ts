@@ -10,6 +10,7 @@ import {AuthorizationModel} from "../../components/models/authorizationmodel";
 
 
 export interface Authorization{
+    AuthzUUID?: string
     PrincipalName: string;
     Local: boolean;
     Role: string;

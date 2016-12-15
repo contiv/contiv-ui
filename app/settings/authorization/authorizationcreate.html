@@ -12,10 +12,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="ui active inverted dimmer" *ngIf="showLoader">
-            <div class="ui loader"></div>
-        </div>
         <div class="ui basic segment">
             <div class="field">
                 <div *ngIf="formRef.submitted">
@@ -35,21 +31,21 @@
                 </div>
             </div>
             <div class="field">
-                <label for="username">Tenant</label>
-                <select class="ui dropdown" id="username" name="username" [(ngModel)]="authorization.PrincipalName" required>
+                <label for="username">Username</label>
+                <select class="ui dropdown" id="username" name="username" [(ngModel)]="authorization.PrincipalName" required #username="ngModel">
                     <option [value]="user.username" *ngFor="let user of users">{{user.username}}</option>
                 </select>
             </div>
             <div class="field">
                 <label for="role">Role</label>
-                <select class="ui dropdown" id="role" name="role" [(ngModel)]="authorization.Role" required>
+                <select class="ui dropdown" id="role" name="role" [(ngModel)]="authorization.Role" required #role="ngModel">
                     <option value="admin">Admin</option>
                     <option value="ops">DevOps</option>
                 </select>
             </div>
             <div class="field">
                 <label for="tenant">Tenant</label>
-                <select class="ui dropdown" id="tenant" name="tenant" [(ngModel)]="authorization.TenantName" required>
+                <select class="ui dropdown" id="tenant" name="tenant" [(ngModel)]="authorization.TenantName" required #tenant="ngModel">
                     <option [value]="tenant.tenantName" *ngFor="let tenant of tenants">{{tenant.tenantName}}</option>
                 </select>
             </div>

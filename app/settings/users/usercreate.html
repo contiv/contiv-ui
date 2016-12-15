@@ -34,7 +34,7 @@
             <label for="newUserName">Username</label>
             <input type="text" id="newUserName" name="newUserName"
                    [(ngModel)]="newUser.username"
-                   placeholder="Enter name" required #newUserName="ngModel">
+                   placeholder="Enter username" required #newUserName="ngModel">
         </div>
         <div class="field">
             <label for="newUserPassword">Password</label>
@@ -43,11 +43,16 @@
                    placeholder="Enter password" required #newUserPassword="ngModel">
         </div>
         <div class="field">
-            <label for="newRole">Role</label>
-            <select class="ui dropdown" id="newRole" name="role" [(ngModel)]="newUser.role">
-                <option value="admin">Admin</option>
-                <option value="ops">DevOps</option>
-            </select>
+            <label for="newUserFirstName">First Name</label>
+            <input type="text" id="newUserFirstName" name="newUserFirstName"
+                   [(ngModel)]="newUser.first_name"
+                   placeholder="Enter first name" #newUserFirstName="ngModel">
+        </div>
+        <div class="field">
+            <label for="newUserLastName">Last Name</label>
+            <input type="text" id="newUserLastName" name="newUserLastName"
+                   [(ngModel)]="newUser.last_name"
+                   placeholder="Enter last name" #newUserLastName="ngModel">
         </div>
         <div class="field">
             <label>

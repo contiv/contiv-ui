@@ -24,7 +24,8 @@
         <thead>
             <tr>
                 <th><ctv-th [sortfield]="'username'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Username</ctv-th></th>
-                <th><ctv-th [sortfield]="'role'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Role</ctv-th></th>
+                <th><ctv-th [sortfield]="'first_name'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">First Name</ctv-th></th>
+                <th><ctv-th [sortfield]="'last_name'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Last Name</ctv-th></th>
                 <!--<th><ctv-th [sortfield]="'tenantName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Organization</ctv-th></th>-->
             </tr>
         </thead>
@@ -32,7 +33,8 @@
         <tbody *ngIf="users">
             <tr *ngFor="let user of filteredusers">
                 <td><a [routerLink]="['../details', user.username]">{{user.username}}</a></td>
-                <td>{{user.role}}</td>
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
                 <!--<td>{{user.tenantName}}</td>-->
             </tr>
         </tbody>

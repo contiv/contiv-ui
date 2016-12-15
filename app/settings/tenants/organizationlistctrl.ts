@@ -4,14 +4,14 @@
 
 import {Component, OnInit, OnDestroy, Inject, NgZone} from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import {CRUDHelperService} from "../components/utils/crudhelperservice";
 import {Observable, Subscription} from "rxjs";
-import {OrganizationsModel} from "../components/models/organizationsmodel";
+import {CRUDHelperService} from "../../components/utils/crudhelperservice";
+import {OrganizationsModel} from "../../components/models/organizationsmodel";
 
 
 @Component({
     selector: 'organizationlist',
-    templateUrl: 'organizations/organizationlist.html'
+    templateUrl: 'settings/tenants/organizationlist.html'
 })
 
 export class OrganizationListComponent implements OnInit, OnDestroy{

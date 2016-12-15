@@ -8,13 +8,14 @@ import {AuthorizationModel} from "../../components/models/authorizationmodel";
 import {CRUDHelperService} from "../../components/utils/crudhelperservice";
 import {Router, ActivatedRoute} from "@angular/router";
 import {OrganizationsModel} from "../../components/models/organizationsmodel";
+import {Authorization} from "./authorizationcreate";
 @Component({
     selector: 'authorizationdetails',
     templateUrl: 'settings/authorization/authorizationdetails.html'
 })
 
 export class AuthorizationDetailsComponent implements OnInit{
-    authorization: any = {AuthzUUID: '', PrincipalName: '', Local: false, Role: '', TenantName: ''};
+    authorization: Authorization = {AuthzUUID: '', PrincipalName: '', Local: false, Role: '', TenantName: ''};
     mode: string = 'details';
     showLoader: boolean = false;
     tenants: any = [];

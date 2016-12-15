@@ -3,13 +3,14 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { UsersModel } from "../../components/models/usersmodel";
 import { CRUDHelperService } from "../../components/utils/crudhelperservice";
 import { OrganizationsModel } from "../../components/models/organizationsmodel";
+import {User} from "./usercreate.component";
 
 @Component({
     selector: 'userdetails',
     templateUrl: 'settings/users/userdetails.html'
 })
 export class UserDetailsComponent {
-    user:any = {};
+    user:User = {username: '', first_name: '', last_name: '', disable: false};
     organizations:any[] = [];
     mode:string = 'details';
 
@@ -20,7 +21,7 @@ export class UserDetailsComponent {
                 private organizationsModel: OrganizationsModel,
                 private crudHelperService:CRUDHelperService) {
         var component = this;
-        this.user = {username: '', password: '', role: '', disable: ''};
+        this.user = {username: '', first_name: '', last_name: '', disable: false};
 
         /**
          * To show edit or details screen based on the route
