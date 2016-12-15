@@ -25,12 +25,12 @@
                 </div>
             </div>
             <button *ngSwitchCase="'edit'" class="ui disabled button"
-                    (click)="editAuthorization()">
+                    (click)="editUser()">
                 <i class="edit icon"></i>
                 Edit
             </button>
             <button *ngSwitchCase="'details'" class="ui basic button"
-                    (click)="editAuthorization()">
+                    (click)="editUser()">
                 <i class="edit icon"></i>
                 Edit
             </button>
@@ -70,19 +70,23 @@
                       role="form"
                       *ngSwitchCase="'edit'"
                       (submit)="saveUser(formRef.valid)" novalidate #formRef="ngForm">
-
+                    <div class="field">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname"
+                               [(ngModel)]="user.first_name"
+                               placeholder="Enter First Name" #firstname="ngModel">
+                    </div>
+                    <div class="field">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname"
+                               [(ngModel)]="user.last_name"
+                               placeholder="Enter Last Name" #lastname="ngModel">
+                    </div>
                     <div class="field">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password"
                                [(ngModel)]="user.password"
                                placeholder="Reset Password" #password="ngModel">
-                    </div>
-                    <div class="field">
-                        <label for="role">Role</label>
-                        <select class="ui dropdown" id="role" name="role" [(ngModel)]="user.role">
-                            <option value="admin">Admin</option>
-                            <option value="ops">DevOps</option>
-                        </select>
                     </div>
                     <div class="field">
                         <label>

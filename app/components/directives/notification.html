@@ -1,5 +1,5 @@
 <div class="ui small message notify" id="notificationMessage"
-     [ngStyle]="{opacity: 0.95}"
+     [ngStyle]="{opacity: 0.90}"
      [ngClass]="{   ready: notificationType==NotificationType.confirm,
                     minor: notificationType==NotificationType.alert,
                     info: notificationType==NotificationType.info}">
@@ -11,15 +11,6 @@
                                                         toast_info: notificationType==NotificationType.info}">
                 <span id="backgroundIcon"></span>
             </i>
-            <!--
-            <i id="notifyIcon" class="icon" [ngClass]="{ready: notificationType==NotificationType.confirm,
-                                                        minor: notificationType==NotificationType.alert,
-                                                        info: notificationType==NotificationType.info}">
-                <span class="path1"></span>
-                <span class="path2"></span>
-                <span class="path3"></span>
-            </i>
-            -->
         </div>
         <div class="ui left aligned fourteen wide column" id="notificationText">
             <div class="header" id="header2">

@@ -81,10 +81,10 @@ export class AuthService {
                 var res = '';
 
                 if (user.username == "devops" && user.password == "devops")
-                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiRGV2T3BzIn0=.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDgxODAwNDc0LCJpc3MiOiJjY25fcHJveHkiLCJyb2xlIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluIn0.U9-yhzl-Q7BKYIROdNf-BwtvXVukTpJL-_Z0Jsddfmc";
 
                 if (user.username == "admin" && user.password == "admin")
-                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBTExfQ0xVU1RFUlNfQVVUSCI6dHJ1ZSwiZXhwIjoxNDk4NjQ3NjIxLCJyb2xlIjoiU3lzQWRtaW4ifQ==.WXE_VtvyE_pg8paoVDwVIavZNHB-LmBLGJgY4REgvYk";
+                    var res = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZXhwIjoxNDgxODAwNDc0LCJpc3MiOiJjY25fcHJveHkiLCJyb2xlIjoib3BzIiwidXNlcm5hbWUiOiJvcHMifQ==.U9-yhzl-Q7BKYIROdNf-BwtvXVukTpJL-_Z0Jsddfmc";
 
                 if (res == ''){
                     observer.next(false);

@@ -10,7 +10,7 @@ import {User} from "./usercreate.component";
     templateUrl: 'settings/users/userdetails.html'
 })
 export class UserDetailsComponent {
-    user:User = {username: '', first_name: '', last_name: '', disable: false};
+    user:User = {username: '', password: '', first_name: '', last_name: '', disable: false};
     organizations:any[] = [];
     mode:string = 'details';
 
