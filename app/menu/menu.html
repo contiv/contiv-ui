@@ -39,35 +39,35 @@
         <a class="item" [routerLink]="['dashboard']" routerLinkActive="active">
             Dashboard
         </a>
-        
-        <a class="item" [routerLink]="['appprofiles']" routerLinkActive="active">
-            Application Profiles (ACI)
-        </a>
 
-        <a class="item" [routerLink]="['applicationgroups']" routerLinkActive="active">
-            Application Groups
-        </a>
-
-        <a class="item" [routerLink]="['networkpolicies']" routerLinkActive="active">
-            Network Policies
-        </a>
-
-        <a class="item" [routerLink]="['servicelbs']" routerLinkActive="active">
-            Service Load Balancers
+        <a class="item" [routerLink]="['organizations']" routerLinkActive="active">
+            Tenants
         </a>
 
         <a class="item" [routerLink]="['networks']" routerLinkActive="active">
             Networks
         </a>
 
+        <a class="item" [routerLink]="['servicelbs']" routerLinkActive="active">
+            Service Load Balancers
+        </a>
+
+        <a class="item" [routerLink]="['applicationgroups']" routerLinkActive="active">
+            Application Groups
+        </a>
+
+        <a class="item" [routerLink]="['appprofiles']" routerLinkActive="active">
+            ACI Application Profiles
+        </a>
+
+        <a class="item" [routerLink]="['networkpolicies']" routerLinkActive="active">
+            Network Policies
+        </a>
+
         <a class="item" [routerLink]="['settings']" routerLinkActive="active" *auth="'admin'">
             Settings
         </a>
     </span>
-    <!-- <a class="white item" ui-sref="contiv.menu.visualization.list()" ui-sref-active="{'active':'contiv.menu.visualization'}">
-        <i class="loadbalancer icon"></i>
-        App Connectivity Graph
-    </a> -->
 </div>
 
 <div id="pageContent">
