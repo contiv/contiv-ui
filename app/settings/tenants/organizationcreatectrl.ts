@@ -44,14 +44,14 @@ export class OrganizationCreateComponent{
                 .then((result) => {
                     organizationCreateCtrl.ngZone.run(() => {
                         organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
-                        organizationCreateCtrl.crudHelperService.showNotification("Organization: Created", result.key);
+                        organizationCreateCtrl.crudHelperService.showNotification("Tenant: Created", result.key);
                     });
                     organizationCreateCtrl.returnToOrganizations();
                 }, (error) => {
                     organizationCreateCtrl.ngZone.run(() => {
                         organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
                     });
-                    organizationCreateCtrl.crudHelperService.showServerError("Organization: Create failed",error);
+                    organizationCreateCtrl.crudHelperService.showServerError("Tenant: Create failed",error);
                 });
         }
     }

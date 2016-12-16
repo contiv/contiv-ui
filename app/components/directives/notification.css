@@ -21,15 +21,13 @@
 
 #notificationText #header2, #notificationText p, #notificationText span{
     color: white;
+    font-family: CiscoSansBold;
+    font-size:14px;
 }
 
 .close.icon{
     color:white;
     padding-right: 20px;
-}
-
-p{
-    font-weight: bold;
 }
 
 p.ready, p.info{

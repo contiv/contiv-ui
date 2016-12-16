@@ -19,7 +19,6 @@ export class UserDetailsComponent {
                 private router: Router,
                 private ngZone: NgZone,
                 private usersModel:UsersModel,
-                private organizationsModel: OrganizationsModel,
                 private crudHelperService:CRUDHelperService) {
         var component = this;
         this.user = {username: '', first_name: '', last_name: '', disable: false};
@@ -35,15 +34,6 @@ export class UserDetailsComponent {
             }
         }
 
-        /**
-         * Get organizations.
-         */
-        function getOrganizations() {
-            organizationsModel.get(false).then(function (result) {
-                component.organizations = result;
-            });
-        }
-
         component.crudHelperService.stopLoader(component);
 
         component.usersModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'username')
@@ -51,7 +41,6 @@ export class UserDetailsComponent {
                 component.user = user;
             });
 
-        //getOrganizations();
         setMode();
     }
 

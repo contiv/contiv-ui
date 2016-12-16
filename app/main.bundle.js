@@ -798,7 +798,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 32:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2524,7 +2524,7 @@ webpackJsonp([2],{
 	var networksmodel_1 = __webpack_require__(48);
 	var applicationgroupsmodel_1 = __webpack_require__(47);
 	var crudhelperservice_1 = __webpack_require__(7);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var ApplicationGroupCreateComponent = (function () {
 	    function ApplicationGroupCreateComponent(activatedRoute, router, ngZone, organizationsModel, networksModel, applicationGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -2827,7 +2827,7 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var appprofilesmodel_1 = __webpack_require__(97);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var AppProfileCreateComponent = (function () {
 	    function AppProfileCreateComponent(activatedRoute, router, ngZone, organizationsModel, crudHelperService, appProfilesModel) {
 	        this.activatedRoute = activatedRoute;
@@ -3727,7 +3727,7 @@ webpackJsonp([2],{
 	var netprofilesmodel_1 = __webpack_require__(77);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var networkpoliciestabsctrl_1 = __webpack_require__(55);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var BandwidthPolicyCreateComponent = (function () {
 	    function BandwidthPolicyCreateComponent(activatedRoute, router, ngZone, organizationsModel, netprofilesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -3931,7 +3931,7 @@ webpackJsonp([2],{
 	var contractgroupsmodel_1 = __webpack_require__(76);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var networkpoliciestabsctrl_1 = __webpack_require__(55);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var ContractGroupCreateComponent = (function () {
 	    function ContractGroupCreateComponent(activatedRoute, router, ngZone, organizationsModel, contractGroupsModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -4103,7 +4103,7 @@ webpackJsonp([2],{
 	var policiesmodel_1 = __webpack_require__(63);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var networkpoliciestabsctrl_1 = __webpack_require__(55);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var IsolationPolicyCreateComponent = (function () {
 	    function IsolationPolicyCreateComponent(activatedRoute, router, ngZone, organizationsModel, policiesModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
@@ -4593,7 +4593,7 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var contivglobals_1 = __webpack_require__(12);
 	var notification_1 = __webpack_require__(96);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var NetworkCreateComponent = (function () {
 	    function NetworkCreateComponent(router, activatedRoute, ngZone, networksModel, organizationsModel, crudHelperService) {
 	        this.router = router;
@@ -4876,7 +4876,7 @@ webpackJsonp([2],{
 	var servicelbsmodel_1 = __webpack_require__(72);
 	var networksmodel_1 = __webpack_require__(48);
 	var router_1 = __webpack_require__(5);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var _ = __webpack_require__(27);
 	var ServicelbCreateComponent = (function () {
 	    function ServicelbCreateComponent(router, activatedRoute, ngZone, organizationsModel, servicelbsModel, crudHelperService, networksModel) {
@@ -5394,7 +5394,7 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var usersmodel_1 = __webpack_require__(78);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var authorizationmodel_1 = __webpack_require__(98);
 	var AuthorizationCreateComponent = (function () {
 	    function AuthorizationCreateComponent(activatedRoute, router, crudHelperService, authorizationModel, organizationsModel, usersModel) {
@@ -5489,7 +5489,7 @@ webpackJsonp([2],{
 	var authorizationmodel_1 = __webpack_require__(98);
 	var crudhelperservice_1 = __webpack_require__(7);
 	var router_1 = __webpack_require__(5);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var AuthorizationDetailsComponent = (function () {
 	    function AuthorizationDetailsComponent(authorizationModel, crudHelperService, router, activatedRoute, organizationModel) {
 	        this.authorizationModel = authorizationModel;
@@ -6052,7 +6052,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var crudhelperservice_1 = __webpack_require__(7);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var OrganizationCreateComponent = (function () {
 	    function OrganizationCreateComponent(activatedRoute, router, crudHelperService, organizationsModel, ngZone) {
 	        this.activatedRoute = activatedRoute;
@@ -6081,14 +6081,14 @@ webpackJsonp([2],{
 	                .then(function (result) {
 	                organizationCreateCtrl.ngZone.run(function () {
 	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
-	                    organizationCreateCtrl.crudHelperService.showNotification("Organization: Created", result.key);
+	                    organizationCreateCtrl.crudHelperService.showNotification("Tenant: Created", result.key);
 	                });
 	                organizationCreateCtrl.returnToOrganizations();
 	            }, function (error) {
 	                organizationCreateCtrl.ngZone.run(function () {
 	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
 	                });
-	                organizationCreateCtrl.crudHelperService.showServerError("Organization: Create failed", error);
+	                organizationCreateCtrl.crudHelperService.showServerError("Tenant: Create failed", error);
 	            });
 	        }
 	    };
@@ -6123,7 +6123,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var router_1 = __webpack_require__(5);
 	var crudhelperservice_1 = __webpack_require__(7);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var OrganizationDetailsComponent = (function () {
 	    function OrganizationDetailsComponent(activatedRoute, router, crudHelperService, organizationsModel, ngZone) {
 	        this.activatedRoute = activatedRoute;
@@ -6161,11 +6161,11 @@ webpackJsonp([2],{
 	        this.organizationsModel.delete(this.organization)
 	            .then(function (result) {
 	            organizationDetailsCtrl.showLoader = false;
-	            organizationDetailsCtrl.crudHelperService.showNotification("Organization: Deleted", result);
+	            organizationDetailsCtrl.crudHelperService.showNotification("Tenant: Deleted", result);
 	            organizationDetailsCtrl.returnToOrganization();
 	        }, function (error) {
 	            organizationDetailsCtrl.showLoader = false;
-	            organizationDetailsCtrl.crudHelperService.showServerError("Organization: Delete failed", error);
+	            organizationDetailsCtrl.crudHelperService.showServerError("Tenant: Delete failed", error);
 	        });
 	    };
 	    OrganizationDetailsComponent = __decorate([
@@ -6203,7 +6203,7 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var rxjs_1 = __webpack_require__(17);
 	var crudhelperservice_1 = __webpack_require__(7);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var OrganizationListComponent = (function () {
 	    function OrganizationListComponent(activatedRoute, router, organizationsModel, crudHelperService, ngZone) {
 	        var _this = this;
@@ -6354,15 +6354,13 @@ webpackJsonp([2],{
 	var router_1 = __webpack_require__(5);
 	var usersmodel_1 = __webpack_require__(78);
 	var crudhelperservice_1 = __webpack_require__(7);
-	var organizationsmodel_1 = __webpack_require__(32);
 	var contivglobals_1 = __webpack_require__(12);
 	var UserDetailsComponent = (function () {
-	    function UserDetailsComponent(activatedRoute, router, ngZone, usersModel, organizationsModel, crudHelperService) {
+	    function UserDetailsComponent(activatedRoute, router, ngZone, usersModel, crudHelperService) {
 	        this.activatedRoute = activatedRoute;
 	        this.router = router;
 	        this.ngZone = ngZone;
 	        this.usersModel = usersModel;
-	        this.organizationsModel = organizationsModel;
 	        this.crudHelperService = crudHelperService;
 	        this.user = { username: '', password: '', first_name: '', last_name: '', disable: false };
 	        this.organizations = [];
@@ -6380,20 +6378,11 @@ webpackJsonp([2],{
 	                component.mode = 'details';
 	            }
 	        }
-	        /**
-	         * Get organizations.
-	         */
-	        function getOrganizations() {
-	            organizationsModel.get(false).then(function (result) {
-	                component.organizations = result;
-	            });
-	        }
 	        component.crudHelperService.stopLoader(component);
 	        component.usersModel.getModelByKey(activatedRoute.snapshot.params['key'], false, 'username')
 	            .then(function (user) {
 	            component.user = user;
 	        });
-	        //getOrganizations();
 	        setMode();
 	    }
 	    UserDetailsComponent.prototype.returnToUser = function () {
@@ -6449,10 +6438,10 @@ webpackJsonp([2],{
 	            selector: 'userdetails',
 	            templateUrl: 'settings/users/userdetails.html'
 	        }), 
-	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _c) || Object, (typeof (_d = typeof usersmodel_1.UsersModel !== 'undefined' && usersmodel_1.UsersModel) === 'function' && _d) || Object, (typeof (_e = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _e) || Object, (typeof (_f = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _f) || Object])
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _c) || Object, (typeof (_d = typeof usersmodel_1.UsersModel !== 'undefined' && usersmodel_1.UsersModel) === 'function' && _d) || Object, (typeof (_e = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _e) || Object])
 	    ], UserDetailsComponent);
 	    return UserDetailsComponent;
-	    var _a, _b, _c, _d, _e, _f;
+	    var _a, _b, _c, _d, _e;
 	}());
 	exports.UserDetailsComponent = UserDetailsComponent;
 	
@@ -6592,7 +6581,7 @@ webpackJsonp([2],{
 	var netprofilesmodel_1 = __webpack_require__(77);
 	var applicationgroupsmodel_1 = __webpack_require__(47);
 	var networksmodel_1 = __webpack_require__(48);
-	var organizationsmodel_1 = __webpack_require__(32);
+	var organizationsmodel_1 = __webpack_require__(34);
 	var policiesmodel_1 = __webpack_require__(63);
 	var rulesmodel_1 = __webpack_require__(119);
 	var servicelbsmodel_1 = __webpack_require__(72);

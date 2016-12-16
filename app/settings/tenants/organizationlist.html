@@ -5,7 +5,7 @@
     <div class="right floated right aligned four wide column">
         <button class="ui blue button" (click)="create()" *auth="'admin'">
             <i class="add icon"></i>
-            Create Tenants
+            Create Tenant
         </button>
     </div>
 </div>
@@ -34,7 +34,7 @@
 
         <tbody *ngIf="!organizationsListCtrl.organizations">
             <tr>
-                <td colspan="2">No organizations found. Would you like to <a href="javascript: void(0);" (click)="create()">create one?</a></td>
+                <td colspan="2">No tenant found. Would you like to <a href="javascript: void(0);" (click)="create()">create one?</a></td>
             </tr>
         </tbody>
 

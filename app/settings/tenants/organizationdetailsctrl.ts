@@ -55,11 +55,11 @@ export class OrganizationDetailsComponent implements OnInit{
         this.organizationsModel.delete(this.organization)
             .then((result) => {
                 organizationDetailsCtrl.showLoader = false;
-                organizationDetailsCtrl.crudHelperService.showNotification("Organization: Deleted", result);
+                organizationDetailsCtrl.crudHelperService.showNotification("Tenant: Deleted", result);
                 organizationDetailsCtrl.returnToOrganization();
             }, (error) => {
                 organizationDetailsCtrl.showLoader = false;
-                organizationDetailsCtrl.crudHelperService.showServerError("Organization: Delete failed", error);
+                organizationDetailsCtrl.crudHelperService.showServerError("Tenant: Delete failed", error);
             });
     }
 }
