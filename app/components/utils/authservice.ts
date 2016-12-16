@@ -125,7 +125,6 @@ export class AuthService {
 
     extractToken(res: Response): boolean {
         /* CCN_Proxy is now sending the token as part of the body */
-        //var xAuthToken = res.headers.get("x-auth-token");
 
         var xAuthToken = res.json()['token'];
         if (xAuthToken.length > 0) {

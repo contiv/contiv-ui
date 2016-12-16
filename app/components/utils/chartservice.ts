@@ -26,12 +26,6 @@ export class ChartService{
         this.graphData = {0: {}, 1: {}};
         this.source = new Subject<any>();
         this.stream = this.source.asObservable();
-        /*
-        if (this.authService.isLoggedIn){
-            this.getInspectData(ContivGlobals.NETWORKS_ENDPOINT, ContivGlobals.NETWORKS_INSPECT_ENDPOINT, EndpointType.Network);
-            this.getInspectData(ContivGlobals.APPLICATIONGROUPS_ENDPOINT, ContivGlobals.APPLICATIONGROUPS_INSPECT_ENDPOINT, EndpointType.ApplicationGroup);
-        }
-        */
         this.startpolling();
     }
 
@@ -88,11 +82,6 @@ export class ChartService{
                 this.getInspectData(ContivGlobals.NETWORKS_ENDPOINT, ContivGlobals.NETWORKS_INSPECT_ENDPOINT, EndpointType.Network);
                 this.getInspectData(ContivGlobals.APPLICATIONGROUPS_ENDPOINT, ContivGlobals.APPLICATIONGROUPS_INSPECT_ENDPOINT, EndpointType.ApplicationGroup);
             }
-            /*
-            else{
-                this.cleanBuffer();
-            }
-            */
         });
     }
 }

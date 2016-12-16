@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { CRUDHelperService } from "../../components/utils/crudhelperservice";
 import { UsersModel } from "../../components/models/usersmodel";
 import { OrganizationsModel } from "../../components/models/organizationsmodel";
-import {AuthorizationModel} from "../../components/models/authorizationmodel";
+import { AuthorizationModel } from "../../components/models/authorizationmodel";
 
 
 export interface Authorization{
@@ -77,9 +77,6 @@ export class AuthorizationCreateComponent implements OnInit{
         var authCreateComp = this;
         if(formvalid){
             this.crudHelperService.startLoader(this);
-            if(this.authorization.Local == true){
-                console.log("true");
-            }
             this.authorizationModel.create(this.authorization)
                 .then((result) => {
                     authCreateComp.crudHelperService.stopLoader(authCreateComp);

@@ -3,7 +3,8 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { UsersModel } from "../../components/models/usersmodel";
 import { CRUDHelperService } from "../../components/utils/crudhelperservice";
 import { OrganizationsModel } from "../../components/models/organizationsmodel";
-import {User} from "./usercreate.component";
+import { User } from "./usercreate.component";
+import { ContivGlobals } from "../../components/models/contivglobals";
 
 @Component({
     selector: 'userdetails',
@@ -73,7 +74,9 @@ export class UserDetailsComponent {
     deleteUser() {
         var component = this;
         component.crudHelperService.startLoader(component);
-        component.usersModel.delete(component.user).then(
+        var username = component.user['username'];
+        var url = ContivGlobals.USERS_ENDPOINT + '/' + username
+        component.usersModel.deleteUsingKey(username, 'username', url).then(
             function successCallback(result) {
                 component.ngZone.run(() => {
                     component.crudHelperService.stopLoader(component);
@@ -93,7 +96,7 @@ export class UserDetailsComponent {
         if (formvalid) {
             component.crudHelperService.startLoader(component);
 
-            component.usersModel.saveuser(component.user).then(
+            component.usersModel.save(component.user).then(
                 function successCallback(result) {
                     component.ngZone.run(() => {
                         component.crudHelperService.stopLoader(component);

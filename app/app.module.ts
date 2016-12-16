@@ -34,11 +34,11 @@ import { AuthGuard } from "./components/utils/authguard";
 import { ApiService } from "./components/utils/apiservice";
 import { FirstrunWizardModule } from "./firstrunwizard/firstrunwizard.module";
 import { ChartService } from "./components/utils/chartservice";
-import {AuthorizationModel} from "./components/models/authorizationmodel";
-import {ApplicationGroupsModule} from "./applicationgroups/applicationgroups.module";
-import appRoutes from "./app.routes";
-import {AuthorizationModule} from "./settings/authorization/authorization.module";
-import {OrganizationModule} from "./settings/tenants/organization.module";
+import { AuthorizationModel } from "./components/models/authorizationmodel";
+import { ApplicationGroupsModule } from "./applicationgroups/applicationgroups.module";
+import   appRoutes  from "./app.routes";
+import { AuthorizationModule } from "./settings/authorization/authorization.module";
+import { OrganizationModule } from "./settings/tenants/organization.module";
 
 
 @NgModule({
@@ -72,7 +72,6 @@ import {OrganizationModule} from "./settings/tenants/organization.module";
         RulesModel,
         ServicelbsModel,
         UsersModel,
-        AuthorizationModule,
         AppProfilesModel,
         BgpsModel,
         ContractGroupsModel,

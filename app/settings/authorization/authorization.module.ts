@@ -6,9 +6,9 @@ import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { DirectivesModule } from "../../components/directives/directives.module";
-import {AuthorizationListComponent} from "./authorizationlist";
-import {AuthorizationDetailsComponent} from "./authorizationdetails";
-import {AuthorizationCreateComponent} from "./authorizationcreate";
+import { AuthorizationListComponent } from "./authorizationlist";
+import { AuthorizationDetailsComponent } from "./authorizationdetails";
+import { AuthorizationCreateComponent } from "./authorizationcreate";
 
 @NgModule({
     imports: [

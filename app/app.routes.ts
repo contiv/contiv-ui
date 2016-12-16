@@ -36,12 +36,12 @@ import { NodeCreateComponent } from "./settings/nodes/nodecreate.component";
 import { NodeDetailsComponent } from "./settings/nodes/nodedetails.component";
 import { ContractGroupCreateComponent } from "./network_policies/contractgroupcreate.component";
 import { ContractGroupDetailsComponent } from "./network_policies/contractgroupdetails.component";
-import {AuthorizationListComponent} from "./settings/authorization/authorizationlist";
-import {AuthorizationDetailsComponent} from "./settings/authorization/authorizationdetails";
-import {AuthorizationCreateComponent} from "./settings/authorization/authorizationcreate";
-import {OrganizationListComponent} from "./settings/tenants/organizationlistctrl";
-import {OrganizationCreateComponent} from "./settings/tenants/organizationcreatectrl";
-import {OrganizationDetailsComponent} from "./settings/tenants/organizationdetailsctrl";
+import { AuthorizationListComponent } from "./settings/authorization/authorizationlist";
+import { AuthorizationDetailsComponent } from "./settings/authorization/authorizationdetails";
+import { AuthorizationCreateComponent } from "./settings/authorization/authorizationcreate";
+import { OrganizationListComponent } from "./settings/tenants/organizationlistctrl";
+import { OrganizationCreateComponent } from "./settings/tenants/organizationcreatectrl";
+import { OrganizationDetailsComponent } from "./settings/tenants/organizationdetailsctrl";
 
 const routes = [
     {path: 'login', component: LoginComponent, canActivate: [AuthGuard]},

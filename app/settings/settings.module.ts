@@ -13,8 +13,6 @@ import { NodeCreateComponent } from "./nodes/nodecreate.component";
 import { NodeDetailsComponent } from "./nodes/nodedetails.component";
 import { NodeInfoComponent } from "./nodes/nodeinfo.component";
 import { NodeStatsComponent } from "./nodes/nodestats.component";
-import {AuthorizationListComponent} from "./authorization/authorizationlist";
-import {AuthorizationDetailsComponent} from "./authorization/authorizationdetails";
 
 @NgModule({
     imports: [
