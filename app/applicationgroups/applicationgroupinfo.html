@@ -1,5 +1,6 @@
+<!-- <<<<<<< HEAD
 <div class="ui basic segment" [ngClass]="{loading: showLoader}">
-    <div><h4 class="ui header">Basic Settings</h4></div>  <!-- Top Margin is less,When h4 is first child in div -->
+    <div><h4 class="ui header">Basic Settings</h4></div>
     <table class="ui very basic selectable table">
         <tbody>
         <tr>
@@ -16,22 +17,53 @@
         </tr>
         </tbody>
     </table>
+=======
+ design application -->
 
-    <div class="ui section divider" style="margin-top: 30px"></div>
+<div class="ui row ">
+    <div class="ui sixteen wide column">
+        <div class="ui basic segment" [ngClass]="{loading: showLoader}">
+            <table class="ui very basic selectable table">
+                <tbody>
+                <tr>
+                    <td class="two wide column key"><strong>Name</strong></td>
+                    <td class="value">{{applicationGroup.groupName}}</td>
+                </tr>
+                <tr>
+                    <td class="three wide column">Tenant</td>
+                    <td>{{applicationGroup.tenantName}}</td>
+                </tr>
+                <tr>
+                    <td class="two wide column key"><strong>Network</strong></td>
+                    <td class="value">{{applicationGroup.networkName}}</td>
+                </tr>
+                </tbody>
+            </table>
 
-    <ctv-collapsible title="Isolation Policies">
-        <ctv-isolationpolicy [mode]="mode" [applicationgroup]="applicationGroup"></ctv-isolationpolicy>
-    </ctv-collapsible>
+        </div>
+    </div>
+</div>
 
-    <div class="ui section divider"></div>
+<div class="ui row ">
+    <div class="ui sixteen wide column">
+        <ctv-collapsible title="Isolation Policies Applied" class="policySelection">
+            <ctv-isolationpolicy [mode]="mode" [applicationgroup]="applicationGroup"></ctv-isolationpolicy>
+        </ctv-collapsible>
+    </div>
+</div>
 
-    <ctv-collapsible title="Bandwidth Policies">
-        <ctv-bandwidthpolicy [mode]="mode" [applicationgroup]="applicationGroup"></ctv-bandwidthpolicy>
-    </ctv-collapsible>
+<div class="ui row ">
+    <div class="ui sixteen wide column">
+        <ctv-collapsible title="Bandwidth Policies Applied" class="policySelection">
+            <ctv-bandwidthpolicy [mode]="mode" [applicationgroup]="applicationGroup"></ctv-bandwidthpolicy>
+        </ctv-collapsible>
+    </div>
+</div>
 
-    <div class="ui section divider"></div>
-
-    <ctv-collapsible title="External Contract Groups (ACI)">
-        <ctv-contractgroup [mode]="mode" [applicationgroup]="applicationGroup"></ctv-contractgroup>
-    </ctv-collapsible>
+<div class="ui row ">
+    <div class="ui sixteen wide column">
+         <ctv-collapsible title="External Contract Groups (ACI)">
+            <ctv-contractgroup [mode]="mode" [applicationgroup]="applicationGroup"></ctv-contractgroup>
+        </ctv-collapsible>
+    </div>
 </div>

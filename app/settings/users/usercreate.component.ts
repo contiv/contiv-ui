@@ -37,7 +37,7 @@ export class UserCreateComponent{
                 firstName: '',
                 lastName: '',
                 role: 'DevOps',
-                enabled: false,
+                enabled: true,
                 tenantName: 'default'//TODO: Remove hardcoded tenant.
             };
         }

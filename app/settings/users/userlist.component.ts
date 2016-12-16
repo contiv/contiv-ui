@@ -27,6 +27,8 @@ export class UserListComponent implements OnInit, OnDestroy{
     ngOnInit(){
         this.crudHelperService.startLoader(this);
         this.getUsers(false);
+        // update breadcrumbs
+        $('.crumb2').html('User Management')
     }
 
     getUsers(reload: boolean){

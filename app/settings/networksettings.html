@@ -2,6 +2,7 @@
     <div class="ui active inverted dimmer" *ngIf="showLoader">
         <div class="ui loader"></div>
     </div>
+
     <div><h4 class="ui header">Global Operational State</h4></div>  <!-- Top Margin is less,When h4 is first child in div -->
     <table class="ui very basic selectable table">
         <tbody>
@@ -30,7 +31,7 @@
 
     <div class="ui section divider"></div>
 
-    <ctv-collapsible [title]="'Network Settings'">
+    <ctv-collapsible [title]="'Network Defaults'">
         <networksettingcomp [firstRunWiz]="false" (updateNetDef)="updateNetworkSettings($event)" [setting]="setting"></networksettingcomp>
     </ctv-collapsible>
 
@@ -39,4 +40,8 @@
     <ctv-collapsible [title]="'ACI Settings'">
         <acisettingcomp [firstRunWiz]="false" (updateAciDef)="updateAciSetting($event)" [setting]="aciSetting"></acisettingcomp>
     </ctv-collapsible>
+
 </div>
+
+<ctv-error *ngIf="showServerError" header="Error updating settings" [error]="serverErrorMessage">
+</ctv-error>
