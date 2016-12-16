@@ -6,6 +6,7 @@
     background: #5d5d5d;
     padding-left: 0px;
     padding-right: 40px;
+    opacity: 0.85;
 }
 
 #notificationMessage.ready, #notificationMessage.info{
