@@ -57,43 +57,16 @@
         </div>
     </div>
 
-<!-- <<<<<<< HEAD
-    <div *ngSwitchCase="'details'">
-        <h4 class="ui header">Basic Settings</h4>
-        <table class="ui very basic selectable table">
-            <tbody>
-            <tr>
-                <td class="ctv-header three wide column">Profile Name</td>
-                <td>{{policy.profileName}}</td>
-            </tr>
-            <tr>
-                <td class="ctv-header three wide column">Tenant</td>
-                <td>{{policy.tenantName}}</td>
-            </tr>
-            <tr>
-                <td class="ctv-header three wide column">Bandwidth</td>
-                <td>{{policy.bandwidth}}</td>
-            </tr>
-            <tr>
-                <td class="ctv-header three wide column">DSCP</td>
-                <td>{{policy.DSCP}}</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-======= -->
     <div class="ui row">
         <div class="ui sixteen wide column">
-<!-- >>>>>>> design application -->
 
             <div [ngSwitch]="mode" class="ui basic segment">
                 <div class="ui active inverted dimmer" *ngIf="showLoader">
                     <div class="ui loader"></div>
                 </div>
 
-<!-- <<<<<<< HEAD -->
                 <div *ngSwitchCase="'details'">
-                    <h4 class="ui header">Basic Settings</h4>
+
                     <table class="ui very basic selectable table">
                         <tbody>
                         <tr>
@@ -115,42 +88,6 @@
                         </tbody>
                     </table>
                 </div>
-
-            <!-- <div style="margin-top: 20px" class="fields">
-                <div class="thirteen wide field">
-                    <label for="bandwidthNumber">Bandwidth </label>
-                    <input #bandwidthNumberRef="ngModel" type="number" id="bandwidthNumber" name="bandwidthNumber"
-                           [(ngModel)]="policy.bandwidthNumber" placeholder="Enter bandwidth" required>
-                </div>
-                <div class="three wide field">
-                    <label for="bandwidthUnit">Unit</label>
-                    <select #bandwidthUnitRef="ngModel" name="bandwidthUnit" id="bandwidthUnit" class="ui dropdown"
-                            [(ngModel)]="policy.bandwidthUnit" required>
-                        <option value="">-- Please select unit --</option>
-                        <option value="kbps">kbps</option>
-                        <option value="mbps">mbps</option>
-                        <option value="gbps">gbps</option>
-                    </select> -->
-<!-- =======
-                <div *ngSwitchCase="'details'">
-                    <table class="ui very basic selectable table">
-                        <tbody>
-                        <tr>
-                            <td class="ctv-header three wide column key">Profile Name</td>
-                            <td class="value">{{policy.profileName}}</td>
-                        </tr>
-                        <tr>
-                            <td class="ctv-header three wide column key">Bandwidth</td>
-                            <td class="value">{{policy.bandwidth}}</td>
-                        </tr>
-                        <tr>
-                            <td class="ctv-header three wide column key">DSCP</td>
-                            <td class="value">{{policy.DSCP}}</td>
-                        </tr>
-                        </tbody>
-                    </table>
->>>>>>> design application -->
-                <!-- </div> -->
 
                 <div *ngSwitchCase="'edit'">
                     <form class="ui form" role="form" #formRef="ngForm"
@@ -187,33 +124,44 @@
                             </tbody>
                         </table>
 
-                        <div style="margin-top: 20px" class="fields">
-                            <div class="thirteen wide field">
-                                <label for="bandwidthNumber">Bandwidth </label>
-                                <input #bandwidthNumberRef="ngModel" type="number" id="bandwidthNumber" name="bandwidthNumber"
-                                       [(ngModel)]="policy.bandwidthNumber" placeholder="Enter bandwidth" required>
-                            </div>
-                            <div class="three wide field">
-                                <label for="bandwidthUnit">Unit</label>
-                                <select #bandwidthUnitRef="ngModel" name="bandwidthUnit" id="bandwidthUnit" class="ui dropdown"
-                                        [(ngModel)]="policy.bandwidthUnit" required>
-                                    <option value="">-- Please select unit --</option>
-                                    <option value="kbps">kbps</option>
-                                    <option value="mbps">mbps</option>
-                                    <option value="gbps">gbps</option>
-                                </select>
-                            </div>
-                        </div>
+                        <div class="ui sixteen column grid" style="margin-top: 30px;">
+                            <div class="ui row">
+                                <div class="ui eight wide column">
 
-                        <div class="field">
-                            <label for="DSCP">DSCP</label>
-                            <input #DSCPRef="ngModel" type="number" id="DSCP" name="DSCP"
-                                   [(ngModel)]="policy.DSCP" placeholder="Enter DSCP" required/>
+                                    <div class="fields">
+                                        <div class="field">
+                                            <label for="bandwidthNumber">Bandwidth Value</label>
+                                            <input #bandwidthNumberRef="ngModel" type="number" id="bandwidthNumber" name="bandwidthNumber"
+                                                   [(ngModel)]="policy.bandwidthNumber" placeholder="Enter bandwidth value" required>
+                                        </div>
+                                        <div class="field">
+                                            <label for="bandwidthUnit">Bandwidth Unit</label>
+                                            <select #bandwidthUnitRef="ngModel" name="bandwidthUnit" id="bandwidthUnit" class="ui dropdown"
+                                                    [(ngModel)]="policy.bandwidthUnit" required>
+                                                <option value="">-- Select bandwidth unit --</option>
+                                                <option value="kbps">kbps</option>
+                                                <option value="mbps">mbps</option>
+                                                <option value="gbps">gbps</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ui eight wide column">
+
+                                    <div class="field">
+                                        <label for="DSCP">DSCP</label>
+                                        <input #DSCPRef="ngModel" type="number" id="DSCP" name="DSCP"
+                                               [(ngModel)]="policy.DSCP" placeholder="Enter DSCP" required/>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
                         <div class="ui grid">
                             <div class="right aligned sixteen wide column buttonRow">
-                                <button type="button" class="ui basic large button cancelBtn"
+                                <button type="button" class="ui large button cancelBtn"
                                         (click)="cancelEditing()">
                                     Cancel
                                 </button>

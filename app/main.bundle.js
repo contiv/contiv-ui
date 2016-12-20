@@ -7,8 +7,13 @@ webpackJsonp([2],{
 	/**
 	 * Created by vjain3 on 10/6/16.
 	 */
+<<<<<<< HEAD
 	var platform_browser_dynamic_1 = __webpack_require__(122);
 	var app_module_1 = __webpack_require__(395);
+=======
+	var platform_browser_dynamic_1 = __webpack_require__(116);
+	var app_module_1 = __webpack_require__(379);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
 	
 
@@ -668,7 +673,11 @@ webpackJsonp([2],{
 	}
 	exports.isPrimitive = isPrimitive;
 
+<<<<<<< HEAD
 	exports.isBuffer = __webpack_require__(947);
+=======
+	exports.isBuffer = __webpack_require__(903);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -712,7 +721,11 @@ webpackJsonp([2],{
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
+<<<<<<< HEAD
 	exports.inherits = __webpack_require__(946);
+=======
+	exports.inherits = __webpack_require__(902);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -730,7 +743,11 @@ webpackJsonp([2],{
 	  return Object.prototype.hasOwnProperty.call(obj, prop);
 	}
 
+<<<<<<< HEAD
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(390)))
+=======
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(374)))
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 
 /***/ },
 
@@ -856,6 +873,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/17/16.
 	 */
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var common_1 = __webpack_require__(20);
 	var errormessagedirective_1 = __webpack_require__(408);
 	var tabledirective_1 = __webpack_require__(414);
@@ -870,6 +888,21 @@ webpackJsonp([2],{
 	var ng2_charts_1 = __webpack_require__(147);
 	var notification_1 = __webpack_require__(98);
 	var ldapsettingcomponent_1 = __webpack_require__(412);
+=======
+	var common_1 = __webpack_require__(21);
+	var errormessagedirective_1 = __webpack_require__(392);
+	var tabledirective_1 = __webpack_require__(397);
+	var forms_1 = __webpack_require__(28);
+	var accordiondirective_1 = __webpack_require__(389);
+	var collapsibledirective_1 = __webpack_require__(391);
+	var namevaluedirective_1 = __webpack_require__(394);
+	var authdirective_1 = __webpack_require__(390);
+	var networksettingcomponent_1 = __webpack_require__(396);
+	var acisettingcomponent_1 = __webpack_require__(395);
+	var linegraphcomponent_1 = __webpack_require__(393);
+	var ng2_charts_1 = __webpack_require__(141);
+	var notification_1 = __webpack_require__(94);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var DirectivesModule = (function () {
 	    function DirectivesModule() {
 	    }
@@ -929,9 +962,14 @@ webpackJsonp([2],{
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
+<<<<<<< HEAD
 	var basecollection_1 = __webpack_require__(415);
 	var _ = __webpack_require__(28);
 	var util_1 = __webpack_require__(19);
+=======
+	var basecollection_1 = __webpack_require__(398);
+	var _ = __webpack_require__(26);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var Collection = (function (_super) {
 	    __extends(Collection, _super);
 	    /**
@@ -1481,7 +1519,11 @@ webpackJsonp([2],{
 	                this.isolationPolicySelected = false;
 	                this.bandwidthPolicySelected = false;
 	                this.contractGroupSelected = true;
+<<<<<<< HEAD
 	                this.policyMode = 'contactgroup';
+=======
+	                this.policyMode = 'contractgroup';
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	                break;
 	            default:
 	                this.isolationPolicySelected = true;
@@ -2922,7 +2964,11 @@ webpackJsonp([2],{
 	    AppGrouplistComponent = __decorate([
 	        core_1.Component({
 	            selector: 'app-group',
+<<<<<<< HEAD
 	            template: __webpack_require__(677)
+=======
+	            template: __webpack_require__(633)
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof applicationgroupsmodel_1.ApplicationGroupsModel !== 'undefined' && applicationgroupsmodel_1.ApplicationGroupsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
 	    ], AppGrouplistComponent);
@@ -3229,9 +3275,15 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/21/16.
 	 */
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(20);
 	var filterpipe_1 = __webpack_require__(416);
+=======
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var filterpipe_1 = __webpack_require__(399);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var PipesModule = (function () {
 	    function PipesModule() {
 	    }
@@ -3672,7 +3724,11 @@ webpackJsonp([2],{
 	        core_1.Component({
 	            selector: 'login',
 	            templateUrl: 'login/login.html',
+<<<<<<< HEAD
 	            styles: [__webpack_require__(945)]
+=======
+	            styles: [__webpack_require__(901)]
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object, (typeof (_d = typeof authservice_1.AuthService !== 'undefined' && authservice_1.AuthService) === 'function' && _d) || Object, (typeof (_e = typeof chartservice_1.ChartService !== 'undefined' && chartservice_1.ChartService) === 'function' && _e) || Object])
 	    ], LoginComponent);
@@ -3869,6 +3925,7 @@ webpackJsonp([2],{
 	                profileName: '',
 	                tenantName: '',
 	                bandwidth: '',
+	                bandwidthUnit: 'mbps',
 	                DSCP: ''
 	            };
 	        }
@@ -4984,7 +5041,11 @@ webpackJsonp([2],{
 	    NetworkListComponent = __decorate([
 	        core_1.Component({
 	            selector: 'networkList',
+<<<<<<< HEAD
 	            template: __webpack_require__(678)
+=======
+	            template: __webpack_require__(634)
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _b) || Object, (typeof (_c = typeof networksmodel_1.NetworksModel !== 'undefined' && networksmodel_1.NetworksModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object])
 	    ], NetworkListComponent);
@@ -5024,6 +5085,235 @@ webpackJsonp([2],{
 	        this.router = router;
 	        this.activatedRoute = activatedRoute;
 	        this.ngZone = ngZone;
+<<<<<<< HEAD
+=======
+	        this.newOrganization = { key: '', tenantName: '' };
+	        this.showServerError = false;
+	        this.serverErrorMessage = '';
+	        this.showLoader = false;
+	        this.organizationCreateCtrl = this;
+	    }
+	    OrganizationCreateComponent.prototype.returnToOrganizations = function () {
+	        this.router.navigate(['../list'], { relativeTo: this.activatedRoute });
+	    };
+	    OrganizationCreateComponent.prototype.cancelCreating = function () {
+	        this.returnToOrganizations();
+	    };
+	    OrganizationCreateComponent.prototype.createOrganization = function (formvalid) {
+	        var organizationCreateCtrl = this;
+	        if (formvalid) {
+	            this.crudHelperService.startLoader(this);
+	            organizationCreateCtrl.newOrganization.key = organizationCreateCtrl.newOrganization.tenantName;
+	            this.organizationsModel.create(organizationCreateCtrl.newOrganization, undefined)
+	                .then(function (result) {
+	                organizationCreateCtrl.ngZone.run(function () {
+	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
+	                    organizationCreateCtrl.crudHelperService.showNotification("Organization: Created", result.key);
+	                });
+	                organizationCreateCtrl.returnToOrganizations();
+	            }, function (error) {
+	                organizationCreateCtrl.ngZone.run(function () {
+	                    organizationCreateCtrl.crudHelperService.stopLoader(organizationCreateCtrl);
+	                });
+	                organizationCreateCtrl.crudHelperService.showServerError("Organization: Create failed", error);
+	            });
+	        }
+	    };
+	    OrganizationCreateComponent = __decorate([
+	        core_1.Component({
+	            selector: 'organizationcreate',
+	            templateUrl: 'organizations/organizationcreate.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object, (typeof (_d = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _d) || Object, (typeof (_e = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _e) || Object])
+	    ], OrganizationCreateComponent);
+	    return OrganizationCreateComponent;
+	    var _a, _b, _c, _d, _e;
+	}());
+	exports.OrganizationCreateComponent = OrganizationCreateComponent;
+	
+
+/***/ },
+
+/***/ 181:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(6);
+	var crudhelperservice_1 = __webpack_require__(7);
+	var organizationsmodel_1 = __webpack_require__(34);
+	var OrganizationDetailsComponent = (function () {
+	    function OrganizationDetailsComponent(activatedRoute, router, crudHelperService, organizationsModel, ngZone) {
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.crudHelperService = crudHelperService;
+	        this.organizationsModel = organizationsModel;
+	        this.ngZone = ngZone;
+	        this.showServerError = false;
+	        this.serverErrorMessage = '';
+	        this.showLoader = false;
+	        this.organization = { tenantName: '' };
+	        this.organizationDetailsCtrl = this;
+	    }
+	    OrganizationDetailsComponent.prototype.ngOnInit = function () {
+	        this.showLoader = true;
+	        var organizationDetailsCtrl = this;
+	        this.organizationsModel.getModelByKey(this.activatedRoute.snapshot.params['key'], false, 'key')
+	            .then(function (result) {
+	            organizationDetailsCtrl.organization = result;
+	            organizationDetailsCtrl.ngZone.run(function () {
+	                organizationDetailsCtrl.showLoader = false;
+	            });
+	        }, function (error) {
+	            organizationDetailsCtrl.ngZone.run(function () {
+	                organizationDetailsCtrl.showLoader = false;
+	            });
+	        });
+	    };
+	    OrganizationDetailsComponent.prototype.returnToOrganization = function () {
+	        this.router.navigate(['../../list'], { relativeTo: this.activatedRoute });
+	    };
+	    OrganizationDetailsComponent.prototype.close = function () { this.returnToOrganization(); };
+	    OrganizationDetailsComponent.prototype.deleteOrganization = function () {
+	        var organizationDetailsCtrl = this;
+	        this.showLoader = true;
+	        this.organizationsModel.delete(this.organization)
+	            .then(function (result) {
+	            organizationDetailsCtrl.showLoader = false;
+	            organizationDetailsCtrl.crudHelperService.showNotification("Organization: Deleted", result);
+	            organizationDetailsCtrl.returnToOrganization();
+	        }, function (error) {
+	            organizationDetailsCtrl.showLoader = false;
+	            organizationDetailsCtrl.crudHelperService.showServerError("Organization: Delete failed", error);
+	        });
+	    };
+	    OrganizationDetailsComponent = __decorate([
+	        core_1.Component({
+	            selector: 'organizationdetails',
+	            templateUrl: 'organizations/organizationdetails.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _c) || Object, (typeof (_d = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _d) || Object, (typeof (_e = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _e) || Object])
+	    ], OrganizationDetailsComponent);
+	    return OrganizationDetailsComponent;
+	    var _a, _b, _c, _d, _e;
+	}());
+	exports.OrganizationDetailsComponent = OrganizationDetailsComponent;
+	
+
+/***/ },
+
+/***/ 182:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(2);
+	var router_1 = __webpack_require__(6);
+	var crudhelperservice_1 = __webpack_require__(7);
+	var rxjs_1 = __webpack_require__(19);
+	var organizationsmodel_1 = __webpack_require__(34);
+	var OrganizationListComponent = (function () {
+	    function OrganizationListComponent(activatedRoute, router, organizationsModel, crudHelperService, ngZone) {
+	        var _this = this;
+	        this.activatedRoute = activatedRoute;
+	        this.router = router;
+	        this.ngZone = ngZone;
+	        this.organizationsModel = organizationsModel;
+	        this.crudHelperService = crudHelperService;
+	        this.organizationsListCtrl = this;
+	        this['showLoader'] = true;
+	        this.refresh = rxjs_1.Observable.interval(5000).subscribe(function () {
+	            _this.getOrganizations(true);
+	        });
+	    }
+	    OrganizationListComponent.prototype.ngOnInit = function () {
+	        this.crudHelperService.startLoader(this);
+	        this.getOrganizations(false);
+	    };
+	    OrganizationListComponent.prototype.getOrganizations = function (reload) {
+	        var organizationsListCtrl = this;
+	        this.organizationsModel.get(reload)
+	            .then(function successCallback(result) {
+	            organizationsListCtrl['organizations'] = result;
+	            organizationsListCtrl.ngZone.run(function () {
+	                organizationsListCtrl.crudHelperService.stopLoader(organizationsListCtrl);
+	            });
+	        }, function errorCallback(result) {
+	            organizationsListCtrl.ngZone.run(function () {
+	                organizationsListCtrl.crudHelperService.stopLoader(organizationsListCtrl);
+	            });
+	        });
+	    };
+	    OrganizationListComponent.prototype.create = function () {
+	        this.router.navigate(['../create'], { relativeTo: this.activatedRoute });
+	    };
+	    OrganizationListComponent.prototype.ngOnDestroy = function () {
+	        this.refresh.unsubscribe();
+	    };
+	    OrganizationListComponent = __decorate([
+	        core_1.Component({
+	            selector: 'organizationlist',
+	            templateUrl: 'organizations/organizationlist.html'
+	        }), 
+	        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof organizationsmodel_1.OrganizationsModel !== 'undefined' && organizationsmodel_1.OrganizationsModel) === 'function' && _c) || Object, (typeof (_d = typeof crudhelperservice_1.CRUDHelperService !== 'undefined' && crudhelperservice_1.CRUDHelperService) === 'function' && _d) || Object, (typeof (_e = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _e) || Object])
+	    ], OrganizationListComponent);
+	    return OrganizationListComponent;
+	    var _a, _b, _c, _d, _e;
+	}());
+	exports.OrganizationListComponent = OrganizationListComponent;
+	
+
+/***/ },
+
+/***/ 183:
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Created by cshampur on 10/14/16.
+	 */
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(2);
+	var crudhelperservice_1 = __webpack_require__(7);
+	var servicelbsmodel_1 = __webpack_require__(72);
+	var networksmodel_1 = __webpack_require__(48);
+	var router_1 = __webpack_require__(6);
+	var organizationsmodel_1 = __webpack_require__(34);
+	var _ = __webpack_require__(26);
+	var ServicelbCreateComponent = (function () {
+	    function ServicelbCreateComponent(router, activatedRoute, ngZone, organizationsModel, servicelbsModel, crudHelperService, networksModel) {
+	        this.router = router;
+	        this.activatedRoute = activatedRoute;
+	        this.ngZone = ngZone;
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	        this.organizationsModel = organizationsModel;
 	        this.servicelbsModel = servicelbsModel;
 	        this.crudHelperService = crudHelperService;
@@ -5037,7 +5327,11 @@ webpackJsonp([2],{
 	            ipAddress: '',
 	            selectors: [],
 	            ports: [],
+<<<<<<< HEAD
 	            tenantName: 'default',
+=======
+	            tenantName: '',
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	            key: ''
 	        };
 	        this.servicelbCreateCtrl = this;
@@ -6552,6 +6846,8 @@ webpackJsonp([2],{
 	        this.user = { username: '', password: '', first_name: '', last_name: '', disable: false };
 	        this.organizations = [];
 	        this.mode = 'details';
+	        this.userDetailsCtrl = {};
+	        this.userDetailsCtrl = this;
 	        var component = this;
 	        this.user = { username: '', first_name: '', last_name: '', disable: false };
 	        /**
@@ -6583,6 +6879,9 @@ webpackJsonp([2],{
 	    };
 	    UserDetailsComponent.prototype.cancelEditing = function () {
 	        this.returnToUserDetails();
+	    };
+	    UserDetailsComponent.prototype.cancelDetails = function () {
+	        this.returnToUser();
 	    };
 	    UserDetailsComponent.prototype.deleteUser = function () {
 	        var component = this;
@@ -6706,7 +7005,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 350:
+=======
+/***/ 378:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	var root = __webpack_require__(61);
@@ -6719,8 +7022,13 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 351:
 /***/ function(module, exports) {
+=======
+/***/ 379:
+/***/ function(module, exports, __webpack_require__) {
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 
 	/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
 	var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
@@ -6966,6 +7274,7 @@ webpackJsonp([2],{
 	var core_1 = __webpack_require__(2);
 	var platform_browser_1 = __webpack_require__(97);
 	var http_1 = __webpack_require__(22);
+<<<<<<< HEAD
 	var common_1 = __webpack_require__(20);
 	var dashboard_module_1 = __webpack_require__(417);
 	var networkpolicies_module_1 = __webpack_require__(428);
@@ -6975,6 +7284,19 @@ webpackJsonp([2],{
 	var appprofile_module_1 = __webpack_require__(404);
 	var users_module_1 = __webpack_require__(439);
 	var netprofilesmodel_1 = __webpack_require__(78);
+=======
+	var common_1 = __webpack_require__(21);
+	var dashboard_module_1 = __webpack_require__(400);
+	var networkpolicies_module_1 = __webpack_require__(411);
+	var applicationgroups_module_ts_1 = __webpack_require__(382);
+	var settings_module_1 = __webpack_require__(420);
+	var network_module_1 = __webpack_require__(412);
+	var servicelb_module_1 = __webpack_require__(416);
+	var appprofile_module_1 = __webpack_require__(388);
+	var organization_module_1 = __webpack_require__(415);
+	var users_module_1 = __webpack_require__(421);
+	var netprofilesmodel_1 = __webpack_require__(77);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var applicationgroupsmodel_1 = __webpack_require__(47);
 	var networksmodel_1 = __webpack_require__(48);
 	var organizationsmodel_1 = __webpack_require__(34);
@@ -6986,6 +7308,7 @@ webpackJsonp([2],{
 	var bgpsmodel_1 = __webpack_require__(72);
 	var contractgroupsmodel_1 = __webpack_require__(77);
 	var crudhelperservice_1 = __webpack_require__(7);
+<<<<<<< HEAD
 	var inspectservice_1 = __webpack_require__(81);
 	var networkservice_1 = __webpack_require__(124);
 	var menu_module_1 = __webpack_require__(423);
@@ -7001,6 +7324,19 @@ webpackJsonp([2],{
 	var app_routes_1 = __webpack_require__(396);
 	var authorization_module_1 = __webpack_require__(434);
 	var organization_module_1 = __webpack_require__(438);
+=======
+	var inspectservice_1 = __webpack_require__(78);
+	var networkservice_1 = __webpack_require__(119);
+	var menu_module_1 = __webpack_require__(406);
+	var app_component_1 = __webpack_require__(378);
+	var app_routes_ts_1 = __webpack_require__(380);
+	var login_module_1 = __webpack_require__(405);
+	var authservice_1 = __webpack_require__(54);
+	var authguard_1 = __webpack_require__(164);
+	var apiservice_1 = __webpack_require__(31);
+	var firstrunwizard_module_1 = __webpack_require__(403);
+	var chartservice_1 = __webpack_require__(118);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -7061,7 +7397,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 396:
+=======
+/***/ 380:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7198,7 +7538,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 397:
+=======
+/***/ 381:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7249,7 +7593,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 398:
+=======
+/***/ 382:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7266,6 +7614,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/21/16.
 	 */
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(20);
 	var router_1 = __webpack_require__(5);
@@ -7279,6 +7628,21 @@ webpackJsonp([2],{
 	var applicationgrouplistctrl_1 = __webpack_require__(164);
 	var applicationgroupstats_1 = __webpack_require__(399);
 	var applicationgroupinfoctrl_1 = __webpack_require__(397);
+=======
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var router_1 = __webpack_require__(6);
+	var directives_module_1 = __webpack_require__(39);
+	var pipes_module_1 = __webpack_require__(162);
+	var applicationgroupcreatectrl_1 = __webpack_require__(156);
+	var applicationgroupdetailsctrl_1 = __webpack_require__(157);
+	var isolationpolicydirective_1 = __webpack_require__(386);
+	var bandwidthpolicydirective_1 = __webpack_require__(384);
+	var contractgroup_component_1 = __webpack_require__(385);
+	var applicationgrouplistctrl_1 = __webpack_require__(158);
+	var applicationgroupstats_1 = __webpack_require__(383);
+	var applicationgroupinfoctrl_1 = __webpack_require__(381);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var ApplicationGroupsModule = (function () {
 	    function ApplicationGroupsModule() {
 	    }
@@ -7326,7 +7690,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 399:
+=======
+/***/ 383:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -7424,7 +7792,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 400:
+=======
+/***/ 384:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7504,7 +7876,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 401:
+=======
+/***/ 385:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7621,7 +7997,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 402:
+=======
+/***/ 386:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7757,7 +8137,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 403:
+=======
+/***/ 387:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7866,7 +8250,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 404:
+=======
+/***/ 388:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7880,6 +8268,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(20);
 	var router_1 = __webpack_require__(5);
@@ -7889,6 +8278,17 @@ webpackJsonp([2],{
 	var appprofiledetails_component_1 = __webpack_require__(166);
 	var appgroupselection_component_1 = __webpack_require__(403);
 	var pipes_module_1 = __webpack_require__(168);
+=======
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var router_1 = __webpack_require__(6);
+	var directives_module_1 = __webpack_require__(39);
+	var appprofilelist_component_1 = __webpack_require__(161);
+	var appprofilecreate_component_1 = __webpack_require__(159);
+	var appprofiledetails_component_1 = __webpack_require__(160);
+	var appgroupselection_component_1 = __webpack_require__(387);
+	var pipes_module_1 = __webpack_require__(162);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var AppProfilesModule = (function () {
 	    function AppProfilesModule() {
 	    }
@@ -7928,7 +8328,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 405:
+=======
+/***/ 389:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7970,7 +8374,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 406:
+=======
+/***/ 390:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8021,7 +8429,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 407:
+=======
+/***/ 391:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8065,7 +8477,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 408:
+=======
+/***/ 392:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8114,7 +8530,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 409:
+=======
+/***/ 393:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8304,7 +8724,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 410:
+=======
+/***/ 394:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8391,7 +8815,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 411:
+=======
+/***/ 395:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8456,6 +8884,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 412:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -8540,6 +8969,9 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 413:
+=======
+/***/ 396:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8607,7 +9039,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 414:
+=======
+/***/ 397:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -8912,7 +9348,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 415:
+=======
+/***/ 398:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9018,7 +9458,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 416:
+=======
+/***/ 399:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9069,7 +9513,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 417:
+=======
+/***/ 400:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9123,7 +9571,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 418:
+=======
+/***/ 401:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9187,7 +9639,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 419:
+=======
+/***/ 402:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9248,7 +9704,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 420:
+=======
+/***/ 403:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9268,6 +9728,7 @@ webpackJsonp([2],{
 	 * Created by cshampur on 10/18/16.
 	 */
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(20);
 	var directives_module_1 = __webpack_require__(37);
@@ -9277,6 +9738,17 @@ webpackJsonp([2],{
 	var firstrunnetworkdefaults_1 = __webpack_require__(419);
 	var firstrunacisettings_1 = __webpack_require__(418);
 	var firstrunwizardconfirmpage_1 = __webpack_require__(421);
+=======
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var directives_module_1 = __webpack_require__(39);
+	var router_1 = __webpack_require__(6);
+	var firstrunwizardservice_1 = __webpack_require__(79);
+	var firstrunwizardctrl_1 = __webpack_require__(166);
+	var firstrunnetworkdefaults_1 = __webpack_require__(402);
+	var firstrunacisettings_1 = __webpack_require__(401);
+	var firstrunwizardconfirmpage_1 = __webpack_require__(404);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var FirstrunWizardModule = (function () {
 	    function FirstrunWizardModule() {
 	    }
@@ -9311,7 +9783,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 421:
+=======
+/***/ 404:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9390,7 +9866,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 422:
+=======
+/***/ 405:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9446,7 +9926,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 423:
+=======
+/***/ 406:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9499,7 +9983,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 424:
+=======
+/***/ 407:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9566,7 +10054,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 425:
+=======
+/***/ 408:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9632,7 +10124,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 426:
+=======
+/***/ 409:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9699,7 +10195,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 427:
+=======
+/***/ 410:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9797,7 +10297,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 428:
+=======
+/***/ 411:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9814,6 +10318,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/14/16.
 	 */
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(20);
 	var router_1 = __webpack_require__(5);
@@ -9829,6 +10334,23 @@ webpackJsonp([2],{
 	var contractgrouplist_component_1 = __webpack_require__(425);
 	var contractgroupcreate_component_1 = __webpack_require__(179);
 	var contractgroupdetails_component_1 = __webpack_require__(180);
+=======
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var router_1 = __webpack_require__(6);
+	var directives_module_1 = __webpack_require__(39);
+	var networkpoliciestabsctrl_1 = __webpack_require__(55);
+	var isolationpolicycreatectrl_1 = __webpack_require__(175);
+	var isolationpolicydetailsctrl_1 = __webpack_require__(176);
+	var bandwidthpolicycreatectrl_1 = __webpack_require__(171);
+	var bandwidthpolicydetailsctrl_1 = __webpack_require__(172);
+	var isolationpolicylistctrl_1 = __webpack_require__(409);
+	var bandwidthpolicylistctrl_1 = __webpack_require__(407);
+	var isolationpolicystats_1 = __webpack_require__(410);
+	var contractgrouplist_component_1 = __webpack_require__(408);
+	var contractgroupcreate_component_1 = __webpack_require__(173);
+	var contractgroupdetails_component_1 = __webpack_require__(174);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var NetworkPoliciesModule = (function () {
 	    function NetworkPoliciesModule() {
 	    }
@@ -9881,7 +10403,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 429:
+=======
+/***/ 412:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9898,6 +10424,7 @@ webpackJsonp([2],{
 	 * Created by cshampur on 10/18/16.
 	 */
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(20);
 	var directives_module_1 = __webpack_require__(37);
@@ -9907,6 +10434,17 @@ webpackJsonp([2],{
 	var networkinfoctrl_1 = __webpack_require__(430);
 	var networkcreatectrl_1 = __webpack_require__(183);
 	var router_1 = __webpack_require__(5);
+=======
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var directives_module_1 = __webpack_require__(39);
+	var networklistctrl_1 = __webpack_require__(179);
+	var networkstatsctrl_1 = __webpack_require__(414);
+	var networkdetailsctrl_1 = __webpack_require__(178);
+	var networkinfoctrl_1 = __webpack_require__(413);
+	var networkcreatectrl_1 = __webpack_require__(177);
+	var router_1 = __webpack_require__(6);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var NetworkModule = (function () {
 	    function NetworkModule() {
 	    }
@@ -9942,7 +10480,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 430:
+=======
+/***/ 413:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -9984,7 +10526,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 431:
+=======
+/***/ 414:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10084,7 +10630,70 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 432:
+=======
+/***/ 415:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	/**
+	 * Created by cshampur on 10/18/16.
+	 */
+	var core_1 = __webpack_require__(2);
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var router_1 = __webpack_require__(6);
+	var directives_module_1 = __webpack_require__(39);
+	var organizationlistctrl_1 = __webpack_require__(182);
+	var organizationcreatectrl_1 = __webpack_require__(180);
+	var organizationdetailsctrl_1 = __webpack_require__(181);
+	var OrganizationModule = (function () {
+	    function OrganizationModule() {
+	    }
+	    OrganizationModule = __decorate([
+	        core_1.NgModule({
+	            imports: [
+	                forms_1.FormsModule,
+	                common_1.CommonModule,
+	                router_1.RouterModule,
+	                directives_module_1.DirectivesModule
+	            ],
+	            declarations: [
+	                organizationlistctrl_1.OrganizationListComponent,
+	                organizationcreatectrl_1.OrganizationCreateComponent,
+	                organizationdetailsctrl_1.OrganizationDetailsComponent
+	            ],
+	            exports: [
+	                organizationlistctrl_1.OrganizationListComponent,
+	                organizationcreatectrl_1.OrganizationCreateComponent,
+	                organizationdetailsctrl_1.OrganizationDetailsComponent,
+	                directives_module_1.DirectivesModule,
+	                forms_1.FormsModule,
+	                common_1.CommonModule,
+	                router_1.RouterModule
+	            ]
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], OrganizationModule);
+	    return OrganizationModule;
+	}());
+	exports.OrganizationModule = OrganizationModule;
+	
+
+/***/ },
+
+/***/ 416:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10101,6 +10710,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(20);
 	var directives_module_1 = __webpack_require__(37);
@@ -10111,6 +10721,18 @@ webpackJsonp([2],{
 	var servicelbinfoctrl_1 = __webpack_require__(188);
 	var servicelbdetailsctrl_1 = __webpack_require__(187);
 	var router_1 = __webpack_require__(5);
+=======
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var directives_module_1 = __webpack_require__(39);
+	var servicelblistctrl_1 = __webpack_require__(186);
+	var servicelbstatsctrl_1 = __webpack_require__(187);
+	var servicelbportsdirective_1 = __webpack_require__(417);
+	var servicelbcreatectrl_1 = __webpack_require__(183);
+	var servicelbinfoctrl_1 = __webpack_require__(185);
+	var servicelbdetailsctrl_1 = __webpack_require__(184);
+	var router_1 = __webpack_require__(6);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var ServicelbModule = (function () {
 	    function ServicelbModule() {
 	    }
@@ -10148,7 +10770,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 433:
+=======
+/***/ 417:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10216,6 +10842,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 434:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -10276,6 +10903,9 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 435:
+=======
+/***/ 418:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10376,7 +11006,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 436:
+=======
+/***/ 419:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10464,7 +11098,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 437:
+=======
+/***/ 420:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10481,6 +11119,7 @@ webpackJsonp([2],{
 	 * Created by vjain3 on 10/25/16.
 	 */
 	var core_1 = __webpack_require__(2);
+<<<<<<< HEAD
 	var forms_1 = __webpack_require__(26);
 	var common_1 = __webpack_require__(20);
 	var router_1 = __webpack_require__(5);
@@ -10493,6 +11132,19 @@ webpackJsonp([2],{
 	var nodeinfo_component_1 = __webpack_require__(435);
 	var nodestats_component_1 = __webpack_require__(436);
 	var ldapconfiguration_1 = __webpack_require__(194);
+=======
+	var forms_1 = __webpack_require__(28);
+	var common_1 = __webpack_require__(21);
+	var router_1 = __webpack_require__(6);
+	var directives_module_1 = __webpack_require__(39);
+	var networksettingctrl_1 = __webpack_require__(188);
+	var settingsmenu_component_1 = __webpack_require__(192);
+	var nodelist_component_1 = __webpack_require__(191);
+	var nodecreate_component_1 = __webpack_require__(189);
+	var nodedetails_component_1 = __webpack_require__(190);
+	var nodeinfo_component_1 = __webpack_require__(418);
+	var nodestats_component_1 = __webpack_require__(419);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	var SettingsModule = (function () {
 	    function SettingsModule() {
 	    }
@@ -10538,6 +11190,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 438:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -10598,6 +11251,9 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 439:
+=======
+/***/ 421:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10656,10 +11312,17 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 646:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(647)();
+=======
+/***/ 628:
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(629)();
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 	// imports
 
 
@@ -10671,7 +11334,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 647:
+=======
+/***/ 629:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports) {
 
 	/*
@@ -10728,6 +11395,7 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 650:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -11598,6 +12266,27 @@ webpackJsonp([2],{
 
 	
 	        var result = __webpack_require__(646);
+=======
+/***/ 633:
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"ui row pageHeader\">\n        <div class=\"left aligned eight wide column\">\n            <div class=\"content pageTitle\">Application Groups</div>\n        </div>\n        <div class=\"right aligned eight wide column\">\n            <button class=\"ui blue large button primaryBtn\" (click)=\"create()\">\n                <i class=\"add icon\"></i>\n                Create Application Group\n            </button>\n        </div>\n    </div>\n\n    <div class=\"ui row breadcrumbRow\">\n        <div class=\"ui sixteen wide column\">\n            <div class=\"breadcrumbs\">\n                <span class=\"crumb\">Application Groups List</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"ui row searchRow\">\n        <div class=\"ui sixteen wide column\">\n            <ctv-search *ngIf=\"applicationGroupListCtrl['groups']\" (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [count]=\"tableRef.count\"></ctv-search>\n        </div>\n    </div>\n\n    <div class=\"ui row ctvTable\">\n        <div class=\"ui sixteen wide column\">\n            <div class=\"ui active inverted dimmer\" *ngIf=\"applicationGroupListCtrl.showLoader\">\n                <div class=\"ui loader\"></div>\n            </div>\n            <ctv-table #tableRef [defaultSortColumn]=\"'groupName'\"\n                       [items]=\"applicationGroupListCtrl['groups']\"\n                       (filtereditems)=\"applicationGroupListCtrl['filteredgroups']=$event;\"\n                       [size]=\"12\">\n                <thead>\n                    <tr>\n                        <th><ctv-th [sortfield]=\"'groupName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n                        <th><ctv-th [sortfield]=\"'tenantName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Tenant</ctv-th></th>\n                        <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Network</ctv-th></th>\n                        <th><ctv-th [sortfield]=\"'policies'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Policies</ctv-th></th>\n                    </tr>\n                </thead>\n\n                <tbody *ngIf=\"applicationGroupListCtrl['groups']\">\n                    <tr *ngFor=\"let group of applicationGroupListCtrl['filteredgroups']\">\n                        <td><a [routerLink]=\"['../details', group.key]\">{{group.groupName}}</a></td>\n                    <td>{{group.tenantName}}</td>\n                    <td>{{group.networkName}}</td>\n                    <td>{{group.policies.join(\", \")}}</td>\n                    </tr>\n                </tbody>\n\n                <tbody *ngIf=\"!applicationGroupListCtrl['groups']\">\n                    <tr class=\"noDataFound\">\n                        <td colspan=\"4\">No application groups found. Would you like to <a href=\"javascript: void(0);\" (click)=\"create()\">define one?</a></td>\n                    </tr>\n                </tbody>\n\n                <tbody *ngIf=\"applicationGroupListCtrl['groups'] && !tableRef.count\">\n                    <tr class=\"noDataFound\">\n                        <td colspan=\"4\">No records matched your filter criteria.</td>\n                    </tr>\n                </tbody>\n\n                <tfoot>\n                    <tr class=\"pagination\">\n                        <td colspan=\"4\">\n                            <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                             (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                             (prevChunk)=\"tableRef.showPrevChunk()\"\n                                             (nextChunk)=\"tableRef.showNextChunk()\">\n                            </ctv-tpagination>\n                        </td>\n                    </tr>\n                </tfoot>\n            </ctv-table>\n        </div>\n    </div>\n</div>\n"
+
+/***/ },
+
+/***/ 634:
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"ui sixteen column grid\">\n    <div class=\"ui row pageHeader\">\n        <div class=\"left aligned eight wide column\">\n            <div class=\"content pageTitle\">Networks</div>\n        </div>\n\n        <div class=\"right aligned eight wide column\">\n            <button *auth=\"'SysAdmin'\" class=\"ui blue large button primaryBtn\" (click)=\"create()\">\n                <i class=\"add icon\"></i>\n                Create Network\n            </button>\n        </div>\n    </div>\n\n    <div class=\"ui row breadcrumbRow\">\n        <div class=\"ui sixteen wide column\">\n            <div class=\"breadcrumbs\">\n                <span class=\"crumb\">Networks List</span>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"ui row\">\n        <div class=\"ui sixteen wide column\">\n\n            <ctv-search *ngIf=\"networkListComp['networks']\" (searchTextChange)=\"tableRef.showChunk(tableRef.table.pageNo,$event);\" [count]=\"tableRef.count\"></ctv-search>\n\n            <div class=\"ui basic segment ctvTable\">\n\n                <div class=\"ui active inverted dimmer\" *ngIf=\"networkListComp.showLoader\">\n                    <div class=\"ui loader\"></div>\n                </div>\n\n                <ctv-table #tableRef [defaultSortColumn]=\"'networkName'\"\n                           [items]=\"networkListComp['networks']\"\n                           (filtereditems)=\"networkListComp['filterednetworks']=$event;\"\n                           [size]=\"12\">\n                    <thead>\n                    <tr>\n                        <th><ctv-th [sortfield]=\"'networkName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Name</ctv-th></th>\n                        <th><ctv-th [sortfield]=\"'tenantName'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Tenant</ctv-th></th>\n                        <th><ctv-th [sortfield]=\"'encap'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Encapsulation</ctv-th></th>\n                        <th><ctv-th [sortfield]=\"'subnet'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Subnet</ctv-th></th>\n                        <th><ctv-th [sortfield]=\"'gateway'\" (sortdata)=\"tableRef.applysort($event)\" [sortobject]=\"tableRef.sortObj\">Gateway</ctv-th></th>\n                    </tr>\n                    </thead>\n\n                    <tbody *ngIf=\"networkListComp['networks']\">\n                    <tr *ngFor=\"let network of networkListComp['filterednetworks']\">\n                        <td><a [routerLink]=\"['../details',network.key]\">{{network.networkName}}</a></td>\n                        <td>{{network.tenantName}}</td>\n                        <td>{{network.encap}}</td>\n                        <td>{{network.subnet}}</td>\n                        <td>{{network.gateway}}</td>\n                    </tr>\n                    </tbody>\n\n                    <tbody *ngIf=\"!networkListComp['networks']\">\n                        <tr>\n                            <td colspan=\"2\">No networks found. Would you like to <a href=\"javascript: void(0);\" (click)=\"create()\">create one?</a></td>\n                        </tr>\n                    </tbody>\n\n                    <tbody *ngIf=\"networkListComp['networks'] && !tableRef.count\">\n                        <tr><td colspan=\"2\">No records matched your filter criteria.</td></tr>\n                    </tbody>\n\n                    <tfoot>\n                    <tr class=\"pagination\">\n                        <td colspan=\"2\">\n                            <ctv-tpagination [chunks]=\"tableRef.pageChunks\"\n                                             (showPage)=\"tableRef.showChunk($event, tableRef.table.searchText)\"\n                                             (prevChunk)=\"tableRef.showPrevChunk()\"\n                                             (nextChunk)=\"tableRef.showNextChunk()\">\n                            </ctv-tpagination>\n                        </td>\n                    </tr>\n                    </tfoot>\n                </ctv-table>\n            </div>\n\n        </div>\n    </div>\n</div>\n"
+
+/***/ },
+
+/***/ 901:
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	        var result = __webpack_require__(628);
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 
 	        if (typeof result === "string") {
 	            module.exports = result;
@@ -11608,7 +12297,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 946:
+=======
+/***/ 902:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports) {
 
 	if (typeof Object.create === 'function') {
@@ -11638,7 +12331,11 @@ webpackJsonp([2],{
 
 /***/ },
 
+<<<<<<< HEAD
 /***/ 947:
+=======
+/***/ 903:
+>>>>>>> post-merge repairs, and restyling some of the new "tenant" stuff.
 /***/ function(module, exports) {
 
 	module.exports = function isBuffer(arg) {

@@ -56,51 +56,62 @@
                         </div>
                     </div>
 
-
-                    <div class="field">
-                        <label for="newProfileName">Profile name</label>
-                        <input #profileNameRef="ngModel" type="text" id="newProfileName" name="newProfileName"
-                               [(ngModel)]="newPolicy.profileName" placeholder="Enter profile name" required>
-                    </div>
-
-                    <div class="field">
-                        <label for="newPolicyTenant">Tenant</label>
-                        <select id="newPolicyTenant" class="ui dropdown"
-                                name="newPolicyTenant"
-                                [(ngModel)]="newPolicy.tenantName"
-                                required #policyTenantRef="ngModel">
-                            <option value="">-- Please select tenant --</option>
-                            <option *ngFor="let tenant of tenants" [ngValue]="tenant.tenantName">{{tenant.tenantName}}</option>
-                        </select>
-                    </div>
-
-                    <div style="margin-top: 20px" class="fields">
-                        <div class="thirteen wide field">
-                            <label for="newBandwidthNumber">Bandwidth </label>
-                            <input #bandwidthNumberRef="ngModel" type="number" id="newBandwidthNumber" name="newBandwidthNumber"
-                                   [(ngModel)]="newPolicy.bandwidthNumber" placeholder="Enter bandwidth" required>
+                    <div class="ui sixteen column grid">
+                        <div class="ui row">
+                            <div class="ui eight wide column">
+                                <div class="field">
+                                    <label for="newProfileName">Policy name</label>
+                                    <input #profileNameRef="ngModel" type="text" id="newProfileName" name="newProfileName"
+                                           [(ngModel)]="newPolicy.profileName" placeholder="Enter profile name" required>
+                                </div>
+                            </div>
+                            <div class="ui eight wide column">
+                                <div class="field">
+                                    <label for="newPolicyTenant">Tenant</label>
+                                    <select id="newPolicyTenant" class="ui dropdown"
+                                            name="newPolicyTenant"
+                                            [(ngModel)]="newPolicy.tenantName"
+                                            required #policyTenantRef="ngModel">
+                                        <option value="">-- Please select tenant --</option>
+                                        <option *ngFor="let tenant of tenants" [ngValue]="tenant.tenantName">{{tenant.tenantName}}</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="three wide field">
-                            <label for="newBandwidthUnit">Unit</label>
-                            <select #bandwidthUnitRef="ngModel" name="newBandwidthUnit" id="newBandwidthUnit" class="ui dropdown"
-                                    [(ngModel)]="newPolicy.bandwidthUnit" required>
-                                <option value="">-- Please select unit --</option>
-                                <option value="kbps">kbps</option>
-                                <option value="mbps">mbps</option>
-                                <option value="gbps">gbps</option>
-                            </select>
-                        </div>
-                    </div>
+                        <div class="ui row">
+                            <div class="ui eight wide column">
 
-                    <div class="field">
-                        <label for="newDSCP">DSCP</label>
-                        <input #DSCPRef="ngModel" type="number" id="newDSCP" name="newDSCP"
-                               [(ngModel)]="newPolicy.DSCP" placeholder="Enter DSCP" required/>
+                                <div class="fields">
+                                    <div class="field">
+                                        <label for="newBandwidthNumber">Bandwidth Value</label>
+                                        <input #bandwidthNumberRef="ngModel" type="number" id="newBandwidthNumber" name="newBandwidthNumber"
+                                               [(ngModel)]="newPolicy.bandwidthNumber" placeholder="Enter bandwidth" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="newBandwidthUnit">Bandwidth Unit</label>
+                                        <select #bandwidthUnitRef="ngModel" name="newBandwidthUnit" id="newBandwidthUnit" class="ui dropdown"
+                                                [(ngModel)]="newPolicy.bandwidthUnit" required>
+                                            <option value=""> -- Select unit -- </option>
+                                            <option value="kbps">kbps</option>
+                                            <option value="mbps">mbps</option>
+                                            <option value="gbps">gbps</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui eight wide column">
+                                <div class="field">
+                                    <label for="newDSCP">DSCP</label>
+                                    <input #DSCPRef="ngModel" type="number" id="newDSCP" name="newDSCP"
+                                           [(ngModel)]="newPolicy.DSCP" placeholder="Enter DSCP" required/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="ui grid">
                         <div class="right aligned sixteen wide column">
-                            <div style="margin-top: 40px">
+                            <div class="buttonRow">
                                 <button type="button" class="ui basic large button cancelBtn" (click)="cancelCreating()">
                                     Cancel
                                 </button>

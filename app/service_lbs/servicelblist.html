@@ -34,13 +34,11 @@
                            [size]="12">
                     <thead>
                         <tr>
-                            <tr>
-                                <th><ctv-th [sortfield]="'serviceName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Name</ctv-th></th>
-                                <th><ctv-th [sortfield]="'tenantName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Tenant</ctv-th></th>
-                                <th><ctv-th [sortfield]="'networkName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Network</ctv-th></th>
-                                <th><ctv-th [sortfield]="'ipAddress'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">IP Address</ctv-th></th>
-                                <th><ctv-th [sortfield]="'selectors'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Label Selectors</ctv-th></th>
-                            </tr>
+                            <th><ctv-th [sortfield]="'serviceName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Name</ctv-th></th>
+                            <th><ctv-th [sortfield]="'tenantName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Tenant</ctv-th></th>
+                            <th><ctv-th [sortfield]="'networkName'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Network</ctv-th></th>
+                            <th><ctv-th [sortfield]="'ipAddress'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">IP Address</ctv-th></th>
+                            <th><ctv-th [sortfield]="'selectors'" (sortdata)="tableRef.applysort($event)" [sortobject]="tableRef.sortObj">Label Selectors</ctv-th></th>
                         </tr>
                     </thead>
 
