@@ -1,25 +1,3 @@
-<!-- <<<<<<< HEAD
-<div class="ui basic segment" [ngClass]="{loading: showLoader}">
-    <div><h4 class="ui header">Basic Settings</h4></div>
-    <table class="ui very basic selectable table">
-        <tbody>
-        <tr>
-            <td class="three wide column">Name</td>
-            <td>{{applicationGroup.groupName}}</td>
-        </tr>
-        <tr>
-            <td class="three wide column">Tenant</td>
-            <td>{{applicationGroup.tenantName}}</td>
-        </tr>
-        <tr>
-            <td class="three wide column">Network</td>
-            <td>{{applicationGroup.networkName}}</td>
-        </tr>
-        </tbody>
-    </table>
-=======
- design application -->
-
 <div class="ui row ">
     <div class="ui sixteen wide column">
         <div class="ui basic segment" [ngClass]="{loading: showLoader}">
@@ -30,8 +8,8 @@
                     <td class="value">{{applicationGroup.groupName}}</td>
                 </tr>
                 <tr>
-                    <td class="three wide column">Tenant</td>
-                    <td>{{applicationGroup.tenantName}}</td>
+                    <td class="three wide column key">Tenant</td>
+                    <td class="value">{{applicationGroup.tenantName}}</td>
                 </tr>
                 <tr>
                     <td class="two wide column key"><strong>Network</strong></td>

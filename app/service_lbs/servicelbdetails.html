@@ -6,40 +6,38 @@
         </div>
         <div class="right aligned eight wide column">
 
-            <div class="right aligned five wide column">
-                <div id="delete-service-modal" class="ui small modal">
-                    <div class="header">Remove Service: {{servicelbDetailsCtrl.serviceName}}</div>
-                    <div class="content">
-                        <p>Are you sure you want to remove this service?</p>
-                    </div>
-                    <div class="actions">
-                        <div class="ui negative button">No</div>
-                        <div class="ui positive button" (click)="deleteServicelb()">
-                            Yes
-                        </div>
+            <div id="delete-service-modal" class="ui small modal">
+                <div class="header">Remove Service: {{servicelbDetailsCtrl.serviceName}}</div>
+                <div class="content">
+                    <p>Are you sure you want to remove this service?</p>
+                </div>
+                <div class="actions">
+                    <div class="ui negative button">No</div>
+                    <div class="ui positive button" (click)="deleteServicelb()">
+                        Yes
                     </div>
                 </div>
-                <button *ngSwitchCase="'edit'" type="button" class="ui large button cancelBtn"
-                        (click)="cancelEditing()">
-                    Cancel
-                </button>
-                <button *ngSwitchCase="'details'" type="button" class="ui large button cancelBtn"
-                        (click)="cancelDetails()">
-                    Close
-                </button>
-                <button *ngSwitchCase="'details'" class="ui blue large button secondaryBtn"
-                        (click)="loadEdit()">
-                    Edit
-                </button>
-                <button class="ui blue large button secondaryBtn" onclick="$('#delete-service-modal').modal('show')">
-                    <i class="trash icon"></i>
-                    Remove
-                </button>
             </div>
+
+            <button *ngSwitchCase="'edit'" type="button" class="ui large button cancelBtn"
+                    (click)="cancelEditing()">
+                Cancel
+            </button>
+            <button *ngSwitchCase="'details'" type="button" class="ui large button cancelBtn"
+                    (click)="cancelDetails()">
+                Close
+            </button>
+            <button *ngSwitchCase="'details'" class="ui blue large button secondaryBtn"
+                    (click)="loadEdit()">
+                Edit
+            </button>
+            <button class="ui blue large button secondaryBtn" onclick="$('#delete-service-modal').modal('show')">
+                <i class="trash icon"></i>
+                Remove
+            </button>
 
         </div>
     </div>
-</div>
 
     <div class="ui row breadcrumbRow">
         <div class="ui sixteen wide column">

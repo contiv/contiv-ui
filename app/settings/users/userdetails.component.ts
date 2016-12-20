@@ -12,6 +12,7 @@ export class UserDetailsComponent {
     user:any = {};
     organizations:any[] = [];
     mode:string = 'details';
+    public userDetailsCtrl:any = {}
 
     constructor(private activatedRoute: ActivatedRoute,
                 private router: Router,
@@ -19,6 +20,8 @@ export class UserDetailsComponent {
                 private usersModel:UsersModel,
                 private organizationsModel: OrganizationsModel,
                 private crudHelperService:CRUDHelperService) {
+
+        this.userDetailsCtrl = this;
         var component = this;
 
         /**
@@ -66,6 +69,10 @@ export class UserDetailsComponent {
 
     cancelEditing() {
         this.returnToUserDetails();
+    }
+
+    cancelDetails() {
+        this.returnToUser();
     }
 
     deleteUser() {

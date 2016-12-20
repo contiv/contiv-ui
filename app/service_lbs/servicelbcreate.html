@@ -54,10 +54,10 @@
                         </div>
                     </div>
 
-                    <div class="ui fifteen column grid">
+                    <div class="ui sixteen column grid" style="margin-bottom: 20px;">
                         <div class="ui row">
 
-                            <div class="ui five wide column">
+                            <div class="ui four wide column">
                                 <div class="field">
                                     <label for="servicelbName">Service load balancer name</label>
                                     <input type="text" id="servicelbName" name="servicelbName"
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
 
-                            <div class="ui five wide column">
+                            <div class="ui four wide column">
                                 <div class="field">
                                     <label for="servicelbTenant">Tenant</label>
                                     <select id="servicelbTenant" class="ui dropdown"
@@ -79,20 +79,27 @@
                                 </div>
                             </div>
 
-                            <div class="ui five wide column">
-                                <div class="field">
+                            <div class="ui four wide column">
+                                <div *ngIf="servicelb.tenantName" class="field">
                                     <label for="servicelbNetwork">Network</label>
-                                    <select id="servicelbNetwork" class="ui dropdown"
+                                    <select *ngIf="servicelbCreateCtrl.networks.length" id="servicelbNetwork" class="ui dropdown"
                                             name="servicelbNetwork"
                                             [(ngModel)]="servicelbCreateCtrl.servicelb.networkName"
                                             required #servicelbNetwork="ngModel">
-                                        <option value="">-- Please select network --</option>
+                                        <option value="">-- Select a network --</option>
                                         <option *ngFor="let network of servicelbCreateCtrl.networks" [ngValue]="network.networkName">{{network.networkName}}</option>
+                                    </select>
+
+                                    <select *ngIf="!servicelbCreateCtrl.networks.length"        class="ui dropdown"
+                                            name="servicelbNetwork"
+                                            required >
+                                        <option value="">-- Tenant has no networks --</option>
+
                                     </select>
                                 </div>
                             </div>
-                            <div class="ui five wide column">
-                                <div class="field">
+                            <div class="ui four wide column">
+                                <div *ngIf="servicelb.tenantName" class="field">
                                     <label for="servicelbIP">Service IP address</label>
                                     <input type="text" id="servicelbIP" name="servicelbIP"
                                            [(ngModel)]="servicelbCreateCtrl.servicelb.ipAddress" placeholder="Enter IP address" #servicelbIP="ngModel">
@@ -104,6 +111,9 @@
 
                     <ctv-collapsible [title]="'Label Selectors'">
                         <div class="field">
+                            <div class="description">
+                                Use this to add your selector name+value pairs.
+                            </div>
                             <ctv-namevalue [items]="servicelbCreateCtrl.labelSelectors" (itemsChange)="servicelbCreateCtrl.labelSelectors=$event"></ctv-namevalue>
                         </div>
                     </ctv-collapsible>

@@ -58,7 +58,7 @@ export class NetworkPoliciesTabsComponent {
                 this.isolationPolicySelected = false;
                 this.bandwidthPolicySelected = false;
                 this.contractGroupSelected = true;
-                this.policyMode = 'contactgroup'
+                this.policyMode = 'contractgroup'
                 break;
             default:
                 this.isolationPolicySelected = true;
