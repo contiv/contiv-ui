@@ -55,7 +55,7 @@
         </div>
     </div>
 
-    <div class="ui row">
+    <div class="ui row"  [ngSwitch]="userDetailsCtrl.mode">
         <div class="ui sixteen wide column">
 
             <div class="ui basic segment">
@@ -63,31 +63,30 @@
                     <div class="ui loader"></div>
                 </div>
 
-                <table class="ui very basic selectable table">
+                <table *ngSwitchCase="'details'" class="ui very basic selectable table">
                     <tbody>
                         <tr>
                             <td class="key">Username</td>
                             <td class="value">{{user.username}}</td>
                         </tr>
-                        <tr *ngSwitchCase="'details'">
+                        <tr >
                             <td class="key">Firstname</td>
                             <td class="value">{{user.first_name}}</td>
                         </tr>
-                        <tr *ngSwitchCase="'details'">
+                        <tr>
                             <td class="key">Lastname</td>
                             <td class="value">{{user.last_name}}</td>
                         </tr>
-                        <tr *ngSwitchCase="'details'">
+                        <tr>
                             <td class="key">Disabled</td>
                             <td class="value">{{user.disable?'Yes':'No'}}</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div [ngSwitch]="mode">
+                <div *ngSwitchCase="'edit'">
                     <form class="ui form"
                           role="form"
-                          *ngSwitchCase="'edit'"
                           (submit)="saveUser(formRef.valid)" novalidate #formRef="ngForm">
 
                         <div class="field">
@@ -153,7 +152,7 @@
                                 </div>
 
                             </div>
-                            <div class="ui row" *ngSwitchCase="'edit'">
+                            <div class="ui row">
 
                                 <div class="right aligned fifteen wide column buttonRow">
                                     <button type="button" class="ui large button cancelBtn" (click)="cancelEditing()">

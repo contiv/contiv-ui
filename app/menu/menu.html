@@ -30,18 +30,10 @@
 <notification></notification>
 
 <div id="sidebar" class="ui visible left vertical sidebar icon labeled menu mainNav">
-    <!-- <a class="item active" *ngIf="firstRun">
-        First Run
-    </a> -->
-
     <span *ngIf="!firstRun">
 
         <a class="item" [routerLink]="['dashboard']" routerLinkActive="active">
             Dashboard
-        </a>
-
-        <a class="item" [routerLink]="['organizations']" routerLinkActive="active">
-            Tenants
         </a>
 
         <a class="item" [routerLink]="['networks']" routerLinkActive="active">
