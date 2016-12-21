@@ -6,64 +6,6 @@
         <div class="right aligned eight wide column">&nbsp;</div>
     </div>
 
-<<<<<<< HEAD
-    <div class="ui active inverted dimmer" *ngIf="showLoader">
-        <div class="ui loader"></div>
-    </div>
-    <div class="ui basic segment">
-        <div class="field">
-            <div *ngIf="formRef.submitted">
-                <div [hidden]="formRef.valid" class="ui negative message">
-                    <ul class="list">
-                        <!-- <li *ngIf="newUserName.errors?.required">Please enter
-                            user name
-                        </li>
-                        <li *ngIf="newUserPassword.errors?.required">Please enter
-                            user password
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="field">
-            <label for="newUserName">Username</label>
-            <input type="text" id="newUserName" name="newUserName"
-                   [(ngModel)]="newUser.username"
-                   placeholder="Enter username" required #newUserName="ngModel">
-        </div>
-        <div class="field">
-            <label for="newUserPassword">Password</label>
-            <input type="password" id="newUserPassword" name="newUserPassword"
-                   [(ngModel)]="newUser.password"
-                   placeholder="Enter password" required #newUserPassword="ngModel">
-        </div>
-        <div class="field">
-            <label for="newUserFirstName">First Name</label>
-            <input type="text" id="newUserFirstName" name="newUserFirstName"
-                   [(ngModel)]="newUser.first_name"
-                   placeholder="Enter first name" #newUserFirstName="ngModel">
-        </div>
-        <div class="field">
-            <label for="newUserLastName">Last Name</label>
-            <input type="text" id="newUserLastName" name="newUserLastName"
-                   [(ngModel)]="newUser.last_name"
-                   placeholder="Enter last name" #newUserLastName="ngModel">
-        </div>
-        <div class="field">
-            <label>
-                <input type="checkbox" name="newUserDisabled" tabindex="0"
-                       [(ngModel)]="newUser.disable">
-                Disabled
-            </label>
-        </div>
-        <div class="ui grid">
-            <div class="right aligned sixteen wide column">
-                <div style="margin-top: 40px">
-                    <button type="button" class="ui basic button" (click)="cancelCreating()">
-                        Cancel
-                    </button>
-                    <button type="submit" class="ui blue button">Create</button>
-=======
     <div class="ui row breadcrumbRow">
         <div class="ui sixteen wide column">
             <div class="breadcrumbs">
@@ -85,7 +27,6 @@
 
                 <div class="ui active inverted dimmer" *ngIf="showLoader">
                     <div class="ui loader"></div>
->>>>>>> design application
                 </div>
 
                 <div class="ui basic segment">

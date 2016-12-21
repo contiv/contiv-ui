@@ -28,6 +28,7 @@
                 <div class="ui active inverted dimmer" *ngIf="showLoader">
                     <div class="ui loader"></div>
                 </div>
+
                 <ctv-table #tableRef [defaultSortColumn]="'username'"
                            [items]="users"
                            (filtereditems)="filteredusers=$event"
