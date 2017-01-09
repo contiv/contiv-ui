@@ -1,34 +1,34 @@
 <div class="ui sixteen column grid">
     <div class="ui row pageHeader">
-    <div class="ui eight wide column">
-        <div class="content pageTitle">
-            {{contractGroup.contractsGroupName}}
-        </div>
-    </div>
-    <div class="right aligned eight wide column">
-
-        <div id="delete-contractgroup-modal" class="ui small modal">
-            <div class="header">Remove External Contract Group: {{contractGroup.contractsGroupName}}</div>
-            <div class="content">
-                <p>Are you sure you want to remove this external contract group?</p>
+        <div class="ui eight wide column">
+            <div class="content pageTitle">
+                {{contractGroup.contractsGroupName}}
             </div>
-            <div class="actions">
-                <div class="ui negative button">No</div>
-                <div class="ui positive blue button" (click)="deleteContractGroup()">
-                    Yes
+        </div>
+        <div class="right aligned eight wide column">
+
+            <div id="delete-contractgroup-modal" class="ui small modal">
+                <div class="header">Remove External Contract Group: {{contractGroup.contractsGroupName}}</div>
+                <div class="content">
+                    <p>Are you sure you want to remove this external contract group?</p>
+                </div>
+                <div class="actions">
+                    <div class="ui negative button">No</div>
+                    <div class="ui positive blue button" (click)="deleteContractGroup()">
+                        Yes
+                    </div>
                 </div>
             </div>
+
+            <button class="ui large button secondaryBtn" (click)="returnToContractGroups()">
+                Close
+            </button>
+
+            <button class="ui blue large button secondaryBtn" onclick="$('#delete-contractgroup-modal').modal('show')">
+                <i class="trash icon"></i>
+                Remove
+            </button>
         </div>
-
-        <button class="ui large button secondaryBtn" (click)="returnToContractGroups()">
-            Close
-        </button>
-
-        <button class="ui blue large button secondaryBtn" onclick="$('#delete-contractgroup-modal').modal('show')">
-            <i class="trash icon"></i>
-            Remove
-        </button>
-    </div>
     </div>
     <div class="ui row breadcrumbRow">
         <div class="ui sixteen wide column">
