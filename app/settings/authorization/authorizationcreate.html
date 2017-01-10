@@ -48,7 +48,7 @@
 
                     <div class="ui fifteen column grid part1">
                         <div class="ui row">
-                            <div class="ui five wide column isLocalUser">
+                            <div class="ui six wide column isLocalUser">
                                 <div class="field">
                                     <label for="usertype">This is authorizing a</label>
                                     <select class="ui dropdown" id="usertype" name="usertype" [(ngModel)]='usertype' (change)="changeAuthType()" >
@@ -60,12 +60,12 @@
                         </div>
                     </div>
 
-                    <div class="ui fifteen column grid part2">
-                        <div class="ui row">
+                    <div class="ui sixteen column grid part2">
 
-                            <!-- both these form elements point to the same model attribute 'authorization.PrincipalName',
+                        <!-- both these form elements point to the same model attribute 'authorization.PrincipalName',
                             but one (local user) is a SELECT and the other (LDAP) a text input -->
-                            <div *ngIf="usertype=='local'" class="ui five wide column">
+                        <div *ngIf="usertype=='local'" class="ui row">
+                            <div class="ui six wide column">
                                 <div class="field">
                                     <label for="username">Username</label>
                                     <select class="ui dropdown" id="username" name="username"
@@ -75,7 +75,9 @@
                                     </select>
                                 </div>
                             </div>
-                            <div *ngIf="usertype=='ldap'" class="ui five wide column">
+                        </div>
+                        <div *ngIf="usertype=='ldap'" class="ui row">
+                            <div class="ui six wide column">
                                 <div class="field">
                                     <label for="ldapgroup">LDAP Group</label>
                                     <input type="text" id="ldapgroup" name="ldapgroup"
@@ -83,7 +85,9 @@
                                        placeholder="ex: cn=name,ou=group" required #ldapgroup="ngModel">
                                 </div>
                             </div>
-                            <div class="ui five wide column">
+                        </div>
+                        <div class="ui row">
+                            <div class="ui six wide column">
                                 <div class="field">
                                     <label for="tenant">Tenant</label>
                                     <select class="ui dropdown" id="tenant" name="tenant" [(ngModel)]="authorization.TenantName" required #tenant="ngModel">
@@ -91,7 +95,9 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="ui five wide column">
+                        </div>
+                        <div class="ui row">
+                            <div class="ui six wide column">
                                 <div class="field">
                                     <label for="role">Role</label>
                                     <select class="ui dropdown" id="role" name="role" [(ngModel)]="authorization.Role" required #role="ngModel">
