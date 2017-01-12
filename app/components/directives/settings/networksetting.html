@@ -14,7 +14,7 @@
                     <option value="default">default</option>
                     <option value="aci">aci</option>
                 </select>
-                <span *ngIf="networkInfrastructureRef.errors?.required && formRef.submitted">
+                <span class="inlineError" *ngIf="networkInfrastructureRef.errors?.required && formRef.submitted">
                     Please enter network infrastructure type
                 </span>
             </div>
@@ -28,10 +28,10 @@
                        id="allowedVlanRange"
                        name="allowedVlanRange"
                        [(ngModel)]="setting['vlans']" placeholder="1-4094" required [pattern]="vlanPattern">
-                <span *ngIf="allowedVlanRangeRef.errors?.required && formRef.submitted">
+                <span class="inlineError" *ngIf="allowedVlanRangeRef.errors?.required && formRef.submitted">
                     Please enter allowed vlan range
                 </span>
-                <span *ngIf="allowedVlanRangeRef.errors?.pattern && formRef.submitted">
+                <span class="inlineError" *ngIf="allowedVlanRangeRef.errors?.pattern && formRef.submitted">
                     Please enter vlan in range in the correct notation
                 </span>
             </div>
@@ -44,10 +44,10 @@
                        id="allowedVxlanRange"
                        name="allowedVxlanRange"
                        [(ngModel)]="setting['vxlans']" placeholder="1-10000" required [pattern]="vxlanPattern">
-                <span *ngIf="allowedVxlanRangeRef.errors?.required && formRef.submitted">
+                <span class="inlineError" *ngIf="allowedVxlanRangeRef.errors?.required && formRef.submitted">
                     Please enter allowed vxlan range
                 </span>
-                <span *ngIf="allowedVxlanRangeRef.errors?.pattern && formRef.submitted">
+                <span class="inlineError" *ngIf="allowedVxlanRangeRef.errors?.pattern && formRef.submitted">
                     Please enter vxlan in range in the correct notation
                 </span>
             </div>
@@ -64,7 +64,7 @@
                     <option value="bridge">bridge</option>
                     <option value="routing">routing</option>
                 </select>
-                <span *ngIf="forwardingmodeRef.errors?.required && formRef.submitted">
+                <span class="inlineError" *ngIf="forwardingmodeRef.errors?.required && formRef.submitted">
                     Please enter forwarding mode
                 </span>
             </div>

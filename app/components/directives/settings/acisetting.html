@@ -8,7 +8,7 @@
                     <input type="text" id="apicPhysicalDomain" name="apicPhysicalDomain"
                            [(ngModel)]="setting.physicalDomain"
                            placeholder="Enter physical domain name" required #apicPhysicalDomain="ngModel">
-                    <span *ngIf="apicPhysicalDomain.errors?.required && aciForm.submitted">
+                    <span class="inlineError" *ngIf="apicPhysicalDomain.errors?.required && aciForm.submitted">
                         Please enter physical domain
                     </span>
                 </div>
