@@ -11,8 +11,28 @@
 @negativeColor: #FFFFFF;
 @positiveColor: @blue;
 
+
+/* States */
+
+/* Pressed Down */
+@downBackgroundColor: #626469;
+
+@downColor: #ffffff;
+
+/* Basic */
+@basicTextColor: #5d5d5d;
+
 /* Basic Hover */
 @basicHoverBackground: #cfcfcf;
 @basicHoverTextColor: #48494d;
 
+/* Basic Focus */
+@basicFocusBackground: @basicBackground;
+@basicFocusTextColor: @basicTextColor;
 
+/* Basic Down */
+@basicDownBackground: @downBackgroundColor;
+@basicDownTextColor: @downColor;
+
+
+@secondaryTextColor: #036e97;

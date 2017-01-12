@@ -23,11 +23,15 @@
 /*---  Colors  ---*/
 @blue              : #049fd9;
 
-@secondaryColor      :#FFFFFF;
+@secondaryColor      : #ffffff;
 
 
 @primaryColorHover   : #036e97;
-@secondaryColorHover : #cfcfcf;
+
+@secondaryColorHover : #036e97;
+@secondaryColorFocus : #ffffff;
+@secondaryColorDown : #626469;
+
 
 /*-------------------
     Emotive Colors
