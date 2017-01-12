@@ -4194,14 +4194,14 @@ input::selection {
 
 .ui.primary.buttons .button:focus,
 .ui.primary.button:focus {
-  background-color: #0083b4;
+  background-color: #049fd9;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.primary.buttons .button:active,
 .ui.primary.button:active {
-  background-color: #037aa7;
+  background-color: #626469;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4483,16 +4483,6 @@ input::selection {
 .ui.secondary.button:hover {
   color: #ffffff;
 }
-
-/*
-.ui.secondary.button:focus {
-    outline: #036e97 solid 1px;
-}
-.ui.secondary.button:active {
-    color: #ffffff;
-    border: none;
-    outline: none;
-}*/
 
 .ui.button:active {
   border: none;

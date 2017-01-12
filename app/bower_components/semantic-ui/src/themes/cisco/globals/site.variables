@@ -23,10 +23,13 @@
 /*---  Colors  ---*/
 @blue              : #049fd9;
 
-@secondaryColor      : #ffffff;
+@primaryColor : @blue;
+@secondaryColor : #ffffff;
 
 
-@primaryColorHover   : #036e97;
+@primaryColorHover : #036e97;
+@primaryColorFocus : @blue;
+@primaryColorDown : #626469;
 
 @secondaryColorHover : #036e97;
 @secondaryColorFocus : #ffffff;

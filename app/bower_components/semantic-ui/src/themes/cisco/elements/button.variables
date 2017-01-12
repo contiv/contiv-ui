@@ -11,6 +11,8 @@
 @negativeColor: #FFFFFF;
 @positiveColor: @blue;
 
+@primaryTextColor: #FFFFFF;
+@secondaryTextColor: #036e97;
 
 /* States */
 
@@ -35,4 +37,3 @@
 @basicDownTextColor: @downColor;
 
 
-@secondaryTextColor: #036e97;
