@@ -692,7 +692,7 @@ input::selection {
   padding: 0.78571429em 1.5em 0.78571429em;
   text-transform: none;
   text-shadow: none;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1em;
   font-style: normal;
   text-align: center;
@@ -4463,11 +4463,24 @@ input::selection {
   background-image: none;
 }
 
+.ui.primary.button {
+  font-size: 13px;
+  padding: 0 24px;
+  height: 30px;
+  /*width: auto;*/
+  white-space: nowrap;
+}
+
 .ui.button:focus {
   outline: #036e97 solid 1px;
 }
 
 .ui.basic.button {
+  font-size: 13px;
+  padding: 0 24px;
+  height: 30px;
+  width: auto;
+  white-space: nowrap;
   border: 1px solid #c6c6c6;
 }
 
@@ -4477,6 +4490,11 @@ input::selection {
 }
 
 .ui.secondary.button {
+  font-size: 13px;
+  padding: 0 24px;
+  height: 30px;
+  width: auto;
+  white-space: nowrap;
   border: 1px solid #049fd9;
 }
 

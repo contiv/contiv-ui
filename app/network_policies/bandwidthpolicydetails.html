@@ -19,19 +19,19 @@
                         </div>
                     </div>
                 </div>
-                <button *ngSwitchCase="'details'" type="button" class="ui large basic button"
+                <button *ngSwitchCase="'details'" type="button" class="ui basic button"
                         (click)="cancelDetails()">
                     Close
                 </button>
-                 <button *ngSwitchCase="'edit'" type="button" class="ui large basic button"
+                 <button *ngSwitchCase="'edit'" type="button" class="ui basic button"
                         (click)="cancelEditing()">
                     Cancel
                 </button>
-                <button *ngSwitchCase="'details'" class="ui large secondary button"
+                <button *ngSwitchCase="'details'" class="ui secondary button"
                         (click)="editPolicy()">
                     Edit
                 </button>
-                <button class="ui large secondary button" onclick="$('#delete-policy-modal').modal('show')">
+                <button class="ui secondary button" onclick="$('#delete-policy-modal').modal('show')">
                     <i class="trash icon"></i>
                     Remove
                 </button>
@@ -162,12 +162,12 @@
 
                         <div class="ui grid">
                             <div class="right aligned six wide column buttonRow">
-                                <button type="button" class="ui large basic button"
+                                <button type="button" class="ui basic button"
                                         (click)="cancelEditing()">
                                     Cancel
                                 </button>
 
-                                <button type="submit" class="ui large primary button">
+                                <button type="submit" class="ui primary button">
                                     Save
                                 </button>
                             </div>

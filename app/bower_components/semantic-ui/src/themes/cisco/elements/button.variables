@@ -5,6 +5,7 @@
 @backgroundColor: #E0E0E0;
 
 /* Text */
+@fontWeight: 400;
 @borderRadius: 2px;
 @textColor: #BABABA;
 

@@ -115,18 +115,6 @@ menu { margin: 0; padding: 0; z-index: 2000; }
     overflow: visible;
 }
 
-.ui.fluid.button,
-.ui.large.button {
-    font-family: CiscoSansRegular;
-    font-size: 13px;
-    font-weight: 400;
-    padding: 0 24px;
-    height: 30px;
-    border-radius: 2px;
-    width: auto;
-    white-space: nowrap;
-}
-
 .ui.button.iconBtn {
     font-family: CiscoSansRegular;
     font-size: 9px;
