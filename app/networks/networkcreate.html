@@ -31,28 +31,6 @@
                 </div>
 
                 <div class="ui sixteen column grid" style="margin: 0;">
-                    <!--
-                    <div class="ui row">
-
-                        <div class="ui six wide column field">
-                            <div *ngIf="networkCreateForm.submitted">
-                                <div [hidden]="networkCreateForm.valid" class="ui negative message">
-                                    <ul class="list">
-                                        <li *ngIf="newNetworkName.errors?.required">Please enter network name
-                                        </li>
-                                        <li *ngIf="newNetworkTenant.errors?.required">
-                                            Please select tenant
-                                        </li>
-                                        <li *ngIf="newNetworkSubnet.errors?.required">Please enter subnet</li>
-                                        <li *ngIf="newNetworkSubnet.errors?.pattern">Please enter subnet in CIDR
-                                            notation
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                     <div class="ui row">
                         <div class="ui six wide column field" [ngClass]="{error: newNetworkName.errors?.required && networkCreateForm.submitted}">
                             <label for="newNetworkName">Network name</label>
