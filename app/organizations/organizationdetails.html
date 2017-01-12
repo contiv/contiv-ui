@@ -1,13 +1,13 @@
 <div class="ui sixteen column grid">
     <div class="ui row pageHeader">
         <div class="left aligned eight wide column">
-            <div class="content pageTitle">{{organizationDetailsCtrl.organization.tenantName}}</div>
+            <div class="content pageTitle">Details: {{organizationDetailsCtrl.organization.tenantName}}</div>
         </div>
         <div class="right aligned eight wide column">
-            <button class="ui basic button" (click)="close()">
+            <button class="ui button large cancelBtn" (click)="close()">
                 Close
             </button>
-            <button class="ui secondary button" onclick="$('#delete-organization-modal').modal('show')">
+            <button class="ui large button secondaryBtn" onclick="$('#delete-organization-modal').modal('show')">
                 <i class="trash icon"></i>
                 Remove
             </button>
@@ -17,8 +17,9 @@
         <div class="ui sixteen wide column">
             <div class="breadcrumbs">
                 <span class="crumb">
+                    <!-- <a href="/#/m/servicelbs/list"> -->
                     <a [routerLink]="['../../list']">
-                        Tenants
+                        Tenant List
                     </a>
                 </span>
                 <span class="crumb">{{organizationDetailsCtrl.organization.tenantName}}</span>
@@ -50,11 +51,11 @@
                 </div>
 
                 <div class="ctvTable">
-                    <table>
+                    <table class="ui very basic selectable table">
                         <tbody>
                         <tr>
-                            <td class="ctv-header">Name</td>
-                            <td class="ctv-value">{{organizationDetailsCtrl.organization.tenantName}}</td>
+                            <td class="ctv-header three wide column key">Name</td>
+                            <td class="value">{{organizationDetailsCtrl.organization.tenantName}}</td>
                         </tr>
                         </tbody>
                     </table>
