@@ -1,4 +1,4 @@
-<div class="ui small message notify" id="notificationMessage"
+<div class="ui small message notify"
      [ngClass]="{   ready: notificationType==NotificationType.confirm,
                     minor: notificationType==NotificationType.alert,
                     info: notificationType==NotificationType.info}">
@@ -6,10 +6,10 @@
     <div class="ui container">
         <div class="ui grid">
             <div class="ui right aligned two wide column">
-                <i id="notifyIcon" class="icon inverted" [ngClass]="{toast_confirm: notificationType==NotificationType.confirm,
+                <i id="notifyIcon" class="icon inverted notifyIcon" [ngClass]="{toast_confirm: notificationType==NotificationType.confirm,
                                                             toast_warning: notificationType==NotificationType.alert,
                                                             toast_info: notificationType==NotificationType.info}">
-                    <span id="backgroundIcon"></span>
+                    <span class="backgroundIcon"></span>
                 </i>
             </div>
             <div class="ui left aligned fourteen wide column">

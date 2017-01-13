@@ -1,4 +1,4 @@
-#notificationMessage{
+.ui.small.message.notify{
     z-index: 4000;
     position: fixed;
     display: block;
@@ -11,7 +11,7 @@
     -moz-border-radius : 10px;
     -webkit-border-radius : 10px;
     box-shadow: 0px 0px 20px #e0e0e0;
-    width:500px;
+    width:360px;
 
 }
 
@@ -39,7 +39,7 @@
     padding-right: 20px;
 }
 
-#notifyIcon{
+.notifyIcon{
     position: relative;
     padding-top: 4px;
     top:15%;
@@ -58,7 +58,7 @@
     color: #008FCE;
 }
 
-#backgroundIcon{
+.backgroundIcon{
     position: absolute;
     border-radius: 50%;
     width: 30.0px;
