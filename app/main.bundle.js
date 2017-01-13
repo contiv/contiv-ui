@@ -8438,7 +8438,7 @@ webpackJsonp([2],[
 	        this.lineChartOptions = {};
 	        this.lineChartColors = [
 	            {
-	                backgroundColor: 'rgba(255,255,255,0',
+	                backgroundColor: 'rgba(0,117,180,0.1)',
 	                borderColor: 'rgba(4,159,217,1)',
 	                pointBackgroundColor: 'rgba(0,117,180,1)',
 	                pointBorderColor: 'rgba(0,117,180,1)',
