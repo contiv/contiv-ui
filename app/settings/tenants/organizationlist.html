@@ -1,9 +1,14 @@
 <div class="ui sixteen column grid">
     <div class="ui row pageHeader">
-        <div class="left aligned eight wide column">
-            <div class="content pageTitle">Tenants</div>
+        <div class="left aligned two wide column">
+            <div class="content pageTitle">
+                Tenants
+            </div>
         </div>
-        <div class="right aligned eight wide column">
+        <div class="left aligned six wide column" style="margin-left: -50px;margin-top: 8px">
+            <tooltip [data]="'Tenancies are the basic organizational container for all other assets. Create tenanats then assign users to them, and create network and other objects per tenant. Users assigned to a tenant (or multiple tenants) will be allowed to view and use their authorized tenancy resources only.'"></tooltip>
+        </div>
+        <div class="right aligned seven wide column">
             <button class="ui primary button" (click)="create()" *auth="'admin'">
                 <i class="add icon"></i>
                 Create Tenant
@@ -22,8 +27,6 @@
 
     <div class="ui row">
         <div class="ui sixteen wide column">
-
-            <div class="description"><i>Tenancies</i> are the basic organizational container for all other assets. Create tenanats then assign users to them, and create network and other objects per tenant. Users assigned to a tenant (or multiple tenants) will be allowed to view and use their authorized tenancy resources only.</div>
 
             <ctv-search *ngIf="organizationsListCtrl.organizations" (searchTextChange)="tableRef.showChunk(tableRef.table.pageNo,$event);" [count]="tableRef.count"></ctv-search>
 
