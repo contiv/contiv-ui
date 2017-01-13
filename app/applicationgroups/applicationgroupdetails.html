@@ -1,6 +1,6 @@
 <div class="ui sixteen column grid">
     <div class="ui row">
-        <div class="left aligned eight wide column" [ngSwitch]="mode">
+        <div class="left aligned eight wide column pageHeader" [ngSwitch]="mode">
             <div *ngSwitchCase="'details'" class="content pageTitle">{{applicationGroup.groupName}}</div>
             <div *ngSwitchCase="'edit'" class="content pageTitle">{{applicationGroup.groupName}}</div>
         </div>
@@ -19,19 +19,19 @@
                     </div>
                 </div>
             </div>
-            <button *ngSwitchCase="'details'" type="button" class="ui large button cancelBtn"
+            <button *ngSwitchCase="'details'" type="button" class="ui basic button"
                     (click)="cancelDetails()">
                 Close
             </button>
-            <button *ngSwitchCase="'edit'" type="button" class="ui large button cancelBtn"
+            <button *ngSwitchCase="'edit'" type="button" class="ui basic button"
                     (click)="cancelEditing()">
                 Cancel
             </button>
-            <button *ngSwitchCase="'details'" class="ui blue large button secondaryBtn"
+            <button *ngSwitchCase="'details'" class="ui secondary button"
                     (click)="editApplicationGroup()">
                 Edit
             </button>
-            <button class="ui blue large button secondaryBtn" onclick="$('#delete-group-modal').modal('show')">
+            <button class="ui secondary button" onclick="$('#delete-group-modal').modal('show')">
                 <i class="trash icon"></i>
                 Remove
             </button>
@@ -52,8 +52,8 @@
         </div>
     </div>
 
-    <div class="ui row">
-        <div class="ui sixteen wide column">
+    <div class="ui row tabs">
+        <div class="aligned left ui sixteen wide column">
             <div class="ui tabular menu" *ngIf="mode=='details'">
                 <a class="item" [ngClass]="{active: infoselected}" (click)="infoselected=true">
                     Details
@@ -67,24 +67,23 @@
                 <applicationgroupinfo [applicationGroup]="applicationGroup"
                                       [mode]="mode" [showLoader]="showLoader"></applicationgroupinfo>
 
+                <div class="ui row" [ngSwitch]="mode" style="margin-top: 40px">
+
+                    <div class="right aligned sixteen wide column">
+                        <button *ngSwitchCase="'edit'" type="button" class="ui basic button"
+                                (click)="cancelEditing()">
+                            Cancel
+                        </button>
+                        <button *ngSwitchCase="'edit'" type="button" class="ui primary button"
+                                (click)="saveApplicationGroup()">
+                            Save
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <applicationgroupstats [statkey]="statskey"
                                    *ngIf="!infoselected && mode != 'edit'"></applicationgroupstats>
-        </div>
-    </div>
-
-    <div class="ui row" [ngSwitch]="mode" style="margin-top: 40px">
-
-        <div class="right aligned sixteen wide column">
-            <button *ngSwitchCase="'edit'" type="button" class="ui large button cancelBtn"
-                    (click)="cancelEditing()">
-                Cancel
-            </button>
-            <button *ngSwitchCase="'edit'" type="button" class="ui blue large button primaryBtn"
-                    (click)="saveApplicationGroup()">
-                Save
-            </button>
         </div>
     </div>
 
