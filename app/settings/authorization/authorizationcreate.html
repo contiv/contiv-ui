@@ -1,10 +1,8 @@
 <div class="ui basic segment" [ngClass]="{loading: showLoader}">
     <div class="ui sixteen column grid ">
         <div class="ui row pageHeader">
-            <div class="left floated left aligned four wide column">
-                <div class="content pageTitle">Create Authorization</div>
-            </div>
-            <div class="left floated left aligned twelve wide column" style="margin-left: -110px;margin-top: 8px">
+            <div class="left aligned sixteen wide column">
+                <div class="content pageTitle" style="display: inline-block">Create Authorization</div>
                 <tooltip [data]="'Create user authorizations here. You can assign users into one or more tenancies and define their roles. Both local and LDAP users are supported; for local users you can pick the user name from a menu, for LDAP users you will need to enter an LDAP group string.'"></tooltip>
             </div>
         </div>

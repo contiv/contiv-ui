@@ -1,8 +1,11 @@
-.toolTip{
+.tooltip{
     display: inline;
+    position: relative;
+    top: -6px;
+    left: 8px;
 }
 
-.toolTip:hover span{
+.tooltip:hover span{
     opacity: 1;
     visibility: visible;
 }
@@ -17,8 +20,8 @@ i.toast_info{
 
 .tooltipInfo{
     width:400px;
-    left:50px;
-    top:-35px;
+    left:36px;
+    top:-42px;
     background-color:#008FCE;
     opacity:0;
     transition: opacity 450ms ease-in-out;
