@@ -4,7 +4,7 @@
             <div class="content pageTitle" style="display: inline-block">
                 Tenants
             </div>
-            <tooltip [data]="'Tenancies are the basic organizational container for all other assets. Create tenanats then assign users to them, and create network and other objects per tenant. Users assigned to a tenant (or multiple tenants) will be allowed to view and use their authorized tenancy resources only.'"></tooltip>
+            <tooltip [data]="'Tenants are the highest level of organization in UCN. Create tenants and then assign the appropriate users and create networks. Users are authorized to view and use only the resources within their tenant, but can be assigned to multiple tenants.'"></tooltip>
         </div>
         <div class="right aligned seven wide column">
             <button class="ui primary button" (click)="create()" *auth="'admin'">
