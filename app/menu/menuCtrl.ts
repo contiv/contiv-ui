@@ -6,6 +6,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { AuthService } from "../components/utils/authservice";
 import { ContivGlobals } from "../components/models/contivglobals";
 import {ChartService} from "../components/utils/chartservice";
+import {UserDisplayType} from "../components/directives/settings/userdetailscomponent";
 declare var jQuery:any;
 
 @Component({
@@ -17,6 +18,7 @@ export class MenuComponent implements DoCheck{
     public username: string;
     public product_name:string = ContivGlobals.PRODUCT_NAME;
     public firstRun: boolean;
+    public UserDisplayType = UserDisplayType;
 
     constructor(private activatedRoute: ActivatedRoute,
                 private router: Router,
@@ -27,6 +29,7 @@ export class MenuComponent implements DoCheck{
 
     ngOnInit(){
         this.firstRun = this.authService.firstRun;
+        jQuery('.ui.dropdown').dropdown({action: 'hide'});
     }
 
     ngDoCheck(){
@@ -37,5 +40,9 @@ export class MenuComponent implements DoCheck{
         this.authService.logout();
         this.chartService.cleanBuffer();
         this.router.navigate(['/logout'],{relativeTo: this.activatedRoute});
+    }
+
+    closeProfile(){
+        jQuery('#user-profile-modal').modal('hide');
     }
 }

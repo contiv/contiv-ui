@@ -9,25 +9,51 @@
                 <i class="large help icon"></i>
             </button>
             <button type="button" class="circular ui mini icon button"
-                    (click)="logout()">
-                <i class="large logout icon"></i>
-            </button>
-            <button type="button" class="circular ui mini icon button"
                     (click)="account()">
                 <i class="large user icon"></i>
             </button>
-            <div class="ui dropdown">
+
+            <!--
+            <div class="ui floating dropdown">
                 <div class="text">{{username}}</div>
                 <i class="large dropdown icon"></i>
                 <div class="menu">
+                    <div class="item" onclick="$('#user-profile-modal').modal('show')">
+                        User Profile
+                    </div>
+                    <div class="item" (click)="logout()">
+                        Logout
+                    </div>
                 </div>
             </div>
+            -->
+
+            <div class="ui floating labeled icon dropdown">
+                <i class="dropdown icon"></i>
+                <span class="text">{{username}}</span>
+                <div class="menu" style="margin-top: 17px !important; margin-left: -28px !important;">
+                    <div class="item" onclick="$('#user-profile-modal').modal('show')">
+                        <span class="text">Update Profile</span></div>
+                    <div class="item" (click)="logout()">
+                        <span class="text">Logout</span></div>
+                </div>
+            </div>
+
         </div>
 
     </div>
 </div>
 
 <notification></notification>
+
+<div id="user-profile-modal" class="ui small modal">
+    <div class="header">Update Profile</div>
+    <div class="content">
+        <userdetails [username]="username" [displayType]="UserDisplayType.modal"
+        (close)="closeProfile()">
+        </userdetails>
+    </div>
+</div>
 
 <div id="sidebar" class="ui visible left vertical sidebar icon labeled menu mainNav">
     <span *ngIf="!firstRun">
