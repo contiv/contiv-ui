@@ -58,7 +58,7 @@
             <div class="ui row">
     
                 <div class="right aligned buttonRow" [ngClass]="buttonAlignArrCss">
-                    <button type="button" class="ui basic button" (click)="closeEdit()">
+                    <button type="button" class="ui basic button" [ngClass]="{deny: displayType===ProfileDisplayType.modal}"(click)="closeEdit()">
                         Cancel
                     </button>
                     <button type="submit" class="ui primary button">

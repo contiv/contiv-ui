@@ -17,7 +17,7 @@ import { ChartsModule } from "ng2-charts";
 import { NotificationComponent } from "./notification";
 import { LdapSettingsComponent } from "./settings/ldapsettingcomponent";
 import { TooltipComponent } from "./tooltip";
-import {UserProfileEditComponent} from "./settings/userprofileedit";
+import { UserProfileEditComponent } from "./settings/userprofileedit";
 @NgModule({
     imports: [
         CommonModule, FormsModule, ChartsModule

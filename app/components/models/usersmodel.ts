@@ -7,7 +7,7 @@ import { Collection } from "./collection";
 import { ContivGlobals } from "./contivglobals";
 import { ApiService } from "../utils/apiservice";
 import * as _ from 'lodash';
-import {isUndefined} from "util";
+import { isUndefined } from "util";
 
 @Injectable()
 export class UsersModel extends Collection {

@@ -1,12 +1,12 @@
 /**
  * Created by cshampur on 1/19/17.
  */
-import {Component, Inject, NgZone, Input, OnInit, EventEmitter, Output} from '@angular/core';
+import { Component, Inject, NgZone, Input, OnInit, EventEmitter, Output } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
-import {User} from "../../../settings/users/usercreate.component";
-import {UsersModel} from "../../models/usersmodel";
-import {CRUDHelperService} from "../../utils/crudhelperservice";
-import {ContivGlobals} from "../../models/contivglobals";
+import { User } from "../../../settings/users/usercreate.component";
+import { UsersModel } from "../../models/usersmodel";
+import { CRUDHelperService } from "../../utils/crudhelperservice";
+import { ContivGlobals } from "../../models/contivglobals";
 
 export enum ProfileDisplayType{
     modal,

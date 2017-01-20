@@ -1,33 +1,25 @@
 <div class="ui sixteen column grid">
     <div [ngSwitch]="servicelbDetailsCtrl.mode" class="ui row">
         <div class="left aligned eight wide column">
-            <div *ngSwitchCase="'details'" class="content pageTitle">{{servicelbDetailsCtrl.serviceName}}</div>
-            <div *ngSwitchCase="'edit'" class="content pageTitle">{{servicelbDetailsCtrl.serviceName}}</div>
+            <div class="content pageTitle">{{servicelbDetailsCtrl.serviceName}}</div>
         </div>
-        <div class="right aligned eight wide column">
+        <div class="right aligned eight wide column" *ngSwitchCase="'details'">
 
-            <div id="delete-service-modal" class="ui small modal">
-                <div class="header">Delete</div>
-                <div class="content">
-                    <p>Are you sure you want to delete the service <q>{{servicelbDetailsCtrl.serviceName}}</q>?</p>
-                </div>
-                <div class="actions">
-                    <div class="ui basic deny button modalBtn">Cancel</div>
-                    <div class="ui primary approve button modalBtn" (click)="deleteServicelb()">
-                        Yes
-                    </div>
-                </div>
-            </div>
+<<<<<<< 7376ad2e3ee8518581afbbd0d1fb00f5c58c09ae
+
 
             <button *ngSwitchCase="'edit'" type="button" class="ui basic button"
                     (click)="cancelEditing()">
                 Cancel
             </button>
             <button *ngSwitchCase="'details'" type="button" class="ui basic button"
+=======
+            <button type="button" class="ui basic button"
+>>>>>>> clearing models
                     (click)="cancelDetails()">
                 Close
             </button>
-            <button *ngSwitchCase="'details'" class="ui secondary button"
+            <button class="ui secondary button"
                     (click)="loadEdit()">
                 Edit
             </button>
@@ -36,6 +28,19 @@
                 Remove
             </button>
 
+        </div>
+    </div>
+
+    <div id="delete-service-modal" class="ui small modal">
+        <div class="header">Delete</div>
+        <div class="content">
+            <p>Are you sure you want to delete the service <q>{{servicelbDetailsCtrl.serviceName}}</q>?</p>
+        </div>
+        <div class="actions">
+            <div class="ui basic deny button modalBtn">Cancel</div>
+            <div class="ui primary approve button modalBtn" (click)="deleteServicelb()">
+                Yes
+            </div>
         </div>
     </div>
 
