@@ -1,7 +1,7 @@
 <div class="page header">
     <div class="ui top attached menu mainMenu" align="right">
         <h1 class="header" style="margin-top: 2px; float: left; white-space: nowrap; ">
-            <img class="ui image" src="images/cisco_logo.svg" height="30" style="display: inline; margin-right: 20px;"><span class="productname">{{product_name}}</span>
+            <img class="ui image" src="images/Contiv-logo.svg" height="30" style="display: inline; margin-right: 20px;"><span class="productname">{{product_name}}</span>
         </h1>
         <div class="utilnav">
             <button type="button" class="circular ui mini icon button"
@@ -13,25 +13,10 @@
                 <i class="large user icon"></i>
             </button>
 
-            <!--
-            <div class="ui floating dropdown">
-                <div class="text">{{username}}</div>
-                <i class="large dropdown icon"></i>
-                <div class="menu">
-                    <div class="item" onclick="$('#user-profile-modal').modal('show')">
-                        User Profile
-                    </div>
-                    <div class="item" (click)="logout()">
-                        Logout
-                    </div>
-                </div>
-            </div>
-            -->
-
+            <span class="text">{{username}}</span>
             <div class="ui floating labeled icon dropdown">
                 <i class="dropdown icon"></i>
-                <span class="text">{{username}}</span>
-                <div class="menu" style="margin-top: 17px !important; margin-left: -28px !important;">
+                <div class="menu profile">
                     <div class="item" onclick="$('#user-profile-modal').modal('show')">
                         <span class="text">Update Profile</span></div>
                     <div class="item" (click)="logout()">
@@ -49,9 +34,7 @@
 <div id="user-profile-modal" class="ui small modal">
     <div class="header">Update Profile</div>
     <div class="content">
-        <userdetails [username]="username" [displayType]="UserDisplayType.modal"
-        (close)="closeProfile()">
-        </userdetails>
+        <userprofileedit [username]="username" (close)="closeProfile()" [displayType]="ProfileDisplayType.modal"></userprofileedit>
     </div>
 </div>
 

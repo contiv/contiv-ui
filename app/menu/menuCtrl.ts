@@ -5,20 +5,21 @@ import { Component, Inject, ViewEncapsulation, OnInit, OnChanges, DoCheck } from
 import { ActivatedRoute, Router } from "@angular/router";
 import { AuthService } from "../components/utils/authservice";
 import { ContivGlobals } from "../components/models/contivglobals";
-import {ChartService} from "../components/utils/chartservice";
-import {UserDisplayType} from "../components/directives/settings/userdetailscomponent";
+import { ChartService } from "../components/utils/chartservice";
+import { ProfileDisplayType } from "../components/directives/settings/userprofileedit";
 declare var jQuery:any;
 
 @Component({
     selector: 'menu',
-    templateUrl: './menu.html'
+    templateUrl: './menu.html',
+    styleUrls: ['./menu.css']
 })
 
 export class MenuComponent implements DoCheck{
     public username: string;
     public product_name:string = ContivGlobals.PRODUCT_NAME;
     public firstRun: boolean;
-    public UserDisplayType = UserDisplayType;
+    public ProfileDisplayType = ProfileDisplayType;
 
     constructor(private activatedRoute: ActivatedRoute,
                 private router: Router,
