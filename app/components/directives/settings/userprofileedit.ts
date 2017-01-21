@@ -15,8 +15,7 @@ export enum ProfileDisplayType{
 
 @Component({
     selector: 'userprofileedit',
-    templateUrl: './userprofileedit.html',
-    styleUrls: ['./userprofileedit.css']
+    templateUrl: './userprofileedit.html'
 })
 export class UserProfileEditComponent implements OnInit {
     public ProfileDisplayType = ProfileDisplayType;
