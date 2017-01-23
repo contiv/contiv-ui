@@ -1,7 +1,7 @@
 /**
  * Created by vjain3 on 5/19/16.
  */
-import { Component, Inject, ViewEncapsulation, OnInit, OnChanges, DoCheck } from '@angular/core';
+import {Component, Inject, ViewEncapsulation, OnInit, OnChanges, DoCheck, AfterViewInit} from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { AuthService } from "../components/utils/authservice";
 import { ContivGlobals } from "../components/models/contivglobals";
@@ -27,7 +27,7 @@ declare var jQuery:any;
     styleUrls: ['./menu.css']
 })
 
-export class MenuComponent implements DoCheck{
+export class MenuComponent implements AfterViewInit{
     public username: string;
     public product_name:string = ContivGlobals.PRODUCT_NAME;
     public firstRun: boolean;
@@ -50,34 +50,35 @@ export class MenuComponent implements DoCheck{
                 private servicelbsModel: ServicelbsModel,
                 private usersModel: UsersModel) {
         this.username = authService.authTokenPayload['username'];
-        jQuery('#user-profile-modal').modal({onHide: ($event) => {return true;}});
+        this.firstRun = this.authService.firstRun;
     }
 
-    ngOnInit(){
-        this.firstRun = this.authService.firstRun;
-        jQuery('.ui.dropdown').dropdown({action: 'hide'});
-    }
-
-    ngDoCheck(){
-        this.firstRun = this.authService.firstRun;
+    ngAfterViewInit(){
+        jQuery('.ui.dropdown').dropdown({action: 'hide', duration: 100});
     }
 
     logout() {
-        this.authService.logout();
-        this.chartService.cleanBuffer();
-        this.networksModel.clearModel();
-        this.applicationgroupsModel.clearModel();
-        this.appprofilesModel.clearModel();
-        this.authorizationModel.clearModel();
-        this.bgpsModel.clearModel();
-        this.contractgroupsModel.clearModel();
-        this.netprofilesModel.clearModel();
-        this.organizationsmodel.clearModel();
-        this.policiesModel.clearModel();
-        this.rulesModel.clearModel();
-        this.servicelbsModel.clearModel();
-        this.usersModel.clearModel();
-        this.router.navigate(['/logout'],{relativeTo: this.activatedRoute});
+        var component = this;
+        component['timerId'] =  window.setInterval(() => {
+           if(jQuery('.ui.dropdown').dropdown('is hidden')){
+               clearInterval(component['timerId']);
+               component.authService.logout();
+               component.chartService.cleanBuffer();
+               component.networksModel.clearModel();
+               component.applicationgroupsModel.clearModel();
+               component.appprofilesModel.clearModel();
+               component.authorizationModel.clearModel();
+               component.bgpsModel.clearModel();
+               component.contractgroupsModel.clearModel();
+               component.netprofilesModel.clearModel();
+               component.organizationsmodel.clearModel();
+               component.policiesModel.clearModel();
+               component.rulesModel.clearModel();
+               component.servicelbsModel.clearModel();
+               component.usersModel.clearModel();
+               component.router.navigate(['/logout'],{relativeTo: this.activatedRoute});
+           }
+        },10)
     }
 
     closeProfile(){

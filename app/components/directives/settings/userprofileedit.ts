@@ -24,14 +24,12 @@ export class UserProfileEditComponent implements OnInit {
     @Input('username') username: string = '';
     @Input('displayType') displayType: ProfileDisplayType = ProfileDisplayType.component;
     @Output('close') close: EventEmitter<any>;
-    public userDetailsCtrl:any = {};
     public buttonAlignArrCss: Array<string> = [];
 
     constructor(private ngZone: NgZone,
                 private usersModel:UsersModel,
                 private crudHelperService:CRUDHelperService) {
 
-        this.userDetailsCtrl = this;
         var component = this;
         this.user = {username: '', first_name: '', last_name: '', disable: false};
         this.close = new EventEmitter<any>();

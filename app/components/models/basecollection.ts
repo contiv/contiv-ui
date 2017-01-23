@@ -37,11 +37,11 @@ export class BaseCollection {
                 resolve(collection.models);
             }) : collection.apiService.get(collection.url)
                 .map((res: Response) => {
-                        var result = this.filterAsyncReq(res);
-                        return result;
+                    var result = this.filterAsyncReq(res);
+                    return result;
                 }).toPromise().then(function (result) {
-                            collection.models = result;
-                            return collection.models;
+                    collection.models = result;
+                    return collection.models;
                 });
     };
 
