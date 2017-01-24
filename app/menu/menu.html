@@ -57,7 +57,7 @@
             Application Groups
         </a>
 
-        <a class="item" [routerLink]="['appprofiles']" routerLinkActive="active">
+        <a class="item" [routerLink]="['appprofiles']" routerLinkActive="active" *verifydom="'aci'">
             ACI Application Profiles
         </a>
 
@@ -65,7 +65,7 @@
             Network Policies
         </a>
 
-        <a class="item" [routerLink]="['settings']" routerLinkActive="active" *auth="'admin'">
+        <a class="item" [routerLink]="['settings']" routerLinkActive="active" *verifydom="'admin'">
             Settings
         </a>
     </span>
