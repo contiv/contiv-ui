@@ -9,7 +9,7 @@ import { Subject, Observable } from "rxjs";
 export class NetworkService {
 
     public aciMode: boolean = false;
-    public aciModeSubject: Subject<any>;
+    private aciModeSubject: Subject<any>;
     public aciModeObservable: Observable<any>;
     constructor(private http: Http, private apiService: ApiService) {
         this.aciModeSubject = new Subject<any>();
