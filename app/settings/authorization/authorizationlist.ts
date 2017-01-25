@@ -26,8 +26,8 @@ export class AuthorizationListComponent implements  OnInit{
                 private activatedRoute: ActivatedRoute){
 
         this.refresh = Observable.interval(5000).subscribe(() => {
-     ;       this.getAuthorization(true);
-        })
+            this.getAuthorization(true);
+        });
     }
 
     ngOnInit(){
@@ -39,25 +39,11 @@ export class AuthorizationListComponent implements  OnInit{
         var authorizationComp = this;
         this.authorizationModel.get(reload)
             .then((result) => {
-                authorizationComp.authorizations = authorizationComp.filterResult(result);
+                authorizationComp.authorizations = result;
                 authorizationComp.crudHelperService.stopLoader(authorizationComp);
             },(error) => {
                 authorizationComp.crudHelperService.stopLoader(authorizationComp);
             });
-    }
-
-    filterResult(result): Array<Authorization>{
-        var filterItems: Array<Authorization> = [];
-        for(var item of result){
-            if(item.PrincipalName==='admin' && item.Role === 'admin')
-                filterItems.push(item);
-            else{
-                if(item.TenantName!=='')
-                    filterItems.push(item);
-            }
-
-        }
-        return filterItems;
     }
 
     ngOnDestroy(){

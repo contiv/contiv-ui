@@ -56,7 +56,7 @@ export class NetworkSettingsComponent implements OnDestroy {
         networkSettingCtrl.crudHelperService.startLoader(networkSettingCtrl);
         networkSettingCtrl.networkService.updateSettings(settings).then(function successCallback(result) {
             networkSettingCtrl.crudHelperService.stopLoader(networkSettingCtrl);
-            if(result['networkInfraType'] == 'aci')
+            if(result['networkInfraType'] === 'aci')
                 networkSettingCtrl.networkService.setAciMode(true);
             else
                 networkSettingCtrl.networkService.setAciMode(false);

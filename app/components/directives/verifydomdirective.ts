@@ -43,12 +43,10 @@ export class VerifydomDirective{
     }
 
     render(){
+        this.viewContainer.clear();
         if(this.display){
-            this.viewContainer.clear();
             this.viewContainer.createEmbeddedView(this.templateRef);
         }
-        else
-            this.viewContainer.clear();
     }
 
 }
