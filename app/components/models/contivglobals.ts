@@ -24,27 +24,6 @@ export const ContivGlobals = {
     'CONTRACTS_ENDPOINT':                    '/api/v1/extContractsGroups/',
     'VISUALIZATION_ENDPOINT':                '/visualization/',
 
-    //REST endpoints for VOLMASTER
-    'VOLUMES_ENDPOINT': '/volmaster/volumes/',
-    'VOLUMES_CREATE_ENDPOINT': '/volmaster/volumes/create/',
-    'VOLUMES_DELETE_ENDPOINT': '/volmaster/volumes/remove/',
-    'VOLUMES_COPYSNAPSHOTS_ENDPOINT': '/volmaster/volumes/copy',
-    'VOLUMES_USES_ENDPOINT': '/volmaster/uses/mounts/',
-    'VOLUMES_SNAPSHOTS_ENDPOINT': '/volmaster/snapshots/',
-    'STORAGEPOLICIES_ENDPOINT': '/volmaster/policies/',
-    'VOLUMES_GLOBAL_ENDPOINT': '/volmaster/global/',
-
-    //REST endpoints for CLUSTER
-    'NODES_LIST_ENDPOINT': '/info/nodes',
-    'NODES_DISCOVER_ENDPOINT': '/discover/nodes',
-    'NODES_COMMISSION_ENDPOINT': '/commission/nodes',
-    'NODES_DECOMMISSION_ENDPOINT': '/decommission/nodes',
-    'NODES_MAINTENANCE_ENDPOINT': '/maintenance/nodes',
-    'NODES_LAST_JOB_ENDPOINT': '/info/job/last',
-    'NODES_ACTIVE_JOB_ENDPOINT': '/info/job/active',
-    'NODES_SETTINGS_SET_ENDPOINT': '/globals',
-    'NODES_SETTINGS_GET_ENDPOINT': '/info/globals',
-
     //REST endpoint for Login
     'LOGIN_ENDPOINT':            '/api/v1/auth_proxy/login',
 
@@ -52,6 +31,7 @@ export const ContivGlobals = {
     'USERS_ENDPOINT':            '/api/v1/auth_proxy/local_users',
     'LDAP_ENDPOINT':             '/api/v1/auth_proxy/ldap_configuration',
     'AUTHORIZATION_ENDPOINT':    '/api/v1/auth_proxy/authorizations',
+    'VERSION_ENDPOINT':          '/api/v1/auth_proxy/version',
 
     //Refresh interval in milliseconds
     'REFRESH_INTERVAL': 5000,

@@ -9,12 +9,18 @@ import { Subject, Observable } from "rxjs";
 export class NetworkService {
 
     public aciMode: boolean = false;
-    private aciModeSubject: Subject<any>;
-    public aciModeObservable: Observable<any>;
+    private aciModeSubject: Subject<any> = new Subject<any>();
+    public aciModeObservable: Observable<any> = this.aciModeSubject.asObservable();
+    public clusterMode: string = '';
+    private clusterModeSubject: Subject<any> = new Subject<any>();
+    public clusterModeObservable: Observable<any> = this.clusterModeSubject.asObservable();
     constructor(private http: Http, private apiService: ApiService) {
-        this.aciModeSubject = new Subject<any>();
-        this.aciModeObservable = this.aciModeSubject.asObservable();
+        var networkservice = this;
         this.getSettings().then();
+        this.getGlobalInspect().then((res) => {
+            networkservice.clusterMode = res.Oper.clusterMode;
+            networkservice.clusterModeSubject.next(networkservice.clusterMode);
+        });
     }
 
     getSettings(): Promise<any> {
