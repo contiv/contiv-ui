@@ -49,7 +49,7 @@ export class MenuComponent implements AfterViewInit{
                 private rulesModel: RulesModel,
                 private servicelbsModel: ServicelbsModel,
                 private usersModel: UsersModel) {
-        this.username = authService.authTokenPayload['username'];
+        this.username = authService.username;
         this.firstRun = this.authService.firstRun;
     }
 
