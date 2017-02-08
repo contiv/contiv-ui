@@ -28,6 +28,7 @@ export class AuthService {
     authToken:string;
     firstRun:boolean;
     username: string;
+    public localUser: boolean = true;
     private firstrunSubject: Subject<any>;
     public firstrunObservable: Observable<any>;
 
@@ -144,6 +145,8 @@ export class AuthService {
         var bodyEncoded = token.split('.')[1];
         var bodyString = atob(bodyEncoded);
         this.authTokenPayload = JSON.parse(bodyString);
+        if(!isNull(this.authTokenPayload['username'].match(ContivGlobals.LDAPGROUP_REGEX)))
+            this.localUser = false;
         this.username = localStorage.getItem("username");
         if(isNull(localStorage.getItem('firstRun')))
             this.firstRun = true;

@@ -17,7 +17,7 @@
             <div class="ui floating labeled icon dropdown">
                 <i class="dropdown icon"></i>
                 <div class="menu profile">
-                    <div class="item" onclick="$('#user-profile-modal').modal('show')">
+                    <div class="item" onclick="$('#user-profile-modal').modal('show')" *ngIf="localuser">
                         <span class="text">Update Profile</span></div>
                     <div class="item" (click)="logout()">
                         <span class="text">Logout</span></div>

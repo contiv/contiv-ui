@@ -29,6 +29,7 @@ declare var jQuery:any;
 
 export class MenuComponent implements AfterViewInit{
     public username: string;
+    public localuser: boolean;
     public product_name:string = ContivGlobals.PRODUCT_NAME;
     public firstRun: boolean;
     public ProfileDisplayType = ProfileDisplayType;
@@ -51,6 +52,7 @@ export class MenuComponent implements AfterViewInit{
                 private usersModel: UsersModel) {
         this.username = authService.username;
         this.firstRun = this.authService.firstRun;
+        this.localuser = this.authService.localUser;
     }
 
     ngAfterViewInit(){
