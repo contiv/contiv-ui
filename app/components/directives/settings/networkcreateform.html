@@ -8,8 +8,7 @@
                     <label for="newNetworkName">Network name</label>
                     <input type="text" id="newNetworkName" name="newNetworkName"
                            [(ngModel)]="networkCreateCtrl.newNetwork.networkName"
-                           placeholder="Enter name" required #newNetworkName="ngModel"
-                            [disabled]="(clusterMode !== 'docker') && firstRunWiz">
+                           placeholder="Enter name" required #newNetworkName="ngModel">
                     <span class="inlineError" *ngIf="newNetworkName.errors?.required && networkCreateForm.submitted">
                                     Please enter network name
                                 </span>
@@ -90,6 +89,5 @@
                 </div>
             </div>
         </div>
-
     </form>
 </div>

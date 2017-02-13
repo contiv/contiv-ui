@@ -50,7 +50,7 @@ export class NetworkCreateformComponent implements OnInit{
         }
 
         getTenants(false);
-        if(this.clusterMode !== 'docker' && this.firstRunWiz)
+        if(this.clusterMode === 'kubernetes' && this.firstRunWiz)
             this.newNetwork['networkName'] = 'default-net';
     }
 
