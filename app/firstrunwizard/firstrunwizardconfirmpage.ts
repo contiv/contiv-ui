@@ -7,6 +7,7 @@ import {Component, OnInit, Output, EventEmitter, Inject} from "@angular/core";
 import {Router, ActivatedRoute} from "@angular/router";
 import {FirstRunWizardService} from "./firstrunwizardservice";
 import {AuthService} from "../components/utils/authservice";
+import {CRUDHelperService} from "../components/utils/crudhelperservice";
 declare var jQuery:any;
 
 @Component({
@@ -15,38 +16,40 @@ declare var jQuery:any;
 })
 
 export class FirstrunConfirmComponent implements OnInit{
-    private wizardService: FirstRunWizardService;
     public showLoader: boolean
+    public skipArray: Array<boolean>;
     @Output('updatePage') updatePage: EventEmitter<any>;
     @Output('cancelPage') cancelPage: EventEmitter<any>;
-    constructor(wizardservice: FirstRunWizardService,
+    constructor(private wizardService: FirstRunWizardService,
                 private router: Router,
                 private activatedRoute: ActivatedRoute,
-                private authService: AuthService){
-        this.wizardService = wizardservice;
+                private authService: AuthService,
+                private crudHelperService: CRUDHelperService){
         this.updatePage = new EventEmitter<any>();
         this.cancelPage = new EventEmitter<any>();
         this.showLoader = false;
+        this.skipArray = Array.from(this.wizardService.skipArray);
     }
 
     ngOnInit(){
     }
 
     process(){
-        this.updatePage.emit(3);
+        //this.updatePage.emit(4);
         // Will be calling the update settings funciton of wizard service,
-        // A loader will be shown un til all the updates are completed.
-        this.showLoader = true;
-
+        // A loader will be shown until all the updates are completed.
+        var component = this;
+        this.crudHelperService.startLoader(this);
 
         this.wizardService.updateSettings()
             .then((result) => {
+                component.crudHelperService.stopLoader(component);
                 this.loadDashboard();
             }, (error) => {
-                this.loadDashboard();
+                component.crudHelperService.stopLoader(component);
+                component.crudHelperService.showServerError("Contiv setup failed", error);
             });
-        
-        this.loadDashboard();
+
     }
 
     loadDashboard(){
@@ -57,7 +60,7 @@ export class FirstrunConfirmComponent implements OnInit{
     }
 
     goBack(){
-        this.updatePage.emit(1);
+        this.updatePage.emit(2);
     }
 
     cancel(){
