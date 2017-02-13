@@ -6,7 +6,6 @@
 import { Injectable } from "@angular/core";
 import { NetworkService } from "../components/utils/networkservice";
 import {NetworksModel} from "../components/models/networksmodel";
-import {CRUDHelperService} from "../components/utils/crudhelperservice";
 
 @Injectable()
 export class FirstRunWizardService {

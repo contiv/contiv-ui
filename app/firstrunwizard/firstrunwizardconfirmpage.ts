@@ -3,19 +3,18 @@
  */
 
 
-import {Component, OnInit, Output, EventEmitter, Inject} from "@angular/core";
+import {Component, OnInit, Output, EventEmitter, Inject, AfterViewInit} from "@angular/core";
 import {Router, ActivatedRoute} from "@angular/router";
 import {FirstRunWizardService} from "./firstrunwizardservice";
 import {AuthService} from "../components/utils/authservice";
 import {CRUDHelperService} from "../components/utils/crudhelperservice";
-declare var jQuery:any;
 
 @Component({
     selector: 'firstrunwizardconfirmpage',
     templateUrl: './firstrunwizardconfirmpage.html'
 })
 
-export class FirstrunConfirmComponent implements OnInit{
+export class FirstrunConfirmComponent {
     public showLoader: boolean
     public skipArray: Array<boolean>;
     @Output('updatePage') updatePage: EventEmitter<any>;
@@ -29,9 +28,6 @@ export class FirstrunConfirmComponent implements OnInit{
         this.cancelPage = new EventEmitter<any>();
         this.showLoader = false;
         this.skipArray = Array.from(this.wizardService.skipArray);
-    }
-
-    ngOnInit(){
     }
 
     process(){
@@ -54,7 +50,6 @@ export class FirstrunConfirmComponent implements OnInit{
 
     loadDashboard(){
         this.showLoader = false;
-        jQuery(".ui.fullscreen.modal").modal('hide');
         this.authService.setFirstRun('completed');
         this.router.navigate(['/m/dashboard']);
     }

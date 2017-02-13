@@ -24,12 +24,13 @@ export class FirstrunNetworkCreateComponent{
     }
 
     createNetwork(network: any){
+        this.wizardService.skipArray[2] = false;
         this.wizardService.newNetwork = network;
         this.updatePage.emit(3);
     }
 
     goBack(){
-        this.updatePage.emit(0);
+        this.updatePage.emit(1);
     }
 
     skip(){

@@ -31,6 +31,7 @@ export class FirstrunNetworkDefaultComponent implements DoCheck{
     }
 
     updateNetworkSettings(setting: any){
+        this.wizardService.skipArray[0] = false;
         this.wizardService.setting = setting;
         this.updatePage.emit(1);
     }

@@ -30,6 +30,7 @@ export class FirstrunACISettingsComponent implements OnInit {
     }
 
     updateAciSettings(setting:any) {
+        this.wizardService.skipArray[1] = false;
         this.wizardService.aciSetting = setting;
         this.updatePage.emit(2);
     }

@@ -29,7 +29,7 @@ export class AciSettingComponent implements AfterViewInit{
 
     ngAfterViewInit(){
         if(this.disabled){
-            jQuery('.ui.dimmer').dimmer({
+            jQuery('.ui.dimmer.aci').dimmer({
                 opacity: 0.8,
                 closable: false
             }).dimmer('show');
