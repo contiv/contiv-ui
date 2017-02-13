@@ -5,7 +5,7 @@
 
 import { Injectable } from "@angular/core";
 import { NetworkService } from "../components/utils/networkservice";
-import {NetworksModel} from "../components/models/networksmodel";
+import { NetworksModel } from "../components/models/networksmodel";
 
 @Injectable()
 export class FirstRunWizardService {
