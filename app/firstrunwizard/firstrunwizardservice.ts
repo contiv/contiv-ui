@@ -16,7 +16,7 @@ export class FirstRunWizardService {
     public clusterMode:string = '';
     public skipArray: Array<boolean> = [false, false, false];
     public defaults: any = {};
-    public showLoader: boolean = true
+    public showLoader: boolean = true;
 
     constructor(private networkService:NetworkService,
                 private networksModel: NetworksModel) {
