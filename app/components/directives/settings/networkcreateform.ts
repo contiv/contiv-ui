@@ -52,7 +52,7 @@ export class NetworkCreateformComponent implements OnInit{
                                             component.newNetwork['networkName'] = 'default-net';
                                     }
                                     resolve(true);
-                                })
+                                },(err)=>{})
                         }
                         else{
                             resolve(true);
