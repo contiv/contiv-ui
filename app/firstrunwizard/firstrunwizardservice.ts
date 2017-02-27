@@ -20,6 +20,10 @@ export class FirstRunWizardService {
 
     constructor(private networkService:NetworkService,
                 private networksModel: NetworksModel) {
+        this.initialize();
+    }
+
+    initialize(){
         this.setting = {
             networkInfraType: '',
             vlans: '',

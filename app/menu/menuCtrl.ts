@@ -74,7 +74,8 @@ export class MenuComponent implements AfterViewInit, DoCheck{
     }
 
     help(){
-        window.location.assign("http://contiv.github.io/");
+        var win = window.open("http://contiv.github.io/", '_blank');
+        win.focus();
     }
 
     logout() {
