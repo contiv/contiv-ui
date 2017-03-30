@@ -50,9 +50,9 @@ export class LoginComponent implements OnInit{
             .subscribe((result) => {
                 if(result){
                     this.showServerError = false;
-                    this.crudHelperService.stopLoader(this);
                     this.firstRunService.setFirstRun()
                         .then(isFirstRun => {
+                            this.crudHelperService.stopLoader(this);
                             if (isFirstRun) {
                                 this.router.navigate(['/m/firstrun']);
                             }
