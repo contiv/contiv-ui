@@ -36,6 +36,8 @@ export class BandwidthPolicyDetailsComponent {
         /* Get particular Profile for based on key*/
         bandwidthPolicyDetailsCtrl.netprofilesModel.getModelByKey(activatedRoute.snapshot.params['key'],false,undefined)
             .then(function (policy) {
+                if (policy.DSCP === undefined) policy.DSCP = 0;
+                if (policy.burst === undefined) policy.burst = 0;
                 bandwidthPolicyDetailsCtrl.policy = policy;
                 var bandwidth  = policy.bandwidth.split(' ');
                 bandwidthPolicyDetailsCtrl.policy['bandwidthNumber'] = bandwidth[0];

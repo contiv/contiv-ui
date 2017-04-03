@@ -33,7 +33,7 @@ export class BandwidthPolicyCreateComponent implements OnInit {
                 bandwidth: '',
                 bandwidthUnit: 'mbps',
                 DSCP: '',
-                burst: 0
+                burst: ''
             };
         }
         resetForm();
