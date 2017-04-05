@@ -32,8 +32,8 @@ export class BandwidthPolicyCreateComponent implements OnInit {
                 tenantName: '',
                 bandwidth: '',
                 bandwidthUnit: 'mbps',
-                DSCP: '',
-                burst: ''
+                DSCP: 0,
+                burst: 0
             };
         }
         resetForm();
@@ -79,6 +79,12 @@ export class BandwidthPolicyCreateComponent implements OnInit {
             bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.newPolicy.bandwidthNumber
                 + " "+ bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
 
+            if (bandwidthPolicyCreateCtrl.newPolicy.DSCP == null) {//burst is null or undefined
+                bandwidthPolicyCreateCtrl.newPolicy.DSCP = 0;
+            }
+            if (bandwidthPolicyCreateCtrl.newPolicy.burst == null) {//burst is null or undefined
+                bandwidthPolicyCreateCtrl.newPolicy.burst = 0;
+            }
             bandwidthPolicyCreateCtrl.netprofilesModel.create(bandwidthPolicyCreateCtrl.newPolicy, undefined).then(function successCallback(result) {
                 bandwidthPolicyCreateCtrl.crudHelperService.stopLoader(bandwidthPolicyCreateCtrl);
                 bandwidthPolicyCreateCtrl.crudHelperService.showNotification("Bandwidth policy: Created", result.key.toString());
