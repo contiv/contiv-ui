@@ -79,7 +79,7 @@ export class BandwidthPolicyCreateComponent implements OnInit {
             bandwidthPolicyCreateCtrl.newPolicy.bandwidth = bandwidthPolicyCreateCtrl.newPolicy.bandwidthNumber
                 + " "+ bandwidthPolicyCreateCtrl.newPolicy.bandwidthUnit;
 
-            if (bandwidthPolicyCreateCtrl.newPolicy.DSCP == null) {//burst is null or undefined
+            if (bandwidthPolicyCreateCtrl.newPolicy.DSCP == null) {//DSCP is null or undefined
                 bandwidthPolicyCreateCtrl.newPolicy.DSCP = 0;
             }
             if (bandwidthPolicyCreateCtrl.newPolicy.burst == null) {//burst is null or undefined

@@ -90,7 +90,7 @@ export class BandwidthPolicyDetailsComponent {
             bandwidthPolicyDetailsCtrl.crudHelperService.startLoader(bandwidthPolicyDetailsCtrl);
             bandwidthPolicyDetailsCtrl.policy.bandwidth = bandwidthPolicyDetailsCtrl.policy.bandwidthNumber + " " + bandwidthPolicyDetailsCtrl.policy.bandwidthUnit;
 
-            if (bandwidthPolicyDetailsCtrl.policy.DSCP == null) {//burst is null or undefined
+            if (bandwidthPolicyDetailsCtrl.policy.DSCP == null) {//DSCP is null or undefined
                 bandwidthPolicyDetailsCtrl.policy.DSCP = 0;
             }
             if (bandwidthPolicyDetailsCtrl.policy.burst == null) {//burst is null or undefined
