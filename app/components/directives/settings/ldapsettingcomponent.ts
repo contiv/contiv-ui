@@ -59,8 +59,11 @@ export class LdapSettingsComponent{
         if(formValid){
             if(ldapComponent.ldapConfig.insecure_skip_verify)
                 ldapComponent.ldapConfig.tls_cert_issued_to = '';
+            if(!ldapComponent.ldapConfig.start_tls)
+                ldapComponent.ldapConfig.insecure_skip_verify = false;
             this.crudHelperService.startLoader(this);
             this.update().subscribe((result) => {
+                ldapComponent.ldapConfigExists = true;
                 ldapComponent.crudHelperService.stopLoader(ldapComponent);
                 ldapComponent.crudHelperService.showNotification("LDAP: Configuration Updated", ldapComponent.ldapConfig.server);
             }, (error) => {
