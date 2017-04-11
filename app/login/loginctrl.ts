@@ -67,7 +67,7 @@ export class LoginComponent implements OnInit{
                                 }
                             }
                         });
-                    this.chartService.startpolling();
+                    //this.chartService.startpolling();
                 }
                 else{
                     this.crudHelperService.stopLoader(this);
