@@ -4,18 +4,20 @@
 
         <div class="ui sixteen column grid" style="margin: 0;">
             <div class="ui row">
-                <div class="ui six wide column field" [ngClass]="{error: newNetworkName.errors?.required && networkCreateForm.submitted}">
+                <div class="ui six wide column field" [ngClass]="{error: ((newNetworkName.errors?.required || newNetworkName.errors?.pattern) && networkCreateForm.submitted)}">
                     <label for="newNetworkName">Network name</label>
                     <input type="text" id="newNetworkName" name="newNetworkName"
                            [(ngModel)]="networkCreateCtrl.newNetwork.networkName"
                            [disabled]="firstRunWiz && (clusterMode === 'kubernetes')"
-                           placeholder="Enter name" required #newNetworkName="ngModel">
+                           placeholder="Enter name" required #newNetworkName="ngModel"
+                           [pattern]="networkNamePattern">
                     <span class="inlineError" *ngIf="newNetworkName.errors?.required && networkCreateForm.submitted">
                                     Please enter network name
                     </span>
+                    <span class="inlineError" *ngIf="newNetworkName.errors?.pattern && networkCreateForm.submitted">
+                                    Please enter network name in correct notation
+                    </span>
                 </div>
-            </div>
-            <div class="ui row" style="margin-top: 15px;">
                 <div class="ui six wide column field">
                     <div class="field" [ngClass]="{error: newNetworkTenant.errors?.required && networkCreateForm.submitted}">
                         <label for="newNetworkTenant">Tenant</label>
